@@ -7,8 +7,7 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { textColor } from '../../utils/color/operators/furthest';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
-import { useObservable } from '../../utils/hooks/useObservable';
-import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { take } from '../../utils/take/take';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
@@ -32,11 +31,8 @@ interface EditModalProps {}
  */
 export function EditModal(props: EditModalProps) {
     const router = useRouter();
-
-    // TODO: [🩺] !!!! One hook for [wallpaper,mutateWallpaper]
     const wallpaperId = useCurrentWallpaperId();
-    const wallpaperSubject = useWallpaperSubject(wallpaperId);
-    const { value: wallpaper } = useObservable(wallpaperSubject);
+    const [wallpaper, modifyWallpaper] = useWallpaper();
 
     return (
         <Modal title="Editing">
@@ -53,27 +49,17 @@ export function EditModal(props: EditModalProps) {
                     <div key={i} className={styles.paletteItem} style={{ backgroundColor: color.value.toHex() }}>
                         <ColorInput
                             defaultValue={color.value}
-                            onChange={debounce((newColor) => {
-                                // TODO: !!! DO here real change of wallpaper with save and export
-                                // TODO: [🧠] !! DRY [🎋]
-                                // TODO: [🧠] !! Reset when switching wallpapers
+                            onChange={
+                                /* Remove ACRY on ColorInput !!!! -> */ debounce((newColor) => {
+                                    // TODO: !!!!! This works BUT only if also content is changed - try to make <ColorStatsInput/> first and then this
 
-                                /*
-                                TODO: !!! Remove
-                                document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
-                                document.documentElement.style.setProperty(
-                                    `--palette-${i}-triplet`,
-                                    `${newColor.red}, ${newColor.green}, ${newColor.blue}`,
-                                );
-                                */
-
-                                // TODO: !!! This mutates the wallpaper - in <ColorStatsInput/> implement in a immutable way
-                                const colorStats = wallpaper.colorStats;
-                                colorStats.palette[i].value = take(newColor);
-
-                                // TODO: !!! This works BUT only if also content is changed - try to make <ColorStatsInput/> first and then this
-                                wallpaperSubject.next({ ...wallpaperSubject.value, colorStats });
-                            }, 100 /* <- TODO: Do it more efficiently and then debounce */)}
+                                    modifyWallpaper((modifiedWallpaper) => {
+                                        modifiedWallpaper.colorStats.palette[i].value = take(newColor);
+                                        modifiedWallpaper.saveStage = 'EDITED';
+                                        return modifiedWallpaper;
+                                    });
+                                }, 100 /* <- TODO: Do it more efficiently and then debounce */)
+                            }
                         />
                         <p
                             style={{
@@ -102,7 +88,11 @@ export function EditModal(props: EditModalProps) {
                     className={styles.editor}
                     value={wallpaper.content}
                     onChange={(content) => {
-                        wallpaperSubject.next({ ...wallpaperSubject.value, content });
+                        modifyWallpaper((modifiedWallpaper) => {
+                            modifiedWallpaper.content = content;
+                            modifiedWallpaper.saveStage = 'EDITED';
+                            return modifiedWallpaper;
+                        });
                     }}
                     // TODO: Hide fullscreen button
                     // toolbarsFilter={(tool) => tool === 'fullscreen'}

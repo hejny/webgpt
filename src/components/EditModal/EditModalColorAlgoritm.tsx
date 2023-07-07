@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { forTime } from 'waitasecond';
 import { COLORSTATS_COMPUTE_METHODS } from '../../../config';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
-import { useObservable } from '../../utils/hooks/useObservable';
-import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { createImageInBrowser } from '../../utils/image/createImageInBrowser';
 import { Select } from '../Select/Select';
 
@@ -11,12 +9,7 @@ import { Select } from '../Select/Select';
  * @@
  */
 export function EditModalColorAlgoritm() {
-
-    // TODO: [🩺] !!!! One hook for [wallpaper,mutateWallpaper]
-    const wallpaperId = useCurrentWallpaperId();
-    const wallpaperSubject = useWallpaperSubject(wallpaperId);
-    const { value: wallpaper } = useObservable(wallpaperSubject);
-
+    const [wallpaper, modifyWallpaper] = useWallpaper();
     const [isComputing, setComputing] = useState(false);
 
     return (
@@ -37,9 +30,10 @@ export function EditModalColorAlgoritm() {
                 // TODO: [🧠] !!! Whe best way to report progress from createImageInBrowser and compute
                 const newColorStats = await compute(await createImageInBrowser(wallpaper.src));
 
-                wallpaperSubject.next({
-                    ...wallpaper,
-                    colorStats: newColorStats,
+                modifyWallpaper((modifiedWallpaper) => {
+                    modifiedWallpaper.colorStats = newColorStats;
+                    modifiedWallpaper.saveStage = 'EDITED';
+                    return modifiedWallpaper;
                 });
 
                 await forTime(10);

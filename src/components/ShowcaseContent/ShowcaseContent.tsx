@@ -3,10 +3,8 @@ import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useMode } from '../../utils/hooks/useMode';
-import { useObservable } from '../../utils/hooks/useObservable';
-import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { FooterSection } from '../Footer/Footer';
 import { Menu } from '../Menu/Menu';
@@ -16,11 +14,7 @@ import styles from './ShowcaseContent.module.css';
 export function ShowcaseContent() {
     const router = useRouter();
     const isPreview = router.query.mode === 'preview'; /* <- TODO: !!! Use useMode */
-
-    // TODO: [🩺] !!!! One hook for [wallpaper,mutateWallpaper]
-    const wallpaperId = useCurrentWallpaperId();
-    const wallpaperSubject = useWallpaperSubject(wallpaperId);
-    const { value: wallpaper } = useObservable(wallpaperSubject);
+    const [wallpaper, modifyWallpaper] = useWallpaper();
     const { isEditable } = useMode();
 
     return (
@@ -44,10 +38,10 @@ export function ShowcaseContent() {
                         <ColorInput
                             defaultValue={wallpaper.colorStats.palette[0].value}
                             onChange={(newColor) => {
-                                wallpaper.colorStats.palette[0].value = newColor;
-                                wallpaperSubject.next({
-                                    ...wallpaperSubject.value,
-                                    /*content: newContent,*/ saveStage: 'EDITED',
+                                modifyWallpaper((modifiedWallpaper) => {
+                                    wallpaper.colorStats.palette[0].value = newColor;
+                                    modifiedWallpaper.saveStage = 'EDITED';
+                                    return modifiedWallpaper;
                                 });
                             }}
                         />

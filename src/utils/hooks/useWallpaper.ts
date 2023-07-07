@@ -43,7 +43,3 @@ export function useWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWallpaper)
         },
     ];
 }
-
-/**
- * TODO: [🩺] !!!! ACRY use this hook instead of useWallpaperSubject
- */

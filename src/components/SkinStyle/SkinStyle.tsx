@@ -20,7 +20,6 @@ export function SkinStyle() {
                     .flatMap((color, i) => {
                         if (i < palette.length) {
                             return [
-                                // TODO: !! DRY [🎋]
                                 `/* Note: --palette-${i} is ${color.note} */`,
                                 `--palette-${i}: ${color.value.toHex()};`,
                                 `--palette-${i}-darken: ${color.value.then(darken(0.5)).toHex()};`,

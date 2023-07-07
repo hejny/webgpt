@@ -22,7 +22,3 @@ export function useWallpaperSubject(wallpaperId: string_wallpaper_id): BehaviorS
 
     throw new Error(`Wallpaper "${wallpaperId}" not found` /* <- TODO: Make here propper 404 */);
 }
-
-/**
- * TODO: [🩺] One hook for [wallpaper,mutateWallpaper]
- */
