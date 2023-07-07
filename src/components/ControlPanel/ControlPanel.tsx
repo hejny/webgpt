@@ -117,12 +117,6 @@ export function ControlPanel(props: ControlPanelProps) {
                 </Link>
             )}
 
-            {/*
-            Note: In the <Menu/>
-            <OpenModalLink modal={'edit'} className={classNames( styles.button)} title="Edit this web">
-                <Markdown content="🖊" isUsingOpenmoji />
-            </OpenModalLink>
-            */}
 
             {wallpaper.saveStage === 'SAVED' && (
                 <Link

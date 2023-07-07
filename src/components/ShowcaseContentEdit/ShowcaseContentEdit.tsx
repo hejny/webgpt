@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
-import { EditModal } from '../../components/EditModal/EditModal';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { IWallpaper } from '../../utils/IWallpaper';
@@ -23,7 +22,6 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
 
     return (
         <>
-            {modal === 'edit' && <EditModal />}
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}

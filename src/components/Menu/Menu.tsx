@@ -55,20 +55,7 @@ export function Menu() {
                                 Get the web
                             </Link>
                         </li>
-                        <li>
-                            <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        modal: 'edit',
-                                    },
-                                }}
-                                prefetch={false /* <- Note: Because it is rare option */}
-                            >
-                                Edit
-                            </Link>
-                        </li>
+                     
                         {/* TODO: Maybe ?modal=explain link */}
                         <li>
                             <a href="https://ai.hejny.org/pricing">Pricing</a>
