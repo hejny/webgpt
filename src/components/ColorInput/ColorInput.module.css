@@ -1,8 +1,5 @@
-.ColorInput {
-    /* TODO: Use or remove empty css */
-}
-
 .colorPreview {
+    box-sizing: border-box;
     width: 35px;
     height: 35px;
     border-radius: 50%;

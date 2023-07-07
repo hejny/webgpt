@@ -27,32 +27,44 @@ export function ShowcaseContent() {
             <header>
                 <HeaderWallpaper />
             </header>
+
             <div className={styles.background}>
-                {/* !!!!!!! Color edit */}
                 <TiledBackground />
             </div>
             <main>
-                {isEditable && (
-                    // !!!! Multiple pickers
-                    <div className={styles.floatingColorPicker}>
-                        <ColorInput
-                            defaultValue={wallpaper.colorStats.palette[0].value}
-                            onChange={(newColor) => {
-                                modifyWallpaper((modifiedWallpaper) => {
-                                    wallpaper.colorStats.palette[0].value = newColor;
-                                    modifiedWallpaper.saveStage = 'EDITED';
-                                    return modifiedWallpaper;
-                                });
-                            }}
-                        />
-                    </div>
-                )}
                 <ShowcaseArticleSection />
                 {/*<ReferencesSection variant="SHORT" />*/}
             </main>
             <footer>
                 <FooterSection />
             </footer>
+
+            {isEditable && (
+                <div className={styles.colorEditing}>
+                    {wallpaper.colorStats.palette.map((color, i) => (
+                        // TODO: !!! Each picker should be placed on top of the color it represents
+                        <ColorInput
+                            key={i}
+                            className={styles.floatingColorPicker}
+                            defaultValue={color.value}
+                            onChange={(newColor) => {
+                                modifyWallpaper((modifiedWallpaper) => {
+                                    modifiedWallpaper.colorStats.palette[i].value = newColor;
+                                    modifiedWallpaper.saveStage = 'EDITED';
+                                    return modifiedWallpaper;
+                                });
+                            }}
+                            presetColors={
+                                // TODO: Optimize, do just once not for every color:
+                                wallpaper.colorStats.palette.map((color) => ({
+                                    title: color.note,
+                                    color: color.value.toHex(),
+                                }))
+                            }
+                        />
+                    ))}
+                </div>
+            )}
         </div>
     );
 }

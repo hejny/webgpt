@@ -141,8 +141,28 @@
     grid-row: 5 / span 1;
 }
 
-.floatingColorPicker {
-    position: absolute;
+/*-------[ Editing ]-------*/
+.colorEditing {
+    /*/
+    outline: 1px dotted #00ff00;
+    background-color: rgba(0, 255, 0, 0.253);
+    /**/
+
+    z-index: 4;
+
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 5;
+
+    pointer-events: none;
+
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+.colorEditing .floatingColorPicker {
+    pointer-events: all;
+
+    margin: 10px;
 }
 
 /* TODO: [🧈] Best way how to share page css */
