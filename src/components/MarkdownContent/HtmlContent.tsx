@@ -71,7 +71,6 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
         }
 
         if (element.innerHTML !== content) {
-            console.info(`!!! element.innerHTML = content`, element.innerHTML, content);
             element.innerHTML = content /* <- Here [3] */;
         }
     }, [content]);
