@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { textColor } from '../../utils/color/operators/furthest';
-import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
@@ -38,7 +37,6 @@ export function EditModal(props: EditModalProps) {
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
-    const closePreventionSystem = useClosePreventionSystem();
 
     return (
         <Modal title="Editing">
@@ -59,11 +57,6 @@ export function EditModal(props: EditModalProps) {
                                 // TODO: !!! DO here real change of wallpaper with save and export
                                 // TODO: [🧠] !! DRY [🎋]
                                 // TODO: [🧠] !! Reset when switching wallpapers
-
-                                // TODO: [🎟] !! This should not be here BUT DRY for all changes
-                                closePreventionSystem.registerClosePrevention({
-                                    canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
-                                });
 
                                 /*
                                 TODO: !!! Remove
@@ -109,10 +102,6 @@ export function EditModal(props: EditModalProps) {
                     className={styles.editor}
                     value={wallpaper.content}
                     onChange={(content) => {
-                        // TODO: [🎟] !! This should not be here BUT DRY for all changes
-                        closePreventionSystem.registerClosePrevention({
-                            canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
-                        });
                         wallpaperSubject.next({ ...wallpaperSubject.value, content });
                     }}
                     // TODO: Hide fullscreen button
