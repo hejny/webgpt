@@ -59,7 +59,7 @@ export function ControlPanel(props: ControlPanelProps) {
                         console.log({ newWallpaper, insertResult });
 
                         /*
-                        Note: !!!!!!!!!!
+                        Note: Wallpapers should not be explicitly saved, they automatically appear as saved after router.push is loaded
                         modifyWallpaper((modifiedWallpaper) => {
                             modifiedWallpaper.saveStage = 'SAVED';
                             return modifiedWallpaper;
