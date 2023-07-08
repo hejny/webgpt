@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './Menu.module.css';
 
 /**
@@ -8,6 +9,7 @@ import styles from './Menu.module.css';
  */
 export function Menu() {
     const router = useRouter();
+    const [wallpaper] = useWallpaper();
 
     return (
         <>
@@ -68,6 +70,16 @@ export function Menu() {
                                 Gallery
                             </Link>
                         </li>
+                        {wallpaper.parent && (
+                            <li>
+                                <Link
+                                    href={`/${wallpaper.parent}`}
+                                    prefetch={false /* <- Note: Because it is rare option */}
+                                >
+                                    Model page
+                                </Link>
+                            </li>
+                        )}
                         <li>
                             <a href="https://1-2i.com/contact">Contact</a>
                         </li>
@@ -82,7 +94,8 @@ export function Menu() {
 }
 
 /**
- * TODO: !!! Menu in export should look like:
+ * TODO: !!!! [🧠] Structure of page, menus,...
+ * TODO: !!! Menu in export should look like <script>:
  *
  *           - Comments
  *           - Inlined Script

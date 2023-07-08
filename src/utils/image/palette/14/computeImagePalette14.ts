@@ -94,7 +94,6 @@ export function computeImagePalette14(
             PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO;
 
         for (const paletteCandidate of paletteCandidates) {
-
             if (!areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
                 continue;
             }
@@ -103,7 +102,6 @@ export function computeImagePalette14(
                 colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value) >=
                 primaryToAveragedistanceTheashold
             ) {
-
                 continue;
             }
 
@@ -249,6 +247,7 @@ export function computeImagePalette14(
 }
 
 /**
+ * TODO: !!!! Make new version of this function that will fix bottom color @see http://localhost:4444/f73e93ad-006c-4115-a0e7-01da298f145f
  * TODO: Match also the last with the first color and if not matching then add last color to the palette at the end as a "separator"
  * TODO: [🧠] Should be white/black text color hardcoded as second color in palette? (NOW IT IS as secondaryColor)
  * TODO: !! Is here correct manipulation with square of distance?
