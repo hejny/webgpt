@@ -1,20 +1,20 @@
-import { describe, expect } from '@jest/globals';
+import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
 import { extractTitleFromHtml } from './extractTitleFromHtml';
 
 describe('extractFirstHeadingFromHtmlRegex', () => {
-    test('should return the first heading from an HTML string', () => {
+    it('should return the first heading from an HTML string', () => {
         const contentText =
             '<html><head><title>This is a title</title></head><body><h1>This is a heading</h1>Some content</body></html>';
         expect(extractTitleFromHtml(contentText)).toBe('This is a heading');
     });
 
-    test('should return null if there is no heading in the HTML string', () => {
+    it('should return null if there is no heading in the HTML string', () => {
         const contentText = '<html><head><title>This is a title</title></head><body>Some content</body></html>';
         expect(extractTitleFromHtml(contentText)).toBeNull();
     });
 
-    test('should return the first heading from an real HTML string', () => {
+    it('should return the first heading from an real HTML string', () => {
         expect(
             extractTitleFromHtml(
                 spaceTrim(`
@@ -82,7 +82,7 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         ).toBe('Ocean vibes');
     });
 
-    test('should return the first heading from an real multiline HTML string', () => {
+    it('should return the first heading from an real multiline HTML string', () => {
         expect(
             extractTitleFromHtml(
                 spaceTrim(`
@@ -134,25 +134,21 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         );
     });
 
-    test('should return non-trimmed result', () => {
+    it('should return non-trimmed result', () => {
         expect(extractTitleFromHtml(`<h1> a </h1>`)).toBe(` a `);
         expect(extractTitleFromHtml(`<h1>&nbsp;a&nbsp;</h1>`)).toBe(` a `);
         expect(extractTitleFromHtml(`<h1> &nbsp;a&nbsp; </h1>`)).toBe(`  a  `);
         expect(extractTitleFromHtml(`<h1> &nbsp; a &nbsp; </h1>`)).toBe(`   a   `);
     });
 
-    test('should return the first heading from an real multi-whitespace HTML string', () => {
+    it('should return the first heading from an real multi-whitespace HTML string', () => {
         expect(extractTitleFromHtml(`<h1>a&nbsp;a</h1>`)).toBe(`a a`);
         expect(extractTitleFromHtml(`<h1>a&nbsp; a</h1>`)).toBe(`a  a`);
         expect(extractTitleFromHtml(`<h1>a &nbsp; a</h1>`)).toBe(`a   a`);
         expect(extractTitleFromHtml(`<h1>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</h1>`)).toBe(`a     a`);
     });
 
-    test('should return the first heading from an real special-characters HTML string', () => {
+    it('should return the first heading from an real special-characters HTML string', () => {
         expect(extractTitleFromHtml(`<h1>&quot;</h1>`)).toBe(`"`);
     });
 });
-
-/**
- *  TODO: !!!! Not test but it ACRY
- */

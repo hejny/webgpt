@@ -1,24 +1,24 @@
-import { describe, expect } from '@jest/globals';
+import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
 import { detectContentFormat } from './detectContentFormat';
 
 describe('detectContentFormat', () => {
-    test('should return html for valid HTML content', () => {
+    it('should return html for valid HTML content', () => {
         const htmlContent = '<p>Hello, this is Bing.</p>';
         expect(detectContentFormat(htmlContent)).toBe('html');
     });
 
-    test('should return markdown for valid markdown content', () => {
+    it('should return markdown for valid markdown content', () => {
         const markdownContent = '# Hello, this is Bing.\n\nThis is a *markdown* document.';
         expect(detectContentFormat(markdownContent)).toBe('markdown');
     });
 
-    test('should return markdown for plain text content', () => {
+    it('should return markdown for plain text content', () => {
         const plainTextContent = 'Hello, this is Bing.';
         expect(detectContentFormat(plainTextContent)).toBe('markdown');
     });
 
-    test('should return markdown for original pages', () => {
+    it('should return markdown for original pages', () => {
         expect(
             detectContentFormat(
                 spaceTrim(`
@@ -170,7 +170,7 @@ describe('detectContentFormat', () => {
         ).toBe('markdown');
     });
 
-    test('should return html for edited pages', () => {
+    it('should return html for edited pages', () => {
         expect(
             detectContentFormat(
                 spaceTrim(`
