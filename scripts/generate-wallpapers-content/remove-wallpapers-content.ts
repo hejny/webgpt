@@ -5,7 +5,7 @@ import { readFile, rm } from 'fs/promises';
 import { join } from 'path';
 import { FONTS } from '../../config';
 import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
-import { removeMarkdownComments } from '../../src/utils/content/removeMarkdownComments';
+import { removeContentComments } from '../../src/utils/content/removeContentComments';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
@@ -50,7 +50,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
             const font =
                 content.match(/<!--font:(?<font>.*)-->/)?.groups
                     ?.font; /* <- TODO: There can be more fonts in document */
-            content = removeMarkdownComments(content);
+            content = removeContentComments(content);
             const title = extractTitleFromContent(content);
 
             // TODO: [💵] DRY this checks

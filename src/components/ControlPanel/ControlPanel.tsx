@@ -58,10 +58,13 @@ export function ControlPanel(props: ControlPanelProps) {
                         // TODO: !! Util isInsertSuccessfull (status===201)
                         console.log({ newWallpaper, insertResult });
 
+                        /*
+                        Note: !!!!!!!!!!
                         modifyWallpaper((modifiedWallpaper) => {
                             modifiedWallpaper.saveStage = 'SAVED';
                             return modifiedWallpaper;
                         });
+                        */
 
                         try {
                             const parentKey = `likedStatus_${wallpaper.id}`;
@@ -116,7 +119,6 @@ export function ControlPanel(props: ControlPanelProps) {
                     />
                 </Link>
             )}
-
 
             {wallpaper.saveStage === 'SAVED' && (
                 <Link

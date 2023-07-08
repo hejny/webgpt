@@ -298,4 +298,43 @@ describe(`computeWallpaperUriid`, () => {
             }),
         ).toBe(`ocean-vibes-2kcnh3w2bhgj`);
     });
+
+    it(`works without title in content`, () => {
+        expect(
+            computeWallpaperUriid({
+                parent: 'ocean-vibes-1kmp5dwt35su',
+                src: 'https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_3.png',
+                prompt: 'A beautiful sunset over the ocean',
+                author: validateUuid('8450ee88-d216-41c4-a30e-5bba49289573'),
+                colorStats: hydrateColorStats({
+                    palette: [
+                        {
+                            note: 'The most common color to appear at the bottom of the wallpaper.',
+                            count: 1576,
+                            value: '#111111',
+                        },
+                        {
+                            note: '2nd most satulighted color of the bottom half of the wallpaper which is contrast enough (50%) against the primary color.',
+                            count: 39,
+                            value: '#ffcc55',
+                        },
+                        {
+                            note: '2nd most frequent color of the bottom third of the wallpaper which is distant enough (10%) and hue-distant enough (30°) from all other palette colors.',
+                            count: 101,
+                            value: '#775566',
+                        },
+                        {
+                            note: '3rd most satulighted color of the bottom half of the wallpaper which is distant enough (10%) and hue-distant enough (30°) from all other palette colors.',
+                            count: 1,
+                            value: '#77bbcc',
+                        },
+                    ],
+                    version: 'colorful-192x108-16bit-v14palette',
+                }),
+                content: spaceTrim(`
+                    This content has no title.
+                `),
+            }),
+        ).toBe(`2rrgwx5bdwod`);
+    });
 });

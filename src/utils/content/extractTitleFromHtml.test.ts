@@ -14,6 +14,24 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         expect(extractTitleFromHtml(contentText)).toBeNull();
     });
 
+    it('should return non-trimmed result', () => {
+        expect(extractTitleFromHtml(`<h1> a </h1>`)).toBe(` a `);
+        expect(extractTitleFromHtml(`<h1>&nbsp;a&nbsp;</h1>`)).toBe(` a `);
+        expect(extractTitleFromHtml(`<h1> &nbsp;a&nbsp; </h1>`)).toBe(`  a  `);
+        expect(extractTitleFromHtml(`<h1> &nbsp; a &nbsp; </h1>`)).toBe(`   a   `);
+    });
+
+    it('should return the first heading from an real multi-whitespace HTML string', () => {
+        expect(extractTitleFromHtml(`<h1>a&nbsp;a</h1>`)).toBe(`a a`);
+        expect(extractTitleFromHtml(`<h1>a&nbsp; a</h1>`)).toBe(`a  a`);
+        expect(extractTitleFromHtml(`<h1>a &nbsp; a</h1>`)).toBe(`a   a`);
+        expect(extractTitleFromHtml(`<h1>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</h1>`)).toBe(`a     a`);
+    });
+
+    it('should return the first heading from an real special-characters HTML string', () => {
+        expect(extractTitleFromHtml(`<h1>&quot;</h1>`)).toBe(`"`);
+    });
+
     it('should return the first heading from an real HTML string', () => {
         expect(
             extractTitleFromHtml(
@@ -80,6 +98,60 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                 `),
             ),
         ).toBe('Ocean vibes');
+
+        expect(
+            extractTitleFromHtml(
+                spaceTrim(`
+
+                    <!--
+                    Write me content for website with wallpaper which alt text is:
+                    
+                    "A black and white outline of a satellite, with intricate details that showcase its technical components and purpose."
+                    
+                    The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+                    
+                    - Use markdown format 
+                    - Start with the heading
+                    - The content should look like a real website 
+                    - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
+                    - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
+                    - You can use formatting like bold or _italic_
+                    - You can include UTF-8 emojis
+                    - Links should be only #hash anchors (and you can refer to the document itself)
+                    - Do not include images
+                    -->
+                    <div style="font-family: 'Montserrat', sans-serif;">
+                    <h1 id="cosmicsatellitetrip">Cosmic Sat=ellite Trip</h1>
+                    <p>Welcome to our website dedicated to exploring the vast universe and the technology that makes it possible. Our homepage features a stunning black and white outline of a satellite, with intricate details that showcase its technical components and purpose. </p>
+                    <h2 id="ourmission">Our Mission</h2>
+                    <p>Our mission is to bring the wonders of space exploration to everyone. We believe that everyone should have access to the latest discoveries and advancements in space technology. Through our website, we aim to provide informative and engaging content that will inspire people to learn more about the cosmos.</p>
+                    <h2 id="userstories">User Stories</h2>
+                    <p>We've had the pleasure of hearing from many of our users who have shared their stories with us. Here are just a few:</p>
+                    <blockquote>
+                    <p>"I've always been fascinated by space, but I never really understood how satellites worked until I found this website. The detailed illustrations and explanations make it easy for anyone to understand." - Sarah, 27</p>
+                    <p>"As an aspiring astronaut, I'm always looking for new ways to learn about space. This website has been an invaluable resource for me. I've learned so much about satellites and other space technologies that will help me in my future career." - John, 18</p>
+                    </blockquote>
+                    <h2 id="ourcontent">Our Content</h2>
+                    <p>Our website features a variety of content that covers everything from the history of space exploration to the latest advancements in technology. Here are just a few examples:</p>
+                    <ul>
+                    <li><p><strong>Articles</strong>: Our team of writers produces articles that cover a wide range of topics related to space exploration. From the latest news to in-depth explorations of specific topics, our articles are designed to be informative and engaging.</p></li>
+                    <li><p><strong>Videos</strong>: We also produce videos that cover a variety of topics related to space exploration. Our videos are designed to be both educational and entertaining, making them perfect for people of all ages.</p></li>
+                    <li><p><strong>Infographics</strong>: For those who prefer visual aids, we also produce infographics that break down complex topics into easy-to-understand graphics.</p></li>
+                    </ul>
+                    <h2 id="references">References</h2>
+                    <p>We take pride in providing accurate and up-to-date information on our website. Here are some of the references we use:</p>
+                    <ul>
+                    <li>NASA: https://www.nasa.gov/</li>
+                    <li>European Space Agency: https://www.esa.int/</li>
+                    <li>Space.com: https://www.space.com/</li>
+                    </ul>
+                    <h2 id="contactus">Contact Us</h2>
+                    <p>If you have any questions or comments about our website, please don't hesitate to contact us. You can reach us at <a href="mailto:contact@exploringthecosmos.com">contact@exploringthecosmos.com</a>.</p>
+                    <p>Thank you for visiting Exploring the Cosmos!</p></div>
+        
+                `),
+            ),
+        ).toBe('Cosmic Sat=ellite Trip');
     });
 
     it('should return the first heading from an real multiline HTML string', () => {
@@ -132,23 +204,5 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                     rt Nights
                 `),
         );
-    });
-
-    it('should return non-trimmed result', () => {
-        expect(extractTitleFromHtml(`<h1> a </h1>`)).toBe(` a `);
-        expect(extractTitleFromHtml(`<h1>&nbsp;a&nbsp;</h1>`)).toBe(` a `);
-        expect(extractTitleFromHtml(`<h1> &nbsp;a&nbsp; </h1>`)).toBe(`  a  `);
-        expect(extractTitleFromHtml(`<h1> &nbsp; a &nbsp; </h1>`)).toBe(`   a   `);
-    });
-
-    it('should return the first heading from an real multi-whitespace HTML string', () => {
-        expect(extractTitleFromHtml(`<h1>a&nbsp;a</h1>`)).toBe(`a a`);
-        expect(extractTitleFromHtml(`<h1>a&nbsp; a</h1>`)).toBe(`a  a`);
-        expect(extractTitleFromHtml(`<h1>a &nbsp; a</h1>`)).toBe(`a   a`);
-        expect(extractTitleFromHtml(`<h1>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</h1>`)).toBe(`a     a`);
-    });
-
-    it('should return the first heading from an real special-characters HTML string', () => {
-        expect(extractTitleFromHtml(`<h1>&quot;</h1>`)).toBe(`"`);
     });
 });

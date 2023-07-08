@@ -18,6 +18,41 @@ describe('detectContentFormat', () => {
         expect(detectContentFormat(plainTextContent)).toBe('markdown');
     });
 
+    it('should treat content as html despite it starts with markdown comment ', () => {
+        expect(
+            detectContentFormat(
+                spaceTrim(`
+                    <!--
+                    # Markdown title in comment
+
+                    Content in comment
+                    -->
+
+                    <h1>Real title outside of comment</h1>
+                    <p>Real content</p>
+                `),
+            ),
+        ).toBe('html');
+    });
+
+    it('should treat content as markdown despite it starts with html comment ', () => {
+        expect(
+            detectContentFormat(
+                spaceTrim(`
+                    <!--
+                    <h1>Title in comment</h1>
+                    <p>Content in comment</p>
+                    -->
+
+                    # Real title outside of comment
+
+                    Real content
+                    
+                `),
+            ),
+        ).toBe('markdown');
+    });
+
     it('should return markdown for original pages', () => {
         expect(
             detectContentFormat(

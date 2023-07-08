@@ -8,7 +8,7 @@ import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
 import { ExportContext } from '../pages/_app';
-import { removeMarkdownComments } from '../utils/content/removeMarkdownComments';
+import { removeContentComments } from '../utils/content/removeContentComments';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { string_css, string_html, string_markdown } from '../utils/typeAliases';
@@ -228,7 +228,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     files.unshift({
         type: 'other',
         pathname: 'README.md',
-        content: removeMarkdownComments(wallpaper.content),
+        content: removeContentComments(wallpaper.content),
     });
 
     // Note: Go through all files and detect if there is some filename collision

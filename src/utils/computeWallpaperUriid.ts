@@ -1,4 +1,4 @@
-import { normalizeToKebabCase } from 'n12';
+import { nameToUriParts } from 'n12';
 import seedrandom from 'seedrandom';
 import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { serializeColorStats } from './image/utils/serializeColorStats';
@@ -11,21 +11,26 @@ const URIID_VERSION = '2';
 export function computeWallpaperUriid(
     wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'saveStage' | 'isPublic'>,
 ): string_uriid {
-    const title = extractTitleFromContent(wallpaper.content) || '';
-    const words = normalizeToKebabCase(title.toLocaleLowerCase()).split('-'); /* <- TODO: !!!! normalizeToUriPart */
+    console.log('wallpaper.content', wallpaper.content);
+    // (window as any).copy(wallpaper.content);
 
-    let nameParts: Array<string> = [];
-    for (const word of words) {
-        if (nameParts.length === 0) {
-            nameParts.push(word);
+    const title = extractTitleFromContent(wallpaper.content) || '';
+
+    console.log('title', title);
+    const allUriParts = nameToUriParts(title);
+
+    let uriParts: Array<string> = [];
+    for (const uriPart of allUriParts) {
+        if (uriParts.length === 0) {
+            uriParts.push(uriPart);
         } else {
-            const potentialTotalLength = [...nameParts, word].join('-').length;
+            const potentialTotalLength = [...uriParts, uriPart].join('-').length;
 
             if (potentialTotalLength > 30) {
                 break;
             }
 
-            nameParts.push(word);
+            uriParts.push(uriPart);
         }
     }
 
@@ -57,7 +62,18 @@ export function computeWallpaperUriid(
         randomString(1, 'abcdefghijklmnopqrstuvwxyz') +
         randomString(10, 'abcdefghijklmnopqrstuvwxyz234567');
 
-    return `${nameParts.join('-')}-${wallpaperPart}`;
+    console.info('computeWallpaperUriid', {
+        URIID_VERSION,
+        wallpaper,
+        wallpaperContent: wallpaper.content,
+        title,
+        allUriParts,
+        uriParts,
+        seed,
+        wallpaperPart,
+    });
+
+    return `${uriParts.length === 0 ? '' : uriParts.join('-') + '-'}${wallpaperPart}`;
 }
 
 /**

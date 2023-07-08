@@ -1,8 +1,11 @@
 import { string_html, string_markdown } from '../typeAliases';
+import { removeContentComments } from './removeContentComments';
 
 export function detectContentFormat(content: string_markdown | string_html): 'markdown' | 'html' {
+    content = removeContentComments(content);
+
     // check if the content starts with a valid HTML tag
-    const htmlRegex = /^\s*<([a-z0-9]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)/is;
+    const htmlRegex = /<([a-z0-9]+).*>(.*)<\/\1>/is;
     if (htmlRegex.test(content)) {
         return 'html';
     }
