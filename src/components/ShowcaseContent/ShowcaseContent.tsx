@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
+import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ColorInput } from '../ColorInput/ColorInput';
@@ -15,6 +16,7 @@ export function ShowcaseContent() {
     const router = useRouter();
     const isPreview = router.query.mode === 'preview'; /* <- TODO: !!! Use useMode */
     const [wallpaper, modifyWallpaper] = useWallpaper();
+    const lastSavedWallpaper = useLastSavedWallpaper();
     const { isEditable } = useMode();
 
     return (
@@ -55,9 +57,8 @@ export function ShowcaseContent() {
                                 });
                             }}
                             presetColors={
-                                // TODO: !!!! Take colors from the original palette
                                 // TODO: Optimize, do just once not for every color:
-                                wallpaper.colorStats.palette.map((color) => ({
+                                lastSavedWallpaper.colorStats.palette.map((color) => ({
                                     title: color.note,
                                     color: color.value.toHex(),
                                 }))
