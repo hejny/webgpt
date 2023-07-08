@@ -2,4 +2,4 @@
 
 -   https://pavolhejny.com/
 -   https://www.ainautes.com/
--   https://ai.hejny.org/
+-   https://1-2i.com/

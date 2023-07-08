@@ -39,7 +39,7 @@ export function Menu() {
                     <ul>
                         {/* TODO: !!! Export all pages */}
                         <li>
-                            <a href="https://ai.hejny.org/">Home</a>
+                            <a href="https://1-2i.com/">Home</a>
                         </li>
                         <li className={styles.featured}>
                             <Link
@@ -55,10 +55,10 @@ export function Menu() {
                                 Get the web
                             </Link>
                         </li>
-                     
+
                         {/* TODO: Maybe ?modal=explain link */}
                         <li>
-                            <a href="https://ai.hejny.org/pricing">Pricing</a>
+                            <a href="https://1-2i.com/pricing">Pricing</a>
                         </li>
                         <li>
                             <Link
@@ -69,7 +69,7 @@ export function Menu() {
                             </Link>
                         </li>
                         <li>
-                            <a href="https://ai.hejny.org/contact">Contact</a>
+                            <a href="https://1-2i.com/contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -99,14 +99,14 @@ export function Menu() {
             </div>
             <nav class="Menu_MenuContent__ZcI37">
                 <ul>
-                    <li><a href="https://ai.hejny.org/">Home</a></li>
+                    <li><a href="https://1-2i.com/">Home</a></li>
                     <li class="Menu_featured__6_rbw">
                         <a href="/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=export">Get the web</a>
                     </li>
                     <li><a href="/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=edit">Edit</a></li>
-                    <li><a href="https://ai.hejny.org/pricing">Pricing</a></li>
+                    <li><a href="https://1-2i.com/pricing">Pricing</a></li>
                     <li><a href="/?home=/">Gallery</a></li>
-                    <li><a href="https://ai.hejny.org/contact">Contact</a></li>
+                    <li><a href="https://1-2i.com/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>

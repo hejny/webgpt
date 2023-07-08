@@ -70,7 +70,7 @@ export function ExportModal(props: ExportModalProps) {
                         .insert([
                             {
                                 wallpaperId: wallpaper.id,
-                                url: (publicUrl || new URL(`https://app.ai.hejny.org/${wallpaper.id}}`))
+                                url: (publicUrl || new URL(`https://app.1-2i.com/${wallpaper.id}}`))
                                     .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
                                 ownerEmail: email,
                                 plan,
@@ -202,7 +202,7 @@ export function ExportModal(props: ExportModalProps) {
                         visibleButtons={Infinity}
                     />
 
-                    <Link href="https://ai.hejny.org/pricing" target={'_blank'} className={styles.extra}>
+                    <Link href="https://1-2i.com/pricing" target={'_blank'} className={styles.extra}>
                         More info about plans
                     </Link>
                 </label>
