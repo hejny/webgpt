@@ -14,33 +14,13 @@ export function Menu() {
     const [wallpaper] = useWallpaper();
 
     return (
-        <div className={styles.Menu} data-toggle-element="unit">
-            <div
-                className={styles.MenuBar}
-                data-toggle-element="button"
-                /*
-                !!!! Remove
-                onClick={() => {
-                    // TODO: !!!! To export
-                    document.getElementsByClassName(styles.Menu)[0].classList.toggle(styles.open);
-                }}
-                */
-            >
+        <div className={styles.Menu} data-toggle-element="menu">
+            <div className={styles.MenuBar} data-toggle-element="bar">
                 <div className={classNames(styles.bar, styles.bar1)}></div>
                 <div className={classNames(styles.bar, styles.bar2)}></div>
                 <div className={classNames(styles.bar, styles.bar3)}></div>
             </div>
-            <nav
-                className={styles.MenuContent}
-                /*
-                !!!! Remove
-                onClick={() => {
-                    document.getElementsByClassName(styles.Menu)[0].classList.remove(styles.open);
-
-                    // !!!! Close on click outside + work with plain exported javascript
-                }}
-                */
-            >
+            <nav className={styles.MenuContent}>
                 <ul>
                     {/* TODO: !!! Export all pages */}
                     <li>
@@ -93,44 +73,45 @@ export function Menu() {
                 <div className={styles.MenuBg}></div>
             </div>
 
+            <div style={{ display: 'none' }}>TODO: !!!! After this must be inlined script in the export </div>
             <Script id="toggle-control">
                 {
                     // Note: Using inline script to pass the menu control to the exported page
                     spaceTrim(`
                         
-                        for (const unitElement of Array.from(window.document.querySelectorAll('[data-toggle-element="unit"]'))) {
-                            if (unitElement.getAttribute('data-toggle-activated')) {
+                        for (const menuElement of Array.from(window.document.querySelectorAll('[data-toggle-element="menu"]'))) {
+                            if (menuElement.getAttribute('data-toggle-activated')) {
                                 continue;
                             }
-                            unitElement.setAttribute('data-toggle-activated', 'true');
+                            menuElement.setAttribute('data-toggle-activated', 'true');
                 
-                            const buttonElement = unitElement.querySelector('[data-toggle-element="button"]');
+                            const barElement = menuElement.querySelector('[data-toggle-element="bar"]');
                 
-                            if (!buttonElement) {
+                            if (!barElement) {
                                 throw new Error(
-                                    'Toggle error: element[data-toggle-element="toggle"] must have child element[data-toggle-element="button"]',
+                                    'Toggle error: element[data-toggle-element="toggle"] must have child element[data-toggle-element="bar"]',
                                 );
                             }
                 
-                            buttonElement.addEventListener('click', () => {
-                                let state = unitElement.getAttribute('data-toggle-state');
+                            barElement.addEventListener('click', () => {
+                                let state = menuElement.getAttribute('data-toggle-state');
                                 if (!state) {
                                     state = 'closed';
                                 }
                 
                                 if (state === 'closed') {
-                                    unitElement.setAttribute('data-toggle-state', 'open');
+                                    menuElement.setAttribute('data-toggle-state', 'open');
                                 } else {
-                                    unitElement.setAttribute('data-toggle-state', 'closed');
+                                    menuElement.setAttribute('data-toggle-state', 'closed');
                                 }
                             });
                 
                             window.addEventListener('click', (event) => {
-                                if (unitElement.contains(event.target)) {
+                                if (menuElement.contains(event.target)) {
                                     return;
                                 }
                 
-                                unitElement.setAttribute('data-toggle-state', 'closed');
+                                menuElement.setAttribute('data-toggle-state', 'closed');
                             });
                         }
 
@@ -143,55 +124,4 @@ export function Menu() {
 
 /**
  * TODO: !!!! [🧠] Structure of page, menus,...
- * TODO: !!!! Menu in export should look like <script>:
- *
- *           - Comments
- *           - Inlined Script
- *           (Maybe unprefix)
-
-
-        <!-------------[ Menu: ]--------------->
-
-        <div class="Menu_Menu__HK_sB">
-            <div class="Menu_MenuBar__BXd90">
-                <div class="Menu_bar__kOpdk Menu_bar1__FFq3D"></div>
-                <div class="Menu_bar__kOpdk Menu_bar2__dlqrb"></div>
-                <div class="Menu_bar__kOpdk Menu_bar3__qDuvi"></div>
-            </div>
-            <nav class="Menu_MenuContent__ZcI37">
-                <ul>
-                    <li><a href="https://1-2i.com/">Home</a></li>
-                    <li class="Menu_featured__6_rbw">
-                        <a href="/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=export">Get the web</a>
-                    </li>
-                    <li><a href="/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=edit">Edit</a></li>
-                    <li><a href="https://1-2i.com/pricing">Pricing</a></li>
-                    <li><a href="/?home=/">Gallery</a></li>
-                    <li><a href="https://1-2i.com/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="Menu_MenuBgWrapper__yceuG"><div class="Menu_MenuBg__MZGx2"></div></div>
-        <script>
-            document.getElementsByClassName('Menu_MenuBar__BXd90')[0].addEventListener('click', function () {
-                document.getElementsByClassName('Menu_MenuBar__BXd90')[0].classList.toggle('Menu_open__HErSU');
-                document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].classList.toggle('Menu_open__HErSU');
-                document.getElementsByClassName('Menu_MenuBg__MZGx2')[0].classList.toggle('Menu_open__HErSU');
-            });
-
-            document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].addEventListener('click', function () {
-                document.getElementsByClassName('Menu_MenuBar__BXd90')[0].classList.remove('Menu_open__HErSU');
-                document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].classList.remove('Menu_open__HErSU');
-                document.getElementsByClassName('Menu_MenuBg__MZGx2')[0].classList.remove('Menu_open__HErSU');
-            });
-        </script>
-        <!-------------[ /Menu ]--------------->
-
-
-
-
-
-
-
-
  */
