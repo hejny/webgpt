@@ -12,86 +12,78 @@ export function Menu() {
     const [wallpaper] = useWallpaper();
 
     return (
-        <>
-            {/* [🍔] */}
+        <div className={styles.Menu}>
+            <div
+                className={styles.MenuBar}
+                onClick={() => {
+                    // TODO: !!!! To export
+                    document.getElementsByClassName(styles.Menu)[0].classList.toggle(styles.open);
+                }}
+            >
+                <div className={classNames(styles.bar, styles.bar1)}></div>
+                <div className={classNames(styles.bar, styles.bar2)}></div>
+                <div className={classNames(styles.bar, styles.bar3)}></div>
+            </div>
+            <nav
+                className={styles.MenuContent}
+                onClick={() => {
+                    document.getElementsByClassName(styles.Menu)[0].classList.remove(styles.open);
 
-            <div className={styles.Menu}>
-                <div
-                    className={styles.MenuBar}
-                    onClick={() => {
-                        // TODO: !!! To export
+                    // !!!! Close on click outside + work with plain exported javascript
+                }}
+            >
+                <ul>
+                    {/* TODO: !!! Export all pages */}
+                    <li>
+                        <a href="https://1-2i.com/">Home</a>
+                    </li>
+                    <li className={styles.featured}>
+                        <Link
+                            href={{
+                                pathname: '/[wallpaper]',
+                                query: {
+                                    wallpaper: router.query.wallpaper,
+                                    modal: 'export',
+                                },
+                            }}
+                            /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                        >
+                            Get the web
+                        </Link>
+                    </li>
 
-                        document.getElementsByClassName(styles.MenuBar)[0].classList.toggle(styles.open);
-                        document.getElementsByClassName(styles.MenuContent)[0].classList.toggle(styles.open);
-                        document.getElementsByClassName(styles.MenuBg)[0].classList.toggle(styles.open);
-                    }}
-                >
-                    <div className={classNames(styles.bar, styles.bar1)}></div>
-                    <div className={classNames(styles.bar, styles.bar2)}></div>
-                    <div className={classNames(styles.bar, styles.bar3)}></div>
-                </div>
-                <nav
-                    className={styles.MenuContent}
-                    onClick={() => {
-                        document.getElementsByClassName(styles.MenuBar)[0].classList.remove(styles.open);
-                        document.getElementsByClassName(styles.MenuContent)[0].classList.remove(styles.open);
-                        document.getElementsByClassName(styles.MenuBg)[0].classList.remove(styles.open);
-
-                        // !!!! Close on click outside + work with plain exported javascript
-                    }}
-                >
-                    <ul>
-                        {/* TODO: !!! Export all pages */}
+                    {/* TODO: Maybe ?modal=explain link */}
+                    <li>
+                        <a href="https://1-2i.com/pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <Link
+                            href={`/?home=${encodeURIComponent(router.asPath)}/`}
+                            prefetch={false /* <- Note: Because it is rare option */}
+                        >
+                            Gallery
+                        </Link>
+                    </li>
+                    {wallpaper.parent && (
                         <li>
-                            <a href="https://1-2i.com/">Home</a>
-                        </li>
-                        <li className={styles.featured}>
                             <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        modal: 'export',
-                                    },
-                                }}
-                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                            >
-                                Get the web
-                            </Link>
-                        </li>
-
-                        {/* TODO: Maybe ?modal=explain link */}
-                        <li>
-                            <a href="https://1-2i.com/pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <Link
-                                href={`/?home=${encodeURIComponent(router.asPath)}/`}
+                                href={`/${wallpaper.parent}`}
                                 prefetch={false /* <- Note: Because it is rare option */}
                             >
-                                Gallery
+                                Model page
                             </Link>
                         </li>
-                        {wallpaper.parent && (
-                            <li>
-                                <Link
-                                    href={`/${wallpaper.parent}`}
-                                    prefetch={false /* <- Note: Because it is rare option */}
-                                >
-                                    Model page
-                                </Link>
-                            </li>
-                        )}
-                        <li>
-                            <a href="https://1-2i.com/contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                    )}
+                    <li>
+                        <a href="https://1-2i.com/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
             <div className={styles.MenuBgWrapper}>
+                {/* <- Note: MenuBg is wrapped in MenuBgWrapper to hide its leak over the right fold of the page */}
                 <div className={styles.MenuBg}></div>
             </div>
-        </>
+        </div>
     );
 }
 
