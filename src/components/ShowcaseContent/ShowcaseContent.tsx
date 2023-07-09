@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
+import { classNames } from '../../utils/classNames';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -41,32 +42,34 @@ export function ShowcaseContent() {
                 <FooterSection />
             </footer>
 
-            {isEditable && (
-                <div className={styles.colorEditing}>
-                    {wallpaper.colorStats.palette.map((color, i) => (
-                        // TODO: !!! Each picker should be placed on top of the color it represents
-                        <ColorInput
-                            key={i}
-                            className={styles.floatingColorPicker}
-                            defaultValue={color.value}
-                            onChange={(newColor) => {
-                                modifyWallpaper((modifiedWallpaper) => {
-                                    modifiedWallpaper.colorStats.palette[i].value = newColor;
-                                    modifiedWallpaper.saveStage = 'EDITED';
-                                    return modifiedWallpaper;
-                                });
-                            }}
-                            presetColors={
-                                // TODO: Optimize, do just once not for every color:
-                                lastSavedWallpaper.colorStats.palette.map((color) => ({
-                                    title: color.note,
-                                    color: color.value.toHex(),
-                                }))
-                            }
-                        />
-                    ))}
-                </div>
-            )}
+            {isEditable &&
+                wallpaper.colorStats.palette.map((color, i) => (
+                    // TODO: !!!! Each picker should be placed on top of the color it represents
+                    // TODO: !!!! [🧠] Semantic color palette - plan where each color should be used (and do not duplicate bg and ui items)
+                    <div key={i} className={classNames(styles.colorEditing, styles[`palette${i}`])}>
+                        {wallpaper.colorStats.palette.map((color, j) => (
+                            <div key={j} className={classNames(styles.colorPickerWrapper)}>
+                                <ColorInput
+                                    defaultValue={color.value}
+                                    onChange={(newColor) => {
+                                        modifyWallpaper((modifiedWallpaper) => {
+                                            modifiedWallpaper.colorStats.palette[j].value = newColor;
+                                            modifiedWallpaper.saveStage = 'EDITED';
+                                            return modifiedWallpaper;
+                                        });
+                                    }}
+                                    presetColors={
+                                        // TODO: Optimize, do just once not for every color:
+                                        lastSavedWallpaper.colorStats.palette.map((color) => ({
+                                            title: color.note,
+                                            color: color.value.toHex(),
+                                        }))
+                                    }
+                                />
+                            </div>
+                        ))}
+                    </div>
+                ))}
         </div>
     );
 }
