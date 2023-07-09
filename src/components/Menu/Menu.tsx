@@ -36,6 +36,8 @@ export function Menu() {
                         document.getElementsByClassName(styles.MenuBar)[0].classList.remove(styles.open);
                         document.getElementsByClassName(styles.MenuContent)[0].classList.remove(styles.open);
                         document.getElementsByClassName(styles.MenuBg)[0].classList.remove(styles.open);
+
+                        // !!!! Close on click outside
                     }}
                 >
                     <ul>
