@@ -24,20 +24,24 @@ export function ColorInput(props: ColorInputProps) {
     const [color, setColor] = useState(take(defaultValue));
     const [isOpen, setOpen] = useState(false);
 
+    // !!!! Close on click outside
+
     return (
-        <div
-            // TODO: ACRY aria
-            className={classNames(className, styles.colorPreview)}
-            style={{
-                backgroundColor: color.toHex(),
-                border: `2px solid ${color.then(textColor).toHex()}`,
-                outline: `2px solid ${color.toHex()}`,
-            }}
-            onClick={() => setOpen(!isOpen)}
-        >
+        <>
+            <div
+                // TODO: ACRY aria
+                className={classNames(className, styles.colorPreview)}
+                style={{
+                    backgroundColor: color.toHex(),
+                    border: `2px solid ${color.then(textColor).toHex()}`,
+                    outline: `2px solid ${color.toHex()}`,
+                }}
+                onClick={() => setOpen(!isOpen)}
+            ></div>
             {isOpen && (
                 <SketchPicker
                     {...{ color, presetColors }}
+                    className={styles.colorPicker}
                     onChange={({ rgb: { r, g, b } }) => {
                         setColor(Color.fromValues(r, g, b));
                     }}
@@ -47,6 +51,6 @@ export function ColorInput(props: ColorInputProps) {
                     disableAlpha={true}
                 />
             )}
-        </div>
+        </>
     );
 }

@@ -1,4 +1,5 @@
 .colorPreview {
+    z-index: 1;
     box-sizing: border-box;
     width: 35px;
     height: 35px;
@@ -6,4 +7,12 @@
     transform: translate(-50%, -50%);
 
     cursor: pointer;
+}
+
+.colorPicker {
+    z-index: 2;
+    position: absolute;
+
+    margin-left: 5px;
+    margin-top: -50px;
 }
