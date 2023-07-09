@@ -137,28 +137,30 @@ nav.MenuContent li:hover {
     transform: translate(50%, -50%);
 
     box-sizing: content-box;
+
+    pointer-events: all;
 }
 
-.Menu.open .MenuBg {
+.Menu:is([data-toggle-state='open']) .MenuBg {
     width: 700px;
     height: 700px;
 }
 
-.Menu.open .MenuBar,
-.Menu.open .MenuContent,
-.Menu.open .MenuBg {
+.Menu:is([data-toggle-state='open']) .MenuBar,
+.Menu:is([data-toggle-state='open']) .MenuContent,
+.Menu:is([data-toggle-state='open']) .MenuBg {
     display: block !important;
 }
 
-.Menu.open .MenuBar .bar1 {
+.Menu:is([data-toggle-state='open']) .MenuBar .bar1 {
     transform: translateY(4px) rotateZ(-45deg);
 }
 
-.Menu.open .MenuBar .bar2 {
+.Menu:is([data-toggle-state='open']) .MenuBar .bar2 {
     /* !!! Better */
     opacity: 0;
 }
 
-.Menu.open .MenuBar .bar3 {
+.Menu:is([data-toggle-state='open']) .MenuBar .bar3 {
     transform: translateY(-6px) rotateZ(45deg);
 }

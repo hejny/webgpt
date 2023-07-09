@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
+import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './Menu.module.css';
@@ -12,13 +14,17 @@ export function Menu() {
     const [wallpaper] = useWallpaper();
 
     return (
-        <div className={styles.Menu}>
+        <div className={styles.Menu} data-toggle-element="unit">
             <div
                 className={styles.MenuBar}
+                data-toggle-element="button"
+                /*
+                !!!! Remove
                 onClick={() => {
                     // TODO: !!!! To export
                     document.getElementsByClassName(styles.Menu)[0].classList.toggle(styles.open);
                 }}
+                */
             >
                 <div className={classNames(styles.bar, styles.bar1)}></div>
                 <div className={classNames(styles.bar, styles.bar2)}></div>
@@ -26,11 +32,14 @@ export function Menu() {
             </div>
             <nav
                 className={styles.MenuContent}
+                /*
+                !!!! Remove
                 onClick={() => {
                     document.getElementsByClassName(styles.Menu)[0].classList.remove(styles.open);
 
                     // !!!! Close on click outside + work with plain exported javascript
                 }}
+                */
             >
                 <ul>
                     {/* TODO: !!! Export all pages */}
@@ -83,13 +92,58 @@ export function Menu() {
                 {/* <- Note: MenuBg is wrapped in MenuBgWrapper to hide its leak over the right fold of the page */}
                 <div className={styles.MenuBg}></div>
             </div>
+
+            <Script id="toggle-control">
+                {
+                    // Note: Using inline script to pass the menu control to the exported page
+                    spaceTrim(`
+                        
+                        for (const unitElement of Array.from(window.document.querySelectorAll('[data-toggle-element="unit"]'))) {
+                            if (unitElement.getAttribute('data-toggle-activated')) {
+                                continue;
+                            }
+                            unitElement.setAttribute('data-toggle-activated', 'true');
+                
+                            const buttonElement = unitElement.querySelector('[data-toggle-element="button"]');
+                
+                            if (!buttonElement) {
+                                throw new Error(
+                                    'Toggle error: element[data-toggle-element="toggle"] must have child element[data-toggle-element="button"]',
+                                );
+                            }
+                
+                            buttonElement.addEventListener('click', () => {
+                                let state = unitElement.getAttribute('data-toggle-state');
+                                if (!state) {
+                                    state = 'closed';
+                                }
+                
+                                if (state === 'closed') {
+                                    unitElement.setAttribute('data-toggle-state', 'open');
+                                } else {
+                                    unitElement.setAttribute('data-toggle-state', 'closed');
+                                }
+                            });
+                
+                            window.addEventListener('click', (event) => {
+                                if (unitElement.contains(event.target)) {
+                                    return;
+                                }
+                
+                                unitElement.setAttribute('data-toggle-state', 'closed');
+                            });
+                        }
+
+                    `)
+                }
+            </Script>
         </div>
     );
 }
 
 /**
  * TODO: !!!! [🧠] Structure of page, menus,...
- * TODO: !!! Menu in export should look like <script>:
+ * TODO: !!!! Menu in export should look like <script>:
  *
  *           - Comments
  *           - Inlined Script
