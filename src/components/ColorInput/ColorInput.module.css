@@ -1,5 +1,7 @@
 .colorPreview {
-    z-index: 1;
+    z-index: 3;
+    position: absolute;
+
     box-sizing: border-box;
     width: 35px;
     height: 35px;
@@ -10,9 +12,11 @@
 }
 
 .colorPicker {
+    /*/
+    outline: 1px dotted #00ff00;
+    /**/
+
     z-index: 2;
     position: absolute;
 
-    margin-left: 5px;
-    margin-top: -50px;
 }

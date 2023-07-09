@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import { SketchPicker } from 'react-color';
-import { PresetColor } from 'react-color/lib/components/sketch/Sketch';
+import { useEffect, useRef, useState } from 'react';
+import SketchPicker, { PresetColor } from 'react-color/lib/components/sketch/Sketch';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
@@ -24,32 +23,35 @@ export function ColorInput(props: ColorInputProps) {
     const [color, setColor] = useState(take(defaultValue));
     const [isOpen, setOpen] = useState(false);
 
-    /* 
-    useEffect(() => {
-        let handler = (e)=>{
-          if(!menuRef.current.contains(e.target)){
-            setOpen(false);
-            console.log(menuRef.current);
-          }      
-        };
-    
-        document.addEventListener("mousedown", handler);
-        
-    
-        return() =>{
-          document.removeEventListener("mousedown", handler);
-        }
-    
-      });
-      */
+    const colorPreviewRef = useRef<HTMLDivElement | null>(null);
+    const colorPickerRef = useRef<HTMLDivElement | null>(null);
 
-    // !!!! Close on click outside
+    useEffect(() => {
+        const clickHandler = (event: Event) => {
+            if (!colorPreviewRef.current || !colorPickerRef.current) {
+                return;
+            }
+            if (
+                colorPreviewRef.current.contains(event.target as Node) ||
+                colorPickerRef.current.contains(event.target as Node)
+            ) {
+                return;
+            }
+
+            setOpen(false);
+        };
+        window.document.addEventListener('click', clickHandler);
+        return () => {
+            window.document.removeEventListener('click', clickHandler);
+        };
+    });
 
     return (
         <>
             <div
                 // TODO: ACRY aria
                 className={classNames(className, styles.colorPreview)}
+                ref={colorPreviewRef}
                 style={{
                     backgroundColor: color.toHex(),
                     border: `2px solid ${color.then(textColor).toHex()}`,
@@ -57,19 +59,21 @@ export function ColorInput(props: ColorInputProps) {
                 }}
                 onClick={() => setOpen(!isOpen)}
             ></div>
-            {isOpen && (
-                <SketchPicker
-                    {...{ color, presetColors }}
-                    className={styles.colorPicker}
-                    onChange={({ rgb: { r, g, b } }) => {
-                        setColor(Color.fromValues(r, g, b));
-                    }}
-                    onChangeComplete={({ rgb: { r, g, b } }) => {
-                        onChange(Color.fromValues(r, g, b));
-                    }}
-                    disableAlpha={true}
-                />
-            )}
+
+            <div className={styles.colorPicker} ref={colorPickerRef}>
+                {isOpen && (
+                    <SketchPicker
+                        {...{ color, presetColors }}
+                        onChange={({ rgb: { r, g, b } }) => {
+                            setColor(Color.fromValues(r, g, b));
+                        }}
+                        onChangeComplete={({ rgb: { r, g, b } }) => {
+                            onChange(Color.fromValues(r, g, b));
+                        }}
+                        disableAlpha={true}
+                    />
+                )}
+            </div>
         </>
     );
 }
