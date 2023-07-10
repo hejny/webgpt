@@ -16,10 +16,10 @@ export function InlineScript(props: InlineScriptProps) {
     const { isExported } = useContext(ExportContext);
 
     if (!isExported) {
-        // Note: !!!!
+        // Note: The script is on dynamic react page managed by nextjs
         return <Script {...{ id, children }} />;
     } else {
-        // Note: !!!!
+        // Note: The script is on static html page placed inlined
         return <script>{children}</script>;
     }
 }

@@ -21,7 +21,3 @@ export function ExportComment(props: ExportCommentProps) {
         <div data-comment={comment} />
     );
 }
-
-/**
- * TODO: !!!! Unwrap in export and tag
- */
