@@ -154,7 +154,7 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         ).toBe('Cosmic Sat=ellite Trip');
     });
 
-    it('should return the first heading from an real multiline HTML string', () => {
+    it('should return the multiple headings from an real multiline HTML string', () => {
         expect(
             extractTitleFromHtml(
                 spaceTrim(`
@@ -202,6 +202,25 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                     e
                     se
                     rt Nights
+                `),
+        );
+    });
+
+    it('should return the multiple lower lever headings HTML string', () => {
+        expect(
+            extractTitleFromHtml(
+                spaceTrim(`
+                    <div>
+                        <h3>a</h3>
+                        <h2>b</h2>
+                        <h2>c</h2>
+                    </div>
+                `),
+            ),
+        ).toBe(
+            spaceTrim(`
+                    b
+                    c
                 `),
         );
     });
