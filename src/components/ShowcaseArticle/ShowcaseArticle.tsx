@@ -2,6 +2,7 @@ import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
+import { CommentedBlock } from '../CommentedBlock/CommentedBlock';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
 import { HtmlContent } from '../MarkdownContent/HtmlContent';
@@ -39,16 +40,18 @@ export function ShowcaseArticleSection() {
 
             <Fonts fonts={extractFontsFromContent(content)} />
 
-            {contentFormat === 'html' && <HtmlContent {...{ content, isEditable, onHtmlChange }} />}
-            {contentFormat === 'markdown' && (
-                <MarkdownContent
-                    isusingFonts
-                    isUsingOpenmoji={
-                        false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
-                    }
-                    {...{ content, isEditable, onHtmlChange }}
-                />
-            )}
+            <CommentedBlock name="Content">
+                {contentFormat === 'html' && <HtmlContent {...{ content, isEditable, onHtmlChange }} />}
+                {contentFormat === 'markdown' && (
+                    <MarkdownContent
+                        isusingFonts
+                        isUsingOpenmoji={
+                            false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
+                        }
+                        {...{ content, isEditable, onHtmlChange }}
+                    />
+                )}
+            </CommentedBlock>
         </Section>
     );
 }
