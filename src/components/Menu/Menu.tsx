@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { CommentedBlock } from '../CommentedBlock/CommentedBlock';
+import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { InlineScript } from '../InlineScript/InlineScript';
 import styles from './Menu.module.css';
 
@@ -15,7 +15,7 @@ export function Menu() {
     const [wallpaper] = useWallpaper();
 
     return (
-        <CommentedBlock name="Menu">
+        <ExportCommentedBlock name="Menu">
             <div className={styles.Menu} data-toggle-element="menu">
                 <div className={styles.MenuBar} data-toggle-element="bar">
                     <div className={classNames(styles.bar, styles.bar1)}></div>
@@ -75,7 +75,6 @@ export function Menu() {
                     <div className={styles.MenuBg}></div>
                 </div>
             </div>
-            <div style={{ display: 'none' }}>TODO: !!!! After this must be inlined script in the export </div>
             <InlineScript id="toggle-control">
                 {
                     // Note: Using inline script to pass the menu control to the exported page
@@ -120,7 +119,7 @@ export function Menu() {
                       `)
                 }
             </InlineScript>
-        </CommentedBlock>
+        </ExportCommentedBlock>
     );
 }
 

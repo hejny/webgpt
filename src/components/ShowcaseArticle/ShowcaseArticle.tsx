@@ -2,7 +2,7 @@ import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
-import { CommentedBlock } from '../CommentedBlock/CommentedBlock';
+import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
 import { HtmlContent } from '../MarkdownContent/HtmlContent';
@@ -40,7 +40,7 @@ export function ShowcaseArticleSection() {
 
             <Fonts fonts={extractFontsFromContent(content)} />
 
-            <CommentedBlock name="Content">
+            <ExportCommentedBlock name="Content">
                 {contentFormat === 'html' && <HtmlContent {...{ content, isEditable, onHtmlChange }} />}
                 {contentFormat === 'markdown' && (
                     <MarkdownContent
@@ -51,7 +51,7 @@ export function ShowcaseArticleSection() {
                         {...{ content, isEditable, onHtmlChange }}
                     />
                 )}
-            </CommentedBlock>
+            </ExportCommentedBlock>
         </Section>
     );
 }

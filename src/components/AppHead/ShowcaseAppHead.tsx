@@ -9,6 +9,8 @@ import { extractFirstParagraphFromMarkdown } from '../../utils/content/extractFi
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { ExportComment } from '../ExportComment/ExportComment';
+import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 
 interface ShowcaseAppHeadProps {
     children?: ReactNode;
@@ -98,21 +100,26 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <head>
                 {metadataJsx}
                 {children}
-                <dd // <- Note: [🎡] Hack !!!@@@
-                    dangerouslySetInnerHTML={{
-                        __html: spaceTrim(
-                            (block) => `
-                                <!--------[ Registration: ]-------->
-                                <!-- Note: [🔌] This is a !!!@@@    -->
-                                <!--     | Or register at !!!@@@ -->
-                                <script src="${
-                                    NEXT_PUBLIC_URL.href /* <- Note Here should be really used the global NEXT_PUBLIC_URL NOT publicUrl */
-                                }api/register-script?wallpaperId=${wallpaper.id}" async defer></script>
-                                <!--------[ /Registration ]-------->
-                            `,
-                        ),
-                    }}
-                />
+                <ExportCommentedBlock name="Registration">
+                    <ExportComment
+                        comment={spaceTrim(`
+                            Note: [🔌] This is a !!!@@@
+                                | Or register at !!!@@@
+                                | Bla bla bla
+                                | For more info see @@@
+
+
+                        `)}
+                    />
+
+                    <script
+                        src={`${
+                            NEXT_PUBLIC_URL.href /* <- Note Here should be really used the global NEXT_PUBLIC_URL NOT publicUrl */
+                        }api/register-script?wallpaperId=${wallpaper.id}`}
+                        async
+                        defer
+                    ></script>
+                </ExportCommentedBlock>
             </head>
         );
     }

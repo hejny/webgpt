@@ -207,15 +207,39 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                             </body>
                         </WallpapersContext.Provider>
                     </ShuffleSeedContext.Provider>
+                    ./
                 </ExportContext.Provider>
             </RouterContext.Provider>
         </html>,
     );
 
-    // Note: [🎡]
-    html = html.split('<dd>').join('').split('</dd>').join('');
-
+    // Note: Post-processing HTML after React render
+    html = html.split(`async=""`).join(`async`);
+    html = html.split(`defer=""`).join(`defer`);
     html = `<!DOCTYPE html>\n` + html;
+
+    // Note: [🎡] Unwrapping here <ExportComment comment="..."/> components
+    html = prettifyHtml(html) /* <- [1] TODO: Do not do this twice */;
+    for (const match of Array.from(
+        html.matchAll(/^(?<indentation>\s*)<div(?:\s+)data-comment="(?<comment>.*?)"(?:\s*)><\/div>/gims),
+    )) {
+        console.log('!!!!!!', match);
+        const { indentation, comment } = match.groups!;
+
+        if (comment.split('\n').length <= 1) {
+            // Single-line comment
+            html = html.split(match[0]).join(`<!--${comment}-->`);
+        } else {
+            // Multi-line comment
+            const indentedComment = [
+                ...comment
+                    .split('\n')
+                    .map((line, i) => ' ' + (i === 0 ? line : indentation + ' '.repeat('<!--'.length) + line)),
+                indentation,
+            ].join('\n');
+            html = html.split(match[0]).join(`<!--${indentedComment}-->`);
+        }
+    }
 
     files.unshift({
         type: 'html',
@@ -249,7 +273,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         file.content = removeTodoComments(file.content);
 
         if (file.type === 'html') {
-            file.content = prettifyHtml(file.content);
+            file.content = prettifyHtml(file.content) /* <- [1] TODO: Do not do this twice */;
         } else if (file.type === 'css') {
             file.content = prettifyCss(file.content);
         } else if (file.type === 'javascript') {
