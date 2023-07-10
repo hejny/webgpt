@@ -213,6 +213,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         </html>,
     );
 
+    // !!!! Fix here escaping
+
     // Note: Post-processing HTML after React render
     html = html.split(`async=""`).join(`async`);
     html = html.split(`defer=""`).join(`defer`);
@@ -223,7 +225,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     for (const match of Array.from(
         html.matchAll(/^(?<indentation>\s*)<div(?:\s+)data-comment="(?<comment>.*?)"(?:\s*)><\/div>/gims),
     )) {
-        console.log('!!!!!!', match);
         const { indentation, comment } = match.groups!;
 
         if (comment.split('\n').length <= 1) {
