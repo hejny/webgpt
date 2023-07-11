@@ -1,15 +1,3 @@
-.colorPreview {
-    z-index: 3;
-    position: absolute;
-
-    box-sizing: border-box;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-
-    cursor: pointer;
-}
 
 .colorPicker {
     /*/

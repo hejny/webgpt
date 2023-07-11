@@ -1,0 +1,44 @@
+.section {
+    /*/
+    outline: 1px dotted rgb(9, 187, 9);
+    /**/
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(var(--palette-0-triplet), 0.5);
+    width: 100%;
+}
+
+.palette {
+    /*/
+    outline: 1px dotted rgb(181, 9, 187);
+    /**/
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 170px;
+}
+
+.editor {
+    /*/
+    outline: 1px dotted rgb(9, 80, 187);
+    /**/
+
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 600px) {
+    .palette {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*
+.paletteItem:nth-child(2) {
+    background-color: #00000023;
+}
+*/
+
+.paletteItem {
+    padding: 5px;
+}

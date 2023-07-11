@@ -116,7 +116,7 @@ dialog.Modal {
 }
 
 @media (max-width: 600px) {
-    /* Note: On mobile EditModal fills the whole screen */
+    /* Note: On mobile ColorsModal fills the whole screen */
     dialog.Modal {
         /*/
         outline: 1px solid red;

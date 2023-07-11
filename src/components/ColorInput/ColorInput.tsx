@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import SketchPicker, { PresetColor } from 'react-color/lib/components/sketch/Sketch';
-import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
-import { textColor } from '../../utils/color/operators/furthest';
 import { WithTake } from '../../utils/take/interfaces/ITakeChain';
 import { take } from '../../utils/take/take';
+import { ColorPreview } from '../ColorPreview/ColorPreview';
 import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
@@ -27,6 +26,7 @@ export function ColorInput(props: ColorInputProps) {
     const colorPickerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
+        // TODO: !!!! DRY useClickOutside
         const clickHandler = (event: Event) => {
             if (!colorPreviewRef.current || !colorPickerRef.current) {
                 return;
@@ -48,17 +48,9 @@ export function ColorInput(props: ColorInputProps) {
 
     return (
         <>
-            <div
-                // TODO: ACRY aria
-                className={classNames(className, styles.colorPreview)}
-                ref={colorPreviewRef}
-                style={{
-                    backgroundColor: color.toHex(),
-                    border: `2px solid ${color.then(textColor).toHex()}`,
-                    outline: `2px solid ${color.toHex()}`,
-                }}
-                onClick={() => setOpen(!isOpen)}
-            ></div>
+            <div ref={colorPreviewRef} onClick={() => setOpen(!isOpen)}>
+                <ColorPreview {...{ className, color }} />
+            </div>
 
             <div className={styles.colorPicker} ref={colorPickerRef}>
                 {isOpen && (

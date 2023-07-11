@@ -1,4 +1,5 @@
 // import { Aigen } from '../../components/Aigen/Aigen';
+import Link from 'next/dist/client/link';
 import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
@@ -8,6 +9,7 @@ import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ColorInput } from '../ColorInput/ColorInput';
+import { ColorPreview } from '../ColorPreview/ColorPreview';
 import { FooterSection } from '../Footer/Footer';
 import { Menu } from '../Menu/Menu';
 import { ShowcaseArticleSection } from '../ShowcaseArticle/ShowcaseArticle';
@@ -47,6 +49,22 @@ export function ShowcaseContent() {
                     // TODO: !!!! Each picker should be placed on top of the color it represents
                     // TODO: !!!! [🧠] Semantic color palette - plan where each color should be used (and do not duplicate bg and ui items)
                     <div key={i} className={classNames(styles.colorEditing, styles[`palette${i}`])}>
+                        {i === 0 && (
+                            <Link
+                                href={{
+                                    pathname: '/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        modal: 'colors',
+                                    },
+                                }}
+                                className={classNames(styles.colorPickerWrapper)}
+                                prefetch={false /* <- Note: Because this is a bit rare options */}
+                            >
+                                <ColorPreview color={'HUE_CIRCLE'} />
+                            </Link>
+                        )}
+
                         {wallpaper.colorStats.palette.map((color, j) => (
                             <div key={j} className={classNames(styles.colorPickerWrapper)}>
                                 <ColorInput

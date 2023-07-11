@@ -42,7 +42,6 @@ export function Menu() {
                                 Get the web
                             </Link>
                         </li>
-
                         {/* TODO: Maybe ?modal=explain link */}
                         <li>
                             <a href="https://1-2i.com/pricing">Pricing</a>
