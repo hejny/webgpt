@@ -33,7 +33,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     );
 
     const homeUrl = `${publicUrl.href}/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
-    const socialImageUrl = wallpaper.src; /* <- TODO: !! Generate propper social wallpaper [🦋] */
+    const socialImageUrl = `${publicUrl.href}/api/og-image?wallpaperId=${wallpaper.id}`; /*wallpaper.src; /* <- TODO: !! Generate propper social wallpaper [🦋] */
     const faviconImageUrl = wallpaper.src; /* <- TODO: !! Generate propper icon [🦋] */
 
     const metadataJsx = (
