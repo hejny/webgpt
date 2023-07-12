@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
+import { fetchImageWithBypass } from '../../utils/fetchImageWithBypass';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { validateUuid } from '../../utils/validateUuid';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
@@ -37,13 +38,24 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
         return response.status(404).json({ message: 'Wallpaper not found' });
     }
 
+    const wallpaperResponseBuffer = await fetchImageWithBypass(wallpaper.src);
+
+    response.setHeader('Content-Type', 'image/png');
+    response.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    response.statusCode = 200;
+    response.statusMessage = 'OK';
+    return response.send(wallpaperResponseBuffer);
+
+    /*
     const wallpaperResponse = await fetch(wallpaper.src);
 
     const { src } = wallpaper;
     const { status, statusText } = wallpaperResponse;
 
     if (status !== 200) {
-        return response.send({ src, status, statusText });
+        response.setHeader('Content-Type', 'text/plain');
+        return response.send(await wallpaperResponse.text());
+        // return response.send({ src, status, statusText });
     }
 
     const wallpaperResponseArrayBuffer = await wallpaperResponse.arrayBuffer();
@@ -55,31 +67,5 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
     response.statusMessage = 'OK';
     return response.send(wallpaperResponseBuffer);
 
-    /*
-    const wallpaperResponse = await axios(wallpaper.src);
-
-    response.setHeader('Content-Type', 'image/png');
-    response.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
-    response.statusCode = 200;
-    response.statusMessage = 'OK';
-    return response.send(wallpaperResponse.data);
-    */
-
-    /* 
-    wallpaperResponse.body?.pipeTo(response);
-
-    const wallpaperResponseReader = wallpaperResponse.body!.getReader();
-
-    const wallpaperResponseRead =  await wallpaperResponseReader.read();
-    wallpaperResponseRead.value!
-
-    const wallpaperResponseContentType = wallpaperResponse.headers.get('content-type');
-
-    wallpaperResponse.body;
-    return response.status(200).send({ src: wallpaper.src, wallpaperResponseContentType });
-
-    /* 
-    const wallpaperResponse = await fetch(wallpaper.src);
-    return response.status(200).send(wallpaperResponse.body);
     */
 }
