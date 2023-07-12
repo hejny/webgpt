@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { string_url } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
+import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 interface RegisterResponse {
     // !!!

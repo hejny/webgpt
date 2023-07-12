@@ -3,6 +3,7 @@ import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
 import { uuid } from '../../utils/typeAliases';
+import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 async function register(wallpaperId: uuid) {
     console.info('🔌', 'Registering your page');
