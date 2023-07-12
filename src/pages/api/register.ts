@@ -2,7 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { string_url } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
-import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 interface RegisterResponse {
     // !!!
@@ -25,7 +24,7 @@ export default async function registerHandler(request: NextApiRequest, response:
     const wallpaperId = request.query.wallpaperId;
     const url = request.query.url;
 
-    if (!isValidUuid(wallpaperId)) {
+    if (!isValidWallpaperId(wallpaperId)) {
         return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
     }
 

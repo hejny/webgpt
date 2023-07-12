@@ -1,4 +1,3 @@
-import { unstable_createNodejsStream } from '@vercel/og';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
@@ -6,9 +5,15 @@ import { validateUuid } from '../../utils/validateUuid';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 export default async function ogImageHandler(request: NextApiRequest, response: NextApiResponse) {
+    /*
+    // TODO: [⌚] Is there a better way to parse GET params from request? (maybe because of experimental-edge not working request.query?)
+    const url = new URL(request.url!);
+    const wallpaperId = url.searchParams.get('wallpaperId');
+    */
     const wallpaperId = request.query.wallpaperId as string;
 
     if (!isValidWallpaperId(wallpaperId)) {
+        // TODO: On runtime there occurs an error "TypeError: response.status is not a function" (maybe because of experimental-edge?)
         return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
     }
 
@@ -32,43 +37,49 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
         return response.status(404).json({ message: 'Wallpaper not found' });
     }
 
-    const imageStream = await unstable_createNodejsStream(
-        <div
-            style={{
-                display: 'flex',
-                fontSize: 128,
-                background: 'white',
-                width: '100%',
-                height: '100%',
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: '#888',
-                backgroundImage: `url(${wallpaper.src})`,
-                // backgroundImage: `url(${NEXT_PUBLIC_URL.href}api/wallpaper-image?wallpaperId=${wallpaperId})`,
-            }}
-        >
-            {wallpaper.title}
-        </div>,
-        { width: 1200, height: 627, debug: true, emoji: 'openmoji' },
-    );
+    const wallpaperResponse = await fetch(wallpaper.src);
+
+    const { src } = wallpaper;
+    const { status, statusText } = wallpaperResponse;
+
+    if (status !== 200) {
+        return response.send({ src, status, statusText });
+    }
+
+    const wallpaperResponseArrayBuffer = await wallpaperResponse.arrayBuffer();
+    const wallpaperResponseBuffer = Buffer.from(wallpaperResponseArrayBuffer);
 
     response.setHeader('Content-Type', 'image/png');
     response.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     response.statusCode = 200;
     response.statusMessage = 'OK';
-    return imageStream.pipe(response);
-}
+    return response.send(wallpaperResponseBuffer);
 
-/**
- * TODO: Maybe we need robots.txt @see https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation
- * TODO: Maybe make some <ShowcasePreviewImage>
- * TODO: Maybe run some endpoints on edge runtime:
- *     > const url = new URL(request.url!);
- *     > const wallpaperId = url.searchParams.get('wallpaperId');
- *     >
- *     >
- *     > export const config = {runtime: 'experimental-edge'};
- *     + Use ImageResponse not unstable_createNodejsStream
- *     + Is there a better way to parse GET params from request in edge
- *     + Edge do not have access to private env vars like SUPABASE_SERVICE_ROLE_KEY
- */
+    /*
+    const wallpaperResponse = await axios(wallpaper.src);
+
+    response.setHeader('Content-Type', 'image/png');
+    response.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    response.statusCode = 200;
+    response.statusMessage = 'OK';
+    return response.send(wallpaperResponse.data);
+    */
+
+    /* 
+    wallpaperResponse.body?.pipeTo(response);
+
+    const wallpaperResponseReader = wallpaperResponse.body!.getReader();
+
+    const wallpaperResponseRead =  await wallpaperResponseReader.read();
+    wallpaperResponseRead.value!
+
+    const wallpaperResponseContentType = wallpaperResponse.headers.get('content-type');
+
+    wallpaperResponse.body;
+    return response.status(200).send({ src: wallpaper.src, wallpaperResponseContentType });
+
+    /* 
+    const wallpaperResponse = await fetch(wallpaper.src);
+    return response.status(200).send(wallpaperResponse.body);
+    */
+}
