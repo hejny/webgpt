@@ -18,15 +18,6 @@
     grid-auto-rows: 170px;
 }
 
-.editor {
-    /*/
-    outline: 1px dotted rgb(9, 80, 187);
-    /**/
-
-    width: 100%;
-    height: 400px;
-}
-
 @media (max-width: 600px) {
     .palette {
         grid-template-columns: 1fr;
