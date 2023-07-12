@@ -4,7 +4,6 @@
     /**/
 
     padding-bottom: 10px;
-    border-bottom: 2px solid rgba(var(--palette-0-triplet), 0.5);
     width: 100%;
 }
 
@@ -15,7 +14,7 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 170px;
+    grid-auto-rows: min-content;
 }
 
 @media (max-width: 600px) {
@@ -31,5 +30,19 @@
 */
 
 .paletteItem {
-    padding: 5px;
+    /*/
+    outline: 1px dotted rgb(24, 187, 9);
+    /**/
+
+    cursor: pointer;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    border: 20px solid transparent;
+}
+
+.paletteItem > p {
+    margin: 5px;
+    width: 100%;
+    /*height: 100px;*/
 }

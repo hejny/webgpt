@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import SketchPicker, { PresetColor } from 'react-color/lib/components/sketch/Sketch';
 import { Color } from '../../utils/color/Color';
+import { useClickOutside } from '../../utils/hooks/useClickOutside';
 import { WithTake } from '../../utils/take/interfaces/ITakeChain';
 import { take } from '../../utils/take/take';
 import { ColorPreview } from '../ColorPreview/ColorPreview';
@@ -20,39 +21,15 @@ export function ColorInput(props: ColorInputProps) {
     const { className, defaultValue, onChange, presetColors } = props;
 
     const [color, setColor] = useState(take(defaultValue));
-    const [isOpen, setOpen] = useState(false);
-
-    const colorPreviewRef = useRef<HTMLDivElement | null>(null);
-    const colorPickerRef = useRef<HTMLDivElement | null>(null);
-
-    useEffect(() => {
-        // TODO: !!!! DRY useClickOutside
-        const clickHandler = (event: Event) => {
-            if (!colorPreviewRef.current || !colorPickerRef.current) {
-                return;
-            }
-            if (
-                colorPreviewRef.current.contains(event.target as Node) ||
-                colorPickerRef.current.contains(event.target as Node)
-            ) {
-                return;
-            }
-
-            setOpen(false);
-        };
-        window.document.addEventListener('click', clickHandler);
-        return () => {
-            window.document.removeEventListener('click', clickHandler);
-        };
-    });
+    const { isOpen, buttonRef, windowRef } = useClickOutside();
 
     return (
         <>
-            <div ref={colorPreviewRef} onClick={() => setOpen(!isOpen)}>
+            <div ref={buttonRef}>
                 <ColorPreview {...{ className, color }} />
             </div>
 
-            <div className={styles.colorPicker} ref={colorPickerRef}>
+            <div className={styles.colorPicker} ref={windowRef}>
                 {isOpen && (
                     <SketchPicker
                         {...{ color, presetColors }}
