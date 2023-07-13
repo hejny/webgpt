@@ -28,8 +28,6 @@ export function extractTitleFromHtml(contentHtml: string_html): string_title | n
     for (const headingType of ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']) {
         const headingElements = Array.from(document.querySelectorAll(headingType));
 
-        console.log(headingType, headingElements.length);
-
         if (headingElements.length === 0) {
             continue;
         }
