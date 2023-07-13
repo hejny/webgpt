@@ -1,0 +1,18 @@
+TODO: Make storages for LocalFiles, SSHFS, FTP and Aws
+TODO: Make encryption wrapper (maybe in everstorage)
+
+
+
+
+--------------------------[ LocalFiles ]--------------------------
+
+        // TODO: Do not work for entire new directories
+        // TODO: Make it through IFileStorage...
+        chokidar
+            .watch(await glob(join(MODULE_STORE_PATH, '/**/*.manifests.json')), {
+                persistent: true,
+            })
+            .on('add', processManifestFile)
+            .on('change', processManifestFile);
+
+        app.use('/modules', express.static(MODULE_STORE_PATH));
