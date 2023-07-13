@@ -98,6 +98,18 @@
             "focus": true
         },
         {
+            "name": "🏭🔼 [7] Upload wallpapers",
+            "commands": ["ts-node ./scripts/upload-wallpapers/00-upload-wallpapers.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🔼 [8] Upload wallpapers images",
+            "commands": ["ts-node ./scripts/upload-wallpapers/10-upload-wallpapers-images.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🏭🥫 Generate Supabase types",
             "commands": ["npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts"],
             "onlySingle": true,

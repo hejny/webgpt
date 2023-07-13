@@ -45,7 +45,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentFilePath',
-        async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
+        async makeWork({ metadataFilePath, contentFilePath }) {
             let content = await readFile(contentFilePath, 'utf-8');
             const font =
                 content.match(/<!--font:(?<font>.*)-->/)?.groups

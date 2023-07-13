@@ -11,18 +11,28 @@ import {
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
 import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
+import { string_file_path } from '../../../src/utils/typeAliases';
 import { isFileExisting } from '../isFileExisting';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
 
 /**
  * @@@
  */
-let hardcodedWallpapers: Promise<Array<IWallpaperSerialized>>;
+interface IWallpaperSerializedWithExtra extends IWallpaperSerialized {
+    metadataFilePath: string_file_path;
+    colorStatsFilePath: string_file_path;
+    contentFilePath: string_file_path;
+}
 
 /**
  * @@@
  */
-export function getHardcodedWallpapers(): Promise<Array<IWallpaperSerialized>> {
+let hardcodedWallpapers: Promise<Array<IWallpaperSerializedWithExtra>>;
+
+/**
+ * @@@
+ */
+export function getHardcodedWallpapers(): Promise<Array<IWallpaperSerializedWithExtra>> {
     if (!hardcodedWallpapers) {
         hardcodedWallpapers = /* not await */ findHardcodedWallpapers(false);
     }
@@ -33,8 +43,8 @@ export function getHardcodedWallpapers(): Promise<Array<IWallpaperSerialized>> {
 /**
  * @@@
  */
-async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSerialized>> {
-    const wallpapers: Array<IWallpaperSerialized> = [];
+async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSerializedWithExtra>> {
+    const wallpapers: Array<IWallpaperSerializedWithExtra> = [];
 
     const wallpapersmetadataFilePaths = await getHardcodedWallpapersMetadataFilePaths();
 
@@ -124,8 +134,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             keywords,
             author: SYSTEM_AUTHOR_ID,
             isPublic: true /* <- It is public as it is one of hardcoded wallpapers */,
-            saveStage: 'SAVED',
-        } as IWallpaperSerialized);
+        });
     }
 
     return wallpapers;

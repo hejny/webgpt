@@ -6,7 +6,7 @@ export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
     return { ...json, colorStats: hydrateColorStats(json.colorStats), saveStage: 'SAVED' } as IWallpaper;
 }
 
-export function serializeWallpaper(wallpaper: IWallpaper): IWallpaperSerialized {
+export function serializeWallpaper(wallpaper: Omit<IWallpaper, 'saveStage'>): IWallpaperSerialized {
     // Note: Keepeng ONLY intended properties
     const { id, parent, author, isPublic, src, prompt, colorStats, title, content, keywords } = wallpaper;
     return {

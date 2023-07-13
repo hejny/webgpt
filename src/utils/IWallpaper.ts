@@ -51,6 +51,7 @@ export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'saveStage'> 
     colorStats: Json;
 };
 
+
 /**
  * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"
  */

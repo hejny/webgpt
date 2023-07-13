@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
 
 import * as dotenv from 'dotenv';
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import commander from 'commander';
@@ -80,7 +80,7 @@ async function repairWallpapersContent({
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentFilePath',
-        async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
+        async makeWork({ metadataFilePath, contentFilePath }) {
             async function askGpt(message: string): Promise<string> {
                 message = spaceTrim(message);
 

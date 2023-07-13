@@ -63,7 +63,7 @@ async function generateWallpapersColorStats({
         isShuffled,
         parallelWorksCount: 1,
         logBeforeEachWork: 'colorStatsFilePath',
-        async makeWork({ metadataFilePath: metadataFilePath, colorStatsFilePath }) {
+        async makeWork({ metadataFilePath, colorStatsFilePath }) {
             if (!isRecomputed) {
                 if (await isFileExisting(colorStatsFilePath)) {
                     const { version } = YAML.parse(await readFile(colorStatsFilePath, 'utf8'));

@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
 
 import * as dotenv from 'dotenv';
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import commander from 'commander';
@@ -65,7 +65,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentFilePath',
-        async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
+        async makeWork({ metadataFilePath, contentFilePath }) {
             if (await isFileExisting(contentFilePath)) {
                 console.info(`⏩ Content file does already exists`);
                 return;
