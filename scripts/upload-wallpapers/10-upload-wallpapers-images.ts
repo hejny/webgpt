@@ -32,7 +32,9 @@ uploadWallpapersImages()
 async function uploadWallpapersImages() {
     console.info(`🔼🖼  Upload wallpapers images`);
 
-    for (const hardcodedWallpaper of await getHardcodedWallpapers()) {
+    let i = 0;
+    const hardcodedWallpapers = await getHardcodedWallpapers();
+    for (const hardcodedWallpaper of hardcodedWallpapers) {
         try {
             const selectResult = await getSupabaseForServer()
                 .from('Wallpaper')
@@ -96,6 +98,13 @@ async function uploadWallpapersImages() {
         } catch (error) {
             console.info(chalk.red(`🔼🖼 ${hardcodedWallpaper.id} error`));
             throw error;
+        } finally {
+            // TODO: Maybe also report stats in uploadWallpapers
+            if (i % 100 === 0) {
+                console.info(chalk.gray(`[ ${i}/${hardcodedWallpapers.length} ]`));
+            }
+
+            i++;
         }
     }
 
