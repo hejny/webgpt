@@ -31,7 +31,7 @@ async function uploadWallpapers() {
             const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper.id);
 
             if (selectResult && selectResult.data && selectResult.data.length > 0) {
-                // !!!!!!!!!!! Implement Update
+                // TODO: !!! Implement Update
                 console.info(chalk.grey(`🔼 ${wallpaper.id} already exists`));
                 continue;
             }
