@@ -3,7 +3,7 @@ import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import { createColorfulComputeImageColorStats14 } from './src/utils/image/palette/14/createColorfulComputeImageColorStats14';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { DigitalOceanSpaces } from './src/utils/storage/classes/DigitalOceanSpaces';
+import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { validateUuid } from './src/utils/validateUuid';
 
 export const VERSION = packageJson.version;
