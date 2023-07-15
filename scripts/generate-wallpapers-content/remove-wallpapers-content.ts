@@ -1,4 +1,8 @@
 #!/usr/bin/env ts-node
+
+import * as dotenv from 'dotenv';
+dotenv.config({ path: '.env' });
+
 import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, rm } from 'fs/promises';

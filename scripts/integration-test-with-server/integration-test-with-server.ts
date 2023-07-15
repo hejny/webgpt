@@ -1,5 +1,8 @@
 #!/usr/bin/env ts-node
 
+import * as dotenv from 'dotenv';
+dotenv.config({ path: '.env' });
+
 import chalk from 'chalk';
 import { ChildProcessWithoutNullStreams, spawn } from 'child_process';
 import fetch from 'isomorphic-fetch';
