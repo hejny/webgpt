@@ -30,6 +30,8 @@ export function ColorsModalColorAlgoritm() {
                 // TODO: [🧠] !!! Whe best way to report progress from createImageInBrowser and compute
                 const newColorStats = await compute(await createImageInBrowser(wallpaper.src));
 
+                console.log({ newColorStats });
+
                 modifyWallpaper((modifiedWallpaper) => {
                     modifiedWallpaper.colorStats = newColorStats;
                     modifiedWallpaper.saveStage = 'EDITED';

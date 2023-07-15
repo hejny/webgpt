@@ -14,6 +14,8 @@ export async function createImageInBrowser(src: string_url): Promise<MyImage> {
         // Create an HTML image element
         const img = new Image();
 
+        img.crossOrigin = 'anonymous';
+
         // Set the source of the image to the given path
         img.src = src;
 
