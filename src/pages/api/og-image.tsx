@@ -43,9 +43,12 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
                 height: '100%',
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: '#888',
+
+                // TODO: !! Cleanup + add primary color as a fallback
+                // backgroundColor: '#7e6161',
+                // backgroundImage: `url(https://collboard.fra1.cdn.digitaloceanspaces.com/testaicontent/1/f/1f2d82cb-e59c-485d-9f7a-92ecdaeded3e)`,
                 backgroundImage: `url(${wallpaper.src})`,
-                // backgroundImage: `url(${NEXT_PUBLIC_URL.href}api/wallpaper-image?wallpaperId=${wallpaperId})`,
+                //backgroundImage: `url(${NEXT_PUBLIC_URL.href}api/wallpaper-image?wallpaperId=${wallpaperId})`,
             }}
         >
             {wallpaper.title}
