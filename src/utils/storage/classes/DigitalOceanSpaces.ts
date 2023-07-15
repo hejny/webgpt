@@ -183,6 +183,7 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
 }
 
 /**
+ * TODO: !!! This should be lazy-loaded
  * TODO: Extend this from AWS S3 (compatible) storage
  * TODO: Probably not extend from storage
  * TODO: Read-only mode

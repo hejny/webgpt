@@ -140,21 +140,24 @@ export const PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- 
 
 export const SYSTEM_AUTHOR_ID = validateUuid('000d2940-4a35-4859-83a8-3c754ea5df51');
 
-export const CDN_BUCKET = config.get('CDN_BUCKET').required().value;
-export const CDN_PATH_PREFIX = config.get('CDN_PATH_PREFIX').required().value;
-export const CDN_ENDPOINT = config.get('CDN_ENDPOINT').required().value;
-export const CDN_ACCESS_KEY_ID = config.get('CDN_ACCESS_KEY_ID').required().value;
-export const CDN_SECRET_ACCESS_KEY = config.get('CDN_SECRET_ACCESS_KEY').required().value;
-export const CDN_PUBLIC_URL = config.get('CDN_PUBLIC_URL').url().required().value;
+// TODO: [🧠] How to do required only on server
+export const CDN_BUCKET = config.get('CDN_BUCKET') /*.required([📐])*/.value;
+export const CDN_PATH_PREFIX = config.get('CDN_PATH_PREFIX') /*.required([📐])*/.value;
+export const CDN_ENDPOINT = config.get('CDN_ENDPOINT') /*.required([📐])*/.value;
+export const CDN_ACCESS_KEY_ID = config.get('CDN_ACCESS_KEY_ID') /*.required([📐])*/.value;
+export const CDN_SECRET_ACCESS_KEY = config.get('CDN_SECRET_ACCESS_KEY') /*.required([📐])*/.value;
+export const CDN_PUBLIC_URL = config.get('CDN_PUBLIC_URL').url() /*.required([📐])*/.value;
 
-export const CDN = new DigitalOceanSpaces({
-    bucket: CDN_BUCKET,
-    pathPrefix: CDN_PATH_PREFIX,
-    endpoint: CDN_ENDPOINT,
-    accessKeyId: CDN_ACCESS_KEY_ID,
-    secretAccessKey: CDN_SECRET_ACCESS_KEY,
-    cdnPublicUrl: CDN_PUBLIC_URL,
-    gzip: false /* <- TODO: Maybe just remove this functionality from 1-2i repository */,
-});
+export const CDN = (CDN_BUCKET &&
+    // [📐]
+    new DigitalOceanSpaces({
+        bucket: CDN_BUCKET!,
+        pathPrefix: CDN_PATH_PREFIX!,
+        endpoint: CDN_ENDPOINT!,
+        accessKeyId: CDN_ACCESS_KEY_ID!,
+        secretAccessKey: CDN_SECRET_ACCESS_KEY!,
+        cdnPublicUrl: CDN_PUBLIC_URL!,
+        gzip: false /* <- TODO: Maybe just remove this functionality from 1-2i repository */,
+    })) as DigitalOceanSpaces;
 
 export const MIDJOURNEY_WHOLE_GALLERY_PATH = 'X:/Mythings/MidJourney';
