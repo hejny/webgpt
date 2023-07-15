@@ -12,10 +12,9 @@ interface AboutResponse {
 
 export default async function aboutHandler(request: NextApiRequest, response: NextApiResponse /*<RegisterResponse>*/) {
     const hardcodedWallpapersCount = (await getHardcodedWallpapers()).length;
-    const dynamicWallpapersCount = await getSupabaseForServer()
+    const { count: dynamicWallpapersCount } = await getSupabaseForServer()
         .from('Wallpaper')
-        .select('id')
-        .then((result) => result.data?.length);
+        .select('*', { count: 'exact', head: true });
 
     return response.status(200).json({
         version: VERSION,
