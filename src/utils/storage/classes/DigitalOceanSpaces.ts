@@ -94,7 +94,7 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
         const uploadResult = await this.s3
             .upload({
                 Bucket: this.config.bucket,
-                Key: this.config.pathPrefix + key,
+                Key: this.config.pathPrefix + '/' + key,
                 ContentType: processedFile.type,
                 ...putObjectRequestAdditional,
                 Body: processedFile.data,

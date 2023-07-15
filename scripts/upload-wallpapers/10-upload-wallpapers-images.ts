@@ -53,25 +53,31 @@ async function uploadWallpapersImages() {
 
             const response = await fetch(wallpaper.src);
 
+            if (response.status !== 200) {
+                throw new Error(`Response status of src image is not 200`);
+            }
+
             await CDN.setItem(key, {
                 type: 'image/png' /* <- TODO: Do not hardcode */,
                 data: Buffer.from(await response.arrayBuffer()),
+                // data: await readFile(hardcodedWallpaper.srcFilePath),
             });
 
             const updateResult = await getSupabaseForServer()
                 .from('Wallpaper')
                 .update({
                     src: CDN.getItemUrl(key).href,
-                });
+                })
+                .eq('id', hardcodedWallpaper.id);
 
-            // TODO: !! Util isUpdateSuccessfull (status===201)
-            if (updateResult.status !== 201) {
+            // TODO: !! Util isUpdateSuccessfull (Probbably status===204)
+            if (updateResult.status !== 204) {
                 console.info({ updateResult });
                 throw new Error('Update failed');
             }
 
             console.info(chalk.green(`🔼🖼 ${wallpaper.id} image uploaded and updated in database`));
-            await forTime(10000);
+            await forTime(10000000);
         } catch (error) {
             console.info(chalk.red(`🔼🖼 ${hardcodedWallpaper.id} error`));
             throw error;

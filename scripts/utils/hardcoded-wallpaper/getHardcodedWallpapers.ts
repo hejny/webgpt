@@ -20,6 +20,7 @@ import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpaper
  */
 interface IWallpaperSerializedWithExtra extends IWallpaperSerialized {
     metadataFilePath: string_file_path;
+    srcFilePath: string_file_path;
     colorStatsFilePath: string_file_path;
     contentFilePath: string_file_path;
 }
@@ -53,6 +54,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             /\.json$/,
             `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
         );
+        const srcFilePath = metadataFilePath.replace(/\.json$/, '.png');
         const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
 
         const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
@@ -129,6 +131,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             title,
             content,
             metadataFilePath,
+            srcFilePath,
             colorStatsFilePath,
             contentFilePath,
             keywords,
