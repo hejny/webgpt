@@ -104,7 +104,7 @@
             "focus": true
         },
         {
-            "name": "🏭🔼 [8] Upload wallpapers images",
+            "name": "🏭🔼🖼 [8] Upload wallpapers images",
             "commands": ["ts-node ./scripts/upload-wallpapers/10-upload-wallpapers-images.ts"],
             "onlySingle": true,
             "focus": true

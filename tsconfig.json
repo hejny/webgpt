@@ -29,6 +29,6 @@
         "src/utils/image/palette/13/computeImagePalette13.ts.todo",
         "src/utils/image/palette/13/createColorfulComputeImageColorStats13.ts.todo",
         "src/components/Select/Select.tsx"
-, "scripts/upload-wallpapers/10-upload-wallpapers-images.ts.todo"    ],
+, "scripts/upload-wallpapers/10-upload-wallpapers-images.ts"    ],
     "exclude": ["node_modules", "cypress", "old"]
 }

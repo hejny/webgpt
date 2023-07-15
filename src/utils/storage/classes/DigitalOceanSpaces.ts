@@ -34,6 +34,10 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
         });
     }
 
+    public getItemUrl(key: string): URL {
+        return new URL(key, this.cdnPublicUrl);
+    }
+
     public async getItem(key: string): Promise<IFile | null> {
         const parameters = {
             Bucket: this.config.bucket,
@@ -46,12 +50,12 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
             if (ContentEncoding === 'gzip') {
                 return {
                     type: ContentType!,
-                    buffer: await ungzip(Body as Buffer),
+                    data: await ungzip(Body as Buffer),
                 };
             } else {
                 return {
                     type: ContentType!,
-                    buffer: Body as Buffer,
+                    data: Body as Buffer,
                 };
             }
         } catch (error) {
@@ -73,11 +77,11 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
 
         let processedFile: IFile;
         if (this.config.gzip) {
-            const gzipped = await gzip(file.buffer);
-            const sizePercentageAfterCompression = gzipped.byteLength / file.buffer.byteLength;
+            const gzipped = await gzip(file.data);
+            const sizePercentageAfterCompression = gzipped.byteLength / file.data.byteLength;
             if (sizePercentageAfterCompression < 0.7) {
                 // consolex.log(`Gzipping ${key} (${Math.floor(sizePercentageAfterCompression * 100)}%)`);
-                processedFile = { ...file, buffer: gzipped };
+                processedFile = { ...file, data: gzipped };
                 putObjectRequestAdditional.ContentEncoding = 'gzip';
             } else {
                 processedFile = file;
@@ -93,7 +97,7 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
                 Key: this.config.pathPrefix + key,
                 ContentType: processedFile.type,
                 ...putObjectRequestAdditional,
-                Body: processedFile.buffer,
+                Body: processedFile.data,
                 // TODO: Public read access / just private to extending class
                 ACL: 'public-read',
             })

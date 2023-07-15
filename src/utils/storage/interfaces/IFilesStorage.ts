@@ -5,7 +5,7 @@ import { string_mime_type } from '../../typeAliases';
 export interface IFile {
     // Maybe TODO name: string;
     type: string_mime_type;
-    buffer: Buffer;
+    data: Buffer;
 }
 
 /**
@@ -24,6 +24,7 @@ export interface IFilesStorage extends Omit<IStorage<IFile>, 'length' | 'clear' 
  */
 export interface IIFilesStorageWithCdn extends IFilesStorage {
     cdnPublicUrl: URL;
+    getItemUrl(key: string): URL;
 }
 
 /**

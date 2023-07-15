@@ -56,8 +56,3 @@ async function uploadWallpapers() {
 
     console.info(`[ Done 🔼  Upload wallpapers ]`);
 }
-
-/**
- * TODO: Maybe use getMidjourneyLink from batch-froject-editor
- * TODO: Persistency and uniqueness of the names
- */
