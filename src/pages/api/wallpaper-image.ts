@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { fetchImageWithBypass } from '../../utils/fetchImageWithBypass';
+import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { validateUuid } from '../../utils/validateUuid';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
@@ -19,7 +20,7 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
     }
 
     // TODO: [🥽] DRY - getWallpaper
-    const wallpapers = await getHardcodedWallpapers().catch((error) => [
+    const wallpapers: Array<IWallpaperSerialized> = await getHardcodedWallpapers().catch((error) => [
         /* Note: On server, "Error: Could not find assets folder" will happen */
     ]);
     let wallpaper = wallpapers.find(({ id }) => id === wallpaperId) || null;
