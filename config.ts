@@ -146,7 +146,6 @@ export const CDN_ENDPOINT = config.get('CDN_ENDPOINT').required().value;
 export const CDN_ACCESS_KEY_ID = config.get('CDN_ACCESS_KEY_ID').required().value;
 export const CDN_SECRET_ACCESS_KEY = config.get('CDN_SECRET_ACCESS_KEY').required().value;
 export const CDN_PUBLIC_URL = config.get('CDN_PUBLIC_URL').url().required().value;
-export const CDN_GZIP = config.get('CDN_GZIP').boolean().required().value;
 
 export const CDN = new DigitalOceanSpaces({
     bucket: CDN_BUCKET,
@@ -155,5 +154,7 @@ export const CDN = new DigitalOceanSpaces({
     accessKeyId: CDN_ACCESS_KEY_ID,
     secretAccessKey: CDN_SECRET_ACCESS_KEY,
     cdnPublicUrl: CDN_PUBLIC_URL,
-    gzip: true,
+    gzip: false /* <- TODO: Maybe just remove this functionality from 1-2i repository */,
 });
+
+export const MIDJOURNEY_WHOLE_GALLERY_PATH = 'X:/Mythings/MidJourney';

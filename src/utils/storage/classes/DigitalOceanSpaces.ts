@@ -35,7 +35,7 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
     }
 
     public getItemUrl(key: string): URL {
-        return new URL(key, this.cdnPublicUrl);
+        return new URL(this.config.pathPrefix + '/' + key, this.cdnPublicUrl);
     }
 
     public async getItem(key: string): Promise<IFile | null> {

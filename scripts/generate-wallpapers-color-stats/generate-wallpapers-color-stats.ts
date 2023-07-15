@@ -93,6 +93,7 @@ async function generateWallpapersColorStats({
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
             const colorStats = COLORSTATS_DEFAULT_COMPUTE(
+                // TODO: [🚯] Fix here 403 Midjourney error
                 await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
             );
 
