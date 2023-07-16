@@ -66,5 +66,6 @@ export async function getStaticProps({
 }
 
 /**
+ * TODO: !!! This type of creating new wallpaper is probbably deprecated?! Or not?
  * TODO: Maybe Polyfill for BroadcastChannel @see https://gist.github.com/alexis89x/041a8e20a9193f3c47fb
  */
