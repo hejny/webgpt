@@ -65,6 +65,7 @@ export async function emojifyMarkdown(
 }
 
 /**
+ * TODO: !!! This probbably causes enormous
  * TODO: [1] We should take emojis ONLY in text NOT in code,alt,links,etc
  * TODO: But maybe implement [1] as emojifyHtml if simpler
  * TODO: !! Cache the emoji imports
