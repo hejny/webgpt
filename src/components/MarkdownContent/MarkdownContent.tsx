@@ -1,10 +1,6 @@
-import { useMemo } from 'react';
-import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
-import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
-import { useObservable } from '../../utils/hooks/useObservable';
 import { string_markdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
@@ -102,26 +98,18 @@ export function MarkdownContent(props: IMarkdownContentProps) {
         synchronouslyEnhancedContent = normalizeDashes(synchronouslyEnhancedContent);
     }
 
+    /*/
     const enhancedContentSubject = useMemo(
         () => {
             const enhancedContentSubject = new BehaviorSubject(synchronouslyEnhancedContent);
             if (isUsingOpenmoji) {
                 (async () => {
-                    /*/
-                    await forTime(1000);
-                    enhancedContentSubject.next('2\n' + enhancedContentSubject.value);
-                    await forTime(1000);
-                    enhancedContentSubject.next('1\n' + enhancedContentSubject.value);
-                    await forTime(1000);
-                    /**/
-                    /**/
                     enhancedContentSubject.next(
                         await emojifyMarkdown(
                             enhancedContentSubject.value,
-                            'color' /* TODO: [🎲] 'var(--palette-1)' */,
+                            'color' /* TODO: [🎲] 'var(--palette-1)' * /,
                         ),
                     );
-                    /**/
                 })();
             }
             return enhancedContentSubject;
@@ -131,6 +119,12 @@ export function MarkdownContent(props: IMarkdownContentProps) {
     );
 
     const { value: enhancedContent } = useObservable(enhancedContentSubject);
+    /**/
+    /**/
+    // Note: Temporarlly disabled because of enoromous number of javascript assets because of OpenMoji
+    // TODO: Figure out how to use OpenMoji efficiently
+    const enhancedContent = synchronouslyEnhancedContent;
+    /**/
 
     let html = markdownConverter.makeHtml(enhancedContent);
 
