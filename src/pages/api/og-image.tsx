@@ -64,8 +64,9 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
 }
 
 /**
- * TODO: !!!! Finish
- * TODO: Maybe we need robots.txt @see https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation
+ * TODO: [🦋] Do simmilar thing for icons
+ * TODO: [👔] This is not working on edge runtime - fix after @see https://github.com/vercel/satori/issues/475 @see https://github.com/nzws/nzws.me/issues/574
+ * TODO: [🦺] Maybe we need robots.txt @see https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation
  * TODO: Maybe make some <ShowcasePreviewImage>
  * TODO: Maybe run some endpoints on edge runtime:
  *     > const url = new URL(request.url!);

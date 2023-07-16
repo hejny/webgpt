@@ -1,13 +1,13 @@
 import { EMOJIS } from '../emojis';
-import { string_url } from '../typeAliases';
+import { string_html, string_url } from '../typeAliases';
 
 /**
  * Replaces emojis in an html with images from openmoji
  */
 export async function emojifyMarkdown(
-    html: string,
+    html: string_html,
     design: 'black' | 'color' | string /* <- TODO: Add here white and negative AND use negative */,
-): Promise<string> {
+): Promise<string_html> {
     // console.log('-----------');
     for (const emoji of EMOJIS) {
         if (!html.includes(emoji)) {
@@ -65,7 +65,7 @@ export async function emojifyMarkdown(
 }
 
 /**
- * TODO: !!! This probbably causes enormous
+ * TODO: [🧥] Figure out how to use OpenMoji efficiently
  * TODO: [1] We should take emojis ONLY in text NOT in code,alt,links,etc
  * TODO: But maybe implement [1] as emojifyHtml if simpler
  * TODO: !! Cache the emoji imports
