@@ -51,9 +51,9 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
                 //backgroundImage: `url(${NEXT_PUBLIC_URL.href}api/wallpaper-image?wallpaperId=${wallpaperId})`,
             }}
         >
-            {wallpaper.title}
+            {/*wallpaper.title*/}
         </div>,
-        { width: 1200, height: 627, debug: true, emoji: 'openmoji' },
+        { width: 1200, height: 627, debug: true /* emoji: 'openmoji' */ },
     );
 
     response.setHeader('Content-Type', 'image/png');
