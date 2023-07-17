@@ -9,6 +9,9 @@ import { string_html, string_title } from '../typeAliases';
  * @returns heading
  */
 export function extractTitleFromHtml(contentHtml: string_html): string_title | null {
+    contentHtml = contentHtml.split(/\<(?:br|hr)\s*\/?\>/gis).join('\n');
+    contentHtml = contentHtml.split(/\<(?:wbr)\s*\/?\>/gis).join(' ');
+
     const parser = new DOMParser();
     const document = parser.parseFromString(
         spaceTrim(`
@@ -33,7 +36,11 @@ export function extractTitleFromHtml(contentHtml: string_html): string_title | n
         }
 
         return headingElements
-            .map((headingElement) => (headingElement.textContent || '').replace(/\s/g, ' '))
+            .map((headingElement) =>
+                (headingElement.textContent || '')
+                    .split(String.fromCharCode(160))
+                    .join(' ' /* <- Note: This replace hard spaces into soft ones */),
+            )
             .join('\n');
     }
 

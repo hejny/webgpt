@@ -224,4 +224,15 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                 `),
         );
     });
+
+    it('should ignore html tags inside a title', () => {
+        expect(extractTitleFromHtml(`<h1>Hello<wbr>world</h1>`)).toBe(`Hello world`);
+        expect(extractTitleFromHtml(`<h1>Hello<wbr/>world</h1>`)).toBe(`Hello world`);
+        expect(extractTitleFromHtml(`<h1>Hello <wbr> world</h1>`)).toBe(`Hello   world`);
+        expect(extractTitleFromHtml(`<h1>Hello<br>world</h1>`)).toBe(`Hello\nworld`);
+        expect(extractTitleFromHtml(`<h1>Hello<br/>world</h1>`)).toBe(`Hello\nworld`);
+        expect(extractTitleFromHtml(`<h1>Hello<hr>world</h1>`)).toBe(`Hello\nworld`);
+        expect(extractTitleFromHtml(`<h1><b>Hello</b> world</h1>`)).toBe(`Hello world`);
+        expect(extractTitleFromHtml(`<h1><b>H</b>ello <i><u>w</u>orl</i>d</h1>`)).toBe(`Hello world`);
+    });
 });
