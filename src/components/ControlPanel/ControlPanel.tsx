@@ -22,7 +22,7 @@ interface ControlPanelProps {
  * @@@
  */
 export function ControlPanel(props: ControlPanelProps) {
-    const { randomWallpaper } = props;
+    const { randomWallpaper } = props; /* <- TODO: !!!! Fix randomWallpaper */
     const router = useRouter();
 
     const [wallpaper, modifyWallpaper] = useWallpaper();

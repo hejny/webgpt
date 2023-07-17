@@ -1,0 +1,47 @@
+.ColorsPanel {
+    /*/
+    outline: 1px dotted rgb(127, 226, 34);
+    /**/
+
+    z-index: 3000 /* <- [🔝] Global order of showcase */;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    width: auto;
+
+    padding: 3px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.ColorsPanel,
+.ColorsPanel * {
+    transition: none;
+}
+
+.colorPickerWrapper {
+    /*/
+    outline: 1px dotted #ff5100;
+    /**/
+
+    margin: 8px;
+    width: 25px;
+    height: 25px;
+    pointer-events: all;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .ColorsPanel {
+        width: 85px;
+        left: -30px;
+        flex-direction: column;
+    }
+}

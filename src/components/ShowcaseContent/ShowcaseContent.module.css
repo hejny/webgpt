@@ -141,40 +141,4 @@
     grid-row: 5 / span 1;
 }
 
-/*-------[ Editing ]-------*/
-.colorEditing {
-    /*/
-    outline: 1px dotted #00ff00;
-    /**/
-
-    z-index: 4;
-    padding-top: 40px;
-    padding-left: 15px;
-
-    pointer-events: none;
-
-    display: flex;
-    flex-direction: row;
-}
-
-.colorPickerWrapper {
-    /*/
-    outline: 1px dotted #ff5100;
-    /**/
-    margin: 8px;
-    width: 25px;
-    height: 25px;
-    pointer-events: all;
-}
-
-.colorEditing.palette0 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 5;
-}
-
-.colorEditing.palette1 {
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 5;
-}
-
 /* TODO: [🧈] Best way how to share page css */
