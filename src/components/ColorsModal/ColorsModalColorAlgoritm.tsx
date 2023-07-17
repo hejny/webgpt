@@ -26,13 +26,16 @@ export function ColorsModalColorAlgoritm() {
                     throw new Error(`Unknown color algorithm version: ${newVersion}`);
                 }
 
-                // TODO: [🧠] !!! Fix tainted canvas error
-                // TODO: [🧠] !!! Whe best way to report progress from createImageInBrowser and compute
+                // Probbably solved -> TODO: !!! [🧠] Fix tainted canvas error
+                // TODO: !!! [🧠] Whe best way to report progress from createImageInBrowser and compute
                 const newColorStats = await compute(await createImageInBrowser(wallpaper.src));
 
                 console.log({ newColorStats });
 
+                // TODO: !!!! Make this work;
+
                 modifyWallpaper((modifiedWallpaper) => {
+                    // TODO: !!!! Persist when modal is changed
                     modifiedWallpaper.colorStats = newColorStats;
                     modifiedWallpaper.saveStage = 'EDITED';
                     return modifiedWallpaper;

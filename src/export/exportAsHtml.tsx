@@ -295,7 +295,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
  * TODO: !!! Export fonts propperly: <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
  * TODO: !!! Remove data-n-g attributes from export
  * TODO: !!! Include /images/patterns/simple/stripes-grey.png in export
- * TODO: !!! [🧠] /images vs /assets
+ * TODO: !!! [🧠] /images vs /assets in exported zip
  * TODO: !!! Add CNAME
  * TODO: !! Add Favicon in zip (+other icons)
  * TODO: !!! Add license file into zip

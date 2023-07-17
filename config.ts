@@ -1,9 +1,9 @@
 import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
+import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats14 } from './src/utils/image/palette/14/createColorfulComputeImageColorStats14';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { validateUuid } from './src/utils/validateUuid';
 
 export const VERSION = packageJson.version;
@@ -109,7 +109,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
 
 export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0];
 
-// TODO: [🧠] !! Pass theese as a parameter to the function createComputeImageColorStats
+// TODO: [🧠] Pass theese as a parameter to the function createComputeImageColorStats
 
 export const COLORS_LIMIT = 10;
 export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;

@@ -29,7 +29,7 @@ export function ExplainContent() {
 }
 
 /**
- * TODO: !!! [🧠] How should this page look like?
+ * TODO: !!! [🧠] How should explain page look like?
  * TODO: !!! Link back to web
  * TODO: !!! Make it via AIWeb
  */
