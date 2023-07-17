@@ -1,3 +1,4 @@
+import hueCircleImage from '../../../public/icons/hue-circle.svg';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
@@ -21,12 +22,14 @@ export function ColorPreview(props: ColorPreviewProps) {
             style={
                 color === 'HUE_CIRCLE'
                     ? {
-                          backgroundColor: 'red',
-                          border: `2px solid red`,
-                          outline: `2px solid red`,
+                          backgroundImage: `url(${hueCircleImage.src})`,
+                          backgroundSize: '100% 100%',
+                          //border: `2px solid red`,
+                          //outline: `2px solid red`,
                       }
                     : {
                           backgroundColor: color.toHex(),
+                          // TODO: [📖] borderImage: `url(${hueCircleImage.src}) 60`,
                           border: `2px solid ${color.then(textColor).toHex()}`,
                           outline: `2px solid ${color.toHex()}`,
                       }
