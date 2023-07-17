@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import type { RandomWallpaperResponse } from '../../pages/api/random-wallpaper';
 import { classNames } from '../../utils/classNames';
-import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -90,13 +90,20 @@ export function ControlPanel(props: ControlPanelProps) {
             {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
 
             {wallpaper.saveStage === 'SAVED' && (
-                <Link
-                    // TODO: !!!! Fix randomWallpaper (ACRY) - load lazy from database
-                    href={`/${randomWallpaper.id}`}
-                    /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
+                <button
+                    // TODO: !!!! Go ACRY through randomWallpaper
+
+                    /* Note: randomWallpaper image is already prerendered thare -> [🤰] <- !!!! Fix or remove + [🧠] do we want to prefetch random wallpaper, if yes, do it here */
                     className={classNames(/*'button',*/ styles.button)}
                     title="Show me another one"
-                    onClick={() => {
+                    onClick={async () => {
+                        const response = await fetch('/api/random-wallpaper');
+                        const { randomWallpaper } = (await response.json()) as RandomWallpaperResponse;
+
+                        await router.push(`/${randomWallpaper.id}`);
+
+                        /*
+                        TODO: !!!! Remove or uncomment + write the purpose
                         // Note: No need for preventDefault
                         const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
                         headerWallpaperElement.setAttribute(
@@ -104,6 +111,8 @@ export function ControlPanel(props: ControlPanelProps) {
                             colorToDataUrl(randomWallpaper.colorStats.averageColor),
                         );
                         headerWallpaperElement.removeAttribute('srcset');
+                        
+                        */
                     }}
                     style={
                         {
@@ -118,7 +127,7 @@ export function ControlPanel(props: ControlPanelProps) {
                         content="🎲"
                         isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
                     />
-                </Link>
+                </button>
             )}
 
             {wallpaper.saveStage === 'SAVED' && (

@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
-interface RandomWallpaperResponse {
+export interface RandomWallpaperResponse {
     randomWallpaper: Pick<IWallpaperSerialized, 'id'>;
 }
 
