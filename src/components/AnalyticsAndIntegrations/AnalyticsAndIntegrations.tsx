@@ -112,7 +112,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
 }
 
 /**
- * TODO: !!!! Maybe use <InlineScript/> component
+ * TODO: !! Maybe use <InlineScript/> component
  * TODO: !! Also isCookiesAllowed - only activate if cookies are allowed
  * TODO: !!! Cleanup all console logs
  * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key

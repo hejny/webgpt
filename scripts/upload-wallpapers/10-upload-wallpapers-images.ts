@@ -112,6 +112,5 @@ async function uploadWallpapersImages() {
 }
 
 /**
- * TODO: [🧠] !!!! Double-upload of user-creared images
  * TODO: [🧠] Also upload upscaled wallpapers
  */

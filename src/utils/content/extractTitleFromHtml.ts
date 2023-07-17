@@ -41,6 +41,7 @@ export function extractTitleFromHtml(contentHtml: string_html): string_title | n
 }
 
 /**
+ * TODO: !!!! Fix and text <wbr> (and other tags) in title
  * TODO: Maybe use jsdom (or other parser/polyfill) instead of xmldom-qsa
  *       This brings quite a lot of bundle size with it
  */
