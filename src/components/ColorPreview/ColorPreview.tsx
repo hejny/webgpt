@@ -37,7 +37,3 @@ export function ColorPreview(props: ColorPreviewProps) {
         ></div>
     );
 }
-
-/**
- * TODO: !!!! Hue circle
- */
