@@ -29,6 +29,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
     const description = removeMarkdownFormatting(
+        /* <- !!!! Fix this maybe same way as extractTitleFromHtml + !!!! Allow html content OR JUST FROM HTML */
         removeMarkdownLinks(extractFirstParagraphFromMarkdown(wallpaper.content)),
     );
 
