@@ -26,7 +26,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     // TODO: !! IWalpaper should have custom emoji which will be contained here
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
-    const description = extractDescriptionFromHtml(wallpaper.content); /* <- !!! Shorten a description with GPT */
+    const description = extractDescriptionFromHtml(wallpaper.content)||'!!!!'; /* <- !!! Shorten a description with GPT */
 
     const homeUrl = `${publicUrl.href}${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
