@@ -23,6 +23,7 @@ export function ColorsModal(props: ColorsModalProps) {
 
     return (
         <Modal title="Colors">
+            <div className={styles.section}>{wallpaper.src}</div>
             <div className={styles.section}>
                 <ColorsModalColorAlgoritm />
             </div>

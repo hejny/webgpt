@@ -12,7 +12,7 @@ import { useMode } from '../utils/hooks/useMode';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
-import { IWallpaper, IWallpaperSerialized } from '../utils/IWallpaper';
+import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { randomItem } from '../utils/randomItem';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { validateUuid } from '../utils/validateUuid';
@@ -93,7 +93,8 @@ export async function getStaticProps({
 }) {
     const { wallpaper /* <- TODO: !!!! Change ACRY to wallpaperId */ } = params;
 
-    // TODO: [🥽] DRY - getWallpaper
+    // TODO: [🥽] !!!! DRY - getWallpaper
+    // TODO: !!!! First dynamic then hardcoded
     const wallpapers: Array<IWallpaperSerialized> = await getHardcodedWallpapers().catch((error) => [
         /* Note: On server, "Error: Could not find assets folder" will happen */
     ]);
