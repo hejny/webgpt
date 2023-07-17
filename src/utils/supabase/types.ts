@@ -34,6 +34,12 @@ export interface Database {
             columns: ["wallpaperId"]
             referencedRelation: "Wallpaper"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "Reaction_wallpaperId_fkey"
+            columns: ["wallpaperId"]
+            referencedRelation: "Wallpaper_random"
+            referencedColumns: ["id"]
           }
         ]
       }
@@ -144,7 +150,48 @@ export interface Database {
       }
     }
     Views: {
-      [_ in never]: never
+      Wallpaper_random: {
+        Row: {
+          author: string | null
+          colorStats: Json | null
+          content: string | null
+          createdAt: string | null
+          id: string | null
+          isPublic: boolean | null
+          keywords: string[] | null
+          parent: string | null
+          prompt: string | null
+          src: string | null
+          title: string | null
+        }
+        Insert: {
+          author?: string | null
+          colorStats?: Json | null
+          content?: string | null
+          createdAt?: string | null
+          id?: string | null
+          isPublic?: boolean | null
+          keywords?: string[] | null
+          parent?: string | null
+          prompt?: string | null
+          src?: string | null
+          title?: string | null
+        }
+        Update: {
+          author?: string | null
+          colorStats?: Json | null
+          content?: string | null
+          createdAt?: string | null
+          id?: string | null
+          isPublic?: boolean | null
+          keywords?: string[] | null
+          parent?: string | null
+          prompt?: string | null
+          src?: string | null
+          title?: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never
@@ -157,3 +204,4 @@ export interface Database {
     }
   }
 }
+
