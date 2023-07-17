@@ -58,6 +58,15 @@ export type string_char = string;
  */
 export type string_title = string;
 
+
+/**
+ * Semantic helper
+ *
+ * For example `"Ainautes are a group of animals that includes mammals, birds, reptiles, amphibians, and fish."`
+ * @collboard-modules-sdk
+ */
+export type string_description = string;
+
 /**
  * Semantic helper
  *

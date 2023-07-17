@@ -3,7 +3,7 @@ import { DOMParser } from 'xmldom-qsa';
 import { string_html, string_title } from '../typeAliases';
 
 /**
- * Extract the first heading from HTML using regex
+ * Extract the first heading from HTML
  *
  * @param contentText HTML
  * @returns heading
@@ -48,7 +48,6 @@ export function extractTitleFromHtml(contentHtml: string_html): string_title | n
 }
 
 /**
- * TODO: !!!! Fix and text <wbr> (and other tags) in title
- * TODO: Maybe use jsdom (or other parser/polyfill) instead of xmldom-qsa
+ * TODO: [🎚] Maybe use jsdom (or other parser/polyfill) instead of xmldom-qsa
  *       This brings quite a lot of bundle size with it
  */

@@ -5,7 +5,7 @@ import { extractDescriptionFromHtml } from './extractDescriptionFromHtml';
 describe('extractFirstHeadingFromHtmlRegex', () => {
     it('should return the first heading from an HTML string', () => {
         const contentText =
-            '<html><head><description>This is a title</description></head><body><h1>This is a heading</h1>Some content</body></html>';
+            '<html><head><description>This is a title</description></head><body><h1>This is a heading</h1><p>Some content</p></body></html>';
         expect(extractDescriptionFromHtml(contentText)).toBe('Some content');
     });
 
@@ -15,32 +15,25 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         expect(extractDescriptionFromHtml(contentText)).toBeNull();
     });
 
-    it('should work with multiple tags', () => {
-        expect(extractDescriptionFromHtml(`<p>Content</p>`)).toBe(`Content`);
-        expect(extractDescriptionFromHtml(`<div>Content</div>`)).toBe(`Content`);
-        expect(extractDescriptionFromHtml(`<span>Content</span>`)).toBe(`Content`);
-        expect(extractDescriptionFromHtml(`<b>Content</b>`)).toBe(`Content`);
-    });
-
     /*
     TODO: Implement+Test ul/ol lists
     it('should work with multiple tags', () => {
-        expect(extractDescriptionFromHtml(`<ul><li>Bullet</li></ul>`)).toBe(`Bullet`);
+        expect(extractDescriptionFromHtml(`<p><ul><li>Bullet</li></ul></p>`)).toBe(`Bullet`);
     });
     */
 
-    it('should return non-trimmed result', () => {
-        expect(extractDescriptionFromHtml(`<p> a </p>`)).toBe(` a `);
-        expect(extractDescriptionFromHtml(`<p>&nbsp;a&nbsp;</p>`)).toBe(` a `);
-        expect(extractDescriptionFromHtml(`<p> &nbsp;a&nbsp; </p>`)).toBe(`  a  `);
-        expect(extractDescriptionFromHtml(`<p> &nbsp; a &nbsp; </p>`)).toBe(`   a   `);
+    it('should return trimmed result', () => {
+        expect(extractDescriptionFromHtml(`<p> a </p>`)).toBe(`a`);
+        expect(extractDescriptionFromHtml(`<p>&nbsp;a&nbsp;</p>`)).toBe(`a`);
+        expect(extractDescriptionFromHtml(`<p> &nbsp;a&nbsp; </p>`)).toBe(`a`);
+        expect(extractDescriptionFromHtml(`<p> &nbsp; a &nbsp; </p>`)).toBe(`a`);
     });
 
     it('should return the first heading from an real multi-whitespace HTML string', () => {
-        expect(extractDescriptionFromHtml(`<p>a&nbsp;a</h1>`)).toBe(`a a`);
-        expect(extractDescriptionFromHtml(`<p>a&nbsp; a</h1>`)).toBe(`a  a`);
-        expect(extractDescriptionFromHtml(`<h1>a &nbsp; a</h1>`)).toBe(`a   a`);
-        expect(extractDescriptionFromHtml(`<h1>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</h1>`)).toBe(`a     a`);
+        expect(extractDescriptionFromHtml(`<p>a&nbsp;a</p>`)).toBe(`a a`);
+        expect(extractDescriptionFromHtml(`<p>a&nbsp; a</p>`)).toBe(`a  a`);
+        expect(extractDescriptionFromHtml(`<p>a &nbsp; a</p>`)).toBe(`a   a`);
+        expect(extractDescriptionFromHtml(`<p>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</p>`)).toBe(`a     a`);
     });
 
     it('should return the first heading from an real special-characters HTML string', () => {
@@ -112,7 +105,9 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         
                 `),
             ),
-        ).toBe('!!!!');
+        ).toBe(
+            'Welcome to Ocean Vibes, a website dedicated to exploring the wonders of the ocean. Our stunning wallpaper featuring a beautiful sunset over the ocean sets the tone for our passion for all things related to the sea.',
+        );
 
         expect(
             extractDescriptionFromHtml(
@@ -166,7 +161,9 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         
                 `),
             ),
-        ).toBe('!!!!');
+        ).toBe(
+            'Welcome to our website dedicated to exploring the vast universe and the technology that makes it possible. Our homepage features a stunning black and white outline of a satellite, with intricate details that showcase its technical components and purpose.',
+        );
     });
 
     it('should return the multiple headings from an real multiline HTML string', () => {
@@ -211,13 +208,11 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                     `),
             ),
         ).toBe(
-            spaceTrim(`
-                    !!!!
-            `),
+            `Looking for a way to add some magic to your device's background? Our Desert Nights image is the perfect choice. Featuring a stunning photograph of a desert landscape at night, with the stars twinkling above, this image will transport you to another world.`,
         );
     });
 
-    it('should return multiple lines each for each paragraph', () => {
+    it('should return multiple lines each for first paragraph', () => {
         expect(
             extractDescriptionFromHtml(
                 spaceTrim(`
@@ -232,10 +227,6 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
             spaceTrim(`
                     a
                     b
-
-                    c
-
-                    d
                 `),
         );
     });

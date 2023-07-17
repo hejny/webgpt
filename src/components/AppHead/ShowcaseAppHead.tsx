@@ -5,9 +5,7 @@ import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 import { ExportContext } from '../../pages/_app';
-import { extractFirstParagraphFromMarkdown } from '../../utils/content/extractFirstParagraphFromMarkdown';
-import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
-import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
+import { extractDescriptionFromHtml } from '../../utils/content/extractDescriptionFromHtml';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ExportComment } from '../ExportComment/ExportComment';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
@@ -28,10 +26,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     // TODO: !! IWalpaper should have custom emoji which will be contained here
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
-    const description = removeMarkdownFormatting(
-        /* <- !!!! Fix this maybe same way as extractTitleFromHtml + !!!! Allow html content OR JUST FROM HTML */
-        removeMarkdownLinks(extractFirstParagraphFromMarkdown(wallpaper.content)),
-    );
+    const description = extractDescriptionFromHtml(wallpaper.content); /* <- !!! Shorten a description with GPT */
 
     const homeUrl = `${publicUrl.href}${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 

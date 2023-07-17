@@ -36,7 +36,7 @@ describe('extractDescriptionFromContent', () => {
         expect(
             extractDescriptionFromContent(
                 spaceTrim(
-                    `<html><head><description>This is a title</description></head><body><h1>This is a heading</h1>Some content</body></html>`,
+                    `<html><head><description>This is a title</description></head><body><h1>This is a heading</h1><p>Some content</p></body></html>`,
                 ),
             ),
         ).toBe('Some content');
