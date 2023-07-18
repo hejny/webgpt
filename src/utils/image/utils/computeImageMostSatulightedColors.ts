@@ -14,9 +14,9 @@ import { getImageUniqueColors } from './getImageUniqueColors';
 /**
  * @@@
  */
-export function computeImageMostSatulightedColors(
+export async function computeImageMostSatulightedColors(
     image: IImage,
-): Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */> {
+): Promise<Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>> {
     // 1️⃣ Sort colors by saturation*lightness
     const colors = Array.from(getImageUniqueColors(image));
     colors.sort((a, b) => colorSatulightion(b) - colorSatulightion(a));

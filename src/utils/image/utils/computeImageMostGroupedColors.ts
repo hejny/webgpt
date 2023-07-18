@@ -6,9 +6,9 @@ import { IImage } from '../IImage';
 /**
  * @@@
  */
-export function computeImageMostGroupedColors(
+export async function computeImageMostGroupedColors(
     image: IImage,
-): Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */> {
+): Promise<Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>> {
     // Create a 2D array to keep track of visited pixels
     const visited = new Array(image.width).fill(null).map(() => new Array(image.height).fill(false));
 

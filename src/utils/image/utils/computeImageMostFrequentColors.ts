@@ -7,9 +7,9 @@ import { IImage } from '../IImage';
 /**
  * @@@
  */
-export function computeImageMostFrequentColors(
+export async function computeImageMostFrequentColors(
     image: IImage,
-): Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */> {
+): Promise<Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>> {
     const colorCounts: Map<string, number> = new Map();
 
     // 1️⃣ Loop through all the pixels in the image and count the number of times each color appears

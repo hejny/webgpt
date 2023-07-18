@@ -1,4 +1,5 @@
 import { IVector, Vector } from 'xyzt';
+import { take } from '../../../take/take';
 import { IImage } from '../../IImage';
 import { colorDownscaleImage } from '../../utils/colorDownscaleImage';
 import { computeImageAverageColor } from '../../utils/computeImageAverageColor';
@@ -32,31 +33,32 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
 
     const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v14palette` as string;
 
-    const computeWholeImageColorStats = (image: IImage): IImageColorStatsRegion => {
+    const computeWholeImageColorStats = async (image: IImage): Promise<IImageColorStatsRegion> => {
         image = scaleImage(image, size);
         image = colorDownscaleImage(image, colorBits);
 
         return {
-            // !!!! Make each subfunction async + this wrapper function async too
-            averageColor: computeImageAverageColor(image),
-            lightestColor: computeImageLightestColor(image),
-            darkestColor: computeImageDarkestColor(image),
-            mostFrequentColors: computeImageMostFrequentColors(image),
-            mostSatulightedColors: computeImageMostSatulightedColors(image),
-            mostGroupedColors: computeImageMostGroupedColors(image),
+
+            // Note: There is a strange type problem when averageColor, lightestColor and darkestColor is not wrapped in take()
+            averageColor: take(await computeImageAverageColor(image)),
+            lightestColor: take(await computeImageLightestColor(image)),
+            darkestColor: take(await computeImageDarkestColor(image)),
+            mostFrequentColors: await computeImageMostFrequentColors(image),
+            mostSatulightedColors: await computeImageMostSatulightedColors(image),
+            mostGroupedColors: await computeImageMostGroupedColors(image),
         };
     };
 
     const computeImageColorStats = async (image: IImage): Promise<IImageColorStatsAdvanced<string>> => {
         const stats = {
-            ...computeWholeImageColorStats(image),
-            bottomHalf: computeWholeImageColorStats(
+            ...(await computeWholeImageColorStats(image)),
+            bottomHalf: await computeWholeImageColorStats(
                 image.crop(new Vector(0, image.height * (1 / 2)), new Vector(image.width, image.height)),
             ),
-            bottomThird: computeWholeImageColorStats(
+            bottomThird: await computeWholeImageColorStats(
                 image.crop(new Vector(0, image.height * (2 / 3)), new Vector(image.width, image.height)),
             ),
-            bottomLine: computeWholeImageColorStats(
+            bottomLine: await computeWholeImageColorStats(
                 image.crop(new Vector(0, image.height - 1), new Vector(image.width, image.height)),
             ),
         } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>;

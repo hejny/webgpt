@@ -5,7 +5,7 @@ import { IImage } from '../IImage';
 /**
  * @@@
  */
-export function computeImageAverageColor(image: IImage): WithTake<Color> {
+export async function computeImageAverageColor(image: IImage): Promise<WithTake<Color>> {
     let red = 0;
     let green = 0;
     let blue = 0;

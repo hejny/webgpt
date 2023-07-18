@@ -7,7 +7,9 @@ import { getImageUniqueColors } from './getImageUniqueColors';
 /**
  * @@@
  */
-export function computeImageLightestColor(image: IImage): WithTake<Color> /* <- TODO: Return some meaningfull range */ {
+export async function computeImageLightestColor(
+    image: IImage,
+): Promise<WithTake<Color> /* <- TODO: Return some meaningfull range */> {
     const colors = Array.from(getImageUniqueColors(image));
     colors.sort((a, b) => colorLuminance(b) - colorLuminance(a));
     return colors[0];
