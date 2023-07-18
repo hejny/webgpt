@@ -1,10 +1,19 @@
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
+import { number_integer, number_percent } from '../../typeAliases';
 import { IImage } from '../IImage';
+
+interface IComputeImageColorStatsProgress {
+    total: number_integer;
+    done: number_integer;
+    percent: number_percent;
+}
 
 export interface IComputeImageColorStats<TVersion extends string> {
     version: TVersion;
-    (image: IImage): IImageColorStats<TVersion>;
+    (image: IImage, onProgress?: (progress: IComputeImageColorStatsProgress) => Promise<void>): Promise<
+        IImageColorStats<TVersion>
+    >;
 }
 
 export interface IImageColorStats<TVersion extends string> {

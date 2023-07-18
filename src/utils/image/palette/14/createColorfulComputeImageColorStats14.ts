@@ -37,6 +37,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
         image = colorDownscaleImage(image, colorBits);
 
         return {
+            // !!!! Make each subfunction async + this wrapper function async too
             averageColor: computeImageAverageColor(image),
             lightestColor: computeImageLightestColor(image),
             darkestColor: computeImageDarkestColor(image),
@@ -46,7 +47,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
         };
     };
 
-    const computeImageColorStats = (image: IImage): IImageColorStatsAdvanced<string> => {
+    const computeImageColorStats = async (image: IImage): Promise<IImageColorStatsAdvanced<string>> => {
         const stats = {
             ...computeWholeImageColorStats(image),
             bottomHalf: computeWholeImageColorStats(
@@ -60,7 +61,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
             ),
         } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>;
 
-        const { palette, paletteCandidates } = computeImagePalette14(stats);
+        const { palette, paletteCandidates } = await computeImagePalette14(stats);
         return { version, palette, paletteCandidates, ...stats };
     };
 

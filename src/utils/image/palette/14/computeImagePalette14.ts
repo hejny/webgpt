@@ -17,12 +17,12 @@ import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 let totalCount = 0;
 let pickByMostFrequentColorCount = 0;
 
-export function computeImagePalette14(
+export async function computeImagePalette14(
     colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>,
-): {
+): Promise<{
     palette: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
     paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
-} {
+}> {
     let primaryColor: { value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/ | null = null;
 
     totalCount++;
