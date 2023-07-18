@@ -3,7 +3,7 @@ import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
 export interface RandomWallpaperResponse {
-    randomWallpaper: Pick<IWallpaperSerialized, 'id'>;
+    randomWallpaper: IWallpaperSerialized;
 }
 
 export default async function randomWallpaperHandler(
@@ -12,7 +12,7 @@ export default async function randomWallpaperHandler(
 ) {
     const result = await getSupabaseForServer()
         .from('Wallpaper_random')
-        .select('id')
+        .select('*')
         .eq('isPublic', true)
         .limit(1)
         .single();

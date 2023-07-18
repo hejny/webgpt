@@ -2,10 +2,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import type { RandomWallpaperResponse } from '../../pages/api/random-wallpaper';
 import { classNames } from '../../utils/classNames';
+import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { hydrateWallpaper, serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -96,23 +97,37 @@ export function ControlPanel(props: ControlPanelProps) {
                     /* Note: randomWallpaper image is already prerendered thare -> [🤰] <- !!!! Fix or remove + [🧠] do we want to prefetch random wallpaper, if yes, do it here */
                     className={classNames(/*'button',*/ styles.button)}
                     title="Show me another one"
-                    onClick={async () => {
+                    ref={async (element) => {
+                        if (!element) {
+                            return;
+                        }
+
                         const response = await fetch('/api/random-wallpaper');
-                        const { randomWallpaper } = (await response.json()) as RandomWallpaperResponse;
+                        const { randomWallpaper: randomWallpaperSerialized } =
+                            (await response.json()) as RandomWallpaperResponse;
+                        const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
+                        console.info(`🎲 Pre-fetching next random wallpaper`, { randomWallpaper });
 
-                        await router.push(`/${randomWallpaper.id}`);
+                        // Note: !!!!
+                        /* not await */ fetch(`/${randomWallpaper.id}`);
 
-                        /*
-                        TODO: !!!! Remove or uncomment + write the purpose
-                        // Note: No need for preventDefault
-                        const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
-                        headerWallpaperElement.setAttribute(
-                            'src',
-                            colorToDataUrl(randomWallpaper.colorStats.averageColor),
-                        );
-                        headerWallpaperElement.removeAttribute('srcset');
-                        
-                        */
+                        // !!!! TODO: addEventListener before any await OR as onClick via react
+                        element.addEventListener('click', async () => {
+                            await router.push(`/${randomWallpaper.id}`);
+
+                            /*
+                            TODO: !!!! Remove or uncomment + write the purpose
+                            */
+
+                            const headerWallpaperElement = document.getElementById(
+                                'HeaderWallpaper' /* <- TODO: Some system for global css classes */,
+                            )!;
+                            headerWallpaperElement.setAttribute(
+                                'src',
+                                colorToDataUrl(randomWallpaper.colorStats.averageColor),
+                            );
+                            headerWallpaperElement.removeAttribute('srcset');
+                        });
                     }}
                     style={
                         {
