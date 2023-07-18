@@ -31,6 +31,8 @@ export async function createImageInNode(path: string): Promise<Image> {
 
             // Set the color of the pixel in the image object
             image.setPixel({ x, y }, color);
+
+            // Note: Do not wait here forARest(); - it will slow down the process and does not make sense in node
         }
     }
 

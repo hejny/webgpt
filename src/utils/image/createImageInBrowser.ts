@@ -1,6 +1,7 @@
 import { Color } from '../color/Color';
 import { string_url } from '../typeAliases';
 import { Image as MyImage } from './Image';
+import { forARest } from './utils/forARest';
 
 /**
  * Define an async function to create an image in the browser
@@ -20,7 +21,7 @@ export async function createImageInBrowser(src: string_url): Promise<MyImage> {
         img.src = src;
 
         // Once the image is loaded, perform the necessary operations
-        img.onload = () => {
+        img.onload = async () => {
             // Get the width and height of the image
             const width = img.width;
             const height = img.height;
@@ -66,6 +67,8 @@ export async function createImageInBrowser(src: string_url): Promise<MyImage> {
 
                     // Set the color of the pixel in the image object
                     image.setPixel({ x, y }, color);
+
+                    await forARest();
                 }
             }
 

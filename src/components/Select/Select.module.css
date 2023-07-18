@@ -51,3 +51,9 @@
     display: inline-block;
     width: 70px;
 }
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: none;
+}

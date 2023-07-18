@@ -26,8 +26,6 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
     const { isExplaining, isEditable } = useMode();
 
-    console.log(currentWallpaper);
-
     if (currentWallpaper === undefined) {
         return <div>Loading...</div> /* <- TODO: Better loading + [👠] Some standard standalone page*/;
     }

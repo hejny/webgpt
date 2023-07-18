@@ -9,10 +9,11 @@ interface SelectProps<TValue extends string | number | symbol> {
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
     className?: string;
+    isDisabled?: boolean;
 }
 
 export function Select<TValue extends string | number | symbol>(props: SelectProps<TValue>) {
-    const { label, value, onChange, visibleButtons, className } = props;
+    const { label, value, onChange, visibleButtons, className, isDisabled } = props;
 
     const options: Array<{ id: TValue; label: string | ReactNode }> = Object.entries(props.options).map(
         ([id, label]) => ({
@@ -24,7 +25,7 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
     const restOptions = options.slice(visibleButtons);
 
     return (
-        <div className={classNames(styles.Select, className)}>
+        <div className={classNames(styles.Select, className, isDisabled && styles.disabled)}>
             {label && <span className={styles.title}>{label}</span>}
 
             {firstOptions.map((option) => (
@@ -39,6 +40,7 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 
             {restOptions.length !== 0 && (
                 <select
+                    disabled={isDisabled}
                     className={classNames(
                         styles.option,
                         !firstOptions.some(({ id }) => id === value) && styles.selected,
