@@ -111,6 +111,9 @@ export function ControlPanel(props: ControlPanelProps) {
                         // Note: !!!!
                         /* not await */ fetch(`/${randomWallpaper.id}`);
 
+
+ /* not await */ fetch(randomWallpaper.src);
+
                         // !!!! TODO: addEventListener before any await OR as onClick via react
                         element.addEventListener('click', async () => {
                             await router.push(`/${randomWallpaper.id}`);
