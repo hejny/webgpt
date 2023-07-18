@@ -3,6 +3,7 @@ import { Color } from '../../color/Color';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
+import { forARest } from './forARest';
 
 /**
  * @@@
@@ -21,12 +22,14 @@ export async function computeImageMostFrequentColors(
             // Increment the count for this color
             const count = (colorCounts.get(colorString) || 0) + 1;
             colorCounts.set(colorString, count);
+
+            await forARest();
         }
     }
 
     // 2️⃣ Sort colors by frequency
     const mostFrequentColors = Array.from(colorCounts.entries())
-        .sort((a, b) => b[1] - a[1])
+        .sort((a, b) => b[1] - a[1]) /* <- TODO: [⏳] Make this sort async with await forARest */
         .map(([colorCode]) => Color.fromHex(colorCode));
 
     // 3️⃣ Pick colors that has some distance threshold  (compared to all other already picked colors)
@@ -42,6 +45,8 @@ export async function computeImageMostFrequentColors(
         if (uniqueColors.length >= COLORS_LIMIT) {
             break;
         }
+
+        await forARest();
     }
 
     return uniqueColors;

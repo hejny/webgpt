@@ -8,6 +8,7 @@ import { computeImageLightestColor } from '../../utils/computeImageLightestColor
 import { computeImageMostFrequentColors } from '../../utils/computeImageMostFrequentColors';
 import { computeImageMostGroupedColors } from '../../utils/computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from '../../utils/computeImageMostSatulightedColors';
+import { forARest } from '../../utils/forARest';
 import {
     IComputeImageColorStats,
     IImageColorStatsAdvanced,
@@ -37,8 +38,9 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
         image = scaleImage(image, size);
         image = colorDownscaleImage(image, colorBits);
 
-        return {
+        await forARest();
 
+        return {
             // Note: There is a strange type problem when averageColor, lightestColor and darkestColor is not wrapped in take()
             averageColor: take(await computeImageAverageColor(image)),
             lightestColor: take(await computeImageLightestColor(image)),

@@ -2,6 +2,7 @@ import { Color } from '../../color/Color';
 import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
+import { forARest } from './forARest';
 
 /**
  * @@@
@@ -41,6 +42,8 @@ export async function computeImageMostGroupedColors(
                     queue.push({ x, y: y - 1 });
                     queue.push({ x, y: y + 1 });
                 }
+
+                await forARest();
             }
 
             // Update mostGroupedColor and maxGroupSize if necessary
@@ -48,6 +51,8 @@ export async function computeImageMostGroupedColors(
                 mostGroupedColor = color;
                 maxGroupSize = groupSize;
             }
+
+            await forARest();
         }
     }
 

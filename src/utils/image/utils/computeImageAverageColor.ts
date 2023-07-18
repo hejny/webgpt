@@ -1,6 +1,7 @@
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
+import { forARest } from './forARest';
 
 /**
  * @@@
@@ -18,6 +19,8 @@ export async function computeImageAverageColor(image: IImage): Promise<WithTake<
             green += pixel.green;
             blue += pixel.blue;
             alpha += pixel.alpha;
+
+            await forARest();
         }
     }
 
