@@ -32,12 +32,14 @@ export function ColorsModalColorAlgoritm() {
                     // Probbably solved -> TODO: !!! [🧠] Fix tainted canvas error
                     // TODO: !!! [🧠] Whe best way to report progress from createImageInBrowser and compute
 
+                    console.info('🎨', { wallpaper });
+
                     const image = await createImageInBrowser(wallpaper.src);
-                    console.log({ image });
+                    console.info('🎨', { image });
 
                     const newColorStats = await compute(image);
 
-                    console.log({ newColorStats });
+                    console.info('🎨', { newColorStats });
 
                     // TODO: !!!! Make this work;
 

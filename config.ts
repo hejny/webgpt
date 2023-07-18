@@ -83,15 +83,18 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
+    /*
+    TODO: There is an infinite loop with "Error: Size must have positive integer values, got 19.2x10.8" when using this:
+          Fix it:
+        > createColorfulComputeImageColorStats14({
+        >     colorBits: 16,
+        >     size: IMAGE_NATURAL_SIZE.scale(0.01),
+        > }),
+    */
     createColorfulComputeImageColorStats14({
         // !!!! Remove this
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.01),
-    }),
-    createColorfulComputeImageColorStats14({
-        // !!!! Remove this
-        colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.05),
+        size: IMAGE_NATURAL_SIZE.scale(0.2),
     }),
     /*
     TODO: !! Add more versions (Also full)
