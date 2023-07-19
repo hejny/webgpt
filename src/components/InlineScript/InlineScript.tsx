@@ -20,6 +20,6 @@ export function InlineScript(props: InlineScriptProps) {
         return <Script {...{ id, children }} />;
     } else {
         // Note: The script is on static html page placed inlined
-        return <script>{children}</script>;
+        return <script dangerouslySetInnerHTML={{ __html: children }} />;
     }
 }
