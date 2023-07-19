@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router';
+import { string_wallpaper_id } from '../typeAliases';
 
 /**
  * A function that returns current wallpaper id based on the router query
  */
-export function useCurrentWallpaperId(): string {
+export function useCurrentWallpaperId(): string_wallpaper_id {
     const router = useRouter();
 
     if (router.pathname === '/[wallpaper]') {

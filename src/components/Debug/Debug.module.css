@@ -1,0 +1,9 @@
+.Debug {
+    z-index: 90000 /* <- [🔝] Global order of showcase */;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+}

@@ -11,7 +11,7 @@ import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { useMode } from '../utils/hooks/useMode';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../utils/hydrateWallpaper';
-import { hydrateWallpapers } from '../utils/hydrateWallpapers';
+import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { randomItem } from '../utils/randomItem';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
@@ -48,24 +48,13 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
     return (
         <WallpapersContext.Provider
-            value={hydrateWallpapers([currentWallpaper])} /* <- Is this the right place to be Provider in? */
+            value={hydrateWallpapersCached([currentWallpaper])} /* <- Is this the right place to be Provider in? */
         >
             <ShowcaseAppHead />
             <SkinStyle />
-            {/* TODO: <LanguagePicker /> * /}
+            {/* TODO: <LanguagePicker /> */}
 
-
-
-            {/* !!! Remove
-            <Head>
-                <link
-                    // TODO: !!! Is this working? Maybe use prerender
-                    rel="prerender"
-                    href={randomWallpaper.src}
-                    as="image" /* <- Note: [🤰] Here is preloaded randomWallpaper * /
-                />
-            </Head>
-            */}
+            {/* <Debug /> */}
 
             {isEditable && <PreventUnsavedChanges />}
             {isExplaining && <ExplainContent />}
