@@ -11,11 +11,7 @@ type IModifyWallpaper = (modifiedWallpaper: IWallpaperToModify) => IWallpaperToM
  * A function that returns a wallpaper component based on the router query
  */
 export function useWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWallpaper) => IWallpaper] {
-    // !!!!!!!!!!!!!!
-    // const wallpaperId = 'a1deed43-9541-4ce3-b6ef-2a36536bc6f2'; //useCurrentWallpaperId();
     const wallpaperId = useCurrentWallpaperId();
-
-    console.log('!!! wallpaperId', wallpaperId);
 
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
