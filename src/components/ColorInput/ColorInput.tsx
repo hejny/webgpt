@@ -9,7 +9,7 @@ import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
     className?: string;
-    defaultValue: Color;
+    value: Color;
     onChange(color: WithTake<Color>): void;
     presetColors?: Array<PresetColor>;
 }
@@ -18,23 +18,23 @@ interface ColorInputProps {
  * @@
  */
 export function ColorInput(props: ColorInputProps) {
-    const { className, defaultValue, onChange, presetColors } = props;
+    const { className, value, onChange, presetColors } = props;
 
-    const [color, setColor] = useState(take(defaultValue));
+    const [pickerColor, setPickerColor] = useState(take(value));
     const { isOpen, buttonRef, windowRef } = useClickOutside();
 
     return (
         <>
-            <div ref={buttonRef}>
-                <ColorPreview {...{ className, color }} />
+            <div ref={buttonRef} {...{ className }}>
+                <ColorPreview color={take(value)} />
             </div>
 
             <div className={styles.colorPicker} ref={windowRef}>
                 {isOpen && (
                     <SketchPicker
-                        {...{ color, presetColors }}
+                        {...{ color: pickerColor, presetColors }}
                         onChange={({ rgb: { r, g, b } }) => {
-                            setColor(Color.fromValues(r, g, b));
+                            setPickerColor(Color.fromValues(r, g, b));
                         }}
                         onChangeComplete={({ rgb: { r, g, b } }) => {
                             onChange(Color.fromValues(r, g, b));

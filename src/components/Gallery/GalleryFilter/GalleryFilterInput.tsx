@@ -53,7 +53,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
 
             <div className={styles.filter}>
                 Prefer color:&nbsp;&nbsp;
-                <ColorInput defaultValue={color || Color.fromHex('#777777')} onChange={setColor} />
+                <ColorInput value={color || Color.fromHex('#777777')} onChange={setColor} />
                 {color && (
                     <div onClick={() => setColor(undefined)}>
                         <MarkdownContent content="❌" isUsingOpenmoji />

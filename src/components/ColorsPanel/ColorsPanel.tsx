@@ -43,7 +43,7 @@ export function ColorsPanel(props: ColorsPanelProps) {
             {wallpaper.colorStats.palette.map((color, i) => (
                 <div key={i} className={classNames(styles.colorPickerWrapper)}>
                     <ColorInput
-                        defaultValue={color.value}
+                        value={color.value}
                         onChange={(newColor) => {
                             modifyWallpaper((modifiedWallpaper) => {
                                 modifiedWallpaper.colorStats.palette[i].value = newColor;
