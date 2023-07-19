@@ -13,7 +13,7 @@ let i = 0;
  * @@@
  */
 export async function forARest(): Promise<void> {
-    if (i++ % 10000000) {
+    if (i++ % 1000 === 0) {
         console.log('💤 Resting');
         await forAnimationFrame();
     }
@@ -36,6 +36,7 @@ export function WorkInProgress() {
 }
 
 /**
+ * TODO: Detect time delta and use it for more precise waiting
  * TODO: [🧠] useRefresh / observeVariable
  * TODO: !!!! Put in own component
  */
