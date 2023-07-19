@@ -5,6 +5,7 @@ import {
     PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO,
     TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO,
 } from '../../../../../config';
+import { forARest } from '../../../../components/WorkInProgress/forARest';
 import { Color } from '../../../color/Color';
 import { textColor } from '../../../color/operators/furthest';
 import { areColorsEqual } from '../../../color/utils/areColorsEqual';
@@ -12,7 +13,6 @@ import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
 import { getOrderString } from '../../../getOrderString';
 import { WithTake } from '../../../take/interfaces/ITakeChain';
-import { forARest } from '../../utils/forARest';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 let totalCount = 0;

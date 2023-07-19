@@ -3,8 +3,8 @@ import { forAnimationFrame } from 'waitasecond';
 import { COLORSTATS_COMPUTE_METHODS } from '../../../config';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { createImageInBrowser } from '../../utils/image/createImageInBrowser';
-import { WorkInProgress } from '../../utils/image/utils/forARest';
 import { Select } from '../Select/Select';
+import { WorkInProgress } from '../WorkInProgress/forARest';
 
 /**
  * @@

@@ -1,9 +1,9 @@
 import { COLORS_LIMIT, DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
+import { forARest } from '../../../components/WorkInProgress/forARest';
 import { Color } from '../../color/Color';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
-import { forARest } from './forARest';
 
 /**
  * @@@

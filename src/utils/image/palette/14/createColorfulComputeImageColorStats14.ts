@@ -1,4 +1,5 @@
 import { IVector, Vector } from 'xyzt';
+import { forARest } from '../../../../components/WorkInProgress/forARest';
 import { take } from '../../../take/take';
 import { IImage } from '../../IImage';
 import { colorDownscaleImage } from '../../utils/colorDownscaleImage';
@@ -8,7 +9,6 @@ import { computeImageLightestColor } from '../../utils/computeImageLightestColor
 import { computeImageMostFrequentColors } from '../../utils/computeImageMostFrequentColors';
 import { computeImageMostGroupedColors } from '../../utils/computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from '../../utils/computeImageMostSatulightedColors';
-import { forARest } from '../../utils/forARest';
 import {
     IComputeImageColorStats,
     IImageColorStatsAdvanced,

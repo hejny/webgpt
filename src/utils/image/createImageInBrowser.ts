@@ -1,7 +1,7 @@
+import { forARest } from '../../components/WorkInProgress/forARest';
 import { Color } from '../color/Color';
 import { string_url } from '../typeAliases';
 import { Image as MyImage } from './Image';
-import { forARest } from './utils/forARest';
 
 /**
  * Define an async function to create an image in the browser
