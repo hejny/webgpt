@@ -78,15 +78,14 @@ export async function getStaticProps({
     locale: string;
     params: any /* <- TODO: !! Type propperly + NOT manually */;
 }) {
-    const { wallpaper /* <- TODO: !!!! Change ACRY to wallpaperId */ } = params;
+    const { wallpaper /* <- TODO: !!! Change ACRY to wallpaperId */ } = params;
 
-    // TODO: [🥽] !!!! DRY - getWallpaper
-    // TODO: !!!! First dynamic then hardcoded
+    // TODO: [🥽] DRY - getWallpaper
+    // TODO: !!! First dynamic then hardcoded
     const wallpapers: Array<IWallpaperSerialized> = await getHardcodedWallpapers().catch((error) => [
         /* Note: On server, "Error: Could not find assets folder" will happen */
     ]);
     let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
-
     if (!currentWallpaper) {
         const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper);
         if (selectResult && selectResult.data && selectResult.data.length > 0) {
