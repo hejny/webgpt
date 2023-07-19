@@ -13,8 +13,8 @@ let i = 0;
  * @@@
  */
 export async function forARest(): Promise<void> {
-    if (i++ % 100000) {
-        console.log('forARest');
+    if (i++ % 10000000) {
+        console.log('💤 Resting');
         await forAnimationFrame();
     }
 }
