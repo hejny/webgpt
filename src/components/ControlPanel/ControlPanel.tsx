@@ -92,7 +92,7 @@ export function ControlPanel(props: ControlPanelProps) {
 
             {wallpaper.saveStage === 'SAVED' && (
                 <button
-                    // TODO: !!!! Go ACRY through randomWallpaper
+                    // TODO: !!! Go ACRY through randomWallpaper and cleanup old stuff
 
                     /* Note: randomWallpaper image is already prerendered thare -> [🤰] <- !!!! Fix or remove + [🧠] do we want to prefetch random wallpaper, if yes, do it here */
                     className={classNames(/*'button',*/ styles.button)}

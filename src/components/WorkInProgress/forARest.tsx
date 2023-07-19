@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
 import { forAnimationFrame } from 'waitasecond';
+
+const REST_AFTER_MS = 500; /* <- TODO: !!! Tweak time */
 
 /**
  * @@@
@@ -9,17 +10,28 @@ import { forAnimationFrame } from 'waitasecond';
  */
 export let restNonce = 0;
 
+/*
+ * @@@
+ *
+ * @private
+ * @singleton
+ */
+let lastRest = 0;
+
 /**
  * @@@
  */
 export async function forARest(): Promise<void> {
-    if (restNonce++ % 1000 === 0) {
+    const now = performance.now();
+
+    if (now - lastRest > REST_AFTER_MS) {
         console.log('💤 Resting');
         await forAnimationFrame();
     }
+
+    restNonce++;
+    lastRest = now;
 }
-
-
 
 /**
  * TODO: Detect time delta and use it for more precise waiting
