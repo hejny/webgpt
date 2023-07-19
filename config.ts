@@ -92,7 +92,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         > }),
     */
     createColorfulComputeImageColorStats14({
-        // !!!! Remove this
+        // !!! Remove this
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.2),
     }),
