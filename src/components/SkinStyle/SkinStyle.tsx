@@ -30,6 +30,13 @@ export function SkinStyle() {
                             // TODO: Add whitespace + here note:
                             //       Note: Following colors are just a repeat of first ${palette.length} colors
                             return [
+                                ...(i !== palette.length
+                                    ? []
+                                    : [
+                                          '',
+                                          '',
+                                          `/* Note: Following are just copies of previously defined palette colors: */`,
+                                      ]),
                                 `--palette-${i}: var(--palette-${j});`,
                                 `--palette-${i}-darken: var(--palette-${j}-darken);`,
                                 `--palette-${i}-triplet: var(--palette-${j}-triplet);`,
