@@ -91,8 +91,8 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                     {children}
                 </Head>
                 <AnalyticsAndIntegrations
-                    isSmartsuppHidden
-                    /*<- Note: <AnalyticsAndIntegrations/> mus be places out of <Head>,
+
+                /*<- Note: <AnalyticsAndIntegrations/> mus be places out of <Head>,
                         otherwise error "NextRouter was not mounted" occures
                 */
                 />

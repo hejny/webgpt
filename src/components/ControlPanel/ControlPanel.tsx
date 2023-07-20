@@ -180,18 +180,14 @@ export function ControlPanel(props: ControlPanelProps) {
             </Link>
             */}
 
-            <button
+            <Link
                 className={classNames(/*'button',*/ styles.button)}
                 title="Need help?"
-                onClick={() => {
-                    (window as any).smartsupp('chat:open');
-                }}
+                href="https://1-2i.com/contact"
             >
                 <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* [🧥] */ />
                 {/* <MarkdownContent content="💬" isUsingOpenmoji  /> */}
-
-                {/* <- TODO: !!!! Fix chat */}
-            </button>
+            </Link>
         </div>
     );
 }

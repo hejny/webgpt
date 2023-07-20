@@ -1,73 +1,15 @@
 import spaceTrim from 'spacetrim';
-import { forTime } from 'waitasecond';
 
-interface AnalyticsAndIntegrationsProps {
-    isSmartsuppHidden?: boolean;
-}
+interface AnalyticsAndIntegrationsProps {}
 
 /**
  * @@
  */
 export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
-    const { isSmartsuppHidden } = props;
+    const {} = props;
 
     return (
         <>
-            {/* ===[ SmartsUpp: ]=== */}
-
-            <script
-                // id="smartsupp"
-                ref={async (element) => {
-                    await forTime(1000 /* <- TODO: Maybe tweak this value */);
-                    try {
-                        if (isSmartsuppHidden) {
-                            (window as any).smartsupp('chat:hide');
-                        } else {
-                            (window as any).smartsupp('chat:show');
-                        }
-                    } catch (error) {
-                        console.error(error);
-                    }
-                }}
-                dangerouslySetInnerHTML={{
-                    __html: spaceTrim(`
-
-                        console.info('🔃 Loading SmartsUpp');
-
-                        var _smartsupp = _smartsupp || {};
-                        _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
-
-                        // --- Customization ---
-                        _smartsupp.color = '#303030';
-                        _smartsupp.hideWidget = true /* <- Note: !!!@@@ */;
-                        _smartsupp.offsetY = 100;
-
-                        window.smartsupp||(function(d) {
-                        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-                        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-                        c.type='text/javascript';c.charset='utf-8';c.async=true;
-                        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-                        })(document);
-
-                        
-                        
-                    `),
-                }}
-            />
-            <style
-                data-export-ignore
-                dangerouslySetInnerHTML={{
-                    // TODO: !!! This should be excluded from export
-                    __html: spaceTrim(`
-                        #chat-application-iframe{
-                            color-scheme: light; /* <- Note: To enable transparent iframe borders */
-                        }
-                    `),
-                }}
-            />
-
-            {/* ===[ /SmartsUpp ]=== */}
-
             {/* ===[ SmartLook: ]=== */}
             <script
                 // key="smartlook"
