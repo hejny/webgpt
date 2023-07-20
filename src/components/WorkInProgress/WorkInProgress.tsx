@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { restNonce } from './forARest';
-import styles from './Sample.module.css';
+import styles from './WorkInProgress.module.css';
 
 interface WorkInProgressProps {}
 

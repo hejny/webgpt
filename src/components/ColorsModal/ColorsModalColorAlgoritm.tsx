@@ -4,7 +4,7 @@ import { COLORSTATS_COMPUTE_METHODS } from '../../../config';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { createImageInBrowser } from '../../utils/image/createImageInBrowser';
 import { Select } from '../Select/Select';
-import { WorkInProgress } from '../WorkInProgress/forARest';
+import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 
 /**
  * @@
