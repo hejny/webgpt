@@ -92,8 +92,8 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                 </Head>
                 <AnalyticsAndIntegrations
 
-                /*<- Note: <AnalyticsAndIntegrations/> mus be places out of <Head>,
-                        otherwise error "NextRouter was not mounted" occures
+                /* <- Note: <AnalyticsAndIntegrations/> musT be placed out of <Head>,
+                            otherwise error "NextRouter was not mounted" occures
                 */
                 />
             </>

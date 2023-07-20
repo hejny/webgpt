@@ -141,7 +141,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 >
                     {/* TODO: This should have more role like next not random */}
 
-                    <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* [🧥] */ />
+                    <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* <-[🧥] */ />
                     {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
                 </button>
             )}
@@ -158,7 +158,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     className={classNames(/*'button',*/ styles.button)}
                     title="Show without the controls"
                 >
-                    <Image alt="▶" src="/icons/openmoji/25B6.svg" width={40} height={40} /* [🧥] */ />
+                    <Image alt="▶" src="/icons/openmoji/25B6.svg" width={40} height={40} /* <-[🧥] */ />
                     {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
                     {/* <- TODO: !!!
                         - Open sharing modal
@@ -185,7 +185,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 title="Need help?"
                 href="https://1-2i.com/contact"
             >
-                <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* [🧥] */ />
+                <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="💬" isUsingOpenmoji  /> */}
             </Link>
         </div>

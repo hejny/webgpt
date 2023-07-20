@@ -52,9 +52,9 @@ export function StaticAppHead(props: StaticAppHeadProps) {
             </Head>
 
             <AnalyticsAndIntegrations
-            /*<- Note: <AnalyticsAndIntegrations/> mus be places out of <Head>,
+            /* <- Note: <AnalyticsAndIntegrations/> must be placed out of <Head>,
                         otherwise error "NextRouter was not mounted" occures
-                */
+            */
             />
             {/* TODO: <LanguagePicker /> */}
         </>
