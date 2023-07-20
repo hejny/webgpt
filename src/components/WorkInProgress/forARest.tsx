@@ -24,13 +24,13 @@ let lastRest = 0;
 export async function forARest(): Promise<void> {
     const now = performance.now();
 
+    restNonce++;
+    lastRest = now;
+
     if (now - lastRest > REST_AFTER_MS) {
         console.log('💤 Resting');
         await forAnimationFrame();
     }
-
-    restNonce++;
-    lastRest = now;
 }
 
 /**
