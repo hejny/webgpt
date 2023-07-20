@@ -122,7 +122,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
     /**/
     /**/
     // Note: Temporarlly disabled because of enoromous number of javascript assets because of OpenMoji
-    // TODO: [🧥] Figure out how to use OpenMoji efficiently
+    // TODO: [🧥] Figure out how to use OpenMoji efficiently - maybe when there will be ready to use OpenMoji font
     const enhancedContent = synchronouslyEnhancedContent;
     /**/
 

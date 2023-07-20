@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import type { RandomWallpaperResponse } from '../../pages/api/random-wallpaper';
@@ -11,7 +12,6 @@ import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 
@@ -139,10 +139,10 @@ export function ControlPanel(props: ControlPanelProps) {
                         }
                     }
                 >
-                    <MarkdownContent
-                        content="🎲"
-                        isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
-                    />
+                    {/* TODO: This should have more role like next not random */}
+
+                    <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* [🧥] */ />
+                    {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
                 </button>
             )}
 
@@ -158,15 +158,13 @@ export function ControlPanel(props: ControlPanelProps) {
                     className={classNames(/*'button',*/ styles.button)}
                     title="Show without the controls"
                 >
-                    <MarkdownContent
-                        content="▶"
-                        isUsingOpenmoji
-                        /* <- TODO: !!!
+                    <Image alt="▶" src="/icons/openmoji/25B6.svg" width={40} height={40} /* [🧥] */ />
+                    {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
+                    {/* <- TODO: !!!
                         - Open sharing modal
                         - Show the QR code before
                         - Save to GET params to be able to send both /share and ?mode=presentation
-                     */
-                    />
+                     */}
                 </Link>
             )}
 
@@ -189,7 +187,10 @@ export function ControlPanel(props: ControlPanelProps) {
                     (window as any).smartsupp('chat:open');
                 }}
             >
-                <MarkdownContent content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
+                <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* [🧥] */ />
+                {/* <MarkdownContent content="💬" isUsingOpenmoji  /> */}
+
+                {/* <- TODO: !!!! Fix chat */}
             </button>
         </div>
     );

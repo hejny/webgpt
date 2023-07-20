@@ -1,0 +1,1 @@
+Note: [🧥] This folder is only temporary until OpenMoji can ve used as a library

@@ -1,9 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import styles from '../ControlPanel/ControlPanel.module.css';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 
 /**
  * @@@
@@ -45,7 +45,8 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <MarkdownContent content="❤" isUsingOpenmoji />
+                <Image alt="❤" src="/icons/openmoji/2764.svg" width={40} height={40} /* [🧥] */ />
+                {/* <MarkdownContent content="❤" isUsingOpenmoji /> */}
             </button>
 
             <button
@@ -59,7 +60,8 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <MarkdownContent content="👍" isUsingOpenmoji />
+                <Image alt="👍" src="/icons/openmoji/1F44D.svg" width={40} height={40} /* [🧥] */ />
+                {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
             </button>
             <button
                 className={classNames(/*'button',*/ styles.button)}
@@ -71,7 +73,8 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <MarkdownContent content="😐" isUsingOpenmoji />
+                <Image alt="😐" src="/icons/openmoji/1F610.svg" width={40} height={40} /* [🧥] */ />
+                {/* <MarkdownContent content="😐" isUsingOpenmoji /> */}
             </button>
             <button
                 className={classNames(/*'button',*/ styles.button)}
@@ -83,7 +86,8 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <MarkdownContent content="👎" isUsingOpenmoji />
+                <Image alt="👎" src="/icons/openmoji/1F44E.svg" width={40} height={40} /* [🧥] */ />
+                {/* <MarkdownContent content="👎" isUsingOpenmoji /> */}
             </button>
         </>
     );
