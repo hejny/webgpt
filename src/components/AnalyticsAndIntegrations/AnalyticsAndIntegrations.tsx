@@ -40,6 +40,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                         // --- Customization ---
                         _smartsupp.color = '#303030';
                         _smartsupp.hideWidget = true /* <- Note: !!!@@@ */;
+                        _smartsupp.offsetY = 100;
 
                         window.smartsupp||(function(d) {
                         var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
@@ -58,7 +59,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 dangerouslySetInnerHTML={{
                     // TODO: !!! This should be excluded from export
                     __html: spaceTrim(`
-                        #chat-application{
+                        #chat-application-iframe{
                             color-scheme: light; /* <- Note: To enable transparent iframe borders */
                         }
                     `),
