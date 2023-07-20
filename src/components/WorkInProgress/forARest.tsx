@@ -1,6 +1,6 @@
 import { forAnimationFrame } from 'waitasecond';
 
-const REST_AFTER_MS = 500; /* <- TODO: !!! Tweak time */
+const REST_AFTER_MS = 10; /* <- TODO: !!! Tweak time */
 
 /**
  * @@@
