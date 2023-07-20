@@ -207,7 +207,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                             </body>
                         </WallpapersContext.Provider>
                     </ShuffleSeedContext.Provider>
-                    ./
                 </ExportContext.Provider>
             </RouterContext.Provider>
         </html>,
