@@ -5,6 +5,7 @@ import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../../utils/IWallpaper';
+import { string_wallpaper_id } from '../../../utils/typeAliases';
 
 export class RandomWallpaperManager {
     public constructor() {
@@ -49,9 +50,10 @@ export class RandomWallpaperManager {
         this.prefetchedRandomWallpapers.push(randomWallpaper);
     }
 
-    public async getRandomWallpaper(): Promise<IWallpaper> {
+    public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaper> {
         const randomWallpaper = this.prefetchedRandomWallpapers.shift();
 
+        console.log('!!! currentWallpaperId', currentWallpaperId);
         console.log('!!! this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
         console.log('!!! randomWallpaper', randomWallpaper);
 
