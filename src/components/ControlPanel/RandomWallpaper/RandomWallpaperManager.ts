@@ -63,7 +63,7 @@ export class RandomWallpaperManager {
         console.log('!!! this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
         console.log('!!! randomWallpaper', randomWallpaper);
 
-        if (this.prefetchedRandomWallpapers.length + this.prefetchingCount === 0) {
+        if (this.prefetchedRandomWallpapers.length + this.prefetchingCount < 2) {
             /* not await */ this.prefetchRandomWallpaper();
         }
 
