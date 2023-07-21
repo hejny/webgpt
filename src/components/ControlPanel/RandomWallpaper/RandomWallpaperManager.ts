@@ -8,18 +8,25 @@ import { IWallpaper } from '../../../utils/IWallpaper';
 
 export class RandomWallpaperManager {
     public constructor() {
+        this.preloadGallery = document.createElement('div');
+        this.preloadGallery.style.position = 'fixed';
+        this.preloadGallery.style.top = '10px';
+        this.preloadGallery.style.left = '10px';
+        document.body.appendChild(this.preloadGallery);
         /* not await */ this.init();
     }
 
+    private preloadGallery: HTMLDivElement;
+
     private async init() {
-        await this.prefetchRandomWallpaper();
+        /* not await */ this.prefetchRandomWallpaper();
     }
 
-    private async fetchRandomWallpaper(): Promise<IWallpaper> {
+    private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaper> {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
         const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
-        console.info(`🎲 Fetching next random wallpaper`, { randomWallpaper });
+        console.info(`🎲 ${isPrefetch ? 'Pre-' : ''}Fetching next random wallpaper`, { randomWallpaper });
 
         // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
         /* not await */ fetch(`/${randomWallpaper.id}`);
@@ -28,12 +35,9 @@ export class RandomWallpaperManager {
         /// !!!!/* not await */ fetch(randomWallpaper.src);
         const imageElement = new Image();
         imageElement.src = randomWallpaper.src;
-        imageElement.style.position = 'fixed';
-        imageElement.style.top = '10px';
-        imageElement.style.left = '10px';
         imageElement.style.width = '100px';
         imageElement.style.height = '100px';
-        document.body.appendChild(imageElement);
+        this.preloadGallery.appendChild(imageElement);
 
         return randomWallpaper;
     }
@@ -41,16 +45,21 @@ export class RandomWallpaperManager {
     private prefetchedRandomWallpapers: Array<IWallpaper> = [];
 
     private async prefetchRandomWallpaper(): Promise<void> {
-        const randomWallpaper = await this.fetchRandomWallpaper();
+        const randomWallpaper = await this.fetchRandomWallpaper(true);
         this.prefetchedRandomWallpapers.push(randomWallpaper);
     }
 
     public async getRandomWallpaper(): Promise<IWallpaper> {
         const randomWallpaper = this.prefetchedRandomWallpapers.pop();
+
+        if (this.prefetchedRandomWallpapers.length === 0) {
+            /* not await */ this.prefetchRandomWallpaper();
+        }
+
         if (randomWallpaper) {
             return randomWallpaper;
         } else {
-            return await this.fetchRandomWallpaper();
+            return await this.fetchRandomWallpaper(false);
         }
     }
 }
