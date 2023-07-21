@@ -19,7 +19,7 @@ export class RandomWallpaperManager {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
         const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
-        console.info(`🎲 Pre-fetching next random wallpaper`, { randomWallpaper });
+        console.info(`🎲 Fetching next random wallpaper`, { randomWallpaper });
 
         // !!!! Dynamically replace the wallpaper
         // Note: !!!!
