@@ -1,6 +1,7 @@
 // !!!!!!!Anotate
 // !!!!!!!Split to files - use singleton pattern - create on first use
 
+import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../../utils/IWallpaper';
@@ -17,7 +18,7 @@ export class RandomWallpaperManager {
     private randomWallpapars: Array<IWallpaper> = [];
 
     private async fetchRandomWallpaper() {
-        const response = await fetch('/api/random-wallpaper');
+        const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
         const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
         console.info(`🎲 Pre-fetching next random wallpaper`, { randomWallpaper });
