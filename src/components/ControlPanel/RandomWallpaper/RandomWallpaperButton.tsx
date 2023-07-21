@@ -2,14 +2,12 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { classNames } from '../../../utils/classNames';
 import { colorToDataUrl } from '../../../utils/color/utils/colorToDataUrl';
-import styles from './ControlPanel.module.css';
+import styles from '../ControlPanel.module.css';
 import { useRandomWallpaperManager } from './useRandomWallpaperManager';
 
 export function RandomWallpaperButton() {
     const router = useRouter();
     const randomWallpaperManager = useRandomWallpaperManager();
-
-    const randomWallpaper = randomWallpaperManager.getRandomWallpaper();
 
     return (
         <button
