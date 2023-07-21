@@ -44,10 +44,16 @@ export class RandomWallpaperManager {
     }
 
     private prefetchedRandomWallpapers: Array<IWallpaper> = [];
+    private prefetchingCount = 0;
 
     private async prefetchRandomWallpaper(): Promise<void> {
-        const randomWallpaper = await this.fetchRandomWallpaper(true);
-        this.prefetchedRandomWallpapers.push(randomWallpaper);
+        this.prefetchingCount++;
+        try {
+            const randomWallpaper = await this.fetchRandomWallpaper(true);
+            this.prefetchedRandomWallpapers.push(randomWallpaper);
+        } finally {
+            this.prefetchingCount--;
+        }
     }
 
     public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaper> {
@@ -57,7 +63,7 @@ export class RandomWallpaperManager {
         console.log('!!! this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
         console.log('!!! randomWallpaper', randomWallpaper);
 
-        if (this.prefetchedRandomWallpapers.length === 0) {
+        if (this.prefetchedRandomWallpapers.length === 0 && this.prefetchingCount === 0) {
             /* not await */ this.prefetchRandomWallpaper();
         }
 
