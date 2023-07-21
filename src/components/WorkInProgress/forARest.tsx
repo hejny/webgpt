@@ -1,4 +1,4 @@
-import { forAnimationFrame } from 'waitasecond';
+import { forAnimationFrame, forImmediate } from 'waitasecond';
 
 const REST_AFTER_MS = 10; /* <- TODO: !!! Tweak time */
 
@@ -29,6 +29,7 @@ export async function forARest(): Promise<void> {
     if (now - lastRest > REST_AFTER_MS) {
         console.log('💤 Resting');
         lastRest = now;
+        await forImmediate();
         await forAnimationFrame();
     }
 }
