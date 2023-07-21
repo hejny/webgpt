@@ -50,7 +50,10 @@ export class RandomWallpaperManager {
     }
 
     public async getRandomWallpaper(): Promise<IWallpaper> {
-        const randomWallpaper = this.prefetchedRandomWallpapers.pop();
+        const randomWallpaper = this.prefetchedRandomWallpapers.shift();
+
+        console.log('!!! this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
+        console.log('!!! randomWallpaper', randomWallpaper);
 
         if (this.prefetchedRandomWallpapers.length === 0) {
             /* not await */ this.prefetchRandomWallpaper();

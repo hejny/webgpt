@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../../utils/classNames';
-import { colorToDataUrl } from '../../../utils/color/utils/colorToDataUrl';
 import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
@@ -25,17 +24,20 @@ export function RandomWallpaperButton() {
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible
                      + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
             */
+
+            /* 
             onClick={async () => {
                 // Note: No need for preventDefault
 
                 const headerWallpaperElement = document.getElementById(
-                    'HeaderWallpaper' /* <- TODO: Some system for global css classes */,
+                    'HeaderWallpaper' /* <- TODO: Some system for global css classes * /,
                 )!;
                 headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
                 headerWallpaperElement.removeAttribute('srcset');
 
-                await router.push(`/${randomWallpaper.id}`);
+               
             }}
+            */
             style={
                 {
                     // ...minorButtonStyle,
