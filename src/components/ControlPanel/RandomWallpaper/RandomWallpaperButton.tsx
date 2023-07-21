@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { RandomWallpaperResponse } from '../../pages/api/random-wallpaper';
-import { classNames } from '../../utils/classNames';
-import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
-import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
+import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
+import { classNames } from '../../../utils/classNames';
+import { colorToDataUrl } from '../../../utils/color/utils/colorToDataUrl';
+import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
 import styles from './ControlPanel.module.css';
 
 export function RandomWallpaperButton() {

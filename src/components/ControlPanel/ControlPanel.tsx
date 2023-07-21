@@ -12,7 +12,7 @@ import { provideClientId } from '../../utils/supabase/provideClientId';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
-import { RandomWallpaperButton } from './RandomWallpaperButton';
+import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
 
 interface ControlPanelProps {
     randomWallpaper: IWallpaper;
