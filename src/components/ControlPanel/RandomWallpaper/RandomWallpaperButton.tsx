@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../../utils/classNames';
 import { colorToDataUrl } from '../../../utils/color/utils/colorToDataUrl';
@@ -8,16 +9,21 @@ import { useRandomWallpaperManager } from './useRandomWallpaperManager';
 export function RandomWallpaperButton() {
     const router = useRouter();
     const randomWallpaperManager = useRandomWallpaperManager();
+    const randomWallpaper = randomWallpaperManager.getRandomWallpaper();
 
     return (
-        <button
+        <Link
             // TODO: !!! Go ACRY through randomWallpaper and cleanup old stuff
 
             /* Note: randomWallpaper image is already prerendered thare -> [🤰] <- !!!! Fix or remove + [🧠] do we want to prefetch random wallpaper, if yes, do it here */
             className={classNames(/*'button',*/ styles.button)}
             title="Show me another one"
+            href={`/${randomWallpaper.id}`}
+            /* Note: Keeping prefetch because we want to be this as-fast-as-possible
+                     + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
+            */
             onClick={async () => {
-                const randomWallpaper = randomWallpaperManager.getRandomWallpaper();
+                // Note: No need for preventDefault
 
                 const headerWallpaperElement = document.getElementById(
                     'HeaderWallpaper' /* <- TODO: Some system for global css classes */,
@@ -40,6 +46,6 @@ export function RandomWallpaperButton() {
 
             <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* <-[🧥] */ />
             {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
-        </button>
+        </Link>
     );
 }
