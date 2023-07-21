@@ -21,10 +21,19 @@ export class RandomWallpaperManager {
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
         console.info(`🎲 Fetching next random wallpaper`, { randomWallpaper });
 
-        // !!!! Dynamically replace the wallpaper
-        // Note: !!!!
+        // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
         /* not await */ fetch(`/${randomWallpaper.id}`);
-        /* not await */ fetch(randomWallpaper.src);
+
+        // Note: !!!!
+        /// !!!!/* not await */ fetch(randomWallpaper.src);
+        const imageElement = new Image();
+        imageElement.src = randomWallpaper.src;
+        imageElement.style.position = 'fixed';
+        imageElement.style.top = '10px';
+        imageElement.style.left = '10px';
+        imageElement.style.width = '100px';
+        imageElement.style.height = '100px';
+        document.body.appendChild(imageElement);
 
         return randomWallpaper;
     }
