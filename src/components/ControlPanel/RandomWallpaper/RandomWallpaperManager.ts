@@ -36,8 +36,8 @@ export class RandomWallpaperManager {
         /// !!!!/* not await */ fetch(randomWallpaper.src);
         const imageElement = new Image();
         imageElement.src = randomWallpaper.src;
-        imageElement.style.width = '100px';
-        imageElement.style.height = '100px';
+        imageElement.style.width = '1px';
+        imageElement.style.height = '1px';
         this.preloadGallery.appendChild(imageElement);
 
         return randomWallpaper;
