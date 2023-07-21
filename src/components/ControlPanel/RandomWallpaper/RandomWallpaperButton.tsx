@@ -4,12 +4,15 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../../utils/classNames';
 import { colorToDataUrl } from '../../../utils/color/utils/colorToDataUrl';
 import styles from '../ControlPanel.module.css';
-import { useRandomWallpaperManager } from './useRandomWallpaperManager';
+import { useRandomWallpaper } from './useRandomWallpaper';
 
 export function RandomWallpaperButton() {
     const router = useRouter();
-    const randomWallpaperManager = useRandomWallpaperManager();
-    const randomWallpaper = randomWallpaperManager.getRandomWallpaper();
+    const randomWallpaper = useRandomWallpaper();
+
+    if (!randomWallpaper) {
+        return <></>;
+    }
 
     return (
         <Link
@@ -49,3 +52,7 @@ export function RandomWallpaperButton() {
         </Link>
     );
 }
+
+/**
+ * TODO: Keep place where randomWallpaper is loading - do not blink the UI
+ */

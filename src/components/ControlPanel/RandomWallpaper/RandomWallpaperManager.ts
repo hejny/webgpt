@@ -12,35 +12,37 @@ export class RandomWallpaperManager {
     }
 
     private async init() {
-        await this.fetchRandomWallpaper();
+        await this.prefetchRandomWallpaper();
     }
 
-    private randomWallpapars: Array<IWallpaper> = [];
-
-    private async fetchRandomWallpaper() {
+    private async fetchRandomWallpaper(): Promise<IWallpaper> {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
         const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
         console.info(`🎲 Pre-fetching next random wallpaper`, { randomWallpaper });
 
-        this.randomWallpapars.push(randomWallpaper);
-
         // !!!! Dynamically replace the wallpaper
         // Note: !!!!
         /* not await */ fetch(`/${randomWallpaper.id}`);
         /* not await */ fetch(randomWallpaper.src);
+
+        return randomWallpaper;
     }
 
-    /**
-     * Note: This function is not async because it is much easier to use in the UI
-     *       If the wallpaper is not loaded yet, it will throw an error
-     */
-    public getRandomWallpaper() {
-        const randomWallpaper = this.randomWallpapars.pop();
-        if (!randomWallpaper) {
-            throw new Error(`Random wallpaper is not loaded yet`);
+    private prefetchedRandomWallpapers: Array<IWallpaper> = [];
+
+    private async prefetchRandomWallpaper(): Promise<void> {
+        const randomWallpaper = await this.fetchRandomWallpaper();
+        this.prefetchedRandomWallpapers.push(randomWallpaper);
+    }
+
+    public async getRandomWallpaper(): Promise<IWallpaper> {
+        const randomWallpaper = this.prefetchedRandomWallpapers.pop();
+        if (randomWallpaper) {
+            return randomWallpaper;
+        } else {
+            return await this.fetchRandomWallpaper();
         }
-        return randomWallpaper;
     }
 }
 
