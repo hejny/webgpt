@@ -1,3 +1,4 @@
+import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
@@ -79,7 +80,7 @@ export class RandomWallpaperManager {
     private inStorage(modifier: (randomWallpapers: Array<IWallpaperInStorage>) => Array<IWallpaperInStorage>): void {
         const oldRandomWallpapers = this.getStorage();
         const newRandomWallpapers = modifier([...oldRandomWallpapers]);
-        console.log({ oldRandomWallpapers, newRandomWallpapers });
+        // console.log({ oldRandomWallpapers, newRandomWallpapers });
         window.localStorage.setItem('randomWallpapers', JSON.stringify(newRandomWallpapers));
     }
 
@@ -94,13 +95,16 @@ export class RandomWallpaperManager {
     }
 
     private getPrefetchCount(): number {
-        return Math.min(
+        return Math.max(
             2,
             Math.round(Math.log(this.getConsumedCount())),
         ); /* <- Some better algoritm for predicting how many wallpapers to preload */
     }
 
     private async prefetch(): Promise<void> {
+        await forImmediate();
+        await forAnimationFrame();
+
         if (this.prefetchingRandomWallpapers.length >= this.getPrefetchCount()) {
             return;
         }
@@ -116,19 +120,19 @@ export class RandomWallpaperManager {
         // console.log('this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
         // console.log('randomWallpaper', randomWallpaper);
 
-        setTimeout(() => {
-            /* not await */ this.prefetch();
-        }, 100 /* <- Note: At first load the returned wallpaper THEN load the prefetched one(s) */);
-
         if (randomWallpaper) {
+            this.prefetch();
             return randomWallpaper;
         } else {
-            return await this.fetchRandomWallpaper(false);
+            const randomWallpaper = await this.fetchRandomWallpaper(false);
+            /*                      <- Note: At first load the returned wallpaper THEN load the prefetched one(s) */
+            this.prefetch();
+            return randomWallpaper;
         }
     }
 
     public consumeRandomWallpaper(randomWallpaper: IWallpaperInStorage): void {
-        console.info(`🎲 Consuming prefetched random wallpaper`, { randomWallpaper });
+        console.info(`🎲 Consuming random wallpaper`, { randomWallpaper });
 
         this.changeByConsumedCount(1);
 
