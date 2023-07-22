@@ -1,4 +1,3 @@
-import { IJson, ObjectStorage, PrefixStorage } from 'everstorage';
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
@@ -10,11 +9,6 @@ import { string_wallpaper_id } from '../../../utils/typeAliases';
  * It pre-fetches the next wallpaper and image to make the transition smoother.
  */
 export class RandomWallpaperManager {
-    private storage = new PrefixStorage(
-        new ObjectStorage<Array<Pick<IWallpaperSerialized, 'id' | 'src'>> & { [key: string]: IJson }>(localStorage),
-        'RandomWallpaperManager',
-    );
-
     public constructor() {
         this.preloadGallery = document.createElement('div');
         this.preloadGallery.dataset.comment = `Note: This is just for preloading the next wallpapers images to make the transition smoother`;
@@ -37,10 +31,12 @@ export class RandomWallpaperManager {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
         const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
 
-        const randomWallpapers = (await this.storage.getItem('randomWallpapers')) || [];
+        const randomWallpapers = JSON.parse(window.localStorage.getItem('randomWallpapers') || '[]') as Array<
+            Pick<IWallpaperSerialized, 'id' | 'src'>
+        >;
         const { id, src } = randomWallpaperSerialized;
         randomWallpapers.push({ id, src });
-        await this.storage.setItem('randomWallpapers', randomWallpapers);
+        window.localStorage.setItem('randomWallpapers', JSON.stringify(randomWallpapers));
 
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
         console.info(`🎲 ${isPrefetch ? 'Pre-' : ''}Fetching next random wallpaper`, { randomWallpaper });

@@ -1,5 +1,5 @@
 import { IDestroyable } from 'destroyable';
-import { IStorage } from 'everstorage';
+import type { IStorage } from 'everstorage';
 import { string_mime_type } from '../../typeAliases';
 
 export interface IFile {
