@@ -1,8 +1,9 @@
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
-import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
-import { IWallpaper, IWallpaperSerialized } from '../../../utils/IWallpaper';
+import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
+
+type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 
 /**
  * RandomWallpaperManager is a class that manages the random wallpapers which will be shown next.
@@ -10,37 +11,43 @@ import { string_wallpaper_id } from '../../../utils/typeAliases';
  */
 export class RandomWallpaperManager {
     public constructor() {
-        this.preloadGallery = document.createElement('div');
-        this.preloadGallery.dataset.comment = `Note: This is just for preloading the next wallpapers images to make the transition smoother`;
-        this.preloadGallery.style.position = 'fixed';
-        this.preloadGallery.style.top = '10px';
-        this.preloadGallery.style.left = '10px';
-        this.preloadGallery.style.opacity = '0';
-        this.preloadGallery.style.pointerEvents = 'none';
-        document.body.appendChild(this.preloadGallery);
-        /* not await */ this.init();
-    }
+        this.preloadGalleryElement = document.createElement('div');
+        this.preloadGalleryElement.dataset.comment = `Note: This is just for preloading the next wallpapers images to make the transition smoother`;
+        this.preloadGalleryElement.style.position = 'fixed';
+        this.preloadGalleryElement.style.top = '10px';
+        this.preloadGalleryElement.style.left = '10px';
+        this.preloadGalleryElement.style.opacity = '0';
+        this.preloadGalleryElement.style.pointerEvents = 'none';
+        document.body.appendChild(this.preloadGalleryElement);
+        this.prefetchingRandomWallpapers = this.getStorage().map((randomWallpaper) =>
+            this.preloadRandomWallpaper(randomWallpaper),
+        );
 
-    private preloadGallery: HTMLDivElement;
-
-    private async init() {
         /* not await */ this.prefetch();
     }
 
-    private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaper> {
+    private preloadGalleryElement: HTMLDivElement;
+    private prefetchingRandomWallpapers: Array<Promise<IWallpaperInStorage>> = [];
+
+    private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaperInStorage> {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
-        const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
+        const { randomWallpaper } = (await response.json()) as RandomWallpaperResponse;
 
-        const randomWallpapers = JSON.parse(window.localStorage.getItem('randomWallpapers') || '[]') as Array<
-            Pick<IWallpaperSerialized, 'id' | 'src'>
-        >;
-        const { id, src } = randomWallpaperSerialized;
-        randomWallpapers.push({ id, src });
-        window.localStorage.setItem('randomWallpapers', JSON.stringify(randomWallpapers));
+        if (isPrefetch) {
+            this.inStorage((randomWallpapers) => {
+                const { id, src } = randomWallpaper;
+                randomWallpapers.push({ id, src });
+                return randomWallpapers;
+            });
+        }
 
-        const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
-        console.info(`🎲 ${isPrefetch ? 'Pre-' : ''}Fetching next random wallpaper`, { randomWallpaper });
+        console.info(`🎲 ${isPrefetch ? 'Pre-' : ''}Fetched random wallpaper`, { randomWallpaper });
 
+        this.preloadRandomWallpaper(randomWallpaper);
+        return randomWallpaper;
+    }
+
+    private async preloadRandomWallpaper(randomWallpaper: IWallpaperInStorage) {
         // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
         /* not await */ fetch(`/${randomWallpaper.id}`);
 
@@ -48,7 +55,7 @@ export class RandomWallpaperManager {
         const imageElement = new Image();
         imageElement.src = randomWallpaper.src;
         imageElement.style.height = '10px';
-        this.preloadGallery.appendChild(imageElement);
+        this.preloadGalleryElement.appendChild(imageElement);
 
         await new Promise<void>((resolve) => {
             const onLoad = () => {
@@ -61,7 +68,13 @@ export class RandomWallpaperManager {
         return randomWallpaper;
     }
 
-    private prefetchingRandomWallpapers: Array<Promise<IWallpaper>> = [];
+    private getStorage(): Array<IWallpaperInStorage> {
+        return JSON.parse(window.localStorage.getItem('randomWallpapers') || '[]') as Array<IWallpaperInStorage>;
+    }
+    private inStorage(modifier: (randomWallpapers: Array<IWallpaperInStorage>) => Array<IWallpaperInStorage>): void {
+        const newRandomWallpapers = modifier(this.getStorage());
+        window.localStorage.setItem('randomWallpapers', JSON.stringify(newRandomWallpapers));
+    }
 
     private async prefetch(): Promise<void> {
         if (this.prefetchingRandomWallpapers.length >= 2) {
@@ -72,8 +85,14 @@ export class RandomWallpaperManager {
         await this.prefetch();
     }
 
-    public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaper> {
+    public async consumeRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaperInStorage> {
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
+
+        if (randomWallpaper) {
+            this.inStorage((randomWallpapers) => {
+                return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
+            });
+        }
 
         // console.log('currentWallpaperId', currentWallpaperId);
         // console.log('this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);

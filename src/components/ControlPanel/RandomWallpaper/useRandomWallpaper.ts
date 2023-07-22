@@ -13,7 +13,7 @@ export function useRandomWallpaper(): IWallpaper | null {
         randomWallpaperManager = new RandomWallpaperManager();
     }
     const randomWallpaperPromise = useMemo(
-        () => randomWallpaperManager!.getRandomWallpaper(wallpaperId),
+        () => randomWallpaperManager!.consume\RandomWallpaper(wallpaperId),
         [wallpaperId],
     );
     const { value } = usePromise(randomWallpaperPromise);
