@@ -24,7 +24,7 @@ export class RandomWallpaperManager {
     private preloadGallery: HTMLDivElement;
 
     private async init() {
-        /* not await */ this.prefetchRandomWallpaper();
+        /* not await */ this.prefetch();
     }
 
     private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaper> {
@@ -42,6 +42,14 @@ export class RandomWallpaperManager {
         imageElement.style.height = '10px';
         this.preloadGallery.appendChild(imageElement);
 
+        await new Promise<void>((resolve) => {
+            const onLoad = () => {
+                resolve();
+                imageElement.removeEventListener('load', onLoad);
+            };
+            imageElement.addEventListener('load', onLoad);
+        });
+
         return randomWallpaper;
     }
 
@@ -58,6 +66,15 @@ export class RandomWallpaperManager {
         }
     }
 
+    private async prefetch(): Promise<void> {
+        if (this.prefetchedRandomWallpapers.length + this.prefetchingCount >= 2) {
+            /* not await */
+        }
+
+        await this.prefetchRandomWallpaper();
+        await this.prefetch();
+    }
+
     public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaper> {
         const randomWallpaper = this.prefetchedRandomWallpapers.shift();
 
@@ -65,9 +82,7 @@ export class RandomWallpaperManager {
         // console.log('this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
         // console.log('randomWallpaper', randomWallpaper);
 
-        if (this.prefetchedRandomWallpapers.length + this.prefetchingCount < 2) {
-            /* not await */ this.prefetchRandomWallpaper();
-        }
+        /* not await */ this.prefetch();
 
         if (randomWallpaper) {
             return randomWallpaper;
