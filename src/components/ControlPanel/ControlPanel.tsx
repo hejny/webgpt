@@ -14,15 +14,12 @@ import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
 
-interface ControlPanelProps {
-    randomWallpaper: IWallpaper;
-}
+
 
 /**
  * @@@
  */
-export function ControlPanel(props: ControlPanelProps) {
-    const { randomWallpaper } = props; /* <- TODO: !!!! Fix randomWallpaper */
+export function ControlPanel() {
     const router = useRouter();
 
     const [wallpaper, modifyWallpaper] = useWallpaper();

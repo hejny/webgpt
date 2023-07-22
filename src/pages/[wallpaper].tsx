@@ -10,20 +10,17 @@ import { ShowcaseContentEdit } from '../components/ShowcaseContentEdit/ShowcaseC
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { useMode } from '../utils/hooks/useMode';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
-import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
-import { randomItem } from '../utils/randomItem';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { validateUuid } from '../utils/validateUuid';
 
 export interface ShowcasePageProps {
     currentWallpaper: null | IWallpaperSerialized;
-    randomWallpaper: IWallpaperSerialized;
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
-    let { currentWallpaper, randomWallpaper } = props;
+    let { currentWallpaper } = props;
     const { isExplaining, isEditable } = useMode();
 
     if (currentWallpaper === undefined) {
@@ -59,7 +56,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             {isEditable && <PreventUnsavedChanges />}
             {isExplaining && <ExplainContent />}
             {!isExplaining && <ShowcaseContent />}
-            {!isExplaining && isEditable && <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />}
+            {!isExplaining && isEditable && <ShowcaseContentEdit />}
         </WallpapersContext.Provider>
     );
 }
@@ -96,21 +93,11 @@ export async function getStaticProps({
         }
     }
 
-    let randomWallpaper = randomItem(
-        ...wallpapers,
-    ); /* <- TODO: !! Make big chain to traverse whole gallery by clicking random + minor simmilar chains  */
-
-    if (!randomWallpaper && currentWallpaper) {
-        // TODO: !!!! This is a dirty hack to prevent error on server - Solve better
-        randomWallpaper = currentWallpaper;
-    }
-
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
 
             currentWallpaper,
-            randomWallpaper,
         },
     };
 }
