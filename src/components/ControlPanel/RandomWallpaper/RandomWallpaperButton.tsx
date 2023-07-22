@@ -28,6 +28,8 @@ export function RandomWallpaperButton() {
             // TODO: !!! Go ACRY through randomWallpaper and cleanup old stuff
 
             /* Note: randomWallpaper image is already prerendered thare -> [🤰] <- !!!! Fix or remove + [🧠] do we want to prefetch random wallpaper, if yes, do it here */
+
+prefetch={false}
             className={classNames(/*'button',*/ styles.button)}
             title="Show me another one"
             href={`/${randomWallpaper.id}`}
