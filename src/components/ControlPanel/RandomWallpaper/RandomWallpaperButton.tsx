@@ -5,7 +5,7 @@ import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
 export function RandomWallpaperButton() {
-    const randomWallpaper = useRandomWallpaper();
+    const [randomWallpaper, consumeRandomWallpaper] = useRandomWallpaper();
 
     if (!randomWallpaper) {
         return (
@@ -39,6 +39,8 @@ export function RandomWallpaperButton() {
                 // Note: This onClick handler is here to speed up the navigation to the next random wallpaper
                 //       We want to feel it as fast as possible and near-instantly
                 //       No need for preventDefault
+
+                consumeRandomWallpaper();
 
                 const randomWallpaperImage = document.querySelector(
                     `img[src='${randomWallpaper.src}']`,

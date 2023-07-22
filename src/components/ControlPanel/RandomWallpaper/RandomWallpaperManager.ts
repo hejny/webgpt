@@ -87,14 +87,8 @@ export class RandomWallpaperManager {
         await this.prefetch();
     }
 
-    public async consumeRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaperInStorage> {
+    public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaperInStorage> {
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
-
-        if (randomWallpaper) {
-            this.inStorage((randomWallpapers) => {
-                return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
-            });
-        }
 
         // console.log('currentWallpaperId', currentWallpaperId);
         // console.log('this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
@@ -105,12 +99,18 @@ export class RandomWallpaperManager {
         }, 100 /* <- Note: At first load the returned wallpaper THEN load the prefetched one(s) */);
 
         if (randomWallpaper) {
-            console.info(`🎲 Consuming prefetched random wallpaper`, { randomWallpaper, currentWallpaperId });
             return randomWallpaper;
         } else {
-            const randomWallpaper = await this.fetchRandomWallpaper(false);
-            console.info(`🎲 Consuming on-demand random wallpaper`, { randomWallpaper, currentWallpaperId });
-            return randomWallpaper;
+            return await this.fetchRandomWallpaper(false);
+        }
+    }
+
+    public consumeRandomWallpaper(randomWallpaper: IWallpaperInStorage): void {
+        console.info(`🎲 Consuming prefetched random wallpaper`, { randomWallpaper });
+        if (randomWallpaper) {
+            this.inStorage((randomWallpapers) => {
+                return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
+            });
         }
     }
 }

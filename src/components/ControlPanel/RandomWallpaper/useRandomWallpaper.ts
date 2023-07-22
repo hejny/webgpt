@@ -5,16 +5,19 @@ import { IWallpaperInStorage, RandomWallpaperManager } from './RandomWallpaperMa
 
 let randomWallpaperManager: RandomWallpaperManager | null = null;
 
-export function useRandomWallpaper(): IWallpaperInStorage | null {
+export function useRandomWallpaper(): [
+    randomWallpaper: IWallpaperInStorage | null,
+    consumeRandomWallpaper: () => void,
+] {
     const wallpaperId = useCurrentWallpaperId();
 
     if (!randomWallpaperManager) {
         randomWallpaperManager = new RandomWallpaperManager();
     }
     const randomWallpaperPromise = useMemo(
-        () => randomWallpaperManager!.consumeRandomWallpaper(wallpaperId),
+        () => randomWallpaperManager!.getRandomWallpaper(wallpaperId),
         [wallpaperId],
     );
     const { value } = usePromise(randomWallpaperPromise);
-    return value || null;
+    return [value || null, () => randomWallpaperManager!.consumeRandomWallpaper(value!)];
 }
