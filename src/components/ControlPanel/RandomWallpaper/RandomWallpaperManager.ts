@@ -41,7 +41,12 @@ export class RandomWallpaperManager {
             });
         }
 
-        console.info(`🎲 ${isPrefetch ? 'Pre-' : ''}Fetched random wallpaper`, { randomWallpaper });
+        console.info(
+            `🎲 ${isPrefetch ? 'Pre-' : ''}Fetched random wallpaper${
+                isPrefetch ? ` (${this.prefetchingRandomWallpapers.length}/${this.getPrefetchCount()})` : ''
+            }`,
+            { randomWallpaper },
+        );
 
         this.preloadRandomWallpaper(randomWallpaper);
         return randomWallpaper;
@@ -88,13 +93,15 @@ export class RandomWallpaperManager {
         window.localStorage.setItem('randomWallpapersConsumedCount', newConsumedCount.toString());
     }
 
+    private getPrefetchCount(): number {
+        return Math.min(
+            2,
+            Math.round(Math.log(this.getConsumedCount())),
+        ); /* <- Some better algoritm for predicting how many wallpapers to preload */
+    }
+
     private async prefetch(): Promise<void> {
-        if (
-            this.prefetchingRandomWallpapers.length >=
-            Math.log(
-                this.getConsumedCount(),
-            ) /* <- Some better algoritm for predicting how many wallpapers to preload */
-        ) {
+        if (this.prefetchingRandomWallpapers.length >= this.getPrefetchCount()) {
             return;
         }
 
