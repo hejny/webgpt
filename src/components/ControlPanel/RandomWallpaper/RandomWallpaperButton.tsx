@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../../utils/classNames';
-import { colorToDataUrl } from '../../../utils/color/utils/colorToDataUrl';
 import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
@@ -29,11 +28,18 @@ export function RandomWallpaperButton() {
             onClick={async () => {
                 // Note: No need for preventDefault
 
+                const randomWallpaperImage = document.querySelector(`img[src='${randomWallpaper.src}']`)!;
+                const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
+
+                console.log('!!!', { randomWallpaperImage, headerWallpaperElement });
+
+                /*
                 const headerWallpaperElement = document.getElementById(
-                    'HeaderWallpaper' /* <- TODO: Some system for global css classes */,
+                    'HeaderWallpaper'
                 )!;
                 headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
                 headerWallpaperElement.removeAttribute('srcset');
+                */
             }}
             style={
                 {
