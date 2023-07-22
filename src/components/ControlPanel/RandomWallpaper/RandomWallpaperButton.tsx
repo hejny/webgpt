@@ -26,22 +26,17 @@ export function RandomWallpaperButton() {
             */
 
             onClick={async () => {
-                // Note: No need for preventDefault
+                // Note: This onClick handler is here to speed up the navigation to the next random wallpaper
+                //       We want to feel it as fast as possible and near-instantly
+                //       No need for preventDefault
 
                 const randomWallpaperImage = document.querySelector(
                     `img[src='${randomWallpaper.src}']`,
                 ) as HTMLImageElement;
                 const headerWallpaperElement = document.getElementById('HeaderWallpaper') as HTMLImageElement;
 
-                console.log('!!!', { randomWallpaperImage, headerWallpaperElement });
-
                 headerWallpaperElement.setAttribute('src', randomWallpaperImage.src);
                 headerWallpaperElement.removeAttribute('srcset');
-
-                /* 
-                headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
-                headerWallpaperElement.removeAttribute('srcset');
-                */
             }}
             style={
                 {
