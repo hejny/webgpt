@@ -28,15 +28,17 @@ export function RandomWallpaperButton() {
             onClick={async () => {
                 // Note: No need for preventDefault
 
-                const randomWallpaperImage = document.querySelector(`img[src='${randomWallpaper.src}']`)!;
-                const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
+                const randomWallpaperImage = document.querySelector(
+                    `img[src='${randomWallpaper.src}']`,
+                ) as HTMLImageElement;
+                const headerWallpaperElement = document.getElementById('HeaderWallpaper') as HTMLImageElement;
 
                 console.log('!!!', { randomWallpaperImage, headerWallpaperElement });
 
-                /*
-                const headerWallpaperElement = document.getElementById(
-                    'HeaderWallpaper'
-                )!;
+                headerWallpaperElement.setAttribute('src', randomWallpaperImage.src);
+                headerWallpaperElement.removeAttribute('srcset');
+
+                /* 
                 headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
                 headerWallpaperElement.removeAttribute('srcset');
                 */
