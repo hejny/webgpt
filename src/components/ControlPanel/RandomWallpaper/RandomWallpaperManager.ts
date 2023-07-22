@@ -11,7 +11,7 @@ import { string_wallpaper_id } from '../../../utils/typeAliases';
  */
 export class RandomWallpaperManager {
     private storage = new PrefixStorage(
-        new ObjectStorage<IWallpaperSerialized>(localStorage),
+        new ObjectStorage<Array<Pick<IWallpaperSerialized, 'id' | 'src'>>>(localStorage),
         'RandomWallpaperManager',
     );
 
@@ -37,10 +37,10 @@ export class RandomWallpaperManager {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
         const { randomWallpaper: randomWallpaperSerialized } = (await response.json()) as RandomWallpaperResponse;
 
-        await this.storage.setItem(
-            'randomWallpaper',
-            randomWallpaperSerialized /* <- TODO: Optimize - do not save whole wallpaper */,
-        );
+        const randomWallpapers = (await this.storage.getItem('randomWallpapers')) || [];
+        const { id, src } = randomWallpaperSerialized;
+        randomWallpapers.push({ id, src });
+        await this.storage.setItem('randomWallpapers', randomWallpapers);
 
         const randomWallpaper = hydrateWallpaper(randomWallpaperSerialized);
         console.info(`🎲 ${isPrefetch ? 'Pre-' : ''}Fetching next random wallpaper`, { randomWallpaper });

@@ -1,20 +1,7 @@
-import { JsonObject } from 'type-fest';
-
 /**
- * Note: Originally here was [0] but using JsonObject from type-fest for compatibility with other parts of the system
+ * Note: Not using JsonObject from type-fest because it is not compatible with supabase-js
  */
-type Json = JsonObject;
-
-/*
-[0]
-export type Json = 
-  | string
-  | number
-  | boolean
-  | null
-  | { [key: string]: Json | undefined }
-  | Json[]
-*/
+export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
 
 export interface Database {
     public: {
