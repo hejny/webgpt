@@ -97,7 +97,7 @@ export class RandomWallpaperManager {
     private getPrefetchCount(): number {
         return Math.max(
             2,
-            Math.round(Math.log(this.getConsumedCount())),
+            Math.round(Math.sqrt(this.getConsumedCount())),
         ); /* <- Some better algoritm for predicting how many wallpapers to preload */
     }
 
