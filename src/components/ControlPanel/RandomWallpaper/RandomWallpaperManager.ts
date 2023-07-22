@@ -1,4 +1,4 @@
-import { ObjectStorage, PrefixStorage } from 'everstorage';
+import { IJson, ObjectStorage, PrefixStorage } from 'everstorage';
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
@@ -11,7 +11,7 @@ import { string_wallpaper_id } from '../../../utils/typeAliases';
  */
 export class RandomWallpaperManager {
     private storage = new PrefixStorage(
-        new ObjectStorage<Array<Pick<IWallpaperSerialized, 'id' | 'src'>>>(localStorage),
+        new ObjectStorage<Array<Pick<IWallpaperSerialized, 'id' | 'src'>> & { [key: string]: IJson }>(localStorage),
         'RandomWallpaperManager',
     );
 
