@@ -3,7 +3,7 @@ import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 
-type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
+export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 
 /**
  * RandomWallpaperManager is a class that manages the random wallpapers which will be shown next.
