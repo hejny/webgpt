@@ -49,8 +49,8 @@ prefetch={false}
                 ) as HTMLImageElement;
                 const headerWallpaperElement = document.getElementById('HeaderWallpaper') as HTMLImageElement;
 
-                headerWallpaperElement.setAttribute('src', randomWallpaperImage.src);
-                headerWallpaperElement.removeAttribute('srcset');
+                //headerWallpaperElement.setAttribute('src', randomWallpaperImage.src);
+                //headerWallpaperElement.removeAttribute('srcset');
             }}
             style={
                 {
