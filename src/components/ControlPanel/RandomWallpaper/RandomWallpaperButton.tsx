@@ -1,16 +1,26 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { classNames } from '../../../utils/classNames';
 import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
 export function RandomWallpaperButton() {
-    const router = useRouter();
     const randomWallpaper = useRandomWallpaper();
 
     if (!randomWallpaper) {
-        return <></>;
+        return (
+            <div
+                className={classNames(/*'button',*/ styles.button)}
+                title="Show me another one not available yet"
+                style={{
+                    opacity: 0.5,
+                    cursor: 'not-allowed',
+                }}
+            >
+                <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* <-[🧥] */ />
+                {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
+            </div>
+        );
     }
 
     return (
@@ -54,7 +64,3 @@ export function RandomWallpaperButton() {
         </Link>
     );
 }
-
-/**
- * TODO: Keep place where randomWallpaper is loading - do not blink the UI
- */
