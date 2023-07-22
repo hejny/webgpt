@@ -1,18 +1,22 @@
-// !!!!!!!Anotate
-// !!!!!!!Split to files - use singleton pattern - create on first use
-
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { hydrateWallpaper } from '../../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../../utils/IWallpaper';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 
+/**
+ * RandomWallpaperManager is a class that manages the random wallpapers which will be shown next.
+ * It pre-fetches the next wallpaper and image to make the transition smoother.
+ */
 export class RandomWallpaperManager {
     public constructor() {
         this.preloadGallery = document.createElement('div');
+        this.preloadGallery.dataset.comment = `Note: This is just for preloading the next wallpapers images to make the transition smoother`;
         this.preloadGallery.style.position = 'fixed';
         this.preloadGallery.style.top = '10px';
         this.preloadGallery.style.left = '10px';
+        this.preloadGallery.style.opacity = '0';
+        this.preloadGallery.style.pointerEvents = 'none';
         document.body.appendChild(this.preloadGallery);
         /* not await */ this.init();
     }
@@ -32,11 +36,9 @@ export class RandomWallpaperManager {
         // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
         /* not await */ fetch(`/${randomWallpaper.id}`);
 
-        // Note: !!!!
-        /// !!!!/* not await */ fetch(randomWallpaper.src);
+        // Note: Pre-loading the wallpaper image to make the transition smoother
         const imageElement = new Image();
         imageElement.src = randomWallpaper.src;
-        //imageElement.style.width = '10px';
         imageElement.style.height = '10px';
         this.preloadGallery.appendChild(imageElement);
 
@@ -59,9 +61,9 @@ export class RandomWallpaperManager {
     public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaper> {
         const randomWallpaper = this.prefetchedRandomWallpapers.shift();
 
-        console.log('!!! currentWallpaperId', currentWallpaperId);
-        console.log('!!! this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
-        console.log('!!! randomWallpaper', randomWallpaper);
+        // console.log('currentWallpaperId', currentWallpaperId);
+        // console.log('this.prefetchedRandomWallpapers', [...this.prefetchedRandomWallpapers]);
+        // console.log('randomWallpaper', randomWallpaper);
 
         if (this.prefetchedRandomWallpapers.length + this.prefetchingCount < 2) {
             /* not await */ this.prefetchRandomWallpaper();
