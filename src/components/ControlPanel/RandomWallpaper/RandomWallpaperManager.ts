@@ -78,8 +78,23 @@ export class RandomWallpaperManager {
         window.localStorage.setItem('randomWallpapers', JSON.stringify(newRandomWallpapers));
     }
 
+    private getConsumedCount(): number {
+        return parseInt(window.localStorage.getItem('randomWallpapersConsumedCount') || '0');
+    }
+
+    private changeByConsumedCount(consumedCountDelta: number): void {
+        const oldConsumedCount = this.getConsumedCount();
+        const newConsumedCount = oldConsumedCount + consumedCountDelta;
+        window.localStorage.setItem('randomWallpapersConsumedCount', newConsumedCount.toString());
+    }
+
     private async prefetch(): Promise<void> {
-        if (this.prefetchingRandomWallpapers.length >= 2) {
+        if (
+            this.prefetchingRandomWallpapers.length >=
+            Math.log(
+                this.getConsumedCount(),
+            ) /* <- Some better algoritm for predicting how many wallpapers to preload */
+        ) {
             return;
         }
 
@@ -107,6 +122,9 @@ export class RandomWallpaperManager {
 
     public consumeRandomWallpaper(randomWallpaper: IWallpaperInStorage): void {
         console.info(`🎲 Consuming prefetched random wallpaper`, { randomWallpaper });
+
+        this.changeByConsumedCount(1);
+
         if (randomWallpaper) {
             this.inStorage((randomWallpapers) => {
                 return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
