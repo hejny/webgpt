@@ -1,7 +1,7 @@
 import { string_keyword } from 'n12';
+import { JsonObject } from 'type-fest';
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
-import { Json } from './supabase/types';
 import {
     string_html,
     string_markdown,
@@ -48,9 +48,15 @@ export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IW
 export type IWallpaperColorStats = IImageColorStats<string>;
 
 export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'saveStage'> & {
-    colorStats: Json;
+    colorStats: JsonObject;
 };
 
+/**
+ * Note: JUST esting that IWallpaperSerialized is subset type of JsonObject
+ */
+function expectIWallpaperSerializedToBeAssignableToJsonObject(test: IWallpaperSerialized) {
+    ((test: JsonObject) => {})(test);
+}
 
 /**
  * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"
