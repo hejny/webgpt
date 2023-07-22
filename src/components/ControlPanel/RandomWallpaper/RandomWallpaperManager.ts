@@ -72,7 +72,9 @@ export class RandomWallpaperManager {
         return JSON.parse(window.localStorage.getItem('randomWallpapers') || '[]') as Array<IWallpaperInStorage>;
     }
     private inStorage(modifier: (randomWallpapers: Array<IWallpaperInStorage>) => Array<IWallpaperInStorage>): void {
-        const newRandomWallpapers = modifier(this.getStorage());
+        const oldRandomWallpapers = this.getStorage();
+        const newRandomWallpapers = modifier([...oldRandomWallpapers]);
+        console.log({ oldRandomWallpapers, newRandomWallpapers });
         window.localStorage.setItem('randomWallpapers', JSON.stringify(newRandomWallpapers));
     }
 
@@ -103,9 +105,12 @@ export class RandomWallpaperManager {
         }, 100 /* <- Note: At first load the returned wallpaper THEN load the prefetched one(s) */);
 
         if (randomWallpaper) {
+            console.info(`🎲 Consuming prefetched random wallpaper`, { randomWallpaper, currentWallpaperId });
             return randomWallpaper;
         } else {
-            return await this.fetchRandomWallpaper(false);
+            const randomWallpaper = await this.fetchRandomWallpaper(false);
+            console.info(`🎲 Consuming on-demand random wallpaper`, { randomWallpaper, currentWallpaperId });
+            return randomWallpaper;
         }
     }
 }
