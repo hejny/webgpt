@@ -54,6 +54,7 @@ export function ColorsModal(props: ColorsModalProps) {
                             /* !!! , presetColors*/
                             onChangeComplete={({ rgb: { r, g, b } }) => {
                                 modifyWallpaper((modifiedWallpaper) => {
+                                    modifiedWallpaper.colorStats.palette[i].note = `Manually edited`;
                                     modifiedWallpaper.colorStats.palette[i].value = Color.fromValues(r, g, b);
                                     modifiedWallpaper.saveStage = 'EDITED';
                                     return modifiedWallpaper;
