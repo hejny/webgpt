@@ -11,9 +11,14 @@ interface IComputeImageColorStatsProgress {
 
 export interface IComputeImageColorStats<TVersion extends string> {
     version: TVersion;
-    (image: IImage, onProgress?: (progress: IComputeImageColorStatsProgress) => Promise<void>): Promise<
-        IImageColorStats<TVersion>
-    >;
+
+    (
+        image: IImage,
+        /*
+        TODO: Use or remove:
+        onProgress?: (progress: IComputeImageColorStatsProgress) => Promise<void>
+        */
+    ): Promise<IImageColorStats<TVersion>>;
 }
 
 export interface IImageColorStats<TVersion extends string> {
