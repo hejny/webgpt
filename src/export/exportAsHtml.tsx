@@ -4,6 +4,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../config';
+import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
@@ -240,6 +241,17 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             html = html.split(match[0]).join(`<!--${indentedComment}-->`);
         }
     }
+
+    // TODO: In future put image assets dynamically NOT just one hardcoded stripes-grey.png file
+    for (const file of files) {
+        file.content = file.content.split('/patterns/simple/stripes-grey.png').join('images/stripes-grey.png');
+    }
+    files.push({
+        type: 'image',
+        pathname:
+            'images/stripes-grey.png' /* <- TODO: [🧠] images/patterns/simple/stripes-grey.png vs images/stripes-grey.png */,
+        content: await fetch(stripesGreyImage.src).then((response) => response.text()),
+    });
 
     files.unshift({
         type: 'html',

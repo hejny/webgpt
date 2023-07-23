@@ -25,11 +25,10 @@ export function prettifyJavascript(javascript: string_javascript): string_javasc
             printWidth: 120,
         });
     } catch (error) {
-        console.error(
-            'There was an error with prettifying the javascript, using the original as the fallback',
+        console.error('There was an error with prettifying the javascript, using the original as the fallback', {
             error,
             javascript,
-        );
+        });
         return javascript;
     }
 }

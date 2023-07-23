@@ -25,7 +25,10 @@ export function prettifyCss(css: string_css): string_css {
             printWidth: 120,
         });
     } catch (error) {
-        console.error('There was an error with prettifying the css, using the original as the fallback', error, css);
+        console.error('There was an error with prettifying the css, using the original as the fallback', {
+            error,
+            css,
+        });
         return css;
     }
 }

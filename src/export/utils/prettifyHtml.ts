@@ -25,7 +25,10 @@ export function prettifyHtml(html: string_html): string_html {
             printWidth: 120,
         });
     } catch (error) {
-        console.error('There was an error with prettifying the html, using the original as the fallback', error, html);
+        console.error('There was an error with prettifying the html, using the original as the fallback', {
+            error,
+            html,
+        });
         return html;
     }
 }
