@@ -1,6 +1,6 @@
-import { forAnimationFrame, forImmediate } from 'waitasecond';
+import { forImmediate } from 'waitasecond';
 
-const REST_AFTER_MS = 1000; /* <- TODO: !!! Tweak time */
+const REST_AFTER_MS = 100; /* <- TODO: !!! Tweak time */
 
 /**
  * @@@
@@ -30,7 +30,7 @@ export async function forARest(): Promise<void> {
         console.log('💤 Resting');
         lastRest = now;
         await forImmediate();
-        await forAnimationFrame();
+        // await forAnimationFrame();
     }
 }
 
