@@ -86,50 +86,6 @@
     text-shadow: var(--palette-0);
 }
 
-/*
-
-.page h1 {
-    line-height: 110%;
-    margin-bottom: 60px;
-}
-
-.page h2 {
-    font-size: 30px;
-    background-image: linear-gradient(to right, rgba(var(--palette-1-triplet),0.8), var(--palette-1));
-    background-clip: text;
-    color: transparent;
-}
-
-.page main h1 {
-    /* TODO: h1 should be semantically in <header/> */
-
-/*/
-    outline: 1px dotted purple;
-    /** /
-
-    font-size: 85px;
-
-    /*
-    TODO: Implement in handwriteText
-    text-shadow: #dec36f 0px 0px 25px /* <- [🎨] */
-
-/* TODO: DRY * /
-    margin: 0;
-    padding: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    .page main h1 {
-        font-size: 70px;
-    }
-}
-
-*/
-
 .page footer {
     /*/
     outline: 1px dotted green;
