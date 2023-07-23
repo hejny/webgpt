@@ -57,7 +57,7 @@ export function ColorsModalColorAlgoritm() {
                         });
                     } catch (error) {
                         console.error(error);
-                        alert(`There was an error while computing colors via ${newVersion}`);
+                        alert(`There was an error while computing colors via ${newVersion}\n\n${error.message}`);
                     } finally {
                         setComputing(false);
                     }
