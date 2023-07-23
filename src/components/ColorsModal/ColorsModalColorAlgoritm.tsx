@@ -49,10 +49,8 @@ export function ColorsModalColorAlgoritm() {
                             `Compute of ${newVersion} took ${Math.ceil(((duration / 1000) * 10) / 10)}s`,
                         );
 
-                        // TODO: !!!! Make this work;
-
+                    
                         modifyWallpaper((modifiedWallpaper) => {
-                            // TODO: !!!! Persist when modal is changed
                             modifiedWallpaper.colorStats = newColorStats;
                             modifiedWallpaper.saveStage = 'EDITED';
                             return modifiedWallpaper;

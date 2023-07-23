@@ -28,7 +28,6 @@ export function HeaderWallpaper() {
                     height={Math.round((width / 1920) * 1080)}
                     style={{ /* [🎗] */ objectFit: 'cover', width: '100%', height: '100%' }}
                     {...{ width, quality }}
-                    id="HeaderWallpaper" /* <- Note: Used for quick refresh [🤰] */ /* <- TODO: [🧠] Some system for global css classes */
                 />
             </div>
         </div>
