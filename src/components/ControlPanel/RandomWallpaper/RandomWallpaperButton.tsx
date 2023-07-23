@@ -29,7 +29,6 @@ export function RandomWallpaperButton() {
 
             /* Note: randomWallpaper image is already prerendered thare -> [🤰] <- !!!! Fix or remove + [🧠] do we want to prefetch random wallpaper, if yes, do it here */
 
-// !!!! prefetch={false}
             className={classNames(/*'button',*/ styles.button)}
             title="Show me another one"
             href={`/${randomWallpaper.id}`}
@@ -37,21 +36,7 @@ export function RandomWallpaperButton() {
                      + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
             */
 
-            onClick={async () => {
-                // Note: This onClick handler is here to speed up the navigation to the next random wallpaper
-                //       We want to feel it as fast as possible and near-instantly
-                //       No need for preventDefault
-
-                consumeRandomWallpaper();
-
-                const randomWallpaperImage = document.querySelector(
-                    `img[src='${randomWallpaper.src}']`,
-                ) as HTMLImageElement;
-                const headerWallpaperElement = document.getElementById('HeaderWallpaper') as HTMLImageElement;
-
-                //headerWallpaperElement.setAttribute('src', randomWallpaperImage.src);
-                //headerWallpaperElement.removeAttribute('srcset');
-            }}
+            onClick={consumeRandomWallpaper}
             style={
                 {
                     // ...minorButtonStyle,
