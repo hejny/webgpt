@@ -56,6 +56,11 @@ export function ColorsModalColorAlgoritm() {
                             return modifiedWallpaper;
                         });
                     } catch (error) {
+
+
+if(!(error instanceof Error)){throw error;}
+
+
                         console.error(error);
                         alert(`There was an error while computing colors via ${newVersion}\n\n${error.message}`);
                     } finally {
