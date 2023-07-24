@@ -36,6 +36,7 @@ export function ExportCodeModal(props: ExportCodeModalProps) {
                         : [
                               {
                                   type: 'other',
+                                  mimeType: 'text/markdown',
                                   pathname: 'README.md',
                                   content: `Select your URL and download the project. Then, upload it to your hosting.`,
                               },

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { exportAsHtml, HtmlExportFile } from '../../export/exportAsHtml';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { string_uri } from '../../utils/typeAliases';
 import { Modal } from '../Modal/Modal';
 import styles from './ExportPreviewModal.module.css';
 import { ObjectUrl } from './utils/ObjectUrl';
@@ -28,41 +29,46 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     // --------------
     // TODO: !!! useObjectUrl hook
     const [indexUrl, setIndexUrl] = useState<null | URL>(null);
+    const [urlMap, setUrlMap] = useState<null | Map<string_uri, string_uri>>(null);
     useEffect(() => {
         if (!exported) {
             return;
         }
 
         let pageFiles: Array<HtmlExportFile> = [];
-        let scriptFiles: Array<HtmlExportFile> = [];
+        let codeFiles: Array<HtmlExportFile> = [];
         let assetFiles: Array<HtmlExportFile> = [];
 
         for (const file of exported.files) {
-            if (['html'].includes(file.type)) {
+            if (file.type === 'page') {
                 pageFiles.push(file);
-            } else if (['javascript', 'css'].includes(file.type)) {
-                scriptFiles.push(file);
+            } else if (file.type === 'code') {
+                codeFiles.push(file);
             } else {
                 assetFiles.push(file);
             }
         }
 
-        const urlMap: Record<string, string> = {};
+        const urlMap = new Map<string_uri, string_uri>();
 
-        for (const file of [...assetFiles, ...scriptFiles, ...pageFiles]) {
-            for (const [from, to] of Object.entries(urlMap)) {
-                file.content = file.content.split(from).join(to);
+        for (const file of [...assetFiles, ...codeFiles, ...pageFiles]) {
+            if (typeof file.content === 'string') {
+                // TODO: Maybe do the replacement also for assets Blobs
+                for (const [from, to] of Array.from(urlMap.entries())) {
+                    file.content = file.content.split(from).join(to);
+                }
             }
 
-            const blob = new Blob([file.content], { type: 'text/html' });
-            const objectUrl = ObjectUrl.fromBlob(blob);
+            const objectUrl = ObjectUrl.from(file.content, file.mimeType);
 
-            urlMap[file.pathname] = objectUrl.src;
+            urlMap.set(file.pathname, objectUrl.src);
 
             if (file.pathname === 'index.html') {
                 setIndexUrl(objectUrl.url);
             }
         }
+
+        setUrlMap(urlMap);
 
         /*
         !!!!!
@@ -77,6 +83,14 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
     return (
         <Modal title={'Export preview'}>
+            <pre
+                // TODO: Make <DebugOutput/> component which supports multiple inputs like Set, Map, Array, Object, and also primitive values and promises and RxJS
+                onClick={() => {
+                    console.log(urlMap);
+                }}
+            >
+                {JSON.stringify(Object.fromEntries(urlMap), null, 4)}
+            </pre>
             {!indexUrl ? `Loading...` : <iframe className={styles.preview} src={indexUrl.href} />}
         </Modal>
     );

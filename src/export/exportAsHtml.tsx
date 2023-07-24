@@ -12,7 +12,7 @@ import { ExportContext } from '../pages/_app';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
-import { string_css, string_html, string_markdown } from '../utils/typeAliases';
+import { string_css, string_html, string_markdown, string_mime_type } from '../utils/typeAliases';
 import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
@@ -36,9 +36,10 @@ interface HtmlExport {
 }
 
 export interface HtmlExportFile {
-    type: 'html' | 'css' | 'javascript' | 'image' | 'other';
+    type: 'page' | 'code' | 'asset' | 'other';
+    mimeType: string_mime_type;
     pathname: string;
-    content: string_html | string_css | string_markdown | string;
+    content: string_html | string_css | string_markdown | Blob;
 }
 
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
@@ -160,7 +161,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         },
     ]) {
         files.push({
-            type: 'css',
+            type: 'code',
+            mimeType: 'text/css',
             pathname,
             content,
         });
@@ -176,10 +178,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                             <ShowcaseAppHead>
                                 {stylesPlace == 'EXTERNAL'
                                     ? files
-                                          .filter(({ type }) => type === 'css')
+                                          .filter(({ mimeType }) => mimeType === 'text/css')
                                           .map(({ pathname }, i) => <link key={i} rel="stylesheet" href={pathname} />)
                                     : files
-                                          .filter(({ type }) => type === 'css')
+                                          .filter(({ mimeType }) => mimeType === 'text/css')
                                           .map(({ pathname, content }, i) => (
                                               <style
                                                   key={i}
@@ -244,17 +246,25 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     // TODO: In future put image assets dynamically NOT just one hardcoded stripes-grey.png file
     for (const file of files) {
+        if (file.content instanceof Blob) {
+            continue;
+        }
+        if (file.mimeType !== 'text/css') {
+            continue;
+        }
         file.content = file.content.split('/patterns/simple/stripes-grey.png').join('images/stripes-grey.png');
     }
     files.push({
-        type: 'image',
+        type: 'asset',
+        mimeType: 'image/png',
         pathname:
             'images/stripes-grey.png' /* <- TODO: [🧠] images/patterns/simple/stripes-grey.png vs images/stripes-grey.png */,
         content: await fetch(stripesGreyImage.src).then((response) => response.text()),
     });
 
     files.unshift({
-        type: 'html',
+        type: 'page',
+        mimeType: 'text/html',
         pathname: 'index.html',
         content: html,
     });
@@ -263,6 +273,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     files.unshift({
         type: 'other',
+        mimeType: 'text/markdown',
         pathname: 'README.md',
         content: removeContentComments(wallpaper.content),
     });
@@ -282,14 +293,17 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         if (!['html', 'css', 'javascript'].includes(file.type)) {
             continue;
         }
-        file.content = removeTodoComments(file.content);
 
-        if (file.type === 'html') {
-            file.content = prettifyHtml(file.content) /* <- [1] TODO: Do not do this twice */;
-        } else if (file.type === 'css') {
-            file.content = prettifyCss(file.content);
-        } else if (file.type === 'javascript') {
-            file.content = prettifyJavascript(file.content);
+        if (typeof file.content === 'string') {
+            file.content = removeTodoComments(file.content);
+        }
+
+        if (file.mimeType === 'text/html') {
+            file.content = prettifyHtml(file.content as string) /* <- [1] TODO: Do not do this twice */;
+        } else if (file.mimeType === 'text/css') {
+            file.content = prettifyCss(file.content as string);
+        } else if (file.mimeType === 'text/javascript') {
+            file.content = prettifyJavascript(file.content as string);
         }
     }
 

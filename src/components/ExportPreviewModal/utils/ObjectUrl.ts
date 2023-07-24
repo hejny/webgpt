@@ -1,5 +1,5 @@
 import { IDestroyable, ITeardownLogic, Registration } from 'destroyable';
-import { string_url } from '../../../utils/typeAliases';
+import { string_mime_type, string_url } from '../../../utils/typeAliases';
 
 /**
  * Converts Blob, File or MediaSource to url using URL.createObjectURL
@@ -12,8 +12,31 @@ export class ObjectUrl extends Registration implements IDestroyable {
     }
 
     /**
-     * Creates ObjectUrl
-     * DO NOT forget to call destroy() when you are done with it
+     * Creates ObjectUrl from multiple input types
+     * Note: DO NOT forget to call destroy() when you are done with it
+     */
+    public static from(source: Blob | File | MediaSource | string, mimeType: string_mime_type): ObjectUrl {
+        if (typeof source === 'string') {
+            return ObjectUrl.fromString(source, mimeType);
+        }
+
+        if ((source instanceof Blob || source instanceof File) && source.type !== mimeType) {
+            throw new Error(`Source type ${source.type} does not match given mimeType ${mimeType}`);
+        }
+        return ObjectUrl.fromBlob(source);
+    }
+
+    /**
+     * Creates ObjectUrl from string
+     * Note: DO NOT forget to call destroy() when you are done with it
+     */
+    public static fromString(source: string, mimeType: string_mime_type): ObjectUrl {
+        return ObjectUrl.fromBlob(new Blob([source], { type: mimeType }));
+    }
+
+    /**
+     * Creates ObjectUrl from Blob, File or MediaSource
+     * Note: DO NOT forget to call destroy() when you are done with it
      */
     public static fromBlob(source: Blob | File | MediaSource): ObjectUrl {
         const src = URL.createObjectURL(source);

@@ -1,7 +1,7 @@
-import MonacoEditor from '@monaco-editor/react';
 import { useEffect, useState } from 'react';
 import { HtmlExportFile } from '../../export/exportAsHtml';
 import { Select } from '../Select/Select';
+import { File } from './File';
 import styles from './Files.module.css';
 
 interface FilesProps {
@@ -43,18 +43,7 @@ export function Files(props: FilesProps) {
                     visibleButtons={Infinity}
                 />
             </div>
-            <MonacoEditor
-                className={styles.codeView}
-                theme="vs-dark"
-                defaultLanguage={file.type}
-                options={{
-                    wordWrap: 'on',
-                    readOnly: true,
-                }}
-                key={file.pathname}
-                defaultValue={file.content}
-            />
-            ;
+            <File {...{ file }} />;
         </div>
     );
 }
