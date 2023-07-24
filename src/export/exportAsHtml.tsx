@@ -245,7 +245,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     }
 
     // TODO: In future put image assets dynamically NOT just one hardcoded stripes-grey.png file
-    // !!!! Make this work in export
     for (const file of files) {
         if (file.content instanceof Blob) {
             continue;
