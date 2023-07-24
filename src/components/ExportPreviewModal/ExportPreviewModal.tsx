@@ -83,6 +83,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
     return (
         <Modal title={'Export preview'}>
+            {/*
             <pre
                 // TODO: Make <DebugOutput/> component which supports multiple inputs like Set, Map, Array, Object, and also primitive values and promises and RxJS
                 onClick={() => {
@@ -91,6 +92,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             >
                 {JSON.stringify(Object.fromEntries(urlMap), null, 4)}
             </pre>
+            */}
             {!indexUrl ? `Loading...` : <iframe className={styles.preview} src={indexUrl.href} />}
         </Modal>
     );
