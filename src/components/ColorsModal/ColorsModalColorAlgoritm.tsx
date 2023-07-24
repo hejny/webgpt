@@ -49,17 +49,15 @@ export function ColorsModalColorAlgoritm() {
                             `Compute of ${newVersion} took ${Math.ceil(((duration / 1000) * 10) / 10)}s`,
                         );
 
-                    
                         modifyWallpaper((modifiedWallpaper) => {
                             modifiedWallpaper.colorStats = newColorStats;
                             modifiedWallpaper.saveStage = 'EDITED';
                             return modifiedWallpaper;
                         });
                     } catch (error) {
-
-
-if(!(error instanceof Error)){throw error;}
-
+                        if (!(error instanceof Error)) {
+                            throw error;
+                        }
 
                         console.error(error);
                         alert(`There was an error while computing colors via ${newVersion}\n\n${error.message}`);
