@@ -5,6 +5,7 @@ import { exportAsHtml, HtmlExportFile } from '../../export/exportAsHtml';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_uri } from '../../utils/typeAliases';
+import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import { Modal } from '../Modal/Modal';
 import styles from './ExportPreviewModal.module.css';
 import { ObjectUrl } from './utils/ObjectUrl';
@@ -93,7 +94,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 {JSON.stringify(Object.fromEntries(urlMap), null, 4)}
             </pre>
             */}
-            {!indexUrl ? `Loading...` : <iframe className={styles.preview} src={indexUrl.href} />}
+            {!indexUrl ? `Loading...` : <DeviceIframe className={styles.preview} src={indexUrl.href} />}
         </Modal>
     );
 }
