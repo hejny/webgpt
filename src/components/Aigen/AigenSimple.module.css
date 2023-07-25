@@ -1,6 +1,6 @@
 .AigenSimple {
     /*/
-    border: 1px dotted red;
+    outline: 1px dotted red;
     /**/
 
     z-index: 1000 /* <- [🔝] Global order of showcase */;

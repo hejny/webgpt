@@ -1,12 +1,12 @@
 .ExplainContent {
     /*/
-    border: 1px dotted red;
+    outline: 1px dotted red;
     /**/
 }
 
 .device {
     /*/
-    border: 1px dotted red;
+    outline: 1px dotted red;
     /**/
 
     /* Mobile size viewport in 3D space*/

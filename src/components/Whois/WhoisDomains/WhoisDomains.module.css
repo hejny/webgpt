@@ -1,6 +1,6 @@
 .WhoisDomains {
     /*/
-    border: 1px dotted red;
+    outline: 1px dotted red;
     /**/
     /* TODO: Use or remove empty css */
 
@@ -12,7 +12,7 @@
 
 textarea.pattern {
     /*/
-    border: 1px dotted red;
+    outline: 1px dotted red;
     /**/
 
     width: 50%;
