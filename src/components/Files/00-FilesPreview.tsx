@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
 import { HtmlExportFile } from '../../export/exportAsHtml';
 import { Select } from '../Select/Select';
-import { File } from './File';
-import styles from './Files.module.css';
+import styles from './00-FilesPreview.module.css';
+import { FilePreview } from './10-FilePreview';
 
-interface FilesProps {
+interface FilesPreviewProps {
     files: Array<HtmlExportFile>;
 }
 
 /**
  * @@
  */
-export function Files(props: FilesProps) {
+export function Files(props: FilesPreviewProps) {
     const { files } = props;
 
     if (files.length === 0) {
@@ -34,7 +34,7 @@ export function Files(props: FilesProps) {
     // !!! {['image','other'].includes()} Work with image files
 
     return (
-        <div className={styles.Files}>
+        <div className={styles.FilesPreview}>
             <div className={styles.files}>
                 <Select
                     options={Object.fromEntries(files.map((file) => [file.pathname, file.pathname]))}
@@ -43,13 +43,7 @@ export function Files(props: FilesProps) {
                     visibleButtons={Infinity}
                 />
             </div>
-            <File {...{ file }} />;
+            <FilePreview {...{ file }} />
         </div>
     );
 }
-
-/**
- * TODO: Lazy-load the <MonacoEditor/>
- * TODO: Use <MonacoEditor/> also for markdown and remove the current one
- * TODO: Use syntax highlighting for the code view @see https://www.npmjs.com/package/react-syntax-highlighter
- */

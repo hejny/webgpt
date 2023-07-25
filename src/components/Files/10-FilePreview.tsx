@@ -1,21 +1,22 @@
 import MonacoEditor from '@monaco-editor/react';
 import { HtmlExportFile } from '../../export/exportAsHtml';
-import styles from './Files.module.css';
+import styles from './00-FilesPreview.module.css';
+import { ImageFilePreview } from './20-ImageFilePreview';
 
-interface FileProps {
+interface FilePreviewProps {
     file: HtmlExportFile;
 }
 
 /**
  * @@
  */
-export function File(props: FileProps) {
+export function FilePreview(props: FilePreviewProps) {
     const { file } = props;
 
-    if (typeof file.content === 'string') {
+    if (file.mimeType.startsWith('text/') && typeof file.content === 'string') {
         return (
             <MonacoEditor
-                className={styles.codeView}
+                className={styles.filePreview}
                 theme="vs-dark"
                 language={
                     file.mimeType /* <- TODO: !!! Here should be strings like "javascript" not mime-types like "text/javascript" @see https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages */
@@ -28,8 +29,14 @@ export function File(props: FileProps) {
                 defaultValue={file.content}
             />
         );
+    } else if (file.mimeType.startsWith('image/') && file.content instanceof Blob) {
+        return (
+            <div className={styles.filePreview}>
+                <ImageFilePreview imageFileContent={file.content} />
+            </div>
+        );
     } else {
-        return <>!!!! Preview</>;
+        return <div className={styles.filePreview}>Can not create preview of this file</div>;
     }
 }
 

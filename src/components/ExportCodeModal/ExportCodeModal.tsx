@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { exportAsHtml } from '../../export/exportAsHtml';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { Files } from '../Files/Files';
+import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/Modal';
 
 interface ExportCodeModalProps {}
