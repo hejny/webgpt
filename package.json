@@ -22,10 +22,11 @@
         "test-integration-without-server": "./node_modules/.bin/cypress run",
         "test-integration-interactive": "./node_modules/.bin/cypress open",
         "test-build": "npm run build",
+        "test-types": "tsc",
         "test-with-lighthouse": " lighthouse https://collboard.com/ --output html --output-path ./other/lighthouse-reports/report.html --view",
         "prettier": "prettier --config .prettierrc --ignore-unknown --write \"{pages,public,styles}/**/*\"",
         "prettier-commit": "git diff --exit-code && npm run prettier && git add . && git commit --allow-empty -m \"🧹 Prettier\"",
-        "preversion": "git pull && npm run prettier-commit && npm run lint && npm test && npm run test-build",
+        "preversion": "git pull && npm run prettier-commit && npm run test-types && npm run lint && npm test && npm run test-build",
         "postversion": "git push && git push --tags && echo \"Check the deploy process: https://github.com/hejny/aiai/actions/\""
     },
     "dependencies": {

@@ -42,6 +42,12 @@
             "focus": true
         },
         {
+            "name": "🧪 Test types",
+            "command": "npm run test-types",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🧪🔥 Integration tests (interactive)",
             "command": "npm run test-integration-interactive",
             "onlySingle": true,
