@@ -1,5 +1,4 @@
 .ControlPanel {
-    /* TODO: Use or remove empty css */
 
     z-index: 3000 /* <- [🔝] Global order of showcase */;
     position: fixed;
