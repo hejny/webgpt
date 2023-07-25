@@ -2,8 +2,8 @@ import { Barlow_Condensed } from '@next/font/google';
 import { ReactNode, useEffect } from 'react';
 import { classNames } from '../../utils/classNames';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
+import styles from './00-Modal.module.css';
 import { CloseModalLink } from './10-CloseModalLink';
-import styles from './Modal.module.css';
 
 interface ModalProps {
     title: ReactNode;
