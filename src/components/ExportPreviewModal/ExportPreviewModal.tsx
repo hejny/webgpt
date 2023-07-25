@@ -1,5 +1,6 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
+import { Registration } from 'destroyable';
 import { useEffect, useMemo, useState } from 'react';
 import { exportAsHtml, HtmlExportFile } from '../../export/exportAsHtml';
 import { usePromise } from '../../utils/hooks/usePromise';
@@ -28,7 +29,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     const { value: exported } = usePromise(exportedPromise);
 
     // --------------
-    // TODO: !!! useObjectUrl hook
+    // TODO: Maybe make some hook for this
     const [indexUrl, setIndexUrl] = useState<null | URL>(null);
     const [urlMap, setUrlMap] = useState<null | Map<string_uri, string_uri>>(null);
     useEffect(() => {
@@ -51,6 +52,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
         }
 
         const urlMap = new Map<string_uri, string_uri>();
+        const registration = Registration.void();
 
         for (const file of [...assetFiles, ...codeFiles, ...pageFiles]) {
             if (typeof file.content === 'string') {
@@ -61,6 +63,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             }
 
             const objectUrl = ObjectUrl.from(file.content, file.mimeType);
+            registration.addSubdestroyable(objectUrl);
 
             urlMap.set(file.pathname, objectUrl.src);
 
@@ -71,12 +74,9 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
         setUrlMap(urlMap);
 
-        /*
-        !!!!!
         return () => {
-            objectUrl.destroy();
+            registration.destroy();
         };
-        */
     }, [exported]);
     // --------------
 
