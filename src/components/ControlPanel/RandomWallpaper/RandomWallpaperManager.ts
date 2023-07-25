@@ -55,7 +55,7 @@ export class RandomWallpaperManager {
 
     private async preloadRandomWallpaper(randomWallpaper: IWallpaperInStorage) {
         // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
-        /* not await */ fetch(`/${randomWallpaper.id}`);
+        await fetch(`/${randomWallpaper.id}`);
 
         // Note: Pre-loading the wallpaper image to make the transition smoother
         const imageElement = new Image();
