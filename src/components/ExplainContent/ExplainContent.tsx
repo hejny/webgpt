@@ -11,12 +11,7 @@ export function ExplainContent() {
 
     return (
         <div className={styles.ExplainContent}>
-            <DeviceIframe
-                className={styles.preview}
-                src={`/${wallpaperId}?mode=presentation`}
-                isButtonShown
-                isInteractive={false}
-            />
+            <DeviceIframe className={styles.preview} src={`/${wallpaperId}?mode=presentation`} isInteractive={false} />
 
             <div className={styles.explain}>
                 <h1>AI Web</h1>
