@@ -94,7 +94,11 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 {JSON.stringify(Object.fromEntries(urlMap), null, 4)}
             </pre>
             */}
-            {!indexUrl ? `Loading...` : <DeviceIframe className={styles.preview} src={indexUrl.href} />}
+            {!indexUrl ? (
+                `Loading...`
+            ) : (
+                <DeviceIframe className={styles.preview} src={indexUrl.href} isButtonShown isInteractive />
+            )}
         </Modal>
     );
 }

@@ -30,6 +30,6 @@
     /**/
 }
 
-.DeviceIframe iframe:hover {
+.DeviceIframe:hover iframe {
     transform: scale(0.9) rotateY(0deg);
 }

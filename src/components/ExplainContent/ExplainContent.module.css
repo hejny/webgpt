@@ -1,26 +1,36 @@
 .ExplainContent {
-    /*/
-    outline: 1px dotted red;
     /**/
-}
-
-.device {
-    /*/
     outline: 1px dotted red;
     /**/
 
-    /* Mobile size viewport in 3D space*/
+    width: 100%;
+    height: 100vh;
 
-    float: left;
+    display: grid;
+    grid-template: '🟦 ⬛';
 
-    width: 375px;
-    height: 667px;
-
-    transform: scale(0.5) perspective(1000px) rotateY(15deg);
-
-    box-shadow: 0 0 50px rgba(126, 126, 126, 0.452);
+    align-items: stretch;
+    justify-content: stretch;
 }
 
-.device:hover {
-    transform: scale(0.5) perspective(1000px);
+.preview {
+    /**/
+    outline: 1px dotted rgb(72, 255, 0);
+    /**/
+
+    grid-area: 🟦;
+
+    width: 100%;
+    height: 100%;
+}
+
+.explain {
+    /**/
+    outline: 1px dotted rgb(0, 26, 255);
+    /**/
+
+    grid-area: ⬛;
+
+    width: 100%;
+    height: 100%;
 }

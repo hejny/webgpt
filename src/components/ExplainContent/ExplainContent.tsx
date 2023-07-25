@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
+import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import styles from './ExplainContent.module.css';
 
 /**
@@ -10,20 +11,20 @@ export function ExplainContent() {
 
     return (
         <div className={styles.ExplainContent}>
-            <h1>AI Web</h1>
-
-            <iframe
-                className={styles.device}
+            <DeviceIframe
+                className={styles.preview}
                 src={`/${wallpaperId}?mode=presentation`}
-                // iPhone Size
-                frameBorder="0"
+                isButtonShown
+                isInteractive={false}
             />
 
-            <p>This web was completely created using AI</p>
-
-            <Link className="button" href={`/${wallpaperId}`}>
-                Show web
-            </Link>
+            <div className={styles.explain}>
+                <h1>AI Web</h1>
+                <p>This web was completely created using AI</p>
+                <Link className="button" href={`/${wallpaperId}`}>
+                    Show web
+                </Link>
+            </div>
         </div>
     );
 }
