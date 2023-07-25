@@ -7,7 +7,7 @@ import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../Modal/00-Modal';
 import styles from './ColorsModal.module.css';
 import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
 

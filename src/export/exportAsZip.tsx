@@ -1,7 +1,8 @@
 import JSZip from 'jszip';
 import { IWallpaper } from '../utils/IWallpaper';
-import { exportAsHtml, HtmlExportOptions } from './exportAsHtml';
+import { exportAsHtml } from './exportAsHtml';
 import { getWallpaperBaseFilename } from './getWallpaperBaseFilename';
+import { HtmlExportOptions } from './HtmlExportOptions';
 import { blobToFile } from './utils/blobToFile';
 
 type ZipExportOptions = Omit<HtmlExportOptions, 'stylesPlace'>;

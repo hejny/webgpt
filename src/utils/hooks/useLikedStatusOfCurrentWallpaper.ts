@@ -3,8 +3,6 @@ import { provideClientId } from '../supabase/provideClientId';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useStateInLocalstorage } from './useStateInLocalstorage';
 
-export type LikedStatus = 'NONE' | 'LOVE' | 'LIKE' | 'NEUTRAL' | 'DISLIKE';
-
 export const LikedStatus = {
     NONE: 'None',
     LOVE: '❤ Loved',
@@ -13,9 +11,12 @@ export const LikedStatus = {
     DISLIKE: '👎 Disliked',
 } as const;
 
-export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: keyof typeof LikedStatus) => void] {
+export function useLikedStatusOfCurrentWallpaper(): [
+    keyof typeof LikedStatus,
+    (likedStatus: keyof typeof LikedStatus) => void,
+] {
     const wallpaperId = useCurrentWallpaperId();
-    const [likedStatus, setLikedStatusInner] = useStateInLocalstorage<LikedStatus>(
+    const [likedStatus, setLikedStatusInner] = useStateInLocalstorage<keyof typeof LikedStatus>(
         `likedStatus_${wallpaperId}`,
         'NONE',
     );

@@ -4,7 +4,7 @@ import { ReactNode, useContext } from 'react';
 import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
-import { ExportContext } from '../../pages/_app';
+import { ExportContext } from '../../pages/ExportContext';
 import { extractDescriptionFromHtml } from '../../utils/content/extractDescriptionFromHtml';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ExportComment } from '../ExportComment/ExportComment';

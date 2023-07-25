@@ -5,7 +5,7 @@ import { exportAsHtml } from '../../export/exportAsHtml';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { Files } from '../Files/00-FilesPreview';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../Modal/00-Modal';
 
 interface ExportCodeModalProps {}
 

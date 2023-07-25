@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { HtmlExportFile } from '../../export/exportAsHtml';
+import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { Select } from '../Select/Select';
 import styles from './00-FilesPreview.module.css';
 import { FilePreview } from './10-FilePreview';

@@ -2,7 +2,7 @@ import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 
-export interface GalleryFilter {
+export interface IGalleryFilter {
     fulltext?: string;
     color?: WithTake<Color>;
     likedStatus: keyof typeof LikedStatus | 'ALL';

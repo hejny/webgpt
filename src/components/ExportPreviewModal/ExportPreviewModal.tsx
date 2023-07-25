@@ -2,12 +2,13 @@ import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import { Registration } from 'destroyable';
 import { useEffect, useMemo, useState } from 'react';
-import { exportAsHtml, HtmlExportFile } from '../../export/exportAsHtml';
+import { exportAsHtml } from '../../export/exportAsHtml';
+import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_uri } from '../../utils/typeAliases';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../Modal/00-Modal';
 import styles from './ExportPreviewModal.module.css';
 import { ObjectUrl } from './utils/ObjectUrl';
 

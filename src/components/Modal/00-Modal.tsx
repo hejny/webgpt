@@ -1,9 +1,8 @@
 import { Barlow_Condensed } from '@next/font/google';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { ReactNode, useEffect } from 'react';
 import { classNames } from '../../utils/classNames';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
+import { CloseModalLink } from './10-CloseModalLink';
 import styles from './Modal.module.css';
 
 interface ModalProps {
@@ -62,51 +61,3 @@ export function Modal(props: ModalProps) {
         </>
     );
 }
-
-interface OpenModalLinkProps extends CloseModalLinkProps {
-    modal: string;
-}
-
-export function OpenModalLink(props: OpenModalLinkProps) {
-    const { modal } = props;
-
-    const router = useRouter();
-
-    return (
-        <>
-            <Link
-                href={{
-                    pathname: '/[wallpaper]',
-                    query: {
-                        wallpaper: router.query.wallpaper,
-                        modal,
-                    },
-                }}
-                {...props}
-            />
-        </>
-    );
-}
-
-type CloseModalLinkProps = Omit<React.ComponentProps<'a'>, 'ref'>;
-
-export function CloseModalLink(props: CloseModalLinkProps) {
-    const router = useRouter();
-
-    return (
-        <Link
-            href={{
-                pathname: '/[wallpaper]',
-                query: {
-                    wallpaper: router.query.wallpaper,
-                },
-            }}
-            {...props}
-        />
-    );
-}
-
-/**
- * TODO: !!! CloseModalLink
- * TODO: Closing X button
- */

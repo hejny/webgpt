@@ -1,12 +1,10 @@
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
-import { createContext } from 'react';
 import { EXPORT_OPTIONS } from '../../config';
-import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
+import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
 import '../styles/globals.css';
 import '../styles/reset.css';
-
-export const ExportContext = createContext<typeof EXPORT_OPTIONS>(EXPORT_OPTIONS);
+import { ExportContext } from './ExportContext';
 
 function App({ Component, pageProps }: AppProps) {
     return (

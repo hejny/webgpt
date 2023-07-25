@@ -7,12 +7,12 @@ import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import { ColorInput } from '../../ColorInput/ColorInput';
 import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { Select } from '../../Select/Select';
-import { GalleryFilter, Order } from './GalleryFilter';
 import styles from './GalleryFilterInput.module.css';
+import { IGalleryFilter, Order } from './IGalleryFilter';
 
 interface GalleryFilterProps {
-    defaultFilter: GalleryFilter;
-    onFilterChange(newPartialFilter: Partial<GalleryFilter>): void;
+    defaultFilter: IGalleryFilter;
+    onFilterChange(newPartialFilter: Partial<IGalleryFilter>): void;
 }
 
 export function GalleryFilterInput(props: GalleryFilterProps) {

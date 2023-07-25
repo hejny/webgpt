@@ -13,7 +13,7 @@ import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
-export interface GalleryPageProps {
+interface GalleryPageProps {
     wallpapers: Array<IWallpaperSerialized>;
 }
 

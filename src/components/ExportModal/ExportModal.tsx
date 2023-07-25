@@ -12,7 +12,7 @@ import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../Modal/00-Modal';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import styles from './ExportModal.module.css';

@@ -15,7 +15,7 @@ import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { validateUuid } from '../utils/validateUuid';
 
-export interface ShowcasePageProps {
+interface ShowcasePageProps {
     currentWallpaper: null | IWallpaperSerialized;
 }
 

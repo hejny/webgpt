@@ -4,8 +4,8 @@ import { useContext, useState } from 'react';
 import { useInitial } from '../../utils/hooks/useInitial';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import styles from './Gallery.module.css';
-import { GalleryFilter } from './GalleryFilter/GalleryFilter';
 import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
+import { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
 import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
 interface SampleProps {}
@@ -16,7 +16,7 @@ export function GallerySection(props: SampleProps) {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
-    const [filter, setFilter] = useState<GalleryFilter>({
+    const [filter, setFilter] = useState<IGalleryFilter>({
         limit: 6 /* <- Note: As a highly composite number to fit in misc grids */,
         likedStatus: 'ALL',
         order: 'ASCENDING' /* <- TODO: In future default order should be by populariry */,

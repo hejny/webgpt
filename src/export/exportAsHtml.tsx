@@ -7,12 +7,14 @@ import { NEXT_PUBLIC_URL } from '../../config';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
-import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
-import { ExportContext } from '../pages/_app';
+import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
+import { ExportContext } from '../pages/ExportContext';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
-import { string_css, string_html, string_markdown, string_mime_type } from '../utils/typeAliases';
+import { string_css } from '../utils/typeAliases';
+import { HtmlExportFile } from './HtmlExportFile';
+import { HtmlExportOptions } from './HtmlExportOptions';
 import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
@@ -20,26 +22,8 @@ import { prettifyJavascript } from './utils/prettifyJavascript';
 import { removeSourceMaps } from './utils/removeSourceMaps';
 import { removeTodoComments } from './utils/removeTodoComments';
 
-export interface HtmlExportOptions {
-    /**
-     * Where to place styles
-     * - `EMBED` - Place styles into <style> tag
-     * - `EXTERNAL` - Place styles into <link rel="stylesheet" href="style.css">
-     */
-    stylesPlace: 'EMBED' | 'EXTERNAL' /* <- TODO: Probbably just remove EMBED option */;
-
-    publicUrl: URL | null;
-}
-
 interface HtmlExport {
     files: Array<HtmlExportFile>;
-}
-
-export interface HtmlExportFile {
-    type: 'page' | 'code' | 'asset' | 'other';
-    mimeType: string_mime_type;
-    pathname: string;
-    content: string_html | string_css | string_markdown | Blob;
 }
 
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {

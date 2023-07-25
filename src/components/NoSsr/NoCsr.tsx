@@ -1,10 +1,13 @@
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
-import { NoSsrProps } from './NoSsr';
+
+interface NoCsrProps {
+    children: React.ReactNode;
+}
 
 /**
  * @@
  */
-export function NoCsr(props: NoSsrProps) {
+export function NoCsr(props: NoCsrProps) {
     const { children } = props;
 
     const isServerRender = useSsrDetection();
