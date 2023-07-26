@@ -97,9 +97,8 @@ async function generateWallpapersColorStats({
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
 
-            const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
-            const localSrc = join(MIDJOURNEY_WHOLE_GALLERY_PATH, basename(src));
-
+            const srcFilePath = metadataFilePath.replace(/\.json$/, '.png');
+            const localSrc = join(MIDJOURNEY_WHOLE_GALLERY_PATH, basename(srcFilePath));
             const colorStats = await COLORSTATS_DEFAULT_COMPUTE(await createImageInNode(localSrc));
 
             // TODO: !! Break also createImageInNode, computeImageColorStats and its subfunctions into forImmediate chunks
