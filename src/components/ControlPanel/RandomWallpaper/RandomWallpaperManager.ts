@@ -1,6 +1,7 @@
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
+import { isPrivateNetwork } from '../../../utils/isPrivateNetwork';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 
@@ -95,6 +96,11 @@ export class RandomWallpaperManager {
     }
 
     private getPrefetchCount(): number {
+        if (isPrivateNetwork(window.location.href)) {
+            // Note: When running on private network (developing) we do not want to prefetch wallpapers to not throttle the dev script
+            return 0;
+        }
+
         return Math.max(
             2,
             Math.round(Math.sqrt(this.getConsumedCount())),
