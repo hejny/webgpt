@@ -6,10 +6,10 @@ dotenv.config({ path: '.env' });
 import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
-import { join, relative } from 'path';
+import { basename, join, relative } from 'path';
 import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
-import { COLORSTATS_DEFAULT_COMPUTE } from '../../config';
+import { COLORSTATS_DEFAULT_COMPUTE, MIDJOURNEY_WHOLE_GALLERY_PATH } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { serializeColorStats } from '../../src/utils/image/utils/serializeColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
@@ -25,7 +25,11 @@ if (process.cwd() !== join(__dirname, '../..')) {
 }
 
 const program = new commander.Command();
-program.option('--commit', `Autocommit changes`, false);
+program.option(
+    '--commit',
+    `Autocommit changes`,
+    false,
+); /* <- TODO: !!!! ACRY It does not make sence to commit changes - [🧠] maybe upload them  */
 program.option('--shuffle', `Randomize wallpapers order`, false);
 // TODO: Probbably tell why to not use --parallel in colors
 program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
@@ -92,10 +96,11 @@ async function generateWallpapersColorStats({
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
-            const colorStats = await COLORSTATS_DEFAULT_COMPUTE(
-                // TODO: [🚯] Fix here 403 Midjourney error
-                await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
-            );
+
+            const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
+            const localSrc = join(MIDJOURNEY_WHOLE_GALLERY_PATH, basename(src));
+
+            const colorStats = await COLORSTATS_DEFAULT_COMPUTE(await createImageInNode(localSrc));
 
             // TODO: !! Break also createImageInNode, computeImageColorStats and its subfunctions into forImmediate chunks
             await forImmediate();
