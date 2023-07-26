@@ -1,4 +1,4 @@
-import { Barlow_Condensed } from '@next/font/google';
+import { Barlow_Condensed } from "next/font/google";
 import { ReactNode, useEffect } from 'react';
 import { classNames } from '../../utils/classNames';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';

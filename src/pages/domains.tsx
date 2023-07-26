@@ -1,4 +1,4 @@
-import { Barlow_Condensed } from '@next/font/google';
+import { Barlow_Condensed } from "next/font/google";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { NoSsr } from '../components/NoSsr/NoSsr';

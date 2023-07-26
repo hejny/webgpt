@@ -31,7 +31,6 @@
     },
     "dependencies": {
         "@monaco-editor/react": "4.5.1",
-        "@next/font": "13.1.1",
         "@supabase/supabase-js": "2.26.0",
         "@types/file-saver": "2.0.5",
         "@uiw/react-markdown-editor": "5.11.1",
