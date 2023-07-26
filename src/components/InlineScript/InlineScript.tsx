@@ -1,6 +1,6 @@
 import Script from 'next/script';
 import { useContext } from 'react';
-import { ExportContext } from '../../pages/ExportContext';
+import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_javascript } from '../../utils/typeAliases';
 
 interface InlineScriptProps {

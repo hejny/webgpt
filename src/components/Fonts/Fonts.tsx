@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { FONTS } from '../../../config';
-import { ExportContext } from '../../pages/ExportContext';
+import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_font } from '../../utils/typeAliases';
 
 interface FontsProps {

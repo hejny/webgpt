@@ -4,7 +4,7 @@ import { EXPORT_OPTIONS } from '../../config';
 import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
 import '../styles/globals.css';
 import '../styles/reset.css';
-import { ExportContext } from './ExportContext';
+import { ExportContext } from '../utils/hooks/ExportContext';
 
 function App({ Component, pageProps }: AppProps) {
     return (
