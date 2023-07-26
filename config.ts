@@ -2,7 +2,7 @@ import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
-import { createColorfulComputeImageColorStats14 } from './src/utils/image/palette/14/createColorfulComputeImageColorStats14';
+import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { validateUuid } from './src/utils/validateUuid';
 
@@ -74,24 +74,24 @@ export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
 export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
     /*/
     // Full:
-    createColorfulComputeImageColorStats14({
+    createColorfulComputeImageColorStats15({
         colorBits: 256,
         size: IMAGE_NATURAL_SIZE,
     }),
     /**/
-    createColorfulComputeImageColorStats14({
+    createColorfulComputeImageColorStats15({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
     /*
     TODO: There is an infinite loop with "Error: Size must have positive integer values, got 19.2x10.8" when using this:
           Fix it:
-        > createColorfulComputeImageColorStats14({
+        > createColorfulComputeImageColorStats15({
         >     colorBits: 16,
         >     size: IMAGE_NATURAL_SIZE.scale(0.01),
         > }),
     */
-    createColorfulComputeImageColorStats14({
+    createColorfulComputeImageColorStats15({
         // !!! Remove this
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.2),
@@ -99,7 +99,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
     /*
     TODO: !! Add more versions (Also full)
     */
-    createColorfulComputeImageColorStats14({
+    createColorfulComputeImageColorStats15({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE,
     }),
