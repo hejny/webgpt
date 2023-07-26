@@ -15,9 +15,6 @@ import { getOrderString } from '../../../getOrderString';
 import { WithTake } from '../../../take/interfaces/ITakeChain';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
-let totalCount = 0;
-let pickByMostFrequentColorCount = 0;
-
 export async function computeImagePalette15(
     colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>,
 ): Promise<{
@@ -26,8 +23,6 @@ export async function computeImagePalette15(
 }> {
     let primaryColor: { value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/ | null = null;
 
-    totalCount++;
-
     // 0️⃣ Check that there is some most occuring color towards the bottom of the image
     if (
         // [🥎]
@@ -35,7 +30,6 @@ export async function computeImagePalette15(
         areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomThird.mostFrequentColors[0].value) &&
         areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomLine.mostFrequentColors[0].value)
     ) {
-        pickByMostFrequentColorCount++;
         primaryColor = {
             ...colorStats.bottomHalf.mostFrequentColors[0],
             note: `The most common color to appear at the bottom of the wallpaper.`,
