@@ -15,12 +15,12 @@ import {
     IImageColorStatsRegion,
 } from '../../utils/IImageColorStats';
 import { scaleImage } from '../../utils/scaleImage';
-import { computeImagePalette14 } from './computeImagePalette14';
+import { computeImagePalette15 } from './computeImagePalette15';
 
 /**
  * @@@
  */
-export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits extends number, TScale extends number>*/(options: {
+export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits extends number, TScale extends number>*/(options: {
     colorBits: number;
     size: IVector;
 }): IComputeImageColorStats<string /* TODO: `colorful-${TColorBits}bit-${...}-1`*/> {
@@ -32,7 +32,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
         throw new Error(`Size must have positive integer values, got ${size.x}x${size.y}`);
     }
 
-    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v14palette` as string;
+    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v15palette` as string;
 
     const computeWholeImageColorStats = async (image: IImage): Promise<IImageColorStatsRegion> => {
         image = scaleImage(image, size);
@@ -65,7 +65,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
             ),
         } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>;
 
-        const { palette, paletteCandidates } = await computeImagePalette14(stats);
+        const { palette, paletteCandidates } = await computeImagePalette15(stats);
         return { version, palette, paletteCandidates, ...stats };
     };
 
