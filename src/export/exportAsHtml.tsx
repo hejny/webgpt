@@ -199,7 +199,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         </html>,
     );
 
-    // !!!! Fix here escaping
+    // TODO: !!!! (probbably done) Fix here escaping
 
     // Note: Post-processing HTML after React render
     html = html.split(`async=""`).join(`async`);

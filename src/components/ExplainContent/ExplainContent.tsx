@@ -25,7 +25,7 @@ export function ExplainContent() {
 }
 
 /**
- * TODO: !!!! Use here the <DeviceIframe/> component
+ * TODO: !!!! Remove this component and make page from it
  * TODO: !!! [🧠] How should explain page look like?
  * TODO: !!! Link back to web
  * TODO: !!! Make it via AIWeb
