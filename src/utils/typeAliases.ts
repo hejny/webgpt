@@ -27,6 +27,15 @@ export type string_midjourney_prompt = string;
 /**
  * Semantic helper
  *
+ * For example `"index"` or `"explanation"`
+ * Always in kebab-case
+ * @collboard-modules-sdk
+ */
+export type string_page = 'index' | string;
+
+/**
+ * Semantic helper
+ *
  * For example `"text/plain"` or `"application/collboard"`
  * @collboard-modules-sdk
  */
@@ -57,7 +66,6 @@ export type string_char = string;
  * @collboard-modules-sdk
  */
 export type string_title = string;
-
 
 /**
  * Semantic helper

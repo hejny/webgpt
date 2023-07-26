@@ -1,5 +1,6 @@
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
+import { usePage } from '../../utils/hooks/usePage';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
@@ -16,6 +17,7 @@ import styles from './ShowcaseArticle.module.css';
 export function ShowcaseArticleSection() {
     const { isEditable } = useMode();
     const [{ content }, modifyWallpaper] = useWallpaper();
+    const page = usePage();
 
     const contentFormat = detectContentFormat(content);
 
@@ -37,6 +39,8 @@ export function ShowcaseArticleSection() {
                 <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>
             */}
+
+            {page !== 'index' && <h1>${page}</h1> /* <- TODO: Propper page, [🧠] how to make pages here */}
 
             <Fonts fonts={extractFontsFromContent(content)} />
 

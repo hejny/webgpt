@@ -3,11 +3,17 @@ import { TupleToUnion } from 'type-fest';
 import { useSsrDetection } from './useSsrDetection';
 
 // TODO: !!! [🧠]! Rename to more clear name PRESENTATION and PREVIEW
-const MODES = ['LOADING', 'NORMAL', 'EXPLANATION', 'PRESENTATION', 'PREVIEW'] as const;
+const MODES = [
+    'LOADING',
+    'NORMAL',
+    'EXPLANATION',
+    'PRESENTATION',
+    'PREVIEW',
+] as const; /* <- [🧠] Which to use as/instead of enums, [...] as const with TupleToUnion OR {...} as const*/
 
 interface IModes {
     mode: TupleToUnion<typeof MODES>;
-    isExplaining: boolean;
+    isExplaining: boolean /* <- TODO: !!!! Remove ACRY */;
     isPresenting: boolean;
     isEditable: boolean;
 }

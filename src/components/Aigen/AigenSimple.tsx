@@ -15,7 +15,7 @@ export function AigenSimple() {
                 pathname: '/[wallpaper]',
                 query: {
                     wallpaper: router.query.wallpaper,
-                    mode: 'explanation',
+                    page: 'explanation',
                 },
             }}
         >
