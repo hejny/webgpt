@@ -1,5 +1,5 @@
-import { VERSION } from 'lodash';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { VERSION } from '../../../config';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
