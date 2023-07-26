@@ -1,5 +1,5 @@
-import { Barlow_Condensed } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { Barlow_Condensed } from 'next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
