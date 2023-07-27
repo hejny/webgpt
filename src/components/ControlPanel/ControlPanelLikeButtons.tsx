@@ -24,6 +24,8 @@ export function ControlPanelLikeButtons() {
                         pathname: '/[wallpaper]',
                         query: {
                             wallpaper: router.query.wallpaper,
+                            mode: router.query.mode,
+                            page: router.query.page,
                             modal: 'export',
                         },
                     }}

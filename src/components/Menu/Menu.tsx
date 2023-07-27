@@ -31,6 +31,7 @@ export function Menu() {
                                     pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
+                                        mode: router.query.mode,
                                         page: undefined,
                                     },
                                 }}
@@ -44,6 +45,8 @@ export function Menu() {
                                     pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
+                                        mode: router.query.mode,
+                                        page: router.query.page,
                                         modal: 'export',
                                     },
                                 }}
@@ -59,6 +62,8 @@ export function Menu() {
                                     pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
+                                        mode: router.query.mode,
+                                        page: router.query.page,
                                         page: 'pricing',
                                     },
                                 }}
@@ -73,6 +78,8 @@ export function Menu() {
                                     pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
+                                        mode: router.query.mode,
+                                        page: router.query.page,
                                         page: 'gallery',
                                     },
                                 }}
@@ -97,6 +104,8 @@ export function Menu() {
                                     pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
+                                        mode: router.query.mode,
+                                        page: router.query.page,
                                         page: 'contact',
                                     },
                                 }}

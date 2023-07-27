@@ -209,6 +209,7 @@ export function ExportModal(props: ExportModalProps) {
                             pathname: '/[wallpaper]',
                             query: {
                                 wallpaper: router.query.wallpaper,
+                                mode: router.query.mode,
                                 page: 'pricing',
                             },
                         }}

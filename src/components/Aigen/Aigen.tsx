@@ -14,9 +14,11 @@ import { randomItem } from '../../utils/randomItem';
 export function Aigen() {
     const router = useRouter();
     const isServerRender = useSsrDetection();
-    const [{
-        colorStats: { palette },
-    }] = useWallpaper();
+    const [
+        {
+            colorStats: { palette },
+        },
+    ] = useWallpaper();
 
     if (isServerRender) {
         // TODO: !! Allow when decided how to mark AI generated webpages
@@ -91,6 +93,7 @@ export function Aigen() {
                     pathname: '/[wallpaper]',
                     query: {
                         wallpaper: router.query.wallpaper,
+                        mode: router.query.mode,
                         page: 'explanation',
                     },
                 }}

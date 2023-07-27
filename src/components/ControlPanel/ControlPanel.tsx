@@ -89,6 +89,7 @@ export function ControlPanel() {
                         pathname: '/[wallpaper]',
                         query: {
                             wallpaper: router.query.wallpaper,
+                            page: router.query.page,
                             mode: 'presentation',
                         },
                     }}
@@ -124,6 +125,7 @@ export function ControlPanel() {
                     pathname: '/[wallpaper]',
                     query: {
                         wallpaper: router.query.wallpaper,
+                        mode: router.query.mode,
                         page: 'contact',
                     },
                 }}
