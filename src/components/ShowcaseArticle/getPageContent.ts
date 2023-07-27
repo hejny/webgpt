@@ -2,7 +2,7 @@ import spaceTrim from 'spacetrim';
 import contact from '../../../documents/contact.md';
 import explanation from '../../../documents/explanation.md';
 import gallery from '../../../documents/gallery.html';
-import license from '../../../documents/license.html';
+import license from '../../../documents/license.md';
 import pricing from '../../../documents/pricing.html';
 import { string_html, string_markdown, string_page } from '../../utils/typeAliases';
 
