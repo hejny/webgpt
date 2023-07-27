@@ -114,9 +114,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                                 | Or register manually at https://app.1-2i.com/${wallpaper.id}?modal=export
                                 |
                                 | After the registration you can remove this section or leave it here for future updates
-                                | For more info see https://1-2i.com/license` +
-                                /*                                          <- TODO: !!! Make this page */ `
-
+                                | For more info see https://app.1-2i.com/${wallpaper.id}?page=license
                         `,
                         )}
                     />
