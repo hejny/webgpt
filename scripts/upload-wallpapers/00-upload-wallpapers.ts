@@ -42,8 +42,6 @@ async function uploadWallpapers() {
              > };
             */
 
-            console.log(wallpaper);
-
             const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper.id);
 
             if (!(selectResult && selectResult.data && selectResult.data.length > 0)) {
