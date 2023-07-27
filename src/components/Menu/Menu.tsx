@@ -59,7 +59,13 @@ export function Menu() {
                         </li>
                         <li>
                             <Link
-                                href={`/?home=${encodeURIComponent(router.asPath)}/`}
+                                href={{
+                                    pathname: '/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        page: 'gallery',
+                                    },
+                                }}
                                 prefetch={false /* <- Note: Because it is rare option */}
                             >
                                 Gallery
