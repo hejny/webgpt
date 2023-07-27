@@ -104,13 +104,13 @@
             "focus": true
         },
         {
-            "name": "🏭🔼 [7] Upload wallpapers",
+            "name": "🏭🔼 [7] Upload & Update wallpapers",
             "commands": ["ts-node ./scripts/upload-wallpapers/00-upload-wallpapers.ts"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🔼🖼 [8] Upload wallpapers images",
+            "name": "🏭🔼🖼 [8] Upload & Update wallpapers images",
             "commands": ["ts-node ./scripts/upload-wallpapers/10-upload-wallpapers-images.ts"],
             "onlySingle": true,
             "focus": true

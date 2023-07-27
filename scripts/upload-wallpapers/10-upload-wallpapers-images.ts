@@ -30,7 +30,7 @@ uploadWallpapersImages()
     });
 
 async function uploadWallpapersImages() {
-    console.info(`🔼🖼  Upload wallpapers images`);
+    console.info(`🔼🖼  Upload & Update wallpapers images`);
 
     let i = 0;
     const hardcodedWallpapers = await getHardcodedWallpapers();
@@ -108,7 +108,7 @@ async function uploadWallpapersImages() {
         }
     }
 
-    console.info(`[ Done 🔼🖼  Upload wallpapers images ]`);
+    console.info(`[ Done 🔼🖼  Upload & Update wallpapers images ]`);
 }
 
 /**
