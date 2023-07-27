@@ -1,4 +1,10 @@
-import { config as S3Config, Endpoint, S3 } from 'aws-sdk';
+import {
+    GetObjectCommand,
+    ListObjectsV2Command,
+    PutObjectCommand,
+    PutObjectCommandInput,
+    S3Client,
+} from '@aws-sdk/client-s3';
 import { IDestroyable, registerItemsInArray } from 'destroyable';
 import { gzip, ungzip } from 'node-gzip';
 import { IFile, IIFilesStorageWithCdn } from '../interfaces/IFilesStorage';
@@ -20,17 +26,16 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
         return this.config.cdnPublicUrl;
     }
 
-    private s3: S3;
+    private s3: S3Client;
 
     public constructor(private readonly config: IDigitalOceanSpacesConfig) {
-        S3Config.update({
-            // TODO: !! Configuration singleton
-            accessKeyId: config.accessKeyId,
-            secretAccessKey: config.secretAccessKey,
-        });
-
-        this.s3 = new S3({
-            endpoint: new Endpoint(config.endpoint),
+        this.s3 = new S3Client({
+            region: 'auto',
+            endpoint: 'https://' + config.endpoint,
+            credentials: {
+                accessKeyId: config.accessKeyId,
+                secretAccessKey: config.secretAccessKey,
+            },
         });
     }
 
@@ -45,17 +50,19 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
         };
 
         try {
-            const { Body, ContentType, ContentEncoding } = await this.s3.getObject(parameters).promise();
+            const { Body, ContentType, ContentEncoding } = await this.s3.send(new GetObjectCommand(parameters));
+
+            // const blob = new Blob([await Body?.transformToByteArray()!]);
 
             if (ContentEncoding === 'gzip') {
                 return {
                     type: ContentType!,
-                    data: await ungzip(Body as Buffer),
+                    data: await ungzip(await Body?.transformToByteArray()!),
                 };
             } else {
                 return {
                     type: ContentType!,
-                    data: Body as Buffer,
+                    data: (await Body?.transformToByteArray()!) as Buffer,
                 };
             }
         } catch (error) {
@@ -73,7 +80,7 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
 
     public async setItem(key: string, file: IFile): Promise<void> {
         // TODO: Put putObjectRequestAdditional into processedFile
-        const putObjectRequestAdditional: Partial<S3.Types.PutObjectRequest> = {};
+        const putObjectRequestAdditional: Partial<PutObjectCommandInput> = {};
 
         let processedFile: IFile;
         if (this.config.gzip) {
@@ -91,8 +98,8 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
             processedFile = file;
         }
 
-        const uploadResult = await this.s3
-            .upload({
+        const uploadResult = await this.s3.send(
+            new PutObjectCommand({
                 Bucket: this.config.bucket,
                 Key: this.config.pathPrefix + '/' + key,
                 ContentType: processedFile.type,
@@ -100,8 +107,8 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
                 Body: processedFile.data,
                 // TODO: Public read access / just private to extending class
                 ACL: 'public-read',
-            })
-            .promise();
+            }),
+        );
 
         if (!uploadResult.ETag) {
             throw new Error(`Upload result does not contain ETag`);
@@ -123,22 +130,13 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
             const replay = async (ContinuationToken: string | undefined) => {
                 // TODO: Probably it can be done with promisify and list only matching files - NOW there are listed all files
 
-                const response = await new Promise<S3.Types.ListObjectsV2Output>((resolve, reject) => {
-                    this.s3.listObjectsV2(
-                        {
-                            Bucket: this.config.bucket,
-                            Prefix: 'modules' /* TODO: !! Unhardcode and make from match */,
-                            ContinuationToken,
-                        },
-                        (error, data) => {
-                            if (error) {
-                                reject(error);
-                            } else {
-                                resolve(data);
-                            }
-                        },
-                    );
-                });
+                const response = await this.s3.send(
+                    new ListObjectsV2Command({
+                        Bucket: this.config.bucket,
+                        Prefix: 'modules' /* <- TODO: !!! Unhardcode and make from match */,
+                        ContinuationToken,
+                    }),
+                );
 
                 if (!response.Contents) {
                     return;
@@ -183,10 +181,5 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
 }
 
 /**
- * TODO: !!! This should be lazy-loaded
- * TODO: Extend this from AWS S3 (compatible) storage
- * TODO: Probably not extend from storage
  * TODO: Read-only mode
- * TODO: Immutable mode
- * TODO: Non-Immutable mode should purge cache
  */
