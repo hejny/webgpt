@@ -1,6 +1,7 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { exportAsZip } from '../../export/exportAsZip';
@@ -47,6 +48,7 @@ const ExportPlan = {
  * @@
  */
 export function ExportModal(props: ExportModalProps) {
+    const router = useRouter();
     const [wallpaper] = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
@@ -202,7 +204,17 @@ export function ExportModal(props: ExportModalProps) {
                         visibleButtons={Infinity}
                     />
 
-                    <Link href="https://1-2i.com/pricing" target={'_blank'} className={styles.extra}>
+                    <Link
+                        href={{
+                            pathname: '/[wallpaper]',
+                            query: {
+                                wallpaper: router.query.wallpaper,
+                                page: 'pricing',
+                            },
+                        }}
+                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */ target={'_blank'}
+                        className={styles.extra}
+                    >
                         More info about plans
                     </Link>
                 </label>

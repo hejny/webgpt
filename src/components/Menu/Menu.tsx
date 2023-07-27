@@ -26,7 +26,17 @@ export function Menu() {
                     <ul>
                         {/* TODO: !!! Export all pages */}
                         <li>
-                            <a href="https://1-2i.com/">Home</a>
+                            <Link
+                                href={{
+                                    pathname: '/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        page: undefined,
+                                    },
+                                }}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li className={styles.featured}>
                             <Link
@@ -150,6 +160,5 @@ export function Menu() {
 }
 
 /**
- * TODO: !!!!!! ACRY go through https://1-2i.com and make internal pages of them
  * TODO: !!!! [🧠] Structure of page, menus,...
  */
