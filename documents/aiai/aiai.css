@@ -1,0 +1,129 @@
+/* 📱 Computers */
+.aiai-gallery {
+    --on-row: 6;
+    --gap: 0;
+    --aspect: 1.61;
+    --scale: 3;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* 📱 Tablets */
+
+    .aiai-gallery {
+        --on-row: 3;
+        --gap: 2px;
+        --aspect: 1;
+        --scale: 3;
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* 📱 Big smartphones */
+
+    .aiai-gallery {
+        --on-row: 2;
+        --gap: 2px;
+        --aspect: 1;
+        --scale: 4;
+    }
+}
+@media only screen and (max-width: 425px) {
+    /* 📱 Small smartphones */
+
+    .aiai-gallery {
+        --on-row: 2;
+        --gap: 3px;
+        --aspect: 1.61;
+        --scale: 1.5;
+    }
+}
+
+/*------------------------*/
+
+.aiai-gallery,
+.aiai-gallery * {
+    transition: all 0.2s ease-in-out;
+}
+
+.aiai-gallery-items {
+    /*/
+    outline: 1px dotted red;
+    /**/
+
+    /* TODO: !!! Can be in calc used more than 2 statements | maybe split into multiple calc() */
+    height: calc(100vw * var(--aspect) * 6 / var(--on-row) / var(--on-row)); /* <- [🥼]*/
+    margin-bottom: 20px;
+}
+
+.aiai-gallery-items .inner {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    /*margin-left: -50px;*/
+
+    display: grid;
+    grid-template-columns: repeat(var(--on-row), 1fr);
+    grid-gap: var(--gap);
+}
+
+.aiai-gallery-items .inner > * {
+    /*/
+    outline: 1px dotted rgb(0, 255, 55);
+    /**/
+
+    width: 100%;
+    aspect-ratio: 1 / var(--aspect);
+}
+
+.aiai-gallery-items .inner a {
+    /*/
+    outline: 1px dotted rgb(28, 80, 28);
+    /**/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: clip;
+}
+
+.aiai-gallery-items .inner a iframe {
+    /*/
+    outline: 1px dotted blue;
+    /**/
+
+    pointer-events: none;
+
+    width: calc(100% * var(--scale));
+    height: calc(100% * var(--scale));
+    transform: scale(calc(1 / var(--scale)));
+    transform-origin: 50% 50%;
+}
+
+.aiai-gallery .placeholder {
+    overflow: hidden;
+    background: #000;
+    position: relative;
+
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: aiai-placeholder-animate;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eee 2%, #ccc 18%, #eee 33%);
+    background-size: 1300px;
+}
+
+@keyframes aiai-placeholder-animate {
+    0% {
+        background-position: -650px 0;
+    }
+    100% {
+        background-position: 650px 0;
+    }
+}
