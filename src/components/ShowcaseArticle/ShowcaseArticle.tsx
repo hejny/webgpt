@@ -1,4 +1,3 @@
-import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
 import { usePage } from '../../utils/hooks/usePage';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -6,8 +5,7 @@ import { string_html } from '../../utils/typeAliases';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
-import { HtmlContent } from '../MarkdownContent/HtmlContent';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
+import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
 import styles from './ShowcaseArticle.module.css';
 
@@ -18,8 +16,6 @@ export function ShowcaseArticleSection() {
     const { isEditable } = useMode();
     const [{ content }, modifyWallpaper] = useWallpaper();
     const page = usePage();
-
-    const contentFormat = detectContentFormat(content);
 
     const onHtmlChange = !isEditable
         ? undefined
@@ -45,16 +41,13 @@ export function ShowcaseArticleSection() {
             <Fonts fonts={extractFontsFromContent(content)} />
 
             <ExportCommentedBlock name="Content">
-                {contentFormat === 'html' && <HtmlContent {...{ content, isEditable, onHtmlChange }} />}
-                {contentFormat === 'markdown' && (
-                    <MarkdownContent
-                        isusingFonts
-                        isUsingOpenmoji={
-                            false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
-                        }
-                        {...{ content, isEditable, onHtmlChange }}
-                    />
-                )}
+                <Content
+                    isusingFonts
+                    isUsingOpenmoji={
+                        false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
+                    }
+                    {...{ content, isEditable, onHtmlChange }}
+                />
             </ExportCommentedBlock>
         </Section>
     );
