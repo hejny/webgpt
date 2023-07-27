@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { activateMenuComponents } from '../ai-components/activateMenuComponents';
+import { AiComponents } from '../AiComponents/AiComponents';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
-import { InlineScript } from '../InlineScript/InlineScript';
 import styles from './Menu.module.css';
 
 /**
@@ -16,151 +16,112 @@ export function Menu() {
 
     return (
         <ExportCommentedBlock name="Menu">
-            <div className={styles.Menu} data-toggle-element="menu">
-                <div className={styles.MenuBar} data-toggle-element="bar">
-                    <div className={classNames(styles.bar, styles.bar1)}></div>
-                    <div className={classNames(styles.bar, styles.bar2)}></div>
-                    <div className={classNames(styles.bar, styles.bar3)}></div>
-                </div>
-                <nav className={styles.MenuContent}>
-                    <ul>
-                        {/* TODO: !!! Export all pages */}
-                        <li>
-                            <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        mode: router.query.mode,
-                                        page: undefined,
-                                    },
-                                }}
-                            >
-                                Home
-                            </Link>
-                        </li>
-                        <li className={styles.featured}>
-                            <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        mode: router.query.mode,
-                                        page: router.query.page,
-                                        modal: 'export',
-                                    },
-                                }}
-                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                            >
-                                Get the web
-                            </Link>
-                        </li>
-                        {/* TODO: Maybe ?modal=explain link */}
-                        <li>
-                            <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        mode: router.query.mode,
-                                        page: 'pricing',
-                                    },
-                                }}
-                                prefetch={false /* <- Note: Because it is rare option */}
-                            >
-                                Pricing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        mode: router.query.mode,
-                                        page: 'gallery',
-                                    },
-                                }}
-                                prefetch={false /* <- Note: Because it is rare option */}
-                            >
-                                Gallery
-                            </Link>
-                        </li>
-                        {wallpaper.parent && (
+            <AiComponents usedComponents={[activateMenuComponents]}>
+                <div className={styles.Menu} data-ai-component="menu">
+                    <div className={styles.MenuBar} data-ai-element="bar">
+                        {/* TODO: !!! This should be created and inserted here in activateMenuComponents
+                                  OR figure out better identification then data-ai-component="menu"      */}
+                        <div className={classNames(styles.bar, styles.bar1)}></div>
+                        <div className={classNames(styles.bar, styles.bar2)}></div>
+                        <div className={classNames(styles.bar, styles.bar3)}></div>
+                    </div>
+                    <nav className={styles.MenuContent}>
+                        <ul>
+                            {/* TODO: !!!! All pages into export (also the hidden ones) */}
+                            {/* TODO: !!!! Pages in export should be transformed from ?page=foo to just /foo */}
                             <li>
                                 <Link
-                                    href={`/${wallpaper.parent}`}
-                                    prefetch={false /* <- Note: Because it is rare option */}
+                                    href={{
+                                        pathname: '/[wallpaper]',
+                                        query: {
+                                            wallpaper: router.query.wallpaper,
+                                            mode: router.query.mode,
+                                            page: undefined,
+                                        },
+                                    }}
                                 >
-                                    Unedited version
+                                    Home
                                 </Link>
                             </li>
-                        )}
-                        <li>
-                            <Link
-                                href={{
-                                    pathname: '/[wallpaper]',
-                                    query: {
-                                        wallpaper: router.query.wallpaper,
-                                        mode: router.query.mode,
-                                        page: 'contact',
-                                    },
-                                }}
-                            >
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-                <div className={styles.MenuBgWrapper}>
-                    {/* <- Note: MenuBg is wrapped in MenuBgWrapper to hide its leak over the right fold of the page */}
-                    <div className={styles.MenuBg}></div>
-                </div>
-            </div>
-            <InlineScript id="toggle-control">
-                {
-                    // Note: Using inline script to pass the menu control to the exported page
-                    spaceTrim(`
-                          
-                          for (const menuElement of Array.from(window.document.querySelectorAll('[data-toggle-element="menu"]'))) {
-                              if (menuElement.getAttribute('data-toggle-activated')) {
-                                  continue;
-                              }
-                              menuElement.setAttribute('data-toggle-activated', 'true');
-                  
-                              const barElement = menuElement.querySelector('[data-toggle-element="bar"]');
-                  
-                              if (!barElement) {
-                                  throw new Error(
-                                      'Toggle error: element[data-toggle-element="toggle"] must have child element[data-toggle-element="bar"]',
-                                  );
-                              }
-                  
-                              barElement.addEventListener('click', () => {
-                                  let state = menuElement.getAttribute('data-toggle-state');
-                                  if (!state) {
-                                      state = 'closed';
-                                  }
-                  
-                                  if (state === 'closed') {
-                                      menuElement.setAttribute('data-toggle-state', 'open');
-                                  } else {
-                                      menuElement.setAttribute('data-toggle-state', 'closed');
-                                  }
-                              });
-                  
-                              window.addEventListener('click', (event) => {
-                                  if (menuElement.contains(event.target)) {
-                                      return;
-                                  }
-                  
-                                  menuElement.setAttribute('data-toggle-state', 'closed');
-                              });
-                          }
-  
-                      `)
-                }
-            </InlineScript>
+                            <li className={styles.featured}>
+                                <Link
+                                    href={{
+                                        pathname: '/[wallpaper]',
+                                        query: {
+                                            wallpaper: router.query.wallpaper,
+                                            mode: router.query.mode,
+                                            page: router.query.page,
+                                            modal: 'export',
+                                        },
+                                    }}
+                                    /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                                >
+                                    Get the web
+                                </Link>
+                            </li>
+                            {/* TODO: Maybe ?modal=explain link */}
+                            <li>
+                                <Link
+                                    href={{
+                                        pathname: '/[wallpaper]',
+                                        query: {
+                                            wallpaper: router.query.wallpaper,
+                                            mode: router.query.mode,
+                                            page: 'pricing',
+                                        },
+                                    }}
+                                    prefetch={false /* <- Note: Because it is rare option */}
+                                >
+                                    Pricing
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={{
+                                        pathname: '/[wallpaper]',
+                                        query: {
+                                            wallpaper: router.query.wallpaper,
+                                            mode: router.query.mode,
+                                            page: 'gallery',
+                                        },
+                                    }}
+                                    prefetch={false /* <- Note: Because it is rare option */}
+                                >
+                                    Gallery
+                                </Link>
+                            </li>
+                            {wallpaper.parent && (
+                                <li>
+                                    <Link
+                                        href={`/${wallpaper.parent}`}
+                                        prefetch={false /* <- Note: Because it is rare option */}
+                                    >
+                                        Unedited version
+                                    </Link>
+                                </li>
+                            )}
+                            <li>
+                                <Link
+                                    href={{
+                                        pathname: '/[wallpaper]',
+                                        query: {
+                                            wallpaper: router.query.wallpaper,
+                                            mode: router.query.mode,
+                                            page: 'contact',
+                                        },
+                                    }}
+                                >
+                                    Contact
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div className={styles.MenuBgWrapper}>
+                        {/* <- Note: MenuBg is wrapped in MenuBgWrapper to hide its leak over the right fold of the page */}
+                        <div className={styles.MenuBg}></div>
+                    </div>
+                </div>{' '}
+            </AiComponents>
         </ExportCommentedBlock>
     );
 }

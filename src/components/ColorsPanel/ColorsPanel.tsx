@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { ColorInput } from '../ColorInput/ColorInput';
+import { ColorInput } from '../ColorPreview/ColorInput/ColorInput';
 import { ColorPreview } from '../ColorPreview/ColorPreview';
 import styles from './ColorsPanel.module.css';
 

@@ -4,7 +4,7 @@ import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
-import { ColorInput } from '../../ColorInput/ColorInput';
+import { ColorInput } from '../../ColorPreview/ColorInput/ColorInput';
 import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { Select } from '../../Select/Select';
 import styles from './GalleryFilterInput.module.css';

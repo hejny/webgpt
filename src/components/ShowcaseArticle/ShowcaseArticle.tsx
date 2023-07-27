@@ -2,6 +2,8 @@ import { useMode } from '../../utils/hooks/useMode';
 import { usePage } from '../../utils/hooks/usePage';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
+import { activateGalleryComponents } from '../ai-components/activateGalleryComponents';
+import { AiComponents } from '../AiComponents/AiComponents';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
@@ -29,15 +31,17 @@ export function ShowcaseArticleSection() {
                     // TODO: !!!! [👩‍🦱] Fonts
                 />
 
-                <ExportCommentedBlock name="Content">
-                    <Content
-                        isusingFonts
-                        isUsingOpenmoji={
-                            false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
-                        }
-                        content={pageContent}
-                    />
-                </ExportCommentedBlock>
+                <AiComponents usedComponents={[activateGalleryComponents]}>
+                    <ExportCommentedBlock name="Content">
+                        <Content
+                            isusingFonts
+                            isUsingOpenmoji={
+                                false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
+                            }
+                            content={pageContent}
+                        />
+                    </ExportCommentedBlock>
+                </AiComponents>
             </Section>
         );
     }
