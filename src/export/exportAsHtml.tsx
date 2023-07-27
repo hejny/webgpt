@@ -4,6 +4,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../config';
+import stripesBlackImage from '../../public/patterns/simple/stripes-black.png';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
@@ -228,23 +229,33 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         }
     }
 
-    // TODO: In future put image assets dynamically NOT just one hardcoded stripes-grey.png file
-    for (const file of files) {
-        if (file.content instanceof Blob) {
-            continue;
+    for (const { name, src } of [
+        {
+            name: 'stripes-grey.png',
+            src: stripesGreyImage.src,
+        },
+        {
+            name: 'stripes-black.png',
+            src: stripesBlackImage.src,
+        },
+        // <- TODO: In future put image assets dynamically NOT just one hardcoded stripes-grey.png and stripes-black.png file
+    ]) {
+        for (const file of files) {
+            if (file.content instanceof Blob) {
+                continue;
+            }
+            if (file.mimeType !== 'text/css') {
+                continue;
+            }
+            file.content = file.content.split(`/patterns/simple/${name}`).join(`images/${name}`);
         }
-        if (file.mimeType !== 'text/css') {
-            continue;
-        }
-        file.content = file.content.split('/patterns/simple/stripes-grey.png').join('images/stripes-grey.png');
+        files.push({
+            type: 'asset',
+            mimeType: 'image/png',
+            pathname: `images/${name}` /* <- TODO: [🧠] images/patterns/simple/stripes-grey.png vs images/stripes-grey.png */,
+            content: await fetch(src).then((response) => response.blob()),
+        });
     }
-    files.push({
-        type: 'asset',
-        mimeType: 'image/png',
-        pathname:
-            'images/stripes-grey.png' /* <- TODO: [🧠] images/patterns/simple/stripes-grey.png vs images/stripes-grey.png */,
-        content: await fetch(stripesGreyImage.src).then((response) => response.blob()),
-    });
 
     files.unshift({
         type: 'page',

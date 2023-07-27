@@ -33,8 +33,7 @@
     pointer-events: none;
 
     background: linear-gradient(to bottom, var(--palette-0), rgba(var(--palette-2-triplet), 0.3)),
-        /* TODO: !!!! FIX HERE + Add to export stripes-grey.png + stripes-black.png into export */
-            url(/patterns/simple/stripes-grey.png);
+        url(/patterns/simple/stripes-grey.png);
 }
 
 /* TODO: TiledBackground and TiledBackgroundPlayground can share a css module*/
