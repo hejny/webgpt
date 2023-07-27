@@ -20,6 +20,8 @@ export function ShowcaseArticleSection() {
 
     if (page !== 'index') {
         const pageContent = getPageContent(page);
+
+        // TODO: !!!! Add back button to pageContent
         return (
             <Section id="home" className={styles.Article}>
                 <Fonts

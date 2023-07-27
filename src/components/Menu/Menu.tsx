@@ -76,7 +76,17 @@ export function Menu() {
                             </li>
                         )}
                         <li>
-                            <a href="https://1-2i.com/contact">Contact</a>
+                            <Link
+                                href={{
+                                    pathname: '/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        page: 'contact',
+                                    },
+                                }}
+                            >
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </nav>

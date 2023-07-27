@@ -6,15 +6,12 @@ import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
-
-
 
 /**
  * @@@
@@ -123,7 +120,13 @@ export function ControlPanel() {
             <Link
                 className={classNames(/*'button',*/ styles.button)}
                 title="Need help?"
-                href="https://1-2i.com/contact"
+                href={{
+                    pathname: '/[wallpaper]',
+                    query: {
+                        wallpaper: router.query.wallpaper,
+                        page: 'contact',
+                    },
+                }}
             >
                 <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="💬" isUsingOpenmoji  /> */}

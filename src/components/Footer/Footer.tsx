@@ -48,7 +48,17 @@ export function FooterSection() {
                 </li>
 
                 <li>
-                    <Link href="https://1-2i.com/contact">Contact</Link>
+                    <Link
+                        href={{
+                            pathname: '/[wallpaper]',
+                            query: {
+                                wallpaper: router.query.wallpaper,
+                                page: 'contact',
+                            },
+                        }}
+                    >
+                        Contact
+                    </Link>
                 </li>
 
                 {/*
