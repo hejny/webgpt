@@ -63,7 +63,6 @@ export function Menu() {
                                     query: {
                                         wallpaper: router.query.wallpaper,
                                         mode: router.query.mode,
-                                        page: router.query.page,
                                         page: 'pricing',
                                     },
                                 }}
@@ -79,7 +78,6 @@ export function Menu() {
                                     query: {
                                         wallpaper: router.query.wallpaper,
                                         mode: router.query.mode,
-                                        page: router.query.page,
                                         page: 'gallery',
                                     },
                                 }}
@@ -105,7 +103,6 @@ export function Menu() {
                                     query: {
                                         wallpaper: router.query.wallpaper,
                                         mode: router.query.mode,
-                                        page: router.query.page,
                                         page: 'contact',
                                     },
                                 }}

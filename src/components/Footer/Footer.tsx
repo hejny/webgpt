@@ -55,7 +55,6 @@ export function FooterSection() {
                             query: {
                                 wallpaper: router.query.wallpaper,
                                 mode: router.query.mode,
-                                page: router.query.page,
                                 page: 'contact',
                             },
                         }}
