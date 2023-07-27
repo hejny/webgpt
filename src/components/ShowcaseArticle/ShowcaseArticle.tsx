@@ -7,6 +7,7 @@ import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
 import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
+import { getPageContent } from './getPageContent';
 import styles from './ShowcaseArticle.module.css';
 
 /**
@@ -16,6 +17,28 @@ export function ShowcaseArticleSection() {
     const { isEditable } = useMode();
     const [{ content }, modifyWallpaper] = useWallpaper();
     const page = usePage();
+
+    if (page !== 'index') {
+        const pageContent = getPageContent(page);
+        return (
+            <Section id="home" className={styles.Article}>
+                <Fonts
+                    fonts={extractFontsFromContent(pageContent)}
+                    // TODO: !!!! [👩‍🦱] Fonts
+                />
+
+                <ExportCommentedBlock name="Content">
+                    <Content
+                        isusingFonts
+                        isUsingOpenmoji={
+                            false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
+                        }
+                        content={pageContent}
+                    />
+                </ExportCommentedBlock>
+            </Section>
+        );
+    }
 
     const onHtmlChange = !isEditable
         ? undefined
@@ -35,8 +58,6 @@ export function ShowcaseArticleSection() {
                 <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>
             */}
-
-            {page !== 'index' && <h1>${page}</h1> /* <- TODO: Propper page, [🧠] how to make pages here */}
 
             <Fonts fonts={extractFontsFromContent(content)} />
 

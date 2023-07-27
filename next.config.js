@@ -20,6 +20,11 @@ const nextConfig = {
         ],
     },
     webpack: (config) => {
+        // Note: [📍] Allow here to import raw content of html and markdown files
+        config.module.rules.push({
+            test: /\.html$/,
+            use: 'raw-loader',
+        });
         config.module.rules.push({
             test: /\.md$/,
             use: 'raw-loader',

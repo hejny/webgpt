@@ -44,7 +44,18 @@ export function Menu() {
                         </li>
                         {/* TODO: Maybe ?modal=explain link */}
                         <li>
-                            <a href="https://1-2i.com/pricing">Pricing</a>
+                            <Link
+                                href={{
+                                    pathname: '/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        page: 'pricing',
+                                    },
+                                }}
+                                prefetch={false /* <- Note: Because it is rare option */}
+                            >
+                                Pricing
+                            </Link>
                         </li>
                         <li>
                             <Link
@@ -60,7 +71,7 @@ export function Menu() {
                                     href={`/${wallpaper.parent}`}
                                     prefetch={false /* <- Note: Because it is rare option */}
                                 >
-                                    Model page
+                                    Unedited version
                                 </Link>
                             </li>
                         )}
@@ -123,5 +134,6 @@ export function Menu() {
 }
 
 /**
+ * TODO: !!!!!! ACRY go through https://1-2i.com and make internal pages of them
  * TODO: !!!! [🧠] Structure of page, menus,...
  */
