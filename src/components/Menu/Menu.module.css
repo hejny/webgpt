@@ -52,19 +52,33 @@
 }
 
 nav.MenuContent {
+    /*/
+    outline: 1px solid #ff0000;
+    /**/
+
     position: relative;
     z-index: 2 /* <- Local order of <Menu/> */;
     transition: 0.3s ease;
     display: none;
     margin-top: 70px;
+
+    width: 200px;
 }
 
 nav.MenuContent ul {
+    /*/
+    outline: 1px solid #00ff00;
+    /**/
+
     padding: 0;
     margin: 0;
 }
 
 nav.MenuContent li {
+    /*/
+    outline: 1px solid #0000ff;
+    /**/
+
     list-style: none;
     text-align: right;
     margin: 0;
