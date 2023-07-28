@@ -1,5 +1,6 @@
 import Script from 'next/script';
 import { useContext } from 'react';
+import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_javascript } from '../../utils/typeAliases';
 
@@ -20,7 +21,7 @@ export function InlineScript(props: InlineScriptProps) {
         return <Script {...{ id, children }} />;
     } else {
         // Note: The script is on static html page placed inlined
-        return <script dangerouslySetInnerHTML={{ __html: children }} />;
+        return <script dangerouslySetInnerHTML={{ __html: prettifyJavascript(children) }} />;
     }
 }
 

@@ -1,5 +1,4 @@
 import { ReactNode, useContext } from 'react';
-import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { activateMenuComponents } from '../ai-components/activateMenuComponents';
@@ -45,12 +44,12 @@ export function AiComponents(props: SampleProps) {
                         // TODO: !!!! Unwrap the function
                         // TODO: !!!! [👩‍🦱]
                         // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
-                        spaceTrim(`
+                        `
 
-                         // !!!!![👩‍🦰]
-                         (${activateMenuComponents.toString()})(document.querySelector('[data-ai-root="1xcQjt"]')!);
+                        // !!!!![👩‍🦰]
+                        (${activateMenuComponents.toString()})(document.querySelector('[data-ai-root="1xcQjt"]')!);
 
-                      `)
+                    `
                     }
                 </InlineScript>
             </div>

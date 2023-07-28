@@ -120,7 +120,7 @@ export function Menu() {
                         {/* <- Note: MenuBg is wrapped in MenuBgWrapper to hide its leak over the right fold of the page */}
                         <div className={styles.MenuBg}></div>
                     </div>
-                </div>{' '}
+                </div>
             </AiComponents>
         </ExportCommentedBlock>
     );
