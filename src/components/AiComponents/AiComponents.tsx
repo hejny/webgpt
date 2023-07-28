@@ -36,15 +36,7 @@ export function AiComponents(props: SampleProps) {
         );
     } else {
         return (
-            <div
-                ref={(element) => {
-                    if (!element) {
-                        return;
-                    }
-
-                    activateMenuComponents(element);
-                }}
-            >
+            <div data-ai-root="1xcQjt">
                 {children}
                 <InlineScript id="menu">
                     {
@@ -56,7 +48,7 @@ export function AiComponents(props: SampleProps) {
                         spaceTrim(`
 
                          // !!!!![👩‍🦰]
-                         (${activateMenuComponents.toString()})();
+                         (${activateMenuComponents.toString()})(document.querySelector('[data-ai-root="1xcQjt"]')!);
 
                       `)
                     }
