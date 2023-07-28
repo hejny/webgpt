@@ -47,13 +47,9 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                         // TODO: !!!! [👩‍🦱]
                         // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
                         `
-
-
-                  
-                        console.log('!!!! document.currentScript',document.currentScript);
-
-                        // !!!!![👩‍🦰]
-                        (${activateMenuComponents.toString()})(document.currentScript.parent);
+                        
+                        (${activateMenuComponents.toString()})
+                        (document.currentScript.parentElement);
 
                     `
                     }
