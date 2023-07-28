@@ -1,14 +1,19 @@
 .MenuRoot {
-    /*/
+    /**/
     outline: 1px solid red;
+    /**/
+
+    position: relative;
+}
+
+.Menu {
+    /**/
+    outline: 1px solid rgb(102, 255, 0);
     /**/
 
     z-index: 20002 /* <- [🔝] Global order of showcase */;
     user-select: none;
     position: relative;
-}
-
-.Menu {
 }
 
 .MenuBar {
