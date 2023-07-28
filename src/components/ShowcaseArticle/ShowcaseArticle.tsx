@@ -67,15 +67,17 @@ export function ShowcaseArticleSection() {
 
             <Fonts fonts={extractFontsFromContent(content)} />
 
-            <ExportCommentedBlock name="Content">
-                <Content
-                    isusingFonts
-                    isUsingOpenmoji={
-                        false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
-                    }
-                    {...{ content, isEditable, onHtmlChange }}
-                />
-            </ExportCommentedBlock>
+            <AiComponentsRoot usedComponents={{ activateGalleryComponent }}>
+                <ExportCommentedBlock name="Content">
+                    <Content
+                        isusingFonts
+                        isUsingOpenmoji={
+                            false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
+                        }
+                        {...{ content, isEditable, onHtmlChange }}
+                    />
+                </ExportCommentedBlock>
+            </AiComponentsRoot>
         </Section>
     );
 }

@@ -39,6 +39,8 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                             throw new Error(`Unknown component "${componentType}"`);
                         }
 
+                        console.info(`🌟 Activating ${componentType} component`, componentElement);
+
                         componentActivator(componentElement as HTMLElement);
 
                         componentElement.setAttribute('data-toggle-activated', 'true');
