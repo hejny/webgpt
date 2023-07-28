@@ -31,7 +31,7 @@ export function ShowcaseArticleSection() {
                     // TODO: !!!! [👩‍🦱] Fonts
                 />
 
-                <AiComponentsRoot usedComponents={{ activateGalleryComponent }}>
+                <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
                     <ExportCommentedBlock name="Content">
                         <Content
                             isusingFonts
@@ -67,7 +67,7 @@ export function ShowcaseArticleSection() {
 
             <Fonts fonts={extractFontsFromContent(content)} />
 
-            <AiComponentsRoot usedComponents={{ activateGalleryComponent }}>
+            <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
                 <ExportCommentedBlock name="Content">
                     <Content
                         isusingFonts

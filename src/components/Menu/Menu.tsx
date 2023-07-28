@@ -18,7 +18,7 @@ export function Menu() {
 
     return (
         <ExportCommentedBlock name="Menu">
-            <AiComponentsRoot usedComponents={{ activateMenuComponent }} className={styles.MenuRoot}>
+            <AiComponentsRoot usedComponents={{ menu: activateMenuComponent }} className={styles.MenuRoot}>
                 <div className={styles.Menu} data-ai-component="menu">
                     <div className={styles.MenuBar} data-ai-element="bar">
                         {/* TODO: !!! This should be created and inserted here in activateMenuComponents

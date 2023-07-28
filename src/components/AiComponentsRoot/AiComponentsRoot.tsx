@@ -1,8 +1,6 @@
-import { capitalize } from 'n12';
 import { ReactNode, useContext } from 'react';
 import { Promisable } from 'type-fest';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { activateMenuComponent } from '../ai-components/activateMenuComponent';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
@@ -33,7 +31,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                         }
 
                         const componentType = componentElement.getAttribute('data-ai-component');
-                        const componentActivator = usedComponents[`activate${capitalize(componentType!)}Component`];
+                        const componentActivator = usedComponents[componentType!];
 
                         if (!componentActivator) {
                             throw new Error(`Unknown component "${componentType}"`);
@@ -63,11 +61,33 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                         // TODO: !!!! [👩‍🦱]
                         // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
                         `
-                        
-                        /*
-                        (${activateMenuComponent.toString()})
-                        (document.currentScript.parentElement);
-                        */
+
+                        const rootElement = document.currentScript.parentElement;
+                        for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
+                            if (componentElement.getAttribute('data-toggle-activated')) {
+                                continue;
+                            }
+    
+                            const componentType = componentElement.getAttribute('data-ai-component');
+
+
+                            switch (componentType) {
+                                ${Object.entries(usedComponents)
+                                    .map(
+                                        ([componentType, activate]) => `
+                                            case '${componentType}':
+                                                console.info(\`🌟 Activating \${componentType} component\`, componentElement);
+                                                (${activate.toString()})(componentElement);
+                                        `,
+                                    )
+                                    .join('\n\n')}
+                                default:
+                                    throw new Error(\`Unknown component "\${componentType}"\`);
+                            }
+
+
+                            componentElement.setAttribute('data-toggle-activated', 'true');
+                        }
 
                     `
                     }
