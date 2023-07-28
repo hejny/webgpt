@@ -35,18 +35,7 @@ export function FooterSection() {
                 */}
 
                 <li>
-                    <WallpaperLink
-                        href={{
-                            pathname: '/[wallpaper]',
-                            query: {
-                                wallpaper: router.query.wallpaper,
-                                mode: router.query.mode,
-                                page: 'explanation',
-                            },
-                        }}
-                    >
-                        AI Web
-                    </WallpaperLink>
+                    <WallpaperLink page="explanation">AI Web</WallpaperLink>
                 </li>
 
                 <li>
