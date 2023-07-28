@@ -23,3 +23,7 @@ export function InlineScript(props: InlineScriptProps) {
         return <script dangerouslySetInnerHTML={{ __html: children }} />;
     }
 }
+
+/**
+ * TODO: !!!! Prettify <InlineScript for export -+ use code splitting
+ */

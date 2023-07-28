@@ -50,13 +50,14 @@ export function AiComponents(props: SampleProps) {
                     {
                         // Note: Using inline script to pass the menu control to the exported page
 
-                        //  !!!! ${usedComponents.map(activate=>activate.toString()).join()}
+                        // TODO: !!!! Unwrap the function
+                        // TODO: !!!! [👩‍🦱]
+                        // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
                         spaceTrim(`
 
                          // !!!!![👩‍🦰]
-                         ${activateMenuComponents.toString()}
+                         (${activateMenuComponents.toString()})();
 
-                         activateMenuComponents();
                       `)
                     }
                 </InlineScript>
