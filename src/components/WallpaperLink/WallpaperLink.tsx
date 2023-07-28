@@ -22,7 +22,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
 
     const query: Record<string, any> = {
         wallpaper: wallpaperId || router.query.wallpaper,
-        mode: mode || router.query.mode,
+        mode: mode?.toLocaleLowerCase() || router.query.mode,
         page: page || router.query.page,
         modal: modal || router.query.modal,
     };

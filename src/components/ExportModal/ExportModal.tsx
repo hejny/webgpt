@@ -1,6 +1,5 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';
@@ -206,14 +205,7 @@ export function ExportModal(props: ExportModalProps) {
                     />
 
                     <WallpaperLink
-                        href={{
-                            pathname: '/[wallpaper]',
-                            query: {
-                                wallpaper: router.query.wallpaper,
-                                mode: router.query.mode,
-                                page: 'pricing',
-                            },
-                        }}
+                        page="pricing"
                         /* Note: Keeping prefetch because we want to be this as-fast-as-possible */ target={'_blank'}
                         className={styles.extra}
                     >

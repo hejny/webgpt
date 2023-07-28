@@ -85,14 +85,7 @@ export function ControlPanel() {
             {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
             {wallpaper.saveStage === 'SAVED' && (
                 <WallpaperLink
-                    href={{
-                        pathname: '/[wallpaper]',
-                        query: {
-                            wallpaper: router.query.wallpaper,
-                            page: router.query.page,
-                            mode: 'presentation',
-                        },
-                    }}
+                    mode="PRESENTATION"
                     className={classNames(/*'button',*/ styles.button)}
                     title="Show without the controls"
                 >
