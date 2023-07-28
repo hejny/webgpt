@@ -37,7 +37,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
         );
     } else {
         return (
-            <div data-ai-root="1xcQjt" /* <- !!!! */ {...{ className }}>
+            <div {...{ className }}>
                 {children}
                 <InlineScript id="menu">
                     {
@@ -48,8 +48,12 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                         // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
                         `
 
+
+                  
+                        console.log('!!!! document.currentScript',document.currentScript)
+
                         // !!!!![👩‍🦰]
-                        (${activateMenuComponents.toString()})(document.querySelector('[data-ai-root="1xcQjt"]'));
+                        (${activateMenuComponents.toString()})(document.currentScript.parent);
 
                     `
                     }
