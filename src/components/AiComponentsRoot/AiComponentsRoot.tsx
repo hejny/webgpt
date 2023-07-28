@@ -50,7 +50,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
 
 
                   
-                        console.log('!!!! document.currentScript',document.currentScript)
+                        console.log('!!!! document.currentScript',document.currentScript);
 
                         // !!!!![👩‍🦰]
                         (${activateMenuComponents.toString()})(document.currentScript.parent);
