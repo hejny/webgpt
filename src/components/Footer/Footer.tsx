@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
 /**
@@ -34,7 +35,7 @@ export function FooterSection() {
                 */}
 
                 <li>
-                    <Link
+                    <WallpaperLink
                         href={{
                             pathname: '/[wallpaper]',
                             query: {
@@ -45,22 +46,11 @@ export function FooterSection() {
                         }}
                     >
                         AI Web
-                    </Link>
+                    </WallpaperLink>
                 </li>
 
                 <li>
-                    <Link
-                        href={{
-                            pathname: '/[wallpaper]',
-                            query: {
-                                wallpaper: router.query.wallpaper,
-                                mode: router.query.mode,
-                                page: 'contact',
-                            },
-                        }}
-                    >
-                        Contact
-                    </Link>
+                    <WallpaperLink page="contact">Contact</WallpaperLink>
                 </li>
 
                 {/*

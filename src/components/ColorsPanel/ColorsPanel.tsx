@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ColorInput } from '../ColorPreview/ColorInput/ColorInput';
 import { ColorPreview } from '../ColorPreview/ColorPreview';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ColorsPanel.module.css';
 
 interface ColorsPanelProps {}
@@ -26,20 +26,9 @@ export function ColorsPanel(props: ColorsPanelProps) {
             )}
         >
             <div className={classNames(styles.colorPickerWrapper)}>
-                <Link
-                    href={{
-                        pathname: '/[wallpaper]',
-                        query: {
-                            wallpaper: router.query.wallpaper,
-                            mode: router.query.mode,
-                            page: router.query.page,
-                            modal: 'colors',
-                        },
-                    }}
-                    prefetch={false /* <- Note: Because this is a bit rare options */}
-                >
+                <WallpaperLink modal="colors" prefetch={false /* <- Note: Because this is a bit rare options */}>
                     <ColorPreview color={'HUE_CIRCLE'} />
-                </Link>
+                </WallpaperLink>
             </div>
 
             {wallpaper.colorStats.palette.map((color, i) => (

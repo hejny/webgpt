@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import styles from '../ControlPanel/ControlPanel.module.css';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 /**
  * @@@
@@ -16,23 +16,15 @@ export function ControlPanelLikeButtons() {
         <>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             {['LOVE', 'LIKE'].includes(likedStatus) && (
-                <Link
+                <WallpaperLink
                     // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
-
                     className={classNames(styles.button, styles.callToAction)}
-                    href={{
-                        pathname: '/[wallpaper]',
-                        query: {
-                            wallpaper: router.query.wallpaper,
-                            mode: router.query.mode,
-                            page: router.query.page,
-                            modal: 'export',
-                        },
-                    }}
+                    modal="export"
+
                     /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                 >
                     Get the web
-                </Link>
+                </WallpaperLink>
             )}
 
             <button

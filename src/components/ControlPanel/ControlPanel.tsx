@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
@@ -9,6 +8,7 @@ import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
@@ -84,7 +84,7 @@ export function ControlPanel() {
             {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
             {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
             {wallpaper.saveStage === 'SAVED' && (
-                <Link
+                <WallpaperLink
                     href={{
                         pathname: '/[wallpaper]',
                         query: {
@@ -103,7 +103,7 @@ export function ControlPanel() {
                         - Show the QR code before
                         - Save to GET params to be able to send both /share and ?mode=presentation
                      */}
-                </Link>
+                </WallpaperLink>
             )}
 
             {/*
@@ -118,21 +118,10 @@ export function ControlPanel() {
             </Link>
             */}
 
-            <Link
-                className={classNames(/*'button',*/ styles.button)}
-                title="Need help?"
-                href={{
-                    pathname: '/[wallpaper]',
-                    query: {
-                        wallpaper: router.query.wallpaper,
-                        mode: router.query.mode,
-                        page: 'contact',
-                    },
-                }}
-            >
+            <WallpaperLink className={classNames(/*'button',*/ styles.button)} title="Need help?" page="contact">
                 <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="💬" isUsingOpenmoji  /> */}
-            </Link>
+            </WallpaperLink>
         </div>
     );
 }

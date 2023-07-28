@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { activateMenuComponents } from '../ai-components/activateMenuComponents';
 import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Menu.module.css';
 
 /**
@@ -30,89 +30,42 @@ export function Menu() {
                             {/* TODO: !!!! All pages into export (also the hidden ones) */}
                             {/* TODO: !!!! Pages in export should be transformed from ?page=foo to just /foo */}
                             <li>
-                                <Link
-                                    href={{
-                                        pathname: '/[wallpaper]',
-                                        query: {
-                                            wallpaper: router.query.wallpaper,
-                                            mode: router.query.mode,
-                                            page: undefined,
-                                        },
-                                    }}
-                                >
-                                    Home
-                                </Link>
+                                <WallpaperLink page={'index'}>Home</WallpaperLink>
                             </li>
                             <li className={styles.featured}>
-                                <Link
-                                    href={{
-                                        pathname: '/[wallpaper]',
-                                        query: {
-                                            wallpaper: router.query.wallpaper,
-                                            mode: router.query.mode,
-                                            page: router.query.page,
-                                            modal: 'export',
-                                        },
-                                    }}
+                                <WallpaperLink
+                                    modal="export"
                                     /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                                 >
                                     Get the web
-                                </Link>
+                                </WallpaperLink>
                             </li>
                             {/* TODO: Maybe ?modal=explain link */}
                             <li>
-                                <Link
-                                    href={{
-                                        pathname: '/[wallpaper]',
-                                        query: {
-                                            wallpaper: router.query.wallpaper,
-                                            mode: router.query.mode,
-                                            page: 'pricing',
-                                        },
-                                    }}
-                                    prefetch={false /* <- Note: Because it is rare option */}
-                                >
+                                <WallpaperLink page="pricing" prefetch={false /* <- Note: Because it is rare option */}>
                                     Pricing
-                                </Link>
+                                </WallpaperLink>
                             </li>
                             <li>
-                                <Link
-                                    href={{
-                                        pathname: '/[wallpaper]',
-                                        query: {
-                                            wallpaper: router.query.wallpaper,
-                                            mode: router.query.mode,
-                                            page: 'gallery',
-                                        },
-                                    }}
-                                    prefetch={false /* <- Note: Because it is rare option */}
-                                >
+                                <WallpaperLink page="gallery" prefetch={false /* <- Note: Because it is rare option */}>
                                     Gallery
-                                </Link>
+                                </WallpaperLink>
                             </li>
                             {wallpaper.parent && (
                                 <li>
-                                    <Link
-                                        href={`/${wallpaper.parent}`}
+                                    <WallpaperLink
+                                        wallpaperId={wallpaper.parent}
+                                        modal={null}
+                                        page={'index'}
+                                        // Note: Preserving mode
                                         prefetch={false /* <- Note: Because it is rare option */}
                                     >
                                         Unedited version
-                                    </Link>
+                                    </WallpaperLink>
                                 </li>
                             )}
                             <li>
-                                <Link
-                                    href={{
-                                        pathname: '/[wallpaper]',
-                                        query: {
-                                            wallpaper: router.query.wallpaper,
-                                            mode: router.query.mode,
-                                            page: 'contact',
-                                        },
-                                    }}
-                                >
-                                    Contact
-                                </Link>
+                                <WallpaperLink page="contact">Contact</WallpaperLink>
                             </li>
                         </ul>
                     </nav>

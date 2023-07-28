@@ -16,6 +16,7 @@ import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
 
 interface ExportModalProps {}
@@ -204,7 +205,7 @@ export function ExportModal(props: ExportModalProps) {
                         visibleButtons={Infinity}
                     />
 
-                    <Link
+                    <WallpaperLink
                         href={{
                             pathname: '/[wallpaper]',
                             query: {
@@ -217,7 +218,7 @@ export function ExportModal(props: ExportModalProps) {
                         className={styles.extra}
                     >
                         More info about plans
-                    </Link>
+                    </WallpaperLink>
                 </label>
 
                 <label className={styles.setting}>

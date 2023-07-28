@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { Color } from '../../utils/color/Color';
@@ -7,6 +6,7 @@ import { colorLuminance } from '../../utils/color/utils/colorLuminance';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { randomItem } from '../../utils/randomItem';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 /**
  * @@
@@ -88,16 +88,7 @@ export function Aigen() {
                 right: 0,
             }}
         >
-            <Link
-                href={{
-                    pathname: '/[wallpaper]',
-                    query: {
-                        wallpaper: router.query.wallpaper,
-                        mode: router.query.mode,
-                        page: 'explanation',
-                    },
-                }}
-            >
+            <WallpaperLink page="explanation">
                 {randomItem(
                     <div style={{ marginRight: 5 }}>
                         {randomItem('← ', '<-', '↶', '') +
@@ -145,7 +136,7 @@ export function Aigen() {
                         ))}
                     </svg>,
                 )}
-            </Link>
+            </WallpaperLink>
         </div>
     );
 }
