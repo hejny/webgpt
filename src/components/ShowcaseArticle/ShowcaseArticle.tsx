@@ -2,7 +2,7 @@ import { useMode } from '../../utils/hooks/useMode';
 import { usePage } from '../../utils/hooks/usePage';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
-import { activateGalleryComponents } from '../ai-components/activateGalleryComponents';
+import { activateGalleryComponent } from '../ai-components/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
@@ -31,7 +31,7 @@ export function ShowcaseArticleSection() {
                     // TODO: !!!! [👩‍🦱] Fonts
                 />
 
-                <AiComponentsRoot usedComponents={[activateGalleryComponents]}>
+                <AiComponentsRoot usedComponents={{ activateGalleryComponent }}>
                     <ExportCommentedBlock name="Content">
                         <Content
                             isusingFonts
