@@ -47,7 +47,7 @@ export function AiComponents(props: SampleProps) {
                         `
 
                         // !!!!![👩‍🦰]
-                        (${activateMenuComponents.toString()})(document.querySelector('[data-ai-root="1xcQjt"]')!);
+                        (${activateMenuComponents.toString()})(document.querySelector('[data-ai-root="1xcQjt"]'));
 
                     `
                     }
