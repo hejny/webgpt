@@ -127,5 +127,7 @@ export function Menu() {
 }
 
 /**
+ * TODO: !!!! Get the web in one line
+ * TODO: Multiple types of items in menu
  * TODO: !!!! [🧠] Structure of page, menus,...
  */
