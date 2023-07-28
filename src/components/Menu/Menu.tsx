@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { activateMenuComponents } from '../ai-components/activateMenuComponents';
-import { AiComponents } from '../AiComponents/AiComponents';
+import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import styles from './Menu.module.css';
 
@@ -16,7 +16,7 @@ export function Menu() {
 
     return (
         <ExportCommentedBlock name="Menu">
-            <AiComponents usedComponents={[activateMenuComponents]}>
+            <AiComponentsRoot usedComponents={[activateMenuComponents]} className={styles.MenuRoot}>
                 <div className={styles.Menu} data-ai-component="menu">
                     <div className={styles.MenuBar} data-ai-element="bar">
                         {/* TODO: !!! This should be created and inserted here in activateMenuComponents
@@ -121,7 +121,7 @@ export function Menu() {
                         <div className={styles.MenuBg}></div>
                     </div>
                 </div>
-            </AiComponents>
+            </AiComponentsRoot>
         </ExportCommentedBlock>
     );
 }

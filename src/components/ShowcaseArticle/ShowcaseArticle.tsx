@@ -3,7 +3,7 @@ import { usePage } from '../../utils/hooks/usePage';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
 import { activateGalleryComponents } from '../ai-components/activateGalleryComponents';
-import { AiComponents } from '../AiComponents/AiComponents';
+import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
@@ -31,7 +31,7 @@ export function ShowcaseArticleSection() {
                     // TODO: !!!! [👩‍🦱] Fonts
                 />
 
-                <AiComponents usedComponents={[activateGalleryComponents]}>
+                <AiComponentsRoot usedComponents={[activateGalleryComponents]}>
                     <ExportCommentedBlock name="Content">
                         <Content
                             isusingFonts
@@ -41,7 +41,7 @@ export function ShowcaseArticleSection() {
                             content={pageContent}
                         />
                     </ExportCommentedBlock>
-                </AiComponents>
+                </AiComponentsRoot>
             </Section>
         );
     }

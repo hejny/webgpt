@@ -1,3 +1,7 @@
+.MenuRoot {
+    position: absolute; /* <- Note: To not take place on main flow of page */
+}
+
 .Menu {
     /*/
     outline: 1px solid red;

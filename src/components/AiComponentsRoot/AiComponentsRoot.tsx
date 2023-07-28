@@ -4,16 +4,17 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { activateMenuComponents } from '../ai-components/activateMenuComponents';
 import { InlineScript } from '../InlineScript/InlineScript';
 
-interface SampleProps {
+interface AiComponentsRootProps {
     usedComponents: Array<(root: HTMLElement) => Promisable<void>>;
     children: ReactNode;
+    className?: string;
 }
 
 /**
  * @@
  */
-export function AiComponents(props: SampleProps) {
-    const { usedComponents, children } = props;
+export function AiComponentsRoot(props: AiComponentsRootProps) {
+    const { usedComponents, children, className } = props;
 
     const { isExported } = useContext(ExportContext);
 
@@ -29,13 +30,14 @@ export function AiComponents(props: SampleProps) {
                         activate(element);
                     }
                 }}
+                {...{ className }}
             >
                 {children}
             </div>
         );
     } else {
         return (
-            <div data-ai-root="1xcQjt">
+            <div data-ai-root="1xcQjt" /* <- !!!! */ {...{ className }}>
                 {children}
                 <InlineScript id="menu">
                     {
