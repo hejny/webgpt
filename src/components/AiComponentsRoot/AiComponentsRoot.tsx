@@ -43,7 +43,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                     {
                         // Note: Using inline script to pass the menu control to the exported page
 
-                        // TODO: !!!! Unwrap the function
+                        // TODO: !!!! Put a real name on the function
                         // TODO: !!!! [👩‍🦱]
                         // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
                         `

@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
+import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { activateMenuComponents } from '../ai-components/activateMenuComponents';
 import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
@@ -13,6 +14,7 @@ import styles from './Menu.module.css';
 export function Menu() {
     const router = useRouter();
     const [wallpaper] = useWallpaper();
+    const { isPresenting } = useMode();
 
     return (
         <ExportCommentedBlock name="Menu">
@@ -64,6 +66,13 @@ export function Menu() {
                                     </WallpaperLink>
                                 </li>
                             )}
+                            <li>
+                                {!isPresenting ? (
+                                    <WallpaperLink mode="PRESENTATION">Present</WallpaperLink>
+                                ) : (
+                                    <WallpaperLink mode="NORMAL">Show controls</WallpaperLink>
+                                )}
+                            </li>
                             <li>
                                 <WallpaperLink page="contact">Contact</WallpaperLink>
                             </li>

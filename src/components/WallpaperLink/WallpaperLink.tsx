@@ -6,7 +6,7 @@ import { string_page, string_wallpaper_id } from '../../utils/typeAliases';
 
 interface WallpaperLinkProps extends Omit<React.ComponentProps<'a'>, 'ref'> {
     wallpaperId?: string_wallpaper_id | null;
-    mode?: TupleToUnion<typeof MODES> | null;
+    mode?: TupleToUnion<typeof MODES>;
     page?: string_page;
     modal?: string | null;
     prefetch?: false;
@@ -30,7 +30,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
     if (wallpaperId === null || !query.wallpaper) {
         delete query.wallpaperId;
     }
-    if (mode === null || !query.mode) {
+    if (mode === 'NORMAL' || !query.mode) {
         delete query.mode;
     }
     if (page === 'index' || !query.page) {
