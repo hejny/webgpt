@@ -61,6 +61,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             if (typeof file.content === 'string') {
                 // TODO: Maybe do the replacement also for assets Blobs
                 for (const [from, to] of Array.from(urlMap.entries())) {
+                    file.content = file.content.split('/' + from).join(to);
                     file.content = file.content.split(from).join(to);
                 }
             }
@@ -80,8 +81,13 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             const replacedStaticallyJavascript: Array<string_javascript> = [];
 
             for (const [from, to] of Array.from(urlMap.entries())) {
+                if (file.content.split(from).length > 1) {
+                    replacedStaticallyJavascript.push(
+                        `console.info('🔗 Replacing statically', '${from}', '->', '${to}');`,
+                    );
+                }
+                file.content = file.content.split('/' + from).join(to);
                 file.content = file.content.split(from).join(to);
-                replacedStaticallyJavascript.push(`console.info('🔗 Replacing statically', '${from}', '->', '${to}');`);
             }
 
             const dynamicallyReplaceLinksJavascript = spaceTrim(
