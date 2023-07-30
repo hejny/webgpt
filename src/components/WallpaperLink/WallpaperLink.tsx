@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useContext } from 'react';
 import { TupleToUnion } from 'type-fest';
+import { ExportContext } from '../../utils/hooks/ExportContext';
 import { MODES } from '../../utils/hooks/useMode';
 import { string_page, string_wallpaper_id } from '../../utils/typeAliases';
 
@@ -19,6 +21,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
     const { wallpaperId, mode, page, modal, children } = props;
 
     const router = useRouter();
+    const { isExported } = useContext(ExportContext);
 
     const query: Record<string, any> = {
         wallpaper: wallpaperId || router.query.wallpaper,
@@ -40,15 +43,25 @@ export function WallpaperLink(props: WallpaperLinkProps) {
         delete query.modal;
     }
 
-    return (
-        <Link
-            href={{
-                pathname: '/[wallpaper]',
-                query,
-            }}
-            {...props}
-        >
-            {children}
-        </Link>
-    );
+    if (!isExported) {
+        return (
+            <Link
+                href={{
+                    pathname: '/[wallpaper]',
+                    query,
+                }}
+                {...props}
+            >
+                {children}
+            </Link>
+        );
+    } else {
+        // TODO: Maybe detect if it is modal or mode is used and if throw error
+
+        return (
+            <a href={!query.page ? '/' : `/${query.page}.html`} {...props}>
+                {children}
+            </a>
+        );
+    }
 }

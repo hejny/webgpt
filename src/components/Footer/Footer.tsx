@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
@@ -25,14 +24,8 @@ export function FooterSection() {
                 */}
 
                 <li>
-                    <Link href="/">Home</Link>
+                    <WallpaperLink page="index">Home</WallpaperLink>
                 </li>
-
-                {/*
-                <li>
-                    <Link href="https://blog.pavolhejny.com">Blog</Link>
-                </li>
-                */}
 
                 <li>
                     <WallpaperLink page="explanation">AI Web</WallpaperLink>

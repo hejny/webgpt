@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -12,7 +11,6 @@ import styles from './Menu.module.css';
  * @@
  */
 export function Menu() {
-    const router = useRouter();
     const [wallpaper] = useWallpaper();
     const { isPresenting } = useMode();
 
