@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import { classNames } from '../../utils/classNames';
+import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { activateMenuComponent } from '../ai-components/activateMenuComponent';
@@ -13,6 +15,7 @@ import styles from './Menu.module.css';
 export function Menu() {
     const [wallpaper] = useWallpaper();
     const { isPresenting } = useMode();
+    const { isExported } = useContext(ExportContext);
 
     return (
         <ExportCommentedBlock name="Menu">
@@ -65,13 +68,16 @@ export function Menu() {
                                     </WallpaperLink>
                                 </li>
                             )}
-                            <li>
-                                {!isPresenting ? (
-                                    <WallpaperLink mode="PRESENTATION">Present</WallpaperLink>
-                                ) : (
-                                    <WallpaperLink mode="NORMAL">Show controls</WallpaperLink>
-                                )}
-                            </li>
+                            {!isExported && (
+                                <li>
+                                    {!isPresenting ? (
+                                        <WallpaperLink mode="PRESENTATION">Present</WallpaperLink>
+                                    ) : (
+                                        <WallpaperLink mode="NORMAL">Show controls</WallpaperLink>
+                                    )}
+                                </li>
+                            )}
+
                             <li>
                                 <WallpaperLink page="contact">Contact</WallpaperLink>
                             </li>
