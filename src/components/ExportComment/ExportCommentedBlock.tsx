@@ -22,5 +22,6 @@ export function ExportCommentedBlock(props: ExportCommentedBlockProps) {
 }
 
 /**
+ * TODO: !!! [🚥] In export theese separation lines are not indented as its surrounding block
  * TODO: Maybe in future create context of comment layer to enhance nesting
  */
