@@ -21,8 +21,7 @@ export function activateMenuComponent(menuElement: HTMLElement) {
     });
 
     window.addEventListener('click', (event) => {
-        // TODO !!!! Fix clicking on menu - it should close the menu
-        if (menuElement.contains(event.target as any)) {
+        if (barElement.contains(event.target as any)) {
             return;
         }
 
