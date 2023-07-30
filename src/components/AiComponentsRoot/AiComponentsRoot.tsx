@@ -77,6 +77,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                                                                                   - OR just Put a real name on the function
                                                                         */
                                                 })(componentElement);
+                                                break;
                                         `,
                                     )
                                     .join('\n\n')}
