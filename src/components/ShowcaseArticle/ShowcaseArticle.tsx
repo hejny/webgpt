@@ -28,7 +28,7 @@ export function ShowcaseArticleSection() {
             <Section id="home" className={styles.Article}>
                 <Fonts
                     fonts={extractFontsFromContent(pageContent)}
-                    // TODO: !!!! [👩‍🦱] Fonts
+                    // TODO: !!!! Fonts for pages
                 />
 
                 <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>

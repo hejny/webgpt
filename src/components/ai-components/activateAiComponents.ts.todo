@@ -80,7 +80,6 @@ export function activateAiComponents(root: HTMLElement) {
 }
 
 /**
- * TODO: [👩‍🦱] !!!! DRY
  * TODO: !!!! Split into files
  * TODO: Use spaceTrim
  * TODO: Maybe use shadow dom not just CSS / data-aiai prefixing

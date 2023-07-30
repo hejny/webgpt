@@ -3,5 +3,5 @@ export function activateGalleryComponent(galleryElement: HTMLElement) {
 }
 
 /**
- * TODO: [👩‍🦱] !!!! DRY
+ * TODO: !!!! Implement
  */

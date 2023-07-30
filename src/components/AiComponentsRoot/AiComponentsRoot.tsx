@@ -53,15 +53,8 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
         return (
             <div {...{ className }}>
                 {children}
-                <InlineScript id="menu">
-                    {
-                        // Note: Using inline script to pass the menu control to the exported page
-
-                        // TODO: !!!! Put a real name on the function
-                        // TODO: !!!! [👩‍🦱]
-                        // TODO: !!!! ${usedComponents.map(activate=>activate.toString()).join()}
-                        `
-
+                <InlineScript id="Note: This ID does not matter because it this branch of component is used only for export">
+                    {`
                         const rootElement = document.currentScript.parentElement;
                         for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
                             if (componentElement.getAttribute('data-toggle-activated')) {
@@ -77,7 +70,12 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                                         ([componentType, activate]) => `
                                             case '${componentType}':
                                                 console.info(\`🌟 Activating \${componentType} component\`, componentElement);
-                                                (${activate.toString()})(componentElement);
+                                                (${
+                                                    activate.toString() /* <- TODO: Is there some option to: 
+                                                                                  - Use non-minified code (disable/bypass minification in just one file/function)
+                                                                                  - OR just Put a real name on the function
+                                                                        */
+                                                })(componentElement);
                                         `,
                                     )
                                     .join('\n\n')}
@@ -89,8 +87,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                             componentElement.setAttribute('data-toggle-activated', 'true');
                         }
 
-                    `
-                    }
+                    `}
                 </InlineScript>
             </div>
         );
