@@ -81,7 +81,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
             for (const [from, to] of Array.from(urlMap.entries())) {
                 file.content = file.content.split(from).join(to);
-                replacedStaticallyJavascript.push(`console.log('🔗 Replacing statically', from, '->', to);`);
+                replacedStaticallyJavascript.push(`console.info('🔗 Replacing statically', from, '->', to);`);
             }
 
             const dynamicallyReplaceLinksJavascript = spaceTrim(
@@ -107,7 +107,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                         continue;
                     }
 
-                    console.log('🔗 Replacing dynamically', href, '->', urlMap.get(url.href));
+                    console.info('🔗 Replacing dynamically', href, '->', urlMap.get(url.href));
                     linkElement.setAttribute('href', urlMap.get(url.href));
 
                 }
