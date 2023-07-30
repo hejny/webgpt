@@ -69,8 +69,8 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             const objectUrl = ObjectUrl.from(file.content, file.mimeType);
             registration.addSubdestroyable(objectUrl);
 
-            urlMap.set(file.pathname, objectUrl.src);
             urlMap.set('/' + file.pathname, objectUrl.src);
+            urlMap.set(file.pathname, objectUrl.src);
         }
 
         // 2️⃣ Linking pages to each other and making ObjectUrls
@@ -148,12 +148,12 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             const objectUrl = ObjectUrl.from(file.content, file.mimeType);
             registration.addSubdestroyable(objectUrl);
 
-            urlMap.set(file.pathname, objectUrl.src);
             urlMap.set('/' + file.pathname, objectUrl.src);
+            urlMap.set(file.pathname, objectUrl.src);
 
             if (file.pathname === 'index.html') {
-                urlMap.set('', objectUrl.src);
                 urlMap.set('/', objectUrl.src);
+                urlMap.set('', objectUrl.src);
                 setIndexUrl(objectUrl.url);
             }
         }
