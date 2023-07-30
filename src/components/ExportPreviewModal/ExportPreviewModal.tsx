@@ -81,7 +81,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
             for (const [from, to] of Array.from(urlMap.entries())) {
                 file.content = file.content.split(from).join(to);
-                replacedStaticallyJavascript.push(`console.info('🔗 Replacing statically', from, '->', to);`);
+                replacedStaticallyJavascript.push(`console.info('🔗 Replacing statically', '${from}', '->', '${to}');`);
             }
 
             const dynamicallyReplaceLinksJavascript = spaceTrim(
