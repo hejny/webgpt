@@ -7,13 +7,14 @@ import { NEXT_PUBLIC_URL } from '../../config';
 import stripesBlackImage from '../../public/patterns/simple/stripes-black.png';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
+import { PAGES_CONTENTS } from '../components/ShowcaseArticle/getPageContent';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
-import { string_css } from '../utils/typeAliases';
+import { string_css, string_page } from '../utils/typeAliases';
 import { HtmlExportFile } from './HtmlExportFile';
 import { HtmlExportOptions } from './HtmlExportOptions';
 import { splitCss } from './splitCss';
@@ -29,9 +30,6 @@ interface HtmlExport {
 
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
     const { stylesPlace, publicUrl } = options;
-    const memoryRouter = new MemoryRouter();
-    memoryRouter.pathname = '/[wallpaper]';
-    memoryRouter.query = { wallpaper: wallpaper.id };
 
     const files: Array<HtmlExportFile> = [];
     const styles: Array<string> = [];
@@ -168,27 +166,38 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         });
     }
 
-    let html = renderToStaticMarkup(
-        <html>
-            <RouterContext.Provider value={memoryRouter}>
-                {/* <MemoryRouterProvider url={'/[wallpaper]'}> */}
-                <ExportContext.Provider value={{ isExported: true, publicUrl: publicUrl || NEXT_PUBLIC_URL }}>
-                    <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
-                        <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
-                            <ShowcaseAppHead>
-                                {stylesPlace == 'EXTERNAL'
-                                    ? files
-                                          .filter(({ mimeType }) => mimeType === 'text/css')
-                                          .map(({ pathname }, i) => <link key={i} rel="stylesheet" href={pathname} />)
-                                    : files
-                                          .filter(({ mimeType }) => mimeType === 'text/css')
-                                          .map(({ pathname, content }, i) => (
-                                              <style
-                                                  key={i}
-                                                  dangerouslySetInnerHTML={{
-                                                      __html: prettifyCss(
-                                                          spaceTrim(
-                                                              (block) => `
+    function createPageHtml(pageName: string_page) {
+        const memoryRouter = new MemoryRouter();
+        memoryRouter.pathname = '/[wallpaper]';
+        memoryRouter.query = { wallpaper: wallpaper.id };
+
+        if (pageName !== 'index') {
+            memoryRouter.query.page = pageName;
+        }
+
+        let html = renderToStaticMarkup(
+            <html>
+                <RouterContext.Provider value={memoryRouter}>
+                    {/* <MemoryRouterProvider url={'/[wallpaper]'}> */}
+                    <ExportContext.Provider value={{ isExported: true, publicUrl: publicUrl || NEXT_PUBLIC_URL }}>
+                        <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
+                            <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
+                                <ShowcaseAppHead>
+                                    {stylesPlace == 'EXTERNAL'
+                                        ? files
+                                              .filter(({ mimeType }) => mimeType === 'text/css')
+                                              .map(({ pathname }, i) => (
+                                                  <link key={i} rel="stylesheet" href={pathname} />
+                                              ))
+                                        : files
+                                              .filter(({ mimeType }) => mimeType === 'text/css')
+                                              .map(({ pathname, content }, i) => (
+                                                  <style
+                                                      key={i}
+                                                      dangerouslySetInnerHTML={{
+                                                          __html: prettifyCss(
+                                                              spaceTrim(
+                                                                  (block) => `
                                                                     /**
                                                                      * 📁 ${pathname}
                                                                      */
@@ -196,53 +205,82 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                                                                     ${block(style)}
                                                                 
                                                                 `,
+                                                              ),
                                                           ),
-                                                      ),
-                                                  }}
-                                              />
-                                          ))}
-                            </ShowcaseAppHead>
+                                                      }}
+                                                  />
+                                              ))}
+                                </ShowcaseAppHead>
 
-                            {/* TODO: Maybe <LanguagePicker /> */}
+                                {/* TODO: Maybe <LanguagePicker /> */}
 
-                            <body>
-                                <ShowcaseContent />
-                            </body>
-                        </WallpapersContext.Provider>
-                    </ShuffleSeedContext.Provider>
-                </ExportContext.Provider>
-            </RouterContext.Provider>
-        </html>,
-    );
+                                <body>
+                                    <ShowcaseContent />
+                                </body>
+                            </WallpapersContext.Provider>
+                        </ShuffleSeedContext.Provider>
+                    </ExportContext.Provider>
+                </RouterContext.Provider>
+            </html>,
+        );
 
-    // TODO: !!!! (probbably done) Fix here escaping
+        // TODO: !!!! (probbably done) Fix here escaping
 
-    // Note: Post-processing HTML after React render
-    html = html.split(`async=""`).join(`async`);
-    html = html.split(`defer=""`).join(`defer`);
-    html = `<!DOCTYPE html>\n` + html;
+        // Note: Post-processing HTML after React render
+        html = html.split(`async=""`).join(`async`);
+        html = html.split(`defer=""`).join(`defer`);
+        html = `<!DOCTYPE html>\n` + html;
 
-    // Note: [🎡] Unwrapping here <ExportComment comment="..."/> components
-    html = prettifyHtml(html) /* <- [1] TODO: Do not do this twice */;
-    for (const match of Array.from(
-        html.matchAll(/^(?<indentation>\s*)<div(?:\s+)data-comment="(?<comment>.*?)"(?:\s*)><\/div>/gims),
-    )) {
-        const { indentation, comment } = match.groups!;
+        // Note: [🎡] Unwrapping here <ExportComment comment="..."/> components
+        html = prettifyHtml(html) /* <- [1] TODO: Do not do this twice */;
 
-        if (comment.split('\n').length <= 1) {
-            // Single-line comment
-            html = html.split(match[0]).join(`<!--${comment}-->`);
-        } else {
-            // Multi-line comment
-            const indentedComment = [
-                ...comment
-                    .split('\n')
-                    .map((line, i) => ' ' + (i === 0 ? line : indentation + ' '.repeat('<!--'.length) + line)),
-                indentation,
-            ].join('\n');
-            html = html.split(match[0]).join(`<!--${indentedComment}-->`);
+        for (const match of Array.from(
+            html.matchAll(/^(?<indentation>\s*)<div(?:\s+)data-comment="(?<comment>.*?)"(?:\s*)><\/div>/gims),
+        )) {
+            const { indentation, comment } = match.groups!;
+
+            if (comment.split('\n').length <= 1) {
+                // Single-line comment
+                html = html.split(match[0]).join(`<!--${comment}-->`);
+            } else {
+                // Multi-line comment
+                const indentedComment = [
+                    ...comment
+                        .split('\n')
+                        .map((line, i) => ' ' + (i === 0 ? line : indentation + ' '.repeat('<!--'.length) + line)),
+                    indentation,
+                ].join('\n');
+                html = html.split(match[0]).join(`<!--${indentedComment}-->`);
+            }
         }
+
+        return html;
     }
+
+    // Note: Add index.html in front of all files
+    files.unshift({
+        type: 'page',
+        mimeType: 'text/html',
+        pathname: 'index.html',
+        content: createPageHtml('index'),
+    });
+
+    // Note: Add rest of the pages
+    for (const pageName of Object.keys(PAGES_CONTENTS)) {
+        files.unshift({
+            type: 'page',
+            mimeType: 'text/html',
+            pathname: `${pageName}.html`,
+            content: createPageHtml(pageName),
+        });
+    }
+
+    files.unshift({
+        type: 'other',
+        mimeType: 'text/markdown',
+        pathname: 'README.md',
+        content: removeContentComments(wallpaper.content),
+    });
 
     for (const { name, src } of [
         {
@@ -271,22 +309,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             content: await fetch(src).then((response) => response.blob()),
         });
     }
-
-    files.unshift({
-        type: 'page',
-        mimeType: 'text/html',
-        pathname: 'index.html',
-        content: html,
-    });
-
-    // TODO: !!! Add license
-
-    files.unshift({
-        type: 'other',
-        mimeType: 'text/markdown',
-        pathname: 'README.md',
-        content: removeContentComments(wallpaper.content),
-    });
 
     // Note: Go through all files and detect if there is some filename collision
     const filesMap = new Map<string, string>();

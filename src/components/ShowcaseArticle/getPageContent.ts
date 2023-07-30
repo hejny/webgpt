@@ -6,7 +6,7 @@ import license from '../../../documents/license.md';
 import pricing from '../../../documents/pricing.html';
 import { string_html, string_markdown, string_page } from '../../utils/typeAliases';
 
-const PAGES_CONTENT: Record<string_page, string_html | string_markdown> = {
+export const PAGES_CONTENTS: Record<string_page, string_html | string_markdown> = {
     explanation,
     pricing,
     gallery,
@@ -15,7 +15,7 @@ const PAGES_CONTENT: Record<string_page, string_html | string_markdown> = {
 };
 
 export function getPageContent(page: Omit<string_page, 'index'>) {
-    let pageContent = PAGES_CONTENT[page as string];
+    let pageContent = PAGES_CONTENTS[page as string];
 
     if (pageContent === undefined) {
         pageContent = spaceTrim(`

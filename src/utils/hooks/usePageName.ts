@@ -2,7 +2,7 @@ import { normalizeToKebabCase } from 'n12';
 import { useRouter } from 'next/router';
 import { string_page } from '../typeAliases';
 
-export function usePage(): string_page {
+export function usePageName(): string_page {
     const router = useRouter();
 
     const page = router.query.page;

@@ -1,5 +1,5 @@
 import { useMode } from '../../utils/hooks/useMode';
-import { usePage } from '../../utils/hooks/usePage';
+import { usePageName } from '../../utils/hooks/usePageName';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../ai-components/activateGalleryComponent';
@@ -18,10 +18,10 @@ import styles from './ShowcaseArticle.module.css';
 export function ShowcaseArticleSection() {
     const { isEditable } = useMode();
     const [{ content }, modifyWallpaper] = useWallpaper();
-    const page = usePage();
+    const pageName = usePageName();
 
-    if (page !== 'index') {
-        const pageContent = getPageContent(page);
+    if (pageName !== 'index') {
+        const pageContent = getPageContent(pageName);
 
         // TODO: !!!! Add back button to pageContent
         return (
