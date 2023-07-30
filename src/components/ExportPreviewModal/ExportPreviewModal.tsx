@@ -101,6 +101,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                         continue;
                     }
 
+                    console.log('🔗 Replacing dynamically', href, '->', urlMap.get(url.href));
                     linkElement.setAttribute('href', urlMap.get(url.href));
 
                 }
