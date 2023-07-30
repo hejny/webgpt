@@ -125,7 +125,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
                             for(
                                 const from of
-                                [href, '/' + href]
+                                [href,  href.split(/^\//).join('')]
                             ){
                                 if (urlMap.has(href)) {
                                     const to =  urlMap.get(from);
@@ -157,6 +157,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             urlMap.set(file.pathname, objectUrl.src);
 
             if (file.pathname === 'index.html') {
+                urlMap.set('', objectUrl.src);
                 setIndexUrl(objectUrl.url);
             }
         }
