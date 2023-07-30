@@ -20,7 +20,7 @@ export function ControlPanelLikeButtons() {
                     // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
                     className={classNames(styles.button, styles.callToAction)}
                     modal="export"
-
+                    mode="NORMAL"
                     /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                 >
                     Get the web

@@ -37,6 +37,7 @@ export function Menu() {
                             <li className={styles.featured}>
                                 <WallpaperLink
                                     modal="export"
+                                    mode="NORMAL"
                                     /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                                 >
                                     Get the web
