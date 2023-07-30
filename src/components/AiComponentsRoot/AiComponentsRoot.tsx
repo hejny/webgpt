@@ -55,6 +55,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                 {children}
                 <InlineScript id="Note: This ID does not matter because it this branch of component is used only for export">
                     {`
+                        (()=>{
                         const rootElement = document.currentScript.parentElement;
                         for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
                             if (componentElement.getAttribute('data-toggle-activated')) {
@@ -86,6 +87,8 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
 
                             componentElement.setAttribute('data-toggle-activated', 'true');
                         }
+
+                        })();
 
                     `}
                 </InlineScript>
