@@ -109,14 +109,18 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
                             const isLinked = linkElement.getAttribute('data-linked');
                             if(isLinked){
-                                continue;
+                                continue element;
                             }
-                            linkElement.setAttribute('data-linked', 'true');
-
+                        
                             const href = linkElement.getAttribute('href');
+
+                            if(href.startsWith('blob:')){
+                                continue element;
+                            }
+
                             if (!href) {
                                 console.warn('Missing href attribute', linkElement);
-                                continue;
+                                continue element;
                             }
 
                             for(
@@ -126,6 +130,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                                 if (urlMap.has(href)) {
                                     const to =  urlMap.get(from);
                                     console.info('🔗 Replacing dynamically', from, '->', to);
+                                    linkElement.setAttribute('data-linked', 'true');
                                     linkElement.setAttribute('href', to);
                                     continue element;
                                 }
