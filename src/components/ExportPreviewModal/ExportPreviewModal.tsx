@@ -77,6 +77,10 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 throw new Error(`Unexpected file.content !== 'string' for file ${file.pathname}`);
             }
 
+            for (const [from, to] of Array.from(urlMap.entries())) {
+                file.content = file.content.split(from).join(to);
+            }
+
             const linkReplacingScript = spaceTrim(`
 
                 // !!!! This urlMap MUST be dynamically generated after 2️⃣
