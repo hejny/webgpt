@@ -2,6 +2,9 @@ import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallp
 import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
 export async function activateGalleryComponent(galleryElement: HTMLElement) {
+    const moreButtonHtml = `
+        <a href="https://app.1-2i.com/?home=${encodeURIComponent(window.location.href)}" class="button">More</a>
+    `;
     galleryElement.innerHTML = `
         <div class="ai-gallery">
             <div class="ai-gallery-items">
@@ -14,7 +17,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement) {
                     <div class="placeholder"></div>
                 </div>
             </div>
-            <a href="https://app.1-2i.com/?home=${encodeURIComponent(window.location.href)}" class="button">More</a>
+            ${moreButtonHtml}
         </div>
     `;
 
@@ -61,7 +64,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement) {
                 ${itemsHtml.join('\n\n\n')}
             </div>
         </div>
-        <a href="https://app.1-2i.com/?home=https://1-2i.com/" class="button">More</a>
+        ${moreButtonHtml}
     </div>
 `;
 
