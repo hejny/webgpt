@@ -7,10 +7,7 @@ import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { string_uri } from '../../utils/typeAliases';
-import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
-import { Modal } from '../Modal/00-Modal';
-import styles from './ExportPreviewModal.module.css';
+import { string_javascript, string_uri } from '../../utils/typeAliases';
 import { ObjectUrl } from './utils/ObjectUrl';
 
 interface ExportPreviewModalProps {}
@@ -77,11 +74,17 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 throw new Error(`Unexpected file.content !== 'string' for file ${file.pathname}`);
             }
 
+            const replacedStaticallyJavascript: Array<string_javascript> = [];
+
             for (const [from, to] of Array.from(urlMap.entries())) {
                 file.content = file.content.split(from).join(to);
+                replacedStaticallyJavascript.push(`console.log('🔗 Replacing statically', from, '->', to);`);
             }
 
-            const linkReplacingScript = spaceTrim(`
+            const dynamicallyReplaceLinksJavascript = spaceTrim(
+                (blob) => `
+
+                ${blob(replacedStaticallyJavascript.join('\n'))}
 
                 // !!!! This urlMap MUST be dynamically generated after 2️⃣
                 const urlMap = new Set(${JSON.stringify(Object.fromEntries(urlMap))});   
@@ -107,10 +110,13 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 }
 
 
-            `);
+            `,
+            );
 
             console.log('!!!! before', file.content);
-            file.content = file.content.split(`</body>`).join(`\n<script>\n${linkReplacingScript}\n</script>\n</body>`);
+            file.content = file.content
+                .split(`</body>`)
+                .join(`\n<script>\n${dynamicallyReplaceLinksJavascript}\n</script>\n</body>`);
             console.log('!!!! after', file.content);
 
             const objectUrl = ObjectUrl.from(file.content, file.mimeType);
