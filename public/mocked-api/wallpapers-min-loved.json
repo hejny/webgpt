@@ -1,0 +1,674 @@
+{
+    "wallpapers": [
+        {
+            "id": "dae9dd8c-d34d-4c9e-b1c1-a46e4e45c182",
+            "primaryColor": "#eeeeee",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "7e9b434d-59bc-4d69-a486-d7401d94f5e0",
+            "primaryColor": "#777777",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "7b0fdbfb-233e-4d18-8553-05af622e5331",
+            "primaryColor": "#221122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "0c4d3fbb-66af-4d87-b8b4-49e8e26cd1a6",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "aeda7a83-177a-46ba-aa1b-dadf4fbb2b5d",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "92524517-1975-4fd3-903e-5c41d987e17c",
+            "primaryColor": "#554455",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "089da602-b095-4e16-8aa3-ed9f02392925",
+            "primaryColor": "#222222",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "150dc8e4-c810-4339-b284-0582566d85d4",
+            "primaryColor": "#664400",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "4d3de47b-54bc-40ae-8c88-7ab36e1b4dea",
+            "primaryColor": "#008899",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "8c7de306-eb9c-43e0-bacb-6b09dc4f48eb",
+            "primaryColor": "#bb5544",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "a9ff4a91-7180-4cad-b06d-18df232eb01f",
+            "primaryColor": "#221122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "13673459-8cb6-4fdb-b235-098b71d914ba",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "f7329628-9386-42e1-a296-edf40547cdcf",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "7f899353-08c9-4823-8a15-0a23b54968a1",
+            "primaryColor": "#aa3344",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "56a6c41c-c24d-4c48-8018-287c506da553",
+            "primaryColor": "#221111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "2a985388-10e2-4adf-812c-1ef209c7b8bb",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9cc8b034-968e-4148-ac1a-f671236e06b7",
+            "primaryColor": "#886655",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "ade84cee-33ca-4881-866d-55fb856e57ab",
+            "primaryColor": "#001122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "96a84aa6-f3f4-4215-b2de-188087be2ad2",
+            "primaryColor": "#110000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3a466916-0634-4204-a56b-af07bca7132e",
+            "primaryColor": "#aa2233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "a02f0c72-b6e0-46fd-8545-e3df9561d5e0",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "a4121ba4-cc24-4b71-a5a3-d36670d13962",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "73b76089-382e-4d80-a302-3f1321bf2773",
+            "primaryColor": "#221111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "ff1e5d8f-6705-4c59-a0ff-1b62ca33d3b9",
+            "primaryColor": "#dd3333",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9729d50c-b486-4bdf-b151-6cabfa2adf0b",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "6fd77e9a-5d93-4765-83fc-81d08509063d",
+            "primaryColor": "#111100",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c87e3073-c97d-4f02-813e-984223f77730",
+            "primaryColor": "#994433",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "953ef84c-d4ea-413f-a8a4-330d402bdfbb",
+            "primaryColor": "#222244",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "969fd963-0d66-4303-bb6a-5273bea5c901",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "bec07c44-9826-49ef-95be-e5c6c624e82b",
+            "primaryColor": "#001122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "08f56d0e-5ae7-40c5-a91a-0e252abdf833",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "5558b120-09d2-4163-a45a-43812d9c296d",
+            "primaryColor": "#001111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "2fe4621b-a461-4c26-bc2c-b1580e04c02c",
+            "primaryColor": "#884477",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3f8fe5b2-5fbd-40b0-bb06-a12e8d9cad6c",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "529595b9-b88e-4160-9103-d4df138ed107",
+            "primaryColor": "#228899",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "8aefdd98-da1b-480f-bc53-05c005116e76",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "caadd184-364b-4ec7-a0cc-436d0e3b5330",
+            "primaryColor": "#221111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "766c00d2-9325-4bee-adbc-cd64e2ba6a7f",
+            "primaryColor": "#557799",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "d74cf068-68bf-40fd-b73b-54d64cd48f1c",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9f5e4275-c060-4b59-a0d5-40846e68a0e9",
+            "primaryColor": "#551133",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "27e0bdac-e1ba-4665-922c-4f7f71e81244",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "d22de710-bf9c-4c45-8996-d1adf083826c",
+            "primaryColor": "#334444",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "238e756f-c699-4efa-bc83-d260a3fa498f",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "6dd4f4ea-10e9-4e29-b9eb-aa0e7e4dc2af",
+            "primaryColor": "#2277bb",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "dfc3506e-f6b1-472a-b07a-bb958b025e85",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "275313fd-67f7-43c7-81e7-b0e0d8369c6c",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "bd466df1-ad84-4cc1-a2e2-77077e4c7d29",
+            "primaryColor": "#552211",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "bc7cd223-ec62-45a8-8964-1da2296a400f",
+            "primaryColor": "#663333",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "19546a72-3ada-4108-9ae5-81229e76df61",
+            "primaryColor": "#773344",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "76505f72-3781-4d14-a617-10b8e1bccce9",
+            "primaryColor": "#440000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "fa9fc5c2-4270-40e5-ba24-f89d947eae74",
+            "primaryColor": "#663322",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "90e25bc0-2bbb-460a-a8e8-c912e6365ff5",
+            "primaryColor": "#001122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "abac639e-e44a-4e2c-bad5-0497368fd6a4",
+            "primaryColor": "#cc5522",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b0cdd601-25eb-47ec-853a-13c8d61851e5",
+            "primaryColor": "#112233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "38acd1d8-0821-4b37-bb19-797ac35522af",
+            "primaryColor": "#005577",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "189f1d1b-11b3-4955-8e12-73308a64fee1",
+            "primaryColor": "#0088dd",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "d72412ba-4c13-420c-b683-95e0b5593fe0",
+            "primaryColor": "#001144",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "2a7c84fc-1cb1-4789-a10c-58ca0f4abf95",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e6566ee2-528b-4792-b445-0a560d1d4825",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "f18ca79e-722d-45ed-8d8b-cf47dff26e2c",
+            "primaryColor": "#556677",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9bc23314-5fb9-42c4-95ff-92071c8f7fcf",
+            "primaryColor": "#112233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "bc80f354-1947-4247-99e7-002909018346",
+            "primaryColor": "#336677",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c5433a86-426d-4c9c-bb5a-b9373ba26ff9",
+            "primaryColor": "#222244",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "2cacbb22-085c-4db9-87b7-788a642a8378",
+            "primaryColor": "#226677",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "5d77997a-f41c-42b5-8ea4-3f6b9decdad9",
+            "primaryColor": "#002222",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "d7b0aeaa-6b2a-4fb3-a1f8-f1cc73df9da7",
+            "primaryColor": "#441144",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "5a310982-f313-4633-b1ea-b2d36a34e97d",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e6840bf3-3ef7-4dd6-86a3-c680ec519ba4",
+            "primaryColor": "#cc4455",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "70e8d4c2-1f0b-41b7-8755-2f8e39f36f04",
+            "primaryColor": "#112233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "1d078e26-d0c9-4a5e-a844-50177d5d0c4b",
+            "primaryColor": "#335588",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "f560e631-7f2b-49e6-b953-f819f9d22569",
+            "primaryColor": "#445599",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b68cc43c-8f66-411b-8b1f-84776a43ae93",
+            "primaryColor": "#224466",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e9191610-dfbf-4705-96a2-d5c7a3171f95",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b8682acd-092a-42c8-a64b-31a89c41a881",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "54d4f78e-bd63-4406-ae02-23ca464f54f9",
+            "primaryColor": "#337777",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "4d270e39-951d-44ec-846b-5b55be11680f",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c144add4-531b-41f7-8f74-9987dd9a7ffa",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3371ac8d-5a31-47aa-b824-7a70dfca124e",
+            "primaryColor": "#222222",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "0e65a459-1db1-4819-b96f-537276d2fbcc",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "8667a8e9-bd61-43b7-9db0-87e527b83b06",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9cdbb02b-9b2e-4cfc-87a2-553b3e4355f3",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "18c190d8-8859-45cd-b342-e2150ea2e8d0",
+            "primaryColor": "#222233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "6d786967-58f2-4fd4-ba5f-47dab59975f8",
+            "primaryColor": "#222233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "fa217bc8-c77f-4f78-b817-bada5086815d",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9ebcbe61-b191-486c-b46c-26748b42304e",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "60720ee6-8d92-483e-a1f0-94ec80418cd8",
+            "primaryColor": "#222222",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e8f406ee-94d5-4e3e-890c-cdcc48d5e1be",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "8333bc5e-cf0a-4085-8436-ec4d803c5d96",
+            "primaryColor": "#001111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "567624aa-a1c4-4ee6-be24-fe013aef8eb8",
+            "primaryColor": "#113344",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3a5cc840-ff31-4e71-9fb0-90f2d86b43ee",
+            "primaryColor": "#eeeecc",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b83e24a6-5e26-4409-ac74-61ffce1cabbe",
+            "primaryColor": "#cc5555",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "8ad01106-f655-49ef-a096-5eb56e53f43a",
+            "primaryColor": "#ff9988",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "6e1420df-05f7-4f43-af76-3bf7da66b21c",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "5bd64d51-333a-461f-ae5a-6000d1ef1678",
+            "primaryColor": "#112233",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "98e95f4f-649b-41e0-b82c-83fa3f623932",
+            "primaryColor": "#aa4488",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b720087b-b4a6-45f2-b673-2f541001b666",
+            "primaryColor": "#004466",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "f318dfe9-2243-4113-a371-d910ff09240a",
+            "primaryColor": "#001122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b101febc-83a6-4ac3-a40a-74f338a80e74",
+            "primaryColor": "#001122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c9455f67-7563-4917-8601-f2f72701c3e1",
+            "primaryColor": "#224488",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "4f5604fc-401d-4332-8d6e-7ffc309291a1",
+            "primaryColor": "#113355",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "9c6f0729-9cac-47b6-9e8f-6b7d1eb6140e",
+            "primaryColor": "#886666",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3e7688f0-e355-4c09-89c6-7bbd5e31424d",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3f22ab5b-2f27-469d-9173-92baaee99087",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "49aefff3-8e30-4f1f-b47b-d1cdfa60fdff",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c2f9cdf4-fe07-4861-b0cc-726dbc48c104",
+            "primaryColor": "#dd9944",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "ed7d6c34-4e61-4d90-97fc-ea3083a37e74",
+            "primaryColor": "#aaaaaa",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "1da1bbbb-7a14-423e-a0a7-bda35bfc199a",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "299ba043-1680-4147-bd88-39f8a727c299",
+            "primaryColor": "#000022",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "0751ae6a-7c4d-42e2-ad16-b5fa429e1f70",
+            "primaryColor": "#ff3344",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "5fab0e30-e705-49ed-820f-b41edf32dbea",
+            "primaryColor": "#22bb77",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "160816de-721e-41da-8602-9a4720aad515",
+            "primaryColor": "#44ffff",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e3d2c222-0648-4619-8e8c-ea656c0eb699",
+            "primaryColor": "#8822ff",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "70845310-056b-41dc-b0b5-61807a6fc8c1",
+            "primaryColor": "#aa22cc",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "42509b82-6166-45e0-9333-45e4fa5dcf8b",
+            "primaryColor": "#bb2277",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "3214ef8e-1afc-427e-86b1-3d7329488c5a",
+            "primaryColor": "#114466",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e7e74ab8-cc07-472a-b4b1-aebe11d6dd93",
+            "primaryColor": "#003366",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e3c47f3a-40ab-42ac-8382-1ba064757e35",
+            "primaryColor": "#224455",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "b4bfd445-4ea1-4cdf-94a4-ec37b4d69d68",
+            "primaryColor": "#111111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "ccb4b961-1ac9-47f2-9b33-28adb143b5fd",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c4002228-51a6-440e-b21e-c5632f62fd10",
+            "primaryColor": "#000000",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "bd21b325-dcd7-4aab-9a09-53e433449c20",
+            "primaryColor": "#001111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "a0e52e36-ccd9-4e59-bc6a-e3d113a186f1",
+            "primaryColor": "#0044dd",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "d88f6bb3-9f8f-4db0-b8ae-e2b761e88a6a",
+            "primaryColor": "#112222",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "abf062aa-1c2f-44b9-9ae4-9e79dfd0039a",
+            "primaryColor": "#112244",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "cf5627db-372f-4604-98da-4868964e8462",
+            "primaryColor": "#228899",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "239ff51a-e9b5-44c8-b740-2fd3f1005634",
+            "primaryColor": "#ffdddd",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "c7ffd332-8941-4e52-8658-3e0a4238f182",
+            "primaryColor": "#001111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "e3b8fb95-ecc4-4eff-8e86-ea5f8ee81d1b",
+            "primaryColor": "#995555",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "384750b0-a1bc-4a23-8d52-53236d6c4bcc",
+            "primaryColor": "#774477",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "a107e1f5-eedf-4ca4-8688-61099081b7de",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "cd8a290e-1348-4128-b9db-f2ee96a02ee1",
+            "primaryColor": "#001111",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "546e369b-6f79-4dda-a082-ed14dda5f5b0",
+            "primaryColor": "#2288bb",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "27c316ac-e264-4058-9746-2c5a904ea775",
+            "primaryColor": "#000011",
+            "likedStatus": "LOVE"
+        },
+        {
+            "id": "18889cc8-0f02-44e7-bf09-9e427e9d3053",
+            "primaryColor": "#111122",
+            "likedStatus": "LOVE"
+        }
+    ]
+}
