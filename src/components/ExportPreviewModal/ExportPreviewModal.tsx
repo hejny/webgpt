@@ -125,7 +125,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
                             for(
                                 const from of
-                                [href,  href.split(/^\//).join('')]
+                                [href,  href.split(/^\\//).join('')]
                             ){
                                 if (urlMap.has(href)) {
                                     const to =  urlMap.get(from);
