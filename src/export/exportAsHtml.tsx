@@ -73,10 +73,11 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     const rules = splitCss(style);
 
     // Note: Group style rules into 34️⃣ groups:
-    const importRules: Array<string> = [];
-    const configRules: Array<string> = [];
-    const articleRules: Array<string> = [];
-    const commonRules: Array<string> = [];
+    const importRules: Array<string_css> = [];
+    const configRules: Array<string_css> = [];
+    const articleRules: Array<string_css> = [];
+    const aiComponentsRules: Array<string_css> = [];
+    const commonRules: Array<string_css> = [];
 
     for (const rule of rules) {
         // 1️⃣ Imports
@@ -91,7 +92,13 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         else if (rule.includes('.Article' /* <- TODO: Probbably better detection */)) {
             articleRules.push(rule);
         }
-        // 4️⃣ Common
+
+        // 4️⃣ AI components
+        else if (rule.includes('.ai-' /* <- TODO: Probbably better detection */)) {
+            aiComponentsRules.push(rule);
+        }
+
+        // 5️⃣ Common
         else {
             commonRules.push(rule);
         }
@@ -108,41 +115,49 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         `,
     );
 
-    const commonStyle = spaceTrim(
-        (block) => `
-            /**
-             * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
-             *       If you want to make design changes, consider:
-             *          1. Making changes in separate file
-             *          2. Chage config style NOT common style
-             *          3. Chage article style NOT common style
-             */
-
-            ${block(importRules.join('\n\n\n'))}
-
-            ${block(commonRules.join('\n\n\n'))}
-        `,
-    );
-
-    const articleStyle = spaceTrim(
-        (block) => `
-            /**
-             * Note: This is the style of the article
-             */
-
-            ${block(articleRules.join('\n\n\n'))}
-        `,
-    );
-
     for (const { pathname, content } of [
         { pathname: 'config.css', content: configStyle },
         {
             pathname: 'build/common.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
-            content: commonStyle,
+            content: spaceTrim(
+                (block) => `
+                    /**
+                     * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
+                     *       If you want to make design changes, consider:
+                     *          1. Making changes in separate file
+                     *          2. Chage config style NOT common style
+                     *          3. Chage article style NOT common style
+                     */
+        
+                    ${block(importRules.join('\n\n\n'))}
+        
+                    ${block(commonRules.join('\n\n\n'))}
+                `,
+            ),
         },
         {
             pathname: 'build/article.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
-            content: articleStyle,
+            content: spaceTrim(
+                (block) => `
+                    /**
+                     * Note: This is the style of the article
+                     */
+        
+                    ${block(articleRules.join('\n\n\n'))}
+                `,
+            ),
+        },
+        {
+            pathname: 'build/ai-components.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
+            content: spaceTrim(
+                (block) => `
+                    /**
+                     * Note: This is the style of the interactive components in the page
+                     */
+        
+                    ${block(aiComponentsRules.join('\n\n\n'))}
+                `,
+            ),
         },
     ]) {
         files.push({

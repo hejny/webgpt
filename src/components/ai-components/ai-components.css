@@ -1,5 +1,3 @@
-/* !!!!!!!!!! Link OR include via script */
-
 /* 📱 Computers */
 .ai-gallery {
     --on-row: 6;
@@ -121,6 +119,7 @@
     background-size: 1300px;
 }
 
+/* TODO: !!!! This should be in ai-components.css in export */
 @keyframes ai-placeholder-animate {
     0% {
         background-position: -650px 0;
