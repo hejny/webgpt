@@ -1,5 +1,8 @@
-.openInNewTab {
+.previewLink {
     display: block;
+
+    width: 100%;
+    height: 50px;
 }
 
 .preview {
@@ -16,5 +19,5 @@
 
     border: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 50px);
 }

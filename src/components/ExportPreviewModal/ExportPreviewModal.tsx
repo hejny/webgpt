@@ -1,12 +1,10 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import { Registration } from 'destroyable';
-import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
-import { classNames } from '../../utils/classNames';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_uri } from '../../utils/typeAliases';
@@ -108,7 +106,10 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
 
             `);
+
+            console.log('!!!! before', file.content);
             file.content = file.content.split(`</body>`).join(`\n<script>\n${linkReplacingScript}\n</script>\n</body>`);
+            console.log('!!!! after', file.content);
         }
 
         setUrlMap(urlMap);
@@ -137,9 +138,12 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 `Loading...`
             ) : (
                 <>
-                    <Link className={classNames('button', styles.openInNewTab)} href={indexUrl.href} target="_blank">
-                        Open in new tab
-                    </Link>
+                    <input
+                        // Note: Here can not be used simple <a/> link because blob: URL is not allowed to be used in <a/> href
+                        className={styles.previewLink}
+                        disabled
+                        value={indexUrl.href}
+                    />
                     <DeviceIframe className={styles.preview} src={indexUrl.href} isInteractive />
                 </>
             )}

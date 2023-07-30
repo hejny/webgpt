@@ -22,14 +22,15 @@ export function ShowcaseArticleSection() {
 
     if (pageName !== 'index') {
         const pageContent = getPageContent(pageName);
+        const fonts = extractFontsFromContent(pageContent);
 
+        console.log('!!!! fonts for sidepage', { pageName, pageContent, fonts });
+
+        // TODO: !!!! Fonts for pages
         // TODO: !!!! Add back button to pageContent
         return (
             <Section id="home" className={styles.Article}>
-                <Fonts
-                    fonts={extractFontsFromContent(pageContent)}
-                    // TODO: !!!! Fonts for pages
-                />
+                <Fonts fonts={fonts} />
 
                 <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
                     <ExportCommentedBlock name="Content">
