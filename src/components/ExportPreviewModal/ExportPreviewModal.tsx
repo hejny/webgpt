@@ -62,7 +62,6 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             if (typeof file.content === 'string') {
                 // TODO: Maybe do the replacement also for assets Blobs
                 for (const [from, to] of Array.from(urlMap.entries())) {
-                    file.content = file.content.split('/' + from).join(to);
                     file.content = file.content.split(from).join(to);
                 }
             }
@@ -71,6 +70,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             registration.addSubdestroyable(objectUrl);
 
             urlMap.set(file.pathname, objectUrl.src);
+            urlMap.set('/' + file.pathname, objectUrl.src);
         }
 
         // 2️⃣ Linking pages to each other and making ObjectUrls
@@ -88,7 +88,6 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                         `console.info('🔗 Replacing statically', '${from}', '->', '${to}');`,
                     );
                 }
-                file.content = file.content.split('/' + from).join(to);
                 file.content = file.content.split(from).join(to);
             }
 
@@ -105,39 +104,34 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                         }
 
                         const linkElements = Array.from(document.querySelectorAll('a'));
-                        element: for (const linkElement of linkElements) {
+                        for (const linkElement of linkElements) {
 
                             const isLinked = linkElement.getAttribute('data-linked');
                             if(isLinked){
-                                continue element;
+                                continue;
                             }
                         
                             const href = linkElement.getAttribute('href');
 
                             if(href.startsWith('blob:')){
-                                continue element;
+                                continue;
                             }
 
                             if (!href) {
                                 console.warn('Missing href attribute', linkElement);
-                                continue element;
+                                continue;
                             }
 
-                            for(
-                                const from of
-                                [href,  href.split(/^\\//).join('')]
-                            ){
-                                if (urlMap.has(href)) {
-                                    const to =  urlMap.get(from);
-                                    console.info('🔗 Replacing dynamically', from, '->', to);
-                                    linkElement.setAttribute('data-linked', 'true');
-                                    linkElement.setAttribute('href', to);
-                                    continue element;
-                                }
+                            if (!urlMap.has(href)) {
+                                console.warn('Missing url in urlMap', {href, urlMap});
+                                continue;
                             }
 
-                            console.warn('Missing url in urlMap', {href, urlMap});
-
+                            const to =  urlMap.get(from);
+                            console.info('🔗 Replacing dynamically', from, '->', to);
+                            linkElement.setAttribute('data-linked', 'true');
+                            linkElement.setAttribute('href', to);
+                            continue;
                         }
                     };
                     channel.postMessage({
@@ -155,9 +149,11 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             registration.addSubdestroyable(objectUrl);
 
             urlMap.set(file.pathname, objectUrl.src);
+            urlMap.set('/' + file.pathname, objectUrl.src);
 
             if (file.pathname === 'index.html') {
                 urlMap.set('', objectUrl.src);
+                urlMap.set('/', objectUrl.src);
                 setIndexUrl(objectUrl.url);
             }
         }
