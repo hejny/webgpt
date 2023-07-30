@@ -56,8 +56,8 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
         const urlMap = new Map<string_uri, string_uri>();
         const registration = Registration.void();
 
-        // 1️⃣ Linking assets to pages
-        for (const file of [...assetFiles, ...codeFiles, ...pageFiles]) {
+        // 1️⃣ Linking assets to pages and making ObjectUrls
+        for (const file of [...assetFiles, ...codeFiles]) {
             if (typeof file.content === 'string') {
                 // TODO: Maybe do the replacement also for assets Blobs
                 for (const [from, to] of Array.from(urlMap.entries())) {
@@ -69,13 +69,9 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             registration.addSubdestroyable(objectUrl);
 
             urlMap.set(file.pathname, objectUrl.src);
-
-            if (file.pathname === 'index.html') {
-                setIndexUrl(objectUrl.url);
-            }
         }
 
-        // 2️⃣ Linking pages to each other
+        // 2️⃣ Linking pages to each other and making ObjectUrls
         for (const file of pageFiles) {
             if (typeof file.content !== 'string') {
                 throw new Error(`Unexpected file.content !== 'string' for file ${file.pathname}`);
@@ -83,6 +79,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
 
             const linkReplacingScript = spaceTrim(`
 
+                // !!!! This urlMap MUST be dynamically generated after 2️⃣
                 const urlMap = new Set(${JSON.stringify(Object.fromEntries(urlMap))});   
                 
                 const linkElements = Array.from(document.querySelectorAll('a'));
@@ -110,6 +107,15 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             console.log('!!!! before', file.content);
             file.content = file.content.split(`</body>`).join(`\n<script>\n${linkReplacingScript}\n</script>\n</body>`);
             console.log('!!!! after', file.content);
+
+            const objectUrl = ObjectUrl.from(file.content, file.mimeType);
+            registration.addSubdestroyable(objectUrl);
+
+            urlMap.set(file.pathname, objectUrl.src);
+
+            if (file.pathname === 'index.html') {
+                setIndexUrl(objectUrl.url);
+            }
         }
 
         setUrlMap(urlMap);
