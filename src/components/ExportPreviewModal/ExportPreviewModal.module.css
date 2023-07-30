@@ -1,7 +1,13 @@
+.openInNewTab {
+    display: block;
+}
+
 .preview {
     /*/
     outline: 1px dotted red;
     /**/
+
+    display: block;
 
     /*
     width: 300px;

@@ -1,9 +1,12 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import { Registration } from 'destroyable';
+import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import spaceTrim from 'spacetrim';
 import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
+import { classNames } from '../../utils/classNames';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_uri } from '../../utils/typeAliases';
@@ -55,6 +58,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
         const urlMap = new Map<string_uri, string_uri>();
         const registration = Registration.void();
 
+        // 1️⃣ Linking assets to pages
         for (const file of [...assetFiles, ...codeFiles, ...pageFiles]) {
             if (typeof file.content === 'string') {
                 // TODO: Maybe do the replacement also for assets Blobs
@@ -71,6 +75,40 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             if (file.pathname === 'index.html') {
                 setIndexUrl(objectUrl.url);
             }
+        }
+
+        // 2️⃣ Linking pages to each other
+        for (const file of pageFiles) {
+            if (typeof file.content !== 'string') {
+                throw new Error(`Unexpected file.content !== 'string' for file ${file.pathname}`);
+            }
+
+            const linkReplacingScript = spaceTrim(`
+
+                const urlMap = new Set(${JSON.stringify(Object.fromEntries(urlMap))});   
+                
+                const linkElements = Array.from(document.querySelectorAll('a'));
+                for (const linkElement of linkElements) {
+
+                    const href = linkElement.getAttribute('href');
+                    if (!href) {
+                        console.warn('Missing href attribute', linkElement);
+                        continue;
+                    }
+
+                    const url = new URL(href, window.location.href);
+                    if (!urlMap.has(url.href)) {
+                        console.warn('Missing url in urlMap', {href, url,urlMap});
+                        continue;
+                    }
+
+                    linkElement.setAttribute('href', urlMap.get(url.href));
+
+                }
+
+
+            `);
+            file.content = file.content.split(`</body>`).join(`\n<script>\n${linkReplacingScript}\n</script>\n</body>`);
         }
 
         setUrlMap(urlMap);
@@ -95,7 +133,16 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 {JSON.stringify(Object.fromEntries(urlMap), null, 4)}
             </pre>
             */}
-            {!indexUrl ? `Loading...` : <DeviceIframe className={styles.preview} src={indexUrl.href} isInteractive />}
+            {!indexUrl ? (
+                `Loading...`
+            ) : (
+                <>
+                    <Link className={classNames('button', styles.openInNewTab)} href={indexUrl.href} target="_blank">
+                        Open in new tab
+                    </Link>
+                    <DeviceIframe className={styles.preview} src={indexUrl.href} isInteractive />
+                </>
+            )}
         </Modal>
     );
 }
