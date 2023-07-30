@@ -7,6 +7,7 @@ import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { randomUuid } from '../../utils/randomUuid';
 import { string_javascript, string_uri } from '../../utils/typeAliases';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import { Modal } from '../Modal/00-Modal';
@@ -73,6 +74,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
         }
 
         // 2️⃣ Linking pages to each other and making ObjectUrls
+        const broadcastChannelId = randomUuid();
         for (const file of pageFiles) {
             if (typeof file.content !== 'string') {
                 throw new Error(`Unexpected file.content !== 'string' for file ${file.pathname}`);
@@ -93,40 +95,51 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
             const dynamicallyReplaceLinksJavascript = spaceTrim(
                 (blob) => `
 
-                ${blob(replacedStaticallyJavascript.join('\n'))}
+                    ${blob(replacedStaticallyJavascript.join('\n'))}
 
-                // !!!! This urlMap MUST be dynamically generated after 2️⃣
-                const urlMap = new Set(${JSON.stringify(Object.fromEntries(urlMap))});   
-                
-                const linkElements = Array.from(document.querySelectorAll('a'));
-                for (const linkElement of linkElements) {
+                    const channel = new BroadcastChannel('${broadcastChannelId}');
+                    channel.onmessage = (event) => {
+                        const { type, urlMap } = event.data;
+                        if (type !== 'URL_MAP') {
+                            return;
+                        }
 
-                    const href = linkElement.getAttribute('href');
-                    if (!href) {
-                        console.warn('Missing href attribute', linkElement);
-                        continue;
-                    }
+                        const linkElements = Array.from(document.querySelectorAll('a'));
+                        for (const linkElement of linkElements) {
 
-                    const url = new URL(href, window.location.href);
-                    if (!urlMap.has(url.href)) {
-                        console.warn('Missing url in urlMap', {href, url,urlMap});
-                        continue;
-                    }
+                            const isLinked = linkElement.getAttribute('data-linked');
+                            if(isLinked){
+                                continue;
+                            }
+                            linkElement.setAttribute('data-linked', 'true');
 
-                    console.info('🔗 Replacing dynamically', href, '->', urlMap.get(url.href));
-                    linkElement.setAttribute('href', urlMap.get(url.href));
+                            const href = linkElement.getAttribute('href');
+                            if (!href) {
+                                console.warn('Missing href attribute', linkElement);
+                                continue;
+                            }
 
-                }
+                            const url = new URL(href, window.location.href);
+                            if (!urlMap.has(url.href)) {
+                                console.warn('Missing url in urlMap', {href, url,urlMap});
+                                continue;
+                            }
 
+                            console.info('🔗 Replacing dynamically', href, '->', urlMap.get(url.href));
+                            linkElement.setAttribute('href', urlMap.get(url.href));
 
-            `,
+                        }
+                    };
+                    channel.postMessage({
+                        type: 'REQUEST_URL_MAP',
+                    });
+
+                `,
             );
 
-            console.log('!!!! before', file.content);
             file.content = file.content
                 .split(`</body>`)
                 .join(`\n<script>\n${dynamicallyReplaceLinksJavascript}\n</script>\n</body>`);
-            console.log('!!!! after', file.content);
 
             const objectUrl = ObjectUrl.from(file.content, file.mimeType);
             registration.addSubdestroyable(objectUrl);
@@ -137,6 +150,19 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                 setIndexUrl(objectUrl.url);
             }
         }
+
+        const channel = new BroadcastChannel(broadcastChannelId);
+        channel.onmessage = (event) => {
+            const { type } = event.data;
+            if (type !== 'REQUEST_URL_MAP') {
+                return;
+            }
+
+            channel.postMessage({
+                type: 'URL_MAP',
+                urlMap,
+            });
+        };
 
         setUrlMap(urlMap);
 
