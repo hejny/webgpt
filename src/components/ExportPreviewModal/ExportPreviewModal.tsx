@@ -105,7 +105,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                         }
 
                         const linkElements = Array.from(document.querySelectorAll('a'));
-                        for (const linkElement of linkElements) {
+                        element: for (const linkElement of linkElements) {
 
                             const isLinked = linkElement.getAttribute('data-linked');
                             if(isLinked){
@@ -119,14 +119,19 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                                 continue;
                             }
 
-                            const url = new URL(href, window.location.href);
-                            if (!urlMap.has(url.href)) {
-                                console.warn('Missing url in urlMap', {href, url,urlMap});
-                                continue;
+                            for(
+                                const from of
+                                [href, '/' + href]
+                            ){
+                                if (urlMap.has(href)) {
+                                    const to =  urlMap.get(from);
+                                    console.info('🔗 Replacing dynamically', from, '->', to);
+                                    linkElement.setAttribute('href', to);
+                                    continue element;
+                                }
                             }
 
-                            console.info('🔗 Replacing dynamically', href, '->', urlMap.get(url.href));
-                            linkElement.setAttribute('href', urlMap.get(url.href));
+                            console.warn('Missing url in urlMap', {href, urlMap});
 
                         }
                     };
