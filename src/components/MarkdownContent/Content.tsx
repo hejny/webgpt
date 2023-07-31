@@ -60,15 +60,14 @@ export function Content(props: IContentProps) {
 
     const contentFormat = useMemo(() => detectContentFormat(content), [content]);
 
-    if (contentFormat === 'html') {
-        return <HtmlContent {...{ content, className, isEditable, onHtmlChange }} />;
-    } else if (contentFormat === 'markdown') {
-        return (
-            <MarkdownContent
-                {...{ content, className, isEditable, isusingFonts, isUsingOpenmoji, isEnhanced, onHtmlChange }}
-            />
-        );
-    } else {
-        return <div>Can not render this content</div>;
-    }
+    return (
+        <>
+            {contentFormat === 'html' && <HtmlContent {...{ content, className, isEditable, onHtmlChange }} />}
+            {contentFormat === 'markdown' && (
+                <MarkdownContent
+                    {...{ content, className, isEditable, isusingFonts, isUsingOpenmoji, isEnhanced, onHtmlChange }}
+                />
+            )}
+        </>
+    );
 }
