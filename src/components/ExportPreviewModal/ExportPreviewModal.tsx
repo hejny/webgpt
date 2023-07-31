@@ -127,6 +127,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                                 continue;
                             }
 
+                            const from = href;
                             const to =  urlMap.get(from);
                             console.info('🔗 Replacing dynamically', from, '->', to);
                             linkElement.setAttribute('data-linked', 'true');
