@@ -111,10 +111,11 @@ export function ControlPanel() {
             </Link>
             */}
 
-            <WallpaperLink className={classNames(/*'button',*/ styles.button)} title="Need help?" page="contact">
-                <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] */ />
-                {/* <MarkdownContent content="💬" isUsingOpenmoji  /> */}
-            </WallpaperLink>
+
+            {/*<WallpaperLink className={classNames(/*'button',* / styles.button)} title="Need help?" page="contact">
+                <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] * / />
+                {/* <MarkdownContent content="💬" isUsingOpenmoji  /> * /}
+            </WallpaperLink>*/}
         </div>
     );
 }
