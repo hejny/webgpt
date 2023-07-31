@@ -2,7 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
 import { detectContentFormat } from './detectContentFormat';
 
-describe('detectContentFormat', () => {
+describe('detectContentFormat', () => { 
     it('should return html for valid HTML content', () => {
         expect(detectContentFormat('Hello')).toBe('text');
         expect(detectContentFormat('Hello, this is AI')).toBe('text');
