@@ -50,6 +50,9 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
             </div>
         );
     } else {
+        // TODO: !!!! Just remove the script if there is no component of such type - go through all usedComponents and filter usedComponents before rendring the script
+        // TODO: !!! Optimize when there is only one sedComponents
+
         return (
             <div {...{ className }}>
                 {children}
