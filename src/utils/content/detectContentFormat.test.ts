@@ -53,6 +53,45 @@ describe('detectContentFormat', () => {
         ).toBe('markdown');
     });
 
+    it('should treat content as markdown despite it contains html markup ', () => {
+        expect(
+            detectContentFormat(
+                spaceTrim(`
+
+                    # Title
+
+                    Markdown content
+
+                    <button>HTML Button</button>
+                    
+                `),
+            ),
+        ).toBe('markdown');
+    });
+
+    it('should treat content as html despite it contains markdown markup inside HTML tags', () => {
+        expect(
+            detectContentFormat(
+                spaceTrim(`
+
+                    Unknown content
+
+                    <button># Not a title but hashtag</button>
+                    
+                `),
+            ),
+        ).toBe('html');
+        expect(
+            detectContentFormat(
+                spaceTrim(`
+                    <button>\\\\\
+                    # Not a title but hashtag
+                    </button>
+                `),
+            ),
+        ).toBe('html');
+    });
+
     it('should return markdown for original pages', () => {
         expect(
             detectContentFormat(
