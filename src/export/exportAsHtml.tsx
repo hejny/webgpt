@@ -322,10 +322,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     // Note: Postprocessing
     for (const file of files) {
-        if (!['html', 'css', 'javascript'].includes(file.type)) {
-            continue;
-        }
-
         if (typeof file.content === 'string') {
             file.content = removeTodoComments(file.content);
         }
