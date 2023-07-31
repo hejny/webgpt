@@ -26,5 +26,5 @@ export function InlineScript(props: InlineScriptProps) {
 }
 
 /**
- * TODO: !!!! Prettify <InlineScript for export -+ use code splitting
+ * TODO: !!! Prettify <InlineScript for export + use code splitting
  */

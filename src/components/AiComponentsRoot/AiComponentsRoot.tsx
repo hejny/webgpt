@@ -97,7 +97,3 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
         );
     }
 }
-
-/**
- * TODO: !!!! Warn/error when detected data-ai-component="unknown" in the page
- */

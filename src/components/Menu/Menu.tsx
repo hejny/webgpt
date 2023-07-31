@@ -30,8 +30,6 @@ export function Menu() {
                     </div>
                     <nav className={styles.MenuContent}>
                         <ul>
-                            {/* TODO: !!!! All pages into export (also the hidden ones) */}
-                            {/* TODO: !!!! Pages in export should be transformed from ?page=foo to just /foo */}
                             <li>
                                 <WallpaperLink page={'index'}>Home</WallpaperLink>
                             </li>
