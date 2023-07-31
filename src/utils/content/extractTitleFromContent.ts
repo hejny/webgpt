@@ -6,6 +6,10 @@ import { extractTitleFromHtml } from './extractTitleFromHtml';
 export function extractTitleFromContent(content: string_markdown | string_html): string_title | null {
     const format = detectContentFormat(content);
 
+    if (format === 'text') {
+        return content;
+    }
+
     if (format === 'markdown') {
         content = markdownConverter.makeHtml(content);
     }
