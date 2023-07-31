@@ -92,7 +92,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         }
 
         // 4️⃣ AI components
-        else if (rule.includes('.ai-' /* <- TODO: Probbably better detection */)) {
+        else if (rule.includes('ai-' /* <- TODO: Probbably better detection */)) {
             aiComponentsRules.push(rule);
         }
 
