@@ -24,8 +24,7 @@ export function ShowcaseArticleSection() {
         const pageContent = getPageContent(pageName);
         const fonts = extractFontsFromContent(pageContent);
 
-        console.log('!!!! fonts for sidepage', { pageName, pageContent, fonts });
-
+ 
         // TODO: !!!! Fonts for pages
         // TODO: !!!! Add back button to pageContent
         return (
