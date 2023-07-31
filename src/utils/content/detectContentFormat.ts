@@ -1,7 +1,7 @@
 import { string_html, string_markdown } from '../typeAliases';
 import { removeContentComments } from './removeContentComments';
 
-export function detectContentFormat(content: string_markdown | string_html): 'markdown' | 'html' {
+export function detectContentFormat(content: string_html | string_markdown | string): 'html' | 'markdown' | 'text' {
     content = removeContentComments(content);
 
     // check if the content starts with a valid HTML tag
@@ -14,6 +14,7 @@ export function detectContentFormat(content: string_markdown | string_html): 'ma
     if (markdownRegex.test(content)) {
         return 'markdown';
     }
+
     // otherwise, assume it is plain text
-    return 'markdown';
+    return 'text';
 }

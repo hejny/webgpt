@@ -4,18 +4,27 @@ import { detectContentFormat } from './detectContentFormat';
 
 describe('detectContentFormat', () => {
     it('should return html for valid HTML content', () => {
-        const htmlContent = '<p>Hello, this is Bing.</p>';
-        expect(detectContentFormat(htmlContent)).toBe('html');
+        expect(detectContentFormat('Hello')).toBe('text');
+        expect(detectContentFormat('Hello, this is AI')).toBe('text');
+        expect(detectContentFormat('Hello, this is AI\n\nSay text')).toBe('text');
+        expect(detectContentFormat('Hello, this is AI\n\nSay 🤴')).toBe('text');
+    });
+
+    it('should return html for valid HTML content', () => {
+        expect(detectContentFormat('<p>Hello, this is HTML.</p>')).toBe('html');
+        expect(detectContentFormat('Hello,<br/> this is HTML.')).toBe('html');
     });
 
     it('should return markdown for valid markdown content', () => {
-        const markdownContent = '# Hello, this is Bing.\n\nThis is a *markdown* document.';
-        expect(detectContentFormat(markdownContent)).toBe('markdown');
+        expect(detectContentFormat('# Hello')).toBe('markdown');
+        expect(detectContentFormat('Hell**o**')).toBe('markdown');
+        expect(detectContentFormat('*Hello*')).toBe('markdown');
+        expect(detectContentFormat('# Hello, this is AI.\n\nThis is a *markdown* document.')).toBe('markdown');
     });
 
-    it('should return markdown for plain text content', () => {
-        const plainTextContent = 'Hello, this is Bing.';
-        expect(detectContentFormat(plainTextContent)).toBe('markdown');
+    it('should return html for only text with comments', () => {
+        expect(detectContentFormat('Hello <!--world-->')).toBe('html');
+        expect(detectContentFormat('Hello <!--world **with confusing markdown comments**-->')).toBe('html');
     });
 
     it('should treat content as html despite it starts with markdown comment ', () => {
