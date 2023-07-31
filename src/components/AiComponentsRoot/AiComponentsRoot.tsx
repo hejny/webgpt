@@ -55,6 +55,10 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                 {children}
                 <InlineScript id="Note: This ID does not matter because it this branch of component is used only for export">
                     {`
+
+                        /**
+                         * Note: This script makes ${Object.keys(usedComponents).join(' and ')} interactive
+                         */
                         (()=>{
                         const rootElement = document.currentScript.parentElement;
                         for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
