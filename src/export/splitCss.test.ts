@@ -84,15 +84,57 @@ describe('splitCss', () => {
         expect(cssChunks).toEqual(expectedChunks);
     });
 
-    it('should split the CSS string with a media query', () => {});
+    it('should split the CSS string with a media query', () => {
+        // TODO: Write test
+    });
 
-    it('should split the CSS string with multiple rules and media queries', () => {});
+    it('should split the CSS string with @keyframes of an animation', () => {
+        // TODO: [0] Use this DRY pattern to all the tests
+        const cssChunks = [
+            `
+                .class1 {
+                    border: 1px solid #ddd;
+                }
+            `,
+            `
+                @keyframes animation-1 {
+                    0% {
+                        background-position: -650px 0;
+                    }
+                    100% {
+                        background-position: 650px 0;
+                    }
+                }
+            `,
+            `
+                @keyframes animation-2 {
+                    0% {
+                        background-position: -650px 0;
+                    }
+                    100% {
+                        background-position: 650px 0;
+                    }
+                }
+            `,
+        ].map((cssChunk) => spaceTrim(cssChunk));
 
-    it('should split the CSS string with just comments', () => {});
+        expect(splitCss(cssChunks.join('\n\n\n'))).toEqual(cssChunks);
+    });
 
-    it('should crash on invalid css', () => {});
+    it('should split the CSS string with multiple rules and media queries', () => {
+        // TODO: Write test
+    });
+
+    it('should split the CSS string with just comments', () => {
+        // TODO: Write test
+    });
+
+    it('should crash on invalid css', () => {
+        // TODO: Write test
+    });
 });
 
 /**
- * TODO: !!! Finish tests
+ * TODO: [0] Use this DRY pattern to all the tests
+ * TODO: Finish tests
  */

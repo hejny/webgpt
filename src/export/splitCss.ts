@@ -6,7 +6,7 @@ import { string_css } from '../utils/typeAliases';
 export function splitCss(cssString: string_css): string_css[] {
     const chunks: string[] = [];
     let currentChunk = '';
-    let isInMediaQuery = false;
+    let isInMediaQueryOrKeyframes = false;
     let isInRuleBlock = false;
     let braceCount = 0;
     let isInComment = false;
@@ -23,14 +23,14 @@ export function splitCss(cssString: string_css): string_css[] {
                 currentChunk += '/';
                 i++; // Skip the '/' character
             }
-        } else if (isInMediaQuery) {
+        } else if (isInMediaQueryOrKeyframes) {
             currentChunk += char;
             if (char === '{') {
                 braceCount++;
             } else if (char === '}') {
                 braceCount--;
                 if (braceCount === 0) {
-                    isInMediaQuery = false;
+                    isInMediaQueryOrKeyframes = false;
                     chunks.push(currentChunk.trim());
                     currentChunk = '';
                 }
@@ -45,8 +45,8 @@ export function splitCss(cssString: string_css): string_css[] {
                     currentChunk = '';
                 }
             }
-        } else if (char === '@' && nextChar === 'm') {
-            isInMediaQuery = true;
+        } else if (char === '@' && (nextChar === 'm' || nextChar === 'k')) {
+            isInMediaQueryOrKeyframes = true;
             currentChunk += char;
         } else if (char === '{') {
             isInRuleBlock = true;
