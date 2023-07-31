@@ -7,7 +7,8 @@ export function extractTitleFromContent(content: string_markdown | string_html):
     const format = detectContentFormat(content);
 
     if (format === 'text') {
-        return content;
+        // Note: Pure text content does not have a title
+        return null;
     }
 
     if (format === 'markdown') {
