@@ -38,8 +38,6 @@ export function ShowcaseArticleSection() {
         );
         pageContent = pageContent.split(`{TITLE}`).join(title);
 
-        // TODO: !!!! Fonts for pages
-        // TODO: !!!! Add back button to pageContent
         return (
             <Section id="home" className={styles.Article}>
                 <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
