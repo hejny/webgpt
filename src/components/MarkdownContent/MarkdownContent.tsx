@@ -133,7 +133,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
             // TODO: [🔤] DRY
             /<!--font:(.*?)-->/g,
 
-            // Note: Originally here was '$1' but it was changed just to $1 (unquoted)
+            // Note: [💅] Originally here was '$1' but it was changed just to $1 (unquoted)
             //       There is some problem with escaping in export:
             //       - <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
             `</div><div style="font-family: $1, sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,

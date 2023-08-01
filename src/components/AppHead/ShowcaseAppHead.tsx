@@ -1,13 +1,11 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReactNode, useContext } from 'react';
-import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 import { extractDescriptionFromHtml } from '../../utils/content/extractDescriptionFromHtml';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { ExportComment } from '../ExportComment/ExportComment';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 
 interface ShowcaseAppHeadProps {
@@ -110,28 +108,14 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                     note={`
                         
                         [🔌] This is a registration script for the page ${publicUrl}
-                            You need to visit at least once the site ${publicUrl} to register it
-                            Or register manually at https://app.1-2i.com/${wallpaper.id}?modal=export
+                             You need to visit at least once the site ${publicUrl} to register it
+                             Or register manually at https://app.1-2i.com/${wallpaper.id}?modal=export
                         
-                            After the registration you can remove this section or leave it here for future updates
-                            For more info see https://app.1-2i.com/${wallpaper.id}?page=license
+                             After the registration you can remove this section or leave it here for future updates
+                             For more info see https://app.1-2i.com/${wallpaper.id}?page=license
                         
                     `}
                 >
-                    <ExportComment
-                        // TODO: !!!! Remove when it works
-                        comment={spaceTrim(
-                            `
-                            Note: [🔌] This is a registration script for the page ${publicUrl}
-                                | You need to visit at least once the site ${publicUrl} to register it
-                                | Or register manually at https://app.1-2i.com/${wallpaper.id}?modal=export
-                                |
-                                | After the registration you can remove this section or leave it here for future updates
-                                | For more info see https://app.1-2i.com/${wallpaper.id}?page=license
-                        `,
-                        )}
-                    />
-
                     <script
                         src={`${
                             NEXT_PUBLIC_URL.href /* <- Note Here should be really used the global NEXT_PUBLIC_URL NOT publicUrl */

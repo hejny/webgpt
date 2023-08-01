@@ -6,6 +6,7 @@ import { string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../ai-components/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
+import { addFontToContent } from '../ImportFonts/addFontToContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
@@ -26,11 +27,10 @@ export function ShowcaseArticleSection() {
         const mainContentFonts = extractFontsFromContent(content);
         // TODO: !!! Split header and content font - extract header
         const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0];
+        pageContent = addFontToContent(pageContent, mainContentFont);
         pageContent = spaceTrim(
             (block) => `
-            
-                <!--font:${mainContentFont}-->
-
+           
                 ${block(pageContent)}
 
                 <a href="/" class="button">Home</a>
