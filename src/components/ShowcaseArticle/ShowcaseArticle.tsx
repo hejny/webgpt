@@ -38,12 +38,19 @@ export function ShowcaseArticleSection() {
             `,
         );
 
+        console.log({ mainContentFonts, mainContentFont, pageContent });
+
         // TODO: !!!! Fonts for pages
         // TODO: !!!! Add back button to pageContent
         return (
             <Section id="home" className={styles.Article}>
                 <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
-                    <ExportCommentedBlock name="Content">
+                    <ExportCommentedBlock
+                        name="Content"
+                        note={`
+                            Following is the content of the side page:
+                        `}
+                    >
                         <Content
                             isusingFonts
                             isUsingOpenmoji={
@@ -77,7 +84,12 @@ export function ShowcaseArticleSection() {
             */}
 
             <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
-                <ExportCommentedBlock name="Content">
+                <ExportCommentedBlock
+                    name="Content"
+                    note={`
+                        Following is the content of the main page: 
+                    `}
+                >
                     <Content
                         isusingFonts
                         isUsingOpenmoji={

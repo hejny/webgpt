@@ -1,20 +1,31 @@
 import { ReactNode } from 'react';
+import spaceTrim from 'spacetrim';
 import { ExportComment } from './ExportComment';
 
 interface ExportCommentedBlockProps {
     name: string;
     children: ReactNode;
+    note?: string;
 }
 
 /**
  * @@
  */
 export function ExportCommentedBlock(props: ExportCommentedBlockProps) {
-    const { name, children } = props;
+    const { name, children, note } = props;
 
     return (
         <>
             <ExportComment comment={`-------------[ ${name}: ]-------------`} />
+            {note && (
+                <ExportComment
+                    comment={spaceTrim(
+                        (block) => `
+                            Note: ${block(note)}
+                        `,
+                    )}
+                />
+            )}
             {children}
             <ExportComment comment={`-------------[ /${name} ]-------------`} />
         </>
