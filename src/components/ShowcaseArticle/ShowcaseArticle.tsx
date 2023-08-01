@@ -33,6 +33,8 @@ export function ShowcaseArticleSection() {
 
                 ${block(pageContent)}
 
+                <a href="/" class="button">Home</a>
+
             `,
         );
 
