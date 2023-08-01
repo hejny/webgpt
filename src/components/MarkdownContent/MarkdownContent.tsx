@@ -132,7 +132,11 @@ export function MarkdownContent(props: IMarkdownContentProps) {
         html = html.replace(
             // TODO: [🔤] DRY
             /<!--font:(.*?)-->/g,
-            `</div><div style="font-family: '$1', sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
+
+            // Note: Originally here was '$1' but it was changed just to $1 (unquoted)
+            //       There is some problem with escaping in export:
+            //       - <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
+            `</div><div style="font-family: $1, sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
         );
         // TODO: Teoretically, the line below should be used BUT it does not work with it and strangely works without it:
         // synchronouslyEnhancedContent = `<div>\n\n\n${synchronouslyEnhancedContent}\n\n\n</div>` /* <- TODO: This is a bit hack how to process easily non-ended font tags  */;

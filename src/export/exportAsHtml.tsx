@@ -345,7 +345,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
  * TODO: !!! Article_Article__fAEyv -> Article
  * TODO: !!! In metadata in export there is wrong escaped characters
  * TODO: !!! In export there is wrong escaped characters in font usage
- * TODO: !!! Export fonts propperly: <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
  * TODO: !!! Remove data-n-g attributes from export
  * TODO: !!! Include /images/patterns/simple/stripes-grey.png in export
  * TODO: !!! [🧠] /images vs /assets in exported zip
