@@ -113,5 +113,139 @@
     <li id="pricing-note-2">Pricing / customization hours according to your specific needs</li>
 </ol>
 
-<!-- TODO: !!!! Fonts -->
-<!-- TODO: !!!! Take styles from css -->
+<style>
+    /* @see https://chat.openai.com/share/50b96a9d-82e6-415a-af81-e626c844bc26 */
+
+    .pricing {
+        --lines: 1px solid rgba(var(--palette-1-triplet), 0.1);
+    }
+
+    /* Styles for the pricing table */
+    .pricing table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-top: 40px;
+    }
+
+    .pricing table thead th {
+        background-color: rgba(var(--palette-2-triplet), 0.3);
+        color: var(--palette-1);
+        font-weight: bold;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .pricing table tbody tr td:first-child {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .pricing table tbody td {
+        padding: 15px;
+        text-align: center;
+        vertical-align: top;
+        border-bottom: var(--lines);
+    }
+
+    .pricing table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .pricing table tr td:not(:last-child) {
+        border-right: var(--lines);
+    }
+
+    .pricing table tfoot th {
+        background-color: #f5f5f5;
+        color: var(--palette-1);
+        font-weight: bold;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .pricing table sup {
+        font-size: 0.7em;
+        vertical-align: super;
+        color: rgba(var(--palette-1-triplet), 0.5);
+    }
+
+    /*
+TODO: Highlight the recommended plan
+
+table tr td:nth-child(4) {
+    background-color: var(--palette-2);
+}
+*/
+
+    /*
+TODO: Highlight the plan
+
+td,
+th {
+    border: 1px solid #999;
+    padding: 10px;
+    position: relative;
+}
+
+td:hover::after {
+    background-color: #ffa;
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+*/
+
+    /*
+TODO: Better responsive pricing plans
+
+@media screen and (max-width: 767px) {
+  table {
+    width: 100%;
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody th,
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  tbody th {
+    background-color: #f5f5f5;
+    color: var(--palette-1);
+    font-weight: bold;
+  }
+
+  tbody td {
+    border: none;
+    border-bottom: var(--lines);
+  }
+
+  tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+  }
+
+  tfoot {
+    display: none;
+  }
+}
+*/
+
+    /*
+TODO: !!! Transfer back general table to AiAi
+TODO: !!! Transfer back pricing table to AiAi
+TODO: !!! Things specific to this project should be in src folder
+*/
+</style>
