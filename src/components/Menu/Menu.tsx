@@ -4,7 +4,7 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { activateMenuComponent } from '../ai-components/activateMenuComponent';
-import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
+import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Menu.module.css';
