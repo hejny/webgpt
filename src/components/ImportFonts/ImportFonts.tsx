@@ -11,7 +11,7 @@ interface ImportFontsProps {
  * @@
  */
 export function ImportFonts(props: ImportFontsProps) {
-    // [🔠] const { fonts } = props;
+    const { fonts } = props;
 
     const { isExported } = useContext(ExportContext);
 
@@ -24,8 +24,7 @@ export function ImportFonts(props: ImportFontsProps) {
         <style
             dangerouslySetInnerHTML={{
                 /* [🎗] */
-                __html: FONTS
-                    // TODO: [🔠] filter((font) => html.includes(font))
+                __html: FONTS.filter((font) => fonts.has(font))
                     .map(
                         (font) =>
                             // TODO: Merge into one import
@@ -38,3 +37,7 @@ export function ImportFonts(props: ImportFontsProps) {
         />
     );
 }
+
+/**
+ * TODO: Import from more places than Google Fonts + when one of the fonts in props is not found, throw error OR warn
+ */
