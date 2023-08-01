@@ -12,7 +12,7 @@ interface ExportCommentedBlockProps {
  * @@
  */
 export function ExportCommentedBlock(props: ExportCommentedBlockProps) {
-    const { name, children, note } = props;
+    let { name, children, note } = props;
 
     return (
         <>
@@ -21,7 +21,7 @@ export function ExportCommentedBlock(props: ExportCommentedBlockProps) {
                 <ExportComment
                     comment={spaceTrim(
                         (block) => `
-                            Note: ${block(note)}
+                            Note: ${block(spaceTrim(note!))}
                         `,
                     )}
                 />
