@@ -130,6 +130,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
 
     if (isusingFonts) {
         html = html.replace(
+            // TODO: [🔤] DRY
             /<!--font:(.*?)-->/g,
             `</div><div style="font-family: '$1', sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
         );
