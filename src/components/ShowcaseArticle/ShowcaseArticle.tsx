@@ -18,14 +18,13 @@ import styles from './ShowcaseArticle.module.css';
  */
 export function ShowcaseArticleSection() {
     const { isEditable } = useMode();
-    const [{ content }, modifyWallpaper] = useWallpaper();
+    const [{ content, title }, modifyWallpaper] = useWallpaper();
     const pageName = usePageName();
 
     if (pageName !== 'index') {
         let pageContent = getPageContent(pageName);
 
         const mainContentFonts = extractFontsFromContent(content);
-        // TODO: !!! Split header and content font - extract header
         const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0];
         pageContent = addFontToContent(pageContent, mainContentFont);
         pageContent = spaceTrim(
@@ -37,8 +36,7 @@ export function ShowcaseArticleSection() {
 
             `,
         );
-
-        console.log({ mainContentFonts, mainContentFont, pageContent });
+        pageContent = pageContent.split(`{TITLE}`).join(title);
 
         // TODO: !!!! Fonts for pages
         // TODO: !!!! Add back button to pageContent
@@ -104,6 +102,7 @@ export function ShowcaseArticleSection() {
 }
 
 /**
+ * TODO: Maybe split header and content font
  * TODO: isHashUsed + test it and put into menu + some way to return existing hashes
  * TODO: [🎐] Some markdown can not be converted back from html - use fallback to pure html content
  * TODO: !!! Name this showcaseContentSection

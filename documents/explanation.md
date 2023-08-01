@@ -1,4 +1,6 @@
-# Explanation
+# {TITLE}
+
+## Explanation
 
 Blah blah blah blah
 
