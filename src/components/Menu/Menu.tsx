@@ -42,7 +42,15 @@ export function Menu() {
                                     Get the web
                                 </WallpaperLink>
                             </li>
-                            {/* TODO: Maybe ?modal=explain link */}
+
+                            <li>
+                                <WallpaperLink
+                                    page="explanation"
+                                    prefetch={false /* <- Note: Because it is rare option */}
+                                >
+                                    How it works?
+                                </WallpaperLink>
+                            </li>
                             <li>
                                 <WallpaperLink page="pricing" prefetch={false /* <- Note: Because it is rare option */}>
                                     Pricing
@@ -90,4 +98,3 @@ export function Menu() {
         </ExportCommentedBlock>
     );
 }
-

@@ -3,7 +3,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
-import { ExplainContent } from '../components/ExplainContent/ExplainContent';
 import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShowcaseContentEdit } from '../components/ShowcaseContentEdit/ShowcaseContentEdit';
@@ -21,7 +20,7 @@ interface ShowcasePageProps {
 
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper } = props;
-    const { isExplaining, isEditable } = useMode();
+    const { isEditable } = useMode();
 
     if (currentWallpaper === undefined) {
         return <div>Loading...</div> /* <- TODO: Better loading + [👠] Some standard standalone page*/;
@@ -53,10 +52,9 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
             {/* <Debug /> */}
 
+            {<ShowcaseContent />}
+            {isEditable && <ShowcaseContentEdit />}
             {isEditable && <PreventUnsavedChanges />}
-            {isExplaining && <ExplainContent />}
-            {!isExplaining && <ShowcaseContent />}
-            {!isExplaining && isEditable && <ShowcaseContentEdit />}
         </WallpapersContext.Provider>
     );
 }
@@ -64,7 +62,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     return {
         paths: (await getHardcodedWallpapers()).map(({ id }) => `/${id}`), // <- Note: indicates which pages needs be created at build time
-        fallback: 'blocking' /*!!!explain*/,
+        fallback: 'blocking',
     };
 };
 
@@ -107,7 +105,6 @@ export async function getStaticProps({
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code
- * TODO: !!! [🧶] Add overlay which explains how it works and lead to FAQ permalink
  * TODO: !! Make foreground-background paralax effect for each wallpaper @see https://huggingface.co/spaces/radames/dpt-depth-estimation-3d-obj
 
  * TODO: Add somewhere button [Get in touch]

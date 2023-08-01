@@ -6,14 +6,12 @@ import { useSsrDetection } from './useSsrDetection';
 export const MODES = [
     'LOADING',
     'NORMAL',
-    'EXPLANATION',
     'PRESENTATION',
     'PREVIEW',
 ] as const; /* <- [🧠] Which to use as/instead of enums, [...] as const with TupleToUnion OR {...} as const*/
 
 interface IModes {
     mode: TupleToUnion<typeof MODES>;
-    isExplaining: boolean /* <- TODO: !!!! Remove ACRY */;
     isPresenting: boolean;
     isEditable: boolean;
 }
@@ -25,7 +23,6 @@ export function useMode(): IModes {
     if (isServerRender) {
         return {
             mode: 'LOADING',
-            isExplaining: false,
             isPresenting: true,
             isEditable: false,
         };
@@ -34,7 +31,6 @@ export function useMode(): IModes {
     if (typeof router.query.mode !== 'string' /* <- This is a situation when there is no mode in GET params */) {
         return {
             mode: 'NORMAL',
-            isExplaining: false,
             isPresenting: false,
             isEditable: true,
         };
@@ -46,13 +42,11 @@ export function useMode(): IModes {
         throw new Error(`Invalid mode in GET params "?mode=${router.query.mode}"`);
     }
 
-    const isExplaining = mode === 'EXPLANATION';
     const isPresenting = mode === 'PRESENTATION' || mode === 'PREVIEW';
     const isEditable = !isPresenting;
 
     return {
         mode: mode as IModes['mode'],
-        isExplaining,
         isPresenting,
         isEditable,
     };
