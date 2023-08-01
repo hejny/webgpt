@@ -1,7 +1,7 @@
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import { EXPORT_OPTIONS } from '../../config';
-import '../components/ai-components/ai-components.css';
+import '../components/AiComponents/ai-components.css';
 import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
 import '../styles/globals.css';
 import '../styles/reset.css';

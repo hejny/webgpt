@@ -3,7 +3,7 @@ import { classNames } from '../../utils/classNames';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { activateMenuComponent } from '../ai-components/activateMenuComponent';
+import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
