@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import { useMode } from '../../utils/hooks/useMode';
 import { usePageName } from '../../utils/hooks/usePageName';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -5,6 +6,7 @@ import { string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../ai-components/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
+import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
 import { getPageContent } from './getPageContent';
@@ -19,7 +21,20 @@ export function ShowcaseArticleSection() {
     const pageName = usePageName();
 
     if (pageName !== 'index') {
-        const pageContent = getPageContent(pageName);
+        let pageContent = getPageContent(pageName);
+
+        const mainContentFonts = extractFontsFromContent(content);
+        // TODO: !!! Split header and content font - extract header
+        const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0];
+        pageContent = spaceTrim(
+            (block) => `
+            
+                <!--font:${mainContentFont}-->
+
+                ${block(pageContent)}
+
+            `,
+        );
 
         // TODO: !!!! Fonts for pages
         // TODO: !!!! Add back button to pageContent
