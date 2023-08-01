@@ -151,6 +151,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
         <>
             <HtmlContent
                 {...{ content: html, isEditable, className }}
+                isUsedFontsImported={isusingFonts}
                 onHtmlChange={(htmlContent) => {
                     if (!isEditable) {
                         return;

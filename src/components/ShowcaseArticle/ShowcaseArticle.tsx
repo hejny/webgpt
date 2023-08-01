@@ -5,8 +5,6 @@ import { string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../ai-components/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponentsRoot/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
-import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
-import { Fonts } from '../Fonts/Fonts';
 import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
 import { getPageContent } from './getPageContent';
@@ -22,15 +20,11 @@ export function ShowcaseArticleSection() {
 
     if (pageName !== 'index') {
         const pageContent = getPageContent(pageName);
-        const fonts = extractFontsFromContent(pageContent);
 
- 
         // TODO: !!!! Fonts for pages
         // TODO: !!!! Add back button to pageContent
         return (
             <Section id="home" className={styles.Article}>
-                <Fonts fonts={fonts} />
-
                 <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
                     <ExportCommentedBlock name="Content">
                         <Content
@@ -64,8 +58,6 @@ export function ShowcaseArticleSection() {
                 <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>
             */}
-
-            <Fonts fonts={extractFontsFromContent(content)} />
 
             <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
                 <ExportCommentedBlock name="Content">

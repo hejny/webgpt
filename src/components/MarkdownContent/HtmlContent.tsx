@@ -2,6 +2,8 @@ import parse from 'html-react-parser';
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { string_html } from '../../utils/typeAliases';
+import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
+import { ImportFonts } from '../ImportFonts/ImportFonts';
 
 /**
  * A function component that renders a div element with parsed HTML content ⁘
@@ -26,6 +28,11 @@ interface HtmlContentProps {
     isEditable?: boolean;
 
     /**
+     * Import used fonts which are inlined in html
+     */
+    isUsedFontsImported?: boolean;
+
+    /**
      * Callback when content is changed
      *
      * Note: This is used only when isEditable is true
@@ -41,16 +48,28 @@ export function HtmlContent(props: HtmlContentProps) {
 
     const isServerRender = useSsrDetection();
 
+    const fonts = extractFontsFromContent(content);
+
     if (!isEditable || isServerRender) {
         const children =
             parse(
                 content,
             ); /* <- Note: Using html-react-parser (not dangerouslySetInnerHTML) to avoid react hydration errors */
 
-        return <div {...{ className }}>{children}</div>;
+        return (
+            <>
+                <ImportFonts {...{ fonts }} />
+                <div {...{ className }}>{children}</div>
+            </>
+        );
     }
 
-    return <HtmlContentEditable {...{ content, className, onHtmlChange }} />;
+    return (
+        <>
+            <ImportFonts {...{ fonts }} />
+            <HtmlContentEditable {...{ content, className, onHtmlChange }} />
+        </>
+    );
 }
 
 /**

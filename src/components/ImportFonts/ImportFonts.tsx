@@ -3,19 +3,20 @@ import { FONTS } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_font } from '../../utils/typeAliases';
 
-interface FontsProps {
+interface ImportFontsProps {
     fonts: Set<string_font>;
 }
 
 /**
  * @@
  */
-export function Fonts(props: FontsProps) {
+export function ImportFonts(props: ImportFontsProps) {
     // [🔠] const { fonts } = props;
 
     const { isExported } = useContext(ExportContext);
 
     if (isExported) {
+        // Note: Whren exported, fonts are grabbed from the DOM (which is rendered bellow)
         return <></>;
     }
 
