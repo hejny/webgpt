@@ -13,9 +13,12 @@ export function mapLinksInHtml(content: string_html, replacer: (oldHref: string_
             break;
         }
 
-        const { href } = match.groups as { href: string_href };
+        const { href: oldHref } = match.groups as { href: string_href };
 
-        content = content.replace(href, replacer(href));
+        const newHref = replacer(oldHref);
+        console.log(`!!!! Replacing links`, { oldHref, newHref });
+
+        content = content.replace(oldHref, newHref);
     }
 
     return content;
