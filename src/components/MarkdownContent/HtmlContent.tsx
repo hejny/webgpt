@@ -1,9 +1,10 @@
 import parse from 'html-react-parser';
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
-import { string_html } from '../../utils/typeAliases';
+import { string_href, string_html } from '../../utils/typeAliases';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
+import { mapLinksInHtml } from './mapLinksInHtml';
 
 /**
  * A function component that renders a div element with parsed HTML content ⁘
@@ -29,8 +30,14 @@ interface HtmlContentProps {
 
     /**
      * Import used fonts which are inlined in html
+     * !!!! Remove ACRY
      */
     isUsedFontsImported?: boolean;
+
+    /**
+     * If set, all <a href="..."> will be mapped by this function
+     */
+    mapLinks?(oldHref: string_href): string_href;
 
     /**
      * Callback when content is changed
@@ -44,10 +51,14 @@ interface HtmlContentProps {
  * Renders given html content with optional editability
  */
 export function HtmlContent(props: HtmlContentProps) {
-    const { content, className, isEditable, onHtmlChange } = props;
+    let { content } = props;
+    const { className, isEditable, mapLinks, onHtmlChange } = props;
+
+    if (mapLinks) {
+        content = mapLinksInHtml(content, mapLinks);
+    }
 
     const isServerRender = useSsrDetection();
-
     const fonts = extractFontsFromContent(content);
 
     if (!isEditable || isServerRender) {
@@ -123,5 +134,6 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
 }
 
 /**
+ * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
  * TODO: [🧠][💬] Allow to change fonts and do rich text editing
  */

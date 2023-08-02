@@ -1,7 +1,7 @@
 import spaceTrim from 'spacetrim';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
-import { string_markdown } from '../../utils/typeAliases';
+import { string_href, string_markdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 
@@ -55,6 +55,11 @@ interface IMarkdownContentProps {
     isEditable?: boolean;
 
     /**
+     * If set, all <a href="..."> will be mapped by this function
+     */
+    mapLinks?(oldHref: string_href): string_href;
+
+    /**
      * Callback when content is changed
      * returns back converted markdown
      *
@@ -85,6 +90,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
         isUsingOpenmoji,
         isEnhanced,
         isEditable,
+        mapLinks,
         onMarkdownChange,
         onHtmlChange,
     } = props;
@@ -155,7 +161,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
     return (
         <>
             <HtmlContent
-                {...{ content: html, isEditable, className }}
+                {...{ content: html, isEditable, mapLinks, className }}
                 isUsedFontsImported={isusingFonts}
                 onHtmlChange={(htmlContent) => {
                     if (!isEditable) {
@@ -215,6 +221,7 @@ export function MarkdownContent(props: IMarkdownContentProps) {
 }
 
 /**
+ * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
  * TODO: [0] Use has if isHashUsed is true
  * TODO: Maybe rename to <Content/> or <MarkdownContent/> or <Markdown/>
  * TODO: [0] Make has work + rename hash to fragment ACRY

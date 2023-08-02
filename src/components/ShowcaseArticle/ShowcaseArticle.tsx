@@ -1,8 +1,10 @@
+import { useContext } from 'react';
 import spaceTrim from 'spacetrim';
+import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useMode } from '../../utils/hooks/useMode';
 import { usePageName } from '../../utils/hooks/usePageName';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { string_html } from '../../utils/typeAliases';
+import { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
@@ -19,6 +21,7 @@ import styles from './ShowcaseArticle.module.css';
 export function ShowcaseArticleSection() {
     const { isEditable } = useMode();
     const [{ content, title }, modifyWallpaper] = useWallpaper();
+    const { isExported } = useContext(ExportContext);
     const pageName = usePageName();
 
     if (pageName !== 'index') {
@@ -53,6 +56,13 @@ export function ShowcaseArticleSection() {
                                 false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
                             }
                             content={pageContent}
+                            mapLinks={(oldHref: string_href) => {
+                                if (!isExported) {
+                                    return `?page=${oldHref}`;
+                                } else {
+                                    return oldHref;
+                                }
+                            }}
                         />
                     </ExportCommentedBlock>
                 </AiComponentsRoot>

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
-import { string_html, string_markdown } from '../../utils/typeAliases';
+import { string_href, string_html, string_markdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
 import { MarkdownContent } from './MarkdownContent';
 
@@ -41,6 +41,11 @@ interface IContentProps {
     isEditable?: boolean;
 
     /**
+     * If set, all <a href="..."> will be mapped by this function
+     */
+    mapLinks?(oldHref: string_href): string_href;
+
+    /**
      * Callback when content is changed
      * returns back pure html
      *
@@ -56,19 +61,33 @@ interface IContentProps {
  * @returns {JSX.Element} - The JSX element for the article
  */
 export function Content(props: IContentProps) {
-    const { content, className, isusingFonts, isUsingOpenmoji, isEnhanced, isEditable, onHtmlChange } = props;
+    const { content, className, isusingFonts, isUsingOpenmoji, isEnhanced, isEditable, mapLinks, onHtmlChange } = props;
 
     const contentFormat = useMemo(() => detectContentFormat(content), [content]);
 
     return (
         <>
-        
-            {contentFormat === 'html' && <HtmlContent {...{ content, className, isEditable, onHtmlChange }} />}
+            {contentFormat === 'html' && (
+                <HtmlContent {...{ content, className, isEditable, mapLinks, onHtmlChange }} />
+            )}
             {['markdown', 'text'].includes(contentFormat) && (
                 <MarkdownContent
-                    {...{ content, className, isEditable, isusingFonts, isUsingOpenmoji, isEnhanced, onHtmlChange }}
+                    {...{
+                        content,
+                        className,
+                        isEditable,
+                        mapLinks,
+                        isusingFonts,
+                        isUsingOpenmoji,
+                        isEnhanced,
+                        onHtmlChange,
+                    }}
                 />
             )}
         </>
     );
 }
+
+/**
+ * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
+ */
