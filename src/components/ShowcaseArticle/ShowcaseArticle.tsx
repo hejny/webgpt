@@ -56,12 +56,16 @@ export function ShowcaseArticleSection() {
                                 false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
                             }
                             content={pageContent}
-                            mapLinks={(oldHref: string_href) => {
-                                if (!isExported) {
-                                    return `?page=${oldHref}`;
-                                } else {
-                                    return oldHref;
+                            mapLinks={(href: string_href) => {
+                                if (isExported) {
+                                    return href;
                                 }
+
+                                if (href.startsWith('#')) {
+                                    return href;
+                                }
+
+                                return `?page=${href}`;
                             }}
                         />
                     </ExportCommentedBlock>
