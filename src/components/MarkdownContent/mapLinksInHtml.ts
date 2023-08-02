@@ -18,7 +18,10 @@ export function mapLinksInHtml(content: string_html, replacer: (oldHref: string_
         const newHref = replacer(oldHref);
         console.log(`!!!! Replacing links`, { oldHref, newHref, match, quote });
 
-        content = content.replace(quote + oldHref + quote, quote + newHref + quote);
+        content = content.replace(
+            quote + oldHref + quote,
+            quote + newHref + quote + ` data-original-href="${oldHref}"`,
+        );
     }
 
     return content;
