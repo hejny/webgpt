@@ -2,9 +2,7 @@ export function activateMenuComponent(menuElement: HTMLElement) {
     const barElement = menuElement.querySelector('[data-ai-element="bar"]');
 
     if (!barElement) {
-        throw new Error(
-            'Toggle error: element[data-ai-element="toggle"] must have child element[data-ai-element="bar"]',
-        );
+        throw new Error('Menu must have child element[data-ai-element="bar"]');
     }
 
     barElement.addEventListener('click', () => {
@@ -27,4 +25,22 @@ export function activateMenuComponent(menuElement: HTMLElement) {
 
         menuElement.setAttribute('data-toggle-state', 'closed');
     });
+
+    const backgroundElement: HTMLDivElement = menuElement.querySelector('[data-ai-element="background"]')!;
+    const ulElement: HTMLUListElement = menuElement.querySelector('ul')!;
+
+    if (!backgroundElement) {
+        throw new Error('Menu must have child element[data-ai-element="backgroundElement"]');
+    }
+    if (!backgroundElement) {
+        throw new Error('Menu must have child <ul/>');
+    }
+
+    // console.log('ulElement.children.length', ulElement, ulElement.children.length);
+
+    backgroundElement.style.height = `${(1 + ulElement.children.length) * 100}px`;
 }
+
+/**
+ * TODO: Maybe do not count number of menu items but measure height of ulElement
+ */

@@ -89,9 +89,9 @@ export function Menu() {
                             </li>
                         </ul>
                     </nav>
-                    <div className={styles.MenuBgWrapper}>
-                        {/* <- Note: MenuBg is wrapped in MenuBgWrapper to hide its leak over the right fold of the page */}
-                        <div className={styles.MenuBg}></div>
+                    <div className={styles.MenuBackgroundWrapper}>
+                        {/* <- Note: MenuBackground is wrapped in MenuBackgroundWrapper to hide its leak over the right fold of the page */}
+                        <div className={styles.MenuBackground} data-ai-element="background"></div>
                     </div>
                 </div>
             </AiComponentsRoot>

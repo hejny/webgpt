@@ -114,7 +114,7 @@ nav.MenuContent li:hover {
 
 .Menu,
 .MenuBar,
-.MenuBg {
+.MenuBackground {
     position: absolute;
     top: 0;
     right: 0;
@@ -125,12 +125,12 @@ nav.MenuContent li:hover {
 
     .Menu,
     .MenuBar,
-    .MenuBg {
+    .MenuBackground {
         position: fixed;
     }
 }
 
-.MenuBgWrapper {
+.MenuBackgroundWrapper {
     /*/
     outline: 1px solid green;
     background-color: rgba(0, 128, 0, 0.205);
@@ -147,13 +147,16 @@ nav.MenuContent li:hover {
     overflow: clip;
 }
 
-.MenuBg {
+.MenuBackground {
     /*/
     outline: 1px solid red;
     /**/
 
-    width: 0;
-    height: 0;
+    aspect-ratio: 1 / 1;
+    /*
+    Note: height is set dynamically by JS according to number of menu items
+    height: 800px;
+    */
 
     background: radial-gradient(circle, var(--palette-0), var(--palette-0));
     box-shadow: 0 0 20px rgba(var(--palette-1-triplet), 0.8);
@@ -167,14 +170,13 @@ nav.MenuContent li:hover {
     pointer-events: all;
 }
 
-.Menu:is([data-toggle-state='open']) .MenuBg {
-    width: 700px;
-    height: 700px;
+.Menu:not([data-toggle-state='open']) .MenuBackground {
+    height: 0 !important;
 }
 
 .Menu:is([data-toggle-state='open']) .MenuBar,
 .Menu:is([data-toggle-state='open']) .MenuContent,
-.Menu:is([data-toggle-state='open']) .MenuBg {
+.Menu:is([data-toggle-state='open']) .MenuBackground {
     display: block !important;
 }
 
