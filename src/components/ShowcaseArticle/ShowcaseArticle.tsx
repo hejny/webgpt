@@ -65,6 +65,10 @@ export function ShowcaseArticleSection() {
                                     return href;
                                 }
 
+                                if (href === '/' || href === '/index' || href === '/index.html' || href === '') {
+                                    return '?';
+                                }
+
                                 return `?page=${href}`;
                             }}
                         />
