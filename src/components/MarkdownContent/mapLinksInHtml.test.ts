@@ -29,7 +29,7 @@ describe('mapLinksInHtml', () => {
             mapLinksInHtml(
                 spaceTrim(
                     `
-                        <a href="original">
+                        <a href="original">link</a>
                     `,
                 ),
                 () => 'mapped',
@@ -37,7 +37,7 @@ describe('mapLinksInHtml', () => {
         ).toBe(
             spaceTrim(
                 `
-                        <a href="mapped">
+                        <a href="mapped">link</a>
             `,
             ),
         );
@@ -61,9 +61,17 @@ describe('mapLinksInHtml', () => {
         expect(mapLinksInHtml(`<a href="https://example.com/1">`, (oldHref) => oldHref + '?foo=bar')).toBe(
             `<a href="https://example.com/1?foo=bar">`,
         );
+
         /*
-        TODO:
-        expect(mapLinksInHtml(`<a href="https://example.com/1">`, (oldHref) => oldHref + '?test="escaping"')).toBe(
+        TODO: href can be second param, single quoted or new line before
+        expect(mapLinksInHtml(`<a target="_blank" href="https://example.com/1">`, (oldHref) => oldHref + '-mapped')).toBe(
+            `<a href="https://example.com/1-mapped">`,
+        );
+        */
+
+        /*
+        TODO: Escaping
+        expect(mapLinksInHtml(`<a target="_blank" href="https://example.com/1">`, (oldHref) => oldHref + '?test="escaping"')).toBe(
             `<a href="https://example.com/1?test="escaping"">`,
         );
         */
