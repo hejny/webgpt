@@ -20,8 +20,14 @@ export function mapLinksInHtml(content: string_html, replacer: (oldHref: string_
 
         content = content
             .split(`href=${quote}${oldHref}${quote}`)
-            .join(`href=${quote}${newHref}${quote} data-original-href="${oldHref}"`);
+            .join(`hrxxxef=${quote}${newHref}${quote} data-original-hrxxxef="${oldHref}"`);
     }
+
+    content = content.split(`hrxxxef`).join(`href`);
 
     return content;
 }
+
+/**
+ * TODO: More elegant solution then hrxxxef
+ */
