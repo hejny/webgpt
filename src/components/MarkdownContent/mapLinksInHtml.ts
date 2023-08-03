@@ -16,7 +16,7 @@ export function mapLinksInHtml(content: string_html, replacer: (oldHref: string_
         const { href: oldHref, quote } = match.groups as { href: string_href; quote: string };
 
         const newHref = replacer(oldHref);
-        console.log(`!!!! Replacing links`, { oldHref, newHref, match, quote });
+        console.info(`🔗 Replacing links`, { oldHref, newHref, match, quote });
 
         content = content
             .split(`href=${quote}${oldHref}${quote}`)
