@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -13,27 +13,45 @@ interface ColorsPanelProps {}
  * @@@
  */
 export function ColorsPanel(props: ColorsPanelProps) {
-    const router = useRouter();
-
     const [wallpaper, modifyWallpaper] = useWallpaper();
     const lastSavedWallpaper = useLastSavedWallpaper();
+
+    // TODO: Maybe make hook useTemporaryToggle
+    const [isOpen, setOpen] = useState(false);
+    useEffect(() => {
+        if (!isOpen) {
+            return;
+        }
+
+        const timeout = setTimeout(() => {
+            setOpen(false);
+        }, 5000);
+
+        return () => {
+            clearTimeout(timeout);
+        };
+    }, [isOpen, setOpen]);
 
     return (
         <div
             className={classNames(
                 'aiai-controls' /* <- TODO: [🧠] ACRY remove aiai-controls class OR figure out how to propperly and semantically mark controls */,
                 styles.ColorsPanel,
+                isOpen && styles.open,
             )}
+            onClick={() => setOpen(true)}
+            onPointerMove={() => setOpen(true)}
         >
             <div className={classNames(styles.colorPickerWrapper)}>
                 <WallpaperLink modal="colors" prefetch={false /* <- Note: Because this is a bit rare options */}>
-                    <ColorPreview color={'HUE_CIRCLE'} />
+                    <ColorPreview className={styles.colorPicker} color={'HUE_CIRCLE'} />
                 </WallpaperLink>
             </div>
 
             {wallpaper.colorStats.palette.map((color, i) => (
-                <div key={i} className={classNames(styles.colorPickerWrapper)}>
+                <div key={i} className={styles.colorPickerWrapper}>
                     <ColorInput
+                        className={styles.colorPicker}
                         value={color.value}
                         onChange={(newColor) => {
                             modifyWallpaper((modifiedWallpaper) => {
@@ -57,5 +75,6 @@ export function ColorsPanel(props: ColorsPanelProps) {
 }
 
 /**
+ * TODO: Maybe allow to close the colors
  * TODO: !!!! [🧠] Semantic color palette - plan where each color should be used (and do not duplicate bg and ui items)
  */

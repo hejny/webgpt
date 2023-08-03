@@ -29,6 +29,9 @@
     /**/
 
     margin: 8px;
+    margin-right: -20px;
+    transition: all 0.2s ease-in-out;
+
     width: 25px;
     height: 25px;
     pointer-events: all;
@@ -37,6 +40,21 @@
     align-items: center;
     justify-content: center;
 }
+
+.ColorsPanel.open .colorPickerWrapper {
+    margin-right: 8px;
+}
+
+/*
+.colorPicker {
+    opacity: 0.9;
+    transition: all 0.2s ease-in-out;
+}
+
+.colorPickerWrapper:hover .colorPicker {
+    opacity: 1;
+}
+*/
 
 @media only screen and (max-width: 900px) {
     .ColorsPanel {
