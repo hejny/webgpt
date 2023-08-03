@@ -1,26 +1,15 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useMemo } from 'react';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpaper/RandomWallpaperManager';
-import { DeviceIframe } from '../components/DeviceIframe/DeviceIframe';
 import { FooterSection } from '../components/Footer/Footer';
+import { NoSsr } from '../components/NoSsr/NoSsr';
 import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
+import { WelcomeWallpaperShuffle } from '../components/WelcomeWallpaperShuffle/WelcomeWallpaperShuffle';
 import styles from '../styles/static.module.css';
-import { usePromise } from '../utils/hooks/usePromise';
-import { string_wallpaper_id } from '../utils/typeAliases';
 
-interface HomePageProps {
-    randomWallpaperId: string_wallpaper_id;
-}
+interface HomePageProps {}
 
 export default function HomePage(props: HomePageProps) {
-    const randomWallpaperPromise = useMemo(() => {
-        const randomWallpaperManager = new RandomWallpaperManager();
-        return /* not await */ randomWallpaperManager.getRandomWallpaper();
-    }, []);
-    const { value: randomWallpaper } = usePromise(randomWallpaperPromise);
-
     return (
         <>
             <StaticAppHead subtitle="1-2i" />
@@ -38,7 +27,9 @@ export default function HomePage(props: HomePageProps) {
                     {/* <WelcomeSection variant="SIDEPAGE" /> */}
                     <Section>
                         <h2>1-2i</h2>
-                        {randomWallpaper && <DeviceIframe src={`/${randomWallpaper.id}`} isInteractive={false} />}
+                        <NoSsr>
+                            <WelcomeWallpaperShuffle />
+                        </NoSsr>
                     </Section>
                 </main>
                 <footer>
