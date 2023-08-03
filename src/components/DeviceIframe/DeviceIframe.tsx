@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { classNames } from '../../utils/classNames';
 import { string_url } from '../../utils/typeAliases';
 import styles from './DeviceIframe.module.css';
@@ -18,11 +19,24 @@ interface DeviceIframeProps {
  */
 export function DeviceIframe(props: DeviceIframeProps) {
     const { src, isInteractive, className } = props;
-    return (
-        <div className={classNames(styles.DeviceIframe, className)}>
-            <iframe {...{ src }} frameBorder="0" style={{ pointerEvents: isInteractive ? 'all' : 'none' }} />
-        </div>
-    );
+
+    if (isInteractive) {
+        return (
+            <div className={classNames(styles.DeviceIframe, className)}>
+                <iframe {...{ src }} frameBorder="0" />
+            </div>
+        );
+    } else {
+        return (
+            <Link
+                className={classNames(styles.DeviceIframe, className)}
+                href={src}
+                prefetch={false /* <- Note: Because already prefetching by rendering <iframe/> */}
+            >
+                <iframe {...{ src }} frameBorder="0" style={{ pointerEvents: 'none' }} />
+            </Link>
+        );
+    }
 }
 
 /**

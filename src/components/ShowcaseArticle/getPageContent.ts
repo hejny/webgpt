@@ -21,6 +21,7 @@ export function getPageContent(page: Omit<string_page, 'index'>) {
     let pageContent = PAGES_CONTENTS[normalizeTo_camelCase(page as string)];
 
     if (pageContent === undefined) {
+        // TODO: [🙈] Unite 404 content
         pageContent = spaceTrim(`
         
             # Page not found

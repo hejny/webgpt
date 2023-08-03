@@ -21,6 +21,7 @@ export default function NotFoundPage() {
                 <main>
                     {/* <WelcomeSection variant="SIDEPAGE" /> */}
                     <Section>
+                        {/* TODO: [🙈] Unite 404 content */}
                         <h2>Nothing found here</h2>
                         {/* TODO: Some better texting <p>Sorry for that</p> */}
                     </Section>

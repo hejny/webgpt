@@ -119,7 +119,7 @@ export class RandomWallpaperManager {
         await this.prefetch();
     }
 
-    public async getRandomWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaperInStorage> {
+    public async getRandomWallpaper(currentWallpaperId?: string_wallpaper_id): Promise<IWallpaperInStorage> {
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
 
         // console.log('currentWallpaperId', currentWallpaperId);
@@ -127,7 +127,7 @@ export class RandomWallpaperManager {
         // console.log('randomWallpaper', randomWallpaper);
 
         if (randomWallpaper) {
-            this.prefetch();
+            this.prefetch(/* <- [🧠] Prefetch in consumeRandomWallpaper?! */);
             return randomWallpaper;
         } else {
             const randomWallpaper = await this.fetchRandomWallpaper(false);
