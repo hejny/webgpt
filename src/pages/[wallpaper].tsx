@@ -94,7 +94,6 @@ export async function getStaticProps({
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-
             currentWallpaper,
         },
     };

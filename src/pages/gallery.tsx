@@ -3,13 +3,13 @@ import { Barlow_Condensed } from 'next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
-import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { GallerySection } from '../components/Gallery/Gallery';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
+import { IWallpaperSerialized } from '../utils/IWallpaper';
 
 const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
@@ -59,22 +59,24 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
-                const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
-                return {
-                    id,
-                    parent,
-                    src,
-                    prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
-                    colorStats /* <- TODO: !! Also reduce colorStats */,
-                    // TODO: shapeStats> IWallpaperShapeStats;
-                    title,
-                    content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
-                    keywords,
-                    isPublic,
-                    author,
-                } satisfies IWallpaperSerialized;
-            }),
+            ...({
+                wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
+                    const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
+                    return {
+                        id,
+                        parent,
+                        src,
+                        prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                        colorStats /* <- TODO: !! Also reduce colorStats */,
+                        // TODO: shapeStats> IWallpaperShapeStats;
+                        title,
+                        content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                        keywords,
+                        isPublic,
+                        author,
+                    } satisfies IWallpaperSerialized;
+                }),
+            } satisfies GalleryPageProps),
         },
     };
 }
