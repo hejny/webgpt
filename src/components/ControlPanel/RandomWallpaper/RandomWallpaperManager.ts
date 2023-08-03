@@ -25,7 +25,7 @@ export class RandomWallpaperManager {
             this.preloadRandomWallpaper(randomWallpaper),
         );
 
-        /* not await */ this.prefetch();
+        /* not await */ this.prefetchIfNeeded();
     }
 
     private preloadGalleryElement: HTMLDivElement;
@@ -107,7 +107,7 @@ export class RandomWallpaperManager {
         ); /* <- Some better algoritm for predicting how many wallpapers to preload */
     }
 
-    private async prefetch(): Promise<void> {
+    private async prefetchIfNeeded(): Promise<void> {
         await forImmediate();
         await forAnimationFrame();
 
@@ -116,7 +116,7 @@ export class RandomWallpaperManager {
         }
 
         this.prefetchingRandomWallpapers.push(/* not await */ this.fetchRandomWallpaper(true));
-        await this.prefetch();
+        await this.prefetchIfNeeded();
     }
 
     public async getRandomWallpaper(currentWallpaperId?: string_wallpaper_id): Promise<IWallpaperInStorage> {
@@ -127,12 +127,12 @@ export class RandomWallpaperManager {
         // console.log('randomWallpaper', randomWallpaper);
 
         if (randomWallpaper) {
-            this.prefetch(/* <- [🧠] Prefetch in consumeRandomWallpaper?! */);
+            this.prefetchIfNeeded(/* <- [🧠] Prefetch in consumeRandomWallpaper?! */);
             return randomWallpaper;
         } else {
             const randomWallpaper = await this.fetchRandomWallpaper(false);
             /*                      <- Note: At first load the returned wallpaper THEN load the prefetched one(s) */
-            this.prefetch();
+            /* not await */ this.prefetchIfNeeded();
             return randomWallpaper;
         }
     }
@@ -142,11 +142,11 @@ export class RandomWallpaperManager {
 
         this.changeByConsumedCount(1);
 
-        if (randomWallpaper) {
-            this.inStorage((randomWallpapers) => {
-                return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
-            });
-        }
+        this.inStorage((randomWallpapers) => {
+            return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
+        });
+
+        /* not await */ this.prefetchIfNeeded();
     }
 }
 
