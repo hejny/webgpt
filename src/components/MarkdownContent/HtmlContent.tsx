@@ -30,7 +30,6 @@ interface HtmlContentProps {
 
     /**
      * Import used fonts which are inlined in html
-     * !!!! Remove ACRY
      */
     isUsedFontsImported?: boolean;
 
@@ -52,7 +51,7 @@ interface HtmlContentProps {
  */
 export function HtmlContent(props: HtmlContentProps) {
     let { content } = props;
-    const { className, isEditable, mapLinks, onHtmlChange } = props;
+    const { className, isEditable, isUsedFontsImported, mapLinks, onHtmlChange } = props;
 
     if (mapLinks) {
         content = mapLinksInHtml(content, mapLinks);
@@ -69,7 +68,7 @@ export function HtmlContent(props: HtmlContentProps) {
 
         return (
             <>
-                <ImportFonts {...{ fonts }} />
+                {isUsedFontsImported && <ImportFonts {...{ fonts }} />}
                 <div {...{ className }}>{children}</div>
             </>
         );
@@ -77,7 +76,7 @@ export function HtmlContent(props: HtmlContentProps) {
 
     return (
         <>
-            <ImportFonts {...{ fonts }} />
+            {isUsedFontsImported && <ImportFonts {...{ fonts }} />}
             <HtmlContentEditable {...{ content, className, onHtmlChange }} />
         </>
     );
