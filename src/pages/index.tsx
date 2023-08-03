@@ -29,6 +29,8 @@ export default function HomePage(props: HomePageProps) {
                         <h2>1-2i</h2>
                         <NoSsr>
                             <WelcomeWallpaperShuffle />
+                            <WelcomeWallpaperShuffle />
+                            <WelcomeWallpaperShuffle />
                         </NoSsr>
                     </Section>
                 </main>
