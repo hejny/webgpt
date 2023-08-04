@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { usePromise } from '../../utils/hooks/usePromise';
-import { randomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
+import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 
 interface WelcomeWallpaperShuffleProps {}
@@ -10,7 +10,7 @@ interface WelcomeWallpaperShuffleProps {}
  */
 export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
     const randomWallpaperPromise = useMemo(() => {
-        return /* not await */ randomWallpaperManager.getRandomWallpaper();
+        return /* not await */ RandomWallpaperManager.getInstance().getRandomWallpaper();
     }, []);
     const { value: randomWallpaper } = usePromise(randomWallpaperPromise);
 

@@ -12,10 +12,19 @@ export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
  * It pre-fetches the next wallpaper and image to make the transition smoother.
  *
  * @singleton
- * @private
  */
-class RandomWallpaperManager {
-    public constructor() {
+export class RandomWallpaperManager {
+    private static instance: RandomWallpaperManager;
+
+    public static getInstance() {
+        if (!RandomWallpaperManager.instance) {
+            RandomWallpaperManager.instance = new RandomWallpaperManager();
+        }
+
+        return RandomWallpaperManager.instance;
+    }
+
+    private constructor() {
         this.preloadGalleryElement = document.createElement('div');
         this.preloadGalleryElement.dataset.comment = `Note: This is just for preloading the next wallpapers images to make the transition smoother`;
         this.preloadGalleryElement.style.position = 'fixed';
@@ -152,11 +161,6 @@ class RandomWallpaperManager {
         /* not await */ this.prefetchIfNeeded();
     }
 }
-
-/**
- * @singleton
- */
-export const randomWallpaperManager = new RandomWallpaperManager();
 
 /**
  * TODO: Cache the wallpaper in localStorage
