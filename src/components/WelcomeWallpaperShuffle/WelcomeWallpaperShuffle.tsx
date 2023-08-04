@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
 import styles from './WelcomeWallpaperShuffle.module.css';
@@ -10,16 +10,33 @@ interface WelcomeWallpaperShuffleProps {}
  * @@
  */
 export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
-    const randomWallpaperPromise = useMemo(() => {
-        return /* not await */ RandomWallpaperManager.getInstance().getRandomWallpaper();
+    const randomWallpapersPromises = useMemo(() => {
+        const randomWallpaperManager = RandomWallpaperManager.getInstance();
+
+        return [
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+        ];
     }, []);
-    const { value: randomWallpaper } = usePromise(randomWallpaperPromise);
+
+    // TODO: useTimer
+    const [index, setIndex] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex(index + 1);
+        }, 2000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [index, setIndex]);
+
+    const { value: randomWallpaper } = usePromise(randomWallpapersPromises[index % randomWallpapersPromises.length]);
 
     if (!randomWallpaper) {
         return <></>;
     }
-
-    const src = `/${randomWallpaper.id}`;
 
     return (
         <Link
