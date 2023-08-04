@@ -1,3 +1,4 @@
+import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
@@ -41,7 +42,7 @@ export class RandomWallpaperManager {
     }
 
     private preloadGalleryElement: HTMLDivElement;
-    private prefetchingRandomWallpapers: Array<Promise<IWallpaperInStorage>> = [];
+    private prefetchingRandomWallpapers: Array<Promisable<IWallpaperInStorage>> = [];
 
     private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaperInStorage> {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
@@ -127,8 +128,8 @@ export class RandomWallpaperManager {
             return;
         }
 
-        this.prefetchingRandomWallpapers.push(/* not await */ this.fetchRandomWallpaper(true));
-        await this.prefetchIfNeeded();
+        this.prefetchingRandomWallpapers.push(await this.fetchRandomWallpaper(true));
+        return /* not await */ this.prefetchIfNeeded();
     }
 
     public async getRandomWallpaper(currentWallpaperId?: string_wallpaper_id): Promise<IWallpaperInStorage> {
