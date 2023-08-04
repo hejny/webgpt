@@ -62,7 +62,7 @@ export class RandomWallpaperManager {
             { randomWallpaper },
         );
 
-        this.preloadRandomWallpaper(randomWallpaper);
+        await this.preloadRandomWallpaper(randomWallpaper);
         return randomWallpaper;
     }
 
