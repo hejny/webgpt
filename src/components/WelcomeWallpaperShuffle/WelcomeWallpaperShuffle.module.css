@@ -1,7 +1,22 @@
 .WelcomeWallpaperShuffle {
-    /*/
-    outline: 1px dotted red;
+    /**/
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     /* TODO: Use or remove empty css */
+}
+
+.WelcomeWallpaperShuffle iframe {
+    /**/
+    outline: 1px dotted rgb(11, 221, 11);
+    /**/
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* TODO: !!!! Remove the padding -> */
+    padding: 10px;
 }

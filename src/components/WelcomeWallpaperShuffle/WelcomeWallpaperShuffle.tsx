@@ -1,7 +1,8 @@
+import Link from 'next/link';
 import { useMemo } from 'react';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
-import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
+import styles from './WelcomeWallpaperShuffle.module.css';
 
 interface WelcomeWallpaperShuffleProps {}
 
@@ -18,5 +19,22 @@ export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
         return <></>;
     }
 
-    return <DeviceIframe src={`/${randomWallpaper.id}`} isInteractive={false} />;
+    const src = `/${randomWallpaper.id}`;
+
+    return (
+        <Link
+            className={styles.WelcomeWallpaperShuffle}
+            href={`/${randomWallpaper.id}`}
+            prefetch={false /* <- Note: Because already prefetching by rendering <iframe/> */}
+        >
+            <iframe
+                src={`/${randomWallpaper.id}?mode=presentation`}
+                frameBorder="0"
+                style={{ pointerEvents: 'none' }}
+            />
+        </Link>
+    );
+
+    // TODO: Remove OR use this:
+    //     > return <DeviceIframe src={`/${randomWallpaper.id}`} isInteractive={false} />;
 }
