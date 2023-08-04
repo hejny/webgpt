@@ -15,8 +15,12 @@ export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
 
         return [
             /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            ///* not await */ randomWallpaperManager.getRandomWallpaper(),
-            ///* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ randomWallpaperManager.getRandomWallpaper(),
         ];
     }, []);
 
