@@ -15,7 +15,7 @@
 .Article h4,
 .Article h5,
 .Article h6 {
-    display: block /* <- !!!! */;
+    display: block;
     margin: auto;
     width: fit-content;
     text-align: center;
