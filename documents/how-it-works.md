@@ -1,6 +1,8 @@
-
-
 <!--
+
+TODO: !!!! how-it-works vs explanation - make some consistent page/content strategy
+
+
 Topic
 Prompt
 Wallpaper, Content
@@ -11,5 +13,5 @@ Palette
 Font
 Layout
 
-TODO: !!!! how-it-works vs explanation
+
 -->
