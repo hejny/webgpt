@@ -1,6 +1,6 @@
 .HandwrittenText {
     /*/
-    outline: 1px dotted green;
+    outline: 1px dotted rgb(38, 255, 38);
     /**/
 
     height: 1em;
@@ -13,7 +13,7 @@
 
 .HandwrittenText svg.primaryImage {
     /*/
-    outline: 1px dotted green;
+    outline: 1px dotted rgb(38, 255, 38);
     /**/
 
     grid-area: 🟦;
@@ -27,7 +27,7 @@
 
 .HandwrittenText span.textFallback {
     /*/
-    outline: 1px dotted green;
+    outline: 1px dotted rgb(38, 255, 38);
     /**/
 
     display: none /* <- TODO: Do better and then unblock */;

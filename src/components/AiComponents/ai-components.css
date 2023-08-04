@@ -46,7 +46,7 @@
 
 .ai-gallery-items {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     /* TODO: !!! Can be in calc used more than 2 statements | maybe split into multiple calc() */
@@ -56,7 +56,7 @@
 
 .ai-gallery-items .inner {
     /*/
-    outline: 1px dotted green;
+    outline: 1px dotted rgb(38, 255, 38);
     /**/
 
     position: absolute;
@@ -93,7 +93,7 @@
 
 .ai-gallery-items .inner a iframe {
     /*/
-    outline: 1px dotted blue;
+    outline: 1px dotted rgb(58, 58, 255);
     /**/
 
     pointer-events: none;
@@ -118,7 +118,6 @@
     background: linear-gradient(to right, #eee 2%, #ccc 18%, #eee 33%);
     background-size: 1300px;
 }
-
 
 @keyframes ai-placeholder-animate {
     0% {

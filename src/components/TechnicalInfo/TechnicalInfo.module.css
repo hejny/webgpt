@@ -1,6 +1,6 @@
 div.field {
     /*/
-    outline: 1px dotted red; /**/
+    outline: 1px dotted rgb(255, 38, 38); /**/
 
     display: block;
     text-align: left;
@@ -10,7 +10,7 @@ div.field {
 
 div.field span:nth-child(1) {
     /*/
-    outline: 1px dotted green; /**/
+    outline: 1px dotted rgb(38, 255, 38); /**/
 
     display: inline-block;
     width: calc(50% - 0.5rem);

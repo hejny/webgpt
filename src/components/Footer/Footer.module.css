@@ -1,6 +1,6 @@
 .FooterSection {
     /*/
-    outline: 1px dotted red; /**/
+    outline: 1px dotted rgb(255, 38, 38); /**/
 
     width: 100%;
     height: 100%;
@@ -31,7 +31,7 @@
 
 .FooterSection ul {
     /*/
-    outline: 1px dotted red; /**/
+    outline: 1px dotted rgb(255, 38, 38); /**/
 
     padding-left: 30px;
     padding-right: 30px;
@@ -45,7 +45,7 @@
 
 .FooterSection ul li {
     /*/
-    outline: 1px dotted red; /**/
+    outline: 1px dotted rgb(255, 38, 38); /**/
 
     list-style: none;
     margin: 0;

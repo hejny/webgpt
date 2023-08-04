@@ -1,6 +1,6 @@
 .HeaderWallpaper {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     width: 100%;
@@ -14,7 +14,7 @@
 
 .inner {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     height: 100%;

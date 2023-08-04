@@ -1,6 +1,6 @@
 .DeviceIframe {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     display: flex;

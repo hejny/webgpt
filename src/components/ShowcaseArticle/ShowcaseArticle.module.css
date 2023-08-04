@@ -68,7 +68,7 @@
 .Article ol,
 .Article ul {
     /*/
-    outline: 1px dotted red !important;
+    outline: 1px dotted rgb(255, 38, 38) !important;
     /**/
 
     text-align: left;

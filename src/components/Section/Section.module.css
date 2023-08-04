@@ -1,6 +1,6 @@
 .section {
     /*/
-    outline: 1px dotted green;
+    outline: 1px dotted rgb(38, 255, 38);
     /**/
 
     margin-top: 80px;
@@ -27,7 +27,7 @@
 
 .section h2 {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     display: inline-block;

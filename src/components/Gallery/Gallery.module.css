@@ -48,7 +48,7 @@
 
 .galleryItemsOuter {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     /* TODO: !!! Can be in calc used more than 2 statements | maybe split into multiple calc() */
@@ -58,7 +58,7 @@
 
 .galleryItemsInner {
     /*/
-    outline: 1px dotted green;
+    outline: 1px dotted rgb(38, 255, 38);
     /**/
 
     position: absolute;
@@ -119,7 +119,7 @@
 
 .galleryItemsInner a iframe {
     /*/
-    outline: 1px dotted red;
+    outline: 1px dotted rgb(255, 38, 38);
     /**/
 
     pointer-events: none;
