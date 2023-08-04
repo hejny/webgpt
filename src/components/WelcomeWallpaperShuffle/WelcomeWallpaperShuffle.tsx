@@ -15,8 +15,8 @@ export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
 
         return [
             /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            ///* not await */ randomWallpaperManager.getRandomWallpaper(),
+            ///* not await */ randomWallpaperManager.getRandomWallpaper(),
         ];
     }, []);
 
@@ -25,7 +25,7 @@ export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex(index + 1);
-        }, 2000);
+        }, 1000);
 
         return () => {
             clearInterval(interval);
