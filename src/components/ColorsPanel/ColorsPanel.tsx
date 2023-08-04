@@ -42,14 +42,14 @@ export function ColorsPanel(props: ColorsPanelProps) {
             onClick={() => setOpen(true)}
             onPointerMove={() => setOpen(true)}
         >
-            <div className={classNames(styles.colorPickerWrapper)}>
+            <div className={classNames(styles.colorPickerWrapper)} style={{ zIndex: 100 }}>
                 <WallpaperLink modal="colors" prefetch={false /* <- Note: Because this is a bit rare options */}>
                     <ColorPreview className={styles.colorPicker} color={'HUE_CIRCLE'} />
                 </WallpaperLink>
             </div>
 
             {wallpaper.colorStats.palette.map((color, i) => (
-                <div key={i} className={styles.colorPickerWrapper}>
+                <div key={i} className={styles.colorPickerWrapper} style={{ zIndex: 100 - 1 - i }}>
                     <ColorInput
                         className={styles.colorPicker}
                         value={color.value}

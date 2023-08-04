@@ -60,6 +60,16 @@
     .ColorsPanel {
         width: 85px;
         left: -30px;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .colorPickerWrapper {
+        margin-right: unset;
+        margin-top: -20px;
+    }
+
+    .ColorsPanel.open .colorPickerWrapper {
+        margin-right: unset;
+        margin-top: 8px;
     }
 }

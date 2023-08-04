@@ -4,12 +4,7 @@
     /**/
 
     z-index: 2;
-    position: absolute;
+    position: relative;
 
-    /*
     transform: translate(calc(50% + 30px), calc(-50% - 25px));
-    */
-
-    bottom: 50px;
-    left: 10px;
 }
