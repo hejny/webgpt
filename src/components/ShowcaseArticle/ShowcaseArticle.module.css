@@ -9,19 +9,15 @@
     font-size: 20px;
 }
 
-/*
-TODO: !! It is not looking good when there is <h1> in middle of texts
-*/
 .Article h1,
 .Article h2,
 .Article h3,
 .Article h4,
 .Article h5,
 .Article h6 {
-    /*
-    TODO: !!! This does not look good @see https://1-2i.com/5da94590-4fd5-4900-afbe-5c1f486365be
-    */
-    display: inline-block;
+    display: block /* <- !!!! */;
+    margin: auto;
+    width: fit-content;
     text-align: center;
 }
 
