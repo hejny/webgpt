@@ -11,7 +11,7 @@ export function useRandomWallpaper(): [
 
     const randomWallpaperPromise = useMemo(
         () => RandomWallpaperManager.getInstance().getRandomWallpaper(),
-        // Note: !!!!
+        // Note: We want to call getRandomWallpaper for every new wallpaperId
         /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaperId],
     );
