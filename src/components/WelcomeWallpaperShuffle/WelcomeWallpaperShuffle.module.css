@@ -9,9 +9,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    /* TODO: !!!! Remove the padding -> */
-    padding: 10px;
 }
 
 .WelcomeWallpaperShuffle iframe {
