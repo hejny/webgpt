@@ -2,7 +2,6 @@ import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import { join } from 'path';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
@@ -70,10 +69,7 @@ export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () =>
     }
 
     for (const wallpaper of JSON.parse(
-        await readFile(
-            join(__dirname, '../../public/mocked-api/wallpapers-min-loved.json') /* <- TODO: [✍] */,
-            'utf-8',
-        ),
+        await readFile('public/mocked-api/wallpapers-min-loved.json' /* <- TODO: [✍] */, 'utf-8'),
     ) as Array<{
         id: string_wallpaper_id;
     }>) {
