@@ -68,11 +68,14 @@ export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () =>
         prerenderWallpapersIds.add(wallpaper.id);
     }
 
-    for (const wallpaper of JSON.parse(
+    const { wallpapers: lovedWallpapers } = JSON.parse(
         await readFile('public/mocked-api/wallpapers-min-loved.json' /* <- TODO: [✍] */, 'utf-8'),
-    ) as Array<{
-        id: string_wallpaper_id;
-    }>) {
+    ) as {
+        wallpapers: Array<{
+            id: string_wallpaper_id;
+        }>;
+    };
+    for (const wallpaper of lovedWallpapers) {
         prerenderWallpapersIds.add(wallpaper.id);
     }
 
