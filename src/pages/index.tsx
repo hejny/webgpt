@@ -12,7 +12,9 @@ export default function HomePage(props: HomePageProps) {
 
             <main>
                 <NoSsr>
+                 
                     <WelcomeWallpaperShuffle />
+                  
                 </NoSsr>
             </main>
         </>

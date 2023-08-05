@@ -1,6 +1,8 @@
+import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
+import { join } from 'path';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
@@ -12,6 +14,7 @@ import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
+import { string_wallpaper_id } from '../utils/typeAliases';
 import { validateUuid } from '../utils/validateUuid';
 
 interface ShowcasePageProps {
@@ -60,8 +63,25 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 }
 
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
+    const prerenderWallpapersIds = new Set<string_wallpaper_id>();
+
+    for (const wallpaper of await getHardcodedWallpapers()) {
+        prerenderWallpapersIds.add(wallpaper.id);
+    }
+
+    for (const wallpaper of JSON.parse(
+        await readFile(
+            join(__dirname, '../../public/mocked-api/wallpapers-min-loved.json') /* <- TODO: [✍] */,
+            'utf-8',
+        ),
+    ) as Array<{
+        id: string_wallpaper_id;
+    }>) {
+        prerenderWallpapersIds.add(wallpaper.id);
+    }
+
     return {
-        paths: (await getHardcodedWallpapers()).map(({ id }) => `/${id}`), // <- Note: indicates which pages needs be created at build time
+        paths: Array.from(prerenderWallpapersIds).map((wallpaperId) => `/${wallpaperId}`), // <- Note: indicates which pages needs be created at build time
         fallback: 'blocking',
     };
 };

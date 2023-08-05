@@ -27,8 +27,11 @@ export const SUPABASE_SERVICE_ROLE_KEY = config.get('SUPABASE_SERVICE_ROLE_KEY')
 export const VERCEL_GIT_COMMIT_MESSAGE = config.get('VERCEL_GIT_COMMIT_MESSAGE').value;
 export const VERCEL_GIT_COMMIT_SHA = config.get('VERCEL_GIT_COMMIT_SHA').value;
 
-export const LIMIT_WALLPAPER_COUNT = config.get('LIMIT_WALLPAPER_COUNT').number().default(Infinity).value;
-export const LIMIT_WALLPAPER_EXCLUDE = config.get('LIMIT_WALLPAPER_EXCLUDE').list().default([]).value;
+export const LIMIT_WALLPAPERS_COUNT = config.get('LIMIT_WALLPAPERS_COUNT').number().default(Infinity).value;
+export const LIMIT_WALLPAPERS_EXCLUDE = config.get('LIMIT_WALLPAPERS_EXCLUDE').list().default([]).value;
+
+// TODO: [✍] Replace mocked-api/wallpapers-min-loved.json by WELCOME_WALLPAPERS
+// export const WELCOME_WALLPAPERS = config.get('WELCOME_WALLPAPERS').list().default([]).value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 

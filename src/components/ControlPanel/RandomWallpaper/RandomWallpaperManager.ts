@@ -4,6 +4,7 @@ import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { isPrivateNetwork } from '../../../utils/isPrivateNetwork';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
+import { randomItem } from '../../../utils/randomItem';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
@@ -132,7 +133,29 @@ export class RandomWallpaperManager {
         return /* not await */ this.prefetchIfNeeded();
     }
 
-    public async getRandomWallpaper(currentWallpaperId?: string_wallpaper_id): Promise<IWallpaperInStorage> {
+    private welcomeWallpapers: null | Array<{
+        id: string_wallpaper_id;
+    }> = null;
+
+    public async getWelcomeWallpaper(): Promise<Omit</* <- TODO: [2] Remove Omit*/ IWallpaperInStorage, 'src'>> {
+        if (this.welcomeWallpapers === null) {
+            const response = await fetch(`${NEXT_PUBLIC_URL.href}mocked-api/wallpapers-min-loved.json`);
+            const { wallpapers } = (await response.json()) as {
+                wallpapers: Array<{
+                    id: string_wallpaper_id;
+                    // [2]
+                    // primaryColor: string_color;
+                    // likedStatus: keyof typeof LikedStatus;
+                }>;
+            };
+            this.welcomeWallpapers = wallpapers;
+        }
+        // TODO: Do here a preloading when [2] there will be src in wallpapers-min-loved.json
+        //     > await this.preloadRandomWallpaper(randomWallpaper);
+        return randomItem(...this.welcomeWallpapers);
+    }
+
+    public async getRandomWallpaper(): Promise<IWallpaperInStorage> {
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
 
         // console.log('currentWallpaperId', currentWallpaperId);

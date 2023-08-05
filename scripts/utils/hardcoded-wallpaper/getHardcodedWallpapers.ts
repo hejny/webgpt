@@ -4,8 +4,8 @@ import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
 import {
     COLORSTATS_DEFAULT_COMPUTE,
-    LIMIT_WALLPAPER_COUNT,
-    LIMIT_WALLPAPER_EXCLUDE,
+    LIMIT_WALLPAPERS_COUNT,
+    LIMIT_WALLPAPERS_EXCLUDE,
     SYSTEM_AUTHOR_ID,
 } from '../../../config';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
@@ -60,7 +60,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
         const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
         const id = metadata!.id;
 
-        if (!LIMIT_WALLPAPER_EXCLUDE.includes(id) && wallpapers.length >= LIMIT_WALLPAPER_COUNT) {
+        if (!LIMIT_WALLPAPERS_EXCLUDE.includes(id) && wallpapers.length >= LIMIT_WALLPAPERS_COUNT) {
             continue;
         }
 
