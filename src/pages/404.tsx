@@ -35,5 +35,5 @@ export default function NotFoundPage() {
 }
 
 /**
- * TODO: !!! Make + export - inspired by index+RandomWallpaperManager
+ * TODO: !!! Make + export - inspired by index+WallpapersTimelineManager
  */

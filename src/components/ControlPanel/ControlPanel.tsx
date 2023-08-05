@@ -11,7 +11,7 @@ import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parse
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
-import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
+import { WallpapersTimelineButtons } from './WallpapersTimeline/WallpapersTimelineButtons';
 
 /**
  * @@@
@@ -82,7 +82,7 @@ export function ControlPanel() {
             )}
 
             {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
-            {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
+            {wallpaper.saveStage === 'SAVED' && <WallpapersTimelineButtons />}
             {wallpaper.saveStage === 'SAVED' && (
                 <WallpaperLink
                     mode="PRESENTATION"
@@ -110,7 +110,6 @@ export function ControlPanel() {
                 <Markdown content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji * / />
             </Link>
             */}
-
 
             {/*<WallpaperLink className={classNames(/*'button',* / styles.button)} title="Need help?" page="contact">
                 <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] * / />

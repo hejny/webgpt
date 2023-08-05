@@ -9,20 +9,20 @@ import { string_wallpaper_id } from '../../../utils/typeAliases';
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 
 /**
- * RandomWallpaperManager is a class that manages the random wallpapers which will be shown next.
+ * WallpapersTimelineManager is a class that manages the random wallpapers which will be shown next.
  * It pre-fetches the next wallpaper and image to make the transition smoother.
  *
  * @singleton
  */
-export class RandomWallpaperManager {
-    private static instance: RandomWallpaperManager;
+export class WallpapersTimelineManager {
+    private static instance: WallpapersTimelineManager;
 
     public static getInstance() {
-        if (!RandomWallpaperManager.instance) {
-            RandomWallpaperManager.instance = new RandomWallpaperManager();
+        if (!WallpapersTimelineManager.instance) {
+            WallpapersTimelineManager.instance = new WallpapersTimelineManager();
         }
 
-        return RandomWallpaperManager.instance;
+        return WallpapersTimelineManager.instance;
     }
 
     private constructor() {
@@ -99,6 +99,7 @@ export class RandomWallpaperManager {
     }
 
     private getConsumedCount(): number {
+        // TODO: !!!! Rename randomWallpapersConsumedCount
         return parseInt(window.localStorage.getItem('randomWallpapersConsumedCount') || '0');
     }
 
@@ -132,7 +133,7 @@ export class RandomWallpaperManager {
         return /* not await */ this.prefetchIfNeeded();
     }
 
-    public async getRandomWallpaper(currentWallpaperId?: string_wallpaper_id): Promise<IWallpaperInStorage> {
+    public async getNextWallpaper(currentWallpaperId: string_wallpaper_id): Promise<IWallpaperInStorage> {
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
 
         // console.log('currentWallpaperId', currentWallpaperId);
@@ -150,17 +151,7 @@ export class RandomWallpaperManager {
         }
     }
 
-    public consumeRandomWallpaper(randomWallpaper: IWallpaperInStorage): void {
-        console.info(`🎲 Consuming random wallpaper`, { randomWallpaper });
 
-        this.changeByConsumedCount(1);
-
-        this.inStorage((randomWallpapers) => {
-            return randomWallpapers.filter((randomWallpaper2) => randomWallpaper.id !== randomWallpaper2.id);
-        });
-
-        /* not await */ this.prefetchIfNeeded();
-    }
 }
 
 /**

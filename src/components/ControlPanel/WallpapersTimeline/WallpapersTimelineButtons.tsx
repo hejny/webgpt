@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '../../../utils/classNames';
 import styles from '../ControlPanel.module.css';
-import { useRandomWallpaper } from './useRandomWallpaper';
+import { useNextWallpaper } from './useNextWallpaper';
 
-export function RandomWallpaperButton() {
-    const [randomWallpaper, consumeRandomWallpaper] = useRandomWallpaper();
+export function WallpapersTimelineButtons() {
+    const [randomWallpaper, consumeRandomWallpaper] = useNextWallpaper();
 
     if (!randomWallpaper) {
         return (
@@ -25,11 +25,11 @@ export function RandomWallpaperButton() {
 
     return (
         <Link
-              className={classNames(/*'button',*/ styles.button)}
+            className={classNames(/*'button',*/ styles.button)}
             title="Show me another one"
             href={`/${randomWallpaper.id}`}
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible
-                     + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
+                     + We are doing extra prefetching in the background of the wallpaper image in WallpapersTimelineManager
             */
 
             onClick={consumeRandomWallpaper}
