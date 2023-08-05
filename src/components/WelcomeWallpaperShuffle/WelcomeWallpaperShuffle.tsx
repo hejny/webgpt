@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { usePromise } from '../../utils/hooks/usePromise';
-import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
+import { WallpapersTimelineManager } from '../ControlPanel/WallpapersTimeline/WallpapersTimelineManager';
 import styles from './WelcomeWallpaperShuffle.module.css';
 
 interface WelcomeWallpaperShuffleProps {}
@@ -11,37 +11,37 @@ interface WelcomeWallpaperShuffleProps {}
  */
 export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
     const randomWallpapersPromises = useMemo(() => {
-        const randomWallpaperManager = RandomWallpaperManager.getInstance();
+        const wallpapersTimelineManager = WallpapersTimelineManager.getInstance();
 
         return [
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
-            /* not await */ randomWallpaperManager.getRandomWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
+            /* not await */ wallpapersTimelineManager.getNextWallpaper(),
         ];
     }, []);
 
