@@ -10,7 +10,9 @@ export function useRandomWallpaper(): [
     const wallpaperId = useCurrentWallpaperId();
 
     const randomWallpaperPromise = useMemo(
-        () => RandomWallpaperManager.getInstance().getRandomWallpaper(wallpaperId),
+        () => RandomWallpaperManager.getInstance().getRandomWallpaper(),
+        // Note: !!!!
+        /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaperId],
     );
     const { value } = usePromise(randomWallpaperPromise);
