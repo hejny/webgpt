@@ -2,10 +2,10 @@ import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
-import { isPrivateNetwork } from '../../../utils/isPrivateNetwork';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
+import { isPrivateNetwork } from '../../../utils/validators/isPrivateNetwork';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 
@@ -156,6 +156,8 @@ export class RandomWallpaperManager {
     }
 
     public async getRandomWallpaper(): Promise<IWallpaperInStorage> {
+        // TODO: !!!! Change to WallpaperTimelineManager.getNextWallpaper
+
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
 
         // console.log('currentWallpaperId', currentWallpaperId);

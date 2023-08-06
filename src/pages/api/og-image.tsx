@@ -3,8 +3,8 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { validateUuid } from '../../utils/validateUuid';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
+import { validateUuid } from '../../utils/validators/validateUuid';
 
 export default async function ogImageHandler(request: NextApiRequest, response: NextApiResponse) {
     const wallpaperId = request.query.wallpaperId as string;

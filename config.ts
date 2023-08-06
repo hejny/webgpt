@@ -4,7 +4,7 @@ import packageJson from './package.json';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { validateUuid } from './src/utils/validateUuid';
+import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const VERSION = packageJson.version;
 

@@ -1,4 +1,4 @@
-import { string_hostname } from './typeAliases';
+import { string_hostname } from '../typeAliases';
 
 /**
  * Checks if an IP address or hostname is reserved for private networks or localhost.

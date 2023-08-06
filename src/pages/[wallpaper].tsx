@@ -14,11 +14,13 @@ import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { string_wallpaper_id } from '../utils/typeAliases';
-import { validateUuid } from '../utils/validateUuid';
+import { validateUuid } from '../utils/validators/validateUuid';
 
 interface ShowcasePageProps {
     currentWallpaper: null | IWallpaperSerialized;
 }
+
+// TODO: !!!! Apply also font here and split between the page and controls
 
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper } = props;

@@ -2,7 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
-import { validateUuid } from './validateUuid';
+import { validateUuid } from './validators/validateUuid';
 
 describe(`computeWallpaperUriid`, () => {
     it(`is compute deterministic uriid`, () => {
