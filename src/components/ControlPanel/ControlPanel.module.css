@@ -1,4 +1,12 @@
+.ControlPanel,
+.ControlPanel * {
+    transition: none;
+}
+
 .ControlPanel {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
 
     z-index: 3000 /* <- [🔝] Global order of showcase */;
     position: fixed;
@@ -11,17 +19,26 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
     backdrop-filter: blur(10px);
     border-radius: 6px;
+}
+
+.group {
+    /*/
+    outline: 1px dotted rgb(103, 223, 79);
+    /**/
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: left;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-.ControlPanel,
-.ControlPanel * {
-    transition: none;
+.group:not(:last-child) {
+    padding-right: 5px;
+    border-right: 1px solid rgba(205, 227, 231, 0.1);
+    margin-right: 5px;
 }
 
 .button {
@@ -96,10 +113,19 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .ControlPanel {
-        width: 85px;
+    .group {
         right: -30px;
         flex-direction: column;
+    }
+
+    .group:not(:last-child) {
+        padding-right: unset;
+        border-right: unset;
+        margin-right: unset;
+
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(205, 227, 231, 0.1);
+        margin-bottom: 5px;
     }
 
     .button {

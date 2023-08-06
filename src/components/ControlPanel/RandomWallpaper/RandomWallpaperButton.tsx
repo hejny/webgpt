@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '../../../utils/classNames';
 import styles from '../ControlPanel.module.css';
-import { makeHintRef } from '../utils/makeHintRef';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
 export function RandomWallpaperButton() {
@@ -27,14 +26,14 @@ export function RandomWallpaperButton() {
     return (
         <Link
             className={classNames(/*'button',*/ styles.button)}
-            title="Show me another one"
+            title="Show next page"
             href={`/${randomWallpaper.id}`}
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible
                      + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
             */
 
             onClick={consumeRandomWallpaper}
-            ref={makeHintRef('Show new web')}
+            data-ai-component="hint"
             style={
                 {
                     // ...minorButtonStyle,

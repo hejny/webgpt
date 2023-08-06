@@ -2,9 +2,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import styles from '../ControlPanel/ControlPanel.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
-import { makeHintRef } from './utils/makeHintRef';
+import styles from './ControlPanel.module.css';
 
 /**
  * @@@
@@ -14,18 +13,19 @@ export function ControlPanelLikeButtons() {
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
 
     return (
-        <>
+        <div title="React on web" data-ai-component="hint" className={styles.group}>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             {['LOVE', 'LIKE'].includes(likedStatus) && (
-                <WallpaperLink
-                    // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
-                    className={classNames(styles.button, styles.callToAction)}
-                    modal="export"
-                    mode="NORMAL"
-                    /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                >
-                    Get the web
-                </WallpaperLink>
+                <div className={styles.group}>
+                    <WallpaperLink
+                        className={classNames(styles.button, styles.callToAction)}
+                        modal="export"
+                        mode="NORMAL"
+                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                    >
+                        Get the web
+                    </WallpaperLink>
+                </div>
             )}
 
             <button
@@ -39,7 +39,6 @@ export function ControlPanelLikeButtons() {
                         likedStatus !== 'LOVE' ? 'LOVE' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
                     )
                 }
-                ref={makeHintRef('React on web')}
             >
                 <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="❤" isUsingOpenmoji /> */}
@@ -85,6 +84,6 @@ export function ControlPanelLikeButtons() {
                 <Image alt="👎" src="/icons/openmoji/1F44E.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="👎" isUsingOpenmoji /> */}
             </button>
-        </>
+        </div>
     );
 }
