@@ -5,7 +5,7 @@ import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 interface RegisterResponse {
-    // !!!
+    // TODO: [🌋] ErrorableResponse
     message: string;
 }
 
