@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useContext } from 'react';
+import { RefCallback, useContext } from 'react';
 import { TupleToUnion } from 'type-fest';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { MODES } from '../../utils/hooks/useMode';
@@ -12,13 +12,15 @@ interface WallpaperLinkProps extends Omit<React.ComponentProps<'a'>, 'ref'> {
     page?: string_page;
     modal?: string | null;
     prefetch?: false;
+
+    ref?: RefCallback<HTMLElement>;
 }
 
 /**
  * @@
  */
 export function WallpaperLink(props: WallpaperLinkProps) {
-    const { wallpaperId, mode, page, modal, children } = props;
+    const { wallpaperId, mode, page, modal, children, ref } = props;
 
     const router = useRouter();
     const { isExported } = useContext(ExportContext);
@@ -54,12 +56,13 @@ export function WallpaperLink(props: WallpaperLinkProps) {
             >
                 {children}
             </Link>
+            // !!! <div  ref={ref}></div>
         );
     } else {
         // TODO: Maybe detect if it is modal or mode is used and if throw error
 
         return (
-            <a href={!query.page ? '/' : `/${query.page}.html`} {...props}>
+            <a href={!query.page ? '/' : `/${query.page}.html`} /* Note: Do not pass ref here */ {...props}>
                 {children}
             </a>
         );

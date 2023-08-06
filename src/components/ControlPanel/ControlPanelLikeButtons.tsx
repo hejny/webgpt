@@ -4,6 +4,7 @@ import { classNames } from '../../utils/classNames';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import styles from '../ControlPanel/ControlPanel.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
+import { makeHintRef } from './utils/makeHintRef';
 
 /**
  * @@@
@@ -38,6 +39,7 @@ export function ControlPanelLikeButtons() {
                         likedStatus !== 'LOVE' ? 'LOVE' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
                     )
                 }
+                ref={makeHintRef('React on web')}
             >
                 <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="❤" isUsingOpenmoji /> */}

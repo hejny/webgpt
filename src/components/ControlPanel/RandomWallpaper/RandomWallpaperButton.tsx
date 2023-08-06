@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '../../../utils/classNames';
 import styles from '../ControlPanel.module.css';
+import { makeHintRef } from '../utils/makeHintRef';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
 export function RandomWallpaperButton() {
@@ -33,6 +34,7 @@ export function RandomWallpaperButton() {
             */
 
             onClick={consumeRandomWallpaper}
+            ref={makeHintRef('Show new web')}
             style={
                 {
                     // ...minorButtonStyle,

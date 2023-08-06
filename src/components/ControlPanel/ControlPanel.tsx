@@ -12,6 +12,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
+import { makeHintRef } from './utils/makeHintRef';
 
 /**
  * @@@
@@ -88,6 +89,7 @@ export function ControlPanel() {
                     mode="PRESENTATION"
                     className={classNames(/*'button',*/ styles.button)}
                     title="Presentation mode"
+                    ref={makeHintRef('Presentation mode')}
                 >
                     <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                     {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
