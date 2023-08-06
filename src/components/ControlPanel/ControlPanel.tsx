@@ -87,9 +87,9 @@ export function ControlPanel() {
                 <WallpaperLink
                     mode="PRESENTATION"
                     className={classNames(/*'button',*/ styles.button)}
-                    title="Show without the controls"
+                    title="Presentation mode"
                 >
-                    <Image alt="▶" src="/icons/openmoji/25B6.svg" width={40} height={40} /* <-[🧥] */ />
+                    <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                     {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
                     {/* <- TODO: !!!
                         - Open sharing modal
@@ -111,9 +111,8 @@ export function ControlPanel() {
             </Link>
             */}
 
-
             {/*<WallpaperLink className={classNames(/*'button',* / styles.button)} title="Need help?" page="contact">
-                <Image alt="💬" src="/icons/openmoji/1F4AC.svg" width={40} height={40} /* <-[🧥] * / />
+                <Image alt="💬" src="/icons/openmoji/1F4AC.black.svg" width={40} height={40} /* <-[🧥] * / />
                 {/* <MarkdownContent content="💬" isUsingOpenmoji  /> * /}
             </WallpaperLink>*/}
         </div>

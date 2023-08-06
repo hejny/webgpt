@@ -11,13 +11,13 @@ export function RandomWallpaperButton() {
         return (
             <div
                 className={classNames(/*'button',*/ styles.button)}
-                title="Show me another one not available yet"
+                title="Another one not available yet - loading..."
                 style={{
                     opacity: 0.5,
                     cursor: 'not-allowed',
                 }}
             >
-                <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* <-[🧥] */ />
+                <Image alt="⏭" src="/icons/openmoji/23ED.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
             </div>
         );
@@ -25,7 +25,7 @@ export function RandomWallpaperButton() {
 
     return (
         <Link
-              className={classNames(/*'button',*/ styles.button)}
+            className={classNames(/*'button',*/ styles.button)}
             title="Show me another one"
             href={`/${randomWallpaper.id}`}
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible
@@ -44,8 +44,12 @@ export function RandomWallpaperButton() {
         >
             {/* TODO: This should have more role like next not random */}
 
-            <Image alt="🎲" src="/icons/openmoji/1F3B2.svg" width={40} height={40} /* <-[🧥] */ />
+            <Image alt="⏭" src="/icons/openmoji/23ED.black.svg" width={40} height={40} /* <-[🧥] */ />
             {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
         </Link>
     );
 }
+
+/**
+ * TODO: Make also previous /icons/openmoji/23EE.svg
+ */

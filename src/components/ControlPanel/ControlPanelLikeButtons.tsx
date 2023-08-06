@@ -39,7 +39,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Image alt="❤" src="/icons/openmoji/2764.svg" width={40} height={40} /* <-[🧥] */ />
+                <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="❤" isUsingOpenmoji /> */}
             </button>
 
@@ -54,7 +54,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Image alt="👍" src="/icons/openmoji/1F44D.svg" width={40} height={40} /* <-[🧥] */ />
+                <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
             </button>
             <button
@@ -67,7 +67,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Image alt="😐" src="/icons/openmoji/1F610.svg" width={40} height={40} /* <-[🧥] */ />
+                <Image alt="😐" src="/icons/openmoji/1F610.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="😐" isUsingOpenmoji /> */}
             </button>
             <button
@@ -80,7 +80,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Image alt="👎" src="/icons/openmoji/1F44E.svg" width={40} height={40} /* <-[🧥] */ />
+                <Image alt="👎" src="/icons/openmoji/1F44E.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="👎" isUsingOpenmoji /> */}
             </button>
         </>
