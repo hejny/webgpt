@@ -7,7 +7,7 @@ import styles from './WelcomeWallpaperShuffle.module.css';
 interface WelcomeWallpaperShuffleProps {}
 
 /**
- * @@
+ * @unused
  */
 export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
     const randomWallpapersPromises = useMemo(() => {
