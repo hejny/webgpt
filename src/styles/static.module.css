@@ -55,3 +55,19 @@
 .homeButton:hover {
     background-color: rgb(167, 213, 221);
 }
+
+.loading {
+    /**/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: scale-down;
+}

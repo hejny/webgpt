@@ -1,5 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Barlow_Condensed } from 'next/font/google';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
@@ -27,7 +28,21 @@ export default function HomePage() {
 
             <div className={classNames(styles.page, font.className)}>
                 <main>
-                    <h1>1-2i</h1>
+                    <h1
+                        style={{
+                            display:
+                                'none' /* <- TODO: For SEO/Social is it better to have invisible <h1> or just <title> + meta tags */,
+                        }}
+                    >
+                        1-2i
+                    </h1>
+                    <Image
+                        className={styles.loading}
+                        alt="Loading"
+                        src="/icons/loading.svg"
+                        width={40}
+                        height={40} /* <-[🧥] */
+                    />
                     {/* !!! Generating animation */}
                 </main>
             </div>
