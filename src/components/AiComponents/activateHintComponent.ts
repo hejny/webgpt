@@ -47,7 +47,7 @@ export function activateHintComponent(hintElement: HTMLElement) {
  * TODO: !!!! Hint: Fade after interaction
  * TODO: !!!! Hint: Save number of interactions in localStorage and reapear on next load ONLY if less then 5 interationns
  * TODO: !!!! Hint: Reapear (or put back title) after mouseover certain time
- * TODO: !!!! Hint: data-ai-hint-highlight
+ * TODO: !!!! Hint: data-ai-hint-highlight with the box and color
  * TODO: !!!! Hint: data-ai-hint-after
  * TODO: !!!! ACRY use window.document, window.localStorage,...
  */

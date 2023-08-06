@@ -61,6 +61,9 @@
     background-color: rgb(205, 227, 231) /* <- TODO: !! Figure out best colors */;
 
     transition: all 0.3s ease-in-out;
+
+    /* TODO: !!!! Do not show active button as slightly different color of blue  */
+    /* TODO: !!!! Make clicking on buttons with the effect same as toggle */
 }
 
 .button.callToAction {

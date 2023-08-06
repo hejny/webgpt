@@ -30,6 +30,8 @@ export function ColorsPanel(props: ColorsPanelProps) {
         return () => {
             clearTimeout(timeout);
         };
+
+        // !!!! When opening <ColorsPanel/> supress opening of the <ColorInput/> (<ColorInput/> in opened on the subsequent click)
     }, [isOpen, setOpen]);
 
     return (
