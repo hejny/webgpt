@@ -4,6 +4,7 @@ import { NEXT_PUBLIC_URL } from '../../../../config';
 import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
+import { provideClientId } from '../../../utils/supabase/provideClientId';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 import { isPrivateNetwork } from '../../../utils/validators/isPrivateNetwork';
 
@@ -46,7 +47,7 @@ export class RandomWallpaperManager {
     private prefetchingRandomWallpapers: Array<Promisable<IWallpaperInStorage>> = [];
 
     private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaperInStorage> {
-        const response = await fetch(`${NEXT_PUBLIC_URL.href}api/random-wallpaper`);
+        const response = await fetch(`${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientId()}`);
         const { randomWallpaper } = (await response.json()) as RandomWallpaperResponse;
 
         if (isPrefetch) {
