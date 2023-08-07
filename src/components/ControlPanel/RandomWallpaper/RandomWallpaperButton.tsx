@@ -11,7 +11,8 @@ export function RandomWallpaperButton() {
         return (
             <div
                 className={classNames(/*'button',*/ styles.button)}
-                title="Another one not available yet - loading..."
+title="Show next page"
+                x-title="TODO: Another one not available yet - loading..."
                 data-ai-component="hint"
                 style={{
                     opacity: 0.5,
