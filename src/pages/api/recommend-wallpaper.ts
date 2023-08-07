@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { likedStatusToLikeness } from '../../recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
+import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
@@ -28,13 +30,24 @@ export default async function recommendWallpaperHandler(
             .select(
                 `
                 likedStatus,
+                createdAt,
                 Wallpaper( * ) 
             `,
             )
-            .eq('author', author);
-        // <- TODO: [🤺]> .limit(5 /* <- TODO: Tweak this number */);
-
-        const wallpapersWithLikeness = wallpapersWithLikenessData as any;
+            .eq('author', author)
+            .order('createdAt', { ascending: false })
+            // <- TODO: !!!! [🤺][🧠] Take ONLY current reactions NOT overwritten ones
+            // <- TODO: !!!  [🤺]     Allow older LOVE reactions
+            // <- TODO: !!!! [🤺]     Filter here NONE and NEUTRAL reactions
+            .limit(10 /* <- TODO:  [🤺] Tweak this number */);
+        if (wallpapersWithLikenessData === null) {
+            // TODO: !!!! [🧠] This error will happen - think about how to solve it - ?fallback to just pure random OR hardcoded likes/loves
+            throw new Error(`No reactions found for user ${author}`);
+        }
+        const wallpapersWithLikeness = wallpapersWithLikenessData.map(({ likedStatus, Wallpaper }) => ({
+            likeness: likedStatusToLikeness(likedStatus as keyof typeof LikedStatus),
+            ...hydrateWallpaper(Wallpaper as any),
+        }));
 
         const { data: wallpapersToPickData } = await getSupabaseForServer()
             .from('Wallpaper_random')
