@@ -11,7 +11,7 @@
         "url": "https://github.com/hejny/aiai"
     },
     "scripts": {
-        "dev": "npx chokidar \"locales/**/*.yml\" -c \"npx kill-port 4444 && next dev -p 4444\" --initial --debounce 500",
+        "dev": "npx chokidar \"locales/**/*.yml\" -c \"npx kill-port 4444 && NODE_OPTIONS='--inspect' next dev -p 4444\" --initial --debounce 500",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",

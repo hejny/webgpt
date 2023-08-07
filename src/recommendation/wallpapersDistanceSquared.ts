@@ -16,3 +16,8 @@ export function wallpapersDistanceSquared(wallpaper1: IWallpaperVector, wallpape
 
     return sumOfPowers;
 }
+
+
+/**
+ * TODO: [🤺] Optimize
+ */

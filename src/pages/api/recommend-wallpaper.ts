@@ -1,4 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
+import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
@@ -20,22 +22,54 @@ export default async function recommendWallpaperHandler(
             .json({ message: 'GET param author is not set or not a valid UUID' } as any /* <- [🌋]  */);
     }
 
-    const { data: wallpapers } = await getSupabaseForServer()
-        .from('Wallpaper_random')
-        .select('*')
-        .eq('isPublic', true)
-        .limit(5 /* <- TODO: Tweak this number */);
+    try {
+        const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
+            .from('Reaction')
+            .select(
+                `
+                likedStatus,
+                Wallpaper( * ) 
+            `,
+            )
+            .eq('author', author);
+        // <- TODO: [🤺]> .limit(5 /* <- TODO: Tweak this number */);
 
-    const recommendLeverOfWallpaper = (
-        wallpaper: IWallpaperSerialized /* !!! [1] Database['public']['Tables']['Wallpaper']['Row']*/ /*NullablePartial<IWallpaperSerialized>*/,
-    ): number => {
-        // TODO: !!!! Implement (with wallpaper) + create new util (and subutils) pickMostRecommended(options: {previousReactions, haystack})
-        return 0;
-    };
+        const wallpapersWithLikeness = wallpapersWithLikenessData as any;
 
-    wallpapers!.sort((a, b) => recommendLeverOfWallpaper(a as any) - recommendLeverOfWallpaper(b as any));
+        const { data: wallpapersToPickData } = await getSupabaseForServer()
+            .from('Wallpaper_random')
+            .select('*')
+            .eq('isPublic', true)
+            .limit(5 /* <- TODO: [🤺] Tweak this number */);
+        if (wallpapersToPickData === null) {
+            throw new Error(`No Wallpapers found in view Wallpaper_random`);
+        }
+        const wallpapersToPick = wallpapersToPickData.map((wallpaper) => hydrateWallpaper(wallpaper as any));
 
-    return response.status(200).json({ author, recommendedWallpaper: wallpapers![0], wallpapers } as any);
+        console.log({
+            // TODO: !!!! Connect Next js to debugger
+            wallpapersWithLikenessData,
+            wallpapersWithLikeness,
+            wallpapersToPickData,
+            wallpapersToPick,
+        });
+
+        const recommendedWallpaper = pickMostRecommended({
+            wallpapersWithLikeness,
+            wallpapersToPick,
+        });
+
+        return response
+            .status(200)
+            .json({ author, recommendedWallpaper, wallpapersWithLikenessData, wallpapersToPickData } as any);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        console.error(error);
+        return response.status(500).json({ message: error.message } as any /* <- [🌋]  */);
+    }
 }
 
 /* 
@@ -48,3 +82,7 @@ type NullablePartial<
 
 
 */
+
+/**
+ * TODO: [🤺] Optimize, maybe cache inputs and results
+ */

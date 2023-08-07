@@ -573,6 +573,16 @@ export type number_integer = number;
  */
 export type number_percent = number;
 
+/**
+ * Likeness of the wallpaper
+ *
+ * - 👍 is eqivalent for 1
+ * - 👎 is eqivalent for -1
+ * - ❤ is eqivalent for more than 1
+ * - etc
+ */
+export type number_likeness = number;
+
 export type number_miliseconds = number_integer;
 export type number_seconds = number;
 export type number_minutes = number;
