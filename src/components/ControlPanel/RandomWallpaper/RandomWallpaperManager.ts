@@ -1,7 +1,7 @@
 import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { NEXT_PUBLIC_URL } from '../../../../config';
-import { RandomWallpaperResponse } from '../../../pages/api/random-wallpaper';
+import { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { provideClientId } from '../../../utils/supabase/provideClientId';
@@ -37,7 +37,7 @@ export class RandomWallpaperManager {
         this.preloadGalleryElement.style.pointerEvents = 'none';
         document.body.appendChild(this.preloadGalleryElement);
         this.prefetchingRandomWallpapers = this.getStorage().map((randomWallpaper) =>
-            this.preloadRandomWallpaper(randomWallpaper),
+            this.preloadWallpaper(randomWallpaper),
         );
 
         /* not await */ this.prefetchIfNeeded();
@@ -48,34 +48,34 @@ export class RandomWallpaperManager {
 
     private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaperInStorage> {
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientId()}`);
-        const { randomWallpaper } = (await response.json()) as RandomWallpaperResponse;
+        const { recommendedWallpaper } = (await response.json()) as RecommendWallpaperResponse;
 
         if (isPrefetch) {
             this.inStorage((randomWallpapers) => {
-                const { id, src } = randomWallpaper;
+                const { id, src } = recommendedWallpaper;
                 randomWallpapers.push({ id, src });
                 return randomWallpapers;
             });
         }
 
         console.info(
-            `🎲 ${isPrefetch ? 'Pre-' : ''}Fetched random wallpaper${
+            `🎲 ${isPrefetch ? 'Pre-' : ''}Fetched recommended wallpaper${
                 isPrefetch ? ` (${this.prefetchingRandomWallpapers.length}/${this.getPrefetchCount()})` : ''
             }`,
-            { randomWallpaper },
+            { recommendedWallpaper },
         );
 
-        await this.preloadRandomWallpaper(randomWallpaper);
-        return randomWallpaper;
+        await this.preloadWallpaper(recommendedWallpaper);
+        return recommendedWallpaper;
     }
 
-    private async preloadRandomWallpaper(randomWallpaper: IWallpaperInStorage) {
+    private async preloadWallpaper(wallpaper: IWallpaperInStorage) {
         // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
-        await fetch(`/${randomWallpaper.id}`);
+        await fetch(`/${wallpaper.id}`);
 
         // Note: Pre-loading the wallpaper image to make the transition smoother
         const imageElement = new Image();
-        imageElement.src = randomWallpaper.src;
+        imageElement.src = wallpaper.src;
         imageElement.style.height = '10px';
         this.preloadGalleryElement.appendChild(imageElement);
 
@@ -87,7 +87,7 @@ export class RandomWallpaperManager {
             imageElement.addEventListener('load', onLoad);
         });
 
-        return randomWallpaper;
+        return wallpaper;
     }
 
     private getStorage(): Array<IWallpaperInStorage> {
