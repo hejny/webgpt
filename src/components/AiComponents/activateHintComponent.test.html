@@ -1,0 +1,53 @@
+<!--
+Note: This file is to dest design of hint labels
+    @generator 
+-->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #fff;
+        background-color: #444;
+    }
+</style>
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, illum blanditiis. Eius ea, eos accusamus nihil impedit
+debitis reiciendis, natus sequi molestiae sapiente vel illum laborum consequuntur officia, vero neque. Blah blah blah,
+blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah
+blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah
+blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah,
+
+<div style="outline: 1px dotted rgb(255, 38, 38); position: fixed; bottom: 200px; right: 300px">
+    <!--
+    Rectangle label with text
+        - Rouded corners
+        - Bubble like shape
+        - Arrow pointing to the element to the right
+    -->
+
+    <svg width="auto" height="auto" viewBox="20 0 220 90" xmlns="http://www.w3.org/2000/svg">
+        <!-- Combined shape: Bubble with arrow -->
+        <path
+            d="M20 30
+                 Q20 0, 50 0
+                 L200 0
+                 Q230 0, 230 30
+                 L230 60
+                 Q230 90, 200 90
+                 L50 90
+                 Q20 90, 20 60
+                 Z
+                 M200 45
+                 L220 33.75
+                 L240 45
+                 L220 56.25
+                 Z"
+            fill="#f0f0f0"
+        />
+
+        <!-- Text inside the combined shape -->
+        <text x="60" y="50" font-family="Barlow Condensed" font-size="20" fill="black">Bubble Texts</text>
+    </svg>
+</div>

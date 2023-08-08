@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import styles from './activateHintComponent.module.css';
 
 export function activateHintComponent(hintTarget: HTMLElement) {
@@ -7,35 +8,47 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     }
     hintTarget.removeAttribute('title');
 
-    const hintContainer = document.createElement('div');
-    hintContainer.className = styles.container;
+    const hint = document.createElement('div');
+    document.body.appendChild(
+        hint, // <- TODO: [🧠] Is this better to append in body or hintElement
+    );
+
+    hint.className = styles.hint;
 
     const { top, left, width, height } = hintTarget.getBoundingClientRect();
     const right = document.body.clientWidth - left;
     const bottom = document.body.clientHeight - top;
 
-    hintContainer.style.position = 'fixed';
-    hintContainer.style.bottom = bottom - height / 2 + 'px';
-    hintContainer.style.right = right + 'px';
-    document.body.appendChild(hintContainer /* <- TODO: [🧠] Is this better to append in body or hintElement */);
+    hint.style.position = 'fixed';
+    hint.style.bottom = bottom - height / 2 + 'px';
+    hint.style.right = right + 'px';
 
-    const hintTextElement = document.createElement('div');
-    hintTextElement.className = styles.text;
-    hintTextElement.textContent = hintText;
-    hintContainer.appendChild(hintTextElement);
+    hint.innerHTML += spaceTrim(
+        // Note: Rectangle label with text, rouded corners and arrow pointing to the element to the right
+        `
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                
+            >
+                <rect x="0" y="0" width="100" height="100" rx="10" ry="10" fill="white" />
+                <text x="50" y="50" dominant-baseline="middle" text-anchor="middle" font-size="20px" fill="black">${hintText}</text>
+                <path d="M 100 50 L 90 50 L 90 40 L 80 50 L 90 60 L 90 50 L 100 50" fill="black" />
+            </svg>
 
-    const hintArrow = document.createElement('div');
-    hintArrow.className = styles.arrow;
-    hintContainer.appendChild(hintArrow);
+        `,
+    );
 
-    const hintHighlightElement = document.createElement('div');
-    hintHighlightElement.className = styles.highlight;
-    hintContainer.appendChild(hintHighlightElement);
-    hintHighlightElement.style.position = 'fixed';
-    hintHighlightElement.style.bottom = bottom + 'px';
-    hintHighlightElement.style.right = right + 'px';
-    hintHighlightElement.style.width = width + 'px';
-    hintHighlightElement.style.height = height + 'px';
+    const highlight = document.createElement('div');
+    document.body.appendChild(
+        highlight,
+        // <- TODO: [🧠] Is this better to append in body or hintElement
+        // <- Note: hintHighlightElement really should be sibling of hintContainer
+    );
+    highlight.className = styles.highlight;
+    highlight.style.position = 'fixed';
+    highlight.style.bottom = bottom - height + 'px';
+    highlight.style.right = right - width + 'px';
+    highlight.style.width = width + 'px';
+    highlight.style.height = height + 'px';
 
     /* 
     element.addEventListener('mouseenter', () => {

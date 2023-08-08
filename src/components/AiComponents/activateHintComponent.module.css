@@ -1,8 +1,4 @@
-/*
-!!!! Cleanup file
-*/
-
-.container {
+.hint {
     /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
@@ -23,55 +19,30 @@
     */
 }
 
-.arrow {
-    /*/
-    outline: 1px dotted rgb(103, 223, 79);
-    /**/
-
-    width: 0;
-    height: 0;
-    /*
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #fff;
-    */
-
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid rgba(0, 0, 0, 0.6);
-    border-right: 5px solid transparent;
-}
-
-.text {
-    /*/
-    outline: 1px dotted rgb(103, 223, 79);
-    /**/
-
-    width: max-content;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    text-align: right;
-
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    /*
-    writing-mode: vertical-lr;
-    */
-}
-
 .highlight {
     /*/
     outline: 1px dotted rgb(79, 194, 223);
     /**/
 
-    border: 2px solid red;
+    z-index: 30000 /* <- [🔝] Global order of showcase */;
+
+    border: 1px dashed #ffffff;
+    border-radius: 5px;
 }
 
 @media only screen and (min-width: 900px) {
     /* TODO: Show hints for bigger screens */
-    .container {
+    .hint,
+    .highlight {
         display: none;
     }
 }
+
+/*
+TODO: !!! This file should be out of the export AND maybe prefixed with ai-components
+*/
+
+/**
+ * TODO: !!!! Cleanup file
+ * TODO: !!!! This file should be out of the export AND maybe prefixed with ai-components
+ */
