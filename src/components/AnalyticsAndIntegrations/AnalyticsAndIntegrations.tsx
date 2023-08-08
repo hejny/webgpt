@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import spaceTrim from 'spacetrim';
 
 interface AnalyticsAndIntegrationsProps {}
@@ -29,6 +30,8 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
             />
             {/* ===[ /SmartLook ]=== */}
 
+            {/* ================================================================================= */}
+
             {/* ===[ Senry: ]=== */}
             {/* Note: Installing sentry via browser <script> to separate main bundle and external service */}
             {/* The sentry script is tinytiny so it is ok to be sync */}
@@ -39,6 +42,26 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 crossOrigin="anonymous"
             />
             {/* ===[ /Senry ]=== */}
+
+            {/* ================================================================================= */}
+
+            {/* ===[ Google Analytics: ]=== */}
+            {/* TODO: !!!! This should not be in the export */}
+            {/* TODO: !!!! In export there CAN be an option for add misc integrations */}
+            {/* TODO: !!! Unhardcode GA_MEASUREMENT_ID */}
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-LWLFJ4PBRH" />
+            <Script id="google-analytics">
+                {spaceTrim(`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+            
+                    gtag('config', 'G-LWLFJ4PBRH');
+                `)}
+            </Script>
+            {/* ===[ /Google Analytics ]=== */}
+
+            {/* ================================================================================= */}
 
             {/* ===[ Log: ]=== */}
             <script
@@ -55,7 +78,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
 }
 
 /**
- * TODO: !! Maybe use <InlineScript/> component
+ * TODO: !! Maybe use <InlineScript/> and/or <ExportCommentedBlock/> component
  * TODO: !! Also isCookiesAllowed - only activate if cookies are allowed
  * TODO: !!! Cleanup all console logs
  * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key

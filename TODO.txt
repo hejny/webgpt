@@ -1,5 +1,4 @@
 TODO: !!! Logo (+favicon) of 1-2i in loading
-TODO: !!!!! Setup Google Analytics
 TODO: !!! Make FB ad for one generated page
 TODO: !!! Add more generated wallpapers
 TODO: Add things from Ainautes
