@@ -14,7 +14,7 @@ export function extractFontsFromContent(content: string_markdown | string_html):
     );
 
     // Define a regular expression to match the font-family property in the style attribute
-    let regex = /font-family:\s*(['"]?)([^;,'"]+)\1/g;
+    let regex = /font-family:\s*(?<quote>['"]?)([^;,'"]+)\k<quote>/g;
 
     // Loop through all the matches in the content
     while (true) {
