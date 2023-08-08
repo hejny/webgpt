@@ -7,6 +7,8 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
+import { activateHintComponent } from '../AiComponents/activateHintComponent';
+import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
@@ -22,7 +24,8 @@ export function ControlPanel() {
     const [wallpaper, modifyWallpaper] = useWallpaper();
 
     return (
-        <div
+        <AiComponentsRoot
+            usedComponents={{ hint: activateHintComponent }}
             className={classNames(
                 'aiai-controls',
                 styles.ControlPanel,
@@ -88,6 +91,7 @@ export function ControlPanel() {
                         mode="PRESENTATION"
                         className={classNames(/*'button',*/ styles.button)}
                         title="Presentation mode"
+                        data-ai-component="hint"
                     >
                         <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                         {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
@@ -116,7 +120,7 @@ export function ControlPanel() {
                     {/* <MarkdownContent content="💬" isUsingOpenmoji  /> * /}
                 </WallpaperLink>*/}
             </div>
-        </div>
+        </AiComponentsRoot>
     );
 }
 

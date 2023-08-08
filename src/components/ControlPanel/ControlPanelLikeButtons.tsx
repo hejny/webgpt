@@ -13,7 +13,7 @@ export function ControlPanelLikeButtons() {
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
 
     return (
-        <div title="React on web" className={styles.group}>
+        <div title="React on web" data-ai-component="hint" className={styles.group}>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             {['LOVE', 'LIKE'].includes(likedStatus) && (
                 <div className={styles.group}>
