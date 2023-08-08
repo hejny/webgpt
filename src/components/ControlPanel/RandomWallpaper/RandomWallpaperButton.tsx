@@ -36,7 +36,7 @@ title="Show next page"
             */
 
             onClick={consumeRandomWallpaper}
-           
+
             style={
                 {
                     // ...minorButtonStyle,

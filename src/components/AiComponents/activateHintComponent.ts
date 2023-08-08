@@ -27,7 +27,7 @@ export function activateHintComponent(hintTarget: HTMLElement) {
         // Note: Rectangle label with text, rouded corners and arrow pointing to the element to the right
         `
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
-                
+
             >
                 <rect x="0" y="0" width="100" height="100" rx="10" ry="10" fill="white" />
                 <text x="50" y="50" dominant-baseline="middle" text-anchor="middle" font-size="20px" fill="black">${hintText}</text>
@@ -50,7 +50,7 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     highlight.style.width = width + 'px';
     highlight.style.height = height + 'px';
 
-    /* 
+    /*
     element.addEventListener('mouseenter', () => {
         hintContainer.style.opacity = '1';
     });
