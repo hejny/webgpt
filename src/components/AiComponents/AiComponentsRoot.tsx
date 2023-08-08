@@ -1,6 +1,7 @@
 import { ReactNode, useContext } from 'react';
 import { Promisable } from 'type-fest';
 import { ExportContext } from '../../utils/hooks/ExportContext';
+import { isPrivateNetwork } from '../../utils/validators/isPrivateNetwork';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
@@ -26,8 +27,13 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                     }
 
                     for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
+                        let logNote = '';
                         if (componentElement.getAttribute('data-toggle-activated')) {
-                            continue;
+                            if (!isPrivateNetwork(window.location.href)) {
+                                continue;
+                            } else {
+                                logNote = ' (double-activated on local development)';
+                            }
                         }
 
                         const componentType = componentElement.getAttribute('data-ai-component');
@@ -37,7 +43,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                             throw new Error(`Unknown component "${componentType}"`);
                         }
 
-                        console.info(`🌟 Activating ${componentType} component`, componentElement);
+                        console.info(`🌟 Activating ${componentType} component${logNote}`, componentElement);
 
                         componentActivator(componentElement as HTMLElement);
 
