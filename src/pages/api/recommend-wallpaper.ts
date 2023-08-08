@@ -53,7 +53,7 @@ export default async function recommendWallpaperHandler(
             .from('Wallpaper_random')
             .select('*')
             .eq('isPublic', true)
-            .limit(5 /* <- TODO: [🤺] Tweak this number */);
+            .limit(10 /* <- TODO: [🤺] Tweak this number */);
         if (wallpapersToPickData === null) {
             throw new Error(`No Wallpapers found in view Wallpaper_random`);
         }
