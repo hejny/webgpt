@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -16,8 +16,9 @@ export function ColorsPanel(props: ColorsPanelProps) {
     const [wallpaper, modifyWallpaper] = useWallpaper();
     const lastSavedWallpaper = useLastSavedWallpaper();
 
-    // TODO: Maybe make hook useTemporaryToggle
+    // TODO: Maybe make hook useTemporaryToggle - simmilar to hook useClickOutside
     const [isOpen, setOpen] = useState(false);
+    const controlsRef = useRef<HTMLDivElement | null>(null);
     useEffect(() => {
         if (!isOpen) {
             return;
@@ -27,11 +28,22 @@ export function ColorsPanel(props: ColorsPanelProps) {
             setOpen(false);
         }, 5000);
 
+        const outclickHandler = (event: MouseEvent) => {
+            if (!(event.target instanceof HTMLElement)) {
+                return;
+            }
+            if (controlsRef.current && controlsRef.current.contains(event.target)) {
+                return;
+            }
+
+            setOpen(false);
+        };
+        window.document.addEventListener('click', outclickHandler);
+
         return () => {
             clearTimeout(timeout);
+            window.document.removeEventListener('click', outclickHandler);
         };
-
-        // !!!!! When opening <ColorsPanel/> supress opening of the <ColorInput/> (<ColorInput/> in opened on the subsequent click)
     }, [isOpen, setOpen]);
 
     return (
@@ -41,7 +53,15 @@ export function ColorsPanel(props: ColorsPanelProps) {
                 styles.ColorsPanel,
                 isOpen && styles.open,
             )}
-            onClick={() => setOpen(true)}
+            ref={controlsRef}
+            onClickCapture={(event) => {
+                if (isOpen) {
+                    return;
+                }
+
+                event.stopPropagation();
+                setOpen(true);
+            }}
             onPointerMove={() => setOpen(true)}
         >
             <div className={classNames(styles.colorPickerWrapper)} style={{ zIndex: 100 }}>
