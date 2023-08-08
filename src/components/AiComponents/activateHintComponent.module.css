@@ -61,6 +61,14 @@
     */
 }
 
+.highlight {
+    /*/
+    outline: 1px dotted rgb(79, 194, 223);
+    /**/
+
+    border: 2px solid red;
+}
+
 @media only screen and (min-width: 900px) {
     /* TODO: Show hints for bigger screens */
     .container {

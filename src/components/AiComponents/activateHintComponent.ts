@@ -1,16 +1,16 @@
 import styles from './activateHintComponent.module.css';
 
-export function activateHintComponent(hintElement: HTMLElement) {
-    const hintText = hintElement.getAttribute('title');
+export function activateHintComponent(hintTarget: HTMLElement) {
+    const hintText = hintTarget.getAttribute('title');
     if (!hintText) {
         throw new Error('Hint must have title attribute');
     }
-    hintElement.removeAttribute('title');
+    hintTarget.removeAttribute('title');
 
     const hintContainer = document.createElement('div');
     hintContainer.className = styles.container;
 
-    const { top, left, height } = hintElement.getBoundingClientRect();
+    const { top, left, width, height } = hintTarget.getBoundingClientRect();
     const right = document.body.clientWidth - left;
     const bottom = document.body.clientHeight - top;
 
@@ -22,12 +22,20 @@ export function activateHintComponent(hintElement: HTMLElement) {
     const hintTextElement = document.createElement('div');
     hintTextElement.className = styles.text;
     hintTextElement.textContent = hintText;
-
     hintContainer.appendChild(hintTextElement);
 
     const hintArrow = document.createElement('div');
     hintArrow.className = styles.arrow;
     hintContainer.appendChild(hintArrow);
+
+    const hintHighlightElement = document.createElement('div');
+    hintHighlightElement.className = styles.highlight;
+    hintContainer.appendChild(hintHighlightElement);
+    hintHighlightElement.style.position = 'fixed';
+    hintHighlightElement.style.bottom = bottom + 'px';
+    hintHighlightElement.style.right = right + 'px';
+    hintHighlightElement.style.width = width + 'px';
+    hintHighlightElement.style.height = height + 'px';
 
     /* 
     element.addEventListener('mouseenter', () => {
