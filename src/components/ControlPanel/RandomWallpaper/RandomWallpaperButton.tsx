@@ -11,9 +11,7 @@ export function RandomWallpaperButton() {
         return (
             <div
                 className={classNames(/*'button',*/ styles.button)}
-title="Show next page"
-                x-title="TODO: Another one not available yet - loading..."
-                data-ai-component="hint"
+                title="Another one not available yet - loading..."
                 style={{
                     opacity: 0.5,
                     cursor: 'not-allowed',
@@ -29,14 +27,12 @@ title="Show next page"
         <Link
             className={classNames(/*'button',*/ styles.button)}
             title="Show next page"
-            data-ai-component="hint"
             href={`/${randomWallpaper.id}`}
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible
                      + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
             */
 
             onClick={consumeRandomWallpaper}
-           
             style={
                 {
                     // ...minorButtonStyle,
