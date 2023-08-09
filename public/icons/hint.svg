@@ -5,27 +5,19 @@ Rectangle label with text
     - Bubble like shape
     - Arrow pointing to the element to the right
 -->
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+    <g fill="#dd0000" stroke="#00ff00">
 
 
-<svg viewBox="20 0 220 90" xmlns="http://www.w3.org/2000/svg">
-    <!-- Combined shape: Bubble with arrow -->
-    <path
-        d="M20 30
-             Q20 0, 50 0
-             L200 0
-             Q230 0, 230 30
-             L230 60
-             Q230 90, 200 90
-             L50 90
-             Q20 90, 20 60
-             Z
-             M200 45
-             L220 33.75
-             L240 45
-             L220 56.25
-             Z"
-        fill="#ffffff"
-        stroke="#ff0000"
-    />
+        <rect x="0" y="0" width="calc(100% - 10px)" height="100%" rx="5" ry="5" />
 
+
+        <svg x="calc(100% - 7px)" y="calc(50% - 5px)">
+            <g transform="rotate(45)">
+                <rect width="10" height="10" />
+            </g>
+        </svg>
+
+    </g>
 </svg>
