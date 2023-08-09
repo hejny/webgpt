@@ -37,7 +37,7 @@ describe('mapLinksInHtml', () => {
         ).toBe(
             spaceTrim(
                 `
-                        <a href="mapped">link</a>
+                        <a href="mapped" data-original-href="original">link</a>
             `,
             ),
         );
@@ -45,21 +45,23 @@ describe('mapLinksInHtml', () => {
 
     it('should map links in multiple formats', () => {
         expect(mapLinksInHtml(`<a href="https://example.com/1">`, (oldHref) => oldHref + '-mapped')).toBe(
-            `<a href="https://example.com/1-mapped">`,
+            `<a href="https://example.com/1-mapped" data-original-href="https://example.com/1">`,
         );
         expect(
             mapLinksInHtml(`<a href="https://example.com/1" target="_blank">`, (oldHref) => oldHref + '-mapped'),
-        ).toBe(`<a href="https://example.com/1-mapped" target="_blank">`);
+        ).toBe(`<a href="https://example.com/1-mapped" data-original-href="https://example.com/1" target="_blank">`);
 
         expect(
             mapLinksInHtml(
                 `<a href="https://example.com/1" target="_blank" class="aaaa">`,
                 (oldHref) => oldHref + '-mapped',
             ),
-        ).toBe(`<a href="https://example.com/1-mapped" target="_blank" class="aaaa">`);
+        ).toBe(
+            `<a href="https://example.com/1-mapped" data-original-href="https://example.com/1" target="_blank" class="aaaa">`,
+        );
 
         expect(mapLinksInHtml(`<a href="https://example.com/1">`, (oldHref) => oldHref + '?foo=bar')).toBe(
-            `<a href="https://example.com/1?foo=bar">`,
+            `<a href="https://example.com/1?foo=bar" data-original-href="https://example.com/1">`,
         );
 
         /*
@@ -92,9 +94,9 @@ describe('mapLinksInHtml', () => {
         ).toBe(
             spaceTrim(
                 `
-                        <a href="https://example.com/1-mapped">1</a>
-                        <a href="https://example.com/2-mapped">2</a>
-                        <a href="https://example.com/3-mapped">3</a>
+                        <a href="https://example.com/1-mapped" data-original-href="https://example.com/1">1</a>
+                        <a href="https://example.com/2-mapped" data-original-href="https://example.com/2">2</a>
+                        <a href="https://example.com/3-mapped" data-original-href="https://example.com/3">3</a>
             `,
             ),
         );

@@ -1,4 +1,3 @@
-import { normalizeTo_camelCase } from 'n12';
 import spaceTrim from 'spacetrim';
 import contact from '../../../documents/contact.md';
 import explanation from '../../../documents/explanation.html';
@@ -14,11 +13,11 @@ export const PAGES_CONTENTS: Record<string_page, string_html | string_markdown> 
     gallery,
     license,
     contact,
-    testSize,
+    'test-size': testSize,
 };
 
 export function getPageContent(page: Omit<string_page, 'index'>) {
-    let pageContent = PAGES_CONTENTS[normalizeTo_camelCase(page as string)];
+    let pageContent = PAGES_CONTENTS[page as string_page];
 
     if (pageContent === undefined) {
         // TODO: [🙈] Unite 404 content
