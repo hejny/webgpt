@@ -8,7 +8,7 @@ Note: This file is to dest design of hint labels
 
     body {
         font-family: 'Barlow Condensed', sans-serif;
-        color: #fff;
+        color: #000;
         background-color: #444;
     }
 </style>
@@ -19,35 +19,32 @@ blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, 
 blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah
 blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah, blah blah blah,
 
-<div style="outline: 1px dotted rgb(255, 38, 38); position: fixed; bottom: 200px; right: 300px">
-    <!--
-    Rectangle label with text
-        - Rouded corners
-        - Bubble like shape
-        - Arrow pointing to the element to the right
-    -->
+<div
+    style="
+        outline: 1px dotted rgb(255, 38, 38);
+        position: fixed;
+        bottom: 200px;
+        right: 300px;
+        padding: 10px;
+        background-image: url(/public/icons/hint.svg);
+        background-size: 100% 100%;
+    "
+>
+    Hello
+</div>
 
-    <svg width="auto" height="auto" viewBox="20 0 220 90" xmlns="http://www.w3.org/2000/svg">
-        <!-- Combined shape: Bubble with arrow -->
-        <path
-            d="M20 30
-                 Q20 0, 50 0
-                 L200 0
-                 Q230 0, 230 30
-                 L230 60
-                 Q230 90, 200 90
-                 L50 90
-                 Q20 90, 20 60
-                 Z
-                 M200 45
-                 L220 33.75
-                 L240 45
-                 L220 56.25
-                 Z"
-            fill="#f0f0f0"
-        />
-
-        <!-- Text inside the combined shape -->
-        <text x="60" y="50" font-family="Barlow Condensed" font-size="20" fill="black">Bubble Texts</text>
-    </svg>
+<div
+    style="
+        outline: 1px dotted rgb(255, 38, 38);
+        position: fixed;
+        top: 200px;
+        right: 300px;
+        padding: 10px;
+        font-size: 70px;
+        background-image: url(/public/icons/hint.svg);
+        /* background-image: url(/public/icons/hint.svg); */
+        background-size: 100% 100%;
+    "
+>
+    Hello world
 </div>

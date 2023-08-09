@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Rectangle label with text
+    - Rouded corners
+    - Bubble like shape
+    - Arrow pointing to the element to the right
+-->
+
+
+<svg viewBox="20 0 220 90" xmlns="http://www.w3.org/2000/svg">
+    <!-- Combined shape: Bubble with arrow -->
+    <path
+        d="M20 30
+             Q20 0, 50 0
+             L200 0
+             Q230 0, 230 30
+             L230 60
+             Q230 90, 200 90
+             L50 90
+             Q20 90, 20 60
+             Z
+             M200 45
+             L220 33.75
+             L240 45
+             L220 56.25
+             Z"
+        fill="#ffffff"
+        stroke="#ff0000"
+    />
+
+</svg>
