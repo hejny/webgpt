@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
+TODO: !!!!! Finish
+
 Rectangle label with text
     - Rouded corners
     - Bubble like shape
@@ -7,15 +9,15 @@ Rectangle label with text
 -->
 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
 
-    <g fill="#dd0000" stroke="#00ff00">
+    <g fill="#dd0000" stroke="#00ffff">
 
 
         <rect x="0" y="0" width="calc(100% - 10px)" height="100%" rx="5" ry="5" />
 
 
-        <svg x="calc(100% - 7px)" y="calc(50% - 5px)">
+        <svg x="calc(100% - 10px)" y="calc(50% - 5px)">
             <g transform="rotate(45)">
-                <rect width="10" height="10" />
+                <rect width="15" height="15" />
             </g>
         </svg>
 
