@@ -4,7 +4,6 @@ import packageJson from './package.json';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { provideClientId } from './src/utils/supabase/provideClientId';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const APP_VERSION = packageJson.version;
@@ -24,8 +23,9 @@ const NODE_ENV = config.get('NODE_ENV').value;
 export const IS_PRODUCTION = NODE_ENV?.toUpperCase() === 'production';
 export const IS_DEVELOPMENT = NODE_ENV?.toUpperCase() === 'development';
 
+// TODO: Also log " client ${provideClientId()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
 console.info(
-    `%c${APP_NAME} ${NODE_ENV} mode in version ${APP_VERSION} client ${provideClientId()}`,
+    `%c${APP_NAME} ${NODE_ENV} mode in version ${APP_VERSION}`,
     `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
 );
 
