@@ -4,9 +4,11 @@ import packageJson from './package.json';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
+import { provideClientId } from './src/utils/supabase/provideClientId';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
-export const VERSION = packageJson.version;
+export const APP_VERSION = packageJson.version;
+export const APP_NAME = packageJson.name;
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -17,6 +19,15 @@ const config = ConfigChecker.from({
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });
+
+const NODE_ENV = config.get('NODE_ENV').value;
+export const IS_PRODUCTION = NODE_ENV?.toUpperCase() === 'production';
+export const IS_DEVELOPMENT = NODE_ENV?.toUpperCase() === 'development';
+
+console.info(
+    `%c${APP_NAME} ${NODE_ENV} mode in version ${APP_VERSION} client ${provideClientId()}`,
+    `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
+);
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
 

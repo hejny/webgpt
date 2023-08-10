@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { VERSION } from '../../../config';
+import { APP_VERSION } from '../../../config';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
@@ -17,7 +17,7 @@ export default async function aboutHandler(request: NextApiRequest, response: Ne
         .select('*', { count: 'exact', head: true });
 
     return response.status(200).json({
-        version: VERSION,
+        version: APP_VERSION,
         hardcodedWallpapersCount,
         dynamicWallpapersCount,
     });
