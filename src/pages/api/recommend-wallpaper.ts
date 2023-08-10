@@ -1,10 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { IS_DEVELOPMENT } from '../../../config';
 import { likedStatusToLikeness } from '../../recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
-import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
-import { IWallpaperSerialized } from '../../utils/IWallpaper';
+import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
+import { number_likeness } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 export interface RecommendWallpaperResponse {
@@ -25,29 +26,31 @@ export default async function recommendWallpaperHandler(
     }
 
     try {
-        const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
-            .from('Reaction')
-            .select(
-                `
-                likedStatus,
-                createdAt,
-                Wallpaper( * ) 
-            `,
-            )
-            .eq('author', author)
-            .order('createdAt', { ascending: false })
-            // <- TODO: !!!! [🤺][🧠] Take ONLY current reactions NOT overwritten ones
-            // <- TODO: !!!  [🤺]     Allow older LOVE reactions
-            // <- TODO: !!!! [🤺]     Filter here NONE and NEUTRAL reactions
-            .limit(10 /* <- TODO:  [🤺] Tweak this number */);
-        if (wallpapersWithLikenessData === null) {
-            // TODO: !!!! [🧠] This error will happen - think about how to solve it - ?fallback to just pure random OR hardcoded likes/loves
-            throw new Error(`No reactions found for user ${author}`);
+        const wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }> = [];
+        for (const likedStatus of ['LOVE', 'LIKE', 'DISLIKE'] as const) {
+            const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
+                .from('Reaction')
+                .select(
+                    `
+                        createdAt,
+                        Wallpaper( * ) 
+                    `,
+                )
+                .eq('author', author)
+                .eq('likedStatus', likedStatus)
+                .order('createdAt', { ascending: false })
+                // <- TODO: !!!! [🤺][🧠] Take ONLY current reactions NOT overwritten ones
+                .limit(10 /* <- TODO:  [🤺] Tweak this number */);
+
+            const likeness = likedStatusToLikeness(likedStatus);
+
+            for (const { Wallpaper } of wallpapersWithLikenessData || []) {
+                wallpapersWithLikeness.push({
+                    likeness,
+                    ...hydrateWallpaper(Wallpaper as any),
+                });
+            }
         }
-        const wallpapersWithLikeness = wallpapersWithLikenessData.map(({ likedStatus, Wallpaper }) => ({
-            likeness: likedStatusToLikeness(likedStatus as keyof typeof LikedStatus),
-            ...hydrateWallpaper(Wallpaper as any),
-        }));
 
         const { data: wallpapersToPickData } = await getSupabaseForServer()
             .from('Wallpaper_random')
@@ -59,23 +62,20 @@ export default async function recommendWallpaperHandler(
         }
         const wallpapersToPick = wallpapersToPickData.map((wallpaper) => hydrateWallpaper(wallpaper as any));
 
-        /*/
-        console.log({
-            wallpapersWithLikenessData,
-            wallpapersWithLikeness,
-            wallpapersToPickData,
-            wallpapersToPick,
-        });
-        /**/
+        if (IS_DEVELOPMENT) {
+            console.log({
+                wallpapersWithLikeness,
+                wallpapersToPickData,
+                wallpapersToPick,
+            });
+        }
 
         const recommendedWallpaper = pickMostRecommended({
             wallpapersWithLikeness,
             wallpapersToPick,
         });
 
-        return response
-            .status(200)
-            .json({ author, recommendedWallpaper, wallpapersWithLikenessData, wallpapersToPickData } as any);
+        return response.status(200).json({ recommendedWallpaper } as any);
     } catch (error) {
         if (!(error instanceof Error)) {
             throw error;
