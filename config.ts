@@ -22,13 +22,15 @@ const config = ConfigChecker.from({
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
 export const IS_DEVELOPMENT = isPrivateNetwork(
-    NEXT_PUBLIC_URL.href,
+    NEXT_PUBLIC_URL.hostname,
 ); /* <- TODO: Maybe pass NODE_ENV and not assume that local is automatically dev */
 export const IS_PRODUCTION = !IS_DEVELOPMENT;
 
+console.log({ NEXT_PUBLIC_URL, IS_DEVELOPMENT, IS_PRODUCTION });
+
 // TODO: Also log " client ${provideClientId()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
 console.info(
-    `%c${APP_NAME} ${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
+    `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
     `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
 );
 

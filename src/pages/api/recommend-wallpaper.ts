@@ -1,11 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IS_DEVELOPMENT } from '../../../config';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../config';
 import { likedStatusToLikeness } from '../../recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
+import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { number_likeness } from '../../utils/typeAliases';
+import { number_likeness, string_url } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 export interface RecommendWallpaperResponse {
@@ -26,6 +27,7 @@ export default async function recommendWallpaperHandler(
     }
 
     try {
+        const previousReactions: Array<{ url: string_url; likedStatus: keyof typeof LikedStatus }> = [];
         const wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }> = [];
         for (const likedStatus of ['LOVE', 'LIKE', 'DISLIKE'] as const) {
             const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
@@ -45,6 +47,10 @@ export default async function recommendWallpaperHandler(
             const likeness = likedStatusToLikeness(likedStatus);
 
             for (const { Wallpaper } of wallpapersWithLikenessData || []) {
+                previousReactions.push({
+                    url: NEXT_PUBLIC_URL.href + Wallpaper!.id,
+                    likedStatus,
+                });
                 wallpapersWithLikeness.push({
                     likeness,
                     ...hydrateWallpaper(Wallpaper as any),
@@ -75,7 +81,13 @@ export default async function recommendWallpaperHandler(
             wallpapersToPick,
         });
 
-        return response.status(200).json({ recommendedWallpaper } as any);
+        return response.status(200).json({
+            recommendedWallpaper,
+            debug: {
+                // TODO: !!! NEXT_PUBLIC_DEBUG
+                previousReactions,
+            },
+        } as any);
     } catch (error) {
         if (!(error instanceof Error)) {
             throw error;
