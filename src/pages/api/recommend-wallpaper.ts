@@ -59,13 +59,14 @@ export default async function recommendWallpaperHandler(
         }
         const wallpapersToPick = wallpapersToPickData.map((wallpaper) => hydrateWallpaper(wallpaper as any));
 
+        /*/
         console.log({
-            // TODO: !!!! Connect Next js to debugger
             wallpapersWithLikenessData,
             wallpapersWithLikeness,
             wallpapersToPickData,
             wallpapersToPick,
         });
+        /**/
 
         const recommendedWallpaper = pickMostRecommended({
             wallpapersWithLikeness,
@@ -84,17 +85,6 @@ export default async function recommendWallpaperHandler(
         return response.status(500).json({ message: error.message } as any /* <- [🌋]  */);
     }
 }
-
-/* 
-!!! [1]
-type NullablePartial<
-    T,
-    NK extends keyof T = { [K in keyof T]: null extends T[K] ? K : never }[keyof T],
-    NP = Partial<Pick<T, NK>> & Pick<T, Exclude<keyof T, NK>>,
-> = { [K in keyof NP]: NP[K] };
-
-
-*/
 
 /**
  * TODO: [🤺] Optimize, maybe cache inputs and results
