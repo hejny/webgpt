@@ -12,14 +12,24 @@ Rectangle label with text
     <g fill="#dd0000" stroke="#00ffff">
 
 
-        <rect x="0" y="0" width="calc(100% - 10px)" height="100%" rx="5" ry="5" />
-
-
-        <svg x="calc(100% - 10px)" y="calc(50% - 5px)">
+        <svg x="calc(100% - 10px)" y="calc(50% - 10px)">
             <g transform="rotate(45)">
                 <rect width="15" height="15" />
             </g>
         </svg>
 
+
+        <rect
+            x="0"
+            y="0"
+            width="calc(100% - 10px)"
+            height="100%"
+            rx="10"
+            ry="10"
+        />
+
+
     </g>
+
+
 </svg>
