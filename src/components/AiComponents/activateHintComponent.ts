@@ -1,4 +1,3 @@
-import spaceTrim from 'spacetrim';
 import styles from './activateHintComponent.module.css';
 
 export function activateHintComponent(hintTarget: HTMLElement) {
@@ -12,8 +11,9 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     document.body.appendChild(
         hint, // <- TODO: [🧠] Is this better to append in body or hintElement
     );
+    hint.innerHTML = hintText;
 
-    hint.className = styles.hint;
+    hint.className = styles.hint /* <- !!!! Css file will be removed */;
 
     const { top, left, width, height } = hintTarget.getBoundingClientRect();
     const right = document.body.clientWidth - left;
@@ -22,33 +22,25 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     hint.style.position = 'fixed';
     hint.style.bottom = bottom - height / 2 + 'px';
     hint.style.right = right + 'px';
+    hint.style.padding = '10px';
+    hint.style.paddingRight = '20px';
+    hint.style.color = '#000000';
+    hint.style.backgroundImage = 'url(/public/icons/hint.svg)';
+    hint.style.backgroundSize = '100% 100%';
 
-    hint.innerHTML += spaceTrim(
-        // Note: Rectangle label with text, rouded corners and arrow pointing to the element to the right
-        `
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
-                
-            >
-                <rect x="0" y="0" width="100" height="100" rx="10" ry="10" fill="white" />
-                <text x="50" y="50" dominant-baseline="middle" text-anchor="middle" font-size="20px" fill="black">${hintText}</text>
-                <path d="M 100 50 L 90 50 L 90 40 L 80 50 L 90 60 L 90 50 L 100 50" fill="black" />
-            </svg>
-
-        `,
-    );
-
+    const highlightPadding = 5 /* <- TODO: !!!! [🧠] Tweak */;
     const highlight = document.createElement('div');
     document.body.appendChild(
         highlight,
         // <- TODO: [🧠] Is this better to append in body or hintElement
         // <- Note: hintHighlightElement really should be sibling of hintContainer
     );
-    highlight.className = styles.highlight;
+    highlight.className = styles.highlight /* <- !!!! Css file will be removed */;
     highlight.style.position = 'fixed';
-    highlight.style.bottom = bottom - height + 'px';
-    highlight.style.right = right - width + 'px';
-    highlight.style.width = width + 'px';
-    highlight.style.height = height + 'px';
+    highlight.style.bottom = bottom - height - highlightPadding + 'px';
+    highlight.style.right = right - width - highlightPadding + 'px';
+    highlight.style.width = width + 2 * highlightPadding + 'px';
+    highlight.style.height = height + 2 * highlightPadding + 'px';
 
     /* 
     element.addEventListener('mouseenter', () => {
