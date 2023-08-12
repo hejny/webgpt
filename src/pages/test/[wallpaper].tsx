@@ -1,7 +1,6 @@
 import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { string_wallpaper_id } from '../../utils/typeAliases';
@@ -20,12 +19,15 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     const prerenderWallpapersIds = new Set<string_wallpaper_id>();
 
+    /*/
     for (const wallpaper of await getHardcodedWallpapers()) {
         prerenderWallpapersIds.add(wallpaper.id);
     }
+    /**/
 
+    /**/
     const { wallpapers: lovedWallpapers } = JSON.parse(
-        await readFile('public/mocked-api/wallpapers-min-loved.json' /* <- TODO: [✍] */, 'utf-8'),
+        await readFile('public/mocked-api/wallpapers-min-loved.json', 'utf-8'),
     ) as {
         wallpapers: Array<{
             id: string_wallpaper_id;
@@ -34,6 +36,7 @@ export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () =>
     for (const wallpaper of lovedWallpapers) {
         prerenderWallpapersIds.add(wallpaper.id);
     }
+    /**/
 
     return {
         paths: Array.from(prerenderWallpapersIds).map((wallpaperId) => `/test/${wallpaperId}`), // <- Note: indicates which pages needs be created at build time
@@ -52,9 +55,7 @@ export async function getStaticProps({
 
     // TODO: [🥽] DRY - getWallpaper
     // TODO: !!! First dynamic then hardcoded
-    const wallpapers: Array<IWallpaperSerialized> = await getHardcodedWallpapers().catch((error) => [
-        /* Note: On server, "Error: Could not find assets folder" will happen */
-    ]);
+    const wallpapers: Array<IWallpaperSerialized> = []; //await getHardcodedWallpapers().catch((error) => []);
     let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
     if (!currentWallpaper) {
         const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper);
