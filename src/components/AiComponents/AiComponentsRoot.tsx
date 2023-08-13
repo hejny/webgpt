@@ -1,7 +1,7 @@
 import { ReactNode, useContext } from 'react';
 import { Promisable } from 'type-fest';
+import { IS_PRODUCTION } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { isPrivateNetwork } from '../../utils/validators/isPrivateNetwork';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
@@ -29,11 +29,11 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                     for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
                         let logNote = '';
                         if (componentElement.getAttribute('data-toggle-activated')) {
-                            if (!isPrivateNetwork(window.location.href)) {
+                            if (IS_PRODUCTION) {
                                 continue;
-                            } else {
-                                logNote = ' (double-activated on local development)';
                             }
+
+                            logNote = ' (double-activated on local development)';
                         }
 
                         const componentType = componentElement.getAttribute('data-ai-component');
