@@ -73,7 +73,7 @@ export function Hint(props: HintProps) {
     }, [hintTargetRef, title]);
 
     return (
-        <div ref={hintTargetRef} {...{ className }}>
+        <div ref={hintTargetRef} {...{ title, className }}>
             {children}
         </div>
     );
@@ -82,8 +82,7 @@ export function Hint(props: HintProps) {
 /**
  * TODO: !!!!! Hint: Fade after interaction
  * TODO: !!!!! Hint: Save number of interactions in localStorage and reapear on next load ONLY if less then 5 interationns
- * TODO: !!!!! Hint: Reapear (or put back title) after mouseover certain time
- * TODO: !!!!! Hint: data-ai-hint-highlight with the box and color
  * TODO: !!!!! Hint: data-ai-hint-after
  * TODO: !!!! ACRY use window.document, window.localStorage,...
+ * Hint: Reapear (or put back title) after mouseover certain time
  */
