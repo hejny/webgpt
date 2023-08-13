@@ -86,7 +86,13 @@ export function ControlPanel() {
                 {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
                 {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
                 {wallpaper.saveStage === 'SAVED' && (
-                    <Hint id="control-presentation-mode" title="Presentation mode" reapearCount={0}>
+                    <Hint
+                        id="control-presentation-mode"
+                        title="Presentation mode"
+                        reapearCount={0}
+
+                        // TODO: !!!!! Change to share with multiple options - QR code, liked portfolio, presentation mode, contact
+                    >
                         <WallpaperLink mode="PRESENTATION" className={classNames(/*'button',*/ styles.button)}>
                             <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                             {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
