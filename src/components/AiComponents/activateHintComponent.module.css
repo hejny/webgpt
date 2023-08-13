@@ -13,13 +13,15 @@
     flex-direction: row;
     align-items: center;
 
-    /*
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
-    */
+    padding: 10px;
+    padding-right: 20px;
+
+    color: #000000;
+    background-image: url(/icons/hint.svg);
+    background-size: 100% 100%;
 }
 
-.highlight {
+.ai-highlight {
     /*/
     outline: 1px dotted rgb(79, 194, 223);
     /**/
@@ -38,6 +40,9 @@
     }
 }
 
+/*------------------------*/
+
 /*
-TODO: !!!!! This file should be inlined in activateHintComponent.ts
+TODO: [📳] Same structure of AI components for every component
+      [🧠] CSS modules VS Static CSS file
 */

@@ -1,4 +1,4 @@
-export function activateMenuComponent(menuElement: HTMLElement) {
+export function activateMenuComponent(menuElement: HTMLElement): void {
     const barElement = menuElement.querySelector('[data-ai-element="bar"]');
 
     if (!barElement) {

@@ -1,0 +1,10 @@
+export function removeAllEventListeners<TElement extends Element>(element: TElement): TElement {
+    const clone = element.cloneNode(true) as TElement;
+
+
+    if(!element.parentNode){
+        throw new Error('Element must have parent node');
+    }
+    element.parentNode.replaceWith(clone);
+    return clone;
+}

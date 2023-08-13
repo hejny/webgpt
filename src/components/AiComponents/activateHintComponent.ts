@@ -1,11 +1,12 @@
+import { IDestroyable } from 'destroyable';
 import styles from './activateHintComponent.module.css';
 
-export function activateHintComponent(hintTarget: HTMLElement) {
+export function activateHintComponent(hintTarget: HTMLElement):void {
     const hintText = hintTarget.getAttribute('title');
     if (!hintText) {
         throw new Error('Hint must have title attribute');
     }
-    hintTarget.removeAttribute('title');
+    // hintTarget.removeAttribute('title');
 
     const hint = document.createElement('div');
     document.body.appendChild(
@@ -13,8 +14,7 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     );
     hint.innerHTML = hintText;
 
-    hint.className = styles.hint /* <- !!!!! Css file will be removed */;
-
+    hint.className = styles.hint;
     const { top, left, width, height } = hintTarget.getBoundingClientRect();
     const right = document.body.clientWidth - left;
     const bottom = document.body.clientHeight - top;
@@ -22,25 +22,26 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     hint.style.position = 'fixed';
     hint.style.bottom = bottom - height / 2 + 'px';
     hint.style.right = right + 'px';
-    hint.style.padding = '10px';
-    hint.style.paddingRight = '20px';
-    hint.style.color = '#000000';
-    hint.style.backgroundImage = 'url(/icons/hint.svg)';
-    hint.style.backgroundSize = '100% 100%';
-
-    const highlightPadding = 5; /* <- TODO: !!!! [🧠] Tweak */
+    hint.style.width = width + 'px';
+    const highlightPadding = 5; /* <- TODO: !!!! [🧠] TO CSS + Tweak  */
     const highlight = document.createElement('div');
     document.body.appendChild(
         highlight,
         // <- TODO: [🧠] Is this better to append in body or hintElement
         // <- Note: hintHighlightElement really should be sibling of hintContainer
     );
-    highlight.className = styles.highlight /* <- !!!!! Css file will be removed */;
+    highlight.className = styles.highlight;
     highlight.style.position = 'fixed';
     highlight.style.bottom = bottom - height - highlightPadding + 'px';
     highlight.style.right = right - width - highlightPadding + 'px';
     highlight.style.width = width + 2 * highlightPadding + 'px';
     highlight.style.height = height + 2 * highlightPadding + 'px';
+
+    hintTarget.addEventListener('click', () => {
+        console.info(` 🗯 Complete hint ${hintText} `);
+        hint.style.opacity = '0';
+        highlight.style.opacity = '0';
+    });
 
     /* 
     element.addEventListener('mouseenter', () => {
