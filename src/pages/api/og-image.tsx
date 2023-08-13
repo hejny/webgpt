@@ -1,7 +1,5 @@
 import { unstable_createNodejsStream } from '@vercel/og';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
-import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 import { validateUuid } from '../../utils/validators/validateUuid';
@@ -13,25 +11,17 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
         return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
     }
 
-    // TODO: [🥽] DRY - getWallpaper
-    const wallpapers: Array<IWallpaperSerialized> = await getHardcodedWallpapers().catch((error) => [
-        /* Note: On server, "Error: Could not find assets folder" will happen */
-    ]);
-    let wallpaper = wallpapers.find(({ id }) => id === wallpaperId) || null;
-    if (!wallpaper) {
-        const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaperId);
-        if (selectResult && selectResult.data && selectResult.data.length > 0) {
-            wallpaper = {
-                ...selectResult.data[0],
-                author: validateUuid(selectResult.data[0].author),
-            };
-        }
-    }
-
-    if (!wallpaper) {
-        // TODO: On runtime there occurs an error "TypeError: response.status is not a function" (maybe because of experimental-edge?)
+    /*/
+    const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaperId);
+    if (!selectResult || !selectResult.data || selectResult.data.length === 0) {
         return response.status(404).json({ message: 'Wallpaper not found' });
     }
+
+    const wallpaper = {
+        ...selectResult.data[0],
+        author: validateUuid(selectResult.data[0].author),
+    };
+    /**/
 
     const imageStream = await unstable_createNodejsStream(
         <div

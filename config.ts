@@ -4,9 +4,12 @@ import packageJson from './package.json';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
+import { isRunningInBrowser } from './src/utils/isRunningInBrowser';
+import { isPrivateNetwork } from './src/utils/validators/isPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
-export const VERSION = packageJson.version;
+export const APP_VERSION = packageJson.version;
+export const APP_NAME = packageJson.name;
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -19,6 +22,20 @@ const config = ConfigChecker.from({
 });
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
+export const IS_DEVELOPMENT = isPrivateNetwork(
+    NEXT_PUBLIC_URL.hostname,
+); /* <- TODO: Maybe pass NODE_ENV and not assume that local is automatically dev */
+export const IS_PRODUCTION = !IS_DEVELOPMENT;
+
+if (isRunningInBrowser()) {
+    console.log({ /* !!!! Remove */ NEXT_PUBLIC_URL, IS_DEVELOPMENT, IS_PRODUCTION });
+
+    // TODO: Also log " client ${provideClientId()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
+    console.info(
+        `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
+        `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
+    );
+}
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;

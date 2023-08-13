@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import { VERCEL_GIT_COMMIT_MESSAGE, VERCEL_GIT_COMMIT_SHA, VERSION } from '../../../config';
+import { APP_VERSION, VERCEL_GIT_COMMIT_MESSAGE, VERCEL_GIT_COMMIT_SHA } from '../../../config';
 import { Section } from '../../components/Section/Section';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './TechnicalInfo.module.css';
@@ -20,7 +20,7 @@ export function TechnicalInfo() {
 
             <div className={styles.field}>
                 <span>Version:</span>
-                <span>{VERSION}</span>
+                <span>{APP_VERSION}</span>
             </div>
 
             <div className={styles.field}>

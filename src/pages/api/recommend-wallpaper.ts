@@ -1,10 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../config';
 import { likedStatusToLikeness } from '../../recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
-import { IWallpaperSerialized } from '../../utils/IWallpaper';
+import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
+import { number_likeness, string_url } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 export interface RecommendWallpaperResponse {
@@ -25,29 +27,36 @@ export default async function recommendWallpaperHandler(
     }
 
     try {
-        const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
-            .from('Reaction')
-            .select(
-                `
-                likedStatus,
-                createdAt,
-                Wallpaper( * ) 
-            `,
-            )
-            .eq('author', author)
-            .order('createdAt', { ascending: false })
-            // <- TODO: !!!! [🤺][🧠] Take ONLY current reactions NOT overwritten ones
-            // <- TODO: !!!  [🤺]     Allow older LOVE reactions
-            // <- TODO: !!!! [🤺]     Filter here NONE and NEUTRAL reactions
-            .limit(10 /* <- TODO:  [🤺] Tweak this number */);
-        if (wallpapersWithLikenessData === null) {
-            // TODO: !!!! [🧠] This error will happen - think about how to solve it - ?fallback to just pure random OR hardcoded likes/loves
-            throw new Error(`No reactions found for user ${author}`);
+        const previousReactions: Array<{ url: string_url; likedStatus: keyof typeof LikedStatus }> = [];
+        const wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }> = [];
+        for (const likedStatus of ['LOVE', 'LIKE', 'DISLIKE'] as const) {
+            const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
+                .from('Reaction')
+                .select(
+                    `
+                        createdAt,
+                        Wallpaper( * ) 
+                    `,
+                )
+                .eq('author', author)
+                .eq('likedStatus', likedStatus)
+                .order('createdAt', { ascending: false })
+                // <- TODO: !!!! [🤺][🧠] Take ONLY current reactions NOT overwritten ones
+                .limit(10 /* <- TODO:  [🤺] Tweak this number */);
+
+            const likeness = likedStatusToLikeness(likedStatus);
+
+            for (const { Wallpaper } of wallpapersWithLikenessData || []) {
+                previousReactions.push({
+                    url: NEXT_PUBLIC_URL.href + Wallpaper!.id,
+                    likedStatus,
+                });
+                wallpapersWithLikeness.push({
+                    likeness,
+                    ...hydrateWallpaper(Wallpaper as any),
+                });
+            }
         }
-        const wallpapersWithLikeness = wallpapersWithLikenessData.map(({ likedStatus, Wallpaper }) => ({
-            likeness: likedStatusToLikeness(likedStatus as keyof typeof LikedStatus),
-            ...hydrateWallpaper(Wallpaper as any),
-        }));
 
         const { data: wallpapersToPickData } = await getSupabaseForServer()
             .from('Wallpaper_random')
@@ -59,22 +68,26 @@ export default async function recommendWallpaperHandler(
         }
         const wallpapersToPick = wallpapersToPickData.map((wallpaper) => hydrateWallpaper(wallpaper as any));
 
-        console.log({
-            // TODO: !!!! Connect Next js to debugger
-            wallpapersWithLikenessData,
-            wallpapersWithLikeness,
-            wallpapersToPickData,
-            wallpapersToPick,
-        });
+        if (IS_DEVELOPMENT) {
+            console.log({
+                wallpapersWithLikeness,
+                wallpapersToPickData,
+                wallpapersToPick,
+            });
+        }
 
         const recommendedWallpaper = pickMostRecommended({
             wallpapersWithLikeness,
             wallpapersToPick,
         });
 
-        return response
-            .status(200)
-            .json({ author, recommendedWallpaper, wallpapersWithLikenessData, wallpapersToPickData } as any);
+        return response.status(200).json({
+            recommendedWallpaper,
+            debug: {
+                // TODO: !!! NEXT_PUBLIC_DEBUG
+                previousReactions,
+            },
+        } as any);
     } catch (error) {
         if (!(error instanceof Error)) {
             throw error;
@@ -84,17 +97,6 @@ export default async function recommendWallpaperHandler(
         return response.status(500).json({ message: error.message } as any /* <- [🌋]  */);
     }
 }
-
-/* 
-!!! [1]
-type NullablePartial<
-    T,
-    NK extends keyof T = { [K in keyof T]: null extends T[K] ? K : never }[keyof T],
-    NP = Partial<Pick<T, NK>> & Pick<T, Exclude<keyof T, NK>>,
-> = { [K in keyof NP]: NP[K] };
-
-
-*/
 
 /**
  * TODO: [🤺] Optimize, maybe cache inputs and results

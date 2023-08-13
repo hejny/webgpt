@@ -41,17 +41,27 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 src="https://js.sentry-cdn.com/c7941e970cfe4a899d64b41c3cecc601.min.js"
                 crossOrigin="anonymous"
             />
+            <script
+                // key="log"
+                dangerouslySetInnerHTML={{
+                    __html: spaceTrim(`
+                        console.info('🔃 Loaded Sentry');
+                    `),
+                }}
+            />
             {/* ===[ /Senry ]=== */}
 
             {/* ================================================================================= */}
 
             {/* ===[ Google Analytics: ]=== */}
-            {/* TODO: !!!! This should not be in the export */}
-            {/* TODO: !!!! In export there CAN be an option for add misc integrations */}
-            {/* TODO: !!! Unhardcode GA_MEASUREMENT_ID */}
+
+            {/* TODO: In export there CAN be an option for add misc integrations like Google Analytics, Sentry,  */}
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-LWLFJ4PBRH" />
             <Script id="google-analytics">
                 {spaceTrim(`
+
+                    console.info('🔃 Loading Google analytics');
+
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
@@ -60,26 +70,12 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 `)}
             </Script>
             {/* ===[ /Google Analytics ]=== */}
-
-            {/* ================================================================================= */}
-
-            {/* ===[ Log: ]=== */}
-            <script
-                // key="log"
-                dangerouslySetInnerHTML={{
-                    __html: spaceTrim(`
-                        console.info('🔃 Loaded scripts integrations');
-                    `),
-                }}
-            />
-            {/* ===[ /Log ]=== */}
         </>
     );
 }
 
 /**
+ * TODO: Unhardcode IDs like GA_MEASUREMENT_ID
  * TODO: !! Maybe use <InlineScript/> and/or <ExportCommentedBlock/> component
  * TODO: !! Also isCookiesAllowed - only activate if cookies are allowed
- * TODO: !!! Cleanup all console logs
- * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key
  */

@@ -37,7 +37,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <a href="https://github.com/hejny/aiai/">v{VERSION}</a>
+                    <a href="https://github.com/hejny/aiai/">v{APP_VERSION}</a>
                 </li>
                 */}
             </ul>
