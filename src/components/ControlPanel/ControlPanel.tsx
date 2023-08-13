@@ -87,18 +87,14 @@ export function ControlPanel() {
                 {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
                 {wallpaper.saveStage === 'SAVED' && (
                     <Hint id="control-presentation-mode" title="Presentation mode" reapearCount={0}>
-                        <WallpaperLink
-                            mode="PRESENTATION"
-                            className={classNames(/*'button',*/ styles.button)}
-                            // TODO: !!!!!! IS TITLE in <Hint> working title="Presentation mode"
-                        >
+                        <WallpaperLink mode="PRESENTATION" className={classNames(/*'button',*/ styles.button)}>
                             <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                             {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
                             {/* <- TODO: !!!
-                        - Open sharing modal
-                        - Show the QR code before
-                        - Save to GET params to be able to send both /share and ?mode=presentation
-                     */}
+                                - Open sharing modal
+                                - Show the QR code before
+                                - Save to GET params to be able to send both /share and ?mode=presentation
+                            */}
                         </WallpaperLink>
                     </Hint>
                 )}
