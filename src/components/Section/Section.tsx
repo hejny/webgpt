@@ -16,7 +16,7 @@ interface SectionProps {
      * Note: It is case-insensitive and will be converted to lowercase
      */
     id?: string;
-    className?: string;
+    className?: string_css_class;
 }
 
 /**

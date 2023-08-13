@@ -8,7 +8,7 @@ interface SelectProps<TValue extends string | number | symbol> {
     onChange(newValue: TValue): void;
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
-    className?: string;
+    className?: string_css_class;
     isDisabled?: boolean;
 }
 

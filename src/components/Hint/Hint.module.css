@@ -4,29 +4,35 @@
     /**/
 
     z-index: 30000 /* <- [🔝] Global order of showcase */;
+    pointer-events: none;
 
     transform: translate(0, 50%);
     /*transform: translate(-50%, -100%);*/
-    pointer-events: none;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
+    width: max-content;
     padding: 10px;
     padding-right: 20px;
 
     color: #000000;
-    background-image: url(/icons/hint.svg);
+    background-image: url(../../../public/icons/hint.svg);
+    /*               <- TODO: Is it better in Next js to reference images in css like: 
+                        - ../../../public/icons/hint.svg
+                        - (OR JUST)      /icons/hint.svg
+    */
     background-size: 100% 100%;
 }
 
-.ai-highlight {
+.highlight {
     /*/
     outline: 1px dotted rgb(79, 194, 223);
     /**/
 
     z-index: 30000 /* <- [🔝] Global order of showcase */;
+    pointer-events: none;
 
     border: 2px dashed #22d3da;
     border-radius: 5px;
@@ -39,10 +45,3 @@
         display: none;
     }
 }
-
-/*------------------------*/
-
-/*
-TODO: [📳] Same structure of AI components for every component
-      [🧠] CSS modules VS Static CSS file
-*/

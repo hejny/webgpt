@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 
@@ -13,7 +14,7 @@ export function ControlPanelLikeButtons() {
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
 
     return (
-        <div title="React on web" data-ai-component="hint" className={styles.group}>
+        <Hint title="React on web" className={styles.group}>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             {['LOVE', 'LIKE'].includes(likedStatus) && (
                 <div className={styles.group}>
@@ -84,6 +85,6 @@ export function ControlPanelLikeButtons() {
                 <Image alt="👎" src="/icons/openmoji/1F44E.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/* <MarkdownContent content="👎" isUsingOpenmoji /> */}
             </button>
-        </div>
+        </Hint>
     );
 }

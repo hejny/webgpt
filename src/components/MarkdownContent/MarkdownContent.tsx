@@ -22,7 +22,7 @@ interface IMarkdownContentProps {
     /**
      * Optional CSS class name
      */
-    className?: string;
+    className?: string_css_class;
 
     /**
      * Are tags <!--font:Poppins--> detected and applied

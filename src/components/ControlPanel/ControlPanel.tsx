@@ -7,9 +7,8 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { activateHintComponent } from '../AiComponents/activateHintComponent';
-import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
+import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
@@ -24,8 +23,8 @@ export function ControlPanel() {
     const [wallpaper, modifyWallpaper] = useWallpaper();
 
     return (
-        <AiComponentsRoot
-            usedComponents={{ hint: activateHintComponent }}
+        <div
+            // TODO: !!!!! Merge two divs together
             className={classNames(
                 'aiai-controls',
                 styles.ControlPanel,
@@ -87,20 +86,21 @@ export function ControlPanel() {
                 {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
                 {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
                 {wallpaper.saveStage === 'SAVED' && (
-                    <WallpaperLink
-                        mode="PRESENTATION"
-                        className={classNames(/*'button',*/ styles.button)}
-                        title="Presentation mode"
-                        data-ai-component="hint"
-                    >
-                        <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
-                        {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
-                        {/* <- TODO: !!!
+                    <Hint title="Presentation mode">
+                        <WallpaperLink
+                            mode="PRESENTATION"
+                            className={classNames(/*'button',*/ styles.button)}
+                            // TODO: !!!!!! IS TITLE in <Hint> working title="Presentation mode"
+                        >
+                            <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
+                            {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
+                            {/* <- TODO: !!!
                         - Open sharing modal
                         - Show the QR code before
                         - Save to GET params to be able to send both /share and ?mode=presentation
                      */}
-                    </WallpaperLink>
+                        </WallpaperLink>
+                    </Hint>
                 )}
 
                 {/*
@@ -120,7 +120,7 @@ export function ControlPanel() {
                     {/* <MarkdownContent content="💬" isUsingOpenmoji  /> * /}
                 </WallpaperLink>*/}
             </div>
-        </AiComponentsRoot>
+        </div>
     );
 }
 

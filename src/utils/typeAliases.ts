@@ -152,6 +152,14 @@ export type string_javascript = string;
 /**
  * Semantic helper
  *
+ * For example `menu`
+ * @collboard-modules-sdk
+ */
+export type string_css_class = string;
+
+/**
+ * Semantic helper
+ *
  * For example `border`
  * @collboard-modules-sdk
  */

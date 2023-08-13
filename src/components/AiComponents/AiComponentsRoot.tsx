@@ -2,6 +2,7 @@ import { ReactNode, useContext } from 'react';
 import { Promisable } from 'type-fest';
 import { IS_PRODUCTION } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
+import { string_css_class } from '../../utils/typeAliases';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
@@ -10,7 +11,7 @@ interface AiComponentsRootProps {
         (componentElement: HTMLElement) => Promisable<void /* <- TODO: Maybe return IDestroyable instead of void */>
     >;
     children: ReactNode;
-    className?: string;
+    className?: string_css_class;
 }
 
 /**

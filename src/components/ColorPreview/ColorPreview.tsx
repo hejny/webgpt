@@ -3,11 +3,12 @@ import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { WithTake } from '../../utils/take/interfaces/ITakeChain';
+import { string_css_class } from '../../utils/typeAliases';
 import styles from './ColorPreview.module.css';
 
 interface ColorPreviewProps {
     color: WithTake<Color> | 'HUE_CIRCLE';
-    className?: string;
+    className?: string_css_class;
 }
 
 /**

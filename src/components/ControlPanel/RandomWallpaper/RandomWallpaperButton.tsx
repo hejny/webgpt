@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '../../../utils/classNames';
+import { Hint } from '../../Hint/Hint';
 import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
@@ -10,10 +11,8 @@ export function RandomWallpaperButton() {
     if (!randomWallpaper) {
         return (
             <div
+                title="TODO: Another one not available yet - loading..."
                 className={classNames(/*'button',*/ styles.button)}
-title="Show next page"
-                x-title="TODO: Another one not available yet - loading..."
-                data-ai-component="hint"
                 style={{
                     opacity: 0.5,
                     cursor: 'not-allowed',
@@ -26,31 +25,30 @@ title="Show next page"
     }
 
     return (
-        <Link
-            className={classNames(/*'button',*/ styles.button)}
-            title="Show next page"
-            data-ai-component="hint"
-            href={`/${randomWallpaper.id}`}
-            /* Note: Keeping prefetch because we want to be this as-fast-as-possible
+        <Hint title="Show next page">
+            <Link
+                className={classNames(/*'button',*/ styles.button)}
+                href={`/${randomWallpaper.id}`}
+                /* Note: Keeping prefetch because we want to be this as-fast-as-possible
                      + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
             */
 
-            onClick={consumeRandomWallpaper}
-           
-            style={
-                {
-                    // ...minorButtonStyle,
-                    // TODO: Better or delete
-                    // backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
-                    // color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                onClick={consumeRandomWallpaper}
+                style={
+                    {
+                        // ...minorButtonStyle,
+                        // TODO: Better or delete
+                        // backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
+                        // color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                    }
                 }
-            }
-        >
-            {/* TODO: This should have more role like next not random */}
+            >
+                {/* TODO: This should have more role like next not random */}
 
-            <Image alt="⏭" src="/icons/openmoji/23ED.black.svg" width={40} height={40} /* <-[🧥] */ />
-            {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
-        </Link>
+                <Image alt="⏭" src="/icons/openmoji/23ED.black.svg" width={40} height={40} /* <-[🧥] */ />
+                {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
+            </Link>{' '}
+        </Hint>
     );
 }
 
