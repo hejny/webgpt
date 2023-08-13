@@ -140,7 +140,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
     // TODO: More with different strategy than createColorfulComputeImageColorStats
 ];
 
-export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0];
+export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0]!;
 
 // TODO: [🧠] Pass theese as a parameter to the function createComputeImageColorStats
 

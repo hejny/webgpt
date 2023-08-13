@@ -86,7 +86,7 @@ export function ControlPanel() {
                 {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
                 {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
                 {wallpaper.saveStage === 'SAVED' && (
-                    <Hint title="Presentation mode">
+                    <Hint id="control-presentation-mode" title="Presentation mode" reapearCount={0}>
                         <WallpaperLink
                             mode="PRESENTATION"
                             className={classNames(/*'button',*/ styles.button)}

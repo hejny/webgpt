@@ -1,10 +1,15 @@
-import { ReactNode, useEffect, useRef } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
+import { useNumericStateInLocalstorage } from '../../utils/hooks/useNumericStateInLocalstorage';
 import { string_css_class, string_title } from '../../utils/typeAliases';
 import styles from './Hint.module.css';
 
 interface HintProps {
+    id: string;
     title: string_title;
     children?: ReactNode;
+
+    reapearCount: number;
+
     className?: string_css_class;
 }
 
@@ -12,13 +17,22 @@ interface HintProps {
  * @@
  */
 export function Hint(props: HintProps) {
-    const { title, children, className } = props;
+    const { id, title, children, reapearCount, className } = props;
 
+    const [isClicked, setClicked] = useState(false);
+    const [clickedCount, setClickedCount, isLoadedClickedCount] = useNumericStateInLocalstorage(
+        `hint-clicks-on-${id}`,
+        0,
+    );
     const hintTargetRef = useRef<HTMLDivElement | null>(null);
     useEffect(() => {
         const hintTarget = hintTargetRef.current;
 
         if (!hintTarget) {
+            return;
+        }
+
+        if (isClicked || !isLoadedClickedCount || clickedCount > reapearCount) {
             return;
         }
 
@@ -28,7 +42,7 @@ export function Hint(props: HintProps) {
         );
         hint.innerText = title;
 
-        hint.className = styles.hint;
+        hint.className = styles.hint!;
         const { top, left, width, height } = hintTarget.getBoundingClientRect();
         const right = document.body.clientWidth - left;
         const bottom = document.body.clientHeight - top;
@@ -43,46 +57,59 @@ export function Hint(props: HintProps) {
             // <- TODO: [🧠] Is this better to append in body or hintElement
             // <- Note: hintHighlightElement really should be sibling of hintContainer
         );
-        highlight.className = styles.highlight;
+        highlight.className = styles.highlight!;
         highlight.style.position = 'fixed';
         highlight.style.bottom = bottom - height - highlightPadding + 'px';
         highlight.style.right = right - width - highlightPadding + 'px';
         highlight.style.width = width + 2 * highlightPadding + 'px';
         highlight.style.height = height + 2 * highlightPadding + 'px';
 
-        hintTarget.addEventListener('click', () => {
+        const hintTargetClickHandler = () => {
             console.info(` 🗯 Complete hint ${title} `);
-            hint.style.opacity = '0';
-            highlight.style.opacity = '0';
-        });
+            setClicked(true);
+            setClickedCount(clickedCount + 1);
+        };
+        hintTarget.addEventListener('click', hintTargetClickHandler);
 
         /* 
-        element.addEventListener('mouseenter', () => {
-            hintContainer.style.opacity = '1';
-        });
+            element.addEventListener('mouseenter', () => {
+                hintContainer.style.opacity = '1';
+            });
 
-        element.addEventListener('mouseleave', () => {
-            hintContainer.style.opacity = '0';
-        });
-        */
+            element.addEventListener('mouseleave', () => {
+                hintContainer.style.opacity = '0';
+            });
+            */
 
         return () => {
             document.body.removeChild(hint);
             document.body.removeChild(highlight);
+            hintTarget.removeEventListener('click', hintTargetClickHandler);
         };
-    }, [hintTargetRef, title]);
+    }, [
+        hintTargetRef,
+        title,
+        isClicked,
+        setClicked,
+        clickedCount,
+        setClickedCount,
+        isLoadedClickedCount,
+        reapearCount,
+    ]);
 
     return (
         <div ref={hintTargetRef} {...{ title, className }}>
+            {isLoadedClickedCount ? 'l' : 'n'}
             {children}
         </div>
     );
 }
 
 /**
- * TODO: !!!!! Hint: Fade after interaction
- * TODO: !!!!! Hint: Save number of interactions in localStorage and reapear on next load ONLY if less then 5 interationns
- * TODO: !!!!! Hint: data-ai-hint-after
+ * TODO: Hint: Fade animation after interaction
+ * TODO: Hint: Allow to configure number of interactions to remove hint permanently
+ * TODO: Hint: Invalidate hint click count in localstorage after certain time
+ * TODO: Hint: data-ai-hint-after
+ * Hint: Reapear after mouseover [🧠] or maybe title is enough
  * TODO: !!!! ACRY use window.document, window.localStorage,...
- * Hint: Reapear (or put back title) after mouseover certain time
  */

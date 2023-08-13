@@ -25,7 +25,7 @@ export function RandomWallpaperButton() {
     }
 
     return (
-        <Hint title="Show next page">
+        <Hint id="control-next" title="Show next page" reapearCount={5}>
             <Link
                 className={classNames(/*'button',*/ styles.button)}
                 href={`/${randomWallpaper.id}`}

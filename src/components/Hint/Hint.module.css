@@ -38,6 +38,12 @@
     border-radius: 5px;
 }
 
+.hint,
+.highlight {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
 @media only screen and (min-width: 900px) {
     /* TODO: Show hints for bigger screens */
     .hint,

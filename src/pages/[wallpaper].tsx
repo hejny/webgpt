@@ -95,8 +95,8 @@ export async function getStaticProps({
     const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaperId);
     if (selectResult && selectResult.data && selectResult.data.length > 0) {
         currentWallpaper = {
-            ...selectResult.data[0],
-            author: validateUuid(selectResult.data[0].author),
+            ...selectResult.data[0]!,
+            author: validateUuid(selectResult.data[0]!.author),
         };
     }
 

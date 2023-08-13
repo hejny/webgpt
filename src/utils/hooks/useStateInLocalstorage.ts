@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import spaceTrim from 'spacetrim';
 
-export function useStateInLocalstorage<T extends string>(key: string, initialState: T): [T, (newState: T) => void] {
+export function useStateInLocalstorage<T extends string>(
+    key: string,
+    initialState: T,
+): [state: T, setState: (newState: T) => void, isLoaded: boolean] {
     if (
         // TODO: Maybe we don’t need whole this with wrapping the ControlPanelLikeButtons with <NoSsr>...</NoSsr>
 
@@ -22,6 +25,7 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
         );
     }
 
+    const [isLoaded, setLoaded] = useState(false);
     const [state, setState] = useState<T>(initialState);
 
     useEffect(() => {
@@ -31,14 +35,15 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
         } else if (state !== initialState) {
             setState(initialState);
         }
+        setLoaded(true);
     }, [key, initialState, state]);
 
-    const persistLikedStatus = (state: T) => {
+    const persistState = (state: T) => {
         window.localStorage.setItem(key, state);
         setState(state);
     };
 
-    return [state, persistLikedStatus];
+    return [state, persistState, isLoaded];
 }
 
 /**

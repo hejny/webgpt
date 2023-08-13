@@ -34,7 +34,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement): Pro
     const pickedWallpapersIds = new Set();
 
     while (pickedWallpapersIds.size < 6 /* <- [🥼]*/) {
-        const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)];
+        const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)]!;
         if (pickedWallpapersIds.has(wallpaper.id)) {
             continue;
         }
