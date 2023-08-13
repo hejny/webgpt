@@ -31,7 +31,7 @@ interface IMarkdownContentProps {
      */
     isusingFonts?: boolean;
 
-    /* 
+    /*
     TODO: [0] This is automatically done by showdown
     /**
      * Make for each heading in markdown unique id and scroll to hash
