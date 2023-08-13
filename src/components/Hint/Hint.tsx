@@ -99,7 +99,6 @@ export function Hint(props: HintProps) {
 
     return (
         <div ref={hintTargetRef} {...{ title, className }}>
-            {isLoadedClickedCount ? 'l' : 'n'}
             {children}
         </div>
     );
