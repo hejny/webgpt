@@ -13,7 +13,7 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     );
     hint.innerHTML = hintText;
 
-    hint.className = styles.hint /* <- !!!! Css file will be removed */;
+    hint.className = styles.hint /* <- !!!!! Css file will be removed */;
 
     const { top, left, width, height } = hintTarget.getBoundingClientRect();
     const right = document.body.clientWidth - left;
@@ -35,7 +35,7 @@ export function activateHintComponent(hintTarget: HTMLElement) {
         // <- TODO: [🧠] Is this better to append in body or hintElement
         // <- Note: hintHighlightElement really should be sibling of hintContainer
     );
-    highlight.className = styles.highlight /* <- !!!! Css file will be removed */;
+    highlight.className = styles.highlight /* <- !!!!! Css file will be removed */;
     highlight.style.position = 'fixed';
     highlight.style.bottom = bottom - height - highlightPadding + 'px';
     highlight.style.right = right - width - highlightPadding + 'px';
@@ -55,8 +55,6 @@ export function activateHintComponent(hintTarget: HTMLElement) {
 }
 
 /**
- * TODO: !!!!! Hint: Placement
- * TODO: !!!!! Hint: Better design
  * TODO: !!!!! Hint: Fade after interaction
  * TODO: !!!!! Hint: Save number of interactions in localStorage and reapear on next load ONLY if less then 5 interationns
  * TODO: !!!!! Hint: Reapear (or put back title) after mouseover certain time
