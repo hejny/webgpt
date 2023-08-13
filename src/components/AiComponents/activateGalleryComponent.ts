@@ -53,7 +53,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement): Pro
                 style="background-color: ${primaryColor};"
             ></iframe>
         </a>
-        
+
     `,
     );
 
