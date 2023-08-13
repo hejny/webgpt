@@ -24,7 +24,7 @@ export function ControlPanel() {
 
     return (
         <div
-            // TODO: !!!!! Merge two divs together
+            // Note: It is intended to have two divs embedded in each other
             className={classNames(
                 'aiai-controls',
                 styles.ControlPanel,
