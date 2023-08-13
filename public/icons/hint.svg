@@ -5,7 +5,7 @@ Rectangle label with text
     - Bubble like shape
     - Arrow pointing to the element to the right
 
-TODO: !!!! Combine the two shapes such as there is no internal stroke
+TODO: Combine the two shapes such as there is no internal stroke
       ChatGPT 4?
 -->
 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
