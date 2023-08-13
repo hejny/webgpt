@@ -2,7 +2,6 @@ import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
@@ -66,10 +65,6 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     const prerenderWallpapersIds = new Set<string_wallpaper_id>();
 
-    for (const wallpaper of await getHardcodedWallpapers()) {
-        prerenderWallpapersIds.add(wallpaper.id);
-    }
-
     const { wallpapers: lovedWallpapers } = JSON.parse(
         await readFile('public/mocked-api/wallpapers-min-loved.json' /* <- TODO: [✍] */, 'utf-8'),
     ) as {
@@ -94,22 +89,15 @@ export async function getStaticProps({
     locale: string;
     params: any /* <- TODO: !! Type propperly + NOT manually */;
 }) {
-    const { wallpaper /* <- TODO: !!! Change ACRY to wallpaperId */ } = params;
+    const { wallpaper: wallpaperId /* <- TODO: !!! Change ACRY to wallpaperId */ } = params;
 
-    // TODO: [🥽] DRY - getWallpaper
-    // TODO: !!! First dynamic then hardcoded
-    const wallpapers: Array<IWallpaperSerialized> = await getHardcodedWallpapers().catch((error) => [
-        /* Note: On server, "Error: Could not find assets folder" will happen */
-    ]);
-    let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
-    if (!currentWallpaper) {
-        const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper);
-        if (selectResult && selectResult.data && selectResult.data.length > 0) {
-            currentWallpaper = {
-                ...selectResult.data[0],
-                author: validateUuid(selectResult.data[0].author),
-            };
-        }
+    let currentWallpaper: null | IWallpaperSerialized = null;
+    const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaperId);
+    if (selectResult && selectResult.data && selectResult.data.length > 0) {
+        currentWallpaper = {
+            ...selectResult.data[0],
+            author: validateUuid(selectResult.data[0].author),
+        };
     }
 
     return {
