@@ -25,10 +25,10 @@ export function activateHintComponent(hintTarget: HTMLElement) {
     hint.style.padding = '10px';
     hint.style.paddingRight = '20px';
     hint.style.color = '#000000';
-    hint.style.backgroundImage = 'url(/public/icons/hint.svg)';
+    hint.style.backgroundImage = 'url(/icons/hint.svg)';
     hint.style.backgroundSize = '100% 100%';
 
-    const highlightPadding = 5 /* <- TODO: !!!! [🧠] Tweak */;
+    const highlightPadding = 5; /* <- TODO: !!!! [🧠] Tweak */
     const highlight = document.createElement('div');
     document.body.appendChild(
         highlight,

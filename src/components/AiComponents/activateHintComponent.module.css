@@ -26,7 +26,7 @@
 
     z-index: 30000 /* <- [🔝] Global order of showcase */;
 
-    border: 1px dashed #ffffff;
+    border: 2px dashed #22d3da;
     border-radius: 5px;
 }
 
