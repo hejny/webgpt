@@ -26,13 +26,13 @@ export function WallpaperLink(props: WallpaperLinkProps) {
     const { isExported } = useContext(ExportContext);
 
     const query: Record<string, any> = {
-        wallpaper: wallpaperId || router.query.wallpaper,
+        wallpaperId: wallpaperId || router.query.wallpaperId,
         mode: mode?.toLocaleLowerCase() || router.query.mode,
         page: page || router.query.page,
         modal: modal || router.query.modal,
     };
 
-    if (wallpaperId === null || !query.wallpaper) {
+    if (wallpaperId === null || !query.wallpaperId) {
         delete query.wallpaperId;
     }
     if (mode === 'NORMAL' || !query.mode) {
@@ -49,7 +49,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
         return (
             <Link
                 href={{
-                    pathname: '/[wallpaper]',
+                    pathname: '/[wallpaperId]',
                     query,
                 }}
                 {...props}

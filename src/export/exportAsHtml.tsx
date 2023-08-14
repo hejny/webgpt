@@ -169,8 +169,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     function createPageHtml(pageName: string_page) {
         const memoryRouter = new MemoryRouter();
-        memoryRouter.pathname = '/[wallpaper]';
-        memoryRouter.query = { wallpaper: wallpaper.id };
+        memoryRouter.pathname = '/[wallpaperId]';
+        memoryRouter.query = { wallpaperId: wallpaper.id };
 
         if (pageName !== 'index') {
             memoryRouter.query.page = pageName;
@@ -179,7 +179,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         let html = renderToStaticMarkup(
             <html>
                 <RouterContext.Provider value={memoryRouter}>
-                    {/* <MemoryRouterProvider url={'/[wallpaper]'}> */}
+                    {/* <MemoryRouterProvider url={'/[wallpaperId]'}> */}
                     <ExportContext.Provider value={{ isExported: true, publicUrl: publicUrl || NEXT_PUBLIC_URL }}>
                         <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                             <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
