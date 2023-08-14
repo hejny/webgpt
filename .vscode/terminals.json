@@ -7,6 +7,11 @@
             "focus": true
         },
         {
+            "name": "👨🏽‍💻 Clean dev cache",
+            "command": "rm -rf .next",
+            "focus": true
+        },
+        {
             "name": "🌎 Expose",
             "command": "npx lt --port 4444 --subdomain wizard",
             "onlySingle": true,
