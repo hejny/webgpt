@@ -1,11 +1,4 @@
-import {
-    GetObjectCommand,
-    ListObjectsV2Command,
-    PutObjectCommand,
-    PutObjectCommandInput,
-    S3Client,
-} from '@aws-sdk/client-s3';
-import { IDestroyable, registerItemsInArray } from 'destroyable';
+import { GetObjectCommand, PutObjectCommand, PutObjectCommandInput, S3Client } from '@aws-sdk/client-s3';
 import { gzip, ungzip } from 'node-gzip';
 import { IFile, IIFilesStorageWithCdn } from '../interfaces/IFilesStorage';
 
@@ -112,71 +105,6 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
 
         if (!uploadResult.ETag) {
             throw new Error(`Upload result does not contain ETag`);
-        }
-
-        await this.notifyObservers(key, file);
-    }
-
-    // TODO: !!!! Remove subscribe/observable capability from here DigitalOceanSpaces
-    public subscribe({
-        match,
-        isInitiallyReplayed,
-        observer,
-    }: {
-        match?: RegExp;
-        isInitiallyReplayed?: boolean;
-        observer(key: string, value: IFile): void;
-    }): IDestroyable {
-        if (isInitiallyReplayed) {
-            const replay = async (ContinuationToken: string | undefined) => {
-                // TODO: Probably it can be done with promisify and list only matching files - NOW there are listed all files
-
-                const response = await this.s3.send(
-                    new ListObjectsV2Command({
-                        Bucket: this.config.bucket,
-                        Prefix: 'modules' /* <- TODO: !!! Unhardcode and make from match */,
-                        ContinuationToken,
-                    }),
-                );
-
-                if (!response.Contents) {
-                    return;
-                }
-
-                for (const file of response.Contents) {
-                    if (file.Key) {
-                        await this.notifyObservers(file.Key);
-                    }
-                }
-
-                if (response.IsTruncated) {
-                    /* not await */ replay(response.NextContinuationToken);
-                }
-            };
-
-            /* not await */ replay(undefined);
-        }
-
-        return registerItemsInArray({ base: this.observers, add: [{ match, observer }] });
-    }
-
-    private observers: Array<{ match?: RegExp; observer(key: string, value: IFile): void }> = [];
-
-    private async notifyObservers(key: string, file?: IFile) {
-        for (const { match, observer } of this.observers) {
-            if (!match || match.test(key)) {
-                if (!file) {
-                    const file2 = await this.getItem(key);
-                    if (!file2) {
-                        console.warn(`Already listed file ${key} not found.`);
-                        return;
-                    } else {
-                        file = file2;
-                    }
-                }
-
-                observer(key, file);
-            }
         }
     }
 }

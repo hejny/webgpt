@@ -1,4 +1,3 @@
-import { IDestroyable } from 'destroyable';
 import type { IStorage } from 'everstorage';
 import { string_mime_type } from '../../typeAliases';
 
@@ -11,13 +10,7 @@ export interface IFile {
 /**
  * Represents storage that will store each keypair in a separate file.
  */
-export interface IFilesStorage extends Omit<IStorage<IFile>, 'length' | 'clear' | 'key'> {
-    subscribe(options: {
-        match?: RegExp;
-        isInitiallyReplayed?: boolean;
-        observer(key: string, value: IFile): void;
-    }): IDestroyable;
-}
+export type IFilesStorage = Omit<IStorage<IFile>, 'length' | 'clear' | 'key'>;
 
 /**
  * Represents storage that can give public deterministic  URL for each file
