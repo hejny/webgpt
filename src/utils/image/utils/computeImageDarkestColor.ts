@@ -10,5 +10,5 @@ import { getImageUniqueColors } from './getImageUniqueColors';
 export async function computeImageDarkestColor(image: IImage): Promise<WithTake<Color>> {
     const colors = Array.from(await getImageUniqueColors(image));
     colors.sort((a, b) => colorLuminance(a) - colorLuminance(b)) /* <- TODO: [⏳] Make this sort async with await forARest */;
-    return colors[0];
+    return colors[0]!;
 }

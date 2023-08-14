@@ -54,10 +54,10 @@ export async function createImageInBrowser(src: string_url): Promise<MyImage> {
                     const index = (y * width + x) * 4;
 
                     // Get the RGBA values of the pixel
-                    const r = imageData[index];
-                    const g = imageData[index + 1];
-                    const b = imageData[index + 2];
-                    const a = imageData[index + 3];
+                    const r = imageData[index]!;
+                    const g = imageData[index + 1]!;
+                    const b = imageData[index + 2]!;
+                    const a = imageData[index + 3]!;
 
                     // Convert the RGBA values to a hex string
                     const hex = `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0')}`;

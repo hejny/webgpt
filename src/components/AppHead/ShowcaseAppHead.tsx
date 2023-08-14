@@ -53,7 +53,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <meta
                 name="theme-color"
                 content={
-                    wallpaper.colorStats.palette[0].value.toHex() /* <- TODO: Is it a good idea to pick theme-color this way */
+                    wallpaper.colorStats.palette[0]!.value.toHex() /* <- TODO: Is it a good idea to pick theme-color this way */
                 }
             />
 
@@ -106,14 +106,14 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                 <ExportCommentedBlock
                     name="Registration"
                     note={`
-                        
+
                         [🔌] This is a registration script for the page ${publicUrl}
                              You need to visit at least once the site ${publicUrl} to register it
                              Or register manually at https://1-2i.com/${wallpaper.id}?modal=export
-                        
+
                              After the registration you can remove this section or leave it here for future updates
                              For more info see https://1-2i.com/${wallpaper.id}?page=license
-                        
+
                     `}
                 >
                     <script

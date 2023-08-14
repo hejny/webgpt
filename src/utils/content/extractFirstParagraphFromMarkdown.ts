@@ -9,5 +9,5 @@ import { string_markdown } from '../typeAliases';
  */
 export function extractFirstParagraphFromMarkdown(str: string_markdown): string {
     const paragraphs = spaceTrim(str).split('\n\n');
-    return paragraphs[1] || paragraphs[0];
+    return paragraphs[1] || paragraphs[0]!;
 }

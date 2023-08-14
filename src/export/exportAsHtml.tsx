@@ -58,7 +58,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     /* ${linkElement.href} */
 
                     ${block(css)}
-                
+
                 `,
             ),
         );
@@ -126,9 +126,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                      *          2. Chage config style NOT common style
                      *          3. Chage article style NOT common style
                      */
-        
+
                     ${block(importRules.join('\n\n\n'))}
-        
+
                     ${block(commonRules.join('\n\n\n'))}
                 `,
             ),
@@ -140,7 +140,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     /**
                      * Note: This is the style of the article
                      */
-        
+
                     ${block(articleRules.join('\n\n\n'))}
                 `,
             ),
@@ -152,7 +152,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     /**
                      * Note: This is the style of the interactive components in the page
                      */
-        
+
                     ${block(aiComponentsRules.join('\n\n\n'))}
                 `,
             ),
@@ -203,7 +203,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                                                                      */
 
                                                                     ${block(style)}
-                                                                
+
                                                                 `,
                                                               ),
                                                           ),
@@ -239,13 +239,13 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         )) {
             const { indentation, comment } = match.groups!;
 
-            if (comment.split('\n').length <= 1) {
+            if (comment!.split('\n').length <= 1) {
                 // Single-line comment
                 html = html.split(match[0]).join(`<!--${comment}-->`);
             } else {
                 // Multi-line comment
                 const indentedComment = [
-                    ...comment
+                    ...comment!
                         .split('\n')
                         .map((line, i) => ' ' + (i === 0 ? line : indentation + ' '.repeat('<!--'.length) + line)),
                     indentation,

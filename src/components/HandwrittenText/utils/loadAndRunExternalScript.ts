@@ -12,7 +12,7 @@ export function loadAndRunExternalScript(src: string): Promise<void> {
         console.info(`Loading external script "${src}"`);
         const scriptElement = document.createElement('script');
         scriptElement.src = src;
-        const headElement = document.getElementsByTagName('head')[0];
+        const headElement = document.getElementsByTagName('head')[0]!;
         headElement.appendChild(scriptElement);
 
         scriptElement.addEventListener('load', async () => {

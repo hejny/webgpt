@@ -14,5 +14,5 @@ export async function computeImageLightestColor(
     colors.sort(
         (a, b) => colorLuminance(b) - colorLuminance(a),
     ) /* <- TODO: [⏳] Make this sort async with await forARest */;
-    return colors[0];
+    return colors[0]!;
 }

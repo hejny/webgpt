@@ -26,9 +26,9 @@ export function Modal(props: ModalProps) {
             const target = event.target as HTMLElement;
 
             if (
-                target.classList.contains(styles.overlay) ||
-                target.classList.contains(styles.bar) ||
-                target.parentElement!.classList.contains(styles.bar)
+                target.classList.contains(styles.overlay!) ||
+                target.classList.contains(styles.bar!) ||
+                target.parentElement!.classList.contains(styles.bar!)
             ) {
                 event.preventDefault();
                 return false;

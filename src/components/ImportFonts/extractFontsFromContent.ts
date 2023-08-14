@@ -27,12 +27,12 @@ export function extractFontsFromContent(content: string_markdown | string_html):
         }
 
         // Get the second capture group, which is the font name
-        let font = match[2];
+        let font = match[2]!;
 
         // If the font name contains a comma, it means there are multiple fonts specified
         // In that case, we only take the first one, which is the preferred font
         if (font.includes(',')) {
-            font = font.split(',')[0].trim();
+            font = font.split(',')[0]!.trim();
         }
 
         // Add the font to the set, removing any quotes around it
@@ -42,3 +42,7 @@ export function extractFontsFromContent(content: string_markdown | string_html):
     // Return the set of fonts
     return fonts;
 }
+
+/**
+ * TODO: Use here named capture groups
+ */

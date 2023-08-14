@@ -121,13 +121,13 @@ export function Aigen() {
                                     y="0"
                                     width={`${100 / letters.length}%`}
                                     height="100%"
-                                    fill={color.toHex()}
+                                    fill={color!.toHex()}
                                 />
                                 <text
                                     x={`${(i + 0.5) * (100 / letters.length)}%`}
                                     dominant-baseline="middle"
                                     text-anchor="middle"
-                                    fill={color.then(textColor).toHex()}
+                                    fill={color!.then(textColor).toHex()}
                                     {...{ y, fontSize, fontWeight, fontFamily }}
                                 >
                                     {letter}
