@@ -28,7 +28,6 @@ export const IS_DEVELOPMENT = isPrivateNetwork(
 export const IS_PRODUCTION = !IS_DEVELOPMENT;
 
 if (isRunningInBrowser()) {
-    console.log({ /* !!!! Remove */ NEXT_PUBLIC_URL, IS_DEVELOPMENT, IS_PRODUCTION });
 
     // TODO: Also log " client ${provideClientId()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
     console.info(
