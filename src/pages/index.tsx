@@ -59,6 +59,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
+ * TODO: !!!! This should serve for sharing and search (Like OG images etc...)
  * TODO: Go to last wallpaper
  * TODO: Make shuffle between wallpapers
  */
