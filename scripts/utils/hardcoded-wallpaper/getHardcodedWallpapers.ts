@@ -117,7 +117,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
 
         const title = extractTitleFromContent(content) || 'Untitled';
 
-        const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
+        const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]!;
         const prompt = metadata!.prompt;
 
         const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));

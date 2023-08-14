@@ -31,13 +31,13 @@ export async function computeImagePalette14(
     // 0️⃣ Check that there is some most occuring color towards the bottom of the image
     if (
         // [🥎]
-        areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomHalf.mostFrequentColors[0].value) &&
-        areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomThird.mostFrequentColors[0].value) &&
-        areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomLine.mostFrequentColors[0].value)
+        areColorsEqual(colorStats.mostFrequentColors[0]!.value, colorStats.bottomHalf.mostFrequentColors[0]!.value) &&
+        areColorsEqual(colorStats.mostFrequentColors[0]!.value, colorStats.bottomThird.mostFrequentColors[0]!.value) &&
+        areColorsEqual(colorStats.mostFrequentColors[0]!.value, colorStats.bottomLine.mostFrequentColors[0]!.value)
     ) {
         pickByMostFrequentColorCount++;
         primaryColor = {
-            ...colorStats.bottomHalf.mostFrequentColors[0],
+            ...colorStats.bottomHalf.mostFrequentColors[0]!,
             note: `The most common color to appear at the bottom of the wallpaper.`,
         };
     }

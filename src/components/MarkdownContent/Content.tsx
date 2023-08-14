@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
-import { string_href, string_html, string_markdown } from '../../utils/typeAliases';
+import { string_css_class, string_href, string_html, string_markdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
 import { MarkdownContent } from './MarkdownContent';
 

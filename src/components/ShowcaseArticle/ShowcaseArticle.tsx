@@ -28,7 +28,7 @@ export function ShowcaseArticleSection() {
         let pageContent = getPageContent(pageName);
 
         const mainContentFonts = extractFontsFromContent(content);
-        const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0];
+        const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0]!;
         pageContent = spaceTrim(
             (block) => `
            

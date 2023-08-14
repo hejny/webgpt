@@ -53,7 +53,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <meta
                 name="theme-color"
                 content={
-                    wallpaper.colorStats.palette[0].value.toHex() /* <- TODO: Is it a good idea to pick theme-color this way */
+                    wallpaper.colorStats.palette[0]!.value.toHex() /* <- TODO: Is it a good idea to pick theme-color this way */
                 }
             />
 

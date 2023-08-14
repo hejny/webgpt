@@ -12,7 +12,7 @@ export function nearest(...colors: Color[]): IColorTransformer {
         const distances = colors.map((c) => colorDistanceSquared(c, color));
         const minDistance = Math.min(...distances);
         const minIndex = distances.indexOf(minDistance);
-        const nearestColor = colors[minIndex];
+        const nearestColor = colors[minIndex]!;
 
         return nearestColor;
     };

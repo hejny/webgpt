@@ -1,7 +1,7 @@
 import parse from 'html-react-parser';
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
-import { string_href, string_html } from '../../utils/typeAliases';
+import { string_css_class, string_href, string_html } from '../../utils/typeAliases';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { mapLinksInHtml } from './mapLinksInHtml';

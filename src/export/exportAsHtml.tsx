@@ -239,13 +239,13 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         )) {
             const { indentation, comment } = match.groups!;
 
-            if (comment.split('\n').length <= 1) {
+            if (comment!.split('\n').length <= 1) {
                 // Single-line comment
                 html = html.split(match[0]).join(`<!--${comment}-->`);
             } else {
                 // Multi-line comment
                 const indentedComment = [
-                    ...comment
+                    ...comment!
                         .split('\n')
                         .map((line, i) => ' ' + (i === 0 ? line : indentation + ' '.repeat('<!--'.length) + line)),
                     indentation,

@@ -64,7 +64,7 @@ export function GallerySection(props: SampleProps) {
                                     prefetch={
                                         false /* <- Note: It is too much data to prefetch every page from gallery */
                                     }
-                                    style={{ backgroundColor: wallpaper.colorStats.palette[0].value.toHex() }}
+                                    style={{ backgroundColor: wallpaper.colorStats.palette[0]!.value.toHex() }}
                                 >
                                     <iframe
                                         // TODO: [🦋] Use here better preview image - with some palette showcase + title + smaller size
@@ -73,7 +73,7 @@ export function GallerySection(props: SampleProps) {
                                         allowTransparency={false /* as a optimization */}
                                         scrolling="no" /* <- TODO: Why deprecated? */
                                         frameBorder="0" /* <- TODO: Why deprecated? */
-                                        style={{ backgroundColor: wallpaper.colorStats.palette[0].value.toHex() }}
+                                        style={{ backgroundColor: wallpaper.colorStats.palette[0]!.value.toHex() }}
                                     ></iframe>
                                 </Link>
                             ))

@@ -13,14 +13,14 @@ export function isPrivateNetwork(hostname: string_hostname): boolean {
     if (hostname.includes(':')) {
         // IPv6
         const ipParts = hostname.split(':');
-        return ipParts[0] === 'fc00' || ipParts[0] === 'fd00' || ipParts[0] === 'fe80';
+        return ipParts[0]! === 'fc00' || ipParts[0]! === 'fd00' || ipParts[0]! === 'fe80';
     } else {
         // IPv4
         const ipParts = hostname.split('.').map((part) => parseInt(part, 10));
         return (
-            ipParts[0] === 10 ||
-            (ipParts[0] === 172 && ipParts[1] >= 16 && ipParts[1] <= 31) ||
-            (ipParts[0] === 192 && ipParts[1] === 168)
+            ipParts[0]! === 10 ||
+            (ipParts[0]! === 172 && ipParts[1]! >= 16 && ipParts[1]! <= 31) ||
+            (ipParts[0]! === 192 && ipParts[1]! === 168)
         );
     }
 }

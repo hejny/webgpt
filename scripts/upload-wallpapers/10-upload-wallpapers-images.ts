@@ -46,7 +46,7 @@ async function uploadWallpapersImages() {
                 continue;
             }
 
-            const wallpaper = selectResult.data[0];
+            const wallpaper = selectResult.data[0]!;
 
             const key = generateWallpaperCdnKey(wallpaper);
             const file = await CDN.getItem(key);

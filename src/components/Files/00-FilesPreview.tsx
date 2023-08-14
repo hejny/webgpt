@@ -18,12 +18,12 @@ export function Files(props: FilesPreviewProps) {
         throw new Error('You must provide at least one file. when using <Files/>');
     }
 
-    const [filename, setFilename] = useState<string>(files[0].pathname);
+    const [filename, setFilename] = useState<string>(files[0]!.pathname);
     const file = files.find((file) => file.pathname === filename);
 
     useEffect(() => {
         if (!file) {
-            setFilename(files[0].pathname);
+            setFilename(files[0]!.pathname);
         }
     }, [files, file, setFilename]);
 
