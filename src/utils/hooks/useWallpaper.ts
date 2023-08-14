@@ -18,7 +18,7 @@ export function useWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWallpaper)
     return [
         wallpaper,
         (modifyWallpaper: IModifyWallpaper) => {
-            const modifiedWallpaper = { ...wallpaper }; /* <- TODO: !!! Do here deep copy */
+            const modifiedWallpaper = { ...wallpaper }; /* <- TODO: !! Do here deep copy */
             const { id, parent, author, src, prompt, colorStats, content, keywords, isPublic, saveStage } =
                 modifyWallpaper(modifiedWallpaper);
 

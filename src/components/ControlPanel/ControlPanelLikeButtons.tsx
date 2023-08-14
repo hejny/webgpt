@@ -14,7 +14,7 @@ export function ControlPanelLikeButtons() {
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
 
     return (
-        <Hint id="control-reactions" title="React on web" className={styles.group}  reapearCount={10}>
+        <Hint id="control-reactions" title="React on web" className={styles.group} reapearCount={10}>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             {['LOVE', 'LIKE'].includes(likedStatus) && (
                 <div className={styles.group}>
@@ -30,8 +30,6 @@ export function ControlPanelLikeButtons() {
             )}
 
             <button
-                // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
-
                 className={classNames(/*'button',*/ styles.button)}
                 title="I love this web!"
                 data-active={likedStatus === 'LOVE'}
@@ -46,7 +44,7 @@ export function ControlPanelLikeButtons() {
             </button>
 
             <button
-                // TODO: !!! Also listen on double-click on mobile
+                // TODO: Maybe also listen on double-click on mobile
                 className={classNames(/*'button',*/ styles.button)}
                 title="I like this web"
                 data-active={likedStatus === 'LIKE'}

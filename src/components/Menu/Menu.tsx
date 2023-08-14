@@ -22,8 +22,9 @@ export function Menu() {
             <AiComponentsRoot usedComponents={{ menu: activateMenuComponent }} className={styles.MenuRoot}>
                 <div className={styles.Menu} data-ai-component="menu">
                     <div className={styles.MenuBar} data-ai-element="bar">
-                        {/* TODO: !!! This should be created and inserted here in activateMenuComponents
-                                  OR figure out better identification then data-ai-component="menu"      */}
+                        {/* TODO: This should be created and inserted here in activateMenuComponents
+                                  OR figure out better identification then data-ai-component="menu"
+                        */}
                         <div className={classNames(styles.bar, styles.bar1)}></div>
                         <div className={classNames(styles.bar, styles.bar2)}></div>
                         <div className={classNames(styles.bar, styles.bar3)}></div>

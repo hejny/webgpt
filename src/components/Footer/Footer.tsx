@@ -56,8 +56,6 @@ export function FooterSection() {
  *       @see https://techheaven.org/org
  *       Also in Collboard AND other projects
  *       Ask if sídlo firmy is nessesary?
- * TODO: !!! Google analytics
- * TODO: !!! Smartlook
  * TODO: !! Cookies bar
  * TODO: Use meaningfully OR remove </DisplayOn> OR 👀 remake to classes .desktop .mobile .tablet ...
 

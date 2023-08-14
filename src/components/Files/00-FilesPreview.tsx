@@ -31,7 +31,6 @@ export function Files(props: FilesPreviewProps) {
         return <></>;
     }
 
-    // !!! {['image','other'].includes()} Work with image files
 
     return (
         <div className={styles.FilesPreview}>

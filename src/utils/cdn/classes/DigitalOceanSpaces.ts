@@ -117,6 +117,7 @@ export class DigitalOceanSpaces implements IIFilesStorageWithCdn {
         await this.notifyObservers(key, file);
     }
 
+    // TODO: !!!! Remove subscribe/observable capability from here DigitalOceanSpaces
     public subscribe({
         match,
         isInitiallyReplayed,

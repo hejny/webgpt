@@ -25,7 +25,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
     const description =
-        extractDescriptionFromHtml(wallpaper.content) /* <- !!! Shorten a description with GPT */ ||
+        extractDescriptionFromHtml(wallpaper.content) /* <- !! Shorten a description with GPT */ ||
         'The page was created by 1-2i.com';
 
     const homeUrl = `${publicUrl.href}${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
@@ -130,7 +130,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
 }
 
 /**
- * TODO: !!! [🎍] Reflect URL into metadata
+ * TODO: !! [🎍] Reflect URL into metadata
  * TODO: Create better summary
  * TODO: Maybe import from some JSON
  * TODO: What is ideal viewport value

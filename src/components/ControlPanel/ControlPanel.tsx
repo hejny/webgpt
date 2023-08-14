@@ -96,11 +96,6 @@ export function ControlPanel() {
                         <WallpaperLink mode="PRESENTATION" className={classNames(/*'button',*/ styles.button)}>
                             <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                             {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
-                            {/* <- TODO: !!!
-                                - Open sharing modal
-                                - Show the QR code before
-                                - Save to GET params to be able to send both /share and ?mode=presentation
-                            */}
                         </WallpaperLink>
                     </Hint>
                 )}

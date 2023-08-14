@@ -156,7 +156,6 @@ export class RandomWallpaperManager {
     }
 
     public async getRandomWallpaper(): Promise<IWallpaperInStorage> {
-        // TODO: !!!! Change to WallpaperTimelineManager.getNextWallpaper
 
         const randomWallpaper = await this.prefetchingRandomWallpapers.shift(/* <- TODO: DO here a Promise.race */);
 

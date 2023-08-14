@@ -28,14 +28,14 @@ export const IS_DEVELOPMENT = isPrivateNetwork(
 export const IS_PRODUCTION = !IS_DEVELOPMENT;
 
 if (isRunningInBrowser()) {
-    console.log({ /* !!!! Remove */ NEXT_PUBLIC_URL, IS_DEVELOPMENT, IS_PRODUCTION });
-
     // TODO: Also log " client ${provideClientId()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
     console.info(
         `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
         `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
     );
 }
+
+export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value;
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
@@ -112,7 +112,6 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         > }),
     */
     createColorfulComputeImageColorStats15({
-        // !!! Remove this
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.2),
     }),

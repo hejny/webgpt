@@ -56,7 +56,6 @@ export function WallpaperLink(props: WallpaperLinkProps) {
             >
                 {children}
             </Link>
-            // !!! <div  ref={ref}></div>
         );
     } else {
         // TODO: Maybe detect if it is modal or mode is used and if throw error

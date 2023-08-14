@@ -51,7 +51,6 @@
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
-    /* TODO: !!! Can be in calc used more than 2 statements | maybe split into multiple calc() */
     height: calc(100vw * var(--aspect) * 6 / var(--on-row) / var(--on-row)); /* <- [🥼]*/
     margin-bottom: 20px;
 }

@@ -185,7 +185,6 @@ nav.MenuContent li:hover {
 }
 
 .Menu:is([data-toggle-state='open']) .MenuBar .bar2 {
-    /* !!! Better */
     opacity: 0;
 }
 
