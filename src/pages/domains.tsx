@@ -1,5 +1,5 @@
-import { Barlow_Condensed } from "next/font/google";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { Barlow_Condensed } from 'next/font/google';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { NoSsr } from '../components/NoSsr/NoSsr';
 import { AdvancedDomainsChecker } from '../components/Whois/AdvancedDomainsChecker';
@@ -43,7 +43,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
- * TODO: !!! This should be in /embed/gallery and index should be generated from this and create more indexes
  * TODO: !! [🧶] FAQ section - how it works
  * TODO: !! [1] Filters - [Fulltext][Light/Dark/Color]
  * TODO: !! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]

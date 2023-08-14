@@ -1,4 +1,4 @@
-import { Barlow_Condensed } from "next/font/google";
+import { Barlow_Condensed } from 'next/font/google';
 import { ReactNode, useEffect } from 'react';
 import { classNames } from '../../utils/classNames';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
@@ -34,11 +34,11 @@ export function Modal(props: ModalProps) {
                 return false;
             }
         };
-        document.body.addEventListener('wheel', bodyScrollPrevent, { passive: false });
-        document.body.addEventListener('touchmove', bodyScrollPrevent, { passive: false });
+        window.document.body.addEventListener('wheel', bodyScrollPrevent, { passive: false });
+        window.document.body.addEventListener('touchmove', bodyScrollPrevent, { passive: false });
         return () => {
-            document.body.removeEventListener('wheel', bodyScrollPrevent);
-            document.body.removeEventListener('touchmove', bodyScrollPrevent);
+            window.document.body.removeEventListener('wheel', bodyScrollPrevent);
+            window.document.body.removeEventListener('touchmove', bodyScrollPrevent);
         };
     });
 

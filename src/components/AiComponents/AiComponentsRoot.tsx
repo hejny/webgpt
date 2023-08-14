@@ -75,7 +75,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                          * Note: This script makes ${Object.keys(usedComponents).join(' and ')} interactive
                          */
                         (()=>{
-                        const rootElement = document.currentScript.parentElement;
+                        const rootElement = window.document.currentScript.parentElement;
                         for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
                             if (componentElement.getAttribute('data-ai-activated')) {
                                 continue;

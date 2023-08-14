@@ -60,7 +60,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     );
 }
 
-export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
+export const getStaticPaths: GetStaticPaths<{ wallpaperId: string }> = async () => {
     const prerenderWallpapersIds = new Set<string_wallpaper_id>();
 
     const { wallpapers: lovedWallpapers } = JSON.parse(
@@ -87,7 +87,7 @@ export async function getStaticProps({
     locale: string;
     params: any /* <- TODO: !! Type propperly + NOT manually */;
 }) {
-    const { wallpaper: wallpaperId /* <- TODO: !!! Change ACRY to wallpaperId */ } = params;
+    const { wallpaperId } = params;
 
     let currentWallpaper: null | IWallpaperSerialized = null;
     const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaperId);

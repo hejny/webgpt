@@ -6,7 +6,7 @@
 <div style="width: 50px; aspect-ratio: 1 / 1; background-color: red" id="size-test"></div>
 <script>
     // 🟥 Square should vary its size
-    const square = document.getElementById('size-test');
+    const square = window.document.getElementById('size-test');
     let x = 0;
     requestAnimationFrame(function loop() {
         square.style.width = ((Math.sin(x) + 1) / 2) * 500 + 'px';

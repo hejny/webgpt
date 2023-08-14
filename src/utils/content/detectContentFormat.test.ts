@@ -2,7 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
 import { detectContentFormat } from './detectContentFormat';
 
-describe('detectContentFormat', () => { 
+describe('detectContentFormat', () => {
     it('should return html for valid HTML content', () => {
         expect(detectContentFormat('Hello')).toBe('text');
         expect(detectContentFormat('Hello, this is AI')).toBe('text');
@@ -19,7 +19,7 @@ describe('detectContentFormat', () => {
         expect(detectContentFormat('# Hello')).toBe('markdown');
         expect(detectContentFormat('Hell**o**')).toBe('markdown');
         expect(detectContentFormat('*Hello*')).toBe('markdown');
-        expect(detectContentFormat('# Hello, this is AI.\n\nThis is a *markdown* document.')).toBe('markdown');
+        expect(detectContentFormat('# Hello, this is AI.\n\nThis is a *markdown* window.document.')).toBe('markdown');
     });
 
     it('should return html for only text with comments', () => {

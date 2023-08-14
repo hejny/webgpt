@@ -27,14 +27,14 @@ export class RandomWallpaperManager {
     }
 
     private constructor() {
-        this.preloadGalleryElement = document.createElement('div');
+        this.preloadGalleryElement = window.document.createElement('div');
         this.preloadGalleryElement.dataset.comment = `Note: This is just for preloading the next wallpapers images to make the transition smoother`;
         this.preloadGalleryElement.style.position = 'fixed';
         this.preloadGalleryElement.style.top = '10px';
         this.preloadGalleryElement.style.left = '10px';
         this.preloadGalleryElement.style.opacity = '0';
         this.preloadGalleryElement.style.pointerEvents = 'none';
-        document.body.appendChild(this.preloadGalleryElement);
+        window.document.body.appendChild(this.preloadGalleryElement);
         this.prefetchingRandomWallpapers = this.getStorage().map((randomWallpaper) =>
             this.preloadWallpaper(randomWallpaper),
         );
