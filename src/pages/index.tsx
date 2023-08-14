@@ -9,7 +9,7 @@ import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 
 const font = Barlow_Condensed(
-    { weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] } /* <- TODO: !!! Fonts: Maybe remove */,
+    { weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] },
 );
 
 export default function HomePage() {

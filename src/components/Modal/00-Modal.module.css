@@ -85,7 +85,7 @@ dialog.Modal {
     /**/
 
     display: block;
-    font-family: sans-serif /* <- !!! One united UI font */;
+    font-family: sans-serif;
     margin: auto;
     padding: 0;
     font-size: 20px;
