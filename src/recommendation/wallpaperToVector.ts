@@ -7,5 +7,6 @@ export function wallpaperToVector(wallpaper: IWallpaper): IWallpaperVector {
 }
 
 /**
+ * TODO: [🧠] !!!! Implement propperly - take more dimensions than just the primary color of the wallpaper
  * TODO: [🤺] Optimize
  */
