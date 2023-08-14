@@ -42,7 +42,7 @@ export function ShowcaseArticleSection() {
         pageContent = pageContent.split(`{TITLE}`).join(title);
 
         return (
-            <Section id="home" className={styles.Article}>
+            <Section className={styles.Article}>
                 <AiComponentsRoot usedComponents={{ gallery: activateGalleryComponent }}>
                     <ExportCommentedBlock
                         name="Content"
@@ -89,7 +89,7 @@ export function ShowcaseArticleSection() {
           };
 
     return (
-        <Section id="home" className={styles.Article}>
+        <Section className={styles.Article}>
             {/*
             TODO:
             <h1 className={styles.handritten}>
