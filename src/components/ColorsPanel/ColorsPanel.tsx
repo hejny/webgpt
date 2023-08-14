@@ -77,7 +77,7 @@ export function ColorsPanel(props: ColorsPanelProps) {
                         value={color.value}
                         onChange={(newColor) => {
                             modifyWallpaper((modifiedWallpaper) => {
-                                modifiedWallpaper.colorStats.palette[i].value = newColor;
+                                modifiedWallpaper.colorStats.palette[i]!.value = newColor;
                                 modifiedWallpaper.saveStage = 'EDITED';
                                 return modifiedWallpaper;
                             });

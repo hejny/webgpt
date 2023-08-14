@@ -41,7 +41,7 @@ export function execCommandNormalizeOptions(options: IExecCommandOptions): Pick<
         .filter((arg) => arg !== '');
 
     if (_.length > 1) {
-        [command, ...args] = _;
+        [command, ...args] = _ as any;
     }
 
     if ((options as any).args) {
@@ -51,7 +51,7 @@ export function execCommandNormalizeOptions(options: IExecCommandOptions): Pick<
     for (const arg of args) {
     }
 
-    let humanReadableCommand = !['npx', 'npm'].includes(command) ? command : args[0];
+    let humanReadableCommand = !['npx', 'npm'].includes(command) ? command : args[0]!;
     if (['ts-node'].includes(humanReadableCommand)) {
         humanReadableCommand += ` ${args[1]}`;
     }

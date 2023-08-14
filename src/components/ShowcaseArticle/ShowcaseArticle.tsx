@@ -28,10 +28,10 @@ export function ShowcaseArticleSection() {
         let pageContent = getPageContent(pageName);
 
         const mainContentFonts = extractFontsFromContent(content);
-        const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0];
+        const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0]!;
         pageContent = spaceTrim(
             (block) => `
-           
+
                 ${block(pageContent)}
 
                 <a href="/" class="button">Home</a>
@@ -101,7 +101,7 @@ export function ShowcaseArticleSection() {
                 <ExportCommentedBlock
                     name="Content"
                     note={`
-                        Following is the content of the main page: 
+                        Following is the content of the main page:
                     `}
                 >
                     <Content

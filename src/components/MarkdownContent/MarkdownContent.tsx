@@ -1,7 +1,7 @@
 import spaceTrim from 'spacetrim';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
-import { string_href, string_markdown } from '../../utils/typeAliases';
+import { string_css_class, string_href, string_markdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 
@@ -31,7 +31,7 @@ interface IMarkdownContentProps {
      */
     isusingFonts?: boolean;
 
-    /* 
+    /*
     TODO: [0] This is automatically done by showdown
     /**
      * Make for each heading in markdown unique id and scroll to hash

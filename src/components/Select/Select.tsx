@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
+import { string_css_class } from '../../utils/typeAliases';
 import styles from './Select.module.css';
 
 interface SelectProps<TValue extends string | number | symbol> {
@@ -52,7 +53,7 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
                             return;
                         }
 
-                        onChange(restOptions[i].id);
+                        onChange(restOptions[i]!.id);
                     }}
                     value={
                         firstOptions.some(({ id }) => id === value)

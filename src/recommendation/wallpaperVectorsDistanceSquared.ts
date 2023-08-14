@@ -10,7 +10,7 @@ export function wallpaperVectorsDistanceSquared(
 
     let sumOfPowers = 0;
     for (let dimension = 0; dimension < wallpaperVector1.length; dimension++) {
-        sumOfPowers += Math.pow(wallpaperVector1[dimension] - wallpaperVector2[dimension], 2);
+        sumOfPowers += Math.pow(wallpaperVector1[dimension]! - wallpaperVector2[dimension]!, 2);
     }
 
     return sumOfPowers;

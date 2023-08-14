@@ -25,7 +25,7 @@ export async function computeImageMostSatulightedColors(
     ); /* <- TODO: [⏳] Make this sort async with await forARest */
 
     // 2️⃣ Drop colors with low saturation (compared to the most saturated color)
-    const requiredSatulightion = colorSatulightion(colors[0]) * MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO;
+    const requiredSatulightion = colorSatulightion(colors[0]!) * MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO;
     const saturatedColors = colors.filter((color) => colorSatulightion(color) >= requiredSatulightion);
 
     // 3️⃣ Pick colors with different hue (compared to all other already picked colors)

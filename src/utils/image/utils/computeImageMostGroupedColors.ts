@@ -19,7 +19,7 @@ export async function computeImageMostGroupedColors(
     // For each pixel in the image
     for (let x = 0; x < image.width; x++) {
         for (let y = 0; y < image.height; y++) {
-            if (visited[x][y]) {
+            if (visited[x]![y]!) {
                 continue;
             }
 
@@ -30,10 +30,10 @@ export async function computeImageMostGroupedColors(
 
             while (queue.length > 0) {
                 const { x, y } = queue.shift()!;
-                if (x < 0 || x >= image.width || y < 0 || y >= image.height || visited[x][y]) {
+                if (x < 0 || x >= image.width || y < 0 || y >= image.height || visited[x]![y]!) {
                     continue;
                 }
-                visited[x][y] = true;
+                visited[x]![y]! = true;
                 const pixelColor = image.getPixel({ x, y });
                 if (areColorsEqual(color, pixelColor)) {
                     groupSize++;

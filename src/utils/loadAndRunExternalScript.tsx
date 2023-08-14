@@ -14,6 +14,11 @@ export function loadAndRunExternalScript(src: string_url): Promise<void> {
         const scriptElement = document.createElement('script');
         scriptElement.src = src;
         const headElement = document.getElementsByTagName('head')[0];
+
+        if (!headElement) {
+            throw new Error(`Head element not found!`);
+        }
+
         headElement.appendChild(scriptElement);
 
         scriptElement.addEventListener('load', async () => {

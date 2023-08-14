@@ -36,7 +36,7 @@ export class Image implements IImage {
         for (let i = 0; i < this.size.y; i++) {
             this.pixels[i] = [];
             for (let j = 0; j < this.size.x; j++) {
-                this.pixels[i][j] = defaultColor;
+                this.pixels[i]![j]! = defaultColor;
             }
         }
     }
@@ -69,7 +69,7 @@ export class Image implements IImage {
             (position.y || 0) < this.size.y
         ) {
             // Return the color of the pixel
-            return this.pixels[position.y || 0][position.x || 0];
+            return this.pixels[position.y || 0]![position.x || 0]!;
         } else {
             // Throw an error if the position is out of bounds
             throw new Error(
@@ -98,7 +98,7 @@ export class Image implements IImage {
             (position.y || 0) < this.size.y
         ) {
             // Set the color of the pixel
-            this.pixels[position.y || 0][position.x || 0] = take(color);
+            this.pixels[position.y || 0]![position.x || 0]! = take(color);
         } else {
             // Throw an error if the position is out of bounds
             throw new Error(`Invalid pixel position (${position.x || 0}, ${position.y || 0})`);
