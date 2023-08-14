@@ -35,7 +35,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     const styles: Array<string> = [];
 
     // Note: Fetch all <style> into styles
-    for (const styleElement of Array.from(document.querySelectorAll('style'))) {
+    for (const styleElement of Array.from(window.document.querySelectorAll('style'))) {
         if (styleElement.hasAttribute('data-export-ignore')) {
             continue;
         }
@@ -45,7 +45,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     }
 
     // Note: Fetch all <link rel="stylesheet" into styles
-    for (const linkElement of Array.from(document.querySelectorAll('link'))) {
+    for (const linkElement of Array.from(window.document.querySelectorAll('link'))) {
         if (linkElement.rel !== 'stylesheet') {
             continue;
         }

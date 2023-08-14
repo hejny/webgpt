@@ -10,9 +10,9 @@ import { forImmediate } from 'waitasecond';
 export function loadAndRunExternalScript(src: string): Promise<void> {
     return new Promise((resolve, reject) => {
         console.info(`Loading external script "${src}"`);
-        const scriptElement = document.createElement('script');
+        const scriptElement = window.document.createElement('script');
         scriptElement.src = src;
-        const headElement = document.getElementsByTagName('head')[0]!;
+        const headElement = window.document.getElementsByTagName('head')[0]!;
         headElement.appendChild(scriptElement);
 
         scriptElement.addEventListener('load', async () => {

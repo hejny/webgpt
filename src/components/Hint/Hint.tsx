@@ -36,23 +36,23 @@ export function Hint(props: HintProps) {
             return;
         }
 
-        const hint = document.createElement('div');
-        document.body.appendChild(
+        const hint = window.document.createElement('div');
+        window.document.body.appendChild(
             hint, // <- TODO: [🧠] Is this better to append in body or hintElement
         );
         hint.innerText = title;
 
         hint.className = styles.hint!;
         const { top, left, width, height } = hintTarget.getBoundingClientRect();
-        const right = document.body.clientWidth - left;
-        const bottom = document.body.clientHeight - top;
+        const right = window.document.body.clientWidth - left;
+        const bottom = window.document.body.clientHeight - top;
 
         hint.style.position = 'fixed';
         hint.style.bottom = bottom - height / 2 + 'px';
         hint.style.right = right + 'px';
         const highlightPadding = 5; /* <- TODO: [🧠] TO CSS/config  */
-        const highlight = document.createElement('div');
-        document.body.appendChild(
+        const highlight = window.document.createElement('div');
+        window.document.body.appendChild(
             highlight,
             // <- TODO: [🧠] Is this better to append in body or hintElement
             // <- Note: hintHighlightElement really should be sibling of hintContainer
@@ -82,8 +82,8 @@ export function Hint(props: HintProps) {
             */
 
         return () => {
-            document.body.removeChild(hint);
-            document.body.removeChild(highlight);
+            window.document.body.removeChild(hint);
+            window.document.body.removeChild(highlight);
             hintTarget.removeEventListener('click', hintTargetClickHandler);
         };
     }, [
@@ -110,5 +110,4 @@ export function Hint(props: HintProps) {
  * TODO: Hint: Invalidate hint click count in localstorage after certain time
  * TODO: Hint: data-ai-hint-after
  * Hint: Reapear after mouseover [🧠] or maybe title is enough
- * TODO: !!!! ACRY use window.document, window.localStorage,...
  */

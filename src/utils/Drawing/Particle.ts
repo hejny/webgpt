@@ -5,7 +5,7 @@ import { Color } from '../color/Color';
 
 /**
  * Class for creating and manipulating particles ⁘
- * 
+ *
  * @class
  * @extends Destroyable
  * @implements IDestroyable
@@ -23,13 +23,12 @@ interface ParticleOptions {
  * @@@
  */
 export class Particle extends Destroyable implements IDestroyable {
-
     public readonly particleElement: HTMLElement;
 
     public constructor(public readonly options: ParticleOptions) {
         super();
 
-        this.particleElement = document.createElement('div');
+        this.particleElement = window.document.createElement('div');
         this.options.place.appendChild(this.particleElement);
 
         this.particleElement.style.pointerEvents = 'none';
