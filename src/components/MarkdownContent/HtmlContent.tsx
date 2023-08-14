@@ -21,7 +21,7 @@ interface HtmlContentProps {
     /**
      * Optional CSS class name
      */
-    className?: string;
+    className?: string_css_class;
 
     /**
      * Is editable by user

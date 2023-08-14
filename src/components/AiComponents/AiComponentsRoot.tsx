@@ -1,13 +1,17 @@
 import { ReactNode, useContext } from 'react';
 import { Promisable } from 'type-fest';
+import { IS_PRODUCTION } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { isPrivateNetwork } from '../../utils/validators/isPrivateNetwork';
+import { string_css_class } from '../../utils/typeAliases';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
-    usedComponents: Record<string, (componentElement: HTMLElement) => Promisable<void>>;
+    usedComponents: Record<
+        string,
+        (componentElement: HTMLElement) => Promisable<void /* <- TODO: Maybe return IDestroyable instead of void */>
+    >;
     children: ReactNode;
-    className?: string;
+    className?: string_css_class;
 }
 
 /**
@@ -26,14 +30,16 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                         return;
                     }
 
-                    for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
+                    for (let componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
                         let logNote = '';
-                        if (componentElement.getAttribute('data-toggle-activated')) {
-                            if (!isPrivateNetwork(window.location.href)) {
+
+                        const activatedCount = parseInt(componentElement.getAttribute('data-ai-activated') || '0', 10);
+                        if (activatedCount > 0) {
+                            if (IS_PRODUCTION) {
                                 continue;
-                            } else {
-                                logNote = ' (double-activated on local development)';
                             }
+                            // TODO:> componentElement = removeAllEventListeners(componentElement);
+                            logNote = ' (double-activated on local development)';
                         }
 
                         const componentType = componentElement.getAttribute('data-ai-component');
@@ -47,7 +53,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
 
                         componentActivator(componentElement as HTMLElement);
 
-                        componentElement.setAttribute('data-toggle-activated', 'true');
+                        componentElement.setAttribute('data-ai-activated', (activatedCount + 1).toString());
                     }
                 }}
                 {...{ className }}
@@ -71,7 +77,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                         (()=>{
                         const rootElement = document.currentScript.parentElement;
                         for (const componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
-                            if (componentElement.getAttribute('data-toggle-activated')) {
+                            if (componentElement.getAttribute('data-ai-activated')) {
                                 continue;
                             }
     
@@ -99,7 +105,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                             }
 
 
-                            componentElement.setAttribute('data-toggle-activated', 'true');
+                            componentElement.setAttribute('data-ai-activated', 'true');
                         }
 
                         })();

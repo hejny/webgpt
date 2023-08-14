@@ -1,7 +1,7 @@
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
-export async function activateGalleryComponent(galleryElement: HTMLElement) {
+export async function activateGalleryComponent(galleryElement: HTMLElement): Promise<void> {
     const moreButtonHtml = `
         <a href="https://1-2i.com/?home=${encodeURIComponent(window.location.href)}" class="button">More</a>
     `;
@@ -34,7 +34,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement) {
     const pickedWallpapersIds = new Set();
 
     while (pickedWallpapersIds.size < 6 /* <- [🥼]*/) {
-        const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)];
+        const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)]!;
         if (pickedWallpapersIds.has(wallpaper.id)) {
             continue;
         }

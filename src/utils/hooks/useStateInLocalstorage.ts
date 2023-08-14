@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 import spaceTrim from 'spacetrim';
 
-// !!! useStateInLocalstorage does not know about likedStatus
-// !!! Save also date of liking
-// !!! Maybe use some library for storage - ask + [🧠] which one and which to use to sync with backend
-
-export function useStateInLocalstorage<T extends string>(key: string, initialState: T): [T, (likedStatus: T) => void] {
+export function useStateInLocalstorage<T extends string>(
+    key: string,
+    initialState: T,
+): [state: T, setState: (newState: T) => void, isLoaded: boolean] {
     if (
         // TODO: Maybe we don’t need whole this with wrapping the ControlPanelLikeButtons with <NoSsr>...</NoSsr>
 
@@ -26,21 +25,27 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
         );
     }
 
-    const [likedStatus, setLikedStatus] = useState<T>(initialState);
+    const [isLoaded, setLoaded] = useState(false);
+    const [state, setState] = useState<T>(initialState);
 
     useEffect(() => {
         const stateFromLocalStorage = window.localStorage.getItem(key);
         if (stateFromLocalStorage) {
-            setLikedStatus(stateFromLocalStorage as T);
-        } else if (likedStatus !== initialState) {
-            setLikedStatus(initialState);
+            setState(stateFromLocalStorage as T);
+        } else if (state !== initialState) {
+            setState(initialState);
         }
-    }, [key, initialState, likedStatus]);
+        setLoaded(true);
+    }, [key, initialState, state]);
 
-    const persistLikedStatus = (likedStatus: T) => {
-        window.localStorage.setItem(key, likedStatus);
-        setLikedStatus(likedStatus);
+    const persistState = (state: T) => {
+        window.localStorage.setItem(key, state);
+        setState(state);
     };
 
-    return [likedStatus, persistLikedStatus];
+    return [state, persistState, isLoaded];
 }
+
+/**
+ * TODO: Maybe use some library for storage - ask + [🧠] which one and which to use to sync with backend
+ */

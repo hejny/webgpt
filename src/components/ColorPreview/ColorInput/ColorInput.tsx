@@ -8,7 +8,7 @@ import { ColorPreview } from '../ColorPreview';
 import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
-    className?: string;
+    className?: string_css_class;
     value: Color;
     onChange(color: WithTake<Color>): void;
     presetColors?: Array<PresetColor>;

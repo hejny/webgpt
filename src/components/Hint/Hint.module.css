@@ -1,0 +1,53 @@
+.hint {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    z-index: 30000 /* <- [🔝] Global order of showcase */;
+    pointer-events: none;
+
+    transform: translate(0, 50%);
+    /*transform: translate(-50%, -100%);*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: max-content;
+    padding: 10px;
+    padding-right: 20px;
+
+    color: #000000;
+    background-image: url(../../../public/icons/hint.svg);
+    /*               <- TODO: Is it better in Next js to reference images in css like: 
+                        - ../../../public/icons/hint.svg
+                        - (OR JUST)      /icons/hint.svg
+    */
+    background-size: 100% 100%;
+}
+
+.highlight {
+    /*/
+    outline: 1px dotted rgb(79, 194, 223);
+    /**/
+
+    z-index: 30000 /* <- [🔝] Global order of showcase */;
+    pointer-events: none;
+
+    border: 2px dashed #22d3da;
+    border-radius: 5px;
+}
+
+.hint,
+.highlight {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 900px) {
+    /* TODO: Show hints for bigger screens */
+    .hint,
+    .highlight {
+        display: none;
+    }
+}

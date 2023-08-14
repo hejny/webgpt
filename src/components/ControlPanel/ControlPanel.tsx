@@ -8,6 +8,7 @@ import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
+import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
@@ -23,6 +24,7 @@ export function ControlPanel() {
 
     return (
         <div
+            // Note: It is intended to have two divs embedded in each other
             className={classNames(
                 'aiai-controls',
                 styles.ControlPanel,
@@ -84,19 +86,17 @@ export function ControlPanel() {
                 {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
                 {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
                 {wallpaper.saveStage === 'SAVED' && (
-                    <WallpaperLink
-                        mode="PRESENTATION"
-                        className={classNames(/*'button',*/ styles.button)}
-                        title="Presentation mode"
-                    >
-                        <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
-                        {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
-                        {/* <- TODO: !!!
-                        - Open sharing modal
-                        - Show the QR code before
-                        - Save to GET params to be able to send both /share and ?mode=presentation
-                     */}
-                    </WallpaperLink>
+                    <Hint id="control-presentation-mode" title="Presentation mode" reapearCount={0}>
+                        <WallpaperLink mode="PRESENTATION" className={classNames(/*'button',*/ styles.button)}>
+                            <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
+                            {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
+                            {/* <- TODO: !!!
+                                - Open sharing modal
+                                - Show the QR code before
+                                - Save to GET params to be able to send both /share and ?mode=presentation
+                            */}
+                        </WallpaperLink>
+                    </Hint>
                 )}
 
                 {/*

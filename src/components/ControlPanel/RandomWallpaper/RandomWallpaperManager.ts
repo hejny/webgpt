@@ -1,12 +1,11 @@
 import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
-import { NEXT_PUBLIC_URL } from '../../../../config';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../../config';
 import { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { provideClientId } from '../../../utils/supabase/provideClientId';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
-import { isPrivateNetwork } from '../../../utils/validators/isPrivateNetwork';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 
@@ -111,9 +110,9 @@ export class RandomWallpaperManager {
     }
 
     private getPrefetchCount(): number {
-        if (isPrivateNetwork(window.location.href)) {
-            // Note: When running on private network (developing) we do not want to prefetch wallpapers to not throttle the dev script
-            return 0;
+        if (IS_DEVELOPMENT) {
+            // Note: When developing we do not want to prefetch wallpapers dynamically but rather preload fixed amount of wallpapers
+            return 3;
         }
 
         return Math.max(
