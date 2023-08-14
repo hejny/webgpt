@@ -5,7 +5,7 @@ window.document.querySelectorAll('iframe').forEach((iframeElement) => {
         const iframeDocument = iframeElement.contentDocument;
         iframeDocument.body.innerHTML =
             iframeDocument.body.innerHTML +
-            `   
+            `
             <style>
                 body{
                     overflow: auto !important;
