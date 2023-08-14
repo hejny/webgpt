@@ -80,7 +80,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                             if (componentElement.getAttribute('data-ai-activated')) {
                                 continue;
                             }
-    
+
                             const componentType = componentElement.getAttribute('data-ai-component');
 
 
@@ -91,7 +91,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                                             case '${componentType}':
                                                 console.info(\`🌟 Activating \${componentType} component\`, componentElement);
                                                 (${
-                                                    activate.toString() /* <- TODO: Is there some option to: 
+                                                    activate.toString() /* <- TODO: Is there some option to:
                                                                                   - Use non-minified code (disable/bypass minification in just one file/function)
                                                                                   - OR just Put a real name on the function
                                                                         */
