@@ -23,7 +23,7 @@ export interface IWallpaper {
     isPublic: boolean;
     src: string_url /* <- Note: Not using URL objects because of serialization */;
     prompt: string_midjourney_prompt | null;
-    colorStats: IWallpaperColorStats /* <- !!! Put here all available versions */;
+    colorStats: IWallpaperColorStats;
     // TODO: shapeStats> IWallpaperShapeStats;
 
     title: string /* <- Note: This is just derrived */;

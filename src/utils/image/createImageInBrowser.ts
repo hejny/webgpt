@@ -30,7 +30,7 @@ export async function createImageInBrowser(src: string_url): Promise<MyImage> {
             const image = new MyImage({ x: width, y: height });
 
             // Create a canvas element
-            const canvas = document.createElement('canvas');
+            const canvas = window.document.createElement('canvas');
             canvas.width = width;
             canvas.height = height;
 
