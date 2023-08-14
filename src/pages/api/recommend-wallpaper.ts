@@ -35,7 +35,7 @@ export default async function recommendWallpaperHandler(
                 .select(
                     `
                         createdAt,
-                        Wallpaper( * ) 
+                        Wallpaper( * )
                     `,
                 )
                 .eq('author', author)
