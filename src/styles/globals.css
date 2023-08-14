@@ -46,8 +46,7 @@ a.button {
     /* filter: invert(100%); */
     padding: 0;
     margin: -3px;
-
-    /* !!! Emojis should be font-sized*/
+    /* !! Emojis should be font-sized*/
 }
 
 .button.button-featured:hover .emoji {

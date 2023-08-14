@@ -7,7 +7,6 @@ import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 async function register(wallpaperId: uuid) {
     console.info('🔌', 'Registering your page');
-
     console.info('🔌', 'hostname', window.location.hostname);
     console.info('🔌', 'host', window.location.host);
 
@@ -38,11 +37,12 @@ export default async function registerScriptHandler(request: NextApiRequest, res
         .end(
             prettifyJavascript(
                 spaceTrim(
-                    // !!! Add note
                     (block) => `
 
                         /**
-                         * Note: [🔌]
+                         * Note: [🔌] This script will register your page ${
+                             NEXT_PUBLIC_URL.href
+                         } into the 1-2i database of sites
                          **/
 
                         (()=>{
@@ -60,7 +60,3 @@ export default async function registerScriptHandler(request: NextApiRequest, res
             ),
         );
 }
-
-/**
- * TODO: Maybe prettify
- */

@@ -19,5 +19,5 @@ export const markdownConverter = new Converter({
 });
 
 /**
- * TODO: !!! Lazy-make converter
+ * TODO: !! Lazy-make converter
  */

@@ -34,7 +34,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 
                     {homeUrl && (
                         // TODO: !! Allow also to pass a full menu / URL for menu script
-                        // TODO: !!! Restrict homeUrl to be only from the same domain
+                        // TODO: !! Restrict homeUrl to be only from the same domain
                         // TODO: Here can be also passed background image of the home page
                         <Link href={homeUrl} className={classNames('button', styles.homeButton)}>
                             Home
@@ -82,7 +82,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
- * TODO: !!! This should be in /embed/gallery and index should be generated from this and create more indexes
  * TODO: !! [🧶] FAQ section - how it works
  * TODO: !! [1] Filters - [Fulltext][Light/Dark/Color]
  * TODO: !! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]

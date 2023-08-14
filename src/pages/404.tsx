@@ -35,5 +35,5 @@ export default function NotFoundPage() {
 }
 
 /**
- * TODO: !!! Make + export - inspired by index+RandomWallpaperManager
+ * TODO: Redirect / link to index - DRY with not found wallpaper
  */

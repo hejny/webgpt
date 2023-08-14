@@ -19,7 +19,7 @@ export function FilePreview(props: FilePreviewProps) {
                 className={styles.filePreview}
                 theme="vs-dark"
                 language={
-                    file.mimeType /* <- TODO: !!! Here should be strings like "javascript" not mime-types like "text/javascript" @see https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages */
+                    file.mimeType /* <- TODO: Here should be strings like "javascript" not mime-types like "text/javascript" @see https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages */
                 }
                 options={{
                     wordWrap: 'on',

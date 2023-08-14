@@ -32,7 +32,7 @@ export function GallerySection(props: SampleProps) {
         currentWallpapers,
         filter,
         false,
-    ); /* <- TODO: !!! Cache (memoize) + Do async */
+    ); /* <- TODO: !! Cache (memoize) + Do async */
 
     if (filteredWallpapers.length === 0) {
         console.groupCollapsed('🔎', 'Nothing found, so logging the reason: ');

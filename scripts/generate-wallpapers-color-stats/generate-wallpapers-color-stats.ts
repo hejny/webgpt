@@ -29,7 +29,7 @@ program.option(
     '--commit',
     `Autocommit changes`,
     false,
-); /* <- TODO: !!! ACRY It does not make sence to commit changes - [🧠] maybe upload them  */
+); /* <- TODO: !! ACRY It does not make sence to commit changes - [🧠] maybe upload them  */
 program.option('--shuffle', `Randomize wallpapers order`, false);
 // TODO: Probbably tell why to not use --parallel in colors
 program.option('--parallel <numbers>', `Run N promises in parallel`, '1');

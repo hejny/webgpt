@@ -47,6 +47,6 @@ export function useLikedStatusOfCurrentWallpaper(): [
 }
 
 /**
- * TODO: !!! Supabase should be main source of truth NOT just backup
- * TODO: !!! Make reactions ONLY through this hook (or related logic) NOT sideways by directly writing to (local)storage
+ * TODO: !! Supabase should be main source of truth NOT just backup
+ * TODO: !! Make reactions ONLY through this hook (or related logic) NOT sideways by directly writing to (local)storage
  */

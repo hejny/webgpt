@@ -11,9 +11,6 @@ export async function exportAsZip(wallpaper: IWallpaper, options: ZipExportOptio
     const zip = new JSZip();
 
     const { files } = await exportAsHtml(wallpaper, { ...options, stylesPlace: 'EXTERNAL' });
-    // TODO: !!! Extract css to separate file
-    // TODO: !!! Materialize assets
-    // TODO: !!! Prettify all files
 
     for (const file of files) {
         zip.file(file.pathname, file.content);
@@ -26,7 +23,6 @@ export async function exportAsZip(wallpaper: IWallpaper, options: ZipExportOptio
 }
 
 /**
- * TODO: !!! Materialize assets
  * TODO: !!! [🎍] Allow to put URL
  * TODO: !! [🎍] Optionally: CNAME, Prettier, Vscode, GitHub
  * TODO: !! Add LICENSE.md

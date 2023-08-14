@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../config';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
 import { likedStatusToLikeness } from '../../recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
@@ -83,10 +83,11 @@ export default async function recommendWallpaperHandler(
 
         return response.status(200).json({
             recommendedWallpaper,
-            debug: {
-                // TODO: !!! NEXT_PUBLIC_DEBUG
-                previousReactions,
-            },
+            debug: !NEXT_PUBLIC_DEBUG
+                ? undefined
+                : {
+                      previousReactions,
+                  },
         } as any);
     } catch (error) {
         if (!(error instanceof Error)) {

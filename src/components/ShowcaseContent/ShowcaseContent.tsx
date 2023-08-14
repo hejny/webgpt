@@ -10,7 +10,7 @@ import styles from './ShowcaseContent.module.css';
 
 export function ShowcaseContent() {
     const router = useRouter();
-    const isPreview = router.query.mode === 'preview'; /* <- TODO: !!! Use useMode */
+    const isPreview = router.query.mode === 'preview'; /* <- TODO: !! Use useMode */
 
     return (
         <div className={styles.page}>

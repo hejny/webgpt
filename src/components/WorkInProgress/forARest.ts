@@ -1,6 +1,6 @@
 import { forImmediate } from 'waitasecond';
 
-const REST_AFTER_MS = 100; /* <- TODO: !!! Tweak time */
+const REST_AFTER_MS = 100; /* <- TODO: !! Tweak time */
 
 /**
  * @@@

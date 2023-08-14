@@ -21,26 +21,10 @@ export function filterWallpapers(
     // debugger;
 
     if (fulltext) {
-        // TODO: !!! Normalize words
-        // TODO: !!! Search in tags, content, title,...
-        // TODO: [🔎] Search through keywords @see https://ibb.co/2Fy7kN4
-
-        /*
-        for (const wallpaper of wallpapers) {
-            if (wallpaper.keywords) {
-                continue;
-            }
-
-            wallpaper.keywords = parseKeywordsFromWallpaper(wallpaper);
-
-            if (isLogged) {
-                console.info('🔎', wallpaper.id, wallpaper.keywords);
-            }
-
-        }
-        */
-
-        const searchKeywords = parseKeywordsFromString(fulltext);
+        const searchKeywords =
+            parseKeywordsFromString(
+                fulltext,
+            ); /* <- TODO: Maybe use here some smarter keyword extraction @see https://ibb.co/2Fy7kN4 */
 
         if (isLogged) {
             console.info('🔎', { searchKeywords });
@@ -56,14 +40,14 @@ export function filterWallpapers(
 
     if (color) {
         // TODO: Search through whole palette (with bigger weight on first color) not average color WHEN palette is available and materialized
-        // TODO: !!! If nothing found, increase treashold
+        // TODO: !! If nothing found, increase treashold
         const treasholdSquared =
             colorDistanceSquared(Color.get('black'), Color.get('white')) *
             DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO; /* <- TODO: !! Is here corect work with squaring */
         wallpapers = wallpapers.filter(
             (wallpaper) =>
                 colorDistanceSquared(
-                    wallpaper.colorStats.averageColor /* <- TODO: !!! Test here (whole) palette */,
+                    wallpaper.colorStats.averageColor /* <- TODO: !! Test here (whole) palette */,
                     color,
                 ) <= treasholdSquared,
         );
@@ -139,5 +123,5 @@ export function filterWallpapers(
 }
 
 /**
- * TODO: !!! Liked should filter also Loved
+ * TODO: !! Liked should filter also Loved
  */

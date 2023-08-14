@@ -51,7 +51,7 @@ export function ColorsModal(props: ColorsModalProps) {
                                 },
                             }}
                             color={color.value.toHex()}
-                            /* !!! , presetColors*/
+                            // TODO: !! Use presetColors
                             onChangeComplete={({ rgb: { r, g, b } }) => {
                                 modifyWallpaper((modifiedWallpaper) => {
                                     modifiedWallpaper.colorStats.palette[i]!.note = `Manually edited`;

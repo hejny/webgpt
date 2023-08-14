@@ -1,6 +1,6 @@
 <!--
 
-TODO: !!! how-it-works vs explanation - make some consistent page/content strategy
+TODO: !! how-it-works vs explanation - make some consistent page/content strategy
 
 
 Topic

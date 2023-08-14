@@ -30,8 +30,7 @@ export function ColorsModalColorAlgoritm() {
                             throw new Error(`Unknown color algorithm version: ${newVersion}`);
                         }
 
-                        // Probbably solved -> TODO: !!! [🧠] Fix tainted canvas error
-                        // TODO: !!! [🧠] Whe best way to report progress from createImageInBrowser and compute
+                        // TODO: !! [🧠] Whe best way to report progress from createImageInBrowser and compute
 
                         const start = performance.now();
                         console.info('🎨', { wallpaper });
