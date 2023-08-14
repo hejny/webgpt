@@ -41,6 +41,7 @@ export default async function recommendWallpaperHandler(
                 .eq('author', author)
                 .eq('likedStatus', likedStatus)
                 .order('createdAt', { ascending: false })
+                // <- TODO: !!!! [🤺][🧠] Take ONLY current reactions NOT overwritten ones
                 .limit(10 /* <- TODO:  [🤺] Tweak this number */);
 
             const likeness = likedStatusToLikeness(likedStatus);
