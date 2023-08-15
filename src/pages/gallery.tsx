@@ -60,7 +60,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
             ...({
-                wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
+                wallpapers: (await getHardcodedWallpapers(/* TODO: !!! Here should be dynamic filtering */)).map((fullWallpaper) => {
                     const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
                     return {
                         id,
