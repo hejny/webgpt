@@ -1,6 +1,5 @@
 import { ReactNode, useContext } from 'react';
 import { Promisable } from 'type-fest';
-import { IS_PRODUCTION } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_css_class } from '../../utils/typeAliases';
 import { InlineScript } from '../InlineScript/InlineScript';
@@ -31,15 +30,9 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                     }
 
                     for (let componentElement of Array.from(rootElement.querySelectorAll('[data-ai-component]'))) {
-                        let logNote = '';
-
                         const activatedCount = parseInt(componentElement.getAttribute('data-ai-activated') || '0', 10);
                         if (activatedCount > 0) {
-                            if (IS_PRODUCTION) {
-                                continue;
-                            }
-                            // TODO:> componentElement = removeAllEventListeners(componentElement);
-                            logNote = ' (double-activated on local development)';
+                            continue;
                         }
 
                         const componentType = componentElement.getAttribute('data-ai-component');
@@ -49,7 +42,7 @@ export function AiComponentsRoot(props: AiComponentsRootProps) {
                             throw new Error(`Unknown component "${componentType}"`);
                         }
 
-                        console.info(`🌟 Activating ${componentType} component${logNote}`, componentElement);
+                        console.info(`🌟 Activating ${componentType} component`, componentElement);
 
                         componentActivator(componentElement as HTMLElement);
 
