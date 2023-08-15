@@ -87,7 +87,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             configRules.push(rule);
         }
         // 3️⃣ Article
-        else if (rule.includes('.Article' /* <- TODO: Probbably better detection */)) {
+        else if (rule.includes('Article' /* <- TODO: Probbably better detection */)) {
             // TODO: !!!! Fix
             articleRules.push(rule);
         }
