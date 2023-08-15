@@ -6,6 +6,7 @@ import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { ColorsPanel } from '../ColorsPanel/ColorsPanel';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
+import { PreventUnsavedChanges } from './PreventUnsavedChanges';
 
 export function WallpaperEditing() {
     const router = useRouter();
@@ -17,6 +18,8 @@ export function WallpaperEditing() {
 
     return (
         <>
+            <PreventUnsavedChanges />
+
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}

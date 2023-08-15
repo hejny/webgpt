@@ -3,7 +3,6 @@ import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
-import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
@@ -55,11 +54,6 @@ export default function WallpaperPage(props: WallpaperPageProps) {
 
             {<WallpaperLayout />}
             {isEditable && <WallpaperEditing />}
-            {
-                isEditable && (
-                    <PreventUnsavedChanges />
-                ) /* <- !!!! Put <PreventUnsavedChanges /> under <WallpaperEditing/> */
-            }
         </WallpapersContext.Provider>
     );
 }
