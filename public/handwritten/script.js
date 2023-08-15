@@ -601,11 +601,11 @@ var widthSliderElement = getElement('width-slider');
 
 widthSliderElement.oninput = () =>
 ((r) => {
-    for (; canvasElement.lastChild; )
+  for (; canvasElement.lastChild; )
 canvasElement.removeChild(canvasElement.lastChild); if (K(r) != 0) { const e =
 options.width; /*parseFloat(widthSliderElement.value)* / const a = z(r); for
 (let l = 0; l < K(a); l++) (r = a[l]), K(r) < 2 || q(r, t, e);
-    }
+  }
 })(tr);
 */
 
@@ -719,13 +719,13 @@ const popOutActionElement = window.document.createElement('a');
 popOutActionElement.setAttribute('href',
 `data:image/svg+xml;base64,${window.btoa(extremeSvg)}`);
 popOutActionElement.setAttribute(
-    'download',
-    `${Z.toString()
-        .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w\-]+/g, '')
-        .replace(/\-\-+/g, '-')
-        .trim()}.svg`,
+  'download',
+  `${Z.toString()
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w\-]+/g, '')
+      .replace(/\-\-+/g, '-')
+      .trim()}.svg`,
 );
 popOutActionElement.click();
 });
