@@ -60,28 +60,31 @@ export async function getStaticProps({ locale }: { locale: string }) {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
             ...({
-                wallpapers: (await getHardcodedWallpapers(/* TODO: !!! Here should be dynamic filtering */)).map((fullWallpaper) => {
-                    const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
-                    return {
-                        id,
-                        parent,
-                        src,
-                        prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
-                        colorStats /* <- TODO: !! Also reduce colorStats */,
-                        // TODO: shapeStats> IWallpaperShapeStats;
-                        title,
-                        content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
-                        keywords,
-                        isPublic,
-                        author,
-                    } satisfies IWallpaperSerialized;
-                }),
+                wallpapers: (await getHardcodedWallpapers(/* TODO: !!! Here should be dynamic filtering */)).map(
+                    (fullWallpaper) => {
+                        const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
+                        return {
+                            id,
+                            parent,
+                            src,
+                            prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                            colorStats /* <- TODO: !! Also reduce colorStats */,
+                            // TODO: shapeStats> IWallpaperShapeStats;
+                            title,
+                            content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                            keywords,
+                            isPublic,
+                            author,
+                        } satisfies IWallpaperSerialized;
+                    },
+                ),
             } satisfies GalleryPageProps),
         },
     };
 }
 
 /**
+ * TODO: !!! Create personalized gallery OR /portfolio
  * TODO: !! [🧶] FAQ section - how it works
  * TODO: !! [1] Filters - [Fulltext][Light/Dark/Color]
  * TODO: !! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]
