@@ -3,7 +3,7 @@ import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
 export async function activateGalleryComponent(galleryElement: HTMLElement): Promise<void> {
     const moreButtonHtml = `
-        <a href="https://1-2i.com/?home=${encodeURIComponent(window.location.href)}" class="button">More</a>
+        <a href="/" class="button">More</a>
     `;
     galleryElement.innerHTML = `
         <div class="ai-gallery">
@@ -21,7 +21,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement): Pro
         </div>
     `;
 
-    const response = await fetch(`https://1-2i.com/mocked-api/wallpapers-min-loved.json`);
+    const response = await fetch(`/mocked-api/wallpapers-min-loved.json`);
     const { wallpapers } = (await response.json()) as {
         wallpapers: Array<{
             id: string_wallpaper_id;
@@ -44,9 +44,9 @@ export async function activateGalleryComponent(galleryElement: HTMLElement): Pro
 
     const itemsHtml = pickedWallpapers.map(
         ({ id, primaryColor }) => `
-        <a href="https://1-2i.com/wallpaper/${id}">
+        <a href="/${id}">
             <iframe
-                src="https://1-2i.com/wallpaper/${id}?mode=preview"
+                src="/${id}?mode=show-thumbnail"
                 allowtransparency="false"
                 scrolling="no"
                 frameborder="0"
