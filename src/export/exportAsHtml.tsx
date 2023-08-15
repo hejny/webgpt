@@ -88,7 +88,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         }
         // 3️⃣ Article
         else if (rule.includes('Article' /* <- TODO: Probbably better detection */)) {
-            // TODO: !!!! Fix
             articleRules.push(rule);
         }
 
@@ -225,7 +224,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             </html>,
         );
 
-        // !!!!! Enhance in export: HeaderWallpaper img
         // !!!!! Enhance in export: AI Components multiline text templates
 
         // Note: Post-processing HTML after React render

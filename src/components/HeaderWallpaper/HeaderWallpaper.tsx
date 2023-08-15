@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './HeaderWallpaper.module.css';
 
@@ -22,11 +21,15 @@ export function HeaderWallpaper() {
                     unoptimized /* <- Note: Optimization should happen on gallery level */
                     alt={prompt || title}
                     draggable="false"
-                    placeholder="blur"
+                    placeholder="empty" // <- Note: Because of export using rather a backgroundColor than a placeholder
                     priority={true}
-                    blurDataURL={colorToDataUrl(colorStats.averageColor)}
                     height={Math.round((width / 1920) * 1080)}
-                    style={{ /* [🎗] */ objectFit: 'cover', width: '100%', height: '100%' }}
+                    style={{
+                        /* [🎗] */ objectFit: 'cover',
+                        width: '100%',
+                        height: '100%',
+                        backgroundColor: colorStats.averageColor.toHex(),
+                    }}
                     {...{ width, quality }}
                 />
             </div>
@@ -35,6 +38,7 @@ export function HeaderWallpaper() {
 }
 
 /**
+ * TODO: In export get rid of data-nimg
  * TODO: [🧬] !! Fake generating - Unblur image in steps
  * TODO: [🧬] In future better diffusion simulator
  * TODO: [🧬] ? Maybe whole page from grayscale to full color
