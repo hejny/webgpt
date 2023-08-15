@@ -1,5 +1,5 @@
 .Debug {
-    z-index: 90000 /* <- [🔝] Global order of showcase */;
+    z-index: 90000 /* <- [🔝] Global z-index for wallpaper page */;
     position: fixed;
     top: 10px;
     left: 10px;

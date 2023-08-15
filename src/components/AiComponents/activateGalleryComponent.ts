@@ -44,9 +44,9 @@ export async function activateGalleryComponent(galleryElement: HTMLElement): Pro
 
     const itemsHtml = pickedWallpapers.map(
         ({ id, primaryColor }) => `
-        <a href="https://1-2i.com/showcase/${id}">
+        <a href="https://1-2i.com/wallpaper/${id}">
             <iframe
-                src="https://1-2i.com/showcase/${id}?mode=preview"
+                src="https://1-2i.com/wallpaper/${id}?mode=preview"
                 allowtransparency="false"
                 scrolling="no"
                 frameborder="0"

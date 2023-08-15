@@ -8,14 +8,14 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 
-interface ShowcaseAppHeadProps {
+interface WallpaperAppHeadProps {
     children?: ReactNode;
 }
 
 /**
  * @@@
  */
-export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
+export function WallpaperAppHead(props: WallpaperAppHeadProps) {
     const { children } = props;
     const [wallpaper] = useWallpaper();
     const { isExported, publicUrl } = useContext(ExportContext);
@@ -81,7 +81,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
         </>
     );
     if (!isExported) {
-        // Note: For some strange reason we can not use <Head> in <ShowcasePage> - it fires "NextRouter was not mounted"
+        // Note: For some strange reason we can not use <Head> in <WallpaperPage> - it fires "NextRouter was not mounted"
         return (
             <>
                 <Head>
@@ -134,5 +134,5 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
  * TODO: Create better summary
  * TODO: Maybe import from some JSON
  * TODO: What is ideal viewport value
- * TODO: [🦋] Use here better preview image - with some palette showcase + title + special optimized crops for each usage
+ * TODO: [🦋] Use here better preview image - with some palette wallpaper + title + special optimized crops for each usage
  */

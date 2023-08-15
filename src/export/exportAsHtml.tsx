@@ -6,7 +6,7 @@ import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../config';
 import stripesBlackImage from '../../public/patterns/simple/stripes-black.png';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
-import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
+import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
 import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
 import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
@@ -183,7 +183,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     <ExportContext.Provider value={{ isExported: true, publicUrl: publicUrl || NEXT_PUBLIC_URL }}>
                         <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                             <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
-                                <ShowcaseAppHead>
+                                <WallpaperAppHead>
                                     {stylesPlace == 'EXTERNAL'
                                         ? files
                                               .filter(({ mimeType }) => mimeType === 'text/css')
@@ -211,7 +211,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                                                       }}
                                                   />
                                               ))}
-                                </ShowcaseAppHead>
+                                </WallpaperAppHead>
 
                                 {/* TODO: Maybe <LanguagePicker /> */}
 

@@ -38,6 +38,6 @@ export function WallpaperLayout() {
 }
 
 /**
- * TODO: Rename ACRY WallpaperLayout to ShowcaseLayout
+ * TODO: Rename ACRY WallpaperLayout to WallpaperLayout
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */

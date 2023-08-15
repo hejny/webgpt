@@ -2,7 +2,7 @@ import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
+import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
 import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
@@ -15,11 +15,11 @@ import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { string_wallpaper_id } from '../utils/typeAliases';
 import { validateUuid } from '../utils/validators/validateUuid';
 
-interface ShowcasePageProps {
+interface WallpaperPageProps {
     currentWallpaper: null | IWallpaperSerialized;
 }
 
-export default function ShowcasePage(props: ShowcasePageProps) {
+export default function WallpaperPage(props: WallpaperPageProps) {
     let { currentWallpaper } = props;
     const { isEditable } = useMode();
 
@@ -47,7 +47,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
         <WallpapersContext.Provider
             value={hydrateWallpapersCached([currentWallpaper])} /* <- Is this the right place to be Provider in? */
         >
-            <ShowcaseAppHead />
+            <WallpaperAppHead />
             <SkinStyle />
             {/* TODO: <LanguagePicker /> */}
 
@@ -55,7 +55,11 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
             {<WallpaperLayout />}
             {isEditable && <WallpaperEditing />}
-            {isEditable && <PreventUnsavedChanges /> /* <- !!!! Put <PreventUnsavedChanges /> under <WallpaperEditing/> */}
+            {
+                isEditable && (
+                    <PreventUnsavedChanges />
+                ) /* <- !!!! Put <PreventUnsavedChanges /> under <WallpaperEditing/> */
+            }
         </WallpapersContext.Provider>
     );
 }
@@ -107,7 +111,6 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!! Rename Showcase -> Wallpaper
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code

@@ -123,7 +123,7 @@ export function WallpaperContentSection() {
  * TODO: [🎐] Some markdown can not be converted back from html - use fallback to pure html content
  * TODO: [🧬] !! Fake generating - write tokenized text
  * TODO: !! [👕] Allow to edit the header position + other things
- * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome
+ * TODO: !! This should be really named WallpaperSection because it cointains mere then welcome
  * TODO: !! Allow html content
  * TODO: Allow templating systems
  */
