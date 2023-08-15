@@ -594,20 +594,20 @@ function handwriteText(options) {
     var canvasElement = getElement('canvas');
 
     /*
-  var styleSelectElement = getElement('select-style');
-  var biasSliderElement = getElement('bias-slider');
-  var speedSliderElement = getElement('speed-slider');
-  var widthSliderElement = getElement('width-slider');
+var styleSelectElement = getElement('select-style');
+var biasSliderElement = getElement('bias-slider');
+var speedSliderElement = getElement('speed-slider');
+var widthSliderElement = getElement('width-slider');
 
-  widthSliderElement.oninput = () =>
-      ((r) => {
-          for (; canvasElement.lastChild; )
-  canvasElement.removeChild(canvasElement.lastChild); if (K(r) != 0) { const e =
-  options.width; /*parseFloat(widthSliderElement.value)* / const a = z(r); for
-  (let l = 0; l < K(a); l++) (r = a[l]), K(r) < 2 || q(r, t, e);
-          }
-      })(tr);
-  */
+widthSliderElement.oninput = () =>
+    ((r) => {
+        for (; canvasElement.lastChild; )
+canvasElement.removeChild(canvasElement.lastChild); if (K(r) != 0) { const e =
+options.width; /*parseFloat(widthSliderElement.value)* / const a = z(r); for
+(let l = 0; l < K(a); l++) (r = a[l]), K(r) < 2 || q(r, t, e);
+        }
+    })(tr);
+*/
 
     let ur;
     let fr;
@@ -690,13 +690,13 @@ function handwriteText(options) {
                         handleWriteClick();
 
                         /*
-          getElement('draw-button').addEventListener('mousedown',
-          handleWriteClick);
-          getElement('text-input').addEventListener('keydown', (event) => {
-              return event.keyCode === 13 ? handleWriteClick() : 1;
-          });
-          getElement('loading-indicator').remove();
-          */
+getElement('draw-button').addEventListener('mousedown',
+handleWriteClick);
+getElement('text-input').addEventListener('keydown', (event) => {
+return event.keyCode === 13 ? handleWriteClick() : 1;
+});
+getElement('loading-indicator').remove();
+*/
                     }
                 };
                 return init(), at;
@@ -705,29 +705,29 @@ function handwriteText(options) {
         });
 
     /*
-  // --------------------------------------- Saving
-  ---------------------------------------
+// --------------------------------------- Saving
+---------------------------------------
 
-  getElement('save-button').addEventListener('click', () => {
-      const r = getElement('canvas').getBBox();
-      const width = [hr(r.x - 3), hr(r.y - 3), hr(r.width + 6), hr(r.height +
-  6)].join(' '); const svgElement = getElement('canvas');
-      svgElement.setAttribute('viewBox', width);
-      const extremeSvg = new XMLSerializer().serializeToString(svgElement);
-      svgElement.removeAttribute('viewBox');
-      const popOutActionElement = window.document.createElement('a');
-      popOutActionElement.setAttribute('href',
-  `data:image/svg+xml;base64,${window.btoa(extremeSvg)}`);
-      popOutActionElement.setAttribute(
-          'download',
-          `${Z.toString()
-              .toLowerCase()
-              .replace(/\s+/g, '-')
-              .replace(/[^\w\-]+/g, '')
-              .replace(/\-\-+/g, '-')
-              .trim()}.svg`,
-      );
-      popOutActionElement.click();
-  });
-  */
+getElement('save-button').addEventListener('click', () => {
+    const r = getElement('canvas').getBBox();
+    const width = [hr(r.x - 3), hr(r.y - 3), hr(r.width + 6), hr(r.height +
+6)].join(' '); const svgElement = getElement('canvas');
+    svgElement.setAttribute('viewBox', width);
+    const extremeSvg = new XMLSerializer().serializeToString(svgElement);
+    svgElement.removeAttribute('viewBox');
+    const popOutActionElement = window.document.createElement('a');
+    popOutActionElement.setAttribute('href',
+`data:image/svg+xml;base64,${window.btoa(extremeSvg)}`);
+    popOutActionElement.setAttribute(
+        'download',
+        `${Z.toString()
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '-')
+            .trim()}.svg`,
+    );
+    popOutActionElement.click();
+});
+*/
 }
