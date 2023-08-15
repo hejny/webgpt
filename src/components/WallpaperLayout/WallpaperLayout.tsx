@@ -10,7 +10,7 @@ import styles from './WallpaperLayout.module.css';
 
 export function WallpaperLayout() {
     const router = useRouter();
-    const isPreview = router.query.mode === 'preview'; /* <- TODO: !! Use useMode */
+    const isPreview = router.query.mode === 'show-thumbnail'; /* <- TODO: !! Use useMode */
 
     return (
         <div className={styles.page}>

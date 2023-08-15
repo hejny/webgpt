@@ -37,7 +37,7 @@ export function Menu() {
                             <li className={styles.featured}>
                                 <WallpaperLink
                                     modal="export"
-                                    mode="NORMAL"
+                                    mode="EDIT"
                                     /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                                 >
                                     Get the web
@@ -78,9 +78,9 @@ export function Menu() {
                             {!isExported && (
                                 <li>
                                     {!isPresenting ? (
-                                        <WallpaperLink mode="PRESENTATION">Present</WallpaperLink>
+                                        <WallpaperLink mode="SHOW">Present</WallpaperLink>
                                     ) : (
-                                        <WallpaperLink mode="NORMAL">Show controls</WallpaperLink>
+                                        <WallpaperLink mode="EDIT">Show controls</WallpaperLink>
                                     )}
                                 </li>
                             )}
