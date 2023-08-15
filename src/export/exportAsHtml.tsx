@@ -123,9 +123,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     /**
                      * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
                      *       If you want to make design changes, consider:
-                     *          1. Making changes in separate file
-                     *          2. Chage config style NOT common style
-                     *          3. Chage article style NOT common style
+                     *          1. Making changes in separate custom .css file
+                     *          2. Modify config.css style NOT common style
+                     *          3. Modify article style NOT common style
                      */
 
                     ${block(importRules.join('\n\n\n'))}
