@@ -224,8 +224,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             </html>,
         );
 
-        // !!!!! Enhance in export: AI Components multiline text templates
-
         // Note: Post-processing HTML after React render
         html = html.split(`async=""`).join(`async`);
         html = html.split(`defer=""`).join(`defer`);
@@ -339,6 +337,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: Enhance in export: AI Components multiline text templates OR preserve string ` literals
  * TODO: Article_Article__fAEyv -> Article etc.
  * TODO: [🧠] /images vs /assets in exported zip
  * TODO: [🧠] Add TODOs into README.md OR TODO.md/txt
