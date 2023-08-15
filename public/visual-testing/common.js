@@ -1,5 +1,5 @@
 // TODO: Do not show the Next.js errors in the iframes (they are not relevant in this case)
-document.querySelectorAll('iframe').forEach((iframeElement) => {
+window.document.querySelectorAll('iframe').forEach((iframeElement) => {
     function hideNextjsErrors() {
         const iframeDocument = iframeElement.contentDocument;
         iframeDocument.body.innerHTML =

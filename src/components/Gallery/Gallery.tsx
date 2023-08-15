@@ -8,11 +8,7 @@ import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
 import { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
 import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
-interface SampleProps {}
-
-export function GallerySection(props: SampleProps) {
-    const {} = props;
-
+export function GallerySection() {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
@@ -67,7 +63,7 @@ export function GallerySection(props: SampleProps) {
                                     style={{ backgroundColor: wallpaper.colorStats.palette[0]!.value.toHex() }}
                                 >
                                     <iframe
-                                        // TODO: [🦋] Use here better preview image - with some palette showcase + title + smaller size
+                                        // TODO: [🦋] Use here better preview image - with some palette wallpaper + title + smaller size
                                         // TODO: [🦋] Show likedStatus here
                                         src={`https://1-2i.com` + `/${wallpaper.id}?mode=preview`}
                                         allowTransparency={false /* as a optimization */}

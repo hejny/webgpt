@@ -21,7 +21,3 @@ export function ExportComment(props: ExportCommentProps) {
         <div data-comment={comment} />
     );
 }
-
-/**
- * TODO: !!! [🚥] In export theese separation lines are not indented as its surrounding block
- */

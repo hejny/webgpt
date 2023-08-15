@@ -103,7 +103,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                             return;
                         }
 
-                        const linkElements = Array.from(document.querySelectorAll('a'));
+                        const linkElements = Array.from(window.document.querySelectorAll('a'));
                         for (const linkElement of linkElements) {
 
                             const isLinked = linkElement.getAttribute('data-linked');

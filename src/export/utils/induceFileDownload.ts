@@ -8,7 +8,7 @@ import { ObjectUrl } from './ObjectUrl';
  */
 export async function induceFileDownload(fileOrBlobOrUrl: File | Blob | URL | string_url) {
     const objectUrl = ObjectUrl.fromBlobOrUrl(fileOrBlobOrUrl);
-    const link = document.createElement('a');
+    const link = window.document.createElement('a');
     link.href = objectUrl.href;
     link.download = (fileOrBlobOrUrl as File).name || 'untitled' /* <- TODO: Add propper extension according to url */;
     link.click();

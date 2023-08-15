@@ -3,7 +3,7 @@
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
-    z-index: 30000 /* <- [🔝] Global order of showcase */;
+    z-index: 30000 /* <- [🔝] Global z-index for wallpaper page */;
     pointer-events: none;
 
     transform: translate(0, 50%);
@@ -31,7 +31,7 @@
     outline: 1px dotted rgb(79, 194, 223);
     /**/
 
-    z-index: 30000 /* <- [🔝] Global order of showcase */;
+    z-index: 30000 /* <- [🔝] Global z-index for wallpaper page */;
     pointer-events: none;
 
     border: 2px dashed #22d3da;

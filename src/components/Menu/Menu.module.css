@@ -15,7 +15,7 @@
     outline: 1px solid rgb(102, 255, 0);
     /**/
 
-    z-index: 20002 /* <- [🔝] Global order of showcase */;
+    z-index: 20002 /* <- [🔝] Global z-index for wallpaper page */;
     user-select: none;
     position: relative;
 }

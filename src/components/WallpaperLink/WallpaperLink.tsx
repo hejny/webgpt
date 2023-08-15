@@ -1,3 +1,4 @@
+import { normalizeToKebabCase } from 'n12';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { RefCallback, useContext } from 'react';
@@ -26,16 +27,16 @@ export function WallpaperLink(props: WallpaperLinkProps) {
     const { isExported } = useContext(ExportContext);
 
     const query: Record<string, any> = {
-        wallpaper: wallpaperId || router.query.wallpaper,
-        mode: mode?.toLocaleLowerCase() || router.query.mode,
+        wallpaperId: wallpaperId || router.query.wallpaperId,
+        mode: mode ? normalizeToKebabCase(mode) : router.query.mode,
         page: page || router.query.page,
         modal: modal || router.query.modal,
     };
 
-    if (wallpaperId === null || !query.wallpaper) {
+    if (wallpaperId === null || !query.wallpaperId) {
         delete query.wallpaperId;
     }
-    if (mode === 'NORMAL' || !query.mode) {
+    if (mode === 'EDIT' || !query.mode) {
         delete query.mode;
     }
     if (page === 'index' || !query.page) {
@@ -49,7 +50,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
         return (
             <Link
                 href={{
-                    pathname: '/[wallpaper]',
+                    pathname: '/[wallpaperId]',
                     query,
                 }}
                 {...props}

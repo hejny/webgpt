@@ -8,7 +8,7 @@
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
-    z-index: 3000 /* <- [🔝] Global order of showcase */;
+    z-index: 3000 /* <- [🔝] Global z-index for wallpaper page */;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -58,31 +58,28 @@
     border-radius: 5px;
 
     font-size: 17px;
-    background-color: rgb(205, 227, 231) /* <- TODO: !! Figure out best colors */;
+    background-color: rgb(205, 227, 231);
 
     transition: all 0.3s ease-in-out;
-
-    /* TODO: !!!! Do not show active button as slightly different color of blue  */
-    /* TODO: !!!! Make clicking on buttons with the effect same as toggle */
 }
 
 .button.callToAction {
     aspect-ratio: unset;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(199, 39, 119) /* <- TODO: !! Figure out best colors */;
+    background-color: rgb(199, 39, 119);
     color: white;
     text-decoration: none;
 }
 
-.button:hover {
-    /* TODO: Made here some animation effect*/
-
-    background-color: rgb(167, 213, 221);
+@media only screen and (min-width: 900px) {
+    .button:hover:not(.callToAction):not([data-active='true']) {
+        background-color: rgb(255, 237, 246);
+    }
 }
 
 .button[data-active='true'] {
-    background-color: rgb(199, 39, 119) /* <- TODO: !! Figure out best colors */;
+    background-color: rgb(199, 39, 119);
     text-align: center;
     font-size: 17px;
     margin: 5px;

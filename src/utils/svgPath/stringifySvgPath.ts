@@ -3,7 +3,7 @@ import { ISvgPath } from './ISvgPath';
 
 /**
  * An interface for the options of stringifySvgPath function ⁘
- * 
+ *
  * @interface
  * @property {ISvgPath} path - The SVG path to stringify
  * @property {IVector} topLeft - The top-left corner of the SVG path
@@ -15,9 +15,9 @@ interface IStringifySvgPathOptions {
 
 /**
  * A function that converts an SVG path to a string ⁘
- * 
+ *
  * @param {IStringifySvgPathOptions} options - The options for the function
- * @returns {string} The string representation of the SVG path
+ * @returns {string} The string reshow of the SVG path
  */
 export function stringifySvgPath({ path, topLeft }: IStringifySvgPathOptions): string {
     return (

@@ -1,7 +1,7 @@
 .LanguagePicker {
     display: block;
     position: fixed;
-    z-index: 10000 /* <- [🔝] (FUTURE) Global order of showcase */;
+    z-index: 10000 /* <- [🔝] (FUTURE) Global z-index for wallpaper page */;
     right: 10px;
     top: 10px;
 }

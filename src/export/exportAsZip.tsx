@@ -23,7 +23,6 @@ export async function exportAsZip(wallpaper: IWallpaper, options: ZipExportOptio
 }
 
 /**
- * TODO: !!! [🎍] Allow to put URL
  * TODO: !! [🎍] Optionally: CNAME, Prettier, Vscode, GitHub
  * TODO: !! Add LICENSE.md
  * TODO: !! Add original src
