@@ -4,9 +4,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
-import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
-import { ShowcaseContentEdit } from '../components/ShowcaseContentEdit/ShowcaseContentEdit';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
+import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
+import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { useMode } from '../utils/hooks/useMode';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
@@ -53,9 +53,9 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
             {/* <Debug /> */}
 
-            {<ShowcaseContent />}
-            {isEditable && <ShowcaseContentEdit />}
-            {isEditable && <PreventUnsavedChanges />}
+            {<WallpaperLayout />}
+            {isEditable && <WallpaperEditing />}
+            {isEditable && <PreventUnsavedChanges /> /* <- !!!! Put <PreventUnsavedChanges /> under <WallpaperEditing/> */}
         </WallpapersContext.Provider>
     );
 }
@@ -107,6 +107,7 @@ export async function getStaticProps({
 }
 
 /**
+ * TODO: !!! Rename Showcase -> Wallpaper
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code

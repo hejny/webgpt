@@ -13,12 +13,12 @@ import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent'
 import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
 import { getPageContent } from './getPageContent';
-import styles from './ShowcaseArticle.module.css';
+import styles from './WallpaperContent.module.css';
 
 /**
  * @@@
  */
-export function ShowcaseArticleSection() {
+export function WallpaperContentSection() {
     const { isEditable } = useMode();
     const [{ content, title }, modifyWallpaper] = useWallpaper();
     const { isExported } = useContext(ExportContext);
@@ -121,7 +121,6 @@ export function ShowcaseArticleSection() {
  * TODO: Maybe split header and content font
  * TODO: isHashUsed + test it and put into menu + some way to return existing hashes
  * TODO: [🎐] Some markdown can not be converted back from html - use fallback to pure html content
- * TODO: !!! Name this ShowcaseContentSection
  * TODO: [🧬] !! Fake generating - write tokenized text
  * TODO: !! [👕] Allow to edit the header position + other things
  * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome

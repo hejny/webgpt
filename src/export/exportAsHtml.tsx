@@ -7,9 +7,9 @@ import { NEXT_PUBLIC_URL } from '../../config';
 import stripesBlackImage from '../../public/patterns/simple/stripes-black.png';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
-import { PAGES_CONTENTS } from '../components/ShowcaseArticle/getPageContent';
-import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
+import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
@@ -216,7 +216,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                                 {/* TODO: Maybe <LanguagePicker /> */}
 
                                 <body>
-                                    <ShowcaseContent />
+                                    <WallpaperLayout />
                                 </body>
                             </WallpapersContext.Provider>
                         </ShuffleSeedContext.Provider>

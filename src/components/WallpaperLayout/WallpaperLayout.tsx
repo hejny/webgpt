@@ -5,10 +5,10 @@ import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpape
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { FooterSection } from '../Footer/Footer';
 import { Menu } from '../Menu/Menu';
-import { ShowcaseArticleSection } from '../ShowcaseArticle/ShowcaseArticle';
-import styles from './ShowcaseContent.module.css';
+import { WallpaperContentSection } from '../WallpaperContent/WallpaperContent';
+import styles from './WallpaperLayout.module.css';
 
-export function ShowcaseContent() {
+export function WallpaperLayout() {
     const router = useRouter();
     const isPreview = router.query.mode === 'preview'; /* <- TODO: !! Use useMode */
 
@@ -27,7 +27,7 @@ export function ShowcaseContent() {
                 <TiledBackground />
             </div>
             <main>
-                <ShowcaseArticleSection />
+                <WallpaperContentSection />
                 {/*<ReferencesSection variant="SHORT" />*/}
             </main>
             <footer>
@@ -38,6 +38,6 @@ export function ShowcaseContent() {
 }
 
 /**
- * TODO: Rename ACRY ShowcaseContent to ShowcaseLayout
+ * TODO: Rename ACRY WallpaperLayout to ShowcaseLayout
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */
