@@ -116,15 +116,6 @@ export function ControlPanel() {
 }
 
 /**
- * TODO: Edit on GitHub button | Each wallpaper in each subfolder+ gallery/a/b/id/....ext
- * TODO: !! On mobile
- * TODO: !! [Previous][Next]
- * TODO: !! [Simmilar]
- * TODO: !! [👕] [Change photo]
- * TODO: !! [👕] [Change content] to change the markdown
- * TODO: !! Allow to => export (+Collboard export) => Buy
- * TODO: !! Rename component to something more meaningful
  * TODO: !! Use translate
- * TODO: !! [🧶] Show here prompt, link to midjourney, how it was made,...
  * TODO: [🧠] Play can trigger fullscreen
  */

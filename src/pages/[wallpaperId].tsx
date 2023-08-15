@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
+import { WallpaperEditingLink } from '../components/WallpaperEditing/WallpaperEditingLink';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { useMode } from '../utils/hooks/useMode';
+import { useSsrDetection } from '../utils/hooks/useSsrDetection';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
@@ -21,6 +23,7 @@ interface WallpaperPageProps {
 export default function WallpaperPage(props: WallpaperPageProps) {
     let { currentWallpaper } = props;
     const { isEditable } = useMode();
+    const isServerRender = useSsrDetection();
 
     if (currentWallpaper === undefined) {
         return <div>Loading...</div> /* <- TODO: Better loading + [👠] Some standard standalone page*/;
@@ -54,6 +57,7 @@ export default function WallpaperPage(props: WallpaperPageProps) {
 
             {<WallpaperLayout />}
             {isEditable && <WallpaperEditing />}
+            {!isEditable && !isServerRender && <WallpaperEditingLink />}
         </WallpapersContext.Provider>
     );
 }
