@@ -8,7 +8,7 @@
     "homepage": "https://1-2i.com/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/hejny/aiai"
+        "url": "https://github.com/hejny/1-2i"
     },
     "scripts": {
         "dev": "npx chokidar \"locales/**/*.yml\" -c \"npx kill-port 4444 && NODE_OPTIONS='--inspect' next dev -p 4444\" --initial --debounce 500",
