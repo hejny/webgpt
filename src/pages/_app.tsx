@@ -8,12 +8,13 @@ import '../styles/globals.css';
 import '../styles/reset.css';
 import { ExportContext } from '../utils/hooks/ExportContext';
 
+
 const font = Dancing_Script({ weight: '400', subsets: ['latin', 'latin-ext'] });
 // !!!! const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 function App({ Component, pageProps }: AppProps) {
     return (
-        <div className={font.className} id="ui-root">
+        <div className={font.className /* <- Note: [🕋] This font is not included in export css */} id="ui-root">
             <ExportContext.Provider value={EXPORT_OPTIONS}>
                 <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                     <Component {...pageProps} />

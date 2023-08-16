@@ -32,7 +32,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     const { stylesPlace, publicUrl } = options;
 
     const files: Array<HtmlExportFile> = [];
-    const styles: Array<string> = [];
+    let styles: Array<string> = [];
 
     // Note: Fetch all <style> into styles
     for (const styleElement of Array.from(window.document.querySelectorAll('style'))) {
@@ -63,6 +63,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             ),
         );
     }
+
+    // Note: [🕋] Filter UI fonts
+    styles = styles.filter((style) => !style.includes('@font-face'));
 
     // Note: Join styles into one chunk
     const style = styles.join('\n\n\n');

@@ -20,7 +20,6 @@ interface WallpaperPageProps {
     currentWallpaper: null | IWallpaperSerialized;
 }
 
-// TODO: !!!! Apply also font here and split between the page and controls
 export default function WallpaperPage(props: WallpaperPageProps) {
     let { currentWallpaper } = props;
     const { isEditable } = useMode();
@@ -110,7 +109,6 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!! Font must be applied to whole page NOT only the article
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code
