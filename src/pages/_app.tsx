@@ -13,7 +13,7 @@ const font = Dancing_Script({ weight: '400', subsets: ['latin', 'latin-ext'] });
 
 function App({ Component, pageProps }: AppProps) {
     return (
-        <div className={font.className}>
+        <div className={font.className} id="ui-root">
             <ExportContext.Provider value={EXPORT_OPTIONS}>
                 <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                     <Component {...pageProps} />
