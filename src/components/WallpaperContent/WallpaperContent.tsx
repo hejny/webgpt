@@ -4,12 +4,12 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useMode } from '../../utils/hooks/useMode';
 import { usePageName } from '../../utils/hooks/usePageName';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useWallpaperFonts } from '../../utils/hooks/useWallpaperFonts';
 import { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
-import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
 import { getPageContent } from './getPageContent';
@@ -21,14 +21,14 @@ import styles from './WallpaperContent.module.css';
 export function WallpaperContentSection() {
     const { isEditable } = useMode();
     const [{ content, title }, modifyWallpaper] = useWallpaper();
+    const { mainWallpaperFont } = useWallpaperFonts();
+
     const { isExported } = useContext(ExportContext);
     const pageName = usePageName();
 
     if (pageName !== 'index') {
         let pageContent = getPageContent(pageName);
 
-        const mainContentFonts = extractFontsFromContent(content);
-        const mainContentFont = Array.from(mainContentFonts)[1] || Array.from(mainContentFonts)[0]!;
         pageContent = spaceTrim(
             (block) => `
 
@@ -38,7 +38,7 @@ export function WallpaperContentSection() {
 
             `,
         );
-        pageContent = addFontToContent(pageContent, mainContentFont);
+        pageContent = addFontToContent(pageContent, mainWallpaperFont);
         pageContent = pageContent.split(`{TITLE}`).join(title);
 
         return (

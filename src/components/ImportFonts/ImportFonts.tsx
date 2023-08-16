@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { FONTS } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { string_font } from '../../utils/typeAliases';
+import { string_font_family } from '../../utils/typeAliases';
 
 interface ImportFontsProps {
-    fonts: Set<string_font>;
+    fonts: Set<string_font_family>;
 }
 
 /**

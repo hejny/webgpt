@@ -81,7 +81,7 @@ export type string_description = string;
  * For example `"Poppins"`
  * @collboard-modules-sdk
  */
-export type string_font = typeof FONTS[number];
+export type string_font_family = typeof FONTS[number];
 
 /**
  * Semantic helper

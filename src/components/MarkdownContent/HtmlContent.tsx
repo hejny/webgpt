@@ -3,7 +3,6 @@ import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { string_css_class, string_href, string_html } from '../../utils/typeAliases';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
-import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { mapLinksInHtml } from './mapLinksInHtml';
 
 /**
@@ -29,11 +28,6 @@ interface HtmlContentProps {
     isEditable?: boolean;
 
     /**
-     * Import used fonts which are inlined in html
-     */
-    isUsedFontsImported?: boolean;
-
-    /**
      * If set, all <a href="..."> will be mapped by this function
      */
     mapLinks?(oldHref: string_href): string_href;
@@ -51,7 +45,7 @@ interface HtmlContentProps {
  */
 export function HtmlContent(props: HtmlContentProps) {
     let { content } = props;
-    const { className, isEditable, isUsedFontsImported, mapLinks, onHtmlChange } = props;
+    const { className, isEditable, mapLinks, onHtmlChange } = props;
 
     if (mapLinks) {
         content = mapLinksInHtml(content, mapLinks);
@@ -68,7 +62,6 @@ export function HtmlContent(props: HtmlContentProps) {
 
         return (
             <>
-                {isUsedFontsImported && <ImportFonts {...{ fonts }} />}
                 <div {...{ className }}>{children}</div>
             </>
         );
@@ -76,7 +69,6 @@ export function HtmlContent(props: HtmlContentProps) {
 
     return (
         <>
-            {isUsedFontsImported && <ImportFonts {...{ fonts }} />}
             <HtmlContentEditable {...{ content, className, onHtmlChange }} />
         </>
     );

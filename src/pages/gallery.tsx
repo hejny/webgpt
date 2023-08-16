@@ -1,5 +1,4 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Barlow_Condensed } from 'next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
@@ -11,7 +10,6 @@ import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
 
-const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 interface GalleryPageProps {
     wallpapers: Array<IWallpaperSerialized>;
@@ -27,7 +25,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
         >
             <StaticAppHead subtitle={null} />
 
-            <div className={classNames(styles.page, font.className)}>
+            <div className={styles.page}>
                 <main>
                     <h1>AI Web Maker</h1>
                     <p>Web pages listed here are pre-generated using AI:</p>

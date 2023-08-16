@@ -1,6 +1,4 @@
-import { Barlow_Condensed } from 'next/font/google';
 import { ReactNode, useEffect } from 'react';
-import { classNames } from '../../utils/classNames';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './00-Modal.module.css';
 import { CloseModalLink } from './10-CloseModalLink';
@@ -9,8 +7,6 @@ interface ModalProps {
     title: ReactNode;
     children: ReactNode;
 }
-
-const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 /**
  * @@
@@ -45,7 +41,7 @@ export function Modal(props: ModalProps) {
     return (
         <>
             <CloseModalLink className={styles.overlay} />
-            <dialog open className={classNames(styles.Modal, font.className)}>
+            <dialog open className={styles.Modal}>
                 <div className={styles.bar}>
                     <div className={styles.title}>
                         <h2>{title}</h2>

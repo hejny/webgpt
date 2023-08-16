@@ -1,3 +1,6 @@
+
+TODO: Maybe use unstyled components library like https://headlessui.com/
+TODO: Add aria-* attributes to all elements
 TODO: Add things from Ainautes
 TODO: Use https://www.npmjs.com/package/next-seo
 TODO: Add JSON+LD
