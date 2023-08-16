@@ -5,9 +5,9 @@ function handwriteText(options) {
         if (elementId === 'canvas') {
             return options.svgElement;
         } else {
-            return document.createElement('div');
+            return window.document.createElement('div');
         }
-        // return document.getElementById(elementId);
+        // return window.document.getElementById(elementId);
     }
 
     let r;
@@ -398,7 +398,7 @@ function handwriteText(options) {
             c.push(A);
         }
         const k = c.join(' ');
-        const F = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        const F = window.document.createElementNS('http://www.w3.org/2000/svg', 'path');
         F.setAttribute('d', k),
             (F.style.stroke = options.color || 'black'),
             (F.style.fill = options.color || 'black'),
@@ -712,7 +712,7 @@ function handwriteText(options) {
         svgElement.setAttribute('viewBox', width);
         const extremeSvg = new XMLSerializer().serializeToString(svgElement);
         svgElement.removeAttribute('viewBox');
-        const popOutActionElement = document.createElement('a');
+        const popOutActionElement = window.document.createElement('a');
         popOutActionElement.setAttribute('href', `data:image/svg+xml;base64,${window.btoa(extremeSvg)}`);
         popOutActionElement.setAttribute(
             'download',

@@ -6,10 +6,10 @@ import spaceTrim from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../config';
 import stripesBlackImage from '../../public/patterns/simple/stripes-black.png';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';
-import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
-import { PAGES_CONTENTS } from '../components/ShowcaseArticle/getPageContent';
-import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
+import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
 import { ShuffleSeedContext } from '../components/Shuffle/ShuffleSeedContext';
+import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
@@ -35,7 +35,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     const styles: Array<string> = [];
 
     // Note: Fetch all <style> into styles
-    for (const styleElement of Array.from(document.querySelectorAll('style'))) {
+    for (const styleElement of Array.from(window.document.querySelectorAll('style'))) {
         if (styleElement.hasAttribute('data-export-ignore')) {
             continue;
         }
@@ -45,7 +45,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     }
 
     // Note: Fetch all <link rel="stylesheet" into styles
-    for (const linkElement of Array.from(document.querySelectorAll('link'))) {
+    for (const linkElement of Array.from(window.document.querySelectorAll('link'))) {
         if (linkElement.rel !== 'stylesheet') {
             continue;
         }
@@ -87,8 +87,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             configRules.push(rule);
         }
         // 3️⃣ Article
-        else if (rule.includes('.Article' /* <- TODO: Probbably better detection */)) {
-            // TODO: !!!! Fix
+        else if (rule.includes('Article' /* <- TODO: Probbably better detection */)) {
             articleRules.push(rule);
         }
 
@@ -123,9 +122,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     /**
                      * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
                      *       If you want to make design changes, consider:
-                     *          1. Making changes in separate file
-                     *          2. Chage config style NOT common style
-                     *          3. Chage article style NOT common style
+                     *          1. Making changes in separate custom .css file
+                     *          2. Modify config.css style NOT common style
+                     *          3. Modify article style NOT common style
                      */
 
                     ${block(importRules.join('\n\n\n'))}
@@ -169,8 +168,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     function createPageHtml(pageName: string_page) {
         const memoryRouter = new MemoryRouter();
-        memoryRouter.pathname = '/[wallpaper]';
-        memoryRouter.query = { wallpaper: wallpaper.id };
+        memoryRouter.pathname = '/[wallpaperId]';
+        memoryRouter.query = { wallpaperId: wallpaper.id };
 
         if (pageName !== 'index') {
             memoryRouter.query.page = pageName;
@@ -179,11 +178,11 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         let html = renderToStaticMarkup(
             <html>
                 <RouterContext.Provider value={memoryRouter}>
-                    {/* <MemoryRouterProvider url={'/[wallpaper]'}> */}
+                    {/* <MemoryRouterProvider url={'/[wallpaperId]'}> */}
                     <ExportContext.Provider value={{ isExported: true, publicUrl: publicUrl || NEXT_PUBLIC_URL }}>
                         <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                             <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
-                                <ShowcaseAppHead>
+                                <WallpaperAppHead>
                                     {stylesPlace == 'EXTERNAL'
                                         ? files
                                               .filter(({ mimeType }) => mimeType === 'text/css')
@@ -211,12 +210,12 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                                                       }}
                                                   />
                                               ))}
-                                </ShowcaseAppHead>
+                                </WallpaperAppHead>
 
                                 {/* TODO: Maybe <LanguagePicker /> */}
 
                                 <body>
-                                    <ShowcaseContent />
+                                    <WallpaperLayout />
                                 </body>
                             </WallpapersContext.Provider>
                         </ShuffleSeedContext.Provider>
@@ -224,9 +223,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                 </RouterContext.Provider>
             </html>,
         );
-
-        // !!!!! Enhance in export: HeaderWallpaper img
-        // !!!!! Enhance in export: AI Components multiline text templates
 
         // Note: Post-processing HTML after React render
         html = html.split(`async=""`).join(`async`);
@@ -341,6 +337,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: Enhance in export: AI Components multiline text templates OR preserve string ` literals
  * TODO: Article_Article__fAEyv -> Article etc.
  * TODO: [🧠] /images vs /assets in exported zip
  * TODO: [🧠] Add TODOs into README.md OR TODO.md/txt

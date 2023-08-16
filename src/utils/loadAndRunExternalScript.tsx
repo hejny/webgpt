@@ -11,9 +11,9 @@ import { string_url } from './typeAliases';
 export function loadAndRunExternalScript(src: string_url): Promise<void> {
     return new Promise((resolve, reject) => {
         console.info(`Loading external script "${src}"`);
-        const scriptElement = document.createElement('script');
+        const scriptElement = window.document.createElement('script');
         scriptElement.src = src;
-        const headElement = document.getElementsByTagName('head')[0];
+        const headElement = window.document.getElementsByTagName('head')[0];
 
         if (!headElement) {
             throw new Error(`Head element not found!`);

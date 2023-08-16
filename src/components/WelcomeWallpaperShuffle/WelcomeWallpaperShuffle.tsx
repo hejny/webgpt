@@ -69,11 +69,7 @@ export function WelcomeWallpaperShuffle(props: WelcomeWallpaperShuffleProps) {
             href={`/${randomWallpaper.id}`}
             prefetch={false /* <- Note: Because already prefetching by rendering <iframe/> */}
         >
-            <iframe
-                src={`/${randomWallpaper.id}?mode=presentation`}
-                frameBorder="0"
-                style={{ pointerEvents: 'none' }}
-            />
+            <iframe src={`/${randomWallpaper.id}?mode=show`} frameBorder="0" style={{ pointerEvents: 'none' }} />
         </Link>
     );
 

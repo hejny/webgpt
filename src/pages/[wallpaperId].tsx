@@ -2,12 +2,13 @@ import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
-import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
-import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
-import { ShowcaseContentEdit } from '../components/ShowcaseContentEdit/ShowcaseContentEdit';
+import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
+import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
+import { WallpaperEditingLink } from '../components/WallpaperEditing/WallpaperEditingLink';
+import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { useMode } from '../utils/hooks/useMode';
+import { useSsrDetection } from '../utils/hooks/useSsrDetection';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
@@ -15,15 +16,15 @@ import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { string_wallpaper_id } from '../utils/typeAliases';
 import { validateUuid } from '../utils/validators/validateUuid';
 
-interface ShowcasePageProps {
+interface WallpaperPageProps {
     currentWallpaper: null | IWallpaperSerialized;
 }
 
 // TODO: !!!! Apply also font here and split between the page and controls
-
-export default function ShowcasePage(props: ShowcasePageProps) {
+export default function WallpaperPage(props: WallpaperPageProps) {
     let { currentWallpaper } = props;
     const { isEditable } = useMode();
+    const isServerRender = useSsrDetection();
 
     if (currentWallpaper === undefined) {
         return <div>Loading...</div> /* <- TODO: Better loading + [👠] Some standard standalone page*/;
@@ -49,20 +50,20 @@ export default function ShowcasePage(props: ShowcasePageProps) {
         <WallpapersContext.Provider
             value={hydrateWallpapersCached([currentWallpaper])} /* <- Is this the right place to be Provider in? */
         >
-            <ShowcaseAppHead />
+            <WallpaperAppHead />
             <SkinStyle />
             {/* TODO: <LanguagePicker /> */}
 
             {/* <Debug /> */}
 
-            {<ShowcaseContent />}
-            {isEditable && <ShowcaseContentEdit />}
-            {isEditable && <PreventUnsavedChanges />}
+            {<WallpaperLayout />}
+            {isEditable && <WallpaperEditing />}
+            {!isEditable && !isServerRender && <WallpaperEditingLink />}
         </WallpapersContext.Provider>
     );
 }
 
-export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
+export const getStaticPaths: GetStaticPaths<{ wallpaperId: string }> = async () => {
     const prerenderWallpapersIds = new Set<string_wallpaper_id>();
 
     const { wallpapers: lovedWallpapers } = JSON.parse(
@@ -89,7 +90,7 @@ export async function getStaticProps({
     locale: string;
     params: any /* <- TODO: !! Type propperly + NOT manually */;
 }) {
-    const { wallpaper: wallpaperId /* <- TODO: !!! Change ACRY to wallpaperId */ } = params;
+    const { wallpaperId } = params;
 
     let currentWallpaper: null | IWallpaperSerialized = null;
     const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaperId);

@@ -106,7 +106,7 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                     <!--
                     Write me content for website with wallpaper which alt text is:
                     
-                    "A black and white outline of a satellite, with intricate details that showcase its technical components and purpose."
+                    "A black and white outline of a satellite, with intricate details that wallpaper its technical components and purpose."
                     
                     The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
                     
@@ -122,7 +122,7 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                     -->
                     <div style="font-family: 'Montserrat', sans-serif;">
                     <h1 id="cosmicsatellitetrip">Cosmic Sat=ellite Trip</h1>
-                    <p>Welcome to our website dedicated to exploring the vast universe and the technology that makes it possible. Our homepage features a stunning black and white outline of a satellite, with intricate details that showcase its technical components and purpose. </p>
+                    <p>Welcome to our website dedicated to exploring the vast universe and the technology that makes it possible. Our homepage features a stunning black and white outline of a satellite, with intricate details that wallpaper its technical components and purpose. </p>
                     <h2 id="ourmission">Our Mission</h2>
                     <p>Our mission is to bring the wonders of space exploration to everyone. We believe that everyone should have access to the latest discoveries and advancements in space technology. Through our website, we aim to provide informative and engaging content that will inspire people to learn more about the cosmos.</p>
                     <h2 id="userstories">User Stories</h2>

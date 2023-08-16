@@ -22,9 +22,9 @@ export class Drawing extends Destroyable implements IDestroyable {
 
         this.path = [];
 
-        this.svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        this.pathElement = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-        const defsElement = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+        this.svgElement = window.document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        this.pathElement = window.document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        const defsElement = window.document.createElementNS('http://www.w3.org/2000/svg', 'defs');
 
         this.svgElement.appendChild(defsElement);
         this.svgElement.appendChild(this.pathElement);

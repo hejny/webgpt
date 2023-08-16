@@ -7,8 +7,8 @@ import { string_wallpaper_id } from '../typeAliases';
 export function useCurrentWallpaperId(): string_wallpaper_id {
     const router = useRouter();
 
-    if (router.pathname === '/[wallpaper]') {
-        const wallpaperId = router.query.wallpaper as string;
+    if (router.pathname === '/[wallpaperId]') {
+        const wallpaperId = router.query.wallpaperId as string;
 
         if (typeof wallpaperId !== 'string') {
             console.error('[📌]', { wallpaperId });
