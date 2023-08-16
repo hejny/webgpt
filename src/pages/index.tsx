@@ -8,9 +8,7 @@ import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpap
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 
-const font = Barlow_Condensed(
-    { weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] },
-);
+const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export default function HomePage() {
     const router = useRouter();
@@ -43,7 +41,7 @@ export default function HomePage() {
                         width={40}
                         height={40} /* <-[🧥] */
                     />
-                    {/* TODO: Branding: Make more cool loading animation */}
+                    {/* TODO: !!! Branding: Make more cool loading animation */}
                 </main>
             </div>
         </>
@@ -59,6 +57,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
+ * TODO: !!! Index should look representative on screenshot (Like OG Vercel preview etc...)
+ * TODO: !!! This should serve for sharing and search (Like OG images etc...)
  * TODO: Go to last wallpaper
  * TODO: Make shuffle between wallpapers
  */
