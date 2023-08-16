@@ -1,10 +1,11 @@
-// TODO: Do not show the Next.js errors in the iframes (they are not relevant in this case)
+// TODO: Do not show the Next.js errors in the iframes (they are not relevant in
+// this case)
 window.document.querySelectorAll('iframe').forEach((iframeElement) => {
     function hideNextjsErrors() {
         const iframeDocument = iframeElement.contentDocument;
         iframeDocument.body.innerHTML =
             iframeDocument.body.innerHTML +
-            `   
+            `
             <style>
                 body{
                     overflow: auto !important;
