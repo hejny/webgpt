@@ -80,12 +80,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         ...styles,
     ];
 
-    // Note: [♑][2] Remove all inlined style=font family
-    // TODO: !! Move to the right place and implement
-
-    // Note: [♑][3] Remove empty style attributes
-    // TODO: !! Move to the right place and implement
-
     // Note: Join styles into one chunk
     const style = styles.join('\n\n\n');
 
@@ -250,6 +244,17 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         html = html.split(`async=""`).join(`async`);
         html = html.split(`defer=""`).join(`defer`);
         html = `<!DOCTYPE html>\n` + html;
+
+        // Note: [♑][2] Remove all inlined style=font family
+        html = html
+            .split(
+                `font-family:${mainWallpaperFont}`,
+                // <- TODO: Put here multiple variants with/without quotes, generic font, whitespace,...
+            )
+            .join(``);
+
+        // Note: [♑][3] Remove empty style attributes
+        html = html.split(`style=""`).join(`async`);
 
         // Note: [🎡] Unwrapping here <ExportComment comment="..."/> components
         html = prettifyHtml(html) /* <- [1] TODO: Do not do this twice */;
