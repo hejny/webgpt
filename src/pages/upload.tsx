@@ -37,6 +37,9 @@ export async function getStaticProps({ locale }: { locale: string }) {
 
 /**
  * TODO: !!! Implement
+ * TODO: !!! Layout as empty page
  * TODO: !!! Page structure - back to random wallpaper, samples, gallery,...
  * TODO: !!! Better url than /custom
+ * TODO: Camera
+ * TODO: !!! Create some meaningfull content
  */
