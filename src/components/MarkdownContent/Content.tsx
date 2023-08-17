@@ -68,10 +68,7 @@ export function Content(props: IContentProps) {
     return (
         <>
             {contentFormat === 'html' && (
-                <HtmlContent
-                    {...{ content, className, isEditable, mapLinks, onHtmlChange }}
-                    isUsedFontsImported={isusingFonts}
-                />
+                <HtmlContent {...{ content, className, isEditable, mapLinks, onHtmlChange }} />
             )}
             {['markdown', 'text'].includes(contentFormat) && (
                 <MarkdownContent
