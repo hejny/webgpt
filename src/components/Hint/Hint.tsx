@@ -84,9 +84,21 @@ export function Hint(props: HintProps) {
             */
 
         return () => {
-            window.document.body.removeChild(hint);
-            window.document.body.removeChild(highlight);
-            hintTarget.removeEventListener('click', hintTargetClickHandler);
+            try {
+                window.document.body.removeChild(hint);
+                window.document.body.removeChild(highlight);
+                hintTarget.removeEventListener('click', hintTargetClickHandler);
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                if (error.message.includes(`Failed to execute 'removeChild'`)) {
+                    // Note: Swallow the error - React has already removed the element
+                }
+
+                throw error;
+            }
         };
     }, [
         hintTargetRef,
