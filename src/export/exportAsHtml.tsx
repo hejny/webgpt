@@ -81,10 +81,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     ];
 
     // Note: [2.2] Remove all inlined style=font family
-    // TODO: !!! Move to the right place and implement
+    // TODO: !! Move to the right place and implement
 
     // Note: [2.3] Remove empty style attributes
-    // TODO: !!! Move to the right place and implement
+    // TODO: !! Move to the right place and implement
 
     // Note: Join styles into one chunk
     const style = styles.join('\n\n\n');
