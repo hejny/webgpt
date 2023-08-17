@@ -95,6 +95,7 @@ export function Hint(props: HintProps) {
 
                 if (error.message.includes(`Failed to execute 'removeChild'`)) {
                     // Note: Swallow the error - React has already removed the element
+                    return;
                 }
 
                 throw error;
