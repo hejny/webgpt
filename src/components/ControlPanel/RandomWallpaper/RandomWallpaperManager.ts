@@ -46,6 +46,12 @@ export class RandomWallpaperManager {
     private prefetchingRandomWallpapers: Array<Promisable<IWallpaperInStorage>> = [];
 
     private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaperInStorage> {
+        console.info(
+            `🎲 ${isPrefetch ? 'Pre-' : ''}Fetching recommended wallpaper${
+                isPrefetch ? ` (${this.prefetchingRandomWallpapers.length}/${this.getPrefetchCount()})` : ''
+            }`,
+        );
+
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientId()}`);
         const { recommendedWallpaper } = (await response.json()) as RecommendWallpaperResponse;
 
