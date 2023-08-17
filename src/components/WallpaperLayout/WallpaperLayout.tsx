@@ -21,7 +21,7 @@ export function WallpaperLayout() {
             style={{
                 fontFamily: mainWallpaperFont,
                 // <- TODO: fontFamilyToFontCss
-                // <- TODO: !!!! Allow to put the font into a exported css file NOT INLINE
+                // <- Note: [♑] The font is removed as inlined and put in the css file in the export
             }}
         >
             <ImportFonts fonts={allWallpaperFonts} />

@@ -68,7 +68,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     // Note: [🕋] Filter UI fonts
     styles = styles.filter((style) => !style.includes('@font-face'));
 
-    // Note: [2.1] Use main wallpaper font globally
+    // Note: [♑][1] Use main wallpaper font globally
     const { mainWallpaperFont } = parseFontsFromWallpaper(wallpaper);
     styles = [
         `
@@ -80,10 +80,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         ...styles,
     ];
 
-    // Note: [2.2] Remove all inlined style=font family
+    // Note: [♑][2] Remove all inlined style=font family
     // TODO: !! Move to the right place and implement
 
-    // Note: [2.3] Remove empty style attributes
+    // Note: [♑][3] Remove empty style attributes
     // TODO: !! Move to the right place and implement
 
     // Note: Join styles into one chunk
