@@ -12,6 +12,7 @@ import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
+import { parseFontsFromWallpaper } from '../utils/hooks/useWallpaperFonts';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { string_css, string_page } from '../utils/typeAliases';
@@ -32,7 +33,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     const { stylesPlace, publicUrl } = options;
 
     const files: Array<HtmlExportFile> = [];
-    const styles: Array<string> = [];
+    let styles: Array<string> = [];
 
     // Note: Fetch all <style> into styles
     for (const styleElement of Array.from(window.document.querySelectorAll('style'))) {
@@ -63,6 +64,21 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             ),
         );
     }
+
+    // Note: [🕋] Filter UI fonts
+    styles = styles.filter((style) => !style.includes('@font-face'));
+
+    // Note: [♑][1] Use main wallpaper font globally
+    const { mainWallpaperFont } = parseFontsFromWallpaper(wallpaper);
+    styles = [
+        `
+            body {
+                font-family: '${mainWallpaperFont}', sans-serif;
+            }
+        
+        `,
+        ...styles,
+    ];
 
     // Note: Join styles into one chunk
     const style = styles.join('\n\n\n');
@@ -228,6 +244,17 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         html = html.split(`async=""`).join(`async`);
         html = html.split(`defer=""`).join(`defer`);
         html = `<!DOCTYPE html>\n` + html;
+
+        // Note: [♑][2] Remove all inlined style=font family
+        html = html
+            .split(
+                `font-family:${mainWallpaperFont}`,
+                // <- TODO: Put here multiple variants with/without quotes, generic font, whitespace,...
+            )
+            .join(``);
+
+        // Note: [♑][3] Remove empty style attributes
+        html = html.split(`style=""`).join(`async`);
 
         // Note: [🎡] Unwrapping here <ExportComment comment="..."/> components
         html = prettifyHtml(html) /* <- [1] TODO: Do not do this twice */;

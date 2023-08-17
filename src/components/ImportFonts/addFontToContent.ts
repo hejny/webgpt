@@ -1,10 +1,10 @@
 import spaceTrim from 'spacetrim';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
-import { string_font, string_html, string_markdown } from '../../utils/typeAliases';
+import { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
 
 export function addFontToContent<TContent extends string_markdown | string_html>(
     content: TContent,
-    font: string_font,
+    font: string_font_family,
 ): TContent {
     const contentFormat = detectContentFormat(content);
 

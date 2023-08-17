@@ -36,9 +36,11 @@ export function Hint(props: HintProps) {
             return;
         }
 
+        const root = window.document.getElementById('ui-root')!;
+
         const hint = window.document.createElement('div');
-        window.document.body.appendChild(
-            hint, // <- TODO: [🧠] Is this better to append in body or hintElement
+        root.appendChild(
+            hint, // <- TODO: [🧠] Is this better to append in root or hintElement
         );
         hint.innerText = title;
 
@@ -52,10 +54,10 @@ export function Hint(props: HintProps) {
         hint.style.right = right + 'px';
         const highlightPadding = 5; /* <- TODO: [🧠] TO CSS/config  */
         const highlight = window.document.createElement('div');
-        window.document.body.appendChild(
+        root.appendChild(
             highlight,
-            // <- TODO: [🧠] Is this better to append in body or hintElement
-            // <- Note: hintHighlightElement really should be sibling of hintContainer
+            // <- TODO: [🧠] Is this better to append in root or hintElement
+            // <- Note: hintHighlightElement really should be sibling (not child) of hintContainer
         );
         highlight.className = styles.highlight!;
         highlight.style.position = 'fixed';
@@ -82,9 +84,21 @@ export function Hint(props: HintProps) {
             */
 
         return () => {
-            window.document.body.removeChild(hint);
-            window.document.body.removeChild(highlight);
-            hintTarget.removeEventListener('click', hintTargetClickHandler);
+            try {
+                window.document.body.removeChild(hint);
+                window.document.body.removeChild(highlight);
+                hintTarget.removeEventListener('click', hintTargetClickHandler);
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                if (error.message.includes(`Failed to execute 'removeChild'`)) {
+                    // Note: Swallow the error - React has already removed the element
+                }
+
+                throw error;
+            }
         };
     }, [
         hintTargetRef,

@@ -1,5 +1,4 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Barlow_Condensed } from 'next/font/google';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
@@ -8,9 +7,7 @@ import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpap
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 
-const font = Barlow_Condensed(
-    { weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] },
-);
+
 
 export default function HomePage() {
     const router = useRouter();
@@ -26,7 +23,7 @@ export default function HomePage() {
         <>
             <StaticAppHead subtitle={null} />
 
-            <div className={classNames(styles.page, font.className)}>
+            <div className={styles.page}>
                 <main>
                     <h1
                         style={{

@@ -19,7 +19,7 @@ interface IContentProps {
      * Are tags <!--font:Poppins--> detected and applied
      *
      * Note: This is only for markdown content
-     * Note: When you use this you need to include the fonts into the page for example by using <Fonts/> component
+     * Note: When you use this you NEED to include the fonts into the page for example by using <ImportFonts/> component
      */
     isusingFonts?: boolean;
 
@@ -68,10 +68,7 @@ export function Content(props: IContentProps) {
     return (
         <>
             {contentFormat === 'html' && (
-                <HtmlContent
-                    {...{ content, className, isEditable, mapLinks, onHtmlChange }}
-                    isUsedFontsImported={isusingFonts}
-                />
+                <HtmlContent {...{ content, className, isEditable, mapLinks, onHtmlChange }} />
             )}
             {['markdown', 'text'].includes(contentFormat) && (
                 <MarkdownContent

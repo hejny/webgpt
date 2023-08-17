@@ -1,20 +1,16 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Barlow_Condensed } from 'next/font/google';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { NoSsr } from '../components/NoSsr/NoSsr';
 import { AdvancedDomainsChecker } from '../components/Whois/AdvancedDomainsChecker';
 import styles from '../styles/static.module.css';
-import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
-
-const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export default function DomainsPage() {
     return (
         <WallpapersContext.Provider value={{}} /* <- Does it make sence to keep this empty? */>
             <StaticAppHead subtitle={null} />
 
-            <div className={classNames(styles.page, font.className)}>
+            <div className={styles.page}>
                 <main>
                     <h1>AI Web Maker</h1>
                     <p>Pick your domain:</p>
