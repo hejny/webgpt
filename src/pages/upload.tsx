@@ -1,6 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
+import { UploadZone } from '../components/UploadZone/UploadZone';
 import styles from '../styles/static.module.css';
 
 export default function UploadPage() {
@@ -14,7 +15,8 @@ export default function UploadPage() {
             <div className={styles.page}>
                 <main>
                     <h1>AI Web Maker</h1>
-                    <p>Upload image and make web:</p>
+
+                    <UploadZone onFiles={(files) => {}}>Upload image and make web:</UploadZone>
                 </main>
 
                 {/* TODO: Make here some footer
