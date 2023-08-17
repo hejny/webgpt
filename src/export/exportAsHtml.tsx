@@ -12,6 +12,7 @@ import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
+import { parseFontsFromWallpaper } from '../utils/hooks/useWallpaperFonts';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { string_css, string_page } from '../utils/typeAliases';
@@ -66,6 +67,24 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     // Note: [🕋] Filter UI fonts
     styles = styles.filter((style) => !style.includes('@font-face'));
+
+    // Note: [2.1] Use main wallpaper font globally
+    const { mainWallpaperFont } = parseFontsFromWallpaper(wallpaper);
+    styles = [
+        `
+            body {
+                font-family: '${mainWallpaperFont}', sans-serif;
+            }
+        
+        `,
+        ...styles,
+    ];
+
+    // Note: [2.2] Remove all inlined style=font family
+    // TODO: !!! Move to the right place and implement
+
+    // Note: [2.3] Remove empty style attributes
+    // TODO: !!! Move to the right place and implement
 
     // Note: Join styles into one chunk
     const style = styles.join('\n\n\n');
