@@ -90,8 +90,8 @@ export function Hint(props: HintProps) {
 
         return () => {
             try {
-                window.document.body.removeChild(hint);
-                window.document.body.removeChild(highlight);
+                root.removeChild(hint);
+                root.removeChild(highlight);
                 hintTarget.removeEventListener('click', hintTargetClickHandler);
             } catch (error) {
                 if (!(error instanceof Error)) {
