@@ -4,6 +4,9 @@ import { string_css_class, string_href, string_html, string_markdown } from '../
 import { HtmlContent } from './HtmlContent';
 import { MarkdownContent } from './MarkdownContent';
 
+// TODO: !!!! ACRY write annotation in interfaces
+// TODO: !!!! ACRY write annotation in @@@
+
 interface IContentProps {
     /**
      * Source markdown
