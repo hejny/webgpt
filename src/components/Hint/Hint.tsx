@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
+import { classNames } from '../../utils/classNames';
 import { useNumericStateInLocalstorage } from '../../utils/hooks/useNumericStateInLocalstorage';
 import { string_css_class, string_title } from '../../utils/typeAliases';
 import styles from './Hint.module.css';
@@ -38,13 +39,17 @@ export function Hint(props: HintProps) {
 
         const root = window.document.getElementById('ui-root')!;
 
+        for (const oldHintElement of root.querySelectorAll(`.hint-${id}`)) {
+            oldHintElement.parentElement!.removeChild(oldHintElement);
+        }
+
         const hint = window.document.createElement('div');
         root.appendChild(
             hint, // <- TODO: [🧠] Is this better to append in root or hintElement
         );
         hint.innerText = title;
 
-        hint.className = styles.hint!;
+        hint.className = classNames(`hint-${id}`, styles.hint!);
         const { top, left, width, height } = hintTarget.getBoundingClientRect();
         const right = window.document.body.clientWidth - left;
         const bottom = window.document.body.clientHeight - top;
@@ -59,7 +64,7 @@ export function Hint(props: HintProps) {
             // <- TODO: [🧠] Is this better to append in root or hintElement
             // <- Note: hintHighlightElement really should be sibling (not child) of hintContainer
         );
-        highlight.className = styles.highlight!;
+        highlight.className = classNames(`hint-${id}`, styles.highlight!);
         highlight.style.position = 'fixed';
         highlight.style.bottom = bottom - height - highlightPadding + 'px';
         highlight.style.right = right - width - highlightPadding + 'px';
@@ -102,6 +107,7 @@ export function Hint(props: HintProps) {
             }
         };
     }, [
+        id,
         hintTargetRef,
         title,
         isClicked,
