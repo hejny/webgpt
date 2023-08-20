@@ -97,5 +97,6 @@ export function ColorsPanel(props: ColorsPanelProps) {
 }
 
 /**
+ * TODO: !!! [🧠] Allow to change fonts - main + header
  * TODO: Maybe allow to close the colors
  */
