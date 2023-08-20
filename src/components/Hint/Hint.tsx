@@ -57,7 +57,7 @@ export function Hint(props: HintProps) {
         hint.style.position = 'fixed';
         hint.style.bottom = bottom - height / 2 + 'px';
         hint.style.right = right + 'px';
-        const highlightPadding = 5; /* <- TODO: [🧠] TO CSS/config  */
+        const highlightPadding = 4; /* <- TODO: [🧠] TO CSS/config  */
         const highlight = window.document.createElement('div');
         root.appendChild(
             highlight,
