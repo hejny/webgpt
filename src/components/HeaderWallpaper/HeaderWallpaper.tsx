@@ -23,6 +23,7 @@ export function HeaderWallpaper() {
                     draggable="false"
                     placeholder="empty" // <- Note: Because of export using rather a backgroundColor than a placeholder
                     priority={true}
+                    loading="eager"
                     height={Math.round((width / 1920) * 1080)}
                     style={{
                         /* [🎗] */ objectFit: 'cover',
