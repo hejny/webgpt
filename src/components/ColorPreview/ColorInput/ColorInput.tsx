@@ -9,10 +9,14 @@ import { ColorPreview } from '../ColorPreview';
 import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
-    className?: string_css_class;
     value: Color;
     onChange(color: WithTake<Color>): void;
     presetColors?: Array<PresetColor>;
+
+    /**
+     * Optional CSS class name which will be added to root element
+     */
+    className?: string_css_class;
 }
 
 /**

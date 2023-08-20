@@ -10,6 +10,10 @@ interface AiComponentsRootProps {
         (componentElement: HTMLElement) => Promisable<void /* <- TODO: Maybe return IDestroyable instead of void */>
     >;
     children: ReactNode;
+
+     /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
 }
 

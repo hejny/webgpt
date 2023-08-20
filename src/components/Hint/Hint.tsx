@@ -10,6 +10,10 @@ interface HintProps {
 
     reapearCount: number;
 
+
+        /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
 }
 

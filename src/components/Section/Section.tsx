@@ -11,6 +11,10 @@ import styles from './Section.module.css';
  */
 interface SectionProps {
     children: ReactNode;
+
+        /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
 }
 
