@@ -11,7 +11,7 @@ import {
     uuid,
 } from './typeAliases';
 
-export interface IWallpaperProps {
+export interface IWallpaperProps { // <- !!! Where it is used?
     width: number;
     quality: number;
 }

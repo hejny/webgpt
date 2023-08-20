@@ -7,7 +7,7 @@ import { MarkdownContent } from './MarkdownContent';
 // TODO: !!!! ACRY write annotation in interfaces
 // TODO: !!!! ACRY write annotation in @@@
 
-interface IContentProps {
+interface ContentProps {
     /**
      * Source markdown
      */
@@ -63,7 +63,7 @@ interface IContentProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function Content(props: IContentProps) {
+export function Content(props: ContentProps) {
     const { content, className, isusingFonts, isUsingOpenmoji, isEnhanced, isEditable, mapLinks, onHtmlChange } = props;
 
     const contentFormat = useMemo(() => detectContentFormat(content), [content]);
