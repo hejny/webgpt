@@ -13,7 +13,7 @@ TODO: Combine the two shapes such as there is no internal stroke
     <g fill="#22D3DA">
 
 
-        <svg x="calc(100% - 10px)" y="calc(50% - 10px)">
+        <svg x="calc(100% - 12px)" y="calc(50% - 10px)">
             <g transform="rotate(45)">
                 <rect width="15" height="15" />
             </g>
