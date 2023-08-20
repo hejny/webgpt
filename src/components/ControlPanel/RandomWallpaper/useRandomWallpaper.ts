@@ -15,6 +15,17 @@ export function useRandomWallpaper(): [
         /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaperId],
     );
-    const { value } = usePromise(randomWallpaperPromise);
-    return [value || null, () => RandomWallpaperManager.getInstance().consumeRandomWallpaper(value!)];
+    const { value: recommendedWallpaper } = usePromise(randomWallpaperPromise);
+
+    console.info(`🎲 Use recommended wallpaper`, {recommendedWallpaper});
+
+    return [
+        recommendedWallpaper || null,
+        () => {
+            if (!recommendedWallpaper) {
+                throw new Error('No wallpaper to consume');
+            }
+            RandomWallpaperManager.getInstance().consumeRandomWallpaper(recommendedWallpaper);
+        },
+    ];
 }

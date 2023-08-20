@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
+import { classNames } from '../../utils/classNames';
 import { useNumericStateInLocalstorage } from '../../utils/hooks/useNumericStateInLocalstorage';
 import { string_css_class, string_title } from '../../utils/typeAliases';
 import styles from './Hint.module.css';
@@ -42,33 +43,47 @@ export function Hint(props: HintProps) {
 
         const root = window.document.getElementById('ui-root')!;
 
+        for (const oldHintElement of root.querySelectorAll(`.hint-${id}`)) {
+            oldHintElement.parentElement!.removeChild(oldHintElement);
+        }
+
+        // Hint:
         const hint = window.document.createElement('div');
         root.appendChild(
             hint, // <- TODO: [🧠] Is this better to append in root or hintElement
         );
         hint.innerText = title;
+        hint.className = classNames(`hint-${id}`, styles.hint!);
 
-        hint.className = styles.hint!;
-        const { top, left, width, height } = hintTarget.getBoundingClientRect();
-        const right = window.document.body.clientWidth - left;
-        const bottom = window.document.body.clientHeight - top;
-
-        hint.style.position = 'fixed';
-        hint.style.bottom = bottom - height / 2 + 'px';
-        hint.style.right = right + 'px';
-        const highlightPadding = 5; /* <- TODO: [🧠] TO CSS/config  */
+        // Highlight:
         const highlight = window.document.createElement('div');
         root.appendChild(
             highlight,
             // <- TODO: [🧠] Is this better to append in root or hintElement
             // <- Note: hintHighlightElement really should be sibling (not child) of hintContainer
         );
-        highlight.className = styles.highlight!;
-        highlight.style.position = 'fixed';
-        highlight.style.bottom = bottom - height - highlightPadding + 'px';
-        highlight.style.right = right - width - highlightPadding + 'px';
-        highlight.style.width = width + 2 * highlightPadding + 'px';
-        highlight.style.height = height + 2 * highlightPadding + 'px';
+        highlight.className = classNames(`hint-${id}`, styles.highlight!);
+
+        const updatePositionInterval = setInterval(() => {
+            const { top, left, width, height } = hintTarget.getBoundingClientRect();
+
+            // Common
+            const right = window.document.body.clientWidth - left;
+            const bottom = window.document.body.clientHeight - top;
+
+            // Hint:
+            hint.style.position = 'fixed';
+            hint.style.bottom = bottom - height / 2 + 'px';
+            hint.style.right = right + 'px';
+
+            // Highlight:
+            const highlightPadding = 4; /* <- TODO: [🧠] TO CSS/config  */
+            highlight.style.position = 'fixed';
+            highlight.style.bottom = bottom - height - highlightPadding + 'px';
+            highlight.style.right = right - width - highlightPadding + 'px';
+            highlight.style.width = width + 2 * highlightPadding + 'px';
+            highlight.style.height = height + 2 * highlightPadding + 'px';
+        }, 100);
 
         const hintTargetClickHandler = () => {
             console.info(` 🗯 Complete hint ${title} `);
@@ -88,9 +103,10 @@ export function Hint(props: HintProps) {
             */
 
         return () => {
+            clearInterval(updatePositionInterval);
             try {
-                window.document.body.removeChild(hint);
-                window.document.body.removeChild(highlight);
+                root.removeChild(hint);
+                root.removeChild(highlight);
                 hintTarget.removeEventListener('click', hintTargetClickHandler);
             } catch (error) {
                 if (!(error instanceof Error)) {
@@ -99,12 +115,14 @@ export function Hint(props: HintProps) {
 
                 if (error.message.includes(`Failed to execute 'removeChild'`)) {
                     // Note: Swallow the error - React has already removed the element
+                    return;
                 }
 
                 throw error;
             }
         };
     }, [
+        id,
         hintTargetRef,
         title,
         isClicked,

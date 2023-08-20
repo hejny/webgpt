@@ -35,9 +35,12 @@ export class RandomWallpaperManager {
         this.preloadGalleryElement.style.opacity = '0';
         this.preloadGalleryElement.style.pointerEvents = 'none';
         window.document.body.appendChild(this.preloadGalleryElement);
-        this.prefetchingRandomWallpapers = this.getStorage().map((randomWallpaper) =>
-            this.preloadWallpaper(randomWallpaper),
-        );
+        this.prefetchingRandomWallpapers = this.getStorage();
+
+        for (const randomWallpaper of this.prefetchingRandomWallpapers) {
+            /*          <- Note: We want to preload all stored wallpapers BUT don’t want to block the button with that loading */
+            /* not await */ this.preloadWallpaper(randomWallpaper);
+        }
 
         /* not await */ this.prefetchIfNeeded();
     }
@@ -46,6 +49,12 @@ export class RandomWallpaperManager {
     private prefetchingRandomWallpapers: Array<Promisable<IWallpaperInStorage>> = [];
 
     private async fetchRandomWallpaper(isPrefetch: boolean): Promise<IWallpaperInStorage> {
+        console.info(
+            `🎲 ${isPrefetch ? 'Pre-' : ''}Fetching recommended wallpaper${
+                isPrefetch ? ` (${this.prefetchingRandomWallpapers.length}/${this.getPrefetchCount()})` : ''
+            }`,
+        );
+
         const response = await fetch(`${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientId()}`);
         const { recommendedWallpaper } = (await response.json()) as RecommendWallpaperResponse;
 
@@ -68,7 +77,9 @@ export class RandomWallpaperManager {
         return recommendedWallpaper;
     }
 
-    private async preloadWallpaper(wallpaper: IWallpaperInStorage) {
+    private async preloadWallpaper(wallpaperPromisable: Promisable<IWallpaperInStorage>): Promise<void> {
+        const wallpaper = await wallpaperPromisable;
+
         // Note: Pre-fetching the wallpaper to trigger ISR (Incremental Static Regeneration)
         await fetch(`/${wallpaper.id}`);
 
@@ -85,8 +96,6 @@ export class RandomWallpaperManager {
             };
             imageElement.addEventListener('load', onLoad);
         });
-
-        return wallpaper;
     }
 
     private getStorage(): Array<IWallpaperInStorage> {
@@ -168,6 +177,7 @@ export class RandomWallpaperManager {
         } else {
             const randomWallpaper = await this.fetchRandomWallpaper(false);
             /*                      <- Note: At first load the returned wallpaper THEN load the prefetched one(s) */
+
             /* not await */ this.prefetchIfNeeded();
             return randomWallpaper;
         }
