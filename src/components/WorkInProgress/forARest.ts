@@ -8,6 +8,14 @@ import { forImmediate } from 'waitasecond';
 const REST_AFTER_MS = 100; /* <- TODO: !! Tweak time */
 
 /**
+ * The nonce that is incremented on every rest
+ *
+ * @private
+ * @singleton
+ */
+export let restNonce = 0;
+
+/**
  * The timestamp of the last rest
  *
  * @type {number}
@@ -27,7 +35,6 @@ export async function forARest(): Promise<void> {
      */
     const now = performance.now();
 
-    // !!! Fix
     restNonce++;
 
     if (now - lastRest > REST_AFTER_MS) {
