@@ -17,7 +17,7 @@ import { ObjectUrl } from './utils/ObjectUrl';
 interface ExportPreviewModalProps {}
 
 /**
- * Renders a modal with a preview of the exported wallpaper
+ * Renders the modal with a preview of the exported wallpaper
  */
 export function ExportPreviewModal(props: ExportPreviewModalProps) {
     const [wallpaper] = useWallpaper();

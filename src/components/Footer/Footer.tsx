@@ -4,12 +4,11 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
 /**
- * Renders a footer section with links
+ * Renders the footer section with links
  *
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
-    const router = useRouter();
     const { t } = useTranslation();
 
     return (

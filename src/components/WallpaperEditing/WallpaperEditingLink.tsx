@@ -5,7 +5,7 @@ import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 /**
- * Render a link for switching to the wallpaper editing mode.
+ * Renders a link for switching to the wallpaper editing mode.
  *
  * @return {JSX.Element} The rendered JSX element.
  */

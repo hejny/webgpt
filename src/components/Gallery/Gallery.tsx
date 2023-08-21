@@ -9,7 +9,7 @@ import { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
 import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
 /**
- * Renders gallery of wallpapers
+ * Renders the gallery of wallpapers
  */
 export function GallerySection() {
     const { t } = useTranslation();

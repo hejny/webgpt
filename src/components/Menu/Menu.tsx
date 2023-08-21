@@ -10,7 +10,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Menu.module.css';
 
 /**
- * Render a menu for navigating the wallpaper page
+ * Renders the menu for navigating the wallpaper page
  */
 export function Menu() {
     const [wallpaper] = useWallpaper();

@@ -19,7 +19,7 @@ interface HandwrittenTextProps {
 }
 
 /**
- * Renders handwritten text using SVG and handwriteText function
+ * Renders a handwritten text using SVG and handwriteText function
  *
  * @returns A JSX element that contains the handwritten text and a fallback span element.
  */

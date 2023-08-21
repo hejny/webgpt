@@ -6,7 +6,6 @@ import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
 import { WhoisDomains } from './WhoisDomains/WhoisDomains';
 
-// !!! Represents
 
 /**
  * Renders a domain checker with advanced options and patterns

@@ -23,7 +23,7 @@ interface GalleryFilterProps {
 }
 
 /**
- * Renders filters for <Gallery />
+ * Renders the filters for <Gallery />
  */
 export function GalleryFilterInput(props: GalleryFilterProps) {
     const { defaultFilter, onFilterChange } = props;

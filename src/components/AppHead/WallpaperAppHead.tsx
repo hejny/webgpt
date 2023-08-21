@@ -8,8 +8,6 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 
-// !!! Go through>  children?: ReactNode;
-
 interface WallpaperAppHeadProps {
     /**
      * Additional content to be placed into top of the <head>

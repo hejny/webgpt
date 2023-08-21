@@ -7,7 +7,6 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { MODES } from '../../utils/hooks/useMode';
 import { string_page, string_wallpaper_id } from '../../utils/typeAliases';
 
-// !!! Renders
 
 interface WallpaperLinkProps extends Omit<React.ComponentProps<'a'>, 'ref'> {
     wallpaperId?: string_wallpaper_id | null;

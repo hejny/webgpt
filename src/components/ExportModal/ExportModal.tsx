@@ -43,7 +43,7 @@ const ExportPlan = {
 } as const;
 
 /**
- * Renders main export modal
+ * Renders the main export modal
  */
 export function ExportModal() {
     const router = useRouter();

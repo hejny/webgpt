@@ -12,7 +12,6 @@ interface ImageFilePreviewProps {
 /**
  * Renders an image file preview component ⁘
  *
- * @function !!!
  * @param {ImageFilePreviewProps} props - The props passed to the component.
  * @returns {JSX.Element} - The rendered image file preview component.
  */

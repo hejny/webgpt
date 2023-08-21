@@ -21,10 +21,8 @@ interface AiComponentsRootProps {
     className?: string_css_class;
 }
 
-// !!! "Render " -> "Renders "
-
 /**
- * Renders root element for AI components and activates them
+ * Renders a root element for AI components and activates them
  */
 export function AiComponentsRoot(props: AiComponentsRootProps) {
     const { usedComponents, children, className } = props;

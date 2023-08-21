@@ -20,7 +20,7 @@ interface ColorInputProps {
 }
 
 /**
- * Renders Color input with a preview box and a color picker
+ * Renders a color input with a preview box and a color picker
  */
 export function ColorInput(props: ColorInputProps) {
     const { className, value, onChange, presetColors } = props;
