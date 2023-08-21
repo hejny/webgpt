@@ -5,7 +5,7 @@ import { CloseModalLink } from './10-CloseModalLink';
 
 /**
  * Represents a modal component ⁘
- * 
+ *
  * @param {ModalProps} props - The props for the modal component.
  * @returns {ReactNode} - The rendered modal component.
  */
@@ -16,7 +16,7 @@ interface ModalProps {
     title: ReactNode;
 
     /**
-     * Content of the modal
+     * The content of the modal
      */
     children: ReactNode;
 }
@@ -29,12 +29,12 @@ export function Modal(props: ModalProps) {
 
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useEffect(() => {
-/**
- * Prevents the body from scrolling when the modal is open ⁘
- * 
- * @param {Event} event - The scroll event.
- * @returns {boolean} - Whether the scroll event should be prevented.
- */
+        /**
+         * Prevents the body from scrolling when the modal is open ⁘
+         *
+         * @param {Event} event - The scroll event.
+         * @returns {boolean} - Whether the scroll event should be prevented.
+         */
         const bodyScrollPrevent = (event: Event) => {
             // console.log(event.target);
 

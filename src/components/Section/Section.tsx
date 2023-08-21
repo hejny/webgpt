@@ -5,11 +5,14 @@ import styles from './Section.module.css';
 
 /**
  * Represents a Section component ⁘
- * 
+ *
  * @param props - The props for the Section component.
  * @returns The rendered Section component.
  */
 interface SectionProps {
+    /**
+     * The content of the section
+     */
     children: ReactNode;
     className?: string_css_class;
 }

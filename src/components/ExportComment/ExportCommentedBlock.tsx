@@ -9,6 +9,12 @@ interface ExportCommentedBlockProps {
      * @example "Article", "Section", "Subsection", "Menu"
      */
     name: string;
+
+    /**
+     * This is the subject of the comment
+     *
+     * In live preview, this component renders ONLY the children.
+     */
     children: ReactNode;
 
     /**

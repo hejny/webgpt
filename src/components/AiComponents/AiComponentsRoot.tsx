@@ -14,7 +14,7 @@ interface AiComponentsRootProps {
     >;
 
     /**
-     * !!! ACRY write children descriptions
+     * In this content will be activated all AI components
      */
     children: ReactNode;
 
