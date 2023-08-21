@@ -1,4 +1,3 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
@@ -10,9 +9,7 @@ import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
 
-
 interface GalleryPageProps {
-
     /**
      * Wallpapers to show in the gallery
      */
@@ -60,26 +57,23 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
-            ...(await serverSideTranslations(locale, ['common'])),
-            ...({
-                wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
-                    const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
-                    return {
-                        id,
-                        parent,
-                        src,
-                        prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
-                        colorStats /* <- TODO: !! Also reduce colorStats */,
-                        // TODO: shapeStats> IWallpaperShapeStats;
-                        title,
-                        content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
-                        keywords,
-                        isPublic,
-                        author,
-                    } satisfies IWallpaperSerialized;
-                }),
-            } satisfies GalleryPageProps),
-        },
+            wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
+                const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
+                return {
+                    id,
+                    parent,
+                    src,
+                    prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                    colorStats /* <- TODO: !! Also reduce colorStats */,
+                    // TODO: shapeStats> IWallpaperShapeStats;
+                    title,
+                    content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                    keywords,
+                    isPublic,
+                    author,
+                } satisfies IWallpaperSerialized;
+            }),
+        } satisfies GalleryPageProps,
     };
 }
 

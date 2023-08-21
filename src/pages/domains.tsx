@@ -1,4 +1,3 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { NoSsr } from '../components/NoSsr/NoSsr';
 import { AdvancedDomainsChecker } from '../components/Whois/AdvancedDomainsChecker';
@@ -28,14 +27,6 @@ export default function DomainsPage() {
             </div>
         </WallpapersContext.Provider>
     );
-}
-
-export async function getStaticProps({ locale }: { locale: string }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common'])),
-        },
-    };
 }
 
 /**
