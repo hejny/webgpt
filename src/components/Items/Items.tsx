@@ -8,8 +8,6 @@ import styles from './Items.module.css';
  * @returns {JSX.Element} The Items component.
  */
 interface ItemsProps {
-    // TODO: preferedItemWidth: number;
-
     /**
      * The items to render
      *
@@ -25,3 +23,7 @@ export function Items(props: ItemsProps) {
     const { children } = props;
     return <div className={styles.items}>{children}</div>;
 }
+
+/**
+ * TODO: ItemsProps should contain preferedItemWidth: number
+ */
