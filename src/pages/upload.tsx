@@ -1,4 +1,3 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { UploadWallpaper } from '../components/UploadWallpaper/UploadWallpaper';
@@ -26,14 +25,6 @@ export default function UploadPage() {
             </div>
         </>
     );
-}
-
-export async function getStaticProps({ locale }: { locale: string }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common'])),
-        },
-    };
 }
 
 /**
