@@ -3,10 +3,10 @@ import { string_uri } from '../../typeAliases';
 import { nameToSubfolderPath } from './nameToSubfolderPath';
 
 /**
- * Generates a path for the hardcoded content
+ * Generates a path for the prepared hardcoded content
  *
  */
-export function generateWallpaperCdnKey(wallpaper: Pick<IWallpaper, 'id'>): string_uri {
+export function generatePreparedWallpaperCdnKey(wallpaper: Pick<IWallpaper, 'id'>): string_uri {
     // TODO: [⛳️] Probbably prefix should be in this config not on the consumer side
-    return `${nameToSubfolderPath(wallpaper.id).join('/')}/${wallpaper.id}`;
+    return `prepared/${nameToSubfolderPath(wallpaper.id).join('/')}/${wallpaper.id}`;
 }
