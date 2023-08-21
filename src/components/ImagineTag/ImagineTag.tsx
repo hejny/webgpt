@@ -1,10 +1,10 @@
 import styles from './ImagineTag.module.css';
 
 /**
- * A function component that renders a tag with a custom style ⁘
- *
- * @param {ImagineTagProps} props The props for the component
- * @returns {JSX.Element} The rendered tag element
+ * Function representing the ImagineTag component ⁘
+ * 
+ * @param {ImagineTagProps} props - The props object containing the necessary properties for the component.
+ * @returns {JSX.Element} - The rendered ImagineTag component.
  */
 interface ImagineTagProps {
     children: string;

@@ -5,14 +5,9 @@ import { Drawing } from './Drawing';
 import { Effect } from './effect';
 
 /**
- * An interface for defining options for a graph effect ⁘
- *
+ * Options for a graph effect ⁘
+ * 
  * @interface
- * @property {Object} range - The range of the input parameter t.
- * @property {number} range.min - The minimum value of t.
- * @property {number} range.max - The maximum value of t.
- * @property {number} range.step - The increment of t.
- * @property {Function} plot - A function that takes an input object and returns a vector.
  */
 interface GraphEffectOptions {
     range: { min: number; max: number; step: number };
@@ -20,10 +15,11 @@ interface GraphEffectOptions {
 }
 
 /**
- * A function that creates a graph effect for a given HTML element ⁘
- *
- * @param {GraphEffectOptions} formula - The options for the graph effect.
- * @returns {Effect<TElement>} - A function that takes an HTML element and returns a registration object.
+ * Create a graph effect ⁘
+ * 
+ * @template TElement - The type of the HTML element to apply the effect on.
+ * @param {GraphEffectOptions} formula - The graph effect options.
+ * @returns {Effect<TElement>} - The created effect.
  */
 export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEffectOptions): Effect<TElement> {
     return (element: TElement) => {
@@ -39,6 +35,9 @@ export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEf
                 //  console.log(element.getBoundingClientRect());
                 let origin: Vector;
 
+/**
+ * Resize the element and update the origin ⁘
+ */
                 function resize() {
                     origin = Vector.fromObject(window, ['pageXOffset', 'pageYOffset'])
                         .add(Vector.fromObject(element.getBoundingClientRect(), ['x', 'y']))
@@ -56,6 +55,11 @@ export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEf
                     .addPoint(origin.add({ x: -5, y: 5 }));
                 */
 
+/**
+ * Plot the graph based on the seed vector ⁘
+ * 
+ * @param {Vector} seed - The seed vector.
+ */
                 function graph(seed: Vector) {
                     drawing.clean();
 

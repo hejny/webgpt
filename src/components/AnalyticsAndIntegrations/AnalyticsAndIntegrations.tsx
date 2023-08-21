@@ -1,6 +1,12 @@
 import Script from 'next/script';
 import spaceTrim from 'spacetrim';
 
+/**
+ * Renders the AnalyticsAndIntegrations component ⁘
+ * 
+ * @param {AnalyticsAndIntegrationsProps} props - The props for the component
+ * @returns {JSX.Element} - The rendered component
+ */
 interface AnalyticsAndIntegrationsProps {}
 
 /**

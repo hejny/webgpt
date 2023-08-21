@@ -5,7 +5,9 @@ import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 /**
- * @@@
+ * Render function for the WallpaperEditingLink component ⁘
+ * 
+ * @return {JSX.Element} The rendered JSX element.
  */
 export function WallpaperEditingLink() {
     return (

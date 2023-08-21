@@ -7,6 +7,11 @@ import { MarkdownContent } from './MarkdownContent';
 // TODO: !!!! ACRY write annotation in interfaces
 // TODO: !!!! ACRY write annotation in @@@
 
+/**
+ * Represents the properties for the Content component ⁘
+ * 
+ * @interface
+ */
 interface ContentProps {
     /**
      * Source markdown

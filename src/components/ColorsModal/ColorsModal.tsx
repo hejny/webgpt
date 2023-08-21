@@ -12,10 +12,18 @@ import styles from './ColorsModal.module.css';
 import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
 
 /**
- * @@@
+ * Render a modal for selecting colors for a wallpaper ⁘
+ * 
+ * @returns JSX.Element
  */
 export function ColorsModal() {
+/**
+ * Get the router object from React Router ⁘
+ */
     const router = useRouter();
+/**
+ * Get the current wallpaper id from a custom hook ⁘
+ */
     const wallpaperId = useCurrentWallpaperId();
     const [wallpaper, modifyWallpaper] = useWallpaper();
 

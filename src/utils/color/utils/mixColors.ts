@@ -2,7 +2,10 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
 import { Color } from '../Color';
 
 /**
- * @@@
+ * Mixes an array of colors and returns the average color ⁘
+ * 
+ * @param {...Color} colors - The array of colors to be mixed.
+ * @returns {WithTake<Color>} - The mixed color.
  */
 export function mixColors(...colors: Array<Color>): WithTake<Color> {
     const red = colors.reduce((sum, color) => sum + color.red, 0) / colors.length;

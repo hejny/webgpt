@@ -4,10 +4,10 @@ import { string_css_class } from '../../utils/typeAliases';
 import styles from './Section.module.css';
 
 /**
- * A function component that renders a section element ⁘
- *
- * @param props - The props for the section component
- * @returns A JSX element representing the section
+ * Represents a Section component ⁘
+ * 
+ * @param props - The props for the Section component.
+ * @returns The rendered Section component.
  */
 interface SectionProps {
     children: ReactNode;

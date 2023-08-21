@@ -3,6 +3,13 @@ import { WhoisDomain } from '../WhoisDomain/WhoisDomain';
 
 import styles from './WhoisDomains.module.css';
 
+/**
+ * Renders the WhoisDomains component ⁘
+ * 
+ * @function
+ * @param {WhoisDomainsProps} props - The properties for the WhoisDomains component.
+ * @returns {JSX.Element} The rendered WhoisDomains component.
+ */
 interface WhoisDomainsProps {
     /**
      * The domains to check

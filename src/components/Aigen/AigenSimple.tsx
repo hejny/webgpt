@@ -3,7 +3,10 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './AigenSimple.module.css';
 
 /**
- * @@@
+ * Represents a simple Aigen component ⁘
+ * 
+ * @function
+ * @returns {JSX.Element} - The JSX element representing the AigenSimple component.
  */
 export function AigenSimple() {
     const router = useRouter();

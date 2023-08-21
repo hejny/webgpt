@@ -2,7 +2,10 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './HeaderWallpaper.module.css';
 
 /**
- * @@@
+ * A functional component that displays a header wallpaper ⁘
+ * 
+ * 
+ * @returns {JSX.Element} The rendered header wallpaper.
  */
 export function HeaderWallpaper() {
     const [{ src, prompt, title, colorStats }] = useWallpaper();

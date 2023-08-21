@@ -4,7 +4,11 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 
 /**
- * @@@
+ * Computes the average color of an image ⁘
+ * 
+ * 
+ * @param {IImage} image - The image object.
+ * @returns {Promise<WithTake<Color>>} The promise that resolves with the average color.
  */
 export async function computeImageAverageColor(image: IImage): Promise<WithTake<Color>> {
     let red = 0;

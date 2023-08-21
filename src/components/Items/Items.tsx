@@ -2,10 +2,10 @@ import { ReactNode } from 'react';
 import styles from './Items.module.css';
 
 /**
- * A functional component that renders a grid of items ⁘
- *
- * @param {ItemsProps} props - The props for the component
- * @returns {JSX.Element} The JSX element for the component
+ * Renders a div container for the child components ⁘
+ * 
+ * @param {ItemsProps} props - The props for the Items component.
+ * @returns {JSX.Element} The Items component.
  */
 interface ItemsProps {
     // TODO: preferedItemWidth: number;

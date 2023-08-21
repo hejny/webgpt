@@ -4,7 +4,11 @@ import { IImage } from '../IImage';
 import { Image } from '../Image';
 
 /**
- * @@@
+ * Scales an image to a new size ⁘
+ * 
+ * @param {IImage} image - The original image to scale.
+ * @param {IVector} newSize - The new size of the image.
+ * @returns {Image} The scaled image.
  */
 export function scaleImage(image: IImage, newSize: IVector): Image {
     if (image.size.x === newSize.x && image.size.y === newSize.y && image instanceof Image) {
@@ -37,9 +41,28 @@ export function scaleImage(image: IImage, newSize: IVector): Image {
 }
 
 /**
- * @@@
+ * Interpolates between four colors to calculate a new color ⁘
+ * 
+ * @param {Color} q11 - The top-left color.
+ * @param {Color} q12 - The bottom-left color.
+ * @param {Color} q21 - The top-right color.
+ * @param {Color} q22 - The bottom-right color.
+ * @param {number} x - The x-coordinate of the target pixel.
+ * @param {number} y - The y-coordinate of the target pixel.
+ * @returns {Color} The interpolated color.
  */
 function interpolate(q11: Color, q12: Color, q21: Color, q22: Color, x: number, y: number): Color {
+/**
+ * Interpolates between two color channels ⁘
+ * 
+ * @param {number} c1 - The channel value of the top-left color.
+ * @param {number} c2 - The channel value of the bottom-left color.
+ * @param {number} c3 - The channel value of the top-right color.
+ * @param {number} c4 - The channel value of the bottom-right color.
+ * @param {number} x - The x-coordinate of the target pixel.
+ * @param {number} y - The y-coordinate of the target pixel.
+ * @returns {number} The interpolated channel value.
+ */
     const interpolateChannel = (c1: number, c2: number, c3: number, c4: number, x: number, y: number): number => {
         const t = x * (1 - y);
         const u = x * y;

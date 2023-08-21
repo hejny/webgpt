@@ -1,8 +1,11 @@
 /**
- * @@@
- *
+ * Checks if the provided value is a valid size value for the specified channel ⁘
+ * 
+ * @param channelName - The channel name to check the value for. Only 'width' or 'height' are valid values.
+ * @param value - The value to check.
+ * @throws {Error} When the value is not a number or NaN, or when it is not a whole number or less than 1.
+ * 
  * @private
- * @not-collboard-modules-sdk
  */
 export function checkSizeValue(
     chanellName: 'width' | 'height',

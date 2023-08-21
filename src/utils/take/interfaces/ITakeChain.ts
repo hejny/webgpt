@@ -1,12 +1,12 @@
 import { Takeable } from './Takeable';
 
 /**
- * @@@
+ * Represents a value with take chain functionality ⁘
  */
 export type WithTake<TValue extends Takeable> = TValue & ITakeChain<TValue>;
 
 /**
- * @@@
+ * Represents an interface for a take chain ⁘
  */
 export interface ITakeChain<TValue extends Takeable> {
     readonly value: TValue;

@@ -4,13 +4,11 @@ import { IVector } from 'xyzt';
 import { Color } from '../color/Color';
 
 /**
- * Class for creating and manipulating particles ⁘
- *
+ * Represents a particle that can be displayed on the screen ⁘
+ * 
  * @class
  * @extends Destroyable
  * @implements IDestroyable
- * @property {ParticleOptions} options - The options for the particle
- * @property {HTMLElement} particleElement - The element representing the particle
  */
 interface ParticleOptions {
     place: HTMLElement;

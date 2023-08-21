@@ -3,6 +3,12 @@ import { HtmlExportFile } from '../../export/HtmlExportFile';
 import styles from './00-FilesPreview.module.css';
 import { ImageFilePreview } from './20-ImageFilePreview';
 
+/**
+ * Renders a preview of a file based on its type ⁘
+ * 
+ * @param props - The FilePreviewProps object containing the file to be previewed.
+ * @returns The JSX element representing the file preview.
+ */
 interface FilePreviewProps {
     /**
      * File to preview

@@ -8,6 +8,13 @@ import { string_css_class } from '../../../utils/typeAliases';
 import { ColorPreview } from '../ColorPreview';
 import styles from './ColorInput.module.css';
 
+/**
+ * A function component used to render a color input ⁘
+ * 
+ * 
+ * @param {ColorInputProps} props - The props for the component.
+ * @returns {JSX.Element} - The rendered component.
+ */
 interface ColorInputProps {
     className?: string_css_class;
 
