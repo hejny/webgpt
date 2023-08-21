@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import styles from './Items.module.css';
 
 /**
- * Renders a div container for the child components ⁘!!!
+ * Renders a div container for the child components
  *
  * @param {ItemsProps} props - The props for the Items component.
  * @returns {JSX.Element} The Items component.

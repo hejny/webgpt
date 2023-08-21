@@ -5,7 +5,7 @@ import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
- * Computes the lightest color in an image ⁘
+ * Computes the lightest color in an image
  * 
  * 
  * @param {IImage} image - The image to compute the lightest color from.

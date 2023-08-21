@@ -5,7 +5,7 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 
 /**
- * Computes the most grouped colors in an image ⁘
+ * Computes the most grouped colors in an image
  * 
  * 
  * @param {IImage} image - The input image.

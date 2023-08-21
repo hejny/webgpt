@@ -3,18 +3,9 @@ import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import styles from './Debug.module.css';
 
 /**
- * Function component for rendering the Debug component ⁘
- * 
- * 
- * @returns {ReactNode} The rendered Debug component.
+ * Debugging layer
  */
 export function Debug() {
-/**
- * The wallpapers context ⁘
- * 
- * 
- * @type {WallpapersContextType}
- */
     const wallpapers = useContext(WallpapersContext);
 
     return (

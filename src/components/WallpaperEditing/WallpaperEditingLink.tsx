@@ -4,6 +4,8 @@ import styles from '../ControlPanel/ControlPanel.module.css';
 import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
+// !!! Render function 
+
 /**
  * Render function for the WallpaperEditingLink component ⁘
  * 

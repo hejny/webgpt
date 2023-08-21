@@ -7,9 +7,9 @@ import { Select } from '../Select/Select';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 
 /**
- * Function to compute color statistics for a wallpaper using different algorithms ⁘
- * 
- * 
+ * Select picker to compute color statistics for a wallpaper using different algorithms
+ *
+ *
  * @returns {JSX.Element} - JSX element containing a select input for choosing color algorithm and a loading indicator during computation
  */
 export function ColorsModalColorAlgoritm() {
@@ -27,12 +27,6 @@ export function ColorsModalColorAlgoritm() {
                     await forAnimationFrame();
 
                     try {
-/**
- * Find the compute method based on the selected version ⁘
- * 
- * 
- * @type {{ version: string, compute: Function }}
- */
                         const compute = COLORSTATS_COMPUTE_METHODS.find(({ version }) => newVersion === version);
                         if (!compute) {
                             setComputing(false);
@@ -44,21 +38,10 @@ export function ColorsModalColorAlgoritm() {
                         const start = performance.now();
                         console.info('🎨', { wallpaper });
 
-/**
- * Create an image object in the browser based on the wallpaper source ⁘
- * 
- * 
- * @type {HTMLImageElement}
- */
                         const image = await createImageInBrowser(wallpaper.src);
                         console.info('🎨', { image });
 
-/**
- * Compute the new color statistics using the selected algorithm ⁘
- * 
- * 
- * @type {Object}
- */
+    
                         const newColorStats = await compute(image);
 
                         console.info('🎨', { newColorStats });

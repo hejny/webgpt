@@ -3,12 +3,6 @@ import { FONTS } from '../../../config';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_font_family } from '../../utils/typeAliases';
 
-/**
- * React component for importing fonts ⁘
- * 
- * @param {ImportFontsProps} props - The props object for the ImportFonts component
- * @returns {JSX.Element} The ImportFonts component
- */
 interface ImportFontsProps {
     /**
      * The fonts to import
@@ -17,7 +11,7 @@ interface ImportFontsProps {
 }
 
 /**
- * @@@
+ * Import fonts into a page
  */
 export function ImportFonts(props: ImportFontsProps) {
     const { fonts } = props;

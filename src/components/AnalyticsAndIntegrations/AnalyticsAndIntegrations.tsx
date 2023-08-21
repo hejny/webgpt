@@ -2,19 +2,9 @@ import Script from 'next/script';
 import spaceTrim from 'spacetrim';
 
 /**
- * Renders the AnalyticsAndIntegrations component ⁘
- * 
- * @param {AnalyticsAndIntegrationsProps} props - The props for the component
- * @returns {JSX.Element} - The rendered component
+ * Renders all the analytics and integrations like Google Analytics, SmartLook, Sentry, ...
  */
-interface AnalyticsAndIntegrationsProps {}
-
-/**
- * @@@
- */
-export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
-    const {} = props;
-
+export function AnalyticsAndIntegrations() {
     return (
         <>
             {/* ===[ SmartLook: ]=== */}

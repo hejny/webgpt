@@ -1,7 +1,7 @@
 import { createGraphEffect } from './createGraphEffect';
 
 /**
- * Creates a graph effect that draws a circle ⁘
+ * Creates a graph effect that draws a circle
  * 
  * @param {Object} options - The options for the graph effect.
  * @param {Object} options.range - The range of the parameter t.

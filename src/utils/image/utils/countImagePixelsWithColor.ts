@@ -3,12 +3,8 @@ import { colorDistanceSquared } from '../../color/utils/colorDistance';
 import { IImage } from '../IImage';
 
 /**
- * @@@
- */
-
-/**
- * Counts the number of pixels in an image that have a specified color within a given tolerance ⁘
- * 
+ * Counts the number of pixels in an image that have a specified color within a given tolerance
+ *
  * @param {IImage} image - The image to analyze.
  * @param {Color} color - The color to search for.
  * @param {number} tolerance - The tolerance level for color similarity.

@@ -1,5 +1,5 @@
 /**
- * Checks if the provided value is a valid size value for the specified channel ⁘
+ * Checks if the provided value is a valid size value for the specified channel
  * 
  * @param channelName - The channel name to check the value for. Only 'width' or 'height' are valid values.
  * @param value - The value to check.

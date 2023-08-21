@@ -1,13 +1,10 @@
 import { Takeable } from './Takeable';
 
 /**
- * Represents a value with take chain functionality ⁘
+ * Represents any value with take chain functionality
  */
 export type WithTake<TValue extends Takeable> = TValue & ITakeChain<TValue>;
 
-/**
- * Represents an interface for a take chain ⁘
- */
 export interface ITakeChain<TValue extends Takeable> {
     readonly value: TValue;
     then<TResultValue extends Takeable>(callback: (value: TValue) => TResultValue): WithTake<TResultValue>;

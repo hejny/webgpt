@@ -4,6 +4,8 @@ import { Section } from '../../components/Section/Section';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './TechnicalInfo.module.css';
 
+// !!! React component
+
 /**
  * A React component that renders technical information about the app ⁘
  *
@@ -41,3 +43,7 @@ export function TechnicalInfo() {
         </Section>
     );
 }
+
+/**
+ * TODO: !!! Where it is used? Link OR footer + [🧠] export
+ */

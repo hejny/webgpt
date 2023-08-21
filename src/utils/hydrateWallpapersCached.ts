@@ -4,7 +4,7 @@ import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
 import { string_wallpaper_id } from './typeAliases';
 
 /**
- * @@@
+ * Cache of wallpapers to hydrate
  *
  * @private
  * @singleton
@@ -12,8 +12,8 @@ import { string_wallpaper_id } from './typeAliases';
 const wallpapers: Record<string_wallpaper_id, BehaviorSubject<IWallpaper>> = {};
 
 /**
- * Hydrates the wallpapers cache with the provided wallpapers ⁘
- * 
+ * Hydrates the wallpapers cache with the provided wallpapers
+ *
  * @param {Array<IWallpaperSerialized>} wallpapersJson - The serialized wallpapers.
  * @returns {Record<string, BehaviorSubject<IWallpaper>>} - The hydrated wallpapers cache.
  */

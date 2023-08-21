@@ -2,13 +2,6 @@ import { useMemo } from 'react';
 import { blobToDataurl } from '../../export/utils/blobToDataurl';
 import { usePromise } from '../../utils/hooks/usePromise';
 
-/**
- * Renders an image file preview component ⁘
- * 
- * @function
- * @param {ImageFilePreviewProps} props - The props passed to the component.
- * @returns {JSX.Element} - The rendered image file preview component.
- */
 interface ImageFilePreviewProps {
     /**
      * The image file to preview
@@ -17,7 +10,11 @@ interface ImageFilePreviewProps {
 }
 
 /**
- * @@@
+ * Renders an image file preview component ⁘
+ *
+ * @function !!!
+ * @param {ImageFilePreviewProps} props - The props passed to the component.
+ * @returns {JSX.Element} - The rendered image file preview component.
  */
 export function ImageFilePreview(props: ImageFilePreviewProps) {
     const { imageFileContent } = props;

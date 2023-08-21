@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 
+// !!! A component
+
 /**
- * A component that renders its children only if the locale matches the router locale ⁘
+ * A component that renders its children only if the locale matches the router locale
  *
  * @param {TranslateProps} props - The props of the component
  * @returns {JSX.Element} The rendered element or an empty fragment

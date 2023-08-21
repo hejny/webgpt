@@ -13,8 +13,8 @@ export function colorToDataUrl(color: Color): string /*_dataurl*/ {
 const keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 
 /**
- * Generates a base64-encoded triplet string ⁘
- * 
+ * Generates a base64-encoded triplet string 
+ *
  * @param e1 - The first element in the triplet.
  * @param e2 - The second element in the triplet.
  * @param e3 - The third element in the triplet.
@@ -27,8 +27,8 @@ const triplet = (e1: number, e2: number, e3: number) =>
     keyStr.charAt(e3 & 63);
 
 /**
- * Generates an RGB data URL string ⁘
- * 
+ * Converts RGB values to a data URL string
+ *
  * @param r - The red channel value.
  * @param g - The green channel value.
  * @param b - The blue channel value.

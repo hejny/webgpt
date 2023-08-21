@@ -4,7 +4,7 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 
 /**
- * Computes the average color of an image ⁘
+ * Computes the average color of an image
  * 
  * 
  * @param {IImage} image - The image object.

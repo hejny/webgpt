@@ -2,7 +2,7 @@ import { darken } from '../../utils/color/operators/darken';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
- * Updates the skin style based on the wallpaper color statistics ⁘
+ * Updates the skin style based on the wallpaper color statistics
  * 
  * 
  * @return {JSX.Element} The updated skin style

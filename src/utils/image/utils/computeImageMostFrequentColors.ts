@@ -6,7 +6,7 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 
 /**
- * Computes the most frequent colors in an image ⁘
+ * Computes the most frequent colors in an image
  * 
  * @param image - The image to analyze.
  * @returns A promise that resolves to an array of objects, each containing a color and its frequency.
@@ -15,7 +15,7 @@ export async function computeImageMostFrequentColors(
     image: IImage,
 ): Promise<Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>> {
 /**
- * The color of the current pixel ⁘
+ * The color of the current pixel
  */
     const colorCounts: Map<string, number> = new Map();
 
@@ -24,7 +24,7 @@ export async function computeImageMostFrequentColors(
         for (let y = 0; y < image.height; y++) {
             const color = image.getPixel({ x, y });
 /**
- * The hexadecimal representation of the color ⁘
+ * The hexadecimal representation of the color
  */
             const colorString = color.toHex();
 
@@ -44,12 +44,12 @@ export async function computeImageMostFrequentColors(
     // 3️⃣ Pick colors that has some distance threshold  (compared to all other already picked colors)
     //    TODO: This has one flaw which need to be fixed [🦯]
 /**
- * The threshold for considering two colors different ⁘
+ * The threshold for considering two colors different
  */
     const distanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
 /**
- * Array of unique colors and their frequencies ⁘
+ * Array of unique colors and their frequencies
  */
     const uniqueColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */> = [];
     for (const color of mostFrequentColors) {

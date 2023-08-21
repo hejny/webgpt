@@ -2,7 +2,7 @@ import { Json } from '../../supabase/types';
 import { Color } from '../Color';
 
 /**
- * Hydrates color values in a JSON object ⁘
+ * Hydrates color values in a JSON object
  * 
  * @param value - The JSON object to hydrate.
  * @returns The hydrated JSON object.

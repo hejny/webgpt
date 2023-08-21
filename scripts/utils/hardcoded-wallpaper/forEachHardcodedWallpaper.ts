@@ -6,9 +6,9 @@ import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpaper
 import { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
 
 /**
- * Executes a series of async tasks on hardcoded wallpapers ⁘
- * 
- * 
+ * Executes a series of async tasks on hardcoded wallpapers
+ *
+ *
  * @param {Object} options - The options for executing the tasks.
  * @param {function} options.makeWork - The function that performs the work on each wallpaper file.
  * @param {number} options.parallelWorksCount - The maximum number of parallel works.

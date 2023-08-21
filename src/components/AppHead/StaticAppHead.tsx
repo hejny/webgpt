@@ -4,13 +4,6 @@ import favicon from '../../../public/favicon.ico';
 import gallery1Image from '../../../public/screenshots/gallery-1.png';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 
-/**
- * Renders the head section of the static app ⁘
- * 
- * 
- * @param {StaticAppHeadProps} props - The props for the StaticAppHead component.
- * @returns {JSX.Element} The rendered component.
- */
 interface StaticAppHeadProps {
     /**
      * Title of the page which will be displayed in browser tab
@@ -19,7 +12,7 @@ interface StaticAppHeadProps {
 }
 
 /**
- * @@@
+ * Renders the head section of the static app
  */
 export function StaticAppHead(props: StaticAppHeadProps) {
     const { subtitle } = props;

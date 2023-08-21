@@ -3,7 +3,7 @@ import seedrandom from 'seedrandom';
 import { ShuffleSeedContext } from './ShuffleSeedContext';
 
 /**
- * Shuffles the child elements randomly ⁘
+ * Shuffles the child elements randomly
  * 
  * 
  * @param props - The props for the Shuffle component.

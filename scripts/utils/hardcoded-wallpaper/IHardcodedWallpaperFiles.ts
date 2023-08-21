@@ -1,7 +1,7 @@
 /**
- * Represents a set of hardcoded wallpaper file paths ⁘
+ * Represents a set of hardcoded wallpaper file paths
  * 
- * @interface
+ * @interface !!!
  */
 export interface IHardcodedWallpaperFiles {
     metadataFilePath: string;

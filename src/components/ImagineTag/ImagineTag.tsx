@@ -1,17 +1,12 @@
+import { string_midjourney_prompt } from '../../utils/typeAliases';
 import styles from './ImagineTag.module.css';
 
-/**
- * Function representing the ImagineTag component ⁘
- * 
- * @param {ImagineTagProps} props - The props object containing the necessary properties for the component.
- * @returns {JSX.Element} - The rendered ImagineTag component.
- */
 interface ImagineTagProps {
-    children: string;
+    children: string_midjourney_prompt;
 }
 
 /**
- * @@@
+ * Show mid-journey prompt in a nice box
  */
 export function ImagineTag(props: ImagineTagProps) {
     const { children } = props;

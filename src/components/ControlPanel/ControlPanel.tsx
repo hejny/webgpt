@@ -15,8 +15,8 @@ import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
 
 /**
- * Renders the control panel for managing wallpapers ⁘
- * 
+ * Renders the control panel for navigation and actions.
+ *
  * @returns The control panel component.
  */
 export function ControlPanel() {

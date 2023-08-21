@@ -7,8 +7,8 @@ import { Color } from '../color/Color';
 import { WithTake } from '../take/interfaces/ITakeChain';
 
 /**
- * Represents an image ⁘
- * 
+ * Represents an image as a 2D array of pixels
+ *
  * @interface
  */
 export interface IImage {

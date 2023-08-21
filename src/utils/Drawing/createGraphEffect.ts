@@ -5,8 +5,8 @@ import { Drawing } from './Drawing';
 import { Effect } from './effect';
 
 /**
- * Options for a graph effect ⁘
- * 
+ * Options for a graph effect
+ *
  * @interface
  */
 interface GraphEffectOptions {
@@ -15,8 +15,8 @@ interface GraphEffectOptions {
 }
 
 /**
- * Create a graph effect ⁘
- * 
+ * Create a graph effect
+ *
  * @template TElement - The type of the HTML element to apply the effect on.
  * @param {GraphEffectOptions} formula - The graph effect options.
  * @returns {Effect<TElement>} - The created effect.
@@ -35,9 +35,9 @@ export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEf
                 //  console.log(element.getBoundingClientRect());
                 let origin: Vector;
 
-/**
- * Resize the element and update the origin ⁘
- */
+                /**
+                 * Resize the element and update the origin ⁘
+                 */
                 function resize() {
                     origin = Vector.fromObject(window, ['pageXOffset', 'pageYOffset'])
                         .add(Vector.fromObject(element.getBoundingClientRect(), ['x', 'y']))
@@ -55,11 +55,11 @@ export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEf
                     .addPoint(origin.add({ x: -5, y: 5 }));
                 */
 
-/**
- * Plot the graph based on the seed vector ⁘
- * 
- * @param {Vector} seed - The seed vector.
- */
+                /**
+                 * Plot the graph based on the seed vector ⁘
+                 *
+                 * @param {Vector} seed - The seed vector.
+                 */
                 function graph(seed: Vector) {
                     drawing.clean();
 
@@ -132,6 +132,7 @@ export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEf
 }
 
 /**
+ * TODO: !!! Remove effects
  * TODO: createPolarGraphEffect
  * TODO: createYGraphEffect
  * TODO: LIB xyzt: addInPlace

@@ -4,13 +4,6 @@ import { string_css_class, string_href, string_html, string_markdown } from '../
 import { HtmlContent } from './HtmlContent';
 import { MarkdownContent } from './MarkdownContent';
 
-
-
-/**
- * Represents the properties for the Content component ⁘
- * 
- * @interface
- */
 interface ContentProps {
     /**
      * Source markdown

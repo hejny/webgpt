@@ -4,7 +4,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
 /**
- * A functional component that renders a footer section with some links ⁘
+ * Functional component that renders a footer section with links
  *
  * @returns {JSX.Element} The footer section element.
  */
@@ -46,7 +46,7 @@ export function FooterSection() {
 }
 
 /**
- * TODO: !! Footer always sticked on bottom
+ * TODO: !!! More links, structure + better design
  * TODO: !! Fix footer section
  * TODO: !! No cookie's sentence 
  * TODO: !! Email & follow subscription

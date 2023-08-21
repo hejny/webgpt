@@ -5,7 +5,7 @@ import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
- * Computes the darkest color of an image ⁘
+ * Computes the darkest color of an image
  * 
  * 
  * @param {IImage} image - The image object to compute the darkest color from

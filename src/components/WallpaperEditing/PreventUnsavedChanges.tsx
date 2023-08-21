@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
+// !!! React component
+
 /**
  * React component that prevents users from leaving the page if there are unsaved changes ⁘
  * 

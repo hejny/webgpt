@@ -8,18 +8,16 @@ import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/00-Modal';
 
 /**
- * React component for an export code modal ⁘
- * 
- * @returns JSX.Element
+ * Export code modal
  */
 export function ExportCodeModal() {
     const [wallpaper] = useWallpaper();
 
-/**
- * Memoized promise for exporting wallpaper as HTML ⁘
- * 
- * @type {Promise<any>}
- */
+    /**
+     * Memoized promise for exporting wallpaper as HTML
+     *
+     * @type {Promise<any>}
+     */
     const exportedPromise = useMemo(
         () =>
             /* not await */ exportAsHtml(wallpaper, {

@@ -2,7 +2,7 @@ import { join } from 'path';
 import { isFolderExisting } from '../isFolderExisting';
 
 /**
- * Retrieves the hardcoded directory path for wallpapers ⁘
+ * Retrieves the hardcoded directory path for wallpapers
  * 
  * 
  * @returns A Promise that resolves to a string representing the directory path.

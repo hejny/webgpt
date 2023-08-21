@@ -2,7 +2,7 @@ import { normalizeToKebabCase } from 'n12';
 import { IWallpaper } from '../utils/IWallpaper';
 
 /**
- * Function that returns the base filename of a wallpaper ⁘
+ * Function that returns the base filename of a wallpaper
  * 
  * 
  * @param wallpaper - The wallpaper object.

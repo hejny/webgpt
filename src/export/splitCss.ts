@@ -1,7 +1,7 @@
 import { string_css } from '../utils/typeAliases';
 
 /**
- * Splits a CSS string into an array of CSS chunks ⁘
+ * Splits a CSS string into an array of CSS chunks
  * 
  * @param {string} cssString - The CSS string to be split.
  * @returns {string[]} - An array of CSS chunks.

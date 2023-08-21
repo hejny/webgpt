@@ -4,7 +4,7 @@ import { getHardcodedWallpapersDir } from './getHardcodedWallpapersDir';
 
 
 /**
- * Retrieves the file paths of the hardcoded wallpapers metadata files ⁘
+ * Retrieves the file paths of the hardcoded wallpapers metadata files
  * 
  * @returns A promise that resolves to an array of strings representing the file paths.
  */

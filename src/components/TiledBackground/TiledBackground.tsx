@@ -1,7 +1,7 @@
 import styles from './TiledBackground.module.css';
 
 /**
- * A React component that renders a tiled background with a layer of color on top ⁘
+ * A React component that renders a tiled background with a layer of color on top
  *
  * @returns {JSX.Element} The tiled background element.
  */

@@ -3,12 +3,6 @@ import { textColor } from '../../utils/color/operators/furthest';
 import { take } from '../../utils/take/take';
 import styles from './ColorBox.module.css';
 
-/**
- * Renders a color box component ⁘
- * 
- * @param {ColorBoxProps} props - The props object containing the color value
- * @returns {JSX.Element} - The rendered color box component
- */
 interface ColorBoxProps {
     /**
      * Color to show in the box
@@ -17,7 +11,7 @@ interface ColorBoxProps {
 }
 
 /**
- * @@@
+ * Renders a color box component
  */
 export function ColorBox(props: ColorBoxProps) {
     const { value } = props;

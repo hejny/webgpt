@@ -3,18 +3,9 @@ import { string_hostname } from '../../utils/typeAliases';
 import { WhoisDomain } from './WhoisDomain/WhoisDomain';
 
 /**
- * Interface representing the props for the WhoisDomains component ⁘
+ * Simple domain checker with a single input and single output
  */
-interface WhoisDomainsProps {}
-
-/**
- * Function component that renders a SimpleDomainChecker ⁘
- * 
- * 
- * @param {WhoisDomainsProps} props - The props for the SimpleDomainChecker component.
- * @returns {JSX.Element} The rendered SimpleDomainChecker component.
- */
-export function SimpleDomainChecker(props: WhoisDomainsProps) {
+export function SimpleDomainChecker() {
     const [domain, setDomain] = useState<string_hostname>('');
 
     return (

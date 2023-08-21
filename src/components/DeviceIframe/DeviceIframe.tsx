@@ -3,12 +3,6 @@ import { classNames } from '../../utils/classNames';
 import { string_css_class, string_url } from '../../utils/typeAliases';
 import styles from './DeviceIframe.module.css';
 
-/**
- * A component that renders an iframe based on the given props ⁘
- * 
- * @param {DeviceIframeProps} props - The props for the component.
- * @returns {JSX.Element} The rendered iframe component.
- */
 interface DeviceIframeProps {
     /**
      * URL of the page to show in the iframe
@@ -28,7 +22,7 @@ interface DeviceIframeProps {
 }
 
 /**
- * @@@
+ * A component that renders an iframe based on the given props
  */
 export function DeviceIframe(props: DeviceIframeProps) {
     const { src, isInteractive, className } = props;
