@@ -1,14 +1,15 @@
+import { ReactNode } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
 /**
  * Component that delays rendering its children until the client-side hydration is complete ⁘
  * If server-side rendering is detected, an empty fragment is returned.
- * 
+ *
  * @param props - The component props.
  * @returns The NoSsr component.
  */
 interface NoSsrProps {
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 /**
