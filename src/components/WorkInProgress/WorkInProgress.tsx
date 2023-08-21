@@ -3,7 +3,7 @@ import { restNonce } from './forARest';
 import styles from './WorkInProgress.module.css';
 
 /**
- * A function component that renders an animated "loading indicator"
+ * Renders an animated "loading indicator" that is used to indicate that the app is working on something
  */
 export function WorkInProgress() {
     const [nonce, setNonce] = useState(0);

@@ -8,6 +8,9 @@ import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
 import { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
 import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
+/**
+ * Renders gallery of wallpapers
+ */
 export function GallerySection() {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);

@@ -4,7 +4,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
 /**
- * Functional component that renders a footer section with links
+ * Renders a footer section with links
  *
  * @returns {JSX.Element} The footer section element.
  */

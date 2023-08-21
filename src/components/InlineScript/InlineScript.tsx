@@ -19,7 +19,7 @@ interface InlineScriptProps {
 }
 
 /**
- * @@@
+ * Put a script in the HTML
  */
 export function InlineScript(props: InlineScriptProps) {
     const { id, children } = props;

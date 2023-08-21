@@ -7,7 +7,7 @@ import styles from './TechnicalInfo.module.css';
 // !!! React component
 
 /**
- * A React component that renders technical information about the app ⁘
+ * Renders technical information about the app
  *
  * @returns {JSX.Element} A section element with the title, content, version, repository and commit of the app.
  */

@@ -9,7 +9,7 @@ import { WhoisDomains } from './WhoisDomains/WhoisDomains';
 // !!! Represents
 
 /**
- * Domain checker with advanced options and patterns
+ * Renders a domain checker with advanced options and patterns
  */
 export function AdvancedDomainsChecker() {
     const [names, setNames] = useState<Array<string_domain>>(['ai', 'project']);

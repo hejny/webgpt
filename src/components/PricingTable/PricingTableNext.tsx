@@ -30,7 +30,7 @@ interface Plan {
 }
 
 /**
- * @@@
+ * Renders a pricing table
  */
 export function PricingTableNext(props: PricingTableNextProps) {
     const { plans } = props;

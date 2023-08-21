@@ -6,8 +6,6 @@ import { Effect } from './effect';
 
 /**
  * Options for a graph effect
- *
- * @interface
  */
 interface GraphEffectOptions {
     range: { min: number; max: number; step: number };

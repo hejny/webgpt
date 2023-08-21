@@ -7,7 +7,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
 
 /**
- * Part of the control panel that allows to like the current wallpaper.
+ * Renders a part of the control panel that allows to like the current wallpaper.
  */
 export function ControlPanelLikeButtons() {
     const router = useRouter();

@@ -9,7 +9,7 @@ interface ExportCommentProps {
 }
 
 /**
- * A function component that renders a comment element
+ * Renders a comment element
  *
  * In a live preview, this component will have no effect.
  * In an export, this component will be "unwraped" and the comment will be exported.

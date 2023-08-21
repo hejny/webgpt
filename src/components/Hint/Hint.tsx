@@ -30,7 +30,7 @@ interface HintProps {
 }
 
 /**
- * @@@
+ * Renders any content wrapped in a hint
  */
 export function Hint(props: HintProps) {
     const { id, title, children, reapearCount, className } = props;

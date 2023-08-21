@@ -22,6 +22,9 @@ interface GalleryFilterProps {
     onFilterChange(newPartialFilter: Partial<IGalleryFilter>): void;
 }
 
+/**
+ * Renders filters for <Gallery />
+ */
 export function GalleryFilterInput(props: GalleryFilterProps) {
     const { defaultFilter, onFilterChange } = props;
 

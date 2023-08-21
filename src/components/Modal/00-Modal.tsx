@@ -16,7 +16,7 @@ interface ModalProps {
 }
 
 /**
- * Modal above the live preview
+ * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
     const { title, children } = props;

@@ -7,10 +7,7 @@ import { Select } from '../Select/Select';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 
 /**
- * Select picker to compute color statistics for a wallpaper using different algorithms
- *
- *
- * @returns {JSX.Element} - JSX element containing a select input for choosing color algorithm and a loading indicator during computation
+ * Renders a select picker to compute color statistics for a wallpaper using different algorithms
  */
 export function ColorsModalColorAlgoritm() {
     const [wallpaper, modifyWallpaper] = useWallpaper();
@@ -41,7 +38,6 @@ export function ColorsModalColorAlgoritm() {
                         const image = await createImageInBrowser(wallpaper.src);
                         console.info('🎨', { image });
 
-    
                         const newColorStats = await compute(image);
 
                         console.info('🎨', { newColorStats });

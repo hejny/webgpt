@@ -19,9 +19,7 @@ const HandwrittenStyle = {
 } as const;
 
 /**
- * An interface that defines the options for the handwriteText function
- *
- * @interface
+ * Defines the options for the handwriteText function
  */
 interface IHandwriteTextOptions {
     text: string;

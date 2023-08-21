@@ -4,11 +4,9 @@ import styles from '../ControlPanel/ControlPanel.module.css';
 import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
-// !!! Render function 
-
 /**
- * Render function for the WallpaperEditingLink component ⁘
- * 
+ * Render a link for switching to the wallpaper editing mode.
+ *
  * @return {JSX.Element} The rendered JSX element.
  */
 export function WallpaperEditingLink() {

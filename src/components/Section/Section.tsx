@@ -12,7 +12,7 @@ interface SectionProps {
 }
 
 /**
- * Section is a container for content representing a logical part of the page
+ * Renders a section - container for content representing a logical part of the page
  */
 export function Section(props: SectionProps) {
     const { children, className } = props;

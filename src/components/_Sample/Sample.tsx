@@ -8,7 +8,7 @@ interface SampleProps {
 }
 
 /**
- * @@
+ * Render a @@
  */
 export function Sample(props: SampleProps) {
     const { Sample } = props;

@@ -16,7 +16,7 @@ import { getPageContent } from './getPageContent';
 import styles from './WallpaperContent.module.css';
 
 /**
- * Renders the wallpaper content
+ * Renders the main wallpaper content
  */
 export function WallpaperContentSection() {
     const { isEditable } = useMode();

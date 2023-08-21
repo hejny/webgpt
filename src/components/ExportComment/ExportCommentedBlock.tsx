@@ -23,7 +23,7 @@ interface ExportCommentedBlockProps {
     note?: string;
 }
 /**
- * A commented block of html
+ * Renders commented block of html
  *
  * In a live preview, this component will have no effect.
  * In an export, this component will be "unwraped" and the comment will be exported.

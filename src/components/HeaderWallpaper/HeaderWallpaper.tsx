@@ -4,10 +4,7 @@ import styles from './HeaderWallpaper.module.css';
 // !!! functional component
 
 /**
- * A functional component that displays a header wallpaper ⁘
- *
- *
- * @returns {JSX.Element} The rendered header wallpaper.
+ * Render a main image of the wallpaper page
  */
 export function HeaderWallpaper() {
     const [{ src, prompt, title, colorStats }] = useWallpaper();

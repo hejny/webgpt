@@ -1,9 +1,7 @@
 import styles from './TiledBackground.module.css';
 
 /**
- * A React component that renders a tiled background with a layer of color on top
- *
- * @returns {JSX.Element} The tiled background element.
+ * Renders a tiled background with a layer of color on top
  */
 export function TiledBackground() {
     return (
@@ -12,3 +10,7 @@ export function TiledBackground() {
         </div>
     );
 }
+
+/**
+ * TODO: !!! Is this used - if no - remove if yes - better annoration
+ */

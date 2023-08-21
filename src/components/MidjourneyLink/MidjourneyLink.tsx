@@ -9,7 +9,7 @@ interface MidjourneyLinkProps {
 }
 
 /**
- * A functional component that renders a link with a job UUID
+ * Renders a MidJourney link with a job UUID
  */
 export function MidjourneyLink(props: MidjourneyLinkProps) {
     const { children } = props;

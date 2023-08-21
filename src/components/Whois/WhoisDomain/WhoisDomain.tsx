@@ -5,17 +5,17 @@ import { useWhois } from '../utils/useWhois';
 import styles from './WhoisDomain.module.css';
 
 interface WhoisDomainProps {
-
     /**
      * The domain to check
-     * 
+     *
      * Note: The domain will be normalized - trimmed and lowercased
      */
     domain: string_domain;
 }
 
 /**
- * Fetches and displays the whois info of a domain
+ * Renderrs an info about a domain
+ * Note: It internally fetches and displays the whois
  */
 export function WhoisDomain(props: WhoisDomainProps) {
     let { domain } = props;

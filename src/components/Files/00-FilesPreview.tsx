@@ -12,7 +12,7 @@ interface FilesPreviewProps {
 }
 
 /**
- * @@@
+ * Renders a preview of the files
  */
 export function Files(props: FilesPreviewProps) {
     const { files } = props;

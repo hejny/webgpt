@@ -19,7 +19,7 @@ interface ItemsProps {
 }
 
 /**
- * @@@
+ * Renders a div container for N items
  */
 export function Items(props: ItemsProps) {
     const { children } = props;

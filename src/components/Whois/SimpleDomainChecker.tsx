@@ -3,7 +3,7 @@ import { string_hostname } from '../../utils/typeAliases';
 import { WhoisDomain } from './WhoisDomain/WhoisDomain';
 
 /**
- * Simple domain checker with a single input and single output
+ * Renders a simple domain checker with a single input and single output
  */
 export function SimpleDomainChecker() {
     const [domain, setDomain] = useState<string_hostname>('');

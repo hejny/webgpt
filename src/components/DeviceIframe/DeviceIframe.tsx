@@ -22,7 +22,7 @@ interface DeviceIframeProps {
 }
 
 /**
- * A component that renders an iframe based on the given props
+ * Renders an iframe based on the given props
  */
 export function DeviceIframe(props: DeviceIframeProps) {
     const { src, isInteractive, className } = props;

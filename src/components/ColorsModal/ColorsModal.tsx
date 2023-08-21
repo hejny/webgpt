@@ -11,8 +11,6 @@ import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
 
 /**
  * Render a modal for selecting colors for a wallpaper
- *
- * @returns JSX.Element !!!
  */
 export function ColorsModal() {
     const [wallpaper, modifyWallpaper] = useWallpaper();

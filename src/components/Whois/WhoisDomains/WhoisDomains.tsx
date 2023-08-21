@@ -12,7 +12,8 @@ interface WhoisDomainsProps {
 }
 
 /**
- * Shows the whois information for a list of domains
+ * Renderrs an info about multiple domains
+ * Note: It internally fetches and displays the whois
  */
 export function WhoisDomains(props: WhoisDomainsProps) {
     const { domains } = props;

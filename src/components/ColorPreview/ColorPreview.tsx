@@ -16,7 +16,7 @@ interface ColorPreviewProps {
 }
 
 /**
- * @@@
+ * Render a preview of a color
  */
 export function ColorPreview(props: ColorPreviewProps) {
     const { className, color } = props;

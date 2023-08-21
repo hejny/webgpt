@@ -6,7 +6,7 @@ interface ImagineTagProps {
 }
 
 /**
- * Show mid-journey prompt in a nice box
+ * Renders a MidJourney prompt in a nice box
  */
 export function ImagineTag(props: ImagineTagProps) {
     const { children } = props;

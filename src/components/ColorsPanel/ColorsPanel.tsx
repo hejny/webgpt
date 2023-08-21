@@ -8,7 +8,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ColorsPanel.module.css';
 
 /**
- * Represents the colors panel component
+ * Renders the colors panel component
  */
 export function ColorsPanel() {
     const [wallpaper, modifyWallpaper] = useWallpaper();

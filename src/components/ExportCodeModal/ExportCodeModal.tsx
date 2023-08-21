@@ -8,7 +8,7 @@ import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/00-Modal';
 
 /**
- * Export code modal
+ * Render a modal for exporting wallpaper page as code
  */
 export function ExportCodeModal() {
     const [wallpaper] = useWallpaper();

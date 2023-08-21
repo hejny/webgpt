@@ -6,14 +6,11 @@ import { randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
 import { handwriteText } from './utils/handwriteText';
 
-
 interface HandwrittenTextProps {
-
     /**
      * The color of the text.
      */
     color: Color;
-
 
     /**
      * The text to be rendered as handwritten.
@@ -21,9 +18,8 @@ interface HandwrittenTextProps {
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
 }
 
-
 /**
- * A component that renders handwritten text using SVG and handwriteText function
+ * Renders handwritten text using SVG and handwriteText function
  *
  * @returns A JSX element that contains the handwritten text and a fallback span element.
  */

@@ -10,6 +10,9 @@ import { Menu } from '../Menu/Menu';
 import { WallpaperContentSection } from '../WallpaperContent/WallpaperContent';
 import styles from './WallpaperLayout.module.css';
 
+/**
+ * Renders the wallpaper layout (header, footer, background, content)
+ */
 export function WallpaperLayout() {
     const router = useRouter();
     const isPreview = router.query.mode === 'show-thumbnail'; /* <- TODO: !! Use useMode */

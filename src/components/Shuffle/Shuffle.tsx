@@ -4,8 +4,8 @@ import { ShuffleSeedContext } from './ShuffleSeedContext';
 
 /**
  * Shuffles the child elements randomly
- * 
- * 
+ *
+ *
  * @param props - The props for the Shuffle component.
  * @returns The shuffled child elements.
  */
@@ -32,7 +32,7 @@ interface ShuffleProps {
 }
 
 /**
- * @@@
+ * Renders any children in random order
  */
 export function Shuffle(props: ShuffleProps) {
     const { seed, isDisabled, limit, children } = props;
