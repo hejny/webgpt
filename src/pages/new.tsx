@@ -1,11 +1,10 @@
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { UploadWallpaper } from '../components/UploadWallpaper/UploadWallpaper';
+import { UploadNewWallpaper } from '../components/UploadNewWallpaper/UploadNewWallpaper';
 import styles from '../styles/static.module.css';
 
-export default function UploadPage() {
+export default function NewWallpaperPage() {
     const router = useRouter();
-    const homeUrl = typeof router.query.home === 'string' ? router.query.home : null;
 
     return (
         <>
@@ -14,7 +13,7 @@ export default function UploadPage() {
             <div className={styles.page}>
                 <main>
                     <h1>AI Web Maker</h1>
-                    <UploadWallpaper />
+                    <UploadNewWallpaper />
                 </main>
 
                 {/* TODO: Make here some footer

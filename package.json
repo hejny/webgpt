@@ -37,6 +37,7 @@
         "@uiw/react-markdown-editor": "5.11.1",
         "@vercel/og": "0.5.8",
         "configchecker": "1.5.1",
+        "crypto-js": "^4.1.1",
         "destroyable": "0.12.0",
         "everstorage": "1.13.0",
         "file-saver": "2.0.5",
