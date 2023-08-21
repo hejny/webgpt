@@ -5,10 +5,25 @@ import { string_css_class, string_title } from '../../utils/typeAliases';
 import styles from './Hint.module.css';
 
 interface HintProps {
+    /**
+     * Unique identifier of the hint
+     */
     id: string;
+
+    /**
+     * Text of the hint
+     */
     title: string_title;
+
+    /**
+     * Content which will is hinted
+     * This is the subject of the hint
+     */
     children?: ReactNode;
 
+    /**
+     * Number of times the hint will reapear before it is removed permanently
+     */
     reapearCount: number;
 
 
@@ -19,7 +34,7 @@ interface HintProps {
 }
 
 /**
- * @@
+ * Renders any content wrapped in a hint
  */
 export function Hint(props: HintProps) {
     const { id, title, children, reapearCount, className } = props;

@@ -5,11 +5,17 @@ import { useWhois } from '../utils/useWhois';
 import styles from './WhoisDomain.module.css';
 
 interface WhoisDomainProps {
+    /**
+     * The domain to check
+     *
+     * Note: The domain will be normalized - trimmed and lowercased
+     */
     domain: string_domain;
 }
 
 /**
- * @@
+ * Renderrs an info about a domain
+ * Note: It internally fetches and displays the whois
  */
 export function WhoisDomain(props: WhoisDomainProps) {
     let { domain } = props;
@@ -20,7 +26,7 @@ export function WhoisDomain(props: WhoisDomainProps) {
     const { domainStatus, whois } = useWhois(domain, nonce);
 
     return (
-        <div onClick={() => console.info(whois)}  className={styles.whois}>
+        <div onClick={() => console.info(whois)} className={styles.whois}>
             {
                 {
                     PENDING: (

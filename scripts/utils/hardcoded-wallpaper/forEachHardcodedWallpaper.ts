@@ -6,7 +6,15 @@ import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpaper
 import { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
 
 /**
- * @@@
+ * Executes a series of async tasks on hardcoded wallpapers
+ *
+ *
+ * @param {Object} options - The options for executing the tasks.
+ * @param {function} options.makeWork - The function that performs the work on each wallpaper file.
+ * @param {number} options.parallelWorksCount - The maximum number of parallel works.
+ * @param {boolean} options.isShuffled - Determines if the wallpapers should be shuffled before processing.
+ * @param {string} options.logBeforeEachWork - The property of the wallpaper files to log before each work.
+ * @returns {Promise<void>} - A promise that resolves when all tasks have been completed.
  */
 export async function forEachHardcodedWallpaper(options: {
     makeWork(wallpeperFiles: IHardcodedWallpaperFiles): Promise<void>;

@@ -1,8 +1,9 @@
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './HeaderWallpaper.module.css';
 
+
 /**
- * @@
+ * Renders a main image of the wallpaper page
  */
 export function HeaderWallpaper() {
     const [{ src, prompt, title, colorStats }] = useWallpaper();

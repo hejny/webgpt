@@ -16,7 +16,7 @@ import { getPageContent } from './getPageContent';
 import styles from './WallpaperContent.module.css';
 
 /**
- * @@@
+ * Renders the main wallpaper content
  */
 export function WallpaperContentSection() {
     const { isEditable } = useMode();
@@ -24,9 +24,15 @@ export function WallpaperContentSection() {
     const { mainWallpaperFont } = useWallpaperFonts();
 
     const { isExported } = useContext(ExportContext);
+    /**
+     * Retrieves the current page name from context
+     */
     const pageName = usePageName();
 
     if (pageName !== 'index') {
+        /**
+         * Retrieves the page content based on the page name
+         */
         let pageContent = getPageContent(pageName);
 
         pageContent = spaceTrim(
@@ -78,6 +84,12 @@ export function WallpaperContentSection() {
         );
     }
 
+    /**
+     * Handles the HTML change event and updates the wallpaper content if in edit mode
+     *
+     *
+     * @param newContent - The new HTML content.
+     */
     const onHtmlChange = !isEditable
         ? undefined
         : async (newContent: string_html) => {

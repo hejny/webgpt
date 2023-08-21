@@ -2,12 +2,10 @@ import { useState } from 'react';
 import { string_hostname } from '../../utils/typeAliases';
 import { WhoisDomain } from './WhoisDomain/WhoisDomain';
 
-interface WhoisDomainsProps {}
-
 /**
- * @@
+ * Renders a simple domain checker with a single input and single output
  */
-export function SimpleDomainChecker(props: WhoisDomainsProps) {
+export function SimpleDomainChecker() {
     const [domain, setDomain] = useState<string_hostname>('');
 
     return (

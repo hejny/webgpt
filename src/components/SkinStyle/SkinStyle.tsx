@@ -2,7 +2,7 @@ import { darken } from '../../utils/color/operators/darken';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
- * @@@
+ * Put skin into a page based on the wallpaper color statistics
  */
 export function SkinStyle() {
     const [wallpaper] = useWallpaper();

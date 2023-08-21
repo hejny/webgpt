@@ -5,12 +5,7 @@ import { string_css_class, string_href, string_html } from '../../utils/typeAlia
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { mapLinksInHtml } from './mapLinksInHtml';
 
-/**
- * A function component that renders a div element with parsed HTML content ⁘
- *
- * @param {HtmlContentProps} props - The props for the component.
- * @returns {JSX.Element} A div element with parsed HTML content and optional CSS class name.
- */
+
 interface HtmlContentProps {
     /**
      * Source html

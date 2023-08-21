@@ -9,11 +9,14 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 
 interface WallpaperAppHeadProps {
+    /**
+     * Additional content to be placed into top of the <head>
+     */
     children?: ReactNode;
 }
 
 /**
- * @@@
+ * Renders the head section of the wallpaper app
  */
 export function WallpaperAppHead(props: WallpaperAppHeadProps) {
     const { children } = props;

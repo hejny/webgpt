@@ -7,14 +7,17 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/00-Modal';
 
-interface ExportCodeModalProps {}
-
 /**
- * @@
+ * Renders the modal for exporting wallpaper page as code
  */
-export function ExportCodeModal(props: ExportCodeModalProps) {
+export function ExportCodeModal() {
     const [wallpaper] = useWallpaper();
 
+    /**
+     * Memoized promise for exporting wallpaper as HTML
+     *
+     * @type {Promise<any>}
+     */
     const exportedPromise = useMemo(
         () =>
             /* not await */ exportAsHtml(wallpaper, {

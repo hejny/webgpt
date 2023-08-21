@@ -1,4 +1,3 @@
-import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import { Barlow_Condensed } from 'next/font/google';
 import { EXPORT_OPTIONS } from '../../config';
@@ -18,7 +17,7 @@ const uiFont = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['lat
 const uiFont = Dancing_Script({ weight: '400', subsets: ['latin', 'latin-ext'] });
 /**/
 
-function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
     return (
         <div className={uiFont.className /* <- Note: [🕋] This font is not included in export css */} id="ui-root">
             <ExportContext.Provider value={EXPORT_OPTIONS}>
@@ -29,5 +28,3 @@ function App({ Component, pageProps }: AppProps) {
         </div>
     );
 }
-
-export default appWithTranslation(App);

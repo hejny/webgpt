@@ -15,7 +15,7 @@ import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
 
 /**
- * @@@
+ * Renders the control panel for navigation and actions.
  */
 export function ControlPanel() {
     const router = useRouter();

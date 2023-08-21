@@ -1,4 +1,3 @@
-import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useContext, useState } from 'react';
 import { useInitial } from '../../utils/hooks/useInitial';
@@ -8,8 +7,10 @@ import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
 import { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
 import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
+/**
+ * Renders the gallery of wallpapers
+ */
 export function GallerySection() {
-    const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
     const [filter, setFilter] = useState<IGalleryFilter>({

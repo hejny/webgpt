@@ -5,15 +5,8 @@ import { string_css_class, string_href, string_markdown } from '../../utils/type
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 
-/**
- * Interface for article props ⁘
- *
- * @interface
- * @property {string} content - The content of the article in markdown format
- * @property {boolean} [isHashUsed] - Whether the article uses hash for navigation
- * @property {boolean} [isEnhanced] - Whether the article applies additional enhancements to the markdown
- */
-interface IMarkdownContentProps {
+
+interface MarkdownContentProps {
     /**
      * Source markdown
      */
@@ -82,7 +75,7 @@ interface IMarkdownContentProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function MarkdownContent(props: IMarkdownContentProps) {
+export function MarkdownContent(props: MarkdownContentProps) {
     const {
         content,
         className,

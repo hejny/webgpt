@@ -2,7 +2,7 @@ import { Converter } from 'showdown';
 import showdownHighlight from 'showdown-highlight';
 
 /**
- * A converter instance that uses showdown and highlight extensions ⁘
+ * A converter instance that uses showdown and highlight extensions
  *
  * @type {Converter}
  */

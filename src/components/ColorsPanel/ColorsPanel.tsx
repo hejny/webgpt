@@ -7,12 +7,10 @@ import { ColorPreview } from '../ColorPreview/ColorPreview';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ColorsPanel.module.css';
 
-interface ColorsPanelProps {}
-
 /**
- * @@@
+ * Renders the colors panel component
  */
-export function ColorsPanel(props: ColorsPanelProps) {
+export function ColorsPanel() {
     const [wallpaper, modifyWallpaper] = useWallpaper();
     const lastSavedWallpaper = useLastSavedWallpaper();
 
@@ -28,6 +26,11 @@ export function ColorsPanel(props: ColorsPanelProps) {
             setOpen(false);
         }, 5000);
 
+        /**
+         * Handles the click outside of the ColorsPanel component
+         *
+         * @param {MouseEvent} event - The click event.
+         */
         const outclickHandler = (event: MouseEvent) => {
             if (!(event.target instanceof HTMLElement)) {
                 return;

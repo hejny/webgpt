@@ -17,6 +17,9 @@ interface SelectProps<TValue extends string | number | symbol> {
     isDisabled?: boolean;
 }
 
+/**
+ * Renders a select with a label and a list of options
+ */
 export function Select<TValue extends string | number | symbol>(props: SelectProps<TValue>) {
     const { label, value, onChange, visibleButtons, className, isDisabled } = props;
 
@@ -76,3 +79,7 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
         </div>
     );
 }
+
+/**
+ * TODO: Maybe use instead some unstyled components library @see https://headlessui.com/
+ */

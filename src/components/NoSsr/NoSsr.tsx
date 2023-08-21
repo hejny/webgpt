@@ -1,11 +1,21 @@
+import { ReactNode } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
 interface NoSsrProps {
-    children: React.ReactNode;
+    /**
+     * The children to render during client rendering
+     *
+     * In case of server rendering, the children are not rendered at all
+     * In case of client rendering, the children are rendered as <NoCsr/> would not be used at all
+     */
+    children: ReactNode;
 }
 
 /**
- * @@
+ * Detection for server/client rendering
+ *
+ * In case of server rendering, the children are not rendered at all
+ * In case of client rendering, the children are rendered as <NoCsr/> would not be used at all
  */
 export function NoSsr(props: NoSsrProps) {
     const { children } = props;

@@ -4,7 +4,7 @@ import { string_css_class, string_href, string_html, string_markdown } from '../
 import { HtmlContent } from './HtmlContent';
 import { MarkdownContent } from './MarkdownContent';
 
-interface IContentProps {
+interface ContentProps {
     /**
      * Source markdown
      */
@@ -60,7 +60,7 @@ interface IContentProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function Content(props: IContentProps) {
+export function Content(props: ContentProps) {
     const { content, className, isusingFonts, isUsingOpenmoji, isEnhanced, isEditable, mapLinks, onHtmlChange } = props;
 
     const contentFormat = useMemo(() => detectContentFormat(content), [content]);

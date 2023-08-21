@@ -9,6 +9,9 @@ import { ColorPreview } from '../ColorPreview';
 import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
+    /**
+     * Color to show in the box
+     */
     value: Color;
     onChange(color: WithTake<Color>): void;
     presetColors?: Array<PresetColor>;
@@ -20,7 +23,7 @@ interface ColorInputProps {
 }
 
 /**
- * @@
+ * Renders a color input with a preview box and a color picker
  */
 export function ColorInput(props: ColorInputProps) {
     const { className, value, onChange, presetColors } = props;

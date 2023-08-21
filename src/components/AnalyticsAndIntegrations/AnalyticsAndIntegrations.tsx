@@ -1,14 +1,10 @@
 import Script from 'next/script';
 import spaceTrim from 'spacetrim';
 
-interface AnalyticsAndIntegrationsProps {}
-
 /**
- * @@
+ * Renders all the analytics and integrations like Google Analytics, SmartLook, Sentry, ...
  */
-export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
-    const {} = props;
-
+export function AnalyticsAndIntegrations() {
     return (
         <>
             {/* ===[ SmartLook: ]=== */}

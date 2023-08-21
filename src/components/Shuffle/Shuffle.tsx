@@ -2,6 +2,13 @@ import { ReactNode, useContext } from 'react';
 import seedrandom from 'seedrandom';
 import { ShuffleSeedContext } from './ShuffleSeedContext';
 
+/**
+ * Shuffles the child elements randomly
+ *
+ *
+ * @param props - The props for the Shuffle component.
+ * @returns The shuffled child elements.
+ */
 interface ShuffleProps {
     /**
      * This will be a seed suffix for the random number generator used in the shuffling
@@ -25,7 +32,7 @@ interface ShuffleProps {
 }
 
 /**
- * @@@
+ * Renders any children in random order
  */
 export function Shuffle(props: ShuffleProps) {
     const { seed, isDisabled, limit, children } = props;

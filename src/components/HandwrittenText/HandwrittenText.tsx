@@ -6,23 +6,22 @@ import { randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
 import { handwriteText } from './utils/handwriteText';
 
-/**
- * A component that renders handwritten text using SVG and handwriteText function ⁘
- *
- * @param props - The properties of the component.
- * @param props.color - The color of the text.
- * @param props.children - The text to be rendered.
- * @returns A JSX element that contains the handwritten text and a fallback span element.
- */
 interface HandwrittenTextProps {
+    /**
+     * The color of the text.
+     */
     color: Color;
+
+    /**
+     * The text to be rendered as handwritten.
+     */
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
 }
 
-// const passionsConflictFont = Passions_Conflict({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
-
 /**
- * @@@
+ * Renders a handwritten text using SVG and handwriteText function
+ *
+ * @returns A JSX element that contains the handwritten text and a fallback span element.
  */
 export function HandwrittenText(props: HandwrittenTextProps) {
     const { children, color } = props;

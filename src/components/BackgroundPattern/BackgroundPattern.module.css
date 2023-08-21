@@ -1,4 +1,4 @@
-.tiledBackground /* <- TODO: Probbably name ACRY main container classes of the component as the component name - TiledBackground */ {
+.BackgroundPattern {
     /*/
     outline: 1px dotted yellow;
     /**/
@@ -35,5 +35,3 @@
     background: linear-gradient(to bottom, var(--palette-0), rgba(var(--palette-2-triplet), 0.3)),
         url(/patterns/simple/stripes-grey.png);
 }
-
-/* TODO: TiledBackground and TiledBackgroundPlayground can share a css module*/

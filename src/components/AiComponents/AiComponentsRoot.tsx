@@ -5,20 +5,27 @@ import { string_css_class } from '../../utils/typeAliases';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
+    /**
+     * A map of component types to functions that activate them
+     */
     usedComponents: Record<
         string,
         (componentElement: HTMLElement) => Promisable<void /* <- TODO: Maybe return IDestroyable instead of void */>
     >;
+
+    /**
+     * In this content will be activated all AI components
+     */
     children: ReactNode;
 
-     /**
+    /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
 }
 
 /**
- * @@
+ * Renders a root element for AI components and activates them
  */
 export function AiComponentsRoot(props: AiComponentsRootProps) {
     const { usedComponents, children, className } = props;

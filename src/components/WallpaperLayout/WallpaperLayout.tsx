@@ -2,14 +2,17 @@
 import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
-import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { useWallpaperFonts } from '../../utils/hooks/useWallpaperFonts';
+import { BackgroundPattern } from '../BackgroundPattern/BackgroundPattern';
 import { FooterSection } from '../Footer/Footer';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { Menu } from '../Menu/Menu';
 import { WallpaperContentSection } from '../WallpaperContent/WallpaperContent';
 import styles from './WallpaperLayout.module.css';
 
+/**
+ * Renders the wallpaper layout (header, footer, background, content)
+ */
 export function WallpaperLayout() {
     const router = useRouter();
     const isPreview = router.query.mode === 'show-thumbnail'; /* <- TODO: !! Use useMode */
@@ -36,7 +39,7 @@ export function WallpaperLayout() {
             </header>
 
             <div className={styles.background}>
-                <TiledBackground />
+                <BackgroundPattern />
             </div>
             <main>
                 <WallpaperContentSection />

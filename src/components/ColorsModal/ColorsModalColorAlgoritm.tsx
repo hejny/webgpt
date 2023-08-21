@@ -7,7 +7,7 @@ import { Select } from '../Select/Select';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 
 /**
- * @@
+ * Renders a select picker to compute color statistics for a wallpaper using different algorithms
  */
 export function ColorsModalColorAlgoritm() {
     const [wallpaper, modifyWallpaper] = useWallpaper();
