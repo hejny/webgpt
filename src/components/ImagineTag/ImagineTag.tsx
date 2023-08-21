@@ -2,7 +2,7 @@ import styles from './ImagineTag.module.css';
 
 /**
  * A function component that renders a tag with a custom style ⁘
- * 
+ *
  * @param {ImagineTagProps} props The props for the component
  * @returns {JSX.Element} The rendered tag element
  */

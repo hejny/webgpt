@@ -3,7 +3,7 @@ import styles from './Item.module.css';
 
 /**
  * A component that renders a generic item with a given style ⁘
- * 
+ *
  * @param {Object} props The props object.
  * @param {ReactNode} props.children The children of the component.
  * @returns {JSX.Element} The item component.
