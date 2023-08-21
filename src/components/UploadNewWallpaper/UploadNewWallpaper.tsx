@@ -10,12 +10,12 @@ export function UploadNewWallpaper() {
             isMultipleAllowed={false}
             accept="image/*"
             onFiles={async ([file]) => {
-                console.log(file);
+                const formData = new FormData();
+                formData.append('wallpaper', file!);
 
-                // Upload file to /api/upload-wallpaper
                 const response = await fetch('/api/upload-wallpaper', {
                     method: 'POST',
-                    body: file,
+                    body: formData,
                 });
 
                 const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;

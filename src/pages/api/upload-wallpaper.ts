@@ -1,10 +1,9 @@
-import { writeFile } from 'fs/promises';
+import formidable from 'formidable';
+import { readFile, writeFile } from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { join } from 'path';
 
-import { CDN } from '../../../config';
-import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserWallpaperCdnKey';
-import { string_mime_type, string_url } from '../../utils/typeAliases';
+import { string_url } from '../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
@@ -25,6 +24,38 @@ export default async function uploadWallpaperHandler(
         return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
+    const files = await new Promise<formidable.Files>((resolve, reject) => {
+        const form = formidable({});
+        form.parse(request, (error, fields, files) => {
+            if (error) {
+                return reject(error);
+            }
+            return resolve(files);
+        });
+    });
+
+    const wallpapers = files.wallpaper;
+
+    if (!wallpapers || wallpapers.length !== 1) {
+        return response
+            .status(400)
+            .json({ message: 'In form data there is not EXACTLY one "wallpapers" field' } as any);
+    }
+
+    const wallpaper = wallpapers[0]!;
+
+    if (!wallpaper.mimetype?.startsWith('image/')) {
+        return response.status(400).json({ message: 'Only image files are allowed' } as any);
+    }
+
+    console.log('wallpaper', wallpaper);
+    console.log('wallpaper.filepath', wallpaper.filepath);
+
+    const wallpaperBuffer = await readFile(wallpaper.filepath);
+
+    await writeFile(join(process.cwd(), 'test.jpg'), wallpaperBuffer);
+
+    /*
     console.log('request.headers', request.headers);
     const wallpaperAsBlob1 = new Blob([request.body], { type: request.headers['content-type'] as string_mime_type });
     const wallpaperAsBlob2 = request.read();
@@ -52,10 +83,6 @@ export default async function uploadWallpaperHandler(
 
     const wallpaperAsBlob = wallpaperAsBlob1;
 
-    if (!wallpaperAsBlob.type.startsWith('image/')) {
-        return response.status(400).json({ message: 'Only image files are allowed' } as any);
-    }
-
     const wallpaperAsbuffer = Buffer.from(await wallpaperAsBlob.arrayBuffer());
 
     // save file to disk
@@ -76,6 +103,8 @@ export default async function uploadWallpaperHandler(
     console.log({ wallpaperUrl });
 
     return response.status(201).json({ wallpaperUrl } satisfies UploadWallpaperResponse);
+
+    */
 }
 
 /**
