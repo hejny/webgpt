@@ -1,4 +1,3 @@
-import { JsonValue } from 'type-fest';
 import { Json } from '../../supabase/types';
 import { Color } from '../Color';
 

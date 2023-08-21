@@ -5,7 +5,7 @@ import { WhoisDomain } from './WhoisDomain/WhoisDomain';
 interface WhoisDomainsProps {}
 
 /**
- * @@
+ * @@@
  */
 export function SimpleDomainChecker(props: WhoisDomainsProps) {
     const [domain, setDomain] = useState<string_hostname>('');

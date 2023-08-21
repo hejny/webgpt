@@ -5,7 +5,7 @@ interface NoSsrProps {
 }
 
 /**
- * @@ <- !!! ACRY change to @@@ and run BPE
+ * @@@
  */
 export function NoSsr(props: NoSsrProps) {
     const { children } = props;

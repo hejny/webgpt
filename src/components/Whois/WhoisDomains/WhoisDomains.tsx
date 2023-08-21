@@ -4,17 +4,16 @@ import { WhoisDomain } from '../WhoisDomain/WhoisDomain';
 import styles from './WhoisDomains.module.css';
 
 interface WhoisDomainsProps {
-
     /**
      * The domains to check
-     * 
+     *
      * Note: All domains will be normalized - trimmed and lowercased
      */
     domains: Array<string_domain>;
 }
 
 /**
- * @@
+ * @@@
  */
 export function WhoisDomains(props: WhoisDomainsProps) {
     const { domains } = props;

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
- * @@
+ * @@@
  */
 export function PreventUnsavedChanges() {
     const [wallpaper] = useWallpaper();

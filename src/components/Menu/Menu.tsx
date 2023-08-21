@@ -10,7 +10,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Menu.module.css';
 
 /**
- * @@
+ * @@@
  */
 export function Menu() {
     const [wallpaper] = useWallpaper();

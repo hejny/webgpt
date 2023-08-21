@@ -11,9 +11,8 @@ import { Modal } from '../Modal/00-Modal';
 import styles from './ColorsModal.module.css';
 import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
 
-
 /**
- * @@
+ * @@@
  */
 export function ColorsModal() {
     const router = useRouter();

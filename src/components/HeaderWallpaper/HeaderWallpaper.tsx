@@ -2,7 +2,7 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './HeaderWallpaper.module.css';
 
 /**
- * @@
+ * @@@
  */
 export function HeaderWallpaper() {
     const [{ src, prompt, title, colorStats }] = useWallpaper();

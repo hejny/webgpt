@@ -18,7 +18,7 @@ interface WallpaperLinkProps extends Omit<React.ComponentProps<'a'>, 'ref'> {
 }
 
 /**
- * @@
+ * @@@
  */
 export function WallpaperLink(props: WallpaperLinkProps) {
     const { wallpaperId, mode, page, modal, children, ref } = props;

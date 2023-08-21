@@ -4,7 +4,6 @@ import styles from './00-FilesPreview.module.css';
 import { ImageFilePreview } from './20-ImageFilePreview';
 
 interface FilePreviewProps {
-
     /**
      * File to preview
      */
@@ -12,7 +11,7 @@ interface FilePreviewProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function FilePreview(props: FilePreviewProps) {
     const { file } = props;

@@ -6,7 +6,7 @@ import { Effect } from './effect';
 
 /**
  * An interface for defining options for a graph effect ⁘
- * 
+ *
  * @interface
  * @property {Object} range - The range of the input parameter t.
  * @property {number} range.min - The minimum value of t.
@@ -21,7 +21,7 @@ interface GraphEffectOptions {
 
 /**
  * A function that creates a graph effect for a given HTML element ⁘
- * 
+ *
  * @param {GraphEffectOptions} formula - The options for the graph effect.
  * @returns {Effect<TElement>} - A function that takes an HTML element and returns a registration object.
  */
@@ -30,7 +30,7 @@ export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEf
         return Registration.create(
             async (
                 {
-                    /* TODO: LIB: destroyable @@addSubdestroyable */
+                    /* TODO: LIB: destroyable @@@addSubdestroyable */
                 },
             ) => {
                 await forTime(1000);

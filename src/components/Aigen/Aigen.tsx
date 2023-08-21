@@ -9,7 +9,7 @@ import { randomItem } from '../../utils/randomItem';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 /**
- * @@
+ * @@@
  */
 export function Aigen() {
     const router = useRouter();

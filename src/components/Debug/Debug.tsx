@@ -3,7 +3,7 @@ import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import styles from './Debug.module.css';
 
 /**
- * @@
+ * @@@
  */
 export function Debug() {
     const wallpapers = useContext(WallpapersContext);

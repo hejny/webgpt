@@ -16,7 +16,7 @@ interface ColorPreviewProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function ColorPreview(props: ColorPreviewProps) {
     const { className, color } = props;

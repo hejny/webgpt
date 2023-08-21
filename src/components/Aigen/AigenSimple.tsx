@@ -3,7 +3,7 @@ import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './AigenSimple.module.css';
 
 /**
- * @@
+ * @@@
  */
 export function AigenSimple() {
     const router = useRouter();

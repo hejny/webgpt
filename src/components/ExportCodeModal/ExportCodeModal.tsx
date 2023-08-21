@@ -7,9 +7,8 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/00-Modal';
 
-
 /**
- * @@
+ * @@@
  */
 export function ExportCodeModal() {
     const [wallpaper] = useWallpaper();

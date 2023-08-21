@@ -17,7 +17,7 @@ import { ObjectUrl } from './utils/ObjectUrl';
 interface ExportPreviewModalProps {}
 
 /**
- * @@
+ * @@@
  */
 export function ExportPreviewModal(props: ExportPreviewModalProps) {
     const [wallpaper] = useWallpaper();

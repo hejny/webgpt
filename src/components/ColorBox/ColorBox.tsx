@@ -11,7 +11,7 @@ interface ColorBoxProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function ColorBox(props: ColorBoxProps) {
     const { value } = props;

@@ -3,7 +3,6 @@ import { blobToDataurl } from '../../export/utils/blobToDataurl';
 import { usePromise } from '../../utils/hooks/usePromise';
 
 interface ImageFilePreviewProps {
-
     /**
      * The image file to preview
      */
@@ -11,7 +10,7 @@ interface ImageFilePreviewProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function ImageFilePreview(props: ImageFilePreviewProps) {
     const { imageFileContent } = props;
@@ -26,4 +25,3 @@ export function ImageFilePreview(props: ImageFilePreviewProps) {
     // eslint-disable-next-line @next/next/no-img-element
     return <img src={imageFileContentDataurl} alt={`Image preview`} />;
 }
-

@@ -20,7 +20,7 @@ interface ColorInputProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function ColorInput(props: ColorInputProps) {
     const { className, value, onChange, presetColors } = props;

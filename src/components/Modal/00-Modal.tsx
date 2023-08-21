@@ -16,7 +16,7 @@ interface ModalProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function Modal(props: ModalProps) {
     const { title, children } = props;

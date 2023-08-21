@@ -11,7 +11,7 @@ interface ImportFontsProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function ImportFonts(props: ImportFontsProps) {
     const { fonts } = props;

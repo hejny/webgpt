@@ -22,7 +22,7 @@ interface DeviceIframeProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function DeviceIframe(props: DeviceIframeProps) {
     const { src, isInteractive, className } = props;

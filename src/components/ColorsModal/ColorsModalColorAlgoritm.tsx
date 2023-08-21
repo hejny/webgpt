@@ -7,7 +7,7 @@ import { Select } from '../Select/Select';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 
 /**
- * @@
+ * @@@
  */
 export function ColorsModalColorAlgoritm() {
     const [wallpaper, modifyWallpaper] = useWallpaper();

@@ -22,7 +22,7 @@ interface AiComponentsRootProps {
 }
 
 /**
- * @@
+ * @@@
  */
 export function AiComponentsRoot(props: AiComponentsRootProps) {
     const { usedComponents, children, className } = props;
