@@ -53,5 +53,5 @@ export function PricingTableNext(props: PricingTableNextProps) {
 }
 
 /**
- * TODO: !!! Run BPE and check auto-annotations
+ * TODO: !! Run BPE and check auto-annotations
  */
