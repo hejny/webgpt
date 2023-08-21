@@ -20,3 +20,7 @@ export function WorkInProgress() {
 
     return <div className={styles.WorkInProgress}>{restNonce}</div>;
 }
+
+/**
+ * TODO: !!! Design
+ */
