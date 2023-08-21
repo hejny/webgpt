@@ -1,3 +1,4 @@
+import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { UploadZone } from '../UploadZone/UploadZone';
 import styles from './UploadNewWallpaper.module.css';
 
@@ -16,7 +17,10 @@ export function UploadNewWallpaper() {
                     method: 'POST',
                     body: file,
                 });
-                console.log(response);
+
+                const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
+
+                console.log(wallpaperUrl);
             }}
         >
             Upload image and make web:
