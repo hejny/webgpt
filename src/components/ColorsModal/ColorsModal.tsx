@@ -11,12 +11,11 @@ import { Modal } from '../Modal/00-Modal';
 import styles from './ColorsModal.module.css';
 import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
 
-interface ColorsModalProps {}
 
 /**
  * @@
  */
-export function ColorsModal(props: ColorsModalProps) {
+export function ColorsModal() {
     const router = useRouter();
     const wallpaperId = useCurrentWallpaperId();
     const [wallpaper, modifyWallpaper] = useWallpaper();

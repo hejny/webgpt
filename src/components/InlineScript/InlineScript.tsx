@@ -5,7 +5,16 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_javascript } from '../../utils/typeAliases';
 
 interface InlineScriptProps {
+    /**
+     * Unique ID of the script
+     */
     id: string;
+
+    /**
+     * The javascript to place
+     *
+     * Note: The javascript will be prettified and trimmed to fit nicely in the HTML
+     */
     children: string_javascript;
 }
 

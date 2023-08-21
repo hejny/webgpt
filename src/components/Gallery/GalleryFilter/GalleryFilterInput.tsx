@@ -11,7 +11,14 @@ import styles from './GalleryFilterInput.module.css';
 import { IGalleryFilter, Order } from './IGalleryFilter';
 
 interface GalleryFilterProps {
+    /**
+     * The default filter to use
+     */
     defaultFilter: IGalleryFilter;
+
+    /**
+     * Called when the filter changes
+     */
     onFilterChange(newPartialFilter: Partial<IGalleryFilter>): void;
 }
 

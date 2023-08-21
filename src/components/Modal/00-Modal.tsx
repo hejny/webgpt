@@ -4,7 +4,14 @@ import styles from './00-Modal.module.css';
 import { CloseModalLink } from './10-CloseModalLink';
 
 interface ModalProps {
+    /**
+     * Title of the modal
+     */
     title: ReactNode;
+
+    /**
+     * Content of the modal
+     */
     children: ReactNode;
 }
 

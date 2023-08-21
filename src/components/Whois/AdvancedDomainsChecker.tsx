@@ -6,12 +6,10 @@ import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
 import { WhoisDomains } from './WhoisDomains/WhoisDomains';
 
-interface AdvancedDomainsCheckerProps {}
-
 /**
- * @@
+ * @@@
  */
-export function AdvancedDomainsChecker(props: AdvancedDomainsCheckerProps) {
+export function AdvancedDomainsChecker() {
     const [names, setNames] = useState<Array<string_domain>>(['ai', 'project']);
     const [tdls, setTdls] = useState<Array<string_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
 

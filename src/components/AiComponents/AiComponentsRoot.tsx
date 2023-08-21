@@ -5,11 +5,19 @@ import { string_css_class } from '../../utils/typeAliases';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {
+    /**
+     * A map of component types to functions that activate them
+     */
     usedComponents: Record<
         string,
         (componentElement: HTMLElement) => Promisable<void /* <- TODO: Maybe return IDestroyable instead of void */>
     >;
+
+    /**
+     * !!! ACRY write children descriptions
+     */
     children: ReactNode;
+
     className?: string_css_class;
 }
 

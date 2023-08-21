@@ -2,14 +2,10 @@ import { useEffect, useState } from 'react';
 import { restNonce } from './forARest';
 import styles from './WorkInProgress.module.css';
 
-interface WorkInProgressProps {}
-
 /**
- * @@
+ * A function component that renders an animated "loading indicator"
  */
-export function WorkInProgress(props: WorkInProgressProps) {
-    const {} = props;
-
+export function WorkInProgress() {
     const [nonce, setNonce] = useState(0);
 
     useEffect(() => {

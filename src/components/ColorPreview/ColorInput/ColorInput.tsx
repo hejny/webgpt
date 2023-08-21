@@ -10,6 +10,10 @@ import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
     className?: string_css_class;
+
+    /**
+     * Color to show in the box
+     */
     value: Color;
     onChange(color: WithTake<Color>): void;
     presetColors?: Array<PresetColor>;

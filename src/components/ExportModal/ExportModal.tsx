@@ -18,8 +18,6 @@ import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
 
-interface ExportModalProps {}
-
 const ExportSystem = {
     STATIC: 'Static',
 
@@ -47,7 +45,7 @@ const ExportPlan = {
 /**
  * @@
  */
-export function ExportModal(props: ExportModalProps) {
+export function ExportModal() {
     const router = useRouter();
     const [wallpaper] = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);

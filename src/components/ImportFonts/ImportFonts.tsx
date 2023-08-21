@@ -4,6 +4,9 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_font_family } from '../../utils/typeAliases';
 
 interface ImportFontsProps {
+    /**
+     * The fonts to import
+     */
     fonts: Set<string_font_family>;
 }
 

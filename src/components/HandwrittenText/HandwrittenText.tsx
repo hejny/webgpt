@@ -15,7 +15,16 @@ import { handwriteText } from './utils/handwriteText';
  * @returns A JSX element that contains the handwritten text and a fallback span element.
  */
 interface HandwrittenTextProps {
+
+    /**
+     * The color of the text.
+     */
     color: Color;
+
+
+    /**
+     * The text to be rendered as handwritten.
+     */
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
 }
 

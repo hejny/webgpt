@@ -1,6 +1,9 @@
 import styles from './Sample.module.css';
 
 interface SampleProps {
+    /**
+     * @@
+     */
     Sample: string;
 }
 

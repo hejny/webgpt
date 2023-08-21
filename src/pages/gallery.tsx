@@ -12,6 +12,10 @@ import { IWallpaperSerialized } from '../utils/IWallpaper';
 
 
 interface GalleryPageProps {
+
+    /**
+     * Wallpapers to show in the gallery
+     */
     wallpapers: Array<IWallpaperSerialized>;
 }
 

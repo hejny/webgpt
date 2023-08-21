@@ -1,7 +1,7 @@
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
 interface NoCsrProps {
-    children: React.ReactNode;
+    children: React.ReactNode /* !!! ACRY use ReactNode NOT  React.ReactNode */;
 }
 
 /**

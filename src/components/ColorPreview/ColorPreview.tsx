@@ -2,12 +2,16 @@ import hueCircleImage from '../../../public/icons/hue-circle.svg';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
-import { WithTake } from '../../utils/take/interfaces/ITakeChain';
+import { take } from '../../utils/take/take';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './ColorPreview.module.css';
 
 interface ColorPreviewProps {
-    color: WithTake<Color> | 'HUE_CIRCLE';
+    /**
+     * Color to show in the box OR 'HUE_CIRCLE' to show all colors in a circle
+     */
+    color: Color | 'HUE_CIRCLE';
+
     className?: string_css_class;
 }
 
@@ -31,7 +35,7 @@ export function ColorPreview(props: ColorPreviewProps) {
                     : {
                           backgroundColor: color.toHex(),
                           // TODO: [📖] borderImage: `url(${hueCircleImage.src}) 60`,
-                          border: `2px solid ${color.then(textColor).toHex()}`,
+                          border: `2px solid ${take(color).then(textColor).toHex()}`,
                           outline: `2px solid ${color.toHex()}`,
                       }
             }

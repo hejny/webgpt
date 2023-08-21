@@ -4,8 +4,15 @@ import { string_css_class, string_url } from '../../utils/typeAliases';
 import styles from './DeviceIframe.module.css';
 
 interface DeviceIframeProps {
+    /**
+     * URL of the page to show in the iframe
+     */
     src: string_url;
 
+    /**
+     * If true, the iframe is interactive (clickable)
+     * If false, the iframe is like a screenshot with a link to the page
+     */
     isInteractive: boolean;
 
     /**

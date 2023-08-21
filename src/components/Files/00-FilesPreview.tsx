@@ -5,6 +5,10 @@ import styles from './00-FilesPreview.module.css';
 import { FilePreview } from './10-FilePreview';
 
 interface FilesPreviewProps {
+
+    /**
+     * Files to preview
+     */
     files: Array<HtmlExportFile>;
 }
 

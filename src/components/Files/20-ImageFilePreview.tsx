@@ -3,6 +3,10 @@ import { blobToDataurl } from '../../export/utils/blobToDataurl';
 import { usePromise } from '../../utils/hooks/usePromise';
 
 interface ImageFilePreviewProps {
+
+    /**
+     * The image file to preview
+     */
     imageFileContent: Blob;
 }
 

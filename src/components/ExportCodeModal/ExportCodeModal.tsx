@@ -7,12 +7,11 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/00-Modal';
 
-interface ExportCodeModalProps {}
 
 /**
  * @@
  */
-export function ExportCodeModal(props: ExportCodeModalProps) {
+export function ExportCodeModal() {
     const [wallpaper] = useWallpaper();
 
     const exportedPromise = useMemo(

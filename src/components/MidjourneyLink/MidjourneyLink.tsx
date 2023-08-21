@@ -1,17 +1,15 @@
+import { uuid } from '../../utils/typeAliases';
 import styles from './MidjourneyLink.module.css';
 
-/**
- * A functional component that renders a link with a job UUID ⁘
- * 
- * @param {MidjourneyLinkProps} props - The props for the component
- * @returns {JSX.Element} - The JSX element for the link
- */
 interface MidjourneyLinkProps {
-    children: string;
+    /**
+     * The MidJourney job UUID
+     */
+    children: uuid;
 }
 
 /**
- * @@@
+ * A functional component that renders a link with a job UUID
  */
 export function MidjourneyLink(props: MidjourneyLinkProps) {
     const { children } = props;
