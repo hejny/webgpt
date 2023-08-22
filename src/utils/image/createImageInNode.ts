@@ -3,7 +3,7 @@ import { Color } from '../color/Color';
 import { Image } from './Image';
 
 /**
- * Define an async function to create an image in Node.js
+ * Create new Image in Node.js from local file
  *
  * @param path The path to the image file or the URL of the image
  */

@@ -4,7 +4,7 @@ import { string_url } from '../typeAliases';
 import { Image as MyImage } from './Image';
 
 /**
- * Define an async function to create an image in the browser
+ * Create new Image in the browser
  *
  * @param path The path to the image file or the URL of the image
  *

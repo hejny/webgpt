@@ -1,9 +1,8 @@
 import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
-import { blobToDataurl } from '../../export/utils/blobToDataurl';
 import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { createImageInBrowser } from '../../utils/image/createImageInBrowser';
+import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_wallpaper_id } from '../../utils/typeAliases';
@@ -45,14 +44,10 @@ async function createNewWallpaper(wallpaperImage: Blob) {
 
     //-------[ Compute colorstats: ]---
     COLORSTATS_DEFAULT_COMPUTE;
-    blobToDataurl;
-    createImageInBrowser;
+    createImageInWorker;
     /**/
     const compute = COLORSTATS_DEFAULT_COMPUTE;
-    const colorStats = await Promise.resolve(wallpaperImage)
-        .then(blobToDataurl)
-        .then(createImageInBrowser)
-        .then(compute);
+    const colorStats = await Promise.resolve(wallpaperImage).then(createImageInWorker).then(compute);
     console.log(colorStats);
     /**/
     //-------[ /Compute colorstats ]---
