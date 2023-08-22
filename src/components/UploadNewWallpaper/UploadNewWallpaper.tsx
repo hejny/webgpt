@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { provideClientId } from '../../utils/supabase/provideClientId';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 import { IMessage_CreateNewWallpaper_Request, IMessage_CreateNewWallpaper_Result } from './createNewWallpaper.worker';
@@ -27,21 +28,22 @@ export function UploadNewWallpaper() {
 
                     worker.postMessage({
                         type: 'CREATE_NEW_WALLPAPER_REQUEST',
+                        author: provideClientId(),
                         wallpaperImage: file,
                     } satisfies IMessage_CreateNewWallpaper_Request);
+
+                    // TODO: !!! Use addEventListener OR onmessage NOT BOTH
+
                     worker.addEventListener('message', (event: MessageEvent<IMessage_CreateNewWallpaper_Result>) => {
-                        console.log(event);
+                        console.log('addEventListener', event);
                     });
 
                     worker.onmessage = (event: MessageEvent<IMessage_CreateNewWallpaper_Result>) => {
-                        console.log(event);
-                        //const colorStats = hydrateColorStats(event.data);
-                        //resolve(colorStats);
+                        console.log('onmessage', event);
+                        const { wallpaperId } = event.data;
+                        router.push(`/${wallpaperId}`);
+                        // Note: No need to setWorking(false); because we are redirecting to another page
                     };
-
-                    // TODO: !!!!
-                    // router.push(`/${newWallpaper.id}`);
-                    // Note: No need to setWorking(false); because we are redirecting to another page
                 }}
             >
                 Upload image and make web:

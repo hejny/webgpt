@@ -4,11 +4,11 @@ import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_wallpaper_id } from '../../utils/typeAliases';
+import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
 
 export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';
+    author: uuid;
     wallpaperImage: Blob;
 }
 
@@ -19,8 +19,8 @@ export interface IMessage_CreateNewWallpaper_Result {
 
 addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpaper_Request>) => {
     // COLORSTATS_COMPUTE_METHODS
-    const { wallpaperImage } = event.data;
-    const newWallpaper = await createNewWallpaper(wallpaperImage);
+    const { author, wallpaperImage } = event.data;
+    const newWallpaper = await createNewWallpaper(author, wallpaperImage);
 
     postMessage({
         type: 'CREATE_NEW_WALLPAPER_RESULT',
@@ -28,7 +28,7 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
     } satisfies IMessage_CreateNewWallpaper_Result);
 });
 
-async function createNewWallpaper(wallpaperImage: Blob) {
+async function createNewWallpaper(author: uuid, wallpaperImage: Blob) {
     //-------[ Upload image: ]---
     const formData = new FormData();
     formData.append('wallpaper', wallpaperImage);
@@ -72,7 +72,7 @@ async function createNewWallpaper(wallpaperImage: Blob) {
 
     const newWallpaper = addWallpaperComputables({
         parent: null /* <- TODO: Computable */,
-        author: provideClientId(),
+        author,
         isPublic: false /* <- TODO: Computable */,
         src: wallpaperUrl,
         prompt: null,
