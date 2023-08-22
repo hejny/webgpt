@@ -11,7 +11,8 @@ import {
     Vector3,
 } from 'babylonjs';
 import { useEffect, useRef } from 'react';
-import { plotSphere } from './definitions';
+import { randomItem } from '../../utils/randomItem';
+import { plotHyperbolicParaboloid, plotSphere, plotTorus, plotWaves } from './definitions';
 import { restNonce } from './forARest';
 import styles from './WorkInProgress.module.css';
 
@@ -84,7 +85,7 @@ export function WorkInProgress() {
             scene,
         );
 
-        const plotFunction: PlotFunction = plotSphere;
+        const plotFunction: PlotFunction = randomItem(plotSphere, plotTorus, plotWaves, plotHyperbolicParaboloid);
 
         // Update the ribbon mesh each frame
         let t = 0;
@@ -166,8 +167,9 @@ export function WorkInProgress() {
 }
 
 /**
- * TODO: !! Design in color window
+ * TODO: Play with shape and camera angle
  * TODO: Size of babylonjs in bundle - maybe prerecord as video
  * TODO: Maybe work with xyzt
- * TODO: !!! Rename to loading OR split between loading and work in progress
+ * TODO: !! Design in color window
+ * TODO: !! Rename to loading OR split between loading and work in progress
  */
