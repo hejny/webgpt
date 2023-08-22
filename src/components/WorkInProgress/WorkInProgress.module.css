@@ -10,14 +10,12 @@
     outline: 1px dotted rgb(38, 194, 255);
     /**/
 
-    /*
+    z-index: 90000 /* <- [🔝] Global z-index for wallpaper page */;
+    background-color: #000;
+
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    */
-
-    width: 100px;
-    height: 100px;
 }

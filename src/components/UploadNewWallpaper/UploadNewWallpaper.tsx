@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
 import { blobToDataurl } from '../../export/utils/blobToDataurl';
 import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
@@ -13,6 +14,7 @@ import styles from './UploadNewWallpaper.module.css';
 
 export function UploadNewWallpaper() {
     const router = useRouter();
+    const [isWorking, setWorking] = useState(false);
 
     return (
         <>
@@ -25,6 +27,8 @@ export function UploadNewWallpaper() {
                     if (!file) {
                         return;
                     }
+
+                    setWorking(true);
 
                     //-------[ Upload image: ]---
                     const formData = new FormData();
@@ -93,13 +97,13 @@ export function UploadNewWallpaper() {
                     console.log({ newWallpaper, insertResult });
 
                     router.push(`/${newWallpaper.id}`);
+
+                    // Note: No need to setWorking(false); because we are redirecting to another page
                 }}
             >
                 Upload image and make web:
             </UploadZone>
-            <WorkInProgress />
-
-        
+            {isWorking && <WorkInProgress />}
         </>
     );
 }

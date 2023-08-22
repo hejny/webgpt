@@ -166,7 +166,8 @@ export function WorkInProgress() {
 }
 
 /**
- * TODO: !!! Design
+ * TODO: !! Design in color window
  * TODO: Size of babylonjs in bundle - maybe prerecord as video
  * TODO: Maybe work with xyzt
+ * TODO: !!! Rename to loading OR split between loading and work in progress
  */
