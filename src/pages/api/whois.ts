@@ -18,7 +18,7 @@ export default async function whoisHandler(request: NextApiRequest, response: Ne
 
     // TODO: !! Limits + checkups
     const result = await whoiser(domain);
-    return response.status(200).json({ result });
+    return response.status(200).json({ result } satisfies RegisterResponse);
 }
 
 /**

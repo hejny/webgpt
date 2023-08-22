@@ -18,6 +18,9 @@ interface AiComponentsRootProps {
      */
     children: ReactNode;
 
+    /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
 }
 

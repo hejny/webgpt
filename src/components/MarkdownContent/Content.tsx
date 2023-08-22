@@ -11,7 +11,7 @@ interface ContentProps {
     content: string_html | string_markdown;
 
     /**
-     * Optional CSS class name
+     * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
 

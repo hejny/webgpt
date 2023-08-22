@@ -80,14 +80,16 @@ export default async function recommendWallpaperHandler(
             wallpapersToPick,
         });
 
-        return response.status(200).json({
-            recommendedWallpaper,
-            debug: !NEXT_PUBLIC_DEBUG
-                ? undefined
-                : {
-                      previousReactions,
-                  },
-        } as any);
+        return response.status(200).json(
+            {
+                recommendedWallpaper,
+                debug: !NEXT_PUBLIC_DEBUG
+                    ? undefined
+                    : {
+                          previousReactions,
+                      },
+            } as any /* TODO: satisfies RecommendWallpaperResponse */,
+        );
     } catch (error) {
         if (!(error instanceof Error)) {
             throw error;

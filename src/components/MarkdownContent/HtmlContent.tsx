@@ -13,7 +13,7 @@ interface HtmlContentProps {
     content: string_html;
 
     /**
-     * Optional CSS class name
+     * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
 

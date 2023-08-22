@@ -1,12 +1,11 @@
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import styles from './HeaderWallpaper.module.css';
-
 
 /**
  * Renders a main image of the wallpaper page
  */
 export function HeaderWallpaper() {
-    const [{ src, prompt, title, colorStats }] = useWallpaper();
+    const [{ src, prompt, title, colorStats }] = useCurrentWallpaper();
 
     const quality = 97;
     const width = 1920;

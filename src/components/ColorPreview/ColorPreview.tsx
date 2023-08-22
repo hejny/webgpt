@@ -12,6 +12,9 @@ interface ColorPreviewProps {
      */
     color: Color | 'HUE_CIRCLE';
 
+    /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
 }
 

@@ -3,8 +3,8 @@ import React from 'react';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { colorLuminance } from '../../utils/color/utils/colorLuminance';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { randomItem } from '../../utils/randomItem';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
@@ -18,7 +18,7 @@ export function Aigen() {
         {
             colorStats: { palette },
         },
-    ] = useWallpaper();
+    ] = useCurrentWallpaper();
 
     if (isServerRender) {
         // TODO: !! Allow when decided how to mark AI generated webpages

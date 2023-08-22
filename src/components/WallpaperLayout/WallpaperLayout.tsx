@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
-import { useWallpaperFonts } from '../../utils/hooks/useWallpaperFonts';
+import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';
 import { BackgroundPattern } from '../BackgroundPattern/BackgroundPattern';
 import { FooterSection } from '../Footer/Footer';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
@@ -16,7 +16,7 @@ import styles from './WallpaperLayout.module.css';
 export function WallpaperLayout() {
     const router = useRouter();
     const isPreview = router.query.mode === 'show-thumbnail'; /* <- TODO: !! Use useMode */
-    const { mainWallpaperFont, allWallpaperFonts } = useWallpaperFonts();
+    const { mainWallpaperFont, allWallpaperFonts } = useCurrentWallpaperFonts();
 
     return (
         <div

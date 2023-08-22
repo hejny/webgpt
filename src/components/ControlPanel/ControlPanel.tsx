@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -19,8 +19,7 @@ import { RandomWallpaperButton } from './RandomWallpaper/RandomWallpaperButton';
  */
 export function ControlPanel() {
     const router = useRouter();
-
-    const [wallpaper, modifyWallpaper] = useWallpaper();
+    const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
 
     return (
         <div

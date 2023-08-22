@@ -1,11 +1,11 @@
 import { darken } from '../../utils/color/operators/darken';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 
 /**
  * Put skin into a page based on the wallpaper color statistics
  */
 export function SkinStyle() {
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
     const {
         colorStats: { version, palette },
     } = wallpaper;

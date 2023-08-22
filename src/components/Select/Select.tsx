@@ -9,6 +9,10 @@ interface SelectProps<TValue extends string | number | symbol> {
     onChange(newValue: TValue): void;
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
+
+        /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
     isDisabled?: boolean;
 }

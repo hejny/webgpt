@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { classNames } from '../../utils/classNames';
 import { ExportContext } from '../../utils/hooks/ExportContext';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
@@ -13,7 +13,7 @@ import styles from './Menu.module.css';
  * Renders the menu for navigating the wallpaper page
  */
 export function Menu() {
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
     const { isPresenting } = useMode();
     const { isExported } = useContext(ExportContext);
 

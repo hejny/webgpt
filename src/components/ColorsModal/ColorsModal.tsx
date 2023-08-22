@@ -4,7 +4,7 @@ import { SketchPicker } from 'react-color';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { Modal } from '../Modal/00-Modal';
 import styles from './ColorsModal.module.css';
 import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
@@ -13,7 +13,7 @@ import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
  * Renders a modal for selecting colors for a wallpaper
  */
 export function ColorsModal() {
-    const [wallpaper, modifyWallpaper] = useWallpaper();
+    const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
 
     return (
         <Modal title="Colors">

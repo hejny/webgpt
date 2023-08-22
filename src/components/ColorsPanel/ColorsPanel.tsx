@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ColorInput } from '../ColorPreview/ColorInput/ColorInput';
 import { ColorPreview } from '../ColorPreview/ColorPreview';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
@@ -11,7 +11,7 @@ import styles from './ColorsPanel.module.css';
  * Renders the colors panel component
  */
 export function ColorsPanel() {
-    const [wallpaper, modifyWallpaper] = useWallpaper();
+    const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
     const lastSavedWallpaper = useLastSavedWallpaper();
 
     // TODO: Maybe make hook useTemporaryToggle - simmilar to hook useClickOutside
