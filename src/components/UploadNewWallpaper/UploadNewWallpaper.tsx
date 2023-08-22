@@ -40,13 +40,36 @@ export function UploadNewWallpaper() {
                     //-------[ /Upload image ]---
 
                     //-------[ Compute colorstats: ]---
+                    COLORSTATS_DEFAULT_COMPUTE;
+                    blobToDataurl;
+                    createImageInBrowser;
+                    /**/
                     const compute = COLORSTATS_DEFAULT_COMPUTE;
                     const colorStats = await Promise.resolve(file!)
                         .then(blobToDataurl)
                         .then(createImageInBrowser)
                         .then(compute);
                     console.log(colorStats);
+                    /**/
                     //-------[ /Compute colorstats ]---
+
+                    const { data: randomWallpaperData } = await getSupabaseForBrowser()
+                        .from('Wallpaper_random')
+                        .select('*')
+                        .eq('isPublic', true)
+                        .limit(1 /* <- TODO: [🤺] Tweak this number */)
+                        .single();
+
+                    if (!randomWallpaperData) {
+                        throw new Error('No random wallpaper found');
+                    }
+                    const title = randomWallpaperData.title!; /* <- !!! Compute in addWallpaperComputables */
+                    const content = randomWallpaperData.content!;
+                    /*/
+                    const colorStats = hydrateColorStats(
+                        randomWallpaperData.colorStats!,
+                    ); /* <- !!! Hardcode this mock in json file mocked-dark.colors.yml */
+                    /**/
 
                     const newWallpaper = addWallpaperComputables({
                         parent: null /* <- TODO: Computable */,
@@ -55,11 +78,10 @@ export function UploadNewWallpaper() {
                         src: wallpaperUrl,
                         prompt: null,
                         colorStats,
-
-                        title: '!!!' /* <- TODO: Computable */,
-                        content: '!!!',
-                        keywords:
-                            [] /* <- TODO: !!! Array.from(parseKeywordsFromWallpaper(modifiedWallpaper)) */ /* <- TODO: Computable */,
+                        title,
+                        content,
+                        keywords: [], // <- TODO: !!! Array.from(parseKeywordsFromWallpaper(modifiedWallpaper))
+                        // <- TODO: Computable
                         saveStage: 'SAVING' /* <- TODO: Computable */,
                     });
 
@@ -81,7 +103,13 @@ export function UploadNewWallpaper() {
 }
 
 /**
+ * TODO: !!! Speed up the computation of colorstats
+ * TODO: !!! Take content from random wallpaper
+ * TODO: !!! Extract (the logic part) of onFiles to util generateNewWallpaper(file: File): Promise<IWallpaper> + saveWallpaper/persistWallpaper(wallpaper: IWallpaper): Promise<void>
+ * TODO: !!! Mock the computation of colorstats for development
+ * TODO: Detect image content and write content dynamically
  * TODO: Compute colorstats in worker
  * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
+ * TODO: !! It Should be possible to list private wallpapers via getSupabaseForBrowser().from('Wallpaper').select('*').eq('isPublic', false)
  */
