@@ -27,10 +27,7 @@ export default function NewWallpaperPage() {
 }
 
 /**
- * TODO: !!! Implement
- * TODO: !!! Layout as empty page
- * TODO: !!! Page structure - back to random wallpaper, samples, gallery,...
- * TODO: !!! Better url than /custom
+ * TODO: !! Page structure - back to random wallpaper, samples, gallery,...
  * TODO: Camera
- * TODO: !!! Create some meaningfull content
+ * TODO: !! Create some meaningfull content by AI recognition
  */

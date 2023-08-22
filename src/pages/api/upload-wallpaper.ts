@@ -65,5 +65,5 @@ export default async function uploadWallpaperHandler(
 /**
  * TODO: [🧠] Compress/normalize the image
  * TODO: convert to png ([🧠] or maybe keep jpg)
- * TODO: !!! Allow other image formats
+ * TODO: !! Allow other image formats
  */
