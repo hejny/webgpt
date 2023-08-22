@@ -79,8 +79,10 @@ export function Hint(props: HintProps) {
             const { top, left, width, height } = hintTarget.getBoundingClientRect();
 
             // Common
-            const right = window.document.body.clientWidth - left;
-            const bottom = window.document.body.clientHeight - top;
+            // Note: Using body.scrollWidth to be aware of scrollbars on desktops
+            const right = window.document.body.scrollWidth - left;
+            // Note: Using window.innerHeight to be aware of top navigation bar on mobiles
+            const bottom = window.innerHeight - top;
 
             // Hint:
             hint.style.position = 'fixed';
