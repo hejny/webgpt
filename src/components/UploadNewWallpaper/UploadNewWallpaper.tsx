@@ -98,16 +98,18 @@ export function UploadNewWallpaper() {
                 Upload image and make web:
             </UploadZone>
             <WorkInProgress />
+
+        
         </>
     );
 }
 
 /**
+ * TODO: !!! Use here loading
  * TODO: !!! Speed up the computation of colorstats
- * TODO: !!! Take content from random wallpaper
  * TODO: !!! Extract (the logic part) of onFiles to util generateNewWallpaper(file: File): Promise<IWallpaper> + saveWallpaper/persistWallpaper(wallpaper: IWallpaper): Promise<void>
  * TODO: !!! Mock the computation of colorstats for development
- * TODO: Detect image content and write content dynamically
+ * TODO: Detect image content and write content dynamically just for this image
  * TODO: Compute colorstats in worker
  * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
