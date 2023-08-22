@@ -32,18 +32,11 @@ export function UploadNewWallpaper() {
                         wallpaperImage: file,
                     } satisfies IMessage_CreateNewWallpaper_Request);
 
-                    // TODO: !!! Use addEventListener OR onmessage NOT BOTH
-
                     worker.addEventListener('message', (event: MessageEvent<IMessage_CreateNewWallpaper_Result>) => {
-                        console.log('addEventListener', event);
-                    });
-
-                    worker.onmessage = (event: MessageEvent<IMessage_CreateNewWallpaper_Result>) => {
-                        console.log('onmessage', event);
                         const { wallpaperId } = event.data;
                         router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page
-                    };
+                    });
                 }}
             >
                 Upload image and make web:
@@ -54,11 +47,9 @@ export function UploadNewWallpaper() {
 }
 
 /**
- * TODO: !!! Error handling in worker
- * TODO: !!! Use here loading
+ * TODO: !! Error handling in worker
+ * TODO: Send progress from worker to UI
  * TODO: !!! Speed up the computation of colorstats
- * TODO: !!! Extract (the logic part) of onFiles to util generateNewWallpaper(file: File): Promise<IWallpaper> + saveWallpaper/persistWallpaper(wallpaper: IWallpaper): Promise<void>
- * TODO: !!! Mock the computation of colorstats for development
  * TODO: Detect image content and write content dynamically just for this image
  * TODO: Compute colorstats in worker
  * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks

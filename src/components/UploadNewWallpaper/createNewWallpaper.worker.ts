@@ -95,3 +95,8 @@ async function createNewWallpaper(author: uuid, wallpaperImage: Blob) {
  * Note:
  */
 export const _nonce = null;
+
+
+/**
+ * TODO: !!! getSupabaseForWorker
+ */
