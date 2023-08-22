@@ -7,7 +7,7 @@ import { IImage } from './IImage';
 import { checkSizeValue } from './internal-utils/checkSizeValue';
 
 /**
- * A class that represents an image with a size and an array of pixels ⁘
+ * A class that represents an image with a size and an array of pixels and provides methods to manipulate the image
  */
 export class Image implements IImage {
     /**

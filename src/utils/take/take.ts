@@ -3,7 +3,10 @@ import { WithTake } from './interfaces/ITakeChain';
 import { Takeable } from './interfaces/Takeable';
 
 /**
- * @@@
+ * A function that takes an initial value and returns a proxy object with chainable methods.
+ *
+ * @param {*} initialValue - The initial value.
+ * @returns {Proxy<WithTake<TValue>>} - A proxy object with a `take` method.
  */
 export function take<TValue extends Takeable>(initialValue: TValue): WithTake<TValue> {
     if (initialValue instanceof TakeChain) {

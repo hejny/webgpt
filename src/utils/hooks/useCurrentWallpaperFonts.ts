@@ -1,7 +1,7 @@
 import { extractFontsFromContent } from '../../components/ImportFonts/extractFontsFromContent';
 import { IWallpaper } from '../IWallpaper';
 import { string_font_family } from '../typeAliases';
-import { useWallpaper } from './useWallpaper';
+import { useCurrentWallpaper } from './useCurrentWallpaper';
 
 interface WallpaperFonts {
     /**
@@ -18,8 +18,8 @@ interface WallpaperFonts {
 /**
  * A function that returns a fonts of the current wallpaper
  */
-export function useWallpaperFonts(): WallpaperFonts {
-    const [wallpaper] = useWallpaper();
+export function useCurrentWallpaperFonts(): WallpaperFonts {
+    const [wallpaper] = useCurrentWallpaper();
     return parseFontsFromWallpaper(wallpaper);
 }
 

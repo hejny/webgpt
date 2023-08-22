@@ -5,11 +5,14 @@ import gallery1Image from '../../../public/screenshots/gallery-1.png';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 
 interface StaticAppHeadProps {
+    /**
+     * Title of the page which will be displayed in browser tab
+     */
     subtitle: string | null;
 }
 
 /**
- * @@@
+ * Renders the head section of the static app
  */
 export function StaticAppHead(props: StaticAppHeadProps) {
     const { subtitle } = props;

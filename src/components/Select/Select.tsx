@@ -9,10 +9,17 @@ interface SelectProps<TValue extends string | number | symbol> {
     onChange(newValue: TValue): void;
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
+
+        /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
     isDisabled?: boolean;
 }
 
+/**
+ * Renders a select with a label and a list of options
+ */
 export function Select<TValue extends string | number | symbol>(props: SelectProps<TValue>) {
     const { label, value, onChange, visibleButtons, className, isDisabled } = props;
 
@@ -72,3 +79,7 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
         </div>
     );
 }
+
+/**
+ * TODO: Maybe use instead some unstyled components library @see https://headlessui.com/
+ */

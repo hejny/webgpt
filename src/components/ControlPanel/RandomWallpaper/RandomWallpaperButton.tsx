@@ -5,6 +5,9 @@ import { Hint } from '../../Hint/Hint';
 import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
+/**
+ * Renders the part of the control panel that allows to go to the next wallpaper.
+ */
 export function RandomWallpaperButton() {
     const [randomWallpaper, consumeRandomWallpaper] = useRandomWallpaper();
 

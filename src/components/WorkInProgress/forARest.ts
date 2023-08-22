@@ -1,27 +1,38 @@
 import { forImmediate } from 'waitasecond';
 
+/**
+ * The number of milliseconds to wait before resting again
+ *
+ * @type {number}
+ */
 const REST_AFTER_MS = 100; /* <- TODO: !! Tweak time */
 
 /**
- * @@@
+ * The nonce that is incremented on every rest
  *
  * @private
  * @singleton
  */
 export let restNonce = 0;
 
-/*
- * @@@
+/**
+ * The timestamp of the last rest
  *
- * @private
- * @singleton
+ * @type {number}
  */
 let lastRest = 0;
 
 /**
- * @@@
+ * Function that performs a rest action
+ *
+ * @returns {Promise<void>}
  */
 export async function forARest(): Promise<void> {
+    /**
+     * The current timestamp
+     *
+     * @type {number}
+     */
     const now = performance.now();
 
     restNonce++;

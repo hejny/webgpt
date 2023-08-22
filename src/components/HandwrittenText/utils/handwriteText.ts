@@ -2,9 +2,7 @@ import { Color } from '../../../utils/color/Color';
 import { loadAndRunExternalScript } from './loadAndRunExternalScript';
 
 /**
- * An object that maps different styles of handwriting to their corresponding codes ⁘
- *
- * @type {Object}
+ * An object that maps different styles of handwriting to their corresponding codes
  */
 const HandwrittenStyle = {
     // TODO: !! extract to properties or flags - italic, Fancy, joined + italic vs cursive
@@ -21,9 +19,7 @@ const HandwrittenStyle = {
 } as const;
 
 /**
- * An interface that defines the options for the handwriteText function ⁘
- *
- * @interface
+ * Defines the options for the handwriteText function
  */
 interface IHandwriteTextOptions {
     text: string;
@@ -36,7 +32,7 @@ interface IHandwriteTextOptions {
 }
 
 /**
- * A function that writes a given text in a given style and color on a given SVG element ⁘
+ * A function that writes a given text in a given style and color on a given SVG element
  *
  * @param {IHandwriteTextOptions} options - The options for the function.
  * @returns {Promise<void>} - A promise that resolves when the handwriting is done.

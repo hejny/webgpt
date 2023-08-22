@@ -5,7 +5,11 @@ import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
- * @@@
+ * Computes the lightest color in an image
+ * 
+ * 
+ * @param {IImage} image - The image to compute the lightest color from.
+ * @returns {Promise<WithTake<Color>>} The lightest color in the image, wrapped in a promise.
  */
 export async function computeImageLightestColor(
     image: IImage,

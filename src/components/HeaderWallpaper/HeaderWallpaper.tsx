@@ -1,12 +1,11 @@
-import Image from 'next/image';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import styles from './HeaderWallpaper.module.css';
 
 /**
- * @@
+ * Renders a main image of the wallpaper page
  */
 export function HeaderWallpaper() {
-    const [{ src, prompt, title, colorStats }] = useWallpaper();
+    const [{ src, prompt, title, colorStats }] = useCurrentWallpaper();
 
     const quality = 97;
     const width = 1920;
@@ -16,13 +15,12 @@ export function HeaderWallpaper() {
     return (
         <div className={styles.HeaderWallpaper} style={{ /* [🎗] */ backgroundColor: colorStats.averageColor.toHex() }}>
             <div className={styles.inner}>
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                     src={src} /* <- TODO: Here should be really upscaled version by Upscalyr */
-                    unoptimized /* <- Note: Optimization should happen on gallery level */
                     alt={prompt || title}
                     draggable="false"
-                    placeholder="empty" // <- Note: Because of export using rather a backgroundColor than a placeholder
-                    priority={true}
+                    loading="eager"
                     height={Math.round((width / 1920) * 1080)}
                     style={{
                         /* [🎗] */ objectFit: 'cover',

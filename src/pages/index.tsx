@@ -1,13 +1,9 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpaper/RandomWallpaperManager';
+import { WorkInProgress } from '../components/WorkInProgress/WorkInProgress';
 import styles from '../styles/static.module.css';
-import { classNames } from '../utils/classNames';
-
-
 
 export default function HomePage() {
     const router = useRouter();
@@ -33,26 +29,11 @@ export default function HomePage() {
                     >
                         1-2i
                     </h1>
-                    <Image
-                        className={styles.loading}
-                        alt="Loading"
-                        src="/icons/loading.svg"
-                        width={40}
-                        height={40} /* <-[🧥] */
-                    />
-                    {/* TODO: Branding: Make more cool loading animation */}
+                    <WorkInProgress />
                 </main>
             </div>
         </>
     );
-}
-
-export async function getStaticProps({ locale }: { locale: string }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common'])),
-        },
-    };
 }
 
 /**

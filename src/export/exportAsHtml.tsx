@@ -12,7 +12,7 @@ import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
-import { parseFontsFromWallpaper } from '../utils/hooks/useWallpaperFonts';
+import { parseFontsFromWallpaper } from '../utils/hooks/useCurrentWallpaperFonts';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { string_css, string_page } from '../utils/typeAliases';

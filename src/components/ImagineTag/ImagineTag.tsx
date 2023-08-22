@@ -1,17 +1,12 @@
+import { string_midjourney_prompt } from '../../utils/typeAliases';
 import styles from './ImagineTag.module.css';
 
-/**
- * A function component that renders a tag with a custom style ⁘
- * 
- * @param {ImagineTagProps} props The props for the component
- * @returns {JSX.Element} The rendered tag element
- */
 interface ImagineTagProps {
-    children: string;
+    children: string_midjourney_prompt;
 }
 
 /**
- * @@@
+ * Renders a MidJourney prompt in a nice box
  */
 export function ImagineTag(props: ImagineTagProps) {
     const { children } = props;

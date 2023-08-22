@@ -2,11 +2,17 @@ import { useContext } from 'react';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 
 interface ExportCommentProps {
+    /**
+     * The html comment to export
+     */
     comment: string;
 }
 
 /**
- * @@
+ * Renders a comment element
+ *
+ * In a live preview, this component will have no effect.
+ * In an export, this component will be "unwraped" and the comment will be exported.
  */
 export function ExportComment(props: ExportCommentProps) {
     const { comment } = props;

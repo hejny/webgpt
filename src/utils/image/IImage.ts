@@ -7,7 +7,7 @@ import { Color } from '../color/Color';
 import { WithTake } from '../take/interfaces/ITakeChain';
 
 /**
- * A class that represents an image with a size and an array of pixels ⁘
+ * Represents an image as a 2D array of pixels
  */
 export interface IImage {
     /**

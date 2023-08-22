@@ -6,7 +6,7 @@ import spaceTrim from 'spacetrim';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
@@ -17,8 +17,6 @@ import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
-
-interface ExportModalProps {}
 
 const ExportSystem = {
     STATIC: 'Static',
@@ -45,11 +43,11 @@ const ExportPlan = {
 } as const;
 
 /**
- * @@
+ * Renders the main export modal
  */
-export function ExportModal(props: ExportModalProps) {
+export function ExportModal() {
     const router = useRouter();
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
     const [email, setEmail] = useState<string_email>('');

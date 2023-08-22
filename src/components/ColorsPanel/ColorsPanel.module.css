@@ -3,7 +3,7 @@
     outline: 1px dotted rgb(127, 226, 34);
     /**/
 
-    z-index: 3000 /* <- [🔝] Global z-index for wallpaper page */;
+    z-index: 3100 /* <- [🔝] Global z-index for wallpaper page */;
     position: fixed;
     left: 15px;
     bottom: 15px;

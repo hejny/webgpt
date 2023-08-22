@@ -1,7 +1,7 @@
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
+import { BackgroundPattern } from '../components/BackgroundPattern/BackgroundPattern';
 import { FooterSection } from '../components/Footer/Footer';
 import { Section } from '../components/Section/Section';
-import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import styles from '../styles/static.module.css';
 
 export default function NotFoundPage() {
@@ -15,8 +15,7 @@ export default function NotFoundPage() {
                     {/* <CaveSection /> */}
                 </header>
                 <div className={styles.background}>
-                    {/* TODO: Do some system for multiple pages */}
-                    <TiledBackground />
+                    <BackgroundPattern />
                 </div>
                 <main>
                     {/* <WelcomeSection variant="SIDEPAGE" /> */}
