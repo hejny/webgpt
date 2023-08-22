@@ -4,7 +4,6 @@ import { COLORSTATS_COMPUTE_METHODS } from '../../../config';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { createImageInBrowser } from '../../utils/image/createImageInBrowser';
 import { Select } from '../Select/Select';
-import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 
 /**
  * Renders a select picker to compute color statistics for a wallpaper using different algorithms
@@ -67,7 +66,7 @@ export function ColorsModalColorAlgoritm() {
                 visibleButtons={0}
                 options={Object.fromEntries(COLORSTATS_COMPUTE_METHODS.map(({ version }) => [version, version]))}
             />
-            {isComputing && <WorkInProgress />}
+            {/* TODO: isComputing && <WorkInProgress isSmall /> */}
         </>
     );
 }
