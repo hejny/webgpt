@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import spaceTrim from 'spacetrim';
 import { ExportContext } from '../../utils/hooks/ExportContext';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';
 import { useMode } from '../../utils/hooks/useMode';
 import { usePageName } from '../../utils/hooks/usePageName';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { useWallpaperFonts } from '../../utils/hooks/useWallpaperFonts';
 import { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
@@ -20,8 +20,8 @@ import styles from './WallpaperContent.module.css';
  */
 export function WallpaperContentSection() {
     const { isEditable } = useMode();
-    const [{ content, title }, modifyWallpaper] = useWallpaper();
-    const { mainWallpaperFont } = useWallpaperFonts();
+    const [{ content, title }, modifyWallpaper] = useCurrentWallpaper();
+    const { mainWallpaperFont } = useCurrentWallpaperFonts();
 
     const { isExported } = useContext(ExportContext);
     /**

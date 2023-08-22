@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 
 /**
  * Helper component that prevents users from leaving the page if there are unsaved changes on the current wallpaper
@@ -7,7 +7,7 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
  * @returns Empty React fragment (+ internally using useEffect)
  */
 export function PreventUnsavedChanges() {
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
 
     const isSaved = wallpaper.saveStage === 'SAVED';
 

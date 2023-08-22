@@ -5,7 +5,7 @@ import { NEXT_PUBLIC_URL } from '../../../config';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 import { extractDescriptionFromHtml } from '../../utils/content/extractDescriptionFromHtml';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 
 interface WallpaperAppHeadProps {
@@ -20,7 +20,7 @@ interface WallpaperAppHeadProps {
  */
 export function WallpaperAppHead(props: WallpaperAppHeadProps) {
     const { children } = props;
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
     const { isExported, publicUrl } = useContext(ExportContext);
     const router = useRouter();
 

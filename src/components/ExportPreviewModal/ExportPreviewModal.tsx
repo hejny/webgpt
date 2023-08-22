@@ -5,8 +5,8 @@ import { useEffect, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { usePromise } from '../../utils/hooks/usePromise';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { randomUuid } from '../../utils/randomUuid';
 import { string_javascript, string_uri } from '../../utils/typeAliases';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
@@ -20,7 +20,7 @@ interface ExportPreviewModalProps {}
  * Renders the modal with a preview of the exported wallpaper
  */
 export function ExportPreviewModal(props: ExportPreviewModalProps) {
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
     const exportedPromise = useMemo(
         () =>
             /* not await */ exportAsHtml(wallpaper, {

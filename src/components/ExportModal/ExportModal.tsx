@@ -6,7 +6,7 @@ import spaceTrim from 'spacetrim';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
@@ -47,7 +47,7 @@ const ExportPlan = {
  */
 export function ExportModal() {
     const router = useRouter();
-    const [wallpaper] = useWallpaper();
+    const [wallpaper] = useCurrentWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
     const [email, setEmail] = useState<string_email>('');
