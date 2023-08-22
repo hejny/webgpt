@@ -15,7 +15,13 @@ const nextConfig = {
                 port: '',
                 pathname: '/**',
             },
-            // TODO: !!! Add CDN
+            {
+                protocol: 'https',
+                hostname: 'collboard.fra1.cdn.digitaloceanspaces.com',
+                port: '',
+                pathname: '/**',
+                // <- TODO: This should be really taken dynamically from CDN value in config
+            },
         ],
     },
     webpack: (config) => {

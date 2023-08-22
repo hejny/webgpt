@@ -11,7 +11,7 @@
         "url": "https://github.com/hejny/1-2i"
     },
     "scripts": {
-        "dev": "npx chokidar \"locales/**/*.yml\" -c \"npx kill-port 4444 && NODE_OPTIONS='--inspect' next dev -p 4444\" --initial --debounce 500",
+        "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 4444",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
@@ -96,6 +96,7 @@
         "chatgpt": "5.2.4",
         "chokidar-cli": "3.0.0",
         "commander": "9.4.1",
+        "cross-env": "^7.0.3",
         "cypress": "12.3.0",
         "dotenv": "16.0.3",
         "eslint": "8.31.0",
