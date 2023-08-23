@@ -6,6 +6,8 @@ import { Image } from '../Image';
 /**
  * Scales an image to a new size
  *
+ * Note: When the new size is the same as the original size, the original image is returned
+ *
  * @param {IImage} image - The original image to scale.
  * @param {IVector} newSize - The new size of the image.
  * @returns {Image} The scaled image.

@@ -141,3 +141,8 @@ export class Image implements IImage {
         return newImage;
     }
 }
+
+
+/**
+ * TODO: [🕶] This is sooo inefficient - use some native API like ImageData, OffscreenCanvas, createImageBitmap, etc.?
+ */
