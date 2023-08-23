@@ -15,7 +15,6 @@ import { Image } from '../Image';
  * @returns {Image} The scaled image.
  */
 export async function scaleImage(image: IImage, newSize: IVector): Promise<Image> {
-    console.log('!!!',image.size.x, newSize.x, image.size.y, newSize.y, image);
     if (image.size.x === newSize.x && image.size.y === newSize.y && image instanceof Image) {
         console.log('🍃 No need to scale image');
         return image;

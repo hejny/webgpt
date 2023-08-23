@@ -53,7 +53,6 @@ export async function forARest<TWorktype extends string>(worktype: TWorktype): P
 }
 
 /**
- * TODO: !!! Detect worker environment, node environment AND just continue
  * TODO: Detect time delta and use it for more precise waiting
  * TODO: [🧠] useRefresh / observeVariable
  */
