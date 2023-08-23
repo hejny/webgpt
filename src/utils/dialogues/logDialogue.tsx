@@ -1,5 +1,5 @@
-import { isRunningInBrowser } from '../isRunningInBrowser';
-// import styles from './logDialogue.module.css';
+import { isRunningInBrowser } from '../isRunningInWhatever';
+import styles from './logDialogue.module.css';
 
 let activeLogDiv: HTMLElement | null = null;
 
@@ -8,6 +8,13 @@ let activeLogDiv: HTMLElement | null = null;
  * There can be only one log dialogue at a time
  */
 export async function logDialogue(message: string): Promise<void> {
+    //debugger;
+
+    if (true === true) {
+        // TODO: !!! Implement and remove this condition
+        return;
+    }
+
     if (!isRunningInBrowser()) {
         return;
     }
@@ -18,7 +25,7 @@ export async function logDialogue(message: string): Promise<void> {
 
     const logElement = window.document.createElement('div');
     logElement.innerText = message;
-    // logElement.className = styles.logDialogue!;
+    logElement.className = styles.logDialogue!;
 
     window.document.body.appendChild(logElement);
 

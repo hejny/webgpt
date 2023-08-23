@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { logDialogue } from '../../utils/dialogues/logDialogue';
+import { isRunningInBrowser, isRunningInNode, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
@@ -11,6 +12,14 @@ export function UploadNewWallpaper() {
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
 
+    useEffect(() => {
+        console.log('[🧪] Use Effect', {
+            isRunningInBrowser: isRunningInBrowser(),
+            isRunningInNode: isRunningInNode(),
+            isRunningInWebWorker: isRunningInWebWorker(),
+        });
+    });
+
     return (
         <>
             <UploadZone
@@ -18,6 +27,9 @@ export function UploadNewWallpaper() {
                 isClickable
                 isMultipleAllowed={false}
                 accept="image/*"
+                onFilesOver={() => {
+                    /* not await */ logDialogue('Drop image to make web!');
+                }}
                 onFiles={async ([file]) => {
                     if (!file) {
                         return;
@@ -25,7 +37,7 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    logDialogue('Uploading image and making web...');
+                    /* not await */ logDialogue('Uploading image and making web...');
 
                     const worker = new Worker(new URL('./createNewWallpaper.worker.ts', import.meta.url));
 

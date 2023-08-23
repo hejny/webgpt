@@ -3,8 +3,15 @@ import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { createImageInWorker } from '../../utils/image/createImageInWorker';
+import { isRunningInBrowser, isRunningInNode, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
+
+console.log('[🧪] Worker file', {
+    isRunningInBrowser: isRunningInBrowser(),
+    isRunningInNode: isRunningInNode(),
+    isRunningInWebWorker: isRunningInWebWorker(),
+});
 
 export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';

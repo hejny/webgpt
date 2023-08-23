@@ -1,5 +1,4 @@
 import { forImmediate } from 'waitasecond';
-import { logDialogue } from '../../utils/dialogues/logDialogue';
 
 /**
  * The number of milliseconds to wait before resting again
@@ -40,7 +39,7 @@ export async function forARest<TWorktype extends string>(worktype: TWorktype): P
 
     if (now - lastRest > REST_AFTER_MS) {
         console.log(`💤 Resting on ${worktype}`);
-        /* not await */ logDialogue(worktype);
+        // TODO: Do here logging in worker> logDialogue(worktype);
         lastRest = now;
         await forImmediate();
         // await forAnimationFrame();
