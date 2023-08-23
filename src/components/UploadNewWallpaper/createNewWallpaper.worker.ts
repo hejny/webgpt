@@ -1,4 +1,4 @@
-import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND } from '../../../config';
 import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
@@ -43,10 +43,10 @@ async function createNewWallpaper(author: uuid, wallpaperImage: Blob) {
     //-------[ /Upload image ]---
 
     //-------[ Compute colorstats: ]---
-    COLORSTATS_DEFAULT_COMPUTE;
+    COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     createImageInWorker;
     /**/
-    const compute = COLORSTATS_DEFAULT_COMPUTE;
+    const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     const colorStats = await Promise.resolve(wallpaperImage).then(createImageInWorker).then(compute);
     console.log(colorStats);
     /**/

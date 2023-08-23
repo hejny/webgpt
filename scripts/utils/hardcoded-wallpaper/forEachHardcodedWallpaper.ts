@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import moment from 'moment';
-import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT } from '../../../config';
 import { forPlay } from '../forPlay';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
 import { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
@@ -45,7 +45,7 @@ export async function forEachHardcodedWallpaper(options: {
         const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
         const colorStatsFilePath = metadataFilePath.replace(
             /\.json$/,
-            `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
+            `.${COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT.version}.colors.yaml`,
         );
 
         const wallpaperFiles = { metadataFilePath, contentFilePath, colorStatsFilePath };

@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
 import {
-    COLORSTATS_DEFAULT_COMPUTE,
+    COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT,
     LIMIT_WALLPAPERS_COUNT,
     LIMIT_WALLPAPERS_EXCLUDE,
     SYSTEM_AUTHOR_ID,
@@ -52,7 +52,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
     for (const metadataFilePath of wallpapersmetadataFilePaths) {
         const colorStatsFilePath = metadataFilePath.replace(
             /\.json$/,
-            `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
+            `.${COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT.version}.colors.yaml`,
         );
         const srcFilePath = metadataFilePath.replace(/\.json$/, '.png');
         const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
