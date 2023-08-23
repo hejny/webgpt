@@ -13,6 +13,7 @@ import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
 import { getOrderString } from '../../../getOrderString';
 import { WithTake } from '../../../take/interfaces/ITakeChain';
+import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 let totalCount = 0;

@@ -2,6 +2,7 @@ import { forARest } from '../../../components/WorkInProgress/forARest';
 import { Color } from '../../color/Color';
 import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { WithTake } from '../../take/interfaces/ITakeChain';
+import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 
 /**
