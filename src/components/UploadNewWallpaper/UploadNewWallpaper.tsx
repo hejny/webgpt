@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { logDialogue } from '../../utils/dialogues/logDialogue';
-import { isRunningInBrowser, isRunningInNode, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
@@ -11,14 +10,6 @@ import styles from './UploadNewWallpaper.module.css';
 export function UploadNewWallpaper() {
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
-
-    useEffect(() => {
-        console.log('[🧪] Use Effect', {
-            isRunningInBrowser: isRunningInBrowser(),
-            isRunningInNode: isRunningInNode(),
-            isRunningInWebWorker: isRunningInWebWorker(),
-        });
-    });
 
     return (
         <>

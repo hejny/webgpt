@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { UploadNewWallpaper } from '../components/UploadNewWallpaper/UploadNewWallpaper';
 import styles from '../styles/static.module.css';
-import { isRunningInBrowser, isRunningInNode, isRunningInWebWorker } from '../utils/isRunningInWhatever';
 
 export default function NewWallpaperPage() {
     const router = useRouter();
@@ -25,16 +24,6 @@ export default function NewWallpaperPage() {
             </div>
         </>
     );
-}
-
-export async function getStaticProps() {
-    console.log('[🧪] getStaticProps', {
-        isRunningInBrowser: isRunningInBrowser(),
-        isRunningInNode: isRunningInNode(),
-        isRunningInWebWorker: isRunningInWebWorker(),
-    });
-
-    return { props: {} };
 }
 
 /**
