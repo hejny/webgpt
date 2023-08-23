@@ -1,4 +1,5 @@
 import { forImmediate } from 'waitasecond';
+import { isRunningInBrowser } from '../../utils/isRunningInWhatever';
 
 /**
  * The number of milliseconds to wait before resting again
@@ -28,6 +29,11 @@ let lastRest = 0;
  * @returns {Promise<void>}
  */
 export async function forARest<TWorktype extends string>(worktype: TWorktype): Promise<void> {
+    if (!isRunningInBrowser()) {
+        // Note: Either in Node.js or in WebWorker - no need to rest
+        return;
+    }
+
     /**
      * The current timestamp
      *
