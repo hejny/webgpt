@@ -140,8 +140,22 @@ export class Image implements IImage {
 
         return newImage;
     }
-}
 
+    /**
+     * @@@
+     */
+    public async mapAsync(callback: (color: Color) => Promise<Color>): Promise<Image> {
+        const newImage = new Image(this.size);
+
+        for (let x = 0; x < this.size.x; x++) {
+            for (let y = 0; y < this.size.y; y++) {
+                newImage.setPixel({ x, y }, await callback(this.getPixel({ x, y })));
+            }
+        }
+
+        return newImage;
+    }
+}
 
 /**
  * TODO: [🕶] This is sooo inefficient - use some native API like ImageData, OffscreenCanvas, createImageBitmap, etc.?
