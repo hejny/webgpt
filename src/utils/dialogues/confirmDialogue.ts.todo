@@ -1,0 +1,33 @@
+import React from 'react';
+import { IBaseMessage } from '../../50-systems/TranslationsSystem/interfaces/IMessage';
+import { jsxToText } from '../jsx-html/jsxToText';
+
+interface IConfirmDialogueOptions {
+    message?: IBaseMessage;
+}
+
+/**
+ *
+ * @collboard-modules-sdk
+ */
+export async function confirmDialogue(options: IConfirmDialogueOptions | IBaseMessage): Promise<boolean> {
+    let message: IBaseMessage | undefined;
+    if (
+        typeof options === 'string' ||
+        React.isValidElement(/* <- TODO: Import and use just a isValidElement */ options)
+    ) {
+        message = options;
+    } else {
+        message = (options as IConfirmDialogueOptions).message;
+    }
+
+    // TODO: @hejny -> @roseckyj I want to replace all blocking stuff by async functions with nicer UI
+    /*eslint no-restricted-globals: "off"*/
+    return confirm(jsxToText(message));
+}
+
+/**
+ * TODO: Use here <ConfirmIcon [🙋]
+ * TODO: [🔊] This should be just a shortcut for using notificationSystem (OR other similar system)
+ * TODO: [🔊] Return IDestroyable & Notification object
+ */

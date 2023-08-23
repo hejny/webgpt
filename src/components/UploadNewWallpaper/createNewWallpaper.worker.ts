@@ -1,4 +1,4 @@
-import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../../config';
 import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
@@ -28,10 +28,10 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
     } satisfies IMessage_CreateNewWallpaper_Result);
 });
 
-async function createNewWallpaper(author: uuid, wallpaperImage: Blob) {
+async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     //-------[ Upload image: ]---
     const formData = new FormData();
-    formData.append('wallpaper', wallpaperImage);
+    formData.append('wallpaper', wallpaperBlob);
 
     const response = await fetch('/api/upload-wallpaper', {
         method: 'POST',
@@ -47,7 +47,12 @@ async function createNewWallpaper(author: uuid, wallpaperImage: Blob) {
     createImageInWorker;
     /**/
     const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
-    const colorStats = await Promise.resolve(wallpaperImage).then(createImageInWorker).then(compute);
+
+    const wallpaperImage = await createImageInWorker(
+        wallpaperBlob,
+        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
+    );
+    const colorStats = await compute(wallpaperImage);
     console.log(colorStats);
     /**/
     //-------[ /Compute colorstats ]---
@@ -95,7 +100,6 @@ async function createNewWallpaper(author: uuid, wallpaperImage: Blob) {
  * Note:
  */
 export const _nonce = null;
-
 
 /**
  * TODO: !!! getSupabaseForWorker

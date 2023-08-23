@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { logDialogue } from '../../utils/dialogues/logDialogue';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
@@ -23,6 +24,8 @@ export function UploadNewWallpaper() {
                     }
 
                     setWorking(true);
+
+                    logDialogue('Uploading image and making web...');
 
                     const worker = new Worker(new URL('./createNewWallpaper.worker.ts', import.meta.url));
 

@@ -1,0 +1,51 @@
+import { toArray } from '../toArray';
+import { string_mime_type_with_wildcard } from '../typeAliases';
+import { Arrayable } from '../typeHelpers';
+
+interface IFileDialogueOptions {
+    /* TODO: Message: string; */
+
+    /**
+     * One or more unique file type specifiers describing file types to allow
+     */
+    accept?: Arrayable<string_mime_type_with_wildcard>;
+
+    /**
+     * TODO:
+     * The capture attribute specifies that, optionally, a new file should be captured, and which device should be used to capture that new media of a type defined by the accept attribute. Values include user and environment. The capture attribute is supported on the file input type.
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/capture
+     */
+    // TODO: Capture?: 'user' | 'environment';
+
+    /* TODO: Probably files */
+
+    /**
+     * A Boolean which, if present, indicates that the user may choose more than one file
+     */
+    /* TODO: [✨] Add is prefix */ multiple?: boolean;
+}
+
+/**
+ * @returns array of files NOT FileList
+ * TODO: As some category of utils which replace alert, prompt, confirm by better async options like this or NotificationSystem
+ *
+ * @collboard-modules-sdk
+ */
+export function fileDialogue({ accept, multiple }: IFileDialogueOptions): Promise<Array<File>> {
+    // TODO: @hejny -> @roseckyj Create nicer UI with some popup (like in Google Drive) with draggable/droppable option + this default system window functionality (and probbably split this util function into multiple pieces)
+    return new Promise((resolve, reject) => {
+        const fileInputElement = document.createElement('input');
+        fileInputElement.type = 'file';
+        if (accept) {
+            fileInputElement.accept = toArray(accept).join(',');
+        }
+        fileInputElement.multiple = multiple || false;
+        fileInputElement.addEventListener('change', (event) => {
+            if (event.target) {
+                resolve(Array.from((event as any).target.files));
+            }
+        });
+
+        fileInputElement.click();
+    });
+}
