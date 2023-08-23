@@ -27,7 +27,7 @@ let lastRest = 0;
  *
  * @returns {Promise<void>}
  */
-export async function forARest(): Promise<void> {
+export async function forARest<TWorktype extends string>(worktype: TWorktype): Promise<void> {
     /**
      * The current timestamp
      *
@@ -38,7 +38,7 @@ export async function forARest(): Promise<void> {
     restNonce++;
 
     if (now - lastRest > REST_AFTER_MS) {
-        console.log('💤 Resting');
+        console.log(`💤 Resting on ${worktype}`);
         lastRest = now;
         await forImmediate();
         // await forAnimationFrame();
@@ -46,6 +46,7 @@ export async function forARest(): Promise<void> {
 }
 
 /**
+ * TODO: !!! Detect worker environment, node environment AND just continue
  * TODO: Detect time delta and use it for more precise waiting
  * TODO: [🧠] useRefresh / observeVariable
  */

@@ -1,5 +1,6 @@
 import { forARest } from '../../components/WorkInProgress/forARest';
 import { Color } from '../color/Color';
+import { IComputeColorstatsWork } from './IComputeColorstatsWork';
 import { Image as MyImage } from './Image';
 
 /**
@@ -50,7 +51,7 @@ export async function createImageInWorker(imageAsBlob: Blob): Promise<MyImage> {
             // Set the color of the pixel in the image object
             image.setPixel({ x, y }, color);
 
-            await forARest();
+            await forARest<IComputeColorstatsWork>('createImageInWorker');
         }
     }
 

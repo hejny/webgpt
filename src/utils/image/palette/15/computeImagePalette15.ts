@@ -13,6 +13,7 @@ import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
 import { getOrderString } from '../../../getOrderString';
 import { WithTake } from '../../../take/interfaces/ITakeChain';
+import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 export async function computeImagePalette15(
@@ -35,7 +36,7 @@ export async function computeImagePalette15(
             note: `The most common color to appear at the bottom of the wallpaper.`,
         };
     }
-    await forARest();
+    await forARest<IComputeColorstatsWork>('computeImagePalette');
 
     // 1️⃣ Compute the all palette candidates
     const paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/> =
@@ -59,7 +60,7 @@ export async function computeImagePalette15(
                 ...mostSatulightedColor,
                 note: `${getOrderString(si)} most satulighted color of ${regionName}`,
             });
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImagePalette');
         }
         let gi = 0;
         for (const mostGroupedColor of regionStats.mostGroupedColors) {
@@ -68,7 +69,7 @@ export async function computeImagePalette15(
                 ...mostGroupedColor,
                 note: `${getOrderString(gi)} most grouped color of ${regionName}`,
             });
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImagePalette');
         }
         let fi = 0;
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
@@ -77,13 +78,13 @@ export async function computeImagePalette15(
                 ...mostFrequentColor,
                 note: `${getOrderString(fi)} most frequent color of ${regionName}`,
             });
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImagePalette');
         }
         // regionStats.averageColor;
 
         paletteCandidates.push({ value: regionStats.darkestColor, note: `The darkest color of ${regionName}` });
         paletteCandidates.push({ value: regionStats.lightestColor, note: `The lightest color of ${regionName}` });
-        await forARest();
+        await forARest<IComputeColorstatsWork>('computeImagePalette');
     }
 
     // 2️⃣ Pick best primary color
@@ -94,7 +95,7 @@ export async function computeImagePalette15(
             PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO;
 
         for (const paletteCandidate of paletteCandidates) {
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImagePalette');
 
             if (!areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
                 continue;
@@ -123,7 +124,7 @@ export async function computeImagePalette15(
     if (!primaryColor) {
         let minDistance: number = Infinity;
         for (const paletteCandidate of paletteCandidates) {
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImagePalette');
 
             const distance = colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value);
 
@@ -148,7 +149,7 @@ export async function computeImagePalette15(
     const textBackgrounddistanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO;
     for (const paletteCandidate of paletteCandidates) {
-        await forARest();
+        await forARest<IComputeColorstatsWork>('computeImagePalette');
         if (colorDistanceSquared(primaryColor.value, paletteCandidate.value) >= textBackgrounddistanceTheashold) {
             secondaryColor = {
                 ...paletteCandidate,
@@ -177,7 +178,7 @@ export async function computeImagePalette15(
     for (const paletteCandidate of paletteCandidates.filter(
         (color) => color !== primaryColor && color !== secondaryColor,
     )) {
-        await forARest();
+        await forARest<IComputeColorstatsWork>('computeImagePalette');
         // TODO: !! Make in this distance hue more relevant
         if (
             palette.every(

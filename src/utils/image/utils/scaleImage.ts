@@ -1,5 +1,7 @@
 import { IVector } from 'xyzt';
+import { forARest } from '../../../components/WorkInProgress/forARest';
 import { Color } from '../../color/Color';
+import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 import { Image } from '../Image';
 
@@ -12,7 +14,7 @@ import { Image } from '../Image';
  * @param {IVector} newSize - The new size of the image.
  * @returns {Image} The scaled image.
  */
-export function scaleImage(image: IImage, newSize: IVector): Image {
+export async function scaleImage(image: IImage, newSize: IVector): Promise<Image> {
     if (image.size.x === newSize.x && image.size.y === newSize.y && image instanceof Image) {
         return image;
     }
@@ -36,6 +38,8 @@ export function scaleImage(image: IImage, newSize: IVector): Image {
 
             const pixel = interpolate(q11, q12, q21, q22, oldX - x1, oldY - y1);
             newImage.setPixel({ x, y }, pixel);
+
+            await forARest<IComputeColorstatsWork>('scaleImage');
         }
     }
 

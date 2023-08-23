@@ -38,7 +38,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
         image = scaleImage(image, size);
         image = colorDownscaleImage(image, colorBits);
 
-        await forARest();
+        await forARest<IComputeColorstatsWork>('createColorfulComputeImageColorStats');
 
         return {
             // Note: There is a strange type problem when averageColor, lightestColor and darkestColor is not wrapped in take()

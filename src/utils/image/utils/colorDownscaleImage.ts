@@ -9,8 +9,8 @@ import { Image } from '../Image';
  * @param {number} numberOfColors - The number of colors to downscale to.
  * @returns {Image} - The downscaled image.
  */
-export function colorDownscaleImage(image: IImage, numberOfColors: number): Image {
-    return image.map((color) => {
+export function colorDownscaleImage(image: IImage, numberOfColors: number): Promise<Image> {
+    return image.map(async (color) => {
         let { red, green, blue /* [🚇], alpha */ } = color.clone(); /* <- TODO: Color should have map property */
 
         /**
@@ -27,6 +27,8 @@ export function colorDownscaleImage(image: IImage, numberOfColors: number): Imag
         green = downscaleValue(green);
         blue = downscaleValue(blue);
         // [🚇] alpha = downscaleValue(alpha);
+
+        await forARest<IComputeColorstatsWork>('colorDownscaleImage');
 
         return Color.fromValues(red, green, blue /* [🚇], alpha */);
     }) as Image;

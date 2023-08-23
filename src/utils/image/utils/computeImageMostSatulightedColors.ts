@@ -14,7 +14,7 @@ import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
  * Compute the most saturated colors in an image
- * 
+ *
  * @param {IImage} image - The image to compute the colors from.
  * @returns {Promise<Array<{ value: WithTake<Color>; count: number }>>} - An array of objects containing the most saturated colors and their counts.
  */
@@ -48,7 +48,7 @@ export async function computeImageMostSatulightedColors(
                         count++;
                     }
 
-                    await forARest();
+                    await forARest<IComputeColorstatsWork>('computeImageMostSatulightedColors');
                 }
             }
 
@@ -59,7 +59,7 @@ export async function computeImageMostSatulightedColors(
             break;
         }
 
-        await forARest();
+        await forARest<IComputeColorstatsWork>('computeImageMostSatulightedColors');
     }
 
     return uniqueColors;

@@ -6,8 +6,8 @@ import { IImage } from '../IImage';
 
 /**
  * Computes the most grouped colors in an image
- * 
- * 
+ *
+ *
  * @param {IImage} image - The input image.
  * @returns {Promise<Array<{ value: WithTake<Color>; count: number }>>} - An array of objects containing the most grouped color and its count.
  * @throws {Error} - Throws an error if the image has no pixels.
@@ -48,7 +48,7 @@ export async function computeImageMostGroupedColors(
                     queue.push({ x, y: y + 1 });
                 }
 
-                await forARest();
+                await forARest<IComputeColorstatsWork>('computeImageMostGroupedColors');
             }
 
             // Update mostGroupedColor and maxGroupSize if necessary
@@ -57,7 +57,7 @@ export async function computeImageMostGroupedColors(
                 maxGroupSize = groupSize;
             }
 
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImageMostGroupedColors');
         }
     }
 

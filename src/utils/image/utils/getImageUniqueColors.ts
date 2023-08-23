@@ -1,8 +1,8 @@
 import { forARest } from '../../../components/WorkInProgress/forARest';
 import { Color, string_color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
+import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
-
 
 /**
  * Retrieves the unique colors from an image
@@ -17,7 +17,7 @@ export async function getImageUniqueColors(image: IImage): Promise<Set<WithTake<
     for (let x = 0; x < image.width; x++) {
         for (let y = 0; y < image.height; y++) {
             colors.add(image.getPixel({ x, y }).toHex());
-            await forARest();
+            await forARest<IComputeColorstatsWork>('getImageUniqueColors');
         }
     }
 
