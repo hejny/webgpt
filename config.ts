@@ -103,11 +103,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
-    createColorfulComputeImageColorStats15({
-        colorBits: 8,
-        // TODO: !!! Pass here fast scale
-        size: IMAGE_NATURAL_SIZE.scale(0.01),
-    }),
+
     /*
     TODO: There is an infinite loop with "Error: Size must have positive integer values, got 19.2x10.8" when using this:
           Fix it:
@@ -145,8 +141,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
 ];
 
 export const COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0]!;
-
-export const COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[1]!;
+export const COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0]!;
 
 // TODO: [🧠] Pass theese as a parameter to the function createComputeImageColorStats
 
