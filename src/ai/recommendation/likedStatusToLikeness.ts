@@ -1,5 +1,5 @@
-import { LikedStatus } from '../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import { number_likeness } from '../utils/typeAliases';
+import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import { number_likeness } from '../../utils/typeAliases';
 
 const LIKED_STATUS_LIKENESS: Record<keyof typeof LikedStatus, number_likeness> = {
     NONE: 0 /* <- TODO: [🧠] Maybe -0.1 or some small negative number, wallpaper user go through and did not react person maybe dislike */,
