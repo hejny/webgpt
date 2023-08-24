@@ -52,6 +52,9 @@ export const LIMIT_WALLPAPERS_EXCLUDE = config.get('LIMIT_WALLPAPERS_EXCLUDE').l
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 
+export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
+export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
+
 export const EXPORT_OPTIONS = {
     isExported: false,
     publicUrl: NEXT_PUBLIC_URL,

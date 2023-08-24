@@ -38,8 +38,8 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
         body: formData,
     });
 
-    const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
-    console.log(wallpaperUrl);
+    const { wallpaperUrl, wallpaperDescription } = (await response.json()) as UploadWallpaperResponse;
+    console.log({ wallpaperUrl, wallpaperDescription });
     //-------[ /Upload image ]---
 
     //-------[ Compute colorstats: ]---

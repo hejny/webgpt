@@ -2,6 +2,7 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { CDN } from '../../../config';
+import { analyzeImage } from '../../utils/analyzeImage';
 import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserWallpaperCdnKey';
 
 import { string_url } from '../../utils/typeAliases';
@@ -9,6 +10,7 @@ import { string_url } from '../../utils/typeAliases';
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
     wallpaperUrl: string_url;
+    wallpaperDescription?: any /* <- !!! */;
 }
 
 export const config = {
@@ -59,10 +61,13 @@ export default async function uploadWallpaperHandler(
 
     const wallpaperUrl = CDN.getItemUrl(key).href;
 
-    return response.status(201).json({ wallpaperUrl } satisfies UploadWallpaperResponse);
+    const wallpaperDescription = await analyzeImage(wallpaperBuffer);
+
+    return response.status(201).json({ wallpaperUrl, wallpaperDescription } satisfies UploadWallpaperResponse);
 }
 
 /**
+ * TODO: !!! Analyze and upload in parallel + maybe compute colorstats in here?
  * TODO: [🧠] Compress/normalize the image
  * TODO: convert to png ([🧠] or maybe keep jpg)
  * TODO: !! Allow other image formats
