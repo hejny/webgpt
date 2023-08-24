@@ -1,7 +1,7 @@
 {
   "functions": {
     "pages/api/upload-wallpaper.ts": { 
-      "maxDuration": 60
+      "maxDuration": 10
     }
   }
 }
