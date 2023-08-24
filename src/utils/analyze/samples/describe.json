@@ -1,0 +1,16 @@
+{
+    "tags": ["outdoor", "sky", "mountain", "hill"],
+    "captions": [
+        {
+            "text": "a group of people walking on a rocky terrain with the sun setting",
+            "confidence": 0.3875691294670105
+        }
+    ],
+    "requestId": "432413e2-e356-401d-8712-717320c894f8",
+    "metadata": {
+        "width": 1344,
+        "height": 896,
+        "format": "Jpeg"
+    },
+    "modelVersion": "2021-05-01"
+}

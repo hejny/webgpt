@@ -1,7 +1,7 @@
 import { ComputerVisionClient } from '@azure/cognitiveservices-computervision';
 import { CognitiveServicesCredentials } from '@azure/ms-rest-azure-js';
-import { AZURE_COMPUTER_VISION_ENDPOINT, AZURE_COMPUTER_VISION_KEY } from '../../config';
-import { isRunningInNode } from './isRunningInWhatever';
+import { AZURE_COMPUTER_VISION_ENDPOINT, AZURE_COMPUTER_VISION_KEY } from '../../../config';
+import { isRunningInNode } from '../isRunningInWhatever';
 
 export type IAnalyzeResult = any;
 
