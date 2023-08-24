@@ -2,15 +2,15 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { CDN } from '../../../config';
-import { analyzeImage, IAnalyzeResult } from '../../utils/analyze/analyzeImage';
+import { imageToText } from '../../ai/image-to-text/imageToText';
 import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserWallpaperCdnKey';
 
-import { string_url } from '../../utils/typeAliases';
+import { string_description, string_url } from '../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
     wallpaperUrl: string_url;
-    wallpaperDescription: IAnalyzeResult;
+    wallpaperDescription: string_description;
 }
 
 export const config = {
@@ -61,7 +61,7 @@ export default async function uploadWallpaperHandler(
 
     const wallpaperUrl = CDN.getItemUrl(key);
 
-    const wallpaperDescription = await analyzeImage(wallpaperUrl);
+    const wallpaperDescription = await imageToText(wallpaperUrl);
 
     return response
         .status(201)
