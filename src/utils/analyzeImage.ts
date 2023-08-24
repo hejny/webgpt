@@ -1,7 +1,9 @@
+import { ComputerVisionClient } from '@azure/cognitiveservices-computervision';
+import { CognitiveServicesCredentials } from '@azure/ms-rest-azure-js';
 import { AZURE_COMPUTER_VISION_ENDPOINT, AZURE_COMPUTER_VISION_KEY } from '../../config';
 import { isRunningInNode } from './isRunningInWhatever';
 
-interface IAzureCognitiveVisionAnalyze {}
+export type IAnalyzeResult = any;
 
 /**
  * Analyzes an image through the Azure Computer vision API
@@ -10,25 +12,36 @@ interface IAzureCognitiveVisionAnalyze {}
  *
  * @param image
  */
-export async function analyzeImage(image: Buffer): Promise<any /* <- !!! */> {
+export async function analyzeImage(imageUrl: URL): Promise<IAnalyzeResult> {
     if (!isRunningInNode()) {
         throw new Error('analyzeImage is only available on the server');
     }
+    const cognitiveServiceCredentials = new CognitiveServicesCredentials(AZURE_COMPUTER_VISION_KEY!);
+    const client = new ComputerVisionClient(cognitiveServiceCredentials, AZURE_COMPUTER_VISION_ENDPOINT!.href);
 
-    const response = await fetch(`${AZURE_COMPUTER_VISION_ENDPOINT!.href}vision/v2.0/analyze`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/octet-stream',
-            'Ocp-Apim-Subscription-Key': AZURE_COMPUTER_VISION_KEY!,
-        },
-        body: image,
+    const analyzeResult = await client.analyzeImage(imageUrl.href, {
+        maxCandidates: 5,
+        language: 'en',
     });
 
-    const result = await response.json();
+    const describeResult = await client.describeImage(imageUrl.href, {
+        maxCandidates: 5,
+        language: 'en',
+    });
 
-    return result;
+    const tagResult = await client.tagImage(imageUrl.href, {
+        maxCandidates: 5,
+        language: 'en',
+    });
+
+    const detectResult = await client.detectObjects(imageUrl.href, {
+        maxCandidates: 5,
+        language: 'en',
+    });
+
+    return { analyzeResult, describeResult, tagResult, detectResult };
 }
 
 /**
- * TODO: Maybe allow to pass a File | Blob
+ * TODO: [💁‍♂️] Maybe allow to pass a Buffer | File | Blob
  */
