@@ -193,6 +193,10 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     console.info(`[ Done 🧾  Generating wallpapers content ]`);
 }
 
+/**
+ *
+ * @deprecated [👸]  use exported version in src/ai/text-to-text/prompt-templates/createContentPromptTemplate.ts
+ */
 function createContentPromptTemplate() {
     return randomItem(
         `
@@ -241,9 +245,10 @@ function createFontPromptTemplate() {
 }
 
 /**
- * TODO: [👸] Use here writeWallpaperContent and DRY 
+ * TODO: [👸] Use here writeWallpaperContent and DRY
  * TODO: [🔎] Write tags/keywords for each website to search through @see https://ibb.co/2Fy7kN4
  * TODO: [🧬] In future multiple text variants for each paragraph
  * TODO: Maybe use getMidjourneyLink from batch-froject-editor
  * TODO: Persistency and uniqueness of the names
+ * TODO: [👮‍♀️] In this repository is used both 'chatgpt' and 'openai' NPM packages - use just 'openai' in future and in scripts use the common utils
  */

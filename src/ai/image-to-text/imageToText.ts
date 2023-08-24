@@ -12,9 +12,11 @@ import { string_image_description } from '../../utils/typeAliases';
  * @param image
  */
 export async function imageToText(imageUrl: URL): Promise<string_image_description> {
+    
     if (!isRunningInNode()) {
         throw new Error('analyzeImage is only available on the server');
     }
+
     const cognitiveServiceCredentials = new CognitiveServicesCredentials(AZURE_COMPUTER_VISION_KEY!);
     const client = new ComputerVisionClient(cognitiveServiceCredentials, AZURE_COMPUTER_VISION_ENDPOINT!.href);
 
