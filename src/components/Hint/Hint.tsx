@@ -109,7 +109,7 @@ export function Hint(props: HintProps) {
         };
         hintTarget.addEventListener('click', hintTargetClickHandler);
 
-        /* 
+        /*
             element.addEventListener('mouseenter', () => {
                 hintContainer.style.opacity = '1';
             });
