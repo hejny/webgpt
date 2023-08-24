@@ -38,8 +38,8 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
         body: formData,
     });
 
-    const { wallpaperUrl, wallpaperDescription } = (await response.json()) as UploadWallpaperResponse;
-    console.log({ wallpaperUrl, wallpaperDescription });
+    const { wallpaperUrl, wallpaperDescription, wallpaperContent } = (await response.json()) as UploadWallpaperResponse;
+    console.log({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
     //-------[ Compute colorstats: ]---
@@ -57,18 +57,21 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     /**/
     //-------[ /Compute colorstats ]---
 
+    /*/
     const { data: randomWallpaperData } = await getSupabaseForBrowser()
         .from('Wallpaper_random')
         .select('*')
         .eq('isPublic', true)
-        .limit(1 /* <- TODO: [🤺] Tweak this number */)
+        .limit(1)
         .single();
 
     if (!randomWallpaperData) {
         throw new Error('No random wallpaper found');
     }
-    const title = randomWallpaperData.title!; /* <- !!! Compute in addWallpaperComputables */
+    const title = randomWallpaperData.title!; // <- !!! Compute in addWallpaperComputables
     const content = randomWallpaperData.content!;
+    /**/
+
     /*/
        const colorStats = hydrateColorStats(
            randomWallpaperData.colorStats!,
@@ -82,8 +85,7 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
         src: wallpaperUrl,
         prompt: null,
         colorStats,
-        title,
-        content,
+        content: wallpaperContent,
         keywords: [], // <- TODO: !!! Array.from(parseKeywordsFromWallpaper(modifiedWallpaper))
         // <- TODO: Computable
         saveStage: 'SAVING' /* <- TODO: Computable */,
@@ -102,5 +104,6 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
 export const _nonce = null;
 
 /**
+ * TODO: !!! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !!! getSupabaseForWorker
  */

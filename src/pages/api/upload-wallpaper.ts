@@ -3,14 +3,16 @@ import { readFile } from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { CDN } from '../../../config';
 import { imageToText } from '../../ai/image-to-text/imageToText';
+import { writeWallpaperContent } from '../../ai/text-to-text/writeWallpaperContent';
 import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserWallpaperCdnKey';
 
-import { string_description, string_url } from '../../utils/typeAliases';
+import { string_image_description, string_markdown, string_url } from '../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
     wallpaperUrl: string_url;
-    wallpaperDescription: string_description;
+    wallpaperDescription: string_image_description;
+    wallpaperContent: string_markdown;
 }
 
 export const config = {
@@ -62,10 +64,15 @@ export default async function uploadWallpaperHandler(
     const wallpaperUrl = CDN.getItemUrl(key);
 
     const wallpaperDescription = await imageToText(wallpaperUrl);
+    const wallpaperContent = await writeWallpaperContent(wallpaperDescription);
 
     return response
         .status(201)
-        .json({ wallpaperUrl: wallpaperUrl.href, wallpaperDescription } satisfies UploadWallpaperResponse);
+        .json({
+            wallpaperUrl: wallpaperUrl.href,
+            wallpaperDescription,
+            wallpaperContent,
+        } satisfies UploadWallpaperResponse);
 }
 
 /**

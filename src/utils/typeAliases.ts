@@ -78,6 +78,14 @@ export type string_description = string;
 /**
  * Semantic helper
  *
+ * For example `"A group of people walking on the Mars surface"`
+ * @collboard-modules-sdk
+ */
+export type string_image_description = string_description;
+
+/**
+ * Semantic helper
+ *
  * For example `"Poppins"`
  * @collboard-modules-sdk
  */

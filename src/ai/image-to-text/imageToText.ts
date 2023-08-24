@@ -2,6 +2,7 @@ import { ComputerVisionClient } from '@azure/cognitiveservices-computervision';
 import { CognitiveServicesCredentials } from '@azure/ms-rest-azure-js';
 import { AZURE_COMPUTER_VISION_ENDPOINT, AZURE_COMPUTER_VISION_KEY } from '../../../config';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
+import { string_image_description } from '../../utils/typeAliases';
 
 /**
  * Analyzes an image through the Azure Computer vision API
@@ -10,7 +11,7 @@ import { isRunningInNode } from '../../utils/isRunningInWhatever';
  *
  * @param image
  */
-export async function imageToText(imageUrl: URL): Promise<string> {
+export async function imageToText(imageUrl: URL): Promise<string_image_description> {
     if (!isRunningInNode()) {
         throw new Error('analyzeImage is only available on the server');
     }
