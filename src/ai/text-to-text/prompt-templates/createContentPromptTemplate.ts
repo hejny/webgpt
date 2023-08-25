@@ -2,10 +2,10 @@ import spaceTrim from 'spacetrim';
 import { string_image_description, string_midjourney_prompt, string_prompt } from '../../../utils/typeAliases';
 
 /**
- * Creates the prompt for creating the content of the page
+ * Generates a template for creating web content based on a given wallpaper description
  *
- * @param wallpaperDescription as a plain description what is on the wallpaper image (created for expample from Azure image cognition describe or MidJourney prompt)
- * @returns the prompt which can be passed to ChatGPT to generate the content of the page
+ * @param wallpaperDescription: A description of the wallpaper. This could be a plain description of the image or a prompt created from Azure's image cognition or MidJourney services.
+ * @returns A template that can be used with ChatGPT to generate a webpage content.
  */
 export function createContentPromptTemplate(
     wallpaperDescription: string_image_description | string_midjourney_prompt | string_prompt,
@@ -13,24 +13,22 @@ export function createContentPromptTemplate(
     return spaceTrim(
         (block) =>
             `
-            Write me content for website with wallpaper which alt text is:
+            Craft a webpage content which incorporates the following wallpaper description as an alt text:
 
             "${block(wallpaperDescription)}"
 
-            The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
-
-            - Use markdown format 
-            - Start with heading
-            - Heading should be short and concise
-            - The content should look like a real website 
-            - The website should not be about the wallpaper, wallpaper is just a related background
-            - Heading should be contain work "wallpaper" or "background"
-            - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-            - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-            - You can use formatting like bold or _italic_
-            - You can include UTF-8 emojis
-            - Links should be only #hash anchors (and you can refer to the document itself)
-            - Do not include images
+            Guidelines:
+            - The webpage title should not directly copy the alt text but should be creatively derived from it.
+            - Utilize markdown format.
+            - Begin with a concise heading.
+            - Aim for content that realistically portrays a functioning website, not a mere display of the wallpaper.
+            - The heading should not include words like "wallpaper" or "background".
+            - The content should feature real sections such as references, contact information, user stories, etc., as per the objective of the page.
+            - Structure the content with headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
+            - Feel free to use bold or _italic_ text for emphasis.
+            - Incorporate UTF-8 emojis for added appeal.
+            - Links should be only #hash anchors referring to the document itself.
+            - Avoid including any images.
         `,
     );
 }
