@@ -28,6 +28,7 @@ export async function askChatGpt(options: IAskChatGptOptions): Promise<IAskChatG
 
     const { requestText } = options;
 
+    performance.mark('ask-gpt-start');
     const completion = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo',
         messages: [
@@ -37,6 +38,8 @@ export async function askChatGpt(options: IAskChatGptOptions): Promise<IAskChatG
             },
         ],
     });
+    performance.mark('ask-gpt-end');
+    console.log(performance.measure('ask-gpt', 'ask-gpt-start', 'ask-gpt-end'));
 
     if (!completion.choices[0]) {
         throw new Error(`No choises from OpenAPI`);

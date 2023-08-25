@@ -30,6 +30,7 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
 
 async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     //-------[ Upload image: ]---
+    performance.mark('upload-image-and-write-content-start');
     const formData = new FormData();
     formData.append('wallpaper', wallpaperBlob);
 
@@ -39,10 +40,17 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     });
 
     const { wallpaperUrl, wallpaperDescription, wallpaperContent } = (await response.json()) as UploadWallpaperResponse;
+    performance.mark('upload-image-and-write-content-end');
+    performance.measure(
+        'upload-image-and-write-content',
+        'upload-image-and-write-content-start',
+        'upload-image-and-write-content-end',
+    );
     console.log({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
     //-------[ Compute colorstats: ]---
+    performance.mark('compute-colorstats-start');
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     createImageInWorker;
     /**/
@@ -53,6 +61,8 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
     );
     const colorStats = await compute(wallpaperImage);
+    performance.mark('compute-colorstats-end');
+    performance.measure('compute-colorstats', 'compute-colorstats-start', 'compute-colorstats-end');
     console.log(colorStats);
     /**/
     //-------[ /Compute colorstats ]---
@@ -94,7 +104,7 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
 
     // TODO: !! Util isInsertSuccessfull (status===201)
-    console.log({ newWallpaper, insertResult });
+    console.log({ newWallpaper, insertResult, performance: performance.getEntries() });
 
     return newWallpaper;
 }
