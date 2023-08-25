@@ -2,10 +2,10 @@ import spaceTrim from 'spacetrim';
 import { string_image_description, string_midjourney_prompt, string_prompt } from '../../../utils/typeAliases';
 
 /**
- * Creates the prompt for the content of the wallpaper page
+ * Creates the prompt for creating the content of the page
  *
- * @param wallpaperDescription as a plain description what is on the wallpaper (created for expample from imageToText or midjourney prompt)
- * @returns the prompt for the content of the wallpaper page
+ * @param wallpaperDescription as a plain description what is on the wallpaper image (created for expample from Azure image cognition describe or MidJourney prompt)
+ * @returns the prompt which can be passed to ChatGPT to generate the content of the page
  */
 export function createContentPromptTemplate(
     wallpaperDescription: string_image_description | string_midjourney_prompt | string_prompt,
