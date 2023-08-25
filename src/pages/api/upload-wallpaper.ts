@@ -64,7 +64,7 @@ export default async function uploadWallpaperHandler(
     const wallpaperUrl = CDN.getItemUrl(key);
 
     const wallpaperDescription = await imageToText(wallpaperUrl);
-    const wallpaperContent = wallpaperDescription; // await writeWallpaperContent(wallpaperDescription);
+    const wallpaperContent = await writeWallpaperContent(wallpaperDescription);
 
     return response
         .status(201)
