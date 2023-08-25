@@ -20,6 +20,7 @@ export function createTitlePromptTemplate(
                 Guidelines:
                 - This is a title for real website
                 - Be short and concise
+                - Do not quote
                 - The title should not include parasitic words like "wallpaper" or "background".
             `,
     );
