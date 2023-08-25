@@ -1,4 +1,5 @@
 import spaceTrim from 'spacetrim';
+import { removeQuotes } from '../../utils/content/removeQuotes';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import {
     string_image_description,
@@ -27,13 +28,14 @@ export async function writeWallpaperContent(
     const { responseText, metadataText } = await askChatGpt({
         requestText: createTitlePromptTemplate(wallpaperDescription),
     });
+    const title = removeQuotes(responseText);
 
     return spaceTrim(
         (block) => `
     
             <!--font:Barlow Condensed-->
 
-            # ${block(responseText)}
+            # ${block(title)}
 
             Welcome to our website dedicated to space exploration and adventure. Our pixel art background featuring a spacecraft adds a playful and nostalgic touch to your browsing experience.
 
