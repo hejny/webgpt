@@ -18,9 +18,9 @@ export function addWallpaperComputables(
     }
 
     if (!wallpaper.title) {
-        const title = extractTitleFromContent(wallpaper.content);
+        let title = extractTitleFromContent(wallpaper.content);
         if (!title) {
-            throw new Error('Cannot extract title from content');
+            title = 'Page' /* <- TODO: [🧠] Figure out better fallback value */;
         }
         wallpaper.title = title;
     }
