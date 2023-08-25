@@ -74,6 +74,7 @@ export default async function uploadWallpaperHandler(
 }
 
 /**
+ * TODO: [🧔] !! Check that uploaded image has preferred size or less NOT more
  * TODO: [💁‍♂️] Analyze and upload in parallel + maybe compute colorstats in here?
  * TODO: [🧠] Compress/normalize the image
  * TODO: convert to png ([🧠] or maybe keep jpg)

@@ -7,7 +7,10 @@ import { Image as MyImage } from './Image';
 /**
  * Create new Image from Blob in the browser or worker
  */
-export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVector): Promise<MyImage> {
+export async function createImageInWorker(
+    imageAsBlob: Blob,
+    preferredSize: IVector,
+): Promise<{ image: MyImage; canvas: OffscreenCanvas } /* <- [👱‍♀️] */> {
     const imageBitmap = await createImageBitmap(imageAsBlob);
     const width = imageBitmap.width;
     const height = imageBitmap.height;
@@ -16,10 +19,10 @@ export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVec
     const image = new MyImage({ x: preferredSize.x!, y: preferredSize.y! });
 
     // Create an OffscreenCanvas object
-    const offscreenCanvas = new OffscreenCanvas(preferredSize.x!, preferredSize.y!);
+    const canvas = new OffscreenCanvas(preferredSize.x!, preferredSize.y!);
 
     // Get the 2D rendering context of the canvas
-    const context = offscreenCanvas.getContext('2d');
+    const context = canvas.getContext('2d');
 
     if (!context) {
         throw new Error(`Could not get the 2D rendering context of the canvas`);
@@ -66,10 +69,10 @@ export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVec
         }
     }
 
-    return image;
+    return { image, canvas };
 }
 
 /**
- * TODO: [🧠] Split the construction and resize into two/multiple utils
+ * TODO: [🧠][👱‍♀️] Split the construction and resize into two/multiple utils
  * TODO: [🧠] Better names createImageInWorker can be really used in browser THE difference is wheather it takes src url or blob
  */

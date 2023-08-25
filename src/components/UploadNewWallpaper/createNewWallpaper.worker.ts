@@ -29,10 +29,28 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
 });
 
 async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
+    //-------[ Compute colorstats: ]---
+    performance.mark('compute-colorstats-start');
+    COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
+    createImageInWorker;
+    /**/
+    const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
+    const { image, canvas /* <- [👱‍♀️] */ } = await createImageInWorker(
+        wallpaperBlob,
+        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
+    );
+    const colorStats = await compute(image);
+    performance.mark('compute-colorstats-end');
+    performance.measure('compute-colorstats', 'compute-colorstats-start', 'compute-colorstats-end');
+    console.log(colorStats);
+    /**/
+    //-------[ /Compute colorstats ]---
+
     //-------[ Upload image: ]---
+    const wallpaperResizedBlob =await  canvas.convertToBlob();
     performance.mark('upload-image-and-write-content-start');
     const formData = new FormData();
-    formData.append('wallpaper', wallpaperBlob);
+    formData.append('wallpaper', wallpaperResizedBlob /* <- [🧔] */);
 
     const response = await fetch('/api/upload-wallpaper', {
         method: 'POST',
@@ -48,24 +66,6 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     );
     console.log({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
-
-    //-------[ Compute colorstats: ]---
-    performance.mark('compute-colorstats-start');
-    COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
-    createImageInWorker;
-    /**/
-    const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
-
-    const wallpaperImage = await createImageInWorker(
-        wallpaperBlob,
-        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
-    );
-    const colorStats = await compute(wallpaperImage);
-    performance.mark('compute-colorstats-end');
-    performance.measure('compute-colorstats', 'compute-colorstats-start', 'compute-colorstats-end');
-    console.log(colorStats);
-    /**/
-    //-------[ /Compute colorstats ]---
 
     /*/
     const { data: randomWallpaperData } = await getSupabaseForBrowser()
@@ -114,6 +114,8 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
 export const _nonce = null;
 
 /**
+ * TODO: !!! Split resized to colorStats vs resized to upload
  * TODO: !!! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !!! getSupabaseForWorker
+ * TODO: [👱‍♀️] Compute in parallel
  */
