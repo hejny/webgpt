@@ -7,10 +7,7 @@ import { Image as MyImage } from './Image';
 /**
  * Create new Image from Blob in the browser or worker
  */
-export async function createImageInWorker(
-    imageAsBlob: Blob,
-    preferredSize: IVector,
-): Promise<{ image: MyImage; canvas: OffscreenCanvas } /* <- [👱‍♀️] */> {
+export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVector): Promise<MyImage> {
     const imageBitmap = await createImageBitmap(imageAsBlob);
     const width = imageBitmap.width;
     const height = imageBitmap.height;
@@ -69,10 +66,10 @@ export async function createImageInWorker(
         }
     }
 
-    return { image, canvas };
+    return image;
 }
 
 /**
- * TODO: [🧠][👱‍♀️] Split the construction and resize into two/multiple utils
+ * TODO: [👱‍♀️] Use Internally createOffscreenCanvas
  * TODO: [🧠] Better names createImageInWorker can be really used in browser THE difference is wheather it takes src url or blob
  */

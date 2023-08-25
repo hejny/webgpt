@@ -3,6 +3,7 @@ import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { createImageInWorker } from '../../utils/image/createImageInWorker';
+import { createOffscreenCanvas } from '../../utils/image/createOffscreenCanvas';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
 
@@ -28,15 +29,22 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
     } satisfies IMessage_CreateNewWallpaper_Result);
 });
 
-async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
+async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
+    const wallpaperResizedCanvas = await createOffscreenCanvas(
+        wallpaperOriginalBlob,
+        IMAGE_NATURAL_SIZE.scale(0.5) /* <- TODO: [🧔] This should be in config */,
+    );
+    const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
+
     //-------[ Compute colorstats: ]---
     performance.mark('compute-colorstats-start');
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     createImageInWorker;
     /**/
     const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
-    const { image, canvas /* <- [👱‍♀️] */ } = await createImageInWorker(
-        wallpaperBlob,
+    const image = await createImageInWorker(
+        // TODO: [👱‍♀️] It is inefficient pass here blob which will be internally converted to OffscreenCanvas which is aviablie already here
+        wallpaperResizedBlob,
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
     );
     const colorStats = await compute(image);
@@ -47,7 +55,6 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
     //-------[ /Compute colorstats ]---
 
     //-------[ Upload image: ]---
-    const wallpaperResizedBlob =await  canvas.convertToBlob();
     performance.mark('upload-image-and-write-content-start');
     const formData = new FormData();
     formData.append('wallpaper', wallpaperResizedBlob /* <- [🧔] */);
@@ -114,7 +121,6 @@ async function createNewWallpaper(author: uuid, wallpaperBlob: Blob) {
 export const _nonce = null;
 
 /**
- * TODO: !!! Split resized to colorStats vs resized to upload
  * TODO: !!! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !!! getSupabaseForWorker
  * TODO: [👱‍♀️] Compute in parallel
