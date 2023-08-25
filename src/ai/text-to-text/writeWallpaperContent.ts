@@ -7,7 +7,7 @@ import {
     string_prompt,
 } from '../../utils/typeAliases';
 import { askChatGpt } from './askChatGpt';
-import { createContentPromptTemplate } from './prompt-templates/createContentPromptTemplate';
+import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
 
 /**
  * Writes the rich content of the wallpaper page
@@ -25,14 +25,15 @@ export async function writeWallpaperContent(
     }
 
     const { responseText, metadataText } = await askChatGpt({
-        requestText: createContentPromptTemplate(wallpaperDescription),
+        requestText: createTitlePromptTemplate(wallpaperDescription),
     });
 
     return spaceTrim(
         (block) => `
-    
-            ${block(responseText)}
 
+            # ${block(responseText)}
+    
+            Content !!!
 
             <!-- ${block(metadataText)} -->
         

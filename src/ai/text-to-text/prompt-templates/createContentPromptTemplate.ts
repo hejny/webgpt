@@ -8,8 +8,8 @@ import { string_image_description, string_midjourney_prompt, string_prompt } fro
  * @returns A template that can be used with ChatGPT to generate a webpage content.
  */
 export function createContentPromptTemplate(
-    wallpaperDescription: string_image_description | string_midjourney_prompt | string_prompt,
-) {
+    wallpaperDescription: string_image_description | string_midjourney_prompt,
+): string_prompt {
     return spaceTrim(
         (block) =>
             `
@@ -32,7 +32,6 @@ export function createContentPromptTemplate(
             `,
     );
 }
-
 
 /**
  *  TODO: !!! Make some model comparision

@@ -66,13 +66,11 @@ export default async function uploadWallpaperHandler(
     const wallpaperDescription = await imageToText(wallpaperUrl);
     const wallpaperContent = await writeWallpaperContent(wallpaperDescription);
 
-    return response
-        .status(201)
-        .json({
-            wallpaperUrl: wallpaperUrl.href,
-            wallpaperDescription,
-            wallpaperContent,
-        } satisfies UploadWallpaperResponse);
+    return response.status(201).json({
+        wallpaperUrl: wallpaperUrl.href,
+        wallpaperDescription,
+        wallpaperContent,
+    } satisfies UploadWallpaperResponse);
 }
 
 /**
