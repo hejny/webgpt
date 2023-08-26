@@ -26,10 +26,9 @@ export async function writeWallpaperContent(
         throw new Error('writeWallpaperContent is only available on the server');
     }
 
-    const { responseText, metadataText } = await askChatGpt({
-        requestText: createTitlePromptTemplate(wallpaperDescription),
-    });
-    const { title, topic } = parseTitleAndTopic(removeQuotes(responseText));
+    const prompt = createTitlePromptTemplate(wallpaperDescription);
+    const { response, model } = await askChatGpt(prompt);
+    const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
     return spaceTrim(
         (block) => `
@@ -70,13 +69,20 @@ export async function writeWallpaperContent(
 
             Join us on our space adventure and explore the universe with our pixel art background. Let your imagination soar!
 
-            <!-- ${block(metadataText)} -->
+            <!--
+            Written by OpenAI ${model}
+
+            Prompt:
+                ${block(prompt)} 
+            
+            -->
         
         `,
     );
 }
 
 /**
+ * TODO: !!! Pick font dynamically
  * TODO: !! Put step by step instructions how the content is generated in footer comment
  * TODO: [👸] Use in generate-wallpapers-content and DRY
  * TODO: [👮‍♀️] In this repository is used both 'chatgpt' and 'openai' NPM packages - use just 'openai' in future and in scripts use the common utils

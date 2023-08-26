@@ -1,17 +1,16 @@
 import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../config';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
-
-export interface IAskChatGptOptions {
-    requestText: string;
-    // TODO: Model here GPT3 vs GPT4
-}
+import { string_model_name, string_prompt } from '../../utils/typeAliases';
 
 export interface IAskChatGptReturn {
-    responseText: string;
-    metadataText: string;
+    response: string;
+    model: string_model_name;
 }
 
+/**
+ * TODO: Make this lazy on-demand
+ */
 const openai = new OpenAI({
     apiKey: OPENAI_API_KEY!,
 });
@@ -21,20 +20,18 @@ const openai = new OpenAI({
  *
  * Note: This function is aviable only on the server
  */
-export async function askChatGpt(options: IAskChatGptOptions): Promise<IAskChatGptReturn> {
+export async function askChatGpt(prompt: string_prompt): Promise<IAskChatGptReturn> {
     if (!isRunningInNode()) {
         throw new Error('askChatGpt is only available on the server');
     }
 
-    const { requestText } = options;
-
     performance.mark('ask-gpt-start');
     const completion = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-3.5-turbo' /* <- TODO: To global config */,
         messages: [
             {
                 role: 'user',
-                content: requestText,
+                content: prompt,
             },
         ],
     });
@@ -51,14 +48,14 @@ export async function askChatGpt(options: IAskChatGptOptions): Promise<IAskChatG
     }
 
     // Display response message to user
-    const responseMessage = completion.choices[0].message.content;
+    const response = completion.choices[0].message.content;
 
-    if (!responseMessage) {
+    if (!response) {
         throw new Error(`No response message from OpenAPI`);
     }
 
     return {
-        responseText: responseMessage,
-        metadataText: `Using ${completion.model}`,
+        response,
+        model: completion.model as string_model_name,
     };
 }
