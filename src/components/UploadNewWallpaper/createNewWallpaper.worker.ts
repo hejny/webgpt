@@ -82,8 +82,6 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
         prompt: null,
         colorStats,
         content: wallpaperContent,
-        keywords: [], // <- TODO: !!! Array.from(parseKeywordsFromWallpaper(modifiedWallpaper))
-        // <- TODO: Computable
         saveStage: 'SAVING',
     });
 

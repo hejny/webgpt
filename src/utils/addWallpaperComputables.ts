@@ -1,3 +1,4 @@
+import { parseKeywordsFromWallpaper } from '../components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { IWallpaper } from './IWallpaper';
@@ -9,7 +10,7 @@ import { IWallpaper } from './IWallpaper';
  * Note: Value colorStats is technically also computable but they are not computed because they are needed a heavy computation and better control over how they are computed
  */
 export function addWallpaperComputables(
-    anonymousWallpaper: Partial<IWallpaper> & Omit<IWallpaper, 'id' | 'title'>,
+    anonymousWallpaper: Partial<IWallpaper> & Omit<IWallpaper, 'id' | 'title' | 'keywords'>,
 ): IWallpaper {
     const wallpaper = { ...anonymousWallpaper };
 
@@ -25,10 +26,13 @@ export function addWallpaperComputables(
         wallpaper.title = title;
     }
 
+    if (!wallpaper.keywords) {
+        wallpaper.keywords = Array.from(parseKeywordsFromWallpaper(wallpaper));
+    }
+
     return wallpaper as IWallpaper;
 }
 
 /**
- * TODO: More computables like title, kewords, saveStage, isPublic, parent, etc...
  * TODO: Is there a simple helper for> Partial<IWallpaper> & Omit<IWallpaper, 'id'>
  */
