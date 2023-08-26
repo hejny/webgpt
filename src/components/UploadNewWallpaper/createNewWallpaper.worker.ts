@@ -74,38 +74,17 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     console.log({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
-    /*/
-    const { data: randomWallpaperData } = await getSupabaseForBrowser()
-        .from('Wallpaper_random')
-        .select('*')
-        .eq('isPublic', true)
-        .limit(1)
-        .single();
-
-    if (!randomWallpaperData) {
-        throw new Error('No random wallpaper found');
-    }
-    const title = randomWallpaperData.title!; // <- !!! Compute in addWallpaperComputables
-    const content = randomWallpaperData.content!;
-    /**/
-
-    /*/
-       const colorStats = hydrateColorStats(
-           randomWallpaperData.colorStats!,
-       ); /* <- !!! Hardcode this mock in json file mocked-dark.colors.yml */
-    /**/
-
     const newWallpaper = addWallpaperComputables({
-        parent: null /* <- TODO: Computable */,
+        parent: null,
         author,
-        isPublic: false /* <- TODO: Computable */,
+        isPublic: false,
         src: wallpaperUrl,
         prompt: null,
         colorStats,
         content: wallpaperContent,
         keywords: [], // <- TODO: !!! Array.from(parseKeywordsFromWallpaper(modifiedWallpaper))
         // <- TODO: Computable
-        saveStage: 'SAVING' /* <- TODO: Computable */,
+        saveStage: 'SAVING',
     });
 
     const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
@@ -121,7 +100,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
 export const _nonce = null;
 
 /**
- * TODO: !!! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
- * TODO: !!! getSupabaseForWorker
+ * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
+ * TODO: !! getSupabaseForWorker
  * TODO: [👱‍♀️] Compute in parallel
  */
