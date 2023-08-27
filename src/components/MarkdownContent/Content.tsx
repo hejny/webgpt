@@ -91,5 +91,5 @@ export function Content(props: ContentProps) {
 /**
  * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
  * TODO: [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
- * TODO: Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
+ * TODO: [👨‍🦰] !!! Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
  */
