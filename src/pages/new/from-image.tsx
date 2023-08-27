@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
-import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { UploadNewWallpaper } from '../components/UploadNewWallpaper/UploadNewWallpaper';
-import styles from '../styles/static.module.css';
+import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
+import styles from '../../styles/static.module.css';
 
-export default function NewWallpaperPage() {
+export default function NewWallpaperFromImagePage() {
     const router = useRouter();
 
     return (
@@ -29,6 +29,6 @@ export default function NewWallpaperPage() {
 /**
  * TODO: !!! Make (probbably in /other) some library of custom wallpaper samples
  * TODO: !! Page structure - back to random wallpaper, samples, gallery,...
- * TODO: Camera
+ * TODO: Allow to use Camera (maybe in new route /new/from-camera)
  * TODO: !! Create some meaningfull content by AI recognition
  */
