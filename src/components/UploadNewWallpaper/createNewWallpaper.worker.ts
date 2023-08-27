@@ -99,6 +99,9 @@ export const _nonce = null;
 
 /**
  * TODO: !!! Working Heif/Heic support
+ * TODO: !!! Convert before upload
+ * TODO: [🧠] !!! Maybe use .webp and .avif INSTED of .jpg and .png
+ * TODO: !!! 'heic2any' must be lazy loaded
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
  * TODO: [👱‍♀️] Compute in parallel
