@@ -1,9 +1,9 @@
 import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../config';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
-import { string_model_name, string_prompt } from '../../utils/typeAliases';
+import { string_chat_prompt, string_model_name } from '../../utils/typeAliases';
 
-export interface IAskChatGptReturn {
+export interface IAskChatGptResult {
     response: string;
     model: string_model_name;
 }
@@ -20,7 +20,7 @@ const openai = new OpenAI({
  *
  * Note: This function is aviable only on the server
  */
-export async function askChatGpt(prompt: string_prompt): Promise<IAskChatGptReturn> {
+export async function askChatGpt(prompt: string_chat_prompt): Promise<IAskChatGptResult> {
     if (!isRunningInNode()) {
         throw new Error('askChatGpt is only available on the server');
     }

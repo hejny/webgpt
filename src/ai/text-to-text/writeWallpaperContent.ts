@@ -2,12 +2,7 @@ import spaceTrim from 'spacetrim';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
-import {
-    string_image_description,
-    string_markdown,
-    string_midjourney_prompt,
-    string_prompt,
-} from '../../utils/typeAliases';
+import { string_image_description, string_markdown, string_midjourney_prompt } from '../../utils/typeAliases';
 import { askChatGpt } from './askChatGpt';
 import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
 
@@ -20,7 +15,7 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
  * @returns Content of the wallpaper page
  */
 export async function writeWallpaperContent(
-    wallpaperDescription: string_image_description | string_midjourney_prompt | string_prompt,
+    wallpaperDescription: string_image_description | string_midjourney_prompt,
 ): Promise<string_markdown> {
     if (!isRunningInNode()) {
         throw new Error('writeWallpaperContent is only available on the server');
