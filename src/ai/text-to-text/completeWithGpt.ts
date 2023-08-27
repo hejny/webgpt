@@ -23,8 +23,9 @@ const openai = new OpenAI({
 export async function completeWithGpt(prompt: string_completion_prompt): Promise<ICompleteWithGptResult> {
     performance.mark('complete-gpt-start');
     const completion = await getOpenaiForServer().completions.create({
-        model: 'text-davinci-003' /* <- TODO: !!! Pick the best model */,
-        max_tokens: 1000 /* <- TODO: Tweak, hardcode+note or put in config  */,
+        model: 'text-davinci-003',
+        max_tokens: 2000,
+        // <- TODO: !!! Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
         prompt,
     });
     performance.mark('complete-gpt-end');
