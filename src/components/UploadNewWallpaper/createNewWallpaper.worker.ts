@@ -98,6 +98,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
 export const _nonce = null;
 
 /**
+ * TODO: !!! Working Heif/Heic support
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
  * TODO: [👱‍♀️] Compute in parallel
