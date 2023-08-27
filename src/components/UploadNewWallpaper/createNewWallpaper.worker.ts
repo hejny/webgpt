@@ -1,3 +1,4 @@
+import heic2any from 'heic2any';
 import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../../config';
 import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
@@ -30,11 +31,19 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
 });
 
 async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
+    //-------[ Convert + resize: ]---
+    const jpegFile = await heic2any({
+        // @see https://github.com/alexcorvi/heic2any/blob/master/docs/options.md
+        blob: heicFile,
+        toType: 'image/jpeg' /* <- TODO: Let user pick compression and type of conversion */,
+        quality: 0.85,
+    });
     const wallpaperResizedCanvas = await createOffscreenCanvas(
         wallpaperOriginalBlob,
         IMAGE_NATURAL_SIZE.scale(0.5) /* <- TODO: [🧔] This should be in config */,
     );
     const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
+    //-------[ /Convert + resize ]---
 
     //-------[ Compute colorstats: ]---
     performance.mark('compute-colorstats-start');
