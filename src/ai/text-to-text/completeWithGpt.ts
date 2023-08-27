@@ -1,6 +1,5 @@
 import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../config';
-import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { string_completion_prompt, string_model_name } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 
@@ -22,11 +21,9 @@ const openai = new OpenAI({
  * Note: This function is aviable only on the server
  */
 export async function completeWithGpt(prompt: string_completion_prompt): Promise<ICompleteWithGptResult> {
-
-
     performance.mark('complete-gpt-start');
     const completion = await getOpenaiForServer().completions.create({
-        model: 'davinci-002' /* <- TODO: !!! Pick the best model */,
+        model: 'text-davinci-003' /* <- TODO: !!! Pick the best model */,
         max_tokens: 1000 /* <- TODO: Tweak, hardcode+note or put in config  */,
         prompt,
     });
