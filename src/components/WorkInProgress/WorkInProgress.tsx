@@ -53,7 +53,7 @@ export function WorkInProgress() {
         scene.clearColor = new Color4(0, 0, 0, 0);
 
         // Create a camera
-        const camera = new ArcRotateCamera('camera', 0, 0, 10, Vector3.Zero(), scene);
+        const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 10, Vector3.Zero(), scene);
         camera.attachControl(canvas, false);
 
         // Create a light
