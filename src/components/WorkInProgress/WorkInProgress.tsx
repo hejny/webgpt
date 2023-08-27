@@ -89,7 +89,7 @@ export function WorkInProgress() {
         /**/
         // Rotate the the ribbon
         scene.registerBeforeRender(function () {
-            ribbon.rotation.y -= 0.01;
+            ribbon.rotation.y += 0.02;
         });
         /**/
 
