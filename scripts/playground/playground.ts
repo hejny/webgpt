@@ -30,7 +30,7 @@ async function playground() {
     // Do here stuff you want to test
 
     const completion = await getOpenaiForServer().completions.create({
-        model: 'davinci-002',
+        model: 'text-davinci-003',
         max_tokens: 1000,
         prompt: spaceTrim(`
 
