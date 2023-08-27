@@ -1,7 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
-import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { string_image_description, string_markdown, string_midjourney_prompt } from '../../utils/typeAliases';
 import { askChatGpt } from './askChatGpt';
 import { completeWithGpt } from './completeWithGpt';
@@ -18,8 +17,6 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
 export async function writeWallpaperContent(
     wallpaperDescription: string_image_description | string_midjourney_prompt,
 ): Promise<string_markdown> {
-
-
     const prompt = createTitlePromptTemplate(wallpaperDescription);
     const { response, model: modelToCreateTitle } = await askChatGpt(prompt);
     const { title, topic } = parseTitleAndTopic(removeQuotes(response));
@@ -35,6 +32,7 @@ export async function writeWallpaperContent(
     const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
         spaceTrim(
             // TODO: !!! This prompt should be also created in some template function
+            // TODO: !!! Pefect this prompt
             (block) => `
 
                 Following is markdown content of a webpage:
