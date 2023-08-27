@@ -130,7 +130,7 @@ export function WallpaperContentSection() {
 }
 
 /**
- * TODO: [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
+ * TODO: !!! [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
  * TODO: Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
  * TODO: Maybe split header and content font
  * TODO: isHashUsed + test it and put into menu + some way to return existing hashes
