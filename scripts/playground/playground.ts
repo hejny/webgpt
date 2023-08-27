@@ -36,14 +36,16 @@ async function playground() {
 
     const completion = await openai.completions.create({
         model: 'davinci-002',
-        max_tokens: 1000,
+        // max_tokens: 1000,
         prompt: spaceTrim(`
 
             Following is markdown content of a webpage:
 
-            # Coffee Shop Vincent
+            # Urban Oasis
 
-            We are a 
+            > Embracing Nature Amidst the Cityscape
+
+
         `),
     });
     console.log({ completion }, completion.choices);

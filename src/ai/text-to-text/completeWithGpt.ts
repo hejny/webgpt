@@ -1,9 +1,9 @@
 import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../config';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
-import { string_chat_prompt, string_model_name } from '../../utils/typeAliases';
+import { string_completion_prompt, string_model_name } from '../../utils/typeAliases';
 
-export interface IAskChatGptResult {
+export interface ICompleteWithGptResult {
     response: string;
     model: string_model_name;
 }
@@ -16,27 +16,23 @@ const openai = new OpenAI({
 });
 
 /**
- * Ask one question to the GPT chat
+ * Complete a prompt with GPT
  *
  * Note: This function is aviable only on the server
  */
-export async function askChatGpt(prompt: string_chat_prompt): Promise<IAskChatGptResult> {
+export async function completeWithGpt(prompt: string_completion_prompt): Promise<ICompleteWithGptResult> {
     if (!isRunningInNode()) {
         throw new Error('askChatGpt is only available on the server');
     }
 
-    performance.mark('ask-gpt-start');
-    const completion = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo' /* <- TODO: To global config */,
-        messages: [
-            {
-                role: 'user',
-                content: prompt,
-            },
-        ],
+    performance.mark('complete-gpt-start');
+    const completion = await openai.completions.create({
+        model: 'davinci-002' /* <- TODO: !!! Pick the best model */,
+        // max_tokens: 1000,
+        prompt,
     });
-    performance.mark('ask-gpt-end');
-    console.log(performance.measure('ask-gpt', 'ask-gpt-start', 'ask-gpt-end'));
+    performance.mark('complete-gpt-end');
+    console.log(performance.measure('complete-gpt', 'complete-gpt-start', 'complete-gpt-end'));
 
     if (!completion.choices[0]) {
         throw new Error(`No choises from OpenAPI`);
@@ -48,11 +44,7 @@ export async function askChatGpt(prompt: string_chat_prompt): Promise<IAskChatGp
     }
 
     // Display response message to user
-    const response = completion.choices[0].message.content;
-
-    if (!response) {
-        throw new Error(`No response message from OpenAPI`);
-    }
+    const response = completion.choices[0].text;
 
     return {
         response,
