@@ -2,18 +2,14 @@ import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../config';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { string_chat_prompt, string_model_name } from '../../utils/typeAliases';
+import { getOpenaiForServer } from './getOpenaiForServer';
 
 export interface IAskChatGptResult {
     response: string;
     model: string_model_name;
 }
 
-/**
- * TODO: !!! Make this lazy on-demand + DRY ACRY
- */
-const openai = new OpenAI({
-    apiKey: OPENAI_API_KEY!,
-});
+
 
 /**
  * Ask one question to the GPT chat
@@ -21,12 +17,9 @@ const openai = new OpenAI({
  * Note: This function is aviable only on the server
  */
 export async function askChatGpt(prompt: string_chat_prompt): Promise<IAskChatGptResult> {
-    if (!isRunningInNode()) {
-        throw new Error('askChatGpt is only available on the server');
-    }
 
     performance.mark('ask-gpt-start');
-    const completion = await openai.chat.completions.create({
+    const completion = await getOpenaiForServer().chat.completions.create({
         model: 'gpt-3.5-turbo' /* <- TODO: To global config */,
         messages: [
             {

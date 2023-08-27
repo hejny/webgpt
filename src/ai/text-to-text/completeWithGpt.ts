@@ -2,6 +2,7 @@ import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../config';
 import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { string_completion_prompt, string_model_name } from '../../utils/typeAliases';
+import { getOpenaiForServer } from './getOpenaiForServer';
 
 export interface ICompleteWithGptResult {
     response: string;
@@ -21,12 +22,10 @@ const openai = new OpenAI({
  * Note: This function is aviable only on the server
  */
 export async function completeWithGpt(prompt: string_completion_prompt): Promise<ICompleteWithGptResult> {
-    if (!isRunningInNode()) {
-        throw new Error('askChatGpt is only available on the server');
-    }
+
 
     performance.mark('complete-gpt-start');
-    const completion = await openai.completions.create({
+    const completion = await getOpenaiForServer().completions.create({
         model: 'davinci-002' /* <- TODO: !!! Pick the best model */,
         // max_tokens: 1000,
         prompt,

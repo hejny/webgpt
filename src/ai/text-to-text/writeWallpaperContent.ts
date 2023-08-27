@@ -18,9 +18,7 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
 export async function writeWallpaperContent(
     wallpaperDescription: string_image_description | string_midjourney_prompt,
 ): Promise<string_markdown> {
-    if (!isRunningInNode()) {
-        throw new Error('writeWallpaperContent is only available on the server');
-    }
+
 
     const prompt = createTitlePromptTemplate(wallpaperDescription);
     const { response, model: modelToCreateTitle } = await askChatGpt(prompt);
