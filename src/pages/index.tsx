@@ -37,7 +37,7 @@ export default function HomePage() {
 }
 
 /**
- * TODO: !!! DO not redirect to random wallpaper provide 3 scenarion:
+ * TODO: !!! DO not redirect to random wallpaper provide 3 scenarios:
  *       - 🙄 No idea
  *       - 💡 Idea
  *       - 🖼 Image
