@@ -4,15 +4,12 @@ import {
     Color4,
     Engine,
     HemisphericLight,
-    Mesh,
     MeshBuilder,
     Scene,
     StandardMaterial,
     Vector3,
 } from 'babylonjs';
 import { useEffect, useRef } from 'react';
-import { randomItem } from '../../utils/randomItem';
-import { plotHyperbolicParaboloid, plotSphere, plotTorus, plotWaves } from './definitions';
 import { restNonce } from './forARest';
 import styles from './WorkInProgress.module.css';
 
@@ -71,37 +68,16 @@ export function WorkInProgress() {
         };
         plotPoint.range = [0, 1];
 
-        /**/
-        // Create a ribbon mesh for black hole topology
-        let ribbon = MeshBuilder.CreateRibbon(
+        let ribbon = MeshBuilder.CreateTorus(
             'ribbon',
             {
-                pathArray: generateRibbonPath(plotPoint, 0),
-                sideOrientation: Mesh.DOUBLESIDE,
-                updatable: true,
-                closeArray: true, // add this parameter to close the ribbon between the last and first paths
-                closePath: true, // add this parameter to close each path between the last and first points
+                diameter: 1,
+                thickness: 0.5,
+                tessellation: 20,
+                // sideOrientation: Mesh.DOUBLESIDE,
             },
             scene,
         );
-
-        const plotFunction: PlotFunction = randomItem(plotSphere, plotTorus, plotWaves, plotHyperbolicParaboloid);
-
-        // Update the ribbon mesh each frame
-        let t = 0;
-        scene.registerBeforeRender(function () {
-            ribbon = MeshBuilder.CreateRibbon(
-                'ribbon',
-                {
-                    pathArray: generateRibbonPath(plotFunction, t++),
-                    sideOrientation: Mesh.DOUBLESIDE,
-                    instance: ribbon,
-                    closeArray: true, // keep this parameter consistent with the initial creation
-                    closePath: true, // keep this parameter consistent with the initial creation
-                },
-                scene,
-            );
-        });
 
         // Create a material for the ribbon
         const ribbonMaterial = new StandardMaterial('ribbonMaterial', scene);
@@ -116,32 +92,6 @@ export function WorkInProgress() {
             ribbon.rotation.y -= 0.01;
         });
         /**/
-
-        // Function to generate the path for the ribbon
-        function generateRibbonPath(plot: PlotFunction, t: number) {
-            let range = plot.range;
-
-            if (!range) {
-                range = [0, 1];
-            }
-
-            const path = [];
-            const segments = 20;
-            const step = (range[1] - range[0]) / segments;
-
-            for (var v = range[0]; v <= range[1]; v += step) {
-                const subPath = [];
-
-                for (var u = range[0]; u <= range[1]; u += step) {
-                    const [z, x, y] = plot(t, u, v);
-                    subPath.push(new Vector3(x, y, z));
-                }
-
-                path.push(subPath);
-            }
-
-            return path;
-        }
 
         //==============================================
 
