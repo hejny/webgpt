@@ -74,6 +74,7 @@ export default async function uploadWallpaperHandler(
 }
 
 /**
+ * TODO: [🚵‍♂️] !! Do here also the colorstats
  * TODO: !!! Allow to anlayze smaller then original image
  * TODO: [🧔] !! Check that uploaded image has preferred size or less NOT more
  * TODO: [💁‍♂️] Analyze and upload in parallel + maybe compute colorstats in here?

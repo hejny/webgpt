@@ -5,7 +5,6 @@ import { string_css_class, string_href, string_html } from '../../utils/typeAlia
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { mapLinksInHtml } from './mapLinksInHtml';
 
-
 interface HtmlContentProps {
     /**
      * Source html
@@ -122,4 +121,6 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
 /**
  * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
  * TODO: [🧠][💬] Allow to change fonts and do rich text editing
+ * TODO: [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
+ * TODO: Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/> (<- <HtmlContentEditable/>)
  */

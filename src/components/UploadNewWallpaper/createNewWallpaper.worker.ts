@@ -101,4 +101,5 @@ export const _nonce = null;
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
  * TODO: [👱‍♀️] Compute in parallel
+ * TODO: [🚵‍♂️] !! Do this out of the worker just in simple utility function
  */

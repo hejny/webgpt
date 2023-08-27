@@ -20,7 +20,10 @@ let supabase: SupabaseClient<Database>;
  * @returns instance of supabase client
  */
 export function getSupabaseForBrowser(): typeof supabase {
-    if (!isRunningInBrowser() && !isRunningInWebWorker()) {
+    if (
+        !isRunningInBrowser() &&
+        !(isRunningInWebWorker(/* <- TODO: [🚵‍♂️] !! Remove this option to run getSupabaseForBrowser in worker */))
+    ) {
         throw new Error('Use getSupabaseForServer');
     }
 

@@ -100,5 +100,6 @@ export function ColorsPanel() {
 }
 
 /**
+ * TODO: Change this to <ColorsAndFontsPanel/> OR [🧠] allow to change fonts here [👩‍🦰]
  * TODO: Maybe allow to close the colors
  */
