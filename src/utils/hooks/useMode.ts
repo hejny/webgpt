@@ -51,3 +51,9 @@ export function useMode(): IModes {
         isEditable,
     };
 }
+
+
+/**
+ * TODO: !!! Change ACRY mode -> layout (or view)
+ * TODO: !!! Add GET param scenario (or mode)
+ */

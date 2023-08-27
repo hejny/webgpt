@@ -37,6 +37,10 @@ export default function HomePage() {
 }
 
 /**
+ * TODO: !!! DO not redirect to random wallpaper provide 3 scenarion:
+ *       - 🙄 No idea
+ *       - 💡 Idea
+ *       - 🖼 Image
  * TODO: Go to last wallpaper
  * TODO: Make shuffle between wallpapers
  */
