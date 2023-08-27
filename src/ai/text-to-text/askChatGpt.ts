@@ -1,6 +1,3 @@
-import OpenAI from 'openai';
-import { OPENAI_API_KEY } from '../../../config';
-import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { string_chat_prompt, string_model_name } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 
@@ -9,15 +6,12 @@ export interface IAskChatGptResult {
     model: string_model_name;
 }
 
-
-
 /**
  * Ask one question to the GPT chat
  *
  * Note: This function is aviable only on the server
  */
 export async function askChatGpt(prompt: string_chat_prompt): Promise<IAskChatGptResult> {
-
     performance.mark('ask-gpt-start');
     const completion = await getOpenaiForServer().chat.completions.create({
         model: 'gpt-3.5-turbo' /* <- TODO: To global config */,
@@ -55,4 +49,5 @@ export async function askChatGpt(prompt: string_chat_prompt): Promise<IAskChatGp
 
 /**
  * TODO: !!! Make chainable
+ * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and askChatGpt
  */

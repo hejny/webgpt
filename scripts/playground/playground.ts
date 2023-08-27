@@ -31,7 +31,7 @@ async function playground() {
 
     const completion = await getOpenaiForServer().completions.create({
         model: 'davinci-002',
-        // max_tokens: 1000,
+        max_tokens: 1000,
         prompt: spaceTrim(`
 
             Following is markdown content of a webpage:

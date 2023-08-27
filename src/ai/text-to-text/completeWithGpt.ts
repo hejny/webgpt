@@ -27,7 +27,7 @@ export async function completeWithGpt(prompt: string_completion_prompt): Promise
     performance.mark('complete-gpt-start');
     const completion = await getOpenaiForServer().completions.create({
         model: 'davinci-002' /* <- TODO: !!! Pick the best model */,
-        // max_tokens: 1000,
+        max_tokens: 1000 /* <- TODO: Tweak, hardcode+note or put in config  */,
         prompt,
     });
     performance.mark('complete-gpt-end');
@@ -52,5 +52,5 @@ export async function completeWithGpt(prompt: string_completion_prompt): Promise
 }
 
 /**
- * TODO: !!! Make chainable
+ * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and askChatGpt
  */
