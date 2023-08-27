@@ -1,0 +1,35 @@
+{
+    "tags": [
+        {
+            "name": "moon",
+            "confidence": 0.91880202293396
+        },
+        {
+            "name": "sky",
+            "confidence": 0.8965473175048828
+        },
+        {
+            "name": "person",
+            "confidence": 0.846216082572937
+        },
+        {
+            "name": "nature",
+            "confidence": 0.761349081993103
+        },
+        {
+            "name": "outdoor",
+            "confidence": 0.7101266980171204
+        },
+        {
+            "name": "mountain",
+            "confidence": 0.6623610258102417
+        }
+    ],
+    "requestId": "16dabb79-f207-48a1-88f8-adc101c82d2e",
+    "metadata": {
+        "width": 1344,
+        "height": 896,
+        "format": "Jpeg"
+    },
+    "modelVersion": "2021-04-01"
+}

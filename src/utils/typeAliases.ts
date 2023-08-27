@@ -11,6 +11,24 @@ import { FONTS } from '../../config';
 /**
  * Semantic helper
  *
+ * For example `"gpt-4"`
+ */
+export type string_model_name =
+    | 'gpt-4'
+    | 'gpt-4-0314'
+    | 'gpt-4-0613'
+    | 'gpt-4-32k'
+    | 'gpt-4-32k-0314'
+    | 'gpt-4-32k-0613'
+    | 'gpt-3.5-turbo'
+    | 'gpt-3.5-turbo-16k'
+    | 'gpt-3.5-turbo-0301'
+    | 'gpt-3.5-turbo-0613'
+    | 'gpt-3.5-turbo-16k-0613' /* <- TODO: Import from 'openai' package */;
+
+/**
+ * Semantic helper
+ *
  * For example `"A cat wearing a hat"`
  * @collboard-modules-sdk
  */
@@ -19,10 +37,42 @@ export type string_prompt = string;
 /**
  * Semantic helper
  *
+ * For example `"A cat wearing a hat"`
+ * @collboard-modules-sdk
+ */
+export type string_image_prompt = string_prompt;
+
+/**
+ * Semantic helper
+ *
  * For example `"A cat wearing a hat --wallpaper --v 5.2"`
  * @collboard-modules-sdk
  */
-export type string_midjourney_prompt = string;
+export type string_midjourney_prompt = string_image_prompt;
+
+/**
+ * Semantic helper
+ *
+ * For example `"How many hats does the cat wear?"`
+ * @collboard-modules-sdk
+ */
+export type string_text_prompt = string_prompt;
+
+/**
+ * Semantic helper
+ *
+ * For example `"How many hats does the cat wear?"`
+ * @collboard-modules-sdk
+ */
+export type string_chat_prompt = string_text_prompt;
+
+/**
+ * Semantic helper
+ *
+ * For example `"Following is a text about cats: Once upon a time there was a cat"`
+ * @collboard-modules-sdk
+ */
+export type string_completion_prompt = string_text_prompt;
 
 /**
  * Semantic helper
@@ -74,6 +124,14 @@ export type string_title = string;
  * @collboard-modules-sdk
  */
 export type string_description = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"a city with buildings and trees"`
+ * @collboard-modules-sdk
+ */
+export type string_image_description = string_description;
 
 /**
  * Semantic helper
@@ -610,4 +668,6 @@ export type number_terabytes = number_positive;
  * TODO: Anotate all + collboard-modules-sdk to all
  * TODO: Use instead of number_... type-fest
  * TODO: In some cases string_module_name, constraint by literals (or as close to RegExp as possible in TypeScript)
+ * TODO: [🧠] Maybe make rich object representing the MidjourneyPrompt with its flags and version etc
+ * TODO: [🧠] Maybe make rich object representing the GPT prompt with its version, temprature, top_p, etc. OR should it be in the config?
  */

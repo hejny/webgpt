@@ -25,3 +25,8 @@ export function provideClientId(): uuid {
 
     return clientId as uuid;
 }
+
+
+/**
+ * TODO: [🧠] This should be probbably in some other folder than supabase
+ */

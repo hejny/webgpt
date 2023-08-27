@@ -9,14 +9,21 @@ import { ColorPreview } from '../ColorPreview';
 import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
-    className?: string_css_class;
+    /**
+     * Color to show in the box
+     */
     value: Color;
     onChange(color: WithTake<Color>): void;
     presetColors?: Array<PresetColor>;
+
+    /**
+     * Optional CSS class name which will be added to root element
+     */
+    className?: string_css_class;
 }
 
 /**
- * @@
+ * Renders a color input with a preview box and a color picker
  */
 export function ColorInput(props: ColorInputProps) {
     const { className, value, onChange, presetColors } = props;

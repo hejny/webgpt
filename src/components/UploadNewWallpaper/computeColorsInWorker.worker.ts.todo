@@ -1,0 +1,9 @@
+addEventListener('message', (event: MessageEvent<string>) => {
+    // COLORSTATS_COMPUTE_METHODS
+    postMessage(event.data);
+});
+
+/**
+ * Note:
+ */
+export const _nonce = null;

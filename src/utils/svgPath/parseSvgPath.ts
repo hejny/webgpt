@@ -2,7 +2,7 @@ import { Vector } from 'xyzt';
 import { ISvgPath } from './ISvgPath';
 
 /**
- * Parses a string that defines an SVG path and returns an array of ISvgPath objects ⁘
+ * Parses a string that defines an SVG path and returns an array of ISvgPath objects
  * 
  * @param {string} pathDefinition - The string that defines the SVG path.
  * @returns {ISvgPath[]} An array of ISvgPath objects that represent the SVG path commands and positions.

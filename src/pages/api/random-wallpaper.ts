@@ -17,5 +17,11 @@ export default async function randomWallpaperHandler(
         .limit(1)
         .single();
 
-    return response.status(200).json({ randomWallpaper: result.data } as any /* <- Remove any */);
+    return response
+        .status(200)
+        .json(
+            {
+                randomWallpaper: result.data,
+            } as any /* <- TODO: Remove any and replace by satisfies RandomWallpaperResponse*/,
+        );
 }

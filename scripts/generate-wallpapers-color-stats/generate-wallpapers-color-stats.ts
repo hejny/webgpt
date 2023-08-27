@@ -9,7 +9,7 @@ import { readFile, writeFile } from 'fs/promises';
 import { basename, join, relative } from 'path';
 import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
-import { COLORSTATS_DEFAULT_COMPUTE, MIDJOURNEY_WHOLE_GALLERY_PATH } from '../../config';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT, MIDJOURNEY_WHOLE_GALLERY_PATH } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { serializeColorStats } from '../../src/utils/image/utils/serializeColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
@@ -75,7 +75,7 @@ async function generateWallpapersColorStats({
                 if (await isFileExisting(colorStatsFilePath)) {
                     const { version } = YAML.parse(await readFile(colorStatsFilePath, 'utf8'));
 
-                    if (version === COLORSTATS_DEFAULT_COMPUTE.version) {
+                    if (version === COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT.version) {
                         console.info(`⏩ Color stats file has already been computed with same version`);
                         return;
                     }
@@ -85,7 +85,7 @@ async function generateWallpapersColorStats({
                 await writeFile(
                     colorStatsFilePath,
                     YAML.stringify({
-                        version: COLORSTATS_DEFAULT_COMPUTE.version,
+                        version: COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT.version,
                         note: 'This is just a lock before real color stats are made - if you see this the process is still running or it crashed.',
                     })
                         .split('"')
@@ -99,7 +99,7 @@ async function generateWallpapersColorStats({
 
             const srcFilePath = metadataFilePath.replace(/\.json$/, '.png');
             const localSrc = join(MIDJOURNEY_WHOLE_GALLERY_PATH, basename(srcFilePath));
-            const colorStats = await COLORSTATS_DEFAULT_COMPUTE(await createImageInNode(localSrc));
+            const colorStats = await COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT(await createImageInNode(localSrc));
 
             // TODO: !! Break also createImageInNode, computeImageColorStats and its subfunctions into forImmediate chunks
             await forImmediate();
@@ -122,7 +122,7 @@ async function generateWallpapersColorStats({
     if (isCommited) {
         await commit(
             await getHardcodedWallpapersDir(),
-            `🎨 Generate wallpapers color-stats version ${COLORSTATS_DEFAULT_COMPUTE.version}`,
+            `🎨 Generate wallpapers color-stats version ${COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT.version}`,
         );
     }
 

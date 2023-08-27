@@ -1,6 +1,7 @@
 import { IVector, Vector } from 'xyzt';
 import { forARest } from '../../../../components/WorkInProgress/forARest';
 import { take } from '../../../take/take';
+import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImage } from '../../IImage';
 import { colorDownscaleImage } from '../../utils/colorDownscaleImage';
 import { computeImageAverageColor } from '../../utils/computeImageAverageColor';
@@ -35,10 +36,10 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
     const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v15palette` as string;
 
     const computeWholeImageColorStats = async (image: IImage): Promise<IImageColorStatsRegion> => {
-        image = scaleImage(image, size);
-        image = colorDownscaleImage(image, colorBits);
+        image = await scaleImage(image, size);
+        image = await colorDownscaleImage(image, colorBits);
 
-        await forARest();
+        await forARest<IComputeColorstatsWork>('computeImageColorStats');
 
         return {
             // Note: There is a strange type problem when averageColor, lightestColor and darkestColor is not wrapped in take()

@@ -4,18 +4,31 @@ import styles from './00-Modal.module.css';
 import { CloseModalLink } from './10-CloseModalLink';
 
 interface ModalProps {
+    /**
+     * Title of the modal
+     */
     title: ReactNode;
+
+    /**
+     * The content of the modal
+     */
     children: ReactNode;
 }
 
 /**
- * @@
+ * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
     const { title, children } = props;
 
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useEffect(() => {
+        /**
+         * Prevents the body from scrolling when the modal is open
+         *
+         * @param {Event} event - The scroll event.
+         * @returns {boolean} - Whether the scroll event should be prevented.
+         */
         const bodyScrollPrevent = (event: Event) => {
             // console.log(event.target);
 

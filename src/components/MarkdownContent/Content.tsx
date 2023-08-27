@@ -4,14 +4,14 @@ import { string_css_class, string_href, string_html, string_markdown } from '../
 import { HtmlContent } from './HtmlContent';
 import { MarkdownContent } from './MarkdownContent';
 
-interface IContentProps {
+interface ContentProps {
     /**
      * Source markdown
      */
     content: string_html | string_markdown;
 
     /**
-     * Optional CSS class name
+     * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
 
@@ -60,7 +60,7 @@ interface IContentProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function Content(props: IContentProps) {
+export function Content(props: ContentProps) {
     const { content, className, isusingFonts, isUsingOpenmoji, isEnhanced, isEditable, mapLinks, onHtmlChange } = props;
 
     const contentFormat = useMemo(() => detectContentFormat(content), [content]);
@@ -90,4 +90,6 @@ export function Content(props: IContentProps) {
 
 /**
  * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
+ * TODO: [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
+ * TODO: Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
  */

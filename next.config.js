@@ -1,9 +1,7 @@
 const removeImports = require('next-remove-imports')();
-const { i18n } = require('./next-i18next.config');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    i18n,
     reactStrictMode: true,
     experimental: {
         appDir: true,
@@ -16,6 +14,13 @@ const nextConfig = {
                 hostname: 'cdn.midjourney.com',
                 port: '',
                 pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'collboard.fra1.cdn.digitaloceanspaces.com',
+                port: '',
+                pathname: '/**',
+                // <- TODO: This should be really taken dynamically from CDN value in config
             },
         ],
     },

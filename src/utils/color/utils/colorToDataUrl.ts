@@ -12,6 +12,14 @@ export function colorToDataUrl(color: Color): string /*_dataurl*/ {
  */
 const keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 
+/**
+ * Generates a base64-encoded triplet string 
+ *
+ * @param e1 - The first element in the triplet.
+ * @param e2 - The second element in the triplet.
+ * @param e3 - The third element in the triplet.
+ * @returns The base64-encoded triplet string.
+ */
 const triplet = (e1: number, e2: number, e3: number) =>
     keyStr.charAt(e1 >> 2) +
     keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
@@ -19,9 +27,12 @@ const triplet = (e1: number, e2: number, e3: number) =>
     keyStr.charAt(e3 & 63);
 
 /**
- * @@@
+ * Converts RGB values to a data URL string
  *
- * @see https://github.com/vercel/next.js/blob/canary/examples/image-component/pages/color.tsx
+ * @param r - The red channel value.
+ * @param g - The green channel value.
+ * @param b - The blue channel value.
+ * @returns The RGB data URL string.
  */
 const rgbDataURL = (r: number, g: number, b: number) =>
     `data:image/gif;base64,R0lGODlhAQABAPAA${

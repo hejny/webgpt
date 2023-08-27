@@ -1,18 +1,36 @@
 import styles from './PricingTableNext.module.css';
 
 interface PricingTableNextProps {
+    /**
+     * @@@
+     */
     plans: Plan[];
 }
 
 interface Plan {
+    /**
+     * @@@
+     */
     id: number;
+
+    /**
+     * @@@
+     */
     name: string;
+
+    /**
+     * @@@
+     */
     price: number;
+
+    /**
+     * @@@
+     */
     benefits: string[];
 }
 
 /**
- * @@
+ * Renders the pricing table
  */
 export function PricingTableNext(props: PricingTableNextProps) {
     const { plans } = props;
@@ -33,3 +51,7 @@ export function PricingTableNext(props: PricingTableNextProps) {
         </div>
     );
 }
+
+/**
+ * TODO: !! Run BPE and check auto-annotations
+ */

@@ -43,10 +43,12 @@ export default async function registerHandler(request: NextApiRequest, response:
         .insert([{ wallpaperId, url: url as string_url }]);
 
     if (insertResult.status === 201) {
-        return response.status(201).json({ message: '[🔌] Site registered' });
+        return response.status(201).json({ message: '[🔌] Site registered' } satisfies RegisterResponse);
     } else {
         console.error(insertResult);
-        return response.status(500).json({ message: '[🔌] Something went wrong during the site registration' });
+        return response
+            .status(500)
+            .json({ message: '[🔌] Something went wrong during the site registration' } satisfies RegisterResponse);
     }
 }
 

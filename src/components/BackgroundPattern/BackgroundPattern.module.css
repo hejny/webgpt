@@ -1,0 +1,37 @@
+.BackgroundPattern {
+    /*/
+    outline: 1px dotted yellow;
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    mask-image: linear-gradient(to bottom, transparent 0%, #fff 10vh, #fff 100%)
+        /* <- TODO: [🛹] Make some more interesting mask-gradient */;
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    /* TODO: 100px should be configurable OR same as the coresponding cell in the main grid */
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.layer {
+    /*/
+    outline: 1px dotted yellow;
+    /**/
+
+    z-index: 1000;
+
+    width: 100%;
+    height: 100%;
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+
+    pointer-events: none;
+
+    background: linear-gradient(to bottom, var(--palette-0), rgba(var(--palette-2-triplet), 0.3)),
+        url(/patterns/simple/stripes-grey.png);
+}

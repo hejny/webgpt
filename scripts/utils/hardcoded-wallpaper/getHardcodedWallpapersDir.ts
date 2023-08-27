@@ -2,7 +2,11 @@ import { join } from 'path';
 import { isFolderExisting } from '../isFolderExisting';
 
 /**
- * @@@
+ * Retrieves the hardcoded directory path for wallpapers
+ * 
+ * 
+ * @returns A Promise that resolves to a string representing the directory path.
+ * @throws Error if the assets folder cannot be found.
  */
 export async function getHardcodedWallpapersDir(): Promise<string> {
     // Note: Go down directory tree until assets folder is found:

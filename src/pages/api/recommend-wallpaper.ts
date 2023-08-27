@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
-import { likedStatusToLikeness } from '../../recommendation/likedStatusToLikeness';
-import { pickMostRecommended } from '../../recommendation/pickMostRecommended';
+import { likedStatusToLikeness } from '../../ai/recommendation/likedStatusToLikeness';
+import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
@@ -80,14 +80,16 @@ export default async function recommendWallpaperHandler(
             wallpapersToPick,
         });
 
-        return response.status(200).json({
-            recommendedWallpaper,
-            debug: !NEXT_PUBLIC_DEBUG
-                ? undefined
-                : {
-                      previousReactions,
-                  },
-        } as any);
+        return response.status(200).json(
+            {
+                recommendedWallpaper,
+                debug: !NEXT_PUBLIC_DEBUG
+                    ? undefined
+                    : {
+                          previousReactions,
+                      },
+            } as any /* TODO: satisfies RecommendWallpaperResponse */,
+        );
     } catch (error) {
         if (!(error instanceof Error)) {
             throw error;

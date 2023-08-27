@@ -1,5 +1,5 @@
 /**
- * @@
+ * @@@
  */
 export function PricingTableTailwind() {
     return (

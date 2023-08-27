@@ -28,6 +28,6 @@
         "**/*.tsx",
         ".next/types/**/*.ts",
         "src/utils/content/removeAllEventListeners.ts.todo"
-    ],
+, "src/components/UploadNewWallpaper/computeColorsInWorker.worker.ts.todo", "src/components/UploadNewWallpaper/computeColorsInWorker.ts.todo"    ],
     "exclude": ["node_modules", "cypress", "old"]
 }

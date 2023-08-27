@@ -5,17 +5,36 @@ import { string_css_class, string_title } from '../../utils/typeAliases';
 import styles from './Hint.module.css';
 
 interface HintProps {
+    /**
+     * Unique identifier of the hint
+     */
     id: string;
+
+    /**
+     * Text of the hint
+     */
     title: string_title;
+
+    /**
+     * Content which will is hinted
+     * This is the subject of the hint
+     */
     children?: ReactNode;
 
+    /**
+     * Number of times the hint will reapear before it is removed permanently
+     */
     reapearCount: number;
 
+
+        /**
+     * Optional CSS class name which will be added to root element
+     */
     className?: string_css_class;
 }
 
 /**
- * @@
+ * Renders any content wrapped in a hint
  */
 export function Hint(props: HintProps) {
     const { id, title, children, reapearCount, className } = props;
@@ -43,21 +62,15 @@ export function Hint(props: HintProps) {
             oldHintElement.parentElement!.removeChild(oldHintElement);
         }
 
+        // Hint:
         const hint = window.document.createElement('div');
         root.appendChild(
             hint, // <- TODO: [🧠] Is this better to append in root or hintElement
         );
         hint.innerText = title;
-
         hint.className = classNames(`hint-${id}`, styles.hint!);
-        const { top, left, width, height } = hintTarget.getBoundingClientRect();
-        const right = window.document.body.clientWidth - left;
-        const bottom = window.document.body.clientHeight - top;
 
-        hint.style.position = 'fixed';
-        hint.style.bottom = bottom - height / 2 + 'px';
-        hint.style.right = right + 'px';
-        const highlightPadding = 4; /* <- TODO: [🧠] TO CSS/config  */
+        // Highlight:
         const highlight = window.document.createElement('div');
         root.appendChild(
             highlight,
@@ -65,11 +78,29 @@ export function Hint(props: HintProps) {
             // <- Note: hintHighlightElement really should be sibling (not child) of hintContainer
         );
         highlight.className = classNames(`hint-${id}`, styles.highlight!);
-        highlight.style.position = 'fixed';
-        highlight.style.bottom = bottom - height - highlightPadding + 'px';
-        highlight.style.right = right - width - highlightPadding + 'px';
-        highlight.style.width = width + 2 * highlightPadding + 'px';
-        highlight.style.height = height + 2 * highlightPadding + 'px';
+
+        const updatePositionInterval = setInterval(() => {
+            const { top, left, width, height } = hintTarget.getBoundingClientRect();
+
+            // Common
+            // Note: Using body.scrollWidth to be aware of scrollbars on desktops
+            const right = window.document.body.scrollWidth - left;
+            // Note: Using window.innerHeight to be aware of top navigation bar on mobiles
+            const bottom = window.innerHeight - top;
+
+            // Hint:
+            hint.style.position = 'fixed';
+            hint.style.bottom = bottom - height / 2 + 'px';
+            hint.style.right = right + 'px';
+
+            // Highlight:
+            const highlightPadding = 4; /* <- TODO: [🧠] TO CSS/config  */
+            highlight.style.position = 'fixed';
+            highlight.style.bottom = bottom - height - highlightPadding + 'px';
+            highlight.style.right = right - width - highlightPadding + 'px';
+            highlight.style.width = width + 2 * highlightPadding + 'px';
+            highlight.style.height = height + 2 * highlightPadding + 'px';
+        }, 100);
 
         const hintTargetClickHandler = () => {
             console.info(` 🗯 Complete hint ${title} `);
@@ -89,6 +120,7 @@ export function Hint(props: HintProps) {
             */
 
         return () => {
+            clearInterval(updatePositionInterval);
             try {
                 root.removeChild(hint);
                 root.removeChild(highlight);

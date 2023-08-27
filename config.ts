@@ -4,7 +4,7 @@ import packageJson from './package.json';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { isRunningInBrowser } from './src/utils/isRunningInBrowser';
+import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
 import { isPrivateNetwork } from './src/utils/validators/isPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
@@ -51,6 +51,9 @@ export const LIMIT_WALLPAPERS_EXCLUDE = config.get('LIMIT_WALLPAPERS_EXCLUDE').l
 // export const WELCOME_WALLPAPERS = config.get('WELCOME_WALLPAPERS').list().default([]).value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
+
+export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
+export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
 
 export const EXPORT_OPTIONS = {
     isExported: false,
@@ -103,6 +106,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
+
     /*
     TODO: There is an infinite loop with "Error: Size must have positive integer values, got 19.2x10.8" when using this:
           Fix it:
@@ -139,7 +143,8 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
     // TODO: More with different strategy than createColorfulComputeImageColorStats
 ];
 
-export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0]!;
+export const COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0]!;
+export const COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0]!;
 
 // TODO: [🧠] Pass theese as a parameter to the function createComputeImageColorStats
 

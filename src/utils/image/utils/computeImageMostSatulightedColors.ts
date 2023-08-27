@@ -9,11 +9,15 @@ import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { colorSatulightion } from '../../color/utils/colorSatulightion';
 import { WithTake } from '../../take/interfaces/ITakeChain';
+import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
- * @@@
+ * Compute the most saturated colors in an image
+ *
+ * @param {IImage} image - The image to compute the colors from.
+ * @returns {Promise<Array<{ value: WithTake<Color>; count: number }>>} - An array of objects containing the most saturated colors and their counts.
  */
 export async function computeImageMostSatulightedColors(
     image: IImage,
@@ -45,7 +49,7 @@ export async function computeImageMostSatulightedColors(
                         count++;
                     }
 
-                    await forARest();
+                    await forARest<IComputeColorstatsWork>('computeImageMostSatulightedColors');
                 }
             }
 
@@ -56,7 +60,7 @@ export async function computeImageMostSatulightedColors(
             break;
         }
 
-        await forARest();
+        await forARest<IComputeColorstatsWork>('computeImageMostSatulightedColors');
     }
 
     return uniqueColors;

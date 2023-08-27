@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { Promisable } from 'type-fest';
 import { usePromise } from '../../utils/hooks/usePromise';
 
@@ -6,7 +6,7 @@ interface AsyncContentComponentProps {
     /**
      * The async content to be rendered
      */
-    children: Promisable<React.ReactNode>;
+    children: Promisable<ReactNode>;
 }
 
 /**

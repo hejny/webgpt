@@ -1,19 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLastSavedWallpaper } from '../../utils/hooks/useLastSavedWallpaper';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ColorInput } from '../ColorPreview/ColorInput/ColorInput';
 import { ColorPreview } from '../ColorPreview/ColorPreview';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ColorsPanel.module.css';
 
-interface ColorsPanelProps {}
-
 /**
- * @@@
+ * Renders the colors panel component
  */
-export function ColorsPanel(props: ColorsPanelProps) {
-    const [wallpaper, modifyWallpaper] = useWallpaper();
+export function ColorsPanel() {
+    const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
     const lastSavedWallpaper = useLastSavedWallpaper();
 
     // TODO: Maybe make hook useTemporaryToggle - simmilar to hook useClickOutside
@@ -28,6 +26,11 @@ export function ColorsPanel(props: ColorsPanelProps) {
             setOpen(false);
         }, 5000);
 
+        /**
+         * Handles the click outside of the ColorsPanel component
+         *
+         * @param {MouseEvent} event - The click event.
+         */
         const outclickHandler = (event: MouseEvent) => {
             if (!(event.target instanceof HTMLElement)) {
                 return;
@@ -98,5 +101,6 @@ export function ColorsPanel(props: ColorsPanelProps) {
 
 /**
  * TODO: !!! [🧠] Allow to change fonts - main + header
+ * TODO: !!! Change this to <ColorsAndFontsPanel/> OR [🧠] allow to change fonts here [👩‍🦰] (main + header)
  * TODO: Maybe allow to close the colors
  */

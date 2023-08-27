@@ -1,10 +1,11 @@
 import { forARest } from '../../components/WorkInProgress/forARest';
 import { Color } from '../color/Color';
 import { string_url } from '../typeAliases';
+import { IComputeColorstatsWork } from './IComputeColorstatsWork';
 import { Image as MyImage } from './Image';
 
 /**
- * Define an async function to create an image in the browser
+ * Create new Image in the browser
  *
  * @param path The path to the image file or the URL of the image
  *
@@ -68,7 +69,7 @@ export async function createImageInBrowser(src: string_url): Promise<MyImage> {
                     // Set the color of the pixel in the image object
                     image.setPixel({ x, y }, color);
 
-                    await forARest();
+                    await forARest<IComputeColorstatsWork>('createImageInBrowser');
                 }
             }
 

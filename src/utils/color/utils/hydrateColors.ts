@@ -1,9 +1,11 @@
-import { JsonValue } from 'type-fest';
 import { Json } from '../../supabase/types';
 import { Color } from '../Color';
 
 /**
- * @@@
+ * Hydrates color values in a JSON object
+ * 
+ * @param value - The JSON object to hydrate.
+ * @returns The hydrated JSON object.
  */
 export function hydrateColors(value: Json): any {
     if (typeof value === 'string') {

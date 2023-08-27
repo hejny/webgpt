@@ -5,12 +5,6 @@ import { string_css_class, string_href, string_html } from '../../utils/typeAlia
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { mapLinksInHtml } from './mapLinksInHtml';
 
-/**
- * A function component that renders a div element with parsed HTML content ⁘
- *
- * @param {HtmlContentProps} props - The props for the component.
- * @returns {JSX.Element} A div element with parsed HTML content and optional CSS class name.
- */
 interface HtmlContentProps {
     /**
      * Source html
@@ -18,7 +12,7 @@ interface HtmlContentProps {
     content: string_html;
 
     /**
-     * Optional CSS class name
+     * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
 
@@ -127,4 +121,6 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
 /**
  * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
  * TODO: [🧠][💬] Allow to change fonts and do rich text editing
+ * TODO: [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
+ * TODO: Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/> (<- <HtmlContentEditable/>)
  */

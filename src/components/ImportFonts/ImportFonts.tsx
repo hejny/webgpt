@@ -4,11 +4,14 @@ import { ExportContext } from '../../utils/hooks/ExportContext';
 import { string_font_family } from '../../utils/typeAliases';
 
 interface ImportFontsProps {
+    /**
+     * The fonts to import
+     */
     fonts: Set<string_font_family>;
 }
 
 /**
- * @@
+ * Import fonts into a page
  */
 export function ImportFonts(props: ImportFontsProps) {
     const { fonts } = props;

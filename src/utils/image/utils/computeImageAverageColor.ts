@@ -1,10 +1,15 @@
 import { forARest } from '../../../components/WorkInProgress/forARest';
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
+import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 
 /**
- * @@@
+ * Computes the average color of an image
+ *
+ *
+ * @param {IImage} image - The image object.
+ * @returns {Promise<WithTake<Color>>} The promise that resolves with the average color.
  */
 export async function computeImageAverageColor(image: IImage): Promise<WithTake<Color>> {
     let red = 0;
@@ -20,7 +25,7 @@ export async function computeImageAverageColor(image: IImage): Promise<WithTake<
             blue += pixel.blue;
             alpha += pixel.alpha;
 
-            await forARest();
+            await forARest<IComputeColorstatsWork>('computeImageAverageColor');
         }
     }
 

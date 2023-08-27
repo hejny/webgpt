@@ -1,12 +1,20 @@
 import chalk from 'chalk';
 import moment from 'moment';
-import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT } from '../../../config';
 import { forPlay } from '../forPlay';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
 import { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
 
 /**
- * @@@
+ * Executes a series of async tasks on hardcoded wallpapers
+ *
+ *
+ * @param {Object} options - The options for executing the tasks.
+ * @param {function} options.makeWork - The function that performs the work on each wallpaper file.
+ * @param {number} options.parallelWorksCount - The maximum number of parallel works.
+ * @param {boolean} options.isShuffled - Determines if the wallpapers should be shuffled before processing.
+ * @param {string} options.logBeforeEachWork - The property of the wallpaper files to log before each work.
+ * @returns {Promise<void>} - A promise that resolves when all tasks have been completed.
  */
 export async function forEachHardcodedWallpaper(options: {
     makeWork(wallpeperFiles: IHardcodedWallpaperFiles): Promise<void>;
@@ -37,7 +45,7 @@ export async function forEachHardcodedWallpaper(options: {
         const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
         const colorStatsFilePath = metadataFilePath.replace(
             /\.json$/,
-            `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
+            `.${COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT.version}.colors.yaml`,
         );
 
         const wallpaperFiles = { metadataFilePath, contentFilePath, colorStatsFilePath };

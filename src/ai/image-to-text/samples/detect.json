@@ -1,0 +1,55 @@
+{
+    "objects": [
+        {
+            "rectangle": {
+                "x": 922,
+                "y": 464,
+                "w": 87,
+                "h": 182
+            },
+            "object": "person",
+            "confidence": 0.674
+        },
+        {
+            "rectangle": {
+                "x": 874,
+                "y": 210,
+                "w": 252,
+                "h": 252
+            },
+            "object": "Balloon",
+            "confidence": 0.59,
+            "parent": {
+                "object": "Toy",
+                "confidence": 0.603
+            }
+        },
+        {
+            "rectangle": {
+                "x": 388,
+                "y": 475,
+                "w": 124,
+                "h": 277
+            },
+            "object": "person",
+            "confidence": 0.745
+        },
+        {
+            "rectangle": {
+                "x": 548,
+                "y": 460,
+                "w": 125,
+                "h": 272
+            },
+            "object": "person",
+            "confidence": 0.757
+        }
+    ],
+    "requestId": "dba45157-03eb-4c81-a9c9-2c2e5aa76dc7",
+    "metadata": {
+        "width": 1344,
+        "height": 896,
+        "format": "Jpeg"
+    },
+    "modelVersion": "2021-04-01"
+}

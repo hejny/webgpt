@@ -14,5 +14,5 @@ export default async function wallpapersIdsHandler(
             id,
             primaryColor: (colorStats as any).palette[0].value as any as string,
         })),
-    });
+    } satisfies WallpapersResponse);
 }

@@ -8,6 +8,9 @@ import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
 import { PreventUnsavedChanges } from './PreventUnsavedChanges';
 
+/**
+ * Renders the wallpaper editing stuff (control panel, colors panel, modals)
+ */
 export function WallpaperEditing() {
     const router = useRouter();
     const isReady = router.isReady;
