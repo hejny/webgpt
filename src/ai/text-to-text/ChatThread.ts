@@ -1,18 +1,26 @@
 import { string_chat_prompt, string_model_name } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 
-// TODO: !!! Annotate
-
 /**
  * Thread to the ChotGPT
  *
  * Note: This function is aviable only on the server
  */
 export class ChatThread {
+    /**
+     * Starts a new ChatThread conversation
+     *
+     * @param request text to send to the OpenAI API
+     * @returns response from the OpenAI API wrapped in ChatThread
+     */
     public static async ask(request: string_chat_prompt): Promise<ChatThread> {
         return /* not await */ ChatThread.create(null, request);
     }
 
+    /**
+     * Makes a request to the OpenAI API and returns a response wrapped in ChatThread
+     * @private utility function
+     */
     private static async create(parentChatThread: null | ChatThread, request: string_chat_prompt): Promise<ChatThread> {
         performance.mark('ask-gpt-start');
         const completion = await getOpenaiForServer().chat.completions.create({
@@ -46,6 +54,7 @@ export class ChatThread {
         return new ChatThread(parentChatThread, completion.model as string_model_name, request, response);
     }
 
+    
     private constructor(
         public readonly parent: null | ChatThread,
         public readonly model: string_model_name,
@@ -53,11 +62,17 @@ export class ChatThread {
         public readonly response: string,
     ) {}
 
+
+    /**
+     * Continues in ChatThread conversation
+     *
+     * @param request text to send to the OpenAI API
+     * @returns response from the OpenAI API wrapped in ChatThread
+     */
     public async ask(request: string_chat_prompt): Promise<ChatThread> {
         return /* not await */ ChatThread.create(this, request);
     }
 }
-
 
 /**
  * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and ChatThread
