@@ -80,6 +80,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const response = await fetch('/api/upload-wallpaper', {
         method: 'POST',
         body: formData,
+        signal: AbortSignal.timeout(60000),
     });
 
     if (response.ok === false) {
