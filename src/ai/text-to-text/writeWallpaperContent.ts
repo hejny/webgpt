@@ -51,7 +51,7 @@ export async function writeWallpaperContent(
     );
 
     const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
-    const font = chatThreadFont.response as string_font_family;
+    const font = removeQuotes(chatThreadFont.response) as string_font_family;
 
     console.log(chatThreadFont);
 
