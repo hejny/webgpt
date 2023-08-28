@@ -4,7 +4,11 @@ import { logDialogue } from '../../utils/dialogues/logDialogue';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
-import { IMessage_CreateNewWallpaper_Request, IMessage_CreateNewWallpaper_Result } from './createNewWallpaper.worker';
+import {
+    IMessage_CreateNewWallpaper_Error,
+    IMessage_CreateNewWallpaper_Request,
+    IMessage_CreateNewWallpaper_Result,
+} from './createNewWallpaper.worker';
 import styles from './UploadNewWallpaper.module.css';
 
 export function UploadNewWallpaper() {
@@ -38,11 +42,25 @@ export function UploadNewWallpaper() {
                         wallpaperImage: file,
                     } satisfies IMessage_CreateNewWallpaper_Request);
 
-                    worker.addEventListener('message', (event: MessageEvent<IMessage_CreateNewWallpaper_Result>) => {
-                        const { wallpaperId } = event.data;
-                        router.push(`/${wallpaperId}`);
-                        // Note: No need to setWorking(false); because we are redirecting to another page
-                    });
+                    worker.addEventListener(
+                        'message',
+                        (
+                            event: MessageEvent<IMessage_CreateNewWallpaper_Result | IMessage_CreateNewWallpaper_Error>,
+                        ) => {
+                            const { type } = event.data;
+
+                            if (type === 'CREATE_NEW_WALLPAPER_RESULT') {
+                                const { wallpaperId } = event.data;
+                                router.push(`/${wallpaperId}`);
+                                // Note: No need to setWorking(false); because we are redirecting to another page
+                            } else if (type === 'CREATE_NEW_WALLPAPER_ERROR') {
+                                const { message } = event.data;
+                                alert(message);
+                            } else {
+                                throw new Error(`Unexpected message type: ${type}`);
+                            }
+                        },
+                    );
                 }}
             >
                 Upload image and make web:

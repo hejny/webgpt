@@ -18,15 +18,33 @@ export interface IMessage_CreateNewWallpaper_Result {
     wallpaperId: string_wallpaper_id;
 }
 
+export interface IMessage_CreateNewWallpaper_Error {
+    type: 'CREATE_NEW_WALLPAPER_ERROR';
+    message: string;
+}
+
 addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpaper_Request>) => {
     // COLORSTATS_COMPUTE_METHODS
     const { author, wallpaperImage } = event.data;
-    const newWallpaper = await createNewWallpaper(author, wallpaperImage);
 
-    postMessage({
-        type: 'CREATE_NEW_WALLPAPER_RESULT',
-        wallpaperId: newWallpaper.id,
-    } satisfies IMessage_CreateNewWallpaper_Result);
+    try {
+        const newWallpaper = await createNewWallpaper(author, wallpaperImage);
+
+        postMessage({
+            type: 'CREATE_NEW_WALLPAPER_RESULT',
+            wallpaperId: newWallpaper.id,
+        } satisfies IMessage_CreateNewWallpaper_Result);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        console.error(error);
+        postMessage({
+            type: 'CREATE_NEW_WALLPAPER_ERROR',
+            message: error.message,
+        } satisfies IMessage_CreateNewWallpaper_Error);
+    }
 });
 
 async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
