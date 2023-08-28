@@ -33,7 +33,7 @@ export default function WallpaperPage(props: WallpaperPageProps) {
             <div>
                 Not found
                 <br />
-                <Link href="/" /*className={'button'} */>Pick from gallery</Link>
+                <Link href="/" /*className={'button'} */>Pick options</Link>
                 {/*
                 TODO: Pass randomWallpaper in non-hardcoded wallpapers
                 <Link href={`/${randomWallpaper.id}`} className={'button'}>

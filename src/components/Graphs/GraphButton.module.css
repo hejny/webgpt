@@ -1,0 +1,19 @@
+.GraphButton {
+    /**/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+}
+
+.scene {
+    /**/
+    outline: 1px dotted rgb(38, 114, 255);
+    /**/
+
+    width: 200px;
+    height: 200px;
+}
