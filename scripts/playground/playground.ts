@@ -5,7 +5,7 @@ dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import { join } from 'path';
-// import { askChatGpt } from '../../src/ai/text-to-text/askChatGpt';
+// import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
 import spaceTrim from 'spacetrim';
 import { getOpenaiForServer } from '../../src/ai/text-to-text/getOpenaiForServer';
 
