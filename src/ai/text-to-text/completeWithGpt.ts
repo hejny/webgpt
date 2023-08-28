@@ -50,5 +50,5 @@ export async function completeWithGpt(prompt: string_completion_prompt): Promise
 }
 
 /**
- * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and askChatGpt
+ * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and ChatThread
  */
