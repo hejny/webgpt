@@ -82,6 +82,10 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
         body: formData,
     });
 
+    if (response.ok === false) {
+        throw new Error(`Upload wallpaper failed with status ${response.status}`);
+    }
+
     const { wallpaperUrl, wallpaperDescription, wallpaperContent } = (await response.json()) as UploadWallpaperResponse;
     performance.mark('upload-image-and-write-content-end');
     performance.measure(
