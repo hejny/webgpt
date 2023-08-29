@@ -31,8 +31,6 @@ export default function NewWallpaperPage() {
 }
 
 /**
- * TODO: !!! Make (probbably in /other) some library of custom wallpaper samples
- * TODO: !! Page structure - back to random wallpaper, samples, gallery,...
  * TODO: !! Create some meaningfull content by AI recognition
  * TODO: [🕶] <ul><a><li> vs <ul><li><a>
  */

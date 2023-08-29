@@ -30,8 +30,5 @@ export default function NewWallpaperFromImagePage() {
 }
 
 /**
- * TODO: !!! Make (probbably in /other) some library of custom wallpaper samples
- * TODO: !! Page structure - back to random wallpaper, samples, gallery,...
  * TODO: Allow to use Camera (maybe in new route /new/from-camera)
- * TODO: !! Create some meaningfull content by AI recognition
  */
