@@ -135,7 +135,7 @@
         },
         {
             "name": "⏫ Trigger Build",
-            "commands": [" git commit --allow-empty -m \"⏫ Trigger Build\""],
+            "commands": ["git commit --allow-empty -m \"⏫ Trigger Build\"", "git push"],
             "onlySingle": true,
             "focus": true
         },
