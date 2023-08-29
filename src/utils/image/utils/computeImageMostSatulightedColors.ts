@@ -3,7 +3,7 @@ import {
     DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
     MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO,
 } from '../../../../config';
-import { forARest } from '../../../components/WorkInProgress/forARest';
+import { forARest } from '../../../components/TaskInProgress/forARest';
 import { Color } from '../../color/Color';
 import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { colorHueDistance } from '../../color/utils/colorHueDistance';

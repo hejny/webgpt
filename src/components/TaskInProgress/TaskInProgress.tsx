@@ -11,7 +11,7 @@ import {
 } from 'babylonjs';
 import { useEffect, useRef } from 'react';
 import { restNonce } from './forARest';
-import styles from './WorkInProgress.module.css';
+import styles from './TaskInProgress.module.css';
 
 export interface PlotFunction {
     (t: number, u: number, v: number): [x: number, y: number, z: number];
@@ -21,7 +21,7 @@ export interface PlotFunction {
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
  */
-export function WorkInProgress() {
+export function TaskInProgress() {
     /*/
     TODO: !!! Use or remove
     const [nonce, setNonce] = useState(0);
@@ -109,7 +109,7 @@ export function WorkInProgress() {
     }, [sceneRef]);
 
     return (
-        <div className={styles.WorkInProgress}>
+        <div className={styles.TaskInProgress}>
             {restNonce}
             <canvas ref={sceneRef} className={styles.scene} />
         </div>

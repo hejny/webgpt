@@ -1,5 +1,5 @@
 import { IVector, Vector } from 'xyzt';
-import { forARest } from '../../../../components/WorkInProgress/forARest';
+import { forARest } from '../../../../components/TaskInProgress/forARest';
 import { take } from '../../../take/take';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImage } from '../../IImage';

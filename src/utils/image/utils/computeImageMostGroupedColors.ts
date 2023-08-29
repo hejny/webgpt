@@ -1,4 +1,4 @@
-import { forARest } from '../../../components/WorkInProgress/forARest';
+import { forARest } from '../../../components/TaskInProgress/forARest';
 import { Color } from '../../color/Color';
 import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { WithTake } from '../../take/interfaces/ITakeChain';

@@ -2,8 +2,8 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { logDialogue } from '../../utils/dialogues/logDialogue';
 import { provideClientId } from '../../utils/supabase/provideClientId';
+import { TaskInProgress } from '../TaskInProgress/TaskInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
-import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 import {
     IMessage_CreateNewWallpaper_Error,
     IMessage_CreateNewWallpaper_Request,
@@ -66,7 +66,7 @@ export function UploadNewWallpaper() {
             >
                 Upload image and make web:
             </UploadZone>
-            {isWorking && <WorkInProgress />}
+            {isWorking && <TaskInProgress />}
         </>
     );
 }

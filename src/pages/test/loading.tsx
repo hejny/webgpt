@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
-import { WorkInProgress } from '../../components/WorkInProgress/WorkInProgress';
+import { TaskInProgress } from '../../components/TaskInProgress/TaskInProgress';
 
 export default function TestLoadingPage() {
     const router = useRouter();
@@ -8,7 +8,7 @@ export default function TestLoadingPage() {
     return (
         <>
             <StaticAppHead subtitle={null} />
-            <WorkInProgress />
+            <TaskInProgress />
         </>
     );
 }
