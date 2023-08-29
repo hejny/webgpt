@@ -18,21 +18,39 @@ export interface IMessage_CreateNewWallpaper_Result {
     wallpaperId: string_wallpaper_id;
 }
 
+export interface IMessage_CreateNewWallpaper_Error {
+    type: 'CREATE_NEW_WALLPAPER_ERROR';
+    message: string;
+}
+
 addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpaper_Request>) => {
     // COLORSTATS_COMPUTE_METHODS
     const { author, wallpaperImage } = event.data;
-    const newWallpaper = await createNewWallpaper(author, wallpaperImage);
 
-    postMessage({
-        type: 'CREATE_NEW_WALLPAPER_RESULT',
-        wallpaperId: newWallpaper.id,
-    } satisfies IMessage_CreateNewWallpaper_Result);
+    try {
+        const newWallpaper = await createNewWallpaper(author, wallpaperImage);
+
+        postMessage({
+            type: 'CREATE_NEW_WALLPAPER_RESULT',
+            wallpaperId: newWallpaper.id,
+        } satisfies IMessage_CreateNewWallpaper_Result);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        console.error(error);
+        postMessage({
+            type: 'CREATE_NEW_WALLPAPER_ERROR',
+            message: error.message,
+        } satisfies IMessage_CreateNewWallpaper_Error);
+    }
 });
 
 async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const wallpaperResizedCanvas = await createOffscreenCanvas(
         wallpaperOriginalBlob,
-        IMAGE_NATURAL_SIZE.scale(0.5) /* <- TODO: [🧔] This should be in config */,
+        IMAGE_NATURAL_SIZE.scale(0.2) /* <- TODO: [🧔] This should be in config */,
     );
     const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
 
@@ -62,7 +80,12 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const response = await fetch('/api/upload-wallpaper', {
         method: 'POST',
         body: formData,
+        signal: AbortSignal.timeout(60000),
     });
+
+    if (response.ok === false) {
+        throw new Error(`Upload wallpaper failed with status ${response.status}`);
+    }
 
     const { wallpaperUrl, wallpaperDescription, wallpaperContent } = (await response.json()) as UploadWallpaperResponse;
     performance.mark('upload-image-and-write-content-end');

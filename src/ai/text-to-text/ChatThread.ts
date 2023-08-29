@@ -22,7 +22,9 @@ export class ChatThread {
      * @private utility function
      */
     private static async create(parentChatThread: null | ChatThread, request: string_chat_prompt): Promise<ChatThread> {
-        performance.mark('ask-gpt-start');
+        const mark = `ask-gpt-${parentChatThread ? parentChatThread.chatSize : 1}`;
+
+        performance.mark(`${mark}-start`);
         const completion = await getOpenaiForServer().chat.completions.create({
             model: 'gpt-3.5-turbo' /* <- TODO: To global config */,
             messages: [
@@ -32,8 +34,8 @@ export class ChatThread {
                 },
             ],
         });
-        performance.mark('ask-gpt-end');
-        console.log(performance.measure('ask-gpt', 'ask-gpt-start', 'ask-gpt-end'));
+        performance.mark(`${mark}-end`);
+        console.log(performance.measure(mark, `${mark}-start`, `${mark}-end`));
 
         if (!completion.choices[0]) {
             throw new Error(`No choises from OpenAPI`);
@@ -54,14 +56,12 @@ export class ChatThread {
         return new ChatThread(parentChatThread, completion.model as string_model_name, request, response);
     }
 
-    
     private constructor(
         public readonly parent: null | ChatThread,
         public readonly model: string_model_name,
         public readonly request: string_chat_prompt,
         public readonly response: string,
     ) {}
-
 
     /**
      * Continues in ChatThread conversation
@@ -71,6 +71,10 @@ export class ChatThread {
      */
     public async ask(request: string_chat_prompt): Promise<ChatThread> {
         return /* not await */ ChatThread.create(this, request);
+    }
+
+    public get chatSize(): number {
+        return this.parent ? this.parent.chatSize + 1 : 1;
     }
 }
 

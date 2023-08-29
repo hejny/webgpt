@@ -1,10 +1,13 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { logDialogue } from '../../utils/dialogues/logDialogue';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
-import { IMessage_CreateNewWallpaper_Request, IMessage_CreateNewWallpaper_Result } from './createNewWallpaper.worker';
+import {
+    IMessage_CreateNewWallpaper_Error,
+    IMessage_CreateNewWallpaper_Request,
+    IMessage_CreateNewWallpaper_Result,
+} from './createNewWallpaper.worker';
 import styles from './UploadNewWallpaper.module.css';
 
 export function UploadNewWallpaper() {
@@ -18,9 +21,6 @@ export function UploadNewWallpaper() {
                 isClickable
                 isMultipleAllowed={false}
                 accept="image/*"
-                onFilesOver={() => {
-                    /* not await */ logDialogue('Drop image to make web!');
-                }}
                 onFiles={async ([file]) => {
                     if (!file) {
                         return;
@@ -28,9 +28,10 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    /* not await */ logDialogue('Uploading image and making web...');
-
-                    const worker = new Worker(new URL('./createNewWallpaper.worker.ts', import.meta.url));
+                    console.log('Testing dynamic imports 2');
+                    const TESTING_DYNAMIC_IMPORTS =
+                        './createNewWallpaper.worker.ts'; /* <- TODO: !!! Remove when tested */
+                    const worker = new Worker(new URL(TESTING_DYNAMIC_IMPORTS, import.meta.url));
 
                     worker.postMessage({
                         type: 'CREATE_NEW_WALLPAPER_REQUEST',
@@ -38,14 +39,30 @@ export function UploadNewWallpaper() {
                         wallpaperImage: file,
                     } satisfies IMessage_CreateNewWallpaper_Request);
 
-                    worker.addEventListener('message', (event: MessageEvent<IMessage_CreateNewWallpaper_Result>) => {
-                        const { wallpaperId } = event.data;
-                        router.push(`/${wallpaperId}`);
-                        // Note: No need to setWorking(false); because we are redirecting to another page
-                    });
+                    worker.addEventListener(
+                        'message',
+                        (
+                            event: MessageEvent<IMessage_CreateNewWallpaper_Result | IMessage_CreateNewWallpaper_Error>,
+                        ) => {
+                            const { type } = event.data;
+
+                            if (type === 'CREATE_NEW_WALLPAPER_RESULT') {
+                                const { wallpaperId } = event.data;
+                                router.push(`/${wallpaperId}`);
+                                // Note: No need to setWorking(false); because we are redirecting to another page
+                            } else if (type === 'CREATE_NEW_WALLPAPER_ERROR') {
+                                const { message } = event.data;
+                                alert(message);
+                            } else {
+                                throw new Error(`Unexpected message type: ${type}`);
+                            }
+                        },
+                    );
                 }}
             >
-                Upload image and make web:
+                Drop image to
+                <br />
+                <b>make new web</b>
             </UploadZone>
             {isWorking && <WorkInProgress />}
         </>
@@ -55,7 +72,7 @@ export function UploadNewWallpaper() {
 /**
  * TODO: !! Error handling in worker
  * TODO: Send progress from worker to UI
- * TODO: !!! Speed up the computation of colorstats
+ * TODO: !! Speed up the computation of colorstats
  * TODO: Detect image content and write content dynamically just for this image
  * TODO: Compute colorstats in worker
  * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks

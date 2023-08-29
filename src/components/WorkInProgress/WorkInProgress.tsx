@@ -1,5 +1,5 @@
-import { restNonce } from './forARest';
 import { useGraph } from '../Graphs/useGraph';
+import { restNonce } from './forARest';
 import styles from './WorkInProgress.module.css';
 
 export interface PlotFunction {
@@ -12,7 +12,7 @@ export interface PlotFunction {
  */
 export function WorkInProgress() {
     /*/
-    TODO: !!! Use or remove
+    TODO: !! Use or remove
     const [nonce, setNonce] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {

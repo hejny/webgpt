@@ -1,0 +1,12 @@
+.Center {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    position: flex;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
