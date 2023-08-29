@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { createNewWallpaperWorker } from '../../workers';
+import { getCreateNewWallpaperWorker } from '../../workers/createNewWallpaper';
 import {
     IMessage_CreateNewWallpaper_Error,
     IMessage_CreateNewWallpaper_Request,
@@ -29,13 +29,13 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    createNewWallpaperWorker.postMessage({
+                    getCreateNewWallpaperWorker().postMessage({
                         type: 'CREATE_NEW_WALLPAPER_REQUEST',
                         author: provideClientId(),
                         wallpaperImage: file,
                     } satisfies IMessage_CreateNewWallpaper_Request);
 
-                    createNewWallpaperWorker.addEventListener(
+                    getCreateNewWallpaperWorker().addEventListener(
                         'message',
                         (
                             event: MessageEvent<IMessage_CreateNewWallpaper_Result | IMessage_CreateNewWallpaper_Error>,
