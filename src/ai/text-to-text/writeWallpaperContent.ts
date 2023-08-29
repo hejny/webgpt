@@ -38,8 +38,8 @@ export async function writeWallpaperContent(
     );
     const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
         spaceTrim(
-            // TODO: !!! This prompt should be also created in some template function
-            // TODO: !!! Pefect this prompt
+            // TODO: [🤡] This prompt should be also created in some template function
+            // TODO: [🤡] Pefect this prompt
             (block) => `
 
                 Following is markdown content of a webpage:

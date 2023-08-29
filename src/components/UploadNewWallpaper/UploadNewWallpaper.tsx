@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { logDialogue } from '../../utils/dialogues/logDialogue';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { TaskInProgress } from '../TaskInProgress/TaskInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
@@ -22,9 +21,6 @@ export function UploadNewWallpaper() {
                 isClickable
                 isMultipleAllowed={false}
                 accept="image/*"
-                onFilesOver={() => {
-                    /* not await */ logDialogue('Drop image to make web!');
-                }}
                 onFiles={async ([file]) => {
                     if (!file) {
                         return;
@@ -32,10 +28,10 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    /* not await */ logDialogue('Uploading image and making web...');
-
-                    const TESTING_DYNAMIC_IMPORTS = 'createNewWallpaper'; /* <- !!! Remve */
-                    const worker = new Worker(new URL('./' + TESTING_DYNAMIC_IMPORTS + '.worker.ts', import.meta.url));
+                    console.log('Testing dynamic imports 2');
+                    const TESTING_DYNAMIC_IMPORTS =
+                        './createNewWallpaper.worker.ts'; /* <- TODO: !!! Remove when tested */
+                    const worker = new Worker(new URL(TESTING_DYNAMIC_IMPORTS, import.meta.url));
 
                     worker.postMessage({
                         type: 'CREATE_NEW_WALLPAPER_REQUEST',
@@ -64,7 +60,9 @@ export function UploadNewWallpaper() {
                     );
                 }}
             >
-                Upload image and make web:
+                Drop image to
+                <br />
+                <b>make new web</b>
             </UploadZone>
             {isWorking && <TaskInProgress />}
         </>

@@ -1,5 +1,3 @@
-import OpenAI from 'openai';
-import { OPENAI_API_KEY } from '../../../config';
 import { string_completion_prompt, string_model_name } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 
@@ -7,13 +5,6 @@ export interface ICompleteWithGptResult {
     response: string;
     model: string_model_name;
 }
-
-/**
- * TODO: !!! Make this lazy on-demand + DRY ACRY
- */
-const openai = new OpenAI({
-    apiKey: OPENAI_API_KEY!,
-});
 
 /**
  * Complete a prompt with GPT
@@ -25,7 +16,7 @@ export async function completeWithGpt(prompt: string_completion_prompt): Promise
     const completion = await getOpenaiForServer().completions.create({
         model: 'text-davinci-003',
         max_tokens: 500,
-        // <- TODO: !!! Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
+        // <- TODO: [🤡] Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
         prompt,
     });
     performance.mark('complete-gpt-end');
