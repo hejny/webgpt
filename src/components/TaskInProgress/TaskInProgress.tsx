@@ -107,6 +107,7 @@ export function TaskInProgress() {
 }
 
 /**
+ * TODO: !!! Pass here TaskProgress and show
  * TODO: Play with shape and camera angle
  * TODO: Size of babylonjs in bundle - maybe prerecord as video
  * TODO: Maybe work with xyzt
