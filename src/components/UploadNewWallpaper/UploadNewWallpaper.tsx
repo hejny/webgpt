@@ -31,7 +31,10 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    const worker = new Worker(new URL('./createNewWallpaper.worker.ts', import.meta.url));
+                    /* not await */ logDialogue('Uploading image and making web...');
+
+                    const TESTING_DYNAMIC_IMPORTS = 'createNewWallpaper'; /* <- !!! Remve */
+                    const worker = new Worker(new URL('./' + TESTING_DYNAMIC_IMPORTS + '.worker.ts', import.meta.url));
 
                     worker.postMessage({
                         type: 'CREATE_NEW_WALLPAPER_REQUEST',
