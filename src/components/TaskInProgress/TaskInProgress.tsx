@@ -13,11 +13,6 @@ import { useEffect, useRef } from 'react';
 import { restNonce } from './forARest';
 import styles from './TaskInProgress.module.css';
 
-export interface PlotFunction {
-    (t: number, u: number, v: number): [x: number, y: number, z: number];
-    range: [u: number, v: number];
-}
-
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
  */
@@ -62,11 +57,6 @@ export function TaskInProgress() {
         // scene.debugLayer.show();
 
         //==============================================
-
-        const plotPoint: PlotFunction = (t, u, v) => {
-            return [0, 0, 0];
-        };
-        plotPoint.range = [0, 1];
 
         let ribbon = MeshBuilder.CreateTorus(
             'ribbon',
