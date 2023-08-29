@@ -28,7 +28,8 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    const TESTING_DYNAMIC_IMPORTS = 'createNewWallpaper'; /* <- !!! Remve */
+                    console.log('Testing dynamic imports');
+                    const TESTING_DYNAMIC_IMPORTS = 'createNewWallpaper'; /* <- TODO: !!! Remove when tested */
                     const worker = new Worker(new URL('./' + TESTING_DYNAMIC_IMPORTS + '.worker.ts', import.meta.url));
 
                     worker.postMessage({
