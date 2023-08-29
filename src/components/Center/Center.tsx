@@ -1,14 +1,9 @@
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
-import styles from './Sample.module.css';
+import styles from './Center.module.css';
 
-interface SampleProps {
-    /**
-     * @@
-     */
-    Sample: string;
-
+interface CenterProps {
     /**
      * Content which will is hinted
      * This is the subject of the hint
@@ -22,14 +17,9 @@ interface SampleProps {
 }
 
 /**
- * Renders a @@
+ * Centers the content in both directions
  */
-export function Sample(props: SampleProps) {
-    const { Sample, children, className } = props;
-    return (
-        <div className={classNames(className, styles.Sample)}>
-            {Sample}
-            {children}
-        </div>
-    );
+export function Center(props: CenterProps) {
+    const { children, className } = props;
+    return <div className={classNames(className, styles.Center)}>{children}</div>;
 }

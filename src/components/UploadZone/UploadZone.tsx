@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
+import { Center } from '../Center/Center';
 import styles from './UploadZone.module.css';
 
 interface UploadZoneProps {
@@ -108,8 +109,7 @@ export function UploadZone(props: UploadZoneProps) {
                 }}
                 {...{ accept }}
             />
-            {children}
-            {/* TODO: !!! <Center className={styles.inner}>{children}</Center>*/}
+            <Center className={styles.inner}>{children}</Center>
         </div>
     );
 }
