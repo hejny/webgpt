@@ -2,7 +2,7 @@ import { parseKeywordsFromString } from 'n12';
 import { DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../../config';
 import { Color } from '../../../../utils/color/Color';
 import { colorDistanceSquared } from '../../../../utils/color/utils/colorDistance';
-import { IWallpaper } from '../../../../utils/IWallpaper';
+import { IWallpaper } from '../../../../utils/interfaces/IWallpaper';
 import { IGalleryFilter } from '../IGalleryFilter';
 
 export function filterWallpapers(

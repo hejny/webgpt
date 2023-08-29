@@ -2,7 +2,7 @@ import { nameToUriParts } from 'n12';
 import seedrandom from 'seedrandom';
 import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { serializeColorStats } from './image/utils/serializeColorStats';
-import { IWallpaper } from './IWallpaper';
+import { IWallpaper } from './interfaces/IWallpaper';
 import { randomString } from './randomString';
 import { string_uriid } from './typeAliases';
 

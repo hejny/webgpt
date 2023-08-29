@@ -1,6 +1,6 @@
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
 import { serializeColorStats } from './image/utils/serializeColorStats';
-import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
+import { IWallpaper, IWallpaperSerialized } from './interfaces/IWallpaper';
 
 export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
     return { ...json, colorStats: hydrateColorStats(json.colorStats), saveStage: 'SAVED' } as IWallpaper;

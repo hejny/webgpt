@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { IWallpaper } from '../IWallpaper';
+import { IWallpaper } from '../interfaces/IWallpaper';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useWallpaperSubject } from './useWallpaperSubject';
 

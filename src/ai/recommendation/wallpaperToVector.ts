@@ -1,4 +1,4 @@
-import { IWallpaper } from '../../utils/IWallpaper';
+import { IWallpaper } from '../../utils/interfaces/IWallpaper';
 import { IWallpaperVector } from './IWallpaperVector';
 
 export function wallpaperToVector(wallpaper: IWallpaper): IWallpaperVector {

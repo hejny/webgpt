@@ -1,6 +1,6 @@
 import { string_keyword } from 'n12';
-import { Json } from '../utils/supabase/types';
-import { IImageColorStats } from './image/utils/IImageColorStats';
+import { Json } from '../supabase/types';
+import { IImageColorStats } from '../image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
 import {
     string_html,
@@ -9,7 +9,7 @@ import {
     string_url,
     string_wallpaper_id,
     uuid,
-} from './typeAliases';
+} from '../typeAliases';
 
 export interface IWallpaper {
     id: string_wallpaper_id;
@@ -48,4 +48,5 @@ export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'saveStage'> 
 
 /**
  * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"
+ * TODO: Maybe in some different folder
  */
