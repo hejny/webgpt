@@ -47,10 +47,12 @@ addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpap
     }
 });
 
+// !!! remove TODO files 
+
 async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const wallpaperResizedCanvas = await createOffscreenCanvas(
         wallpaperOriginalBlob,
-        IMAGE_NATURAL_SIZE.scale(0.5) /* <- TODO: [🧔] This should be in config */,
+        IMAGE_NATURAL_SIZE.scale(0.2) /* <- TODO: [🧔] This should be in config */,
     );
     const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
 
