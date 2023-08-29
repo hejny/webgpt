@@ -10,7 +10,7 @@ import {
 } from '../../../config';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
-import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/interfaces/IWallpaper';
+import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
 import { string_file_path } from '../../../src/utils/typeAliases';
 import { isFileExisting } from '../isFileExisting';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';

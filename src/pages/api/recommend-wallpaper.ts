@@ -4,7 +4,7 @@ import { likedStatusToLikeness } from '../../ai/recommendation/likedStatusToLike
 import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
-import { IWallpaper, IWallpaperSerialized } from '../../utils/interfaces/IWallpaper';
+import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { number_likeness, string_url } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';

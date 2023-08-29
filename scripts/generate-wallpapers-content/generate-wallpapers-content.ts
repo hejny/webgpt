@@ -11,7 +11,7 @@ import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { FONTS, OPENAI_API_KEY } from '../../config';
 import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
-import { IWallpaperMetadata } from '../../src/utils/interfaces/IWallpaper';
+import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';

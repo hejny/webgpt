@@ -10,7 +10,7 @@ import { useMode } from '../utils/hooks/useMode';
 import { useSsrDetection } from '../utils/hooks/useSsrDetection';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
-import { IWallpaperSerialized } from '../utils/interfaces/IWallpaper';
+import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import { string_wallpaper_id } from '../utils/typeAliases';
 import { validateUuid } from '../utils/validators/validateUuid';

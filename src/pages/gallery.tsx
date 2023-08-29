@@ -7,7 +7,7 @@ import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
-import { IWallpaperSerialized } from '../utils/interfaces/IWallpaper';
+import { IWallpaperSerialized } from '../utils/IWallpaper';
 
 interface GalleryPageProps {
     /**

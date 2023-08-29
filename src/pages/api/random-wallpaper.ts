@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IWallpaperSerialized } from '../../utils/interfaces/IWallpaper';
+import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
 export interface RandomWallpaperResponse {
@@ -17,9 +17,11 @@ export default async function randomWallpaperHandler(
         .limit(1)
         .single();
 
-    return response.status(200).json(
-        {
-            randomWallpaper: result.data,
-        } as any /* <- TODO: Remove any and replace by satisfies RandomWallpaperResponse*/,
-    );
+    return response
+        .status(200)
+        .json(
+            {
+                randomWallpaper: result.data,
+            } as any /* <- TODO: Remove any and replace by satisfies RandomWallpaperResponse*/,
+        );
 }

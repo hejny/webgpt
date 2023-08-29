@@ -1,7 +1,7 @@
 import { parseKeywordsFromWallpaper } from '../components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { extractTitleFromContent } from './content/extractTitleFromContent';
-import { IWallpaper } from './interfaces/IWallpaper';
+import { IWallpaper } from './IWallpaper';
 
 /**
  * Populates the wallpaper with computable values if they are not present

@@ -2,7 +2,7 @@ import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../../config';
 import { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
-import { IWallpaperSerialized } from '../../../utils/interfaces/IWallpaper';
+import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { provideClientId } from '../../../utils/supabase/provideClientId';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
