@@ -2,6 +2,7 @@ import parse from 'html-react-parser';
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { string_css_class, string_href, string_html } from '../../utils/typeAliases';
+import { Hint } from '../Hint/Hint';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { mapLinksInHtml } from './mapLinksInHtml';
 
@@ -112,9 +113,15 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
     }, [content, onHtmlChange, elementRef]);
 
     return (
-        <div {...{ className }} ref={elementRef}>
-            This will be never shown because it is immediatelly replaced here [3] in useLayoutEffect
-        </div>
+        <Hint
+            id="wallpaper-content-edit"
+            /* <- TODO: This should be passed in props  */ title="Edit the text"
+            reapearCount={0}
+        >
+            <div {...{ className }} ref={elementRef}>
+                This will be never shown because it is immediatelly replaced here [3] in useLayoutEffect
+            </div>
+        </Hint>
     );
 }
 
