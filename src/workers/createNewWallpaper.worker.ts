@@ -1,11 +1,11 @@
-import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../../config';
-import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
-import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
-import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { createImageInWorker } from '../../utils/image/createImageInWorker';
-import { createOffscreenCanvas } from '../../utils/image/createOffscreenCanvas';
-import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
+import { UploadWallpaperResponse } from '../pages/api/upload-wallpaper';
+import { addWallpaperComputables } from '../utils/addWallpaperComputables';
+import { serializeWallpaper } from '../utils/hydrateWallpaper';
+import { createImageInWorker } from '../utils/image/createImageInWorker';
+import { createOffscreenCanvas } from '../utils/image/createOffscreenCanvas';
+import { getSupabaseForBrowser } from '../utils/supabase/getSupabaseForBrowser';
+import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
 export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';
