@@ -1,9 +1,13 @@
-interface TaskProgress{
+import { string_name, string_title } from './typeAliases';
 
-    isDone
-    title
-    // TODO: estimates, done,...
-    subTasks
-    
-    [taskName: strings]: TaskProgress
-    }
+export interface TaskProgress {
+    name: string_name;
+    title: string_title;
+    isDone: boolean;
+    subTasks: TaskProgress[];
+}
+
+/**
+ * TODO: [🧠] estimates, done,...
+ * TODO: !!! ACRY Use string_name search "name: string"
+ */

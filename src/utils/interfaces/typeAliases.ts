@@ -111,6 +111,15 @@ export type string_char = string;
 
 /**
  * Semantic helper
+ * Unique identifier of anything
+ *
+ * For example `"ainautes"`
+ * @collboard-modules-sdk
+ */
+export type string_name = string;
+
+/**
+ * Semantic helper
  *
  * For example `"Ainautes"`
  * @collboard-modules-sdk
