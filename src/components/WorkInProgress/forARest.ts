@@ -44,7 +44,7 @@ export async function forARest<TWorktype extends string>(worktype: TWorktype): P
     restNonce++;
 
     if (now - lastRest > REST_AFTER_MS) {
-        console.log(`💤 Resting on ${worktype}`);
+        console.info(`💤 Resting on ${worktype}`);
         lastRest = now;
         await forImmediate();
         // await forAnimationFrame();

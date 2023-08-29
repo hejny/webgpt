@@ -11,12 +11,11 @@ const URIID_VERSION = '2';
 export function computeWallpaperUriid(
     wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'saveStage' | 'isPublic'>,
 ): string_uriid {
-    console.log('wallpaper.content', wallpaper.content);
+    // console.log('wallpaper.content', wallpaper.content);
     // (window as any).copy(wallpaper.content);
 
     const title = extractTitleFromContent(wallpaper.content) || '';
 
-    console.log('title', title);
     const allUriParts = nameToUriParts(title);
 
     let uriParts: Array<string> = [];

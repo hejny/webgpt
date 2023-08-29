@@ -68,7 +68,7 @@ export default async function recommendWallpaperHandler(
         const wallpapersToPick = wallpapersToPickData.map((wallpaper) => hydrateWallpaper(wallpaper as any));
 
         if (IS_DEVELOPMENT) {
-            console.log({
+            console.info({
                 wallpapersWithLikeness,
                 wallpapersToPickData,
                 wallpapersToPick,

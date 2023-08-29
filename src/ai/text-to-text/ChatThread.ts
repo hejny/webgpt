@@ -35,7 +35,7 @@ export class ChatThread {
             ],
         });
         performance.mark(`${mark}-end`);
-        console.log(performance.measure(mark, `${mark}-start`, `${mark}-end`));
+        // console.log(performance.measure(mark, `${mark}-start`, `${mark}-end`));
 
         if (!completion.choices[0]) {
             throw new Error(`No choises from OpenAPI`);

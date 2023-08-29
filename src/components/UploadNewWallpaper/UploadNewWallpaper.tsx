@@ -1,13 +1,8 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { provideClientId } from '../../utils/supabase/provideClientId';
+import { createNewWallpaper } from '../../workers/createNewWallpaper';
 import { UploadZone } from '../UploadZone/UploadZone';
 import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
-import {
-    IMessage_CreateNewWallpaper_Error,
-    IMessage_CreateNewWallpaper_Request,
-    IMessage_CreateNewWallpaper_Result,
-} from './createNewWallpaper.worker';
 import styles from './UploadNewWallpaper.module.css';
 
 export function UploadNewWallpaper() {
@@ -28,36 +23,17 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    console.log('Testing dynamic imports 2');
-                    const TESTING_DYNAMIC_IMPORTS =
-                        './createNewWallpaper.worker.ts'; /* <- TODO: !!! Remove when tested */
-                    const worker = new Worker(new URL(TESTING_DYNAMIC_IMPORTS, import.meta.url));
+                    try {
+                        const wallpaperId = await createNewWallpaper(file);
+                        router.push(`/${wallpaperId}`);
+                        // Note: No need to setWorking(false); because we are redirecting to another page
+                    } catch (error) {
+                        if (!(error instanceof Error)) {
+                            throw error;
+                        }
 
-                    worker.postMessage({
-                        type: 'CREATE_NEW_WALLPAPER_REQUEST',
-                        author: provideClientId(),
-                        wallpaperImage: file,
-                    } satisfies IMessage_CreateNewWallpaper_Request);
-
-                    worker.addEventListener(
-                        'message',
-                        (
-                            event: MessageEvent<IMessage_CreateNewWallpaper_Result | IMessage_CreateNewWallpaper_Error>,
-                        ) => {
-                            const { type } = event.data;
-
-                            if (type === 'CREATE_NEW_WALLPAPER_RESULT') {
-                                const { wallpaperId } = event.data;
-                                router.push(`/${wallpaperId}`);
-                                // Note: No need to setWorking(false); because we are redirecting to another page
-                            } else if (type === 'CREATE_NEW_WALLPAPER_ERROR') {
-                                const { message } = event.data;
-                                alert(message);
-                            } else {
-                                throw new Error(`Unexpected message type: ${type}`);
-                            }
-                        },
-                    );
+                        alert(error.message);
+                    }
                 }}
             >
                 Drop image to

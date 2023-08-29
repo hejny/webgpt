@@ -1,10 +1,11 @@
+import { isRunningInBrowser } from '../isRunningInWhatever';
 import { randomUuid } from '../randomUuid';
 import { uuid } from '../typeAliases';
 
 let clientId: uuid | null = null;
 
 export function provideClientId(): uuid {
-    if (!window) {
+    if (!isRunningInBrowser()) {
         throw new Error(`provideClientId is available only in browser`);
     }
 
