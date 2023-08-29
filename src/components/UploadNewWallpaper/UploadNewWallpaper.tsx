@@ -21,9 +21,7 @@ export function UploadNewWallpaper() {
                 isClickable
                 isMultipleAllowed={false}
                 accept="image/*"
-                onFilesOver={() => {
-                    /* not await */ logDialogue('Drop image to make web!');
-                }}
+           
                 onFiles={async ([file]) => {
                     if (!file) {
                         return;
@@ -31,8 +29,7 @@ export function UploadNewWallpaper() {
 
                     setWorking(true);
 
-                    /* not await */ logDialogue('Uploading image and making web...');
-
+             
                     const TESTING_DYNAMIC_IMPORTS = 'createNewWallpaper'; /* <- !!! Remve */
                     const worker = new Worker(new URL('./' + TESTING_DYNAMIC_IMPORTS + '.worker.ts', import.meta.url));
 
