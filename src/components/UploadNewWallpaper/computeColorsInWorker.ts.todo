@@ -16,6 +16,7 @@ export function computeColorsInWorker(computeName: string): Promise<IImageColorS
 }
 
 /**
+ * TODO: !!!! Use or remove
  * TODO: Messages to show loading
  * TODO: Use in UploadNewWallpaper
  * TODO: Use in colors modal
