@@ -68,7 +68,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const colorStats = await compute(image);
     performance.mark('compute-colorstats-end');
     performance.measure('compute-colorstats', 'compute-colorstats-start', 'compute-colorstats-end');
-    console.log(colorStats);
+    console.info({ colorStats });
     /**/
     //-------[ /Compute colorstats ]---
 
@@ -94,7 +94,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
         'upload-image-and-write-content-start',
         'upload-image-and-write-content-end',
     );
-    console.log({ wallpaperUrl, wallpaperDescription, wallpaperContent });
+    console.info({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
     const newWallpaper = addWallpaperComputables({
@@ -111,7 +111,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
 
     // TODO: !! Util isInsertSuccessfull (status===201)
-    console.log({ newWallpaper, insertResult, performance: performance.getEntries() });
+    console.info({ newWallpaper, insertResult, performance: performance.getEntries() });
 
     return newWallpaper;
 }

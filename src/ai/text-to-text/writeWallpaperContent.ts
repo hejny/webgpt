@@ -53,7 +53,7 @@ export async function writeWallpaperContent(
     const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
     const font = removeQuotes(chatThreadFont.response) as string_font_family;
 
-    console.log(chatThreadFont);
+    // console.log(chatThreadFont);
 
     return spaceTrim(
         (block) => `
