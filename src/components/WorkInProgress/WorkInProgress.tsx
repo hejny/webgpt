@@ -105,7 +105,7 @@ export function WorkInProgress() {
             engine.resize();
         });
 
-        // !!!! Return
+        // !! Return
     }, [sceneRef]);
 
     return (

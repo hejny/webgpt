@@ -73,7 +73,7 @@ export function UploadNewWallpaper() {
 /**
  * TODO: !! Error handling in worker
  * TODO: Send progress from worker to UI
- * TODO: !!! Speed up the computation of colorstats
+ * TODO: !! Speed up the computation of colorstats
  * TODO: Detect image content and write content dynamically just for this image
  * TODO: Compute colorstats in worker
  * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks
