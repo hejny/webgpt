@@ -26,7 +26,6 @@ export function colorDistance(color1: Color, color2: Color): number {
  *
  * @param color1 first color
  * @param color2 second color
- *
  */
 export function colorDistanceSquared(color1: Color, color2: Color): number {
     const rmean = (color1.red + color2.red) / 2;

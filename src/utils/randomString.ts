@@ -1,7 +1,5 @@
 /**
  * Generates random string of given length
- *
- * @collboard-modules-sdk
  */
 export function randomString(length: number, chars: string): string {
     let result = '';

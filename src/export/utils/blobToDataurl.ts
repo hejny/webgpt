@@ -3,11 +3,8 @@ import { string_data_url } from '../../utils/typeAliases';
 
 /**
  * Convert Blob or File to string data url
- *
  * Tip: Consider using ObjectUrl class instead
  * Tip: You can pass dataurl and it will be returned as is
- *
- * @collboard-modules-sdk
  */
 export function blobToDataurl(source: Blob | File | string_data_url): Promisable<string_data_url> {
     if (typeof source === 'string') {

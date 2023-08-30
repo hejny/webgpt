@@ -2,8 +2,6 @@
  * Tests if given string is valid URL.
  *
  * Note: Dataurl are considered perfectly valid.
- *
- * @collboard-modules-sdk
  */
 export function isValidUrl(url: unknown): boolean {
     try {
