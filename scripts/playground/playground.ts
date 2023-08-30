@@ -43,7 +43,7 @@ async function playground() {
 
         `),
     });
-    console.log({ completion }, completion.choices);
+    // console.log({ completion }, completion.choices);
 
     console.info(`[ Done 🧸  Playground ]`);
 }

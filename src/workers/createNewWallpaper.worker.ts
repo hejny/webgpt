@@ -1,11 +1,11 @@
-import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../../config';
-import { UploadWallpaperResponse } from '../../pages/api/upload-wallpaper';
-import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
-import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { createImageInWorker } from '../../utils/image/createImageInWorker';
-import { createOffscreenCanvas } from '../../utils/image/createOffscreenCanvas';
-import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
+import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
+import { UploadWallpaperResponse } from '../pages/api/upload-wallpaper';
+import { addWallpaperComputables } from '../utils/addWallpaperComputables';
+import { serializeWallpaper } from '../utils/hydrateWallpaper';
+import { createImageInWorker } from '../utils/image/createImageInWorker';
+import { createOffscreenCanvas } from '../utils/image/createOffscreenCanvas';
+import { getSupabaseForBrowser } from '../utils/supabase/getSupabaseForBrowser';
+import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
 export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';
@@ -68,7 +68,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const colorStats = await compute(image);
     performance.mark('compute-colorstats-end');
     performance.measure('compute-colorstats', 'compute-colorstats-start', 'compute-colorstats-end');
-    console.log(colorStats);
+    console.info({ colorStats });
     /**/
     //-------[ /Compute colorstats ]---
 
@@ -94,7 +94,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
         'upload-image-and-write-content-start',
         'upload-image-and-write-content-end',
     );
-    console.log({ wallpaperUrl, wallpaperDescription, wallpaperContent });
+    console.info({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
     const newWallpaper = addWallpaperComputables({
@@ -111,7 +111,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
     const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
 
     // TODO: !! Util isInsertSuccessfull (status===201)
-    console.log({ newWallpaper, insertResult, performance: performance.getEntries() });
+    console.info({ newWallpaper, insertResult, performance: performance.getEntries() });
 
     return newWallpaper;
 }

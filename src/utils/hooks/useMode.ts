@@ -52,8 +52,7 @@ export function useMode(): IModes {
     };
 }
 
-
 /**
- * TODO: !!! Change ACRY mode -> layout (or view)
- * TODO: !!! Add GET param scenario (or mode)
+ * TODO: Change ACRY mode -> layout (or view)
+ * TODO: Add GET param scenario (or mode)
  */

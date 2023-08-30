@@ -16,7 +16,7 @@ import { Image } from '../Image';
  */
 export async function scaleImage(image: IImage, newSize: IVector): Promise<Image> {
     if (image.size.x === newSize.x && image.size.y === newSize.y && image instanceof Image) {
-        console.log('🍃 No need to scale image');
+        console.info('🍃 No need to scale image');
         return image;
     }
 
