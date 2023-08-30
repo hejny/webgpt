@@ -9,6 +9,7 @@ import styles from './UploadNewWallpaper.module.css';
 export function UploadNewWallpaper() {
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
+    const [taskProgress, setTaskProgress] = useState<undefined | TaskProgress>(undefined);
 
     return (
         <>
@@ -23,11 +24,12 @@ export function UploadNewWallpaper() {
                     }
 
                     setWorking(true);
+                    setTaskProgress(undefined);
 
                     try {
                         const wallpaperId = await createNewWallpaper(file, (taskProgress: TaskProgress) => {
                             console.info('☑', taskProgress);
-                            // TODO: !!! Reflect this in UI
+                            setTaskProgress(taskProgress);
                         });
                         router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page
@@ -38,6 +40,7 @@ export function UploadNewWallpaper() {
 
                         alert(error.message);
                         setWorking(false);
+                        setTaskProgress(undefined);
                     }
                 }}
             >
@@ -45,65 +48,13 @@ export function UploadNewWallpaper() {
                 <br />
                 <b>make new web</b>
             </UploadZone>
-            {
-                /* !!! isWorking && */ <TaskInProgress
-                    taskProgress={{
-                        // !!!
-                        name: 'main',
-                        title: 'Main task',
-                        isDone: false,
-                        subtasks: [
-                            {
-                                name: 'subtask1',
-                                title: 'Task 1',
-                                isDone: true,
-                            },
-                            {
-                                name: 'subtask2',
-                                title: 'Task 2',
-                                isDone: true,
-                            },
-                            {
-                                name: 'subtask3',
-                                title: 'Task 3',
-                                isDone: false,
-                                subtasks: [
-                                    {
-                                        name: 'subtask3-1',
-                                        title: 'Task 3.1',
-                                        isDone: true,
-                                    },
-                                    {
-                                        name: 'subtask3-2',
-                                        title: 'Task 3.2',
-                                        isDone: false,
-                                    },
-                                    {
-                                        name: 'subtask3-3',
-                                        title: 'Task 3.3',
-                                        isDone: false,
-                                    },
-                                    {
-                                        name: 'subtask3-4',
-                                        title: 'Task 3.4',
-                                        isDone: false,
-                                    },
-                                ],
-                            },
-                            {
-                                name: 'subtask4',
-                                title: 'Task 4',
-                                isDone: false,
-                            },
-                        ],
-                    }}
-                />
-            }
+            {isWorking && <TaskInProgress {...{ taskProgress }} />}
         </>
     );
 }
 
 /**
+ * TODO: Maybe derive isWorking from taskProgress
  * TODO: Show progress checkmarks
  * TODO: !!! Error handling in worker
  * TODO: !!! Send progress from worker to UI
