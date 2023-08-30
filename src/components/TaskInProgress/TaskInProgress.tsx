@@ -14,17 +14,17 @@ export function TaskInProgress(props: TaskInProgressProps) {
     const { sceneRef } = useGraph();
 
     return (
-        <div className={styles.TaskInProgress}>
+        <>
             <canvas ref={sceneRef} className={styles.scene} />
             <div className={styles.tasklist}>
                 <ul>
-                    <li>⏣ Computing colorstats</li>
-                    <li>⭘ Computing foo</li>
-                    <li>✓ Computing bar</li>
-                    <li>✔ Computing bar</li>
+                    <li className={styles.done}>Computing colorstats</li>
+                    <li className={styles.done}>Computing foo</li>
+                    <li className={styles.pending}>Computing bar</li>
+                    <li className={styles.pending}>Computing bar</li>
                 </ul>
             </div>
-        </div>
+        </>
     );
 }
 
