@@ -448,31 +448,14 @@ export type string_folder_relative_path = string;
  */
 export type string_folder_path = string_file_absolute_path | string_file_relative_path;
 
-/**
- * Semantic helper
- *
- * - basically module identifier
- *
- * For example `"@collboard/internal/download"`
- * @pattern /^(@(?<scope>[a-z0-9][a-z0-9-]*))\/(?<name>([a-z0-9][a-z0-9-]*)(\/([a-z0-9][a-z0-9-]*))*)$/
- * @collboard-modules-sdk
- */
-export type string_module_name = string;
 
 /**
  * Semantic helper
  *
- * - case insensitive
- *
- * For example `"Basic"` or `"Math"`
- *
- * *Note: This may become an list of 'LITERAL_VALUES' in the near future*
  * @collboard-modules-sdk
  */
-export type string_module_category = string;
-// TODO: In future use 'LITERAL VALUES' like export type string_module_category = 'Basic' | 'Math' | 'Basic' | 'Art' | '3D' | 'Experimental';
-// TODO: Add all school subjects
-// TODO: Add easter egg
+export type string_filename = string;
+
 
 /**
  * Semantic helper

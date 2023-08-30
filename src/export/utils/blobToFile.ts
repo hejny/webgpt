@@ -1,3 +1,5 @@
+import { string_filename, string_file_path } from "../../utils/typeAliases";
+
 /**
  * Converts Blob to File
  * This is usefull for:
@@ -7,7 +9,7 @@
  *
  * @collboard-modules-sdk
  */
-export async function blobToFile(blob: File | Blob, filename: string): Promise<File> {
+export async function blobToFile(blob: File | Blob, filename: string_filename): Promise<File> {
     if (blob instanceof File) {
         return blob;
     }

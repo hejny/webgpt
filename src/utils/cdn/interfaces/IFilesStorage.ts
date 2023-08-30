@@ -2,7 +2,7 @@ import type { IStorage } from 'everstorage';
 import { string_mime_type } from '../../typeAliases';
 
 export interface IFile {
-    // Maybe TODO name: string;
+    // Maybe TODO name: string_name;
     type: string_mime_type;
     data: Buffer;
 }
