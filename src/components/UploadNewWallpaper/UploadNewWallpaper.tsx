@@ -37,6 +37,7 @@ export function UploadNewWallpaper() {
                         }
 
                         alert(error.message);
+                        setWorking(false);
                     }
                 }}
             >
