@@ -4,7 +4,7 @@ export interface TaskProgress {
     name: string_name;
     title: string_title;
     isDone: boolean;
-    subTasks: TaskProgress[];
+    subTasks?: TaskProgress[];
 }
 
 /**

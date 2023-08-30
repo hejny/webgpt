@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { createNewWallpaper } from '../../workers/createNewWallpaper';
+import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TaskInProgress } from '../TaskInProgress/TaskInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
 import styles from './UploadNewWallpaper.module.css';
@@ -24,7 +25,10 @@ export function UploadNewWallpaper() {
                     setWorking(true);
 
                     try {
-                        const wallpaperId = await createNewWallpaper(file);
+                        const wallpaperId = await createNewWallpaper(file, (taskProgress: TaskProgress) => {
+                            console.info('☑', taskProgress);
+                            // TODO: !!! Reflect this in UI
+                        });
                         router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page
                     } catch (error) {

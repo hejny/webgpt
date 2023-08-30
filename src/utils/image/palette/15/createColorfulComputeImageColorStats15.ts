@@ -1,5 +1,7 @@
+import { Promisable } from 'type-fest';
 import { IVector, Vector } from 'xyzt';
 import { forARest } from '../../../../components/TaskInProgress/forARest';
+import { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
 import { take } from '../../../take/take';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImage } from '../../IImage';
@@ -52,7 +54,16 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
         };
     };
 
-    const computeImageColorStats = async (image: IImage): Promise<IImageColorStatsAdvanced<string>> => {
+    const computeImageColorStats = async (
+        image: IImage,
+        onProgress: (taskProgress: TaskProgress) => Promisable<void> = () => {},
+    ): Promise<IImageColorStatsAdvanced<string>> => {
+        await onProgress({
+            name: 'colorstats-v15',
+            title: 'Computing image color stats (v15)',
+            isDone: false,
+        });
+
         const stats = {
             ...(await computeWholeImageColorStats(image)),
             bottomHalf: await computeWholeImageColorStats(
@@ -67,6 +78,14 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
         } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>;
 
         const { palette, paletteCandidates } = await computeImagePalette15(stats);
+
+        await onProgress({
+            // TODO: !!! There should be no need to do this - all the tree of tasks should be done when function resolved
+            name: 'colorstats-v15',
+            title: 'Computing image color stats (v15)',
+            isDone: true,
+        });
+
         return { version, palette, paletteCandidates, ...stats };
     };
 
@@ -77,4 +96,5 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
 
 /**
  * @see https://youtu.be/gMqZR3pqMjg
+ * TODO: Report TaskProgress more granularly
  */

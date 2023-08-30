@@ -1,4 +1,5 @@
 import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
+import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/upload-wallpaper';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
@@ -11,6 +12,11 @@ export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';
     author: uuid;
     wallpaperImage: Blob;
+}
+
+export interface IMessage_CreateNewWallpaper_Progress {
+    type: 'CREATE_NEW_WALLPAPER_PROGRESS';
+    taskProgress: TaskProgress;
 }
 
 export interface IMessage_CreateNewWallpaper_Result {
@@ -65,7 +71,12 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
         wallpaperResizedBlob,
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
     );
-    const colorStats = await compute(image);
+    const colorStats = await compute(image, (taskProgress: TaskProgress) => {
+        postMessage({
+            type: 'CREATE_NEW_WALLPAPER_PROGRESS',
+            taskProgress,
+        } satisfies IMessage_CreateNewWallpaper_Progress);
+    });
     performance.mark('compute-colorstats-end');
     performance.measure('compute-colorstats', 'compute-colorstats-start', 'compute-colorstats-end');
     console.info({ colorStats });
