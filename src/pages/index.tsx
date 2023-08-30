@@ -37,9 +37,9 @@ export default function HomePage() {
 }
 
 /**
- * TODO: Different graohs
- * TODO: Nicer fonts / handwritten
- * TODO: DO not redirect to random wallpaper provide 3 scenarios:
+ * TODO: !!! Different graohs
+ * TODO: !!! Nicer fonts / handwritten
+ * TODO: !!! DO not redirect to random wallpaper provide 3 scenarios:
  *       - 🙄 No idea
  *       - 💡 Idea
  *       - 🖼 Image

@@ -9,9 +9,9 @@ import {
     StandardMaterial,
     Vector3,
 } from 'babylonjs';
-import { MutableRefObject, useEffect, useRef } from 'react';
+import { useEffect, useRef,MutableRefObject } from 'react';
 
-export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | null> } {
+export function useGraph(): {sceneRef:MutableRefObject<HTMLCanvasElement | null>} {
     const sceneRef = useRef<HTMLCanvasElement | null>(null);
     useEffect(() => {
         // Get the canvas element
@@ -77,8 +77,8 @@ export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | nul
             engine.resize();
         });
 
-        // Return
+        // !!!! Return
     }, [sceneRef]);
 
-    return { sceneRef };
+    return {sceneRef};
 }

@@ -12,7 +12,7 @@ export default function NewWallpaperFromPromptPage() {
             <div className={styles.page}>
                 <main>
                     <h1>AI Web Maker</h1>
-                    TODO: Working on this feature
+                    TODO: !!! Working on this feature
                 </main>
 
                 {/* TODO: Make here some footer

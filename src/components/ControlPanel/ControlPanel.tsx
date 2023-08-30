@@ -115,7 +115,7 @@ export function ControlPanel() {
 }
 
 /**
- * TODO: Control panel in Wireframe design
+ * TODO: !!! Control panel in Wireframe design
  * TODO: !! Use translate
  * TODO: [🧠] Play can trigger fullscreen
  */
