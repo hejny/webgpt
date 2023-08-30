@@ -1,15 +1,29 @@
 import { useGraph } from '../Graphs/useGraph';
+import { TaskProgress } from './task/TaskProgress';
 import styles from './TaskInProgress.module.css';
+
+interface TaskInProgressProps {
+    taskProgress?: TaskProgress;
+}
 
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
  */
-export function TaskInProgress() {
+export function TaskInProgress(props: TaskInProgressProps) {
+    const { taskProgress } = props;
     const { sceneRef } = useGraph();
 
     return (
         <div className={styles.TaskInProgress}>
             <canvas ref={sceneRef} className={styles.scene} />
+            <div className={styles.tasklist}>
+                <ul>
+                    <li>⏣ Computing colorstats</li>
+                    <li>⭘ Computing foo</li>
+                    <li>✓ Computing bar</li>
+                    <li>✔ Computing bar</li>
+                </ul>
+            </div>
         </div>
     );
 }
