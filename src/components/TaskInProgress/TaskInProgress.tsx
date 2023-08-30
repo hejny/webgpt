@@ -1,4 +1,5 @@
 import { useGraph } from '../Graphs/useGraph';
+import { flattenTaskProgress } from './task/flattenTaskProgress';
 import { TaskProgress } from './task/TaskProgress';
 import styles from './TaskInProgress.module.css';
 
@@ -16,14 +17,18 @@ export function TaskInProgress(props: TaskInProgressProps) {
     return (
         <>
             <canvas ref={sceneRef} className={styles.scene} />
-            <div className={styles.tasklist}>
-                <ul>
-                    <li className={styles.done}>Computing colorstats</li>
-                    <li className={styles.done}>Computing foo</li>
-                    <li className={styles.pending}>Computing bar</li>
-                    <li className={styles.pending}>Computing bar</li>
-                </ul>
-            </div>
+
+            {taskProgress && (
+                <div className={styles.tasklist}>
+                    <ul>
+                        {flattenTaskProgress(taskProgress).map(({ name, title, isDone }) => (
+                            <li key={name} className={isDone ? styles.done : styles.pending}>
+                                {title}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </>
     );
 }
