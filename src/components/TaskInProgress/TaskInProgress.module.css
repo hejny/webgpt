@@ -1,4 +1,4 @@
-.scene {
+.TaskInProgress {
     /*/
     outline: 1px dotted rgb(38, 194, 255);
     /**/
@@ -11,6 +11,20 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+}
+
+.scene {
+    /*/
+    outline: 1px dotted rgb(38, 194, 255);
+    /**/
+
+    z-index: 90010 /* <- [🔝] Global z-index for wallpaper page */;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh /* <- TODO: For feature/scenarios this should be 100vh */;
 
     outline: none;
 }
@@ -20,14 +34,14 @@
     outline: 1px dotted rgb(81, 255, 38);
     /**/
 
-    z-index: 90001 /* <- [🔝] Global z-index for wallpaper page */;
+    z-index: 90020 /* <- [🔝] Global z-index for wallpaper page */;
     background-color: transparent;
 
     position: absolute;
     top: 50vh;
     left: 0;
     width: 100vw;
-    transform: translate(0, calc(50% + 20px));
+    transform: translate(0, 50%);
 
     display: flex;
     flex-direction: column;

@@ -30,7 +30,7 @@ export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | nul
         scene.clearColor = new Color4(0, 0, 0, 0);
 
         // Create a camera
-        const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 10, Vector3.Zero(), scene);
+        const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 6, Vector3.Zero(), scene);
         camera.attachControl(canvas, false);
 
         // Create a light
@@ -60,8 +60,11 @@ export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | nul
 
         /**/
         // Rotate the the ribbon
+        ribbon.rotation.z = 10;
         scene.registerBeforeRender(function () {
             ribbon.rotation.y += 0.02;
+            ribbon.rotation.z *= 0.99;
+            /* <- TODO: For feature/scenarios this should not be */
         });
         /**/
 

@@ -15,7 +15,7 @@ export function TaskInProgress(props: TaskInProgressProps) {
     const { sceneRef } = useGraph();
 
     return (
-        <>
+        <div className={styles.TaskInProgress}>
             <canvas ref={sceneRef} className={styles.scene} />
 
             {taskProgress && (
@@ -29,7 +29,7 @@ export function TaskInProgress(props: TaskInProgressProps) {
                     </ul>
                 </div>
             )}
-        </>
+        </div>
     );
 }
 
