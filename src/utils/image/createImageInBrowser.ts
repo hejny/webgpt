@@ -1,5 +1,5 @@
-import { forARest } from '../../components/TaskInProgress/forARest';
 import { Color } from '../color/Color';
+import { forARest } from '../forARest';
 import { string_url } from '../typeAliases';
 import { IComputeColorstatsWork } from './IComputeColorstatsWork';
 import { Image as MyImage } from './Image';
