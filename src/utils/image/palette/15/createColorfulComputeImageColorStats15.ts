@@ -62,6 +62,7 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
             name: 'colorstats-v15',
             title: 'Computing image color stats (v15)',
             isDone: false,
+            // TODO: !!! Make it more granular
         });
 
         const stats = {

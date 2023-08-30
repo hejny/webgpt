@@ -56,9 +56,7 @@ export function UploadNewWallpaper() {
 /**
  * TODO: Maybe derive isWorking from taskProgress
  * TODO: Show progress checkmarks
- * TODO: !!! Error handling in worker
- * TODO: !!! Send progress from worker to UI
- * TODO: !!! Speed up the computation of colorstats
+ * TODO: !! Speed up the computation of colorstats
  * TODO: Detect image content and write content dynamically just for this image
  * TODO: !!! Compute ONLY colorstats in worker, rest here - split workers into multiple parts
  * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks
