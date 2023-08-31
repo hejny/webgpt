@@ -1,8 +1,5 @@
-
 /**
  * 🎨 List of all 140 color names which are supported by CSS
- *
- * @not-collboard-modules-sdk Use Color object for getting common colors instead
  */
 export const CSS_COLORS = {
     transparent: 'rgba(0,0,0,0)',

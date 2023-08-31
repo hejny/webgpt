@@ -1,7 +1,7 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 import { NEXT_PUBLIC_SUPABASE_ANON_KEY, NEXT_PUBLIC_SUPABASE_URL } from '../../../config';
-import { isRunningInBrowser, isRunningInWebWorker } from '../isRunningInWhatever';
+import { isRunningInBrowser } from '../isRunningInWhatever';
 import { Database } from './types';
 
 /**
@@ -20,10 +20,7 @@ let supabase: SupabaseClient<Database>;
  * @returns instance of supabase client
  */
 export function getSupabaseForBrowser(): typeof supabase {
-    if (
-        !isRunningInBrowser() &&
-        !(isRunningInWebWorker(/* <- TODO: [🚵‍♂️] !! Remove this option to run getSupabaseForBrowser in worker */))
-    ) {
+    if (!isRunningInBrowser()) {
         throw new Error('Use getSupabaseForServer');
     }
 

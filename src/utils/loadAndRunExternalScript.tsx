@@ -5,8 +5,6 @@ import { string_url } from './typeAliases';
  * Load and run an external script
  * @param src url of the script to load
  * @returns a promise that resolves when the script is loaded
- *
- * @collboard-modules-sdk
  */
 export function loadAndRunExternalScript(src: string_url): Promise<void> {
     return new Promise((resolve, reject) => {

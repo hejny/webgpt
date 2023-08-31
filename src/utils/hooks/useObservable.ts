@@ -4,13 +4,11 @@ import {
     IUseLoadableResult,
     IUseLoadableResultError,
     IUseLoadableResultPending,
-    IUseLoadableResultStatus
+    IUseLoadableResultStatus,
 } from './useLoadable';
 
 /**
  * React hook that returns current value of given Observable.
- *
- * @collboard-modules-sdk
  */
 export function useObservable<TValue>(
     observable: BehaviorSubject<TValue>,

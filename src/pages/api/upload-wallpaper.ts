@@ -6,12 +6,12 @@ import { imageToText } from '../../ai/image-to-text/imageToText';
 import { writeWallpaperContent } from '../../ai/text-to-text/writeWallpaperContent';
 import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserWallpaperCdnKey';
 
-import { string_image_description, string_markdown, string_url } from '../../utils/typeAliases';
+import { image_description, string_markdown, string_url } from '../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
     wallpaperUrl: string_url;
-    wallpaperDescription: string_image_description;
+    wallpaperDescription: image_description;
     wallpaperContent: string_markdown;
 }
 
