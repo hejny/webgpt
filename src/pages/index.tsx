@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { GraphButton } from '../components/Graphs/GraphButton';
+import { Center } from '../components/Center/Center';
 import styles from '../styles/static.module.css';
 
 export default function HomePage() {
@@ -13,23 +13,39 @@ export default function HomePage() {
 
             <div className={styles.page}>
                 <main>
-                    <h1
-                        style={{
-                            display:
-                                'none' /* <- TODO: For SEO/Social is it better to have invisible <h1> or just <title> + meta tags */,
-                        }}
-                    >
-                        1-2i
-                    </h1>
-                    <Link href="/random">
-                        <GraphButton>Need help</GraphButton>
-                    </Link>
-                    <Link href="/new/from-prompt">
-                        <GraphButton>Have idea</GraphButton>
-                    </Link>
-                    <Link href="/new/from-image">
-                        <GraphButton>Have custom image</GraphButton>
-                    </Link>
+                    <Center>
+                        <h1>AI Web Maker</h1>I have…
+                        <ul>
+                            <Link href="/random">
+                                <li>
+                                    …<b>Nothing</b> and pick from gallery of pre-generated webs
+                                </li>
+                            </Link>
+
+                            <Link href="/new/from-prompt">
+                                <li>
+                                    …<b>Idea</b> to describe and generate web
+                                </li>
+                            </Link>
+                            <Link href="/new/from-image">
+                                <li>
+                                    …<b>Image</b> to upload and generate web
+                                </li>
+                            </Link>
+                        </ul>
+                        {/*
+                        TODO:
+                        <Link href="/random">
+                            <GraphButton>Need help</GraphButton>
+                        </Link>
+                        <Link href="/new/from-prompt">
+                            <GraphButton>Have idea</GraphButton>
+                        </Link>
+                        <Link href="/new/from-image">
+                            <GraphButton>Have custom image</GraphButton>
+                        </Link>
+                        */}
+                    </Center>
                 </main>
             </div>
         </>
