@@ -34,7 +34,7 @@ export default function HomePage() {
                             </Link>
                         </ul>
                         {/*
-                        TODO:
+                        TODO: !!!
                         <Link href="/random">
                             <GraphButton>Need help</GraphButton>
                         </Link>

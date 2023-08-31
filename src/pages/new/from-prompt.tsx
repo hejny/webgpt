@@ -39,7 +39,7 @@ export default function NewWallpaperFromPromptPage() {
 }
 
 /**
- * TODO: Design + some common css for such pre-page pages
- * TODO: Active links
- * TODO: Underline links
+ * TODO: !!! Design + some common css for such pre-page pages
+ * TODO: !!! Active links
+ * TODO: !!! Underline links
  */
