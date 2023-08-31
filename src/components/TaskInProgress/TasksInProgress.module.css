@@ -38,10 +38,9 @@
     background-color: transparent;
 
     position: absolute;
-    top: 50vh;
+    top: calc(50vh + 50px);
     left: 0;
     width: 100vw;
-    transform: translate(0, 50%);
 
     display: flex;
     flex-direction: column;
@@ -61,6 +60,9 @@
     padding: 0;
     font-size: 19px;
     font-weight: normal;
+
+    margin-left: 60px;
+    width: 250px;
 }
 
 .tasklist ul li.pending {

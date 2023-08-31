@@ -12,6 +12,7 @@ interface TaskInProgressProps {
 export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
     const { sceneRef } = useGraph();
+    
 
     return (
         <div className={styles.TasksInProgress}>
@@ -33,7 +34,6 @@ export function TasksInProgress(props: TaskInProgressProps) {
 }
 
 /**
- * TODO: !!! Keep UI layout when updating
  * TODO: Play with shape and camera angle
  * TODO: Size of babylonjs in bundle - maybe prerecord as video
  * TODO: Maybe work with xyzt
