@@ -126,10 +126,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
 
     return newWallpaper;
 }
-/**
- * Note:
- */
-export const _nonce = null;
+
 
 /**
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
