@@ -1,6 +1,6 @@
 import { useGraph } from '../Graphs/useGraph';
 import { TaskProgress } from './task/TaskProgress';
-import styles from './TaskInProgress.module.css';
+import styles from './TasksInProgress.module.css';
 
 interface TaskInProgressProps {
     tasksProgress?: Array<TaskProgress>;
@@ -14,7 +14,7 @@ export function TasksInProgress(props: TaskInProgressProps) {
     const { sceneRef } = useGraph();
 
     return (
-        <div className={styles.TaskInProgress}>
+        <div className={styles.TasksInProgress}>
             <canvas ref={sceneRef} className={styles.scene} />
 
             {tasksProgress && (
