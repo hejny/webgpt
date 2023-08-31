@@ -4,7 +4,7 @@ export type TaskProgress = PendingTaskProgress | DoneTaskProgress;
 
 export interface PendingTaskProgress {
     name: string_name;
-    title: string_title;
+    title: string_title /* <- !!! message */;
     isDone: false;
 }
 
