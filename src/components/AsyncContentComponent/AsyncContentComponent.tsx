@@ -11,8 +11,6 @@ interface AsyncContentComponentProps {
 
 /**
  * Utility for mounting RxJS observable content
- *
- * @collboard-modules-sdk
  */
 export function AsyncContentComponent(props: AsyncContentComponentProps) {
     const { children } = props;

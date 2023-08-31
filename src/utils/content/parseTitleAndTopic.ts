@@ -13,7 +13,7 @@ export function parseTitleAndTopic(fullTitle: string /*  TODO: Maybe a descripti
 
     if (!result) {
         return {
-            title: fullTitle,
+            title: fullTitle.trim(),
             topic: null,
         };
     }
@@ -29,5 +29,5 @@ export function parseTitleAndTopic(fullTitle: string /*  TODO: Maybe a descripti
         return parseTitleAndTopic(topic);
     }
 
-    return { title, topic };
+    return { title: title.trim(), topic: topic === null ? null : topic.trim() };
 }

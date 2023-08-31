@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import styles from '../../styles/static.module.css';
 
-export default function NewWallpaperPage() {
+export default function NewWallpaperFromPromptPage() {
     const router = useRouter();
 
     return (
@@ -13,11 +12,7 @@ export default function NewWallpaperPage() {
             <div className={styles.page}>
                 <main>
                     <h1>AI Web Maker</h1>
-                    <ul>
-                        <Link href="/new/from-image">
-                            <li>Create page from custom image</li>
-                        </Link>
-                    </ul>
+                    TODO: Working on this feature
                 </main>
 
                 {/* TODO: Make here some footer
@@ -29,8 +24,3 @@ export default function NewWallpaperPage() {
         </>
     );
 }
-
-/**
- * TODO: !! Create some meaningfull content by AI recognition
- * TODO: [🕶] <ul><a><li> vs <ul><li><a>
- */

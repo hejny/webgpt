@@ -9,32 +9,9 @@ import {
     StandardMaterial,
     Vector3,
 } from 'babylonjs';
-import { useEffect, useRef } from 'react';
-import { restNonce } from './forARest';
-import styles from './WorkInProgress.module.css';
+import { MutableRefObject, useEffect, useRef } from 'react';
 
-export interface PlotFunction {
-    (t: number, u: number, v: number): [x: number, y: number, z: number];
-    range: [u: number, v: number];
-}
-
-/**
- * Renders an animated "loading indicator" that is used to indicate that the app is working on something
- */
-export function WorkInProgress() {
-    /*/
-    TODO: !! Use or remove
-    const [nonce, setNonce] = useState(0);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setNonce((nonce) => nonce + 1);
-        }, 100);
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, [setNonce, nonce]);
-    /**/
+export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | null> } {
     const sceneRef = useRef<HTMLCanvasElement | null>(null);
     useEffect(() => {
         // Get the canvas element
@@ -53,7 +30,7 @@ export function WorkInProgress() {
         scene.clearColor = new Color4(0, 0, 0, 0);
 
         // Create a camera
-        const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 10, Vector3.Zero(), scene);
+        const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 6, Vector3.Zero(), scene);
         camera.attachControl(canvas, false);
 
         // Create a light
@@ -62,11 +39,6 @@ export function WorkInProgress() {
         // scene.debugLayer.show();
 
         //==============================================
-
-        const plotPoint: PlotFunction = (t, u, v) => {
-            return [0, 0, 0];
-        };
-        plotPoint.range = [0, 1];
 
         let ribbon = MeshBuilder.CreateTorus(
             'ribbon',
@@ -87,9 +59,11 @@ export function WorkInProgress() {
         ribbon.material = ribbonMaterial;
 
         /**/
-        // Rotate the the ribbon
+        // Rotate the the camera around the mesh
+        camera.beta = (Math.PI / 2) * (2 / 3) /* <- TODO: [2] For feature/scenarios this should not be */;
         scene.registerBeforeRender(function () {
-            ribbon.rotation.y += 0.02;
+            camera.beta *= 0.95 /*  <- [2] */;
+            camera.alpha += 0.02;
         });
         /**/
 
@@ -105,21 +79,8 @@ export function WorkInProgress() {
             engine.resize();
         });
 
-        // !! Return
+        // Return
     }, [sceneRef]);
 
-    return (
-        <div className={styles.WorkInProgress}>
-            {restNonce}
-            <canvas ref={sceneRef} className={styles.scene} />
-        </div>
-    );
+    return { sceneRef };
 }
-
-/**
- * TODO: Play with shape and camera angle
- * TODO: Size of babylonjs in bundle - maybe prerecord as video
- * TODO: Maybe work with xyzt
- * TODO: !! Design in color window
- * TODO: !! Rename to loading OR split between loading and work in progress
- */

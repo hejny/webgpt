@@ -7,8 +7,6 @@ import { string_html } from '../../utils/typeAliases';
  *
  * @param html raw html code
  * @returns formatted html code
- *
- * @collboard-modules-sdk
  */
 export function prettifyHtml(html: string_html): string_html {
     try {

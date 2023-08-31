@@ -54,7 +54,6 @@ export function computeWallpaperUriid(
      * But we are using Base58 to prevent misspelling!
      *
      * 11 chars are on YouTube
-     *
      */
     const wallpaperPart =
         URIID_VERSION +

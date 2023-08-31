@@ -1,13 +1,16 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { createNewWallpaper } from '../../workers/createNewWallpaper';
+import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
+import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
+import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
-import { WorkInProgress } from '../WorkInProgress/WorkInProgress';
 import styles from './UploadNewWallpaper.module.css';
 
 export function UploadNewWallpaper() {
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
+    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
 
     return (
         <>
@@ -22,9 +25,13 @@ export function UploadNewWallpaper() {
                     }
 
                     setWorking(true);
+                    setTasksProgress([]);
 
                     try {
-                        const wallpaperId = await createNewWallpaper(file);
+                        const wallpaperId = await createNewWallpaper(file, (newTaskProgress: TaskProgress) => {
+                            console.info('☑', newTaskProgress);
+                            setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
+                        });
                         router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page
                     } catch (error) {
@@ -34,6 +41,7 @@ export function UploadNewWallpaper() {
 
                         alert(error.message);
                         setWorking(false);
+                        setTasksProgress([]);
                     }
                 }}
             >
@@ -41,18 +49,16 @@ export function UploadNewWallpaper() {
                 <br />
                 <b>make new web</b>
             </UploadZone>
-            {isWorking && <WorkInProgress />}
+            {isWorking && <TasksInProgress {...{ tasksProgress }} />}
         </>
     );
 }
 
 /**
- * TODO: !! Error handling in worker
- * TODO: Send progress from worker to UI
- * TODO: !! Speed up the computation of colorstats
- * TODO: Detect image content and write content dynamically just for this image
- * TODO: Compute colorstats in worker
- * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks
+ * TODO: [🧠] !! Speed up the computation of colorstats
+ * TODO: [🧠] !! Compute ONLY colorstats in worker, rest here - split workers into multiple parts
+ * TODO: [🧠] !! Upload image and Compute colorstats in parallel + remove the comment blocks
+ * TODO: Maybe derive isWorking from taskProgress
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
  * TODO: !! It Should be possible to list private wallpapers via getSupabaseForBrowser().from('Wallpaper').select('*').eq('isPublic', false)
  */

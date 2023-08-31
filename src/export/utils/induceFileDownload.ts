@@ -3,8 +3,6 @@ import { ObjectUrl } from './ObjectUrl';
 
 /**
  * Download a File to with a browser
- *
- * @collboard-modules-sdk
  */
 export async function induceFileDownload(fileOrBlobOrUrl: File | Blob | URL | string_url) {
     const objectUrl = ObjectUrl.fromBlobOrUrl(fileOrBlobOrUrl);

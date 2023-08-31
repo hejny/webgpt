@@ -1,19 +1,11 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpaper/RandomWallpaperManager';
-import { WorkInProgress } from '../components/WorkInProgress/WorkInProgress';
+import { GraphButton } from '../components/Graphs/GraphButton';
 import styles from '../styles/static.module.css';
 
 export default function HomePage() {
     const router = useRouter();
-    useEffect(() => {
-        (async () => {
-            const randomWallpaperManager = RandomWallpaperManager.getInstance();
-            const wallpaper = await randomWallpaperManager.getWelcomeWallpaper();
-            router.replace(`/${wallpaper.id}`);
-        })();
-    });
 
     return (
         <>
@@ -29,7 +21,15 @@ export default function HomePage() {
                     >
                         1-2i
                     </h1>
-                    <WorkInProgress />
+                    <Link href="/random">
+                        <GraphButton>Need help</GraphButton>
+                    </Link>
+                    <Link href="/new/from-prompt">
+                        <GraphButton>Have idea</GraphButton>
+                    </Link>
+                    <Link href="/new/from-image">
+                        <GraphButton>Have custom image</GraphButton>
+                    </Link>
                 </main>
             </div>
         </>
@@ -37,6 +37,12 @@ export default function HomePage() {
 }
 
 /**
+ * TODO: Different graohs
+ * TODO: Nicer fonts / handwritten
+ * TODO: DO not redirect to random wallpaper provide 3 scenarios:
+ *       - 🙄 No idea
+ *       - 💡 Idea
+ *       - 🖼 Image
  * TODO: Go to last wallpaper
  * TODO: Make shuffle between wallpapers
  */

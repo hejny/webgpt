@@ -4,7 +4,6 @@ import { useObservable } from './useObservable';
 import { usePromise } from './usePromise';
 
 /**
- * @collboard-modules-sdk
  *
  * @deprecated [🍿] Do not use enums but object as const OR 'LITERAL VALUES' instead
  */
@@ -51,8 +50,6 @@ export type IUseLoadableResult<TValue> =
 
 /**
  * React hook that returns current value of given Loadable.
- *
- * @collboard-modules-sdk
  */
 export function useLoadable<Value>(loadable: Loadable<Value>): IUseLoadableResult<Value> {
     // Note: Ignoring rule react-hooks/rules-of-hooks because for same value this condition will always lead to same branch of if statement.

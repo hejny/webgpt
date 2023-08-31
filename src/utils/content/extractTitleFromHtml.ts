@@ -1,6 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { DOMParser } from 'xmldom-qsa';
-import { string_html, string_title } from '../typeAliases';
+import { string_html, title } from '../typeAliases';
 
 /**
  * Extract the first heading from HTML
@@ -8,7 +8,7 @@ import { string_html, string_title } from '../typeAliases';
  * @param contentText HTML
  * @returns heading
  */
-export function extractTitleFromHtml(contentHtml: string_html): string_title | null {
+export function extractTitleFromHtml(contentHtml: string_html): Exclude<title, JSX.Element> | null {
     contentHtml = contentHtml.split(/\<(?:br|hr)\s*\/?\>/gis).join('\n');
     contentHtml = contentHtml.split(/\<(?:wbr)\s*\/?\>/gis).join(' ');
 

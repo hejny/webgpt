@@ -66,7 +66,7 @@ export function ColorsModalColorAlgoritm() {
                 visibleButtons={0}
                 options={Object.fromEntries(COLORSTATS_COMPUTE_METHODS.map(({ version }) => [version, version]))}
             />
-            {/* TODO: isComputing && <WorkInProgress isSmall /> */}
+            {/* TODO: isComputing && <TaskInProgress isSmall /> */}
         </>
     );
 }

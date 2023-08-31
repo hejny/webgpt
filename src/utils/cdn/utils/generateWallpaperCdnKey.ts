@@ -4,7 +4,6 @@ import { nameToSubfolderPath } from './nameToSubfolderPath';
 
 /**
  * Generates a path for the prepared hardcoded content
- *
  */
 export function generatePreparedWallpaperCdnKey(wallpaper: Pick<IWallpaper, 'id'>): string_uri {
     // TODO: [⛳️] Probbably prefix should be in this config not on the consumer side

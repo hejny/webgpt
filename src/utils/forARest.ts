@@ -1,5 +1,5 @@
 import { forImmediate } from 'waitasecond';
-import { isRunningInBrowser } from '../../utils/isRunningInWhatever';
+import { isRunningInBrowser } from './isRunningInWhatever';
 
 /**
  * The number of milliseconds to wait before resting again
@@ -7,14 +7,6 @@ import { isRunningInBrowser } from '../../utils/isRunningInWhatever';
  * @type {number}
  */
 const REST_AFTER_MS = 100; /* <- TODO: !! Tweak time */
-
-/**
- * The nonce that is incremented on every rest
- *
- * @private
- * @singleton
- */
-export let restNonce = 0;
 
 /**
  * The timestamp of the last rest
@@ -41,8 +33,6 @@ export async function forARest<TWorktype extends string>(worktype: TWorktype): P
      */
     const now = performance.now();
 
-    restNonce++;
-
     if (now - lastRest > REST_AFTER_MS) {
         console.info(`💤 Resting on ${worktype}`);
         lastRest = now;
@@ -53,5 +43,4 @@ export async function forARest<TWorktype extends string>(worktype: TWorktype): P
 
 /**
  * TODO: Detect time delta and use it for more precise waiting
- * TODO: [🧠] useRefresh / observeVariable
  */

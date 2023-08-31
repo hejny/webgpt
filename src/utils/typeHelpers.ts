@@ -38,8 +38,6 @@ export type RemoveIndex<T> = {
 
 /**
  * Array with at least one item
- *
- * @collboard-modules-sdk
  */
 export type ArrayFull<TItem> = {
     0: TItem;
@@ -49,14 +47,11 @@ export type ArrayFull<TItem> = {
  * Just an item or array of items or set of items
  *
  * @deprecated Using this is a bit antipattern use just Array
- * @collboard-modules-sdk
  */
 export type Arrayable<TItem> = TItem | Array<TItem> | Set<TItem> /* TODO: | TypedArray  */;
 
 /**
  * Just an item or array of items with at least one item
- *
- * @collboard-modules-sdk
  */
 export type ArrayableFull<TItem> = TItem | ArrayFull<TItem>;
 
@@ -64,7 +59,5 @@ export type ArrayableFull<TItem> = TItem | ArrayFull<TItem>;
 
 /**
  * Array which can be wrapped in a Promise and all items can be also wrapped in a Promise
- *
- * @collboard-modules-sdk
  */
 export type PromisableArray<TItem> = Promisable<Array<Promisable<TItem>>>;

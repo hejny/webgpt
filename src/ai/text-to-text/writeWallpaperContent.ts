@@ -2,8 +2,8 @@ import spaceTrim from 'spacetrim';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
 import {
+    image_description,
     string_font_family,
-    string_image_description,
     string_markdown,
     string_midjourney_prompt,
 } from '../../utils/typeAliases';
@@ -21,7 +21,7 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
  * @returns Content of the wallpaper page
  */
 export async function writeWallpaperContent(
-    wallpaperDescription: string_image_description | string_midjourney_prompt,
+    wallpaperDescription: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
 ): Promise<string_markdown> {
     const prompt = createTitlePromptTemplate(wallpaperDescription);
     const chatThread = await ChatThread.ask(prompt);
