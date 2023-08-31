@@ -31,6 +31,7 @@ export function UploadNewWallpaper() {
                             console.info('☑', newTaskProgress);
 
                             setTasksProgress((tasksProgress) =>
+                                // TODO: !!! Preserve order of tasksProgress
                                 // TODO: Make from the code bellow util joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<TaskProgress>
                                 [...tasksProgress.filter(({ name }) => newTaskProgress.name !== name), newTaskProgress],
                             );
@@ -58,12 +59,10 @@ export function UploadNewWallpaper() {
 }
 
 /**
+ * TODO: [🧠] !! Speed up the computation of colorstats
+ * TODO: [🧠] !! Compute ONLY colorstats in worker, rest here - split workers into multiple parts
+ * TODO: [🧠] !! Upload image and Compute colorstats in parallel + remove the comment blocks
  * TODO: Maybe derive isWorking from taskProgress
- * TODO: Show progress checkmarks
- * TODO: !! Speed up the computation of colorstats
- * TODO: Detect image content and write content dynamically just for this image
- * TODO: !!! Compute ONLY colorstats in worker, rest here - split workers into multiple parts
- * TODO: Upload image and Compute colorstats in parallel + remove the comment blocks
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
  * TODO: !! It Should be possible to list private wallpapers via getSupabaseForBrowser().from('Wallpaper').select('*').eq('isPublic', false)
  */
