@@ -108,7 +108,7 @@ export default function TestLoadingPage() {
             }
         });
 
-        return () => registration.destroy();
+        return () => void registration.destroy();
     });
 
     return (
