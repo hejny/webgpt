@@ -65,7 +65,6 @@ async function createNewWallpaper(
     const { author, wallpaperImage } = options;
 
     //-------[ Local image analysis: ]---
-    performance.mark('image-analysis-start');
     await onProgress({
         name: 'image-analysis',
         title: 'Image analysis',
@@ -85,8 +84,6 @@ async function createNewWallpaper(
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
     );
     const colorStats = await compute(image, onProgress);
-    performance.mark('image-analysis-end');
-    performance.measure('image-analysis', 'image-analysis-start', 'image-analysis-end');
     await onProgress({
         name: 'image-analysis',
         isDone: true,
@@ -95,7 +92,6 @@ async function createNewWallpaper(
     //-------[ / Local image analysis ]---
 
     //-------[ Upload image: ]---
-    performance.mark('upload-image-and-write-content-start');
     await onProgress({
         name: 'image-upload',
         title: 'Writing content',
@@ -116,12 +112,6 @@ async function createNewWallpaper(
     }
 
     const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
-    performance.mark('upload-image-and-write-content-end');
-    performance.measure(
-        'upload-image-and-write-content',
-        'upload-image-and-write-content-start',
-        'upload-image-and-write-content-end',
-    );
     await onProgress({
         name: 'image-upload',
         isDone: true,
@@ -131,6 +121,7 @@ async function createNewWallpaper(
     console.info({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
+    //-------[ Save: ]---
     await onProgress({
         name: 'finishing',
         title: 'Finishing',
@@ -151,7 +142,8 @@ async function createNewWallpaper(
     const insertResult = await getSupabaseForWorker().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
 
     // TODO: !! Util isInsertSuccessfull (status===201)
-    console.info({ newWallpaper, insertResult, performance: performance.getEntries() });
+    console.info({ newWallpaper, insertResult });
+    //-------[ /Save ]---
 
     return newWallpaper;
 }
