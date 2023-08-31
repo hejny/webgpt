@@ -75,7 +75,7 @@ async function createNewWallpaper(
 
     const wallpaperResizedCanvas = await createOffscreenCanvas(
         wallpaperImage,
-        IMAGE_NATURAL_SIZE.scale(0.2) /* <- TODO: [🧔] This should be in config */,
+        IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
     );
     const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
     const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
