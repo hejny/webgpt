@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { writeWallpaperContent } from '../../../ai/text-to-text/writeWallpaperContent';
 
-import { string_markdown } from '../../../utils/typeAliases';
+import { description, string_markdown } from '../../../utils/typeAliases';
 
 export interface WriteWallpaperContentResponse {
     // TODO: [🌋] ErrorableResponse
@@ -16,7 +16,7 @@ export default async function writeWallpaperContentHandler(
         return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
-    const wallpaperDescription = request.query.wallpaperDescription as string_markdown;
+    const wallpaperDescription = request.body.wallpaperDescription as Exclude<description, JSX.Element>;
 
     if (!wallpaperDescription) {
         return response.status(400).json({ message: 'Parameter "wallpaperDescription" is required' } as any);

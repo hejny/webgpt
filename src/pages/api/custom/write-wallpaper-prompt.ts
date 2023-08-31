@@ -6,7 +6,7 @@ import { isValidUrl } from '../../../utils/validators/isValidUrl';
 
 export interface WriteWallpaperPromptResponse {
     // TODO: [🌋] ErrorableResponse
-    wallpaperDescription: image_description;
+    wallpaperDescription: Exclude<image_description, JSX.Element>;
 }
 
 export default async function writeWallpaperPromptHandler(
@@ -17,7 +17,7 @@ export default async function writeWallpaperPromptHandler(
         return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
-    const wallpaperUrl = request.query.wallpaperUrl as string_url;
+    const wallpaperUrl = request.body.wallpaperUrl as string_url;
 
     if (!isValidUrl(wallpaperUrl)) {
         return response
