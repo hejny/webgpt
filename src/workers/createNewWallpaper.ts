@@ -29,6 +29,12 @@ export function createNewWallpaper(
         throw new Error('You can access worker function createNewWallpaper only in browser');
     }
 
+    onProgress({
+        name: 'start-worker',
+        title: 'Spinning up',
+        isDone: false,
+    });
+
     if (!createNewWallpaperWorker) {
         createNewWallpaperWorker = new Worker(new URL('./createNewWallpaper.worker.ts', import.meta.url));
     }
@@ -44,6 +50,12 @@ export function createNewWallpaper(
                 >,
             ) => {
                 const { type } = event.data;
+
+                onProgress({
+                    name: 'start-worker',
+                    title: 'Spinning up' /* <- TODO: This should be optional on done tasks (or generally on updates) */,
+                    isDone: true,
+                });
 
                 if (type === 'CREATE_NEW_WALLPAPER_RESULT') {
                     const { wallpaperId } = event.data;
@@ -68,3 +80,7 @@ export function createNewWallpaper(
         } satisfies IMessage_CreateNewWallpaper_Request);
     });
 }
+
+/**
+ * TODO: [🥙] Wrap function as worker util
+ */

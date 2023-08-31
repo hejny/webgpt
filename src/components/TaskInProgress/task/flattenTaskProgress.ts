@@ -11,3 +11,8 @@ export function flattenTaskProgress(taskProgress: TaskProgress): Array<Omit<Task
           >)
         : [rest];
 }
+
+
+/**
+ * Note: [👩‍👦‍👦] Subtasks are not used yet
+ */

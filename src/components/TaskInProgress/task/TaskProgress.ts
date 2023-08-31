@@ -8,5 +8,6 @@ export interface TaskProgress {
 }
 
 /**
+ * Note: [👩‍👦‍👦] Subtasks are not used yet - we are instead joining tasks by its name
  * TODO: [🧠] estimates, done,...
  */

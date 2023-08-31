@@ -62,7 +62,7 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
             name: 'colorstats-v15',
             title: 'Computing image color stats (v15)',
             isDone: false,
-            // TODO: !!! Make it more granular
+            // TODO: Make it more granular
         });
 
         const stats = {
@@ -81,7 +81,7 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
         const { palette, paletteCandidates } = await computeImagePalette15(stats);
 
         await onProgress({
-            // TODO: !!! There should be no need to do this - all the tree of tasks should be done when function resolved
+            // TODO: [👩‍👦‍👦] There should be no need to do this - all the tree of tasks should be done when function resolved
             name: 'colorstats-v15',
             title: 'Computing image color stats (v15)',
             isDone: true,

@@ -2,14 +2,14 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { createNewWallpaper } from '../../workers/createNewWallpaper';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
-import { TaskInProgress } from '../TaskInProgress/TaskInProgress';
+import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
 import styles from './UploadNewWallpaper.module.css';
 
 export function UploadNewWallpaper() {
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
-    const [taskProgress, setTaskProgress] = useState<undefined | TaskProgress>(undefined);
+    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
 
     return (
         <>
@@ -24,12 +24,16 @@ export function UploadNewWallpaper() {
                     }
 
                     setWorking(true);
-                    setTaskProgress(undefined);
+                    setTasksProgress([]);
 
                     try {
-                        const wallpaperId = await createNewWallpaper(file, (taskProgress: TaskProgress) => {
-                            console.info('☑', taskProgress);
-                            setTaskProgress(taskProgress);
+                        const wallpaperId = await createNewWallpaper(file, (newTaskProgress: TaskProgress) => {
+                            console.info('☑', newTaskProgress);
+
+                            setTasksProgress((tasksProgress) =>
+                                // TODO: Make from the code bellow util joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<TaskProgress>
+                                [...tasksProgress.filter(({ name }) => newTaskProgress.name !== name), newTaskProgress],
+                            );
                         });
                         router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page
@@ -40,7 +44,7 @@ export function UploadNewWallpaper() {
 
                         alert(error.message);
                         setWorking(false);
-                        setTaskProgress(undefined);
+                        setTasksProgress([]);
                     }
                 }}
             >
@@ -48,7 +52,7 @@ export function UploadNewWallpaper() {
                 <br />
                 <b>make new web</b>
             </UploadZone>
-            {isWorking && <TaskInProgress {...{ taskProgress }} />}
+            {isWorking && <TasksInProgress {...{ tasksProgress }} />}
         </>
     );
 }
