@@ -75,5 +75,6 @@ export function computeWallpaperUriid(
 }
 
 /**
+ * TODO: !! Fix URL of http://localhost:4444/nature-s-serenade-2zyrenji2h4j -> http://localhost:4444/natures-serenade-2zyrenji2h4j
  * TODO: Download src and put in hash real pixel-content of the image
  */
