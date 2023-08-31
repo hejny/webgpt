@@ -25,7 +25,10 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
             if (newTaskProgress.isDone) {
                 joinedTaskProgress.isDone = true;
             }
-            // TODO: Maybe do title update etc...
+
+            if (newTaskProgress.title) {
+                joinedTaskProgress.title = newTaskProgress.title;
+            }
         }
     }
 
