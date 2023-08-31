@@ -59,12 +59,11 @@ export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | nul
         ribbon.material = ribbonMaterial;
 
         /**/
-        // Rotate the the ribbon
-        ribbon.rotation.z = 10;
+        // Rotate the the camera around the mesh
+        camera.beta = (Math.PI / 2) * (2 / 3) /* <- TODO: [2] For feature/scenarios this should not be */;
         scene.registerBeforeRender(function () {
-            ribbon.rotation.y += 0.02;
-            ribbon.rotation.z *= 0.99;
-            /* <- TODO: For feature/scenarios this should not be */
+            camera.beta *= 0.95 /*  <- [2] */;
+            camera.alpha += 0.02;
         });
         /**/
 
