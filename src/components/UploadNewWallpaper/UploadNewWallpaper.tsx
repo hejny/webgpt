@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { createNewWallpaper } from '../../workers/createNewWallpaper';
+import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
@@ -29,12 +30,7 @@ export function UploadNewWallpaper() {
                     try {
                         const wallpaperId = await createNewWallpaper(file, (newTaskProgress: TaskProgress) => {
                             console.info('☑', newTaskProgress);
-
-                            setTasksProgress((tasksProgress) =>
-                                // TODO: !!! Preserve order of tasksProgress
-                                // TODO: Make from the code bellow util joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<TaskProgress>
-                                [...tasksProgress.filter(({ name }) => newTaskProgress.name !== name), newTaskProgress],
-                            );
+                            setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
                         });
                         router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page

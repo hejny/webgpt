@@ -89,7 +89,6 @@ async function createNewWallpaper(
     performance.measure('image-analysis', 'image-analysis-start', 'image-analysis-end');
     await onProgress({
         name: 'image-analysis',
-        title: 'Image analysis',
         isDone: true,
     });
     console.info({ colorStats });
@@ -125,7 +124,6 @@ async function createNewWallpaper(
     );
     await onProgress({
         name: 'image-upload',
-        title: 'Writing content',
         isDone: true,
     });
     console.info({ wallpaperUrl, wallpaperDescription, wallpaperContent });

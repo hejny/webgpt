@@ -53,7 +53,6 @@ export function createNewWallpaper(
 
                 onProgress({
                     name: 'start-worker',
-                    title: 'Spinning up' /* <- TODO: This should be optional on done tasks (or generally on updates) */,
                     isDone: true,
                 });
 
