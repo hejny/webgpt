@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { Center } from '../../components/Center/Center';
 import styles from '../../styles/static.module.css';
 
 export default function NewWallpaperFromPromptPage() {
@@ -11,8 +13,19 @@ export default function NewWallpaperFromPromptPage() {
 
             <div className={styles.page}>
                 <main>
-                    <h1>AI Web Maker</h1>
-                    TODO: Working on this feature
+                    <Center>
+                        <div style={{ textAlign: 'left' }}>
+                            <h1>AI Web Maker</h1>
+                            The feature is not implemented yet.
+                            <br />
+                            Please use some image generator
+                            <br />
+                            for example MidJourney, Dalle or Stable Diffusion
+                            <br />
+                            and then use
+                            <Link href="/new/from-image"> new from image</Link> instead.
+                        </div>
+                    </Center>
                 </main>
 
                 {/* TODO: Make here some footer
@@ -24,3 +37,9 @@ export default function NewWallpaperFromPromptPage() {
         </>
     );
 }
+
+/**
+ * TODO: Design + some common css for such pre-page pages
+ * TODO: Active links
+ * TODO: Underline links
+ */
