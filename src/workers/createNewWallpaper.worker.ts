@@ -1,6 +1,6 @@
 import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
-import { UploadWallpaperResponse } from '../pages/api/upload-wallpaper';
+import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
@@ -105,17 +105,17 @@ async function createNewWallpaper(
     const formData = new FormData();
     formData.append('wallpaper', wallpaperResizedBlob /* <- [🧔] */);
 
-    const response = await fetch('/api/upload-wallpaper', {
+    const response = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
         body: formData,
-        signal: AbortSignal.timeout(60000),
+        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
     });
 
     if (response.ok === false) {
         throw new Error(`Upload wallpaper failed with status ${response.status}`);
     }
 
-    const { wallpaperUrl, wallpaperDescription, wallpaperContent } = (await response.json()) as UploadWallpaperResponse;
+    const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
     performance.mark('upload-image-and-write-content-end');
     performance.measure(
         'upload-image-and-write-content',
@@ -126,6 +126,8 @@ async function createNewWallpaper(
         name: 'image-upload',
         isDone: true,
     });
+    const wallpaperDescription = '!!!';
+    const wallpaperContent = '!!!';
     console.info({ wallpaperUrl, wallpaperDescription, wallpaperContent });
     //-------[ /Upload image ]---
 
@@ -140,7 +142,7 @@ async function createNewWallpaper(
         author,
         isPublic: false,
         src: wallpaperUrl,
-        prompt: null,
+        prompt: wallpaperDescription,
         colorStats,
         content: wallpaperContent,
         saveStage: 'SAVING',

@@ -16,4 +16,5 @@ export interface DoneTaskProgress {
 
 /**
  * TODO: [🧠] estimates, done,...
+ * TODO: [🧠] Do performance.mark and   performance.measure alongside TaskProgress
  */
