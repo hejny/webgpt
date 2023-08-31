@@ -1,0 +1,34 @@
+{
+    "test": {
+        "scope": "typescript",
+        "prefix": "Test boilerplate",
+        "description": "Test",
+        "body": [
+            "  describe('how $1 works', () => {",
+            "      it('should $1$1__', () => {",
+            "          const $2 = new $1();",
+            "",
+            "          expect($2.$1).toEqual('$1')",
+            "      });",
+            "  });"
+        ]
+    },
+    "iife": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "Immediately Invoked Function Expression",
+        "description": "Immediately Invoked Function Expression",
+        "body": ["((async ()=>{/*Do some stuff*/})())"]
+    },
+    "eslint-disable": {
+        "scope": "typescript,typescriptreact",
+        "prefix": "Disable ES Lint",
+        "description": "Disable ES Lint",
+        "body": ["// eslint-disable-next-line $1"]
+    },
+    "css-testing-outline": {
+        "scope": "typescript,typescriptreact,javascript,html,css",
+        "prefix": "CSS testing outline",
+        "description": "For draw the outline",
+        "body": ["/**/", "outline: 1px dotted red; /**/"]
+    }
+}
