@@ -8,6 +8,7 @@ import {
     string_midjourney_prompt,
     string_url,
     string_wallpaper_id,
+    title,
     uuid,
 } from './typeAliases';
 
@@ -21,14 +22,18 @@ export interface IWallpaper {
     colorStats: IWallpaperColorStats;
     // TODO: shapeStats> IWallpaperShapeStats;
 
-    title: string /* <- Note: This is just derrived */;
+    /**
+     * Note: This is just derrived
+     */
+    title: Exclude<title, JSX.Element>;
     content: string_markdown | string_html;
     // TODO: isTile + some mechanism to add additional metadata
 
     /**
+     * Note: This is just derrived
      * Note: Not using IKewords because Set is not serializable
      */
-    keywords: Array<string_keyword> | null /* <- Note: This is just derrived */;
+    keywords: Array<string_keyword> | null;
 
     saveStage: keyof typeof IWallpaperSaveStage;
 }

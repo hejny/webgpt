@@ -1,5 +1,5 @@
 import spaceTrim from 'spacetrim';
-import { string_chat_prompt, string_image_description, string_midjourney_prompt, string_prompt } from '../../../utils/typeAliases';
+import { image_description, string_chat_prompt, string_midjourney_prompt } from '../../../utils/typeAliases';
 
 /**
  * Generates a template for creating web title  based on a given wallpaper description
@@ -8,7 +8,7 @@ import { string_chat_prompt, string_image_description, string_midjourney_prompt,
  * @returns A title of the web
  */
 export function createTitlePromptTemplate(
-    wallpaperDescription: string_image_description | string_midjourney_prompt,
+    wallpaperDescription: Exclude<image_description, JSX.Element>  | string_midjourney_prompt,
 ): string_chat_prompt {
     return spaceTrim(
         (block) =>

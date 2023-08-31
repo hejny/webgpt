@@ -109,25 +109,32 @@ export type string_char = string;
 export type string_name = string;
 
 /**
+ * A message which can be a simple string or JSX element
+ *
+ * Note: Please use JSX element only as a text with a formatting like a <b>bold</b> or <i>italic</i> etc.
+ */
+export type message = string | JSX.Element;
+
+/**
  * Semantic helper
  *
  * For example `"Ainautes"`
  */
-export type string_title = string;
+export type title = message;
 
 /**
  * Semantic helper
  *
  * For example `"Ainautes are a group of animals that includes mammals, birds, reptiles, amphibians, and fish."`
  */
-export type string_description = string;
+export type description = message;
 
 /**
  * Semantic helper
  *
  * For example `"a city with buildings and trees"`
  */
-export type string_image_description = string_description;
+export type image_description = description;
 
 /**
  * Semantic helper

@@ -1,4 +1,4 @@
-import { number_positive, string_title } from '../../utils/typeAliases';
+import { number_positive, title } from '../../utils/typeAliases';
 import styles from './PricingTableNext.module.css';
 
 interface PricingTableNextProps {
@@ -17,7 +17,7 @@ interface Plan {
     /**
      * @@@
      */
-    title: string_title;
+    title: title;
 
     /**
      * @@@

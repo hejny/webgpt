@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpaper/RandomWallpaperManager';
-import { TaskInProgress } from '../components/TaskInProgress/TaskInProgress';
+import { TasksInProgress } from '../components/TaskInProgress/TasksInProgress';
 import styles from '../styles/static.module.css';
 
 export default function RandomPage() {
@@ -29,7 +29,7 @@ export default function RandomPage() {
                     >
                         1-2i
                     </h1>
-                    <TaskInProgress />
+                    <TasksInProgress />
                 </main>
             </div>
         </>
