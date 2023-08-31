@@ -6,6 +6,7 @@ import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
 import { createOffscreenCanvas } from '../utils/image/createOffscreenCanvas';
 import { getSupabaseForBrowser } from '../utils/supabase/getSupabaseForBrowser';
+import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
 export interface IMessage_CreateNewWallpaper_Request {
@@ -119,7 +120,7 @@ async function createNewWallpaper(author: uuid, wallpaperOriginalBlob: Blob) {
         saveStage: 'SAVING',
     });
 
-    const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
+    const insertResult = await getSupabaseForWorker().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
 
     // TODO: !! Util isInsertSuccessfull (status===201)
     console.info({ newWallpaper, insertResult, performance: performance.getEntries() });

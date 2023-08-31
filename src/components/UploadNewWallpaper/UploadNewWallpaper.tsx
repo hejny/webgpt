@@ -48,7 +48,6 @@ export function UploadNewWallpaper() {
                 <br />
                 <b>make new web</b>
             </UploadZone>
-            <TaskInProgress {...{ taskProgress }} />
             {isWorking && <TaskInProgress {...{ taskProgress }} />}
         </>
     );
