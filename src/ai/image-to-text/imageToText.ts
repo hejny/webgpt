@@ -29,5 +29,5 @@ export async function imageToText(imageUrl: URL): Promise<Exclude<image_descript
 }
 
 /**
- * TODO: [💁‍♂️] Maybe allow to pass a Buffer | File | Blob
+ * TODO: Maybe allow to pass a Buffer | File | Blob
  */

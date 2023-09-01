@@ -14,7 +14,13 @@ export function computeWallpaperUriid(
     // console.log('wallpaper.content', wallpaper.content);
     // (window as any).copy(wallpaper.content);
 
-    const title = extractTitleFromContent(wallpaper.content) || '';
+    let title = extractTitleFromContent(wallpaper.content) || '';
+
+    // Note: Ignore apostrophes and quotes in name to make URL
+    title = title.split("'").join('');
+    title = title.split('"').join('');
+    title = title.split('`').join('');
+    title = title.split('’').join('');
 
     const allUriParts = nameToUriParts(title);
 

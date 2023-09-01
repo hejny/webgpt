@@ -1,6 +1,8 @@
 import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
-import { UploadWallpaperResponse } from '../pages/api/upload-wallpaper';
+import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
+import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpaper-content';
+import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
@@ -64,11 +66,11 @@ async function createNewWallpaper(
 ) {
     const { author, wallpaperImage } = options;
 
+    //===========================================================================
     //-------[ Local image analysis: ]---
-    performance.mark('image-analysis-start');
     await onProgress({
         name: 'image-analysis',
-        title: 'Image analysis',
+        title: 'Color analysis',
         isDone: false,
         // TODO: Make it more granular
     });
@@ -85,50 +87,104 @@ async function createNewWallpaper(
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
     );
     const colorStats = await compute(image, onProgress);
-    performance.mark('image-analysis-end');
-    performance.measure('image-analysis', 'image-analysis-start', 'image-analysis-end');
     await onProgress({
         name: 'image-analysis',
         isDone: true,
     });
     console.info({ colorStats });
     //-------[ / Local image analysis ]---
-
+    //===========================================================================
     //-------[ Upload image: ]---
-    performance.mark('upload-image-and-write-content-start');
     await onProgress({
-        name: 'image-upload',
-        title: 'Writing content',
+        name: 'upload-wallpaper-image',
+        title: 'Uploading image',
         isDone: false,
         // TODO: Make it more granular
     });
     const formData = new FormData();
     formData.append('wallpaper', wallpaperResizedBlob /* <- [🧔] */);
 
-    const response = await fetch('/api/upload-wallpaper', {
+    const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
         body: formData,
-        signal: AbortSignal.timeout(60000),
+        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
     });
 
-    if (response.ok === false) {
-        throw new Error(`Upload wallpaper failed with status ${response.status}`);
+    if (response1.ok === false) {
+        throw new Error(`Upload wallpaper failed with status ${response1.status}`);
     }
 
-    const { wallpaperUrl, wallpaperDescription, wallpaperContent } = (await response.json()) as UploadWallpaperResponse;
-    performance.mark('upload-image-and-write-content-end');
-    performance.measure(
-        'upload-image-and-write-content',
-        'upload-image-and-write-content-start',
-        'upload-image-and-write-content-end',
-    );
+    const { wallpaperUrl } = (await response1.json()) as UploadWallpaperResponse;
     await onProgress({
-        name: 'image-upload',
+        name: 'upload-wallpaper-image',
         isDone: true,
     });
-    console.info({ wallpaperUrl, wallpaperDescription, wallpaperContent });
+    console.info({ wallpaperUrl });
     //-------[ /Upload image ]---
+    //===========================================================================
+    //-------[ Write description: ]---
+    await onProgress({
+        name: 'write-wallpaper-prompt',
+        title: 'Content analysis',
+        isDone: false,
+        // TODO: Make it more granular
+    });
 
+    const response2 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-prompt', {
+        method: 'POST',
+        body: JSON.stringify({ wallpaperUrl }),
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+        },
+        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+    });
+
+    if (response2.ok === false) {
+        throw new Error(`Content analysis failed with status ${response2.status}`);
+    }
+
+    const { wallpaperDescription } = (await response2.json()) as WriteWallpaperPromptResponse;
+    await onProgress({
+        name: 'write-wallpaper-prompt',
+        isDone: true,
+    });
+
+    console.info({ wallpaperDescription });
+    //-------[ /Write description ]---
+    //===========================================================================
+    //-------[ Write content: ]---
+    await onProgress({
+        name: 'write-wallpaper-content',
+        title: 'Copywriting',
+        isDone: false,
+        // TODO: Make it more granular
+    });
+
+    const response3 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-content', {
+        method: 'POST',
+        body: JSON.stringify({ wallpaperDescription }),
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+        },
+        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+    });
+
+    if (response3.ok === false) {
+        throw new Error(`Copywriting failed with status ${response3.status}`);
+    }
+
+    const { wallpaperContent } = (await response3.json()) as WriteWallpaperContentResponse;
+    await onProgress({
+        name: 'write-wallpaper-content',
+        isDone: true,
+    });
+
+    console.info({ wallpaperContent });
+    //-------[ /Write content ]---
+    //===========================================================================
+    //-------[ Save: ]---
     await onProgress({
         name: 'finishing',
         title: 'Finishing',
@@ -140,7 +196,7 @@ async function createNewWallpaper(
         author,
         isPublic: false,
         src: wallpaperUrl,
-        prompt: null,
+        prompt: wallpaperDescription,
         colorStats,
         content: wallpaperContent,
         saveStage: 'SAVING',
@@ -149,8 +205,9 @@ async function createNewWallpaper(
     const insertResult = await getSupabaseForWorker().from('Wallpaper').insert(serializeWallpaper(newWallpaper));
 
     // TODO: !! Util isInsertSuccessfull (status===201)
-    console.info({ newWallpaper, insertResult, performance: performance.getEntries() });
-
+    console.info({ newWallpaper, insertResult });
+    //-------[ /Save ]---
+    //===========================================================================
     return newWallpaper;
 }
 
