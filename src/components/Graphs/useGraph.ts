@@ -9,9 +9,9 @@ import {
     StandardMaterial,
     Vector3,
 } from 'babylonjs';
-import { useEffect, useRef,MutableRefObject } from 'react';
+import { MutableRefObject, useEffect, useRef } from 'react';
 
-export function useGraph(): {sceneRef:MutableRefObject<HTMLCanvasElement | null>} {
+export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | null> } {
     const sceneRef = useRef<HTMLCanvasElement | null>(null);
     useEffect(() => {
         // Get the canvas element
@@ -61,7 +61,7 @@ export function useGraph(): {sceneRef:MutableRefObject<HTMLCanvasElement | null>
         /**/
         // Rotate the the camera around the mesh
         camera.beta = (Math.PI / 2) * (2 / 3) /* <- TODO: [2] For feature/scenarios this should not be */;
-        scene.registerBeforeRender(function () {
+        scene.registerBeforeRender(() => {
             camera.beta *= 0.95 /*  <- [2] */;
             camera.alpha += 0.02;
         });
@@ -70,17 +70,24 @@ export function useGraph(): {sceneRef:MutableRefObject<HTMLCanvasElement | null>
         //==============================================
 
         // Render the scene
-        engine.runRenderLoop(function () {
+        engine.runRenderLoop(() => {
             scene.render();
         });
 
         // Handle window resize
-        window.addEventListener('resize', function () {
+        const resizeHandler = () => {
             engine.resize();
-        });
+        };
+        window.addEventListener('resize', resizeHandler);
 
-        // !!!! Return
+        return () => {
+            // Remove event listener
+            window.removeEventListener('resize', resizeHandler);
+
+            // Dispose of the scene
+            scene.dispose();
+        };
     }, [sceneRef]);
 
-    return {sceneRef};
+    return { sceneRef };
 }
