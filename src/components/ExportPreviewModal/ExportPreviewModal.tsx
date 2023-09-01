@@ -110,7 +110,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                             if(isLinked){
                                 continue;
                             }
-                        
+
                             const href = linkElement.getAttribute('href');
 
                             if(href.startsWith('blob:')){

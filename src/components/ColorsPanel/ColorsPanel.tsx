@@ -103,4 +103,5 @@ export function ColorsPanel() {
  * TODO: Colors panel in Wireframe design
  * TODO: Change this to <ColorsAndFontsPanel/> OR [🧠] allow to change fonts here [👩‍🦰]
  * TODO: Maybe allow to close the colors
+ * TODO: !!!! [🧠] Semantic color palette - plan where each color should be used (and do not duplicate bg and ui items)
  */
