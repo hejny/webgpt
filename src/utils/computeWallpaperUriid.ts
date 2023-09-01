@@ -14,7 +14,13 @@ export function computeWallpaperUriid(
     // console.log('wallpaper.content', wallpaper.content);
     // (window as any).copy(wallpaper.content);
 
-    const title = extractTitleFromContent(wallpaper.content) || '';
+    let title = extractTitleFromContent(wallpaper.content) || '';
+
+    // Note: Ignore apostrophes and quotes in name to make URL
+    title = title.split("'").join('');
+    title = title.split('"').join('');
+    title = title.split('`').join('');
+    title = title.split('’').join('');
 
     const allUriParts = nameToUriParts(title);
 
@@ -75,6 +81,5 @@ export function computeWallpaperUriid(
 }
 
 /**
- * TODO: !! Fix URL of http://localhost:4444/nature-s-serenade-2zyrenji2h4j -> http://localhost:4444/natures-serenade-2zyrenji2h4j
  * TODO: Download src and put in hash real pixel-content of the image
  */
