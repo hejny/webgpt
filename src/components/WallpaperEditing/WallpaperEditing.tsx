@@ -36,6 +36,7 @@ export function WallpaperEditing() {
 }
 
 /**
+ * TODO: !!! Some link to export-code, export-preview and manual
  * TODO: !! Lazy load modals
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */
