@@ -1,3 +1,4 @@
+import { MeshBuilder } from 'babylonjs';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
@@ -35,13 +36,57 @@ export default function HomePage() {
                             </Link>
                         </ul>
                         <Link href="/random">
-                            <GraphButton>Need help</GraphButton>
+                            <GraphButton
+                                createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
+                                    let ribbon = MeshBuilder.CreateSphere(
+                                        'ribbon',
+                                        {
+                                            diameter: 3,
+                                            segments: 3,
+                                        },
+                                        scene,
+                                    );
+                                    ribbon.material = wireframeMaterial;
+                                }}
+                            >
+                                Need help
+                            </GraphButton>
                         </Link>
                         <Link href="/new/from-prompt">
-                            <GraphButton>Have idea</GraphButton>
+                            <GraphButton
+                                createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
+                                    let ribbon = MeshBuilder.CreateTorus(
+                                        'ribbon',
+                                        {
+                                            diameter: 1,
+                                            thickness: 0.5,
+                                            tessellation: 20,
+                                        },
+                                        scene,
+                                    );
+                                    ribbon.material = wireframeMaterial;
+                                }}
+                            >
+                                Have idea
+                            </GraphButton>
                         </Link>
                         <Link href="/new/from-image">
-                            <GraphButton>Have custom image</GraphButton>
+                            <GraphButton
+                                createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
+                                    let ribbon = MeshBuilder.CreateTorus(
+                                        'ribbon',
+                                        {
+                                            diameter: 1,
+                                            thickness: 0.5,
+                                            tessellation: 20,
+                                        },
+                                        scene,
+                                    );
+                                    ribbon.material = wireframeMaterial;
+                                }}
+                            >
+                                Have custom image
+                            </GraphButton>
                         </Link>
                     </Center>
                 </main>

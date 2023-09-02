@@ -2,9 +2,16 @@ import type { Material } from 'babylonjs';
 import { ArcRotateCamera, Color3, Color4, Engine, HemisphericLight, Scene, StandardMaterial, Vector3 } from 'babylonjs';
 import { MutableRefObject, useEffect, useRef } from 'react';
 
-export function useGraph(
-    createSceneMeshes: (assets: { scene: Scene; camera: ArcRotateCamera; wireframeMaterial: Material }) => void,
-): {
+/**
+ * Function that creates meshes the scene and optionally some effects and extra stuff like camera rotation
+ */
+export type ICreateSceneMeshes = (assets: {
+    scene: Scene;
+    camera: ArcRotateCamera;
+    wireframeMaterial: Material;
+}) => void;
+
+export function useGraph(createSceneMeshes: ICreateSceneMeshes): {
     sceneRef: MutableRefObject<HTMLCanvasElement | null>;
 } {
     const sceneRef = useRef<HTMLCanvasElement | null>(null);
@@ -61,7 +68,7 @@ export function useGraph(
             // Dispose of the scene
             scene.dispose();
         };
-    }, [sceneRef]);
+    }, [sceneRef, createSceneMeshes]);
 
     return { sceneRef };
 }

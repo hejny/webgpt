@@ -19,7 +19,6 @@ export function TasksInProgress(props: TaskInProgressProps) {
                 diameter: 1,
                 thickness: 0.5,
                 tessellation: 20,
-                // sideOrientation: Mesh.DOUBLESIDE,
             },
             scene,
         );

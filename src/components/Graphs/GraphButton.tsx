@@ -1,11 +1,15 @@
-import { MeshBuilder } from 'babylonjs';
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './GraphButton.module.css';
-import { useGraph } from './useGraph';
+import { ICreateSceneMeshes, useGraph } from './useGraph';
 
 interface GraphButtonProps {
+    /**
+     * Function that creates meshes the scene and optionally some effects and extra stuff like camera rotation
+     */
+    createSceneMeshes: ICreateSceneMeshes;
+
     /**
      * Optional content of the section
      */
@@ -23,20 +27,8 @@ interface GraphButtonProps {
  * Note: It should be nested inside a <Link href="..."/>, <a href="..."/> or <... onClick/> component to be active
  */
 export function GraphButton(props: GraphButtonProps) {
-    const { children, className } = props;
-    const { sceneRef } = useGraph(({ scene, camera, wireframeMaterial }) => {
-        let ribbon = MeshBuilder.CreateTorus(
-            'ribbon',
-            {
-                diameter: 1,
-                thickness: 0.5,
-                tessellation: 20,
-                // sideOrientation: Mesh.DOUBLESIDE,
-            },
-            scene,
-        );
-        ribbon.material = wireframeMaterial;
-    });
+    const { createSceneMeshes, children, className } = props;
+    const { sceneRef } = useGraph(createSceneMeshes);
     return (
         <div className={classNames(styles.GraphButton, className)}>
             <canvas className={styles.scene} ref={sceneRef} />
