@@ -1,17 +1,12 @@
-import {
-    ArcRotateCamera,
-    Color3,
-    Color4,
-    Engine,
-    HemisphericLight,
-    MeshBuilder,
-    Scene,
-    StandardMaterial,
-    Vector3,
-} from 'babylonjs';
+import type { Material } from 'babylonjs';
+import { ArcRotateCamera, Color3, Color4, Engine, HemisphericLight, Scene, StandardMaterial, Vector3 } from 'babylonjs';
 import { MutableRefObject, useEffect, useRef } from 'react';
 
-export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | null> } {
+export function useGraph(
+    createSceneMeshes: (assets: { scene: Scene; camera: ArcRotateCamera; wireframeMaterial: Material }) => void,
+): {
+    sceneRef: MutableRefObject<HTMLCanvasElement | null>;
+} {
     const sceneRef = useRef<HTMLCanvasElement | null>(null);
     useEffect(() => {
         // Get the canvas element
@@ -38,34 +33,13 @@ export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | nul
 
         // scene.debugLayer.show();
 
-        //==============================================
-
-        let ribbon = MeshBuilder.CreateTorus(
-            'ribbon',
-            {
-                diameter: 1,
-                thickness: 0.5,
-                tessellation: 20,
-                // sideOrientation: Mesh.DOUBLESIDE,
-            },
-            scene,
-        );
-
         // Create a material for the ribbon
-        const ribbonMaterial = new StandardMaterial('ribbonMaterial', scene);
-        ribbonMaterial.emissiveColor = Color3.White();
-        ribbonMaterial.backFaceCulling = false;
-        ribbonMaterial.wireframe = true;
-        ribbon.material = ribbonMaterial;
+        const wireframeMaterial = new StandardMaterial('ribbonMaterial', scene);
+        wireframeMaterial.emissiveColor = Color3.White();
+        wireframeMaterial.backFaceCulling = false;
+        wireframeMaterial.wireframe = true;
 
-        /**/
-        // Rotate the the camera around the mesh
-        camera.beta = (Math.PI / 2) * (2 / 3) /* <- TODO: [2] For feature/scenarios this should not be */;
-        scene.registerBeforeRender(() => {
-            camera.beta *= 0.95 /*  <- [2] */;
-            camera.alpha += 0.02;
-        });
-        /**/
+        createSceneMeshes({ scene, camera, wireframeMaterial });
 
         //==============================================
 

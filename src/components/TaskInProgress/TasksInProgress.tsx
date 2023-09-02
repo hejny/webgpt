@@ -1,3 +1,4 @@
+import { MeshBuilder } from 'babylonjs';
 import { useGraph } from '../Graphs/useGraph';
 import { TaskProgress } from './task/TaskProgress';
 import styles from './TasksInProgress.module.css';
@@ -11,8 +12,26 @@ interface TaskInProgressProps {
  */
 export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
-    const { sceneRef } = useGraph();
-    
+    const { sceneRef } = useGraph(({ scene, camera, wireframeMaterial }) => {
+        let ribbon = MeshBuilder.CreateTorus(
+            'ribbon',
+            {
+                diameter: 1,
+                thickness: 0.5,
+                tessellation: 20,
+                // sideOrientation: Mesh.DOUBLESIDE,
+            },
+            scene,
+        );
+        ribbon.material = wireframeMaterial;
+
+        // Note: Rotate the the camera around the mesh and make it look down initially
+        camera.beta = (Math.PI / 2) * (2 / 3);
+        scene.registerBeforeRender(() => {
+            camera.beta *= 0.95;
+            camera.alpha += 0.02;
+        });
+    });
 
     return (
         <div className={styles.TasksInProgress}>

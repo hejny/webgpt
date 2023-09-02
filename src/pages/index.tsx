@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { Center } from '../components/Center/Center';
+import { GraphButton } from '../components/Graphs/GraphButton';
 import styles from '../styles/static.module.css';
 
 export default function HomePage() {
@@ -33,8 +34,6 @@ export default function HomePage() {
                                 </li>
                             </Link>
                         </ul>
-                        {/*
-                        TODO: !!!
                         <Link href="/random">
                             <GraphButton>Need help</GraphButton>
                         </Link>
@@ -44,7 +43,6 @@ export default function HomePage() {
                         <Link href="/new/from-image">
                             <GraphButton>Have custom image</GraphButton>
                         </Link>
-                        */}
                     </Center>
                 </main>
             </div>

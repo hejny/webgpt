@@ -1,3 +1,4 @@
+import { MeshBuilder } from 'babylonjs';
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
@@ -23,7 +24,19 @@ interface GraphButtonProps {
  */
 export function GraphButton(props: GraphButtonProps) {
     const { children, className } = props;
-    const { sceneRef } = useGraph();
+    const { sceneRef } = useGraph(({ scene, camera, wireframeMaterial }) => {
+        let ribbon = MeshBuilder.CreateTorus(
+            'ribbon',
+            {
+                diameter: 1,
+                thickness: 0.5,
+                tessellation: 20,
+                // sideOrientation: Mesh.DOUBLESIDE,
+            },
+            scene,
+        );
+        ribbon.material = wireframeMaterial;
+    });
     return (
         <div className={classNames(styles.GraphButton, className)}>
             <canvas className={styles.scene} ref={sceneRef} />
