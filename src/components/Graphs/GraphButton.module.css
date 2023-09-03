@@ -7,15 +7,23 @@
 
     width: 200px;
     height: 200px;
-
-    text-align: center;
 }
 
-.scene {
+.GraphButton .scene {
     /*/
     outline: 1px dotted rgb(38, 114, 255);
     /**/
 
     width: 200px;
     height: 200px;
+}
+
+.GraphButton .content {
+    /*/
+    outline: 1px dotted rgb(38, 114, 255);
+    /**/
+
+    text-align: center;
+
+    margin-top: -30px;
 }

@@ -32,7 +32,7 @@ export function GraphButton(props: GraphButtonProps) {
     return (
         <div className={classNames(styles.GraphButton, className)}>
             <canvas className={styles.scene} ref={sceneRef} />
-            {children}
+            <div className={styles.content}>{children}</div>
         </div>
     );
 }

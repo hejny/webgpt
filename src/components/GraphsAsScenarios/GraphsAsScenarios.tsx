@@ -25,7 +25,7 @@ export function GraphsAsScenarios() {
                         }}
                     >
                         {/* TODO: !!! Use or remove <HandwrittenText color={Color.from('#fff')}>sss</HandwrittenText> */}
-                        I have <h2>Nothing</h2> and I will pick from gallery
+                        <h2>Nothing</h2> and I will pick from gallery
                     </GraphButton>
                 </Link>
             </li>
@@ -49,7 +49,7 @@ export function GraphsAsScenarios() {
                             ribbon.material = wireframeMaterial;
                         }}
                     >
-                        I have an <h2>Idea</h2> to describe and generate web
+                        <h2>Idea</h2> to describe and generate web
                     </GraphButton>
                 </Link>
             </li>
@@ -71,7 +71,7 @@ export function GraphsAsScenarios() {
                             ribbon.material = wireframeMaterial;
                         }}
                     >
-                        Custom <h2>Image</h2> to upload and generate web
+                        <h2>Image</h2> to upload and generate web
                     </GraphButton>
                 </Link>
             </li>
