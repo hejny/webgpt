@@ -89,8 +89,18 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
-export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
+// !!! IMAGE -> WALLPAPER_IMAGE
 
+export const FULLHD = new Vector(1920, 1080);
+
+/**
+ * @deprecated !!! Remove OR use ONLY as a fallback
+ */
+export const IMAGE_NATURAL_SIZE = FULLHD;
+
+// TODO: !!! IMAGE_MAX_SIZE
+// TODO: !!! IMAGE_MIN_RECOMMENDED_SIZE
+// TODO: !!! IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE
 // TODO: !!! IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE
 // TODO: !!! IMAGE_ASPECT_RATIO_ALLOWED_RANGE
 
