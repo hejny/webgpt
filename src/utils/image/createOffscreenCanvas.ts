@@ -4,6 +4,8 @@ import { IVector } from 'xyzt';
 
 /**
  * Create new OffscreenCanvas from Blob + resize to preferredSize
+ * 
+ * @deprecated REMOVE
  */
 export async function createOffscreenCanvas(imageAsBlob: Blob, preferredSize: IVector): Promise<OffscreenCanvas> {
     const imageBitmap = await createImageBitmap(imageAsBlob);
