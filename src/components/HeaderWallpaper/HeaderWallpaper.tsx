@@ -36,6 +36,7 @@ export function HeaderWallpaper() {
 }
 
 /**
+ * TODO: !!! Be aware of naturalSize of the wallpaper in the design
  * TODO: In export get rid of data-nimg
  * TODO: [🧬] !! Fake generating - Unblur image in steps
  * TODO: [🧬] In future better diffusion simulator

@@ -65,7 +65,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
                     src,
                     prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     colorStats /* <- TODO: !! Also reduce colorStats */,
-                    // TODO: shapeStats> IWallpaperShapeStats;
                     title,
                     content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     keywords,

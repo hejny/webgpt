@@ -91,6 +91,9 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 
 export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
 
+// TODO: !!! IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE
+// TODO: !!! IMAGE_ASPECT_RATIO_ALLOWED_RANGE
+
 /**
  * @@@
  */

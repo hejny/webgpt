@@ -1,4 +1,5 @@
 import { string_keyword } from 'n12';
+import { IVector, Vector } from 'xyzt';
 import { Json } from '../utils/supabase/types';
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
@@ -20,7 +21,11 @@ export interface IWallpaper {
     src: string_url /* <- Note: Not using URL objects because of serialization */;
     prompt: string_midjourney_prompt | null;
     colorStats: IWallpaperColorStats;
-    // TODO: shapeStats> IWallpaperShapeStats;
+
+    /**
+     * Note: This is just derrived from src
+     */
+    naturalSize: Vector;
 
     /**
      * Note: This is just derrived
@@ -49,8 +54,11 @@ export type IWallpaperColorStats = IImageColorStats<string>;
 
 export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'saveStage'> & {
     colorStats: Json;
+    naturalSize: IVector;
 };
 
 /**
- * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"
+ * TODO: [🧠] Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"
+ * TODO: [🧠] Maybe provide full srcset
+ * TODO: [🧠] Maybe compute also some shapeStats (not only naturalSize) to capture most important regions of the wallpaper and overall shape (for example to determine the font)
  */

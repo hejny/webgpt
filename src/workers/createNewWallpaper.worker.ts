@@ -75,8 +75,11 @@ async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
+    // TODO: !!! Detect Aspect Ratio and warn if it is more than 16:9 (put in config)
+
     const wallpaperResizedCanvas = await createOffscreenCanvas(
         wallpaperImage,
+        // TODO: !!! Preserve Aspect Ratio of the wallpaper when scaling
         IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
     );
     const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
