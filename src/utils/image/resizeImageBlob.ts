@@ -1,10 +1,10 @@
 import { IVector } from 'xyzt';
 
-export async function resizeImageBlob(image: Blob, size: IVector): Promise<Blob> {
-    const imageBitmap = await createImageBitmap(imageAsBlob);
+export async function resizeImageBlob(image: Blob, newSize: IVector): Promise<Blob> {
+    const imageBitmap = await createImageBitmap(image);
 
     // Create an OffscreenCanvas object
-    const canvas = new OffscreenCanvas(preferredSize.x!, preferredSize.y!);
+    const canvas = new OffscreenCanvas(newSize.x!, newSize.y!);
 
     // Get the 2D rendering context of the canvas
     const context = canvas.getContext('2d');
@@ -22,13 +22,13 @@ export async function resizeImageBlob(image: Blob, size: IVector): Promise<Blob>
         imageBitmap.height, // <- source      y size
         0, //                  <- destination x
         0, //                  <- destination y
-        preferredSize.x!, //   <- destination x size
-        preferredSize.y!, //   <- destination y size
+        newSize.x!, //         <- destination x size
+        newSize.y!, //         <- destination y size
     );
 
-    return canvas;
+    return await canvas.convertToBlob();
 }
 
 /**
- * TODO: It should not upscale ONLY downscale
+ * TODO: !!! It should not upscale ONLY downscale
  */

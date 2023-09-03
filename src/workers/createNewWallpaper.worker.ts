@@ -1,4 +1,3 @@
-import { Vector } from 'xyzt';
 import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
@@ -7,7 +6,8 @@ import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpape
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
-import { createOffscreenCanvas } from '../utils/image/createOffscreenCanvas';
+import { measureImageBlob } from '../utils/image/measureImageBlob';
+import { resizeImageBlob } from '../utils/image/resizeImageBlob';
 import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
@@ -65,7 +65,7 @@ async function createNewWallpaper(
     options: Omit<IMessage_CreateNewWallpaper_Request, 'type'>,
     onProgress: (taskProgress: TaskProgress) => void,
 ) {
-    const { author, wallpaperImage: wallpaperImageAsBlob } = options;
+    const { author, wallpaperImage /* <- !!! Maybe rename to just wallpaper */: wallpaper } = options;
 
     //===========================================================================
     //-------[ Local image analysis: ]---
@@ -76,23 +76,25 @@ async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    const wallpaperImage = await createImageBitmap(wallpaperImageAsBlob);
-    const naturalSize = new Vector(wallpaperImage.width, wallpaperImage.height);
+    const naturalSize = await measureImageBlob(wallpaper);
 
     // TODO: !!! Detect Aspect Ratio and warn if it is more than 16:9 (put in config)
 
-    const wallpaperResizedCanvas = await resizeImageBlob(
-        wallpaperImage,
+    const wallpaperResized = await resizeImageBlob(
+        wallpaper,
         // TODO: !!! Preserve Aspect Ratio of the wallpaper when scaling
         IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
     );
-    const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
+
+    // TODO: !!! Split wallpaper(Original), wallpaperForColorAnalysis, wallpaperForContentAnalysis, wallpaperForUpload
+    // TODO: !!! Merge into feature/heic and make here room for conversion
+    // TODO: !!! Split up [ Image conversion: ] vs [ Color analysis: ]
     const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     const image = await createImageInWorker(
         // TODO: [🧠] !!! Some better name for Image, createImageInWorker
         // TODO: [👱‍♀️] It is inefficient pass here blob which will be internally converted to OffscreenCanvas which is aviablie already here
-        wallpaperResizedBlob,
-        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
+        wallpaperResized,
+        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO:  !!! This should be exposed as compute.preferredSize */,
     );
     const colorStats = await compute(image, onProgress);
     await onProgress({

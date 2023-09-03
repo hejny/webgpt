@@ -9,7 +9,10 @@ import { Image as MyImage } from './Image';
 /**
  * Create new Image from Blob in the browser or worker
  */
-export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVector): Promise<MyImage> {
+export async function createImageInWorker(
+    imageAsBlob: Blob,
+    preferredSize: IVector /* <- !!! Decouple from this function */,
+): Promise<MyImage> {
     const imageBitmap = await createImageBitmap(imageAsBlob);
     const width = imageBitmap.width;
     const height = imageBitmap.height;
