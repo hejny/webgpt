@@ -70,7 +70,3 @@ export function Modal(props: ModalProps) {
         </>
     );
 }
-
-/**
- * TODO: !!! Modal in Wireframe design
- */

@@ -18,79 +18,70 @@ export default function HomePage() {
                     <Center>
                         <h1>AI Web Maker</h1>I have…
                         <ul>
-                            <Link href="/random">
-                                <li>
-                                    …<b>Nothing</b> and pick from gallery of pre-generated webs
-                                </li>
-                            </Link>
-
-                            <Link href="/new/from-prompt">
-                                <li>
-                                    …<b>Idea</b> to describe and generate web
-                                </li>
-                            </Link>
-                            <Link href="/new/from-image">
-                                <li>
-                                    …<b>Image</b> to upload and generate web
-                                </li>
-                            </Link>
+                            <li>
+                                <Link href="/random">
+                                    <GraphButton
+                                        createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
+                                            let ribbon = MeshBuilder.CreateSphere(
+                                                'ribbon',
+                                                {
+                                                    diameter: 3,
+                                                    segments: 3,
+                                                },
+                                                scene,
+                                            );
+                                            ribbon.material = wireframeMaterial;
+                                        }}
+                                    >
+                                        {/* TODO: !!! Use or remove <HandwrittenText color={Color.from('#fff')}>sss</HandwrittenText> */}
+                                        {/* // TODO: !!! Design of text */}…<b>Nothing</b> and pick from gallery of
+                                        pre-generated webs
+                                    </GraphButton>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/new/from-prompt">
+                                    <GraphButton
+                                        createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
+                                            let ribbon = MeshBuilder.CreateTorus(
+                                                // TODO: !!! Figure out best shape
+                                                'ribbon',
+                                                {
+                                                    diameter: 1,
+                                                    thickness: 0.5,
+                                                    tessellation: 20,
+                                                },
+                                                scene,
+                                            );
+                                            ribbon.material = wireframeMaterial;
+                                        }}
+                                    >
+                                        …<b>Idea</b> to describe and generate web
+                                    </GraphButton>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/new/from-image">
+                                    <GraphButton
+                                        createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
+                                            let ribbon = MeshBuilder.CreateTorus(
+                                                // TODO: !!! Figure out best shape
+                                                'ribbon',
+                                                {
+                                                    diameter: 1,
+                                                    thickness: 0.5,
+                                                    tessellation: 20,
+                                                },
+                                                scene,
+                                            );
+                                            ribbon.material = wireframeMaterial;
+                                        }}
+                                    >
+                                        …<b>Image</b> to upload and generate web
+                                    </GraphButton>
+                                </Link>
+                            </li>
                         </ul>
-                        <Link href="/random">
-                            <GraphButton
-                                createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
-                                    let ribbon = MeshBuilder.CreateSphere(
-                                        'ribbon',
-                                        {
-                                            diameter: 3,
-                                            segments: 3,
-                                        },
-                                        scene,
-                                    );
-                                    ribbon.material = wireframeMaterial;
-                                }}
-                            >
-                                {/* // TODO: !!! Design of text */}
-                                Need help
-                            </GraphButton>
-                        </Link>
-                        <Link href="/new/from-prompt">
-                            <GraphButton
-                                createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
-                                    let ribbon = MeshBuilder.CreateTorus(
-                                        // TODO: !!! Figure out best shape
-                                        'ribbon',
-                                        {
-                                            diameter: 1,
-                                            thickness: 0.5,
-                                            tessellation: 20,
-                                        },
-                                        scene,
-                                    );
-                                    ribbon.material = wireframeMaterial;
-                                }}
-                            >
-                                Have idea
-                            </GraphButton>
-                        </Link>
-                        <Link href="/new/from-image">
-                            <GraphButton
-                                createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
-                                    let ribbon = MeshBuilder.CreateTorus(
-                                        // TODO: !!! Figure out best shape
-                                        'ribbon',
-                                        {
-                                            diameter: 1,
-                                            thickness: 0.5,
-                                            tessellation: 20,
-                                        },
-                                        scene,
-                                    );
-                                    ribbon.material = wireframeMaterial;
-                                }}
-                            >
-                                Have custom image
-                            </GraphButton>
-                        </Link>
                     </Center>
                 </main>
             </div>
@@ -99,7 +90,8 @@ export default function HomePage() {
 }
 
 /**
- * TODO: !!! Different graohs
+ * TODO: !!! Put here some footer
+ * TODO: !!! Put here some idea explanation
  * TODO: !!! Nicer fonts / handwritten
  * TODO: !!! DO not redirect to random wallpaper provide 3 scenarios:
  *       - 🙄 No idea
