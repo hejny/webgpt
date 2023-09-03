@@ -1,7 +1,14 @@
 ul.GraphsAsScenarios {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

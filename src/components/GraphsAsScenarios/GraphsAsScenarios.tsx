@@ -17,7 +17,7 @@ export function GraphsAsScenarios() {
                                 'ribbon',
                                 {
                                     diameter: 3,
-                                    segments: 3,
+                                    segments: 5,
                                 },
                                 scene,
                             );
@@ -25,7 +25,7 @@ export function GraphsAsScenarios() {
                         }}
                     >
                         {/* TODO: !!! Use or remove <HandwrittenText color={Color.from('#fff')}>sss</HandwrittenText> */}
-                        {/* // TODO: !!! Design of text */}…<b>Nothing</b> and pick from gallery of pre-generated webs
+                        I have <h2>Nothing</h2> and I will pick from gallery
                     </GraphButton>
                 </Link>
             </li>
@@ -49,7 +49,7 @@ export function GraphsAsScenarios() {
                             ribbon.material = wireframeMaterial;
                         }}
                     >
-                        …<b>Idea</b> to describe and generate web
+                        I have an <h2>Idea</h2> to describe and generate web
                     </GraphButton>
                 </Link>
             </li>
@@ -66,11 +66,12 @@ export function GraphsAsScenarios() {
                                 },
                                 scene,
                             );
-                            ribbon.scaling = Vector3.One().scale(2.5);
+                            ribbon.scaling = Vector3.One().scale(2.2);
+                            ribbon.rotation = new Vector3(Math.PI / 2, Math.PI / 2, Math.PI / 5);
                             ribbon.material = wireframeMaterial;
                         }}
                     >
-                        …<b>Image</b> to upload and generate web
+                        Custom <h2>Image</h2> to upload and generate web
                     </GraphButton>
                 </Link>
             </li>

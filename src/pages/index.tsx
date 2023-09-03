@@ -14,7 +14,7 @@ export default function HomePage() {
             <div className={styles.page}>
                 <main>
                     <Center>
-                        <h1>AI Web Maker</h1>I have…
+                        <h1>AI Web Maker</h1>
                         <GraphsAsScenarios />
                     </Center>
                 </main>

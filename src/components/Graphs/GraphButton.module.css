@@ -1,5 +1,5 @@
 .GraphButton {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
@@ -7,10 +7,12 @@
 
     width: 200px;
     height: 200px;
+
+    text-align: center;
 }
 
 .scene {
-    /**/
+    /*/
     outline: 1px dotted rgb(38, 114, 255);
     /**/
 
