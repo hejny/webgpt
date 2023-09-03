@@ -3,11 +3,13 @@ import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
 
 export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
+    // TODO: !!! Add naturalSize in serializeWallpaper+hydrateWallpaper
     return { ...json, colorStats: hydrateColorStats(json.colorStats), saveStage: 'SAVED' } as IWallpaper;
 }
 
 export function serializeWallpaper(wallpaper: Omit<IWallpaper, 'saveStage'>): IWallpaperSerialized {
     // Note: Keepeng ONLY intended properties
+    // TODO: !!! Add naturalSize in serializeWallpaper+hydrateWallpaper
     const { id, parent, author, isPublic, src, prompt, colorStats, title, content, keywords } = wallpaper;
     return {
         id,
