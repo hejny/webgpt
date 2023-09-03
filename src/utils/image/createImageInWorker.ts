@@ -4,6 +4,8 @@ import { forARest } from '../forARest';
 import { IComputeColorstatsWork } from './IComputeColorstatsWork';
 import { Image as MyImage } from './Image';
 
+// TODO: !!! Remove preferredSize
+
 /**
  * Create new Image from Blob in the browser or worker
  */
@@ -70,6 +72,7 @@ export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVec
 }
 
 /**
+ * TODO: !!! Remove preferredSize
  * TODO: [👱‍♀️] Use Internally createOffscreenCanvas
  * TODO: [🧠] Better names createImageInWorker can be really used in browser THE difference is wheather it takes src url or blob
  */

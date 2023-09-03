@@ -1,5 +1,7 @@
 import { IVector } from 'xyzt';
 
+// TODO: !!! Remove unused createOffscreenCanvas
+
 /**
  * Create new OffscreenCanvas from Blob + resize to preferredSize
  */
