@@ -12,25 +12,30 @@ interface TaskInProgressProps {
  */
 export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
-    const { sceneRef } = useGraph(({ scene, camera, wireframeMaterial }) => {
-        let ribbon = MeshBuilder.CreateTorus(
-            'ribbon',
-            {
-                diameter: 1,
-                thickness: 0.5,
-                tessellation: 20,
-            },
-            scene,
-        );
-        ribbon.material = wireframeMaterial;
+    const { sceneRef } = useGraph(
+        ({ scene, camera, wireframeMaterial }) => {
+            let ribbon = MeshBuilder.CreateTorus(
+                'ribbon',
+                {
+                    diameter: 1,
+                    thickness: 0.5,
+                    tessellation: 20,
+                },
+                scene,
+            );
+            ribbon.material = wireframeMaterial;
 
-        // Note: Rotate the the camera around the mesh and make it look down initially
-        camera.beta = (Math.PI / 2) * (2 / 3);
-        scene.registerBeforeRender(() => {
-            camera.beta *= 0.95;
-            camera.alpha += 0.02;
-        });
-    });
+            // Note: Rotate the the camera around the mesh and make it look down initially
+            camera.beta = (Math.PI / 2) * (2 / 3);
+            scene.registerBeforeRender(() => {
+                camera.beta *= 0.95;
+                camera.alpha += 0.02;
+            });
+        },
+        [
+            /* Note: No dependencies - we want to have ONE continuous scene during the whole progress */
+        ],
+    );
 
     return (
         <div className={styles.TasksInProgress}>
