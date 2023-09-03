@@ -22,12 +22,6 @@
             }
         ]
     },
-    "include": [
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
-        ".next/types/**/*.ts",
-        "src/utils/content/removeAllEventListeners.ts.todo"
-, "src/components/UploadNewWallpaper/computeColorsInWorker.worker.ts.todo", "src/components/UploadNewWallpaper/computeColorsInWorker.ts.todo", "src/utils/image/measureImageBlob.ts.maybe"    ],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
     "exclude": ["node_modules", "cypress", "old"]
 }
