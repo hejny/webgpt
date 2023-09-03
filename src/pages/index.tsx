@@ -49,6 +49,7 @@ export default function HomePage() {
                                     ribbon.material = wireframeMaterial;
                                 }}
                             >
+                                {/* // TODO: !!! Design of text */}
                                 Need help
                             </GraphButton>
                         </Link>
@@ -56,6 +57,7 @@ export default function HomePage() {
                             <GraphButton
                                 createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
                                     let ribbon = MeshBuilder.CreateTorus(
+                                        // TODO: !!! Figure out best shape
                                         'ribbon',
                                         {
                                             diameter: 1,
@@ -74,6 +76,7 @@ export default function HomePage() {
                             <GraphButton
                                 createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
                                     let ribbon = MeshBuilder.CreateTorus(
+                                        // TODO: !!! Figure out best shape
                                         'ribbon',
                                         {
                                             diameter: 1,
