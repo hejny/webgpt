@@ -52,7 +52,7 @@ export const IWallpaperSaveStage = {
 export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
 export type IWallpaperColorStats = IImageColorStats<string>;
 
-export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'saveStage'> & {
+export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'naturalSize' | 'saveStage'> & {
     colorStats: Json;
     naturalSize: IVector;
 };

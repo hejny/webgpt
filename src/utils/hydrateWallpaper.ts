@@ -23,7 +23,7 @@ export function serializeWallpaper(wallpaper: Omit<IWallpaper, 'saveStage'>): IW
         src,
         prompt,
         colorStats: serializeColorStats(colorStats),
-        naturalSize: naturalSize.toObject(),
+        naturalSize: naturalSize.toObject2D(),
         title,
         content,
         keywords,
