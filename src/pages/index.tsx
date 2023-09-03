@@ -1,4 +1,4 @@
-import { MeshBuilder } from 'babylonjs';
+import { MeshBuilder, Vector3 } from 'babylonjs';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
@@ -43,16 +43,19 @@ export default function HomePage() {
                                 <Link href="/new/from-prompt">
                                     <GraphButton
                                         createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
-                                            let ribbon = MeshBuilder.CreateTorus(
-                                                // TODO: !!! Figure out best shape
+                                            let ribbon = MeshBuilder.CreateTorusKnot(
                                                 'ribbon',
                                                 {
-                                                    diameter: 1,
-                                                    thickness: 0.5,
-                                                    tessellation: 20,
+                                                    p: 2,
+                                                    q: 3,
+                                                    radius: 1,
+                                                    tube: 0.3,
+                                                    radialSegments: 20,
+                                                    tubularSegments: 5,
                                                 },
                                                 scene,
                                             );
+                                            ribbon.rotation = new Vector3(Math.PI / -4, Math.PI / 2, 0);
                                             ribbon.material = wireframeMaterial;
                                         }}
                                     >
@@ -65,15 +68,15 @@ export default function HomePage() {
                                     <GraphButton
                                         createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
                                             let ribbon = MeshBuilder.CreateTorus(
-                                                // TODO: !!! Figure out best shape
                                                 'ribbon',
                                                 {
                                                     diameter: 1,
                                                     thickness: 0.5,
-                                                    tessellation: 20,
+                                                    tessellation: 10,
                                                 },
                                                 scene,
                                             );
+                                            ribbon.scaling = Vector3.One().scale(2.5);
                                             ribbon.material = wireframeMaterial;
                                         }}
                                     >
