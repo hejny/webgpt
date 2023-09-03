@@ -16,6 +16,8 @@
 
     width: 200px;
     height: 200px;
+
+    outline: none;
 }
 
 .GraphButton .content {
