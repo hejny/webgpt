@@ -1,13 +1,7 @@
-import { IVector } from 'xyzt';
+import { IVector, Vector } from 'xyzt';
 
-// TODO: !!! Remove unused createOffscreenCanvas and use resizeImageBlob instead
 
-/**
- * Create new OffscreenCanvas from Blob + resize to preferredSize+measureImageBlob
- * 
- * @deprecated REMOVE use resizeImageBlob instead
- */
-export async function createOffscreenCanvas(imageAsBlob: Blob, preferredSize: IVector): Promise<OffscreenCanvas> {
+export async function measureImageBlob(image: Blob): Promise<Vector> {
     const imageBitmap = await createImageBitmap(imageAsBlob);
 
     // Create an OffscreenCanvas object

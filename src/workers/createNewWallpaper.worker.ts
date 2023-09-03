@@ -81,7 +81,7 @@ async function createNewWallpaper(
 
     // TODO: !!! Detect Aspect Ratio and warn if it is more than 16:9 (put in config)
 
-    const wallpaperResizedCanvas = await createOffscreenCanvas(
+    const wallpaperResizedCanvas = await resizeImageBlob(
         wallpaperImage,
         // TODO: !!! Preserve Aspect Ratio of the wallpaper when scaling
         IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
@@ -89,6 +89,7 @@ async function createNewWallpaper(
     const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
     const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     const image = await createImageInWorker(
+        // TODO: [🧠] !!! Some better name for Image, createImageInWorker
         // TODO: [👱‍♀️] It is inefficient pass here blob which will be internally converted to OffscreenCanvas which is aviablie already here
         wallpaperResizedBlob,
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
