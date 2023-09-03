@@ -76,6 +76,5 @@ export async function createImageInWorker(
 
 /**
  * TODO: !!! Remove preferredSize
- * TODO: [👱‍♀️] Use Internally createOffscreenCanvas
  * TODO: [🧠] Better names createImageInWorker can be really used in browser THE difference is wheather it takes src url or blob
  */

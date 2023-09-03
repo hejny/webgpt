@@ -92,7 +92,6 @@ async function createNewWallpaper(
     const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
     const image = await createImageInWorker(
         // TODO: [🧠] !!! Some better name for Image, createImageInWorker
-        // TODO: [👱‍♀️] It is inefficient pass here blob which will be internally converted to OffscreenCanvas which is aviablie already here
         wallpaperResized,
         IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO:  !!! This should be exposed as compute.preferredSize */,
     );
@@ -226,6 +225,5 @@ async function createNewWallpaper(
  * TODO: [🥙] Wrap function as worker util
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
- * TODO: [👱‍♀️] Compute in parallel
  * TODO: [🚵‍♂️] !! Do this out of the worker just in simple utility function
  */
