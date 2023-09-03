@@ -1,3 +1,4 @@
+import { Vector } from 'xyzt';
 import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
@@ -64,7 +65,7 @@ async function createNewWallpaper(
     options: Omit<IMessage_CreateNewWallpaper_Request, 'type'>,
     onProgress: (taskProgress: TaskProgress) => void,
 ) {
-    const { author, wallpaperImage } = options;
+    const { author, wallpaperImage: wallpaperImageAsBlob } = options;
 
     //===========================================================================
     //-------[ Local image analysis: ]---
@@ -74,6 +75,9 @@ async function createNewWallpaper(
         isDone: false,
         // TODO: Make it more granular
     });
+
+    const wallpaperImage = await createImageBitmap(wallpaperImageAsBlob);
+    const naturalSize = new Vector(wallpaperImage.width, wallpaperImage.height);
 
     // TODO: !!! Detect Aspect Ratio and warn if it is more than 16:9 (put in config)
 
@@ -201,6 +205,7 @@ async function createNewWallpaper(
         src: wallpaperUrl,
         prompt: wallpaperDescription,
         colorStats,
+        naturalSize,
         content: wallpaperContent,
         saveStage: 'SAVING',
     });
