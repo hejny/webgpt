@@ -78,6 +78,9 @@ async function createNewWallpaper(
 
     const naturalSize = await measureImageBlob(wallpaper);
 
+    // TODO: !!! Add samples of aspect ratios + size warnings
+    // TODO: !!! Detect Minimal recommended size and warn if it is less than 1920x1080 (put in config)
+    // TODO: !!! Detect maximal recommended size and warn if it is more than 3840x2160 (put in config)
     // TODO: !!! Detect Aspect Ratio and warn if it is more than 16:9 (put in config)
 
     const wallpaperResized = await resizeImageBlob(
@@ -111,7 +114,7 @@ async function createNewWallpaper(
         // TODO: Make it more granular
     });
     const formData = new FormData();
-    formData.append('wallpaper', wallpaperResizedBlob /* <- [🧔] */);
+    formData.append('wallpaper', wallpaperResized /* <- [🧔] */);
 
     const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
