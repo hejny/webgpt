@@ -1,3 +1,4 @@
+import { number_positive, title } from '../../utils/typeAliases';
 import styles from './PricingTableNext.module.css';
 
 interface PricingTableNextProps {
@@ -16,12 +17,12 @@ interface Plan {
     /**
      * @@@
      */
-    name: string;
+    title: title;
 
     /**
      * @@@
      */
-    price: number;
+    price: number_positive;
 
     /**
      * @@@
@@ -38,7 +39,7 @@ export function PricingTableNext(props: PricingTableNextProps) {
         <div className={styles['pricing-table']}>
             {plans.map((plan) => (
                 <div className={styles.plan} key={plan.id}>
-                    <h2 className={styles['plan-name']}>{plan.name}</h2>
+                    <h2 className={styles['plan-name']}>{plan.title}</h2>
                     <div className={styles['plan-price']}>${plan.price}/month</div>
                     <ul className={styles['benefits-list']}>
                         {plan.benefits.map((benefit, index) => (

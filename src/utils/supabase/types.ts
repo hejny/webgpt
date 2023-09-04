@@ -1,6 +1,3 @@
-/**
- * Note: Not using JsonObject from type-fest because it is not compatible with supabase-js
- */
 export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
 
 export interface Database {
@@ -112,6 +109,7 @@ export interface Database {
                     id: string;
                     isPublic: boolean;
                     keywords: string[] | null;
+                    naturalSize: Json | null;
                     parent: string | null;
                     prompt: string | null;
                     src: string;
@@ -125,6 +123,7 @@ export interface Database {
                     id: string;
                     isPublic?: boolean;
                     keywords?: string[] | null;
+                    naturalSize?: Json | null;
                     parent?: string | null;
                     prompt?: string | null;
                     src: string;
@@ -138,6 +137,7 @@ export interface Database {
                     id?: string;
                     isPublic?: boolean;
                     keywords?: string[] | null;
+                    naturalSize?: Json | null;
                     parent?: string | null;
                     prompt?: string | null;
                     src?: string;

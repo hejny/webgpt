@@ -222,6 +222,10 @@ function createContentPromptTemplate() {
     );
 }
 
+/**
+ *
+ * @deprecated [👸]  use exported version in src/ai/text-to-text/prompt-templates/createFontPromptTemplate.ts
+ */
 function createFontPromptTemplate() {
     return spaceTrim(
         (block) =>

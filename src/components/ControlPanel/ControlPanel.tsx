@@ -51,7 +51,7 @@ export function ControlPanel() {
                                 .insert(serializeWallpaper(newWallpaper));
 
                             // TODO: !! Util isInsertSuccessfull (status===201)
-                            console.log({ newWallpaper, insertResult });
+                            console.info({ newWallpaper, insertResult });
 
                             /*
                             Note: Wallpapers should not be explicitly saved, they automatically appear as saved after router.push is loaded
@@ -72,7 +72,7 @@ export function ControlPanel() {
                                 }
                             } catch (error) {
                                 // TODO: [🧠] Handle situation when window.localStorage is exceeded
-                                console.log(error);
+                                console.error(error);
                             }
 
                             router.push(`/${newWallpaper.id}`);
@@ -115,6 +115,7 @@ export function ControlPanel() {
 }
 
 /**
+ * TODO: Control panel in Wireframe design
  * TODO: !! Use translate
  * TODO: [🧠] Play can trigger fullscreen
  */

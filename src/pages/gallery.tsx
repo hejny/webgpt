@@ -58,14 +58,14 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
-                const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
+                const { id, parent, src, colorStats, naturalSize, title, keywords, isPublic, author } = fullWallpaper;
                 return {
                     id,
                     parent,
                     src,
                     prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     colorStats /* <- TODO: !! Also reduce colorStats */,
-                    // TODO: shapeStats> IWallpaperShapeStats;
+                    naturalSize,
                     title,
                     content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     keywords,

@@ -1,9 +1,9 @@
 import { markdownConverter } from '../../components/MarkdownContent/markdownConverter';
-import { string_description, string_html, string_markdown } from '../typeAliases';
+import { description, string_html, string_markdown } from '../typeAliases';
 import { detectContentFormat } from './detectContentFormat';
 import { extractDescriptionFromHtml } from './extractDescriptionFromHtml';
 
-export function extractDescriptionFromContent(content: string_markdown | string_html): string_description | null {
+export function extractDescriptionFromContent(content: string_markdown | string_html): description | null {
     const format = detectContentFormat(content);
 
     if (format === 'text') {

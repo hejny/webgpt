@@ -1,9 +1,15 @@
 import spaceTrim from 'spacetrim';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
-import { string_image_description, string_markdown, string_midjourney_prompt } from '../../utils/typeAliases';
-import { askChatGpt } from './askChatGpt';
+import {
+    image_description,
+    string_font_family,
+    string_markdown,
+    string_midjourney_prompt,
+} from '../../utils/typeAliases';
+import { ChatThread } from './ChatThread';
 import { completeWithGpt } from './completeWithGpt';
+import { createFontPromptTemplate } from './prompt-templates/createFontPromptTemplate';
 import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
 
 /**
@@ -15,10 +21,11 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
  * @returns Content of the wallpaper page
  */
 export async function writeWallpaperContent(
-    wallpaperDescription: string_image_description | string_midjourney_prompt,
+    wallpaperDescription: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
 ): Promise<string_markdown> {
     const prompt = createTitlePromptTemplate(wallpaperDescription);
-    const { response, model: modelToCreateTitle } = await askChatGpt(prompt);
+    const chatThread = await ChatThread.ask(prompt);
+    const { response, model: modelToCreateTitle } = chatThread;
     const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
     const contentStart = spaceTrim(
@@ -31,8 +38,8 @@ export async function writeWallpaperContent(
     );
     const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
         spaceTrim(
-            // TODO: !!! This prompt should be also created in some template function
-            // TODO: !!! Pefect this prompt
+            // TODO: [🤡] This prompt should be also created in some template function
+            // TODO: [🤡] Pefect this prompt
             (block) => `
 
                 Following is markdown content of a webpage:
@@ -43,10 +50,15 @@ export async function writeWallpaperContent(
         ),
     );
 
+    const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
+    const font = removeQuotes(chatThreadFont.response) as string_font_family;
+
+    // console.log(chatThreadFont);
+
     return spaceTrim(
         (block) => `
     
-            <!--font:Barlow Condensed-->
+            <!--font:${font}-->
 
             ${block(contentStart)}
             ${block(contentMiddle)}
@@ -64,7 +76,6 @@ export async function writeWallpaperContent(
 }
 
 /**
- * TODO: !!! Pick font dynamically
  * TODO: !! Put step by step instructions how the content is generated in footer comment
  * TODO: [👸] Use in generate-wallpapers-content and DRY
  * TODO: [👮‍♀️] In this repository is used both 'chatgpt' and 'openai' NPM packages - use just 'openai' in future and in scripts use the common utils

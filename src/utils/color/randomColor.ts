@@ -2,8 +2,6 @@ import { Color } from './Color';
 
 /**
  * Creates a random color
- *
- * @collboard-modules-sdk
  */
 export function randomColor(): Color {
     return Color.fromHex(

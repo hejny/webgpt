@@ -4,7 +4,7 @@ import {
     IUseLoadableResultComplete,
     IUseLoadableResultError,
     IUseLoadableResultPending,
-    IUseLoadableResultStatus
+    IUseLoadableResultStatus,
 } from './useLoadable';
 
 type IUsePromiseResult<TValue> =
@@ -14,8 +14,6 @@ type IUsePromiseResult<TValue> =
 
 /**
  * React hook that returns result of Promise or its pending/error state.
- *
- * @collboard-modules-sdk
  */
 export function usePromise<TValue>(
     promise: Promisable<TValue>,

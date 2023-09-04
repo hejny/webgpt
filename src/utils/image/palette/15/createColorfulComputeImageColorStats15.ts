@@ -1,5 +1,7 @@
+import { Promisable } from 'type-fest';
 import { IVector, Vector } from 'xyzt';
-import { forARest } from '../../../../components/WorkInProgress/forARest';
+import { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
+import { forARest } from '../../../forARest';
 import { take } from '../../../take/take';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImage } from '../../IImage';
@@ -52,7 +54,17 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
         };
     };
 
-    const computeImageColorStats = async (image: IImage): Promise<IImageColorStatsAdvanced<string>> => {
+    const computeImageColorStats = async (
+        image: IImage,
+        onProgress: (taskProgress: TaskProgress) => Promisable<void> = () => {},
+    ): Promise<IImageColorStatsAdvanced<string>> => {
+        await onProgress({
+            name: 'colorstats-v15',
+            title: 'Palette (v15)' /*<- [🧠] Should there be a palette version in title? */,
+            isDone: false,
+            // TODO: Make it more granular
+        });
+
         const stats = {
             ...(await computeWholeImageColorStats(image)),
             bottomHalf: await computeWholeImageColorStats(
@@ -67,14 +79,22 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
         } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>;
 
         const { palette, paletteCandidates } = await computeImagePalette15(stats);
+
+        await onProgress({
+            name: 'colorstats-v15',
+            isDone: true,
+        });
+
         return { version, palette, paletteCandidates, ...stats };
     };
 
     computeImageColorStats.version = version;
+    computeImageColorStats.preferredSize = size;
 
     return computeImageColorStats;
 }
 
 /**
  * @see https://youtu.be/gMqZR3pqMjg
+ * TODO: Report TaskProgress more granularly
  */

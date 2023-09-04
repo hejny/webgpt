@@ -11,12 +11,17 @@ const URIID_VERSION = '2';
 export function computeWallpaperUriid(
     wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'saveStage' | 'isPublic'>,
 ): string_uriid {
-    console.log('wallpaper.content', wallpaper.content);
+    // console.log('wallpaper.content', wallpaper.content);
     // (window as any).copy(wallpaper.content);
 
-    const title = extractTitleFromContent(wallpaper.content) || '';
+    let title = extractTitleFromContent(wallpaper.content) || '';
 
-    console.log('title', title);
+    // Note: Ignore apostrophes and quotes in name to make URL
+    title = title.split("'").join('');
+    title = title.split('"').join('');
+    title = title.split('`').join('');
+    title = title.split('’').join('');
+
     const allUriParts = nameToUriParts(title);
 
     let uriParts: Array<string> = [];
@@ -55,7 +60,6 @@ export function computeWallpaperUriid(
      * But we are using Base58 to prevent misspelling!
      *
      * 11 chars are on YouTube
-     *
      */
     const wallpaperPart =
         URIID_VERSION +
