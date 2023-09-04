@@ -6,11 +6,12 @@ function aspectRatioToString(aspect: Vector): string {
     return `${aspect.x}:${aspect.y} (${aspect.x / aspect.y})`;
 }
 
-export function notInAspectRatioRangeExplain(aspectRange: AspectRatioRange, aspect: Vector): string {
+export function aspectRatioRangeExplain(aspectRange: AspectRatioRange, aspect: Vector): string {
     return spaceTrim(
         (block) =>
             `
-                Aspect ratio ${aspectRatioToString(aspect)} is out of the range:
+                Aspect ratio:
+                ${aspectRatioToString(aspect)}
 
                 From:
                 ${aspectRatioToString(aspectRange[0])}

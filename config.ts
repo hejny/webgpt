@@ -3,7 +3,8 @@ import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import { FULLHD, HD, UHD2K } from './src/constants';
 import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
-import { expectInAspectRatioRange } from './src/utils/aspect-ratio/expectInAspectRatioRange';
+import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
+import { expectAspectRatioNotInRange } from './src/utils/aspect-ratio/expectAspectRatioNotInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
@@ -116,21 +117,21 @@ export const IMAGE_MIN_RECOMMENDED_SIZE = HD;
  * Recommended aspect ratio of custom wallpaper image
  * This will be checked on client and if user uploads image with different aspect ratio, it will be warned
  */
-export const IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vector(3, 2), new Vector(1, 1)];
+export const IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vector(2, 1), new Vector(1, 1)];
 
 /**
  * Allowed aspect ratio of custom wallpaper image
  * This will be checked on client (+ in future on server) and wont be allowed to upload image if not in this range
  */
-export const IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(1, 3), new Vector(3, 1)];
+export const IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(3, 1), new Vector(1, 3)];
 
 // Note: Checking validity of the IMAGE_ASPECT_RATIO config
-expectInAspectRatioRange('[0]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, FULLHD);
-expectInAspectRatioRange('[1]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD);
-expectInAspectRatioRange('[2]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[0]);
-expectInAspectRatioRange('[3]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[1]);
-expectInAspectRatioRange('[4]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[0]);
-expectInAspectRatioRange('[5]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[1]);
+expectAspectRatioInRange('[0]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, FULLHD);
+expectAspectRatioInRange('[1]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD);
+expectAspectRatioInRange('[2]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[0]);
+expectAspectRatioInRange('[3]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[1]);
+expectAspectRatioNotInRange('[4]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[0]);
+expectAspectRatioNotInRange('[5]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[1]);
 
 /**
  * @@@
