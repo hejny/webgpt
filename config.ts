@@ -99,11 +99,6 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Futuristic Cityscape Wallpaper'
 
 /**
- * @deprecated !!! Remove OR use ONLY as a fallback OR Use WALLPAPER_IMAGE_MAX_SIZE OR semantically link to hardcoded images
- */
-export const WALLPAPER_IMAGE_NATURAL_SIZE = FULLHD;
-
-/**
  * Maximum size of custom wallpaper image
  * This will be checked on both client and server
  * If user uploads bigger image, it will be resized
@@ -162,12 +157,12 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
     // Full:
     createColorfulComputeImageColorStats15({
         colorBits: 256,
-        size: WALLPAPER_IMAGE_NATURAL_SIZE,
+        size: FULLHD,
     }),
     /**/
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.1),
+        size: FULLHD.scale(0.1),
     }),
 
     /*
@@ -175,29 +170,29 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
           Fix it:
         > createColorfulComputeImageColorStats15({
         >     colorBits: 16,
-        >     size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.01),
+        >     size: FULLHD.scale(0.01),
         > }),
     */
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.2),
+        size: FULLHD.scale(0.2),
     }),
     /*
     TODO: !! Add more versions (Also full)
     */
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: WALLPAPER_IMAGE_NATURAL_SIZE,
+        size: FULLHD,
     }),
 
     /*
     createColorfulComputeImageColorStats13({
         colorBits: 16,
-        size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.1),
+        size: FULLHD.scale(0.1),
     }),
     createColorfulComputeImageColorStats13({
         colorBits: 16,
-        size: WALLPAPER_IMAGE_NATURAL_SIZE,
+        size: FULLHD,
     }),
 
     */
