@@ -1,5 +1,15 @@
 import { IVector } from 'xyzt';
 
+/**
+ * Resizes an image to a new size
+ *
+ * Note: The function will NOT preserve the aspect ratio of the image.
+ *       If you want to preserve the aspect ratio, use downscaleWithAspectRatio to compute newSize before calling this function.
+ *
+ * @param image image to measure as blob
+ * @param newSize preferred size of the image
+ * @returns image as blob with the new size
+ */
 export async function resizeImageBlob(image: Blob, newSize: IVector): Promise<Blob> {
     const imageBitmap = await createImageBitmap(image);
 
