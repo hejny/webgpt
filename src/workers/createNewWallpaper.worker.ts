@@ -1,9 +1,9 @@
 import spaceTrim from 'spacetrim';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
-    IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
-    IMAGE_MAX_ALLOWED_SIZE,
-    IMAGE_NATURAL_SIZE,
+    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
+    WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
+    WALLPAPER_IMAGE_NATURAL_SIZE,
 } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
@@ -95,13 +95,13 @@ async function createNewWallpaper(
 
     // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
 
-    if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize)) {
+    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize)) {
         throw new Error(
             spaceTrim(
                 (block) => `
                     Image has aspect ratio that is not allowed:
 
-                    ${block(aspectRatioRangeExplain(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
+                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
                 `,
             ),
         );
@@ -109,14 +109,14 @@ async function createNewWallpaper(
 
     /*
     TODO: [👩‍🎨] Confirm is not working in worker - temporary disabled
-    if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, naturalSize)) {
+    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, naturalSize)) {
         const isOkToHaveNonRecommendedAspectRatio = window.confirm(
             spaceTrim(
                 (block) => `
                     
                     Image has aspect ratio that is not recommended, do you want to continue?
 
-                    ${block(aspectRatioRangeExplain(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
+                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
                 `,
             ),
         );
@@ -127,7 +127,7 @@ async function createNewWallpaper(
     }
     */
 
-    if (naturalSize.x > IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > IMAGE_MAX_ALLOWED_SIZE.y) {
+    if (naturalSize.x > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.y) {
         throw new Error(`Image is too large`);
         // TODO: !!! Resize image instead of throwing error (and show in task progress)
         // TODO: !!! Implement automatic resize
@@ -135,7 +135,7 @@ async function createNewWallpaper(
 
     /*
     TODO: [👩‍🎨] Confirm is not working in worker - temporary disabled
-    if (naturalSize.x < IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < IMAGE_MIN_RECOMMENDED_SIZE.y) {
+    if (naturalSize.x < WALLPAPER_IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < WALLPAPER_IMAGE_MIN_RECOMMENDED_SIZE.y) {
         const isOkToHaveSmallImage = window.confirm(
             spaceTrim(
                 `
@@ -159,7 +159,7 @@ async function createNewWallpaper(
     const wallpaperResized = await resizeImageBlob(
         wallpaper,
         // TODO: !!! Preserve Aspect Ratio of the wallpaper when scaling
-        IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
+        WALLPAPER_IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
     );
 
     // TODO: !!! Split wallpaper(Original), wallpaperForColorAnalysis, wallpaperForContentAnalysis, wallpaperForUpload
@@ -169,7 +169,7 @@ async function createNewWallpaper(
     const image = await createImageInWorker(
         // TODO: [🧠] !!! Some better name for Image, createImageInWorker
         wallpaperResized,
-        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO:  !!! This should be exposed as compute.preferredSize */,
+        WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO:  !!! This should be exposed as compute.preferredSize */,
     );
     const colorStats = await compute(image, onProgress);
     await onProgress({

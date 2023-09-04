@@ -93,19 +93,17 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
-// !!! IMAGE -> WALLPAPER_IMAGE
-
 /**
- * @deprecated !!! Remove OR use ONLY as a fallback OR Use IMAGE_MAX_SIZE OR semantically link to hardcoded images + Change [🧔]
+ * @deprecated !!! Remove OR use ONLY as a fallback OR Use WALLPAPER_IMAGE_MAX_SIZE OR semantically link to hardcoded images + Change [🧔]
  */
-export const IMAGE_NATURAL_SIZE = FULLHD;
+export const WALLPAPER_IMAGE_NATURAL_SIZE = FULLHD;
 
 /**
  * Maximum size of custom wallpaper image
  * This will be checked on both client and server
  * If user uploads bigger image, it will be resized
  */
-export const IMAGE_MAX_ALLOWED_SIZE = UHD2K;
+export const WALLPAPER_IMAGE_MAX_ALLOWED_SIZE = UHD2K;
 
 // TODO: [👩‍🎨] !!!last RECOMMENDED Values are not working because confirm is not working in worker - remove by one commit at the end of the feature
 
@@ -113,27 +111,43 @@ export const IMAGE_MAX_ALLOWED_SIZE = UHD2K;
  * Minimum recommended size of custom wallpaper image
  * This will be checked on client and if user uploads smaller image, it will be warned
  */
-export const IMAGE_MIN_RECOMMENDED_SIZE = HD;
+export const WALLPAPER_IMAGE_MIN_RECOMMENDED_SIZE = HD;
 
 /**
  * Recommended aspect ratio of custom wallpaper image
  * This will be checked on client and if user uploads image with different aspect ratio, it will be warned
  */
-export const IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vector(2, 1), new Vector(1, 1)];
+export const WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vector(2, 1), new Vector(1, 1)];
 
 /**
  * Allowed aspect ratio of custom wallpaper image
  * This will be checked on client (+ in future on server) and wont be allowed to upload image if not in this range
  */
-export const IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(3, 1), new Vector(1, 3)];
+export const WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(3, 1), new Vector(1, 3)];
 
-// Note: Checking validity of the IMAGE_ASPECT_RATIO config
-expectAspectRatioInRange('[0]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, FULLHD);
-expectAspectRatioInRange('[1]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD);
-expectAspectRatioInRange('[2]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[0]);
-expectAspectRatioInRange('[3]', IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[1]);
-expectAspectRatioNotInRange('[4]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[0]);
-expectAspectRatioNotInRange('[5]', IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[1]);
+// Note: Checking validity of the WALLPAPER_IMAGE_ASPECT_RATIO config
+expectAspectRatioInRange('[0]', WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, FULLHD);
+expectAspectRatioInRange('[1]', WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD);
+expectAspectRatioInRange(
+    '[2]',
+    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
+    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[0],
+);
+expectAspectRatioInRange(
+    '[3]',
+    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
+    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[1],
+);
+expectAspectRatioNotInRange(
+    '[4]',
+    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE,
+    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE[0],
+);
+expectAspectRatioNotInRange(
+    '[5]',
+    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE,
+    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE[1],
+);
 
 /**
  * @@@
@@ -143,12 +157,12 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
     // Full:
     createColorfulComputeImageColorStats15({
         colorBits: 256,
-        size: IMAGE_NATURAL_SIZE,
+        size: WALLPAPER_IMAGE_NATURAL_SIZE,
     }),
     /**/
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.1),
+        size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.1),
     }),
 
     /*
@@ -156,29 +170,29 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
           Fix it:
         > createColorfulComputeImageColorStats15({
         >     colorBits: 16,
-        >     size: IMAGE_NATURAL_SIZE.scale(0.01),
+        >     size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.01),
         > }),
     */
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.2),
+        size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.2),
     }),
     /*
     TODO: !! Add more versions (Also full)
     */
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE,
+        size: WALLPAPER_IMAGE_NATURAL_SIZE,
     }),
 
     /*
     createColorfulComputeImageColorStats13({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.1),
+        size: WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.1),
     }),
     createColorfulComputeImageColorStats13({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE,
+        size: WALLPAPER_IMAGE_NATURAL_SIZE,
     }),
 
     */

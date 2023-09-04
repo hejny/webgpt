@@ -129,7 +129,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             src,
             prompt,
             colorStats,
-            naturalSize: FULLHD /* <- TODO: !!! Here maybe use IMAGE_NATURAL_SIZE */,
+            naturalSize: FULLHD /* <- TODO: !!! Here maybe use WALLPAPER_IMAGE_NATURAL_SIZE */,
             title,
             content,
             metadataFilePath,
