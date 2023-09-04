@@ -15,22 +15,21 @@ export default function HomePage() {
                 <main>
                     <Center>
                         <h1>AI Web Maker</h1>
+                        {/* TODO: !! Use or remove <HandwrittenText color={Color.from('#fff')}>AI Web Maker</HandwrittenText> */}
                         <GraphsAsScenarios />
                     </Center>
                 </main>
+
+                {/*
+                TODO: !!! Design and layout
+                <MarkdownContent content={PAGES_CONTENTS.explanation!} />
+                */}
             </div>
         </>
     );
 }
 
 /**
- * TODO: !!! Put here some footer
- * TODO: !!! Put here some idea explanation
- * TODO: !!! Nicer fonts / handwritten
- * TODO: !!! DO not redirect to random wallpaper provide 3 scenarios:
- *       - 🙄 No idea
- *       - 💡 Idea
- *       - 🖼 Image
- * TODO: Go to last wallpaper
- * TODO: Make shuffle between wallpapers
+ * TODO: !! Put here some footer
+ * TODO: !! Nicer fonts / handwritten
  */

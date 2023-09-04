@@ -24,7 +24,7 @@ export function GraphsAsScenarios() {
                             ribbon.material = wireframeMaterial;
                         }}
                     >
-                        {/* TODO: !!! Use or remove <HandwrittenText color={Color.from('#fff')}>sss</HandwrittenText> */}
+                        {/* TODO: !! Use or remove <HandwrittenText color={Color.from('#fff')}>Nothing</HandwrittenText> */}
                         <h2>Nothing</h2> and I will pick from gallery
                     </GraphButton>
                 </Link>
