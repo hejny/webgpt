@@ -6,7 +6,7 @@ import { useSsrDetection } from './useSsrDetection';
 export const MODES = [
     'LOADING',
     'EDIT',
-    'SHOW' /* <- !!! Show vs. Minimal vs. Presentation vs Share vs Live */,
+    'SHOW',
     'SHOW_THUMBNAIL',
 ] as const; /* <- [🧠] Which to use as/instead of enums, [...] as const with TupleToUnion OR {...} as const*/
 
@@ -51,8 +51,3 @@ export function useMode(): IModes {
         isEditable,
     };
 }
-
-/**
- * TODO: !!! Change ACRY mode -> layout (or view)
- * TODO: !!! Add GET param scenario (or mode)
- */

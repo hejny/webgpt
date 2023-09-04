@@ -32,7 +32,7 @@ export function UploadNewWallpaper() {
                             console.info('☑', newTaskProgress);
                             setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
                         });
-                        router.push(`/${wallpaperId}` /* <- !!! ?view=minimal */);
+                        router.push(`/${wallpaperId}`);
                         // Note: No need to setWorking(false); because we are redirecting to another page
                     } catch (error) {
                         if (!(error instanceof Error)) {
