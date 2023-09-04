@@ -1,9 +1,11 @@
 import { ConfigChecker } from 'configchecker';
+import { Vector } from 'xyzt';
 import packageJson from './package.json';
-import { FULLHD } from './src/constants';
+import { FULLHD, HD, UHD2K } from './src/constants';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
+import { AspectRatioRange } from './src/utils/isInAspectRange';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
 import { isPrivateNetwork } from './src/utils/validators/isPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
@@ -92,15 +94,34 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 // !!! IMAGE -> WALLPAPER_IMAGE
 
 /**
- * @deprecated !!! Remove OR use ONLY as a fallback OR Use IMAGE_MAX_SIZE
+ * @deprecated !!! Remove OR use ONLY as a fallback OR Use IMAGE_MAX_SIZE OR semantically link to hardcoded images + Change [🧔]
  */
 export const IMAGE_NATURAL_SIZE = FULLHD;
 
-// TODO: !!! IMAGE_MAX_SIZE
-// TODO: !!! IMAGE_MIN_RECOMMENDED_SIZE
-// TODO: !!! IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE
-// TODO: !!! IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE
-// TODO: !!! IMAGE_ASPECT_RATIO_ALLOWED_RANGE
+/**
+ * Maximum size of custom wallpaper image
+ * This will be checked on both client and server
+ * If user uploads bigger image, it will be resized
+ */
+export const IMAGE_MAX_ALLOWED_SIZE = UHD2K;
+
+/**
+ * Minimum recommended size of custom wallpaper image
+ * This will be checked on client and if user uploads smaller image, it will be warned
+ */
+export const IMAGE_MIN_RECOMMENDED_SIZE = HD;
+
+/**
+ * Recommended aspect ratio of custom wallpaper image
+ * This will be checked on client and if user uploads image with different aspect ratio, it will be warned
+ */
+export const IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vector(3, 2), new Vector(1, 1)];
+
+/**
+ * Allowed aspect ratio of custom wallpaper image
+ * This will be checked on client (+ in future on server) and wont be allowed to upload image if not in this range
+ */
+export const IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(1, 3), new Vector(3, 1)];
 
 /**
  * @@@
