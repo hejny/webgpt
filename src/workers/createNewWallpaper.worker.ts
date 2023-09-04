@@ -1,4 +1,11 @@
-import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
+import {
+    COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
+    IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
+    IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE,
+    IMAGE_MAX_ALLOWED_SIZE,
+    IMAGE_MIN_RECOMMENDED_SIZE,
+    IMAGE_NATURAL_SIZE,
+} from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
 import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpaper-content';
@@ -8,6 +15,7 @@ import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
 import { measureImageBlob } from '../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../utils/image/resizeImageBlob';
+import { isInAspectRatioRange } from '../utils/isInAspectRange';
 import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
@@ -68,7 +76,7 @@ async function createNewWallpaper(
     const { author, wallpaperImage /* <- !!! Maybe rename to just wallpaper */: wallpaper } = options;
 
     //===========================================================================
-    //-------[ Local image analysis: ]---
+    //-------[ Image analysis and check: ]---
     await onProgress({
         name: 'image-analysis',
         title: 'Color analysis',
@@ -78,11 +86,36 @@ async function createNewWallpaper(
 
     const naturalSize = await measureImageBlob(wallpaper);
 
-    // TODO: !!! Add samples of aspect ratios + size warnings
-    // TODO: !!! Detect Minimal recommended size and warn if it is less than 1920x1080 (put in config)
-    // TODO: !!! Detect maximal recommended size and warn if it is more than 3840x2160 (put in config)
-    // TODO: !!! Detect Aspect Ratio and warn if it is more than 16:9 (put in config)
+    if (naturalSize.x > IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > IMAGE_MAX_ALLOWED_SIZE.y) {
+        // TODO: !!! Make sample image
+        // TODO: !!! Resize image instead of throwing error (and show in task progress)
+        throw new Error(`Image is too large`);
+    }
 
+    if (naturalSize.x < IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < IMAGE_MIN_RECOMMENDED_SIZE.y) {
+        // TODO: !!! Make sample image
+        // TODO: !!! Confirm user if he wants to continue instead of throwing error
+        // TODO: !!! Confirm dialogue
+        throw new Error(`Image is too small`);
+    }
+
+    if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize)) {
+        // TODO: !!! Make sample image
+        // TODO: !!! Put aspect ration into the alert
+        // TODO: !!! Alert dialogue
+        throw new Error(`Image has aspect ratio that is not allowed`);
+    }
+
+    if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, naturalSize)) {
+        // TODO: !!! Make sample image
+        // TODO: !!! Confirm user if he wants to continue instead of throwing error
+        // TODO: !!! Confirm dialogue
+        throw new Error(`Image has aspect ratio that is not recommended`);
+    }
+
+    //-------[ / Image analysis and check ]---
+    //===========================================================================
+    //-------[ Xxxx!!!: ]---
     const wallpaperResized = await resizeImageBlob(
         wallpaper,
         // TODO: !!! Preserve Aspect Ratio of the wallpaper when scaling
@@ -104,7 +137,7 @@ async function createNewWallpaper(
         isDone: true,
     });
     console.info({ colorStats });
-    //-------[ / Local image analysis ]---
+    //-------[ / Xxx!!! ]---
     //===========================================================================
     //-------[ Upload image: ]---
     await onProgress({
