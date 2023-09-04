@@ -1,12 +1,21 @@
-import { COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND, IMAGE_NATURAL_SIZE } from '../../config';
+import spaceTrim from 'spacetrim';
+import {
+    COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
+    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
+    WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
+} from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
 import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpaper-content';
 import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
+import { aspectRatioRangeExplain } from '../utils/aspect-ratio/aspectRatioRangeExplain';
+import { downscaleWithAspectRatio } from '../utils/aspect-ratio/downscaleWithAspectRatio';
+import { isInAspectRatioRange } from '../utils/aspect-ratio/isInAspectRatioRange';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
-import { createOffscreenCanvas } from '../utils/image/createOffscreenCanvas';
+import { measureImageBlob } from '../utils/image/measureImageBlob';
+import { resizeImageBlob } from '../utils/image/resizeImageBlob';
 import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
@@ -64,35 +73,86 @@ async function createNewWallpaper(
     options: Omit<IMessage_CreateNewWallpaper_Request, 'type'>,
     onProgress: (taskProgress: TaskProgress) => void,
 ) {
-    const { author, wallpaperImage } = options;
+    const { author, wallpaperImage: wallpaper } = options;
+    const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     //===========================================================================
-    //-------[ Local image analysis: ]---
+    //-------[ Image analysis and check: ]---
     await onProgress({
-        name: 'image-analysis',
-        title: 'Color analysis',
+        name: 'image-check',
+        title: 'Checking image',
         isDone: false,
-        // TODO: Make it more granular
     });
 
-    const wallpaperResizedCanvas = await createOffscreenCanvas(
-        wallpaperImage,
-        IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
-    );
-    const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
-    const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
-    const image = await createImageInWorker(
-        // TODO: [👱‍♀️] It is inefficient pass here blob which will be internally converted to OffscreenCanvas which is aviablie already here
-        wallpaperResizedBlob,
-        IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO: This should be exposed as compute.preferredSize */,
-    );
-    const colorStats = await compute(image, onProgress);
+    /*
+    Note: This is not needed because it is already checked by the measureImageBlob etc... Implement only if we want nicer error message
+    if (!wallpaper.type.startsWith('image/')) {
+        throw new Error(`File is not an image`);
+    }
+    */
+
+    const originalSize = await measureImageBlob(wallpaper);
+    let naturalSize = originalSize.clone();
+
+    // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
+
+    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, originalSize)) {
+        throw new Error(
+            spaceTrim(
+                (block) => `
+                    Image has aspect ratio that is not allowed:
+
+                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, originalSize))}
+                `,
+            ),
+        );
+    }
+
+    if (originalSize.x > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.x || originalSize.y > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.y) {
+        naturalSize = downscaleWithAspectRatio(originalSize, WALLPAPER_IMAGE_MAX_ALLOWED_SIZE);
+    }
+
     await onProgress({
-        name: 'image-analysis',
+        name: 'image-check',
         isDone: true,
     });
+
+    //-------[ / Image analysis and check ]---
+    //===========================================================================
+    //-------[ Image resize: ]---
+    await onProgress({
+        name: 'image-resize',
+        title: 'Resizing image',
+        isDone: false,
+    });
+
+    const wallpaperForUpload = await resizeImageBlob(wallpaper, naturalSize);
+    const wallpaperForColorAnalysis = await resizeImageBlob(
+        wallpaper,
+        downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
+    );
+
+    await onProgress({
+        name: 'image-resize',
+        isDone: true,
+    });
+    //-------[ / Image resize ]---
+    //===========================================================================
+    //-------[ Color analysis: ]---
+
+    await onProgress({
+        title: 'Prepare color analysis',
+        name: 'image-prepare-color-analysis',
+        isDone: false,
+    });
+    const imageForColorAnalysis = await createImageInWorker(wallpaperForColorAnalysis);
+    await onProgress({
+        name: 'image-prepare-color-analysis',
+        isDone: true,
+    });
+    const colorStats = await computeColorstats(imageForColorAnalysis, onProgress);
     console.info({ colorStats });
-    //-------[ / Local image analysis ]---
+    //-------[ / Color analysis ]---
     //===========================================================================
     //-------[ Upload image: ]---
     await onProgress({
@@ -102,7 +162,7 @@ async function createNewWallpaper(
         // TODO: Make it more granular
     });
     const formData = new FormData();
-    formData.append('wallpaper', wallpaperResizedBlob /* <- [🧔] */);
+    formData.append('wallpaper', wallpaperForUpload);
 
     const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
@@ -198,6 +258,7 @@ async function createNewWallpaper(
         src: wallpaperUrl,
         prompt: wallpaperDescription,
         colorStats,
+        naturalSize: originalSize,
         content: wallpaperContent,
         saveStage: 'SAVING',
     });
@@ -215,6 +276,6 @@ async function createNewWallpaper(
  * TODO: [🥙] Wrap function as worker util
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
- * TODO: [👱‍♀️] Compute in parallel
  * TODO: [🚵‍♂️] !! Do this out of the worker just in simple utility function
+ * TODO: Alert and confirm dialogues
  */

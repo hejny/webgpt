@@ -65,7 +65,7 @@ export default async function uploadWallpaperHandler(
 
 /**
  * TODO: [🃏] Pass here some security token to prevent DDoS
- * TODO: [🧔] !! Check that uploaded image has preferred size or less NOT more
+ * TODO: [🧔] !! Check that uploaded image is not bigger that WALLPAPER_IMAGE_MAX_ALLOWED_SIZE + check file size and aspect ratio
  * TODO: [🧠] Compress/normalize the image
  * TODO: convert to png ([🧠] or maybe keep jpg)
  * TODO: !! Allow other image formats

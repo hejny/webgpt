@@ -96,6 +96,10 @@ export async function getStaticProps({
         currentWallpaper = {
             ...selectResult.data[0]!,
             author: validateUuid(selectResult.data[0]!.author),
+            naturalSize: selectResult.data[0]!.naturalSize as {
+                x: number;
+                y: number;
+            } /* <- TODO: Do here some validation */,
         };
     }
 

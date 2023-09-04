@@ -71,6 +71,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
     };
 
     computeImageColorStats.version = version;
+    computeImageColorStats.preferredSize = size;
 
     return computeImageColorStats;
 }

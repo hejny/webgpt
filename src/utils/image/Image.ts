@@ -158,5 +158,6 @@ export class Image implements IImage {
 }
 
 /**
+ * TODO: [🧠] !! Some better name for Image, createImageInWorker -> Ymage, createYmageInWorker ?
  * TODO: [🕶] This is sooo inefficient - use some native API like ImageData, OffscreenCanvas, createImageBitmap, etc.?
  */

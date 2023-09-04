@@ -19,7 +19,7 @@ export function useCurrentWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWal
         wallpaper,
         (modifyWallpaper: IModifyWallpaper) => {
             const modifiedWallpaper = { ...wallpaper }; /* <- TODO: !! Do here deep copy */
-            const { id, parent, author, src, prompt, colorStats, content, keywords, isPublic, saveStage } =
+            const { id, parent, author, src, prompt, colorStats, naturalSize, content, keywords, isPublic, saveStage } =
                 modifyWallpaper(modifiedWallpaper);
 
             // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
@@ -32,6 +32,7 @@ export function useCurrentWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWal
                 src,
                 prompt,
                 colorStats,
+                naturalSize,
                 title,
                 content,
                 keywords,
