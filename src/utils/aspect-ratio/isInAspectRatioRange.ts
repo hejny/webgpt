@@ -10,7 +10,5 @@ export function isInAspectRatioRange(aspectRange: AspectRatioRange, aspect: Vect
         [minRatio, maxRatio] = [maxRatio, minRatio];
     }
 
-    console.log({ minRatio, maxRatio, checkRatio });
-
     return checkRatio >= minRatio && checkRatio <= maxRatio;
 }

@@ -84,20 +84,16 @@ async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
+    /*
+    Note: This is not needed because it is already checked by the measureImageBlob etc... Implement only if we want nicer error message
+    if (!wallpaper.type.startsWith('image/')) {
+        throw new Error(`File is not an image`);
+    }
+    */
+
     const naturalSize = await measureImageBlob(wallpaper);
 
-    if (naturalSize.x > IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > IMAGE_MAX_ALLOWED_SIZE.y) {
-        // TODO: !!! Make sample image
-        // TODO: !!! Resize image instead of throwing error (and show in task progress)
-        throw new Error(`Image is too large`);
-    }
-
-    if (naturalSize.x < IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < IMAGE_MIN_RECOMMENDED_SIZE.y) {
-        // TODO: !!! Make sample image
-        // TODO: !!! Confirm user if he wants to continue instead of throwing error
-        // TODO: !!! Confirm dialogue
-        throw new Error(`Image is too small`);
-    }
+    // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
 
     if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize)) {
         // TODO: !!! Make sample image
@@ -111,6 +107,19 @@ async function createNewWallpaper(
         // TODO: !!! Confirm user if he wants to continue instead of throwing error
         // TODO: !!! Confirm dialogue
         throw new Error(`Image has aspect ratio that is not recommended`);
+    }
+
+    if (naturalSize.x > IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > IMAGE_MAX_ALLOWED_SIZE.y) {
+        // TODO: !!! Make sample image
+        // TODO: !!! Resize image instead of throwing error (and show in task progress)
+        throw new Error(`Image is too large`);
+    }
+
+    if (naturalSize.x < IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < IMAGE_MIN_RECOMMENDED_SIZE.y) {
+        // TODO: !!! Make sample image
+        // TODO: !!! Confirm user if he wants to continue instead of throwing error
+        // TODO: !!! Confirm dialogue
+        throw new Error(`Image is too small`);
     }
 
     //-------[ / Image analysis and check ]---
