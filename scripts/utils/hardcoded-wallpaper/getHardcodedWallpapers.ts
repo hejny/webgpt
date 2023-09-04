@@ -9,6 +9,7 @@ import {
     SYSTEM_AUTHOR_ID,
 } from '../../../config';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
+import { FULLHD } from '../../../src/constants';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
 import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
 import { string_file_path } from '../../../src/utils/typeAliases';
@@ -128,6 +129,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             src,
             prompt,
             colorStats,
+            naturalSize: FULLHD /* <- TODO: !!! Here maybe use IMAGE_NATURAL_SIZE */,
             title,
             content,
             metadataFilePath,

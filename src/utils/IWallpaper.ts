@@ -1,5 +1,5 @@
 import { string_keyword } from 'n12';
-import { IVector, Vector } from 'xyzt';
+import { Vector } from 'xyzt';
 import { Json } from '../utils/supabase/types';
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
@@ -54,7 +54,10 @@ export type IWallpaperColorStats = IImageColorStats<string>;
 
 export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'naturalSize' | 'saveStage'> & {
     colorStats: Json;
-    naturalSize: IVector;
+    naturalSize: null | {
+        x: number;
+        y: number /* <- Note: Not using IVector because we do not want here an index signature + x and y needs to be defined */;
+    };
 };
 
 /**

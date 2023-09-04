@@ -7,7 +7,7 @@ export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
     return {
         ...json,
         colorStats: hydrateColorStats(json.colorStats),
-        naturalSize: Vector.fromObject(json.naturalSize),
+        naturalSize: Vector.fromObject(json.naturalSize || { x: 0, y: 0 /* <- TODO: Some better fallback */ }),
         saveStage: 'SAVED',
     } as IWallpaper;
 }
@@ -23,7 +23,10 @@ export function serializeWallpaper(wallpaper: Omit<IWallpaper, 'saveStage'>): IW
         src,
         prompt,
         colorStats: serializeColorStats(colorStats),
-        naturalSize: naturalSize.toObject2D(),
+        naturalSize: {
+            x: naturalSize.x,
+            y: naturalSize.y /* <- Note: Not using Vector.toObject2D because we do not want here an index signature + x and y needs to be defined */,
+        },
         title,
         content,
         keywords,
