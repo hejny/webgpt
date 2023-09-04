@@ -61,7 +61,7 @@ export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'naturalSize'
 };
 
 /**
- * TODO: !!! Script for Compute naturalSize in supabase
+ * TODO: [👏] !! Script to compute naturalSize in supabase
  * TODO: [🧠] Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"
  * TODO: [🧠] Maybe provide full srcset
  * TODO: [🧠] Maybe compute also some shapeStats (not only naturalSize) to capture most important regions of the wallpaper and overall shape (for example to determine the font)
