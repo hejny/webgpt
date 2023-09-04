@@ -11,11 +11,11 @@ import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-im
 import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpaper-content';
 import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
+import { isInAspectRatioRange } from '../utils/aspect-ratio/isInAspectRatioRange';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
 import { measureImageBlob } from '../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../utils/image/resizeImageBlob';
-import { isInAspectRatioRange } from '../utils/isInAspectRange';
 import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
