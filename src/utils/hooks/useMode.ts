@@ -4,11 +4,10 @@ import { TupleToUnion } from 'type-fest';
 import { useSsrDetection } from './useSsrDetection';
 
 export const MODES = [
-    'LOADING',
     'EDIT',
     'SHOW' /* <- !!! Show vs. Minimal vs. Presentation vs Share vs Live */,
     'SHOW_THUMBNAIL',
-] as const; /* <- [🧠] Which to use as/instead of enums, [...] as const with TupleToUnion OR {...} as const*/
+] as const; /* <- [🧠] !!! Which to use as/instead of enums, [...] as const with TupleToUnion OR {...} as const*/
 
 interface IModes {
     mode: TupleToUnion<typeof MODES>;
@@ -16,13 +15,13 @@ interface IModes {
     isEditable: boolean;
 }
 
-export function useMode(): IModes {
+export function useMode(): IModes /* <- !!! Return just mode */ {
     const isServerRender = useSsrDetection();
     const router = useRouter();
 
     if (isServerRender) {
         return {
-            mode: 'LOADING',
+            mode: 'SHOW',
             isPresenting: true,
             isEditable: false,
         };
@@ -38,7 +37,7 @@ export function useMode(): IModes {
 
     const mode = normalizeTo_SCREAMING_CASE(router.query.mode) as IModes['mode'];
 
-    if (mode === 'LOADING' || !MODES.includes(mode)) {
+    if (!MODES.includes(mode)) {
         throw new Error(`Invalid mode in GET params "?mode=${router.query.mode}"`);
     }
 
@@ -46,7 +45,7 @@ export function useMode(): IModes {
     const isEditable = !isPresenting;
 
     return {
-        mode: mode as IModes['mode'],
+        mode: mode as TupleToUnion<typeof MODES>,
         isPresenting,
         isEditable,
     };
@@ -55,4 +54,5 @@ export function useMode(): IModes {
 /**
  * TODO: !!! Change ACRY mode -> layout (or view)
  * TODO: !!! Add GET param scenario (or mode)
+ * TODO: !!! useScenario
  */
