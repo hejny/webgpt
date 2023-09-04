@@ -273,7 +273,6 @@ async function createNewWallpaper(
 }
 
 /**
- * TODO: !!!last Merge into feature/heic and make here room for conversion
  * TODO: [🥙] Wrap function as worker util
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
