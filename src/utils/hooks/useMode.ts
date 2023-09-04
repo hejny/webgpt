@@ -5,7 +5,7 @@ import { useSsrDetection } from './useSsrDetection';
 
 export const MODES = [
     'EDIT',
-    'SHOW',
+    'SHOW' /* <- !!! Show vs. Minimal vs. Presentation vs Share vs Live */,
     'SHOW_THUMBNAIL',
 ] as const; /* <- [🧠] !!! Which to use as/instead of enums, [...] as const with TupleToUnion OR {...} as const*/
 
