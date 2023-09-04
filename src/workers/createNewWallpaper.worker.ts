@@ -1,6 +1,5 @@
 import spaceTrim from 'spacetrim';
 import {
-    AZURE_COMPUTER_VISION_PREFERRED_SIZE,
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
@@ -170,12 +169,6 @@ async function createNewWallpaper(
     const wallpaperForColorAnalysis = await resizeImageBlob(
         wallpaper,
         downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
-    );
-
-    // TODO: !!!last AZURE_COMPUTER_VISION_PREFERRED_SIZE+wallpaperForContentAnalysis is not used because azure is using the main image from CDN - remove by one commit at the end of the feature
-    const wallpaperForContentAnalysis = await resizeImageBlob(
-        wallpaper,
-        downscaleWithAspectRatio(naturalSize, AZURE_COMPUTER_VISION_PREFERRED_SIZE),
     );
 
     await onProgress({
