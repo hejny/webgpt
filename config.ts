@@ -59,6 +59,11 @@ export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
 export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
 
+/**
+ * Preferred size of image for Azure Computer Vision API
+ */
+export const AZURE_COMPUTER_VISION_PREFERRED_SIZE = HD;
+
 export const EXPORT_OPTIONS = {
     isExported: false,
     publicUrl: NEXT_PUBLIC_URL,
@@ -94,7 +99,7 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Futuristic Cityscape Wallpaper'
 
 /**
- * @deprecated !!! Remove OR use ONLY as a fallback OR Use WALLPAPER_IMAGE_MAX_SIZE OR semantically link to hardcoded images + Change [🧔]
+ * @deprecated !!! Remove OR use ONLY as a fallback OR Use WALLPAPER_IMAGE_MAX_SIZE OR semantically link to hardcoded images
  */
 export const WALLPAPER_IMAGE_NATURAL_SIZE = FULLHD;
 

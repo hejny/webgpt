@@ -30,5 +30,6 @@ export async function resizeImageBlob(image: Blob, newSize: IVector): Promise<Bl
 }
 
 /**
- * TODO: !!! It should not upscale ONLY downscale
+ * TODO: !! Return same image if the size is the same
+ * TODO: !! It should not upscale ONLY downscale
  */

@@ -1,9 +1,9 @@
 import spaceTrim from 'spacetrim';
 import {
+    AZURE_COMPUTER_VISION_PREFERRED_SIZE,
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
-    WALLPAPER_IMAGE_NATURAL_SIZE,
 } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
@@ -11,6 +11,7 @@ import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpap
 import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
 import { aspectRatioRangeExplain } from '../utils/aspect-ratio/aspectRatioRangeExplain';
+import { downscaleWithAspectRatio } from '../utils/aspect-ratio/downscaleWithAspectRatio';
 import { isInAspectRatioRange } from '../utils/aspect-ratio/isInAspectRatioRange';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
@@ -74,14 +75,14 @@ async function createNewWallpaper(
     onProgress: (taskProgress: TaskProgress) => void,
 ) {
     const { author, wallpaperImage /* <- !!! Maybe rename to just wallpaper */: wallpaper } = options;
+    const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     //===========================================================================
     //-------[ Image analysis and check: ]---
     await onProgress({
-        name: 'image-analysis',
-        title: 'Color analysis',
+        name: 'image-check',
+        title: 'Checking image',
         isDone: false,
-        // TODO: Make it more granular
     });
 
     /*
@@ -91,17 +92,18 @@ async function createNewWallpaper(
     }
     */
 
-    const naturalSize = await measureImageBlob(wallpaper);
+    const originalSize = await measureImageBlob(wallpaper);
+    let naturalSize = originalSize.clone();
 
     // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
 
-    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize)) {
+    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, originalSize)) {
         throw new Error(
             spaceTrim(
                 (block) => `
                     Image has aspect ratio that is not allowed:
 
-                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
+                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, originalSize))}
                 `,
             ),
         );
@@ -127,10 +129,8 @@ async function createNewWallpaper(
     }
     */
 
-    if (naturalSize.x > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.y) {
-        throw new Error(`Image is too large`);
-        // TODO: !!! Resize image instead of throwing error (and show in task progress)
-        // TODO: !!! Implement automatic resize
+    if (originalSize.x > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.x || originalSize.y > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.y) {
+        naturalSize = downscaleWithAspectRatio(originalSize, WALLPAPER_IMAGE_MAX_ALLOWED_SIZE);
     }
 
     /*
@@ -152,32 +152,53 @@ async function createNewWallpaper(
         }
     }
     */
+    await onProgress({
+        name: 'image-check',
+        isDone: true,
+    });
 
     //-------[ / Image analysis and check ]---
     //===========================================================================
-    //-------[ Xxxx!!!: ]---
-    const wallpaperResized = await resizeImageBlob(
+    //-------[ Image resize: ]---
+    await onProgress({
+        name: 'image-resize',
+        title: 'Resizing image',
+        isDone: false,
+    });
+
+    const wallpaperForUpload = await resizeImageBlob(wallpaper, naturalSize);
+    const wallpaperForColorAnalysis = await resizeImageBlob(
         wallpaper,
-        // TODO: !!! Preserve Aspect Ratio of the wallpaper when scaling
-        WALLPAPER_IMAGE_NATURAL_SIZE.scale(1) /* <- TODO: [🧔] This should be in config */,
+        downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
     );
 
-    // TODO: !!! Split wallpaper(Original), wallpaperForColorAnalysis, wallpaperForContentAnalysis, wallpaperForUpload
-    // TODO: !!! Merge into feature/heic and make here room for conversion
-    // TODO: !!! Split up [ Image conversion: ] vs [ Color analysis: ]
-    const compute = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
-    const image = await createImageInWorker(
-        // TODO: [🧠] !!! Some better name for Image, createImageInWorker
-        wallpaperResized,
-        WALLPAPER_IMAGE_NATURAL_SIZE.scale(0.1) /* <- TODO:  !!! This should be exposed as compute.preferredSize */,
+    // TODO: !!!last AZURE_COMPUTER_VISION_PREFERRED_SIZE+wallpaperForContentAnalysis is not used because azure is using the main image from CDN - remove by one commit at the end of the feature
+    const wallpaperForContentAnalysis = await resizeImageBlob(
+        wallpaper,
+        downscaleWithAspectRatio(naturalSize, AZURE_COMPUTER_VISION_PREFERRED_SIZE),
     );
-    const colorStats = await compute(image, onProgress);
+
     await onProgress({
-        name: 'image-analysis',
+        name: 'image-resize',
         isDone: true,
     });
+    //-------[ / Image resize ]---
+    //===========================================================================
+    //-------[ Color analysis: ]---
+
+    await onProgress({
+        title: 'Prepare color analysis',
+        name: 'image-prepare-color-analysis',
+        isDone: false,
+    });
+    const imageForColorAnalysis = await createImageInWorker(wallpaperForColorAnalysis);
+    await onProgress({
+        name: 'image-prepare-color-analysis',
+        isDone: true,
+    });
+    const colorStats = await computeColorstats(imageForColorAnalysis, onProgress);
     console.info({ colorStats });
-    //-------[ / Xxx!!! ]---
+    //-------[ / Color analysis ]---
     //===========================================================================
     //-------[ Upload image: ]---
     await onProgress({
@@ -187,7 +208,7 @@ async function createNewWallpaper(
         // TODO: Make it more granular
     });
     const formData = new FormData();
-    formData.append('wallpaper', wallpaperResized /* <- [🧔] */);
+    formData.append('wallpaper', wallpaperForUpload);
 
     const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
@@ -283,7 +304,7 @@ async function createNewWallpaper(
         src: wallpaperUrl,
         prompt: wallpaperDescription,
         colorStats,
-        naturalSize,
+        naturalSize: originalSize,
         content: wallpaperContent,
         saveStage: 'SAVING',
     });
@@ -298,6 +319,7 @@ async function createNewWallpaper(
 }
 
 /**
+ * TODO: !!!last Merge into feature/heic and make here room for conversion
  * TODO: [🥙] Wrap function as worker util
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
