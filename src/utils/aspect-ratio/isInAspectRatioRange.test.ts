@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 import { Vector } from 'xyzt';
-import { FULLHD, UHD2K, UHD4K } from '../constants';
-import { isInAspectRatioRange } from './isInAspectRange';
+import { FULLHD, UHD2K, UHD4K } from '../../constants';
+import { isInAspectRatioRange } from './isInAspectRatioRange';
 
 describe(`isInAspectRange`, () => {
     it(`should be in aspect ratio range when all values are same`, () => {
