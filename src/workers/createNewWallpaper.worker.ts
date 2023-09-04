@@ -1,9 +1,8 @@
+import spaceTrim from 'spacetrim';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
-    IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE,
     IMAGE_MAX_ALLOWED_SIZE,
-    IMAGE_MIN_RECOMMENDED_SIZE,
     IMAGE_NATURAL_SIZE,
 } from '../../config';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
@@ -11,6 +10,7 @@ import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-im
 import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpaper-content';
 import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../utils/addWallpaperComputables';
+import { aspectRatioRangeExplain } from '../utils/aspect-ratio/aspectRatioRangeExplain';
 import { isInAspectRatioRange } from '../utils/aspect-ratio/isInAspectRatioRange';
 import { serializeWallpaper } from '../utils/hydrateWallpaper';
 import { createImageInWorker } from '../utils/image/createImageInWorker';
@@ -96,27 +96,62 @@ async function createNewWallpaper(
     // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
 
     if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize)) {
-        // TODO: !!! Put aspect ration into the alert
-        // TODO: !!! Alert dialogue
-        throw new Error(`Image has aspect ratio that is not allowed`);
+        throw new Error(
+            spaceTrim(
+                (block) => `
+                    Image has aspect ratio that is not allowed:
+
+                    ${block(aspectRatioRangeExplain(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
+                `,
+            ),
+        );
     }
 
+    /*
+    TODO: [👩‍🎨] Confirm is not working in worker - temporary disabled
     if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, naturalSize)) {
-        // TODO: !!! Confirm user if he wants to continue instead of throwing error
-        // TODO: !!! Confirm dialogue
-        throw new Error(`Image has aspect ratio that is not recommended`);
+        const isOkToHaveNonRecommendedAspectRatio = window.confirm(
+            spaceTrim(
+                (block) => `
+                    
+                    Image has aspect ratio that is not recommended, do you want to continue?
+
+                    ${block(aspectRatioRangeExplain(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
+                `,
+            ),
+        );
+        if (!isOkToHaveNonRecommendedAspectRatio) {
+            // TODO: !! Do not show this error
+            throw new Error(`Image has aspect ratio that is not recommended and user did not confirm automatic resize`);
+        }
     }
+    */
 
     if (naturalSize.x > IMAGE_MAX_ALLOWED_SIZE.x || naturalSize.y > IMAGE_MAX_ALLOWED_SIZE.y) {
-        // TODO: !!! Resize image instead of throwing error (and show in task progress)
         throw new Error(`Image is too large`);
+        // TODO: !!! Resize image instead of throwing error (and show in task progress)
+        // TODO: !!! Implement automatic resize
     }
 
+    /*
+    TODO: [👩‍🎨] Confirm is not working in worker - temporary disabled
     if (naturalSize.x < IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < IMAGE_MIN_RECOMMENDED_SIZE.y) {
-        // TODO: !!! Confirm user if he wants to continue instead of throwing error
-        // TODO: !!! Confirm dialogue
-        throw new Error(`Image is too small`);
+        const isOkToHaveSmallImage = window.confirm(
+            spaceTrim(
+                `
+                    
+                    Image is too small, do you want to continue?
+
+                  
+                `,
+            ),
+        );
+        if (!isOkToHaveSmallImage) {
+            // TODO: !! Do not show this error
+            throw new Error(`Image is too small`);
+        }
     }
+    */
 
     //-------[ / Image analysis and check ]---
     //===========================================================================
@@ -267,4 +302,5 @@ async function createNewWallpaper(
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
  * TODO: [🚵‍♂️] !! Do this out of the worker just in simple utility function
+ * TODO: Alert and confirm dialogues
  */
