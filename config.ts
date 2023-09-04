@@ -5,7 +5,7 @@ import { FULLHD, HD, UHD2K } from './src/constants';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { AspectRatioRange } from './src/utils/isInAspectRange';
+import { AspectRatioRange, isInAspectRatioRange } from './src/utils/isInAspectRange';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
 import { isPrivateNetwork } from './src/utils/validators/isPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
@@ -122,6 +122,21 @@ export const IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vecto
  * This will be checked on client (+ in future on server) and wont be allowed to upload image if not in this range
  */
 export const IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(1, 3), new Vector(3, 1)];
+
+// Note: Checking validity of the IMAGE_ASPECT_RATIO config
+if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, FULLHD)) {
+    throw new Error(`IMAGE_ASPECT_RATIO is not valid [0]`);
+} else if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD)) {
+    throw new Error(`IMAGE_ASPECT_RATIO is not valid [1]`);
+} else if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[0])) {
+    throw new Error(`IMAGE_ASPECT_RATIO is not valid [2]`);
+} else if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_ALLOWED_RANGE, IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[1])) {
+    throw new Error(`IMAGE_ASPECT_RATIO is not valid [3]`);
+} else if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[0])) {
+    throw new Error(`IMAGE_ASPECT_RATIO is not valid [4]`);
+} else if (!isInAspectRatioRange(IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, IMAGE_ASPECT_RATIO_ALLOWED_RANGE[1])) {
+    throw new Error(`IMAGE_ASPECT_RATIO is not valid [5]`);
+}
 
 /**
  * @@@
