@@ -74,7 +74,7 @@ async function createNewWallpaper(
     options: Omit<IMessage_CreateNewWallpaper_Request, 'type'>,
     onProgress: (taskProgress: TaskProgress) => void,
 ) {
-    const { author, wallpaperImage /* <- !!! Maybe rename to just wallpaper */: wallpaper } = options;
+    const { author, wallpaperImage: wallpaper } = options;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     //===========================================================================
