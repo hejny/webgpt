@@ -1,6 +1,6 @@
 import { ConfigChecker } from 'configchecker';
-import { Vector } from 'xyzt';
 import packageJson from './package.json';
+import { FULLHD } from './src/constants';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
@@ -91,10 +91,8 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 
 // !!! IMAGE -> WALLPAPER_IMAGE
 
-export const FULLHD = new Vector(1920, 1080);
-
 /**
- * @deprecated !!! Remove OR use ONLY as a fallback
+ * @deprecated !!! Remove OR use ONLY as a fallback OR Use IMAGE_MAX_SIZE
  */
 export const IMAGE_NATURAL_SIZE = FULLHD;
 
