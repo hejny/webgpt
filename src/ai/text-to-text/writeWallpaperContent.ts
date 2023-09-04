@@ -28,6 +28,9 @@ export async function writeWallpaperContent(
     const { response, model: modelToCreateTitle } = chatThread;
     const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
+    // TODO: Use !!! MAX_CHARS_IN_TITLE
+    // TODO: Use !!! MAX_CHARS_IN_TITLE_WORD
+
     const contentStart = spaceTrim(
         (block) => `
 
@@ -50,9 +53,13 @@ export async function writeWallpaperContent(
         ),
     );
 
+    // TODO: !!! Remove strange images https://1-2i.com/mountain-sunset-2gr7dv4ybstg
+    // TODO: !!! Test that the content is valid and rich markdown
+
     const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
     const font = removeQuotes(chatThreadFont.response) as string_font_family;
 
+    // TODO: !!! Better font picking
     // console.log(chatThreadFont);
 
     return spaceTrim(

@@ -85,6 +85,8 @@ export const FONTS = [
     // TODO: !! List more
 ] as const;
 
+// TODO: !!! MAX_CHARS_IN_TITLE_WORD
+
 export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
