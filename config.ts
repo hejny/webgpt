@@ -107,6 +107,8 @@ export const IMAGE_NATURAL_SIZE = FULLHD;
  */
 export const IMAGE_MAX_ALLOWED_SIZE = UHD2K;
 
+// TODO: [👩‍🎨] !!!last RECOMMENDED Values are not working because confirm is not working in worker - remove by one commit at the end of the feature
+
 /**
  * Minimum recommended size of custom wallpaper image
  * This will be checked on client and if user uploads smaller image, it will be warned
