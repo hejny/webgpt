@@ -70,6 +70,5 @@ export async function createImageInWorker(imageAsBlob: Blob): Promise<MyImage> {
 }
 
 /**
- * TODO: !!! Remove preferredSize
  * TODO: [🧠] Better names createImageInWorker can be really used in browser THE difference is wheather it takes src url or blob
  */
