@@ -1,10 +1,9 @@
 import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
-import { FULLHD, HD, UHD2K } from './src/constants';
+import { FULLHD, UHD2K } from './src/constants';
 import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
-import { expectAspectRatioNotInRange } from './src/utils/aspect-ratio/expectAspectRatioNotInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
@@ -100,20 +99,6 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
  */
 export const WALLPAPER_IMAGE_MAX_ALLOWED_SIZE = UHD2K;
 
-// TODO: [👩‍🎨] !!!last RECOMMENDED Values are not working because confirm is not working in worker - remove by one commit at the end of the feature
-
-/**
- * Minimum recommended size of custom wallpaper image
- * This will be checked on client and if user uploads smaller image, it will be warned
- */
-export const WALLPAPER_IMAGE_MIN_RECOMMENDED_SIZE = HD;
-
-/**
- * Recommended aspect ratio of custom wallpaper image
- * This will be checked on client and if user uploads image with different aspect ratio, it will be warned
- */
-export const WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = [new Vector(2, 1), new Vector(1, 1)];
-
 /**
  * Allowed aspect ratio of custom wallpaper image
  * This will be checked on client (+ in future on server) and wont be allowed to upload image if not in this range
@@ -121,28 +106,7 @@ export const WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE: AspectRatioRange = 
 export const WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(3, 1), new Vector(1, 3)];
 
 // Note: Checking validity of the WALLPAPER_IMAGE_ASPECT_RATIO config
-expectAspectRatioInRange('[0]', WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, FULLHD);
 expectAspectRatioInRange('[1]', WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD);
-expectAspectRatioInRange(
-    '[2]',
-    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
-    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[0],
-);
-expectAspectRatioInRange(
-    '[3]',
-    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
-    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE[1],
-);
-expectAspectRatioNotInRange(
-    '[4]',
-    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE,
-    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE[0],
-);
-expectAspectRatioNotInRange(
-    '[5]',
-    WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE,
-    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE[1],
-);
 
 /**
  * @@@

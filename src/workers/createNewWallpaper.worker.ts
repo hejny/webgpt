@@ -108,49 +108,10 @@ async function createNewWallpaper(
         );
     }
 
-    /*
-    TODO: [👩‍🎨] Confirm is not working in worker - temporary disabled
-    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_RECOMMENDED_RANGE, naturalSize)) {
-        const isOkToHaveNonRecommendedAspectRatio = window.confirm(
-            spaceTrim(
-                (block) => `
-                    
-                    Image has aspect ratio that is not recommended, do you want to continue?
-
-                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, naturalSize))}
-                `,
-            ),
-        );
-        if (!isOkToHaveNonRecommendedAspectRatio) {
-            // TODO: !! Do not show this error
-            throw new Error(`Image has aspect ratio that is not recommended and user did not confirm automatic resize`);
-        }
-    }
-    */
-
     if (originalSize.x > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.x || originalSize.y > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.y) {
         naturalSize = downscaleWithAspectRatio(originalSize, WALLPAPER_IMAGE_MAX_ALLOWED_SIZE);
     }
 
-    /*
-    TODO: [👩‍🎨] Confirm is not working in worker - temporary disabled
-    if (naturalSize.x < WALLPAPER_IMAGE_MIN_RECOMMENDED_SIZE.x || naturalSize.y < WALLPAPER_IMAGE_MIN_RECOMMENDED_SIZE.y) {
-        const isOkToHaveSmallImage = window.confirm(
-            spaceTrim(
-                `
-                    
-                    Image is too small, do you want to continue?
-
-                  
-                `,
-            ),
-        );
-        if (!isOkToHaveSmallImage) {
-            // TODO: !! Do not show this error
-            throw new Error(`Image is too small`);
-        }
-    }
-    */
     await onProgress({
         name: 'image-check',
         isDone: true,
