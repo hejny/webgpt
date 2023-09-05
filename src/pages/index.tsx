@@ -65,4 +65,5 @@ export default function HomePage() {
 /**
  * TODO: !! Put here some footer
  * TODO: !! Nicer fonts / handwritten
+ * TODO: !!! Create pull request to main "⭐ Pavol Hejny section"
  */
