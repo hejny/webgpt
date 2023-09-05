@@ -6,11 +6,11 @@ type OpenModalLinkProps = Omit<React.ComponentProps<'a'>, 'ref'> & { modal: stri
  * Renders a link to open modal
  */
 export function OpenModalLink(props: OpenModalLinkProps) {
-    const { modal } = props;
+    const { modal, ...attributes } = props;
 
     return (
         <>
-            <WallpaperLink {...{ modal }} {...props} />
+            <WallpaperLink {...{ modal }} {...attributes} />
         </>
     );
 }
