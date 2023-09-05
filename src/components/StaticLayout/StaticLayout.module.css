@@ -1,0 +1,61 @@
+.StaticLayout {
+    /**/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    /* TODO: Use or remove empty css */
+}
+
+.StaticLayout a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.StaticLayout a:hover {
+    color: rgb(183, 244, 247);
+}
+
+.StaticLayout main,
+.StaticLayout article {
+    /*/
+    outline: 1px dotted rgb(38, 212, 255);
+    /**/
+
+    height: 80vh;
+
+    padding-right: calc(50vw - 300px);
+    padding-left: calc(50vw - 300px);
+}
+
+@media only screen and (max-width: 650px) {
+    /* 📱 Big+ smartphones */
+
+    .StaticLayout main,
+    .StaticLayout article {
+        height: 80vh;
+
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/*
+========================================================
+TODO: Share CSS Between static and dynamic articles
+*/
+
+.StaticLayout article h1,
+.StaticLayout article h2,
+.StaticLayout article h3,
+.StaticLayout article h4,
+.StaticLayout article h5,
+.StaticLayout article h6 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.StaticLayout article ul,
+.StaticLayout article ol {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -78,3 +78,7 @@ export function GraphsAsScenarios() {
         </ul>
     );
 }
+
+/**
+ * TODO: !!! Hover effect on graphs
+ */

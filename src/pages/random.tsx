@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpaper/RandomWallpaperManager';
 import { TasksInProgress } from '../components/TaskInProgress/TasksInProgress';
-import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components */;
+import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
 export default function RandomPage() {
     const router = useRouter();

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { GallerySection } from '../components/Gallery/Gallery';
-import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components */;
+import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';

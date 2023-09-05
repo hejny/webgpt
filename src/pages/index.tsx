@@ -1,30 +1,48 @@
 import { useRouter } from 'next/router';
-import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { Center } from '../components/Center/Center';
 import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
 import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
+import { StaticLayout } from '../components/StaticLayout/StaticLayout';
 import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
-import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components */;
 
 export default function HomePage() {
     const router = useRouter();
 
     return (
-        <>
-            <StaticAppHead subtitle={null} />
+        <StaticLayout subtitle={null}>
+            <main>
+                <Center>
+                    <h1>AI Web Maker</h1>
+                    {/* TODO: !! Use or remove <HandwrittenText color={Color.from('#fff')}>AI Web Maker</HandwrittenText> */}
+                    <GraphsAsScenarios />
+                </Center>
+            </main>
 
-            <div className={styles.page}>
-                <main>
-                    <Center>
-                        <h1>AI Web Maker</h1>
-                        {/* TODO: !! Use or remove <HandwrittenText color={Color.from('#fff')}>AI Web Maker</HandwrittenText> */}
-                        <GraphsAsScenarios />
-                    </Center>
-                </main>
-
+            <article>
                 <MarkdownContent content={PAGES_CONTENTS.explanation!} />
-            </div>
-        </>
+            </article>
+
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.gallery!} />
+            </article>
+            */}
+
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.pricing!} />
+            </article>
+            */}
+
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.contact!} />
+            </article>
+            */}
+        </StaticLayout>
     );
 }
 
