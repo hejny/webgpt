@@ -46,13 +46,6 @@ export default function HomePage() {
                 <MarkdownContent content={PAGES_CONTENTS.pricing!} />
             </article>
             */}
-
-            {/*
-            TODO: !!! Contact + my photo (Maybe not as article MarkdownContent)
-            <article>
-                <MarkdownContent content={PAGES_CONTENTS.contact!} />
-            </article>
-            */}
         </StaticLayout>
     );
 }
