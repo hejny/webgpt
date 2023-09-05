@@ -37,7 +37,7 @@ export default function HomePage() {
             */}
 
             {/*
-            TODO:
+            TODO: !!! Contact + my photo (Maybe not as article MarkdownContent)
             <article>
                 <MarkdownContent content={PAGES_CONTENTS.contact!} />
             </article>
@@ -47,7 +47,6 @@ export default function HomePage() {
 }
 
 /**
- * TODO: !!! Design and layout
  * TODO: !! Put here some footer
  * TODO: !! Nicer fonts / handwritten
  */

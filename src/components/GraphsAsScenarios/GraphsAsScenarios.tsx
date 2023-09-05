@@ -80,5 +80,5 @@ export function GraphsAsScenarios() {
 }
 
 /**
- * TODO: !!! Hover effect on graphs
+ * TODO: !! Hover effect on graphs
  */
