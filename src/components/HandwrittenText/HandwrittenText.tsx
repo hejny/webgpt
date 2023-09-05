@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { forTime } from 'waitasecond';
+// [👩‍🌾] import materializedHandwritten from '../../../public/handwritten/materialized/AI-Web-Maker.BigPartiallyPartiallyJoined.txt';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import styles from './HandwrittenText.module.css';
@@ -62,7 +63,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                     // TODO: Preload the script and model d.bin HERE
                     // > await loadAndRunExternalScript('/handwritten/script.js')
 
-                    await forTime(100 /* <- !! How much is the true delay, can it work without delay? */);
+                    await forTime(10 /* <- !! How much is the true delay, can it work without delay? */);
 
                     if (!isMounted) {
                         return;
@@ -80,6 +81,12 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         svgElement,
                     });
                 }}
+                /* 
+                TODO: [👩‍🌾] Do system for materialized handwritten text
+                dangerouslySetInnerHTML={{
+                    __html: materializedHandwritten,
+                }}
+                */
             >
                 {/* <path id="path" d=""></path> */}
             </svg>
@@ -90,3 +97,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
 }
 
 // TODO: [🎎] alt={removeMarkdownFormatting(removeMarkdownLinks(
+
+/**
+ * TODO: !! Make <HandwrittenText/> responsive
+ */

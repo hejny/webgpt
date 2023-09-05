@@ -22,7 +22,9 @@
     /**/
 
     height: 80vh;
+}
 
+.StaticLayout article {
     padding-right: calc(50vw - 300px);
     padding-left: calc(50vw - 300px);
 }
@@ -30,7 +32,6 @@
 @media only screen and (max-width: 650px) {
     /* 📱 Big+ smartphones */
 
-    .StaticLayout main,
     .StaticLayout article {
         height: 80vh;
 

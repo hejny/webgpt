@@ -14,7 +14,13 @@ export default function HomePage() {
         <StaticLayout subtitle={null}>
             <main>
                 <Center>
-                    <h1>
+                    <h1
+                        style={{
+                            maxWidth: '700px',
+                            // outline: '1px solid red',
+                            // transform: 'translate(calc(50% - 300px),-20px)'
+                        }}
+                    >
                         <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
                             AI Web Maker
                         </HandwrittenText>
