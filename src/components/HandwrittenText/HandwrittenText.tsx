@@ -2,9 +2,8 @@ import { useEffect } from 'react';
 import { forTime } from 'waitasecond';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
-import { randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
-import { handwriteText } from './utils/handwriteText';
+import { handwriteText, HandwrittenStyle } from './utils/handwriteText';
 
 interface HandwrittenTextProps {
     /**
@@ -16,6 +15,11 @@ interface HandwrittenTextProps {
      * The text to be rendered as handwritten.
      */
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
+
+    /**
+     * Style of the handwritten text.
+     */
+    style: keyof typeof HandwrittenStyle;
 }
 
 /**
@@ -24,7 +28,7 @@ interface HandwrittenTextProps {
  * @returns A JSX element that contains the handwritten text and a fallback span element.
  */
 export function HandwrittenText(props: HandwrittenTextProps) {
-    const { children, color } = props;
+    const { children, color, style } = props;
 
     // TODO: Can be isMounted done better
     let isMounted: boolean;
@@ -69,10 +73,10 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         // TODO: !! Work with aspect ratio
                         text: children,
                         color,
-                        speed: 3 /* 7 */,
+                        speed: 5 /* 7 */,
                         bias: 0.75,
                         width: 1.5,
-                        style: randomItem('CursiveSeparated' /* , 'FancyTall' */),
+                        style,
                         svgElement,
                     });
                 }}

@@ -1,9 +1,11 @@
 import { useRouter } from 'next/router';
 import { Center } from '../components/Center/Center';
 import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
+import { HandwrittenText } from '../components/HandwrittenText/HandwrittenText';
 import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
 import { StaticLayout } from '../components/StaticLayout/StaticLayout';
 import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+import { Color } from '../utils/color/Color';
 
 export default function HomePage() {
     const router = useRouter();
@@ -12,8 +14,11 @@ export default function HomePage() {
         <StaticLayout subtitle={null}>
             <main>
                 <Center>
-                    <h1>AI Web Maker {/* <- !!! Logo */}</h1>
-                    {/* TODO: !! Use or remove <HandwrittenText color={Color.from('#fff')}>AI Web Maker</HandwrittenText> */}
+                    <h1>
+                        <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
+                            AI Web Maker
+                        </HandwrittenText>
+                    </h1>
                     <GraphsAsScenarios />
                 </Center>
             </main>
