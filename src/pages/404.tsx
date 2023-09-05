@@ -2,7 +2,7 @@ import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { BackgroundPattern } from '../components/BackgroundPattern/BackgroundPattern';
 import { FooterSection } from '../components/Footer/Footer';
 import { Section } from '../components/Section/Section';
-import styles from '../styles/static.module.css';
+import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components */;
 
 export default function NotFoundPage() {
     return (

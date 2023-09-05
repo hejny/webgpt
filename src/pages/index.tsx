@@ -2,7 +2,9 @@ import { useRouter } from 'next/router';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { Center } from '../components/Center/Center';
 import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
-import styles from '../styles/static.module.css';
+import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
+import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components */;
 
 export default function HomePage() {
     const router = useRouter();
@@ -20,16 +22,14 @@ export default function HomePage() {
                     </Center>
                 </main>
 
-                {/*
-                TODO: !!! Design and layout
                 <MarkdownContent content={PAGES_CONTENTS.explanation!} />
-                */}
             </div>
         </>
     );
 }
 
 /**
+ * TODO: !!! Design and layout
  * TODO: !! Put here some footer
  * TODO: !! Nicer fonts / handwritten
  */
