@@ -12,7 +12,7 @@ export default function HomePage() {
         <StaticLayout subtitle={null}>
             <main>
                 <Center>
-                    <h1>AI Web Maker</h1>
+                    <h1>AI Web Maker {/* <- !!! Logo */}</h1>
                     {/* TODO: !! Use or remove <HandwrittenText color={Color.from('#fff')}>AI Web Maker</HandwrittenText> */}
                     <GraphsAsScenarios />
                 </Center>
