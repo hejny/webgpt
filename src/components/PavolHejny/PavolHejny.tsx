@@ -7,7 +7,7 @@ import styles from './PavolHejny.module.css';
 export function PavolHejny() {
     return (
         <>
-            <h2>Pavol Hejný</h2>
+            <h2>Who is behind?</h2>
 
             <>
                 <svg width="0" height="0">
@@ -46,15 +46,18 @@ export function PavolHejny() {
             </>
             <MarkdownContent
                 content={spaceTrim(`
-                            !!! Jsem Pavol, vývojář, který s nadšením využívá nové nástroje a technologie.
-                            Spoluzaložil jsem virtuální tabuli Collboard  a elektronické učebnice H-edu.
-                            Pracoval jsem na mnoha projektech České společnosti ornitologické. Přednášel
-                            jsem na mnoha technologických a startupových konferencích + byl v porotě a
-                            mentorem mnoha soutěží - například Startup Weekendu. Také pracuji na
-                            Czech.events, newsletteru s nejzajímavějšími technologickými a startup
-                            událostmi v Čechách.
-                          `)}
-                isEnhanced
+                            I'm [Pavol Hejný](https://www.pavolhejny.com/), a **developer and tech enthusiast** who is passionate about exploring
+                            cutting-edge tools and technologies. As a co-founder of H-edu and Collboard,
+                            I'm invested in using digital innovation to transform education. I've
+                            developed several citizen science projects, including the first mobile app
+                            for birdwatchers in the Czech Republic, and spoken at tech and startup
+                            conferences on topics such as VR, AR and AI. I also run Czech.events, a
+                            platform that helps people find and attend technology and innovation events.
+                            My talent for identifying growth opportunities and mentoring startups has
+                            led me to win several innovation competitions. I'm committed to inspiring
+                            others and believe that technology can help solve the world's problems.
+                          ` /* <- TODO: !!! Shorten + make more suitable for 1-2i */)}
+                // not isEnhanced
             />
         </>
     );
