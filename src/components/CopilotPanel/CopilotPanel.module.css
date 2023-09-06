@@ -1,0 +1,17 @@
+.CopilotPanel {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    z-index: 3000 /* <- [🔝] Global z-index for wallpaper page */;
+    position: fixed;
+    left: 50vw;
+    bottom: 15px;
+    width: auto;
+
+    padding: 3px;
+    background-color: rgba(43, 43, 43, 0.11);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+}

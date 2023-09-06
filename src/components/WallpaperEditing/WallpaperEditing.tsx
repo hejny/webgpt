@@ -4,6 +4,7 @@ import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { ColorsPanel } from '../ColorsPanel/ColorsPanel';
+import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
 import { PreventUnsavedChanges } from './PreventUnsavedChanges';
@@ -31,6 +32,7 @@ export function WallpaperEditing() {
 
             {isReady && !isServerRender && <ControlPanel />}
             {isReady && !isServerRender && <ColorsPanel />}
+            {isReady && !isServerRender && <CopilotPanel />}
         </>
     );
 }
