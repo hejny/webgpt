@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import React from 'react';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { colorLuminance } from '../../utils/color/utils/colorLuminance';

@@ -1,7 +1,7 @@
 import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
-import { FULLHD, UHD2K } from './src/constants';
+import { FULLHD } from './src/constants';
 import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
@@ -97,7 +97,7 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
  * This will be checked on both client and server
  * If user uploads bigger image, it will be resized
  */
-export const WALLPAPER_IMAGE_MAX_ALLOWED_SIZE = UHD2K;
+export const WALLPAPER_IMAGE_MAX_ALLOWED_SIZE = FULLHD; // <- TODO: When image for Azure content analysis will be separated from image to upload, allow to have UHD4K images
 
 /**
  * Allowed aspect ratio of custom wallpaper image
