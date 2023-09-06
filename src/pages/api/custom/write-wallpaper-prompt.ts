@@ -17,19 +17,29 @@ export default async function writeWallpaperPromptHandler(
         return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
-    const wallpaperUrl = request.body.wallpaperUrl as string_url;
+    try {
+        const wallpaperUrl = request.body.wallpaperUrl as string_url;
 
-    if (!isValidUrl(wallpaperUrl)) {
-        return response
-            .status(400)
-            .json({ message: 'Parameter "wallpaperDescription" is required to be a valid URL' } as any);
+        if (!isValidUrl(wallpaperUrl)) {
+            return response
+                .status(400)
+                .json({ message: 'Parameter "wallpaperDescription" is required to be a valid URL' } as any);
+        }
+
+        const wallpaperDescription = await imageToText(new URL(wallpaperUrl));
+
+        return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
+            wallpaperDescription,
+        } satisfies WriteWallpaperPromptResponse);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        return response.status(400).json({
+            message: error.message /* <- TODO: [🈵] Is it good practise to reveal all error messages to client? */,
+        } as any);
     }
-
-    const wallpaperDescription = await imageToText(new URL(wallpaperUrl));
-
-    return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
-        wallpaperDescription,
-    } satisfies WriteWallpaperPromptResponse);
 }
 
 /**
