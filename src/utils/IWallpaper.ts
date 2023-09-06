@@ -31,7 +31,7 @@ export interface IWallpaper {
      * Note: This is just derrived
      */
     title: Exclude<title, JSX.Element>;
-    content: string_markdown | string_html;
+    content: string_markdown | string_html /* <- TODO: !!! Multiple pages here */;
     // TODO: isTile + some mechanism to add additional metadata
 
     /**
