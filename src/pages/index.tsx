@@ -48,12 +48,6 @@ export default function HomePage() {
             </article>
             */}
 
-            {/*
-            TODO: !!! Contact + my photo (Maybe not as article MarkdownContent)
-            <article>
-                <MarkdownContent content={PAGES_CONTENTS.contact!} />
-            </article>
-            */}
 
             <article>
                 <PavolHejny />

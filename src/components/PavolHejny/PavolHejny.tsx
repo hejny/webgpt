@@ -10,9 +10,6 @@ export function PavolHejny() {
             <h2>Pavol Hejný</h2>
 
             <>
-                {/* TODO: !!! Make <Person/> component from this */}
-                {/* TODO: !!! Tidy up the commit with clipping */}
-                {/* TODO: !!! Pick the best squircle */}
                 <svg width="0" height="0">
                     <defs>
                         <clipPath id="squircle" clipPathUnits="objectBoundingBox">
@@ -64,11 +61,11 @@ export function PavolHejny() {
 }
 
 /**
+ * TODO: Maybe make <Person/> component
  * TODO: Should we translate alt of the images like "Portrait photo of Pavol Hejný"
  * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/hejny/main/documents/contact.md
  *       1) Download from external repo script (and add copy warning)
  *       2) Convert from local markdown to conponent
  *       3) Add also VCard
  *       4) Add also crypto
- * TODO: [🔗] ACRY should we use <a ...>...</a> OR <Link ...>...</Link> for external links in Next App
  */

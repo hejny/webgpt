@@ -20,7 +20,7 @@
     height: 250px;
     margin-right: 25px;
     margin-bottom: 25px;
-margin-top: 25px;
+    margin-top: 25px;
     border-radius: 50px; /* <- TODO: !!! ACRY irelevant */
 
     overflow: clip;
@@ -83,13 +83,8 @@ margin-top: 25px;
         height: auto;
     }
 
-.personShadow .personShadowInner {
-    width: 50vw;
-    height: 50vw;
-
-/*border: 1px solid red;*/
-    /*!!! use aspect ratio*/
+    .personShadow .personShadowInner {
+        width: 50vw;
+        height: 50vw;
+    }
 }
-}
-
-/*!!! rename repo*/
