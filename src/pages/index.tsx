@@ -1,64 +1,60 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { Center } from '../components/Center/Center';
-import styles from '../styles/static.module.css';
+import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
+import { HandwrittenText } from '../components/HandwrittenText/HandwrittenText';
+import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
+import { PavolHejny } from '../components/PavolHejny/PavolHejny';
+import { StaticLayout } from '../components/StaticLayout/StaticLayout';
+import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+import { Color } from '../utils/color/Color';
 
 export default function HomePage() {
-    const router = useRouter();
 
     return (
-        <>
-            <StaticAppHead subtitle={null} />
+        <StaticLayout subtitle={null}>
+            <main>
+                <Center>
+                    <h1
+                        style={{
+                            maxWidth: '700px',
+                            // outline: '1px solid red',
+                            // transform: 'translate(calc(50% - 300px),-20px)'
+                        }}
+                    >
+                        <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
+                            AI Web Maker
+                        </HandwrittenText>
+                    </h1>
+                    <GraphsAsScenarios />
+                </Center>
+            </main>
 
-            <div className={styles.page}>
-                <main>
-                    <Center>
-                        <h1>AI Web Maker</h1>I have…
-                        <ul>
-                            <Link href="/random">
-                                <li>
-                                    …<b>Nothing</b> and pick from gallery of pre-generated webs
-                                </li>
-                            </Link>
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.explanation!} />
+            </article>
 
-                            <Link href="/new/from-prompt">
-                                <li>
-                                    …<b>Idea</b> to describe and generate web
-                                </li>
-                            </Link>
-                            <Link href="/new/from-image">
-                                <li>
-                                    …<b>Image</b> to upload and generate web
-                                </li>
-                            </Link>
-                        </ul>
-                        {/*
-                        TODO:
-                        <Link href="/random">
-                            <GraphButton>Need help</GraphButton>
-                        </Link>
-                        <Link href="/new/from-prompt">
-                            <GraphButton>Have idea</GraphButton>
-                        </Link>
-                        <Link href="/new/from-image">
-                            <GraphButton>Have custom image</GraphButton>
-                        </Link>
-                        */}
-                    </Center>
-                </main>
-            </div>
-        </>
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.gallery!} />
+            </article>
+            */}
+
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.pricing!} />
+            </article>
+            */}
+
+            <article>
+                <PavolHejny />
+            </article>
+        </StaticLayout>
     );
 }
 
 /**
- * TODO: Different graohs
- * TODO: Nicer fonts / handwritten
- * TODO: DO not redirect to random wallpaper provide 3 scenarios:
- *       - 🙄 No idea
- *       - 💡 Idea
- *       - 🖼 Image
- * TODO: Go to last wallpaper
- * TODO: Make shuffle between wallpapers
+ * TODO: !! Put here some footer
+ * TODO: !! Nicer fonts / handwritten
  */

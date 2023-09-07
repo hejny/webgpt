@@ -5,8 +5,7 @@ import styles from './Center.module.css';
 
 interface CenterProps {
     /**
-     * Content which will is hinted
-     * This is the subject of the hint
+     * Content which will be centered
      */
     children?: ReactNode;
 
@@ -17,7 +16,9 @@ interface CenterProps {
 }
 
 /**
- * Centers the content in both directions
+ * Centers the content in both directions using flexbox
+ *
+ * Note: The <Center/> element itself stretches to 100% width and height of the parent element
  */
 export function Center(props: CenterProps) {
     const { children, className } = props;

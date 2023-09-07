@@ -87,6 +87,7 @@ async function createNewWallpaper(
     /*
     Note: This is not needed because it is already checked by the measureImageBlob etc... Implement only if we want nicer error message
     if (!wallpaper.type.startsWith('image/')) {
+        // TODO: [🈵] If 4XX error, show also the message from json body
         throw new Error(`File is not an image`);
     }
     */
@@ -203,6 +204,7 @@ async function createNewWallpaper(
     });
 
     if (response2.ok === false) {
+        // TODO: [🈵] If 4XX error, show also the message from json body
         throw new Error(`Content analysis failed with status ${response2.status}`);
     }
 
@@ -234,6 +236,7 @@ async function createNewWallpaper(
     });
 
     if (response3.ok === false) {
+        // TODO: [🈵] If 4XX error, show also the message from json body
         throw new Error(`Copywriting failed with status ${response3.status}`);
     }
 
