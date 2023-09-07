@@ -10,10 +10,10 @@ export function CopilotPanel() {
             // Note: It is intended to have two divs embedded in each other
             className={classNames('aiai-controls', styles.CopilotPanel)}
         >
-            What are you working on?
             <input
+         
                 type={'text'}
-                placeholder={'🍕 Pizza Gigante'}
+                placeholder={'Describe the change> Add email contact pavol@hejny.org'}
                 ref={(element) => {
                     // TODO: focusRef
                     if (!element) {
@@ -23,6 +23,7 @@ export function CopilotPanel() {
                     element.focus();
                 }}
             />
+            <button >Apply</button>
         </div>
     );
 }

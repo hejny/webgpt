@@ -6,12 +6,59 @@
     z-index: 3000 /* <- [🔝] Global z-index for wallpaper page */;
     position: fixed;
     left: 50vw;
+    transform: translate(-50%, 0);
     bottom: 15px;
-    width: auto;
+    height: 60px;
 
-    padding: 3px;
+    /* TODO: [👨‍🌾] Make just one css for floating control panel */
+    padding: 5px;
     background-color: rgba(43, 43, 43, 0.11);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
     backdrop-filter: blur(10px);
     border-radius: 6px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.CopilotPanel input,
+.CopilotPanel button {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38);
+    /**/
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 1.3em;
+}
+
+.CopilotPanel input {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38);
+    /**/
+
+    width: calc(5vw + 400px) /* <- [🍜] */;
+    max-width: calc(100vw - 270px);
+}
+
+.CopilotPanel button {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38);
+    /**/
+
+    border-radius: 3px;
+    background-color: rgba(205, 227, 231, 0.32);
+    cursor: pointer;
+}
+
+.CopilotPanel button:hover {
+    background-color: rgba(205, 227, 231, 0.58);
 }
