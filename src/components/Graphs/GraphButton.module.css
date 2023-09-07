@@ -29,3 +29,11 @@
 
     margin-top: -30px;
 }
+
+.GraphButton .content h2 {
+    /*/
+    outline: 1px dotted rgb(38, 114, 255);
+    /**/
+
+    text-decoration: underline;
+}
