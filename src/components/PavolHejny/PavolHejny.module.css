@@ -2,6 +2,8 @@
     /*/
     outline: 1px dotted green;
     /**/
+
+    --person-size: 150px;
 }
 
 .PavolHejnySection div p {
@@ -16,8 +18,8 @@
     float: left;
     shape-outside: circle(54%); /* <- Note: For some reason url(#squircle) is not working here*/
 
-    width: 250px;
-    height: 250px;
+    width: var(--person-size);
+    height: var(--person-size);
     margin-right: 25px;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -70,10 +72,11 @@
 }
 
 .personShadow .personShadowInner {
-    width: 250px;
-    height: 250px;
+    width: var(--person-size);
+    height: var(--person-size);
     position: relative;
-    transform: translate(-25px, calc(25px + 25px)) /* <- TODO: Paralax effect on shadow */;
+    transform: translate(calc(var(--person-size) / -10), calc(var(--person-size) / 5))
+        /* <- TODO: Paralax effect on shadow */;
 }
 
 @media screen and (max-width: 400px) {
