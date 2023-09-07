@@ -1,86 +1,82 @@
-import {
-    ArcRotateCamera,
-    Color3,
-    Color4,
-    Engine,
-    HemisphericLight,
-    MeshBuilder,
-    Scene,
-    StandardMaterial,
-    Vector3,
-} from 'babylonjs';
-import { MutableRefObject, useEffect, useRef } from 'react';
+import type { Material } from 'babylonjs';
+import { ArcRotateCamera, Color3, Color4, Engine, HemisphericLight, Scene, StandardMaterial, Vector3 } from 'babylonjs';
+import { DependencyList, MutableRefObject, useEffect, useRef } from 'react';
 
-export function useGraph(): { sceneRef: MutableRefObject<HTMLCanvasElement | null> } {
+/**
+ * Function that creates meshes the scene and optionally some effects and extra stuff like camera rotation
+ */
+export type ICreateSceneMeshes = (assets: {
+    scene: Scene;
+    camera: ArcRotateCamera;
+    wireframeMaterial: Material;
+}) => void;
+
+export function useGraph(
+    createSceneMeshes: ICreateSceneMeshes,
+    deps: DependencyList,
+): {
+    sceneRef: MutableRefObject<HTMLCanvasElement | null>;
+} {
     const sceneRef = useRef<HTMLCanvasElement | null>(null);
-    useEffect(() => {
-        // Get the canvas element
-        const canvas = sceneRef.current;
+    useEffect(
+        () => {
+            // Get the canvas element
+            const canvas = sceneRef.current;
 
-        if (!canvas) {
-            return;
-        }
+            if (!canvas) {
+                return;
+            }
 
-        // Create the Babylon.js engine
-        const engine = new Engine(canvas, true);
+            // Create the Babylon.js engine
+            const engine = new Engine(canvas, true);
 
-        // Create a scene
-        const scene = new Scene(engine);
+            // Create a scene
+            const scene = new Scene(engine);
 
-        scene.clearColor = new Color4(0, 0, 0, 0);
+            scene.clearColor = new Color4(0, 0, 0, 0);
 
-        // Create a camera
-        const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 6, Vector3.Zero(), scene);
-        camera.attachControl(canvas, false);
+            // Create a camera
+            const camera = new ArcRotateCamera('camera', 0, (Math.PI / 2) * 0.6, 6, Vector3.Zero(), scene);
+            camera.attachControl(canvas, false);
 
-        // Create a light
-        const light = new HemisphericLight('light', new Vector3(0, 1, 0), scene);
+            // Create a light
+            const light = new HemisphericLight('light', new Vector3(0, 1, 0), scene);
 
-        // scene.debugLayer.show();
+            // scene.debugLayer.show();
 
-        //==============================================
+            // Create a material for the ribbon
+            const wireframeMaterial = new StandardMaterial('ribbonMaterial', scene);
+            wireframeMaterial.emissiveColor = Color3.White();
+            wireframeMaterial.backFaceCulling = false;
+            wireframeMaterial.wireframe = true;
 
-        let ribbon = MeshBuilder.CreateTorus(
-            'ribbon',
-            {
-                diameter: 1,
-                thickness: 0.5,
-                tessellation: 20,
-                // sideOrientation: Mesh.DOUBLESIDE,
-            },
-            scene,
-        );
+            createSceneMeshes({ scene, camera, wireframeMaterial });
 
-        // Create a material for the ribbon
-        const ribbonMaterial = new StandardMaterial('ribbonMaterial', scene);
-        ribbonMaterial.emissiveColor = Color3.White();
-        ribbonMaterial.backFaceCulling = false;
-        ribbonMaterial.wireframe = true;
-        ribbon.material = ribbonMaterial;
+            //==============================================
 
-        /**/
-        // Rotate the the camera around the mesh
-        camera.beta = (Math.PI / 2) * (2 / 3) /* <- TODO: [2] For feature/scenarios this should not be */;
-        scene.registerBeforeRender(function () {
-            camera.beta *= 0.95 /*  <- [2] */;
-            camera.alpha += 0.02;
-        });
-        /**/
+            // Render the scene
+            engine.runRenderLoop(() => {
+                scene.render();
+            });
 
-        //==============================================
+            // Handle window resize
+            const resizeHandler = () => {
+                engine.resize();
+            };
+            window.addEventListener('resize', resizeHandler);
 
-        // Render the scene
-        engine.runRenderLoop(function () {
-            scene.render();
-        });
+            return () => {
+                // Remove event listener
+                window.removeEventListener('resize', resizeHandler);
 
-        // Handle window resize
-        window.addEventListener('resize', function () {
-            engine.resize();
-        });
-
-        // Return
-    }, [sceneRef]);
+                // Dispose of the scene
+                scene.dispose();
+            };
+        },
+        // Note: Dependencies are passed to avoid re-creating the scene on every render
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [sceneRef, ...deps],
+    );
 
     return { sceneRef };
 }

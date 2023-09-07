@@ -39,7 +39,7 @@ export function ExportCommentedBlock(props: ExportCommentedBlockProps) {
                 <ExportComment
                     comment={spaceTrim(
                         (block) => `
-                            Note: ${block(spaceTrim(note!))}
+                            ⏣ ${block(spaceTrim(note!))}
                         `,
                     )}
                 />

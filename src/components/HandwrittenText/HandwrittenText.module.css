@@ -9,11 +9,13 @@
     justify-content: center;
     align-items: start;
     grid-template: '🟦';
+
+    overflow: visible;
 }
 
 .HandwrittenText svg.primaryImage {
     /*/
-    outline: 1px dotted rgb(38, 255, 38);
+    outline: 1px dotted rgb(255, 215, 38);
     /**/
 
     grid-area: 🟦;
@@ -27,7 +29,7 @@
 
 .HandwrittenText span.textFallback {
     /*/
-    outline: 1px dotted rgb(38, 255, 38);
+    outline: 1px dotted rgb(94, 94, 94);
     /**/
 
     display: none /* <- TODO: Do better and then unblock */;

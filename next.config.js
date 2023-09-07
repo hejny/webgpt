@@ -34,6 +34,10 @@ const nextConfig = {
             test: /\.md$/,
             use: 'raw-loader',
         });
+        config.module.rules.push({
+            test: /\.txt$/,
+            use: 'raw-loader' /* <- [👩‍🌾] */,
+        });
         return config;
     },
     staticPageGenerationTimeout: 60 * 5 /* 5 minutes */,
