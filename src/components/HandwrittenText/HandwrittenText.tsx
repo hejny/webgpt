@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { forTime } from 'waitasecond';
+// [👩‍🌾] import materializedHandwritten from '../../../public/handwritten/materialized/AI-Web-Maker.BigPartiallyPartiallyJoined.txt';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
-import { randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
-import { handwriteText } from './utils/handwriteText';
+import { handwriteText, HandwrittenStyle } from './utils/handwriteText';
 
 interface HandwrittenTextProps {
     /**
@@ -16,6 +16,11 @@ interface HandwrittenTextProps {
      * The text to be rendered as handwritten.
      */
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
+
+    /**
+     * Style of the handwritten text.
+     */
+    style: keyof typeof HandwrittenStyle;
 }
 
 /**
@@ -24,7 +29,7 @@ interface HandwrittenTextProps {
  * @returns A JSX element that contains the handwritten text and a fallback span element.
  */
 export function HandwrittenText(props: HandwrittenTextProps) {
-    const { children, color } = props;
+    const { children, color, style } = props;
 
     // TODO: Can be isMounted done better
     let isMounted: boolean;
@@ -58,7 +63,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                     // TODO: Preload the script and model d.bin HERE
                     // > await loadAndRunExternalScript('/handwritten/script.js')
 
-                    await forTime(100 /* <- !! How much is the true delay, can it work without delay? */);
+                    await forTime(10 /* <- !! How much is the true delay, can it work without delay? */);
 
                     if (!isMounted) {
                         return;
@@ -69,13 +74,19 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         // TODO: !! Work with aspect ratio
                         text: children,
                         color,
-                        speed: 3 /* 7 */,
+                        speed: 5 /* 7 */,
                         bias: 0.75,
                         width: 1.5,
-                        style: randomItem('CursiveSeparated' /* , 'FancyTall' */),
+                        style,
                         svgElement,
                     });
                 }}
+                /* 
+                TODO: [👩‍🌾] Do system for materialized handwritten text
+                dangerouslySetInnerHTML={{
+                    __html: materializedHandwritten,
+                }}
+                */
             >
                 {/* <path id="path" d=""></path> */}
             </svg>
@@ -86,3 +97,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
 }
 
 // TODO: [🎎] alt={removeMarkdownFormatting(removeMarkdownLinks(
+
+/**
+ * TODO: !! Make <HandwrittenText/> responsive
+ */

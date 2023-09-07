@@ -1,4 +1,5 @@
-import React from 'react';
+import type { DependencyList } from 'react';
+import { useEffect, useState } from 'react';
 import { Promisable } from 'type-fest';
 import {
     IUseLoadableResultComplete,
@@ -17,21 +18,19 @@ type IUsePromiseResult<TValue> =
  */
 export function usePromise<TValue>(
     promise: Promisable<TValue>,
-    deps?: React.DependencyList /* <- TODO: Import and use just a DependencyList */,
+    deps?: DependencyList,
 ): IUsePromiseResult<TValue> {
     // console.log('🅰️', 'usePromise');
 
-    const [result, setResult] = React.useState/* <- TODO: Import and use just a useState */ <IUsePromiseResult<TValue>>(
-        {
-            status: IUseLoadableResultStatus.Pending,
-            value: undefined,
-            error: undefined,
-            isComplete: false,
-        },
-    );
+    const [result, setResult] = useState <IUsePromiseResult<TValue>>({
+        status: IUseLoadableResultStatus.Pending,
+        value: undefined,
+        error: undefined,
+        isComplete: false,
+    });
 
-    React.useEffect(
-        /* <- TODO: Import and use just a useEffect */ () => {
+    useEffect(
+         () => {
             (async () => {
                 try {
                     const value = await promise;
