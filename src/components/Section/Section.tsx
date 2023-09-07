@@ -9,7 +9,7 @@ interface SectionProps {
      */
     children: ReactNode;
 
-        /**
+    /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
@@ -17,8 +17,14 @@ interface SectionProps {
 
 /**
  * Renders a section - container for content representing a logical part of the page
+ *
+ * @deprecated [🤶]
  */
 export function Section(props: SectionProps) {
     const { children, className } = props;
     return <div className={classNames(styles.section, className)}>{children}</div>;
 }
+
+/**
+ * TODO: [🤶] Get rid of this component
+ */
