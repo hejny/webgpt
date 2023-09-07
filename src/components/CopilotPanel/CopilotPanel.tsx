@@ -1,14 +1,21 @@
 import { useCallback, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { forTime } from 'waitasecond';
+import type {
+    UpdateWallpaperContentRequest,
+    UpdateWallpaperContentResponse,
+} from '../../pages/api/update-wallpaper-content';
 import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
+import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
+import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import styles from './CopilotPanel.module.css';
 
 /**
  * Renders the co-pilot panel for text commands to edit the page.
  */
 export function CopilotPanel() {
+    const wallpaperId = useCurrentWallpaperId();
+    const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const [isRunning, setRunning] = useState(false);
     const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -19,6 +26,8 @@ export function CopilotPanel() {
 
         setRunning(true);
         let prompt = inputRef.current?.value || '';
+
+        // TODO: [🍛] Make same normalization as in the backend
         prompt = spaceTrim(prompt);
 
         if (!prompt) {
@@ -37,11 +46,26 @@ export function CopilotPanel() {
             `),
         );
 
-        await forTime(1000);
+        const { content } = wallpaperSubject.value;
+
+        const response = await fetch('/api/update-wallpaper-content', {
+            method: 'POST',
+            body: JSON.stringify({ prompt, wallpaper: { content } } satisfies UpdateWallpaperContentRequest),
+            signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+        });
+
+        if (response.ok === false) {
+            // TODO: [🈵] If 4XX error, show also the message from json body
+            throw new Error(`Prompt failed with status ${response.status}`);
+        }
+
+        const { updatedWallpaper } = (await response.json()) as UpdateWallpaperContentResponse;
+
+        wallpaperSubject.next({ ...wallpaperSubject.value, content: updatedWallpaper.content });
 
         inputRef.current!.value = '';
         setRunning(false);
-    }, [isRunning, inputRef]);
+    }, [wallpaperSubject, isRunning, inputRef]);
 
     return (
         <div
