@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { GallerySection } from '../components/Gallery/Gallery';
-import styles from '../styles/static.module.css';
+import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
@@ -58,14 +58,14 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
-                const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
+                const { id, parent, src, colorStats, naturalSize, title, keywords, isPublic, author } = fullWallpaper;
                 return {
                     id,
                     parent,
                     src,
                     prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     colorStats /* <- TODO: !! Also reduce colorStats */,
-                    // TODO: shapeStats> IWallpaperShapeStats;
+                    naturalSize,
                     title,
                     content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     keywords,

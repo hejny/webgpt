@@ -24,10 +24,7 @@ export function ControlPanel() {
     return (
         <div
             // Note: It is intended to have two divs embedded in each other
-            className={classNames(
-                'aiai-controls',
-                styles.ControlPanel,
-            )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
+            className={classNames('aiai-controls', styles.ControlPanel)}
         >
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
             <div className={styles.group}>
@@ -115,7 +112,6 @@ export function ControlPanel() {
 }
 
 /**
- * TODO: Control panel in Wireframe design
  * TODO: !! Use translate
  * TODO: [🧠] Play can trigger fullscreen
  */

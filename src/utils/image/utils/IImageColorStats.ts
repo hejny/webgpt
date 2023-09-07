@@ -1,4 +1,5 @@
 import { Promisable } from 'type-fest';
+import { Vector } from 'xyzt';
 import { TaskProgress } from '../../../components/TaskInProgress/task/TaskProgress';
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
@@ -13,6 +14,7 @@ interface IComputeImageColorStatsProgress {
 
 export interface IComputeImageColorStats<TVersion extends string> {
     version: TVersion;
+    preferredSize: Vector;
     (image: IImage, onProgress?: (taskProgress: TaskProgress) => Promisable<void>): Promise<IImageColorStats<TVersion>>;
 }
 
