@@ -5,7 +5,6 @@ import { nameToSubfolderPath } from './nameToSubfolderPath';
 
 /**
  * Generates a path for the user content
- *
  */
 
 export function generateUserWallpaperCdnKey(wallpaperImage: Buffer): string_uri {

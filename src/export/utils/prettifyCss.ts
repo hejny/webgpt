@@ -7,8 +7,6 @@ import { string_css } from '../../utils/typeAliases';
  *
  * @param css raw css code
  * @returns formatted css code
- *
- * @collboard-modules-sdk
  */
 export function prettifyCss(css: string_css): string_css {
     try {

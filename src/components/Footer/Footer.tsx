@@ -7,7 +7,6 @@ import styles from './Footer.module.css';
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
-
     return (
         <div className={styles.FooterSection}>
             <ul>
@@ -42,7 +41,7 @@ export function FooterSection() {
 }
 
 /**
- * TODO: !!! More links, structure + better design
+ * TODO: [🧠][🕶] More links, structure + better design
  * TODO: !! Fix footer section
  * TODO: !! No cookie's sentence 
  * TODO: !! Email & follow subscription

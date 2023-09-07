@@ -24,10 +24,7 @@ export function ControlPanel() {
     return (
         <div
             // Note: It is intended to have two divs embedded in each other
-            className={classNames(
-                'aiai-controls',
-                styles.ControlPanel,
-            )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
+            className={classNames('aiai-controls', styles.ControlPanel)}
         >
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
             <div className={styles.group}>
@@ -51,7 +48,7 @@ export function ControlPanel() {
                                 .insert(serializeWallpaper(newWallpaper));
 
                             // TODO: !! Util isInsertSuccessfull (status===201)
-                            console.log({ newWallpaper, insertResult });
+                            console.info({ newWallpaper, insertResult });
 
                             /*
                             Note: Wallpapers should not be explicitly saved, they automatically appear as saved after router.push is loaded
@@ -72,7 +69,7 @@ export function ControlPanel() {
                                 }
                             } catch (error) {
                                 // TODO: [🧠] Handle situation when window.localStorage is exceeded
-                                console.log(error);
+                                console.error(error);
                             }
 
                             router.push(`/${newWallpaper.id}`);

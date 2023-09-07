@@ -40,7 +40,7 @@ export function useLikedStatusOfCurrentWallpaper(): [
             author: provideClientId(),
         });
 
-        console.log({ reactionInsertResult });
+        console.info({ reactionInsertResult });
     };
 
     return [likedStatus, setLikedStatus];

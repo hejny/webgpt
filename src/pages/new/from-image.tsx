@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { Center } from '../../components/Center/Center';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
-import styles from '../../styles/static.module.css';
+import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
 export default function NewWallpaperFromImagePage() {
-    const router = useRouter();
 
     return (
         <>
@@ -12,8 +12,10 @@ export default function NewWallpaperFromImagePage() {
 
             <div className={styles.page}>
                 <main>
-                    <h1>AI Web Maker</h1>
-                    <UploadNewWallpaper />
+                    <Center>
+                        <h1>AI Web Maker</h1>
+                        <UploadNewWallpaper />
+                    </Center>
                 </main>
 
                 {/* TODO: Make here some footer
@@ -27,8 +29,5 @@ export default function NewWallpaperFromImagePage() {
 }
 
 /**
- * TODO: !!! Make (probbably in /other) some library of custom wallpaper samples
- * TODO: !! Page structure - back to random wallpaper, samples, gallery,...
  * TODO: Allow to use Camera (maybe in new route /new/from-camera)
- * TODO: !! Create some meaningfull content by AI recognition
  */

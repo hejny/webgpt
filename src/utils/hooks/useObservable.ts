@@ -1,16 +1,14 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { BehaviorSubject, Observable } from 'rxjs';
 import {
     IUseLoadableResult,
     IUseLoadableResultError,
     IUseLoadableResultPending,
-    IUseLoadableResultStatus
+    IUseLoadableResultStatus,
 } from './useLoadable';
 
 /**
  * React hook that returns current value of given Observable.
- *
- * @collboard-modules-sdk
  */
 export function useObservable<TValue>(
     observable: BehaviorSubject<TValue>,
@@ -35,11 +33,10 @@ export function useObservable<TValue>(observable: Observable<TValue>): IUseLoada
         };
     }
 
-    const [result, setResult] =
-        React.useState/* <- TODO: Import and use just a useState */ <IUseLoadableResult<TValue>>(initialValue);
+    const [result, setResult] = useState<IUseLoadableResult<TValue>>(initialValue);
 
-    React.useEffect(
-        /* <- TODO: Import and use just a useEffect */ () => {
+    useEffect(
+        () => {
             const subscription = observable.subscribe({
                 next(value) {
                     setResult({
@@ -71,8 +68,7 @@ export function useObservable<TValue>(observable: Observable<TValue>): IUseLoada
                 subscription.unsubscribe();
             };
         },
-        // Note: Ignoring warning "React Hook React.useEffect/* <- TODO: Import and use just a useEffect */ has a missing dependency: 'result.value'"
-        //       Because result.value is just subdependency of observable
+        // Note: result.value is just subdependency of observable
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [observable],
     );

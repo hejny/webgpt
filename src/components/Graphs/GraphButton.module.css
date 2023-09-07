@@ -1,0 +1,39 @@
+.GraphButton {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+}
+
+.GraphButton .scene {
+    /*/
+    outline: 1px dotted rgb(38, 114, 255);
+    /**/
+
+    width: 200px;
+    height: 200px;
+
+    outline: none;
+}
+
+.GraphButton .content {
+    /*/
+    outline: 1px dotted rgb(38, 114, 255);
+    /**/
+
+    text-align: center;
+
+    margin-top: -30px;
+}
+
+.GraphButton .content h2 {
+    /*/
+    outline: 1px dotted rgb(38, 114, 255);
+    /**/
+
+    text-decoration: underline;
+}

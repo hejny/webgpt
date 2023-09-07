@@ -1,0 +1,105 @@
+.TasksInProgress {
+    /*/
+    outline: 1px dotted rgb(38, 194, 255);
+    /**/
+
+    z-index: 90000 /* <- [🔝] Global z-index for wallpaper page */;
+    background-color: #000;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.scene {
+    /*/
+    outline: 1px dotted rgb(38, 194, 255);
+    /**/
+
+    z-index: 90010 /* <- [🔝] Global z-index for wallpaper page */;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh /* <- TODO: For feature/scenarios this should be 100vh */;
+
+    outline: none;
+}
+
+.tasklist {
+    /*/
+    outline: 1px dotted rgb(81, 255, 38);
+    /**/
+
+    z-index: 90020 /* <- [🔝] Global z-index for wallpaper page */;
+    background-color: transparent;
+
+    position: absolute;
+    top: calc(50vh + 50px);
+    left: 0;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    pointer-events: none;
+}
+
+.tasklist ul {
+    /*/
+    outline: 1px dotted rgb(81, 255, 38);
+    /**/
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-weight: normal;
+
+    margin-left: 60px;
+    width: 250px;
+}
+
+.tasklist ul li.pending {
+    opacity: 0.8;
+}
+
+.tasklist ul li.done::before {
+    content: '✓ \00a0\00a0';
+}
+
+.tasklist ul li.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.tasklist ul li.pending::before {
+    content: '⏣  \00a0\00a0';
+    /*
+    TODO: Animation on pending task [2]
+          For some reason, the animation is not working
+
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotate;
+    */
+}
+
+/*
+[2]
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+*/

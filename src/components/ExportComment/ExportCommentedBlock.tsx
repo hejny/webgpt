@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import spaceTrim from 'spacetrim';
+import { string_name } from '../../utils/typeAliases';
 import { ExportComment } from './ExportComment';
 
 interface ExportCommentedBlockProps {
@@ -8,7 +9,7 @@ interface ExportCommentedBlockProps {
      *
      * @example "Article", "Section", "Subsection", "Menu"
      */
-    name: string;
+    name: string_name;
 
     /**
      * This is the subject of the comment
@@ -38,7 +39,7 @@ export function ExportCommentedBlock(props: ExportCommentedBlockProps) {
                 <ExportComment
                     comment={spaceTrim(
                         (block) => `
-                            Note: ${block(spaceTrim(note!))}
+                            ⏣ ${block(spaceTrim(note!))}
                         `,
                     )}
                 />

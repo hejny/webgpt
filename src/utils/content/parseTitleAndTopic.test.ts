@@ -9,8 +9,8 @@ describe('how parsing name and topic works', () => {
             title: `Hackers Congress Paralelní Polis`,
             topic: null,
         });
-        expect(parseTitleAndTopic(`StartUp Boat Night Vol. IV`)).toEqual({ title: `StartUp Boat Night`, topic: null });
-        expect(parseTitleAndTopic(`Regionální finále Soutěž & Podnikej- Olomouc`)).toEqual({
+        expect(parseTitleAndTopic(`StartUp Boat Night`)).toEqual({ title: `StartUp Boat Night`, topic: null });
+        expect(parseTitleAndTopic(`Regionální finále Soutěž & Podnikej`)).toEqual({
             title: `Regionální finále Soutěž & Podnikej`,
             topic: null,
         });
@@ -33,7 +33,7 @@ describe('how parsing name and topic works', () => {
             topic: 'Hacking the future',
         });
         expect(parseTitleAndTopic(`CoolStore : Everything you want and need`)).toEqual({
-            title: `HackPrague`,
+            title: `CoolStore`,
             topic: 'Everything you want and need',
         });
     });

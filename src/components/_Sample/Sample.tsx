@@ -1,16 +1,24 @@
+import { ReactNode } from 'react';
+import { classNames } from '../../utils/classNames';
+import { string_css_class } from '../../utils/typeAliases';
 import styles from './Sample.module.css';
 
 interface SampleProps {
     /**
-     * @@
+     * Content of @@
      */
-    Sample: string;
+    children?: ReactNode;
+
+    /**
+     * Optional CSS class name which will be added to root element
+     */
+    className?: string_css_class;
 }
 
 /**
  * Renders a @@
  */
 export function Sample(props: SampleProps) {
-    const { Sample } = props;
-    return <div className={styles.Sample}>{Sample}</div>;
+    const { children, className } = props;
+    return <div className={classNames(className, styles.Sample)}>{children}</div>;
 }

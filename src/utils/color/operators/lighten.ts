@@ -11,7 +11,6 @@ import { IColorTransformer } from './IColorTransformer';
  */
 export function lighten(amount: number): IColorTransformer {
     return ({ red, green, blue, alpha }: Color) => {
-        // tslint:disable-next-line:prefer-const
         let [h, s, l] = rgbToHsl(red, green, blue);
         l += amount;
         l = clamp(l, 0, 1);

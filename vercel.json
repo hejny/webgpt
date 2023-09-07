@@ -1,7 +1,13 @@
 {
-  "functions": {
-    "pages/api/upload-wallpaper.ts": { 
-      "maxDuration": 10
+    "functions": {
+        "pages/api/custom/upload-wallpaper-image.ts": {
+            "maxDuration": 10
+        },
+        "pages/api/custom/write-wallpaper-prompt.ts": {
+            "maxDuration": 10
+        },
+        "pages/api/custom/write-wallpaper-content.ts": {
+            "maxDuration": 10
+        }
     }
-  }
 }

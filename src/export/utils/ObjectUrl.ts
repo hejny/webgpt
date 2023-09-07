@@ -1,11 +1,8 @@
 import { IDestroyable, ITeardownLogic, Registration } from 'destroyable';
 import { string_url } from '../../utils/typeAliases';
 
-
 /**
  * Converts Blob, File or MediaSource to url using URL.createObjectURL
- *
- * @collboard-modules-sdk
  */
 export class ObjectUrl extends Registration implements IDestroyable {
     private constructor(teardownLogic: ITeardownLogic, public readonly src: string_url) {

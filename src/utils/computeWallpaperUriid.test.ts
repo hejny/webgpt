@@ -1,5 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
+import { FULLHD } from '../constants';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
 import { validateUuid } from './validators/validateUuid';
@@ -235,6 +236,7 @@ describe(`computeWallpaperUriid`, () => {
                         { count: 1, value: '#558888' },
                     ],
                 }),
+                naturalSize: FULLHD,
                 content: spaceTrim(`
                 
                     <div style="font-family: Poppins, sans-serif;">
@@ -331,6 +333,7 @@ describe(`computeWallpaperUriid`, () => {
                     ],
                     version: 'colorful-192x108-16bit-v14palette',
                 }),
+                naturalSize: FULLHD,
                 content: spaceTrim(`
                     This content has no title.
                 `),
