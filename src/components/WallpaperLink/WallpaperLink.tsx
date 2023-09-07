@@ -6,8 +6,9 @@ import { TupleToUnion } from 'type-fest';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { MODES } from '../../utils/hooks/useMode';
 import { string_page, string_wallpaper_id } from '../../utils/typeAliases';
+import type { ComponentProps } from 'react';
 
-interface WallpaperLinkProps extends Omit<React.ComponentProps<'a'>, 'ref'> {
+interface WallpaperLinkProps extends Omit<ComponentProps<'a'>, 'ref'> {
     wallpaperId?: string_wallpaper_id | null;
     mode?: TupleToUnion<typeof MODES>;
     page?: string_page;
