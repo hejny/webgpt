@@ -1,5 +1,5 @@
 .StaticLayout {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
@@ -21,7 +21,12 @@
     outline: 1px dotted rgb(38, 212, 255);
     /**/
 
-    height: 80vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.StaticLayout main {
+    height: 50vh;
 }
 
 .StaticLayout article {
