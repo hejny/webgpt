@@ -1,12 +1,9 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/Center/Center';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
 export default function NewWallpaperFromPromptPage() {
-    const router = useRouter();
-
     return (
         <>
             <StaticAppHead subtitle={null} />
@@ -38,3 +35,6 @@ export default function NewWallpaperFromPromptPage() {
     );
 }
 
+/**
+ * TODO: [👐] Unite design of all /new/* pages
+ */
