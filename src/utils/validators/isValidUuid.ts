@@ -1,9 +1,5 @@
 import { uuid } from '../typeAliases';
 
-/**
- *
- * @collboard-modules-sdk
- */
 export function isValidUuid(value: unknown): value is uuid {
     if (typeof value !== 'string') {
         return false;

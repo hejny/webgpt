@@ -1,6 +1,6 @@
 import { IVector } from 'xyzt';
-import { forARest } from '../../../components/WorkInProgress/forARest';
 import { Color } from '../../color/Color';
+import { forARest } from '../../forARest';
 import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 import { Image } from '../Image';
@@ -16,7 +16,7 @@ import { Image } from '../Image';
  */
 export async function scaleImage(image: IImage, newSize: IVector): Promise<Image> {
     if (image.size.x === newSize.x && image.size.y === newSize.y && image instanceof Image) {
-        console.log('🍃 No need to scale image');
+        console.info('🍃 No need to scale image');
         return image;
     }
 

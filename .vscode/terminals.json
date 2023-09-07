@@ -13,7 +13,7 @@
             "focus": true
         },
         {
-            "name": "🧪 Lint",
+            "name": "🧪 Lint test",
             "command": "npm run lint",
             "onlySingle": true,
             "focus": true
@@ -133,6 +133,13 @@
             "onlySingle": true,
             "focus": true
         },
+        {
+            "name": "⏫ Trigger Build",
+            "commands": ["git commit --allow-empty -m \"⏫ Trigger Build\"", "git push"],
+            "onlySingle": true,
+            "focus": true
+        },
+
         {
             "name": "👨🏽‍💻 Clean dev cache",
             "command": "rm -rf .next",

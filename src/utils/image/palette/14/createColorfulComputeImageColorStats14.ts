@@ -1,5 +1,5 @@
 import { IVector, Vector } from 'xyzt';
-import { forARest } from '../../../../components/WorkInProgress/forARest';
+import { forARest } from '../../../forARest';
 import { take } from '../../../take/take';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImage } from '../../IImage';
@@ -71,6 +71,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
     };
 
     computeImageColorStats.version = version;
+    computeImageColorStats.preferredSize = size;
 
     return computeImageColorStats;
 }

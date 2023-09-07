@@ -20,7 +20,7 @@ export async function completeWithGpt(prompt: string_completion_prompt): Promise
         prompt,
     });
     performance.mark('complete-gpt-end');
-    console.log(performance.measure('complete-gpt', 'complete-gpt-start', 'complete-gpt-end'));
+    // console.log(performance.measure('complete-gpt', 'complete-gpt-start', 'complete-gpt-end'));
 
     if (!completion.choices[0]) {
         throw new Error(`No choises from OpenAPI`);

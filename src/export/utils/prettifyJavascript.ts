@@ -7,8 +7,6 @@ import { string_javascript } from '../../utils/typeAliases';
  *
  * @param javascript raw css code
  * @returns formatted css code
- *
- * @collboard-modules-sdk
  */
 export function prettifyJavascript(javascript: string_javascript): string_javascript {
     try {

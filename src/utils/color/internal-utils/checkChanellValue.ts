@@ -2,7 +2,6 @@
  * @@@
  *
  * @private
- * @not-collboard-modules-sdk
  */
 export function checkChanellValue(
     chanellName: string,

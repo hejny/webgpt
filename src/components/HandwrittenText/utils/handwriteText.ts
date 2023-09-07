@@ -4,7 +4,7 @@ import { loadAndRunExternalScript } from './loadAndRunExternalScript';
 /**
  * An object that maps different styles of handwriting to their corresponding codes
  */
-const HandwrittenStyle = {
+export const HandwrittenStyle = {
     // TODO: !! extract to properties or flags - italic, Fancy, joined + italic vs cursive
     Random: '-', // –
     FancyTall: 44,

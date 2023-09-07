@@ -1,42 +1,60 @@
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { RandomWallpaperManager } from '../components/ControlPanel/RandomWallpaper/RandomWallpaperManager';
-import { WorkInProgress } from '../components/WorkInProgress/WorkInProgress';
-import styles from '../styles/static.module.css';
+import { Center } from '../components/Center/Center';
+import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
+import { HandwrittenText } from '../components/HandwrittenText/HandwrittenText';
+import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
+import { PavolHejny } from '../components/PavolHejny/PavolHejny';
+import { StaticLayout } from '../components/StaticLayout/StaticLayout';
+import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+import { Color } from '../utils/color/Color';
 
 export default function HomePage() {
-    const router = useRouter();
-    useEffect(() => {
-        (async () => {
-            const randomWallpaperManager = RandomWallpaperManager.getInstance();
-            const wallpaper = await randomWallpaperManager.getWelcomeWallpaper();
-            router.replace(`/${wallpaper.id}`);
-        })();
-    });
 
     return (
-        <>
-            <StaticAppHead subtitle={null} />
-
-            <div className={styles.page}>
-                <main>
+        <StaticLayout subtitle={null}>
+            <main>
+                <Center>
                     <h1
                         style={{
-                            display:
-                                'none' /* <- TODO: For SEO/Social is it better to have invisible <h1> or just <title> + meta tags */,
+                            maxWidth: '700px',
+                            // outline: '1px solid red',
+                            // transform: 'translate(calc(50% - 300px),-20px)'
                         }}
                     >
-                        1-2i
+                        <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
+                            AI Web Maker
+                        </HandwrittenText>
                     </h1>
-                    <WorkInProgress />
-                </main>
-            </div>
-        </>
+                    <GraphsAsScenarios />
+                </Center>
+            </main>
+
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.explanation!} />
+            </article>
+
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.gallery!} />
+            </article>
+            */}
+
+            {/*
+            TODO:
+            <article>
+                <MarkdownContent content={PAGES_CONTENTS.pricing!} />
+            </article>
+            */}
+
+            <article>
+                <PavolHejny />
+            </article>
+        </StaticLayout>
     );
 }
 
 /**
- * TODO: Go to last wallpaper
- * TODO: Make shuffle between wallpapers
+ * TODO: !! Put here some footer
+ * TODO: !! Nicer fonts / handwritten
  */

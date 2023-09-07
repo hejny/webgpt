@@ -30,7 +30,6 @@ export type string_model_name =
  * Semantic helper
  *
  * For example `"A cat wearing a hat"`
- * @collboard-modules-sdk
  */
 export type string_prompt = string;
 
@@ -38,7 +37,6 @@ export type string_prompt = string;
  * Semantic helper
  *
  * For example `"A cat wearing a hat"`
- * @collboard-modules-sdk
  */
 export type string_image_prompt = string_prompt;
 
@@ -46,7 +44,6 @@ export type string_image_prompt = string_prompt;
  * Semantic helper
  *
  * For example `"A cat wearing a hat --wallpaper --v 5.2"`
- * @collboard-modules-sdk
  */
 export type string_midjourney_prompt = string_image_prompt;
 
@@ -54,7 +51,6 @@ export type string_midjourney_prompt = string_image_prompt;
  * Semantic helper
  *
  * For example `"How many hats does the cat wear?"`
- * @collboard-modules-sdk
  */
 export type string_text_prompt = string_prompt;
 
@@ -62,7 +58,6 @@ export type string_text_prompt = string_prompt;
  * Semantic helper
  *
  * For example `"How many hats does the cat wear?"`
- * @collboard-modules-sdk
  */
 export type string_chat_prompt = string_text_prompt;
 
@@ -70,7 +65,6 @@ export type string_chat_prompt = string_text_prompt;
  * Semantic helper
  *
  * For example `"Following is a text about cats: Once upon a time there was a cat"`
- * @collboard-modules-sdk
  */
 export type string_completion_prompt = string_text_prompt;
 
@@ -79,7 +73,6 @@ export type string_completion_prompt = string_text_prompt;
  *
  * For example `"index"` or `"explanation"`
  * Always in kebab-case
- * @collboard-modules-sdk
  */
 export type string_page = 'index' | string;
 
@@ -87,7 +80,6 @@ export type string_page = 'index' | string;
  * Semantic helper
  *
  * For example `"text/plain"` or `"application/collboard"`
- * @collboard-modules-sdk
  */
 export type string_mime_type = string;
 
@@ -95,7 +87,7 @@ export type string_mime_type = string;
  * Semantic helper
  *
  * For example `"text/*"` or `"image/*"`
- * @collboard-modules-sdk
+ *
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#unique_file_type_specifiers
  */
@@ -105,39 +97,49 @@ export type string_mime_type_with_wildcard = string;
  * Semantic helper
  *
  * For example `"a"`
- * @collboard-modules-sdk
  */
 export type string_char = string;
 
 /**
  * Semantic helper
+ * Unique identifier of anything
+ *
+ * For example `"ainautes"`
+ */
+export type string_name = string;
+
+/**
+ * A message which can be a simple string or JSX element
+ *
+ * Note: Please use JSX element only as a text with a formatting like a <b>bold</b> or <i>italic</i> etc.
+ */
+export type message = string | JSX.Element;
+
+/**
+ * Semantic helper
  *
  * For example `"Ainautes"`
- * @collboard-modules-sdk
  */
-export type string_title = string;
+export type title = message;
 
 /**
  * Semantic helper
  *
  * For example `"Ainautes are a group of animals that includes mammals, birds, reptiles, amphibians, and fish."`
- * @collboard-modules-sdk
  */
-export type string_description = string;
+export type description = message;
 
 /**
  * Semantic helper
  *
  * For example `"a city with buildings and trees"`
- * @collboard-modules-sdk
  */
-export type string_image_description = string_description;
+export type image_description = description;
 
 /**
  * Semantic helper
  *
  * For example `"Poppins"`
- * @collboard-modules-sdk
  */
 export type string_font_family = typeof FONTS[number];
 
@@ -145,7 +147,6 @@ export type string_font_family = typeof FONTS[number];
  * Semantic helper
  *
  * For example `"<div>Hello World!</div>"`
- * @collboard-modules-sdk
  */
 export type string_html = string;
 
@@ -153,7 +154,7 @@ export type string_html = string;
  * Semantic helper
  *
  * For example `"<foo>bar</foo>"`
- * @collboard-modules-sdk
+ *
  *
  * TODO: [🎞️] Probbably use some object-based method for working with XMLs
  */
@@ -163,7 +164,6 @@ export type string_xml = string;
  * Semantic helper
  *
  * For example `"**Hello** World!"`
- * @collboard-modules-sdk
  */
 export type string_markdown = string;
 
@@ -171,7 +171,6 @@ export type string_markdown = string;
  * Semantic helper
  *
  * For example `"towns.cz"`
- * @collboard-modules-sdk
  */
 export type string_domain = string;
 
@@ -179,7 +178,6 @@ export type string_domain = string;
  * Semantic helper
  *
  * For example `"com"`
- * @collboard-modules-sdk
  */
 export type string_tdl = string;
 
@@ -187,7 +185,6 @@ export type string_tdl = string;
  * Semantic helper
  *
  * For example `.foo{border: 1px solid red}`
- * @collboard-modules-sdk
  */
 export type string_css = string;
 
@@ -195,7 +192,6 @@ export type string_css = string;
  * Semantic helper
  *
  * For example `"<svg><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /></svg>"`
- * @collboard-modules-sdk
  */
 export type string_svg = string;
 
@@ -203,7 +199,6 @@ export type string_svg = string;
  * Semantic helper
  *
  * For example `console.info("Hello World!")`
- * @collboard-modules-sdk
  */
 export type string_javascript = string;
 
@@ -211,7 +206,6 @@ export type string_javascript = string;
  * Semantic helper
  *
  * For example `menu`
- * @collboard-modules-sdk
  */
 export type string_css_class = string;
 
@@ -219,7 +213,6 @@ export type string_css_class = string;
  * Semantic helper
  *
  * For example `border`
- * @collboard-modules-sdk
  */
 export type string_css_property = string;
 
@@ -227,7 +220,6 @@ export type string_css_property = string;
  * Semantic helper
  *
  * For example `13px`
- * @collboard-modules-sdk
  */
 export type string_css_value = string;
 
@@ -235,7 +227,6 @@ export type string_css_value = string;
  * Semantic helper
  *
  * For example `.foo`
- * @collboard-modules-sdk
  */
 export type string_css_selector = string;
 
@@ -243,7 +234,6 @@ export type string_css_selector = string;
  * Semantic helper
  *
  * For example `"https://collboard.com/9SeSQTupmQHwuSrLi"`
- * @collboard-modules-sdk
  */
 export type string_url = string;
 
@@ -251,7 +241,6 @@ export type string_url = string;
  * Semantic helper
  *
  * For example `"data:text/plain;base64,SGVsbG8sIFdvcmxkIQ=="`
- * @collboard-modules-sdk
  */
 export type string_data_url = string;
 
@@ -259,7 +248,6 @@ export type string_data_url = string;
  * Semantic helper
  *
  * For example `"https://collboard.com/9SeSQTupmQHwuSrLi"` OR `/9SeSQTupmQHwuSrLi`
- * @collboard-modules-sdk
  */
 export type string_href = string;
 
@@ -267,7 +255,6 @@ export type string_href = string;
  * Semantic helper
  *
  * For example `"https://collboard.com/9SeSQTupmQHwuSrLi.png?width=1200&height=630"`
- * @collboard-modules-sdk
  */
 export type string_url_image = string;
 
@@ -275,7 +262,6 @@ export type string_url_image = string;
  * Semantic helper
  *
  * For example `"/9SeSQTupmQHwuSrLi"`
- * @collboard-modules-sdk
  */
 export type string_uri = string;
 
@@ -283,7 +269,6 @@ export type string_uri = string;
  * Semantic helper
  *
  * For example `"9SeSQTupmQHwuSrLi"`
- * @collboard-modules-sdk
  */
 export type string_uri_part = string;
 
@@ -291,14 +276,11 @@ export type string_uri_part = string;
  * Semantic helper, ID of the board used in URL and API
  *
  * For example `"9SeSQTupmQHwuSrLi"` <- TODO: !! Update
- * @collboard-modules-sdk
  */
 export type string_uriid = string_uri_part;
 
 /**
  * Semantic helper
- *
- * @collboard-modules-sdk
  */
 export type string_protocol = 'http:' | 'https:';
 
@@ -306,7 +288,6 @@ export type string_protocol = 'http:' | 'https:';
  * Semantic helper
  *
  * For example `"localhost"` or `"collboard.com"`
- * @collboard-modules-sdk
  */
 export type string_hostname = string;
 
@@ -314,15 +295,13 @@ export type string_hostname = string;
  * Semantic helper
  *
  * For example `"localhost:9977"` or `"collboard.com"`
- * @collboard-modules-sdk
  */
 export type string_host = string;
 
 /**
  * Semantic helper
  *
- * For example `"pavol@collboard.com"`
- * @collboard-modules-sdk
+ * For example `"pavol@hejny.org"`
  */
 export type string_email = string;
 
@@ -335,7 +314,6 @@ export type string_email = string;
  *   - `isValidUuid  to check validity
  *
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
- * @collboard-modules-sdk
  */
 export type uuid = string & {
     __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
@@ -345,7 +323,6 @@ export type uuid = string & {
  * Semantic helper
  *
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
- * @collboard-modules-sdk
  */
 export type string_wallpaper_id = uuid | string_uriid;
 
@@ -355,7 +332,6 @@ export type string_wallpaper_id = uuid | string_uriid;
  *
  *
  * For example `"5a0a153d"`
- * @collboard-modules-sdk
  */
 export type uuid_first_segment = string;
 
@@ -363,7 +339,6 @@ export type uuid_first_segment = string;
  * Semantic helper
  *
  * For example `"b126926439c5fcb83609888a11283723c1ef137c0ad599a77a1be81812bd221d"`
- * @collboard-modules-sdk
  */
 export type string_sha256 = string;
 
@@ -371,7 +346,6 @@ export type string_sha256 = string;
  * Semantic helper
  *
  * For example `"4.2.4"`
- * @collboard-modules-sdk
  */
 export type string_version = string;
 
@@ -379,7 +353,6 @@ export type string_version = string;
  * Semantic helper
  *
  * For example `"^4.2.4"`
- * @collboard-modules-sdk
  */
 export type string_version_dependency = string;
 
@@ -387,7 +360,6 @@ export type string_version_dependency = string;
  * Semantic helper
  *
  * For example `"png"`
- * @collboard-modules-sdk
  */
 export type string_file_extension = string;
 
@@ -395,7 +367,6 @@ export type string_file_extension = string;
  * Semantic helper
  *
  * For example `"C:/Users/me/work/collboard/modules-sdk/src/colldev/commands/develop/ColldevDevelop.tsx"`
- * @collboard-modules-sdk
  */
 export type string_file_absolute_path = string;
 
@@ -403,14 +374,11 @@ export type string_file_absolute_path = string;
  * Semantic helper
  *
  * For example `"./src/colldev/commands/develop/ColldevDevelop.tsx"`
- * @collboard-modules-sdk
  */
 export type string_file_relative_path = string;
 
 /**
  * Semantic helper
- *
- * @collboard-modules-sdk
  */
 export type string_file_path = string_file_absolute_path | string_file_relative_path;
 
@@ -420,7 +388,6 @@ export type string_file_path = string_file_absolute_path | string_file_relative_
  * Semantic helper
  *
  * For example `"C:/Users/me/work/collboard/modules-sdk/src/colldev/commands/develop/ColldevDevelop.tsx"`
- * @collboard-modules-sdk
  */
 export type string_folder_absolute_path = string;
 
@@ -428,48 +395,23 @@ export type string_folder_absolute_path = string;
  * Semantic helper
  *
  * For example `"./src/colldev/commands/develop/ColldevDevelop.tsx"`
- * @collboard-modules-sdk
  */
 export type string_folder_relative_path = string;
 
 /**
  * Semantic helper
- *
- * @collboard-modules-sdk
  */
 export type string_folder_path = string_file_absolute_path | string_file_relative_path;
 
 /**
  * Semantic helper
- *
- * - basically module identifier
- *
- * For example `"@collboard/internal/download"`
- * @pattern /^(@(?<scope>[a-z0-9][a-z0-9-]*))\/(?<name>([a-z0-9][a-z0-9-]*)(\/([a-z0-9][a-z0-9-]*))*)$/
- * @collboard-modules-sdk
  */
-export type string_module_name = string;
-
-/**
- * Semantic helper
- *
- * - case insensitive
- *
- * For example `"Basic"` or `"Math"`
- *
- * *Note: This may become an list of 'LITERAL_VALUES' in the near future*
- * @collboard-modules-sdk
- */
-export type string_module_category = string;
-// TODO: In future use 'LITERAL VALUES' like export type string_module_category = 'Basic' | 'Math' | 'Basic' | 'Art' | '3D' | 'Experimental';
-// TODO: Add all school subjects
-// TODO: Add easter egg
+export type string_filename = string;
 
 /**
  * Semantic helper
  *
  * For example `"John Smith"`
- * @collboard-modules-sdk
  */
 export type string_person_fullname = string;
 
@@ -477,15 +419,12 @@ export type string_person_fullname = string;
  * Semantic helper
  * Full profile of the person with his email and web (like in package.json)
  *
- * For example `"Pavol Hejný <pavol@collboard.com> (https://pavolhejny.com)"`
- * @collboard-modules-sdk
+ * For example `"Pavol Hejný <pavol@hejny.org> (https://pavolhejny.com)"`
  */
 export type string_person_profile = string;
 
 /**
  * Full profile of the person with his email and web (like in package.json)
- *
- * @collboard-modules-sdk
  */
 export interface IPersonProfile {
     name?: string_person_fullname;
@@ -501,14 +440,11 @@ export interface IPersonProfile {
  * Semantic helper
  *
  * For example `"MIT"`
- * @collboard-modules-sdk
  */
 export type string_license = string;
 
 /**
  * License with its type and url like in package.json
- *
- * @collboard-modules-sdk
  */
 export interface ILicense {
     type?: string_license;
@@ -517,8 +453,6 @@ export interface ILicense {
 
 /**
  * Repository with its type and url like in package.json
- *
- * @collboard-modules-sdk
  */
 export interface IRepository {
     type?: string | 'git';
@@ -527,7 +461,6 @@ export interface IRepository {
 
 /**
  * CSS cursor type
- * @collboard-modules-sdk
  */
 export type string_css_cursor =
     | 'alias'
@@ -572,7 +505,6 @@ export type string_css_cursor =
  * - case insensitive
  *
  * For example `"color"`
- * @collboard-modules-sdk
  */
 export type string_attribute = string; // TODO: Probably move where is AttributesManager
 
@@ -583,7 +515,6 @@ export type string_attribute = string; // TODO: Probably move where is Attribute
  * - case insensitive
  *
  * For example `"tools"`
- * @collboard-modules-sdk
  */
 export type string_attribute_value_scope = string; // TODO: Probably move where is AttributesManager
 
@@ -591,7 +522,6 @@ export type string_attribute_value_scope = string; // TODO: Probably move where 
  * Semantic helper for css/html colors
  *
  * For example `"white"` or `"#009edd"`
- * @collboard-modules-sdk
  */
 export type string_color = string;
 
@@ -616,7 +546,6 @@ export type string_translate_language = 'en' | 'cs' | 'sk' | 'uk';
 
 /**
  * Semantic helper; For example "callbackName" or "renderMe"
- *
  */
 export type string_javascript_name = string;
 
@@ -635,7 +564,6 @@ export type number_integer = number;
 /**
  * Semantic helper;
  * Percentage from 0 to 1 (100%)
- *
  */
 export type number_percent = number;
 

@@ -1,22 +1,22 @@
-import { IVector } from 'xyzt';
-import { forARest } from '../../components/WorkInProgress/forARest';
 import { Color } from '../color/Color';
+import { forARest } from '../forARest';
 import { IComputeColorstatsWork } from './IComputeColorstatsWork';
 import { Image as MyImage } from './Image';
+
 
 /**
  * Create new Image from Blob in the browser or worker
  */
-export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVector): Promise<MyImage> {
+export async function createImageInWorker(imageAsBlob: Blob): Promise<MyImage> {
     const imageBitmap = await createImageBitmap(imageAsBlob);
     const width = imageBitmap.width;
     const height = imageBitmap.height;
 
     // Create an image object with the given size
-    const image = new MyImage({ x: preferredSize.x!, y: preferredSize.y! });
+    const image = new MyImage({ x: width, y: height });
 
     // Create an OffscreenCanvas object
-    const canvas = new OffscreenCanvas(preferredSize.x!, preferredSize.y!);
+    const canvas = new OffscreenCanvas(width, height);
 
     // Get the 2D rendering context of the canvas
     const context = canvas.getContext('2d');
@@ -28,24 +28,24 @@ export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVec
     // Draw the image on the canvas
     context.drawImage(
         imageBitmap,
-        0, //                <- source      x
-        0, //                <- source      y
-        width, //            <- source      x size
-        height, //           <- source      y size
-        0, //                <- destination x
-        0, //                <- destination y
-        preferredSize.x!, // <- destination x size
-        preferredSize.y!, // <- destination y size
+        0, //      <- source      x
+        0, //      <- source      y
+        width, //  <- source      x size
+        height, // <- source      y size
+        0, //      <- destination x
+        0, //      <- destination y
+        width, //  <- destination x size
+        height, // <- destination y size
     );
 
     // Get the pixel data from the canvas
-    const imageData = context.getImageData(0, 0, preferredSize.x!, preferredSize.y!).data;
+    const imageData = context.getImageData(0, 0, width, height).data;
 
     // Loop through all the pixels of the image and set their color in the image object
-    for (let y = 0; y < preferredSize.y!; y++) {
-        for (let x = 0; x < preferredSize.x!; x++) {
+    for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
             // Calculate the index of the pixel in the image data array
-            const index = (y * preferredSize.x! + x) * 4;
+            const index = (y * width + x) * 4;
 
             // Get the RGBA values of the pixel
             const r = imageData[index]!;
@@ -70,6 +70,5 @@ export async function createImageInWorker(imageAsBlob: Blob, preferredSize: IVec
 }
 
 /**
- * TODO: [👱‍♀️] Use Internally createOffscreenCanvas
  * TODO: [🧠] Better names createImageInWorker can be really used in browser THE difference is wheather it takes src url or blob
  */

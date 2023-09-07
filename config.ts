@@ -1,6 +1,9 @@
 import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
+import { FULLHD } from './src/constants';
+import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
+import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
@@ -89,7 +92,21 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
-export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
+/**
+ * Maximum size of custom wallpaper image
+ * This will be checked on both client and server
+ * If user uploads bigger image, it will be resized
+ */
+export const WALLPAPER_IMAGE_MAX_ALLOWED_SIZE = FULLHD; // <- TODO: When image for Azure content analysis will be separated from image to upload, allow to have UHD4K images
+
+/**
+ * Allowed aspect ratio of custom wallpaper image
+ * This will be checked on client (+ in future on server) and wont be allowed to upload image if not in this range
+ */
+export const WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE: AspectRatioRange = [new Vector(3, 1), new Vector(1, 3)];
+
+// Note: Checking validity of the WALLPAPER_IMAGE_ASPECT_RATIO config
+expectAspectRatioInRange('[1]', WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, FULLHD);
 
 /**
  * @@@
@@ -99,12 +116,12 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
     // Full:
     createColorfulComputeImageColorStats15({
         colorBits: 256,
-        size: IMAGE_NATURAL_SIZE,
+        size: FULLHD,
     }),
     /**/
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.1),
+        size: FULLHD.scale(0.1),
     }),
 
     /*
@@ -112,29 +129,29 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
           Fix it:
         > createColorfulComputeImageColorStats15({
         >     colorBits: 16,
-        >     size: IMAGE_NATURAL_SIZE.scale(0.01),
+        >     size: FULLHD.scale(0.01),
         > }),
     */
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.2),
+        size: FULLHD.scale(0.2),
     }),
     /*
     TODO: !! Add more versions (Also full)
     */
     createColorfulComputeImageColorStats15({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE,
+        size: FULLHD,
     }),
 
     /*
     createColorfulComputeImageColorStats13({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.1),
+        size: FULLHD.scale(0.1),
     }),
     createColorfulComputeImageColorStats13({
         colorBits: 16,
-        size: IMAGE_NATURAL_SIZE,
+        size: FULLHD,
     }),
 
     */
