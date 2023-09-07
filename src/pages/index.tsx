@@ -9,7 +9,6 @@ import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { Color } from '../utils/color/Color';
 
 export default function HomePage() {
-    const router = useRouter();
 
     return (
         <StaticLayout subtitle={null}>
