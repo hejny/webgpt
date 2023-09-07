@@ -48,7 +48,6 @@ export default function HomePage() {
             </article>
             */}
 
-
             <article>
                 <PavolHejny />
             </article>
