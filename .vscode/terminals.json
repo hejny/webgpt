@@ -13,7 +13,7 @@
             "focus": true
         },
         {
-            "name": "🧪 Lint",
+            "name": "🧪 Lint test",
             "command": "npm run lint",
             "onlySingle": true,
             "focus": true
