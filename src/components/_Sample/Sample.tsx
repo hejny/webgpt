@@ -5,13 +5,7 @@ import styles from './Sample.module.css';
 
 interface SampleProps {
     /**
-     * @@
-     */
-    Sample: string;
-
-    /**
-     * Content which will is hinted
-     * This is the subject of the hint
+     * Content of @@
      */
     children?: ReactNode;
 
@@ -25,11 +19,6 @@ interface SampleProps {
  * Renders a @@
  */
 export function Sample(props: SampleProps) {
-    const { Sample, children, className } = props;
-    return (
-        <div className={classNames(className, styles.Sample)}>
-            {Sample}
-            {children}
-        </div>
-    );
+    const { children, className } = props;
+    return <div className={classNames(className, styles.Sample)}>{children}</div>;
 }

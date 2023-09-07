@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/Center/Center';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
-import styles from '../../styles/static.module.css';
+import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
 export default function NewWallpaperFromImagePage() {
     const router = useRouter();
