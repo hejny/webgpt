@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { Fragment } from 'react';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { colorLuminance } from '../../utils/color/utils/colorLuminance';
@@ -114,7 +115,7 @@ export function Aigen() {
                     </div>,
                     <svg xmlns="http://www.w3.org/2000/svg" {...{ width, height }}>
                         {letters.map(({ letter, color }, i) => (
-                            <React.Fragment key={i}>
+                            <Fragment key={i}>
                                 <rect
                                     x={`${i * (100 / letters.length)}%`}
                                     y="0"
@@ -131,7 +132,7 @@ export function Aigen() {
                                 >
                                     {letter}
                                 </text>
-                            </React.Fragment>
+                            </Fragment>
                         ))}
                     </svg>,
                 )}
