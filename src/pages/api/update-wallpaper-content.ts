@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import spaceTrim from 'spacetrim';
+import { ChatThread } from '../../ai/text-to-text/ChatThread';
+import { removeQuotes } from '../../utils/content/removeQuotes';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { string_prompt } from '../../utils/typeAliases';
 
@@ -27,8 +29,31 @@ export default async function updateWallpaperContentHandler(
 
         wallpaper.content += `\n\n> ${normalizedPrompt}`;
 
+        const chatThread = await ChatThread.ask(
+            spaceTrim(
+                (block) => `
+                    Act as a copywriter and modify the content of the page according to the user prompt.
+
+                    The prompt:
+                    ${block(normalizedPrompt)}
+
+                    Current content of the page:
+                    ${block(wallpaper.content)}
+                
+                ` /* <- TODO: Make prompt template */,
+            ),
+        );
+
+        let newContent = chatThread.response;
+        newContent = removeQuotes(newContent);
+
+        // TODO: !!! Preserve fonts
+        // TODO: !!! Append prompts (have history of prompts)
+
         return response.status(200).json({
-            updatedWallpaper: wallpaper,
+            updatedWallpaper: {
+                content: chatThread.response,
+            },
         } satisfies UpdateWallpaperContentResponse);
     } catch (error) {
         if (!(error instanceof Error)) {

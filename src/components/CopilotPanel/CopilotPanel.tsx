@@ -61,7 +61,7 @@ export function CopilotPanel() {
 
         const { updatedWallpaper } = (await response.json()) as UpdateWallpaperContentResponse;
 
-        wallpaperSubject.next({ ...wallpaperSubject.value, content: updatedWallpaper.content });
+        wallpaperSubject.next({ ...wallpaperSubject.value, saveStage: 'EDITED', content: updatedWallpaper.content });
 
         inputRef.current!.value = '';
         setRunning(false);
