@@ -114,6 +114,9 @@
 }
 
 @media only screen and (max-width: 1575px /* <- [🍜] */) {
+    .ControlPanel {
+        bottom: 80px;
+    }
     .group {
         right: -30px;
         flex-direction: column;
