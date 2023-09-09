@@ -22,7 +22,7 @@
 
     color: #000000;
     background-image: url(../../../public/icons/hint.svg);
-    /*               <- TODO: Is it better in Next js to reference images in css like: 
+    /*               <- TODO: Is it better in Next js to reference images in css like:
                         - ../../../public/icons/hint.svg
                         - (OR JUST)      /icons/hint.svg
     */
