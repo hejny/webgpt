@@ -27,8 +27,9 @@ export function TasksInProgress(props: TaskInProgressProps) {
 
             // Note: Rotate the the camera around the mesh and make it look down initially
             camera.beta = (Math.PI / 2) * (2 / 3);
+            const targetBeta = (Math.PI / 2) * 0.1;
             scene.registerBeforeRender(() => {
-                camera.beta *= 0.95;
+                camera.beta = (camera.beta-targetBeta)*0.95+targetBeta;
                 camera.alpha += 0.02;
             });
         },
