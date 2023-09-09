@@ -42,8 +42,8 @@ export function Chat(props: ChatProps) {
     const { messages, onMessage, isVoiceRecognitionButtonShown } = props;
 
     const [isAutoScrolling, setAutoScrolling] = useState(true);
-    const textareaRef = useRef<HTMLTextAreaElement>();
-    const buttonSendRef = useRef<HTMLButtonElement>();
+    const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+    const buttonSendRef = useRef<HTMLButtonElement | null>(null);
 
     useEffect(
         (/* Focus textarea on page load */) => {
@@ -164,7 +164,10 @@ export function Chat(props: ChatProps) {
 
             <div className={styles.chatInput}>
                 <textarea
-                    ref={textareaRef as any}
+                    ref={(element) => {
+                        // !!!
+                        textareaRef.current = element;
+                    }}
                     // defaultValue={INITIAL_TEACHER_MESSAGE_TEXT /* <- !!! Do not use this just as a placeholder */}
                     // TODO: placeholder={INITIAL_TEACHER_MESSAGE_TEXT}
                     onKeyDown={(event) => {
@@ -179,7 +182,7 @@ export function Chat(props: ChatProps) {
                         /* not await */ handleSend();
                     }}
                 />
-                <button ref={buttonSendRef as any} onClick={/* not await */ handleSend}>
+                <button ref={buttonSendRef} onClick={/* not await */ handleSend}>
                     Send
                 </button>
 

@@ -4,7 +4,7 @@ interface VoiceRecognitionButtonProps {
     /**
      * A reference to the textarea where the transcript should be written.
      */
-    textareaRef: MutableRefObject<HTMLTextAreaElement | undefined> /* <- TODO: RefObject<HTMLTextAreaElement> */;
+    textareaRef: MutableRefObject<HTMLTextAreaElement | null | undefined> /* <- TODO: RefObject<HTMLTextAreaElement> */;
 
     /**
      * The language code to use for voice recognition (e.g. "en-US").
