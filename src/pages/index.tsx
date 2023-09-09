@@ -10,7 +10,7 @@ import { Color } from '../utils/color/Color';
 export default function HomePage() {
     return (
         <StaticLayout subtitle={null}>
-            <main>
+            <header>
                 <Center>
                     <h1
                         style={{
@@ -23,8 +23,10 @@ export default function HomePage() {
                             AI Web Maker
                         </HandwrittenText>
                     </h1>
-                    <GraphsAsScenarios />
                 </Center>
+            </header>
+            <main>
+                <GraphsAsScenarios />
             </main>
 
             <article>

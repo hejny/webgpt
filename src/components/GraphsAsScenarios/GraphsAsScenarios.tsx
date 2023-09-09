@@ -12,6 +12,7 @@ export function GraphsAsScenarios() {
             <li>
                 <Link href="/random">
                     <GraphButton
+                        
                         createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
                             let ribbon = MeshBuilder.CreateSphere(
                                 'ribbon',
