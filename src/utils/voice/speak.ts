@@ -17,13 +17,12 @@ export async function speak(text: string, language: string): Promise<void> {
         };
 
         utterance.onmark = () => {
-            console.log(`onmark`);
+            // console.log(`onmark`);
         };
 
         utterance.onboundary = () => {
-            console.log(`onboundary`);
-
-            // TODO: !!! mark each word
+            // console.log(`onboundary`);
+            // TODO: mark each word
         };
         window.speechSynthesis.speak(utterance);
     });
@@ -57,10 +56,9 @@ export async function speak(text: string, language: string): Promise<void> {
   */
 
 /**
- * TODO: !!! Allow to stop+play/pause
- * TODO: !!! Allow to destroy
- * TODO: !!! Speech animation around the image avatar
+ * TODO: !! Allow to stop+play/pause
+ * TODO: !! Allow to destroy
+ * TODO: !! Speech animation around the image avatar
  * TODO: Return some meaningful object
- * TODO: !!! Enforce cs
- * TODO: !!! Test speech/regognition on iPhone
+ * TODO: !! Test speech/regognition on iPhone
  */

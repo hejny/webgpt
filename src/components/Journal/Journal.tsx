@@ -28,7 +28,7 @@ interface JournalProps {
         messageContent: string /* <- TODO: [🍗] Pass here the message object NOT just text */,
     ): Promisable<string /* <- TODO: [🍗] Pass here the message object NOT just text */>;
 
-    // TODO: !!! journalBot
+    // TODO: !!! runDeamon
 }
 
 /**
@@ -42,11 +42,9 @@ interface JournalProps {
  */
 export function Journal(props: JournalProps) {
     const { isVoiceEnabled, voiceLanguage = 'en', onMessage } = props;
-    // TODO: !!! Use isVoiceEnabled
 
     const [messages, messagesDispatch] = useReducer(
         (messages: Array<ChatMessage>, action: { type: 'ADD'; message: ChatMessage }) => {
-            // TODO: !!! Extract reducer to separate file
             switch (action.type) {
                 case 'ADD':
                     if (
@@ -71,7 +69,7 @@ export function Journal(props: JournalProps) {
     );
 
     /*
-    TODO: !!! Remove>
+    TODO: !!! Use for runDeamon>
     useEffect(() => {
         // console.log(`useEffect`, `socket.on chatResponse`);
         // !!! Call off on to listener on useEffect destroy
@@ -88,9 +86,6 @@ export function Journal(props: JournalProps) {
                 },
             });
 
-            // TODO: !!! Translate to RxJS object
-            // TODO: !!! Speech here
-            // TODO: !!! Cancel this listener
         };
         socket.on('chatResponse', listener);
         return () => void socket.off('chatResponse', listener);
@@ -101,7 +96,7 @@ export function Journal(props: JournalProps) {
         <Chat
             {...{ messages, voiceLanguage }}
             isVoiceRecognitionButtonShown={isVoiceEnabled}
-            onMessage={async (teacherMessageContent /* <- TODO: !!! Pass here the message object NOT just text */) => {
+            onMessage={async (teacherMessageContent /* <- TODO: [🍗] Pass here the message object NOT just text */) => {
                 const myMessage: TeacherChatMessage & CompleteChatMessage = {
                     id: v4(),
                     date: new Date() /* <- TODO: Rename+split into created+modified */,
@@ -130,11 +125,10 @@ export function Journal(props: JournalProps) {
 
 /**
  * TODO: Driver to handle sockets
- * TODO: !!! Pick a voice
- * TODO: !!! Voice is working with markdown
- * TODO: !!! Highlite during a speech
- * TODO: !!! Allow to listen
- * TODO: !!! Imitate conversation
- * TODO: !!! Use momentjs for dates
- * TODO: !!! (How) Should be initial message spoken?
+ * TODO: !! Pick a voice
+ * TODO: !! Voice is working with markdown
+ * TODO: !! HighLight during a speech
+ * TODO: !! Allow to listen without need to press a button
+ * TODO: !! Imitate conversation
+ * TODO: Use momentjs for dates
  */

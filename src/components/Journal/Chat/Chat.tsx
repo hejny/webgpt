@@ -138,18 +138,7 @@ export function Chat(props: ChatProps) {
                         </div>
 
                         <div className={styles.messageText}>
-                            {/* <pre>{JSON.stringify(message, null, 4)}</pre> */}
-                            <MarkdownContent
-                                /* TODO: className={styles.messageText} */ {...{ content: message.content }}
-
-                                /*
-                                TODO: !!!
-                                isSpoken={
-                                    message.isComplete /* <- TODO: !!! Spoke fluently as the tokens go on MAKE some SpeechManager/SpeechSystem * / &&
-                                    message.from === 'JOURNAL'
-                                }
-                                */
-                            />
+                            <MarkdownContent {...{ content: message.content }} />
                         </div>
                     </div>
                 ))}
@@ -177,8 +166,7 @@ export function Chat(props: ChatProps) {
                         focusRef(element);
                         textareaRef.current = element;
                     }}
-                    // defaultValue={INITIAL_TEACHER_MESSAGE_TEXT /* <- !!! Do not use this just as a placeholder */}
-                    // TODO: placeholder={INITIAL_TEACHER_MESSAGE_TEXT}
+                    placeholder={`Write a message`}
                     onKeyDown={(event) => {
                         if (event.shiftKey) {
                             return;
@@ -200,7 +188,3 @@ export function Chat(props: ChatProps) {
         </div>
     );
 }
-
-/**
- * TODO: !!! Autofocus
- */
