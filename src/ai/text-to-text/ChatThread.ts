@@ -79,5 +79,6 @@ export class ChatThread {
 }
 
 /**
+ * TODO: !!! Save in database
  * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and ChatThread
  */

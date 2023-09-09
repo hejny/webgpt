@@ -55,6 +55,8 @@ export async function writeWallpaperContent(
 
     // TODO: !!! Remove strange images https://1-2i.com/mountain-sunset-2gr7dv4ybstg
     // TODO: !!! Test that the content is valid and rich markdown
+    // TODO: !!! Use .prompt.txt files
+    // TODO: !!! Do NOT use words like "serene", "serenity" soo often
 
     const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
     const font = removeQuotes(chatThreadFont.response) as string_font_family;
