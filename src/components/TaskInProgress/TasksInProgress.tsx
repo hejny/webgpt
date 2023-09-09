@@ -26,10 +26,12 @@ export function TasksInProgress(props: TaskInProgressProps) {
             ribbon.material = wireframeMaterial;
 
             // Note: Rotate the the camera around the mesh and make it look down initially
-            camera.beta = (Math.PI / 2) * (2 / 3);
-            const targetBeta = (Math.PI / 2) * 0.1;
+            const initialBeta = Math.PI * 2;
+            const targetBeta = (Math.PI / 2) * (1.8 / 3);
+            let beta = initialBeta;
             scene.registerBeforeRender(() => {
-                camera.beta = (camera.beta-targetBeta)*0.95+targetBeta;
+                beta = (beta - targetBeta) * 0.95 + targetBeta;
+                camera.beta = beta;
                 camera.alpha += 0.02;
             });
         },
