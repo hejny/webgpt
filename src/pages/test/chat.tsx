@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { JournalSection } from '../../components/Journal/Journal';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { mockedMultitask } from '../../components/TaskInProgress/task/mock/mockedMultitask';
@@ -23,8 +23,7 @@ export default function TestVoicePage() {
 
     return (
         <StaticLayout subtitle="Test chat">
-            <StaticAppHead subtitle={null} />
-            TODO !!!
+            <JournalSection />
         </StaticLayout>
     );
 }

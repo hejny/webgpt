@@ -1,0 +1,127 @@
+.Chat {
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    /*background-color: #f2f2f2;*/
+}
+
+/* Chat messages area */
+.chatMessages {
+    height: calc(100vh - 500px);
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.chatMessages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatMessages::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 5px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+    background: #77777731;
+    border-radius: 5px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb:hover {
+    background: auto;
+}
+
+.scrollToBottom {
+    position: absolute;
+    top: calc(100% - 300px);
+    left: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px #00000077;
+    background-color: #008cba;
+    border-radius: 100%;
+
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* Individual chat message */
+.chatMessage {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 60%;
+
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.chatMessage.sender {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+/* Sender Avatar */
+.chatMessage .avatar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chatMessage .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Message text */
+.chatMessage .messageText {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: left;
+}
+
+/* Sender message text */
+.chatMessage.sender .messageText {
+    background-color: #008cba;
+}
+
+/* Chat input area */
+.chatInput {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Chat input field */
+.chatInput textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Chat send button */
+.chatInput button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
