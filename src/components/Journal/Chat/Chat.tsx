@@ -180,7 +180,7 @@ export function Chat(props: ChatProps) {
                     }}
                 />
                 <button ref={buttonSendRef as any} onClick={/* not await */ handleSend}>
-                    Odeslat
+                    Send
                 </button>
 
                 {isVoiceRecognitionButtonShown && <VoiceRecognitionButton language="cs" {...{ textareaRef }} />}
