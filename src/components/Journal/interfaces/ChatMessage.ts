@@ -22,3 +22,6 @@ export interface CompleteChatMessage {
 }
 
 
+/**
+ * TODO: [🧠] ACRY Rename JOURNAL + TEACHER, Teacher, teacher to sth else
+ */

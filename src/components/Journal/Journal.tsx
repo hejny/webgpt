@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import { Promisable } from 'type-fest';
 import { v4 } from 'uuid';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { speak } from '../../utils/voice/speak';
@@ -12,6 +13,16 @@ interface JournalProps {
      * Determines whether the voice recognition and speech is enabled
      */
     isVoiceEnabled?: true;
+
+    /**
+     * Called when user sends a message
+     * You can reply via this function asynchronnously
+     */
+    onMessage(
+        messageContent: string /* <- TODO: [🍗] Pass here the message object NOT just text */,
+    ): Promisable<string /* <- TODO: [🍗] Pass here the message object NOT just text */>;
+
+    // TODO: !!! journalBot
 }
 
 /**
@@ -24,7 +35,7 @@ interface JournalProps {
  * Use <Journal/> in most cases.
  */
 export function Journal(props: JournalProps) {
-    const { isVoiceEnabled } = props;
+    const { isVoiceEnabled, onMessage } = props;
     // TODO: !!! Use isVoiceEnabled
 
     const [messages, messagesDispatch] = useReducer(
@@ -81,17 +92,28 @@ export function Journal(props: JournalProps) {
     return (
         <Chat
             {...{ messages }}
-            onMessage={async (content /* <- TODO: !!! Pass here the message object NOT just text */) => {
+            onMessage={async (teacherMessageContent /* <- TODO: !!! Pass here the message object NOT just text */) => {
                 const myMessage: TeacherChatMessage & CompleteChatMessage = {
                     id: v4(),
                     date: new Date() /* <- TODO: Rename+split into created+modified */,
                     from: 'TEACHER',
-                    content,
+                    content: teacherMessageContent,
                     isComplete: true,
                 };
 
                 messagesDispatch({ type: 'ADD', message: myMessage });
-                // !!! Remove> socket.emit('chatRequest', myMessage);
+                const journalMessageContent = await onMessage(teacherMessageContent);
+
+                messagesDispatch({
+                    type: 'ADD',
+                    message: {
+                        id: v4(),
+                        date: new Date() /* <- TODO: Rename+split into created+modified */,
+                        from: 'JOURNAL',
+                        content: journalMessageContent,
+                        isComplete: true,
+                    },
+                });
             }}
         />
     );

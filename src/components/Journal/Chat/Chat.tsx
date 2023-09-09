@@ -21,7 +21,7 @@ interface ChatProps {
      *
      * Note: You must handle the message yourself and add it to the `messages` array
      */
-    onMessage(messageContent: string /* <- TODO: !!! Pass here the message object NOT just text */): Promisable<void>;
+    onMessage(messageContent: string /* <- TODO: [🍗] Pass here the message object NOT just text */): Promisable<void>;
 
     /**
      * Determines whether the voice recognition button is rendered
