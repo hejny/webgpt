@@ -47,7 +47,7 @@ export function VoiceRecognitionButton(props: VoiceRecognitionButtonProps) {
 
                     newSpeechRecognition.start();
                     setSpeechRecognition(newSpeechRecognition);
-                    textareaRef.current!.focus();
+                    // !!! Remove> textareaRef.current!.focus();
                 }
             }}
         >

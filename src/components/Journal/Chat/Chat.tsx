@@ -5,6 +5,7 @@ import { Promisable } from 'type-fest';
 import journalAvatar from '../../../../public/people/journal.jpeg';
 import teacherAvatar from '../../../../public/people/teacher.jpeg';
 import { classNames } from '../../../utils/classNames';
+import { focusRef } from '../../../utils/focusRef';
 import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { ChatMessage } from '../interfaces/ChatMessage';
 import { VoiceRecognitionButton } from '../VoiceRecognitionButton/VoiceRecognitionButton';
@@ -88,6 +89,7 @@ export function Chat(props: ChatProps) {
         } finally {
             textareaElement.disabled = false;
             buttonSendElement.disabled = false;
+            focusRef(textareaElement);
         }
     };
 
@@ -165,7 +167,8 @@ export function Chat(props: ChatProps) {
             <div className={styles.chatInput}>
                 <textarea
                     ref={(element) => {
-                        // !!!
+                        // TODO: [🍘] Use joinRefs
+                        focusRef(element);
                         textareaRef.current = element;
                     }}
                     // defaultValue={INITIAL_TEACHER_MESSAGE_TEXT /* <- !!! Do not use this just as a placeholder */}
