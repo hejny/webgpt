@@ -1,7 +1,10 @@
 import { MeshBuilder } from 'babylonjs';
+import { useEffect } from 'react';
 import { useGraph } from '../Graphs/useGraph';
 import { TaskProgress } from './task/TaskProgress';
 import styles from './TasksInProgress.module.css';
+
+let lockTasksInProgress = false;
 
 interface TaskInProgressProps {
     tasksProgress?: Array<TaskProgress>;
@@ -9,9 +12,20 @@ interface TaskInProgressProps {
 
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
+ *
+ * Note: There can be only one instance of this component in the app
  */
 export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
+    useEffect(() => {
+        if (lockTasksInProgress) {
+            throw new Error('There can be only one instance of TasksInProgress in the app');
+        }
+        lockTasksInProgress = true;
+        return () => {
+            lockTasksInProgress = false;
+        };
+    });
     const { sceneRef } = useGraph(
         ({ scene, camera, wireframeMaterial }) => {
             let ribbon = MeshBuilder.CreateTorus(
