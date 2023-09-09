@@ -21,7 +21,6 @@ export interface CompleteChatMessage {
     isComplete: true;
 }
 
-
 /**
  * TODO: [🧠] ACRY Rename JOURNAL + TEACHER, Teacher, teacher to sth else
  */

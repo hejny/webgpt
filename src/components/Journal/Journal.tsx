@@ -2,6 +2,7 @@ import { useReducer } from 'react';
 import { Promisable } from 'type-fest';
 import { v4 } from 'uuid';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
+import { string_translate_language } from '../../utils/typeAliases';
 import { speak } from '../../utils/voice/speak';
 import { Chat } from './Chat/Chat';
 import { ChatMessage, CompleteChatMessage, TeacherChatMessage } from './interfaces/ChatMessage';
@@ -13,6 +14,11 @@ interface JournalProps {
      * Determines whether the voice recognition and speech is enabled
      */
     isVoiceEnabled?: true;
+
+    /**
+     * The language code to use for voice recognition (e.g. "en").
+     */
+    voiceLanguage?: string_translate_language;
 
     /**
      * Called when user sends a message
@@ -35,7 +41,7 @@ interface JournalProps {
  * Use <Journal/> in most cases.
  */
 export function Journal(props: JournalProps) {
-    const { isVoiceEnabled, onMessage } = props;
+    const { isVoiceEnabled, voiceLanguage = 'en', onMessage } = props;
     // TODO: !!! Use isVoiceEnabled
 
     const [messages, messagesDispatch] = useReducer(
@@ -50,7 +56,7 @@ export function Journal(props: JournalProps) {
                     ) {
                         spoken.add(action.message.id);
                         if (isVoiceEnabled) {
-                            speak(removeMarkdownFormatting(action.message.content), 'cs');
+                            speak(removeMarkdownFormatting(action.message.content), voiceLanguage);
                         }
                     }
                     return [...messages.filter((message) => message.id !== action.message.id), action.message].sort(
@@ -93,7 +99,8 @@ export function Journal(props: JournalProps) {
 
     return (
         <Chat
-            {...{ messages }}
+            {...{ messages, voiceLanguage }}
+            isVoiceRecognitionButtonShown={isVoiceEnabled}
             onMessage={async (teacherMessageContent /* <- TODO: !!! Pass here the message object NOT just text */) => {
                 const myMessage: TeacherChatMessage & CompleteChatMessage = {
                     id: v4(),

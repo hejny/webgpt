@@ -1,4 +1,5 @@
 import { MutableRefObject, useState } from 'react';
+import { string_translate_language } from '../../../utils/typeAliases';
 
 interface VoiceRecognitionButtonProps {
     /**
@@ -7,16 +8,16 @@ interface VoiceRecognitionButtonProps {
     textareaRef: MutableRefObject<HTMLTextAreaElement | null | undefined> /* <- TODO: RefObject<HTMLTextAreaElement> */;
 
     /**
-     * The language code to use for voice recognition (e.g. "en-US").
+     * The language code to use for voice recognition (e.g. "en").
      */
-    language: string;
+    voiceLanguage: string_translate_language;
 }
 
 /**
  * A button component that starts voice recognition and writes to a given textarea.
  */
 export function VoiceRecognitionButton(props: VoiceRecognitionButtonProps) {
-    const { textareaRef, language } = props;
+    const { textareaRef, voiceLanguage } = props;
     const [speechRecognition, setSpeechRecognition] = useState<SpeechRecognition | null>(null);
 
     return (
@@ -30,7 +31,7 @@ export function VoiceRecognitionButton(props: VoiceRecognitionButtonProps) {
                     const newSpeechRecognition = new SpeechRecognition();
 
                     // TODO: Use> recognition.grammars = ...
-                    newSpeechRecognition.lang = language;
+                    newSpeechRecognition.lang = voiceLanguage;
                     newSpeechRecognition.continuous = true;
                     newSpeechRecognition.interimResults = true;
                     newSpeechRecognition.maxAlternatives = 1;

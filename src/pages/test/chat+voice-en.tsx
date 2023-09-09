@@ -1,16 +1,11 @@
-import { useEffect, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { Center } from '../../components/Center/Center';
 import { Journal } from '../../components/Journal/Journal';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
-import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
-import { mockedMultitask } from '../../components/TaskInProgress/task/mock/mockedMultitask';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export default function TestVoiceWithChatPage() {
-
     return (
-        <StaticLayout subtitle="Test chat with voice">
+        <StaticLayout subtitle="Test chat with English voice">
             <main
                 style={{
                     // outline: `1px dotted red`,
@@ -22,6 +17,7 @@ export default function TestVoiceWithChatPage() {
                 <Center>
                     <Journal
                         isVoiceEnabled
+                        voiceLanguage="en"
                         onMessage={(message) =>
                             spaceTrim(
                                 (block) => `

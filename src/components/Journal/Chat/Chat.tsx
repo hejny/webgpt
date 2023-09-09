@@ -6,6 +6,7 @@ import journalAvatar from '../../../../public/people/journal.jpeg';
 import teacherAvatar from '../../../../public/people/teacher.jpeg';
 import { classNames } from '../../../utils/classNames';
 import { focusRef } from '../../../utils/focusRef';
+import { string_translate_language } from '../../../utils/typeAliases';
 import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { ChatMessage } from '../interfaces/ChatMessage';
 import { VoiceRecognitionButton } from '../VoiceRecognitionButton/VoiceRecognitionButton';
@@ -28,6 +29,11 @@ interface ChatProps {
      * Determines whether the voice recognition button is rendered
      */
     isVoiceRecognitionButtonShown?: true;
+
+    /**
+     * The language code to use for voice recognition (e.g. "en").
+     */
+    voiceLanguage?: string_translate_language;
 }
 
 /**
@@ -40,7 +46,7 @@ interface ChatProps {
  * Use <Journal/> in most cases.
  */
 export function Chat(props: ChatProps) {
-    const { messages, onMessage, isVoiceRecognitionButtonShown } = props;
+    const { messages, onMessage, isVoiceRecognitionButtonShown, voiceLanguage = 'en' } = props;
 
     const [isAutoScrolling, setAutoScrolling] = useState(true);
     const textareaRef = useRef<HTMLTextAreaElement | null>(null);
@@ -189,7 +195,7 @@ export function Chat(props: ChatProps) {
                     Send
                 </button>
 
-                {isVoiceRecognitionButtonShown && <VoiceRecognitionButton language="cs" {...{ textareaRef }} />}
+                {isVoiceRecognitionButtonShown && <VoiceRecognitionButton {...{ textareaRef, voiceLanguage }} />}
             </div>
         </div>
     );
