@@ -1,3 +1,4 @@
+import { isRunningInBrowser } from 'openai/core';
 import { useEffect, useState } from 'react';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
@@ -7,8 +8,11 @@ import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress
 
 export default function TestTasksProgressWithChatPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
+    // TODO: !!! useOnce
     useEffect(
         () => {
+            console.log(`!!! isRunningInBrowser()`, isRunningInBrowser());
+
             /* not await */ mockedMultitaskWithPrompts(async (newTaskProgress) =>
                 setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
             );

@@ -1,9 +1,9 @@
+import { faker } from '@faker-js/faker';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
 import { promptDialogue } from '../../../CopilotPanel/promptDialogue';
 import { TaskProgress } from '../TaskProgress';
-import { MOCKED_TASKS_PROGRESS_QUEUE } from './_tasks';
 
 export async function mockedMultitaskWithPrompts(
     onProgress: (taskProgress: TaskProgress) => Promisable<void>,
@@ -22,27 +22,33 @@ export async function mockedMultitaskWithPrompts(
             border-radius: 3px;
         `),
     );
-    const queue = [...MOCKED_TASKS_PROGRESS_QUEUE];
 
-    for (let i = 0; i < Infinity; i++) {
+    for (let i = 0; i < 5; i++) {
         await forTime(Math.random() * 1000 + 500);
 
-        const newTaskProgress = queue.shift();
+        const title = `(${i}) ${faker.hacker.verb()}`;
 
-        if (!newTaskProgress) {
-            return;
-        }
+        await onProgress({
+            name: `mocked-task-${i}`,
+            title: <>{title}</>,
+            isDone: false, // <- TODO: !!! Pause here in UI
+        });
 
-        // TODO: !!! Pause here in UI
-        await promptDialogue(
+        const response = await promptDialogue(
             <>
-                Question about <span style={{ fontStyle: 'italic' }}>{newTaskProgress.name}</span>
+                Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
             </>,
-            
         );
 
-        console.info('☑', newTaskProgress);
-        await onProgress(newTaskProgress);
+        await onProgress({
+            name: `mocked-task-${i}`,
+            title: (
+                <>
+                    {title} <i>({response})</i>
+                </>
+            ),
+            isDone: true,
+        });
     }
 }
 
