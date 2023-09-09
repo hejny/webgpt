@@ -49,7 +49,9 @@ export function Journal(props: JournalProps) {
                         action.message.isComplete /* <- TODO: !!! SPEAK fluently NOT just when complete */
                     ) {
                         spoken.add(action.message.id);
-                        speak(removeMarkdownFormatting(action.message.content), 'cs');
+                        if (isVoiceEnabled) {
+                            speak(removeMarkdownFormatting(action.message.content), 'cs');
+                        }
                     }
                     return [...messages.filter((message) => message.id !== action.message.id), action.message].sort(
                         (message1, message2) => (message1.date.valueOf() > message2.date.valueOf() ? 1 : -1),

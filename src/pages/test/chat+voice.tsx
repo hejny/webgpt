@@ -8,20 +8,6 @@ import { mockedMultitask } from '../../components/TaskInProgress/task/mock/mocke
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export default function TestVoiceWithChatPage() {
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
-    useEffect(
-        () => {
-            /* not await */ mockedMultitask((newTaskProgress) =>
-                setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
-            );
-
-            let utterance = new SpeechSynthesisUtterance('Hello world!');
-            speechSynthesis.speak(utterance);
-        },
-        [
-            // Note: Run just once
-        ],
-    );
 
     return (
         <StaticLayout subtitle="Test chat with voice">
