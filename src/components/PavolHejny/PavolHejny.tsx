@@ -5,6 +5,9 @@ import { removeMarkdownTitle } from '../../utils/content/removeMarkdownTitle';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './PavolHejny.module.css';
 
+/**
+ * Renders a profile of Pavol Hejný
+ */
 export function PavolHejny() {
     return (
         <div className={styles.PavolHejnySection}>

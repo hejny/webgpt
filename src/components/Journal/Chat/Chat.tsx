@@ -11,12 +11,35 @@ import { VoiceRecognitionButton } from '../VoiceRecognitionButton/VoiceRecogniti
 import styles from './Chat.module.css';
 
 interface ChatProps {
+    /**
+     * Messages to render - they are rendered as they are
+     */
     messages: Array<ChatMessage>;
+
+    /**
+     * Called when user sends a message
+     *
+     * Note: You must handle the message yourself and add it to the `messages` array
+     */
     onMessage(messageContent: string /* <- TODO: !!! Pass here the message object NOT just text */): Promisable<void>;
+
+    /**
+     * Determines whether the voice recognition button is rendered
+     */
+    isVoiceRecognitionButtonShown?: true;
 }
 
+/**
+ * Renders a chat with messages and input for new messages
+ *
+ * Note: There are two components:
+ * - <Chat/> renders chat as it is without any logic - messages you pass as props are rendered as they are
+ * - <Journal/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
+ *
+ * Use <Journal/> in most cases.
+ */
 export function Chat(props: ChatProps) {
-    const { messages, onMessage } = props;
+    const { messages, onMessage, isVoiceRecognitionButtonShown } = props;
 
     const [isAutoScrolling, setAutoScrolling] = useState(true);
     const textareaRef = useRef<HTMLTextAreaElement>();
@@ -160,7 +183,7 @@ export function Chat(props: ChatProps) {
                     Odeslat
                 </button>
 
-                <VoiceRecognitionButton language="cs" {...{ textareaRef }} />
+                {isVoiceRecognitionButtonShown && <VoiceRecognitionButton language="cs" {...{ textareaRef }} />}
             </div>
         </div>
     );

@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Center } from '../../components/Center/Center';
+import { Journal } from '../../components/Journal/Journal';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { mockedMultitask } from '../../components/TaskInProgress/task/mock/mockedMultitask';
@@ -20,5 +22,13 @@ export default function TestVoiceWithChatPage() {
         ],
     );
 
-    return <StaticLayout subtitle="Test chat with voice">Speech TODO: !!!</StaticLayout>;
+    return (
+        <StaticLayout subtitle="Test chat with voice">
+            <main style={{ height: '100vh' }}>
+                <Center>
+                    <Journal isVoiceEnabled />
+                </Center>
+            </main>{' '}
+        </StaticLayout>
+    );
 }

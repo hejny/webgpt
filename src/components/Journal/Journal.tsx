@@ -1,15 +1,32 @@
 import { useReducer } from 'react';
 import { v4 } from 'uuid';
-import { Section } from '../../components/Section/Section';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
+import { speak } from '../../utils/voice/speak';
 import { Chat } from './Chat/Chat';
 import { ChatMessage, CompleteChatMessage, TeacherChatMessage } from './interfaces/ChatMessage';
-import styles from './Journal.module.css';
-import { speak } from './utils/speak';
 
 const spoken = new Set<string>(/* <- TODO: Make instead some SpeechManager */);
 
-export function JournalSection() {
+interface JournalProps {
+    /**
+     * Determines whether the voice recognition and speech is enabled
+     */
+    isVoiceEnabled?: true;
+}
+
+/**
+ * Renders a chat with messages and input for new messages
+ *
+ * Note: There are two components:
+ * - <Chat/> renders chat as it is without any logic - messages you pass as props are rendered as they are
+ * - <Journal/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
+ *
+ * Use <Journal/> in most cases.
+ */
+export function Journal(props: JournalProps) {
+    const { isVoiceEnabled } = props;
+    // TODO: !!! Use isVoiceEnabled
+
     const [messages, messagesDispatch] = useReducer(
         (messages: Array<ChatMessage>, action: { type: 'ADD'; message: ChatMessage }) => {
             // TODO: !!! Extract reducer to separate file
@@ -62,26 +79,21 @@ export function JournalSection() {
     */
 
     return (
-        <Section className={styles.JournalSection}>
-            <h2>Chat</h2>
+        <Chat
+            {...{ messages }}
+            onMessage={async (content /* <- TODO: !!! Pass here the message object NOT just text */) => {
+                const myMessage: TeacherChatMessage & CompleteChatMessage = {
+                    id: v4(),
+                    date: new Date() /* <- TODO: Rename+split into created+modified */,
+                    from: 'TEACHER',
+                    content,
+                    isComplete: true,
+                };
 
-            <Chat
-                {...{ messages }}
-                onMessage={async (content /* <- TODO: !!! Pass here the message object NOT just text */) => {
-                    const myMessage: TeacherChatMessage & CompleteChatMessage = {
-                        id: v4(),
-                        date: new Date() /* <- TODO: Rename+split into created+modified */,
-                        from: 'TEACHER',
-                        content,
-                        isComplete: true,
-                    };
-
-                    messagesDispatch({ type: 'ADD', message: myMessage });
-                    // !!! Remove> socket.emit('chatRequest', myMessage);
-                }}
-            />
-            {/*<RecordForm/>*/}
-        </Section>
+                messagesDispatch({ type: 'ADD', message: myMessage });
+                // !!! Remove> socket.emit('chatRequest', myMessage);
+            }}
+        />
     );
 }
 
