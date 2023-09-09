@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { mockedMultitaskWithPrompts } from '../../components/TaskInProgress/task/mock/mockedMultitaskWithPrompts';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
@@ -19,9 +19,8 @@ export default function TestTasksProgressWithChatPage() {
     );
 
     return (
-        <>
-            <StaticAppHead subtitle={null} />
+        <StaticLayout subtitle="Test loading with chat">
             <TasksInProgress {...{ tasksProgress }} />
-        </>
+        </StaticLayout>
     );
 }

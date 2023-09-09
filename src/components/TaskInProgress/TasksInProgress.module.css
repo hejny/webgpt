@@ -38,7 +38,7 @@
     background-color: transparent;
 
     position: absolute;
-    top: calc(50vh + 50px);
+    top: calc(50vh + 10px);
     left: 0;
     width: 100vw;
 

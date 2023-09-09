@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { Center } from '../components/Center/Center';
 import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
 import { HandwrittenText } from '../components/HandwrittenText/HandwrittenText';
@@ -9,10 +8,9 @@ import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { Color } from '../utils/color/Color';
 
 export default function HomePage() {
-
     return (
         <StaticLayout subtitle={null}>
-            <main>
+            <header>
                 <Center>
                     <h1
                         style={{
@@ -25,8 +23,10 @@ export default function HomePage() {
                             AI Web Maker
                         </HandwrittenText>
                     </h1>
-                    <GraphsAsScenarios />
                 </Center>
+            </header>
+            <main>
+                <GraphsAsScenarios />
             </main>
 
             <article>
@@ -55,6 +55,5 @@ export default function HomePage() {
 }
 
 /**
- * TODO: !! Put here some footer
- * TODO: !! Nicer fonts / handwritten
+ * TODO: [🌾] 1-2i page should be made as 1-2i static page
  */
