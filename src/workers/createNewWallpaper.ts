@@ -9,6 +9,8 @@ import {
     IMessage_CreateNewWallpaper_Result,
 } from './createNewWallpaper.worker';
 
+// TODO: !!! Use here Workerify
+
 /**
  * Internal cache for createNewWallpaper
  * @private

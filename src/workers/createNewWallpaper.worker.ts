@@ -19,6 +19,8 @@ import { resizeImageBlob } from '../utils/image/resizeImageBlob';
 import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
 
+// TODO: !!! Use here Workerify
+
 export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';
     author: uuid;
