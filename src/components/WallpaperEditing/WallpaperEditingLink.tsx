@@ -17,7 +17,7 @@ export function WallpaperEditingLink() {
         >
             <div className={styles.group}>
                 <Hint id="control-edit-mode" title="Show controls" reapearCount={1}>
-                    <WallpaperLink mode="EDIT" className={classNames(/*'button',*/ styles.button)}>
+                    <WallpaperLink role="OWNER" className={classNames(/*'button',*/ styles.button)}>
                         <Image alt="✏" src="/icons/openmoji/270F.black.svg" width={40} height={40} /* <-[🧥] */ />
                     </WallpaperLink>
                 </Hint>

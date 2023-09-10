@@ -83,7 +83,7 @@ export function ControlPanel() {
                 {wallpaper.saveStage === 'SAVED' && <RandomWallpaperButton />}
                 {wallpaper.saveStage === 'SAVED' && (
                     <Hint id="control-show-mode" title="Presentation mode" reapearCount={0}>
-                        <WallpaperLink mode="SHOW" className={classNames(/*'button',*/ styles.button)}>
+                        <WallpaperLink role="OWNER_AS_VISITOR" className={classNames(/*'button',*/ styles.button)}>
                             <Image alt="🌍" src="/icons/openmoji/E253.black.svg" width={40} height={40} /* <-[🧥] */ />
                             {/* <MarkdownContent content="▶" isUsingOpenmoji /> */}
                         </WallpaperLink>
