@@ -72,6 +72,10 @@
     background-color: rgba(126, 126, 126, 0.3);
 }
 
+.CopilotPanel .Button:disabled {
+    opacity: 0.5;
+}
+
 .CopilotPanel .Button button {
     all: unset;
 }

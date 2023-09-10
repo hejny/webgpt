@@ -34,6 +34,7 @@ export function ControlPanel() {
                         onClick={async () => {
                             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
+                                // TODO: Use here addWallpaperComputables
                                 modifiedWallpaper.parent = modifiedWallpaper.id;
                                 modifiedWallpaper.author = provideClientId();
                                 modifiedWallpaper.isPublic = false;

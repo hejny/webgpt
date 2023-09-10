@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { useCallback, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import type {
@@ -6,9 +7,12 @@ import type {
     UpdateWallpaperContentResponse,
 } from '../../pages/api/update-wallpaper-content';
 import { classNames } from '../../utils/classNames';
+import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { focusRef } from '../../utils/focusRef';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
-import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
@@ -17,8 +21,8 @@ import styles from './CopilotPanel.module.css';
  * Renders the co-pilot panel for text commands to edit the page.
  */
 export function CopilotPanel() {
-    const wallpaperId = useCurrentWallpaperId();
-    const wallpaperSubject = useWallpaperSubject(wallpaperId);
+    const router = useRouter();
+    const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
     const [isRunning, setRunning] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
@@ -53,11 +57,14 @@ export function CopilotPanel() {
             `),
             );
 
-            const { content } = wallpaperSubject.value;
+            const { content: oldContent } = wallpaper;
 
             const response = await fetch('/api/update-wallpaper-content', {
                 method: 'POST',
-                body: JSON.stringify({ prompt, wallpaper: { content } } satisfies UpdateWallpaperContentRequest),
+                body: JSON.stringify({
+                    prompt,
+                    wallpaper: { content: oldContent },
+                } satisfies UpdateWallpaperContentRequest),
                 signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
             });
 
@@ -66,19 +73,37 @@ export function CopilotPanel() {
                 throw new Error(`Prompt failed with status ${response.status}`);
             }
 
-            const { updatedWallpaper } = (await response.json()) as UpdateWallpaperContentResponse;
+            const {
+                updatedWallpaper: { content: newContent },
+            } = (await response.json()) as UpdateWallpaperContentResponse;
 
-            wallpaperSubject.next({
-                ...wallpaperSubject.value,
-                saveStage: 'EDITED',
-                content: updatedWallpaper.content,
+            console.info({ oldContent, newContent });
+
+            const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
+                // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
+                // TODO: Use here addWallpaperComputables
+                modifiedWallpaper.parent = modifiedWallpaper.id;
+                modifiedWallpaper.content = newContent;
+                modifiedWallpaper.saveStage = 'SAVING';
+                modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
+                modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
+                return modifiedWallpaper;
             });
+
+            const insertResult = await getSupabaseForBrowser()
+                .from('Wallpaper')
+                .insert(serializeWallpaper(newWallpaper));
+
+            // TODO: !! Util isInsertSuccessfull (status===201)
+            console.info({ newWallpaper, insertResult });
+
+            router.push(`/${newWallpaper.id}`);
 
             inputRef.current!.value = '';
         } finally {
             setRunning(false);
         }
-    }, [wallpaperSubject, isRunning, inputRef]);
+    }, [router, wallpaper, modifyWallpaper, isRunning, inputRef]);
 
     return (
         <div className={classNames('aiai-controls', styles.CopilotPanel)}>
