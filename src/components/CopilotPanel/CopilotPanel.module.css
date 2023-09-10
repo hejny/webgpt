@@ -12,10 +12,12 @@
 
     /* TODO: [👨‍🌾] Make just one css for floating control panel */
     padding: 5px;
-    background-color: rgba(43, 43, 43, 0.11);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
-    border-radius: 6px;
+    border-radius: 60px;
+    overflow: clip;
 
     display: flex;
     flex-direction: row;
@@ -53,11 +55,14 @@
     outline: 1px dotted rgb(56, 255, 38);
     /**/
 
-    border-radius: 3px;
-    background-color: rgba(205, 227, 231, 0.32);
+    margin: -10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-color: rgba(126, 126, 126, 0.2);
+    transition: background-color 0.1s ease-in-out;
     cursor: pointer;
 }
 
 .CopilotPanel button:hover {
-    background-color: rgba(205, 227, 231, 0.58);
+    background-color: rgba(126, 126, 126, 0.3);
 }
