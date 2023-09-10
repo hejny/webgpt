@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useCallback, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import type {
@@ -8,6 +9,7 @@ import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
@@ -99,17 +101,29 @@ export function CopilotPanel() {
                     }}
                     disabled={isRunning}
                 />
-                <button
-                    disabled={isRunning}
-                    onClick={() => {
-                        handlePrompt();
-                    }}
-                >
-                    Apply
-                </button>
+
+                <Hint className={styles.Button} id="prompt-copilot" title="Apply your change" reapearCount={0}>
+                    <button
+                        disabled={isRunning}
+                        onClick={() => {
+                            handlePrompt();
+                        }}
+                    >
+                        <Image
+                            alt="✈"
+                            src="/icons/other/paper-plane.white.png"
+                            /*
+                            alt="🚀"
+                            src="/icons/openmoji/1F680.black.svg"
+                            */
+                            width={35}
+                            height={35} /* <-[🧥] */
+                        />
+                    </button>
+                </Hint>
 
                 <div
-                    className={styles.MenuBar /* <- !!! ACRY MenuBar -> MenuTofuburger */}
+                    className={classNames(styles.Button, styles.MenuBar /* <- !!! ACRY MenuBar -> MenuTofuburger */)}
                     onClick={() => setMenuOpen(!isMenuOpen)}
                 >
                     {/**

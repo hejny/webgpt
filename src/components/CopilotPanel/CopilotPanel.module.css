@@ -29,7 +29,7 @@
     overflow: clip;
 
     display: grid;
-    grid-template-columns: 1fr 100px 100px;
+    grid-template-columns: 1fr 60px 60px;
 }
 
 .CopilotPanelInner > * {
@@ -38,9 +38,7 @@
     /**/
 }
 
-.CopilotPanel input,
-.CopilotPanel button,
-.CopilotPanel .MenuBar {
+.CopilotPanel input {
     /*/
     outline: 1px dotted rgb(56, 255, 38);
     /**/
@@ -53,40 +51,40 @@
     padding-left: 15px;
     padding-right: 15px;
 
+    width: 100%;
+
     font-size: 1.3em;
 }
 
-.CopilotPanel input {
-    /*/
-    outline: 1px dotted rgb(56, 255, 38);
-    /**/
-}
-
-.CopilotPanel button,
-.CopilotPanel .MenuBar {
+.CopilotPanel .Button {
+    text-align: center;
     background-color: rgba(126, 126, 126, 0.2);
     transition: background-color 0.1s ease-in-out;
-    cursor: pointer;
-}
 
-.CopilotPanel button:hover,
-.CopilotPanel .MenuBar:hover {
-    background-color: rgba(126, 126, 126, 0.3);
-}
-
-.CopilotPanel button {
-    text-align: center;
-}
-
-/*---------[ Menu Bar ]---------*/
-
-.CopilotPanel .MenuBar {
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.CopilotPanel .Button:hover {
+    background-color: rgba(126, 126, 126, 0.3);
+}
+
+.CopilotPanel .Button button {
+    all: unset;
+}
+
+.CopilotPanel .Button img {
+    /*/
+    outline: 1px dotted rgb(38, 255, 183);
+    /**/
+
+    object-fit: cover;
+}
+
+/*---------[ Menu Bar ]---------*/
 
 .CopilotPanel .MenuBar .MenuBarInner {
     /*/
