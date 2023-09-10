@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { classNames } from '../../utils/classNames';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import { useMode } from '../../utils/hooks/useMode';
+import { useRole } from '../../utils/hooks/useRole';
 import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
@@ -14,7 +14,7 @@ import styles from './Menu.module.css';
  */
 export function Menu() {
     const [wallpaper] = useCurrentWallpaper();
-    const { isPresenting } = useMode();
+    const role = useRole();
     const { isExported } = useContext(ExportContext);
 
     return (
@@ -34,15 +34,17 @@ export function Menu() {
                             <li>
                                 <WallpaperLink page={'index'}>Home</WallpaperLink>
                             </li>
-                            <li className={styles.featured}>
-                                <WallpaperLink
-                                    modal="export"
-                                    mode="EDIT"
-                                    /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                                >
-                                    Get the web
-                                </WallpaperLink>
-                            </li>
+                            {!isExported && (
+                                <li className={styles.featured}>
+                                    <WallpaperLink
+                                        modal="export"
+                                        role="OWNER"
+                                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                                    >
+                                        Get the web
+                                    </WallpaperLink>
+                                </li>
+                            )}
 
                             <li>
                                 <WallpaperLink
@@ -77,10 +79,12 @@ export function Menu() {
                             )}
                             {!isExported && (
                                 <li>
-                                    {!isPresenting ? (
-                                        <WallpaperLink mode="SHOW">Present</WallpaperLink>
+                                    {role === 'OWNER' ? (
+                                        <WallpaperLink role="OWNER_AS_VISITOR">Present</WallpaperLink>
+                                    ) : role === 'OWNER_AS_VISITOR' ? (
+                                        <WallpaperLink role="OWNER">Show controls</WallpaperLink>
                                     ) : (
-                                        <WallpaperLink mode="EDIT">Show controls</WallpaperLink>
+                                        <></>
                                     )}
                                 </li>
                             )}
