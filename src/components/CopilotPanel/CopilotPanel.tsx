@@ -93,7 +93,7 @@ export function CopilotPanel() {
             >
                 <input
                     type={'text'}
-                    placeholder={'Describe the change> Add email contact pavol@hejny.org'}
+                    placeholder={'⏣ Describe the change> Add email contact pavol@hejny.org' /* <- !!! Write effect */}
                     ref={(element) => {
                         // TODO: [🍘] Use joinRefs
                         focusRef(element);
@@ -151,10 +151,38 @@ export function CopilotPanel() {
                                 Get the web
                             </WallpaperLink>
                         </li>
-                        <li className={styles.featured}>sss</li>
-
+                        <li className={styles.featured}>
+                            <WallpaperLink
+                                modal="export"
+                                role="OWNER_AS_VISITOR"
+                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                            >
+                                Show as visitor
+                            </WallpaperLink>
+                        </li>
+                        <li className={styles.featured}>
+                            <WallpaperLink
+                                // TODO: !!! With QR and explanation
+                                modal="export"
+                                role="VISITOR"
+                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                            >
+                                Share
+                            </WallpaperLink>
+                        </li>
                         {/*
-                        TODO:
+                        TODO: !!! 
+
+                        Show as visitor
+                        Share
+                        Get the web
+                        Edit
+                        - advanced prompting
+                        - colors
+                        - content
+                        Support
+
+
                         <li>
                             <WallpaperLink page="contact">Contact</WallpaperLink>
                         </li>
