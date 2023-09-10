@@ -25,3 +25,7 @@ export function WallpaperEditingLink() {
         </div>
     );
 }
+
+/**
+ * TODO: !! This is equivalent to <ControlPanel/> - rename it accordingly
+ */

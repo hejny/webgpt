@@ -1,7 +1,7 @@
-import { useRouter } from 'next/router';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
-import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
+import { useModal } from '../../utils/hooks/useModal';
+import { useScenario } from '../../utils/hooks/useScenario';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { ColorsPanel } from '../ColorsPanel/ColorsPanel';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
@@ -12,12 +12,8 @@ import { PreventUnsavedChanges } from './PreventUnsavedChanges';
  * Renders the wallpaper editing stuff (control panel, colors panel, modals)
  */
 export function WallpaperEditing() {
-    const router = useRouter();
-    const isReady = router.isReady;
-
-    const isServerRender = useSsrDetection();
-
-    const modal = router.query.modal || null;
+    const scenario = useScenario();
+    const modal = useModal();
 
     return (
         <>
@@ -29,8 +25,8 @@ export function WallpaperEditing() {
             {modal === 'colors' && <ColorsModal />}
             {/* Note: <EditModal/> was removed in commit a4a37573299fa262ee335ecb1a5b480c409f8627 */}
 
-            {isReady && !isServerRender && <ControlPanel />}
-            {isReady && !isServerRender && <ColorsPanel />}
+            {scenario === 'GALLERY' && <ControlPanel />}
+            {scenario === 'GALLERY' && <ColorsPanel />}
         </>
     );
 }
