@@ -8,6 +8,9 @@ import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
+import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
 /**
@@ -25,76 +28,123 @@ export function CopilotPanel() {
         }
 
         setRunning(true);
-        let prompt = inputRef.current?.value || '';
 
-        // TODO: [🍛] Make same normalization as in the backend
-        prompt = spaceTrim(prompt);
+        try {
+            let prompt = inputRef.current?.value || '';
 
-        if (!prompt) {
-            alert('Please enter a command');
-            setRunning(false);
-        }
+            // TODO: [🍛] Make same normalization as in the backend
+            prompt = spaceTrim(prompt);
 
-        console.info(
-            `%c${prompt}`,
-            spaceTrim(`
+            if (!prompt) {
+                alert('Please enter a command');
+                setRunning(false);
+                return;
+            }
+
+            console.info(
+                `%c${prompt}`,
+                spaceTrim(`
                 display: block;
                 background: #067597;
                 color: #FFFFFF;
                 padding: 5px;
                 border-radius: 3px;
             `),
-        );
+            );
 
-        const { content } = wallpaperSubject.value;
+            const { content } = wallpaperSubject.value;
 
-        const response = await fetch('/api/update-wallpaper-content', {
-            method: 'POST',
-            body: JSON.stringify({ prompt, wallpaper: { content } } satisfies UpdateWallpaperContentRequest),
-            signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
-        });
+            const response = await fetch('/api/update-wallpaper-content', {
+                method: 'POST',
+                body: JSON.stringify({ prompt, wallpaper: { content } } satisfies UpdateWallpaperContentRequest),
+                signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+            });
 
-        if (response.ok === false) {
-            // TODO: [🈵] If 4XX error, show also the message from json body
-            throw new Error(`Prompt failed with status ${response.status}`);
+            if (response.ok === false) {
+                // TODO: [🈵] If 4XX error, show also the message from json body
+                throw new Error(`Prompt failed with status ${response.status}`);
+            }
+
+            const { updatedWallpaper } = (await response.json()) as UpdateWallpaperContentResponse;
+
+            wallpaperSubject.next({
+                ...wallpaperSubject.value,
+                saveStage: 'EDITED',
+                content: updatedWallpaper.content,
+            });
+
+            inputRef.current!.value = '';
+        } finally {
+            setRunning(false);
         }
-
-        const { updatedWallpaper } = (await response.json()) as UpdateWallpaperContentResponse;
-
-        wallpaperSubject.next({ ...wallpaperSubject.value, saveStage: 'EDITED', content: updatedWallpaper.content });
-
-        inputRef.current!.value = '';
-        setRunning(false);
     }, [wallpaperSubject, isRunning, inputRef]);
 
     return (
-        <div
-            // Note: It is intended to have two divs embedded in each other
-            className={classNames('aiai-controls', styles.CopilotPanel)}
-            onKeyDown={(event) => {
-                if (event.key === 'Enter') {
-                    handlePrompt();
-                }
-            }}
-        >
-            <input
-                type={'text'}
-                placeholder={'Describe the change> Add email contact pavol@hejny.org'}
-                ref={(element) => {
-                    // TODO: [🍘] Use joinRefs
-                    focusRef(element);
-                    inputRef.current = element;
-                }}
-                disabled={isRunning}
-            />
-            <button
-                disabled={isRunning}
-                onClick={() => {
-                    handlePrompt();
+        <div className={classNames('aiai-controls', styles.CopilotPanel)}>
+            <div
+                // Note: It is intended to have two divs embedded in each other
+                className={styles.CopilotPanelInner}
+                onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                        handlePrompt();
+                    }
                 }}
             >
-                Apply
-            </button>
+                <input
+                    type={'text'}
+                    placeholder={'Describe the change> Add email contact pavol@hejny.org'}
+                    ref={(element) => {
+                        // TODO: [🍘] Use joinRefs
+                        focusRef(element);
+                        inputRef.current = element;
+                    }}
+                    disabled={isRunning}
+                />
+                <button
+                    disabled={isRunning}
+                    onClick={() => {
+                        handlePrompt();
+                    }}
+                >
+                    Apply
+                </button>
+            </div>
+            <AiComponentsRoot usedComponents={{ menu: activateMenuComponent }} className={styles.MenuRoot}>
+                <div className={styles.Menu} data-ai-component="menu" data-toggle-state="open">
+                    <div className={styles.MenuBar} data-ai-element="bar">
+                        {/* TODO: This should be created and inserted here in activateMenuComponents
+                                  OR figure out better identification then data-ai-component="menu"
+                        */}
+                        <div className={classNames(styles.bar, styles.bar1)}></div>
+                        <div className={classNames(styles.bar, styles.bar2)}></div>
+                        <div className={classNames(styles.bar, styles.bar3)}></div>
+                    </div>
+                    <nav className={styles.MenuContent}>
+                        <ul>
+                            <li className={styles.featured}>
+                                <WallpaperLink
+                                    modal="export"
+                                    role="OWNER"
+                                    /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                                >
+                                    Get the web
+                                </WallpaperLink>
+                            </li>
+
+                            {/*
+                            TODO:
+                            <li>
+                                <WallpaperLink page="contact">Contact</WallpaperLink>
+                            </li>
+                            */}
+                        </ul>
+                    </nav>
+                    <div className={styles.MenuBackgroundWrapper}>
+                        {/* <- Note: MenuBackground is wrapped in MenuBackgroundWrapper to hide its leak over the right fold of the page */}
+                        <div className={styles.MenuBackground} data-ai-element="background"></div>
+                    </div>
+                </div>
+            </AiComponentsRoot>
         </div>
     );
 }
