@@ -8,8 +8,6 @@ import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
-import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
-import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
@@ -20,6 +18,7 @@ export function CopilotPanel() {
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const [isRunning, setRunning] = useState(false);
+    const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
 
     const handlePrompt = useCallback(async () => {
@@ -109,16 +108,18 @@ export function CopilotPanel() {
                     Apply
                 </button>
             </div>
-            <AiComponentsRoot usedComponents={{ menu: activateMenuComponent }} className={styles.MenuRoot}>
-                <div className={styles.Menu} data-ai-component="menu" data-toggle-state="open">
-                    <div className={styles.MenuBar} data-ai-element="bar">
-                        {/* TODO: This should be created and inserted here in activateMenuComponents
-                                  OR figure out better identification then data-ai-component="menu"
-                        */}
-                        <div className={classNames(styles.bar, styles.bar1)}></div>
-                        <div className={classNames(styles.bar, styles.bar2)}></div>
-                        <div className={classNames(styles.bar, styles.bar3)}></div>
-                    </div>
+
+            <>
+                {/* Note: Not using AI Components in this menu !!!! */}
+                <div
+                    className={styles.MenuBar /* <- !!! ACRY MenuBar -> MenuTofuburger */}
+                    onClick={() => setMenuOpen(!isMenuOpen)}
+                >
+                    <div className={classNames(styles.bar, styles.bar1)}></div>
+                    <div className={classNames(styles.bar, styles.bar2)}></div>
+                    <div className={classNames(styles.bar, styles.bar3)}></div>
+                </div>
+                {isMenuOpen && (
                     <nav className={styles.MenuContent}>
                         <ul>
                             <li className={styles.featured}>
@@ -130,6 +131,7 @@ export function CopilotPanel() {
                                     Get the web
                                 </WallpaperLink>
                             </li>
+                            <li className={styles.featured}>sss</li>
 
                             {/*
                             TODO:
@@ -139,12 +141,8 @@ export function CopilotPanel() {
                             */}
                         </ul>
                     </nav>
-                    <div className={styles.MenuBackgroundWrapper}>
-                        {/* <- Note: MenuBackground is wrapped in MenuBackgroundWrapper to hide its leak over the right fold of the page */}
-                        <div className={styles.MenuBackground} data-ai-element="background"></div>
-                    </div>
-                </div>
-            </AiComponentsRoot>
+                )}
+            </>
         </div>
     );
 }

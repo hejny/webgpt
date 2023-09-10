@@ -1,5 +1,5 @@
 .CopilotPanel {
-    /*/
+    /**/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
@@ -12,6 +12,12 @@
 }
 
 .CopilotPanelInner {
+    /**/
+    outline: 1px dotted rgb(255, 125, 38);
+    /**/
+
+    z-index: 10; /* <- Local order of <CopilotPanel/> */
+
     /* TODO: [👨‍🌾] Make just one css for floating control panel */
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -71,40 +77,23 @@
 
 /*---------[ Menu ]---------*/
 
-.CopilotPanel .MenuRoot {
+.CopilotPanel .MenuBar {
     /**/
-    outline: 1px solid red;
-    /**/
-
-    /*
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    */
-}
-
-.CopilotPanel .Menu {
-    /*/
     outline: 1px solid rgb(102, 255, 0);
     /**/
 
-    z-index: 20002 /* <- [🔝] Global z-index for wallpaper page */;
-    user-select: none;
-    position: relative;
-}
+    position: absolute;
+    top: -10px;
+    right: 0;
 
-.CopilotPanel .MenuBar {
-    position: relative;
-    z-index: 2 /* <- Local order of <Menu/> */;
+    z-index: 20 /* <- Local order of <CopilotPanel/> */;
     width: 35px;
     height: 40px;
     margin: 30px 20px 20px 20px;
     cursor: pointer;
 }
 
-.CopilotPanel .bar {
+.CopilotPanel .MenuBar .bar {
     height: 5px;
     width: 100%;
     background-color: var(--palette-1);
@@ -114,15 +103,15 @@
     transition: 0.3s ease;
 }
 
-.CopilotPanel .bar1 {
+.CopilotPanel .MenuBar .bar.bar1 {
     transform: translateY(-4px);
 }
 
-.CopilotPanel .bar2 {
+.CopilotPanel .MenuBar .bar.bar2 {
     transform: translateY(0);
 }
 
-.CopilotPanel .bar3 {
+.CopilotPanel .MenuBar .bar.bar3 {
     transform: translateY(4px);
 }
 
@@ -131,13 +120,22 @@
     outline: 1px solid #ff0000;
     /**/
 
-    position: relative;
-    z-index: 2 /* <- Local order of <Menu/> */;
-    transition: 0.3s ease;
-    display: none;
-    margin-top: 70px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+
+    z-index: 30 /* <- Local order of <CopilotPanel/> */;
 
     width: 200px;
+
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .CopilotPanel nav.MenuContent ul {
@@ -185,84 +183,4 @@
 
 .CopilotPanel nav.MenuContent li:hover {
     background-color: rgba(var(--palette-1-triplet), 0.2);
-}
-
-.CopilotPanel .Menu,
-.CopilotPanel .MenuBar,
-.CopilotPanel .MenuBackground {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    /* 📱 Smartphones */
-
-    .CopilotPanel .Menu,
-    .CopilotPanel .MenuBar,
-    .CopilotPanel .MenuBackground {
-        position: fixed;
-    }
-}
-
-.CopilotPanel .MenuBackgroundWrapper {
-    /*/
-    outline: 1px solid green;
-    background-color: rgba(0, 128, 0, 0.205);
-    /**/
-
-    z-index: 1 /* <- Local order of <Menu/> */;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-
-    pointer-events: none;
-    overflow: clip;
-}
-
-.CopilotPanel .MenuBackground {
-    /*/
-    outline: 1px solid red;
-    /**/
-
-    aspect-ratio: 1 / 1;
-    /*
-    Note: height is set dynamically by JS according to number of menu items
-    height: 800px;
-    */
-
-    background: radial-gradient(circle, var(--palette-0), var(--palette-0));
-    box-shadow: 0 0 20px rgba(var(--palette-1-triplet), 0.8);
-    border-radius: 50%;
-    transition: 0.3s ease;
-
-    transform: translate(50%, -50%);
-
-    box-sizing: content-box;
-
-    pointer-events: all;
-}
-
-.CopilotPanel .Menu:not([data-toggle-state='open']) .MenuBackground {
-    height: 0 !important;
-}
-
-.CopilotPanel .Menu:is([data-toggle-state='open']) .MenuBar,
-.CopilotPanel .Menu:is([data-toggle-state='open']) .MenuContent,
-.CopilotPanel .Menu:is([data-toggle-state='open']) .MenuBackground {
-    display: block !important;
-}
-
-.CopilotPanel .Menu:is([data-toggle-state='open']) .MenuBar .bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-}
-
-.CopilotPanel .Menu:is([data-toggle-state='open']) .MenuBar .bar2 {
-    opacity: 0;
-}
-
-.CopilotPanel .Menu:is([data-toggle-state='open']) .MenuBar .bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
 }
