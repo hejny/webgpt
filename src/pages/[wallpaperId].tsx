@@ -6,7 +6,7 @@ import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
 import { WallpaperEditingLink } from '../components/WallpaperEditing/WallpaperEditingLink';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
-import { useMode } from '../utils/hooks/useMode';
+import { useRole } from '../utils/hooks/useRole';
 import { useSsrDetection } from '../utils/hooks/useSsrDetection';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
@@ -21,7 +21,8 @@ interface WallpaperPageProps {
 
 export default function WallpaperPage(props: WallpaperPageProps) {
     let { currentWallpaper } = props;
-    const { isEditable } = useMode();
+    const role = useRole();
+    const isEditable = role === 'OWNER';
     const isServerRender = useSsrDetection();
 
     if (currentWallpaper === undefined) {
