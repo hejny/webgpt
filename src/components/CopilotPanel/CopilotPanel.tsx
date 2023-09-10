@@ -107,42 +107,47 @@ export function CopilotPanel() {
                 >
                     Apply
                 </button>
-            </div>
 
-            <>
-                {/* Note: Not using AI Components in this menu !!!! */}
                 <div
                     className={styles.MenuBar /* <- !!! ACRY MenuBar -> MenuTofuburger */}
                     onClick={() => setMenuOpen(!isMenuOpen)}
                 >
-                    <div className={classNames(styles.bar, styles.bar1)}></div>
-                    <div className={classNames(styles.bar, styles.bar2)}></div>
-                    <div className={classNames(styles.bar, styles.bar3)}></div>
-                </div>
-                {isMenuOpen && (
-                    <nav className={styles.MenuContent}>
-                        <ul>
-                            <li className={styles.featured}>
-                                <WallpaperLink
-                                    modal="export"
-                                    role="OWNER"
-                                    /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                                >
-                                    Get the web
-                                </WallpaperLink>
-                            </li>
-                            <li className={styles.featured}>sss</li>
+                    {/**
+                     * Note: Not using AI Components in this menu !!!!
+                     * Note: It is intended to have two divs embedded in each other one useing setMenuOpen and inner one using isMenuOpen
+                     */}
 
-                            {/*
-                            TODO:
-                            <li>
-                                <WallpaperLink page="contact">Contact</WallpaperLink>
-                            </li>
-                            */}
-                        </ul>
-                    </nav>
-                )}
-            </>
+                    <div className={classNames(styles.MenuBarInner, isMenuOpen && styles.open)}>
+                        <div className={classNames(styles.bar, styles.bar1)}></div>
+                        <div className={classNames(styles.bar, styles.bar2)}></div>
+                        <div className={classNames(styles.bar, styles.bar3)}></div>
+                    </div>
+                </div>
+            </div>
+
+            {isMenuOpen && (
+                <nav className={styles.MenuContent}>
+                    <ul>
+                        <li className={styles.featured}>
+                            <WallpaperLink
+                                modal="export"
+                                role="OWNER"
+                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
+                            >
+                                Get the web
+                            </WallpaperLink>
+                        </li>
+                        <li className={styles.featured}>sss</li>
+
+                        {/*
+                        TODO:
+                        <li>
+                            <WallpaperLink page="contact">Contact</WallpaperLink>
+                        </li>
+                        */}
+                    </ul>
+                </nav>
+            )}
         </div>
     );
 }
