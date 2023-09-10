@@ -45,8 +45,7 @@
     outline: 1px dotted rgb(56, 255, 38);
     /**/
 
-    /* TODO: !!!! Align CopilotPanel and ControlPanel  */
-    width: calc(100vw - 100px) /* <- !!! Not - 100px But ONLY margin */ /* <- [🍜] !!! */;
+    width: calc(100vw - 100px);
 }
 
 .CopilotPanel button {

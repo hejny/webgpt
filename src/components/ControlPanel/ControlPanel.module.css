@@ -73,7 +73,7 @@
     text-decoration: none;
 }
 
-@media only screen and (min-width: 1575px /* <- [🍜] */) {
+@media only screen and (min-width: 900px) {
     .button:hover:not(.callToAction):not([data-active='true']) {
         background-color: rgb(255, 237, 246);
     }
@@ -113,10 +113,7 @@
     }
 }
 
-@media only screen and (max-width: 1575px /* <- [🍜] */) {
-    .ControlPanel {
-        bottom: 80px;
-    }
+@media only screen and (max-width: 900px) {
     .group {
         right: -30px;
         flex-direction: column;
