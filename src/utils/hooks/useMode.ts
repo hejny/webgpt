@@ -3,6 +3,11 @@ import { useRouter } from 'next/router';
 import { TupleToUnion } from 'type-fest';
 import { useSsrDetection } from './useSsrDetection';
 
+/**
+ *
+ * TODO: !!!!!!!!!! Delete the file
+ */
+
 export const MODES = [
     'EDIT',
     'SHOW' /* <- !!! Show vs. Minimal vs. Presentation vs Share vs Live */,
@@ -15,6 +20,9 @@ interface IModes {
     isEditable: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export function useMode(): IModes /* <- !!! Return just mode */ {
     const isServerRender = useSsrDetection();
     const router = useRouter();
