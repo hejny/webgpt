@@ -47,9 +47,6 @@ export default async function updateWallpaperContentHandler(
         let newContent = chatThread.response;
         newContent = removeQuotes(newContent);
 
-        // TODO: !!! Preserve fonts
-        // TODO: !!! Append prompts (have history of prompts)
-
         return response.status(200).json({
             updatedWallpaper: {
                 content: chatThread.response,
@@ -66,6 +63,9 @@ export default async function updateWallpaperContentHandler(
 }
 
 /**
- * TODO: !!! Allow only POST OR PUT (Which is better?)
+ * TODO: !! Allow only POST OR PUT (Which is better?)
+ * TODO: !! Allow to mix user and copilot edits
+ * TODO: !! Preserve fonts
+ * TODO: !! Append prompts (have history of prompts)
  * TODO: [🤺] Optimize, maybe cache inputs and results
  */

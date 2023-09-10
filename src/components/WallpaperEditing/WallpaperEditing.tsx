@@ -34,7 +34,7 @@ export function WallpaperEditing() {
 }
 
 /**
- * TODO: [🧠] !!! How to show <ColorsPanel />
  * TODO: !! Lazy load modals
+ * TODO: [🧠] How to show <ColorsPanel />
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */
