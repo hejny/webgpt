@@ -80,9 +80,9 @@ export function Menu() {
                             {!isExported && (
                                 <li>
                                     {role === 'OWNER' ? (
-                                        <WallpaperLink role="OWNER_AS_VISITOR">Present</WallpaperLink>
+                                        <WallpaperLink role="OWNER_AS_VISITOR">Show as visitor</WallpaperLink>
                                     ) : role === 'OWNER_AS_VISITOR' ? (
-                                        <WallpaperLink role="OWNER">Show controls</WallpaperLink>
+                                        <WallpaperLink role="OWNER">Edit the page</WallpaperLink>
                                     ) : (
                                         <></>
                                     )}
