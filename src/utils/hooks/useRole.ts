@@ -15,7 +15,7 @@ const ROLES = ['VISITOR', 'OWNER', 'OWNER_AS_VISITOR'] as const;
  */
 export type Role = TupleToUnion<typeof ROLES>;
 
-export const DEFAULT_ROLE: Role = 'OWNER_AS_VISITOR';
+export const DEFAULT_ROLE: Role = 'OWNER';
 
 /**
  * Hook for getting current role from GET params
@@ -27,7 +27,9 @@ export function useRole(): Role {
     const router = useRouter();
 
     if (isServerRender) {
-        return DEFAULT_ROLE;
+        // Note: On server-render we don't know the role so we assume it's "VISITOR"
+        //       It is also useful for bots and crawlers like GoogleBot to see the app as "VISITOR"
+        return 'VISITOR';
     }
 
     if (typeof router.query.role !== 'string') {
@@ -54,7 +56,7 @@ export function useRole(): Role {
 }
 
 /**
- * TODO: Validate here the ownership
+ * TODO: Validate here the ownership + default role should be "VISITOR" OR "OWNER" according to ownership
  * TODO: !! Some way how to toggle VISITOR role from UI
  * TODO: [🧠][🍛] There is a collision between role and <a role="..." /> html attribute
  */
