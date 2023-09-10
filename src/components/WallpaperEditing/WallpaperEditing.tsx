@@ -1,3 +1,4 @@
+import { ColorsPanel } from '../../components/ColorsPanel/ColorsPanel';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useModal } from '../../utils/hooks/useModal';
