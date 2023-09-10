@@ -8,7 +8,10 @@ export function focusRef(element: HTMLElement | null) {
         return;
     }
 
-    element.focus();
+    return;
+    // element.focus();
 }
 
-
+/**
+ * TODO: !!! [🧠] focusOnDesktopRef
+ */
