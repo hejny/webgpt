@@ -83,7 +83,7 @@ export function CopilotPanel() {
                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
                 // TODO: Use here addWallpaperComputables
                 modifiedWallpaper.parent = modifiedWallpaper.id;
-                modifiedWallpaper.content = newContent;
+                modifiedWallpaper.content = 'xxx';//newContent;
                 modifiedWallpaper.saveStage = 'SAVING';
                 modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
                 modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
