@@ -26,9 +26,9 @@ export function WallpaperEditing() {
             {modal === 'colors' && <ColorsModal />}
             {/* Note: <EditModal/> was removed in commit a4a37573299fa262ee335ecb1a5b480c409f8627 */}
 
-            {scenario === 'FROM_SOMETHING' && <CopilotPanel />}
-            {scenario === 'GALLERY' && <ControlPanel />}
-            {scenario === 'GALLERY' && <ColorsPanel />}
+            {modal === null && scenario === 'FROM_SOMETHING' && <CopilotPanel />}
+            {modal === null && scenario === 'GALLERY' && <ControlPanel />}
+            {modal === null && scenario === 'GALLERY' && <ColorsPanel />}
         </>
     );
 }

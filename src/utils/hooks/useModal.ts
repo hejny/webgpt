@@ -12,12 +12,12 @@ export function useModal(): string | null {
         return null;
     }
 
-    if (typeof router.query.scenario !== 'string') {
+    if (typeof router.query.modal !== 'string') {
         // This is a situation when there is no ?modal=... in GET params
         return null;
     }
 
-    return router.query.scenario;
+    return router.query.modal;
 }
 
 /**
