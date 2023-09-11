@@ -91,21 +91,7 @@
 /*---------[ Menu Bar ]---------*/
 
 .CopilotPanel .MenuBar .MenuBarInner {
-    /*/
-    outline: 1px solid rgb(102, 255, 0);
-    /**/
-
-    /* !!!
-    position: absolute;
-    bottom: 23px;
-    right: 10px;
-
-    z-index: 20 /* <- Local order of <CopilotPanel/> */
     width: 35px;
-
-    /* !!! 
-    transform: translate(0, calc(50% - 10px));
-    */
 }
 
 .CopilotPanel .MenuBar .MenuBarInner .bar {

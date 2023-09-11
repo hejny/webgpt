@@ -152,7 +152,7 @@ export function CopilotPanel() {
                     onClick={() => setMenuOpen(!isMenuOpen)}
                 >
                     {/**
-                     * Note: Not using AI Components in this menu !!!!
+                     * Note: Not using AI Components in this menu because we want such a different look&feel
                      * Note: It is intended to have two divs embedded in each other one useing setMenuOpen and inner one using isMenuOpen
                      */}
 
@@ -176,7 +176,7 @@ export function CopilotPanel() {
                                 Get the web
                             </WallpaperLink>
                         </li>
-                        <li className={styles.featured}>
+                        <li>
                             <WallpaperLink
                                 role="OWNER_AS_VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
@@ -184,7 +184,7 @@ export function CopilotPanel() {
                                 Show as visitor
                             </WallpaperLink>
                         </li>
-                        <li className={styles.featured}>
+                        <li>
                             <WallpaperLink
                                 // TODO: !!! With QR and explanation
 
@@ -194,17 +194,20 @@ export function CopilotPanel() {
                                 Share
                             </WallpaperLink>
                         </li>
+                        <li>
+                            <WallpaperLink page="contact">Contact</WallpaperLink>
+                        </li>
                         {/*
-                        TODO: !!! 
+                        TODO: !! The menu should be like this: 
 
-                        Show as visitor
-                        Share
-                        Get the web
-                        Edit
-                        - advanced prompting
-                        - colors
-                        - content
-                        Support
+                        - [x] Show as visitor
+                        - [~] Share
+                        - [x] Get the web
+                        - [ ] Edit
+                        - [ ] - advanced prompting
+                        - [ ] - colors
+                        - [ ] - content
+                        - [~] Support
 
 
                         <li>
