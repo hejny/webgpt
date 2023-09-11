@@ -92,13 +92,16 @@
 
 .CopilotPanel .MenuBar .MenuBarInner {
     width: 35px;
+
+    transform: scale(0.8);
 }
 
 .CopilotPanel .MenuBar .MenuBarInner .bar {
     height: 5px;
     width: 100%;
-    background-color: var(--palette-1);
-    box-shadow: 2px 2px 0 var(--palette-5);
+    background-color: rgba(255, 255, 255);
+    /*box-shadow: 2px 2px 0 rgba(255, 255, 255, 0.2);*/
+    border: 1px solid white;
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -174,8 +177,8 @@
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    border-bottom: 1px solid rgba(var(--palette-1-triplet), 0.3);
-    color: rgba(var(--palette-1-triplet), 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .CopilotPanel nav.MenuContent li:last-child {
@@ -184,7 +187,7 @@
 
 .CopilotPanel nav.MenuContent li.featured {
     font-weight: bold;
-    color: var(--palette-1);
+    color: rgba(255, 255, 255);
 }
 
 .CopilotPanel nav.MenuContent li a {
