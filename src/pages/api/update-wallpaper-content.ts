@@ -32,12 +32,12 @@ export default async function updateWallpaperContentHandler(
         const chatThread = await ChatThread.ask(
             spaceTrim(
                 (block) => `
-                    Act as a copywriter and modify the content of the page according to the user prompt. Return whole new content.
+                    Act as an experienced copywriter and modify the markdown content of the page according to the user prompt.
 
-                    The prompt:
+                    Prompt:
                     ${block(normalizedPrompt)}
 
-                    Current content of the page:
+                    Content:
                     ${block(wallpaper.content)}
                 
                 ` /* <- TODO: Make prompt template */,
