@@ -195,7 +195,7 @@ export function CopilotPanel() {
                             </WallpaperLink>
                         </li>
                         <li>
-                            <WallpaperLink page="contact">Contact</WallpaperLink>
+                            <a href="mailto:me@pavolhejny.com">Contact</a>
                         </li>
                         {/*
                         TODO: !! The menu should be like this: 
