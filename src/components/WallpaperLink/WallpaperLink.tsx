@@ -38,10 +38,10 @@ export function WallpaperLink(props: WallpaperLinkProps) {
     if (wallpaperId === null || !query.wallpaperId) {
         delete query.wallpaperId;
     }
-    if (role === DEFAULT_ROLE || !query.mode) {
+    if (role === DEFAULT_ROLE || !query.role) {
         delete query.role;
     }
-    if (scenario === DEFAULT_SCENARIO || !query.mode) {
+    if (scenario === DEFAULT_SCENARIO || !query.scenario) {
         delete query.scenario;
     }
     if (page === 'index' || !query.page) {

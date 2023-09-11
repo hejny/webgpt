@@ -178,7 +178,6 @@ export function CopilotPanel() {
                         </li>
                         <li className={styles.featured}>
                             <WallpaperLink
-                                modal="export"
                                 role="OWNER_AS_VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >
@@ -188,7 +187,7 @@ export function CopilotPanel() {
                         <li className={styles.featured}>
                             <WallpaperLink
                                 // TODO: !!! With QR and explanation
-                                modal="export"
+
                                 role="VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >
