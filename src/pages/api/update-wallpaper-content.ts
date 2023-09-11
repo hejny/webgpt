@@ -32,7 +32,7 @@ export default async function updateWallpaperContentHandler(
         const chatThread = await ChatThread.ask(
             spaceTrim(
                 (block) => `
-                    Act as a copywriter and modify the content of the page according to the user prompt.
+                    Act as a copywriter and modify the content of the page according to the user prompt. Return whole new content.
 
                     The prompt:
                     ${block(normalizedPrompt)}
