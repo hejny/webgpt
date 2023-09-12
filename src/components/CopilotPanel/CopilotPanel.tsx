@@ -140,7 +140,7 @@ export function CopilotPanel() {
                     id="prompt-copilot"
                     title="Apply your change"
                     reapearCount={0}
-                    // TODO: !!! Discable this hint
+                    isDisabled
                 >
                     <button
                         disabled={runningPrompt !== null}
