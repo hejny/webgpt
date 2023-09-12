@@ -45,6 +45,9 @@ export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value
  * It is useful for recording videos
  *
  * 1 is normal, 2 is twice as fast, 0.5 is twice as slow
+ *
+ * Note: You can record video and change speef for example here:
+ *       - https://online-video-cutter.com/change-video-speed
  */
 export const SPEED = 1; // 1 / 5;
 
