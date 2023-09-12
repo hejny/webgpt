@@ -17,6 +17,7 @@ import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
+import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
@@ -34,6 +35,7 @@ export function CopilotPanel() {
 
     const handlePrompt = useCallback(async () => {
         if (isRunning) {
+            console.error('Prompt is already running');
             return;
         }
 
@@ -132,23 +134,34 @@ export function CopilotPanel() {
                     disabled={isRunning}
                 />
 
-                <Hint className={styles.Button} id="prompt-copilot" title="Apply your change" reapearCount={0}>
+                <Hint
+                    className={styles.Button}
+                    id="prompt-copilot"
+                    title="Apply your change"
+                    reapearCount={0}
+                    // TODO: !!! Discable this hint
+                >
                     <button
                         disabled={isRunning}
+                        title="Apply your change"
                         onClick={() => {
                             handlePrompt();
                         }}
                     >
-                        <Image
-                            alt="✈"
-                            src="/icons/other/paper-plane.white.png"
-                            /*
-                            alt="🚀"
-                            src="/icons/openmoji/1F680.black.svg"
-                            */
-                            width={25}
-                            height={25} /* <-[🧥] */
-                        />
+                        {!isRunning ? (
+                            <Image
+                                alt="✈"
+                                src="/icons/other/paper-plane.white.png"
+                                /*
+                                alt="🚀"
+                                src="/icons/openmoji/1F680.black.svg"
+                                */
+                                width={25}
+                                height={25} /* <-[🧥] */
+                            />
+                        ) : (
+                            <TorusInteractiveImage width={55} height={55} />
+                        )}
                     </button>
                 </Hint>
 

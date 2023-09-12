@@ -80,14 +80,6 @@
     all: unset;
 }
 
-.CopilotPanel .Button img {
-    /*/
-    outline: 1px dotted rgb(38, 255, 183);
-    /**/
-
-    object-fit: cover;
-}
-
 /*---------[ Menu Bar ]---------*/
 
 .CopilotPanel .MenuHamburger .MenuHamburgerInner {
