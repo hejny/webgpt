@@ -1,0 +1,2 @@
+TODO: !! Prompt templates should be in .txt files in /promps folder
+TODO: !! Record all prompt (template) performance to be able to A/B test them

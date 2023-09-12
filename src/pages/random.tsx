@@ -11,7 +11,7 @@ export default function RandomPage() {
         (async () => {
             const randomWallpaperManager = RandomWallpaperManager.getInstance();
             const wallpaper = await randomWallpaperManager.getWelcomeWallpaper();
-            router.replace(`/${wallpaper.id}`);
+            router.replace(`/${wallpaper.id}?scenario=gallery`);
         })();
     });
 

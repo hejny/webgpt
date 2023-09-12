@@ -22,7 +22,7 @@
 
 .MenuBar {
     position: relative;
-    z-index: 2 /* <- Local order of <Menu/> */;
+    z-index: 20 /* <- Local order of <Menu/> */;
     width: 35px;
     height: 40px;
     margin: 30px 20px 20px 20px;
@@ -57,7 +57,7 @@ nav.MenuContent {
     /**/
 
     position: relative;
-    z-index: 2 /* <- Local order of <Menu/> */;
+    z-index: 20 /* <- Local order of <Menu/> */;
     transition: 0.3s ease;
     display: none;
     margin-top: 70px;
@@ -136,7 +136,7 @@ nav.MenuContent li:hover {
     background-color: rgba(0, 128, 0, 0.205);
     /**/
 
-    z-index: 1 /* <- Local order of <Menu/> */;
+    z-index: 10 /* <- Local order of <Menu/> */;
     position: absolute;
     top: 0;
     right: 0;

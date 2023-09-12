@@ -1,0 +1,204 @@
+.CopilotPanel {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    z-index: 3000 /* <- [🔝] Global z-index for wallpaper page */;
+    position: fixed;
+    width: calc(100vw - 18px);
+    left: 50vw;
+    transform: translate(-50%, 0);
+    bottom: 15px;
+}
+
+.CopilotPanelInner {
+    /*/
+    outline: 1px dotted rgb(255, 125, 38);
+    /**/
+
+    z-index: 10; /* <- Local order of <CopilotPanel/> */
+    height: 60px;
+
+    /* TODO: [👨‍🌾] Make just one css for floating control panel */
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    overflow: clip;
+
+    display: grid;
+    grid-template-columns: 1fr 60px 60px;
+}
+
+.CopilotPanelInner > * {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38) !important;
+    /**/
+}
+
+.CopilotPanel input {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38);
+    /**/
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 100%;
+
+    font-size: 1.3em;
+}
+
+.CopilotPanel .Button {
+    text-align: center;
+    background-color: rgba(126, 126, 126, 0.2);
+    transition: background-color 0.1s ease-in-out;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CopilotPanel .Button:hover {
+    background-color: rgba(126, 126, 126, 0.3);
+}
+
+.CopilotPanel .Button:disabled {
+    opacity: 0.5;
+}
+
+.CopilotPanel .Button button {
+    all: unset;
+}
+
+.CopilotPanel .Button img {
+    /*/
+    outline: 1px dotted rgb(38, 255, 183);
+    /**/
+
+    object-fit: cover;
+}
+
+/*---------[ Menu Bar ]---------*/
+
+.CopilotPanel .MenuBar .MenuBarInner {
+    width: 35px;
+
+    transform: scale(0.8);
+}
+
+.CopilotPanel .MenuBar .MenuBarInner .bar {
+    height: 5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    /*box-shadow: 2px 2px 0 rgba(255, 255, 255, 0.2);*/
+    border: 1px solid white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.CopilotPanel .MenuBar .MenuBarInner .bar.bar1 {
+    transform: translateY(-4px);
+}
+
+.CopilotPanel .MenuBar .MenuBarInner .bar.bar2 {
+    transform: translateY(0);
+}
+
+.CopilotPanel .MenuBar .MenuBarInner .bar.bar3 {
+    transform: translateY(4px);
+}
+
+.CopilotPanel .MenuBar .MenuBarInner.open .bar.bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.CopilotPanel .MenuBar .MenuBarInner.open .bar.bar2 {
+    opacity: 0;
+}
+
+.CopilotPanel .MenuBar .MenuBarInner.open .bar.bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+/*---------[ Menu Content ]---------*/
+
+.CopilotPanel nav.MenuContent {
+    /*/
+    outline: 1px solid #ff0000;
+    /**/
+
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+
+    z-index: 30 /* <- Local order of <CopilotPanel/> */;
+
+    width: 200px;
+
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.CopilotPanel nav.MenuContent ul {
+    /*/
+    outline: 1px solid #00ff00;
+    /**/
+
+    padding: 0;
+    margin: 0;
+}
+
+.CopilotPanel nav.MenuContent li {
+    /*/
+    outline: 1px solid #0000ff;
+    /**/
+
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.CopilotPanel nav.MenuContent li:last-child {
+    border-bottom: none;
+}
+
+.CopilotPanel nav.MenuContent li.featured {
+    font-weight: bold;
+    color: rgba(255, 255, 255);
+}
+
+.CopilotPanel nav.MenuContent li a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.CopilotPanel nav.MenuContent li:hover {
+    background-color: rgba(var(--palette-1-triplet), 0.2);
+}
