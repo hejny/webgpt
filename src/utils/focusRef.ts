@@ -13,5 +13,5 @@ export function focusRef(element: HTMLElement | null) {
 }
 
 /**
- * TODO: !!! [🧠] focusOnDesktopRef
+ * TODO: [🧠] !! This function is disabled now - it should work only on desktop and maybe be renamed to focusOnDesktopRef
  */
