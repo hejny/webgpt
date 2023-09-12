@@ -193,7 +193,10 @@ export function CopilotPanel() {
                 </Hint>
 
                 <div
-                    className={classNames(styles.Button, styles.MenuBar /* <- !!! ACRY MenuBar -> MenuTofuburger */)}
+                    className={classNames(
+                        styles.Button,
+                        styles.MenuHamburger ,
+                    )}
                     onClick={() => setMenuOpen(!isMenuOpen)}
                 >
                     {/**
@@ -201,7 +204,7 @@ export function CopilotPanel() {
                      * Note: It is intended to have two divs embedded in each other one useing setMenuOpen and inner one using isMenuOpen
                      */}
 
-                    <div className={classNames(styles.MenuBarInner, isMenuOpen && styles.open)}>
+                    <div className={classNames(styles.MenuHamburgerInner, isMenuOpen && styles.open)}>
                         <div className={classNames(styles.bar, styles.bar1)}></div>
                         <div className={classNames(styles.bar, styles.bar2)}></div>
                         <div className={classNames(styles.bar, styles.bar3)}></div>

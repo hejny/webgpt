@@ -90,13 +90,13 @@
 
 /*---------[ Menu Bar ]---------*/
 
-.CopilotPanel .MenuBar .MenuBarInner {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner {
     width: 35px;
 
     transform: scale(0.8);
 }
 
-.CopilotPanel .MenuBar .MenuBarInner .bar {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner .bar {
     height: 5px;
     width: 100%;
     background-color: rgba(255, 255, 255);
@@ -107,27 +107,27 @@
     transition: 0.3s ease;
 }
 
-.CopilotPanel .MenuBar .MenuBarInner .bar.bar1 {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner .bar.bar1 {
     transform: translateY(-4px);
 }
 
-.CopilotPanel .MenuBar .MenuBarInner .bar.bar2 {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner .bar.bar2 {
     transform: translateY(0);
 }
 
-.CopilotPanel .MenuBar .MenuBarInner .bar.bar3 {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner .bar.bar3 {
     transform: translateY(4px);
 }
 
-.CopilotPanel .MenuBar .MenuBarInner.open .bar.bar1 {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner.open .bar.bar1 {
     transform: translateY(4px) rotateZ(-45deg);
 }
 
-.CopilotPanel .MenuBar .MenuBarInner.open .bar.bar2 {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner.open .bar.bar2 {
     opacity: 0;
 }
 
-.CopilotPanel .MenuBar .MenuBarInner.open .bar.bar3 {
+.CopilotPanel .MenuHamburger .MenuHamburgerInner.open .bar.bar3 {
     transform: translateY(-6px) rotateZ(45deg);
 }
 

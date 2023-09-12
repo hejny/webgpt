@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.MenuBar {
+.MenuHamburger {
     position: relative;
     z-index: 20 /* <- Local order of <Menu/> */;
     width: 35px;
@@ -113,7 +113,7 @@ nav.MenuContent li:hover {
 }
 
 .Menu,
-.MenuBar,
+.MenuHamburger,
 .MenuBackground {
     position: absolute;
     top: 0;
@@ -124,7 +124,7 @@ nav.MenuContent li:hover {
     /* 📱 Smartphones */
 
     .Menu,
-    .MenuBar,
+    .MenuHamburger,
     .MenuBackground {
         position: fixed;
     }
@@ -174,20 +174,20 @@ nav.MenuContent li:hover {
     height: 0 !important;
 }
 
-.Menu:is([data-toggle-state='open']) .MenuBar,
+.Menu:is([data-toggle-state='open']) .MenuHamburger,
 .Menu:is([data-toggle-state='open']) .MenuContent,
 .Menu:is([data-toggle-state='open']) .MenuBackground {
     display: block !important;
 }
 
-.Menu:is([data-toggle-state='open']) .MenuBar .bar1 {
+.Menu:is([data-toggle-state='open']) .MenuHamburger .bar1 {
     transform: translateY(4px) rotateZ(-45deg);
 }
 
-.Menu:is([data-toggle-state='open']) .MenuBar .bar2 {
+.Menu:is([data-toggle-state='open']) .MenuHamburger .bar2 {
     opacity: 0;
 }
 
-.Menu:is([data-toggle-state='open']) .MenuBar .bar3 {
+.Menu:is([data-toggle-state='open']) .MenuHamburger .bar3 {
     transform: translateY(-6px) rotateZ(45deg);
 }
