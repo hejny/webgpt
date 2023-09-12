@@ -1,4 +1,5 @@
 import { MeshBuilder } from 'babylonjs';
+import { SPEED } from '../../../config';
 import { number_positive, string_css_class } from '../../utils/typeAliases';
 import { useGraph } from '../Graphs/useGraph';
 
@@ -52,7 +53,7 @@ export function TorusInteractiveImage(props: TorusInteractiveProps) {
 
             // Note: Rotate the the camera around the mesh
             scene.registerBeforeRender(() => {
-                camera.alpha += 0.02;
+                camera.alpha += 0.02 * SPEED;
             });
         },
         [

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import { SPEED } from '../../../config';
 
-const PLACEHOLDER_CHARACTERS_PER_SECOND = 50;
-const PLACEHOLDER_WAIT_AFTER_FINISH_SECONDS = 10;
+const PLACEHOLDER_CHARACTERS_PER_SECOND = 50 * SPEED;
+const PLACEHOLDER_WAIT_AFTER_FINISH_SECONDS = 10 * SPEED;
 
 /**
  * Hook for getting rotating placeholder for an input or textarea

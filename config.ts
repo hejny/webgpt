@@ -40,6 +40,14 @@ if (isRunningInBrowser()) {
 
 export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value;
 
+/**
+ * The speed of the animations
+ * It is useful for recording videos
+ *
+ * 1 is normal, 2 is twice as fast, 0.5 is twice as slow
+ */
+export const SPEED = 1; // 1 / 5;
+
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
 export const SUPABASE_SERVICE_ROLE_KEY = config.get('SUPABASE_SERVICE_ROLE_KEY').value;
