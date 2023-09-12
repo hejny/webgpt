@@ -15,6 +15,7 @@ import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
@@ -27,29 +28,28 @@ import styles from './CopilotPanel.module.css';
 export function CopilotPanel() {
     const router = useRouter();
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
-    const [isRunning, setRunning] = useState(false);
+    const [runningPrompt, setRunningPrompt] = useState<null | string_prompt>(null);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
     const placeholders = useMemo(() => shuffleItems(...COPILOT_PLACEHOLDERS), []);
     const placeholder = useRotatingPlaceholder(...placeholders);
 
     const handlePrompt = useCallback(async () => {
-        if (isRunning) {
+        if (runningPrompt !== null) {
             console.error('Prompt is already running');
             return;
         }
 
-        setRunning(true);
-
         try {
             let prompt = inputRef.current?.value || '';
+            setRunningPrompt(prompt);
 
             // TODO: [🍛] Make same normalization as in the backend
             prompt = spaceTrim(prompt);
 
             if (!prompt) {
                 alert('Please enter a command');
-                setRunning(false);
+                setRunningPrompt(null);
                 return;
             }
 
@@ -108,9 +108,9 @@ export function CopilotPanel() {
 
             inputRef.current!.value = '';
         } finally {
-            setRunning(false);
+            setRunningPrompt(null);
         }
-    }, [router, wallpaper, modifyWallpaper, isRunning, inputRef]);
+    }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
         <div className={classNames('aiai-controls', styles.CopilotPanel)}>
@@ -126,12 +126,13 @@ export function CopilotPanel() {
                 <input
                     type={'text'}
                     placeholder={placeholder}
+                    value={runningPrompt === null ? undefined : `Working on "${runningPrompt}"...`}
                     ref={(element) => {
                         // TODO: [🍘] Use joinRefs
                         focusRef(element);
                         inputRef.current = element;
                     }}
-                    disabled={isRunning}
+                    disabled={runningPrompt !== null}
                 />
 
                 <Hint
@@ -142,13 +143,13 @@ export function CopilotPanel() {
                     // TODO: !!! Discable this hint
                 >
                     <button
-                        disabled={isRunning}
+                        disabled={runningPrompt !== null}
                         title="Apply your change"
                         onClick={() => {
                             handlePrompt();
                         }}
                     >
-                        {!isRunning ? (
+                        {runningPrompt === null ? (
                             <Image
                                 alt="✈"
                                 src="/icons/other/paper-plane.white.png"
