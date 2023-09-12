@@ -11,5 +11,5 @@ The guidelines for this task are enumerated as follows:
 
 Here is the text that requires your expert attention:
 ```
-
+{POST_CONTENT}
 ```

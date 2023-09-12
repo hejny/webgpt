@@ -9,4 +9,6 @@ The rules are as follows:
 - Maintain the integrity of the original meaning.
 
 Here is the text that requires your expert attention:
-{PROMPT}
+```
+{PROMPT_CONTENT}
+```
