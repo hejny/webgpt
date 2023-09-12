@@ -227,9 +227,10 @@ export function CopilotPanel() {
 }
 
 /**
- * TODO: !!! Show working indicator better
- * TODO: !!! Show errors
- * TODO: !!! Log errors (and maybe also prompts)
+ * TODO: !!! CopilotPanel: Show working indicator better
+ * TODO: !!! CopilotPanel: Fully line design
+ * TODO: !!! CopilotPanel: Show errors
+ * TODO: !!! CopilotPanel: Log errors (and maybe also prompts)
  * TODO: !! Add more options like Close (OWNER_AS_VISITOR), Share (VISITOR), Edit colors, Get the web, How it works?, Pricing, Gallery, Back
  *       ( ⏣ | Write prompt | Apply | More | Close )
  */
