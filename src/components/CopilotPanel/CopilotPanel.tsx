@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import type {
     UpdateWallpaperContentRequest,
@@ -10,7 +10,9 @@ import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
@@ -26,6 +28,49 @@ export function CopilotPanel() {
     const [isRunning, setRunning] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
+    const placeholders = useMemo(
+        () =>
+            shuffleItems(
+                // TODO: Put into config
+                // '⏣ Describe the change>'
+                'Translate to Chinese',
+                'Translate to English',
+                'Translate to French',
+                'Translate to German',
+                'Translate to Italian',
+                'Translate to Japanese',
+                'Translate to Korean',
+                'Translate to Portuguese',
+                'Translate to Ukrainian',
+                'Add email contact pavol@hejny.org',
+                'Add phone contact +420 123 456 789',
+                'Add a link to website www.pavolhejny.com',
+                'Change opening hours on friday to 10:00-12:00',
+                `We are temporarily closed due to vacation till tomorrow`,
+                `Make better claim`,
+                `Make better title`,
+                `Shorten text about the company`,
+                `Add new product - 3D printer`,
+                `Delete the product - 3D printer`,
+                'Change phone number to +007 123 456 789',
+                'Make the text more friendly',
+                'Make the text more formal',
+                'Make the text more funny',
+                'Make the text more serious',
+                'Make the text more professional',
+                'Make the text more personal',
+                'Make the text more technical',
+                'Make the text more simple',
+                'Add a new paragraph - "We are the best"',
+                'Add a new paragraph - "We are the cheapest"',
+                'Add a new paragraph - "We are the fastest"',
+                'Add a new paragraph - "We are the most reliable"',
+                'Add bullet points why we are the best',
+                'Add pricing table',
+            ),
+        [],
+    );
+    const placeholder = useRotatingPlaceholder(...placeholders);
 
     const handlePrompt = useCallback(async () => {
         if (isRunning) {
@@ -83,7 +128,7 @@ export function CopilotPanel() {
                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
                 // TODO: Use here addWallpaperComputables
                 modifiedWallpaper.parent = modifiedWallpaper.id;
-                modifiedWallpaper.content = newContent+'\n\n<hr/>'+prompt;
+                modifiedWallpaper.content = newContent + '\n\n<hr/>' + prompt;
                 modifiedWallpaper.saveStage = 'SAVING';
                 modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
                 modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
@@ -118,7 +163,7 @@ export function CopilotPanel() {
             >
                 <input
                     type={'text'}
-                    placeholder={'⏣ Describe the change> Add email contact pavol@hejny.org' /* <- !!! Write effect */}
+                    placeholder={placeholder}
                     ref={(element) => {
                         // TODO: [🍘] Use joinRefs
                         focusRef(element);
