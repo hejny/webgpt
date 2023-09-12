@@ -88,6 +88,44 @@ export const FONTS = [
     // TODO: !! List more
 ] as const;
 
+export const COPILOT_PLACEHOLDERS: Array<string> = [
+    // Note: ⏣ Describe the change>
+    'Translate to Chinese',
+    'Translate to English',
+    'Translate to French',
+    'Translate to German',
+    'Translate to Italian',
+    'Translate to Japanese',
+    'Translate to Korean',
+    'Translate to Portuguese',
+    'Translate to Ukrainian',
+    'Add email contact pavol@hejny.org',
+    'Add phone contact +420 123 456 789',
+    'Add a link to website www.pavolhejny.com',
+    'Change opening hours on friday to 10:00-12:00',
+    `We are temporarily closed due to vacation till tomorrow`,
+    `Make better claim`,
+    `Make better title`,
+    `Shorten text about the company`,
+    `Add new product - 3D printer`,
+    `Delete the product - 3D printer`,
+    'Change phone number to +007 123 456 789',
+    'Make the text more friendly',
+    'Make the text more formal',
+    'Make the text more funny',
+    'Make the text more serious',
+    'Make the text more professional',
+    'Make the text more personal',
+    'Make the text more technical',
+    'Make the text more simple',
+    'Add a new paragraph - "We are the best"',
+    'Add a new paragraph - "We are the cheapest"',
+    'Add a new paragraph - "We are the fastest"',
+    'Add a new paragraph - "We are the most reliable"',
+    'Add bullet points why we are the best',
+    'Add pricing table',
+];
+
 export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
