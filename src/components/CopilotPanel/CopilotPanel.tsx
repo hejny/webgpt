@@ -241,7 +241,6 @@ export function CopilotPanel() {
 }
 
 /**
- * TODO: !!! CopilotPanel: Show working indicator better
  * TODO: !!! CopilotPanel: Fully line design
  * TODO: !!! CopilotPanel: Show errors
  * TODO: !!! CopilotPanel: Log errors (and maybe also prompts)
