@@ -1,5 +1,4 @@
 import spaceTrim from 'spacetrim';
-import { forTime } from 'waitasecond';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
@@ -51,10 +50,6 @@ async function createNewWallpaperExecutor(
         throw new Error(`File is not an image`);
     }
     */
-
-    // !!!!
-    console.log({ request, wallpaper });
-    await forTime(1000);
 
     const originalSize = await measureImageBlob(wallpaper);
     let naturalSize = originalSize.clone();
