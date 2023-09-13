@@ -156,7 +156,9 @@ async function createNewWallpaper(
     //-------[ / Color analysis ]---
     //===========================================================================
     //-------[ Upload image: ]---
+    // TODO: !!! Make util> const { wallpaperUrl } = await decorateAsTask(uploadWallpaperImage,onProgress,'Uploading image')(wallpaperForUpload);
     await onProgress({
+        // TODO: !!! This should be under decorateAsTask
         name: 'upload-wallpaper-image',
         title: 'Uploading image',
         isDone: false,
