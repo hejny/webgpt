@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { promptDialogue } from '../../../CopilotPanel/promptDialogue';
+import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../TaskProgress';
 
 export async function mockedMultitaskWithPrompts(

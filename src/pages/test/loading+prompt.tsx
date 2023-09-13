@@ -8,7 +8,6 @@ import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress
 
 export default function TestTasksProgressWithChatPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
-    // TODO: !!! useOnce
     useEffect(
         () => {
             console.log(`!!! isRunningInBrowser()`, isRunningInBrowser());

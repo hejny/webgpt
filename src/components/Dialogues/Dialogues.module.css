@@ -1,0 +1,38 @@
+.Dialogues {
+    /*/
+    outline: 1px dotted rgb(38, 194, 255);
+    /**/
+
+    z-index: 200000 /* <- [🔝] Global z-index for wallpaper page */;
+    background-color: hsla(0, 0%, 0%, 0.36);
+    backdrop-filter: blur(10px);
+
+    /* TODO: DRY with modal */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Dialogues dialog {
+    /*/
+    outline: 1px dotted rgb(81, 255, 38);
+    /**/
+
+    z-index: 200010 /* <- [🔝] Global z-index for wallpaper page */;
+    background-color: transparent;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px 0 #fff;
+    overflow: hidden;
+}

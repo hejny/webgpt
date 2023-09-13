@@ -59,7 +59,7 @@ export function ExportModal() {
     const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
 
     return (
-        <Modal title={'Get the web'}>
+        <Modal title={'Get the web'} isCloseable>
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {
