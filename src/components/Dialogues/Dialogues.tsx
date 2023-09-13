@@ -18,7 +18,6 @@ let isDialoguesRendered = false;
  * Note: There can be only one instance of this component in the app
  */
 export function Dialogues() {
-    console.log('!!! Dialogues render');
 
     useEffect(
         () => {
@@ -43,7 +42,6 @@ export function Dialogues() {
             return;
         }
 
-        console.log('!!! Dialogues useEffect');
         const interval = setInterval(() => {
             const promptInQueue = promptDialogueQueue.find((promptInQueue) => promptInQueue.answer === undefined);
 
@@ -99,7 +97,7 @@ export function Dialogues() {
 }
 
 /**
- * TODO: !!! Is overy answer recorded and in order?
+ * TODO: !! Is overy answer recorded and in order?
  * TODO: Spelling dialog vs dialogue ACRY
  * TODO: [🔏] DRY Locking mechanism | useLock hook
  */

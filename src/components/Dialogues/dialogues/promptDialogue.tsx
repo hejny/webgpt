@@ -4,8 +4,6 @@ import { message } from '../../../utils/typeAliases';
 import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../workers/_/PostMessages';
 import { promptDialogueQueue } from '../queues/prompts';
 
-// TODO: !!! [🍁] Put unique ID to each prompt
-
 export interface IPromptDialogueOptions {
     /**
      * Prompt message
@@ -55,29 +53,18 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
         answer: undefined,
     };
 
-    // !!! Remove
-    console.log('promptDialogue', {
-        isRunningInWebWorker: isRunningInWebWorker(),
-        prompt,
-        defaultValue,
-        placeholder,
-        options,
-        promptInQueue,
-    });
+
 
     if (isRunningInWebWorker()) {
         // [🌴]
         postMessage({
-            // TODO: !!! Send default value and placeholder
             type: 'PROMPT_DIALOGUE',
             promptOptions: { prompt, defaultValue, placeholder },
         } satisfies IMessagePromptDialogue);
 
         return new Promise((resolve) => {
             const onMessage = (event: MessageEvent<IMessageMainToWorker<unknown>>) => {
-                // !!! Remove
-                console.log('Worker:  ⚙⚙ Received request from main thread (in promptDialogue)', { event });
-
+            
                 const message = event.data;
                 if (message.type !== 'PROMPT_DIALOGUE_ANSWER') {
                     return;
@@ -91,16 +78,15 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
 
     promptDialogueQueue.push(promptInQueue);
 
-    // !!! Comment
-    console.info('❔ promptDialogue: Waiting for answer', { prompt });
+
+    // console.info('❔ promptDialogue: Waiting for answer', { prompt });
 
     while (true) {
         await forTime(50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 
         if (promptInQueue.answer !== undefined) {
             const answer = promptInQueue.answer;
-            // !!! Comment
-            console.info('❔ promptDialogue: Have answer', { prompt, answer });
+            // console.info('❔ promptDialogue: Have answer', { prompt, answer });
             return answer;
         }
     }
@@ -111,5 +97,6 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined
  * TODO: isMultiline
+ * TODO: [🍁] Put unique ID to each prompt
  * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
  */
