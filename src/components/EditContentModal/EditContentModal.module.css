@@ -1,0 +1,57 @@
+.settings {
+    /*/
+    outline: 1px dotted rgb(38, 255, 38);
+    /**/
+
+    max-width: 100vw;
+    overflow-x: scroll;
+
+    /*background-color: rgba(41, 81, 168, 0.308);*/
+
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.setting {
+    /*/
+    outline: 1px dotted rgb(38, 255, 38);
+    /**/
+
+    max-width: 100%;
+    overflow-x: scroll;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting button,
+.setting input {
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.setting input {
+    width: 350px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    .settings {
+        flex-direction: column;
+    }
+
+    .setting {
+        width: calc(100% - 20px);
+    }
+}
