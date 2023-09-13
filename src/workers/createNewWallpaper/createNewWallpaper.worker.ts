@@ -4,6 +4,7 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
+import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import { WriteWallpaperContentResponse } from '../../pages/api/custom/write-wallpaper-content';
@@ -166,13 +167,24 @@ async function createNewWallpaperExecutor(
     }
 
     const { wallpaperDescription } = (await response2.json()) as WriteWallpaperPromptResponse;
+    console.info({ wallpaperDescription });
     await onProgress({
         name: 'write-wallpaper-prompt',
         isDone: true,
     });
 
-    console.info({ wallpaperDescription });
     //-------[ /Write description ]---
+    //===========================================================================
+    //-------[ Modify Web Assigment: ]---
+
+    // TODO: Should be here onProgress task?
+    const wallpaperAssigment = await promptDialogue({
+        prompt: `What is your web about?`,
+        defaultValue: wallpaperDescription,
+        placeholder: `Describe your web` /* <- TODO: Better and maybe with rotation */,
+    });
+    console.info({ wallpaperAssigment });
+    //-------[ /Modify Web Assigment ]---
     //===========================================================================
     //-------[ Write content: ]---
     await onProgress({
@@ -184,7 +196,7 @@ async function createNewWallpaperExecutor(
 
     const response3 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-content', {
         method: 'POST',
-        body: JSON.stringify({ wallpaperDescription }),
+        body: JSON.stringify({ wallpaperAssigment }),
         headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json',
