@@ -79,5 +79,5 @@ export class ChatThread {
 }
 
 /**
- * TODO: !! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and ChatThread
+ * TODO: !!! [🧠] Log author, input/output, duration, model, cost, finish_reason,... in both completeWithGpt and ChatThread
  */
