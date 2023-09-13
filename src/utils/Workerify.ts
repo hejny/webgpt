@@ -2,25 +2,29 @@ import { Promisable } from 'type-fest';
 import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from './isRunningInWhatever';
 
-// TODO: !!! Constraint TRequest and TResult to Transferable
-type IWorkerifyableFunction<TRequest, TResult> = (
+type TransferableObject = any /* <-[0] */;
+
+type IWorkerifyableFunction<TRequest extends TransferableObject, TResult extends TransferableObject> = (
     request: TRequest,
     onProgress: (taskProgress: TaskProgress) => Promisable<void>,
 ) => Promise<TResult>;
 
-export interface IMessageRequest<TRequest> {
+export interface IMessageRequest<TRequest extends TransferableObject> {
     type: 'REQUEST';
     request: TRequest;
 }
 
-export type IMessageResponse<TResult> = IMessageProgress | IMessageResult<TResult> | IMessageError;
+export type IMessageResponse<TResult extends TransferableObject> =
+    | IMessageProgress
+    | IMessageResult<TResult>
+    | IMessageError;
 
 export interface IMessageProgress {
     type: 'PROGRESS';
     taskProgress: TaskProgress;
 }
 
-export interface IMessageResult<TResult> {
+export interface IMessageResult<TResult extends TransferableObject> {
     type: 'RESULT';
     result: TResult;
 }
@@ -30,9 +34,11 @@ export interface IMessageError {
     message: string;
 }
 
-// TODO: !!! Constraint TRequest and TResult to Transferable
-
-export class Workerify<TRequest, TResult, TFunction = IWorkerifyableFunction<TRequest, TResult>> {
+export class Workerify<
+    TRequest extends TransferableObject,
+    TResult extends TransferableObject,
+    TFunction = IWorkerifyableFunction<TRequest, TResult>,
+> {
     /**
      * Runs a worker for given function
      *
@@ -53,12 +59,12 @@ export class Workerify<TRequest, TResult, TFunction = IWorkerifyableFunction<TRe
             console.log('⚙ Received request from main thread', { request, event, executor });
 
             try {
-                const result = (await (executor as any)(/* <- [0] */ request, (taskProgress: TaskProgress) => {
+                const result = (await (executor as any)(/* <-[0] */ request, (taskProgress: TaskProgress) => {
                     postMessage({
                         type: 'PROGRESS',
                         taskProgress,
                     } satisfies IMessageProgress);
-                })) as TResult; /* <- [0] */
+                })) as TResult; /* <-[0] */
 
                 postMessage({
                     type: 'RESULT',
@@ -133,7 +139,7 @@ export class Workerify<TRequest, TResult, TFunction = IWorkerifyableFunction<TRe
             });
         };
 
-        return connector as TFunction /* <- [0] */;
+        return connector as TFunction /* <-[0] */;
     }
 }
 
@@ -152,5 +158,5 @@ createNewWallpaperWorkeryfy.runWorker
  * TODO: Maybe worker as property on instance not shaddow variable in method makeConnector
  * TODO: Maybe add unique id for each request
  * TODO: Maybe add specific string for each function into messages IMessageRequest, IMessageProgress, IMessageResult, IMessageError
- * TODO: [0] Remove "as ...", the code should be type safe by itself without any ugly casts
+ * TODO: [0] Remove "as ..." and "any" the code should be type safe by itself without any ugly casts
  */
