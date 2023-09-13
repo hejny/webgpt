@@ -56,7 +56,7 @@ export class Workerify<
                 throw new Error(`Unexpected message type: ${type}`);
             }
 
-            console.log('⚙ Received request from main thread', { request, event, executor });
+            // console.log('⚙ Received request from main thread', { request, event, executor });
 
             try {
                 const result = (await (executor as any)(/* <-[0] */ request, (taskProgress: TaskProgress) => {
@@ -130,7 +130,7 @@ export class Workerify<
                     }
                 });
 
-                console.info('⚙ Sending request to worker', { request, worker });
+                // console.info('⚙ Sending request to worker', { request, worker });
 
                 worker!.postMessage({
                     type: 'REQUEST',
