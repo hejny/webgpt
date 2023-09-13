@@ -12,6 +12,9 @@ interface UploadZoneProps {
     onFilesOver?: (isFileOver: boolean) => void;
     onFiles: (droppedFiles: File[]) => void;
 
+    /**
+     * Content of the UploadZone
+     */
     children: ReactNode;
 
     /**

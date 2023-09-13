@@ -24,7 +24,7 @@ export function ControlPanelLikeButtons() {
                     <WallpaperLink
                         className={classNames(styles.button, styles.callToAction)}
                         modal="export"
-                        mode="EDIT"
+                        role="OWNER"
                         /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                     >
                         Get the web

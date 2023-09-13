@@ -3,11 +3,15 @@
  *
  * Note: This function is in ref in React elements.
  */
-export function focusRef(element: HTMLElement | null): void {
+export function focusRef(element: HTMLElement | null) {
     if (!element) {
         return;
     }
 
-    console.info(`👁 Focusing`, element);
-    element.focus();
+    return;
+    // element.focus();
 }
+
+/**
+ * TODO: [🧠] !! This function is disabled now - it should work only on desktop and maybe be renamed to focusOnDesktopRef
+ */

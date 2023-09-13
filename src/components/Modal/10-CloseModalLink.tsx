@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
-type CloseModalLinkProps = Omit<ComponentProps<'a'>, 'ref'>;
+type CloseModalLinkProps = Omit<ComponentProps<'a'>, 'ref' | 'role' /* <- [🍛] */>;
 
 /**
  * Renders a link that closes modal

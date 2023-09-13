@@ -14,6 +14,7 @@ export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
     const { sceneRef } = useGraph(
         ({ scene, camera, wireframeMaterial }) => {
+            // TODO: [🍩] DRY
             let ribbon = MeshBuilder.CreateTorus(
                 'ribbon',
                 {
@@ -60,7 +61,6 @@ export function TasksInProgress(props: TaskInProgressProps) {
 }
 
 /**
- * TODO: Play with shape and camera angle
  * TODO: Size of babylonjs in bundle - maybe prerecord as video
  * TODO: Maybe work with xyzt
  * TODO: !! Design in color window
