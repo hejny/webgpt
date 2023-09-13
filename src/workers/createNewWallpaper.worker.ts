@@ -1,3 +1,4 @@
+import heic2any from 'heic2any';
 import spaceTrim from 'spacetrim';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
@@ -18,6 +19,8 @@ import { measureImageBlob } from '../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../utils/image/resizeImageBlob';
 import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
 import { string_wallpaper_id, uuid } from '../utils/typeAliases';
+
+heic2any;
 
 export interface IMessage_CreateNewWallpaper_Request {
     type: 'CREATE_NEW_WALLPAPER_REQUEST';
@@ -75,6 +78,21 @@ async function createNewWallpaper(
 ) {
     const { author, wallpaperImage: wallpaper } = options;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
+
+    //===========================================================================
+    //-------[ Convert + resize: ]---
+    const jpegFile = await heic2any({
+        // @see https://github.com/alexcorvi/heic2any/blob/master/docs/options.md
+        blob: heicFile,
+        toType: 'image/jpeg' /* <- TODO: Let user pick compression and type of conversion */,
+        quality: 0.85,
+    });
+    const wallpaperResizedCanvas = await createOffscreenCanvas(
+        wallpaperOriginalBlob,
+        IMAGE_NATURAL_SIZE.scale(0.5) /* <- TODO: [🧔] This should be in config */,
+    );
+    const wallpaperResizedBlob = await wallpaperResizedCanvas.convertToBlob();
+    //-------[ /Convert + resize ]---
 
     //===========================================================================
     //-------[ Image analysis and check: ]---

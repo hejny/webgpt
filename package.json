@@ -44,6 +44,7 @@
         "everstorage": "1.13.0",
         "file-saver": "2.0.5",
         "formidable": "3.5.0",
+        "heic2any": "^0.0.4",
         "html-react-parser": "3.0.12",
         "isomorphic-fetch": "3.0.0",
         "jszip": "3.10.1",
