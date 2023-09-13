@@ -28,8 +28,5 @@
 
     height: 40px;
     width: 100%;
-
-    /*
-    TODO: !!! Better design
-    */
+    cursor: pointer;
 }

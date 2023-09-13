@@ -38,12 +38,15 @@ export function Dialogues() {
             }
 
             setCurrentPromptInQueue(promptInQueue);
+            setAnswer(promptInQueue.answer!);
         }, 50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 
         return () => {
             clearInterval(interval);
         };
     });
+
+    const [answer, setAnswer] = useState<null | string>(null);
 
     if (!currentPromptInQueue) {
         return null;
@@ -53,17 +56,20 @@ export function Dialogues() {
         <Modal title={currentPromptInQueue.prompt}>
             <textarea
                 autoFocus
-                defaultValue={currentPromptInQueue.defaultValue}
+                defaultValue={answer || ''}
                 placeholder={currentPromptInQueue.placeholder}
                 className={styles.answer}
+                onChange={(event) => {
+                    setAnswer(event.currentTarget.value);
+                }}
                 onKeyDown={(event) => {
                     // TODO: DRY [1]
                     if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
                         return;
                     }
-                    const answer = event.currentTarget.value;
 
-                    currentPromptInQueue.answer = answer || null;
+                    const answer = event.currentTarget.value;
+                    currentPromptInQueue.answer = answer;
                     setCurrentPromptInQueue(null);
                 }}
             />
@@ -71,7 +77,7 @@ export function Dialogues() {
                 className={styles.submit}
                 onClick={() => {
                     // TODO: DRY [1]
-                    currentPromptInQueue.answer = '!!!';
+                    currentPromptInQueue.answer = answer;
                     setCurrentPromptInQueue(null);
                 }}
             >
@@ -82,6 +88,7 @@ export function Dialogues() {
 }
 
 /**
+ * TODO: !!! Is overy answer recorded and in order?
  * TODO: Spelling dialog vs dialogue ACRY
  * TODO: [🔏] DRY Locking mechanism
  */

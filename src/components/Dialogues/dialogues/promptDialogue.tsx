@@ -13,7 +13,7 @@ interface IPromptDialogueOptions {
     /**
      * Default value for the input/textarea
      */
-    defaultValue?: string;
+    defaultValue: string | null;
 
     /**
      * Placeholder for the input/textarea
