@@ -1,11 +1,14 @@
+import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import {
     IMessageError,
+    IMessageMainToWorker,
     IMessageProgress,
+    IMessagePromptDialogueAnswer,
     IMessageRequest,
-    IMessageResponse,
     IMessageResult,
+    IMessageWorkerToMain,
     IWorkerifyableFunction,
     TransferableObject,
 } from './PostMessages';
@@ -25,37 +28,42 @@ export class Workerify<
             throw new Error('You can access worker executor only in worker');
         }
 
-        addEventListener('message', async (event: MessageEvent<IMessageRequest<TRequest>>) => {
-            const { type, request } = event.data;
+        addEventListener('message', async (event: MessageEvent<IMessageMainToWorker<TRequest>>) => {
+            const { type } = event.data;
 
-            if (type !== 'REQUEST') {
-                throw new Error(`Unexpected message type: ${type}`);
-            }
+            console.info('Worker: ⚙ Message from main thread', { type, event, executor });
 
-            console.log('⚙ Received request from main thread', { request, event, executor });
+            if (type === 'REQUEST') {
+                const { request } = event.data;
 
-            try {
-                const result = (await (executor as any)(/* <-[0] */ request, (taskProgress: TaskProgress) => {
+                try {
+                    const result = (await (executor as any)(/* <-[0] */ request, (taskProgress: TaskProgress) => {
+                        postMessage({
+                            type: 'PROGRESS',
+                            taskProgress,
+                        } satisfies IMessageProgress);
+                    })) as TResult; /* <-[0] */
+
                     postMessage({
-                        type: 'PROGRESS',
-                        taskProgress,
-                    } satisfies IMessageProgress);
-                })) as TResult; /* <-[0] */
+                        type: 'RESULT',
+                        result,
+                    } satisfies IMessageResult<TResult>);
+                } catch (error) {
+                    if (!(error instanceof Error)) {
+                        throw error;
+                    }
 
-                postMessage({
-                    type: 'RESULT',
-                    result,
-                } satisfies IMessageResult<TResult>);
-            } catch (error) {
-                if (!(error instanceof Error)) {
-                    throw error;
+                    console.error(error);
+                    postMessage({
+                        type: 'ERROR',
+                        message: error.message,
+                    } satisfies IMessageError);
                 }
-
-                console.error(error);
-                postMessage({
-                    type: 'ERROR',
-                    message: error.message,
-                } satisfies IMessageError);
+            } else if (type === 'PROMPT_DIALOGUE_ANSWER') {
+                // Note: Do nothing here, because [👂][0] promptDialogue is also listening to this message
+                return;
+            } else {
+                throw new Error(`Unexpected message type from main thread: ${type}`);
             }
         });
     }
@@ -83,10 +91,13 @@ export class Workerify<
             }
 
             return new Promise<TResult>((resolve, reject) => {
-                worker!.addEventListener('message', (event: MessageEvent<IMessageResponse<TResult>>) => {
+                worker!.addEventListener('message', async (event: MessageEvent<IMessageWorkerToMain<TResult>>) => {
                     const { type } = event.data;
 
+                    console.info('⚙ Message from worker', { type, event });
+
                     onProgress({
+                        // Note: If recieved any message from worker, it means that worker is running
                         name: 'start-worker',
                         isDone: true,
                     });
@@ -101,8 +112,15 @@ export class Workerify<
                     } else if (type === 'ERROR') {
                         const { message } = event.data;
                         reject(new Error(message));
+                    } else if (type === 'PROMPT_DIALOGUE') {
+                        const { promptOptions } = event.data;
+                        const promptAnswer = await promptDialogue(promptOptions);
+                        worker!.postMessage({
+                            type: 'PROMPT_DIALOGUE_ANSWER',
+                            promptAnswer,
+                        } satisfies IMessagePromptDialogueAnswer);
                     } else {
-                        reject(new Error(`Unexpected message type: ${type}`));
+                        reject(new Error(`Unexpected message type from worker: ${type}`));
                     }
                 });
 

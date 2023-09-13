@@ -16,6 +16,9 @@ export default async function writeWallpaperContentHandler(
         return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
+    // !!! Remove
+    console.log({ body: request.body });
+
     const wallpaperAssigment = request.body.wallpaperAssigment as Exclude<description, JSX.Element>;
 
     if (!wallpaperAssigment) {

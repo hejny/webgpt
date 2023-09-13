@@ -1,8 +1,12 @@
 import { forTime } from 'waitasecond';
+import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { message } from '../../../utils/typeAliases';
+import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../workers/_/PostMessages';
 import { promptDialogueQueue } from '../queues/prompts';
 
-interface IPromptDialogueOptions {
+// TODO: !!! [🍁] Put unique ID to each prompt
+
+export interface IPromptDialogueOptions {
     /**
      * Prompt message
      *
@@ -49,6 +53,30 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
         placeholder,
         answer: undefined,
     };
+
+    if (isRunningInWebWorker()) {
+        postMessage({
+            // TODO: !!! Send default value and placeholder
+            type: 'PROMPT_DIALOGUE',
+            promptOptions: { prompt, defaultValue, placeholder },
+        } satisfies IMessagePromptDialogue);
+
+        return new Promise((resolve) => {
+            const onMessage = (event: MessageEvent<IMessageMainToWorker<unknown>>) => {
+                // !!! Remove
+                console.log('Worker:  ⚙⚙ Received request from main thread (in promptDialogue)', { event });
+
+                const message = event.data;
+                if (message.type !== 'PROMPT_DIALOGUE_ANSWER') {
+                    return;
+                }
+                resolve(message.promptAnswer);
+                removeEventListener('message', onMessage);
+            };
+            addEventListener('message' /* <-[👂][0] */, onMessage);
+        });
+    }
+
     promptDialogueQueue.push(promptInQueue);
 
     // !!! Comment
@@ -67,7 +95,7 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
 }
 
 /**
- * TODO: !!! This must work in worker
+ * TODO: !!! JSX must work in worker OR Should not be possible to use JSX from worker OR at all
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined
  * TODO: isMultiline
