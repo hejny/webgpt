@@ -24,15 +24,20 @@ interface TaskInProgressProps {
  */
 export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
-    useEffect(() => {
-        if (isTasksInProgressRendered) {
-            throw new Error('There can be only one instance of TasksInProgress in the app');
-        }
-        isTasksInProgressRendered = true;
-        return () => {
-            isTasksInProgressRendered = false;
-        };
-    });
+    useEffect(
+        () => {
+            if (isTasksInProgressRendered) {
+                throw new Error('There can be only one instance of TasksInProgress in the app');
+            }
+            isTasksInProgressRendered = true;
+            return () => {
+                isTasksInProgressRendered = false;
+            };
+        },
+        [
+            // Note: Check only once on mount
+        ],
+    );
     const { sceneRef } = useGraph(
         ({ scene, camera, wireframeMaterial }) => {
             // TODO: [🍩] DRY
@@ -89,5 +94,5 @@ export function TasksInProgress(props: TaskInProgressProps) {
  * TODO: Maybe work with xyzt
  * TODO: !! Design in color window
  * TODO: !! Rename to loading OR split between loading and work in progress
- * TODO: [🔏] DRY Locking mechanism
+ * TODO: [🔏] DRY Locking mechanism | useLock hook
  */

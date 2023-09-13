@@ -47,6 +47,7 @@ export interface IPromptInQueue extends IPromptDialogueOptions {
  */
 export async function promptDialogue(options: IPromptDialogueOptions): Promise<string | null> {
     const { prompt, defaultValue, placeholder } = options;
+
     const promptInQueue: IPromptInQueue = {
         prompt,
         defaultValue,
@@ -54,7 +55,18 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
         answer: undefined,
     };
 
+    // !!! Remove
+    console.log('promptDialogue', {
+        isRunningInWebWorker: isRunningInWebWorker(),
+        prompt,
+        defaultValue,
+        placeholder,
+        options,
+        promptInQueue,
+    });
+
     if (isRunningInWebWorker()) {
+        // [🌴]
         postMessage({
             // TODO: !!! Send default value and placeholder
             type: 'PROMPT_DIALOGUE',
