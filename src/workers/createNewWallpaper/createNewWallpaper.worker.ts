@@ -3,77 +3,36 @@ import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
-} from '../../config';
-import { TaskProgress } from '../components/TaskInProgress/task/TaskProgress';
-import { UploadWallpaperResponse } from '../pages/api/custom/upload-wallpaper-image';
-import { WriteWallpaperContentResponse } from '../pages/api/custom/write-wallpaper-content';
-import { WriteWallpaperPromptResponse } from '../pages/api/custom/write-wallpaper-prompt';
-import { addWallpaperComputables } from '../utils/addWallpaperComputables';
-import { aspectRatioRangeExplain } from '../utils/aspect-ratio/aspectRatioRangeExplain';
-import { downscaleWithAspectRatio } from '../utils/aspect-ratio/downscaleWithAspectRatio';
-import { isInAspectRatioRange } from '../utils/aspect-ratio/isInAspectRatioRange';
-import { serializeWallpaper } from '../utils/hydrateWallpaper';
-import { createImageInWorker } from '../utils/image/createImageInWorker';
-import { measureImageBlob } from '../utils/image/measureImageBlob';
-import { resizeImageBlob } from '../utils/image/resizeImageBlob';
-import { getSupabaseForWorker } from '../utils/supabase/getSupabaseForWorker';
-import { string_wallpaper_id, uuid } from '../utils/typeAliases';
+} from '../../../config';
+import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
+import { WriteWallpaperContentResponse } from '../../pages/api/custom/write-wallpaper-content';
+import { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
+import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
+import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
+import { downscaleWithAspectRatio } from '../../utils/aspect-ratio/downscaleWithAspectRatio';
+import { isInAspectRatioRange } from '../../utils/aspect-ratio/isInAspectRatioRange';
+import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { createImageInWorker } from '../../utils/image/createImageInWorker';
+import { measureImageBlob } from '../../utils/image/measureImageBlob';
+import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
+import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
+import {
+    createNewWallpaperWorkerify,
+    ICreateNewWallpaperRequest,
+    ICreateNewWallpaperResult,
+} from './createNewWallpaper.common';
 
-export interface IMessage_CreateNewWallpaper_Request {
-    type: 'CREATE_NEW_WALLPAPER_REQUEST';
-    author: uuid;
-    wallpaperImage: Blob;
-}
+createNewWallpaperWorkerify.runWorker(createNewWallpaperExecutor);
 
-export interface IMessage_CreateNewWallpaper_Progress {
-    type: 'CREATE_NEW_WALLPAPER_PROGRESS';
-    taskProgress: TaskProgress;
-}
-
-export interface IMessage_CreateNewWallpaper_Result {
-    type: 'CREATE_NEW_WALLPAPER_RESULT';
-    wallpaperId: string_wallpaper_id;
-}
-
-export interface IMessage_CreateNewWallpaper_Error {
-    type: 'CREATE_NEW_WALLPAPER_ERROR';
-    message: string;
-}
-
-addEventListener('message', async (event: MessageEvent<IMessage_CreateNewWallpaper_Request>) => {
-    // COLORSTATS_COMPUTE_METHODS
-    const { author, wallpaperImage } = event.data;
-
-    try {
-        const newWallpaper = await createNewWallpaper({ author, wallpaperImage }, (taskProgress: TaskProgress) => {
-            postMessage({
-                type: 'CREATE_NEW_WALLPAPER_PROGRESS',
-                taskProgress,
-            } satisfies IMessage_CreateNewWallpaper_Progress);
-        });
-
-        postMessage({
-            type: 'CREATE_NEW_WALLPAPER_RESULT',
-            wallpaperId: newWallpaper.id,
-        } satisfies IMessage_CreateNewWallpaper_Result);
-    } catch (error) {
-        if (!(error instanceof Error)) {
-            throw error;
-        }
-
-        console.error(error);
-        postMessage({
-            type: 'CREATE_NEW_WALLPAPER_ERROR',
-            message: error.message,
-        } satisfies IMessage_CreateNewWallpaper_Error);
-    }
-});
-
-async function createNewWallpaper(
-    options: Omit<IMessage_CreateNewWallpaper_Request, 'type'>,
+/**
+ * @private within this folder
+ */
+async function createNewWallpaperExecutor(
+    request: ICreateNewWallpaperRequest,
     onProgress: (taskProgress: TaskProgress) => void,
-) {
-    const { author, wallpaperImage: wallpaper } = options;
+): Promise<ICreateNewWallpaperResult> {
+    const { author, wallpaperImage: wallpaper } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     //===========================================================================
@@ -272,7 +231,8 @@ async function createNewWallpaper(
     console.info({ newWallpaper, insertResult });
     //-------[ /Save ]---
     //===========================================================================
-    return newWallpaper;
+
+    return { wallpaperId: newWallpaper.id };
 }
 
 /**

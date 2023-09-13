@@ -1,0 +1,17 @@
+import type { RefObject,RefCallback } from 'react';
+
+export function joinRefs<T>(...refs: Array<RefCallback<T>>): RefCallback<T> {
+    return ((value: T|null) => {
+        for (const ref of refs) {
+            if (typeof ref === 'function') {
+                ref(value);
+            } else if (ref) {
+                (ref as any).current = value;
+            }
+        }
+    }) as RefObject<T>;
+}
+
+/**
+ * TODO: [🍘] Implement
+ */

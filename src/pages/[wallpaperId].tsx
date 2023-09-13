@@ -6,8 +6,7 @@ import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
 import { WallpaperEditingLink } from '../components/WallpaperEditing/WallpaperEditingLink';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
-import { useMode } from '../utils/hooks/useMode';
-import { useSsrDetection } from '../utils/hooks/useSsrDetection';
+import { useRole } from '../utils/hooks/useRole';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
@@ -21,8 +20,7 @@ interface WallpaperPageProps {
 
 export default function WallpaperPage(props: WallpaperPageProps) {
     let { currentWallpaper } = props;
-    const { isEditable } = useMode();
-    const isServerRender = useSsrDetection();
+    const role = useRole();
 
     if (currentWallpaper === undefined) {
         return <div>Loading...</div> /* <- TODO: Better loading + [👠] Some standard standalone page*/;
@@ -55,8 +53,9 @@ export default function WallpaperPage(props: WallpaperPageProps) {
             {/* <Debug /> */}
 
             {<WallpaperLayout />}
-            {isEditable && <WallpaperEditing />}
-            {!isEditable && !isServerRender && <WallpaperEditingLink />}
+
+            {role === 'OWNER' && <WallpaperEditing />}
+            {role === 'OWNER_AS_VISITOR' && <WallpaperEditingLink />}
         </WallpapersContext.Provider>
     );
 }

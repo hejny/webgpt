@@ -30,13 +30,18 @@ interface HintProps {
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
+
+    /**
+     * If true, the hint will be disabled
+     */
+    isDisabled?: boolean;
 }
 
 /**
  * Renders any content wrapped in a hint
  */
 export function Hint(props: HintProps) {
-    const { id, title, children, reapearCount, className } = props;
+    const { id, title, children, reapearCount, className, isDisabled } = props;
 
     const [isClicked, setClicked] = useState(false);
     const [clickedCount, setClickedCount, isLoadedClickedCount] = useNumericStateInLocalstorage(
@@ -51,7 +56,7 @@ export function Hint(props: HintProps) {
             return;
         }
 
-        if (isClicked || !isLoadedClickedCount || clickedCount > reapearCount) {
+        if (isDisabled || isClicked || !isLoadedClickedCount || clickedCount > reapearCount) {
             return;
         }
 

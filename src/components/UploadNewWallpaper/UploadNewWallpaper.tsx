@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { createNewWallpaper } from '../../workers/createNewWallpaper';
+import { provideClientId } from '../../utils/supabase/provideClientId';
+import { createNewWallpaper } from '../../workers/createNewWallpaper/createNewWallpaper';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
@@ -28,11 +29,18 @@ export function UploadNewWallpaper() {
                     setTasksProgress([]);
 
                     try {
-                        const wallpaperId = await createNewWallpaper(file, (newTaskProgress: TaskProgress) => {
-                            console.info('☑', newTaskProgress);
-                            setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
-                        });
-                        router.push(`/${wallpaperId}`);
+                        const { wallpaperId } = await createNewWallpaper(
+                            { author: provideClientId(), wallpaperImage: file },
+                            (newTaskProgress: TaskProgress) => {
+                                console.info('☑', newTaskProgress);
+                                setTasksProgress((tasksProgress) =>
+                                    joinTasksProgress(...tasksProgress, newTaskProgress),
+                                );
+                            },
+                        );
+                        router.push(
+                            `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
+                        );
                         // Note: No need to setWorking(false); because we are redirecting to another page
                     } catch (error) {
                         if (!(error instanceof Error)) {

@@ -12,6 +12,9 @@ interface UploadZoneProps {
     onFilesOver?: (isFileOver: boolean) => void;
     onFiles: (droppedFiles: File[]) => void;
 
+    /**
+     * Content of the UploadZone
+     */
     children: ReactNode;
 
     /**
@@ -99,6 +102,7 @@ export function UploadZone(props: UploadZoneProps) {
                     if (element) {
                         uploadClick = () => {
                             onFileOverWrapper(true);
+                            (element as HTMLInputElement).value = '';
                             (element as HTMLInputElement).click();
                         };
                     }
