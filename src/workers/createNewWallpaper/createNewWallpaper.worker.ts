@@ -99,6 +99,27 @@ async function createNewWallpaperExecutor(
     });
     //-------[ / Image resize ]---
     //===========================================================================
+    //-------[ Color analysis: ]---
+
+    await onProgress({
+        title: 'Prepare color analysis',
+        name: 'image-prepare-color-analysis',
+        isDone: false,
+    });
+    const colorStatsPromise = /* not await */ createImageInWorker(wallpaperForColorAnalysis).then(
+        (imageForColorAnalysis) => {
+            onProgress({
+                name: 'image-prepare-color-analysis',
+                isDone: true,
+            });
+            return computeColorstats(
+                imageForColorAnalysis,
+                onProgress /* <- Note: computeColorstats will show its own tasks */,
+            );
+        },
+    );
+    //-------[ / Color analysis ]---
+    //===========================================================================
     //-------[ Upload image: ]---
     await onProgress({
         name: 'upload-wallpaper-image',
@@ -202,22 +223,6 @@ async function createNewWallpaperExecutor(
     console.info({ wallpaperContent });
     //-------[ /Write content ]---
     //===========================================================================
-    //-------[ Color analysis: ]---
-
-    await onProgress({
-        title: 'Prepare color analysis',
-        name: 'image-prepare-color-analysis',
-        isDone: false,
-    });
-    const imageForColorAnalysis = await createImageInWorker(wallpaperForColorAnalysis);
-    await onProgress({
-        name: 'image-prepare-color-analysis',
-        isDone: true,
-    });
-    const colorStats = await computeColorstats(imageForColorAnalysis, onProgress);
-    console.info({ colorStats });
-    //-------[ / Color analysis ]---
-    //===========================================================================
     //-------[ Save: ]---
     await onProgress({
         name: 'finishing',
@@ -231,7 +236,7 @@ async function createNewWallpaperExecutor(
         isPublic: false,
         src: wallpaperUrl,
         prompt: wallpaperDescription,
-        colorStats,
+        colorStats: await colorStatsPromise,
         naturalSize: originalSize,
         content: wallpaperContent,
         saveStage: 'SAVING',
@@ -248,7 +253,6 @@ async function createNewWallpaperExecutor(
 }
 
 /**
- * TODO: Paralelize color analysis
  * TODO: [🥩] Make version just without prompting
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
