@@ -205,7 +205,7 @@ export function CopilotPanel() {
                         </li>
                         <li>
                             <WallpaperLink
-                                // TODO: With QR and explanation
+                                // TODO: !!! With QR and explanation
                                 role="VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >
