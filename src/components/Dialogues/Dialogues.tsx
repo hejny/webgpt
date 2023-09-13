@@ -1,34 +1,8 @@
 import { useEffect, useState } from 'react';
-import { message } from '../../utils/typeAliases';
 import { Modal } from '../Modal/00-Modal';
-
-/**
- * Represents a prompt message that is waiting for an answer or is already answered
- *
- * @private this should be used only withing this folder and subfolders
- */
-export interface IPromptInQueue {
-    /**
-     * Prompt message
-     */
-    prompt: message;
-
-    /**
-     * Answer to the prompt
-     *
-     * - `undefined` means that the prompt is not answered yet and is waiting for an answer
-     * - `null` means that the prompt is answered with `null`
-     * - `string` means the answer to the prompt
-     */
-    answer: undefined | string | null;
-}
-
-/**
- * Queue of prompt dialogues that are waiting for an answer
- *
- * @private this should be used only withing this folder and subfolders
- */
-export const promptDialogueQueue: Array<IPromptInQueue> = [];
+import styles from './Dialogues.module.css';
+import { IPromptInQueue } from './dialogues/promptDialogue';
+import { promptDialogueQueue } from './queues/prompts';
 
 /**
  * Is <Dialogues/> component currently rendered
@@ -77,27 +51,37 @@ export function Dialogues() {
 
     return (
         <Modal title={currentPromptInQueue.prompt}>
-            <dialog>
-                <input
-                    autoFocus
-                    type="text"
-                    onKeyDown={(event) => {
-                        if (event.key !== 'Enter') {
-                            return;
-                        }
-                        const answer = event.currentTarget.value;
+            <textarea
+                autoFocus
+                defaultValue={currentPromptInQueue.defaultValue}
+                placeholder={currentPromptInQueue.placeholder}
+                className={styles.answer}
+                onKeyDown={(event) => {
+                    // TODO: DRY [1]
+                    if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
+                        return;
+                    }
+                    const answer = event.currentTarget.value;
 
-                        currentPromptInQueue.answer = answer || null;
-                        setCurrentPromptInQueue(null);
-                    }}
-                />
-            </dialog>
+                    currentPromptInQueue.answer = answer || null;
+                    setCurrentPromptInQueue(null);
+                }}
+            />
+            <button
+                className={styles.submit}
+                onClick={() => {
+                    // TODO: DRY [1]
+                    currentPromptInQueue.answer = '!!!';
+                    setCurrentPromptInQueue(null);
+                }}
+            >
+                Submit
+            </button>
         </Modal>
     );
 }
 
 /**
  * TODO: Spelling dialog vs dialogue ACRY
- * TODO: Maybe implement promptDialogueQueue via Promise, React.Context, RxJS or something better than polling from singleton
  * TODO: [🔏] DRY Locking mechanism
  */

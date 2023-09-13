@@ -16,7 +16,7 @@ dialog.Modal {
     /**/
 
     position: fixed;
-    z-index: 40001 /* <- [🔝] Global z-index for wallpaper page */;
+    z-index: 200001 /* <- [🔝] Global z-index for wallpaper page */;
     top: 50px;
     left: 50px;
     bottom: 50px;

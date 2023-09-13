@@ -34,11 +34,15 @@ export async function mockedMultitaskWithPrompts(
             isDone: false, // <- TODO: !!! Pause here in UI
         });
 
-        const response = await promptDialogue(
-            <>
-                Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
-            </>,
-        );
+        const response = await promptDialogue({
+            prompt: (
+                <>
+                    Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
+                </>
+            ),
+            defaultValue: faker.hacker.phrase(),
+            placeholder: faker.hacker.phrase(),
+        });
 
         await onProgress({
             name: `mocked-task-${i}`,
