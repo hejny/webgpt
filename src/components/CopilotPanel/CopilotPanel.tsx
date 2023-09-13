@@ -205,8 +205,7 @@ export function CopilotPanel() {
                         </li>
                         <li>
                             <WallpaperLink
-                                // TODO: !!! With QR and explanation
-
+                                // TODO: With QR and explanation
                                 role="VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >
@@ -241,9 +240,9 @@ export function CopilotPanel() {
 }
 
 /**
- * TODO: !!! CopilotPanel: Fully line design
- * TODO: !!! CopilotPanel: Show errors
- * TODO: !!! CopilotPanel: Log errors (and maybe also prompts)
+ * TODO: !! CopilotPanel: Fully line design
+ * TODO: !! CopilotPanel: Show errors
+ * TODO: !! CopilotPanel: Log errors (and maybe also prompts)
  * TODO: !! Add more options like Close (OWNER_AS_VISITOR), Share (VISITOR), Edit colors, Get the web, How it works?, Pricing, Gallery, Back
  *       ( ⏣ | Write prompt | Apply | More | Close )
  */
