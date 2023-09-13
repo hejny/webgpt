@@ -137,19 +137,9 @@ export class Workerify<
     }
 }
 
-/*
-
-new Workeryfy<Symbol...>()
-
-
-createNewWallpaperWorkeryfy.runWorker
-.makeConnector
-
-
-*/
 
 /**
- * TODO: Maybe worker as property on instance not shaddow variable in method makeConnector
+ * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
  * TODO: Maybe add unique id for each request
  * TODO: Maybe add specific string for each function into messages IMessageRequest, IMessageProgress, IMessageResult, IMessageError
  * TODO: [0] Remove "as ..." and "any" the code should be type safe by itself without any ugly casts

@@ -99,4 +99,5 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined
  * TODO: isMultiline
+ * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
  */
