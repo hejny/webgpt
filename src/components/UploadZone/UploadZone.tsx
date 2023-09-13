@@ -99,6 +99,7 @@ export function UploadZone(props: UploadZoneProps) {
                     if (element) {
                         uploadClick = () => {
                             onFileOverWrapper(true);
+                            (element as HTMLInputElement).value = '';
                             (element as HTMLInputElement).click();
                         };
                     }
