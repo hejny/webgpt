@@ -248,9 +248,10 @@ async function createNewWallpaperExecutor(
 }
 
 /**
- * TODO: [🥙] Wrap function as worker util
+ * TODO: Paralelize color analysis
+ * TODO: [🥩] Make version just without prompting
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
  * TODO: [🚵‍♂️] !! Do this out of the worker just in simple utility function
- * TODO: Alert and confirm dialogues
+ * TODO: Alert dialogues from worker
  */

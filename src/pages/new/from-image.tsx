@@ -32,4 +32,5 @@ export default function NewWallpaperFromImagePage() {
  * TODO: !!! Split between /new/from-image and /new/just-from-image
  * TODO: Allow to use Camera (maybe in new route /new/from-camera)
  * TODO: [🌾] Unite design of all /new/* pages
+ * TODO: [🥩] Make /new/just-from-image
  */
