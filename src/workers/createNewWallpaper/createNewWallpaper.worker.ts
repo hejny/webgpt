@@ -99,22 +99,6 @@ async function createNewWallpaperExecutor(
     });
     //-------[ / Image resize ]---
     //===========================================================================
-    //-------[ Color analysis: ]---
-
-    await onProgress({
-        title: 'Prepare color analysis',
-        name: 'image-prepare-color-analysis',
-        isDone: false,
-    });
-    const imageForColorAnalysis = await createImageInWorker(wallpaperForColorAnalysis);
-    await onProgress({
-        name: 'image-prepare-color-analysis',
-        isDone: true,
-    });
-    const colorStats = await computeColorstats(imageForColorAnalysis, onProgress);
-    console.info({ colorStats });
-    //-------[ / Color analysis ]---
-    //===========================================================================
     //-------[ Upload image: ]---
     await onProgress({
         name: 'upload-wallpaper-image',
@@ -217,6 +201,22 @@ async function createNewWallpaperExecutor(
 
     console.info({ wallpaperContent });
     //-------[ /Write content ]---
+    //===========================================================================
+    //-------[ Color analysis: ]---
+
+    await onProgress({
+        title: 'Prepare color analysis',
+        name: 'image-prepare-color-analysis',
+        isDone: false,
+    });
+    const imageForColorAnalysis = await createImageInWorker(wallpaperForColorAnalysis);
+    await onProgress({
+        name: 'image-prepare-color-analysis',
+        isDone: true,
+    });
+    const colorStats = await computeColorstats(imageForColorAnalysis, onProgress);
+    console.info({ colorStats });
+    //-------[ / Color analysis ]---
     //===========================================================================
     //-------[ Save: ]---
     await onProgress({
