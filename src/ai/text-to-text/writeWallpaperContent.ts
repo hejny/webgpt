@@ -17,13 +17,13 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
  *
  * Note: This function is aviable only on the server
  *
- * @param wallpaperDescription as a plain description what is on the wallpaper (created for expample from imageToText or midjourney prompt)
+ * @param wallpaperAssigment as a plain description what is on the wallpaper (created for expample from imageToText or midjourney prompt)
  * @returns Content of the wallpaper page
  */
 export async function writeWallpaperContent(
-    wallpaperDescription: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
+    wallpaperAssigment: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
 ): Promise<string_markdown> {
-    const prompt = createTitlePromptTemplate(wallpaperDescription);
+    const prompt = createTitlePromptTemplate(wallpaperAssigment);
     const chatThread = await ChatThread.ask(prompt);
     const { response, model: modelToCreateTitle } = chatThread;
     const { title, topic } = parseTitleAndTopic(removeQuotes(response));

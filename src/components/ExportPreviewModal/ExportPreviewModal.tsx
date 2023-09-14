@@ -183,7 +183,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     console.info('🔽', { exported });
 
     return (
-        <Modal title={'Export preview'}>
+        <Modal title={'Export preview'} isCloseable>
             {/*
             <pre
                 // TODO: Make <DebugOutput/> component which supports multiple inputs like Set, Map, Array, Object, and also primitive values and promises and RxJS

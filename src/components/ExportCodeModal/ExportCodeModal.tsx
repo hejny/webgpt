@@ -31,7 +31,7 @@ export function ExportCodeModal() {
     console.info('🔽', { exported });
 
     return (
-        <Modal title={'Export in code editor'}>
+        <Modal title={'Export in code editor'} isCloseable>
             <Files
                 files={
                     exported
