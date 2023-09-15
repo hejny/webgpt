@@ -31,34 +31,14 @@ export function GraphsAsScenarios() {
                     To upload and generate your website
                 </UploadNewWallpaper>
             </li>
-
             <li>
                 <Link href="/new/from-url">
-                    <GraphButton
-                        createSceneMeshes={({ scene, camera, wireframeMaterial }) => {
-                            // TODO: !!! Better scenario buttons
-                            let ribbon = MeshBuilder.CreateTorusKnot(
-                                'ribbon',
-                                {
-                                    p: 3,
-                                    q: 2,
-                                    radius: 1,
-                                    tube: 0.3,
-                                    radialSegments: 20,
-                                    tubularSegments: 5,
-                                },
-                                scene,
-                            );
-                            ribbon.scaling = Vector3.One().scale(2.2);
-                            ribbon.rotation = new Vector3(Math.PI / 2, Math.PI / 2, Math.PI / 5);
-                            ribbon.material = wireframeMaterial;
-                        }}
-                    >
-                        <h2>Website</h2> your old web to update
-                    </GraphButton>
+                    <CreateZone className={styles.scenario}>
+                        <h2>Website</h2>
+                        To redesign your old site
+                    </CreateZone>
                 </Link>
             </li>
-        </ul>
     );
 }
 
