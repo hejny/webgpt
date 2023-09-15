@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
+import { ICreateSceneMeshes, useGraph } from '../../utils/hooks/useGraph';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './GraphButton.module.css';
-import { ICreateSceneMeshes, useGraph } from './useGraph';
 
 interface GraphButtonProps {
     /**
