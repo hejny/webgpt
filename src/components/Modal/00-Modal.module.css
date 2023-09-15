@@ -1,6 +1,6 @@
 .overlay {
     position: fixed;
-    z-index: 40000 /* <- [🔝] Global z-index for wallpaper page */;
+    z-index: 200000 /* <- [🔝] Global z-index for wallpaper page */;
     top: 0;
     left: 0;
     width: 100%;
@@ -16,7 +16,7 @@ dialog.Modal {
     /**/
 
     position: fixed;
-    z-index: 40001 /* <- [🔝] Global z-index for wallpaper page */;
+    z-index: 200001 /* <- [🔝] Global z-index for wallpaper page */;
     top: 50px;
     left: 50px;
     bottom: 50px;

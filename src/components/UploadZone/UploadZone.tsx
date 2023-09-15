@@ -1,8 +1,7 @@
 import { ReactNode, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
-import { Center } from '../Center/Center';
-import styles from './UploadZone.module.css';
+import { CreateZone } from '../CreateZone/CreateZone';
 
 interface UploadZoneProps {
     /**
@@ -12,6 +11,9 @@ interface UploadZoneProps {
     onFilesOver?: (isFileOver: boolean) => void;
     onFiles: (droppedFiles: File[]) => void;
 
+    /**
+     * Content of the UploadZone
+     */
     children: ReactNode;
 
     /**
@@ -47,7 +49,6 @@ export function UploadZone(props: UploadZoneProps) {
 
     return (
         <div
-            className={classNames(className, styles.UploadZone, isFilesOver ? styles.filesOver : '')}
             onClick={() => {
                 if (isClickable) {
                     uploadClick();
@@ -92,24 +93,27 @@ export function UploadZone(props: UploadZoneProps) {
                 onFiles(files);
             }}
         >
-            <input
-                type="file"
-                multiple={isMultipleAllowed}
-                ref={(element) => {
-                    if (element) {
-                        uploadClick = () => {
-                            onFileOverWrapper(true);
-                            (element as HTMLInputElement).click();
-                        };
-                    }
-                }}
-                onChange={(event) => {
-                    if (!event || !event.target || !event.target.files) return;
-                    onFiles(Array.from(event.target.files));
-                }}
-                {...{ accept }}
-            />
-            <Center className={styles.inner}>{children}</Center>
+            <CreateZone isHighlighted={isFilesOver} className={classNames(className)}>
+                <input
+                    type="file"
+                    multiple={isMultipleAllowed}
+                    ref={(element) => {
+                        if (element) {
+                            uploadClick = () => {
+                                onFileOverWrapper(true);
+                                (element as HTMLInputElement).value = '';
+                                (element as HTMLInputElement).click();
+                            };
+                        }
+                    }}
+                    onChange={(event) => {
+                        if (!event || !event.target || !event.target.files) return;
+                        onFiles(Array.from(event.target.files));
+                    }}
+                    {...{ accept }}
+                />
+                {children}
+            </CreateZone>
         </div>
     );
 }

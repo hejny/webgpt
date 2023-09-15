@@ -15,7 +15,7 @@ interface StaticLayoutProps extends StaticAppHeadProps {
  * The design has several features:
  * - Automatically adds <StaticAppHead/> to the page
  * - Apply semi-global design (e.g. background color, link color, etc.)
- * - Makes sections with <main/> and <article/> tags
+ * - Makes sections with <header/>, <main/> and <article/> tags
  * - TODO: Automatically adds <Footer/> to the page
  *
  */
@@ -28,3 +28,7 @@ export function StaticLayout(props: StaticLayoutProps) {
         </>
     );
 }
+
+/**
+ * TODO: [🌾] This should became AiComponentLayout and 1-2i page should be made as 1-2i static page
+ */

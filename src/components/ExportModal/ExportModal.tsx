@@ -59,7 +59,7 @@ export function ExportModal() {
     const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
 
     return (
-        <Modal title={'Get the web'}>
+        <Modal title={'Get the web'} isCloseable>
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {
@@ -74,7 +74,9 @@ export function ExportModal() {
                                     .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
                                 ownerEmail: email,
                                 plan,
-                                author: provideClientId(),
+                                author: await provideClientId({
+                                    isVerifiedEmailRequired: true,
+                                }),
                             },
                         ]);
                     console.info('⬆', { insertSiteResult });
@@ -91,7 +93,9 @@ export function ExportModal() {
                             .insert([
                                 {
                                     from: email,
-                                    author: provideClientId(),
+                                    author: await provideClientId({
+                                        isVerifiedEmailRequired: false,
+                                    }),
                                     message: spaceTrim(`
                                         Hi,
                                         ${

@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
-type OpenModalLinkProps = Omit<ComponentProps<'a'>, 'ref'> & { modal: string };
+type OpenModalLinkProps = Omit<ComponentProps<'a'>, 'ref'|'role' /* <- [🍛] */> & { modal: string };
 
 /**
  * Renders a link to open modal

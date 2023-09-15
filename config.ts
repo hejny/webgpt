@@ -31,7 +31,7 @@ export const IS_DEVELOPMENT = isPrivateNetwork(
 export const IS_PRODUCTION = !IS_DEVELOPMENT;
 
 if (isRunningInBrowser()) {
-    // TODO: Also log " client ${provideClientId()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
+    // TODO: Also log " client ${provideClientIdWithoutValidation()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
     console.info(
         `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
         `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
@@ -39,6 +39,17 @@ if (isRunningInBrowser()) {
 }
 
 export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value;
+
+/**
+ * The speed of the animations
+ * It is useful for recording videos
+ *
+ * 1 is normal, 2 is twice as fast, 0.5 is twice as slow
+ *
+ * Note: You can record video and change speef for example here:
+ *       - https://online-video-cutter.com/change-video-speed
+ */
+export const SPEED = 1; // 1 / 5;
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
@@ -87,6 +98,44 @@ export const FONTS = [
     'Cormorant Garamond',
     // TODO: !! List more
 ] as const;
+
+export const COPILOT_PLACEHOLDERS: Array<string> = [
+    // Note: ⏣ Describe the change>
+    'Translate to Chinese',
+    'Translate to English',
+    'Translate to French',
+    'Translate to German',
+    'Translate to Italian',
+    'Translate to Japanese',
+    'Translate to Korean',
+    'Translate to Portuguese',
+    'Translate to Ukrainian',
+    'Add email contact pavol@hejny.org',
+    'Add phone contact +420 123 456 789',
+    'Add a link to website www.pavolhejny.com',
+    'Change opening hours on friday to 10:00-12:00',
+    `We are temporarily closed due to vacation till tomorrow`,
+    `Make better claim`,
+    `Make better title`,
+    `Shorten text about the company`,
+    `Add new product - 3D printer`,
+    `Delete the product - 3D printer`,
+    'Change phone number to +007 123 456 789',
+    'Make the text more friendly',
+    'Make the text more formal',
+    'Make the text more funny',
+    'Make the text more serious',
+    'Make the text more professional',
+    'Make the text more personal',
+    'Make the text more technical',
+    'Make the text more simple',
+    'Add a new paragraph - "We are the best"',
+    'Add a new paragraph - "We are the cheapest"',
+    'Add a new paragraph - "We are the fastest"',
+    'Add a new paragraph - "We are the most reliable"',
+    'Add bullet points why we are the best',
+    'Add pricing table',
+];
 
 export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'

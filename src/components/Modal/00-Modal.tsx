@@ -13,13 +13,20 @@ interface ModalProps {
      * The content of the modal
      */
     children: ReactNode;
+
+    /**
+     * Whether the modal can be closed by clicking on the overlay
+     *
+     * If `true` then you need to be in wallpaper page to close the modal
+     */
+    isCloseable?: boolean;
 }
 
 /**
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children } = props;
+    const { title, children, isCloseable } = props;
 
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useEffect(() => {
@@ -53,16 +60,18 @@ export function Modal(props: ModalProps) {
 
     return (
         <>
-            <CloseModalLink className={styles.overlay} />
+            {isCloseable ? <CloseModalLink className={styles.overlay} /> : <div className={styles.overlay} />}
             <dialog open className={styles.Modal}>
                 <div className={styles.bar}>
                     <div className={styles.title}>
                         <h2>{title}</h2>
                     </div>
                     <div className={styles.icons}>
-                        <CloseModalLink>
-                            <MarkdownContent content="✖" isUsingOpenmoji />
-                        </CloseModalLink>
+                        {isCloseable && (
+                            <CloseModalLink>
+                                <MarkdownContent content="✖" isUsingOpenmoji />
+                            </CloseModalLink>
+                        )}
                     </div>
                 </div>
                 <div className={styles.content}>{children} </div>

@@ -1,0 +1,33 @@
+.CreateZone {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 3px dashed #cccccc;
+    border-radius: 5px;
+
+    transition: border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.CreateZone input {
+    display: none;
+}
+
+.CreateZone .inner {
+    transition: transform 0.1s ease;
+    text-align: center;
+}
+
+.CreateZone.isHighlighted,
+.CreateZone:hover {
+    border-color: #ffffff;
+}
+
+.CreateZone.isHighlighted .inner,
+.CreateZone:hover .inner {
+    transform: scale(105%);
+}
