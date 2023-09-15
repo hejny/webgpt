@@ -12,16 +12,19 @@ export interface Database {
       Client: {
         Row: {
           clientId: string
+          createdAt: string | null
           email: string | null
           emailPreferences: Json | null
         }
         Insert: {
           clientId: string
+          createdAt?: string | null
           email?: string | null
           emailPreferences?: Json | null
         }
         Update: {
           clientId?: string
+          createdAt?: string | null
           email?: string | null
           emailPreferences?: Json | null
         }
@@ -41,6 +44,7 @@ export interface Database {
           prompt: string | null
           promptAt: string | null
           systemMessage: string | null
+          type: string | null
         }
         Insert: {
           answer?: string | null
@@ -55,6 +59,7 @@ export interface Database {
           prompt?: string | null
           promptAt?: string | null
           systemMessage?: string | null
+          type?: string | null
         }
         Update: {
           answer?: string | null
@@ -69,6 +74,7 @@ export interface Database {
           prompt?: string | null
           promptAt?: string | null
           systemMessage?: string | null
+          type?: string | null
         }
         Relationships: []
       }
