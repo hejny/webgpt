@@ -16,7 +16,7 @@ export interface IsClientVerifiedResponse {
     isClientVerified: boolean;
 }
 
-export default async function isClientVerified(
+export default async function isClientVerifiedHandler(
     request: NextApiRequest,
     response: NextApiResponse<IsClientVerifiedResponse>,
 ) {
