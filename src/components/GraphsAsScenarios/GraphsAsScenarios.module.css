@@ -13,7 +13,11 @@ ul.GraphsAsScenarios {
     justify-content: center;
 }
 
-ul.GraphsAsScenarios * {
+ul.GraphsAsScenarios a {
+    text-decoration: none;
+}
+
+ul.GraphsAsScenarios a {
     text-decoration: none;
 }
 

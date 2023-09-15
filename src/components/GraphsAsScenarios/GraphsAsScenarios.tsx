@@ -12,20 +12,23 @@ export function GraphsAsScenarios() {
             <li>
                 <Link href="/random">
                     <CreateZone className={styles.scenario}>
-                        <h2>Nothing</h2> and I will pick from gallery
+                        <h2>Nothing</h2>
+                        Pick web from gallery of pre-prepared designg
                     </CreateZone>
                 </Link>
             </li>
             <li>
                 <Link href="/new/from-prompt">
                     <CreateZone className={styles.scenario}>
-                        <h2>Idea</h2> to describe and generate web
+                        <h2>Idea</h2>
+                        To describe and generate your website
                     </CreateZone>
                 </Link>
             </li>
             <li>
                 <UploadNewWallpaper className={styles.scenario}>
-                    <h2>Image</h2> to upload and generate web
+                    <h2>Image</h2>
+                    To upload and generate your website
                 </UploadNewWallpaper>
             </li>
         </ul>
