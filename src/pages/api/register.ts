@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { string_url } from '../../utils/typeAliases';
+import { string_url, string_wallpaper_id } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
@@ -22,8 +22,8 @@ export default async function registerHandler(request: NextApiRequest, response:
         return response.status(400).json({ message: 'Only PUT method is allowed' });
     }
 
-    const wallpaperId = request.query.wallpaperId;
-    const url = request.query.url;
+    const wallpaperId = request.query.wallpaperId as string_wallpaper_id;
+    const url = request.query.url as string_url;
 
     if (!isValidWallpaperId(wallpaperId)) {
         return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
