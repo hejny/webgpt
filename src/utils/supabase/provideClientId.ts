@@ -40,10 +40,15 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         return clientId;
     }
 
+    // TODO: !!! promptForm or some verify callback
+    // TODO: !!! Add preferences for email receiving
+    // TODO: !!! Add preferences
+
     const email = await promptDialogue({
         prompt: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
+        // !!! isCloseable: true
     });
 
     if (!isValidEmail(email)) {
@@ -56,6 +61,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
 }
 
 /**
+ * TODO: [🧠] !!! What should happen if user refuses to verify email?
  * TODO: [0] Implement isVerifiedEmailRequired
  * TODO: [🧠] This should be probbably in some other folder than supabase
  */
