@@ -7,9 +7,9 @@ import { promptDialogueQueue } from './queues/prompts';
 /**
  * Is <Dialogues/> component currently rendered
  * Is used to prevent multiple instances of Dialogues in the app
- * @private
+ * @private this should be used only withing this folder Dialogues
  */
-let isDialoguesRendered = false;
+export let isDialoguesRendered = false;
 
 /**
  * Renders a place where the dialogues are rendered
@@ -18,7 +18,6 @@ let isDialoguesRendered = false;
  * Note: There can be only one instance of this component in the app
  */
 export function Dialogues() {
-
     useEffect(
         () => {
             if (isDialoguesRendered) {
