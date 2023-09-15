@@ -5,7 +5,7 @@ import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
 import { uuid } from '../../utils/typeAliases';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
-async function registerScriptHandler(wallpaperId: uuid) {
+async function register(wallpaperId: uuid) {
     console.info('🔌', 'Registering your page');
     console.info('🔌', 'hostname', window.location.hostname);
     console.info('🔌', 'host', window.location.host);
