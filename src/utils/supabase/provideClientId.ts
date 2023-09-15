@@ -4,10 +4,41 @@ import { uuid } from '../typeAliases';
 
 let clientId: uuid | null = null;
 
-export function provideClientId(): uuid {
+
+
+interface IProvideClientIdOptions  {
+
+    /**
+     * !!!
+     */
+    isEmailRequired?: boolean;
+
+    /**
+     * !!!
+     */
+    isVerifiedEmailRequired?: boolean;
+}
+
+
+
+
+export function provideClientId(options: IProvideClientIdOptions): uuid {
+    
     if (!isRunningInBrowser()) {
         throw new Error(`provideClientId is available only in browser`);
     }
+
+    const { isEmailRequired, isVerifiedEmailRequired } = options;
+
+    if (isVerifiedEmailRequired && isEmailRequired) {
+    throw ne
+    }
+
+    if(isVerifiedEmailRequired){
+
+    }
+
+    // !!! Implement
 
     if (clientId) {
         return clientId;
