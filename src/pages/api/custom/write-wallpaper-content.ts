@@ -16,13 +16,14 @@ export default async function writeWallpaperContentHandler(
         return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
-    const wallpaperDescription = request.body.wallpaperDescription as Exclude<description, JSX.Element>;
 
-    if (!wallpaperDescription) {
-        return response.status(400).json({ message: 'Parameter "wallpaperDescription" is required' } as any);
+    const wallpaperAssigment = request.body.wallpaperAssigment as Exclude<description, JSX.Element>;
+
+    if (!wallpaperAssigment) {
+        return response.status(400).json({ message: 'Parameter "wallpaperAssigment" is required' } as any);
     }
 
-    const wallpaperContent = await writeWallpaperContent(wallpaperDescription);
+    const wallpaperContent = await writeWallpaperContent(wallpaperAssigment);
 
     return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
         wallpaperContent,
