@@ -19,14 +19,15 @@
 
 .CreateZone .inner {
     transition: transform 0.1s ease;
+    text-align: center;
 }
 
-.CreateZone.filesOver,
+.CreateZone.isHighlighted,
 .CreateZone:hover {
     border-color: #ffffff;
 }
 
-.CreateZone.files-over .inner,
+.CreateZone.isHighlighted .inner,
 .CreateZone:hover .inner {
     transform: scale(105%);
 }

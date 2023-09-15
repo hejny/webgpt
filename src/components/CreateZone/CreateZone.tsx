@@ -6,6 +6,12 @@ import styles from './CreateZone.module.css';
 
 interface CreateZoneProps {
     /**
+     * If true, CreateZone will be highlighted
+     * For example, when user drags a file over CreateZone, it will be highlighted
+     */
+    isHighlighted?: boolean;
+
+    /**
      * Content of the CreateZone
      */
     children: ReactNode;
@@ -17,10 +23,10 @@ interface CreateZoneProps {
 }
 
 export function CreateZone(props: CreateZoneProps) {
-    const { children, className } = props;
+    const { isHighlighted,children, className } = props;
 
     return (
-        <div className={classNames(className, styles.CreateZone)}>
+        <div className={classNames(className, styles.CreateZone, isHighlighted ? styles.isHighlighted : '')}>
             <Center className={styles.inner}>{children}</Center>
         </div>
     );
