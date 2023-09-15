@@ -146,12 +146,24 @@
         },
 
         {
-            "name": "👨🏽‍💻 Clean dev cache",
-            "command": "rm -rf .next",
+            "name": "👨🏽‍💻 Clean dev cache + Force reinstall of node modules",
+            "commands": [
+                "npx kill-port 4444",
+                "rm -rf .next",
+                "rm -f ./package-lock.json",
+                "rm -rf ./node_modules",
+                "npm cache clean",
+                "npm install"
+            ],
             "focus": true
         },
         {
-            "name": "🏭 Force reinstall of node modules",
+            "name": "👨🏽‍💻 Clean dev cache",
+            "commands": ["npx kill-port 4444", "rm -rf .next"],
+            "focus": true
+        },
+        {
+            "name": "👨🏽‍💻 Force reinstall of node modules",
             "commands": ["rm -f ./package-lock.json", "rm -rf ./node_modules", "npm cache clean", "npm install"],
             "onlySingle": true,
             "focus": true
