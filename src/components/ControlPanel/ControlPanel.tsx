@@ -32,11 +32,14 @@ export function ControlPanel() {
                     <button
                         className={classNames(styles.button, styles.callToAction)}
                         onClick={async () => {
+                            const clientId = await provideClientId({
+                                isVerifiedEmailRequired: false,
+                            });
                             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
                                 // TODO: Use here addWallpaperComputables
                                 modifiedWallpaper.parent = modifiedWallpaper.id;
-                                modifiedWallpaper.author = provideClientId();
+                                modifiedWallpaper.author = clientId;
                                 modifiedWallpaper.isPublic = false;
                                 modifiedWallpaper.saveStage = 'SAVING';
                                 modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));

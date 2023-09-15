@@ -1,64 +1,42 @@
-import { isRunningInBrowser } from '../isRunningInWhatever';
-import { randomUuid } from '../randomUuid';
 import { uuid } from '../typeAliases';
+import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
-let clientId: uuid | null = null;
-
-
-
-interface IProvideClientIdOptions  {
-
-    /**
-     * !!!
-     */
-    isEmailRequired?: boolean;
-
+interface IProvideClientIdOptions {
     /**
      * !!!
      */
     isVerifiedEmailRequired?: boolean;
 }
 
+/**
+ * Checks if clientId is in localStorage and verified OR generates new one and pops up the dialogue to verify email
+ *
+ * Note: This function is available only in browser
+ *
+ * @returns clientId
+ */
+export async function provideClientId(options: IProvideClientIdOptions): Promise<uuid> {
+    const { isVerifiedEmailRequired } = options;
 
-
-
-export function provideClientId(options: IProvideClientIdOptions): uuid {
-    
-    if (!isRunningInBrowser()) {
-        throw new Error(`provideClientId is available only in browser`);
+    if (isVerifiedEmailRequired) {
+        console.warn(`isVerifiedEmailRequired is not implemented yet`);
     }
 
-    const { isEmailRequired, isVerifiedEmailRequired } = options;
 
-    if (isVerifiedEmailRequired && isEmailRequired) {
-    throw ne
-    }
+    const clientId = provideClientIdWithoutVerification();
 
-    if(isVerifiedEmailRequired){
 
-    }
 
-    // !!! Implement
+        // !!! Implement
 
-    if (clientId) {
-        return clientId;
-    }
 
-    clientId = window.localStorage.getItem(`clientId`) as uuid;
 
-    // TODO: Use here isValidUuid
+        
 
-    if (clientId) {
-        return clientId;
-    }
-
-    clientId = randomUuid();
-    window.localStorage.setItem(`clientId`, clientId as uuid);
-
-    return clientId as uuid;
+    return clientId;
 }
 
-
 /**
+ * TODO: Implement isVerifiedEmailRequired
  * TODO: [🧠] This should be probbably in some other folder than supabase
  */

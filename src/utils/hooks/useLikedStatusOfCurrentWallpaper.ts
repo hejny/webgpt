@@ -34,11 +34,15 @@ export function useLikedStatusOfCurrentWallpaper(): [
 
         */
 
-        const reactionInsertResult = await getSupabaseForBrowser().from('Reaction').insert({
-            wallpaperId,
-            likedStatus,
-            author: provideClientId(),
-        });
+        const reactionInsertResult = await getSupabaseForBrowser()
+            .from('Reaction')
+            .insert({
+                wallpaperId,
+                likedStatus,
+                author: await provideClientId({
+                    isVerifiedEmailRequired: false,
+                }),
+            });
 
         console.info({ reactionInsertResult });
     };
