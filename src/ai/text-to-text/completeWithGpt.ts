@@ -49,30 +49,34 @@ export async function completeWithGpt(
     // Note: We do not want to wait for the insert to the database
     /* not await */ getSupabaseForServer()
         .from('Prompt')
-        .insert({
-            // Metadata
-            type: 'COMPLETION',
-            clientId,
-            metadata: {
-                /* TODO: Is metadata needed? */
-            },
+        .insert(
+            {
+                // Metadata
+                type: 'COMPLETION',
+                clientId,
+                metadata: {
+                    /* TODO: Is metadata needed? */
+                },
 
-            // Model
-            model,
-            modelSettings,
+                // Model
+                model,
+                modelSettings,
 
-            // Prompt
-            prompt,
-            systemMessage: null,
-            previousExternalId: null,
-            promptAt,
+                // Prompt
+                prompt,
+                systemMessage: null,
+                previousExternalId: null,
+                promptAt,
 
-            // Response
-            answer: response,
-            externalId: null,
-            fullCompletion: completion,
-            answerAt,
-        } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */)
+                // Response
+                answer: response,
+                externalId: null,
+                fullCompletion: completion,
+                answerAt,
+
+                // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
+            } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
+        )
         .then((insertResult) => {
             // TODO: !! Util isInsertSuccessfull (status===201)
             console.info('completeWithGpt', { insertResult });

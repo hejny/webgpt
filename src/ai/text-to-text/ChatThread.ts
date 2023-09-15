@@ -92,6 +92,8 @@ export class ChatThread {
                     externalId: null,
                     fullCompletion: completion,
                     answerAt,
+
+                    // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
                 } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
             )
             .then((insertResult) => {
