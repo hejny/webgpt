@@ -2,6 +2,7 @@ import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { message } from '../../../utils/typeAliases';
 import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../workers/_/PostMessages';
+import { isDialoguesRendered } from '../locks/Dialogues.lock';
 import { promptDialogueQueue } from '../queues/prompts';
 
 export interface IPromptDialogueOptions {
@@ -71,6 +72,10 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
             };
             addEventListener('message' /* <-[👂][0] */, onMessage);
         });
+    }
+
+    if (isDialoguesRendered.value === false) {
+        throw new Error('<Dialogues/> component is not rendered');
     }
 
     promptDialogueQueue.push(promptInQueue);

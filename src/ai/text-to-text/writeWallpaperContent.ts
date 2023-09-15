@@ -6,6 +6,7 @@ import {
     string_font_family,
     string_markdown,
     string_midjourney_prompt,
+    uuid,
 } from '../../utils/typeAliases';
 import { ChatThread } from './ChatThread';
 import { completeWithGpt } from './completeWithGpt';
@@ -22,9 +23,10 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
  */
 export async function writeWallpaperContent(
     wallpaperAssigment: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
+    clientId: uuid /* <-[🌺] */,
 ): Promise<string_markdown> {
     const prompt = createTitlePromptTemplate(wallpaperAssigment);
-    const chatThread = await ChatThread.ask(prompt);
+    const chatThread = await ChatThread.ask(prompt, clientId);
     const { response, model: modelToCreateTitle } = chatThread;
     const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
@@ -48,6 +50,7 @@ export async function writeWallpaperContent(
         
             `,
         ),
+        clientId,
     );
 
     const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
@@ -79,4 +82,5 @@ export async function writeWallpaperContent(
  * TODO: !! Put step by step instructions how the content is generated in footer comment
  * TODO: [👸] Use in generate-wallpapers-content and DRY
  * TODO: [👮‍♀️] In this repository is used both 'chatgpt' and 'openai' NPM packages - use just 'openai' in future and in scripts use the common utils
+ * TODO: Make IWriteWallpaperContentOptions
  */
