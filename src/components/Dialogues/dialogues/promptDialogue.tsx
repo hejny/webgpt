@@ -23,7 +23,11 @@ export interface IPromptDialogueOptions {
      */
     placeholder?: string;
 
-    // TODO: !!! isCloseable
+    /**
+     * If true, the prompt can be closed by the user
+     * When the prompt is closed, the answer is `null`
+     */
+    isCloseable: boolean;
 }
 
 /**
