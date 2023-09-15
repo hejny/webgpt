@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import { provideClientId } from '../../utils/supabase/provideClientId';
+import { provideClientIdWithoutVerification } from '../../utils/supabase/provideClientIdWithoutVerification';
 import { Hint } from '../Hint/Hint';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ControlPanel.module.css';
@@ -19,7 +19,7 @@ export function ControlPanelLikeButtons() {
     return (
         <Hint id="control-reactions" title="React on web" className={styles.group} reapearCount={10}>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
-            {(['LOVE', 'LIKE'].includes(likedStatus) || wallpaper.author === provideClientId()) && (
+            {(['LOVE', 'LIKE'].includes(likedStatus) || wallpaper.author === provideClientIdWithoutVerification()) && (
                 <div className={styles.group}>
                     <WallpaperLink
                         className={classNames(styles.button, styles.callToAction)}
