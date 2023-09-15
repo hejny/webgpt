@@ -45,3 +45,7 @@ describe('conversion of JSX to HTML', () => {
         expect(jsxToHtml(<div></div>)).toBe('<div></div>');
     });
 });
+
+/**
+ * TODO: [🌃] Tests withs JSX are not working
+ */
