@@ -117,7 +117,12 @@
         },
         {
             "name": "🏭🥫 Generate Supabase types",
-            "commands": ["npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts"],
+            "commands": [
+                "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
+                "git add src/utils/supabase/types.ts",
+                "git commit -m \"Update Supabase types\""
+            ],
+            "execute": false,
             "onlySingle": true,
             "focus": true
         },
