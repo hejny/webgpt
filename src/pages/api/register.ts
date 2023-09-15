@@ -34,7 +34,7 @@ export default async function registerHandler(request: NextApiRequest, response:
     }
 
     const selectResult = await getSupabaseForServer().from('Site').select('id').eq('url', url).limit(1);
-    if (selectResult.data?.length || 0 > 0) {
+    if ((selectResult.data?.length || 0) > 0) {
         return response.status(400).json({ message: '[🔌] Site already registered' });
     }
 

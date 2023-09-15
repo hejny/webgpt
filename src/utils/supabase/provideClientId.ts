@@ -7,6 +7,8 @@ import { provideClientIdWithoutVerification } from './provideClientIdWithoutVeri
 interface IProvideClientIdOptions {
     /**
      * !!!
+     *
+     * Note: [0] Not implemented yet - it will be ignored
      */
     isVerifiedEmailRequired?: boolean;
 }

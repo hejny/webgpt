@@ -16,7 +16,10 @@ export interface IsClientVerifiedResponse {
     isClientVerified: boolean;
 }
 
-export default async function isClientVerified(request: NextApiRequest, response: NextApiResponse<IsClientVerifiedResponse>) {
+export default async function isClientVerified(
+    request: NextApiRequest,
+    response: NextApiResponse<IsClientVerifiedResponse>,
+) {
     const clientId = request.query.clientId;
 
     if (!isValidClientId(clientId)) {
@@ -24,11 +27,15 @@ export default async function isClientVerified(request: NextApiRequest, response
     }
 
     const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);
-    if (selectResult.data?.length || 0 > 0) {
+
+ 
+    if ((selectResult.data?.length || 0) > 0) {
         return response
-            .status(400)
-            .json({ isClientInserted: false, isClientVerified: false } satisfies IsClientVerifiedResponse);
+            .status(200)
+            .json({ isClientInserted: true, isClientVerified: false } satisfies IsClientVerifiedResponse);
     }
 
-    return response.status(400).json({ isClientInserted: true, isClientVerified: false } satisfies IsClientVerifiedResponse);
+    return response
+        .status(200)
+        .json({ isClientInserted: false, isClientVerified: false } satisfies IsClientVerifiedResponse);
 }
