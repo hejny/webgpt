@@ -36,12 +36,13 @@ export interface Database {
           answerAt: string | null
           clientId: string | null
           createdAt: string
+          externalId: string | null
           fullCompletion: Json | null
           id: number
           metadata: Json | null
           model: string | null
           modelSettings: Json | null
-          previousId: number | null
+          previousExternalId: string | null
           prompt: string | null
           promptAt: string | null
           systemMessage: string | null
@@ -52,12 +53,13 @@ export interface Database {
           answerAt?: string | null
           clientId?: string | null
           createdAt?: string
+          externalId?: string | null
           fullCompletion?: Json | null
           id?: number
           metadata?: Json | null
           model?: string | null
           modelSettings?: Json | null
-          previousId?: number | null
+          previousExternalId?: string | null
           prompt?: string | null
           promptAt?: string | null
           systemMessage?: string | null
@@ -68,12 +70,13 @@ export interface Database {
           answerAt?: string | null
           clientId?: string | null
           createdAt?: string
+          externalId?: string | null
           fullCompletion?: Json | null
           id?: number
           metadata?: Json | null
           model?: string | null
           modelSettings?: Json | null
-          previousId?: number | null
+          previousExternalId?: string | null
           prompt?: string | null
           promptAt?: string | null
           systemMessage?: string | null
