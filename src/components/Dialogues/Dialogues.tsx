@@ -2,14 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Modal } from '../Modal/00-Modal';
 import styles from './Dialogues.module.css';
 import { IPromptInQueue } from './dialogues/promptDialogue';
+import { isDialoguesRendered } from './locks/Dialogues.lock';
 import { promptDialogueQueue } from './queues/prompts';
-
-/**
- * Is <Dialogues/> component currently rendered
- * Is used to prevent multiple instances of Dialogues in the app
- * @private this should be used only withing this folder Dialogues
- */
-export let isDialoguesRendered = false;
 
 /**
  * Renders a place where the dialogues are rendered
@@ -20,12 +14,12 @@ export let isDialoguesRendered = false;
 export function Dialogues() {
     useEffect(
         () => {
-            if (isDialoguesRendered) {
+            if (isDialoguesRendered.value === true) {
                 throw new Error('There can be only one instance of TasksInProgress in the app');
             }
-            isDialoguesRendered = true;
+            isDialoguesRendered.value = true;
             return () => {
-                isDialoguesRendered = false;
+                isDialoguesRendered.value = false;
             };
         },
         [

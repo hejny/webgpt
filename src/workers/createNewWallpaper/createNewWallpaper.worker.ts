@@ -199,15 +199,18 @@ async function createNewWallpaperExecutor(
         // TODO: Make it more granular
     });
 
-    const response3 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-content', {
-        method: 'POST',
-        body: JSON.stringify({ wallpaperAssigment }),
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
+    const response3 /* <-[💩] */ = await fetch(
+        `/api/custom/write-wallpaper-content?clientId=${author /* <- TODO: Pass as clientId */}`,
+        {
+            method: 'POST',
+            body: JSON.stringify({ wallpaperAssigment }),
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
         },
-        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
-    });
+    );
 
     if (response3.ok === false) {
         // TODO: [🈵] If 4XX error, show also the message from json body

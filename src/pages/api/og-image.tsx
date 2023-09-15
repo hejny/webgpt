@@ -1,9 +1,10 @@
 import { unstable_createNodejsStream } from '@vercel/og';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { string_wallpaper_id } from '../../utils/typeAliases';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 export default async function ogImageHandler(request: NextApiRequest, response: NextApiResponse) {
-    const wallpaperId = request.query.wallpaperId as string;
+    const wallpaperId = request.query.wallpaperId as string_wallpaper_id;
 
     if (!isValidWallpaperId(wallpaperId)) {
         return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });

@@ -12,18 +12,75 @@ export interface Database {
       Client: {
         Row: {
           clientId: string
+          createdAt: string | null
           email: string | null
           emailPreferences: Json | null
         }
         Insert: {
           clientId: string
+          createdAt?: string | null
           email?: string | null
           emailPreferences?: Json | null
         }
         Update: {
           clientId?: string
+          createdAt?: string | null
           email?: string | null
           emailPreferences?: Json | null
+        }
+        Relationships: []
+      }
+      Prompt: {
+        Row: {
+          answer: string | null
+          answerAt: string | null
+          clientId: string | null
+          createdAt: string
+          externalId: string | null
+          fullCompletion: Json | null
+          id: number
+          metadata: Json | null
+          model: string | null
+          modelSettings: Json | null
+          previousExternalId: string | null
+          prompt: string | null
+          promptAt: string | null
+          systemMessage: string | null
+          type: string | null
+        }
+        Insert: {
+          answer?: string | null
+          answerAt?: string | null
+          clientId?: string | null
+          createdAt?: string
+          externalId?: string | null
+          fullCompletion?: Json | null
+          id?: number
+          metadata?: Json | null
+          model?: string | null
+          modelSettings?: Json | null
+          previousExternalId?: string | null
+          prompt?: string | null
+          promptAt?: string | null
+          systemMessage?: string | null
+          type?: string | null
+        }
+        Update: {
+          answer?: string | null
+          answerAt?: string | null
+          clientId?: string | null
+          createdAt?: string
+          externalId?: string | null
+          fullCompletion?: Json | null
+          id?: number
+          metadata?: Json | null
+          model?: string | null
+          modelSettings?: Json | null
+          previousExternalId?: string | null
+          prompt?: string | null
+          promptAt?: string | null
+          systemMessage?: string | null
+          type?: string | null
         }
         Relationships: []
       }
