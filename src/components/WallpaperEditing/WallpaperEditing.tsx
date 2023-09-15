@@ -5,6 +5,7 @@ import { useModal } from '../../utils/hooks/useModal';
 import { useScenario } from '../../utils/hooks/useScenario';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
+import { Dialogues } from '../Dialogues/Dialogues';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
 import { PreventUnsavedChanges } from './PreventUnsavedChanges';
@@ -19,6 +20,7 @@ export function WallpaperEditing() {
     return (
         <>
             <PreventUnsavedChanges />
+            <Dialogues />
 
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}

@@ -46,7 +46,12 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
 
                     try {
                         const { wallpaperId } = await createNewWallpaper(
-                            { author: provideClientId(), wallpaperImage: file },
+                            {
+                                author: await provideClientId({
+                                    isVerifiedEmailRequired: false,
+                                }),
+                                wallpaperImage: file,
+                            },
                             (newTaskProgress: TaskProgress) => {
                                 console.info('☑', newTaskProgress);
                                 setTasksProgress((tasksProgress) =>

@@ -19,7 +19,7 @@ interface TaskInProgressProps {
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
  *
- * Note: This component renders internally <Dialogues /> component
+ * Note: This component renders internally <Dialogues/> component
  * Note: There can be only one instance of this component in the app
  */
 export function TasksInProgress(props: TaskInProgressProps) {
