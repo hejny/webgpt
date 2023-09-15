@@ -16,7 +16,7 @@ export function ColorsModal() {
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
 
     return (
-        <Modal title="Colors">
+        <Modal title="Colors" isCloseable>
             <div className={styles.section}>{wallpaper.src}</div>
             <div className={styles.section}>
                 <ColorsModalColorAlgoritm />

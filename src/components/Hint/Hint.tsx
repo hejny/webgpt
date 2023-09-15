@@ -143,6 +143,7 @@ export function Hint(props: HintProps) {
             }
         };
     }, [
+        isDisabled,
         id,
         hintTargetRef,
         title,

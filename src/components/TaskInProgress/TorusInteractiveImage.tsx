@@ -1,7 +1,7 @@
 import { MeshBuilder } from 'babylonjs';
 import { SPEED } from '../../../config';
+import { useGraph } from '../../utils/hooks/useGraph';
 import { number_positive, string_css_class } from '../../utils/typeAliases';
-import { useGraph } from '../Graphs/useGraph';
 
 interface TorusInteractiveProps {
     /**
