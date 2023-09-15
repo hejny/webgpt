@@ -1,6 +1,7 @@
 import { isRunningInBrowser } from '../isRunningInWhatever';
 import { randomUuid } from '../randomUuid';
 import { uuid } from '../typeAliases';
+import { isValidClientId } from '../validators/isValidClientId';
 
 /**
  * Internal cache for provideClientIdWithoutVerification
@@ -28,7 +29,10 @@ export function provideClientIdWithoutVerification(): uuid {
 
     clientId = window.localStorage.getItem(`clientId`) as uuid;
 
-    // TODO: Use here isValidUuid
+    if (!isValidClientId(clientId)) {
+        // Note: It make sense to log this error because it is captured by Sentry
+        console.error(`Invalid clientId in localStorage "${clientId}"`);
+    }
 
     if (clientId) {
         return clientId;
