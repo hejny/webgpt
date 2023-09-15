@@ -31,7 +31,7 @@ export async function mockedMultitaskWithPrompts(
         await onProgress({
             name: `mocked-task-${i}`,
             title: <>{title}</>,
-            isDone: false, // <- TODO: !!! Pause here in UI
+            isDone: false,
         });
 
         const response = await promptDialogue({

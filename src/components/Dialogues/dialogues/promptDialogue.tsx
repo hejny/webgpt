@@ -53,8 +53,6 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
         answer: undefined,
     };
 
-
-
     if (isRunningInWebWorker()) {
         // [🌴]
         postMessage({
@@ -64,7 +62,6 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
 
         return new Promise((resolve) => {
             const onMessage = (event: MessageEvent<IMessageMainToWorker<unknown>>) => {
-            
                 const message = event.data;
                 if (message.type !== 'PROMPT_DIALOGUE_ANSWER') {
                     return;
@@ -77,7 +74,6 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
     }
 
     promptDialogueQueue.push(promptInQueue);
-
 
     // console.info('❔ promptDialogue: Waiting for answer', { prompt });
 
@@ -93,7 +89,7 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
 }
 
 /**
- * TODO: !!! JSX must work in worker OR Should not be possible to use JSX from worker OR at all
+ * TODO: !! JSX must work in worker OR Should not be possible to use JSX from worker OR at all
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined
  * TODO: isMultiline

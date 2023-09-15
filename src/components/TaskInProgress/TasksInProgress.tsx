@@ -59,7 +59,7 @@ export function TasksInProgress(props: TaskInProgressProps) {
             scene.registerBeforeRender(() => {
                 beta = (beta - targetBeta) * 0.95 + targetBeta;
                 camera.beta = beta;
-                camera.alpha += 0.02;
+                camera.alpha += 0.02 /* <- TODO: Maybe stop spinning when dialogue is opened */;
             });
         },
         [
