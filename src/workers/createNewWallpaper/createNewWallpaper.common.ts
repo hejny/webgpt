@@ -1,5 +1,5 @@
 import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
-import { Workerify } from '../../utils/Workerify';
+import { Workerify } from '../_/Workerify';
 
 export interface ICreateNewWallpaperRequest {
     author: uuid;
