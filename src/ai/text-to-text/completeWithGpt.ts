@@ -72,10 +72,10 @@ export async function completeWithGpt(
             externalId: null,
             fullCompletion: completion,
             answerAt,
-        })
+        } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */)
         .then((insertResult) => {
             // TODO: !! Util isInsertSuccessfull (status===201)
-            console.info('completeWithGpt',{ insertResult });
+            console.info('completeWithGpt', { insertResult });
         });
 
     return {

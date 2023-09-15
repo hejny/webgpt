@@ -68,30 +68,32 @@ export class ChatThread {
         // Note: We do not want to wait for the insert to the database
         /* not await */ getSupabaseForServer()
             .from('Prompt')
-            .insert({
-                // Metadata
-                type: 'CHAT',
-                clientId,
-                metadata: {
-                    /* TODO: Is metadata needed? */
-                },
+            .insert(
+                {
+                    // Metadata
+                    type: 'CHAT',
+                    clientId,
+                    metadata: {
+                        /* TODO: Is metadata needed? */
+                    },
 
-                // Model
-                model,
-                modelSettings,
+                    // Model
+                    model,
+                    modelSettings,
 
-                // Prompt
-                prompt: request,
-                systemMessage: null,
-                // TODO: !!previousExternalId: parentChatThread ? parentChatThread. : null,
-                promptAt,
+                    // Prompt
+                    prompt: request,
+                    systemMessage: null,
+                    // TODO: !!previousExternalId: parentChatThread ? parentChatThread. : null,
+                    promptAt,
 
-                // Response
-                answer: response,
-                externalId: null,
-                fullCompletion: completion,
-                answerAt,
-            })
+                    // Response
+                    answer: response,
+                    externalId: null,
+                    fullCompletion: completion,
+                    answerAt,
+                } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
+            )
             .then((insertResult) => {
                 // TODO: !! Util isInsertSuccessfull (status===201)
                 console.info('ChatThread', { insertResult });
