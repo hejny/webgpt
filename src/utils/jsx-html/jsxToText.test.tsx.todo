@@ -30,3 +30,8 @@ describe('conversion of JSX to text', () => {
         expect(jsxToText(<div></div>)).toBe('');
     });
 });
+
+
+/**
+ * TODO: [🌃] Tests withs JSX are not working
+ */

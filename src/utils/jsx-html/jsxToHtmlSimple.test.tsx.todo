@@ -31,3 +31,8 @@ describe('conversion of JSX to simple HTML', () => {
         expect(jsxToHtmlSimple(<div></div>)).toBe('<div/>');
     });
 });
+
+
+/**
+ * TODO: [🌃] Tests withs JSX are not working
+ */
