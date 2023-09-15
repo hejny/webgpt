@@ -245,8 +245,8 @@ export function CopilotPanel() {
 
 /**
  * TODO: !! CopilotPanel: Fully line design
- * TODO: !!! CopilotPanel: Show errors
- * TODO: !!! CopilotPanel: Log errors (and maybe also prompts)
+ * TODO: !! CopilotPanel: Show errors
+ * TODO: !! CopilotPanel: Log errors into Sentry
  * TODO: [🧠] In future queue the prompts and have deamon for it
  * TODO: !! Add more options like Close (OWNER_AS_VISITOR), Share (VISITOR), Edit colors, Get the web, How it works?, Pricing, Gallery, Back
  *       ( ⏣ | Write prompt | Apply | More | Close )
