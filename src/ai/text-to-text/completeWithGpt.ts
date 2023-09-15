@@ -75,6 +75,7 @@ export async function completeWithGpt(
                 answerAt,
 
                 // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
+                // <- TODO: [🎠] There should be a prompt template+template version+template language version (to A/B test performance of prompts)
             } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
         )
         .then((insertResult) => {
