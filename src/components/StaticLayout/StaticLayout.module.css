@@ -22,10 +22,6 @@
     margin-top: 100px;
 }
 
-.StaticLayout main {
-    min-height: 40vh;
-}
-
 .StaticLayout article {
     padding-right: calc(50vw - 300px);
     padding-left: calc(50vw - 300px);
@@ -35,8 +31,6 @@
     /* 📱 Big+ smartphones */
 
     .StaticLayout article {
-        min-height: 40vh;
-
         padding-right: 15px;
         padding-left: 15px;
     }
