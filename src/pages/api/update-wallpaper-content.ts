@@ -3,7 +3,8 @@ import spaceTrim from 'spacetrim';
 import { ChatThread } from '../../ai/text-to-text/ChatThread';
 import { removeQuotes } from '../../utils/content/removeQuotes';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';
-import { string_prompt } from '../../utils/typeAliases';
+import { string_prompt, uuid } from '../../utils/typeAliases';
+import { isValidClientId } from '../../utils/validators/isValidClientId';
 
 export interface UpdateWallpaperContentRequest {
     prompt: string_prompt;
@@ -19,6 +20,11 @@ export default async function updateWallpaperContentHandler(
     request: NextApiRequest,
     response: NextApiResponse<UpdateWallpaperContentResponse>,
 ) {
+    const clientId = request.query.clientId as uuid; /* <-[🌺] */
+
+    if (!isValidClientId(clientId)) {
+        return response.status(400).json({ message: 'Parameter "clientId" must be valid client ID' } as any);
+    }
     const { prompt, wallpaper } = JSON.parse(
         request.body,
     ) /* <- TODO: Can be this done via bodyParser? */ as UpdateWallpaperContentRequest;
@@ -42,6 +48,7 @@ export default async function updateWallpaperContentHandler(
                 
                 ` /* <- TODO: Make prompt template */,
             ),
+            clientId,
         );
 
         let newContent = chatThread.response;

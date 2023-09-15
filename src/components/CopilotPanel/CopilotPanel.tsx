@@ -15,6 +15,7 @@ import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
@@ -66,14 +67,17 @@ export function CopilotPanel() {
 
             const { content: oldContent } = wallpaper;
 
-            const response = await fetch('/api/update-wallpaper-content', {
-                method: 'POST',
-                body: JSON.stringify({
-                    prompt,
-                    wallpaper: { content: oldContent },
-                } satisfies UpdateWallpaperContentRequest),
-                signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
-            });
+            const response = await fetch(
+                `/api/update-wallpaper-content?clientId=${await provideClientId({ isVerifiedEmailRequired: true })}`,
+                {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        prompt,
+                        wallpaper: { content: oldContent },
+                    } satisfies UpdateWallpaperContentRequest),
+                    signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+                },
+            );
 
             if (response.ok === false) {
                 // TODO: [🈵] If 4XX error, show also the message from json body
