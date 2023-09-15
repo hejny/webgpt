@@ -4,7 +4,7 @@ import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../../config';
 import { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
-import { provideClientId } from '../../../utils/supabase/provideClientId';
+import { provideClientIdWithoutVerification } from '../../../utils/supabase/provideClientIdWithoutVerification';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
@@ -55,7 +55,9 @@ export class RandomWallpaperManager {
             }`,
         );
 
-        const response = await fetch(`${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientId()}`);
+        const response = await fetch(
+            `${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientIdWithoutVerification()}`,
+        );
         const { recommendedWallpaper } = (await response.json()) as RecommendWallpaperResponse;
 
         if (isPrefetch) {

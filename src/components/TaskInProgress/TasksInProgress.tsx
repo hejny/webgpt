@@ -1,7 +1,16 @@
 import { MeshBuilder } from 'babylonjs';
-import { useGraph } from '../Graphs/useGraph';
+import { useEffect } from 'react';
+import { useGraph } from '../../utils/hooks/useGraph';
+import { Dialogues } from '../Dialogues/Dialogues';
 import { TaskProgress } from './task/TaskProgress';
 import styles from './TasksInProgress.module.css';
+
+/**
+ * Is <TasksInProgress/> component currently rendered
+ * Is used to prevent multiple instances of TasksInProgress in the app
+ * @private
+ */
+let isTasksInProgressRendered = false;
 
 interface TaskInProgressProps {
     tasksProgress?: Array<TaskProgress>;
@@ -9,11 +18,29 @@ interface TaskInProgressProps {
 
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
+ *
+ * Note: This component renders internally <Dialogues/> component
+ * Note: There can be only one instance of this component in the app
  */
 export function TasksInProgress(props: TaskInProgressProps) {
     const { tasksProgress } = props;
+    useEffect(
+        () => {
+            if (isTasksInProgressRendered) {
+                throw new Error('There can be only one instance of TasksInProgress in the app');
+            }
+            isTasksInProgressRendered = true;
+            return () => {
+                isTasksInProgressRendered = false;
+            };
+        },
+        [
+            // Note: Check only once on mount
+        ],
+    );
     const { sceneRef } = useGraph(
         ({ scene, camera, wireframeMaterial }) => {
+            // TODO: [🍩] DRY
             let ribbon = MeshBuilder.CreateTorus(
                 'ribbon',
                 {
@@ -26,10 +53,13 @@ export function TasksInProgress(props: TaskInProgressProps) {
             ribbon.material = wireframeMaterial;
 
             // Note: Rotate the the camera around the mesh and make it look down initially
-            camera.beta = (Math.PI / 2) * (2 / 3);
+            const initialBeta = Math.PI * 2;
+            const targetBeta = (Math.PI / 2) * (1.8 / 3);
+            let beta = initialBeta;
             scene.registerBeforeRender(() => {
-                camera.beta *= 0.95;
-                camera.alpha += 0.02;
+                beta = (beta - targetBeta) * 0.95 + targetBeta;
+                camera.beta = beta;
+                camera.alpha += 0.02 /* <- TODO: Maybe stop spinning when dialogue is opened */;
             });
         },
         [
@@ -38,28 +68,31 @@ export function TasksInProgress(props: TaskInProgressProps) {
     );
 
     return (
-        <div className={styles.TasksInProgress}>
-            <canvas ref={sceneRef} className={styles.scene} />
+        <>
+            <div className={styles.TasksInProgress}>
+                <canvas ref={sceneRef} className={styles.scene} />
 
-            {tasksProgress && (
-                <div className={styles.tasklist}>
-                    <ul>
-                        {tasksProgress.map(({ name, title, isDone }) => (
-                            <li key={name} className={isDone ? styles.done : styles.pending}>
-                                {title}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
-        </div>
+                {tasksProgress && (
+                    <div className={styles.tasklist}>
+                        <ul>
+                            {tasksProgress.map(({ name, title, isDone }) => (
+                                <li key={name} className={isDone ? styles.done : styles.pending}>
+                                    {title}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+            </div>
+            <Dialogues />
+        </>
     );
 }
 
 /**
- * TODO: Play with shape and camera angle
  * TODO: Size of babylonjs in bundle - maybe prerecord as video
  * TODO: Maybe work with xyzt
  * TODO: !! Design in color window
  * TODO: !! Rename to loading OR split between loading and work in progress
+ * TODO: [🔏] DRY Locking mechanism | useLock hook
  */

@@ -1,11 +1,3 @@
-.StaticLayout {
-    /*/
-    outline: 1px dotted rgb(255, 38, 38);
-    /**/
-
-    /* TODO: Use or remove empty css */
-}
-
 .StaticLayout a {
     color: rgb(255, 255, 255);
     text-decoration: underline;
@@ -15,6 +7,7 @@
     color: rgb(183, 244, 247);
 }
 
+.StaticLayout header,
 .StaticLayout main,
 .StaticLayout article {
     /*/
@@ -25,8 +18,8 @@
     padding-bottom: 50px;
 }
 
-.StaticLayout main {
-    height: 50vh;
+.StaticLayout header {
+    margin-top: 100px;
 }
 
 .StaticLayout article {
@@ -38,8 +31,6 @@
     /* 📱 Big+ smartphones */
 
     .StaticLayout article {
-        height: 80vh;
-
         padding-right: 15px;
         padding-left: 15px;
     }

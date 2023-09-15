@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { mockedMultitask } from '../../components/TaskInProgress/task/mock/mockedMultitask';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
@@ -9,7 +9,7 @@ export default function TestTasksProgressPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
     useEffect(
         () => {
-            mockedMultitask((newTaskProgress) =>
+            /* not await */ mockedMultitask((newTaskProgress) =>
                 setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
             );
         },
@@ -19,9 +19,8 @@ export default function TestTasksProgressPage() {
     );
 
     return (
-        <>
-            <StaticAppHead subtitle={null} />
+        <StaticLayout subtitle="Test loading with tasks">
             <TasksInProgress {...{ tasksProgress }} />
-        </>
+        </StaticLayout>
     );
 }

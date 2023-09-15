@@ -3,8 +3,8 @@ import spaceTrim from 'spacetrim';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';
-import { useMode } from '../../utils/hooks/useMode';
 import { usePageName } from '../../utils/hooks/usePageName';
+import { useRole } from '../../utils/hooks/useRole';
 import { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
@@ -19,7 +19,8 @@ import styles from './WallpaperContent.module.css';
  * Renders the main wallpaper content
  */
 export function WallpaperContentSection() {
-    const { isEditable } = useMode();
+    const role = useRole();
+    const isEditable = role === 'OWNER';
     const [{ content, title }, modifyWallpaper] = useCurrentWallpaper();
     const { mainWallpaperFont } = useCurrentWallpaperFonts();
 
