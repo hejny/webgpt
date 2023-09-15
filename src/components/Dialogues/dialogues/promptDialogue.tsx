@@ -22,8 +22,6 @@ export interface IPromptDialogueOptions {
      * Placeholder for the input/textarea
      */
     placeholder?: string;
-
-    // TODO: !!! isCloseable
 }
 
 /**
