@@ -28,7 +28,7 @@ interface GraphButtonProps {
  */
 export function GraphButton(props: GraphButtonProps) {
     const { createSceneMeshes, children, className } = props;
-    const { sceneRef } = useGraph(createSceneMeshes,[createSceneMeshes]);
+    const { sceneRef } = useGraph(createSceneMeshes, [createSceneMeshes]);
     return (
         <div className={classNames(styles.GraphButton, className)}>
             <canvas className={styles.scene} ref={sceneRef} />
@@ -36,3 +36,7 @@ export function GraphButton(props: GraphButtonProps) {
         </div>
     );
 }
+
+/**
+ * !!! Remove
+ */

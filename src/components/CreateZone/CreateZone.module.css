@@ -1,4 +1,4 @@
-.UploadZone {
+.CreateZone {
     /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
@@ -13,18 +13,20 @@
     cursor: pointer;
 }
 
-.UploadZone input {
+.CreateZone input {
     display: none;
 }
 
-.UploadZone .inner {
+.CreateZone .inner {
     transition: transform 0.1s ease;
 }
 
-.UploadZone.filesOver {
+.CreateZone.filesOver,
+.CreateZone:hover {
     border-color: #ffffff;
 }
 
-.UploadZone.files-over .inner {
+.CreateZone.files-over .inner,
+.CreateZone:hover .inner {
     transform: scale(105%);
 }

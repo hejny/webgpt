@@ -12,3 +12,11 @@ ul.GraphsAsScenarios {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+ul.GraphsAsScenarios * {
+    text-decoration: none;
+}
+
+.scenario {
+    margin: 10px;
+}

@@ -119,6 +119,7 @@ export function UploadZone(props: UploadZoneProps) {
 }
 
 /**
+ * TODO: !!! Use <CreateZone/> inside <UploadZone/> to make it more reusable
  * TODO: Probbably when there is only one UploadZone rendered on entire page, expand invisible dropzone to full page
  * TODO: Allow to recieve item from Clipboard
  */
