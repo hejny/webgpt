@@ -46,6 +46,6 @@ export default function NewWallpaperFromPromptPage() {
 }
 
 /**
+ * TODO: !!! Implement
  * TODO: [👐] Unite design of all /new/* pages
- * TODO: !!! Create also branch for /new/from-instagram
  */
