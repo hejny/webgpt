@@ -36,6 +36,7 @@ export interface Database {
           answerAt: string | null
           clientId: string | null
           createdAt: string
+          fullCompletion: Json | null
           id: number
           metadata: Json | null
           model: string | null
@@ -51,6 +52,7 @@ export interface Database {
           answerAt?: string | null
           clientId?: string | null
           createdAt?: string
+          fullCompletion?: Json | null
           id?: number
           metadata?: Json | null
           model?: string | null
@@ -66,6 +68,7 @@ export interface Database {
           answerAt?: string | null
           clientId?: string | null
           createdAt?: string
+          fullCompletion?: Json | null
           id?: number
           metadata?: Json | null
           model?: string | null
