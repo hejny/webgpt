@@ -1,4 +1,4 @@
-import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { number_likeness } from '../../utils/typeAliases';
 
 const LIKED_STATUS_LIKENESS: Record<keyof typeof LikedStatus, number_likeness> = {
