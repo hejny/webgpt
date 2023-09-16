@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/Center/Center';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { string_url } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
+import type { ScrapeWebResponse } from '../api/scrape/scrape-web';
 
 export default function NewWallpaperFromPromptPage() {
-    const [url, setUrl] = useState<string_url | null>(null);
+    const urlInputRef = useRef<HTMLInputElement | null>(null);
 
     return (
         <>
@@ -17,17 +17,21 @@ export default function NewWallpaperFromPromptPage() {
                     <Center>
                         <h1>AI Web Maker</h1>
                         Write URL to make new web from:
-                        <input
-                            type="url"
-                            placeholder="https://example.com"
-                            onChange={(event) => setUrl(event.target.value)}
-                        />
+                        <br />
+                        <input type="url" placeholder="https://example.com" ref={urlInputRef} />
                         <button
                             className="button-TODO"
-                            onClick={() => {
+                            onClick={async () => {
+                                const url = urlInputRef.current?.value;
+
                                 if (!isValidUrl(url)) {
                                     alert('Please write valid URL');
                                 }
+
+                                const reponse = await fetch(`/api/scrape/scrape-web?url=${url}`);
+                                const { webInfo } = (await reponse.json()) as ScrapeWebResponse;
+
+                                console.info('🌍', { webInfo });
                             }}
                         >
                             Create
