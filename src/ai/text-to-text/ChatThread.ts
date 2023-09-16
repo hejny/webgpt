@@ -98,8 +98,8 @@ export class ChatThread {
                 } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
             )
             .then((insertResult) => {
-                // TODO: !! Util isInsertSuccessfull (status===201)
-                console.info('ChatThread', { insertResult });
+                // TODO: !! Util isInsertSuccessfull
+                // console.log('ChatThread', { insertResult });
             });
 
         return new ChatThread(clientId, parentChatThread, completion.model as string_model_name, request, response);
@@ -130,7 +130,7 @@ export class ChatThread {
 
 /**
  * TODO: [🚞] DRY ChatThread+completeWithGpt
- * TODO: [🧠] response or answer?
- * TODO: [🧠][5] Log also failed requests
+ * TODO: [🧠] Wording: response or answer?
+ * TODO: [5] Log also failed requests as in completeWithGpt
  * TODO: Make IAskOptions
  */
