@@ -200,6 +200,12 @@ export function CopilotPanel() {
                             </WallpaperLink>
                         </li>
                         <li>
+                            <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
+                                Edit markdown
+                                {/*           <- TODO: Should be here "Edit markdown" or "Edit content" */}
+                            </WallpaperLink>
+                        </li>
+                        <li>
                             <WallpaperLink
                                 role="OWNER_AS_VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
@@ -244,6 +250,7 @@ export function CopilotPanel() {
 }
 
 /**
+ * TODO: !!! Saving
  * TODO: !! CopilotPanel: Fully line design
  * TODO: !! CopilotPanel: Show errors
  * TODO: !! CopilotPanel: Log errors into Sentry
