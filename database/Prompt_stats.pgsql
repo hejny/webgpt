@@ -16,6 +16,12 @@ select
 
   /* Stats */
   ("Prompt"."answerAt" - "Prompt"."promptAt") as duration,
+  /*
+  TODO: Add tokens
+  TODO: Add cost
+  TODO: Add rating
+  */
+  
 
   /* Model */
   "Prompt".model,
@@ -41,3 +47,5 @@ from
   public."Prompt"
 order by
   "Prompt"."answerAt";
+
+  
