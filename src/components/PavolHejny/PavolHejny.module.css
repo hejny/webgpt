@@ -24,6 +24,7 @@
     margin-bottom: 25px;
     margin-top: 25px;
 
+    /* TODO: [🚝] DRY */
     overflow: clip;
     /*clip-path: margin-box;/**/
     /*clip-path: margin-box circle(25% at 25% 25%);/**/

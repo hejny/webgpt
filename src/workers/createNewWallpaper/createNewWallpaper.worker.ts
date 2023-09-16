@@ -28,6 +28,8 @@ createNewWallpaperWorkerify.runWorker(createNewWallpaperExecutor);
 
 /**
  * @private within this folder
+ *
+ * TODO: Maybe put in separate file and make public as createNewWallpaperForServer / createNewWallpaperForNode
  */
 async function createNewWallpaperExecutor(
     request: ICreateNewWallpaperRequest,
@@ -101,22 +103,12 @@ async function createNewWallpaperExecutor(
     //===========================================================================
     //-------[ Color analysis: ]---
 
-    await onProgress({
-        title: 'Prepare color analysis',
-        name: 'image-prepare-color-analysis',
-        isDone: false,
-    });
     const colorStatsPromise = /* not await */ createImageInWorker(wallpaperForColorAnalysis).then(
-        (imageForColorAnalysis) => {
-            onProgress({
-                name: 'image-prepare-color-analysis',
-                isDone: true,
-            });
-            return computeColorstats(
+        (imageForColorAnalysis) =>
+            computeColorstats(
                 imageForColorAnalysis,
                 onProgress /* <- Note: computeColorstats will show its own tasks */,
-            );
-        },
+            ),
     );
     //-------[ / Color analysis ]---
     //===========================================================================
