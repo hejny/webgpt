@@ -1,5 +1,5 @@
 import { Center } from '../components/Center/Center';
-import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
+import { Scenarios } from '../components/Scenarios/Scenarios';
 import { HandwrittenText } from '../components/HandwrittenText/HandwrittenText';
 import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
 import { PavolHejny } from '../components/PavolHejny/PavolHejny';
@@ -26,7 +26,7 @@ export default function HomePage() {
                 </Center>
             </header>
             <main>
-                <GraphsAsScenarios />
+                <Scenarios />
             </main>
 
             <article>

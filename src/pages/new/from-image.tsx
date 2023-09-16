@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/Center/Center';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
@@ -13,7 +14,7 @@ export default function NewWallpaperFromImagePage() {
                     <Center>
                         <h1>AI Web Maker</h1>
                         <UploadNewWallpaper />
-                        Pick
+                        <Link href="/">I have not an image</Link>
                     </Center>
                 </main>
 

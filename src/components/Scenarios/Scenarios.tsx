@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import { CreateZone } from '../CreateZone/CreateZone';
-import { UploadNewWallpaper } from '../UploadNewWallpaper/UploadNewWallpaper';
-import styles from './GraphsAsScenarios.module.css';
+import styles from './Scenarios.module.css';
 
 /**
- * Renders 3 scenarios to create a new wallpaper
+ * Renders scenarios to create a new wallpaper
  */
-export function GraphsAsScenarios() {
+export function Scenarios() {
     return (
-        <ul className={styles.GraphsAsScenarios}>
+        <ul className={styles.Scenarios}>
             <li>
                 <Link href="/random">
                     <CreateZone className={styles.scenario}>
@@ -26,10 +25,12 @@ export function GraphsAsScenarios() {
                 </Link>
             </li>
             <li>
-                <UploadNewWallpaper className={styles.scenario}>
-                    <h2>Image</h2>
-                    To upload and generate your website
-                </UploadNewWallpaper>
+                <Link href="/new/from-image">
+                    <CreateZone className={styles.scenario}>
+                        <h2>Image</h2>
+                        To upload and generate your website
+                    </CreateZone>
+                </Link>
             </li>
         </ul>
     );

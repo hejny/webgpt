@@ -1,4 +1,4 @@
-ul.GraphsAsScenarios {
+ul.Scenarios {
     /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
@@ -13,11 +13,11 @@ ul.GraphsAsScenarios {
     justify-content: center;
 }
 
-ul.GraphsAsScenarios a {
+ul.Scenarios a {
     text-decoration: none;
 }
 
-ul.GraphsAsScenarios a {
+ul.Scenarios a {
     text-decoration: none;
 }
 
