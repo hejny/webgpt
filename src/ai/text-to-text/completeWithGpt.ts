@@ -59,7 +59,7 @@ export async function completeWithGpt(
         .select()
         .then((insertSelectResult) => {
             // TODO: !! Util isInsertSuccessfull / isInsertSelectSuccessfull which returns the id
-            console.log('completeWithGpt', { insertSelectResult });
+            // console.log('completeWithGpt', { insertSelectResult });
 
             if (insertSelectResult.data === null) {
                 throw new Error('insertResult.data is null');
@@ -98,7 +98,7 @@ export async function completeWithGpt(
     // Note: We do not want to wait for the update in the database
     /* not await */ promptIdPromise
         .then((promptId) => {
-            console.log({ promptId });
+            // console.log({ promptId });
             return getSupabaseForServer()
                 .from('Prompt')
                 .update(
@@ -114,7 +114,7 @@ export async function completeWithGpt(
         })
         .then((updateResult) => {
             // TODO: !! Util isUpdateSuccessfull
-            console.log('completeWithGpt', { updateResult });
+            // console.log('completeWithGpt', { updateResult });
         });
 
     return {
@@ -124,8 +124,7 @@ export async function completeWithGpt(
 }
 
 /**
- * TODO: !!! Comment logs
- * TODO: !!! Try failed requests
+ * TODO: !!! Are there failed requests - analyze them
  * TODO: DRY ChatThread+completeWithGpt
  * TODO: [🧠] Wording: response or answer?
  * TODO: [🧠][5] Log also failed requests
