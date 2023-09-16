@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router';
 import { ReactNode, useState } from 'react';
+import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaper';
+import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
@@ -68,7 +69,19 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                             throw error;
                         }
 
-                        alert(error.message);
+                        alert(
+                            // <- TODO: Use here alertDialogue
+                            spaceTrim(
+                                (block) => `
+                                    Sorry for the inconvenience 😔
+                                    Something went wrong while making your website.
+                                    Please try it again or write me an email to me@pavolhejny.com
+                        
+                                    ${block((error as Error).message)}
+                                
+                                `,
+                            ),
+                        );
                         setWorking(false);
                         setTasksProgress([]);
                     }
