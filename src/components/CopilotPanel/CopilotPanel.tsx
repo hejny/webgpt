@@ -11,6 +11,7 @@ import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { shuffleItems } from '../../utils/shuffleItems';
