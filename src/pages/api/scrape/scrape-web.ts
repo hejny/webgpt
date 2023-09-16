@@ -20,7 +20,9 @@ export default async function scrapeInstagramUserHandler(
         return response.status(400).json({ message: 'GET param url is not valid URL' } as any /* <-[🌋] */);
     }
 
-    const webInfo = await fetch(url as string);
+    const response = await fetch(url as string);
+
+    const webInfo = await response.text();
 
     // console.info('👤', { instagramUser });
 
@@ -28,7 +30,6 @@ export default async function scrapeInstagramUserHandler(
 }
 
 /**
- * TODO: Maybe API URL for scraping be like> /api/scrape/instagram/@hejny
- * TODO: Maybe obtain session_id from username+password
- *     > const session_id = await getCookie('pavolhejny', '...');
+ * TODO: !!! [🧠] How to extract the article from the web?
+ * TODO: !!! Use puppeteer to scrape the web
  */
