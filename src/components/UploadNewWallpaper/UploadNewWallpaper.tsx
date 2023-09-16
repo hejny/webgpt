@@ -80,7 +80,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     <>
                         Drop image to
                         <br />
-                        <b>make new web</b>
+                        <b>make your web</b>
                     </>
                 )}
             </UploadZone>

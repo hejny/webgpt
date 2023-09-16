@@ -10,6 +10,7 @@ export function PavolHejny() {
     return (
         <div className={styles.PavolHejnySection}>
             <svg width="0" height="0">
+                {/* TODO: [🚝] DRY */}
                 <defs>
                     <clipPath id="squircle" clipPathUnits="objectBoundingBox">
                         <path
@@ -53,6 +54,7 @@ export function PavolHejny() {
 }
 
 /**
+ * TODO: Maybe use <CreateZone/> internally
  * TODO: Maybe make <Person/> component
  * TODO: Should we translate alt of the images like "Portrait photo of Pavol Hejný"
  * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/hejny/main/documents/contact.md
