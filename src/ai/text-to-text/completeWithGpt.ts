@@ -90,6 +90,7 @@ export async function completeWithGpt(
 }
 
 /**
+ * TODO: DRY ChatThread+completeWithGpt
  * TODO: [🧠] response or answer?
  * TODO: [🧠][5] Log also failed requests
  * TODO: Make ICompleteWithGptOptions

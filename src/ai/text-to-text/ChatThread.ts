@@ -129,6 +129,7 @@ export class ChatThread {
 }
 
 /**
+ * TODO: [🚞] DRY ChatThread+completeWithGpt
  * TODO: [🧠] response or answer?
  * TODO: [🧠][5] Log also failed requests
  * TODO: Make IAskOptions
