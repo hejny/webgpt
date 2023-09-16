@@ -1,12 +1,11 @@
-import { useState } from 'react';
+import { fetchUser } from 'insta-fetcher';
+import { useRef } from 'react';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/Center/Center';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { string_url } from '../../utils/typeAliases';
-import { isValidUrl } from '../../utils/validators/isValidUrl';
 
 export default function NewWallpaperFromInstagramPage() {
-    const [url, setUrl] = useState<string_url | null>(null);
+    const instagramNameInputRef = useRef<HTMLInputElement | null>(null);
 
     return (
         <>
@@ -16,18 +15,14 @@ export default function NewWallpaperFromInstagramPage() {
                 <main>
                     <Center>
                         <h1>AI Web Maker</h1>
-                        Write URL to make new web from:
-                        <input
-                            type="url"
-                            placeholder="https://example.com"
-                            onChange={(event) => setUrl(event.target.value)}
-                        />
+                        Write your Instagram name to make new web from:
+                        <input type="text" placeholder="@hejny" ref={instagramNameInputRef} />
                         <button
                             className="button-TODO"
                             onClick={() => {
-                                if (!isValidUrl(url)) {
-                                    alert('Please write valid URL');
-                                }
+                                const instagramName = instagramNameInputRef.current?.value;
+
+                                fetchUser();
                             }}
                         >
                             Create
@@ -48,4 +43,6 @@ export default function NewWallpaperFromInstagramPage() {
 /**
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: !!! Implement
+ * TODO: Lazy-load insta-fetcher
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
  */

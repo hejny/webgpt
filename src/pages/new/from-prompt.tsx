@@ -37,3 +37,7 @@ export default function NewWallpaperFromPromptPage() {
         </>
     );
 }
+
+/**
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
+ */
