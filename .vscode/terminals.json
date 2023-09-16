@@ -127,6 +127,26 @@
             "focus": true
         },
         {
+            "name": "🏭🥫 Dump Supabase structure",
+            "commands": [
+                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > other/database-definition/structure.dump.pgsql",
+                "git add other/database-definition/structure.dump.pgsql",
+                "git commit -m \"Dump Supabase structure\""
+            ],
+            "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🥫 Dump Supabase structure + data",
+            "commands": [
+                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --dbname DATABASE_URL > other/database-definition/structure+data.dump.pgsql"
+            ],
+            "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🧸 Playground",
             "commands": ["ts-node ./scripts/playground/playground.ts"],
             "onlySingle": true,
