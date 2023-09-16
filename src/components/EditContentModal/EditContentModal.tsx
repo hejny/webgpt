@@ -1,5 +1,3 @@
-import '@uiw/react-markdown-editor/markdown-editor.css';
-import '@uiw/react-markdown-preview/markdown.css';
 import { useMemo } from 'react';
 import { exportAsHtml } from '../../export/exportAsHtml';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
@@ -50,7 +48,7 @@ export function EditContentModal() {
     );
 }
 
-
 /**
  * TODO: !!!
+ * TODO: [🛴] Lazy-load the <MonacoEditor/>
  */

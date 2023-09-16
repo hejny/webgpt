@@ -1,5 +1,3 @@
-import '@uiw/react-markdown-editor/markdown-editor.css';
-import '@uiw/react-markdown-preview/markdown.css';
 import { Registration } from 'destroyable';
 import { useEffect, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
