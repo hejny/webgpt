@@ -1,5 +1,3 @@
-import '@uiw/react-markdown-editor/markdown-editor.css';
-import '@uiw/react-markdown-preview/markdown.css';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';

@@ -1,5 +1,5 @@
 import { Color } from '../../../utils/color/Color';
-import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 
 export interface IGalleryFilter {

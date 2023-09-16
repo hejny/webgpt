@@ -47,7 +47,6 @@ export function FilePreview(props: FilePreviewProps) {
 }
 
 /**
- * TODO: Lazy-load the <MonacoEditor/>
- * TODO: Use <MonacoEditor/> also for markdown and remove the current one
+ * TODO: [🛴] Lazy-load the <MonacoEditor/>
  * TODO: Use syntax highlighting for the code view @see https://www.npmjs.com/package/react-syntax-highlighter
  */
