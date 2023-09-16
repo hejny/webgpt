@@ -69,6 +69,8 @@ export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
 export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
 
+export const INSTAGRAM_COOKIE = config.get('INSTAGRAM_COOKIE').value;
+
 export const EXPORT_OPTIONS = {
     isExported: false,
     publicUrl: NEXT_PUBLIC_URL,
