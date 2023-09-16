@@ -3,7 +3,7 @@ import { ReactNode, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
-import { createNewWallpaper } from '../../workers/createNewWallpaper/createNewWallpaper';
+import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaper';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
@@ -45,7 +45,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     setTasksProgress([]);
 
                     try {
-                        const { wallpaperId } = await createNewWallpaper(
+                        const { wallpaperId } = await createNewWallpaperForBrowser(
                             {
                                 author: await provideClientId({
                                     isVerifiedEmailRequired: false,

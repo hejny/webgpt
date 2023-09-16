@@ -28,6 +28,8 @@ createNewWallpaperWorkerify.runWorker(createNewWallpaperExecutor);
 
 /**
  * @private within this folder
+ *
+ * TODO: Maybe put in separate file and make public as createNewWallpaperForServer / createNewWallpaperForNode
  */
 async function createNewWallpaperExecutor(
     request: ICreateNewWallpaperRequest,
