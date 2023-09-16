@@ -190,6 +190,69 @@ export function CopilotPanel() {
             {isMenuOpen && (
                 <nav className={styles.MenuContent}>
                     <ul>
+                        {wallpaper.saveStage === 'EDITED' && (
+                            // TODO: [🌨] DRY - Maybe <SaveButton> or saveWallpaper() function
+                            <li
+                                className={styles.extraFeatured}
+                                onClick={async () => {
+                                    const clientId = await provideClientId({
+                                        isVerifiedEmailRequired: false,
+                                    });
+                                    const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
+                                        // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
+                                        // TODO: Use here addWallpaperComputables
+                                        modifiedWallpaper.parent = modifiedWallpaper.id;
+                                        modifiedWallpaper.author = clientId;
+                                        modifiedWallpaper.isPublic = false;
+                                        modifiedWallpaper.saveStage = 'SAVING';
+                                        modifiedWallpaper.keywords = Array.from(
+                                            parseKeywordsFromWallpaper(modifiedWallpaper),
+                                        );
+                                        modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
+                                        return modifiedWallpaper;
+                                    });
+
+                                    const insertResult = await getSupabaseForBrowser()
+                                        .from('Wallpaper')
+                                        .insert(serializeWallpaper(newWallpaper));
+
+                                    // TODO: !! Util isInsertSuccessfull (status===201)
+                                    console.info({ newWallpaper, insertResult });
+
+                                    /*
+                                    Note: Wallpapers should not be explicitly saved, they automatically appear as saved after router.push is loaded
+                                    modifyWallpaper((modifiedWallpaper) => {
+                                        modifiedWallpaper.saveStage = 'SAVED';
+                                        return modifiedWallpaper;
+                                    });
+                                    */
+
+                                    try {
+                                        const parentKey = `likedStatus_${wallpaper.id}`;
+                                        const currentKey = `likedStatus_${newWallpaper.id}`;
+
+                                        if (window.localStorage.getItem(parentKey)) {
+                                            window.localStorage.setItem(
+                                                currentKey,
+                                                window.localStorage.getItem(parentKey)!,
+                                            );
+                                        } else if (!window.localStorage.getItem(currentKey)) {
+                                            window.localStorage.setItem(
+                                                currentKey,
+                                                'LIKE' satisfies keyof typeof LikedStatus,
+                                            );
+                                        }
+                                    } catch (error) {
+                                        // TODO: [🧠] Handle situation when window.localStorage is exceeded
+                                        console.error(error);
+                                    }
+
+                                    router.push(`/${newWallpaper.id}`);
+                                }}
+                            >
+                                Save
+                            </li>
+                        )}
                         <li className={styles.featured}>
                             <WallpaperLink
                                 modal="export"
@@ -250,7 +313,6 @@ export function CopilotPanel() {
 }
 
 /**
- * TODO: !!! Saving
  * TODO: !! CopilotPanel: Fully line design
  * TODO: !! CopilotPanel: Show errors
  * TODO: !! CopilotPanel: Log errors into Sentry

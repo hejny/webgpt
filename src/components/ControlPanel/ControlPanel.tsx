@@ -29,6 +29,7 @@ export function ControlPanel() {
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
             <div className={styles.group}>
                 {wallpaper.saveStage === 'EDITED' && (
+                    // TODO: [🌨] DRY - Maybe <SaveButton> or saveWallpaper() function
                     <button
                         className={classNames(styles.button, styles.callToAction)}
                         onClick={async () => {
