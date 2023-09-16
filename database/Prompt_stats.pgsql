@@ -6,23 +6,37 @@ drop view if exists public."Prompt_stats";
 create view
   public."Prompt_stats" as
 select
+
+  /* Metadata */
   "Prompt".id,
-  "Prompt"."previousExternalId",
+  "Prompt".type,
   "Prompt"."createdAt",
-  "Prompt"."promptAt",
-  "Prompt"."answerAt",
-  "Prompt"."systemMessage",
-  "Prompt".prompt,
-  "Prompt".answer,
+  "Prompt"."clientId",
+  "Prompt".metadata,
+
+  /* Stats */
+  ("Prompt"."answerAt" - "Prompt"."promptAt") as duration,
+
+  /* Model */
   "Prompt".model,
   "Prompt"."modelSettings",
-  "Prompt".metadata,
-  "Prompt"."clientId",
-  "Prompt".type,
-  "Prompt"."fullCompletion",
+
+  /* Prompt */
+  "Prompt".prompt,
+  "Prompt"."systemMessage",
+  "Prompt"."previousExternalId",
+  "Prompt"."promptAt",
+
+  /* Response */
+  "Prompt".answer,
   "Prompt"."externalId",
-  1 as "nonce",
-  ("Prompt"."answerAt" - "Prompt"."promptAt") as duration
+  "Prompt"."fullCompletion",
+  "Prompt"."answerAt",
+
+
+  /* Other */
+  2 as "nonce"
+  
 from
   public."Prompt"
 order by
