@@ -37,4 +37,5 @@ export default function NewWallpaperFromPromptPage() {
 
 /**
  * TODO: [👐] Unite design of all /new/* pages
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
  */
