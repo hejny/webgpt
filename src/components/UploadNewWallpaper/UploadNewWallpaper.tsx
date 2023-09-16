@@ -109,4 +109,5 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
  * TODO: Maybe derive isWorking from taskProgress
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
  * TODO: !! It Should be possible to list private wallpapers via getSupabaseForBrowser().from('Wallpaper').select('*').eq('isPublic', false)
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
  */

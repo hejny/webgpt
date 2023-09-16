@@ -29,6 +29,12 @@ export default function NewWallpaperFromInstagramPage() {
                                 const { instagramUser } = (await reponse.json()) as ScrapeInstagramUserResponse;
 
                                 console.info('👤', { instagramUser });
+
+                                // TODO: !!! Make CORS proxy for images
+                                const profileImageResponse = await fetch(instagramUser.hd_profile_pic_url_info.url);
+                                const profileImage = await profileImageResponse.blob();
+
+                                console.info('👤', { profileImage });
                             }}
                         >
                             Create
@@ -47,6 +53,7 @@ export default function NewWallpaperFromInstagramPage() {
 }
 
 /**
+ * TODO: !!! Wotk with @ wihoout @ (and with https://www.instagram.com/...)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: !!! Implement
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
