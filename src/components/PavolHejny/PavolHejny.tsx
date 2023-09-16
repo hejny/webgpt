@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import pavolHejnyArticle from '../../../documents/pavol-hejny.md';
 import pavolHejny from '../../../public/people/pavol-hejny.transparent.png';
 import { removeMarkdownTitle } from '../../utils/content/removeMarkdownTitle';
@@ -17,7 +18,7 @@ export function PavolHejny() {
                     </clipPath>
                 </defs>
             </svg>
-            <div className={styles.person}>
+            <Link href="https://www.pavolhejny.com/" className={styles.person}>
                 <Image
                     alt="Portrait photo of Pavol Hejný"
                     priority
@@ -30,7 +31,7 @@ export function PavolHejny() {
                     placeholder="blur"
                 />
                 <div className={styles.personBackground} />
-            </div>
+            </Link>
             <div className={styles.personShadow}>
                 <svg viewBox="0 0 1 1" className={styles.personShadowInner}>
                     <path
