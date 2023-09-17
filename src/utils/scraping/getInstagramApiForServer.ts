@@ -1,4 +1,5 @@
 import { getCookie, igApi as InstagramApi } from 'insta-fetcher';
+import { INSTAGRAM_PASSWORD, INSTAGRAM_USERNAME } from '../../../config';
 import { isRunningInNode } from '../isRunningInWhatever';
 
 /**
@@ -22,13 +23,9 @@ export async function getInstagramApiForServer(): Promise<InstanceType<typeof In
     }
 
     if (!instagramApi) {
-        const instagramCookie = await getCookie(
-            'username',
-            'password', // <- Note: [☂] Username and password are not needed for scraping of public profiles
-            /*INSTAGRAM_USERNAME!, INSTAGRAM_PASSWORD!*/
-        );
+        const instagramCookie = await getCookie(INSTAGRAM_USERNAME!, INSTAGRAM_PASSWORD!);
 
-        console.info('🍪', { instagramCookie });
+        console.info('🍪 New Instagram cookie', { instagramCookie });
         instagramApi = new InstagramApi(instagramCookie.toString());
     }
     return instagramApi;
