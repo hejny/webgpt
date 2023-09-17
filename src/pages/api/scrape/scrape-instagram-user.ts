@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import spaceTrim from 'spacetrim';
 import { getInstagramApiForServer } from '../../../utils/scraping/getInstagramApiForServer';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
@@ -42,11 +43,30 @@ export default async function scrapeInstagramUserHandler(
         );
     }
 
-    const instagramUser = await getInstagramApiForServer().fetchUser(instagramName);
+    try {
+        const instagramUser = await getInstagramApiForServer().fetchUser(instagramName);
 
-    // console.info('👤', { instagramUser });
+        // console.info('👤', { instagramUser });
 
-    return response.status(200).json({ instagramUser } satisfies ScrapeInstagramUserResponse);
+        return response.status(200).json({ instagramUser } satisfies ScrapeInstagramUserResponse);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        return response.status(500).json(
+            {
+                message: spaceTrim(
+                    (block) => `
+        
+                        There was an error while scraping Instagram user "${instagramName}":
+
+                        ${block((error as Error).message)}
+                    `,
+                ),
+            } as any /* <-[🌋] */,
+        );
+    }
 }
 
 /**
