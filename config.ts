@@ -77,7 +77,6 @@ export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
 export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
 
-// TODO: !!! Make instagram account for 1-2i
 // Note: Not using token because it is invalidated so often
 export const INSTAGRAM_USERNAME = config.get('INSTAGRAM_USERNAME').value;
 export const INSTAGRAM_PASSWORD = config.get('INSTAGRAM_PASSWORD').value;
