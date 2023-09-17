@@ -1,6 +1,7 @@
 import { getCookie, igApi as InstagramApi } from 'insta-fetcher';
 import { INSTAGRAM_PASSWORD, INSTAGRAM_USERNAME } from '../../../config';
 import { isRunningInNode } from '../isRunningInWhatever';
+import { getServerStorage } from '../supabase/getServerStorage';
 
 /**
  * Internal cache for getInstagramApiForServer
@@ -23,10 +24,19 @@ export async function getInstagramApiForServer(): Promise<InstanceType<typeof In
     }
 
     if (!instagramApi) {
-        const instagramCookie = await getCookie(INSTAGRAM_USERNAME!, INSTAGRAM_PASSWORD!);
+        // TODO: Make some bank of server storages:
+        //      > const cookiesStorage = new PrefixStorage<{ value: string_token }>(getServerStorage(), 'Cookies');
 
-        console.info('🍪 New Instagram cookie', { instagramCookie });
-        instagramApi = new InstagramApi(instagramCookie.toString());
+        let instagramCookieItem = await getServerStorage().getItem('instagramCookie');
+
+        if (!instagramCookieItem) {
+            const instagramCookie = await getCookie(INSTAGRAM_USERNAME!, INSTAGRAM_PASSWORD!);
+            console.info('🍪 New Instagram cookie', { instagramCookie });
+            instagramCookieItem = { value: instagramCookie.toString() };
+            await getServerStorage().setItem('instagramCookie', instagramCookieItem);
+        }
+
+        instagramApi = new InstagramApi(instagramCookieItem.value);
     }
     return instagramApi;
 }

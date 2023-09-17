@@ -1,5 +1,5 @@
 import { SupabaseClient } from '@supabase/supabase-js';
-import { IStorage } from 'everstorage';
+import type { IStorage } from 'everstorage';
 import { getSupabaseForServer } from './getSupabaseForServer';
 import { Database, Json } from './types';
 
@@ -19,7 +19,7 @@ let serverStorage: IStorage<Json>;
  *
  * @returns instance of supabase client
  */
-export function getServerStorage(): IStorage<Json> {
+export function getServerStorage(): IStorage<any> {
     if (!serverStorage) {
         serverStorage = new ServerStorage();
     }
