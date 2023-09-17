@@ -51,6 +51,7 @@ class ServerStorage implements IStorage<Json> {
      * Returns the current value associated with the given key, or null if the given key does not exist in the list associated with the Json.
      */
     public async getItem(key: string): Promise<Json | null> {
+        // TODO: [0] Filter by validUntil
         const { data } = await this.supabase.from('Value').select('value').eq('key', key).single();
 
         if (!data) {
@@ -71,6 +72,7 @@ class ServerStorage implements IStorage<Json> {
      * Removes the key/value pair with the given key from the list associated with the Json, if a key/value pair with the given key exists.
      */
     public async removeItem(key: string): Promise<void> {
+        // TODO: [0] Never delete JUST invalidate
         await this.supabase.from('Value').delete().eq('key', key);
     }
 
@@ -80,10 +82,17 @@ class ServerStorage implements IStorage<Json> {
      * Throws a "QuotaExceededError" DOMException exception if the new value couldn't be set. (Setting could fail if, e.g., the user has disabled storage for the site, or if the quota has been exceeded.)
      */
     public async setItem(key: string, value: Json): Promise<void> {
-        await this.supabase.from('Value').update({ value }).eq('key', key);
+        const existingValue = await this.getItem(key);
+        if (!existingValue) {
+            await this.supabase.from('Value').insert({ key, value });
+        } else {
+            // TODO: [0] Never update JUST add new version
+            // TODO: [0] Never allow multiple valid values
+            await this.supabase.from('Value').update({ value }).eq('key', key);
+        }
     }
 }
 
 /**
- * TODO: Implement validUntil
+ * TODO: [0] Implement validUntil
  */
