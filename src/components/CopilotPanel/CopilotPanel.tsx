@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { COPILOT_PLACEHOLDERS } from '../../../config';
+import { COPILOT_PLACEHOLDERS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import type {
     UpdateWallpaperContentRequest,
     UpdateWallpaperContentResponse,
@@ -69,7 +69,9 @@ export function CopilotPanel() {
             const { content: oldContent } = wallpaper;
 
             const response = await fetch(
-                `/api/update-wallpaper-content?clientId=${await provideClientId({ isVerifiedEmailRequired: true })}`,
+                `/api/update-wallpaper-content?clientId=${await provideClientId({
+                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
+                })}`,
                 {
                     method: 'POST',
                     body: JSON.stringify({
@@ -197,7 +199,7 @@ export function CopilotPanel() {
                                 className={styles.extraFeatured}
                                 onClick={async () => {
                                     const clientId = await provideClientId({
-                                        isVerifiedEmailRequired: false,
+                                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                                     });
                                     const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                                         // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save

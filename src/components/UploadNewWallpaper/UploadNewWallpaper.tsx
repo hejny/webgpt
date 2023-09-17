@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { ReactNode, useState } from 'react';
 import spaceTrim from 'spacetrim';
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
@@ -49,7 +50,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         const { wallpaperId } = await createNewWallpaperForBrowser(
                             {
                                 author: await provideClientId({
-                                    isVerifiedEmailRequired: false,
+                                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                 }),
                                 wallpaperImage: file,
                             },

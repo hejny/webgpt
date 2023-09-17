@@ -52,6 +52,13 @@ export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value
  */
 export const SPEED = 1; // 1 / 5;
 
+export const IS_VERIFIED_EMAIL_REQUIRED = {
+    CREATE: false,
+    EDIT: false,
+    LIKE: false,
+    PUBLISH: true,
+} as const;
+
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
 export const SUPABASE_SERVICE_ROLE_KEY = config.get('SUPABASE_SERVICE_ROLE_KEY').value;
