@@ -1,9 +1,6 @@
-import { igApi } from 'insta-fetcher';
-
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { INSTAGRAM_COOKIE } from '../../../../config';
-
-const instagram = new igApi(INSTAGRAM_COOKIE); /* <- TODO: To utils with cache simmilar as supabaseForServer */
+import { getInstagramApiForServer } from '../../../utils/scraping/getInstagramApiForServer';
+import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 export interface ScrapeInstagramUserResponse {
     // TODO: [🌋] ErrorableResponse
@@ -18,13 +15,30 @@ export default async function scrapeInstagramUserHandler(
     request: NextApiRequest,
     response: NextApiResponse<ScrapeInstagramUserResponse>,
 ) {
+    //---------------
+    // TODO: [🌺] Make middleware for this:
+    const clientId = request.query.clientId; /* <- TODO: [🌺][1] Maybe pass clientId as header X-Client-Id */
+    if (isValidClientId(clientId) /* <- TODO: [🌺][2] Also check if the email of client is validated */) {
+        return response.status(400).json(
+            {
+                message: 'You must pass valid clientId' /* <- TODO: [🌻] Unite wrong GET param message */,
+            } as any /* <-[🌋] */,
+        );
+    }
+    // TODO: [🌺] Log cost for this request and attribute it to the client
+    //---------------
+
     const instagramName = request.query.instagramName;
 
     if (typeof instagramName !== 'string' /* <- TODO: Better validation */) {
-        return response.status(400).json({ message: 'GET param instagramName is not valid' } as any /* <-[🌋] */);
+        return response.status(400).json(
+            {
+                message: 'GET param instagramName is not valid' /* <- TODO: [🌻] Unite wrong GET param message */,
+            } as any /* <-[🌋] */,
+        );
     }
 
-    const instagramUser = await instagram.fetchUser(instagramName);
+    const instagramUser = await getInstagramApiForServer().fetchUser(instagramName);
 
     // console.info('👤', { instagramUser });
 
