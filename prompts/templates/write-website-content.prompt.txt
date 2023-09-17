@@ -1,3 +1,5 @@
 Following is markdown content of a webpage:
 
-${block(contentStart)}
+# {TITLE}
+
+> {TOPIC}
