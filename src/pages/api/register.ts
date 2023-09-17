@@ -9,6 +9,9 @@ interface RegisterResponse {
     message: string;
 }
 
+/**
+ * API endpoint handler to register new site into the system
+ */
 export default async function registerHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
@@ -26,11 +29,9 @@ export default async function registerHandler(request: NextApiRequest, response:
     const url = request.query.url as string_url;
 
     if (!isValidWallpaperId(wallpaperId)) {
-        return response
-            .status(400)
-            .json({
-                message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
-            });
+        return response.status(400).json({
+            message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+        });
     }
 
     if (!isValidUrl(url)) {

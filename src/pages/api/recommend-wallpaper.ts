@@ -14,6 +14,9 @@ export interface RecommendWallpaperResponse {
     recommendedWallpaper: IWallpaperSerialized;
 }
 
+/**
+ * API endpoint handler to recommend new wallpaper to the user according to his previous reactions
+ */
 export default async function recommendWallpaperHandler(
     request: NextApiRequest,
     response: NextApiResponse<RecommendWallpaperResponse>,
@@ -21,14 +24,12 @@ export default async function recommendWallpaperHandler(
     const author = request.query.author;
 
     if (!isValidUuid(author)) {
-        return response
-            .status(400)
-            .json(
-                {
-                    message:
-                        'GET param author is not set or not a valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
-                } as any /* <- [🌋]  */,
-            );
+        return response.status(400).json(
+            {
+                message:
+                    'GET param author is not set or not a valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+            } as any /* <- [🌋]  */,
+        );
     }
 
     try {
