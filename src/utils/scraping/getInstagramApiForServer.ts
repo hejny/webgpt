@@ -1,5 +1,6 @@
 import { getCookie, igApi as InstagramApi } from 'insta-fetcher';
 import { INSTAGRAM_PASSWORD, INSTAGRAM_USERNAME } from '../../../config';
+import { explainError } from '../extraMessage';
 import { isRunningInNode } from '../isRunningInWhatever';
 import { getServerStorage } from '../supabase/getServerStorage';
 
@@ -8,7 +9,7 @@ import { getServerStorage } from '../supabase/getServerStorage';
  * @private
  * @singleton
  */
-let instagramApi: InstanceType<typeof InstagramApi>;
+let instagramApi: null | InstanceType<typeof InstagramApi> = null;
 
 /**
  * Get instagramApi which is used for scraping information from Instagram
@@ -23,23 +24,33 @@ export async function getInstagramApiForServer(): Promise<InstanceType<typeof In
         throw new Error('InstagramApi is available only in server/node');
     }
 
-    if (!instagramApi) {
+    if (instagramApi === null) {
         // TODO: Make some bank of server storages:
         //      > const cookiesStorage = new PrefixStorage<{ value: string_token }>(getServerStorage(), 'Cookies');
 
         let instagramCookieItem = await getServerStorage().getItem('instagramCookie');
 
         if (!instagramCookieItem) {
-            const instagramCookie = await getCookie(INSTAGRAM_USERNAME!, INSTAGRAM_PASSWORD!);
+            const instagramCookie = await getCookie(INSTAGRAM_USERNAME!, INSTAGRAM_PASSWORD!).catch(
+                explainError('Can not get Instagram cookie'),
+            );
             console.info('🍪 New Instagram cookie', { instagramCookie });
             instagramCookieItem = { value: instagramCookie.toString() };
             await getServerStorage().setItem('instagramCookie', instagramCookieItem);
         }
 
-        console.log('!!!', { instagramCookieItem });
+        // console.log('!!!', { instagramCookieItem });
         instagramApi = new InstagramApi(instagramCookieItem.value);
     }
     return instagramApi;
+}
+
+/**
+ * !!!
+ */
+export async function resetInstagramApiForServer(): Promise<void> {
+    instagramApi = null;
+    await getServerStorage().removeItem('instagramCookie');
 }
 
 /**

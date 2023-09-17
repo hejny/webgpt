@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import spaceTrim from 'spacetrim';
-import { getInstagramApiForServer } from '../../../utils/scraping/getInstagramApiForServer';
+import { explainError } from '../../../utils/extraMessage';
+import { getInstagramApiForServer, resetInstagramApiForServer } from '../../../utils/scraping/getInstagramApiForServer';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 export interface ScrapeInstagramUserResponse {
@@ -47,10 +48,9 @@ export default async function scrapeInstagramUserHandler(
         const instagramApi = await getInstagramApiForServer();
         // console.log('!!!', { instagramApi });
 
-        const instagramUser = await instagramApi.fetchUser(instagramName).catch((error) => {
-            console.error('👤', { error });
-            return null;
-        });
+        const instagramUser = await instagramApi
+            .fetchUser(instagramName)
+            .catch(explainError(`Can not fetch Instagram user @${instagramName}`));
 
         // console.info('👤', { instagramUser });
 
@@ -60,12 +60,22 @@ export default async function scrapeInstagramUserHandler(
             throw error;
         }
 
+        if (error.message.includes('Invalid cookie') || error.message.includes('failed with status code 401')) {
+            await resetInstagramApiForServer();
+            return response.status(425).json(
+                {
+                    message: 'Refreshing Instagram session. Please try again in few seconds.',
+                } as any /* <-[🌋] */,
+            );
+        }
+
+        console.error(error);
         return response.status(500).json(
             {
                 message: spaceTrim(
                     (block) => `
         
-                        There was an error while scraping Instagram user "${instagramName}":
+                        There was an error while scraping Instagram user @${instagramName}
 
                         ${block((error as Error).message)}
                     `,
