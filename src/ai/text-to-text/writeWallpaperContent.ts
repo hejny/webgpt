@@ -30,8 +30,9 @@ export async function writeWallpaperContent(
     const { response, model: modelToCreateTitle } = chatThread;
     const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
-    // TODO: Use !!! MAX_CHARS_IN_TITLE
-    // TODO: Use !!! MAX_CHARS_IN_TITLE_WORD
+    // TODO: !!! Separate title, claim and content writing endpoint
+    // TODO: !!! Use MAX_CHARS_IN_TITLE
+    // TODO: !!! Use MAX_CHARS_IN_TITLE_WORD
 
     const contentStart = spaceTrim(
         (block) => `
