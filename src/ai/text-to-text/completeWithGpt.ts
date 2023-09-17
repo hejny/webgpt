@@ -1,6 +1,7 @@
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { string_completion_prompt, string_model_name, uuid } from '../../utils/typeAliases';
+import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
+import { Prompt } from './prompt-templates/PromptTemplate';
 
 export interface ICompleteWithGptResult {
     response: string;
@@ -13,14 +14,14 @@ export interface ICompleteWithGptResult {
  * Note: This function is aviable only on the server
  */
 export async function completeWithGpt(
-    prompt: string_completion_prompt,
+    prompt: Prompt<'COMPLETION'>,
     clientId: uuid /* <-[🌺] */,
 ): Promise<ICompleteWithGptResult> {
     const model = 'text-davinci-003';
     const modelSettings = {
         model,
         max_tokens: 500,
-        // <- TODO: [🤡] Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
+        // <- TODO: Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
     };
     const promptAt = new Date();
 
@@ -75,7 +76,7 @@ export async function completeWithGpt(
     performance.mark('complete-gpt-start');
     const completion = await getOpenaiForServer().completions.create({
         ...modelSettings,
-        prompt,
+        prompt: prompt.toString(),
     });
     performance.mark('complete-gpt-end');
     const answerAt = new Date();
