@@ -44,7 +44,8 @@ export default async function scrapeInstagramUserHandler(
     }
 
     try {
-        const instagramUser = await getInstagramApiForServer().fetchUser(instagramName);
+        const instagramApi = await getInstagramApiForServer();
+        const instagramUser = await instagramApi.fetchUser(instagramName);
 
         // console.info('👤', { instagramUser });
 
