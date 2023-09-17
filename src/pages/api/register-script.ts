@@ -31,7 +31,10 @@ async function register(wallpaperId: uuid) {
 /**
  * API endpoint handler to return javascript for registering new site into the system
  */
-export default async function registerScriptHandler(request: NextApiRequest, response: NextApiResponse) {
+export default async function registerScriptHandler(
+    request: NextApiRequest,
+    response: NextApiResponse /* <- TODO: [❄] What is the best way how to type non-json reposnses */,
+) {
     const wallpaperId = request.query.wallpaperId;
 
     if (!isValidWallpaperId(wallpaperId)) {

@@ -6,7 +6,10 @@ import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 /**
  * API endpoint handler to return preview image
  */
-export default async function ogImageHandler(request: NextApiRequest, response: NextApiResponse) {
+export default async function ogImageHandler(
+    request: NextApiRequest,
+    response: NextApiResponse /* <- TODO: [❄] What is the best way how to type non-json reposnses */,
+) {
     const wallpaperId = request.query.wallpaperId as string_wallpaper_id;
 
     if (!isValidWallpaperId(wallpaperId)) {
