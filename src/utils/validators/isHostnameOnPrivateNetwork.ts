@@ -1,13 +1,22 @@
 import { string_hostname } from '../typeAliases';
 
 /**
- * Checks if an IP address or hostname is reserved for private networks or localhost.
+ * Checks if an URL is reserved for private networks or localhost.
  *
- * @param {string} ipAddress - The IP address to check.
- * @returns {boolean} Returns true if the IP address is reserved for private networks or localhost, otherwise false.
+ * Note: There are two simmilar functions:
+ * - `isUrlOnPrivateNetwork` which tests full URL
+ * - `isHostnameOnPrivateNetwork` *(this one)* which tests just hostname
  */
-export function isPrivateNetwork(hostname: string_hostname): boolean {
-    if (hostname === 'localhost' || hostname.endsWith('.localhost') || hostname === '127.0.0.1' || hostname === '::1') {
+export function isHostnameOnPrivateNetwork(hostname: string_hostname): boolean {
+    if (
+        hostname === 'example.com' ||
+        hostname === 'localhost' ||
+        hostname.endsWith('.localhost') ||
+        hostname.endsWith('.local') ||
+        hostname.endsWith('.test') ||
+        hostname === '127.0.0.1' ||
+        hostname === '::1'
+    ) {
         return true;
     }
     if (hostname.includes(':')) {

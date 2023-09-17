@@ -8,7 +8,7 @@ import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
-import { isPrivateNetwork } from './src/utils/validators/isPrivateNetwork';
+import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const APP_VERSION = packageJson.version;
@@ -25,9 +25,10 @@ const config = ConfigChecker.from({
 });
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
-export const IS_DEVELOPMENT = isPrivateNetwork(
-    NEXT_PUBLIC_URL.hostname,
-); /* <- TODO: Maybe pass NODE_ENV and not assume that local is automatically dev */
+export const IS_DEVELOPMENT =
+    isUrlOnPrivateNetwork(
+        NEXT_PUBLIC_URL,
+    ); /* <- TODO: Maybe pass NODE_ENV and not assume that local is automatically dev */
 export const IS_PRODUCTION = !IS_DEVELOPMENT;
 
 if (isRunningInBrowser()) {
