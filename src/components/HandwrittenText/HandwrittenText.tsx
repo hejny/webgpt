@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
-import { forTime } from 'waitasecond';
-// [👩‍🌾] import materializedHandwritten from '../../../public/handwritten/materialized/AI-Web-Maker.BigPartiallyPartiallyJoined.txt';
+//import { forTime } from 'waitasecond';
+// import { handwriteText } from './utils/handwriteText';
+import materializedHandwritten1 from '../../../public/handwritten/materialized/AI-Web-Maker.BigPartiallyPartiallyJoined.1.txt';
+import materializedHandwritten2 from '../../../public/handwritten/materialized/AI-Web-Maker.BigPartiallyPartiallyJoined.2.txt';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
+import { removeContentComments } from '../../utils/content/removeContentComments';
+import { randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
-import { handwriteText, HandwrittenStyle } from './utils/handwriteText';
+import type { HandwrittenStyle } from './utils/handwriteText';
 
 interface HandwrittenTextProps {
     /**
@@ -55,6 +59,8 @@ export function HandwrittenText(props: HandwrittenTextProps) {
 
             <svg
                 className={styles.primaryImage}
+                /*
+                TODO: [👩‍🌾] Dynamically decide if not cached
                 ref={async (svgElement) => {
                     if (!svgElement) {
                         return;
@@ -63,7 +69,8 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                     // TODO: Preload the script and model d.bin HERE
                     // > await loadAndRunExternalScript('/handwritten/script.js')
 
-                    await forTime(10 /* <- !! How much is the true delay, can it work without delay? */);
+                    await forTime(10 // <- !! How much is the true delay, can it work without delay?
+                    );
 
                     if (!isMounted) {
                         return;
@@ -74,19 +81,23 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         // TODO: !! Work with aspect ratio
                         text: children,
                         color,
-                        speed: 5 /* 7 */,
+                        speed: 5,
                         bias: 0.75,
                         width: 1.5,
                         style,
                         svgElement,
                     });
-                }}
-                /* 
-                TODO: [👩‍🌾] Do system for materialized handwritten text
+                }}*/
+
+                viewBox="0 0 700 100"
                 dangerouslySetInnerHTML={{
-                    __html: materializedHandwritten,
+                    __html:
+                        //materializedHandwritten1 + materializedHandwritten2 +
+                        randomItem(
+                            removeContentComments(materializedHandwritten1),
+                            removeContentComments(materializedHandwritten2),
+                        ),
                 }}
-                */
             >
                 {/* <path id="path" d=""></path> */}
             </svg>

@@ -1,0 +1,13 @@
+.outer {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+    position: relative;
+}
+
+.inner {
+    /*/
+    outline: 1px dotted rgb(38, 255, 67);
+    /**/
+    position: absolute;
+}
