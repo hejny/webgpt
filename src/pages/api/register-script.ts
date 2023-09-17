@@ -28,7 +28,11 @@ export default async function registerScriptHandler(request: NextApiRequest, res
     const wallpaperId = request.query.wallpaperId;
 
     if (!isValidWallpaperId(wallpaperId)) {
-        return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
+        return response
+            .status(400)
+            .json({
+                message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+            });
     }
 
     return response

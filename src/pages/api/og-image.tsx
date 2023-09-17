@@ -7,7 +7,11 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
     const wallpaperId = request.query.wallpaperId as string_wallpaper_id;
 
     if (!isValidWallpaperId(wallpaperId)) {
-        return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
+        return response
+            .status(400)
+            .json({
+                message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+            });
     }
 
     /*/

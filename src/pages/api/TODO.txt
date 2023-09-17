@@ -1,1 +1,2 @@
+TODO: [🌺] There should be some middleware which automatically chacks clientId + some token to prevent misuse
 TODO: [🌺] There should be probbably some middleware which automatically passes clientId through 

@@ -23,7 +23,12 @@ export default async function recommendWallpaperHandler(
     if (!isValidUuid(author)) {
         return response
             .status(400)
-            .json({ message: 'GET param author is not set or not a valid UUID' } as any /* <- [🌋]  */);
+            .json(
+                {
+                    message:
+                        'GET param author is not set or not a valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+                } as any /* <- [🌋]  */,
+            );
     }
 
     try {
