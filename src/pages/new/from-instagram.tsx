@@ -42,15 +42,20 @@ export default function NewWallpaperFromInstagramPage() {
                             className="button-TODO"
                             onClick={async () => {
                                 setWorking(true);
-                                setTasksProgress([]);
+                                setTasksProgress([
+                                    {
+                                        // TODO: Use here taskify instead
+                                        // TODO: [🧠][🚔] DEFAULT_STARTING_TASK
+                                        name: 'start-worker',
+                                        title: 'Spinning up',
+                                        isDone: false,
+                                    },
+                                ]);
 
                                 try {
                                     const instagramName = instagramNameInputRef.current?.value!;
 
-                                    // TODO: !!! Either make createNewWallpaperFromInstagramForBrowser
-                                    //       OR just start first TaskProgress here
-
-                                    // TODO: [7] Normalize
+                                    // TODO: [7] Normalize instagramName
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/ -> michelangelato.zmrzlinarna
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/?whatever=foo#bar -> michelangelato.zmrzlinarna
                                     //      @michelangelato.zmrzlinarna -> michelangelato.zmrzlinarna
