@@ -139,9 +139,9 @@ export default function NewWallpaperFromInstagramPage() {
 }
 
 /**
- * TODO: !!! Wotk with @ wihoout @ (and with https://www.instagram.com/...)
+ * TODO: !!! Finish
+ * TODO: !!! Work with @ without @ (and with https://www.instagram.com/...)
  * TODO: [👐] Unite design of all /new/* pages
- * TODO: !!! Implement
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress
  */

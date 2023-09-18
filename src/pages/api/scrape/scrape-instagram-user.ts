@@ -22,7 +22,6 @@ export default async function scrapeInstagramUserHandler(
     response: NextApiResponse<ScrapeInstagramUserResponse>,
 ) {
     //---------------
-    // TODO: !!! Put to every API endpoint
     // TODO: [🌺] Make middleware for this:
     const clientId = request.query.clientId; /* <- TODO: [🌺][1] Maybe pass clientId as header X-Client-Id */
     if (!isValidClientId(clientId) /* <- TODO: [🌺][2] Also check if the email of client is validated */) {

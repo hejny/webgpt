@@ -39,14 +39,13 @@ export async function getInstagramApiForServer(): Promise<InstanceType<typeof In
             await getServerStorage().setItem('instagramCookie', instagramCookieItem);
         }
 
-        // console.log('!!!', { instagramCookieItem });
         instagramApi = new InstagramApi(instagramCookieItem.value);
     }
     return instagramApi;
 }
 
 /**
- * !!!
+ * Reset instagramApi instance + clear cookies
  */
 export async function resetInstagramApiForServer(): Promise<void> {
     instagramApi = null;
