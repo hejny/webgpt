@@ -3,6 +3,7 @@ import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/SimpleLayout/Center';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
 
@@ -28,7 +29,7 @@ export default function NewWallpaperFromInstagramPage() {
                         <button
                             className="button-TODO"
                             onClick={async () => {
-                                const instagramName = instagramNameInputRef.current?.value;
+                                const instagramName = instagramNameInputRef.current?.value!;
 
                                 // TODO: Normalize
                                 //      https://www.instagram.com/michelangelato.zmrzlinarna/ -> michelangelato.zmrzlinarna
@@ -40,15 +41,13 @@ export default function NewWallpaperFromInstagramPage() {
                                     // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
                                     `/api/scrape/scrape-instagram-user?clientId=${await provideClientId({
                                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
-                                    })}&instagramName=${instagramName}`,
+                                    })}&instagramName=${encodeURIComponent(instagramName)}`,
                                 );
                                 const { instagramUser } = (await reponse.json()) as ScrapeInstagramUserResponse;
 
                                 console.info('👤', { instagramUser });
 
-                                // TODO: !!! Make CORS proxy for images
-                                const profileImageResponse = await fetch(instagramUser.hd_profile_pic_url_info.url);
-                                const profileImage = await profileImageResponse.blob();
+                                const profileImage = await fetchImage(instagramUser.hd_profile_pic_url_info.url);
 
                                 console.info('👤', { profileImage });
                             }}
