@@ -23,6 +23,7 @@ import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
 export interface ICreateNewWallpaperRequest {
     author: uuid;
     wallpaperImage: Blob;
+    assigment?: string;
 }
 
 export interface ICreateNewWallpaperResult {
@@ -31,7 +32,7 @@ export interface ICreateNewWallpaperResult {
 
 /**
  * Create a new wallpaper
- * 
+ *
  * @workerify Do not use directly, use createNewWallpaperForBrowser instead
  * @private Use only withing the folder createNewWallpaper
  */
@@ -39,7 +40,7 @@ export async function createNewWallpaper(
     request: ICreateNewWallpaperRequest,
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<ICreateNewWallpaperResult> {
-    const { author, wallpaperImage: wallpaper } = request;
+    const { author, wallpaperImage: wallpaper, assigment } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     //===========================================================================
@@ -144,48 +145,61 @@ export async function createNewWallpaper(
     console.info({ wallpaperUrl });
     //-------[ /Upload image ]---
     //===========================================================================
-    //-------[ Write description: ]---
-    await onProgress({
-        name: 'write-wallpaper-prompt',
-        title: 'Content analysis',
-        isDone: false,
-        // TODO: Make it more granular
-    });
+    let wallpaperAssigment: string;
+    if (assigment) {
+        wallpaperAssigment = assigment; /* <- TODO: [🧠] Some better naming for variabiles */
+    } else {
+        //-------[ Write description: ]---
 
-    const response2 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-prompt', {
-        method: 'POST',
-        body: JSON.stringify({ wallpaperUrl }),
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
-    });
+        await onProgress({
+            name: 'write-wallpaper-prompt',
+            title: 'Content analysis',
+            isDone: false,
+            // TODO: Make it more granular
+        });
 
-    if (response2.ok === false) {
-        // TODO: [🈵] If 4XX error, show also the message from json body
-        throw new Error(`Content analysis failed with status ${response2.status}`);
+        const response2 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-prompt', {
+            method: 'POST',
+            body: JSON.stringify({ wallpaperUrl }),
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+        });
+
+        if (response2.ok === false) {
+            // TODO: [🈵] If 4XX error, show also the message from json body
+            throw new Error(`Content analysis failed with status ${response2.status}`);
+        }
+
+        const { wallpaperDescription } = (await response2.json()) as WriteWallpaperPromptResponse;
+        console.info({ wallpaperDescription });
+        await onProgress({
+            name: 'write-wallpaper-prompt',
+            isDone: true,
+        });
+
+        //-------[ /Write description ]---
+        //===========================================================================
+        //-------[ Modify Web Assigment: ]---
+
+        // TODO: [🧠] !!! Wording: Assigment, Description, Prompt, biography | Make string_semantics for each of them
+        // TODO: Should be here onProgress task?
+        const answer = await promptDialogue({
+            prompt: `What is your web about?`,
+            defaultValue: wallpaperDescription,
+            placeholder: `Describe your web` /* <- TODO: Better and maybe with rotation */,
+        });
+        if (answer === null) {
+            // TODO: Retry automatically (maybe with taskify)
+            throw new Error(`You must write at least some description of your web`);
+        }
+
+        wallpaperAssigment = answer;
+        console.info({ wallpaperAssigment });
+        //-------[ /Modify Web Assigment ]---
     }
-
-    const { wallpaperDescription } = (await response2.json()) as WriteWallpaperPromptResponse;
-    console.info({ wallpaperDescription });
-    await onProgress({
-        name: 'write-wallpaper-prompt',
-        isDone: true,
-    });
-
-    //-------[ /Write description ]---
-    //===========================================================================
-    //-------[ Modify Web Assigment: ]---
-
-    // TODO: Should be here onProgress task?
-    const wallpaperAssigment = await promptDialogue({
-        prompt: `What is your web about?`,
-        defaultValue: wallpaperDescription,
-        placeholder: `Describe your web` /* <- TODO: Better and maybe with rotation */,
-    });
-    console.info({ wallpaperAssigment });
-    //-------[ /Modify Web Assigment ]---
     //===========================================================================
     //-------[ Write content: ]---
     await onProgress({
@@ -234,7 +248,7 @@ export async function createNewWallpaper(
         author,
         isPublic: false,
         src: wallpaperUrl,
-        prompt: wallpaperDescription,
+        prompt: '!!!', //,wallpaperDescription,
         colorStats: await colorStatsPromise,
         naturalSize: originalSize,
         content: wallpaperContent,

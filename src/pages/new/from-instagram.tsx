@@ -82,13 +82,14 @@ export default function NewWallpaperFromInstagramPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-                                            description: instagramUser.biography,
+                                            assigment: instagramUser.biography,
 
-                                            // TODO: !!! Pass here instagramUser to make AI Instagram Gallery Component
                                             // TODO: !!! Pass here instagramUser.biography
                                             // TODO: !!! Pass here instagramUser.business_category_name
                                             // TODO: !!! Pass here profileImage
                                             // TODO: !!! Go through instagramUser which info to pass
+                                            // TODO: !!! Pass here instagramUser to make AI Instagram Gallery Component
+                                            // TODO: !!! Add instagram and facebook link to contacts automatically
                                         },
                                         (newTaskProgress: TaskProgress) => {
                                             console.info('☑', newTaskProgress);
