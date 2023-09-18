@@ -59,6 +59,16 @@ export default function NewWallpaperFromInstagramPage() {
                                 try {
                                     const instagramName = normalizeInstagramName(instagramNameInputRef.current?.value!);
 
+                                    // TODO: Use here taskify instead
+                                    setTasksProgress((tasksProgress) =>
+                                        joinTasksProgress(...tasksProgress, {
+                                            name: 'scrape-instagram-user',
+                                            // TODO: Maybe split more granularly - scrape the data vs download the images
+                                            title: 'Looking on Instagram',
+                                            isDone: false,
+                                        }),
+                                    );
+
                                     const reponse = await fetch(
                                         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
                                         `/api/scrape/scrape-instagram-user?clientId=${await provideClientId({
@@ -77,7 +87,15 @@ export default function NewWallpaperFromInstagramPage() {
                                     ).node;
                                     const randomTimelineImage = await fetchImage(randomTimelinePost.display_url);
 
-                                    //logImage(randomTimelineImage);
+                                    // logImage(randomTimelineImage);
+
+                                    // TODO: Use here taskify instead
+                                    setTasksProgress((tasksProgress) =>
+                                        joinTasksProgress(...tasksProgress, {
+                                            name: 'scrape-instagram-user',
+                                            isDone: true,
+                                        }),
+                                    );
 
                                     const { wallpaperId } = await createNewWallpaperForBrowser(
                                         {
