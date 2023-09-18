@@ -29,7 +29,9 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
     const { children, className } = props;
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
+    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
+        [],
+    ); /* <- TODO: [🌄] useTasksProgress + DRY */
 
     return (
         <>
@@ -72,6 +74,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
 
                         alert(
                             // <- TODO: Use here alertDialogue
+                            // TODO: [🏔] DRY
                             spaceTrim(
                                 (block) => `
                                     Sorry for the inconvenience 😔
@@ -107,7 +110,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
  * TODO: [🧠] !! Speed up the computation of colorstats
  * TODO: [🧠] !! Compute ONLY colorstats in worker, rest here - split workers into multiple parts
  * TODO: [🧠] !! Upload image and Compute colorstats in parallel + remove the comment blocks
- * TODO: Maybe derive isWorking from taskProgress
+ * TODO: [☃] Maybe derive isWorking from taskProgress
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
  * TODO: !! It Should be possible to list private wallpapers via getSupabaseForBrowser().from('Wallpaper').select('*').eq('isPublic', false)
  * TODO: [🏍] Standardize process of getting input data for new wallpaper

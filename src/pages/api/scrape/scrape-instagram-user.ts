@@ -1,3 +1,4 @@
+import type { GraphqlUser } from 'insta-fetcher/dist/types';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import spaceTrim from 'spacetrim';
 import { explainError } from '../../../utils/extraMessage';
@@ -10,7 +11,7 @@ export interface ScrapeInstagramUserResponse {
     /**
      * Information about the Instagram user
      */
-    instagramUser: any /* <- !!! */;
+    instagramUser: GraphqlUser;
 }
 
 /**
@@ -49,9 +50,8 @@ export default async function scrapeInstagramUserHandler(
         // console.log('!!!', { instagramApi });
 
         const instagramUser = await instagramApi
-            .fetchUser(instagramName)
+            .fetchUserV2(instagramName)
             .catch(explainError(`Can not fetch Instagram user @${instagramName}`));
-
         // console.info('👤', { instagramUser });
 
         return response.status(200).json({ instagramUser } satisfies ScrapeInstagramUserResponse);
