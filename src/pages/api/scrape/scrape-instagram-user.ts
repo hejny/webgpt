@@ -85,7 +85,8 @@ export default async function scrapeInstagramUserHandler(
 }
 
 /**
- * TODO: !!! Automatically folow on Instagram when scraping
+ * TODO: [🧠] Automatically folow on Instagram when scraping
+ * TODO: [🧠] Automatically post newly created web as story / post on Instagram
  * TODO: Maybe API URL for scraping be like> /api/scrape/instagram/@hejny
  * TODO: Maybe obtain session_id from username+password
  *     > const session_id = await getCookie('pavolhejny', '...');
