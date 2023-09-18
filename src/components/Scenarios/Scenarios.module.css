@@ -1,26 +1,30 @@
-ul.GraphsAsScenarios {
+.Scenarios {
     /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+}
 
+.Scenarios ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-ul.GraphsAsScenarios a {
+.Scenarios ul a {
     text-decoration: none;
 }
 
-ul.GraphsAsScenarios a {
+.Scenarios ul a {
     text-decoration: none;
 }
 
-.scenario {
+.Scenarios .scenario {
     margin: 10px;
 }

@@ -1,8 +1,8 @@
-import { Center } from '../components/Center/Center';
-import { GraphsAsScenarios } from '../components/GraphsAsScenarios/GraphsAsScenarios';
 import { HandwrittenText } from '../components/HandwrittenText/HandwrittenText';
 import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
 import { PavolHejny } from '../components/PavolHejny/PavolHejny';
+import { Scenarios } from '../components/Scenarios/Scenarios';
+import { Center } from '../components/SimpleLayout/Center';
 import { StaticLayout } from '../components/StaticLayout/StaticLayout';
 import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
 import { Color } from '../utils/color/Color';
@@ -26,7 +26,7 @@ export default function HomePage() {
                 </Center>
             </header>
             <main>
-                <GraphsAsScenarios />
+                <Scenarios />
             </main>
 
             <article>

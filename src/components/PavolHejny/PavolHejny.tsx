@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import pavolHejnyArticle from '../../../documents/pavol-hejny.md';
 import pavolHejny from '../../../public/people/pavol-hejny.transparent.png';
 import { removeMarkdownTitle } from '../../utils/content/removeMarkdownTitle';
@@ -12,6 +13,7 @@ export function PavolHejny() {
     return (
         <div className={styles.PavolHejnySection}>
             <svg width="0" height="0">
+                {/* TODO: [🚝] DRY */}
                 <defs>
                     <clipPath id="squircle" clipPathUnits="objectBoundingBox">
                         <path
@@ -20,7 +22,7 @@ export function PavolHejny() {
                     </clipPath>
                 </defs>
             </svg>
-            <div className={styles.person}>
+            <Link href="https://www.pavolhejny.com/" className={styles.person}>
                 <Image
                     alt="Portrait photo of Pavol Hejný"
                     priority
@@ -33,7 +35,7 @@ export function PavolHejny() {
                     placeholder="blur"
                 />
                 <div className={styles.personBackground} />
-            </div>
+            </Link>
             <div className={styles.personShadow}>
                 <svg viewBox="0 0 1 1" className={styles.personShadowInner}>
                     <path
@@ -55,6 +57,7 @@ export function PavolHejny() {
 }
 
 /**
+ * TODO: Maybe use <CreateZone/> internally
  * TODO: Maybe make <Person/> component
  * TODO: Should we translate alt of the images like "Portrait photo of Pavol Hejný"
  * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/hejny/main/documents/contact.md

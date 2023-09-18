@@ -92,11 +92,14 @@ export class ChatThread {
                     externalId: null,
                     fullCompletion: completion,
                     answerAt,
+
+                    // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
+                    // <- TODO: [🎠] There should be a prompt template+template version+template language version (to A/B test performance of prompts)
                 } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
             )
             .then((insertResult) => {
-                // TODO: !! Util isInsertSuccessfull (status===201)
-                console.info('ChatThread', { insertResult });
+                // TODO: !! Util isInsertSuccessfull
+                // console.log('ChatThread', { insertResult });
             });
 
         return new ChatThread(clientId, parentChatThread, completion.model as string_model_name, request, response);
@@ -126,7 +129,8 @@ export class ChatThread {
 }
 
 /**
- * TODO: [🧠] response or answer?
- * TODO: [🧠][5] Log also failed requests
+ * TODO: [🚞] DRY ChatThread+completeWithGpt
+ * TODO: [🧠] Wording: response or answer?
+ * TODO: [5] Log also failed requests as in completeWithGpt
  * TODO: Make IAskOptions
  */
