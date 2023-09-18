@@ -96,7 +96,6 @@ export default function NewWallpaperFromInstagramPage() {
                                                 `,
                                             ),
 
-                                            // TODO: !!! Pass here gallery of images
                                             // TODO: [🧠] !!! Go through instagramUser which info to pass
                                             // TODO: !!! Pass here instagramUser to make AI Instagram Gallery Component
                                             // TODO: !!! Add instagram and facebook link to contacts automatically
