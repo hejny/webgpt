@@ -87,10 +87,15 @@ export default function NewWallpaperFromInstagramPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-                                            description: instagramUser.biography,
+                                            description: spaceTrim(
+                                                // TODO: [🧠] Maybe pass business_category_name as separate field?
+                                                // TODO: [🧠] This is kind of part of PromptTemplate, how to work with it?
+                                                (block) => `
+                                                    ${block((instagramUser.business_category_name || '').toLowerCase())}
+                                                    ${block(instagramUser.biography)}
+                                                `,
+                                            ),
 
-                                            // TODO: !!! Pass here instagramUser.biography
-                                            // TODO: !!! Pass here instagramUser.business_category_name
                                             // TODO: !!! Pass here profileImage
                                             // TODO: !!! Go through instagramUser which info to pass
                                             // TODO: !!! Pass here instagramUser to make AI Instagram Gallery Component
