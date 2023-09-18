@@ -8,6 +8,7 @@ import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTask
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
 import { randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -56,13 +57,7 @@ export default function NewWallpaperFromInstagramPage() {
                                 ]);
 
                                 try {
-                                    const instagramName = instagramNameInputRef.current?.value!;
-
-                                    // TODO: !!! [7] Normalize instagramName
-                                    //      https://www.instagram.com/michelangelato.zmrzlinarna/ -> michelangelato.zmrzlinarna
-                                    //      https://www.instagram.com/michelangelato.zmrzlinarna/?whatever=foo#bar -> michelangelato.zmrzlinarna
-                                    //      @michelangelato.zmrzlinarna -> michelangelato.zmrzlinarna
-                                    //      michelangelato.zmrzlinarna -> michelangelato.zmrzlinarna
+                                    const instagramName = normalizeInstagramName(instagramNameInputRef.current?.value!);
 
                                     const reponse = await fetch(
                                         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
@@ -155,7 +150,6 @@ export default function NewWallpaperFromInstagramPage() {
 }
 
 /**
- * TODO: !!! [7] Work with @ without @ (and with https://www.instagram.com/...)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress
