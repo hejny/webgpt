@@ -87,7 +87,7 @@ export default function NewWallpaperFromInstagramPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-                                            assigment: instagramUser.biography,
+                                            description: instagramUser.biography,
 
                                             // TODO: !!! Pass here instagramUser.biography
                                             // TODO: !!! Pass here instagramUser.business_category_name
