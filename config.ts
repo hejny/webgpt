@@ -149,6 +149,10 @@ export const COPILOT_PLACEHOLDERS: Array<string> = [
     'Add pricing table',
 ];
 
+export const INSTAGRAM_PLACEHOLDERS: Array<string> = ['_1_2i_', 'pavolhejny', 'michelangelato.zmrzlinarna'].flatMap(
+    (username) => [username, `@${username}`, `https://www.instagram.com/${username}/`],
+);
+
 export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'

@@ -12,6 +12,12 @@ const EXCLUDED_WORDS = ['H-edu'];
  * - https://www.instagram.com/michelangelato.zmrzlinarna/?whatever=foo#bar -> michelangelato.zmrzlinarna
  */
 export function normalizeInstagramName(instagramNameOrUrl: string): string {
+    instagramNameOrUrl = instagramNameOrUrl.trim();
+
+    if (!instagramNameOrUrl) {
+        throw new Error('Instagram name cannot be empty');
+    }
+
     if (instagramNameOrUrl.startsWith('@')) {
         return instagramNameOrUrl.slice(1);
     } else if (isValidUrl(instagramNameOrUrl)) {

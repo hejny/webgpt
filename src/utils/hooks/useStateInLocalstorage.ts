@@ -16,7 +16,7 @@ export function useStateInLocalstorage<T extends string>(
     ) {
         throw new Error(
             spaceTrim(`
-                This hook can not be used on the client side,
+                Hook useStateInLocalstorage can not be used on the client side,
                 please wrap the component with <NoSsr>...</NoSsr>
 
                 Note: We can not return just simple initialState because that will cause an hydration mismatch error

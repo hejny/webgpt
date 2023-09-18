@@ -1,27 +1,32 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { INSTAGRAM_PLACEHOLDERS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
+import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
+import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenText';
 import { Center } from '../../components/SimpleLayout/Center';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { Color } from '../../utils/color/Color';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
 import { randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
+import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
 
 export default function NewWallpaperFromInstagramPage() {
-    const instagramNameInputRef = useRef<HTMLInputElement | null>(null);
     const router = useRouter();
     const [isWorking, setWorking] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
+    const placeholders = useMemo(() => shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
 
     return (
         <>
@@ -30,21 +35,22 @@ export default function NewWallpaperFromInstagramPage() {
             <div className={styles.page}>
                 <main>
                     <Center>
-                        <h1>AI Web Maker</h1>
-                        Write your Instagram name to make new web from:
-                        <br />
-                        <input
-                            type="text"
-                            placeholder="@pavolhejny"
-                            ref={instagramNameInputRef}
-                            defaultValue="michelangelato.zmrzlinarna"
-                            // <- TODO: !!! Remove or to config
-                            // <- TODO: !!! Design (as copilot)
-                            // <- TODO: !!! Allow enter to submit
-                        />
-                        <button
-                            className="button-TODO"
-                            onClick={async () => {
+                        <h1
+                            style={{
+                                maxWidth: '400px',
+                                // outline: '1px solid red',
+                                // transform: 'translate(0,20px)',
+                            }}
+                        >
+                            <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
+                                AI Web Maker
+                            </HandwrittenText>
+                        </h1>
+
+                        <CopilotInput
+                            {...{ placeholders }}
+                            label="Enter your Instagram:"
+                            onPrompt={async (prompt) => {
                                 setWorking(true);
                                 setTasksProgress([
                                     {
@@ -57,7 +63,7 @@ export default function NewWallpaperFromInstagramPage() {
                                 ]);
 
                                 try {
-                                    const instagramName = normalizeInstagramName(instagramNameInputRef.current?.value!);
+                                    const instagramName = normalizeInstagramName(prompt);
 
                                     // TODO: Use here taskify instead
                                     setTasksProgress((tasksProgress) =>
@@ -107,9 +113,9 @@ export default function NewWallpaperFromInstagramPage() {
                                                 // TODO: [🧠] Maybe pass business_category_name as separate field?
                                                 // TODO: [🧠] This is kind of part of PromptTemplate, how to work with it?
                                                 (block) => `
-                                                    ${block((instagramUser.business_category_name || '').toLowerCase())}
-                                                    ${block(instagramUser.biography)}
-                                                `,
+                                                ${block((instagramUser.business_category_name || '').toLowerCase())}
+                                                ${block(instagramUser.biography)}
+                                            `,
                                             ),
 
                                             // TODO: [🧠] !!! Go through instagramUser which info to pass
@@ -136,38 +142,41 @@ export default function NewWallpaperFromInstagramPage() {
                                         // TODO: [🏔] DRY
                                         spaceTrim(
                                             (block) => `
-                                                Sorry for the inconvenience 😔
-                                                Something went wrong while making your website.
-                                                Please try it again or write me an email to me@pavolhejny.com
-                                    
-                                                ${block((error as Error).message)}
-                                            
-                                            `,
+                                            Sorry for the inconvenience 😔
+                                            Something went wrong while making your website.
+                                            Please try it again or write me an email to me@pavolhejny.com
+                                
+                                            ${block((error as Error).message)}
+                                        
+                                        `,
                                         ),
                                     );
                                     setWorking(false);
                                     setTasksProgress([]);
                                 }
                             }}
+                        />
+                        <Link
+                            href="/"
+                            style={
+                                {
+                                    // outline: '1px solid red'
+                                }
+                            }
                         >
-                            Create
-                        </button>
+                            I have no Instagram account
+                        </Link>
                     </Center>
                 </main>
 
                 {isWorking && <TasksInProgress {...{ tasksProgress }} />}
-
-                {/* TODO: Make here some footer
-                <footer>
-                    <FooterSection />
-                </footer>
-                */}
             </div>
         </>
     );
 }
 
 /**
+ * TODO: Enhance the design of the page (and generally every page with <CopilotInput/>)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress

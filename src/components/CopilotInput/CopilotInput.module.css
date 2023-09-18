@@ -1,0 +1,89 @@
+.CopilotInput {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    margin: 20px;
+}
+
+.CopilotInput label {
+    margin-left: 30px;
+}
+
+.CopilotInput .CopilotInputInner {
+    /*/
+    outline: 1px dotted rgb(255, 125, 38);
+    /**/
+
+    z-index: 10; /* <- Local order of <CopilotInput/> */
+
+    width: 350px;
+    max-width: 100vw;
+    height: 60px;
+
+    /* TODO: [👨‍🌾] Make just one css for floating control panel */
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    overflow: clip;
+
+    display: grid;
+    grid-template-columns: 1fr 60px;
+}
+
+.CopilotInput .CopilotInputInner input {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38) !important;
+    /**/
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 100%;
+
+    font-size: 1.3em;
+}
+
+.CopilotInput .CopilotInputInner .Button {
+    /*/
+    outline: 1px dotted rgb(56, 255, 38) !important;
+    /**/
+
+    outline: none;
+    border: none;
+
+    text-align: center;
+    background-color: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.43);
+    transition: background-color 0.1s ease-in-out;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CopilotInput .CopilotInputInner .Button > * {
+    transition: transform 0.1s ease-in-out;
+}
+
+.CopilotInput .CopilotInputInner .Button:hover > * {
+    transform: scale(1.3);
+}
+
+.CopilotInput .CopilotInputInner .Button:disabled {
+    opacity: 0.5;
+}
+
+.CopilotInput .CopilotInputInner .Button button {
+    all: unset;
+}
