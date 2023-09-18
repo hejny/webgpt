@@ -36,7 +36,6 @@
         "@monaco-editor/react": "4.5.1",
         "@supabase/supabase-js": "2.26.0",
         "@types/file-saver": "2.0.5",
-        "@uiw/react-markdown-editor": "5.11.1",
         "@vercel/og": "0.5.8",
         "babylonjs": "6.17.0",
         "configchecker": "1.5.1",
