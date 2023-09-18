@@ -50,7 +50,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     // TODO: !!! Either make createNewWallpaperFromInstagramForBrowser
                                     //       OR just start first TaskProgress here
 
-                                    // TODO: Normalize
+                                    // TODO: [7] Normalize
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/ -> michelangelato.zmrzlinarna
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/?whatever=foo#bar -> michelangelato.zmrzlinarna
                                     //      @michelangelato.zmrzlinarna -> michelangelato.zmrzlinarna
@@ -144,8 +144,7 @@ export default function NewWallpaperFromInstagramPage() {
 }
 
 /**
- * TODO: !!! Finish
- * TODO: !!! Work with @ without @ (and with https://www.instagram.com/...)
+ * TODO: [7] Work with @ without @ (and with https://www.instagram.com/...)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress
