@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
-import { Center } from '../../components/Center/Center';
+import { Center } from '../../components/SimpleLayout/Center';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
 export default function NewWallpaperFromPromptPage() {
