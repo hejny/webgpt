@@ -47,6 +47,9 @@ export default function NewWallpaperFromInstagramPage() {
                                 try {
                                     const instagramName = instagramNameInputRef.current?.value!;
 
+                                    // TODO: !!! Either make createNewWallpaperFromInstagramForBrowser
+                                    //       OR just start first TaskProgress here
+
                                     // TODO: Normalize
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/ -> michelangelato.zmrzlinarna
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/?whatever=foo#bar -> michelangelato.zmrzlinarna
