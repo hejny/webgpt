@@ -27,7 +27,6 @@ interface GalleryFilterProps {
 export function GalleryFilterInput(props: GalleryFilterProps) {
     const { defaultFilter, onFilterChange } = props;
 
-
     const [fulltext, setFulltext] = useStateWithReporting<string | undefined>(defaultFilter.fulltext, (fulltext) =>
         onFilterChange({ fulltext }),
     );
