@@ -33,7 +33,7 @@ export interface ICreateNewWallpaperResult {
  * Create a new wallpaper
  * 
  * @workerify Do not use directly, use createNewWallpaperForBrowser instead
- * @private Within this folder
+ * @private Use only withing the folder createNewWallpaper
  */
 export async function createNewWallpaper(
     request: ICreateNewWallpaperRequest,

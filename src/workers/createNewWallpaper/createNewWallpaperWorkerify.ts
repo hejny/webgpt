@@ -2,7 +2,7 @@ import { Workerify } from '../0-Workerify/Workerify';
 import { ICreateNewWallpaperRequest, ICreateNewWallpaperResult } from './createNewWallpaper';
 
 /**
- * @private within this folder
+ * @private Use only withing the folder createNewWallpaper
  */
 
 export const createNewWallpaperWorkerify = new Workerify<ICreateNewWallpaperRequest, ICreateNewWallpaperResult>();

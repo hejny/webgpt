@@ -1,6 +1,9 @@
 import { createNewWallpaper } from './createNewWallpaper';
 import { createNewWallpaperWorkerify } from './createNewWallpaperWorkerify';
 
+/**
+ * @private Use only withing the folder createNewWallpaper
+ */
 createNewWallpaperWorkerify.runWorker(createNewWallpaper);
 
 /**
