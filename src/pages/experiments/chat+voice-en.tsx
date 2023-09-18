@@ -1,6 +1,6 @@
 import spaceTrim from 'spacetrim';
-import { Center } from '../../components/Center/Center';
 import { Journal } from '../../components/Journal/Journal';
+import { Center } from '../../components/SimpleLayout/Center';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 
 export default function TestVoiceWithChatPage() {

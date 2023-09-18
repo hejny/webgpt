@@ -1,5 +1,5 @@
 import spaceTrim from 'spacetrim';
-import { Center } from '../../components/Center/Center';
+import { Center } from '../../components/SimpleLayout/Center';
 import { Journal } from '../../components/Journal/Journal';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 
