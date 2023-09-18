@@ -36,7 +36,10 @@ export default function NewWallpaperFromInstagramPage() {
                             type="text"
                             placeholder="@pavolhejny"
                             ref={instagramNameInputRef}
-                            defaultValue="michelangelato.zmrzlinarna" // <- TODO: !!! Remove or to config
+                            defaultValue="michelangelato.zmrzlinarna"
+                            // <- TODO: !!! Remove or to config
+                            // <- TODO: !!! Design (as copilot)
+                            // <- TODO: !!! Allow enter to submit
                         />
                         <button
                             className="button-TODO"
@@ -55,7 +58,7 @@ export default function NewWallpaperFromInstagramPage() {
                                 try {
                                     const instagramName = instagramNameInputRef.current?.value!;
 
-                                    // TODO: [7] Normalize instagramName
+                                    // TODO: !!! [7] Normalize instagramName
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/ -> michelangelato.zmrzlinarna
                                     //      https://www.instagram.com/michelangelato.zmrzlinarna/?whatever=foo#bar -> michelangelato.zmrzlinarna
                                     //      @michelangelato.zmrzlinarna -> michelangelato.zmrzlinarna
@@ -152,7 +155,7 @@ export default function NewWallpaperFromInstagramPage() {
 }
 
 /**
- * TODO: [7] Work with @ without @ (and with https://www.instagram.com/...)
+ * TODO: !!! [7] Work with @ without @ (and with https://www.instagram.com/...)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress
