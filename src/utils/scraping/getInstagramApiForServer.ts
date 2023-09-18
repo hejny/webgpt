@@ -39,7 +39,7 @@ export async function getInstagramApiForServer(): Promise<InstanceType<typeof In
             await getServerStorage().setItem('instagramCookie', instagramCookieItem);
         }
 
-        instagramApi = new InstagramApi(instagramCookieItem.value);
+        instagramApi = new InstagramApi(instagramCookieItem.value, false);
     }
     return instagramApi;
 }
