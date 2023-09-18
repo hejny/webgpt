@@ -3,6 +3,7 @@ import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/SimpleLayout/Center';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { logImage } from '../../utils/image/logImage';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
@@ -49,7 +50,7 @@ export default function NewWallpaperFromInstagramPage() {
 
                                 const profileImage = await fetchImage(instagramUser.hd_profile_pic_url_info.url);
 
-                                console.info('👤', { profileImage });
+                                logImage(profileImage);
                             }}
                         >
                             Create
