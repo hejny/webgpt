@@ -30,12 +30,12 @@ interface useRouterProps {
  */
 export function CopilotInput(props: useRouterProps) {
     const { label, onPrompt, placeholders } = props;
-    const [runningPrompt, setRunningPrompt] = useState<null | string_prompt>(null);
+    const [isRunning, setRunning] = useState(false);
     const inputRef = useRef<HTMLInputElement | null>(null);
     const placeholder = useRotatingPlaceholder(...placeholders);
 
     const handlePrompt = useCallback(async () => {
-        if (runningPrompt !== null) {
+        if (isRunning) {
             console.error('Prompt is already running' /* <- TODO: Pass this textation as prop */);
             return;
         }
@@ -43,7 +43,7 @@ export function CopilotInput(props: useRouterProps) {
         let prompt = inputRef.current?.value || '';
 
         try {
-            setRunningPrompt(prompt);
+            setRunning(true);
 
             // TODO: [🍛] Make same normalization as in the backend
             prompt = spaceTrim(prompt);
@@ -60,12 +60,10 @@ export function CopilotInput(props: useRouterProps) {
             );
 
             await onPrompt(prompt);
-        } catch (error) {
-            inputRef.current!.value! = prompt;
         } finally {
-            setRunningPrompt(null);
+            setRunning(false);
         }
-    }, [inputRef, onPrompt, runningPrompt]);
+    }, [inputRef, onPrompt, isRunning]);
 
     return (
         <div className={classNames('aiai-controls', styles.CopilotInput)}>
@@ -83,28 +81,23 @@ export function CopilotInput(props: useRouterProps) {
                     name="copilot-input"
                     type="text"
                     placeholder={placeholder}
-                    value={
-                        runningPrompt === null
-                            ? undefined
-                            : `Working on "${runningPrompt}"...` /* <- TODO: Pass this template as prop */
-                    }
                     ref={(element) => {
                         // TODO: [🍘] Use joinRefs
                         focusRef(element);
                         inputRef.current = element;
                     }}
-                    disabled={runningPrompt !== null}
+                    disabled={isRunning}
                 />
 
                 <button
                     className={styles.Button}
-                    disabled={runningPrompt !== null}
+                    disabled={isRunning}
                     title="Submit" // <- TODO: Pass this textation as prop
                     onClick={() => {
                         handlePrompt();
                     }}
                 >
-                    {runningPrompt === null ? (
+                    {!isRunning ? (
                         <Image
                             alt="✈"
                             src="/icons/other/paper-plane.white.png"
