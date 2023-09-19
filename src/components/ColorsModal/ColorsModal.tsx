@@ -1,5 +1,3 @@
-import '@uiw/react-markdown-editor/markdown-editor.css';
-import '@uiw/react-markdown-preview/markdown.css';
 import { SketchPicker } from 'react-color';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
@@ -62,3 +60,8 @@ export function ColorsModal() {
         </Modal>
     );
 }
+
+
+/**
+ * TODO: [🦼] Use <MonacoEditor/> instead of <SketchPicker/>
+ */

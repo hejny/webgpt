@@ -69,9 +69,14 @@ export class Workerify<
         });
     }
 
-    public makeConnector(createWorker: () => Worker): TFunction {
-        let worker: Worker | null = null;
-
+    /**
+     * Makes a connector function that runs a worker for given function
+     * Note: At the end, worker is terminated
+     *
+     * @param createWorker Callback that creates a worker (needs to be passed as callback, not as string, because Worker logic is optimized by bundlers so there mus be explicit new Worker(...) call)
+     * @returns Function that externally behaves like executor function, but internally it runs a worker
+     */
+    public makeConnectorForBrowser(createWorker: () => Worker): TFunction {
         const connector = (
             request: TRequest,
             onProgress: (taskProgress: TaskProgress) => void = () => {},
@@ -87,12 +92,10 @@ export class Workerify<
                 isDone: false,
             });
 
-            if (worker === null) {
-                worker = createWorker();
-            }
+            const worker = createWorker();
 
-            return new Promise<TResult>((resolve, reject) => {
-                worker!.addEventListener('message', async (event: MessageEvent<IMessageWorkerToMain<TResult>>) => {
+            const result = new Promise<TResult>((resolve, reject) => {
+                worker.addEventListener('message', async (event: MessageEvent<IMessageWorkerToMain<TResult>>) => {
                     const { type } = event.data;
 
                     console.info('⚙ Message from worker', { type, event });
@@ -132,12 +135,17 @@ export class Workerify<
                     request,
                 } satisfies IMessageRequest<TRequest>);
             });
+
+            result.finally(() => {
+                worker.terminate();
+            });
+
+            return result;
         };
 
         return connector as TFunction /* <-[0] */;
     }
 }
-
 
 /**
  * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify

@@ -15,19 +15,17 @@
         {
             "name": "🧪 Lint test",
             "command": "npm run lint",
-            "onlySingle": true,
-            "focus": true
+            "execute": false
         },
         {
             "name": "🩹 Lint fix",
             "command": "npm run lint -- --fix",
-            "onlySingle": true
+            "execute": false
         },
         {
             "name": "🧪 Unit tests",
             "command": "npm run test-unit",
-            "onlySingle": true,
-            "focus": true
+            "execute": false
         },
         {
             "name": "🧪 Integration tests",
@@ -38,14 +36,12 @@
         {
             "name": "🧪 Test build",
             "command": "npm run test-build",
-            "onlySingle": true,
-            "focus": true
+            "execute": false
         },
         {
             "name": "🧪 Test types",
             "command": "npm run test-types",
-            "onlySingle": true,
-            "focus": true
+            "execute": false
         },
         {
             "name": "🧪🔥 Integration tests (interactive)",
@@ -127,6 +123,26 @@
             "focus": true
         },
         {
+            "name": "🏭🥫 Dump Supabase structure",
+            "commands": [
+                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > database/dumps/structure.dump.pgsql",
+                "git add database/dumps/structure.dump.pgsql",
+                "git commit -m \"Dump Supabase structure\""
+            ],
+            "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🥫 Dump Supabase structure + data",
+            "commands": [
+                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --dbname DATABASE_URL > database/dumps/structure+data.dump.pgsql"
+            ],
+            "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🧸 Playground",
             "commands": ["ts-node ./scripts/playground/playground.ts"],
             "onlySingle": true,
@@ -155,11 +171,13 @@
                 "npm cache clean",
                 "npm install"
             ],
+            "onlySingle": true,
             "focus": true
         },
         {
             "name": "👨🏽‍💻 Clean dev cache",
             "commands": ["npx kill-port 4444", "rm -rf .next"],
+            "onlySingle": true,
             "focus": true
         },
         {

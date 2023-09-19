@@ -1,7 +1,10 @@
+import Link from 'next/link';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
-import { Center } from '../../components/Center/Center';
+import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenText';
+import { Center } from '../../components/SimpleLayout/Center';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { Color } from '../../utils/color/Color';
 
 export default function NewWallpaperFromImagePage() {
     return (
@@ -11,9 +14,19 @@ export default function NewWallpaperFromImagePage() {
             <div className={styles.page}>
                 <main>
                     <Center>
-                        <h1>AI Web Maker</h1>
+                        <h1
+                            style={{
+                                maxWidth: '400px',
+                                // outline: '1px solid red',
+                                // transform: 'translate(0,20px)',
+                            }}
+                        >
+                            <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
+                                AI Web Maker
+                            </HandwrittenText>
+                        </h1>
                         <UploadNewWallpaper />
-                        Pick
+                        <Link href="/">I have no image</Link>
                     </Center>
                 </main>
 

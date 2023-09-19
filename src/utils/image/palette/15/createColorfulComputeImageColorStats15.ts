@@ -60,7 +60,7 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
     ): Promise<IImageColorStatsAdvanced<string>> => {
         await onProgress({
             name: 'colorstats-v15',
-            title: 'Palette (v15)' /*<- [🧠] Should there be a palette version in title? */,
+            title: 'Color analysis (v15)' /*<- [🧠] Should there be a palette version in title? */,
             isDone: false,
             // TODO: Make it more granular
         });

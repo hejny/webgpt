@@ -5,10 +5,18 @@
 
     z-index: 3000 /* <- [🔝] Global z-index for wallpaper page */;
     position: fixed;
-    width: calc(100vw - 18px);
+    width: calc(100vw - 55px);
     left: 50vw;
     transform: translate(-50%, 0);
     bottom: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+    /* 📱 Big smartphones */
+
+    .CopilotPanel {
+        width: calc(100vw - 18px);
+    }
 }
 
 .CopilotPanelInner {
@@ -138,14 +146,13 @@
 
     width: 200px;
 
-    padding: 5px;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.43);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 7px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .CopilotPanel nav.MenuContent ul {
@@ -177,20 +184,36 @@
     border-bottom: none;
 }
 
+.CopilotPanel nav.MenuContent li.extraFeatured,
 .CopilotPanel nav.MenuContent li.featured {
     font-weight: bold;
     color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-.CopilotPanel nav.MenuContent li a {
+.CopilotPanel nav.MenuContent li.extraFeatured {
+    color: rgba(146, 248, 255, 1);
+    background-color: rgba(146, 248, 255, 0.2);
+}
+
+.CopilotPanel nav.MenuContent li {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 7px;
+    padding-right: 10px;
     color: inherit;
     font-size: 20px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.CopilotPanel nav.MenuContent li a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 .CopilotPanel nav.MenuContent li:hover {
-    background-color: rgba(var(--palette-1-triplet), 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
 }
