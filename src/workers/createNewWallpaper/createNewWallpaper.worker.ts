@@ -179,6 +179,8 @@ async function createNewWallpaperExecutor(
         prompt: `What is your web about?`,
         defaultValue: wallpaperDescription,
         placeholder: `Describe your web` /* <- TODO: Better and maybe with rotation */,
+        isCloseable: false,
+        autoSubmit: 5000 /* <- TODO: To config */,
     });
     console.info({ wallpaperAssigment });
     //-------[ /Modify Web Assigment ]---

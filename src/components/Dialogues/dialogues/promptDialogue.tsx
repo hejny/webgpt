@@ -28,6 +28,11 @@ export interface IPromptDialogueOptions {
      * When the prompt is closed, the answer is `null`
      */
     isCloseable: boolean;
+
+    /**
+     * If set, the prompt will be automatically submitted after the given number of milliseconds
+     */
+    autoSubmit?: number;
 }
 
 /**
@@ -51,7 +56,10 @@ export interface IPromptInQueue extends IPromptDialogueOptions {
  * Pops up the co-pilot panel with a prompt dialogue.
  */
 export async function promptDialogue(options: IPromptDialogueOptions): Promise<string | null> {
-    const { prompt, defaultValue, placeholder } = options;
+    const { prompt, defaultValue, placeholder, isCloseable, autoSubmit } = options;
+
+    // TODO: !!! Implement isCloseable
+    // TODO: !!! autoSubmit
 
     const promptInQueue: IPromptInQueue = {
         prompt,
@@ -100,6 +108,12 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
 }
 
 /**
+ * TODO: !!! DRY with alertDialogue
+ * TODO: !!! Draggable
+ * TODO: !!! Compact design
+ * TODO: !!! Dialogue vs Dialog
+ * TODO: !!! Show autoSubmit countdown
+ * TODO: !!! Use internally formDialogue
  * TODO: !! JSX must work in worker OR Should not be possible to use JSX from worker OR at all
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined
