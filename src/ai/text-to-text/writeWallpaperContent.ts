@@ -1,17 +1,29 @@
 import spaceTrim from 'spacetrim';
+import { FONTS } from '../../../config';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
-import {
-    image_description,
-    string_font_family,
-    string_markdown,
-    string_midjourney_prompt,
-    uuid,
-} from '../../utils/typeAliases';
+import { randomItem } from '../../utils/randomItem';
+import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
 import { ChatThread } from './ChatThread';
 import { completeWithGpt } from './completeWithGpt';
-import { createFontPromptTemplate } from './prompt-templates/createFontPromptTemplate';
 import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
+
+export interface WriteWallpaperContentOptions {
+    // TODO: !!! Annotate all
+    clientId: uuid /* <-[🌺] */;
+    title: Exclude<title, JSX.Element> | null;
+    assigment: Exclude<description, JSX.Element> | null;
+    addSections: Array<{
+        name: string_name;
+        title: Exclude<title, JSX.Element>;
+        order: number;
+        content: string_markdown;
+    }>;
+    links: Array<{
+        title: Exclude<title, JSX.Element>;
+        url: string_url;
+    }>;
+}
 
 /**
  * Writes the rich content of the wallpaper page
@@ -21,23 +33,40 @@ import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptT
  * @param wallpaperAssigment as a plain description what is on the wallpaper (created for expample from imageToText or midjourney prompt)
  * @returns Content of the wallpaper page
  */
-export async function writeWallpaperContent(
-    wallpaperAssigment: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
-    clientId: uuid /* <-[🌺] */,
-): Promise<string_markdown> {
-    const prompt = createTitlePromptTemplate(wallpaperAssigment);
-    const chatThread = await ChatThread.ask(prompt, clientId);
-    const { response, model: modelToCreateTitle } = chatThread;
-    const { title, topic } = parseTitleAndTopic(removeQuotes(response));
+export async function writeWallpaperContent(options: WriteWallpaperContentOptions): Promise<string_markdown> {
+    const { clientId, assigment, addSections, links } = options;
+    let { title } = options;
 
-    const contentStart = spaceTrim(
-        (block) => `
+    let contentStart: string_markdown = '';
 
-            # ${block(title)}
-            ${block(!topic ? `` : `\n\n> ${topic}\n\n`)}
+    if (title !== null) {
+        contentStart = spaceTrim(
+            (block) => `
+    
+                # ${block(title!)}
+                
+    
+            `,
+        );
+    } else {
+        if (!assigment) {
+            throw new Error('Either title or assigment must be provided');
+        }
+        const prompt = createTitlePromptTemplate(assigment);
+        const chatThread = await ChatThread.ask(prompt, clientId);
+        const { response, model: modelToCreateTitle } = chatThread;
+        const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
-        `,
-    );
+        contentStart = spaceTrim(
+            (block) => `
+    
+                # ${block(title)}
+                ${block(!topic ? `` : `\n\n> ${topic}\n\n`)}
+    
+            `,
+        );
+    }
+
     const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
         spaceTrim(
             // TODO: [🤡] This prompt should be also created in some template function
@@ -53,10 +82,13 @@ export async function writeWallpaperContent(
         clientId,
     );
 
+    /*
+     TODO: !!! Better
     const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
     const font = removeQuotes(chatThreadFont.response) as string_font_family;
+    */
 
-    // console.log(chatThreadFont);
+    const font = randomItem(...FONTS);
 
     return spaceTrim(
         (block) => `
@@ -65,14 +97,6 @@ export async function writeWallpaperContent(
 
             ${block(contentStart)}
             ${block(contentMiddle)}
-
-            <!--
-            Written by OpenAI ${modelToCreateTitle} + ${modelToCreateContent}
-
-            Prompt:
-                ${block(prompt)} 
-            
-            -->
         
         `,
     );

@@ -17,6 +17,7 @@ import { randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
+import { string_business_category_name } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
 
@@ -83,11 +84,26 @@ export default function NewWallpaperFromInstagramPage() {
                                     );
                                     const { instagramUser } = (await reponse.json()) as ScrapeInstagramUserResponse;
 
-                                    console.info('👤', { instagramUser });
+                                    console.info(`👤 Scraped Instagram user @${instagramName}`, instagramUser);
 
-                                    // instagramUser.biography;
-                                    // instagramUser.business_category_name;
-                                    // const profileImage = await fetchImage(instagramUser.profile_pic_url_hd);
+                                    const title = instagramUser.full_name;
+                                    const description = instagramUser.biography;
+                                    const businessCategory: string_business_category_name = (
+                                        instagramUser.business_category_name ||
+                                        instagramUser.category_enum ||
+                                        instagramUser.category_name ||
+                                        ''
+                                    ).toLowerCase();
+                                    /* <- TODO: `category_name` is for some reason in indonesian, fix it in API or if it is impossible, translate it and USE only `category_name` in future 
+                                                Make it singular - not "restaurants" but "restaurant" 
+                                                Maybe use `category_enum` instead/alongside `category_name` */
+
+                                    console.info(`👤 Key information about @${instagramName}`, {
+                                        title,
+                                        businessCategory,
+                                    });
+
+                                    // TODO:> const logoImageRaw = await fetchImage(instagramUser.profile_pic_url_hd);
                                     const randomTimelinePost = randomItem(
                                         ...instagramUser.edge_owner_to_timeline_media.edges,
                                     ).node;
@@ -109,19 +125,34 @@ export default function NewWallpaperFromInstagramPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-                                            description: spaceTrim(
-                                                // TODO: [🧠] Maybe pass business_category_name as separate field?
-                                                // TODO: [🧠] This is kind of part of PromptTemplate, how to work with it?
-                                                (block) => `
-                                                ${instagramUser.business_category_name || ''} ${
-                                                    instagramUser.full_name || ''
-                                                } 
-                                                ${block(instagramUser.biography)}
-                                            `,
-                                            ),
+                                            title,
+                                            description,
+                                            addSections: [
+                                                /* TODO: Instagram AI component gallery */
+                                            ],
+                                            links: [
+                                                {
+                                                    title: 'Instagram',
+                                                    url: `https://instagram.com/${instagramName}/`,
+                                                },
+                                                // TODO: Scrape bio_links
+                                                // TODO: Add facebook
+                                                // TODO: Add phone
+                                                // TODO: Add email
+                                                // TODO: Add external_url
+                                                // TODO: Add business_address_json
+                                                // TODO: Scrape biography_with_entities
+                                            ],
 
-                                            // TODO: [🧠] !!! Go through instagramUser which info to pass
-                                            // TODO: !!! Add instagram and facebook link to contacts automatically
+                                            // TODO: Maybe pass posts texts to give a flavour of the account and its style
+
+                                            // ---TODO: !!! Add instagram and facebook link to contacts automatically
+
+                                            //   TODO: Cantidates to scrape:
+                                            //       - bio_links
+                                            //       - biography_with_entities
+                                            //       - business_address_json
+                                            //       - external_url
                                         },
                                         (newTaskProgress: TaskProgress) => {
                                             console.info('☑', newTaskProgress);
@@ -144,13 +175,13 @@ export default function NewWallpaperFromInstagramPage() {
                                         // TODO: [🏔] DRY
                                         spaceTrim(
                                             (block) => `
-                                            Sorry for the inconvenience 😔
-                                            Something went wrong while making your website.
-                                            Please try it again or write me an email to me@pavolhejny.com
-                                
-                                            ${block((error as Error).message)}
-                                        
-                                        `,
+                                                Sorry for the inconvenience 😔
+                                                Something went wrong while making your website.
+                                                Please try it again or write me an email to me@pavolhejny.com
+                                    
+                                                ${block((error as Error).message)}
+                                            
+                                            `,
                                         ),
                                     );
                                     setWorking(false);

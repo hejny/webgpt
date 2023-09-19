@@ -7,7 +7,10 @@ import {
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
-import type { WriteWallpaperContentResponse } from '../../pages/api/custom/write-wallpaper-content';
+import type {
+    WriteWallpaperContentRequest,
+    WriteWallpaperContentResponse,
+} from '../../pages/api/custom/write-wallpaper-content';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
@@ -18,12 +21,13 @@ import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
 import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
-import { string_wallpaper_id, uuid } from '../../utils/typeAliases';
+import { description, string_wallpaper_id, uuid } from '../../utils/typeAliases';
 
-export interface ICreateNewWallpaperRequest {
+export interface ICreateNewWallpaperRequest extends Omit<WriteWallpaperContentRequest, 'assigment'> {
+    // TODO: !!! Annotate all
     author: uuid;
     wallpaperImage: Blob;
-    description?: string;
+    description: Exclude<description, JSX.Element> | null;
 }
 
 export interface ICreateNewWallpaperResult {
@@ -40,7 +44,7 @@ export async function createNewWallpaper(
     request: ICreateNewWallpaperRequest,
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<ICreateNewWallpaperResult> {
-    const { author, wallpaperImage: wallpaper } = request;
+    const { title, author, wallpaperImage: wallpaper, links, addSections } = request;
     let { description } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
@@ -198,8 +202,8 @@ export async function createNewWallpaper(
         throw new Error(`You must write at least some description of your web`);
     }
 
-    const wallpaperAssigment = answer;
-    console.info({ wallpaperAssigment });
+    const assigment = answer;
+    console.info({ wallpaperAssigment: assigment });
     //-------[ /Modify Web Assigment ]---
 
     //===========================================================================
@@ -215,7 +219,7 @@ export async function createNewWallpaper(
         `/api/custom/write-wallpaper-content?clientId=${author /* <- TODO: Pass as clientId */}`,
         {
             method: 'POST',
-            body: JSON.stringify({ wallpaperAssigment }),
+            body: JSON.stringify({ title, assigment, links, addSections } satisfies WriteWallpaperContentRequest),
             headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
