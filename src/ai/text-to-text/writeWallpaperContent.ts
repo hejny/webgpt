@@ -9,18 +9,74 @@ import { completeWithGpt } from './completeWithGpt';
 import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
 
 export interface WriteWallpaperContentOptions {
-    // TODO: !!! Annotate all
+    /**
+     * Client ID to validate the request
+     */
     clientId: uuid /* <-[🌺] */;
+
+    /**
+     * Title of the wallpaper
+     *
+     * If set, the generated content will start with this title
+     * If null, it will be written by AI
+     */
     title: Exclude<title, JSX.Element> | null;
+
+    /**
+     * Assigment of the wallpaper
+     *
+     * It is the detailed description of the wallpaper, please include information like:
+     * - What is the page about
+     * - What is the goal of the page
+     * - What is the user supposed to do on the page
+     *
+     * Note: There are two simmilar propertie:
+     * - `description` which describes content of the image
+     * - `assigment` which describes requirements for the page
+     */
     assigment: Exclude<description, JSX.Element> | null;
+
+    /**
+     * Additional sections to be added to the content
+     */
     addSections: Array<{
+        /**
+         * Unique name of the section
+         * Note: It is used for example as element ID to lead anchor links to this section
+         */
         name: string_name;
+
+        /**
+         * Title of the section
+         */
         title: Exclude<title, JSX.Element>;
+
+        /**
+         * Order of the section
+         * TODO: [🧠] Some transparent system to order sections
+         */
         order: number;
+
+        /**
+         * Content of the section
+         */
         content: string_markdown;
+
+        // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assigment and auto generate
     }>;
+
+    /**
+     * Links to be added to the content
+     */
     links: Array<{
+        /**
+         * Title of the link - it is used as link text and also as title attribute
+         */
         title: Exclude<title, JSX.Element>;
+
+        /**
+         * URL of the link
+         */
         url: string_url;
     }>;
 }
@@ -66,7 +122,6 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
             `,
         );
     }
-
 
     // TODO: !!! Use here addSections and links
 
