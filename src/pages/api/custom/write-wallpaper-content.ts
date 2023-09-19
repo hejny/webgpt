@@ -28,11 +28,24 @@ export default async function writeWallpaperContentHandler(
         return response.status(400).json({ message: 'Parameter "wallpaperAssigment" is required' } as any);
     }
 
-    const wallpaperContent = await writeWallpaperContent(wallpaperAssigment, clientId);
+    try {
+        const wallpaperContent = await writeWallpaperContent(wallpaperAssigment, clientId);
 
-    return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
-        wallpaperContent,
-    } satisfies WriteWallpaperContentResponse);
+        return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
+            wallpaperContent,
+        } satisfies WriteWallpaperContentResponse);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        //TODO: Add special case for: "You exceeded your current quota"
+
+        console.error(error);
+        return response.status(503).json({
+            message: error.message /* <- TODO: [🈵] Is it good practise to reveal all error messages to client? */,
+        } as any);
+    }
 }
 
 /**
