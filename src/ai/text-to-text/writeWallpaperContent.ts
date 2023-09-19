@@ -130,9 +130,30 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
         spaceTrim(
             // TODO: [🤡] This prompt should be also created in some template function
             // TODO: [🤡] Pefect this prompt
+
+            //       https://www.instagram.com/michelangelato.zmrzlinarna/
+            // TODO: !!! Try Completion (send do Dan) vs Chat
             // TODO: !!! Unhardcode MichelanGELATO
             // TODO: !!! Unhardcode CS
             // TODO: !!! Unhardcode keywords
+
+            /*
+            Testing Assigments
+            
+            ---
+
+Nejlepší zmrzlina v Olomouci
+Gelato neboli tradiční italská zmrzlina.🍨❤️
+Pavelčákova 8, Olomouc. 
+Po - Ne od 10:00 - 19:00 hodin
+Řemeslně připravovaná v naší olomoucké kuchyni.👌
+Michaela.macakova@michelangelato.cz
+774 198 084
+http://michelangelato.cz/
+
+            --
+            
+            */
             (block) => `
 
                 Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku zmrzlinárny MichelanGELATO v Olomouci.

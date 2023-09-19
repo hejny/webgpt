@@ -19,8 +19,8 @@ export async function completeWithGpt(
     const model = 'text-davinci-003';
     const modelSettings = {
         model,
-        max_tokens: 500,
-        // <- TODO: [🤡] Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
+        max_tokens: 1500,
+        // <- TODO: !!! [🤡] Tweak, hardcode+note or put in config + Pick the best model, max_tokens, top_t,... other params
     };
     const promptAt = new Date();
 
