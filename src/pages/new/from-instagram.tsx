@@ -126,9 +126,10 @@ export default function NewWallpaperFromInstagramPage() {
                                             }),
                                             wallpaperImage: randomTimelineImage,
                                             title,
-                                            description,
+                                            description /* <- TODO: ALter with biography_with_entities */,
                                             addSections: [
-                                                /* TODO: Instagram AI component gallery */
+                                                // TODO: Instagram AI component gallery 
+                                                // TODO: Add map from business_address_json
                                             ],
                                             links: [
                                                 {
@@ -146,13 +147,7 @@ export default function NewWallpaperFromInstagramPage() {
 
                                             // TODO: Maybe pass posts texts to give a flavour of the account and its style
 
-                                            // ---TODO: !!! Add instagram and facebook link to contacts automatically
-
-                                            //   TODO: Cantidates to scrape:
-                                            //       - bio_links
-                                            //       - biography_with_entities
-                                            //       - business_address_json
-                                            //       - external_url
+                                         
                                         },
                                         (newTaskProgress: TaskProgress) => {
                                             console.info('☑', newTaskProgress);

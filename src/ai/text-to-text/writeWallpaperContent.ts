@@ -54,7 +54,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
         }
         const prompt = createTitlePromptTemplate(assigment);
         const chatThread = await ChatThread.ask(prompt, clientId);
-        const { response, model: modelToCreateTitle } = chatThread;
+        const { response } = chatThread;
         const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
         contentStart = spaceTrim(
@@ -66,6 +66,9 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
             `,
         );
     }
+
+
+    // TODO: !!! Use here addSections and links
 
     const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
         spaceTrim(
