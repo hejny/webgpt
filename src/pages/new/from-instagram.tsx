@@ -113,7 +113,9 @@ export default function NewWallpaperFromInstagramPage() {
                                                 // TODO: [🧠] Maybe pass business_category_name as separate field?
                                                 // TODO: [🧠] This is kind of part of PromptTemplate, how to work with it?
                                                 (block) => `
-                                                ${block((instagramUser.business_category_name || '').toLowerCase())}
+                                                ${instagramUser.business_category_name || ''} ${
+                                                    instagramUser.full_name || ''
+                                                } 
                                                 ${block(instagramUser.biography)}
                                             `,
                                             ),
