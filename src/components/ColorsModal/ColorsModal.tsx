@@ -4,6 +4,7 @@ import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { Modal } from '../Modal/00-Modal';
+import { useCloseWallpaperModalHandler } from '../WallpaperLink/useCloseWallpaperModalHandler';
 import styles from './ColorsModal.module.css';
 import { ColorsModalColorAlgoritm } from './ColorsModalColorAlgoritm';
 
@@ -14,7 +15,7 @@ export function ColorsModal() {
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
 
     return (
-        <Modal title="Colors" isCloseable>
+        <Modal title="Colors" isCloseable onClose={useCloseWallpaperModalHandler()}>
             <div className={styles.section}>{wallpaper.src}</div>
             <div className={styles.section}>
                 <ColorsModalColorAlgoritm />
@@ -60,7 +61,6 @@ export function ColorsModal() {
         </Modal>
     );
 }
-
 
 /**
  * TODO: [🦼] Use <MonacoEditor/> instead of <SketchPicker/>

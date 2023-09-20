@@ -9,6 +9,7 @@ import { randomUuid } from '../../utils/randomUuid';
 import type { string_javascript, string_uri } from '../../utils/typeAliases';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import { Modal } from '../Modal/00-Modal';
+import { useCloseWallpaperModalHandler } from '../WallpaperLink/useCloseWallpaperModalHandler';
 import styles from './ExportPreviewModal.module.css';
 import { ObjectUrl } from './utils/ObjectUrl';
 
@@ -181,7 +182,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     console.info('🔽', { exported });
 
     return (
-        <Modal title={'Export preview'} isCloseable>
+        <Modal title={'Export preview'} isCloseable onClose={useCloseWallpaperModalHandler()}>
             {/*
             <pre
                 // TODO: Make <DebugOutput/> component which supports multiple inputs like Set, Map, Array, Object, and also primitive values and promises and RxJS

@@ -58,7 +58,14 @@ export function Dialogues() {
     }
 
     return (
-        <Modal title={currentPromptInQueue.prompt}>
+        <Modal
+            title={currentPromptInQueue.prompt}
+            isCloseable={currentPromptInQueue.isCloseable}
+            onClose={() => {
+                currentPromptInQueue.answer = null;
+                setCurrentPromptInQueue(null);
+            }}
+        >
             <textarea
                 autoFocus
                 ref={textareaRef}

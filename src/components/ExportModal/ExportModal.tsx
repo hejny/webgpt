@@ -13,6 +13,7 @@ import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
+import { useCloseWallpaperModalHandler } from '../WallpaperLink/useCloseWallpaperModalHandler';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
 
@@ -57,7 +58,7 @@ export function ExportModal() {
     const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
 
     return (
-        <Modal title={'Get the web'} isCloseable>
+        <Modal title={'Get the web'} isCloseable onClose={useCloseWallpaperModalHandler()}>
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {
