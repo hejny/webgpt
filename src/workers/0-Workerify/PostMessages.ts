@@ -1,5 +1,5 @@
 import { Promisable } from 'type-fest';
-import { IPromptDialogueOptions } from '../../components/Dialogues/dialogues/promptDialogue';
+import type { IPromptDialogueOptions } from '../../components/Dialogues/interfaces/PromptDialogueOptions';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export type TransferableObject = any /* <-[0] */;
