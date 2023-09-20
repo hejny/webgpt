@@ -100,4 +100,5 @@ export function Dialogues() {
  * TODO: !! Is overy answer recorded and in order?
  * TODO: Spelling dialog vs dialogue ACRY
  * TODO: [🔏] DRY Locking mechanism | useLock hook
+ * TODO: [🥧] Behave as popup window which can be multiple at once
  */

@@ -26,30 +26,37 @@ export async function mockedMultitaskWithPrompts(
     for (let i = 0; i < 5; i++) {
         await forTime(Math.random() * 1000 + 500);
 
-        const title = `(${i}) ${faker.hacker.verb()}`;
-
-        await onProgress({
-            name: `mocked-task-${i}`,
-            title: <>{title}</>,
-            isDone: false,
-        });
-
-        const response = await promptDialogue({
-            prompt: (
-                <>
-                    Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
-                </>
-            ),
-            defaultValue: faker.hacker.phrase(),
-            placeholder: faker.hacker.phrase(),
-            isCloseable: true,
-        });
+        const title = faker.hacker.verb();
 
         await onProgress({
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({response})</i>
+                    ({i}) {title}
+                </>
+            ),
+            isDone: false,
+        });
+
+        const promptOptions = {
+            prompt: (
+                <>
+                    Question about the <span style={{ fontStyle: 'italic' }}>{title}</span>
+                </>
+            ),
+            defaultValue: faker.hacker.verb(),
+            placeholder: faker.hacker.phrase(),
+            isCloseable: true,
+        };
+        const answer = await promptDialogue(promptOptions);
+
+        console.info('📢', answer, promptOptions);
+
+        await onProgress({
+            name: `mocked-task-${i}`,
+            title: (
+                <>
+                    ({i}) {title} {answer === null ? undefined : <i>({answer})</i>}
                 </>
             ),
             isDone: true,

@@ -104,6 +104,10 @@ dialog.Modal {
     font-size: 28px;
 }
 
+.bar .icons > * {
+    cursor: pointer;
+}
+
 .content {
     grid-area: ⬛;
 

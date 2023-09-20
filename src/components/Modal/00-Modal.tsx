@@ -75,7 +75,17 @@ export function Modal(props: ModalProps) {
     return (
         <>
             <div className={styles.overlay} onClick={closeHandler} />
-            <dialog open className={styles.Modal}>
+            <dialog
+                open
+                className={styles.Modal}
+                onKeyDown={(event) => {
+                    if (!(event.key === 'Escape' && event.shiftKey === false && event.ctrlKey === false)) {
+                        return;
+                    }
+
+                    closeHandler();
+                }}
+            >
                 <div className={styles.bar}>
                     <div className={styles.title}>
                         <h2>{title}</h2>
@@ -95,7 +105,7 @@ export function Modal(props: ModalProps) {
 }
 
 /**
- * TODO: !!! isOvelay
- * TODO: !!! isFullscreen
- *  TODO: If isFullscreen react on [Esc] and [Enter] <- Remove collision with dialogues
+ * TODO: !!! isFullscreen - always true
+ * TODO: !!! If isFullscreen react on [Esc] and [Enter] <- Remove collision with dialogues
+ * TODO: [🥧] isFullscreen={false} - behave as popup window which can be multiple at once
  */
