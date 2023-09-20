@@ -3,7 +3,7 @@ import moment from 'moment';
 import { COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT } from '../../../config';
 import { forPlay } from '../forPlay';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
-import { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
+import type { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
 
 /**
  * Executes a series of async tasks on hardcoded wallpapers

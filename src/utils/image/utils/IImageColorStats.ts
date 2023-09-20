@@ -4,7 +4,7 @@ import type { TaskProgress } from '../../../components/TaskInProgress/task/TaskP
 import { Color } from '../../color/Color';
 import type { WithTake } from '../../take/interfaces/ITakeChain';
 import type { number_integer, number_percent } from '../../typeAliases';
-import { IImage } from '../IImage';
+import type { IImage } from '../IImage';
 
 interface IComputeImageColorStatsProgress {
     total: number_integer;

@@ -1,6 +1,6 @@
-import { IWallpaper } from '../../utils/IWallpaper';
+import type { IWallpaper } from '../../utils/IWallpaper';
 import type { number_likeness } from '../../utils/typeAliases';
-import { IWallpaperVector } from './IWallpaperVector';
+import type { IWallpaperVector } from './IWallpaperVector';
 import { wallpaperToVector } from './wallpaperToVector';
 import { wallpaperVectorsDistanceSquared } from './wallpaperVectorsDistanceSquared';
 

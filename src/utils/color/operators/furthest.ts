@@ -1,5 +1,5 @@
 import { Color } from '../Color';
-import { IColorTransformer } from './IColorTransformer';
+import type { IColorTransformer } from './IColorTransformer';
 import { nearest } from './nearest';
 import { negative } from './negative';
 

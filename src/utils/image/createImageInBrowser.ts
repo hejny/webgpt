@@ -1,8 +1,8 @@
 import { Color } from '../color/Color';
 import { forARest } from '../forARest';
 import type { string_url } from '../typeAliases';
-import { IComputeColorstatsWork } from './IComputeColorstatsWork';
-import { Image as MyImage } from './Image';
+import type { IComputeColorstatsWork } from './IComputeColorstatsWork';
+import type { Image as MyImage } from './Image';
 
 /**
  * Create new Image in the browser

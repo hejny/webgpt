@@ -14,7 +14,7 @@ import { removeContentComments } from '../utils/content/removeContentComments';
 import { ExportContext } from '../utils/hooks/ExportContext';
 import { parseFontsFromWallpaper } from '../utils/hooks/useCurrentWallpaperFonts';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
-import { IWallpaper } from '../utils/IWallpaper';
+import type { IWallpaper } from '../utils/IWallpaper';
 import type { string_css, string_page } from '../utils/typeAliases';
 import { HtmlExportFile } from './HtmlExportFile';
 import { HtmlExportOptions } from './HtmlExportOptions';

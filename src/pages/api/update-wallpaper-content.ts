@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { spaceTrim } from 'spacetrim';
 import { ChatThread } from '../../ai/text-to-text/ChatThread';
 import { removeQuotes } from '../../utils/content/removeQuotes';
-import { IWallpaperSerialized } from '../../utils/IWallpaper';
+import type { IWallpaperSerialized } from '../../utils/IWallpaper';
 import type { string_prompt, uuid } from '../../utils/typeAliases';
 import { isValidClientId } from '../../utils/validators/isValidClientId';
 

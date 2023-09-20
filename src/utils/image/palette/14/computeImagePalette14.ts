@@ -13,8 +13,8 @@ import { colorHueDistance } from '../../../color/utils/colorHueDistance';
 import { forARest } from '../../../forARest';
 import { getOrderString } from '../../../getOrderString';
 import type { WithTake } from '../../../take/interfaces/ITakeChain';
-import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
-import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
+import type { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
+import type { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 let totalCount = 0;
 let pickByMostFrequentColorCount = 0;

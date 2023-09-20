@@ -10,7 +10,7 @@ import { areColorsEqual } from '../../../color/utils/areColorsEqual';
 import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
 import type { WithTake } from '../../../take/interfaces/ITakeChain';
-import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
+import type { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 let totalCount = 0;
 let pickByMostFrequentColorCount = 0;

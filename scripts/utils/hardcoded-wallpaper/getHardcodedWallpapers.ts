@@ -11,7 +11,7 @@ import {
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { FULLHD } from '../../../src/constants';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
-import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
+import type { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
 import type { string_file_path } from '../../../src/utils/typeAliases';
 import { isFileExisting } from '../isFileExisting';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';

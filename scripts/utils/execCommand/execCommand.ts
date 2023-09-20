@@ -3,7 +3,7 @@ import { spawn } from 'child_process';
 import { spaceTrim } from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { execCommandNormalizeOptions } from './execCommandNormalizeOptions';
-import { IExecCommandOptions } from './IExecCommandOptions';
+import type { IExecCommandOptions } from './IExecCommandOptions';
 
 export function execCommand(options: IExecCommandOptions): Promise<string> {
     return new Promise((resolve, reject) => {

@@ -1,10 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
+import type { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
 import { likedStatusToLikeness } from '../../ai/recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
-import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
+import type { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import type { number_likeness, string_url } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';

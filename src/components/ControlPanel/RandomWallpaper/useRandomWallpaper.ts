@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useCurrentWallpaperId } from '../../../utils/hooks/useCurrentWallpaperId';
 import { usePromise } from '../../../utils/hooks/usePromise';
-import { IWallpaperInStorage, RandomWallpaperManager } from './RandomWallpaperManager';
+import type { IWallpaperInStorage, RandomWallpaperManager } from './RandomWallpaperManager';
 
 export function useRandomWallpaper(): [
     randomWallpaper: IWallpaperInStorage | null,
@@ -17,7 +17,7 @@ export function useRandomWallpaper(): [
     );
     const { value: recommendedWallpaper } = usePromise(randomWallpaperPromise);
 
-    console.info(`🎲 Use recommended wallpaper`, {recommendedWallpaper});
+    console.info(`🎲 Use recommended wallpaper`, { recommendedWallpaper });
 
     return [
         recommendedWallpaper || null,

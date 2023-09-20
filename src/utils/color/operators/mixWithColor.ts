@@ -1,5 +1,5 @@
 import { Color } from '../Color';
-import { IColorTransformer } from './IColorTransformer';
+import type { IColorTransformer } from './IColorTransformer';
 
 /**
  * Makes color transformer which returns a mix of two colors based on a ratio

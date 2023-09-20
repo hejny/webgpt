@@ -6,7 +6,7 @@ import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
-import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
+import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
 import { isPrivateNetwork } from './src/utils/validators/isPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';

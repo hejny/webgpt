@@ -1,5 +1,5 @@
 import { extractTitleFromContent } from '../content/extractTitleFromContent';
-import { IWallpaper } from '../IWallpaper';
+import type { IWallpaper } from '../IWallpaper';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useObservable } from './useObservable';
 import { useWallpaperSubject } from './useWallpaperSubject';

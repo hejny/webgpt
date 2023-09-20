@@ -9,7 +9,7 @@ import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
 import { useRole } from '../utils/hooks/useRole';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
-import { IWallpaperSerialized } from '../utils/IWallpaper';
+import type { IWallpaperSerialized } from '../utils/IWallpaper';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 import type { string_wallpaper_id } from '../utils/typeAliases';
 import { validateUuid } from '../utils/validators/validateUuid';

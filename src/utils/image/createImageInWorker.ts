@@ -1,8 +1,7 @@
 import { Color } from '../color/Color';
 import { forARest } from '../forARest';
-import { IComputeColorstatsWork } from './IComputeColorstatsWork';
-import { Image as MyImage } from './Image';
-
+import type { IComputeColorstatsWork } from './IComputeColorstatsWork';
+import type { Image as MyImage } from './Image';
 
 /**
  * Create new Image from Blob in the browser or worker

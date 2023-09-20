@@ -1,5 +1,5 @@
 import { Color } from '../Color';
-import { IColorTransformer } from './IColorTransformer';
+import type { IColorTransformer } from './IColorTransformer';
 
 /**
  * Makes color transformer which returns a grayscale version of the color

@@ -1,9 +1,9 @@
 import { spaceTrim } from 'spacetrim';
-import { IVector, Vector } from 'xyzt';
+import type { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import type { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
-import { IImage } from './IImage';
+import type { IImage } from './IImage';
 import { checkSizeValue } from './internal-utils/checkSizeValue';
 
 /**

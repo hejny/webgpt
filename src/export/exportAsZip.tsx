@@ -1,5 +1,5 @@
 import JSZip from 'jszip';
-import { IWallpaper } from '../utils/IWallpaper';
+import type { IWallpaper } from '../utils/IWallpaper';
 import { exportAsHtml } from './exportAsHtml';
 import { getWallpaperBaseFilename } from './getWallpaperBaseFilename';
 import { HtmlExportOptions } from './HtmlExportOptions';

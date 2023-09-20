@@ -1,6 +1,6 @@
 import jimp from 'jimp';
 import { Color } from '../color/Color';
-import { Image } from './Image';
+import type { Image } from './Image';
 
 /**
  * Create new Image in Node.js from local file

@@ -1,6 +1,6 @@
 import { Color } from '../Color';
 import { colorDistanceSquared } from '../utils/colorDistance';
-import { IColorTransformer } from './IColorTransformer';
+import type { IColorTransformer } from './IColorTransformer';
 
 /**
  * Makes color transformer which finds the nearest color from the given list

@@ -4,7 +4,7 @@ import { useInitial } from '../../utils/hooks/useInitial';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import styles from './Gallery.module.css';
 import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
-import { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
+import type { IGalleryFilter } from './GalleryFilter/IGalleryFilter';
 import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
 /**

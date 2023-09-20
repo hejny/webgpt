@@ -1,5 +1,5 @@
-import { IVector, Vector } from 'xyzt';
-import { IImage } from '../../IImage';
+import type { IVector, Vector } from 'xyzt';
+import type { IImage } from '../../IImage';
 import { colorDownscaleImage } from '../../utils/colorDownscaleImage';
 import { computeImageAverageColor } from '../../utils/computeImageAverageColor';
 import { computeImageDarkestColor } from '../../utils/computeImageDarkestColor';

@@ -9,8 +9,8 @@ import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { colorSatulightion } from '../../color/utils/colorSatulightion';
 import { forARest } from '../../forARest';
 import type { WithTake } from '../../take/interfaces/ITakeChain';
-import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
-import { IImage } from '../IImage';
+import type { IComputeColorstatsWork } from '../IComputeColorstatsWork';
+import type { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**

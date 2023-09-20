@@ -1,4 +1,4 @@
-import { IColorTransformer } from './IColorTransformer';
+import type { IColorTransformer } from './IColorTransformer';
 import { lighten } from './lighten';
 
 /**

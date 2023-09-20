@@ -1,4 +1,4 @@
-import { IDestroyable, ITeardownLogic, Registration } from 'destroyable';
+import type { IDestroyable, ITeardownLogic, Registration } from 'destroyable';
 import type { string_url } from '../../utils/typeAliases';
 
 /**

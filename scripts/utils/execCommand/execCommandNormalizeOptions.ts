@@ -1,4 +1,4 @@
-import { IExecCommandOptions, IExecCommandOptionsAdvanced } from './IExecCommandOptions';
+import type { IExecCommandOptions, IExecCommandOptionsAdvanced } from './IExecCommandOptions';
 
 export function execCommandNormalizeOptions(options: IExecCommandOptions): Pick<
     IExecCommandOptionsAdvanced,

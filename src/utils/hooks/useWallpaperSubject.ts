@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { BehaviorSubject } from 'rxjs';
-import { IWallpaper } from '../IWallpaper';
+import type { IWallpaper } from '../IWallpaper';
 import type { string_wallpaper_id } from '../typeAliases';
 import { WallpapersContext } from './WallpapersContext';
 

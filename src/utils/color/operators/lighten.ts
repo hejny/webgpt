@@ -2,7 +2,7 @@ import clamp from 'lodash/clamp'; /* <- TODO: Do we need here a lodash for just 
 import { Color } from '../Color';
 import { hslToRgb } from '../internal-utils/hslToRgb';
 import { rgbToHsl } from '../internal-utils/rgbToHsl';
-import { IColorTransformer } from './IColorTransformer';
+import type { IColorTransformer } from './IColorTransformer';
 
 /**
  * Makes color transformer which lighten the given color
