@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Modal } from '../Modal/00-Modal';
 import styles from './Dialogues.module.css';
-import { IPromptInQueue } from './dialogues/promptDialogue';
+import type { IPromptInQueue } from './interfaces/PromptInQueue';
 import { isDialoguesRendered } from './locks/Dialogues.lock';
 import { promptDialogueQueue } from './queues/prompts';
 

@@ -19,6 +19,8 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
         prompt,
         defaultValue,
         placeholder,
+        isCloseable,
+        autoSubmit,
         answer: undefined,
     };
 
@@ -26,7 +28,7 @@ export async function promptDialogue(options: IPromptDialogueOptions): Promise<s
         // [🌴]
         postMessage({
             type: 'PROMPT_DIALOGUE',
-            promptOptions: { prompt, defaultValue, placeholder },
+            promptOptions: { prompt, defaultValue, placeholder, isCloseable, autoSubmit },
         } satisfies IMessagePromptDialogue);
 
         return new Promise((resolve) => {
