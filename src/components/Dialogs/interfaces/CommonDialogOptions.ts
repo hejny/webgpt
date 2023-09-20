@@ -1,12 +1,15 @@
 import type { message } from '../../../utils/typeAliases';
 
-export interface PromptDialogOptions {
+export interface CommonDialogOptions {
     /**
-     * Prompt message
-     *
-     * Note: This is not a prompt to language model but a prompt to the user
+     * Title of the modal
      */
-    prompt: message;
+    title: message;
+
+    /**
+     * Message in the modal
+     */
+    message: message | null;
 
     /**
      * Default value for the input/textarea
@@ -16,11 +19,11 @@ export interface PromptDialogOptions {
     /**
      * Placeholder for the input/textarea
      */
-    placeholder?: string;
+    placeholder: string | null;
 
     /**
-     * If true, the prompt can be closed by the user
-     * When the prompt is closed, the answer is `null`
+     * If true, the modal can be closed by the user
+     * Note: When the prompt is closed, the answer is `null`
      */
     isCloseable: boolean;
 
@@ -29,3 +32,9 @@ export interface PromptDialogOptions {
      */
     autoSubmit?: number;
 }
+
+/**
+ * TODO: !!! validate
+ * TODO: !!! multipleOptions
+ * TODO: !!! isMultiline OR type
+ */

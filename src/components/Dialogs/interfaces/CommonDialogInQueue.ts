@@ -1,4 +1,4 @@
-import { PromptDialogOptions } from './PromptDialogOptions';
+import { CommonDialogOptions } from './CommonDialogOptions';
 
 /**
  * Represents a prompt message that is waiting for an answer or is already answered
@@ -6,7 +6,7 @@ import { PromptDialogOptions } from './PromptDialogOptions';
  * Note: This is not a prompt to language model but a prompt to the user
  * @private this should be used only withing this folder Dialogs
  */
-export interface PromptInQueue extends PromptDialogOptions {
+export interface CommonDialogInQueue extends CommonDialogOptions {
     /**
      * Answer to the prompt
      *

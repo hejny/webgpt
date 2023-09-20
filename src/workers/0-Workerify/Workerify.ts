@@ -60,7 +60,7 @@ export class Workerify<
                         message: error.message,
                     } satisfies IMessageError);
                 }
-            } else if (type === 'PROMPT_DIALOG_ANSWER') {
+            } else if (type === 'DIALOG_ANSWER') {
                 // Note: Do nothing here, because [👂][0] promptDialog is also listening to this message
                 return;
             } else {
@@ -116,11 +116,11 @@ export class Workerify<
                     } else if (type === 'ERROR') {
                         const { message } = event.data;
                         reject(new Error(message));
-                    } else if (type === 'PROMPT_DIALOG') {
+                    } else if (type === 'DIALOG') {
                         const { promptOptions } = event.data;
                         const promptAnswer = await promptDialog(promptOptions);
                         worker!.postMessage({
-                            type: 'PROMPT_DIALOG_ANSWER',
+                            type: 'DIALOG_ANSWER',
                             promptAnswer,
                         } satisfies IMessagePromptDialogAnswer);
                     } else {

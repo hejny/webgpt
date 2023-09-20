@@ -1,20 +1,20 @@
 import { message } from '../../../utils/typeAliases';
+import { commonDialog } from './_commonDialog';
 
 /**
  * Pops up an alert dialog
  */
 export async function alertDialog(message: message): Promise<void> {
-    /*
-    TODO: !!! Implement
-    await promptDialog({
+    await commonDialog({
+        title: <>{/* !!! */}</>,
         message,
+        // TODO: !!! Do not show input field
+        defaultValue: null,
+        placeholder: null,
+        isCloseable: true,
     });
-    */
 }
 
 /**
- * TODO: !!! Base on commonDialog
  * TODO: !!! Use instead of every alert ACRY
- * TODO: !!! Draggable
- * TODO: !!! Compact design
  */

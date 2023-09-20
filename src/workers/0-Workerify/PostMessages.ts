@@ -1,5 +1,5 @@
 import type { Promisable } from 'type-fest';
-import type { PromptDialogOptions } from '../../components/Dialogs/interfaces/PromptDialogOptions';
+import type { CommonDialogOptions } from '../../components/Dialogs/interfaces/CommonDialogOptions';
 import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export type TransferableObject = any /* <-[0] */;
@@ -19,7 +19,7 @@ export interface IMessageRequest<TRequest extends TransferableObject> {
 }
 
 export interface IMessagePromptDialogAnswer {
-    type: 'PROMPT_DIALOG_ANSWER';
+    type: 'DIALOG_ANSWER';
     promptAnswer: string | null /* <-[🍁] */;
 }
 
@@ -45,6 +45,6 @@ export interface IMessageError {
 }
 
 export interface IMessagePromptDialog {
-    type: 'PROMPT_DIALOG';
-    promptOptions: PromptDialogOptions;
+    type: 'DIALOG';
+    promptOptions: CommonDialogOptions;
 }
