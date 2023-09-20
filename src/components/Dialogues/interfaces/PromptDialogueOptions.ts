@@ -1,4 +1,4 @@
-import { message } from '../../../utils/typeAliases';
+import type { message } from '../../../utils/typeAliases';
 
 export interface IPromptDialogueOptions {
     /**

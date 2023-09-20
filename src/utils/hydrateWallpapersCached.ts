@@ -1,7 +1,7 @@
 import { BehaviorSubject } from 'rxjs';
 import { hydrateWallpaper } from './hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
-import { string_wallpaper_id } from './typeAliases';
+import type { string_wallpaper_id } from './typeAliases';
 
 /**
  * Cache of wallpapers to hydrate

@@ -6,7 +6,7 @@ import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { randomUuid } from '../../utils/randomUuid';
-import { string_javascript, string_uri } from '../../utils/typeAliases';
+import type { string_javascript, string_uri } from '../../utils/typeAliases';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import { Modal } from '../Modal/00-Modal';
 import styles from './ExportPreviewModal.module.css';

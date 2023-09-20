@@ -1,4 +1,4 @@
-import { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
+import type { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
 
 /**
  * A function that takes a string as input and returns a set of fonts extracted from it

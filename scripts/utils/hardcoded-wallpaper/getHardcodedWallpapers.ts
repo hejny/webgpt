@@ -12,7 +12,7 @@ import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/Gall
 import { FULLHD } from '../../../src/constants';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
 import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
-import { string_file_path } from '../../../src/utils/typeAliases';
+import type { string_file_path } from '../../../src/utils/typeAliases';
 import { isFileExisting } from '../isFileExisting';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
 

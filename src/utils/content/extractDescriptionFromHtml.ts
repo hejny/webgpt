@@ -1,6 +1,6 @@
 import { spaceTrim } from 'spacetrim';
 import { DOMParser } from 'xmldom-qsa';
-import { description, string_html } from '../typeAliases';
+import type { description, string_html } from '../typeAliases';
 
 /**
  * Extract the first paragraph from HTML

@@ -1,6 +1,6 @@
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
-import { uuid } from '../typeAliases';
+import type { uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
 import { getSupabaseForBrowser } from './getSupabaseForBrowser';
 import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
@@ -48,7 +48,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         prompt: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
-        isCloseable: true
+        isCloseable: true,
     });
 
     if (!isValidEmail(email)) {

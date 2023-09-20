@@ -17,7 +17,7 @@ import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_prompt } from '../../utils/typeAliases';
+import type { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';

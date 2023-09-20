@@ -11,7 +11,7 @@ import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
 import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
-import { string_wallpaper_id } from '../utils/typeAliases';
+import type { string_wallpaper_id } from '../utils/typeAliases';
 import { validateUuid } from '../utils/validators/validateUuid';
 
 interface WallpaperPageProps {

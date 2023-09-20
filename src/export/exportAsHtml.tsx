@@ -15,7 +15,7 @@ import { ExportContext } from '../utils/hooks/ExportContext';
 import { parseFontsFromWallpaper } from '../utils/hooks/useCurrentWallpaperFonts';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
-import { string_css, string_page } from '../utils/typeAliases';
+import type { string_css, string_page } from '../utils/typeAliases';
 import { HtmlExportFile } from './HtmlExportFile';
 import { HtmlExportOptions } from './HtmlExportOptions';
 import { splitCss } from './splitCss';

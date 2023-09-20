@@ -3,7 +3,7 @@ import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
 import { take } from '../../utils/take/take';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import styles from './ColorPreview.module.css';
 
 interface ColorPreviewProps {

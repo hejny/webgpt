@@ -1,7 +1,7 @@
 import { spaceTrim } from 'spacetrim';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
-import { string_css_class, string_href, string_markdown } from '../../utils/typeAliases';
+import type { string_css_class, string_href, string_markdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 

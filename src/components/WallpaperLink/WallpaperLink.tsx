@@ -5,7 +5,7 @@ import { RefCallback, useContext } from 'react';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { DEFAULT_ROLE, Role } from '../../utils/hooks/useRole';
 import { DEFAULT_SCENARIO, Scenario } from '../../utils/hooks/useScenario';
-import { string_page, string_wallpaper_id } from '../../utils/typeAliases';
+import type { string_page, string_wallpaper_id } from '../../utils/typeAliases';
 
 interface WallpaperLinkProps extends Omit<React.ComponentProps<'a'>, 'ref' | 'role' /* <- [🍛] */> {
     wallpaperId?: string_wallpaper_id | null;

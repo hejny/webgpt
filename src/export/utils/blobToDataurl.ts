@@ -1,5 +1,5 @@
 import type { Promisable } from 'type-fest';
-import { string_data_url } from '../../utils/typeAliases';
+import type { string_data_url } from '../../utils/typeAliases';
 
 /**
  * Convert Blob or File to string data url

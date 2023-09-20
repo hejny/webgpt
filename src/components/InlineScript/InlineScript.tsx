@@ -2,7 +2,7 @@ import Script from 'next/script';
 import { useContext } from 'react';
 import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { string_javascript } from '../../utils/typeAliases';
+import type { string_javascript } from '../../utils/typeAliases';
 
 interface InlineScriptProps {
     /**

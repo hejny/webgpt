@@ -1,4 +1,4 @@
-import { string_url } from '../../utils/typeAliases';
+import type { string_url } from '../../utils/typeAliases';
 import { ObjectUrl } from './ObjectUrl';
 
 /**

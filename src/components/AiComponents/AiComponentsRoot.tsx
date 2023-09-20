@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { useContext } from 'react';
 import type { Promisable } from 'type-fest';
 import { ExportContext } from '../../utils/hooks/ExportContext';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import { InlineScript } from '../InlineScript/InlineScript';
 
 interface AiComponentsRootProps {

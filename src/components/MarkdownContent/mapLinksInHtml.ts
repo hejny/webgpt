@@ -1,4 +1,4 @@
-import { string_href, string_html } from '../../utils/typeAliases';
+import type { string_href, string_html } from '../../utils/typeAliases';
 
 /**
  * Map all <a href="..."> by replacer

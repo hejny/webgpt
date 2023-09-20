@@ -1,6 +1,6 @@
 import { spaceTrim } from 'spacetrim';
 import { DOMParser } from 'xmldom-qsa';
-import { string_html, title } from '../typeAliases';
+import type { string_html, title } from '../typeAliases';
 
 /**
  * Extract the first heading from HTML

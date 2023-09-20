@@ -1,6 +1,6 @@
 import { normalizeToKebabCase } from 'n12';
 import { useRouter } from 'next/router';
-import { string_page } from '../typeAliases';
+import type { string_page } from '../typeAliases';
 
 export function usePageName(): string_page {
     const router = useRouter();

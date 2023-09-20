@@ -1,4 +1,4 @@
-import { string_html, string_markdown } from '../typeAliases';
+import type { string_html, string_markdown } from '../typeAliases';
 import { removeContentComments } from './removeContentComments';
 
 export function detectContentFormat(content: string_html | string_markdown | string): 'html' | 'markdown' | 'text' {

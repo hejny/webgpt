@@ -1,6 +1,6 @@
 import { extractFontsFromContent } from '../../components/ImportFonts/extractFontsFromContent';
 import { IWallpaper } from '../IWallpaper';
-import { string_font_family } from '../typeAliases';
+import type { string_font_family } from '../typeAliases';
 import { useCurrentWallpaper } from './useCurrentWallpaper';
 
 interface WallpaperFonts {

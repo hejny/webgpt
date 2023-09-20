@@ -1,4 +1,4 @@
-import { string_filename } from '../../utils/typeAliases';
+import type { string_filename } from '../../utils/typeAliases';
 
 /**
  * Converts Blob to File

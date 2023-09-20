@@ -1,5 +1,5 @@
 import { spaceTrim } from 'spacetrim';
-import { string_html, string_markdown } from '../typeAliases';
+import type { string_html, string_markdown } from '../typeAliases';
 
 /**
  * Removes HTML or Markdown comments from a string.

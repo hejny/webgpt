@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { spaceTrim } from 'spacetrim';
-import { string_domain, string_tdl } from '../../utils/typeAliases';
+import type { string_domain, string_tdl } from '../../utils/typeAliases';
 import styles from './AdvancedDomainsChecker.module.css';
 import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';

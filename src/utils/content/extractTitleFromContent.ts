@@ -1,5 +1,5 @@
 import { markdownConverter } from '../../components/MarkdownContent/markdownConverter';
-import { string_html, string_markdown, title } from '../typeAliases';
+import type { string_html, string_markdown, title } from '../typeAliases';
 import { detectContentFormat } from './detectContentFormat';
 import { extractTitleFromHtml } from './extractTitleFromHtml';
 

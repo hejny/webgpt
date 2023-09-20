@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { spaceTrim } from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import type { TaskProgress } from '../TaskInProgress/task/TaskProgress';

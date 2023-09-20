@@ -6,7 +6,7 @@ import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallp
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { number_likeness, string_url } from '../../utils/typeAliases';
+import type { number_likeness, string_url } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 export interface RecommendWallpaperResponse {

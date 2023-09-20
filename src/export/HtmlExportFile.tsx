@@ -1,4 +1,10 @@
-import { string_css, string_file_relative_path, string_html, string_markdown, string_mime_type } from '../utils/typeAliases';
+import type {
+    string_css,
+    string_file_relative_path,
+    string_html,
+    string_markdown,
+    string_mime_type,
+} from '../utils/typeAliases';
 
 export interface HtmlExportFile {
     type: 'page' | 'code' | 'asset' | 'other';

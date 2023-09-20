@@ -1,4 +1,4 @@
-import { uuid } from '../typeAliases';
+import type { uuid } from '../typeAliases';
 
 export function isValidWallpaperId(value: unknown): value is uuid {
     if (typeof value !== 'string') {

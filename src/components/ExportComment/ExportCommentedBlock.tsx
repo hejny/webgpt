@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { spaceTrim } from 'spacetrim';
-import { string_name } from '../../utils/typeAliases';
+import type { string_name } from '../../utils/typeAliases';
 import { ExportComment } from './ExportComment';
 
 interface ExportCommentedBlockProps {

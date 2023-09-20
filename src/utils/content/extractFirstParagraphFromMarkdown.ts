@@ -1,5 +1,5 @@
 import { spaceTrim } from 'spacetrim';
-import { string_markdown } from '../typeAliases';
+import type { string_markdown } from '../typeAliases';
 
 /**
  * Extracts the first paragraph from a markdown string.

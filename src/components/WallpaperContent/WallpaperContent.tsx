@@ -5,7 +5,7 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';
 import { usePageName } from '../../utils/hooks/usePageName';
 import { useRole } from '../../utils/hooks/useRole';
-import { string_href, string_html } from '../../utils/typeAliases';
+import type { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';

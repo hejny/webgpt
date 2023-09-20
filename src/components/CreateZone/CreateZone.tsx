@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import { Center } from '../SimpleLayout/Center';
 import { TakeNoSpace } from '../SimpleLayout/TakeNoSpace';
 import styles from './CreateZone.module.css';

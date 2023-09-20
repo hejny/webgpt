@@ -1,4 +1,4 @@
-import { message, string_html } from '../typeAliases';
+import type { message, string_html } from '../typeAliases';
 
 /**
  * Converts jsx to simple provisional html without using react-dom

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { string_wallpaper_id } from '../typeAliases';
+import type { string_wallpaper_id } from '../typeAliases';
 
 /**
  * A function that returns current wallpaper id based on the router query

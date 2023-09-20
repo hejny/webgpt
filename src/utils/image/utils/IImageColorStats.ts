@@ -3,7 +3,7 @@ import { Vector } from 'xyzt';
 import type { TaskProgress } from '../../../components/TaskInProgress/task/TaskProgress';
 import { Color } from '../../color/Color';
 import type { WithTake } from '../../take/interfaces/ITakeChain';
-import { number_integer, number_percent } from '../../typeAliases';
+import type { number_integer, number_percent } from '../../typeAliases';
 import { IImage } from '../IImage';
 
 interface IComputeImageColorStatsProgress {

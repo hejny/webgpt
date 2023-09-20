@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { string_hostname } from '../../utils/typeAliases';
+import type { string_hostname } from '../../utils/typeAliases';
 import { WhoisDomain } from './WhoisDomain/WhoisDomain';
 
 /**

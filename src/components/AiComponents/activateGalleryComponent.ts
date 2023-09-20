@@ -1,5 +1,5 @@
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
+import type { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
 export async function activateGalleryComponent(galleryElement: HTMLElement): Promise<void> {
     const moreButtonHtml = `

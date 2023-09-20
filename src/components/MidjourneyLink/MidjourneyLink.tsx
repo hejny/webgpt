@@ -1,4 +1,4 @@
-import { uuid } from '../../utils/typeAliases';
+import type { uuid } from '../../utils/typeAliases';
 import styles from './MidjourneyLink.module.css';
 
 interface MidjourneyLinkProps {

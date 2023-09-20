@@ -5,7 +5,7 @@ import gallery from '../../../documents/gallery.html';
 import license from '../../../documents/license.md';
 import pricing from '../../../documents/pricing.html';
 import testSize from '../../../documents/test-size.html';
-import { string_html, string_markdown, string_page } from '../../utils/typeAliases';
+import type { string_html, string_markdown, string_page } from '../../utils/typeAliases';
 
 export const PAGES_CONTENTS: Record<string_page, string_html | string_markdown> = {
     explanation,

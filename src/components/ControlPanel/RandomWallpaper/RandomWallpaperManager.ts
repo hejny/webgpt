@@ -5,7 +5,7 @@ import type { RecommendWallpaperResponse } from '../../../pages/api/recommend-wa
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { provideClientIdWithoutVerification } from '../../../utils/supabase/provideClientIdWithoutVerification';
-import { string_wallpaper_id } from '../../../utils/typeAliases';
+import type { string_wallpaper_id } from '../../../utils/typeAliases';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 

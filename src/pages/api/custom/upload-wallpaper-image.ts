@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { CDN } from '../../../../config';
 import { generateUserWallpaperCdnKey } from '../../../utils/cdn/utils/generateUserWallpaperCdnKey';
-import { string_url } from '../../../utils/typeAliases';
+import type { string_url } from '../../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
