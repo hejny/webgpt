@@ -1,5 +1,5 @@
 import type { Promisable } from 'type-fest';
-import type { IPromptDialogueOptions } from '../../components/Dialogues/interfaces/PromptDialogueOptions';
+import type { PromptDialogueOptions } from '../../components/Dialogues/interfaces/PromptDialogueOptions';
 import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export type TransferableObject = any /* <-[0] */;
@@ -46,5 +46,5 @@ export interface IMessageError {
 
 export interface IMessagePromptDialogue {
     type: 'PROMPT_DIALOGUE';
-    promptOptions: IPromptDialogueOptions;
+    promptOptions: PromptDialogueOptions;
 }

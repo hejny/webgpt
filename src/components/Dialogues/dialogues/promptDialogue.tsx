@@ -1,21 +1,21 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../workers/0-Workerify/PostMessages';
-import type { IPromptDialogueOptions } from '../interfaces/PromptDialogueOptions';
-import type { IPromptInQueue } from '../interfaces/PromptInQueue';
+import type { PromptDialogueOptions } from '../interfaces/PromptDialogueOptions';
+import type { PromptInQueue } from '../interfaces/PromptInQueue';
 import { isDialoguesRendered } from '../locks/Dialogues.lock';
 import { promptDialogueQueue } from '../queues/prompts';
 
 /**
  * Pops up the co-pilot panel with a prompt dialogue.
  */
-export async function promptDialogue(options: IPromptDialogueOptions): Promise<string | null> {
+export async function promptDialogue(options: PromptDialogueOptions): Promise<string | null> {
     const { prompt, defaultValue, placeholder, isCloseable, autoSubmit } = options;
 
     // TODO: !!! Implement isCloseable
     // TODO: !!! autoSubmit
 
-    const promptInQueue: IPromptInQueue = {
+    const promptInQueue: PromptInQueue = {
         prompt,
         defaultValue,
         placeholder,

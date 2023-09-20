@@ -1,4 +1,4 @@
-import { IPromptDialogueOptions } from "./PromptDialogueOptions";
+import { PromptDialogueOptions } from './PromptDialogueOptions';
 
 /**
  * Represents a prompt message that is waiting for an answer or is already answered
@@ -6,7 +6,7 @@ import { IPromptDialogueOptions } from "./PromptDialogueOptions";
  * Note: This is not a prompt to language model but a prompt to the user
  * @private this should be used only withing this folder Dialogues
  */
-export interface IPromptInQueue extends IPromptDialogueOptions {
+export interface PromptInQueue extends PromptDialogueOptions {
     /**
      * Answer to the prompt
      *

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Modal } from '../Modal/00-Modal';
 import styles from './Dialogues.module.css';
-import type { IPromptInQueue } from './interfaces/PromptInQueue';
+import type { PromptInQueue } from './interfaces/PromptInQueue';
 import { isDialoguesRendered } from './locks/Dialogues.lock';
 import { promptDialogueQueue } from './queues/prompts';
 
@@ -27,7 +27,7 @@ export function Dialogues() {
         ],
     );
 
-    const [currentPromptInQueue, setCurrentPromptInQueue] = useState<null | IPromptInQueue>(null);
+    const [currentPromptInQueue, setCurrentPromptInQueue] = useState<null | PromptInQueue>(null);
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     useEffect(() => {
