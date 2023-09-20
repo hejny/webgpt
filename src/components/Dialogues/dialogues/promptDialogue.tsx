@@ -63,7 +63,7 @@ export async function promptDialogue(options: PromptDialogueOptions): Promise<st
 }
 
 /**
- * TODO: !!! Base on universalDialogue
+ * TODO: !!! Base on commonDialogue
  * TODO: !!! Draggable
  * TODO: !!! Compact design
  * TODO: !!! Dialogue vs Dialog

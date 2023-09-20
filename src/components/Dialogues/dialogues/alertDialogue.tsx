@@ -13,7 +13,7 @@ export async function alertDialogue(message: message): Promise<void> {
 }
 
 /**
- * TODO: !!! Base on universalDialogue
+ * TODO: !!! Base on commonDialogue
  * TODO: !!! Use instead of every alert ACRY
  * TODO: !!! Draggable
  * TODO: !!! Compact design
