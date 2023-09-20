@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker';
 import { spaceTrim } from 'spacetrim';
 import type { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
+import { alertDialogue } from '../../../Dialogues/dialogues/alertDialogue';
 import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
 import type { TaskProgress } from '../TaskProgress';
 
@@ -37,6 +38,17 @@ export async function mockedMultitaskWithPrompts(
             ),
             isDone: false,
         });
+
+        for (let j = 0; j < 5; j++) {
+            if (Math.random() < 0.5) {
+                break;
+            }
+            const answer = await alertDialogue(
+                <>
+                    Warning about the <span style={{ fontStyle: 'italic' }}>{title}</span>
+                </>,
+            );
+        }
 
         const promptOptions = {
             prompt: (

@@ -7,7 +7,7 @@ import { isDialoguesRendered } from '../locks/Dialogues.lock';
 import { promptDialogueQueue } from '../queues/prompts';
 
 /**
- * Pops up the co-pilot panel with a prompt dialogue.
+ * Pops up a prompt dialogue with one text input field
  */
 export async function promptDialogue(options: PromptDialogueOptions): Promise<string | null> {
     const { prompt, defaultValue, placeholder, isCloseable, autoSubmit } = options;
@@ -63,7 +63,7 @@ export async function promptDialogue(options: PromptDialogueOptions): Promise<st
 }
 
 /**
- * TODO: !!! DRY with alertDialogue
+ * TODO: !!! Base on universalDialogue
  * TODO: !!! Draggable
  * TODO: !!! Compact design
  * TODO: !!! Dialogue vs Dialog
