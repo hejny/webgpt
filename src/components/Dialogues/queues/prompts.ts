@@ -1,8 +1,8 @@
-import type { IPromptInQueue } from '../dialogues/promptDialogue';
+import type { PromptInQueue } from '../interfaces/PromptInQueue';
 
 /**
  * Queue of prompt dialogues that are waiting for an answer
  *
  * @private this should be used only withing this folder Dialogues
  */
-export const promptDialogueQueue: Array<IPromptInQueue> = [];
+export const promptDialogueQueue: Array<PromptInQueue> = [];

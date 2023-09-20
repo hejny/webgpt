@@ -3,7 +3,8 @@
  * Date: 2023-05-04 14:05:34
  */
 import type { Promisable } from 'type-fest';
-import type { IVector, Vector } from 'xyzt';
+import type { IVector } from 'xyzt';
+import { Vector } from 'xyzt';
 import type { Color } from '../color/Color';
 import type { WithTake } from '../take/interfaces/ITakeChain';
 

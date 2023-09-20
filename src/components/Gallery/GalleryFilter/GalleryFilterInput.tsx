@@ -7,7 +7,8 @@ import { ColorInput } from '../../ColorPreview/ColorInput/ColorInput';
 import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { Select } from '../../Select/Select';
 import styles from './GalleryFilterInput.module.css';
-import type { IGalleryFilter, Order } from './IGalleryFilter';
+import type { IGalleryFilter } from './IGalleryFilter';
+import { Order } from './IGalleryFilter';
 
 interface GalleryFilterProps {
     /**

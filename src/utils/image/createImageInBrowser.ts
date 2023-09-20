@@ -2,7 +2,7 @@ import { Color } from '../color/Color';
 import { forARest } from '../forARest';
 import type { string_url } from '../typeAliases';
 import type { IComputeColorstatsWork } from './IComputeColorstatsWork';
-import type { Image as MyImage } from './Image';
+import { Image as MyImage } from './Image';
 
 /**
  * Create new Image in the browser

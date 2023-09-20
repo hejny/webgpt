@@ -1,7 +1,7 @@
 import MonacoEditor from '@monaco-editor/react';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
 import styles from './00-FilesPreview.module.css';
-import type { ImageFilePreview } from './20-ImageFilePreview';
+import { ImageFilePreview } from './20-ImageFilePreview';
 
 interface FilePreviewProps {
     /**

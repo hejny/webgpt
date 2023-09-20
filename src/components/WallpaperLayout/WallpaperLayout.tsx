@@ -5,7 +5,7 @@ import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpape
 import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';
 import { BackgroundPattern } from '../BackgroundPattern/BackgroundPattern';
 import { FooterSection } from '../Footer/Footer';
-import type { ImportFonts } from '../ImportFonts/ImportFonts';
+import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { Menu } from '../Menu/Menu';
 import { WallpaperContentSection } from '../WallpaperContent/WallpaperContent';
 import styles from './WallpaperLayout.module.css';

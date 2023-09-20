@@ -42,6 +42,7 @@ export async function mockedMultitaskWithPrompts(
             ),
             defaultValue: faker.hacker.phrase(),
             placeholder: faker.hacker.phrase(),
+            isCloseable: true,
         });
 
         await onProgress({

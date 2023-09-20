@@ -3,7 +3,7 @@ import { Color } from '../../color/Color';
 import { forARest } from '../../forARest';
 import type { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import type { IImage } from '../IImage';
-import type { Image } from '../Image';
+import { Image } from '../Image';
 
 /**
  * Scales an image to a new size

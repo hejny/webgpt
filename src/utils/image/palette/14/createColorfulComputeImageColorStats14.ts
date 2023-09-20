@@ -1,4 +1,5 @@
-import type { IVector, Vector } from 'xyzt';
+import type { IVector } from 'xyzt';
+import { Vector } from 'xyzt';
 import { forARest } from '../../../forARest';
 import { take } from '../../../take/take';
 import type { IComputeColorstatsWork } from '../../IComputeColorstatsWork';

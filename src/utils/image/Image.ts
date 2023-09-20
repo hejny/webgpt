@@ -1,5 +1,6 @@
 import { spaceTrim } from 'spacetrim';
-import type { IVector, Vector } from 'xyzt';
+import type { IVector } from 'xyzt';
+import { Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import type { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';

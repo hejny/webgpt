@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
 import { likedStatusToLikeness } from '../../ai/recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';

@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 import { useCurrentWallpaperId } from '../../../utils/hooks/useCurrentWallpaperId';
 import { usePromise } from '../../../utils/hooks/usePromise';
-import type { IWallpaperInStorage, RandomWallpaperManager } from './RandomWallpaperManager';
+import type { IWallpaperInStorage } from './RandomWallpaperManager';
+import { RandomWallpaperManager } from './RandomWallpaperManager';
 
 export function useRandomWallpaper(): [
     randomWallpaper: IWallpaperInStorage | null,
