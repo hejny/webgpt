@@ -1,4 +1,4 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
+import { promptDialog } from '../../components/Dialogs/dialogs/promptDialog';
 import type { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
 import type { uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
@@ -17,7 +17,7 @@ interface IProvideClientIdOptions {
 }
 
 /**
- * Checks if clientId is in localStorage and verified OR generates new one and pops up the dialogue to verify email
+ * Checks if clientId is in localStorage and verified OR generates new one and pops up the dialog to verify email
  *
  * Note: This function is available only in browser
  *
@@ -44,7 +44,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
     // TODO: !!! Add preferences for email receiving
     // TODO: !!! Add preferences
 
-    const email = await promptDialogue({
+    const email = await promptDialog({
         prompt: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,

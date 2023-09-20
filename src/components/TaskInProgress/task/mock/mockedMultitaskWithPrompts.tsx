@@ -2,8 +2,8 @@ import { faker } from '@faker-js/faker';
 import { spaceTrim } from 'spacetrim';
 import type { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { alertDialogue } from '../../../Dialogues/dialogues/alertDialogue';
-import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
+import { alertDialog } from '../../../Dialogs/dialogs/alertDialog';
+import { promptDialog } from '../../../Dialogs/dialogs/promptDialog';
 import type { TaskProgress } from '../TaskProgress';
 
 export async function mockedMultitaskWithPrompts(
@@ -43,7 +43,7 @@ export async function mockedMultitaskWithPrompts(
             if (Math.random() < 0.5) {
                 break;
             }
-            const answer = await alertDialogue(
+            const answer = await alertDialog(
                 <>
                     Warning about the <span style={{ fontStyle: 'italic' }}>{title}</span>
                 </>,
@@ -60,7 +60,7 @@ export async function mockedMultitaskWithPrompts(
             placeholder: faker.hacker.phrase(),
             isCloseable: true,
         };
-        const answer = await promptDialogue(promptOptions);
+        const answer = await promptDialog(promptOptions);
 
         console.info('📢', answer, promptOptions);
 
@@ -77,5 +77,5 @@ export async function mockedMultitaskWithPrompts(
 }
 
 /**
- * TODO: Maybe reflect response from promptDialogue in UI (like in TaskProgress)
+ * TODO: Maybe reflect response from promptDialog in UI (like in TaskProgress)
  */

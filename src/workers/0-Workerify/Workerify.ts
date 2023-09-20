@@ -1,11 +1,11 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
+import { promptDialog } from '../../components/Dialogs/dialogs/promptDialog';
 import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import {
     IMessageError,
     IMessageMainToWorker,
     IMessageProgress,
-    IMessagePromptDialogueAnswer,
+    IMessagePromptDialogAnswer,
     IMessageRequest,
     IMessageResult,
     IMessageWorkerToMain,
@@ -60,8 +60,8 @@ export class Workerify<
                         message: error.message,
                     } satisfies IMessageError);
                 }
-            } else if (type === 'PROMPT_DIALOGUE_ANSWER') {
-                // Note: Do nothing here, because [👂][0] promptDialogue is also listening to this message
+            } else if (type === 'PROMPT_DIALOG_ANSWER') {
+                // Note: Do nothing here, because [👂][0] promptDialog is also listening to this message
                 return;
             } else {
                 throw new Error(`Unexpected message type from main thread: ${type}`);
@@ -116,13 +116,13 @@ export class Workerify<
                     } else if (type === 'ERROR') {
                         const { message } = event.data;
                         reject(new Error(message));
-                    } else if (type === 'PROMPT_DIALOGUE') {
+                    } else if (type === 'PROMPT_DIALOG') {
                         const { promptOptions } = event.data;
-                        const promptAnswer = await promptDialogue(promptOptions);
+                        const promptAnswer = await promptDialog(promptOptions);
                         worker!.postMessage({
-                            type: 'PROMPT_DIALOGUE_ANSWER',
+                            type: 'PROMPT_DIALOG_ANSWER',
                             promptAnswer,
-                        } satisfies IMessagePromptDialogueAnswer);
+                        } satisfies IMessagePromptDialogAnswer);
                     } else {
                         reject(new Error(`Unexpected message type from worker: ${type}`));
                     }
@@ -148,7 +148,7 @@ export class Workerify<
 }
 
 /**
- * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
+ * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogs - Either Workerify should not know about dialogs OR dialogs should not know about Workerify
  * TODO: Maybe add unique id for each request
  * TODO: Maybe add specific string for each function into messages IMessageRequest, IMessageProgress, IMessageResult, IMessageError
  * TODO: [0] Remove "as ..." and "any" the code should be type safe by itself without any ugly casts

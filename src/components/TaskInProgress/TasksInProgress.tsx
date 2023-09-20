@@ -1,7 +1,7 @@
 import { MeshBuilder } from 'babylonjs';
 import { useEffect } from 'react';
 import { useGraph } from '../../utils/hooks/useGraph';
-import { Dialogues } from '../Dialogues/Dialogues';
+import { Dialogs } from '../Dialogs/Dialogs';
 import type { TaskProgress } from './task/TaskProgress';
 import styles from './TasksInProgress.module.css';
 
@@ -19,7 +19,7 @@ interface TaskInProgressProps {
 /**
  * Renders an animated "loading indicator" that is used to indicate that the app is working on something
  *
- * Note: This component renders internally <Dialogues/> component
+ * Note: This component renders internally <Dialogs/> component
  * Note: There can be only one instance of this component in the app
  */
 export function TasksInProgress(props: TaskInProgressProps) {
@@ -59,7 +59,7 @@ export function TasksInProgress(props: TaskInProgressProps) {
             scene.registerBeforeRender(() => {
                 beta = (beta - targetBeta) * 0.95 + targetBeta;
                 camera.beta = beta;
-                camera.alpha += 0.02 /* <- TODO: Maybe stop spinning when dialogue is opened */;
+                camera.alpha += 0.02 /* <- TODO: Maybe stop spinning when dialog is opened */;
             });
         },
         [
@@ -84,7 +84,7 @@ export function TasksInProgress(props: TaskInProgressProps) {
                     </div>
                 )}
             </div>
-            <Dialogues />
+            <Dialogs />
         </>
     );
 }

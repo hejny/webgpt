@@ -1,25 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
 import { Modal } from '../Modal/00-Modal';
-import styles from './Dialogues.module.css';
+import styles from './Dialogs.module.css';
 import type { PromptInQueue } from './interfaces/PromptInQueue';
-import { isDialoguesRendered } from './locks/Dialogues.lock';
-import { promptDialogueQueue } from './queues/prompts';
+import { isDialogsRendered } from './locks/Dialogs.lock';
+import { promptDialogQueue } from './queues/prompts';
 
 /**
- * Renders a place where the dialogues are rendered
+ * Renders a place where the dialogs are rendered
  *
- * The component is initially hidden and is shown when the first dialogue is rendered
+ * The component is initially hidden and is shown when the first dialog is rendered
  * Note: There can be only one instance of this component in the app
  */
-export function Dialogues() {
+export function Dialogs() {
     useEffect(
         () => {
-            if (isDialoguesRendered.value === true) {
+            if (isDialogsRendered.value === true) {
                 throw new Error('There can be only one instance of TasksInProgress in the app');
             }
-            isDialoguesRendered.value = true;
+            isDialogsRendered.value = true;
             return () => {
-                isDialoguesRendered.value = false;
+                isDialogsRendered.value = false;
             };
         },
         [
@@ -36,7 +36,7 @@ export function Dialogues() {
         }
 
         const interval = setInterval(() => {
-            const promptInQueue = promptDialogueQueue.find((promptInQueue) => promptInQueue.answer === undefined);
+            const promptInQueue = promptDialogQueue.find((promptInQueue) => promptInQueue.answer === undefined);
 
             if (!promptInQueue) {
                 return;
@@ -98,7 +98,7 @@ export function Dialogues() {
 
 /**
  * TODO: !! Is overy answer recorded and in order?
- * TODO: Spelling dialog vs dialogue ACRY
+ * TODO: Spelling dialog vs dialog ACRY
  * TODO: [🔏] DRY Locking mechanism | useLock hook
  * TODO: [🥧] Behave as popup window which can be multiple at once
  */

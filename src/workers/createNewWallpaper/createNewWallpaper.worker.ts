@@ -4,7 +4,7 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
+import { promptDialog } from '../../components/Dialogs/dialogs/promptDialog';
 import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import type { WriteWallpaperContentResponse } from '../../pages/api/custom/write-wallpaper-content';
@@ -175,7 +175,7 @@ async function createNewWallpaperExecutor(
     //-------[ Modify Web Assigment: ]---
 
     // TODO: Should be here onProgress task?
-    const wallpaperAssigment = await promptDialogue({
+    const wallpaperAssigment = await promptDialog({
         prompt: `What is your web about?`,
         defaultValue: wallpaperDescription,
         placeholder: `Describe your web` /* <- TODO: Better and maybe with rotation */,
@@ -254,5 +254,5 @@ async function createNewWallpaperExecutor(
  * TODO: !! Save wallpaperDescription in wallpaper (and maybe whole Azure response)
  * TODO: !! getSupabaseForWorker
  * TODO: [🚵‍♂️] !! Do this out of the worker just in simple utility function
- * TODO: Alert dialogues from worker
+ * TODO: Alert dialogs from worker
  */

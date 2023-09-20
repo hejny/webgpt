@@ -3,7 +3,7 @@
     outline: 1px dotted rgb(81, 255, 38);
     /**/
 
-    z-index: 1 /* <- Note: Local order in dialogue */;
+    z-index: 1 /* <- Note: Local order in dialog */;
 
     width: 100%;
     height: calc(100% - 50px);
@@ -22,7 +22,7 @@
     outline: 1px dotted rgb(81, 255, 38);
     /**/
 
-    z-index: 2 /* <- Note: Local order in dialogue */;
+    z-index: 2 /* <- Note: Local order in dialog */;
 
     float: right;
 

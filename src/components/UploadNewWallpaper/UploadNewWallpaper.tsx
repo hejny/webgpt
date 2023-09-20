@@ -71,7 +71,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         }
 
                         alert(
-                            // <- TODO: Use here alertDialogue
+                            // <- TODO: Use here alertDialog
                             spaceTrim(
                                 (block) => `
                                     Sorry for the inconvenience 😔

@@ -1,6 +1,6 @@
 import type { message } from '../../../utils/typeAliases';
 
-export interface PromptDialogueOptions {
+export interface PromptDialogOptions {
     /**
      * Prompt message
      *

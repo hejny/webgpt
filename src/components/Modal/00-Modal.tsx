@@ -106,6 +106,6 @@ export function Modal(props: ModalProps) {
 
 /**
  * TODO: !!! isFullscreen - always true
- * TODO: !!! If isFullscreen react on [Esc] and [Enter] <- Remove collision with dialogues
+ * TODO: !!! If isFullscreen react on [Esc] and [Enter] <- Remove collision with dialogs
  * TODO: [🥧] isFullscreen={false} - behave as popup window which can be multiple at once
  */
