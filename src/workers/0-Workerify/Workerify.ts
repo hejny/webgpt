@@ -1,11 +1,11 @@
-import { promptDialog } from '../../components/Dialogs/dialogs/promptDialog';
+import { commonDialog } from '../../components/Dialogs/dialogs/_commonDialog';
 import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import {
+    IMessageDialogAnswer,
     IMessageError,
     IMessageMainToWorker,
     IMessageProgress,
-    IMessagePromptDialogAnswer,
     IMessageRequest,
     IMessageResult,
     IMessageWorkerToMain,
@@ -117,12 +117,12 @@ export class Workerify<
                         const { message } = event.data;
                         reject(new Error(message));
                     } else if (type === 'DIALOG') {
-                        const { promptOptions } = event.data;
-                        const promptAnswer = await promptDialog(promptOptions);
+                        const { dialogOptions } = event.data;
+                        const promptAnswer = await commonDialog(dialogOptions);
                         worker!.postMessage({
                             type: 'DIALOG_ANSWER',
-                            promptAnswer,
-                        } satisfies IMessagePromptDialogAnswer);
+                            dialogAnswer: promptAnswer,
+                        } satisfies IMessageDialogAnswer);
                     } else {
                         reject(new Error(`Unexpected message type from worker: ${type}`));
                     }

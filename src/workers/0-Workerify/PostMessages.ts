@@ -11,23 +11,23 @@ export type IWorkerifyableFunction<TRequest extends TransferableObject, TResult 
 
 export type IMessageMainToWorker<TRequest extends TransferableObject> =
     | IMessageRequest<TRequest>
-    | IMessagePromptDialogAnswer;
+    | IMessageDialogAnswer;
 
 export interface IMessageRequest<TRequest extends TransferableObject> {
     type: 'REQUEST';
     request: TRequest;
 }
 
-export interface IMessagePromptDialogAnswer {
+export interface IMessageDialogAnswer {
     type: 'DIALOG_ANSWER';
-    promptAnswer: string | null /* <-[🍁] */;
+    dialogAnswer: string | null /* <-[🍁] */;
 }
 
 export type IMessageWorkerToMain<TResult extends TransferableObject> =
     | IMessageProgress
     | IMessageResult<TResult>
     | IMessageError
-    | IMessagePromptDialog;
+    | IMessageDialog;
 
 export interface IMessageProgress {
     type: 'PROGRESS';
@@ -44,7 +44,7 @@ export interface IMessageError {
     message: string;
 }
 
-export interface IMessagePromptDialog {
+export interface IMessageDialog {
     type: 'DIALOG';
-    promptOptions: CommonDialogOptions;
+    dialogOptions: CommonDialogOptions;
 }

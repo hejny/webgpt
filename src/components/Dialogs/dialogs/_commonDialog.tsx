@@ -1,6 +1,6 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
-import type { IMessageMainToWorker, IMessagePromptDialog } from '../../../workers/0-Workerify/PostMessages';
+import type { IMessageDialog, IMessageMainToWorker } from '../../../workers/0-Workerify/PostMessages';
 import type { CommonDialogInQueue } from '../interfaces/CommonDialogInQueue';
 import type { CommonDialogOptions } from '../interfaces/CommonDialogOptions';
 import { isDialogsRendered } from '../locks/isDialogsRendered';
@@ -30,8 +30,8 @@ export async function commonDialog(options: CommonDialogOptions): Promise<string
         // [🌴]
         postMessage({
             type: 'DIALOG',
-            promptOptions: { title, message, defaultValue, placeholder, isCloseable, autoSubmit },
-        } satisfies IMessagePromptDialog);
+            dialogOptions: { title, message, defaultValue, placeholder, isCloseable, autoSubmit },
+        } satisfies IMessageDialog);
 
         return new Promise((resolve) => {
             const onMessage = (event: MessageEvent<IMessageMainToWorker<unknown>>) => {
@@ -39,7 +39,7 @@ export async function commonDialog(options: CommonDialogOptions): Promise<string
                 if (message.type !== 'DIALOG_ANSWER') {
                     return;
                 }
-                resolve(message.promptAnswer);
+                resolve(message.dialogAnswer);
                 removeEventListener('message', onMessage);
             };
             addEventListener('message' /* <-[👂][0] */, onMessage);
