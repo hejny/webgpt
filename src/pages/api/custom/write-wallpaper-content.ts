@@ -26,11 +26,24 @@ export default async function writeWallpaperContentHandler(
 
     const { title, assigment, addSections, links } = request.body as WriteWallpaperContentRequest;
 
-    const wallpaperContent = await writeWallpaperContent({ clientId, title, assigment, addSections, links });
+    try {
+        const wallpaperContent = await writeWallpaperContent({ clientId, title, assigment, addSections, links });
 
-    return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
-        wallpaperContent,
-    } satisfies WriteWallpaperContentResponse);
+        return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
+            wallpaperContent,
+        } satisfies WriteWallpaperContentResponse);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        //TODO: Add special case for: "You exceeded your current quota"
+
+        console.error(error);
+        return response.status(503).json({
+            message: error.message /* <- TODO: [🈵] Is it good practise to reveal all error messages to client? */,
+        } as any);
+    }
 }
 
 /**
