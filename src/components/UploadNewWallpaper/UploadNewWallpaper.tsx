@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router';
-import { ReactNode, useState } from 'react';
-import spaceTrim from 'spacetrim';
+import type { ReactNode } from 'react';
+import { useState } from 'react';
+import { spaceTrim } from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { UploadZone } from '../UploadZone/UploadZone';
 import styles from './UploadNewWallpaper.module.css';

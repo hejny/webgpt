@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { readFile } from 'fs/promises';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import YAML from 'yaml';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT,

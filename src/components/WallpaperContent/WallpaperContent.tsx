@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';

@@ -1,6 +1,6 @@
 import { GetObjectCommand, PutObjectCommand, PutObjectCommandInput, S3Client } from '@aws-sdk/client-s3';
 import { gzip, ungzip } from 'node-gzip';
-import { IFile, IIFilesStorageWithCdn } from '../interfaces/IFilesStorage';
+import type { IFile, IIFilesStorageWithCdn } from '../interfaces/IFilesStorage';
 
 interface IDigitalOceanSpacesConfig {
     bucket: string;

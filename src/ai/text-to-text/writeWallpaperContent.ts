@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
 import {

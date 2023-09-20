@@ -1,8 +1,8 @@
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 import { Vector } from 'xyzt';
-import { TaskProgress } from '../../../components/TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../../../components/TaskInProgress/task/TaskProgress';
 import { Color } from '../../color/Color';
-import { WithTake } from '../../take/interfaces/ITakeChain';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
 import { number_integer, number_percent } from '../../typeAliases';
 import { IImage } from '../IImage';
 

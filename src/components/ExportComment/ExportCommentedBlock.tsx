@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import spaceTrim from 'spacetrim';
+import type { ReactNode } from 'react';
+import { spaceTrim } from 'spacetrim';
 import { string_name } from '../../utils/typeAliases';
 import { ExportComment } from './ExportComment';
 

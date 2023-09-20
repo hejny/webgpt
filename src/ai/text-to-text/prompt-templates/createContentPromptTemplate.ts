@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { image_description, string_chat_prompt, string_midjourney_prompt } from '../../../utils/typeAliases';
 
 /**

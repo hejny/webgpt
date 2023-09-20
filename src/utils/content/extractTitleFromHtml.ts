@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { DOMParser } from 'xmldom-qsa';
 import { string_html, title } from '../typeAliases';
 

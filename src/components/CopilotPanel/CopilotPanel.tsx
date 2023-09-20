@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { COPILOT_PLACEHOLDERS } from '../../../config';
 import type {
     UpdateWallpaperContentRequest,

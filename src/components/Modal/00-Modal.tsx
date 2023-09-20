@@ -1,4 +1,5 @@
-import { ReactNode, useEffect } from 'react';
+import type { ReactNode } from 'react';
+import { useEffect } from 'react';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './00-Modal.module.css';
 import { CloseModalLink } from './10-CloseModalLink';

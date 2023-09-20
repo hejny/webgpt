@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import { Promisable } from 'type-fest';
+import type { ReactNode } from 'react';
+import type { Promisable } from 'type-fest';
 import { usePromise } from '../../utils/hooks/usePromise';
 
 interface AsyncContentComponentProps {

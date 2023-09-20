@@ -1,6 +1,6 @@
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 import type { IPromptDialogueOptions } from '../../components/Dialogues/interfaces/PromptDialogueOptions';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export type TransferableObject = any /* <-[0] */;
 

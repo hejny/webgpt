@@ -1,5 +1,5 @@
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import {
     IMessageError,

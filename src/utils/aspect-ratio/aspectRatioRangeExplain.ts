@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { Vector } from 'xyzt';
 import { AspectRatioRange } from './AspectRatioRange';
 import { visualizeAspectRatio } from './visualizeAspectRatio';

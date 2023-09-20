@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
-import { ReactNode } from 'react';
-
+import type { ReactNode } from 'react';
 
 /**
  * A component that renders its children only if the locale matches the router locale

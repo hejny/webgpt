@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { FULLHD } from '../constants';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { hydrateColorStats } from './image/utils/hydrateColorStats';

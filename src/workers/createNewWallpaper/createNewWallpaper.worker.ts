@@ -1,11 +1,11 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import type { WriteWallpaperContentResponse } from '../../pages/api/custom/write-wallpaper-content';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';

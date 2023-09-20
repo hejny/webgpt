@@ -1,6 +1,6 @@
 import { Registration } from 'destroyable';
 import { useEffect, useMemo, useState } from 'react';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';

@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
 

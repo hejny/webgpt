@@ -1,6 +1,6 @@
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 import { IVector, Vector } from 'xyzt';
-import { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
 import { forARest } from '../../../forARest';
 import { take } from '../../../take/take';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';

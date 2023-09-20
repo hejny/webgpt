@@ -2,7 +2,7 @@ import { MemoryRouter } from 'next-router-mock';
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { BehaviorSubject } from 'rxjs';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../config';
 import stripesBlackImage from '../../public/patterns/simple/stripes-black.png';
 import stripesGreyImage from '../../public/patterns/simple/stripes-grey.png';

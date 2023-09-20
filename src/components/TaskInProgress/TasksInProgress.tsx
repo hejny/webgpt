@@ -2,7 +2,7 @@ import { MeshBuilder } from 'babylonjs';
 import { useEffect } from 'react';
 import { useGraph } from '../../utils/hooks/useGraph';
 import { Dialogues } from '../Dialogues/Dialogues';
-import { TaskProgress } from './task/TaskProgress';
+import type { TaskProgress } from './task/TaskProgress';
 import styles from './TasksInProgress.module.css';
 
 /**

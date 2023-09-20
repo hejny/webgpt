@@ -6,7 +6,7 @@ dotenv.config({ path: '.env' });
 import chalk from 'chalk';
 import { join } from 'path';
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { getOpenaiForServer } from '../../src/ai/text-to-text/getOpenaiForServer';
 
 if (process.cwd() !== join(__dirname, '../..')) {

@@ -1,4 +1,4 @@
-import { TaskProgress } from '../TaskProgress';
+import type { TaskProgress } from '../TaskProgress';
 
 /**
  * Just an list of miscellaneous (im)possible tasks

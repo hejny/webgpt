@@ -1,5 +1,5 @@
 import Script from 'next/script';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 
 /**
  * Renders all the analytics and integrations like Google Analytics, SmartLook, Sentry, ...

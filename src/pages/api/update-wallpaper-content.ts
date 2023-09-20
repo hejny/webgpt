@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { ChatThread } from '../../ai/text-to-text/ChatThread';
 import { removeQuotes } from '../../utils/content/removeQuotes';
 import { IWallpaperSerialized } from '../../utils/IWallpaper';

@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import contact from '../../../documents/contact.md';
 import explanation from '../../../documents/explanation.html';
 import gallery from '../../../documents/gallery.html';

@@ -1,15 +1,10 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
-import { message } from '../../../utils/typeAliases';
 import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../workers/0-Workerify/PostMessages';
-import { IPromptDialogueOptions } from '../interfaces/PromptDialogueOptions';
-import { IPromptInQueue } from '../interfaces/PromptInQueue';
+import type { IPromptDialogueOptions } from '../interfaces/PromptDialogueOptions';
+import type { IPromptInQueue } from '../interfaces/PromptInQueue';
 import { isDialoguesRendered } from '../locks/Dialogues.lock';
 import { promptDialogueQueue } from '../queues/prompts';
-
-
-
-
 
 /**
  * Pops up the co-pilot panel with a prompt dialogue.

@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { string_html, string_markdown } from '../typeAliases';
 
 /**
