@@ -12,8 +12,7 @@ import { promptDialogueQueue } from '../queues/prompts';
 export async function promptDialogue(options: PromptDialogueOptions): Promise<string | null> {
     const { prompt, defaultValue, placeholder, isCloseable, autoSubmit } = options;
 
-    // TODO: !!! Implement isCloseable
-    // TODO: !!! autoSubmit
+    // TODO: !!! Implement autoSubmit
 
     const promptInQueue: PromptInQueue = {
         prompt,
