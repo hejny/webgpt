@@ -33,3 +33,8 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 ## TODOs
 
 -   [ ] Make from this folder a separate repository + npm package
+-   [ ] Add tests
+-   [ ] Annotate all entities
+-   [ ] Make internal string aliases
+-   [ ] Make branded types instead of string aliases
+-   [ ] Remove all anys

@@ -3,7 +3,7 @@ import writeWebsiteClaim from '../../../../prompts/templates/write-website-claim
 import writeWebsiteContent from '../../../../prompts/templates/write-website-content.md';
 import writeWebsiteFont from '../../../../prompts/templates/write-website-font.md';
 import writeWebsiteTitle from '../../../../prompts/templates/write-website-title.md';
-import { PromptTemplate } from './PromptTemplate';
+import { PromptTemplate } from './lib/src/PromptTemplate';
 
 export const MODIFY_WEBSITE_CONTENT_TEMPLATE = new PromptTemplate<'CHAT'>(modifyWebsiteContent);
 export const WRITE_WEBSITE_TITLE_TEMPLATE = new PromptTemplate<'CHAT'>(writeWebsiteTitle);
