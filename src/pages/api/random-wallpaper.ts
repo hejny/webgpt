@@ -6,6 +6,10 @@ export interface RandomWallpaperResponse {
     randomWallpaper: IWallpaperSerialized;
 }
 
+/**
+ * API endpoint handler to get random wallpaper
+ * Note: It picks only public wallpapers
+ */
 export default async function randomWallpaperHandler(
     request: NextApiRequest,
     response: NextApiResponse<RandomWallpaperResponse>,
@@ -17,11 +21,9 @@ export default async function randomWallpaperHandler(
         .limit(1)
         .single();
 
-    return response
-        .status(200)
-        .json(
-            {
-                randomWallpaper: result.data,
-            } as any /* <- TODO: Remove any and replace by satisfies RandomWallpaperResponse*/,
-        );
+    return response.status(200).json(
+        {
+            randomWallpaper: result.data,
+        } as any /* <- TODO: Remove any and replace by satisfies RandomWallpaperResponse*/,
+    );
 }

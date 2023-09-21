@@ -6,6 +6,7 @@ import { useScenario } from '../../utils/hooks/useScenario';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
 import { Dialogues } from '../Dialogues/Dialogues';
+import { EditContentModal } from '../EditContentModal/EditContentModal';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
 import { PreventUnsavedChanges } from './PreventUnsavedChanges';
@@ -26,6 +27,7 @@ export function WallpaperEditing() {
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}
             {modal === 'colors' && <ColorsModal />}
+            {modal === 'edit-content' && <EditContentModal />}
             {/* Note: <EditModal/> was removed in commit a4a37573299fa262ee335ecb1a5b480c409f8627 */}
 
             {modal === null && scenario === 'FROM_SOMETHING' && <CopilotPanel />}

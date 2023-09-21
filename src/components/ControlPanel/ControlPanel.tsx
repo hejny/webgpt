@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -29,11 +30,12 @@ export function ControlPanel() {
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
             <div className={styles.group}>
                 {wallpaper.saveStage === 'EDITED' && (
+                    // TODO: [🌨] DRY - Maybe <SaveButton> or saveWallpaper() function
                     <button
                         className={classNames(styles.button, styles.callToAction)}
                         onClick={async () => {
                             const clientId = await provideClientId({
-                                isVerifiedEmailRequired: false,
+                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                             });
                             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save

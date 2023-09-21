@@ -46,4 +46,5 @@ export default function NewWallpaperFromImagePage() {
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🌾] Unite design of all /new/* pages
  * TODO: [🥩] Make /new/just-from-image
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
  */

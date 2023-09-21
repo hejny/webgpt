@@ -1,8 +1,7 @@
-import '@uiw/react-markdown-editor/markdown-editor.css';
-import '@uiw/react-markdown-preview/markdown.css';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
@@ -75,7 +74,7 @@ export function ExportModal() {
                                 ownerEmail: email,
                                 plan,
                                 author: await provideClientId({
-                                    isVerifiedEmailRequired: true,
+                                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                                 }),
                             },
                         ]);
@@ -94,7 +93,7 @@ export function ExportModal() {
                                 {
                                     from: email,
                                     author: await provideClientId({
-                                        isVerifiedEmailRequired: false,
+                                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                                     }),
                                     message: spaceTrim(`
                                         Hi,

@@ -10,6 +10,9 @@ interface AboutResponse {
 }
 */
 
+/**
+ * API endpoint handler which returns information about the application
+ */
 export default async function aboutHandler(request: NextApiRequest, response: NextApiResponse /*<RegisterResponse>*/) {
     const hardcodedWallpapersCount = (await getHardcodedWallpapers()).length;
     const { count: dynamicWallpapersCount } = await getSupabaseForServer()

@@ -5,6 +5,9 @@ interface RegisterResponse {
     result: WhoisSearchResult;
 }
 
+/**
+ * API endpoint handler for checking domain availability
+ */
 export default async function whoisHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
     const domain = request.query.domain;
 

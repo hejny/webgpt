@@ -5,6 +5,10 @@ import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
 import { uuid } from '../../utils/typeAliases';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
+/**
+ * Function for registering new site into the system
+ * It is injected into the response of registerScriptHandler as a string
+ */
 async function register(wallpaperId: uuid) {
     console.info('🔌', 'Registering your page');
     console.info('🔌', 'hostname', window.location.hostname);
@@ -24,11 +28,19 @@ async function register(wallpaperId: uuid) {
     console.info('🔌', message);
 }
 
-export default async function registerScriptHandler(request: NextApiRequest, response: NextApiResponse) {
+/**
+ * API endpoint handler to return javascript for registering new site into the system
+ */
+export default async function registerScriptHandler(
+    request: NextApiRequest,
+    response: NextApiResponse /* <- TODO: [❄] What is the best way how to type non-json reposnses */,
+) {
     const wallpaperId = request.query.wallpaperId;
 
     if (!isValidWallpaperId(wallpaperId)) {
-        return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
+        return response.status(400).json({
+            message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+        });
     }
 
     return response

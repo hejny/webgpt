@@ -181,6 +181,33 @@ export interface Database {
         }
         Relationships: []
       }
+      Value: {
+        Row: {
+          createdAt: string
+          id: number
+          key: string | null
+          note: string | null
+          validUntil: string | null
+          value: Json | null
+        }
+        Insert: {
+          createdAt?: string
+          id?: number
+          key?: string | null
+          note?: string | null
+          validUntil?: string | null
+          value?: Json | null
+        }
+        Update: {
+          createdAt?: string
+          id?: number
+          key?: string | null
+          note?: string | null
+          validUntil?: string | null
+          value?: Json | null
+        }
+        Relationships: []
+      }
       Wallpaper: {
         Row: {
           author: string
@@ -228,6 +255,66 @@ export interface Database {
       }
     }
     Views: {
+      Prompt_stats: {
+        Row: {
+          answer: string | null
+          answerAt: string | null
+          clientId: string | null
+          createdAt: string | null
+          duration: unknown | null
+          externalId: string | null
+          fullCompletion: Json | null
+          id: number | null
+          metadata: Json | null
+          model: string | null
+          modelSettings: Json | null
+          nonce: number | null
+          previousExternalId: string | null
+          prompt: string | null
+          promptAt: string | null
+          systemMessage: string | null
+          type: string | null
+        }
+        Insert: {
+          answer?: string | null
+          answerAt?: string | null
+          clientId?: string | null
+          createdAt?: string | null
+          duration?: never
+          externalId?: string | null
+          fullCompletion?: Json | null
+          id?: number | null
+          metadata?: Json | null
+          model?: string | null
+          modelSettings?: Json | null
+          nonce?: never
+          previousExternalId?: string | null
+          prompt?: string | null
+          promptAt?: string | null
+          systemMessage?: string | null
+          type?: string | null
+        }
+        Update: {
+          answer?: string | null
+          answerAt?: string | null
+          clientId?: string | null
+          createdAt?: string | null
+          duration?: never
+          externalId?: string | null
+          fullCompletion?: Json | null
+          id?: number | null
+          metadata?: Json | null
+          model?: string | null
+          modelSettings?: Json | null
+          nonce?: never
+          previousExternalId?: string | null
+          prompt?: string | null
+          promptAt?: string | null
+          systemMessage?: string | null
+          type?: string | null
+        }
+        Relationships: []
+      }
       Wallpaper_random: {
         Row: {
           author: string | null
@@ -237,6 +324,7 @@ export interface Database {
           id: string | null
           isPublic: boolean | null
           keywords: string[] | null
+          nonce: number | null
           parent: string | null
           prompt: string | null
           src: string | null
@@ -250,6 +338,7 @@ export interface Database {
           id?: string | null
           isPublic?: boolean | null
           keywords?: string[] | null
+          nonce?: never
           parent?: string | null
           prompt?: string | null
           src?: string | null
@@ -263,6 +352,7 @@ export interface Database {
           id?: string | null
           isPublic?: boolean | null
           keywords?: string[] | null
+          nonce?: never
           parent?: string | null
           prompt?: string | null
           src?: string | null
