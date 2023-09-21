@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { COPILOT_PLACEHOLDERS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import type {
     UpdateWallpaperContentRequest,
     UpdateWallpaperContentResponse,
@@ -14,12 +14,15 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
+import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
+import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
@@ -35,6 +38,19 @@ export function CopilotPanel() {
     const inputRef = useRef<HTMLInputElement | null>(null);
     const placeholders = useMemo(() => shuffleItems(...COPILOT_PLACEHOLDERS), []);
     const placeholder = useRotatingPlaceholder(...placeholders);
+    const randomFont = useMemo(
+        () => randomItem(...FONTS) /* <- TODO: [🧠] Some better heurictic than pure random */,
+        // Note: Wallpaper is dependency because we want to offer new font after each change of the font
+        /* eslint-disable-next-line react-hooks/exhaustive-deps */
+        [wallpaper],
+    );
+    const modifyWallpaperFont = useCallback(() => {
+        modifyWallpaper((modifiedWallpaper) => {
+            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont);
+            modifiedWallpaper.saveStage = 'EDITED';
+            return modifiedWallpaper;
+        });
+    }, [modifyWallpaper, randomFont]);
 
     const handlePrompt = useCallback(async () => {
         if (runningPrompt !== null) {
@@ -195,34 +211,34 @@ export function CopilotPanel() {
                     <ul>
                         {wallpaper.saveStage === 'EDITED' && (
                             // TODO: [🌨] DRY - Maybe <SaveButton> or saveWallpaper() function
-                            <li
-                                className={styles.extraFeatured}
-                                onClick={async () => {
-                                    const clientId = await provideClientId({
-                                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
-                                    });
-                                    const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
-                                        // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
-                                        // TODO: Use here addWallpaperComputables
-                                        modifiedWallpaper.parent = modifiedWallpaper.id;
-                                        modifiedWallpaper.author = clientId;
-                                        modifiedWallpaper.isPublic = false;
-                                        modifiedWallpaper.saveStage = 'SAVING';
-                                        modifiedWallpaper.keywords = Array.from(
-                                            parseKeywordsFromWallpaper(modifiedWallpaper),
-                                        );
-                                        modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
-                                        return modifiedWallpaper;
-                                    });
+                            <li className={styles.extraFeatured}>
+                                <button
+                                    onClick={async () => {
+                                        const clientId = await provideClientId({
+                                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
+                                        });
+                                        const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
+                                            // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
+                                            // TODO: Use here addWallpaperComputables
+                                            modifiedWallpaper.parent = modifiedWallpaper.id;
+                                            modifiedWallpaper.author = clientId;
+                                            modifiedWallpaper.isPublic = false;
+                                            modifiedWallpaper.saveStage = 'SAVING';
+                                            modifiedWallpaper.keywords = Array.from(
+                                                parseKeywordsFromWallpaper(modifiedWallpaper),
+                                            );
+                                            modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
+                                            return modifiedWallpaper;
+                                        });
 
-                                    const insertResult = await getSupabaseForBrowser()
-                                        .from('Wallpaper')
-                                        .insert(serializeWallpaper(newWallpaper));
+                                        const insertResult = await getSupabaseForBrowser()
+                                            .from('Wallpaper')
+                                            .insert(serializeWallpaper(newWallpaper));
 
-                                    // TODO: !! Util isInsertSuccessfull (status===201)
-                                    console.info({ newWallpaper, insertResult });
+                                        // TODO: !! Util isInsertSuccessfull (status===201)
+                                        console.info({ newWallpaper, insertResult });
 
-                                    /*
+                                        /*
                                     Note: Wallpapers should not be explicitly saved, they automatically appear as saved after router.push is loaded
                                     modifyWallpaper((modifiedWallpaper) => {
                                         modifiedWallpaper.saveStage = 'SAVED';
@@ -230,30 +246,31 @@ export function CopilotPanel() {
                                     });
                                     */
 
-                                    try {
-                                        const parentKey = `likedStatus_${wallpaper.id}`;
-                                        const currentKey = `likedStatus_${newWallpaper.id}`;
+                                        try {
+                                            const parentKey = `likedStatus_${wallpaper.id}`;
+                                            const currentKey = `likedStatus_${newWallpaper.id}`;
 
-                                        if (window.localStorage.getItem(parentKey)) {
-                                            window.localStorage.setItem(
-                                                currentKey,
-                                                window.localStorage.getItem(parentKey)!,
-                                            );
-                                        } else if (!window.localStorage.getItem(currentKey)) {
-                                            window.localStorage.setItem(
-                                                currentKey,
-                                                'LIKE' satisfies keyof typeof LikedStatus,
-                                            );
+                                            if (window.localStorage.getItem(parentKey)) {
+                                                window.localStorage.setItem(
+                                                    currentKey,
+                                                    window.localStorage.getItem(parentKey)!,
+                                                );
+                                            } else if (!window.localStorage.getItem(currentKey)) {
+                                                window.localStorage.setItem(
+                                                    currentKey,
+                                                    'LIKE' satisfies keyof typeof LikedStatus,
+                                                );
+                                            }
+                                        } catch (error) {
+                                            // TODO: [🧠] Handle situation when window.localStorage is exceeded
+                                            console.error(error);
                                         }
-                                    } catch (error) {
-                                        // TODO: [🧠] Handle situation when window.localStorage is exceeded
-                                        console.error(error);
-                                    }
 
-                                    router.push(`/${newWallpaper.id}`);
-                                }}
-                            >
-                                Save
+                                        router.push(`/${newWallpaper.id}`);
+                                    }}
+                                >
+                                    Save
+                                </button>
                             </li>
                         )}
                         <li className={styles.featured}>
@@ -270,6 +287,16 @@ export function CopilotPanel() {
                                 Edit markdown
                                 {/*           <- TODO: Should be here "Edit markdown" or "Edit content" */}
                             </WallpaperLink>
+                        </li>
+                        <li className={styles.auto}>
+                            <ImportFonts
+                                fonts={
+                                    new Set([randomFont])
+                                } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
+                            />
+                            <button onClick={modifyWallpaperFont}>
+                                Change <span style={{ fontFamily: `'${randomFont}'` }}>font</span>
+                            </button>
                         </li>
                         <li>
                             <WallpaperLink
@@ -302,6 +329,8 @@ export function CopilotPanel() {
                         - [ ] - colors
                         - [ ] - content
                         - [~] Support
+
+                        + [🧠] How to do all of this in gallery scenario?
 
 
                         <li>
