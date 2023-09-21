@@ -28,7 +28,7 @@ export interface IPromptDialogueOptions {
  * Represents a prompt message that is waiting for an answer or is already answered
  *
  * Note: This is not a prompt to language model but a prompt to the user
- * @private this should be used only withing this folder Dialogues
+ * @private Use only withing the folder Dialogues
  */
 export interface IPromptInQueue extends IPromptDialogueOptions {
     /**

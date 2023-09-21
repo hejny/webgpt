@@ -45,4 +45,5 @@ export default function NewWallpaperFromImagePage() {
  * TODO: Allow to use Camera (maybe in new route /new/from-camera)
  * TODO: [🌾] Unite design of all /new/* pages
  * TODO: [🥩] Make /new/just-from-image
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
  */

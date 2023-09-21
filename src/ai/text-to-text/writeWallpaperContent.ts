@@ -1,20 +1,85 @@
 import spaceTrim from 'spacetrim';
+import { FONTS } from '../../../config';
 import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
 import { removeQuotes } from '../../utils/content/removeQuotes';
-import {
-    image_description,
-    string_font_family,
-    string_markdown,
-    string_midjourney_prompt,
-    uuid,
-} from '../../utils/typeAliases';
+import { randomItem } from '../../utils/randomItem';
+import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
 import { ChatThread } from './ChatThread';
 import { completeWithGpt } from './completeWithGpt';
-import {
-    WRITE_WEBSITE_CONTENT_TEMPLATE,
-    WRITE_WEBSITE_FONT_TEMPLATE,
-    WRITE_WEBSITE_TITLE_TEMPLATE,
-} from './prompt-templates';
+import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
+
+export interface WriteWallpaperContentOptions {
+    /**
+     * Client ID to validate the request
+     */
+    clientId: uuid /* <-[🌺] */;
+
+    /**
+     * Title of the wallpaper
+     *
+     * If set, the generated content will start with this title
+     * If null, it will be written by AI
+     */
+    title: Exclude<title, JSX.Element> | null;
+
+    /**
+     * Assigment of the wallpaper
+     *
+     * It is the detailed description of the wallpaper, please include information like:
+     * - What is the page about
+     * - What is the goal of the page
+     * - What is the user supposed to do on the page
+     *
+     * Note: There are two simmilar propertie:
+     * - `description` which describes content of the image
+     * - `assigment` which describes requirements for the page
+     */
+    assigment: Exclude<description, JSX.Element> | null;
+
+    /**
+     * Additional sections to be added to the content
+     */
+    addSections: Array<{
+        /**
+         * Unique name of the section
+         * Note: It is used for example as element ID to lead anchor links to this section
+         */
+        name: string_name;
+
+        /**
+         * Title of the section
+         */
+        title: Exclude<title, JSX.Element>;
+
+        /**
+         * Order of the section
+         * TODO: [🧠] Some transparent system to order sections
+         */
+        order: number;
+
+        /**
+         * Content of the section
+         */
+        content: string_markdown;
+
+        // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assigment and auto generate
+    }>;
+
+    /**
+     * Links to be added to the content
+     */
+    links: Array<{
+        /**
+         * Title of the link - it is used as link text and also as title attribute
+         */
+        title: Exclude<title, JSX.Element>;
+
+        /**
+         * URL of the link
+         */
+        url: string_url;
+    }>;
+}
 
 /**
  * Writes the rich content of the wallpaper page
@@ -24,42 +89,66 @@ import {
  * @param wallpaperAssigment as a plain description what is on the wallpaper (created for expample from imageToText or midjourney prompt)
  * @returns Content of the wallpaper page
  */
-export async function writeWallpaperContent(
-    wallpaperAssigment: Exclude<image_description, JSX.Element> | string_midjourney_prompt,
-    clientId: uuid /* <-[🌺] */,
-): Promise<string_markdown> {
-    const writeTitlePrompt = WRITE_WEBSITE_TITLE_TEMPLATE.makePrompt({});
-    const writeTitleThread = await ChatThread.ask(writeTitlePrompt, clientId);
-    const { response: titleRaw, model: writeTitleModel } = writeTitleThread;
-    const { title, topic } = parseTitleAndTopic(removeQuotes(titleRaw));
+export async function writeWallpaperContent(options: WriteWallpaperContentOptions): Promise<string_markdown> {
+    const { clientId, assigment, addSections, links } = options;
+    let { title } = options;
 
-    // TODO: !!! USE WRITE_WEBSITE_CLAIM_TEMPLATE
-    // TODO: !!! Separate title, claim and content writing endpoint
-    // TODO: !!! Use MAX_CHARS_IN_TITLE
-    // TODO: !!! Use MAX_CHARS_IN_TITLE_WORD
+    let contentStart: string_markdown = '';
 
-    const contentStart = spaceTrim(
-        (block) => `
+    if (title !== null) {
+        contentStart = spaceTrim(
+            (block) => `
+    
+                # ${block(title!)}
+                
+    
+            `,
+        );
+    } else {
+        if (!assigment) {
+            throw new Error('Either title or assigment must be provided');
+        }
+        const prompt = createTitlePromptTemplate(assigment);
+        const chatThread = await ChatThread.ask(prompt, clientId);
+        const { response } = chatThread;
+        const { title, topic } = parseTitleAndTopic(removeQuotes(response));
 
-            # ${block(title)}
-            ${block(!topic ? `` : `\n\n> ${topic}\n\n`)}
+        contentStart = spaceTrim(
+            (block) => `
+    
+                # ${block(title)}
+                ${block(!topic ? `` : `\n\n> ${topic}\n\n`)}
+    
+            `,
+        );
+    }
 
-        `,
-    );
-    const { response: contentMiddle, model: modelToCreateContentMiddle } = await completeWithGpt(
-        WRITE_WEBSITE_CONTENT_TEMPLATE.makePrompt({ contentStart /* <- !!! In prompt template file */ }),
+    // TODO: !!! Use here addSections and links
+
+    const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
+        spaceTrim(
+            // TODO: [🤡] This prompt should be also created in some template function
+            // TODO: [🤡] Pefect this prompt
+            (block) => `
+
+                Following is markdown content of a webpage:
+
+                ${block(contentStart)}
+        
+            `,
+        ),
         clientId,
     );
 
-    // TODO: !!! Remove strange images https://1-2i.com/mountain-sunset-2gr7dv4ybstg
-    // TODO: !!! Test that the content is valid and rich markdown
-    // TODO: !!! Do NOT use words like "serene", "serenity" soo often
+    // TODO: !!! Use or makeWrite WRITE_WEBSITE_CONTENT_TEMPLATE
 
-    const chatThreadFont = await writeTitleThread.ask(WRITE_WEBSITE_FONT_TEMPLATE.makePrompt({}));
+    /*
+     TODO: !!! Better
+    const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
     const font = removeQuotes(chatThreadFont.response) as string_font_family;
+    */
 
-    // TODO: !!! Better font picking
-    // console.log(chatThreadFont);
+    const font = randomItem(...FONTS);
 
     return spaceTrim(
         (block) => `

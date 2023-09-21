@@ -10,6 +10,11 @@ import { FONTS } from '../../config';
 
 /**
  * Semantic helper
+ */
+export type string_business_category_name = 'restaurant' | 'grocery' | 'person' | 'conference' | string;
+
+/**
+ * Semantic helper
  *
  * For example `"gpt-4"`
  */

@@ -1,3 +1,4 @@
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
 import { provideClientId } from '../supabase/provideClientId';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
@@ -40,7 +41,7 @@ export function useLikedStatusOfCurrentWallpaper(): [
                 wallpaperId,
                 likedStatus,
                 author: await provideClientId({
-                    isVerifiedEmailRequired: false,
+                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
                 }),
             });
 
