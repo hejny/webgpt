@@ -20,7 +20,7 @@ export class ChatThread {
 
     /**
      * Makes a request to the OpenAI API and returns a response wrapped in ChatThread
-     * @private utility function
+     * @private Utility method within the class ChatThread
      */
     private static async create(
         parentChatThread: null | ChatThread,

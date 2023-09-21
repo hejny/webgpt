@@ -16,6 +16,9 @@ export interface UpdateWallpaperContentResponse {
     updatedWallpaper: Pick<IWallpaperSerialized, 'content'>;
 }
 
+/**
+ * API endpoint handler for updating wallpaper content according to user prompt
+ */
 export default async function updateWallpaperContentHandler(
     request: NextApiRequest,
     response: NextApiResponse<UpdateWallpaperContentResponse>,

@@ -3,7 +3,7 @@ import type { TaskProgress } from '../TaskProgress';
 /**
  * Just an list of miscellaneous (im)possible tasks
  *
- * @private do not use outside of this folder, use one of mock... functions instead
+ * @private Use only withing the folder mock
  */
 export const MOCKED_TASKS_PROGRESS_QUEUE: Array<TaskProgress> = [
     {

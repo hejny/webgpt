@@ -1,8 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { writeWallpaperContent } from '../../../ai/text-to-text/writeWallpaperContent';
-
-import type { description, string_markdown, uuid } from '../../../utils/typeAliases';
+import { writeWallpaperContent, WriteWallpaperContentOptions } from '../../../ai/text-to-text/writeWallpaperContent';
+import type { string_markdown, uuid } from '../../../utils/typeAliases';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
+
+export type WriteWallpaperContentRequest = Omit<WriteWallpaperContentOptions, 'clientId'>;
 
 export interface WriteWallpaperContentResponse {
     // TODO: [🌋] ErrorableResponse
@@ -18,18 +19,15 @@ export default async function writeWallpaperContentHandler(
     }
 
     const clientId = request.query.clientId as uuid; /* <-[🌺] */
-    const wallpaperAssigment = request.body.wallpaperAssigment as Exclude<description, JSX.Element>;
 
     if (!isValidClientId(clientId)) {
         return response.status(400).json({ message: 'Parameter "clientId" must be valid client ID' } as any);
     }
 
-    if (!wallpaperAssigment) {
-        return response.status(400).json({ message: 'Parameter "wallpaperAssigment" is required' } as any);
-    }
+    const { title, assigment, addSections, links } = request.body as WriteWallpaperContentRequest;
 
     try {
-        const wallpaperContent = await writeWallpaperContent(wallpaperAssigment, clientId);
+        const wallpaperContent = await writeWallpaperContent({ clientId, title, assigment, addSections, links });
 
         return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
             wallpaperContent,

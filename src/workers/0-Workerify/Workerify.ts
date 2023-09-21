@@ -87,6 +87,7 @@ export class Workerify<
 
             onProgress({
                 // TODO: Maybe remove this task OR optionally turn it on/off
+                // TODO: [🧠][🚔] DEFAULT_STARTING_TASK
                 name: 'start-worker',
                 title: 'Spinning up',
                 isDone: false,

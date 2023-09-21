@@ -44,7 +44,7 @@ export function useScenario(): Scenario {
 
                     You can use one of these scenarios:
                     ${block(SCENARIOS.map((scenario) => `- "${normalizeToKebabCase(scenario)}"`).join('\n'))}
-                `,
+                `, // <- TODO: [🌻] Unite wrong GET param message
             ),
         );
     }

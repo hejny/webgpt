@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
@@ -34,7 +35,7 @@ export function ControlPanel() {
                         className={classNames(styles.button, styles.callToAction)}
                         onClick={async () => {
                             const clientId = await provideClientId({
-                                isVerifiedEmailRequired: false,
+                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                             });
                             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
