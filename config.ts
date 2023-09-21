@@ -824,8 +824,6 @@ export const FONTS = [
     'Zeyada',
 ] as const;
 
-// TODO: !!! MAX_CHARS_IN_TITLE_WORD
-
 export const COPILOT_PLACEHOLDERS: Array<string> = [
     // Note: ⏣ Describe the change>
     'Translate to Chinese',
