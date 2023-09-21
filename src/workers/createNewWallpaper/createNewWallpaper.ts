@@ -2,14 +2,14 @@ import spaceTrim from 'spacetrim';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
-    WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
+    WALLPAPER_IMAGE_MAX_ALLOWED_SIZE
 } from '../../../config';
 import { promptDialog } from '../../components/Dialogs/dialogs/promptDialog';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import type {
     WriteWallpaperContentRequest,
-    WriteWallpaperContentResponse,
+    WriteWallpaperContentResponse
 } from '../../pages/api/custom/write-wallpaper-content';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
