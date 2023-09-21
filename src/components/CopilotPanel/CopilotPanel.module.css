@@ -40,11 +40,7 @@
     grid-template-columns: 1fr 60px 60px;
 }
 
-.CopilotPanelInner > * {
-    /*/
-    outline: 1px dotted rgb(56, 255, 38) !important;
-    /**/
-}
+
 
 .CopilotPanel input {
     /*/
@@ -165,7 +161,7 @@
 }
 
 .CopilotPanel nav.MenuContent li {
-    /**/
+    /*/
     outline: 1px solid #0000ff !important;
     /**/
 
@@ -185,7 +181,7 @@
 }
 
 .CopilotPanel nav.MenuContent li.auto::before {
-    /**/
+    /*/
     outline: 1px solid #0000ff !important;
     /**/
 
