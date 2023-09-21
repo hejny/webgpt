@@ -37,5 +37,29 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 -   [ ] Add tests
 -   [ ] Annotate all entities
 -   [ ] Make internal string aliases
--   [ ] Make branded types instead of string aliases
+-   [ ] Make branded types instead of pure `string` aliases
 -   [ ] Remove all anys
+-   [ ] Make PTP non-linear
+-   [ ] Logging pipeline name, version, step,...
+-   [ ] No circular dependencies
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx
+-   [ ] xxx

@@ -7,7 +7,6 @@ import chalk from 'chalk';
 import { join } from 'path';
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
 import spaceTrim from 'spacetrim';
-import { getOpenaiForServer } from '../../src/ai/text-to-text/getOpenaiForServer';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -29,21 +28,12 @@ async function playground() {
 
     // Do here stuff you want to test
 
-    const completion = await getOpenaiForServer().completions.create({
-        model: 'text-davinci-003',
-        max_tokens: 1000,
-        prompt: spaceTrim(`
-
-            Following is markdown content of a webpage:
-
-            # Urban Oasis
-
-            > Embracing Nature Amidst the Cityscape
-
-
+    // !!! Test
+    createPtpFromString(
+        spaceTrim(`
+        
         `),
-    });
-    // console.log({ completion }, completion.choices);
+    ).runPrompts();
 
     console.info(`[ Done 🧸  Playground ]`);
 }
