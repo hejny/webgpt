@@ -40,11 +40,7 @@
     grid-template-columns: 1fr 60px 60px;
 }
 
-.CopilotPanelInner > * {
-    /*/
-    outline: 1px dotted rgb(56, 255, 38) !important;
-    /**/
-}
+
 
 .CopilotPanel input {
     /*/
@@ -166,18 +162,38 @@
 
 .CopilotPanel nav.MenuContent li {
     /*/
-    outline: 1px solid #0000ff;
+    outline: 1px solid #0000ff !important;
     /**/
 
     list-style: none;
-    text-align: right;
+    padding: 0;
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.8);
+
+    display: grid;
+    grid-template-areas: '⏣ menuitem';
+    grid-template-columns: 30px 1fr;
+
+    width: 100%;
+    height: 40px;
+}
+
+.CopilotPanel nav.MenuContent li.auto::before {
+    /*/
+    outline: 1px solid #0000ff !important;
+    /**/
+
+    grid-area: ⏣;
+    opacity: 0.5;
+    content: '⏣';
+    width: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
 }
 
 .CopilotPanel nav.MenuContent li:last-child {
@@ -196,22 +212,28 @@
     background-color: rgba(146, 248, 255, 0.2);
 }
 
-.CopilotPanel nav.MenuContent li {
-    display: block;
+.CopilotPanel nav.MenuContent li a,
+.CopilotPanel nav.MenuContent li button {
+    /*/
+    outline: 1px solid #bbff00 !important;
+    /**/
+
+    grid-area: menuitem;
+
     margin: 0;
-    padding: 7px;
-    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
     color: inherit;
     font-size: 20px;
     text-decoration: none;
-    cursor: pointer;
-}
-
-.CopilotPanel nav.MenuContent li a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
     color: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
 }
 
 .CopilotPanel nav.MenuContent li:hover {
