@@ -123,7 +123,8 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
         );
     }
 
-  
+    // TODO: !!! Use here addSections and links
+
     const { response: contentMiddle, model: modelToCreateContent } = await completeWithGpt(
         spaceTrim(
             // TODO: [🤡] This prompt should be also created in some template function
@@ -141,7 +142,11 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
     // TODO: !!! Use or makeWrite WRITE_WEBSITE_CONTENT_TEMPLATE
 
-
+    /*
+     TODO: !!! Better
+    const chatThreadFont = await chatThread.ask(createFontPromptTemplate());
+    const font = removeQuotes(chatThreadFont.response) as string_font_family;
+    */
 
     const font = randomItem(...FONTS);
 
