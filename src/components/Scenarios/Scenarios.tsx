@@ -38,7 +38,7 @@ export function Scenarios() {
                     <Link href="/new/from-instagram">
                         <CreateZone className={styles.scenario}>
                             <h2>Instagram</h2>
-                            profile to generate your website
+                            to generate your website
                         </CreateZone>
                     </Link>
                 </li>
