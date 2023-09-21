@@ -125,6 +125,7 @@ export async function completeWithGpt(
 
 /**
  * TODO: (Probbably no) Are there failed requests - analyze them
+ *                      Make some statistics for PromptTemeplates
  * TODO: DRY ChatThread+completeWithGpt
  * TODO: [🧠] Wording: response or answer?
  * TODO: [🧠][5] Log also failed requests
