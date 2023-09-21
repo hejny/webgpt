@@ -131,7 +131,7 @@ export function CopilotPanel() {
                 }}
             >
                 <input
-                    type={'text'}
+                    type="text"
                     placeholder={placeholder}
                     value={runningPrompt === null ? undefined : `Working on "${runningPrompt}"...`}
                     ref={(element) => {
@@ -316,6 +316,7 @@ export function CopilotPanel() {
 }
 
 /**
+ * TODO: [🌂] DRY <CopilotPanel/> and <CopilotInput/> (also css)
  * TODO: !! CopilotPanel: Fully line design
  * TODO: !! CopilotPanel: Show errors
  * TODO: !! CopilotPanel: Log errors into Sentry

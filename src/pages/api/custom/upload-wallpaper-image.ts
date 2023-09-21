@@ -48,19 +48,30 @@ export default async function uploadWallpaperHandler(
         return response.status(400).json({ message: 'Only image files are allowed' } as any);
     }
 
-    const wallpaperBuffer = await readFile(wallpaper.filepath);
+    try {
+        const wallpaperBuffer = await readFile(wallpaper.filepath);
 
-    const key = generateUserWallpaperCdnKey(wallpaperBuffer);
-    await CDN.setItem(key, {
-        type: wallpaper.mimetype,
-        data: wallpaperBuffer,
-    });
+        const key = generateUserWallpaperCdnKey(wallpaperBuffer);
+        await CDN.setItem(key, {
+            type: wallpaper.mimetype,
+            data: wallpaperBuffer,
+        });
 
-    const wallpaperUrl = CDN.getItemUrl(key);
+        const wallpaperUrl = CDN.getItemUrl(key);
 
-    return response.status(201).json({
-        wallpaperUrl: wallpaperUrl.href,
-    } satisfies UploadWallpaperResponse);
+        return response.status(201).json({
+            wallpaperUrl: wallpaperUrl.href,
+        } satisfies UploadWallpaperResponse);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        console.error(error);
+        return response.status(500).json({
+            message: error.message /* <- TODO: [🈵] Is it good practise to reveal all error messages to client? */,
+        } as any);
+    }
 }
 
 /**

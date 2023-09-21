@@ -1,8 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { writeWallpaperContent } from '../../../ai/text-to-text/writeWallpaperContent';
-
-import { description, string_markdown, uuid } from '../../../utils/typeAliases';
+import { writeWallpaperContent, WriteWallpaperContentOptions } from '../../../ai/text-to-text/writeWallpaperContent';
+import { string_markdown, uuid } from '../../../utils/typeAliases';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
+
+export type WriteWallpaperContentRequest = Omit<WriteWallpaperContentOptions, 'clientId'>;
 
 export interface WriteWallpaperContentResponse {
     // TODO: [🌋] ErrorableResponse
@@ -18,21 +19,31 @@ export default async function writeWallpaperContentHandler(
     }
 
     const clientId = request.query.clientId as uuid; /* <-[🌺] */
-    const wallpaperAssigment = request.body.wallpaperAssigment as Exclude<description, JSX.Element>;
 
     if (!isValidClientId(clientId)) {
         return response.status(400).json({ message: 'Parameter "clientId" must be valid client ID' } as any);
     }
 
-    if (!wallpaperAssigment) {
-        return response.status(400).json({ message: 'Parameter "wallpaperAssigment" is required' } as any);
+    const { title, assigment, addSections, links } = request.body as WriteWallpaperContentRequest;
+
+    try {
+        const wallpaperContent = await writeWallpaperContent({ clientId, title, assigment, addSections, links });
+
+        return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
+            wallpaperContent,
+        } satisfies WriteWallpaperContentResponse);
+    } catch (error) {
+        if (!(error instanceof Error)) {
+            throw error;
+        }
+
+        //TODO: Add special case for: "You exceeded your current quota"
+
+        console.error(error);
+        return response.status(503).json({
+            message: error.message /* <- TODO: [🈵] Is it good practise to reveal all error messages to client? */,
+        } as any);
     }
-
-    const wallpaperContent = await writeWallpaperContent(wallpaperAssigment, clientId);
-
-    return response.status(200 /* <- TODO: [🕶] What is the right HTTP code to be here */).json({
-        wallpaperContent,
-    } satisfies WriteWallpaperContentResponse);
 }
 
 /**

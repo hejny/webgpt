@@ -9,7 +9,7 @@ export const createNewWallpaperForBrowser = createNewWallpaperWorkerify.makeConn
     () => new Worker(new URL('./createNewWallpaper.worker.ts', import.meta.url)),
 );
 
-
 /**
+ * TODO: [🧠] Maybe rename to createNewWallpaperInBrowser
  * TODO: [☄] This file should be auto-generated from createNewWallpaper.ts, there should be some tag @workerify to mark candidate for workerify
  */
