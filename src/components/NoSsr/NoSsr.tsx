@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
 interface NoSsrProps {

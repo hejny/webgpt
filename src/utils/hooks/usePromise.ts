@@ -1,6 +1,6 @@
 import type { DependencyList } from 'react';
 import { useEffect, useState } from 'react';
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 import {
     IUseLoadableResultComplete,
     IUseLoadableResultError,
@@ -16,13 +16,10 @@ type IUsePromiseResult<TValue> =
 /**
  * React hook that returns result of Promise or its pending/error state.
  */
-export function usePromise<TValue>(
-    promise: Promisable<TValue>,
-    deps?: DependencyList,
-): IUsePromiseResult<TValue> {
+export function usePromise<TValue>(promise: Promisable<TValue>, deps?: DependencyList): IUsePromiseResult<TValue> {
     // console.log('🅰️', 'usePromise');
 
-    const [result, setResult] = useState <IUsePromiseResult<TValue>>({
+    const [result, setResult] = useState<IUsePromiseResult<TValue>>({
         status: IUseLoadableResultStatus.Pending,
         value: undefined,
         error: undefined,
@@ -30,7 +27,7 @@ export function usePromise<TValue>(
     });
 
     useEffect(
-         () => {
+        () => {
             (async () => {
                 try {
                     const value = await promise;

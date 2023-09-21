@@ -1,6 +1,6 @@
 import { format } from 'prettier';
 import parserPostcss from 'prettier/parser-postcss';
-import { string_css } from '../../utils/typeAliases';
+import type { string_css } from '../../utils/typeAliases';
 
 /**
  * Prettify the css code

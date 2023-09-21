@@ -1,7 +1,7 @@
-import spaceTrim from 'spacetrim';
-import { Promisable } from 'type-fest';
+import { spaceTrim } from 'spacetrim';
+import type { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { TaskProgress } from '../TaskProgress';
+import type { TaskProgress } from '../TaskProgress';
 import { MOCKED_TASKS_PROGRESS_QUEUE } from './_tasks';
 
 export async function mockedEndlessMultitask(

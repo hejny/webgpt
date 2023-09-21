@@ -1,5 +1,5 @@
-import { ITakeChain } from '../interfaces/ITakeChain';
-import { Takeable } from '../interfaces/Takeable';
+import type { ITakeChain } from '../interfaces/ITakeChain';
+import type { Takeable } from '../interfaces/Takeable';
 import { take } from '../take';
 
 export class TakeChain<TValue extends Takeable> implements ITakeChain<TValue> {

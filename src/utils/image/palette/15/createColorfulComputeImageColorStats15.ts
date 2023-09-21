@@ -1,10 +1,11 @@
-import { Promisable } from 'type-fest';
-import { IVector, Vector } from 'xyzt';
-import { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
+import type { Promisable } from 'type-fest';
+import type { IVector } from 'xyzt';
+import { Vector } from 'xyzt';
+import type { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
 import { forARest } from '../../../forARest';
 import { take } from '../../../take/take';
-import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
-import { IImage } from '../../IImage';
+import type { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
+import type { IImage } from '../../IImage';
 import { colorDownscaleImage } from '../../utils/colorDownscaleImage';
 import { computeImageAverageColor } from '../../utils/computeImageAverageColor';
 import { computeImageDarkestColor } from '../../utils/computeImageDarkestColor';

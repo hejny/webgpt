@@ -2,9 +2,9 @@ import { COLORS_LIMIT, DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../..
 import { Color } from '../../color/Color';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
 import { forARest } from '../../forARest';
-import { WithTake } from '../../take/interfaces/ITakeChain';
-import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
-import { IImage } from '../IImage';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
+import type { IComputeColorstatsWork } from '../IComputeColorstatsWork';
+import type { IImage } from '../IImage';
 
 /**
  * Computes the most frequent colors in an image

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { classNames } from '../../utils/classNames';
-import { string_css_class, string_url } from '../../utils/typeAliases';
+import type { string_css_class, string_url } from '../../utils/typeAliases';
 import styles from './DeviceIframe.module.css';
 
 interface DeviceIframeProps {

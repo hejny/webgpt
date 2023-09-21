@@ -1,8 +1,8 @@
 import { Color, string_color } from '../../color/Color';
 import { forARest } from '../../forARest';
-import { WithTake } from '../../take/interfaces/ITakeChain';
-import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
-import { IImage } from '../IImage';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
+import type { IComputeColorstatsWork } from '../IComputeColorstatsWork';
+import type { IImage } from '../IImage';
 
 /**
  * Retrieves the unique colors from an image

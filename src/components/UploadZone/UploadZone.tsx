@@ -1,6 +1,7 @@
-import { ReactNode, useState } from 'react';
+import type { ReactNode } from 'react';
+import { useState } from 'react';
 import { classNames } from '../../utils/classNames';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import { CreateZone } from '../CreateZone/CreateZone';
 
 interface UploadZoneProps {

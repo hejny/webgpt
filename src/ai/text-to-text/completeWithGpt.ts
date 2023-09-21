@@ -1,5 +1,5 @@
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { string_completion_prompt, string_model_name, uuid } from '../../utils/typeAliases';
+import type { string_completion_prompt, string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 
 export interface ICompleteWithGptResult {

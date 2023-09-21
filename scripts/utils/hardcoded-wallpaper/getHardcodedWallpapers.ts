@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { readFile } from 'fs/promises';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import YAML from 'yaml';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT,
@@ -11,8 +11,8 @@ import {
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { FULLHD } from '../../../src/constants';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
-import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
-import { string_file_path } from '../../../src/utils/typeAliases';
+import type { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
+import type { string_file_path } from '../../../src/utils/typeAliases';
 import { isFileExisting } from '../isFileExisting';
 import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
 

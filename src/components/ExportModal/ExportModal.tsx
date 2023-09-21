@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
@@ -8,12 +8,13 @@ import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_email } from '../../utils/typeAliases';
+import type { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
+import { useCloseWallpaperModalHandler } from '../WallpaperLink/useCloseWallpaperModalHandler';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
 
@@ -58,7 +59,7 @@ export function ExportModal() {
     const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
 
     return (
-        <Modal title={'Get the web'} isCloseable>
+        <Modal title={'Get the web'} isCloseable onClose={useCloseWallpaperModalHandler()}>
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {

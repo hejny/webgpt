@@ -1,4 +1,4 @@
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 import { forTime, forValueDefined } from 'waitasecond';
 
 export async function forCondition(

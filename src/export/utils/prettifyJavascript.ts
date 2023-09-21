@@ -1,6 +1,6 @@
 import { format } from 'prettier';
 import parserBabel from 'prettier/parser-babel';
-import { string_javascript } from '../../utils/typeAliases';
+import type { string_javascript } from '../../utils/typeAliases';
 
 /**
  * Prettify the css code

@@ -1,6 +1,6 @@
 import { Color } from '../../color/Color';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
-import { IImage } from '../IImage';
+import type { IImage } from '../IImage';
 
 /**
  * Counts the number of pixels in an image that have a specified color within a given tolerance

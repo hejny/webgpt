@@ -1,6 +1,6 @@
 import hexEncoder from 'crypto-js/enc-hex';
 import sha256 from 'crypto-js/sha256';
-import { string_uri } from '../../typeAliases';
+import type { string_uri } from '../../typeAliases';
 import { nameToSubfolderPath } from './nameToSubfolderPath';
 
 /**

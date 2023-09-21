@@ -1,6 +1,6 @@
 import { unstable_createNodejsStream } from '@vercel/og';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { string_wallpaper_id } from '../../utils/typeAliases';
+import type { string_wallpaper_id } from '../../utils/typeAliases';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 /**

@@ -12,7 +12,7 @@ import YAML from 'yaml';
 import { COLORSTATS_DEFAULT_COMPUTE_IN_SCRIPT, MIDJOURNEY_WHOLE_GALLERY_PATH } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { serializeColorStats } from '../../src/utils/image/utils/serializeColorStats';
-import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
+import type { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';

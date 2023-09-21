@@ -1,13 +1,13 @@
 import { Color } from '../../color/Color';
 import { colorLuminance } from '../../color/utils/colorLuminance';
-import { WithTake } from '../../take/interfaces/ITakeChain';
-import { IImage } from '../IImage';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
+import type { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
  * Computes the lightest color in an image
- * 
- * 
+ *
+ *
  * @param {IImage} image - The image to compute the lightest color from.
  * @returns {Promise<WithTake<Color>>} The lightest color in the image, wrapped in a promise.
  */

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { writeWallpaperContent, WriteWallpaperContentOptions } from '../../../ai/text-to-text/writeWallpaperContent';
-import { string_markdown, uuid } from '../../../utils/typeAliases';
+import type { string_markdown, uuid } from '../../../utils/typeAliases';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 export type WriteWallpaperContentRequest = Omit<WriteWallpaperContentOptions, 'clientId'>;

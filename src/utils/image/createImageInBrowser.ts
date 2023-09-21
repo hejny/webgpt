@@ -1,7 +1,7 @@
 import { Color } from '../color/Color';
 import { forARest } from '../forARest';
-import { string_url } from '../typeAliases';
-import { IComputeColorstatsWork } from './IComputeColorstatsWork';
+import type { string_url } from '../typeAliases';
+import type { IComputeColorstatsWork } from './IComputeColorstatsWork';
 import { Image as MyImage } from './Image';
 
 /**

@@ -1,5 +1,5 @@
 import { isObservable } from 'rxjs';
-import { Loadable } from '../typeHelpers';
+import type { Loadable } from '../typeHelpers';
 import { useObservable } from './useObservable';
 import { usePromise } from './usePromise';
 

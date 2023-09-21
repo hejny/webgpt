@@ -166,7 +166,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     }
 
                                     alert(
-                                        // <- TODO: Use here alertDialogue
+                                        // <- TODO: Use here alertDialog
                                         // TODO: [🏔] DRY
                                         spaceTrim(
                                             (block) => `

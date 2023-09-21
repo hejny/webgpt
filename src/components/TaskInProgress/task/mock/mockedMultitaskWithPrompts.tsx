@@ -1,9 +1,10 @@
 import { faker } from '@faker-js/faker';
-import spaceTrim from 'spacetrim';
-import { Promisable } from 'type-fest';
+import { spaceTrim } from 'spacetrim';
+import type { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../TaskProgress';
+import { alertDialog } from '../../../Dialogs/dialogs/alertDialog';
+import { promptDialog } from '../../../Dialogs/dialogs/promptDialog';
+import type { TaskProgress } from '../TaskProgress';
 
 export async function mockedMultitaskWithPrompts(
     onProgress: (taskProgress: TaskProgress) => Promisable<void>,
@@ -26,29 +27,48 @@ export async function mockedMultitaskWithPrompts(
     for (let i = 0; i < 5; i++) {
         await forTime(Math.random() * 1000 + 500);
 
-        const title = `(${i}) ${faker.hacker.verb()}`;
-
-        await onProgress({
-            name: `mocked-task-${i}`,
-            title: <>{title}</>,
-            isDone: false,
-        });
-
-        const response = await promptDialogue({
-            prompt: (
-                <>
-                    Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
-                </>
-            ),
-            defaultValue: faker.hacker.phrase(),
-            placeholder: faker.hacker.phrase(),
-        });
+        const title = faker.hacker.verb();
 
         await onProgress({
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({response})</i>
+                    ({i}) {title}
+                </>
+            ),
+            isDone: false,
+        });
+
+        for (let j = 0; j < 5; j++) {
+            if (Math.random() < 0.5) {
+                break;
+            }
+            const answer = await alertDialog(
+                <>
+                    Warning about the <span style={{ fontStyle: 'italic' }}>{title}</span>
+                </>,
+            );
+        }
+
+        const promptOptions = {
+            prompt: (
+                <>
+                    Question about the <span style={{ fontStyle: 'italic' }}>{title}</span>
+                </>
+            ),
+            defaultValue: faker.hacker.verb(),
+            placeholder: faker.hacker.phrase(),
+            isCloseable: true,
+        };
+        const answer = await promptDialog(promptOptions);
+
+        console.info('📢', answer, promptOptions);
+
+        await onProgress({
+            name: `mocked-task-${i}`,
+            title: (
+                <>
+                    ({i}) {title} {answer === null ? undefined : <i>({answer})</i>}
                 </>
             ),
             isDone: true,
@@ -57,5 +77,5 @@ export async function mockedMultitaskWithPrompts(
 }
 
 /**
- * TODO: Maybe reflect response from promptDialogue in UI (like in TaskProgress)
+ * TODO: Maybe reflect response from promptDialog in UI (like in TaskProgress)
  */

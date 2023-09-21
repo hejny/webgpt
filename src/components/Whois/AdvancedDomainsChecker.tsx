@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import spaceTrim from 'spacetrim';
-import { string_domain, string_tdl } from '../../utils/typeAliases';
+import { spaceTrim } from 'spacetrim';
+import type { string_domain, string_tdl } from '../../utils/typeAliases';
 import styles from './AdvancedDomainsChecker.module.css';
 import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
 import { WhoisDomains } from './WhoisDomains/WhoisDomains';
-
 
 /**
  * Renders a domain checker with advanced options and patterns

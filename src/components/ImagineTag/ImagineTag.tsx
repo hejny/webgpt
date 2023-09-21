@@ -1,4 +1,4 @@
-import { string_midjourney_prompt } from '../../utils/typeAliases';
+import type { string_midjourney_prompt } from '../../utils/typeAliases';
 import styles from './ImagineTag.module.css';
 
 interface ImagineTagProps {

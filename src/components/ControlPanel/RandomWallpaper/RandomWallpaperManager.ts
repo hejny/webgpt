@@ -1,11 +1,11 @@
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../../config';
 import type { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
-import { IWallpaperSerialized } from '../../../utils/IWallpaper';
+import type { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { provideClientIdWithoutVerification } from '../../../utils/supabase/provideClientIdWithoutVerification';
-import { string_wallpaper_id } from '../../../utils/typeAliases';
+import type { string_wallpaper_id } from '../../../utils/typeAliases';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
 

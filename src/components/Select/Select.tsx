@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import styles from './Select.module.css';
 
 interface SelectProps<TValue extends string | number | symbol> {
@@ -10,7 +10,7 @@ interface SelectProps<TValue extends string | number | symbol> {
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
 
-        /**
+    /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;

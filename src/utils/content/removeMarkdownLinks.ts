@@ -1,4 +1,4 @@
-import { string_markdown } from '../typeAliases';
+import type { string_markdown } from '../typeAliases';
 
 /**
  * Removes Markdown link tags from a string.

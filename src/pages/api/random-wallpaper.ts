@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IWallpaperSerialized } from '../../utils/IWallpaper';
+import type { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
 export interface RandomWallpaperResponse {

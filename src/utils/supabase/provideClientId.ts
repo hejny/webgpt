@@ -1,6 +1,6 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
-import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
-import { uuid } from '../typeAliases';
+import { promptDialog } from '../../components/Dialogs/dialogs/promptDialog';
+import type { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
+import type { uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
 import { getSupabaseForBrowser } from './getSupabaseForBrowser';
 import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
@@ -17,7 +17,7 @@ interface IProvideClientIdOptions {
 }
 
 /**
- * Checks if clientId is in localStorage and verified OR generates new one and pops up the dialogue to verify email
+ * Checks if clientId is in localStorage and verified OR generates new one and pops up the dialog to verify email
  *
  * Note: This function is available only in browser
  *
@@ -40,10 +40,15 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         return clientId;
     }
 
-    const email = await promptDialogue({
+    // TODO: !!! promptForm or some verify callback
+    // TODO: !!! Add preferences for email receiving
+    // TODO: !!! Add preferences
+
+    const email = await promptDialog({
         prompt: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
+        isCloseable: true,
     });
 
     if (!isValidEmail(email)) {
@@ -56,6 +61,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
 }
 
 /**
+ * TODO: [🧠] !!! What should happen if user refuses to verify email?
  * TODO: [0] Implement isVerifiedEmailRequired
  * TODO: [🧠] This should be probbably in some other folder than supabase
  */

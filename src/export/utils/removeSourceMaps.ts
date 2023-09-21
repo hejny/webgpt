@@ -1,4 +1,4 @@
-import { string_css, string_javascript } from '../../utils/typeAliases';
+import type { string_css, string_javascript } from '../../utils/typeAliases';
 
 /**
  * Remove source maps from the code

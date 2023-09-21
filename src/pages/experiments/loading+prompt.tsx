@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { mockedMultitaskWithPrompts } from '../../components/TaskInProgress/task/mock/mockedMultitaskWithPrompts';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 
 export default function TestTasksProgressWithChatPage() {

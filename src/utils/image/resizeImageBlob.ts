@@ -1,4 +1,4 @@
-import { IVector } from 'xyzt';
+import type { IVector } from 'xyzt';
 
 /**
  * Resizes an image to a new size

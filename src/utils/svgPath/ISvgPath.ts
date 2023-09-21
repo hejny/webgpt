@@ -1,4 +1,4 @@
-import { IVector } from 'xyzt';
+import type { IVector } from 'xyzt';
 
 export type ISvgPath = Array<ISvgPathSegment>;
 

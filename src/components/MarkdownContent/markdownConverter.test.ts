@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { markdownConverter } from './markdownConverter';
 
 describe(`markdownConverter`, () => {
@@ -56,7 +56,6 @@ describe(`markdownConverter`, () => {
             `),
         );
     });
-
 
     /*/
     Note: [🧠][🎐] Code can not be converted back from html to markdown

@@ -1,4 +1,4 @@
-import { string_name, title } from '../../../utils/typeAliases';
+import type { string_name, title } from '../../../utils/typeAliases';
 
 export type TaskProgress = PendingTaskProgress | DoneTaskProgress;
 

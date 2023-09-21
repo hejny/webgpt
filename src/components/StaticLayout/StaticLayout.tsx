@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { StaticAppHead, StaticAppHeadProps } from '../AppHead/StaticAppHead';
 import styles from './StaticLayout.module.css';
 

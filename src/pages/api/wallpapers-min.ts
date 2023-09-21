@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
-import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
+import type { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
 interface WallpapersResponse {
     wallpapers: Array<{ id: string_wallpaper_id; primaryColor: string_color }>;

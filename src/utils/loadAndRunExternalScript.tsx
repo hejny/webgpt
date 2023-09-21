@@ -1,5 +1,5 @@
 import { forImmediate } from 'waitasecond';
-import { string_url } from './typeAliases';
+import type { string_url } from './typeAliases';
 
 /**
  * Load and run an external script

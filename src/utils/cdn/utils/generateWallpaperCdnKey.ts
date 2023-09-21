@@ -1,5 +1,5 @@
-import { IWallpaper } from '../../IWallpaper';
-import { string_uri } from '../../typeAliases';
+import type { IWallpaper } from '../../IWallpaper';
+import type { string_uri } from '../../typeAliases';
 import { nameToSubfolderPath } from './nameToSubfolderPath';
 
 /**

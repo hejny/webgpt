@@ -1,5 +1,5 @@
 import { EMOJIS } from '../emojis';
-import { string_html, string_url } from '../typeAliases';
+import type { string_html, string_url } from '../typeAliases';
 
 /**
  * Replaces emojis in an html with images from openmoji

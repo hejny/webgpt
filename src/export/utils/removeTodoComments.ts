@@ -1,4 +1,4 @@
-import { string_css, string_html, string_javascript, string_svg } from '../../utils/typeAliases';
+import type { string_css, string_html, string_javascript, string_svg } from '../../utils/typeAliases';
 
 /**
  * Remove TODO comments from HTML, CSS or JavaScript

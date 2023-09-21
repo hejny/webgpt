@@ -1,6 +1,6 @@
 import { TakeChain } from './classes/TakeChain';
-import { WithTake } from './interfaces/ITakeChain';
-import { Takeable } from './interfaces/Takeable';
+import type { WithTake } from './interfaces/ITakeChain';
+import type { Takeable } from './interfaces/Takeable';
 
 /**
  * A function that takes an initial value and returns a proxy object with chainable methods.

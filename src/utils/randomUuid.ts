@@ -1,5 +1,5 @@
 import { v4 } from 'uuid';
-import { uuid } from './typeAliases';
+import type { uuid } from './typeAliases';
 
 /**
  * Generates random UUID v4

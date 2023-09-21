@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { mkdir, unlink, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { execCommand } from '../execCommand/execCommand';
 import { isWorkingTreeClean } from './isWorkingTreeClean';
 

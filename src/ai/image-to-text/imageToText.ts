@@ -1,7 +1,7 @@
 import { ComputerVisionClient } from '@azure/cognitiveservices-computervision';
 import { CognitiveServicesCredentials } from '@azure/ms-rest-azure-js';
 import { AZURE_COMPUTER_VISION_ENDPOINT, AZURE_COMPUTER_VISION_KEY } from '../../../config';
-import { image_description } from '../../utils/typeAliases';
+import type { image_description } from '../../utils/typeAliases';
 
 /**
  * Analyzes an image through the Azure Computer vision API

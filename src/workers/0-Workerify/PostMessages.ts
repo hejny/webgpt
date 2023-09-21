@@ -1,6 +1,6 @@
-import { Promisable } from 'type-fest';
-import { IPromptDialogueOptions } from '../../components/Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import type { Promisable } from 'type-fest';
+import type { CommonDialogOptions } from '../../components/Dialogs/interfaces/CommonDialogOptions';
+import type { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 
 export type TransferableObject = any /* <-[0] */;
 
@@ -11,23 +11,23 @@ export type IWorkerifyableFunction<TRequest extends TransferableObject, TResult 
 
 export type IMessageMainToWorker<TRequest extends TransferableObject> =
     | IMessageRequest<TRequest>
-    | IMessagePromptDialogueAnswer;
+    | IMessageDialogAnswer;
 
 export interface IMessageRequest<TRequest extends TransferableObject> {
     type: 'REQUEST';
     request: TRequest;
 }
 
-export interface IMessagePromptDialogueAnswer {
-    type: 'PROMPT_DIALOGUE_ANSWER';
-    promptAnswer: string | null /* <-[🍁] */;
+export interface IMessageDialogAnswer {
+    type: 'DIALOG_ANSWER';
+    dialogAnswer: string | null /* <-[🍁] */;
 }
 
 export type IMessageWorkerToMain<TResult extends TransferableObject> =
     | IMessageProgress
     | IMessageResult<TResult>
     | IMessageError
-    | IMessagePromptDialogue;
+    | IMessageDialog;
 
 export interface IMessageProgress {
     type: 'PROGRESS';
@@ -44,7 +44,7 @@ export interface IMessageError {
     message: string;
 }
 
-export interface IMessagePromptDialogue {
-    type: 'PROMPT_DIALOGUE';
-    promptOptions: IPromptDialogueOptions;
+export interface IMessageDialog {
+    type: 'DIALOG';
+    dialogOptions: CommonDialogOptions;
 }

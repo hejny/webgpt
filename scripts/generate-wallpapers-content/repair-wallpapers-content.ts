@@ -7,7 +7,7 @@ import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { FONTS, MAX_CHARS_IN_TITLE, OPENAI_API_KEY } from '../../config';
 import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';

@@ -1,6 +1,6 @@
 import { Json } from '../../supabase/types';
 import { TakeChain } from '../../take/classes/TakeChain';
-import { IImageColorStats } from './IImageColorStats';
+import type { IImageColorStats } from './IImageColorStats';
 
 export function serializeColorStats(colorStats: IImageColorStats<string>): Json {
     return JSON.parse(

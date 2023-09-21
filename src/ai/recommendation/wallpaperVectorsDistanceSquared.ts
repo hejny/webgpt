@@ -1,4 +1,4 @@
-import { IWallpaperVector } from './IWallpaperVector';
+import type { IWallpaperVector } from './IWallpaperVector';
 
 export function wallpaperVectorsDistanceSquared(
     wallpaperVector1: IWallpaperVector,

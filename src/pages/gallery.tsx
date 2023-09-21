@@ -7,7 +7,7 @@ import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of p
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
-import { IWallpaperSerialized } from '../utils/IWallpaper';
+import type { IWallpaperSerialized } from '../utils/IWallpaper';
 
 interface GalleryPageProps {
     /**

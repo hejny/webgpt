@@ -1,4 +1,4 @@
-import { string_email } from '../typeAliases';
+import type { string_email } from '../typeAliases';
 
 /**
  * Checks if value is valid email

@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { removeSourceMaps } from './removeSourceMaps';
 
 describe('removeSourceMaps', () => {

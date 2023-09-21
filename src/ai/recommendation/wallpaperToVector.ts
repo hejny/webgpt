@@ -1,5 +1,5 @@
-import { IWallpaper } from '../../utils/IWallpaper';
-import { IWallpaperVector } from './IWallpaperVector';
+import type { IWallpaper } from '../../utils/IWallpaper';
+import type { IWallpaperVector } from './IWallpaperVector';
 
 export function wallpaperToVector(wallpaper: IWallpaper): IWallpaperVector {
     const { red, green, blue } = wallpaper.colorStats.palette[0]!.value;

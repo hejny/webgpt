@@ -1,6 +1,6 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { FONTS } from '../../../../config';
-import { string_chat_prompt } from '../../../utils/typeAliases';
+import type { string_chat_prompt } from '../../../utils/typeAliases';
 
 /**
  * Generates a template for figuring out best fitting font for the website.

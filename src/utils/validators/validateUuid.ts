@@ -1,4 +1,4 @@
-import { uuid } from '../typeAliases';
+import type { uuid } from '../typeAliases';
 import { isValidUuid } from './isValidUuid';
 
 export function validateUuid(value: unknown): uuid {

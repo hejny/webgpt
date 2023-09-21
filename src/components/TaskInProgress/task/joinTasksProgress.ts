@@ -1,4 +1,4 @@
-import { TaskProgress } from './TaskProgress';
+import type { TaskProgress } from './TaskProgress';
 
 /**
  * Merges tasks with same name into one in array of tasks

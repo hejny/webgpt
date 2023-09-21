@@ -2,9 +2,9 @@ import { useState } from 'react';
 import SketchPicker, { PresetColor } from 'react-color/lib/components/sketch/Sketch';
 import { Color } from '../../../utils/color/Color';
 import { useClickOutside } from '../../../utils/hooks/useClickOutside';
-import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
+import type { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import { take } from '../../../utils/take/take';
-import { string_css_class } from '../../../utils/typeAliases';
+import type { string_css_class } from '../../../utils/typeAliases';
 import { ColorPreview } from '../ColorPreview';
 import styles from './ColorInput.module.css';
 

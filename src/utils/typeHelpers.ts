@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { Promisable } from 'type-fest';
+import type { Promisable } from 'type-fest';
 
 // TODO: !! Cleanup
 

@@ -1,5 +1,6 @@
-import { IVector, Vector } from 'xyzt';
-import { ISvgPath } from './ISvgPath';
+import type { IVector } from 'xyzt';
+import { Vector } from 'xyzt';
+import type { ISvgPath } from './ISvgPath';
 
 interface IStringifySvgPathOptions {
     path: ISvgPath;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 
 export function useStateInLocalstorage<T extends string>(
     key: string,

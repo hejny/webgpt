@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
-import { uuid } from '../../utils/typeAliases';
+import type { uuid } from '../../utils/typeAliases';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 /**

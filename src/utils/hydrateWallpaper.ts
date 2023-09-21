@@ -1,7 +1,7 @@
 import { Vector } from 'xyzt';
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
 import { serializeColorStats } from './image/utils/serializeColorStats';
-import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
+import type { IWallpaper, IWallpaperSerialized } from './IWallpaper';
 
 export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
     return {

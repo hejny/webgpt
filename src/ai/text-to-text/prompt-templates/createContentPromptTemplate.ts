@@ -1,5 +1,5 @@
-import spaceTrim from 'spacetrim';
-import { image_description, string_chat_prompt, string_midjourney_prompt } from '../../../utils/typeAliases';
+import { spaceTrim } from 'spacetrim';
+import type { image_description, string_chat_prompt, string_midjourney_prompt } from '../../../utils/typeAliases';
 
 /**
  * Generates a template for creating web content based on a given wallpaper description

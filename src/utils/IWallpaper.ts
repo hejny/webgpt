@@ -1,8 +1,8 @@
 import { string_keyword } from 'n12';
 import { Vector } from 'xyzt';
 import { Json } from '../utils/supabase/types';
-import { IImageColorStats } from './image/utils/IImageColorStats';
-import { IMidjourneyJob } from './IMidjourneyJob';
+import type { IImageColorStats } from './image/utils/IImageColorStats';
+import type { IMidjourneyJob } from './IMidjourneyJob';
 import {
     string_html,
     string_markdown,

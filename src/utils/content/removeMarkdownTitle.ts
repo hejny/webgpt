@@ -1,5 +1,5 @@
-import spaceTrim from 'spacetrim';
-import { string_markdown } from '../typeAliases';
+import { spaceTrim } from 'spacetrim';
+import type { string_markdown } from '../typeAliases';
 
 /**
  * Remove the title from a markdown string.

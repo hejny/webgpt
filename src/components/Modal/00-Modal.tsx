@@ -1,7 +1,6 @@
-import { ReactNode, useEffect } from 'react';
+import { ReactNode, useCallback, useEffect } from 'react';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './00-Modal.module.css';
-import { CloseModalLink } from './10-CloseModalLink';
 
 interface ModalProps {
     /**
@@ -20,13 +19,21 @@ interface ModalProps {
      * If `true` then you need to be in wallpaper page to close the modal
      */
     isCloseable?: boolean;
+
+    /**
+     * Called when the modal is closed
+     *
+     * Note: This can be called only if `isCloseable` is `true`
+     * Note: This is called either when the user clicks on the overlay or on the close button
+     */
+    onClose?(): void;
 }
 
 /**
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children, isCloseable } = props;
+    const { title, children, isCloseable, onClose } = props;
 
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useEffect(() => {
@@ -58,19 +65,36 @@ export function Modal(props: ModalProps) {
         };
     });
 
+    const closeHandler = useCallback(() => {
+        if (!isCloseable || !onClose) {
+            return;
+        }
+        onClose();
+    }, [isCloseable, onClose]);
+
     return (
         <>
-            {isCloseable ? <CloseModalLink className={styles.overlay} /> : <div className={styles.overlay} />}
-            <dialog open className={styles.Modal}>
+            <div className={styles.overlay} onClick={closeHandler} />
+            <dialog
+                open
+                className={styles.Modal}
+                onKeyDown={(event) => {
+                    if (!(event.key === 'Escape' && event.shiftKey === false && event.ctrlKey === false)) {
+                        return;
+                    }
+
+                    closeHandler();
+                }}
+            >
                 <div className={styles.bar}>
                     <div className={styles.title}>
                         <h2>{title}</h2>
                     </div>
                     <div className={styles.icons}>
                         {isCloseable && (
-                            <CloseModalLink>
+                            <div onClick={closeHandler}>
                                 <MarkdownContent content="✖" isUsingOpenmoji />
-                            </CloseModalLink>
+                            </div>
                         )}
                     </div>
                 </div>
@@ -79,3 +103,9 @@ export function Modal(props: ModalProps) {
         </>
     );
 }
+
+/**
+ * TODO: !!! isFullscreen - always true
+ * TODO: !!! If isFullscreen react on [Esc] and [Enter] <- Remove collision with dialogs
+ * TODO: [🥧] isFullscreen={false} - behave as popup window which can be multiple at once
+ */

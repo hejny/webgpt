@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { string_domain } from '../../../utils/typeAliases';
+import type { string_domain } from '../../../utils/typeAliases';
 import { useWhois } from '../utils/useWhois';
 import styles from './WhoisDomain.module.css';
 

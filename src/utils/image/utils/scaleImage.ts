@@ -1,8 +1,8 @@
-import { IVector } from 'xyzt';
+import type { IVector } from 'xyzt';
 import { Color } from '../../color/Color';
 import { forARest } from '../../forARest';
-import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
-import { IImage } from '../IImage';
+import type { IComputeColorstatsWork } from '../IComputeColorstatsWork';
+import type { IImage } from '../IImage';
 import { Image } from '../Image';
 
 /**

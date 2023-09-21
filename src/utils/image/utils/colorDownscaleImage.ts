@@ -1,8 +1,8 @@
 import { Color } from '../../color/Color';
 import { forARest } from '../../forARest';
-import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
-import { IImage } from '../IImage';
-import { Image } from '../Image';
+import type { IComputeColorstatsWork } from '../IComputeColorstatsWork';
+import type { IImage } from '../IImage';
+import type { Image } from '../Image';
 
 /**
  * Downscale the colors of an image

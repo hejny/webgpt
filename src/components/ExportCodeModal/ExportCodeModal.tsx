@@ -4,6 +4,7 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { Files } from '../Files/00-FilesPreview';
 import { Modal } from '../Modal/00-Modal';
+import { useCloseWallpaperModalHandler } from '../WallpaperLink/useCloseWallpaperModalHandler';
 
 /**
  * Renders the modal for exporting wallpaper page as code
@@ -29,7 +30,7 @@ export function ExportCodeModal() {
     console.info('🔽', { exported });
 
     return (
-        <Modal title={'Export in code editor'} isCloseable>
+        <Modal title={'Export in code editor'} isCloseable onClose={useCloseWallpaperModalHandler()}>
             <Files
                 files={
                     exported

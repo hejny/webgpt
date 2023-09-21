@@ -1,7 +1,7 @@
 import { normalizeToKebabCase, normalizeTo_SCREAMING_CASE } from 'n12';
 import { useRouter } from 'next/router';
-import spaceTrim from 'spacetrim';
-import { TupleToUnion } from 'type-fest';
+import { spaceTrim } from 'spacetrim';
+import type { TupleToUnion } from 'type-fest';
 import { useSsrDetection } from './useSsrDetection';
 
 const ROLES = ['VISITOR', 'OWNER', 'OWNER_AS_VISITOR'] as const;

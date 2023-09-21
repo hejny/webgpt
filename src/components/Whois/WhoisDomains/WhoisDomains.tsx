@@ -1,4 +1,4 @@
-import { string_domain } from '../../../utils/typeAliases';
+import type { string_domain } from '../../../utils/typeAliases';
 import { WhoisDomain } from '../WhoisDomain/WhoisDomain';
 import styles from './WhoisDomains.module.css';
 

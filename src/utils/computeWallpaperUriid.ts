@@ -2,9 +2,9 @@ import { nameToUriParts } from 'n12';
 import seedrandom from 'seedrandom';
 import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { serializeColorStats } from './image/utils/serializeColorStats';
-import { IWallpaper } from './IWallpaper';
+import type { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
-import { string_uriid } from './typeAliases';
+import type { string_uriid } from './typeAliases';
 
 const URIID_VERSION = '2';
 

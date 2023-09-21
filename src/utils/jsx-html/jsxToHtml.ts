@@ -1,5 +1,5 @@
 import { renderToStaticMarkup } from 'react-dom/server';
-import { string_html, string_xml } from '../typeAliases';
+import type { string_html, string_xml } from '../typeAliases';
 
 /**
  * Renders jsx to html / xml

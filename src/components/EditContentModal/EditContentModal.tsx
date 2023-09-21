@@ -1,6 +1,7 @@
 import MonacoEditor from '@monaco-editor/react';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { Modal } from '../Modal/00-Modal';
+import { useCloseWallpaperModalHandler } from '../WallpaperLink/useCloseWallpaperModalHandler';
 import styles from './EditContentModal.module.css';
 
 /**
@@ -10,7 +11,7 @@ export function EditContentModal() {
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
 
     return (
-        <Modal title={'Edit the content'} isCloseable>
+        <Modal title={'Edit the content'} isCloseable  onClose={useCloseWallpaperModalHandler()}>
             <MonacoEditor
                 className={styles.editor}
                 theme="vs-dark"

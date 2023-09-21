@@ -2,7 +2,7 @@ import { normalizeTo_PascalCase } from 'n12';
 import { useMemo } from 'react';
 import type WhoisSearchResult from 'whoiser' /* <- TODO: There should be probbably "import { type WhoisSearchResult } from 'whoiser' " */;
 import { usePromise } from '../../../utils/hooks/usePromise';
-import { string_domain } from '../../../utils/typeAliases';
+import type { string_domain } from '../../../utils/typeAliases';
 import { DomainStatus } from './DomainStatus';
 import { getDomainStatusFromWhois } from './getDomainStatusFromWhois';
 

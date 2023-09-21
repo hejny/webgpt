@@ -1,6 +1,6 @@
 import { isRunningInBrowser } from '../isRunningInWhatever';
 import { randomUuid } from '../randomUuid';
-import { uuid } from '../typeAliases';
+import type { uuid } from '../typeAliases';
 import { isValidClientId } from '../validators/isValidClientId';
 
 /**
