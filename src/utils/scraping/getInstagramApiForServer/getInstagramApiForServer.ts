@@ -1,8 +1,8 @@
 import { getCookie, igApi as InstagramApi } from 'insta-fetcher';
-import { INSTAGRAM_PASSWORD, INSTAGRAM_USERNAME } from '../../../config';
-import { explainError } from '../extraMessage';
-import { isRunningInNode } from '../isRunningInWhatever';
-import { getServerStorage } from '../supabase/getServerStorage';
+import { INSTAGRAM_PASSWORD, INSTAGRAM_USERNAME } from '../../../../config';
+import { explainError } from '../../extraMessage';
+import { isRunningInNode } from '../../isRunningInWhatever';
+import { getServerStorage } from '../../supabase/getServerStorage';
 
 /**
  * Internal cache for getInstagramApiForServer
