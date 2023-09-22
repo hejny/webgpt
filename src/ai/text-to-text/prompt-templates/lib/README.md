@@ -42,7 +42,7 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 -   [ ] Make PTP non-linear
 -   [ ] Logging pipeline name, version, step,...
 -   [ ] No circular dependencies
--   [ ] xxx
+-   [ ][🧠] Wording: "param" vs "parameter" vs "variable" vs "argument"
 -   [ ] xxx
 -   [ ] xxx
 -   [ ] xxx
