@@ -10,4 +10,5 @@ export interface PromptingExecutionTools {
 
 /**
  * TODO: Add here prompts to user, eval emulator, logs and all other dependencies
+ * TODO: [🧠] Should or should not there be a word "GPT" in both createChatThread and completeWithGpt
  */

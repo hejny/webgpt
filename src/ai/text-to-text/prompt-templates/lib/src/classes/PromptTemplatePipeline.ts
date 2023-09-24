@@ -62,5 +62,4 @@ export class PromptTemplatePipeline {
 /**
  * TODO: !!! Add generic type for entry and result params
  * TODO: Can be Array elegantly typed such as it must have at least one element?
- * TODO: [🧠] There should or should not be a word "GPT" in both createChatThread and completeWithGpt
  */
