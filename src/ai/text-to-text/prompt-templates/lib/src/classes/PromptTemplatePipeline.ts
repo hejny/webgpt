@@ -1,3 +1,4 @@
+import { string_attribute } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplatePipelineSourceValid';
 import { PromptTemplate } from './PromptTemplate';
@@ -31,6 +32,17 @@ export class PromptTemplatePipeline {
         return this.promptTemplates[0]!.promptTemplate;
     }
 
+    public getResultingParamName(
+        curentPromptTemplate: PromptTemplate<any /* <- TODO: Get rid of any */>,
+    ): string_attribute {
+        const index = this.promptTemplates.findIndex(({ promptTemplate }) => promptTemplate === curentPromptTemplate);
+        if (index === -1) {
+            throw new Error(`Prompt template is not in this pipeline`);
+        }
+
+        return this.promptTemplates[index]!.resultingParamName;
+    }
+
     public getFollowingPromptTemplate(
         curentPromptTemplate: PromptTemplate<any /* <- TODO: Get rid of any */>,
     ): PromptTemplate<any /* <- TODO: Get rid of any */> | null {
@@ -48,6 +60,7 @@ export class PromptTemplatePipeline {
 }
 
 /**
+ * TODO: !!! Add generic type for entry and result params
  * TODO: Can be Array elegantly typed such as it must have at least one element?
  * TODO: [🧠] There should or should not be a word "GPT" in both createChatThread and completeWithGpt
  */

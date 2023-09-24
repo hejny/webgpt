@@ -49,7 +49,7 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 -   [ ][➿] Refactor circular dependencies
 -   [ ] Importing subtemplates
 -   [ ] Use spaceTrim more effectively
--   [ ] xxx
+-   [ ][🧠] Figure out best word for "entry" and "result" params
 -   [ ] xxx
 -   [ ] xxx
 -   [ ] xxx

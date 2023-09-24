@@ -1,42 +1,46 @@
+import { PromptTemplate } from '../classes/PromptTemplate';
+import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 import { PromptingExecutionTools } from '../types/PromptingExecutionTools';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PromptTemplatePipelineExecutor } from '../types/PromptTemplatePipelineExecutor';
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 
 interface CreatePromptTemplatePipelineExecutorOptions {
-    promptTemplatePipeline: PromptTemplatePipelineJson;
+    promptTemplatePipeline: PromptTemplatePipeline;
     tools: PromptingExecutionTools;
 }
 
 export function createPromptTemplatePipelineExecutor(
     options: CreatePromptTemplatePipelineExecutorOptions,
 ): PromptTemplatePipelineExecutor {
-    const { promptTemplatePipeline, tools } = options;
-
-    return async () => {
-        /*
-        
-          const {
-            params,
+    const {
+        promptTemplatePipeline,
+        tools: {
             gpt: { createChatThread, completeWithGpt },
-        } = options;
-        let paramsToPass: PromptTemplateParams = params;
+        },
+    } = options;
 
-        for (const { promptTemplate, resultingParamName } of promptTemplatePipeline.promptTemplates) {
-            const prompt = promptTemplate.makePrompt(paramsToPass);
+    const promptTemplatePipelineExecutor = async (entryParams: PromptTemplateParams) => {
+        let paramsToPass: PromptTemplateParams = entryParams;
+        let currentPromptTemplate: PromptTemplate<any> | null = promptTemplatePipeline.entryPromptTemplate;
+
+        while (currentPromptTemplate !== null) {
+            const resultingParamName = promptTemplatePipeline.getResultingParamName(currentPromptTemplate!);
+            const prompt = currentPromptTemplate.makePrompt(paramsToPass);
 
             const chatThread = await createChatThread(prompt);
 
             paramsToPass = {
                 ...paramsToPass,
-                [resultingParamName]: chatThread.response /* <- TODO: Detect param collision here * /,
+                [resultingParamName]: chatThread.response /* <- TODO: Detect param collision here */,
             };
+
+            currentPromptTemplate = promptTemplatePipeline.getFollowingPromptTemplate(currentPromptTemplate!);
         }
 
         return paramsToPass;
-        */
-        return {} as PromptTemplateParams;
     };
+
+    return promptTemplatePipelineExecutor;
 }
 
 /**

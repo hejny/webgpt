@@ -1,4 +1,6 @@
-export type PromptTemplateParams = Record<string, string>;
+import { string_attribute } from '../../../../../../utils/typeAliases';
+
+export type PromptTemplateParams = Record<string_attribute, string>;
 
 /**
  * TODO: No need for index signature
