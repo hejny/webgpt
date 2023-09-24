@@ -44,9 +44,9 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 -   [ ] Logging pipeline name, version, step,...
 -   [ ] No circular dependencies
 -   [ ][🧠] Wording: "param" vs "parameter" vs "variable" vs "argument"
--   [ ] xxx
--   [ ] xxx
--   [ ] xxx
+-   [ ] All entities must have public / private / protected modifiers
+-   [ ] Everything not needed should be private or not exported
+-   [ ][➿] Refactor circular dependencies
 -   [ ] xxx
 -   [ ] xxx
 -   [ ] xxx
