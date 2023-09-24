@@ -47,7 +47,7 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 -   [ ] All entities must have public / private / protected modifiers
 -   [ ] Everything not needed should be private or not exported
 -   [ ][➿] Refactor circular dependencies
--   [ ] xxx
+-   [ ] Importing subtemplates
 -   [ ] xxx
 -   [ ] xxx
 -   [ ] xxx

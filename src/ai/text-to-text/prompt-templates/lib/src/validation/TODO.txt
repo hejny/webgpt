@@ -1,0 +1,5 @@
+TODO: Separate syntax and semantic errors
+TODO: Separate lexer and parser
+TODO: Make also validator for string with reporting errors on line/column
+TODO: Make VSCode extension for this (and for other editors)
+TODO: Make some way how to unit test prompt template pipelines

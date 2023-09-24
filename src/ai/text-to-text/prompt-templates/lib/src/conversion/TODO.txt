@@ -1,0 +1,2 @@
+TODO: Util for every conversion step from string -> json -> class
+TODO: Maybe create xml equivalent to json
