@@ -1,6 +1,7 @@
 import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
 import { ModelRequirements, ModelVariant } from '../types/ModelRequirements';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
+import { replaceParams } from '../utils/replaceParams';
 import { Prompt } from './Prompt';
 
 export class PromptTemplate<TPromptingVariant extends ModelVariant> {
@@ -10,14 +11,7 @@ export class PromptTemplate<TPromptingVariant extends ModelVariant> {
     ) {}
 
     makePrompt(params: PromptTemplateParams): Prompt<TPromptingVariant> {
-        let prompt = this.source;
-
-        /* prompt = spaceTrim(prompt);
-        // TODO: !!! Replace all params
-        // TODO: !!! Remove comments
-        return prompt;
-        */
-
+        let prompt = replaceParams(this.source, params);
         return new Prompt(prompt, this.modelRequirements);
     }
 }

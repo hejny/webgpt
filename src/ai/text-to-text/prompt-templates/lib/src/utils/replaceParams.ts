@@ -1,4 +1,5 @@
 import { string_template } from '../../../../../../utils/typeAliases';
+import { PromptTemplateParams } from '../types/PromptTemplateParams';
 
 /**
  * Replaces params in template with values from params object
@@ -8,7 +9,7 @@ import { string_template } from '../../../../../../utils/typeAliases';
  * @returns the template with replaced params
  */
 
-export function replaceParams(template: string_template, params: Record<string, string>): string {
+export function replaceParams(template: string_template, params: PromptTemplateParams): string {
     let result = '';
     let openedParamName: string | null = null;
 
@@ -40,3 +41,8 @@ export function replaceParams(template: string_template, params: Record<string, 
 
     return result;
 }
+
+/**
+ * TODO: [🧠] More advanced templating
+ * TODO: Maybe use some template engine / library not implemented own
+ */
