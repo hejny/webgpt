@@ -2,6 +2,8 @@ import { describe, expect, it } from '@jest/globals';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import spaceTrim from 'spacetrim';
+import { string_file_path } from '../../../../../../utils/typeAliases';
+import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
 
 describe('promptTemplatePipelineStringToJson', () => {
@@ -223,6 +225,6 @@ describe('promptTemplatePipelineStringToJson', () => {
  * Note: Using here !!!
  * Note: Using sync version is 💩 in the production code, but it's ok here in tests
  */
-function importPtp(path: string): string {
-    return readFileSync(join(__dirname, path), 'utf-8');
+function importPtp(path: string_file_path): PromptTemplatePipelineString {
+    return readFileSync(join(__dirname, path), 'utf-8') as PromptTemplatePipelineString;
 }
