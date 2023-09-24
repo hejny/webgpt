@@ -3,19 +3,6 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
 
-/**
- * Note: Using here !!!
- */
-function importInUnitTest(path: string): any {
-    return readFileSync(join(__dirname, path), 'utf-8');
-}
-
-const simplePromptTemplatePipelineString = importInUnitTest('../../samples/00-simple.ptp.md');
-const commentPromptTemplatePipelineString = importInUnitTest('../../samples/05-comment.ptp.md');
-const singlePromptTemplatePipelineString = importInUnitTest('../../samples/10-single.ptp.md');
-const twoPromptTemplatePipelineString = importInUnitTest('../../samples/20-two.ptp.md');
-const advancedPromptTemplatePipelineString = importInUnitTest('../../samples/50-advanced.ptp.md');
-
 describe('promptTemplatePipelineStringToJson', () => {
     it('should parse empty promptTemplatePipeline', () => {
         expect(promptTemplatePipelineStringToJson(``)).toEqual({
@@ -24,31 +11,31 @@ describe('promptTemplatePipelineStringToJson', () => {
     });
 
     it('should parse simple promptTemplatePipeline', () => {
-        expect(promptTemplatePipelineStringToJson(simplePromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/00-simple.ptp.md'))).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with comment', () => {
-        expect(promptTemplatePipelineStringToJson(commentPromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/05-comment.ptp.md'))).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with one template', () => {
-        expect(promptTemplatePipelineStringToJson(singlePromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/10-single.ptp.md'))).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with two templates', () => {
-        expect(promptTemplatePipelineStringToJson(twoPromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/20-two.ptp.md'))).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with advanced structure', () => {
-        expect(promptTemplatePipelineStringToJson(advancedPromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/50-advanced.ptp.md'))).toEqual({
             promptTemplates: [],
         });
     });
@@ -134,3 +121,11 @@ describe('promptTemplatePipelineStringToJson', () => {
     });
     */
 });
+
+/**
+ * Note: Using here !!!
+ * Note: Using sync version is 💩 in the production code, but it's ok here in tests
+ */
+function importPtp(path: string): string {
+    return readFileSync(join(__dirname, path), 'utf-8');
+}
