@@ -2,6 +2,7 @@ import { ChatThread } from '../../../ChatThread';
 import { ICompleteWithGptResult } from '../../../completeWithGpt';
 import { isPtpSourceValid } from './isPtpSourceValid';
 import { Prompt } from './Prompt';
+import { PromptTemplate } from './PromptTemplate';
 import { PromptTemplateParams } from './PromptTemplateParams';
 import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
 
@@ -19,31 +20,20 @@ export class PromptTemplatePipeline {
             // TODO: Better error message - maybe even error from isPtpSourceValid -> validatePtpSource
             throw new Error('Invalid propmt template pipeline source');
         }
-        return new PromptTemplatePipeline(source);
+        return new PromptTemplatePipeline(
+            source.promptTemplates.map(({ promptTemplate, resultingParamName }) => ({
+                promptTemplate: new PromptTemplate(promptTemplate),
+                resultingParamName,
+            })),
+        );
     }
 
-    private constructor(public readonly source: PromptTemplatePipelineJson) {}
-
-    public async runPrompts(options: PromptTemplatePipelineRunOptions): Promise<PromptTemplateParams> {
-        const {
-            params,
-            gpt: { createChatThread, completeWithGpt },
-        } = options;
-        let paramsToPass: PromptTemplateParams = params;
-
-        for (const { promptTemplate, resultingParamName } of this.source.promptTemplates) {
-            const prompt = promptTemplate.makePrompt(paramsToPass);
-
-            const chatThread = await createChatThread(prompt);
-
-            paramsToPass = {
-                ...paramsToPass,
-                [resultingParamName]: chatThread.response /* <- TODO: Detect param collision here */,
-            };
-        }
-
-        return paramsToPass;
-    }
+    private constructor(
+        private readonly promptTemplates: Array<{
+            promptTemplate: PromptTemplate<any /* <- TODO: Get rid of any */>;
+            resultingParamName: string;
+        }>,
+    ) {}
 }
 
 /**
