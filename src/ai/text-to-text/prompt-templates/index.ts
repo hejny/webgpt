@@ -1,4 +1,4 @@
-import writeWebsiteContentExecutorPtp from '../../../../prompts/templates/write-website-content.cs.ptp.md';
+import writeWebsiteContentExecutorPtp from '../../../../prompts/templates/write-website-content.cs.lite.ptp.md';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
 import { ChatThread } from '../ChatThread';
