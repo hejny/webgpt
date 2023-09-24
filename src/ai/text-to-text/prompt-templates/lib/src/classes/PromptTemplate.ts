@@ -5,15 +5,23 @@ import { Prompt } from './Prompt';
 
 export class PromptTemplate<TPromptingVariant extends PromptingVariant> {
     public constructor(
-        private readonly templateContent: string_prompt & string_template /* <- TODO: Just one helper type */,
+        private readonly source: string_prompt & string_template /* <- TODO: Just one helper type */,
         private readonly type: TPromptingVariant,
     ) {}
 
     makePrompt(params: PromptTemplateParams): Prompt<TPromptingVariant> {
-        return new Prompt(this, params);
+        let prompt = this.source;
+
+        /* prompt = spaceTrim(prompt);
+        // TODO: !!! Replace all params
+        // TODO: !!! Remove comments
+        return prompt;
+        */
+
+        return new Prompt(prompt, this.type);
     }
 }
 
 /**
- * TODO: [➿] Refactor circular dependency between PromptTemplate and Prompt
+ * TODO: Maybe DO interface from this
  */
