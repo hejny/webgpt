@@ -17,5 +17,5 @@ export interface PromptTemplatePipelineJson {
 }
 
 /**
- * TODO: This is a cornerstone of .ptp.json file
+ * TODO: This is a cornerstone of .promptTemplatePipeline.json file
  */

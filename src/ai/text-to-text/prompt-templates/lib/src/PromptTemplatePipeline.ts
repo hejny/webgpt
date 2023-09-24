@@ -1,6 +1,6 @@
 import { ChatThread } from '../../../ChatThread';
 import { ICompleteWithGptResult } from '../../../completeWithGpt';
-import { isPtpSourceValid } from './isPtpSourceValid';
+import { isPromptTemplatePipelineSourceValid } from './isPromptTemplatePipelineSourceValid';
 import { Prompt } from './Prompt';
 import { PromptTemplate } from './PromptTemplate';
 import { PromptTemplateParams } from './PromptTemplateParams';
@@ -16,8 +16,8 @@ interface PromptTemplatePipelineRunOptions {
 
 export class PromptTemplatePipeline {
     public static createFromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {
-        if (!isPtpSourceValid(source)) {
-            // TODO: Better error message - maybe even error from isPtpSourceValid -> validatePtpSource
+        if (!isPromptTemplatePipelineSourceValid(source)) {
+            // TODO: Better error message - maybe even error from isPromptTemplatePipelineSourceValid -> validatePromptTemplatePipelineSource
             throw new Error('Invalid propmt template pipeline source');
         }
         return new PromptTemplatePipeline(

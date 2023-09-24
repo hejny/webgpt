@@ -4,7 +4,7 @@ import { PromptTemplatePipelineExecutor } from './PromptTemplatePipelineExecutor
 import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
 
 interface CreatePromptTemplatePipelineExecutorOptions {
-    ptp: PromptTemplatePipelineJson;
+    promptTemplatePipeline: PromptTemplatePipelineJson;
     tools: PromptingExecutionTools;
 }
 

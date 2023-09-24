@@ -2,10 +2,10 @@ import spaceTrim from 'spacetrim';
 import { removeContentComments } from '../../../../../utils/content/removeContentComments';
 import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
 
-export function parsePtpString(ptpContent: string): PromptTemplatePipelineJson {
+export function parsePromptTemplatePipelineString(promptTemplatePipelineContent: string): PromptTemplatePipelineJson {
     const promptTemplates: PromptTemplatePipelineJson['promptTemplates'] = [];
 
-    for (let templateContent of ptpContent.split(/^(---)+$/gm)) {
+    for (let templateContent of promptTemplatePipelineContent.split(/^(---)+$/gm)) {
         templateContent = removeContentComments(templateContent);
         templateContent = spaceTrim(templateContent);
 

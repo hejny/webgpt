@@ -1,7 +1,6 @@
-import { PromptTemplate } from './PromptTemplate';
 import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
 
-export function ptpTextToJson(ptpContent: string): PromptTemplatePipelineJson {
-    // TODO: This is a cornerstone of .ptp.json file
-    return 
+export function promptTemplatePipelineTextToJson(promptTemplatePipelineContent: string): PromptTemplatePipelineJson {
+    // TODO: This is a cornerstone of .promptTemplatePipeline.json file
+    return;
 }
