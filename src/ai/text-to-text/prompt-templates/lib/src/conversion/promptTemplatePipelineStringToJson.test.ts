@@ -1,10 +1,20 @@
 import { describe, expect, it } from '@jest/globals';
-import simplePromptTemplatePipelineString from '../samples/00-simple.ptp.md';
-import commentPromptTemplatePipelineString from '../samples/05-comment.ptp.md';
-import singlePromptTemplatePipelineString from '../samples/10-single.ptp.md';
-import twoPromptTemplatePipelineString from '../samples/20-two.ptp.md';
-import advancedPromptTemplatePipelineString from '../samples/50-advanced.ptp.md';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
+
+/**
+ * Note: Using here !!!
+ */
+function importInUnitTest(path: string): any {
+    return readFileSync(join(__dirname, path), 'utf-8');
+}
+
+const simplePromptTemplatePipelineString = importInUnitTest('../../samples/00-simple.ptp.md');
+const commentPromptTemplatePipelineString = importInUnitTest('../../samples/05-comment.ptp.md');
+const singlePromptTemplatePipelineString = importInUnitTest('../../samples/10-single.ptp.md');
+const twoPromptTemplatePipelineString = importInUnitTest('../../samples/20-two.ptp.md');
+const advancedPromptTemplatePipelineString = importInUnitTest('../../samples/50-advanced.ptp.md');
 
 describe('promptTemplatePipelineStringToJson', () => {
     it('should parse empty promptTemplatePipeline', () => {
