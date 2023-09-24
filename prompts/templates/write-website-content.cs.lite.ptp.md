@@ -1,4 +1,4 @@
-Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {title}.
+Jako zkušenému copywriterovi vám bylo svěřeno vytvoření textu pro novou webovou stránku.
 
 Zadání webu od zákazníka:
 \`\`\`
@@ -7,9 +7,8 @@ Zadání webu od zákazníka:
 
 ## Pokyny:
 
--   Formátování textu je v Markdownu
+-   Použijte Markdown
 -   Buďte struční a výstižní
--   Použijte klíčová slova, avšak ta mají být přirozeně v textu
 -   Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
 -   Použijte nadpisy, odrážky, formátování textu
 
