@@ -3,10 +3,10 @@ import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import type {
+/* import type {
     UpdateWallpaperContentRequest,
     UpdateWallpaperContentResponse,
-} from '../../pages/api/update-wallpaper-content';
+} from '../../pages/api/update-wallpaper-content'; */
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { focusRef } from '../../utils/focusRef';
@@ -90,10 +90,12 @@ export function CopilotPanel() {
                 })}`,
                 {
                     method: 'POST',
-                    body: JSON.stringify({
-                        prompt,
-                        wallpaper: { content: oldContent },
-                    } satisfies UpdateWallpaperContentRequest),
+                    body: JSON.stringify(
+                        {
+                            prompt,
+                            wallpaper: { content: oldContent },
+                        } /* !!! satisfies UpdateWallpaperContentRequest */,
+                    ),
                     signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
                 },
             );
@@ -105,7 +107,7 @@ export function CopilotPanel() {
 
             const {
                 updatedWallpaper: { content: newContent },
-            } = (await response.json()) as UpdateWallpaperContentResponse;
+            } = (await response.json()) as any; /* !!! as UpdateWallpaperContentResponse */
 
             console.info({ oldContent, newContent });
 
