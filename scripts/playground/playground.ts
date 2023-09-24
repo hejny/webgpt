@@ -6,7 +6,7 @@ dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import { join } from 'path';
-import { writeWebsiteContent } from '../../src/ai/text-to-text/prompt-templates';
+import { writeWebsiteContentCs } from '../../src/ai/text-to-text/prompt-templates';
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
 
 if (process.cwd() !== join(__dirname, '../..')) {
@@ -31,10 +31,14 @@ async function playground() {
 
     // !!! Test
     const entryParams = {
+        title: `Kočky`,
+        assigment: `Web o kočičím hotelu v Praze, otevřeno 24/7`,
+        /*
         title: `Cats`,
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
+        */
     };
-    const resultParams = await writeWebsiteContent(entryParams);
+    const resultParams = await writeWebsiteContentCs(entryParams);
     console.info({ entryParams, resultParams });
 
     console.info(`[ Done 🧸  Playground ]`);

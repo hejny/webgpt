@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
@@ -65,6 +66,17 @@ export class ChatThread {
             // [5]
             throw new Error(`No response message from OpenAPI`);
         }
+
+        /**/
+        console.info(
+            spaceTrim(
+                (block) => `
+                    [🧑] ${block(request.toString())}
+                    [🤖] ${block(response)}
+                `,
+            ),
+        );
+        /**/
 
         // Note: We do not want to wait for the insert to the database
         /* not await */ getSupabaseForServer()

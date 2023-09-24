@@ -3,7 +3,6 @@ import { join } from 'path';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { string_file_path, uuid } from '../../../utils/typeAliases';
 import { ChatThread } from '../ChatThread';
-import { completeWithGpt } from '../completeWithGpt';
 import { PromptTemplatePipeline } from './lib/src/classes/PromptTemplatePipeline';
 import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
 import { createPromptTemplatePipelineExecutor } from './lib/src/execution/createPromptTemplatePipelineExecutor';
@@ -33,7 +32,7 @@ async function importPtp(path: string_file_path): Promise<PromptTemplatePipeline
  * Note: The client is cached, so it's safe to call this function multiple times
  * Note: This function is available ONLY in server/node
  */
-export async function writeWebsiteContent(entryParams: PromptTemplateParams): Promise<PromptTemplateParams> {
+export async function writeWebsiteContentCs(entryParams: PromptTemplateParams): Promise<PromptTemplateParams> {
     if (!writeWebsiteContentExecutor) {
         if (!isRunningInNode()) {
             throw new Error('Prompt template executors are only available on the server');
@@ -43,14 +42,14 @@ export async function writeWebsiteContent(entryParams: PromptTemplateParams): Pr
             promptTemplatePipeline: PromptTemplatePipeline.fromJson(
                 promptTemplatePipelineStringToJson(
                     await importPtp(
-                        '../../../../prompts/templates/write-website-content.en.md.ptp' /* <- TODO: !!! Pass to helper */,
+                        '../../../../prompts/templates/write-website-content.cs.md.ptp' /* <- TODO: !!! Pass to helper */,
                     ),
                 ),
             ),
             tools: {
                 gpt: {
                     createChatThread: async (prompt) => ChatThread.ask(prompt, '!!!!!!!!' as uuid),
-                    completeWithGpt: async (prompt) => completeWithGpt(prompt, '!!!!!!!!' as uuid),
+                    // TODO: [⛱]> completeWithGpt: async (prompt) => completeWithGpt(prompt, '!!!!!!!!' as uuid),
                 },
             },
         });

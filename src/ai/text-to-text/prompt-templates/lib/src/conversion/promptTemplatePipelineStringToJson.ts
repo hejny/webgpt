@@ -29,6 +29,13 @@ export function promptTemplatePipelineStringToJson(
                                 //               <- TODO: Put here line numbers from original promptTemplatePipelineString
                                 .join('\n'),
                         )}
+
+
+                        ${
+                            templateContent.trim() !== ''
+                                ? ''
+                                : 'The section is completely empty (containing only white space and comments)'
+                        }
                     `,
                 ),
             );

@@ -15,7 +15,7 @@ export function createPromptTemplatePipelineExecutor(
     const {
         promptTemplatePipeline,
         tools: {
-            gpt: { createChatThread, completeWithGpt },
+            gpt: { createChatThread, /* TODO: [⛱]> completeWithGpt */ },
         },
     } = options;
 

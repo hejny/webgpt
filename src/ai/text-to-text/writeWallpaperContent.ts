@@ -1,5 +1,5 @@
 import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
-import { writeWebsiteContent } from './prompt-templates';
+import { writeWebsiteContentCs } from './prompt-templates';
 
 export interface WriteWallpaperContentOptions {
     /**
@@ -85,7 +85,9 @@ export interface WriteWallpaperContentOptions {
 export async function writeWallpaperContent(options: WriteWallpaperContentOptions): Promise<string_markdown> {
     const { clientId, title, assigment, addSections, links } = options;
 
-    const { content /* <- TODO: !!! Type strongly */ } = await writeWebsiteContent({
+    // TODO: !!! Switch here language versions
+
+    const { content /* <- TODO: !!! Type strongly */ } = await writeWebsiteContentCs({
         title: title || '',
         assigment: assigment || '',
         // TODO: !!! addSections:addSections || '',
