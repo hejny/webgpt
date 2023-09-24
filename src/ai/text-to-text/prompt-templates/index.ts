@@ -50,8 +50,12 @@ export async function writeWebsiteContentCs(entryParams: PromptTemplateParams): 
             ),
             tools: {
                 gpt: {
-                    createChatThread: async (prompt) => ChatThread.ask(prompt, '!!!!!!!!' as uuid),
-                    // TODO: [⛱]> completeWithGpt: async (prompt) => completeWithGpt(prompt, '!!!!!!!!' as uuid),
+                    createChatThread: async (prompt) =>
+                        ChatThread.ask(
+                            prompt,
+                            'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc */ as uuid,
+                        ),
+                    // TODO: [⛱]> completeWithGpt: async (prompt) => completeWithGpt(prompt, 'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc * / as uuid),
                 },
             },
         });
