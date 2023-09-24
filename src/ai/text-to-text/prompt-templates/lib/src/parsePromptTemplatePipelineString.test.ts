@@ -1,9 +1,9 @@
 import { describe, expect, it } from '@jest/globals';
-import simplePromptTemplatePipelineSource from '../samples/00-simple.ptp.md';
-import commentPromptTemplatePipelineSource from '../samples/05-comment.ptp.md';
-import singlePromptTemplatePipelineSource from '../samples/10-single.ptp.md';
-import twoPromptTemplatePipelineSource from '../samples/20-two.ptp.md';
-import advancedPromptTemplatePipelineSource from '../samples/50-advanced.ptp.md';
+import simplePromptTemplatePipelineString from '../samples/00-simple.ptp.md';
+import commentPromptTemplatePipelineString from '../samples/05-comment.ptp.md';
+import singlePromptTemplatePipelineString from '../samples/10-single.ptp.md';
+import twoPromptTemplatePipelineString from '../samples/20-two.ptp.md';
+import advancedPromptTemplatePipelineString from '../samples/50-advanced.ptp.md';
 import { parsePromptTemplatePipelineString } from './parsePromptTemplatePipelineString';
 
 describe('parsePromptTemplatePipelineString', () => {
@@ -14,38 +14,38 @@ describe('parsePromptTemplatePipelineString', () => {
     });
 
     it('should parse simple promptTemplatePipeline', () => {
-        expect(parsePromptTemplatePipelineString(simplePromptTemplatePipelineSource)).toEqual({
+        expect(parsePromptTemplatePipelineString(simplePromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with comment', () => {
-        expect(parsePromptTemplatePipelineString(commentPromptTemplatePipelineSource)).toEqual({
+        expect(parsePromptTemplatePipelineString(commentPromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with one template', () => {
-        expect(parsePromptTemplatePipelineString(singlePromptTemplatePipelineSource)).toEqual({
+        expect(parsePromptTemplatePipelineString(singlePromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with two templates', () => {
-        expect(parsePromptTemplatePipelineString(twoPromptTemplatePipelineSource)).toEqual({
+        expect(parsePromptTemplatePipelineString(twoPromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with advanced structure', () => {
-        expect(parsePromptTemplatePipelineString(advancedPromptTemplatePipelineSource)).toEqual({
+        expect(parsePromptTemplatePipelineString(advancedPromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     /*
     // TODO: Are there even any syntax errors in .promptTemplatePipeline.md files? (see TODO below)
-    // TODO: Theese crashes are more runtime/logic like errors, not parsing (syntax) ones - check in in the resulting json source OR make separate tests for them
+    // TODO: Theese crashes are more runtime/logic like errors, not parsing (syntax) ones - check in in the resulting json String OR make separate tests for them
     it('should crash on invalid promptTemplatePipeline', () => {
         expect(() =>
             parsePromptTemplatePipelineString(

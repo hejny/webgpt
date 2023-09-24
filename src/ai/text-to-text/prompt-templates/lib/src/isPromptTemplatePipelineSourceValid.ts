@@ -1,8 +1,8 @@
 import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
 
-export function isPromptTemplatePipelineSourceValid(
-    promptTemplatePipelineSource: unknown,
-): promptTemplatePipelineSource is PromptTemplatePipelineJson {
+export function isPromptTemplatePipelineJsonValid(
+    promptTemplatePipelineJson: unknown,
+): promptTemplatePipelineJson is PromptTemplatePipelineJson {
     // TODO: !! Use here some json schema validator
     return true;
 }

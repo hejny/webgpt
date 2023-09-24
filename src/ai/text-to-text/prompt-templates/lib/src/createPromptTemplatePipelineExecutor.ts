@@ -18,7 +18,7 @@ export function createPromptTemplatePipelineExecutor(): PromptTemplatePipelineEx
         } = options;
         let paramsToPass: PromptTemplateParams = params;
 
-        for (const { promptTemplate, resultingParamName } of this.source.promptTemplates) {
+        for (const { promptTemplate, resultingParamName } of promptTemplatePipeline.promptTemplates) {
             const prompt = promptTemplate.makePrompt(paramsToPass);
 
             const chatThread = await createChatThread(prompt);
