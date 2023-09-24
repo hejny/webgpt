@@ -4,41 +4,41 @@ import commentPromptTemplatePipelineString from '../samples/05-comment.ptp.md';
 import singlePromptTemplatePipelineString from '../samples/10-single.ptp.md';
 import twoPromptTemplatePipelineString from '../samples/20-two.ptp.md';
 import advancedPromptTemplatePipelineString from '../samples/50-advanced.ptp.md';
-import { parsePromptTemplatePipelineString } from './parsePromptTemplatePipelineString';
+import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
 
-describe('parsePromptTemplatePipelineString', () => {
+describe('promptTemplatePipelineStringToJson', () => {
     it('should parse empty promptTemplatePipeline', () => {
-        expect(parsePromptTemplatePipelineString(``)).toEqual({
+        expect(promptTemplatePipelineStringToJson(``)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse simple promptTemplatePipeline', () => {
-        expect(parsePromptTemplatePipelineString(simplePromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(simplePromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with comment', () => {
-        expect(parsePromptTemplatePipelineString(commentPromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(commentPromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with one template', () => {
-        expect(parsePromptTemplatePipelineString(singlePromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(singlePromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with two templates', () => {
-        expect(parsePromptTemplatePipelineString(twoPromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(twoPromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
 
     it('should parse promptTemplatePipeline with advanced structure', () => {
-        expect(parsePromptTemplatePipelineString(advancedPromptTemplatePipelineString)).toEqual({
+        expect(promptTemplatePipelineStringToJson(advancedPromptTemplatePipelineString)).toEqual({
             promptTemplates: [],
         });
     });
@@ -48,14 +48,14 @@ describe('parsePromptTemplatePipelineString', () => {
     // TODO: Theese crashes are more runtime/logic like errors, not parsing (syntax) ones - check in in the resulting json String OR make separate tests for them
     it('should crash on invalid promptTemplatePipeline', () => {
         expect(() =>
-            parsePromptTemplatePipelineString(
+            promptTemplatePipelineStringToJson(
                 spaceTrim(`
                     Pure text
                 `),
             ),
         ).toThrowError();
         expect(() =>
-            parsePromptTemplatePipelineString(
+            promptTemplatePipelineStringToJson(
                 spaceTrim(`
                     Just a **markdown** file
                 `),
@@ -63,7 +63,7 @@ describe('parsePromptTemplatePipelineString', () => {
         ).toThrowError();
 
         expect(() =>
-            parsePromptTemplatePipelineString(
+            promptTemplatePipelineStringToJson(
                 spaceTrim(`
                     No
 
@@ -76,7 +76,7 @@ describe('parsePromptTemplatePipelineString', () => {
     });
     it('should crash when using undefined variable name', () => {
         expect(() =>
-            parsePromptTemplatePipelineString(
+            promptTemplatePipelineStringToJson(
                 spaceTrim(`
                     Write random word
 
@@ -91,7 +91,7 @@ describe('parsePromptTemplatePipelineString', () => {
     });
     it('should crash on variable name collision', () => {
         expect(() =>
-            parsePromptTemplatePipelineString(
+            promptTemplatePipelineStringToJson(
                 spaceTrim(`
                     Write synonym of {word}
 
@@ -105,7 +105,7 @@ describe('parsePromptTemplatePipelineString', () => {
 
     it('should crash when using variable before the definition', () => {
         expect(() =>
-            parsePromptTemplatePipelineString(
+            promptTemplatePipelineStringToJson(
                 spaceTrim(`
                     Write sentence with {wordSynonym}
 
