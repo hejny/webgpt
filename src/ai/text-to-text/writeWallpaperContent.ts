@@ -1,12 +1,5 @@
-import spaceTrim from 'spacetrim';
-import { FONTS } from '../../../config';
-import { parseTitleAndTopic } from '../../utils/content/parseTitleAndTopic';
-import { removeQuotes } from '../../utils/content/removeQuotes';
-import { randomItem } from '../../utils/randomItem';
 import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
-import { ChatThread } from './ChatThread';
-import { completeWithGpt } from './completeWithGpt';
-import { createTitlePromptTemplate } from './prompt-templates/createTitlePromptTemplate';
+import { writeWebsiteContent } from './prompt-templates';
 
 export interface WriteWallpaperContentOptions {
     /**
@@ -90,6 +83,19 @@ export interface WriteWallpaperContentOptions {
  * @returns Content of the wallpaper page
  */
 export async function writeWallpaperContent(options: WriteWallpaperContentOptions): Promise<string_markdown> {
+    const { clientId, title, assigment, addSections, links } = options;
+
+    const { content /* <- TODO: !!! Type strongly */ } = await writeWebsiteContent({
+        title: title || '',
+        assigment: assigment || '',
+        // TODO: !!! addSections:addSections || '',
+        // TODO: !!!  links:links || '',
+        /* <- TODO: !!! Allow null in params */
+    });
+
+    return content as string_markdown /* <- TODO: !!! Type strongly */;
+
+    /*
     const { clientId, assigment, addSections, links } = options;
     let { title } = options;
 
@@ -155,9 +161,13 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
         
         `,
     );
+
+    */
 }
 
 /**
+ * TODO: !!! Make this function only as wrapper above writeWebsiteContentEn and writeWebsiteContentCs
+ * TODO: [🧠] Naming writeWallpaperContent vs writeWebsiteContent
  * TODO: !! Put step by step instructions how the content is generated in footer comment
  * TODO: [👸] Use in generate-wallpapers-content and DRY
  * TODO: [👮‍♀️] In this repository is used both 'chatgpt' and 'openai' NPM packages - use just 'openai' in future and in scripts use the common utils

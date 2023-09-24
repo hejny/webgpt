@@ -1,16 +1,22 @@
-import modifyWebsiteContent from '../../../../prompts/templates/modify-website-content.md';
-import writeWebsiteClaim from '../../../../prompts/templates/write-website-claim.md';
-import writeWebsiteContent from '../../../../prompts/templates/write-website-content.md';
-import writeWebsiteFont from '../../../../prompts/templates/write-website-font.md';
-import writeWebsiteTitle from '../../../../prompts/templates/write-website-title.md';
-import { PromptTemplate } from './lib/src/classes/PromptTemplate';
+import writeWebsiteContentPtp from '../../../../prompts/templates/write-website-content.ptp.md';
+import { uuid } from '../../../utils/typeAliases';
+import { ChatThread } from '../ChatThread';
+import { completeWithGpt } from '../completeWithGpt';
+import { PromptTemplatePipeline } from './lib/src/classes/PromptTemplatePipeline';
+import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
+import { createPromptTemplatePipelineExecutor } from './lib/src/execution/createPromptTemplatePipelineExecutor';
 
-export const MODIFY_WEBSITE_CONTENT_TEMPLATE = new PromptTemplate<'CHAT'>(modifyWebsiteContent);
-export const WRITE_WEBSITE_TITLE_TEMPLATE = new PromptTemplate<'CHAT'>(writeWebsiteTitle);
-export const WRITE_WEBSITE_CLAIM_TEMPLATE = new PromptTemplate<'CHAT'>(writeWebsiteClaim);
-export const WRITE_WEBSITE_CONTENT_TEMPLATE = new PromptTemplate<'CHAT'>(writeWebsiteContent);
-export const WRITE_WEBSITE_FONT_TEMPLATE = new PromptTemplate<'CHAT'>(writeWebsiteFont);
+export const writeWebsiteContent = createPromptTemplatePipelineExecutor({
+    promptTemplatePipeline: PromptTemplatePipeline.fromJson(promptTemplatePipelineStringToJson(writeWebsiteContentPtp)),
+    tools: {
+        gpt: {
+            createChatThread: async (prompt) => ChatThread.ask(prompt, '!!!!!!!!' as uuid),
+            completeWithGpt: async (prompt) => completeWithGpt(prompt, '!!!!!!!!' as uuid),
+        },
+    },
+});
 
 /**
+ * TODO: !!! Make helper
  * TODO: This should be auto-generated from the /prompts/templates/ folder
  */

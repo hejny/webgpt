@@ -4,7 +4,7 @@ import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplat
 import { PromptTemplate } from './PromptTemplate';
 
 export class PromptTemplatePipeline {
-    public static createFromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {
+    public static fromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {
         if (!isPromptTemplatePipelineJsonValid(source)) {
             // TODO: Better error message - maybe even error from isPromptTemplatePipelineSourceValid -> validatePromptTemplatePipelineSource
             throw new Error('Invalid propmt template pipeline source');
