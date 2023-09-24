@@ -88,7 +88,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
     // TODO: !!! Switch here language versions
 
-    const { enhancedTitle, claim, contentBody /* <- TODO: !!! Type strongly */ } = await writeWebsiteContentCs({
+    const { contentBody /* <- TODO: !!! Type strongly */ } = await writeWebsiteContentCs({
         title: title || '',
         assigment: assigment || '',
         // TODO: !!! addSections:addSections || '',
@@ -99,9 +99,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
     const content = spaceTrim(
         // TODO: !!! Allow to bundle combinated vars directly in PTPs
         (block) => `
-            # ${block(enhancedTitle!)}
-
-            > ${block(claim!)}
+            # ${title}
 
             ${block(contentBody!)}
     `,
