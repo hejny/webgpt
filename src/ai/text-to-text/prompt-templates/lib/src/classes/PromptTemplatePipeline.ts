@@ -9,8 +9,8 @@ export class PromptTemplatePipeline {
             throw new Error('Invalid propmt template pipeline source');
         }
         return new PromptTemplatePipeline(
-            source.promptTemplates.map(({ type, promptTemplate, resultingParamName }) => ({
-                promptTemplate: new PromptTemplate(promptTemplate, type),
+            source.promptTemplates.map(({ modelRequirements, promptTemplate, resultingParamName }) => ({
+                promptTemplate: new PromptTemplate(promptTemplate, modelRequirements),
                 resultingParamName,
             })),
         );

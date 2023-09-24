@@ -1,5 +1,5 @@
 import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
-import { PromptingVariant } from './PromptingVariant';
+import { ModelRequirements } from './ModelRequirements';
 
 /**
  *
@@ -12,7 +12,7 @@ import { PromptingVariant } from './PromptingVariant';
  */
 export interface PromptTemplatePipelineJson {
     promptTemplates: Array<{
-        type: PromptingVariant;
+        modelRequirements: ModelRequirements;
         promptTemplate: string_prompt & string_template /* <- TODO: Just one helper type */;
         resultingParamName: string;
     }>;

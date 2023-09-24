@@ -1,8 +1,8 @@
 import { string_prompt } from '../../../../../../utils/typeAliases';
-import { PromptingVariant } from '../types/PromptingVariant';
+import { ModelRequirements, ModelVariant } from '../types/ModelRequirements';
 
-export class Prompt<TPromptingVariant extends PromptingVariant> {
-    public constructor(public readonly prompt: string_prompt, public readonly type: TPromptingVariant) {}
+export class Prompt<TPromptingVariant extends ModelVariant> {
+    public constructor(public readonly prompt: string_prompt, public readonly modelRequirements: ModelRequirements) {}
 }
 
 /**

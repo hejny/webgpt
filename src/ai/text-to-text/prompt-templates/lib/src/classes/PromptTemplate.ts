@@ -1,12 +1,12 @@
 import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
-import { PromptingVariant } from '../types/PromptingVariant';
+import { ModelRequirements, ModelVariant } from '../types/ModelRequirements';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { Prompt } from './Prompt';
 
-export class PromptTemplate<TPromptingVariant extends PromptingVariant> {
+export class PromptTemplate<TPromptingVariant extends ModelVariant> {
     public constructor(
         private readonly source: string_prompt & string_template /* <- TODO: Just one helper type */,
-        private readonly type: TPromptingVariant,
+        private readonly modelRequirements: ModelRequirements,
     ) {}
 
     makePrompt(params: PromptTemplateParams): Prompt<TPromptingVariant> {
@@ -18,10 +18,6 @@ export class PromptTemplate<TPromptingVariant extends PromptingVariant> {
         return prompt;
         */
 
-        return new Prompt(prompt, this.type);
+        return new Prompt(prompt, this.modelRequirements);
     }
 }
-
-/**
- * TODO: Maybe DO interface from this
- */
