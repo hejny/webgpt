@@ -48,7 +48,7 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 -   [ ] Everything not needed should be private or not exported
 -   [ ][➿] Refactor circular dependencies
 -   [ ] Importing subtemplates
--   [ ] xxx
+-   [ ] Use spaceTrim more effectively
 -   [ ] xxx
 -   [ ] xxx
 -   [ ] xxx

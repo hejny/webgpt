@@ -5,24 +5,53 @@ import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson'
 export function promptTemplatePipelineStringToJson(promptTemplatePipelineString: string): PromptTemplatePipelineJson {
     const promptTemplates: PromptTemplatePipelineJson['promptTemplates'] = [];
 
-    for (let templateContent of promptTemplatePipelineString.split(/^(---)+$/gm)) {
-        templateContent = removeContentComments(templateContent);
-        templateContent = spaceTrim(templateContent);
+    promptTemplatePipelineString = removeContentComments(promptTemplatePipelineString);
 
+    for (let templateContent of promptTemplatePipelineString.split(/^\-{3,}?\s*$/gm)) {
+        templateContent = spaceTrim(templateContent);
         const lines = templateContent.split('\n');
 
         if (!(lines.length >= 2)) {
             throw new Error(
-                'Invalid template - each section must have at least 2 lines (template and resulting variable name)',
+                spaceTrim(
+                    (block) => `
+                        Invalid template - each section must have at least 2 lines
+                        (template + resulting variable name)
+                        
+                        Invalid section:
+                        ${block(
+                            templateContent
+                                .split('\n')
+                                .map((line) => `> ${line}`)
+                                //               <- TODO: Put here line numbers from original promptTemplatePipelineString
+                                .join('\n'),
+                        )}
+                    `,
+                ),
             );
         }
 
         const lastLine = lines.pop()!;
 
-        const match = /^->\s*{(?<resultingParamName>[a-z0-9_])}\s*/i.exec(lastLine);
+        const match = /^\-\>\s*\{(?<resultingParamName>[a-z0-9_]+)\}\s*$/im.exec(lastLine);
 
         if (!match || match.groups === undefined || match.groups.resultingParamName === undefined) {
-            throw new Error('Invalid template - each section must end with "-> {...}"');
+            throw new Error(
+                spaceTrim(
+                    (block) => `
+                        Invalid template - each section must end with "-> {...}"
+                        
+                        Invalid section:
+                        ${block(
+                            templateContent
+                                .split('\n')
+                                .map((line) => `> ${line}`)
+                                //               <- TODO: Put here line numbers from original promptTemplatePipelineString
+                                .join('\n'),
+                        )}
+                    `,
+                ),
+            );
         }
 
         const resultingParamName = match.groups.resultingParamName;
@@ -32,10 +61,15 @@ export function promptTemplatePipelineStringToJson(promptTemplatePipelineString:
                 variant: 'CHAT',
                 //             <- TODO: Unhardcode
             },
-            promptTemplate: lines.join('\n'),
+            promptTemplate: spaceTrim(lines.join('\n')),
             resultingParamName,
         });
     }
 
     return { promptTemplates };
 }
+
+/**
+ * TODO: Report here line/column of error
+ * TODO: Use spaceTrim more effectively
+ */

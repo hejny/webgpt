@@ -19,5 +19,11 @@ export interface PromptTemplatePipelineJson {
 }
 
 /**
+ * TODO: [🧠] Best format of this code?
+ *             There must be possible to make
+ *             - Branching
+ *             - Loops
+ *             - Paralelization
+ *             - ...and more
  * TODO: This is a cornerstone of .promptTemplatePipeline.json file
  */
