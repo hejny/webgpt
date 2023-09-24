@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
 import { writeWebsiteContentCs } from './prompt-templates';
 
@@ -87,13 +88,24 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
     // TODO: !!! Switch here language versions
 
-    const { content /* <- TODO: !!! Type strongly */ } = await writeWebsiteContentCs({
+    const { enhancedTitle, claim, contentBody /* <- TODO: !!! Type strongly */ } = await writeWebsiteContentCs({
         title: title || '',
         assigment: assigment || '',
         // TODO: !!! addSections:addSections || '',
         // TODO: !!!  links:links || '',
         /* <- TODO: !!! Allow null in params */
     });
+
+    const content = spaceTrim(
+        // TODO: !!! Allow to bundle combinated vars directly in PTPs
+        (block) => `
+            # ${block(enhancedTitle!)}
+
+            > ${block(claim!)}
+
+            ${block(contentBody!)}
+    `,
+    );
 
     return content as string_markdown /* <- TODO: !!! Type strongly */;
 

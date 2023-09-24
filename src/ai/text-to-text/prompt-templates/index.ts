@@ -1,14 +1,12 @@
-import { readFile } from 'fs/promises';
-import { join } from 'path';
+import writeWebsiteContentExecutorPtp from '../../../../prompts/templates/write-website-content.cs.ptp.md';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
-import { string_file_path, uuid } from '../../../utils/typeAliases';
+import { uuid } from '../../../utils/typeAliases';
 import { ChatThread } from '../ChatThread';
 import { PromptTemplatePipeline } from './lib/src/classes/PromptTemplatePipeline';
 import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
 import { createPromptTemplatePipelineExecutor } from './lib/src/execution/createPromptTemplatePipelineExecutor';
 import { PromptTemplateParams } from './lib/src/types/PromptTemplateParams';
 import { PromptTemplatePipelineExecutor } from './lib/src/types/PromptTemplatePipelineExecutor';
-import { PromptTemplatePipelineString } from './lib/src/types/PromptTemplatePipelineString';
 
 /**
  * @@@
@@ -21,10 +19,11 @@ let writeWebsiteContentExecutor: PromptTemplatePipelineExecutor | null;
  * @@@
  *
  * @private
- */
+ * /
 async function importPtp(path: string_file_path): Promise<PromptTemplatePipelineString> {
     return (await readFile(join(__dirname, path), 'utf-8')) as PromptTemplatePipelineString;
 }
+*/
 
 /**
  * !!!
@@ -41,9 +40,12 @@ export async function writeWebsiteContentCs(entryParams: PromptTemplateParams): 
         writeWebsiteContentExecutor = createPromptTemplatePipelineExecutor({
             promptTemplatePipeline: PromptTemplatePipeline.fromJson(
                 promptTemplatePipelineStringToJson(
+                    writeWebsiteContentExecutorPtp,
+                    /*
                     await importPtp(
-                        '../../../../prompts/templates/write-website-content.cs.md.ptp' /* <- TODO: !!! Pass to helper */,
+                        '../../../../prompts/templates/write-website-content.cs.ptp.md' /* <- TODO: !!! Pass to helper * /,
                     ),
+                    */
                 ),
             ),
             tools: {
