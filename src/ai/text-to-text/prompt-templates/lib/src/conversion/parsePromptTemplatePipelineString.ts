@@ -1,6 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { removeContentComments } from '../../../../../utils/content/removeContentComments';
-import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJson } from './types/PromptTemplatePipelineJson';
 
 export function parsePromptTemplatePipelineString(promptTemplatePipelineContent: string): PromptTemplatePipelineJson {
     const promptTemplates: PromptTemplatePipelineJson['promptTemplates'] = [];

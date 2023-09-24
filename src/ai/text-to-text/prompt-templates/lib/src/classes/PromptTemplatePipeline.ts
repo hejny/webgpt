@@ -1,18 +1,6 @@
-import { ChatThread } from '../../../ChatThread';
-import { ICompleteWithGptResult } from '../../../completeWithGpt';
-import { isPromptTemplatePipelineJsonValid } from './isPromptTemplatePipelineSourceValid';
-import { Prompt } from './Prompt';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
+import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplatePipelineSourceValid';
 import { PromptTemplate } from './PromptTemplate';
-import { PromptTemplateParams } from './PromptTemplateParams';
-import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
-
-interface PromptTemplatePipelineRunOptions {
-    params: PromptTemplateParams;
-    gpt: {
-        createChatThread(prompt: Prompt<'CHAT'>): Promise<ChatThread>;
-        completeWithGpt(prompt: Prompt<'COMPLETION'>): Promise<ICompleteWithGptResult>;
-    };
-}
 
 export class PromptTemplatePipeline {
     public static createFromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {

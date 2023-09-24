@@ -1,14 +1,18 @@
-import { PromptingExecutionTools } from './PromptingExecutionTools';
-import { PromptTemplateParams } from './PromptTemplateParams';
-import { PromptTemplatePipelineExecutor } from './PromptTemplatePipelineExecutor';
-import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
+import { PromptingExecutionTools } from '../types/PromptingExecutionTools';
+import { PromptTemplateParams } from '../types/PromptTemplateParams';
+import { PromptTemplatePipelineExecutor } from '../types/PromptTemplatePipelineExecutor';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 
 interface CreatePromptTemplatePipelineExecutorOptions {
     promptTemplatePipeline: PromptTemplatePipelineJson;
     tools: PromptingExecutionTools;
 }
 
-export function createPromptTemplatePipelineExecutor(): PromptTemplatePipelineExecutor {
+export function createPromptTemplatePipelineExecutor(
+    options: CreatePromptTemplatePipelineExecutorOptions,
+): PromptTemplatePipelineExecutor {
+    const { promptTemplatePipeline, tools } = options;
+
     return async () => {
         /*
         
@@ -37,4 +41,5 @@ export function createPromptTemplatePipelineExecutor(): PromptTemplatePipelineEx
 
 /**
  * TODO: !!! Implement
+ * Note: CreatePromptTemplatePipelineExecutorOptions are just connected to PromptTemplatePipelineExecutor so do not extract to types folder
  */

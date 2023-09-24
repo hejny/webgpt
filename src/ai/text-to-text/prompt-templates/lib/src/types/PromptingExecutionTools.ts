@@ -1,6 +1,6 @@
-import { ChatThread } from '../../../ChatThread';
-import { ICompleteWithGptResult } from '../../../completeWithGpt';
-import { Prompt } from './Prompt';
+import { ChatThread } from '../../../../ChatThread';
+import { ICompleteWithGptResult } from '../../../../completeWithGpt';
+import { Prompt } from '../classes/Prompt';
 
 export interface PromptingExecutionTools {
     gpt: {

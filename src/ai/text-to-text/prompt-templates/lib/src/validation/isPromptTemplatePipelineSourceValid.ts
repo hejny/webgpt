@@ -1,4 +1,4 @@
-import { PromptTemplatePipelineJson } from './PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 
 export function isPromptTemplatePipelineJsonValid(
     promptTemplatePipelineJson: unknown,

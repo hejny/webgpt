@@ -1,7 +1,7 @@
-import { string_prompt, string_template } from '../../../../../utils/typeAliases';
+import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
+import { PromptingVariant } from '../types/PromptingVariant';
+import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { Prompt } from './Prompt';
-import { PromptingVariant } from './PromptingVariant';
-import { PromptTemplateParams } from './PromptTemplateParams';
 
 export class PromptTemplate<TPromptingVariant extends PromptingVariant> {
     public constructor(

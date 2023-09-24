@@ -1,7 +1,7 @@
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
-import { Prompt } from './prompt-templates/lib/src/Prompt';
+import { Prompt } from './prompt-templates/lib/src/classes/Prompt';
 
 export interface ICompleteWithGptResult {
     response: string;

@@ -1,8 +1,8 @@
 import spaceTrim from 'spacetrim';
-import { string_prompt } from '../../../../../utils/typeAliases';
-import { PromptingVariant } from './PromptingVariant';
+import { string_prompt } from '../../../../../../utils/typeAliases';
+import { PromptingVariant } from '../types/PromptingVariant';
+import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PromptTemplate } from './PromptTemplate';
-import { PromptTemplateParams } from './PromptTemplateParams';
 
 export class Prompt<TPromptingVariant extends PromptingVariant> {
     public constructor(

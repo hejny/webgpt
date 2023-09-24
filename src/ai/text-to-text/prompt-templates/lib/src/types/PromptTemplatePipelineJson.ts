@@ -1,4 +1,4 @@
-import { string_prompt, string_template } from '../../../../../utils/typeAliases';
+import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
 
 /**
  *
