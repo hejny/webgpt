@@ -9,7 +9,6 @@ Zadání webu od zákazníka:
 
 -   Použijte Markdown
 -   Buďte struční a výstižní
--   Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
 -   Použijte nadpisy, odrážky, formátování textu
 
 -> {contentBody}
