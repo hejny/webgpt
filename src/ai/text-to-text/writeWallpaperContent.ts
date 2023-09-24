@@ -180,6 +180,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 }
 
 /**
+ * TODO: !!! Allow to be controlled by frontend - DO not have writeWallpaperContent OR write-wallpaper-content.ts BUT universal run-ptp-frame
  * TODO: !!! Make this function only as wrapper above writeWebsiteContentEn and writeWebsiteContentCs
  * TODO: [🧠] Naming writeWallpaperContent vs writeWebsiteContent
  * TODO: !! Put step by step instructions how the content is generated in footer comment

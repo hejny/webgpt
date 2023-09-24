@@ -47,6 +47,7 @@ export default async function writeWallpaperContentHandler(
 }
 
 /**
+ * TODO: !!! Allow to be controlled by frontend - DO not have writeWallpaperContent OR write-wallpaper-content.ts BUT universal run-ptp-frame
  * TODO: [🃏] Pass here some security token to prevent DDoS
  * TODO: [😜] CDN.isValidUrl(...)
  * TODO: [🙄] Figure out how to rename-reverse in fileview write-wallpaper-content.ts with write-wallpaper-prompt.ts
