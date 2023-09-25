@@ -13,20 +13,20 @@ export class ChatThread {
     /**
      * Starts a new ChatThread conversation
      *
-     * @param request text to send to the OpenAI API
+     * @param prompt text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public static async ask(request: Prompt, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
-        return /* not await */ ChatThread.create(null, request, clientId);
+    public static async ask(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
+        return /* not await */ ChatThread.create(null, prompt, clientId);
     }
 
     /**
-     * Makes a request to the OpenAI API and returns a response wrapped in ChatThread
+     * Makes a prompt to the OpenAI API and returns a response wrapped in ChatThread
      * @private Utility method within the class ChatThread
      */
     private static async create(
         parentChatThread: null | ChatThread,
-        request: Prompt,
+        prompt: Prompt,
         clientId: uuid /* <-[🌺] */,
     ): Promise<ChatThread> {
         const mark = `ask-gpt-${parentChatThread ? parentChatThread.chatSize : 1}`;
@@ -40,7 +40,7 @@ export class ChatThread {
             messages: [
                 {
                     role: 'user',
-                    content: request.toString(),
+                    content: prompt.toString(),
                 },
             ],
         });
@@ -68,11 +68,19 @@ export class ChatThread {
         }
 
         /**/
+        // TODO: [🧠] Make config value DEBUG_LOG_GPT
         console.info(
             spaceTrim(
                 (block) => `
-                    [🧑] ${block(request.toString())}
+                    ==============================
+                    [🧑] ${block(prompt.toString())}
                     [🤖] ${block(response)}
+                    ---
+                    Executed in ${block(
+                        performance.measure(mark, `${mark}-start`, `${mark}-end`).duration.toString(),
+                    )}ms 
+                    ${completion.usage?.total_tokens} tokens used
+                    ==============================
                 `,
             ),
         );
@@ -95,7 +103,7 @@ export class ChatThread {
                     modelSettings,
 
                     // Prompt
-                    prompt: request,
+                    prompt: prompt,
                     systemMessage: null,
                     // TODO: !!previousExternalId: parentChatThread ? parentChatThread. : null,
                     promptAt,
@@ -108,6 +116,7 @@ export class ChatThread {
 
                     // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
                     // <- TODO: [🎠] There should be a prompt template+template version+template language version (to A/B test performance of prompts)
+                    // <- TODO: Use here more precise performance measure
                 } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
             )
             .then((insertResult) => {
@@ -115,25 +124,25 @@ export class ChatThread {
                 // console.log('ChatThread', { insertResult });
             });
 
-        return new ChatThread(clientId, parentChatThread, completion.model as string_model_name, request, response);
+        return new ChatThread(clientId, parentChatThread, completion.model as string_model_name, prompt, response);
     }
 
     private constructor(
         public readonly clientId: uuid /* <-[🌺] */,
         public readonly parent: null | ChatThread,
         public readonly model: string_model_name,
-        public readonly request: Prompt,
+        public readonly prompt: Prompt,
         public readonly response: string,
     ) {}
 
     /**
      * Continues in ChatThread conversation
      *
-     * @param request text to send to the OpenAI API
+     * @param prompt text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public async ask(request: Prompt): Promise<ChatThread> {
-        return /* not await */ ChatThread.create(this, request, this.clientId);
+    public async ask(prompt: Prompt): Promise<ChatThread> {
+        return /* not await */ ChatThread.create(this, prompt, this.clientId);
     }
 
     public get chatSize(): number {
@@ -145,6 +154,6 @@ export class ChatThread {
  * TODO: [✔] Check ModelRequirements here
  * TODO: [🧠] Wording: response or answer?
  * TODO: [🚞] DRY ChatThread+completeWithGpt
- * TODO: [5] Log also failed requests as in completeWithGpt
+ * TODO: [5] Log also failed prompt as in completeWithGpt
  * TODO: Make IAskOptions
  */

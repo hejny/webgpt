@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
@@ -70,6 +71,7 @@ export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺]
             return insertSelectResult.data[0].id;
         });
 
+    // TODO: Make here dynamic ${mark} same as in ChatThread
     performance.mark('complete-gpt-start');
     const completion = await getOpenaiForServer().completions.create({
         ...modelSettings,
@@ -107,6 +109,8 @@ export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺]
                         fullCompletion: completion,
                         answerAt,
                     } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
+
+                    // <- TODO: Use here more precise performance measure
                 )
                 .eq('id', promptId);
         })
@@ -114,6 +118,25 @@ export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺]
             // TODO: !! Util isUpdateSuccessfull
             // console.log('completeWithGpt', { updateResult });
         });
+
+    /**/
+    // TODO: [🧠] Make config value DEBUG_LOG_GPT
+    console.info(
+        spaceTrim(
+            (block) => `
+                ==============================
+                [🧑] ${block(prompt.toString())}
+                [🤖] ${block(response)}
+                ---
+                Executed in ${block(
+                    performance.measure('complete-gpt', 'complete-gpt-start', 'complete-gpt-end').duration.toString(),
+                )}ms 
+                ${completion.usage?.total_tokens} tokens used
+                ==============================
+            `,
+        ),
+    );
+    /**/
 
     return {
         response,
