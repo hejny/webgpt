@@ -1,3 +1,14 @@
+<!--
+TODO: [🚲]
+    >
+    > ## Model Requirements
+    >
+    > -   Use completion
+    >
+-->
+
+## Template
+
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření textu pro novou webovou stránku.
 
 Zadání webu od zákazníka:
@@ -10,5 +21,7 @@ Zadání webu od zákazníka:
 -   Použijte Markdown
 -   Buďte struční a výstižní
 -   Použijte nadpisy, odrážky, formátování textu
+
+## Obsah:
 
 -> {contentBody}

@@ -14,6 +14,8 @@ export function promptTemplatePipelineStringToJson(
         templateContent = spaceTrim(templateContent);
         const lines = templateContent.split('\n');
 
+        // TODO: [🚲] !!! Parse Model requirements
+
         if (!(lines.length >= 2)) {
             throw new Error(
                 spaceTrim(
@@ -68,8 +70,8 @@ export function promptTemplatePipelineStringToJson(
 
         promptTemplates.push({
             modelRequirements: {
-                variant: 'CHAT',
-                //             <- TODO: Unhardcode
+                variant: 'COMPLETION',
+                //             <- TODO: [🚲] !!! Unhardcode
             },
             promptTemplate: spaceTrim(lines.join('\n')),
             resultingParamName,
