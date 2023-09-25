@@ -1,5 +1,8 @@
 import { PromptTemplateParams } from './PromptTemplateParams';
 
-export interface PromptTemplatePipelineExecutor {
-    (entryParams: PromptTemplateParams): Promise<PromptTemplateParams>;
+export interface PromptTemplatePipelineExecutor<
+    TEntryParams extends PromptTemplateParams,
+    TResultParams extends PromptTemplateParams,
+> {
+    (entryParams: TEntryParams): Promise<TResultParams>;
 }

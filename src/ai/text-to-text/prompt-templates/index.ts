@@ -5,15 +5,25 @@ import { ChatThread } from '../ChatThread';
 import { PromptTemplatePipeline } from './lib/src/classes/PromptTemplatePipeline';
 import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
 import { createPromptTemplatePipelineExecutor } from './lib/src/execution/createPromptTemplatePipelineExecutor';
-import { PromptTemplateParams } from './lib/src/types/PromptTemplateParams';
 import { PromptTemplatePipelineExecutor } from './lib/src/types/PromptTemplatePipelineExecutor';
+
+interface writeWebsiteContentCsLiteEntryParams {
+    assigment: string;
+}
+
+interface writeWebsiteContentCsLiteResultParams {
+    contentBody: string;
+}
 
 /**
  * @@@
  *
  * @private
  */
-let writeWebsiteContentExecutor: PromptTemplatePipelineExecutor | null;
+let writeWebsiteContentExecutor: PromptTemplatePipelineExecutor<
+    writeWebsiteContentCsLiteEntryParams,
+    writeWebsiteContentCsLiteResultParams
+> | null;
 
 /**
  * @@@
@@ -31,7 +41,9 @@ async function importPtp(path: string_file_path): Promise<PromptTemplatePipeline
  * Note: The client is cached, so it's safe to call this function multiple times
  * Note: This function is available ONLY in server/node
  */
-export async function writeWebsiteContentCs(entryParams: PromptTemplateParams): Promise<PromptTemplateParams> {
+export async function writeWebsiteContentCs(
+    entryParams: writeWebsiteContentCsLiteEntryParams,
+): Promise<writeWebsiteContentCsLiteResultParams> {
     if (!writeWebsiteContentExecutor) {
         if (!isRunningInNode()) {
             throw new Error('Prompt template executors are only available on the server');

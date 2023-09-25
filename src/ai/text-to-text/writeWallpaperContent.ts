@@ -88,8 +88,8 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
     // TODO: !!! Switch here language versions
 
-    const { contentBody /* <- TODO: !!! Type strongly */ } = await writeWebsiteContentCs({
-        title: title || '',
+    const { contentBody } = await writeWebsiteContentCs({
+        // TODO: title: title || '',
         assigment: assigment || '',
         // TODO: !!! addSections:addSections || '',
         // TODO: !!!  links:links || '',

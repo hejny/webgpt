@@ -16,7 +16,7 @@ export class ChatThread {
      * @param request text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public static async ask(request: Prompt<'CHAT'>, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
+    public static async ask(request: Prompt, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
         return /* not await */ ChatThread.create(null, request, clientId);
     }
 
@@ -26,7 +26,7 @@ export class ChatThread {
      */
     private static async create(
         parentChatThread: null | ChatThread,
-        request: Prompt<'CHAT'>,
+        request: Prompt,
         clientId: uuid /* <-[🌺] */,
     ): Promise<ChatThread> {
         const mark = `ask-gpt-${parentChatThread ? parentChatThread.chatSize : 1}`;
@@ -122,7 +122,7 @@ export class ChatThread {
         public readonly clientId: uuid /* <-[🌺] */,
         public readonly parent: null | ChatThread,
         public readonly model: string_model_name,
-        public readonly request: Prompt<'CHAT'>,
+        public readonly request: Prompt,
         public readonly response: string,
     ) {}
 
@@ -132,7 +132,7 @@ export class ChatThread {
      * @param request text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public async ask(request: Prompt<'CHAT'>): Promise<ChatThread> {
+    public async ask(request: Prompt): Promise<ChatThread> {
         return /* not await */ ChatThread.create(this, request, this.clientId);
     }
 
@@ -142,6 +142,7 @@ export class ChatThread {
 }
 
 /**
+ * TODO: [✔] Check ModelRequirements here
  * TODO: [🧠] Wording: response or answer?
  * TODO: [🚞] DRY ChatThread+completeWithGpt
  * TODO: [5] Log also failed requests as in completeWithGpt

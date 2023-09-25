@@ -1,10 +1,16 @@
 import { string_attribute } from '../../../../../../utils/typeAliases';
+import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplatePipelineSourceValid';
 import { PromptTemplate } from './PromptTemplate';
 
-export class PromptTemplatePipeline {
-    public static fromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {
+export class PromptTemplatePipeline<
+    TEntryParams extends PromptTemplateParams,
+    TResultParams extends PromptTemplateParams,
+> {
+    public static fromJson<TEntryParams extends PromptTemplateParams, TResultParams extends PromptTemplateParams>(
+        source: PromptTemplatePipelineJson,
+    ): PromptTemplatePipeline<TEntryParams, TResultParams> {
         if (!isPromptTemplatePipelineJsonValid(source)) {
             // TODO: Better error message - maybe even error from isPromptTemplatePipelineSourceValid -> validatePromptTemplatePipelineSource
             throw new Error('Invalid propmt template pipeline source');
@@ -19,7 +25,10 @@ export class PromptTemplatePipeline {
 
     private constructor(
         private readonly promptTemplates: Array<{
-            promptTemplate: PromptTemplate<any /* <- TODO: Get rid of any */>;
+            //                                <- TODO: Constrain this types such as it must contain at least one element
+            //                                                                   and first one should have TEntryParams
+            //                                                                   and last one should have TResultParams
+            promptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>;
             resultingParamName: string;
         }>,
     ) {
@@ -28,12 +37,12 @@ export class PromptTemplatePipeline {
         }
     }
 
-    public get entryPromptTemplate(): PromptTemplate<any /* <- TODO: Get rid of any */> {
+    public get entryPromptTemplate(): PromptTemplate<TEntryParams, PromptTemplateParams> {
         return this.promptTemplates[0]!.promptTemplate;
     }
 
     public getResultingParamName(
-        curentPromptTemplate: PromptTemplate<any /* <- TODO: Get rid of any */>,
+        curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
     ): string_attribute {
         const index = this.promptTemplates.findIndex(({ promptTemplate }) => promptTemplate === curentPromptTemplate);
         if (index === -1) {
@@ -44,8 +53,8 @@ export class PromptTemplatePipeline {
     }
 
     public getFollowingPromptTemplate(
-        curentPromptTemplate: PromptTemplate<any /* <- TODO: Get rid of any */>,
-    ): PromptTemplate<any /* <- TODO: Get rid of any */> | null {
+        curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
+    ): PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null {
         const index = this.promptTemplates.findIndex(({ promptTemplate }) => promptTemplate === curentPromptTemplate);
         if (index === -1) {
             throw new Error(`Prompt template is not in this pipeline`);
@@ -62,4 +71,7 @@ export class PromptTemplatePipeline {
 /**
  * TODO: !!! Add generic type for entry and result params
  * TODO: Can be Array elegantly typed such as it must have at least one element?
+ * TODO: [🧠] Each PromptTemplatePipeline should have its unique hash to be able to compare them and execute on server ONLY the desired ones
+ * TODO: [🧠] Some method to compare PromptTemplatePipeline, PromptTemplate, Prompt, PromptExecution
+ * TODO: !!! Rename supabase table Prompt to PromptExecution to be more clear
  */

@@ -1,7 +1,7 @@
 import { string_prompt } from '../../../../../../utils/typeAliases';
-import { ModelRequirements, ModelVariant } from '../types/ModelRequirements';
+import { ModelRequirements } from '../types/ModelRequirements';
 
-export class Prompt<TPromptingVariant extends ModelVariant> {
+export class Prompt {
     public constructor(public readonly prompt: string_prompt, public readonly modelRequirements: ModelRequirements) {}
 
     public toString(): string_prompt {
@@ -10,6 +10,6 @@ export class Prompt<TPromptingVariant extends ModelVariant> {
 }
 
 /**
- * TODO: [🧠] !! Probbably remove TPromptingVariant and check ModelRequirements only in runtime
+ * TODO: [✔] Check ModelRequirements in runtime
  * TODO: Maybe DO interface from this
  */

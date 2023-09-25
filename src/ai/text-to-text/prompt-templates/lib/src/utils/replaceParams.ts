@@ -1,5 +1,4 @@
 import { string_template } from '../../../../../../utils/typeAliases';
-import { PromptTemplateParams } from '../types/PromptTemplateParams';
 
 /**
  * Replaces params in template with values from params object
@@ -9,9 +8,12 @@ import { PromptTemplateParams } from '../types/PromptTemplateParams';
  * @returns the template with replaced params
  */
 
-export function replaceParams(template: string_template, params: PromptTemplateParams): string {
+export function replaceParams(template: string_template, params: {}): string {
     let result = '';
     let openedParamName: string | null = null;
+
+    // Note: We dont want params with index signature here because it wont be compatible with PromptTemplateParams which has its own reasons to not have index signature
+    const paramsChecked = params as Record<string, string>; /* <- TODO: Make here some util validateTemplateParams */
 
     for (const char of template.split('')) {
         if (char === '{') {
@@ -23,10 +25,10 @@ export function replaceParams(template: string_template, params: PromptTemplateP
             if (openedParamName === null) {
                 throw new Error(`Param is not opened`);
             }
-            if (params[openedParamName] === undefined) {
+            if (paramsChecked[openedParamName] === undefined) {
                 throw new Error(`Param "${openedParamName}" is not defined`);
             }
-            result += params[openedParamName];
+            result += paramsChecked[openedParamName];
             openedParamName = null;
         } else if (openedParamName === null) {
             result += char;

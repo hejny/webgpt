@@ -3,7 +3,7 @@ import { Prompt } from '../classes/Prompt';
 
 export interface PromptingExecutionTools {
     gpt: {
-        createChatThread(prompt: Prompt<'CHAT'>): Promise<ChatThread>;
+        createChatThread(prompt: Prompt): Promise<ChatThread>;
         // TODO: [⛱]> completeWithGpt(prompt: Prompt<'COMPLETION'>): Promise<ICompleteWithGptResult>;
     };
 }

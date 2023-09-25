@@ -13,10 +13,7 @@ export interface ICompleteWithGptResult {
  *
  * Note: This function is aviable only on the server
  */
-export async function completeWithGpt(
-    prompt: Prompt<'COMPLETION'>,
-    clientId: uuid /* <-[🌺] */,
-): Promise<ICompleteWithGptResult> {
+export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<ICompleteWithGptResult> {
     const model = 'text-davinci-003';
     const modelSettings = {
         model,
@@ -125,6 +122,7 @@ export async function completeWithGpt(
 }
 
 /**
+ * TODO: [✔] Check ModelRequirements here
  * TODO: (Probbably no) Are there failed requests - analyze them
  *                      Make some statistics for PromptTemeplates
  * TODO: DRY ChatThread+completeWithGpt
