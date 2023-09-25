@@ -72,7 +72,7 @@ export class ChatThread {
         console.info(
             spaceTrim(
                 (block) => `
-                    ==============================
+                    ===========================[ Chat: ]===
                     [🧑] ${block(prompt.toString())}
                     [🤖] ${block(response)}
                     ---
@@ -80,7 +80,7 @@ export class ChatThread {
                         performance.measure(mark, `${mark}-start`, `${mark}-end`).duration.toString(),
                     )}ms 
                     ${completion.usage?.total_tokens} tokens used
-                    ==============================
+                    ===========================[ /Chat ]===
                 `,
             ),
         );

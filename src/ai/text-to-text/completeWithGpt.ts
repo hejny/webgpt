@@ -124,7 +124,8 @@ export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺]
     console.info(
         spaceTrim(
             (block) => `
-                ==============================
+
+                ===========================[ Completion: ]===
                 [🧑] ${block(prompt.toString())}
                 [🤖] ${block(response)}
                 ---
@@ -132,7 +133,7 @@ export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺]
                     performance.measure('complete-gpt', 'complete-gpt-start', 'complete-gpt-end').duration.toString(),
                 )}ms 
                 ${completion.usage?.total_tokens} tokens used
-                ==============================
+                ===========================[ /Completion ]===
             `,
         ),
     );

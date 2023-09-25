@@ -2,6 +2,7 @@ import writeWebsiteContentExecutorPtp from '../../../../prompts/templates/write-
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
 import { ChatThread } from '../ChatThread';
+import { completeWithGpt } from '../completeWithGpt';
 import { PromptTemplatePipeline } from './lib/src/classes/PromptTemplatePipeline';
 import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
 import { createPromptTemplatePipelineExecutor } from './lib/src/execution/createPromptTemplatePipelineExecutor';
@@ -67,7 +68,11 @@ export async function writeWebsiteContentCs(
                             prompt,
                             'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc */ as uuid,
                         ),
-                    // TODO: [⛱]> completeWithGpt: async (prompt) => completeWithGpt(prompt, 'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc * / as uuid),
+                    completeWithGpt: async (prompt) =>
+                        completeWithGpt(
+                            prompt,
+                            'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc */ as uuid,
+                        ),
                 },
             },
         });

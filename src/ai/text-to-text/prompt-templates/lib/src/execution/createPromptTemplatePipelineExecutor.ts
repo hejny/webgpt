@@ -21,7 +21,7 @@ export function createPromptTemplatePipelineExecutor<
     const {
         promptTemplatePipeline,
         tools: {
-            gpt: { createChatThread /* TODO: [⛱]> completeWithGpt */ },
+            gpt: { createChatThread, completeWithGpt },
         },
     } = options;
 
@@ -34,11 +34,20 @@ export function createPromptTemplatePipelineExecutor<
             const resultingParamName = promptTemplatePipeline.getResultingParamName(currentPromptTemplate!);
             const prompt = currentPromptTemplate.writePrompt(paramsToPass);
 
-            const chatThread = await createChatThread(prompt);
+            let response: string;
+            if (currentPromptTemplate.modelRequirements.variant === 'CHAT') {
+                const chatThread = await createChatThread(prompt);
+                response = chatThread.response;
+            } else if (currentPromptTemplate.modelRequirements.variant === 'COMPLETION') {
+                const completionResult = await completeWithGpt(prompt);
+                response = completionResult.response;
+            } else {
+                throw new Error(`Unknown model variant: ${currentPromptTemplate.modelRequirements.variant}`);
+            }
 
             paramsToPass = {
                 ...paramsToPass,
-                [resultingParamName]: chatThread.response /* <- TODO: Detect param collision here */,
+                [resultingParamName]: response /* <- TODO: Detect param collision here */,
             };
 
             currentPromptTemplate = promptTemplatePipeline.getFollowingPromptTemplate(currentPromptTemplate!);

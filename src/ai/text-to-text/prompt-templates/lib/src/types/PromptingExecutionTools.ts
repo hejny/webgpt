@@ -1,10 +1,11 @@
 import { ChatThread } from '../../../../ChatThread';
+import { ICompleteWithGptResult } from '../../../../completeWithGpt';
 import { Prompt } from '../classes/Prompt';
 
 export interface PromptingExecutionTools {
     gpt: {
         createChatThread(prompt: Prompt): Promise<ChatThread>;
-        // TODO: [⛱]> completeWithGpt(prompt: Prompt<'COMPLETION'>): Promise<ICompleteWithGptResult>;
+        completeWithGpt(prompt: Prompt): Promise<ICompleteWithGptResult>;
     };
 }
 
