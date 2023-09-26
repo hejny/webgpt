@@ -1,4 +1,5 @@
 import { string_name } from '../../../../../../utils/typeAliases';
+import { Prompt } from './Prompt';
 import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 
 export class PromptTemplatePipelineLibrary {
@@ -22,6 +23,11 @@ export class PromptTemplatePipelineLibrary {
             throw new Error(`Prompt template pipeline with name "${name}" not found`);
         }
         return promptTemplatePipeline;
+    }
+
+    public isPromptInLibrary(prompt: Prompt): boolean {
+        // TODO: DO not hardcode this, really validate whether the prompt is in the library
+        return true;
     }
 }
 
