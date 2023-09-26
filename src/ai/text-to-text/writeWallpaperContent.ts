@@ -96,7 +96,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
         ptpLibrary_writeWebsiteContent_EntryParams,
         ptpLibrary_writeWebsiteContent_ResultParams
     >('writeWebsiteContent', {
-        // TODO: title: title || '',
+        title: title || '',
         assigment: assigment || '',
         // TODO: !!! addSections:addSections || '',
         // TODO: !!!  links:links || '',
