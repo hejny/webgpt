@@ -6,7 +6,7 @@ dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import { join } from 'path';
-import { writeWebsiteContentCs } from '../../src/ai/text-to-text/prompt-templates';
+import { writeWebsiteContentCs } from '../../src/ai/text-to-text/prompt-templates/index.ts.old';
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
 
 if (process.cwd() !== join(__dirname, '../..')) {

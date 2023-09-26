@@ -1,24 +1,28 @@
-import { string_attribute } from '../../../../../../utils/typeAliases';
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
-import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplatePipelineSourceValid';
-import { PromptTemplate } from './PromptTemplate';
+import { string_name } from '../../../../../../utils/typeAliases';
+import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 
 export class PromptTemplatePipelineLibrary {
-    public static fromJsons(sources: ...Array<PromptTemplatePipelineJson>): PromptTemplatePipelineLibrary {
-       
+    /*
+    TODO: !!! OR make createFromJsons, createFromDirectory
+    public static fromJsons(...sources: Array<PromptTemplatePipelineJson>): PromptTemplatePipelineLibrary {
+        return new PromptTemplatePipelineLibrary(sources.map((source) => PromptTemplatePipeline.fromJson(source)));
     }
+    */
 
-    private constructor(
-        private readonly promptTemplatePipelines: Array<PromptTemplatePipeline   ggfffffggggg>,
-    ) {
-        
+    public constructor(
+        private readonly promptTemplatePipelines: Record<
+            string_name,
+            PromptTemplatePipeline<any /* <- TODO: Get rid of anys */, any>
+        >,
+    ) {}
+
+    public getPtp(name: string_name): PromptTemplatePipeline<any /* <- TODO: Get rid of anys */, any> {
+        const promptTemplatePipeline = this.promptTemplatePipelines[name];
+        if (!promptTemplatePipeline) {
+            throw new Error(`Prompt template pipeline with name "${name}" not found`);
+        }
+        return promptTemplatePipeline;
     }
-
-    public get entryPromptTemplate(): PromptTemplate<any /* <- TODO: Get rid of any */> {
-        return this.promptTemplates[0]!.promptTemplate;
-    }
-
-    
 }
 
 /**

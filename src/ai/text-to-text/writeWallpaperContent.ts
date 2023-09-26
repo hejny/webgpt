@@ -1,6 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
-import { writeWebsiteContentCs } from './prompt-templates';
+import { writeWebsiteContentCs } from './prompt-templates/index.ts.old';
 
 export interface WriteWallpaperContentOptions {
     /**

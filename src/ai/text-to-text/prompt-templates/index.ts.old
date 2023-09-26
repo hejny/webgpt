@@ -5,8 +5,8 @@ import { ChatThread } from '../ChatThread';
 import { completeWithGpt } from '../completeWithGpt';
 import { PromptTemplatePipeline } from './lib/src/classes/PromptTemplatePipeline';
 import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
-import { createPromptTemplatePipelineExecutor } from './lib/src/execution/createPromptTemplatePipelineExecutor';
-import { PromptTemplatePipelineExecutor } from './lib/src/types/PromptTemplatePipelineExecutor';
+import { createPtpExecutor } from './lib/src/execution/createPtpExecutor';
+import { PtpExecutor } from './lib/src/types/PtpExecutor';
 
 interface writeWebsiteContentCsLiteEntryParams {
     assigment: string;
@@ -21,7 +21,7 @@ interface writeWebsiteContentCsLiteResultParams {
  *
  * @private
  */
-let writeWebsiteContentExecutor: PromptTemplatePipelineExecutor<
+let writeWebsiteContentExecutor: PtpExecutor<
     writeWebsiteContentCsLiteEntryParams,
     writeWebsiteContentCsLiteResultParams
 > | null;
@@ -50,8 +50,8 @@ export async function writeWebsiteContentCs(
             throw new Error('Prompt template executors are only available on the server');
         }
 
-        writeWebsiteContentExecutor = createPromptTemplatePipelineExecutor({
-            promptTemplatePipeline: PromptTemplatePipeline.fromJson(
+        writeWebsiteContentExecutor = createPtpExecutor({
+            ptp: PromptTemplatePipeline.fromJson(
                 promptTemplatePipelineStringToJson(
                     writeWebsiteContentExecutorPtp,
                     /*
