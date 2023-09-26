@@ -70,7 +70,7 @@ export function promptTemplatePipelineStringToJson(
 
         promptTemplates.push({
             modelRequirements: {
-                variant: 'COMPLETION',
+                variant: 'CHAT',
                 //             <- TODO: [🚲] !!! Unhardcode
             },
             promptTemplate: spaceTrim(lines.join('\n')),
