@@ -90,12 +90,10 @@ export function CopilotPanel() {
                 })}`,
                 {
                     method: 'POST',
-                    body: JSON.stringify(
-                        {
-                            prompt,
-                            wallpaper: { content: oldContent },
-                        } /* !!! satisfies UpdateWallpaperContentRequest */,
-                    )
+                    body: JSON.stringify({
+                        prompt,
+                        wallpaper: { content: oldContent },
+                    } satisfies UpdateWallpaperContentRequest),
                 },
             );
 
