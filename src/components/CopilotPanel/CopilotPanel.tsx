@@ -95,8 +95,7 @@ export function CopilotPanel() {
                             prompt,
                             wallpaper: { content: oldContent },
                         } /* !!! satisfies UpdateWallpaperContentRequest */,
-                    ),
-                    signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+                    )
                 },
             );
 
