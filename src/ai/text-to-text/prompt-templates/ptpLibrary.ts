@@ -16,6 +16,14 @@ export const ptpLibrary = new PromptTemplatePipelineLibrary({
     ),
 });
 
+export interface ptpLibrary_writeWebsiteContent_EntryParams {
+    assigment: string;
+}
+
+export interface ptpLibrary_writeWebsiteContent_ResultParams {
+    contentBody: string;
+}
+
 /**
  * TODO: [🧠] !!! This it should be code generatror WITH types
  */
