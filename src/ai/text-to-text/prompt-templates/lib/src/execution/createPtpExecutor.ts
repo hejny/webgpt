@@ -1,3 +1,5 @@
+import { Promisable } from 'type-fest';
+import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
 import { PromptTemplate } from '../classes/PromptTemplate';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
@@ -23,12 +25,22 @@ export function createPtpExecutor<
         },
     } = options;
 
-    const ptpExecutor = async (entryParams: TEntryParams) => {
+    const ptpExecutor = async (
+        entryParams: TEntryParams,
+        onProgress: (taskProgress: TaskProgress) => Promisable<void>,
+    ) => {
         let paramsToPass: PromptTemplateParams = entryParams;
         let currentPtp: PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
             const resultingParamName = ptp.getResultingParamName(currentPtp!);
+
+            await onProgress({
+                name: `ptp-executor-frame-${resultingParamName}`,
+                title: `Copywriting ${resultingParamName /* <- TODO: !!! Use real title */}`,
+                isDone: false,
+            });
+
             const prompt = currentPtp.writePrompt(paramsToPass);
 
             let response: string;
@@ -41,6 +53,11 @@ export function createPtpExecutor<
             } else {
                 throw new Error(`Unknown model variant: ${currentPtp.modelRequirements.variant}`);
             }
+
+            onProgress({
+                name: `ptp-executor-frame-${resultingParamName}`,
+                isDone: true,
+            });
 
             paramsToPass = {
                 ...paramsToPass,
