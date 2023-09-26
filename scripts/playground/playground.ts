@@ -6,7 +6,12 @@ dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import { join } from 'path';
-import { writeWebsiteContentCs } from '../../src/ai/text-to-text/prompt-templates';
+import {
+    ptpLibrary_writeWebsiteContent_EntryParams,
+    ptpLibrary_writeWebsiteContent_ResultParams,
+} from '../../src/ai/text-to-text/prompt-templates/ptpLibrary';
+import { ptpLibraryExecutor } from '../../src/ai/text-to-text/prompt-templates/ptpLibraryExecutor';
+
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
 
 if (process.cwd() !== join(__dirname, '../..')) {
@@ -38,7 +43,10 @@ async function playground() {
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
         */
     };
-    const resultParams = await writeWebsiteContentCs(entryParams);
+    const resultParams = await ptpLibraryExecutor.executePtp<
+        ptpLibrary_writeWebsiteContent_EntryParams,
+        ptpLibrary_writeWebsiteContent_ResultParams
+    >('writeWebsiteContent', entryParams);
     console.info({ entryParams, resultParams });
 
     console.info(`[ Done 🧸  Playground ]`);

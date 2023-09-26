@@ -2,7 +2,7 @@ import { ChatThread } from '../../../../ChatThread';
 import { ICompleteWithGptResult } from '../../../../completeWithGpt';
 import { Prompt } from '../classes/Prompt';
 
-export interface PromptingExecutionTools {
+export interface PtpExecutionTools {
     gpt: {
         createChatThread(prompt: Prompt): Promise<ChatThread>;
         completeWithGpt(prompt: Prompt): Promise<ICompleteWithGptResult>;

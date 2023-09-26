@@ -154,7 +154,6 @@ export async function createNewWallpaper(
     const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
         body: formData,
-        signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
     });
 
     if (response1.ok === false) {
@@ -187,7 +186,6 @@ export async function createNewWallpaper(
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
             },
-            signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
         });
 
         if (response2.ok === false) {
@@ -243,7 +241,6 @@ export async function createNewWallpaper(
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
             },
-            signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
         },
     );
 

@@ -1,6 +1,10 @@
 import spaceTrim from 'spacetrim';
 import { description, string_markdown, string_name, string_url, title, uuid } from '../../utils/typeAliases';
-import { writeWebsiteContentCs } from './prompt-templates';
+import {
+    ptpLibrary_writeWebsiteContent_EntryParams,
+    ptpLibrary_writeWebsiteContent_ResultParams,
+} from './prompt-templates/ptpLibrary';
+import { ptpLibraryExecutor } from './prompt-templates/ptpLibraryExecutor';
 
 export interface WriteWallpaperContentOptions {
     /**
@@ -88,8 +92,11 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
     // TODO: !!! Switch here language versions
 
-    const { contentBody } = await writeWebsiteContentCs({
-        // TODO: title: title || '',
+    const { contentBody } = await ptpLibraryExecutor.executePtp<
+        ptpLibrary_writeWebsiteContent_EntryParams,
+        ptpLibrary_writeWebsiteContent_ResultParams
+    >('writeWebsiteContent', {
+        title: title || '',
         assigment: assigment || '',
         // TODO: !!! addSections:addSections || '',
         // TODO: !!!  links:links || '',
