@@ -1,4 +1,7 @@
 import { string_name } from '../../../../../../utils/typeAliases';
+import { createPtpExecutor } from '../execution/createPtpExecutor';
+import { PtpExecutor } from '../execution/PtpExecutor';
+import { PtpExecutionTools } from '../types/PtpExecutionTools';
 import { Prompt } from './Prompt';
 import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 
@@ -29,8 +32,28 @@ export class PromptTemplatePipelineLibrary {
         // TODO: DO not hardcode this, really validate whether the prompt is in the library
         return true;
     }
+
+    private readonly ptpExecutorsCache: Record<string_name, PtpExecutor<any /* <- TODO: Get rid of anys */, any>> = {};
+
+    public getExecutor(
+        name: string_name,
+        tools: PtpExecutionTools,
+    ): PtpExecutor<any /* <- TODO: Get rid of anys */, any> {
+        if (!this.ptpExecutorsCache[name]) {
+            const ptp = this.getPtp(name);
+            this.ptpExecutorsCache[name] = createPtpExecutor({ ptp, tools });
+        }
+
+        const ptpExecutor = this.ptpExecutorsCache[name]!;
+
+        return ptpExecutor;
+    }
 }
 
 /**
  * TODO: !!! Add generic type for entry and result params
+ * TODO: [🧠] Formarly (before commit !!!) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)
+ * TODO: [🧠] Is it better to ptpLibraryExecutor.executePtp('writeXyz',{...}) OR ptpLibraryExecutor.getExecutor('writeXyz')({...})
+ * TODO: [🧠] Is it better to pass tools into getExecutor or into constructor
+ *             Maybe it is not a good idea to cache executors when they are can be created with different tools
  */
