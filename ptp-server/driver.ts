@@ -1,7 +1,6 @@
 #!/usr/bin/env ts-node
 
 import { PromptTemplatePipelineLibrary } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/PromptTemplatePipelineLibrary';
-import { PtpLibraryExecutor } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PtpLibraryExecutor';
 import { PtpExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/types/PtpExecutionTools';
 
 // TODO: [🧠] !!! How to use "implements" for classes
@@ -24,8 +23,7 @@ class PtpRemoteExecutionTools implements PtpExecutionTools {
     }
 }
 
-
-
 /**
+ * TODO: [🧭] !!! Make @ptp/remote-tools from this
  * TODO: [🧠] Maybe split PtpExecutionTools into PtpGptExecutionTools, PtpLogExecutionTools,...
  */

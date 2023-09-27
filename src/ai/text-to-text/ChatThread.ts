@@ -151,6 +151,7 @@ export class ChatThread {
 }
 
 /**
+ * TODO: [🧭] !!! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here
  * TODO: [🧠] Wording: response or answer?
  * TODO: [🚞] DRY ChatThread+completeWithGpt
