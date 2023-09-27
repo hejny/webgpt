@@ -10,7 +10,7 @@ import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper
 import type {
     WriteWallpaperContentRequest,
     WriteWallpaperContentResponse,
-} from '../../pages/api/custom/write-wallpaper-content';
+} from '../../pages/api/custom/write-wallpaper-content.ts.delete';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
