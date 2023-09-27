@@ -4,13 +4,11 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
+import { getPtpToolsForBrowser } from '../../ai/text-to-text/prompt-templates/getPtpToolsForBrowser';
+import { ptpLibrary } from '../../ai/text-to-text/prompt-templates/ptpLibrary';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
-import type {
-    WriteWallpaperContentRequest,
-    WriteWallpaperContentResponse,
-} from '../../pages/api/custom/write-wallpaper-content.ts.delete';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
@@ -232,8 +230,20 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    const response3 /* <-[💩] */ = await fetch(
-        `/api/custom/write-wallpaper-content?clientId=${author /* <- TODO: Pass as clientId */}`,
+    const { wallpaperContent } = await ptpLibrary.getExecutor('writeWebsiteContent', getPtpToolsForBrowser())(
+        {
+            title,
+            assigment,
+            links,
+            addSections,
+        },
+        onProgress,
+    );
+
+    /*
+    TODO: !!! Remove
+    const response3 /* <-[💩] * / = await fetch(
+        `/api/custom/write-wallpaper-content?clientId=${author /* <- TODO: Pass as clientId * /}`,
         {
             method: 'POST',
             body: JSON.stringify({ title, assigment, links, addSections } satisfies WriteWallpaperContentRequest),
@@ -250,6 +260,8 @@ export async function createNewWallpaper(
     }
 
     const { wallpaperContent } = (await response3.json()) as WriteWallpaperContentResponse;
+    */
+
     await onProgress({
         name: 'write-wallpaper-content',
         isDone: true,
