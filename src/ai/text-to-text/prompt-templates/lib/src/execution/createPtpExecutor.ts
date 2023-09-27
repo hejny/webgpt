@@ -4,7 +4,7 @@ import { PromptTemplate } from '../classes/PromptTemplate';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PtpExecutionTools } from '../types/PtpExecutionTools';
-import { PtpExecutor } from '../types/PtpExecutor';
+import { PtpExecutor } from './PtpExecutor';
 
 interface CreatePtpExecutorOptions<
     TEntryParams extends PromptTemplateParams,

@@ -24,6 +24,7 @@ export const ptpExecutionTools: PtpExecutionTools = {
 };
 
 /**
+ * TODO: !!! Make @ptp/openai-tools from this
  * TODO: [🧠] !!! Where should be this
  * TODO: !!! (Make tools for each client + execution library for each client) OR Client should be responsibility in PTP
  */
