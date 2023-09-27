@@ -1,3 +1,5 @@
+import { Promisable } from 'type-fest';
+import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
 import { string_name } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipelineLibrary } from '../classes/PromptTemplatePipelineLibrary';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
@@ -16,7 +18,11 @@ export class PtpLibraryExecutor {
     public executePtp<
         TEntryParams extends PromptTemplateParams,
         TResultParams extends PromptTemplateParams /* <- TODO: This sould be generic of whole PtpLibraryExecutor NOT just this method */,
-    >(name: string_name, entryParams: TEntryParams): Promise<TResultParams> {
+    >(
+        name: string_name,
+        entryParams: TEntryParams,
+        onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
+    ): Promise<TResultParams> {
         if (!this.ptpExecutorsCache[name]) {
             const ptp = this.ptpLibrary.getPtp(name);
             this.ptpExecutorsCache[name] = createPtpExecutor({ ptp, tools: this.tools });
@@ -24,6 +30,10 @@ export class PtpLibraryExecutor {
 
         const ptpExecutor = this.ptpExecutorsCache[name]!;
 
-        return /* not await */ ptpExecutor(entryParams);
+        return /* not await */ ptpExecutor(entryParams, onProgress);
     }
 }
+
+/**
+ * TODO: [🧠] Is it better to ptpLibraryExecutor.executePtp('writeXyz',{...}) OR ptpLibraryExecutor.getPtp('writeXyz')({...})
+ */
