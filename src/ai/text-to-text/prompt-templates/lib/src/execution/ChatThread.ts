@@ -1,3 +1,4 @@
+import { IDestroyable } from 'destroyable';
 import { string_model_name, uuid } from '../../../../../../utils/typeAliases';
 import { Prompt } from '../classes/Prompt';
 
@@ -6,7 +7,7 @@ import { Prompt } from '../classes/Prompt';
  *
  * Note: This class is aviable only on the server
  */
-export interface ChatThread {
+export interface ChatThread extends IDestroyable {
     readonly clientId: uuid /* <-[🌺] */;
     readonly parent: null | ChatThread;
     readonly model: string_model_name;

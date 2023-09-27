@@ -5,7 +5,7 @@ import { string_model_name, uuid } from '../src/utils/typeAliases';
 /**
  * @private helper for PtpRemoteExecutionTools
  */
-export class RemoteChatThread implements ChatThread {
+export class RemoteChatThread /* [🍬] extends Destroyable */ implements ChatThread {
     public static async ask(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<RemoteChatThread> {
         return /* not await */ RemoteChatThread.create(null, prompt, clientId);
     }
@@ -44,6 +44,14 @@ export class RemoteChatThread implements ChatThread {
     public get chatSize(): number {
         return this.parent ? this.parent.chatSize + 1 : 1;
     }
+
+    /*
+    [🍬]
+    public async destroy() {
+        socket.disconnect();
+        return this.destroy();
+    }
+    */
 }
 
 /**

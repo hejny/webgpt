@@ -48,6 +48,8 @@ export function createPtpExecutor<
             let response: string;
             if (currentPtp.modelRequirements.variant === 'CHAT') {
                 const chatThread = await createChatThread(prompt);
+                // TODO: [🍬] Destroy chatThread
+
                 response = chatThread.response;
             } else if (currentPtp.modelRequirements.variant === 'COMPLETION') {
                 const completionResult = await completeWithGpt(prompt);
