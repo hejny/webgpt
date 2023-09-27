@@ -241,7 +241,7 @@ export async function createNewWallpaper(
     );
 
     /*
-    TODO: !!! Remove
+    TODO: !!!last Remove
     const response3 /* <-[💩] * / = await fetch(
         `/api/custom/write-wallpaper-content?clientId=${author /* <- TODO: Pass as clientId * /}`,
         {

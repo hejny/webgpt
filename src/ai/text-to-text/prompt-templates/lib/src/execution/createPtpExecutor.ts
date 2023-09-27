@@ -14,15 +14,18 @@ interface CreatePtpExecutorOptions<
     tools: PtpExecutionTools;
 }
 
+/**
+ * @@@
+ *
+ * Note: Consider using getExecutor method of the library instead of using this function
+ */
 export function createPtpExecutor<
     TEntryParams extends PromptTemplateParams,
     TResultParams extends PromptTemplateParams,
 >(options: CreatePtpExecutorOptions<TEntryParams, TResultParams>): PtpExecutor<TEntryParams, TResultParams> {
     const {
         ptp,
-        tools: {
-            gpt: { createChatThread, completeWithGpt },
-        },
+        tools: { createChatThread, completeWithGpt },
     } = options;
 
     const ptpExecutor = async (
@@ -38,7 +41,7 @@ export function createPtpExecutor<
             if (onProgress) {
                 await onProgress({
                     name: `ptp-executor-frame-${resultingParamName}`,
-                    title: `Copywriting ${resultingParamName /* <- TODO: !!! Use real title */}`,
+                    title: `Copywriting ${resultingParamName /* <- TODO: !!! Use real title + make looking good together with other tasks on new screen */}`,
                     isDone: false,
                 });
             }
@@ -81,7 +84,5 @@ export function createPtpExecutor<
 }
 
 /**
- * TODO: !!! Do not export from library, make in private within the PTP library
- * TODO: !!! Implement
  * Note: CreatePtpExecutorOptions are just connected to PtpExecutor so do not extract to types folder
  */

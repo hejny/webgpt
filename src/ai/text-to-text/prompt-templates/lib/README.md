@@ -32,8 +32,8 @@ I will be very happy for discussion, suggestions, proposals,... 🚀
 
 ## TODOs
 
--   [ ] !!! Make this working as internal library
--   [ ] !!! Export all promptTemplatePipeline as ptp alias from library
+-   [ ] !! Make this working as internal library
+-   [ ] Export all promptTemplatePipeline as ptp alias from library
 -   [ ] Make from this folder a separate repository + npm package
 -   [ ] Add tests
 -   [ ] Annotate all entities

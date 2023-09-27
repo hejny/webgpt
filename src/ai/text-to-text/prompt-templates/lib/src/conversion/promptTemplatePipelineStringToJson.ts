@@ -14,6 +14,7 @@ export function promptTemplatePipelineStringToJson(
         templateContent = spaceTrim(templateContent);
         const lines = templateContent.split('\n');
 
+        // TODO: [🚲] !!! Parse newest format
         // TODO: [🚲] !!! Parse Model requirements
 
         if (!(lines.length >= 2)) {

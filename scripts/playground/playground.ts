@@ -34,7 +34,6 @@ async function playground() {
 
     // Do here stuff you want to test
 
-    // !!! Test
     const entryParams = {
         title: `Kočky`,
         assigment: `Web o kočičím hotelu v Praze, otevřeno 24/7`,

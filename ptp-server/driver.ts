@@ -1,12 +1,11 @@
 #!/usr/bin/env ts-node
 
 import { Prompt } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/Prompt';
-import { PromptResult } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PromptResult';
 import { ChatThread } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/ChatThread';
+import { PromptResult } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PromptResult';
 import { PtpExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PtpExecutionTools';
 import { RemoteChatThread } from './RemoteChatThread';
 
-// TODO: [🧠] !!! How to use "implements" for classes
 class PtpRemoteExecutionTools implements PtpExecutionTools {
     constructor(remoteUrl: URL) {
         /*
@@ -35,6 +34,6 @@ class PtpRemoteExecutionTools implements PtpExecutionTools {
 }
 
 /**
- * TODO: [🧭] !!! Make @ptp/remote-tools from this
+ * TODO: [🧭] !! Make @ptp/remote-tools from this
  * TODO: [🧠] Maybe split PtpExecutionTools into PtpGptExecutionTools, PtpLogExecutionTools,...
  */

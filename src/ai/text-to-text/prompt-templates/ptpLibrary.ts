@@ -29,5 +29,5 @@ export interface ptpLibrary_writeWebsiteContent_ResultParams {
 }
 
 /**
- * TODO: [🧠] !!! This it should be code generatror WITH types
+ * TODO: [🧠] !! This it should be code-generated WITH types by @ptp/generator library
  */

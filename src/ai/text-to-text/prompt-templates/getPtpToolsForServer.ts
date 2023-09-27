@@ -40,7 +40,7 @@ export function getPtpToolsForServer() {
                         'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc */ as uuid,
                     ),
             },
-        } /* <- TODO: [🧭] !!! Make @ptp/openai-tools from this */;
+        } /* <- TODO: [🧭] !! Make @ptp/openai-tools from this */;
     }
 
     return ptpExecutionTools;

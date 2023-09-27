@@ -146,7 +146,7 @@ export async function openAiCompleteWithGpt(
 
 /**
  * TODO: [🧠] Rename completeWithGpt -> openAiCompleteWithGpt
- * TODO: [🧭] !!! This should be under Make @ptp/openai-tools
+ * TODO: [🧭] !! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here
  * TODO: (Probbably no) Are there failed requests - analyze them
  *                      Make some statistics for PromptTemeplates

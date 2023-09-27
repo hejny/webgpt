@@ -6,5 +6,5 @@ export interface PromptResult {
 }
 
 /**
- * TODO: !!! Add tokens spent, etc.
+ * TODO: [🧠] Add tokens, spent, time, etc.
  */

@@ -159,7 +159,7 @@ export class OpenAiChatGptThread implements ChatThread {
 
 /**
  * TODO: [🧠] Rename ChatThread -> OpenAiChatGptThread
- * TODO: [🧭] !!! This should be under Make @ptp/openai-tools
+ * TODO: [🧭] !! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here
  * TODO: [🧠] Wording: response or answer?
  * TODO: [🚞] DRY ChatThread+completeWithGpt

@@ -7,8 +7,10 @@ import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 
 export class PromptTemplatePipelineLibrary {
     /*
-    TODO: !!! OR make createFromJsons, createFromDirectory
-    public static fromJsons(...sources: Array<PromptTemplatePipelineJson>): PromptTemplatePipelineLibrary {
+    TODO: 
+        !! Make library @ptp/tools
+        make createFromJsons, createFromDirectory
+        public static fromJsons(...sources: Array<PromptTemplatePipelineJson>): PromptTemplatePipelineLibrary {
         return new PromptTemplatePipelineLibrary(sources.map((source) => PromptTemplatePipeline.fromJson(source)));
     }
     */
@@ -51,7 +53,7 @@ export class PromptTemplatePipelineLibrary {
 }
 
 /**
- * TODO: !!! Add generic type for entry and result params
+ * TODO: !! Add generic type for entry and result params
  * TODO: [🧠] Formarly (before commit 62229afce7668a5b85077cc18becf798b583bf8d) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)
  * TODO: [🧠] Is it better to ptpLibraryExecutor.executePtp('writeXyz',{...}) OR ptpLibraryExecutor.getExecutor('writeXyz')({...})
  * TODO: [🧠] Is it better to pass tools into getExecutor or into constructor

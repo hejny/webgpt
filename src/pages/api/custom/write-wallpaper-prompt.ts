@@ -43,8 +43,7 @@ export default async function writeWallpaperPromptHandler(
 }
 
 /**
- * TODO: [🧠] More descriptive name for this route /describe-image /image-to-text ... 
+ * TODO: [🧠] More descriptive name for this route /describe-image /image-to-text ...
  * TODO: [🃏] Pass here some security token to prevent DDoS
  * TODO: [😜] CDN.isValidUrl(...)
- * TODO: [🙄] Figure out how to rename-reverse in fileview write-wallpaper-content.ts with write-wallpaper-prompt.ts
  */

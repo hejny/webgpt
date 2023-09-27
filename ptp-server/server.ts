@@ -33,3 +33,8 @@ server.on('connection', (socketConnection: Socket) => {
 });
 
 console.log(chalk.bgGreen(`Socket.io server listening on port ${PORT}`));
+
+
+/**
+ * TODO: [🃏] Pass here some security token to prevent DDoS
+ */

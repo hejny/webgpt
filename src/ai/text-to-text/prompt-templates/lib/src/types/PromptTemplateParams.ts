@@ -10,5 +10,5 @@ export type PromptTemplateParams = {
 /**
  *
  * TODO: Maybe allow richer types for values
- * TODO: !!! Rename in such a way that short name is not `promptTemplatePipeline`
+ * TODO: [🧠] Rename "PromptTemplateParams" in such a way that short name is not "PTP" (because it colides with "PromptTemplatePipeline")
  */

@@ -73,11 +73,9 @@ export default async function updateWallpaperContentHandler(
 }
 
 /**
- * TODO: !!! Go through this file and remove it
- * TODO: !!! Allow to be controlled by frontend - DO not have writeWallpaperContent OR write-wallpaper-content.ts BUT universal run-ptp-frame
+ * TODO: !!! Go through this file and remove it=
  * TODO: !! Allow only POST OR PUT (Which is better?)
  * TODO: !! Allow to mix user and copilot edits
  * TODO: !! Preserve fonts
- * TODO: !! Append prompts (have history of prompts)
  * TODO: [🤺] Optimize, maybe cache inputs and results
  */
