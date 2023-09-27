@@ -52,7 +52,7 @@ export class PromptTemplatePipelineLibrary {
 
 /**
  * TODO: !!! Add generic type for entry and result params
- * TODO: [🧠] Formarly (before commit !!!) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)
+ * TODO: [🧠] Formarly (before commit 62229afce7668a5b85077cc18becf798b583bf8d) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)
  * TODO: [🧠] Is it better to ptpLibraryExecutor.executePtp('writeXyz',{...}) OR ptpLibraryExecutor.getExecutor('writeXyz')({...})
  * TODO: [🧠] Is it better to pass tools into getExecutor or into constructor
  *             Maybe it is not a good idea to cache executors when they are can be created with different tools
