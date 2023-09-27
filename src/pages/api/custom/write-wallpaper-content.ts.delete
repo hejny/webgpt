@@ -1,5 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { writeWallpaperContent, WriteWallpaperContentOptions } from '../../../ai/text-to-text/writeWallpaperContent';
+import {
+    writeWallpaperContent,
+    WriteWallpaperContentOptions,
+} from '../../../ai/text-to-text/writeWallpaperContent.ts.delete';
 import { string_markdown, uuid } from '../../../utils/typeAliases';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
