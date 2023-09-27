@@ -4,17 +4,16 @@ import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 import { Prompt } from './prompt-templates/lib/src/classes/Prompt';
 
-export interface ICompleteWithGptResult {
-    response: string;
-    model: string_model_name;
-}
 
 /**
  * Complete a prompt with GPT
  *
  * Note: This function is aviable only on the server
  */
-export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<ICompleteWithGptResult> {
+export async function openAiCompleteWithGpt(
+    prompt: Prompt,
+    clientId: uuid /* <-[🌺] */,
+): Promise<PromptResult> {
     const model = 'text-davinci-003';
     const modelSettings = {
         model,
@@ -146,6 +145,7 @@ export async function completeWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺]
 }
 
 /**
+ * TODO: [🧠] Rename completeWithGpt -> openAiCompleteWithGpt
  * TODO: [🧭] !!! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here
  * TODO: (Probbably no) Are there failed requests - analyze them

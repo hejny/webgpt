@@ -1,8 +1,8 @@
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
-import { ChatThread } from '../ChatThread';
-import { completeWithGpt } from '../completeWithGpt';
-import { PtpExecutionTools } from './lib/src/types/PtpExecutionTools';
+import { OpenAiChatGptThread } from '../OpenAiChatGptThread';
+import { openAiCompleteWithGpt } from '../openAiCompleteWithGpt';
+import { PtpExecutionTools } from './lib/src/execution/PtpExecutionTools';
 
 /**
  * Theese are tools for PTP execution
@@ -30,12 +30,12 @@ export function getPtpToolsForServer() {
         ptpExecutionTools = {
             gpt: {
                 createChatThread: async (prompt) =>
-                    ChatThread.ask(
+                    OpenAiChatGptThread.ask(
                         prompt,
                         'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc */ as uuid,
                     ),
                 completeWithGpt: async (prompt) =>
-                    completeWithGpt(
+                    openAiCompleteWithGpt(
                         prompt,
                         'aaaaaaaa-d669-414e-b066-e9733f0de7a8' /* <- TODO: !!! Pass here real UUID + Make some SYSTEM_UUID etc */ as uuid,
                     ),

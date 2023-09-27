@@ -1,5 +1,5 @@
 import { isRunningInBrowser } from '../../../utils/isRunningInWhatever';
-import { PtpExecutionTools } from './lib/src/types/PtpExecutionTools';
+import { PtpExecutionTools } from './lib/src/execution/PtpExecutionTools';
 
 /**
  * Theese are tools for PTP execution

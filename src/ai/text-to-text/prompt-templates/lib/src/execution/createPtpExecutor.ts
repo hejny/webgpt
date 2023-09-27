@@ -3,7 +3,7 @@ import { TaskProgress } from '../../../../../../components/TaskInProgress/task/T
 import { PromptTemplate } from '../classes/PromptTemplate';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
-import { PtpExecutionTools } from '../types/PtpExecutionTools';
+import { PtpExecutionTools } from './PtpExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
 interface CreatePtpExecutorOptions<

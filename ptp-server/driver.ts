@@ -1,11 +1,14 @@
 #!/usr/bin/env ts-node
 
-import { PromptTemplatePipelineLibrary } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/PromptTemplatePipelineLibrary';
-import { PtpExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/types/PtpExecutionTools';
+import { Prompt } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/Prompt';
+import { PromptResult } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PromptResult';
+import { ChatThread } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/ChatThread';
+import { PtpExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PtpExecutionTools';
+import { RemoteChatThread } from './RemoteChatThread';
 
 // TODO: [🧠] !!! How to use "implements" for classes
 class PtpRemoteExecutionTools implements PtpExecutionTools {
-    constructor(private readonly promptTemplatePipelineLibrary: PromptTemplatePipelineLibrary, remoteUrl: URL) {
+    constructor(remoteUrl: URL) {
         /*
         const socket = new SocketIoClient(serverUrl);
         socket.on('connect', () => {
@@ -20,6 +23,14 @@ class PtpRemoteExecutionTools implements PtpExecutionTools {
 
             socketConnection.send('response', {} satisfies Ptps_Response);
         */
+    }
+
+    createChatThread(prompt: Prompt): Promise<ChatThread> {
+        return RemoteChatThread.ask(/* !!! */);
+    }
+
+    completeWithGpt(prompt: Prompt): Promise<PromptResult> {
+        throw new Error('Method not implemented.' /* <- TODO: !!! Implement */);
     }
 }
 

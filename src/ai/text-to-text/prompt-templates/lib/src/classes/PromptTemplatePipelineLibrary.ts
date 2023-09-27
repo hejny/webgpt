@@ -1,7 +1,7 @@
 import { string_name } from '../../../../../../utils/typeAliases';
 import { createPtpExecutor } from '../execution/createPtpExecutor';
+import { PtpExecutionTools } from '../execution/PtpExecutionTools';
 import { PtpExecutor } from '../execution/PtpExecutor';
-import { PtpExecutionTools } from '../types/PtpExecutionTools';
 import { Prompt } from './Prompt';
 import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 

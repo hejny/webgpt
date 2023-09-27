@@ -3,21 +3,22 @@ import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer'
 import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 import { Prompt } from './prompt-templates/lib/src/classes/Prompt';
+import { ChatThread } from './prompt-templates/lib/src/execution/ChatThread';
 
 /**
- * Thread to the ChotGPT
+ * Create conversation with ChatGPT
  *
- * Note: This function is aviable only on the server
+ * Note: This class is aviable only on the server
  */
-export class ChatThread {
+export class OpenAiChatGptThread implements ChatThread {
     /**
      * Starts a new ChatThread conversation
      *
      * @param prompt text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public static async ask(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
-        return /* not await */ ChatThread.create(null, prompt, clientId);
+    public static async ask(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<OpenAiChatGptThread> {
+        return /* not await */ OpenAiChatGptThread.create(null, prompt, clientId);
     }
 
     /**
@@ -25,10 +26,10 @@ export class ChatThread {
      * @private Utility method within the class ChatThread
      */
     private static async create(
-        parentChatThread: null | ChatThread,
+        parentChatThread: null | OpenAiChatGptThread,
         prompt: Prompt,
         clientId: uuid /* <-[🌺] */,
-    ): Promise<ChatThread> {
+    ): Promise<OpenAiChatGptThread> {
         const mark = `ask-gpt-${parentChatThread ? parentChatThread.chatSize : 1}`;
 
         const promptAt = new Date();
@@ -124,12 +125,18 @@ export class ChatThread {
                 // console.log('ChatThread', { insertResult });
             });
 
-        return new ChatThread(clientId, parentChatThread, completion.model as string_model_name, prompt, response);
+        return new OpenAiChatGptThread(
+            clientId,
+            parentChatThread,
+            completion.model as string_model_name,
+            prompt,
+            response,
+        );
     }
 
     private constructor(
         public readonly clientId: uuid /* <-[🌺] */,
-        public readonly parent: null | ChatThread,
+        public readonly parent: null | OpenAiChatGptThread,
         public readonly model: string_model_name,
         public readonly prompt: Prompt,
         public readonly response: string,
@@ -141,8 +148,8 @@ export class ChatThread {
      * @param prompt text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public async ask(prompt: Prompt): Promise<ChatThread> {
-        return /* not await */ ChatThread.create(this, prompt, this.clientId);
+    public async ask(prompt: Prompt): Promise<OpenAiChatGptThread> {
+        return /* not await */ OpenAiChatGptThread.create(this, prompt, this.clientId);
     }
 
     public get chatSize(): number {
@@ -151,6 +158,7 @@ export class ChatThread {
 }
 
 /**
+ * TODO: [🧠] Rename ChatThread -> OpenAiChatGptThread
  * TODO: [🧭] !!! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here
  * TODO: [🧠] Wording: response or answer?
