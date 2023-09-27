@@ -2,9 +2,10 @@
 
 import { PromptTemplatePipelineLibrary } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/PromptTemplatePipelineLibrary';
 import { PtpLibraryExecutor } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PtpLibraryExecutor';
+import { PtpExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/types/PtpExecutionTools';
 
 // TODO: [🧠] !!! How to use "implements" for classes
-class PtpLibraryRemoteExecutor implements PtpLibraryExecutor {
+class PtpRemoteExecutionTools implements PtpExecutionTools {
     constructor(private readonly promptTemplatePipelineLibrary: PromptTemplatePipelineLibrary, remoteUrl: URL) {
         /*
         const socket = new SocketIoClient(serverUrl);
@@ -22,3 +23,9 @@ class PtpLibraryRemoteExecutor implements PtpLibraryExecutor {
         */
     }
 }
+
+
+
+/**
+ * TODO: [🧠] Maybe split PtpExecutionTools into PtpGptExecutionTools, PtpLogExecutionTools,...
+ */
