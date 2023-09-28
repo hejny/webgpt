@@ -25,7 +25,7 @@ export interface ChatThread extends IDestroyable {
 }
 
 /**
- * TODO: !!!last Annotate
+ * TODO: !!!last Go through this file and remove it
  * TODO: [🧠] Wording: response or answer?
  * TODO: Make IAskOptions
  */

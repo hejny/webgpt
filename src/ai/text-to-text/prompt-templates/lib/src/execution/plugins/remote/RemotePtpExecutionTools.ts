@@ -1,4 +1,5 @@
 import { PtpExecutionTools } from '../../PtpExecutionTools';
+import { SocketIoClient } from 'socket.io-client';
 
 export class RemotePtpExecutionTools implements PtpExecutionTools {
     constructor(private readonly remoteUrl: URL, private readonly clientId: string) {
@@ -18,7 +19,16 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
         */
     }
 
-    public async gptChat(prompt: Prompt): Promise<PromptChatResult> {}
+    public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
+
+        const socket = new SocketIoClient(serverUrl);
+        socket.on('connect', () => {
+
+            
+            
+        });
+      
+    }
 }
 
 /**
