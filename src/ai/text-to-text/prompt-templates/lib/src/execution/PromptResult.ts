@@ -1,16 +1,17 @@
 import { string_model_name } from '../../../../../../utils/typeAliases';
-import { PromptTemplateParams } from '../types/PromptTemplateParams';
-import { PtpExecutor } from './PtpExecutor';
 
 export interface PromptResult {
-    response: string;
-    model: string_model_name;
+    readonly response: string;
+    readonly model: string_model_name;
 }
 
 export interface PromptChatResult extends PromptResult {
-    continue: PtpExecutor<PromptTemplateParams, PromptTemplateParams>;
+    // TODO: [🤹‍♂️][🧠] Figure out way how to pass thread / previous messages
 }
 
 /**
- * TODO: [🧠] Add tokens, spent, time, etc.
+ * TODO: [🧠] Add more execution stats like: tokens, spent, time, etc.
+ *            + wrap in subobject stats
+ * TODO: !!! ACRY add readonly to all properties
+ * TODO: !!! ACRY add public / private /... to all methods
  */

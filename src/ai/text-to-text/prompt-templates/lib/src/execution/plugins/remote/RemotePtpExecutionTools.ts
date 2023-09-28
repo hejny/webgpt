@@ -1,7 +1,7 @@
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 
-export class PtpRemoteExecutionTools implements PtpExecutionTools {
-    constructor(remoteUrl: URL) {
+export class RemotePtpExecutionTools implements PtpExecutionTools {
+    constructor(private readonly remoteUrl: URL, private readonly clientId: string) {
         /*
         const socket = new SocketIoClient(serverUrl);
         socket.on('connect', () => {
@@ -18,15 +18,11 @@ export class PtpRemoteExecutionTools implements PtpExecutionTools {
         */
     }
 
-    createChatThread(prompt: Prompt): Promise<ChatThread> {
-        return RemoteChatThread.ask(/* !!! */);
-    }
-
-    completeWithGpt(prompt: Prompt): Promise<PromptResult> {
-        throw new Error('Method not implemented.' /* <- TODO: !!! Implement */);
-    }
+    public async gptChat(prompt: Prompt): Promise<PromptChatResult> {}
 }
 
 /**
  * TODO: !!! Annotate
+ * TODO: !!! Create some common util for gptChat and gptComplete
+ * TODO: [🤹‍♂️] RemotePtpExecutionTools should extend Destroyable and implement IDestroyable
  */

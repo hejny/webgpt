@@ -1,8 +1,8 @@
 import { Prompt } from '../classes/Prompt';
-import { PromptChatResult, PromptResult } from './PromptResult';
+import { PromptChatResult } from './PromptResult';
 
 export interface PtpExecutionTools {
-    gptComplete(prompt: Prompt): Promise<PromptResult>;
+    // TODO: !!!> gptComplete(prompt: Prompt): Promise<PromptResult>;
     gptChat(prompt: Prompt): Promise<PromptChatResult>;
 }
 
