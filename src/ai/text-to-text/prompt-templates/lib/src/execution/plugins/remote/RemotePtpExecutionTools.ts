@@ -1,12 +1,6 @@
-#!/usr/bin/env ts-node
+import { PtpExecutionTools } from '../../PtpExecutionTools';
 
-import { Prompt } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/Prompt';
-import { ChatThread } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/ChatThread';
-import { PromptResult } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PromptResult';
-import { PtpExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/PtpExecutionTools';
-import { RemoteChatThread } from './RemoteChatThread.ts.delete';
-
-class PtpRemoteExecutionTools implements PtpExecutionTools {
+export class PtpRemoteExecutionTools implements PtpExecutionTools {
     constructor(remoteUrl: URL) {
         /*
         const socket = new SocketIoClient(serverUrl);
@@ -34,6 +28,5 @@ class PtpRemoteExecutionTools implements PtpExecutionTools {
 }
 
 /**
- * TODO: [🧭] !! Make @ptp/remote-tools from this
- * TODO: [🧠] Maybe split PtpExecutionTools into PtpGptExecutionTools, PtpLogExecutionTools,...
+ * TODO: !!! Annotate
  */
