@@ -7,8 +7,7 @@ export interface PtpExecutionTools {
 }
 
 /**
- * TODO: [🧠] Maybe include word GPT in createChatThread (as in createChatThread)
  * TODO: Add here prompts to user, eval emulator, logs and all other dependencies
- * TODO: [🧠] Should or should not there be a word "GPT" in both createChatThread and completeWithGpt
+ * TODO: [🧠] Should or should not there be a word "GPT" in both gptComplete and gptChat
  * TODO: [🧠] Maybe split PtpExecutionTools into PtpGptExecutionTools, PtpLogExecutionTools,...
  */
