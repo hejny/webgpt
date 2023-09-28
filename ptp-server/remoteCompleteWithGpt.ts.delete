@@ -139,6 +139,7 @@ export async function remoteCompleteWithGpt(prompt: Prompt, clientId: uuid /* <-
 }
 
 /**
+ * TODO: !!!last Go through this file and remove it
  * TODO: [🧠] Rename completeWithGpt -> openAiCompleteWithGpt
  * TODO: [🧭] !! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here

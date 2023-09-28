@@ -1,10 +1,9 @@
-import { OpenAiChatGptThread } from '../../../../OpenAiChatGptThread';
 import { Prompt } from '../classes/Prompt';
-import { PromptResult } from './PromptResult';
+import { PromptChatResult, PromptResult } from './PromptResult';
 
 export interface PtpExecutionTools {
-    createChatThread(prompt: Prompt): Promise<OpenAiChatGptThread>;
-    completeWithGpt(prompt: Prompt): Promise<PromptResult>;
+    gptComplete(prompt: Prompt): Promise<PromptResult>;
+    gptChat(prompt: Prompt): Promise<PromptChatResult>;
 }
 
 /**

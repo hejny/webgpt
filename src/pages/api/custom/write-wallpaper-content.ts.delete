@@ -50,7 +50,7 @@ export default async function writeWallpaperContentHandler(
 }
 
 /**
- * TODO: !!! Go through this file and remove it
+ * TODO: !!!last Go through this file and remove it
  * TODO: [🃏] Pass here some security token to prevent DDoS
  * TODO: [😜] CDN.isValidUrl(...)
  */

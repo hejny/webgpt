@@ -4,16 +4,12 @@ import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
 import { Prompt } from './prompt-templates/lib/src/classes/Prompt';
 
-
 /**
  * Complete a prompt with GPT
  *
  * Note: This function is aviable only on the server
  */
-export async function openAiCompleteWithGpt(
-    prompt: Prompt,
-    clientId: uuid /* <-[🌺] */,
-): Promise<PromptResult> {
+export async function openAiCompleteWithGpt(prompt: Prompt, clientId: uuid /* <-[🌺] */): Promise<PromptResult> {
     const model = 'text-davinci-003';
     const modelSettings = {
         model,
@@ -145,6 +141,7 @@ export async function openAiCompleteWithGpt(
 }
 
 /**
+ * TODO: !!!last Go through this file and remove it
  * TODO: [🧠] Rename completeWithGpt -> openAiCompleteWithGpt
  * TODO: [🧭] !! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here

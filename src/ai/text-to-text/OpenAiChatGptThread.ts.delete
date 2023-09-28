@@ -158,6 +158,7 @@ export class OpenAiChatGptThread implements ChatThread {
 }
 
 /**
+ * TODO: !!!last Go through this file and remove it
  * TODO: [🧠] Rename ChatThread -> OpenAiChatGptThread
  * TODO: [🧭] !! This should be under Make @ptp/openai-tools
  * TODO: [✔] Check ModelRequirements here

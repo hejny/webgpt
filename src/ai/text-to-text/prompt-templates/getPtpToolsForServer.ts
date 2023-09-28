@@ -1,7 +1,7 @@
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
-import { OpenAiChatGptThread } from '../OpenAiChatGptThread';
-import { openAiCompleteWithGpt } from '../openAiCompleteWithGpt';
+import { OpenAiChatGptThread } from '../OpenAiChatGptThread.ts.delete';
+import { openAiCompleteWithGpt } from '../openAiCompleteWithGpt.ts.delete';
 import { PtpExecutionTools } from './lib/src/execution/PtpExecutionTools';
 
 /**
