@@ -1,3 +1,4 @@
+import { NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
 import { RemotePtpExecutionTools } from './lib/src/execution/plugins/remote/RemotePtpExecutionTools';
@@ -26,10 +27,7 @@ export function getPtpToolsForWorker(clientId: uuid) {
     }
 
     if (!ptpExecutionTools) {
-        ptpExecutionTools = new RemotePtpExecutionTools(
-            new URL('http://localhost:4445/' /* <- TODO: !!! Unhardcode */),
-            clientId,
-        );
+        ptpExecutionTools = new RemotePtpExecutionTools(NEXT_PUBLIC_PTP_SERVER_URL, clientId);
     }
 
     return ptpExecutionTools;
