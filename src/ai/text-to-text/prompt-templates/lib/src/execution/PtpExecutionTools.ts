@@ -2,6 +2,7 @@ import { Prompt } from '../classes/Prompt';
 import { PromptChatResult } from './PromptResult';
 
 export interface PtpExecutionTools {
+    // TODO: !!!> Maybe just make one variant of ->gptComplete<-/gptChat and resolve from modelRequirements
     // TODO: !!!> gptComplete(prompt: Prompt): Promise<PromptResult>;
     gptChat(prompt: Prompt): Promise<PromptChatResult>;
 }

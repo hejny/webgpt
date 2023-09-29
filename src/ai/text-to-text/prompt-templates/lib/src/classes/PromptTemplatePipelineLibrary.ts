@@ -35,20 +35,12 @@ export class PromptTemplatePipelineLibrary {
         return true;
     }
 
-    private readonly ptpExecutorsCache: Record<string_name, PtpExecutor<any /* <- TODO: Get rid of anys */, any>> = {};
-
     public getExecutor(
         name: string_name,
         tools: PtpExecutionTools,
     ): PtpExecutor<any /* <- TODO: Get rid of anys */, any> {
-        if (!this.ptpExecutorsCache[name]) {
-            const ptp = this.getPtp(name);
-            this.ptpExecutorsCache[name] = createPtpExecutor({ ptp, tools });
-        }
-
-        const ptpExecutor = this.ptpExecutorsCache[name]!;
-
-        return ptpExecutor;
+        const ptp = this.getPtp(name);
+        return createPtpExecutor({ ptp, tools });
     }
 }
 

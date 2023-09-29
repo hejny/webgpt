@@ -9,9 +9,12 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
     public constructor(private readonly clientId: string) {}
 
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
-        const { request /*, modelRequirements*/ } = prompt;
+        const { request, modelRequirements } = prompt;
 
-        // TODO: Use here modelRequirements
+        // TODO: Use here more modelRequirements
+        if (modelRequirements.variant !== 'CHAT') {
+            throw new Error(`Use gptChat only for CHAT variant`);
+        }
 
         const mark = `gpt-chat`;
         const promptAt = new Date();
