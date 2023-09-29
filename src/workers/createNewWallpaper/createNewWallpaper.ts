@@ -4,7 +4,7 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { getPtpToolsForBrowser } from '../../ai/text-to-text/prompt-templates/getPtpToolsForBrowser';
+import { getPtpToolsForWorker } from '../../ai/text-to-text/prompt-templates/getPtpToolsForWorker';
 import { ptpLibrary } from '../../ai/text-to-text/prompt-templates/ptpLibrary';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
@@ -304,7 +304,7 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    const { wallpaperContent } = await ptpLibrary.getExecutor('writeWebsiteContent', getPtpToolsForBrowser())(
+    const { wallpaperContent } = await ptpLibrary.getExecutor('writeWebsiteContent', getPtpToolsForWorker(author))(
         {
             title,
             assigment,
