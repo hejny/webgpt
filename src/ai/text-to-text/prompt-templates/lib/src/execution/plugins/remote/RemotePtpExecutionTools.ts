@@ -8,22 +8,7 @@ import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 
 export class RemotePtpExecutionTools implements PtpExecutionTools {
-    constructor(private readonly remoteUrl: URL, private readonly clientId: uuid) {
-        /*
-        const socket = new SocketIoClient(serverUrl);
-        socket.on('connect', () => {
-            console.log(chalk.green(`Client connected: ${socketConnection.id}`));
-        });
-        socket.on('disconnect', () => {
-            console.log(chalk.magenta(`Client disconnected: ${socketConnection.id}`));
-        });
-        socket.on('request', (options: Ptps_Request) => {
-            const {} = options;
-            console.log(chalk.green(`New request`), options);
-
-            socketConnection.send('response', {} satisfies Ptps_Response);
-        */
-    }
+    constructor(private readonly remoteUrl: URL, private readonly clientId: uuid) {}
 
     private makeConnection(): Promise<Socket> {
         return new Promise((resolve, reject) => {
@@ -44,9 +29,9 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
         }
 
         const socket = await this.makeConnection();
-        socket.send('request', { clientId: this.clientId, prompt } satisfies Ptps_Request);
+        socket.emit('request', { clientId: this.clientId, prompt } satisfies Ptps_Request);
 
-        const promptResult = new Promise<PromptResult>((resolve, reject) => {
+        const promptResult = await new Promise<PromptResult>((resolve, reject) => {
             socket.on('response', (response: Ptps_Response) => {
                 resolve(response.promptResult);
             });

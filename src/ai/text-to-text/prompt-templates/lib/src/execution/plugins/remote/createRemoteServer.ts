@@ -22,12 +22,12 @@ export function createRemoteServer(options: RemoteServerOptions) {
     });
 
     server.on('connection', (socket: Socket) => {
-        console.log(chalk.green(`Client connected: ${socket.id}`));
+        console.log(chalk.green(`Client connected`), socket.id);
 
         socket.on('request', async (request: Ptps_Request) => {
             const { prompt, clientId } = request;
             // TODO: !! Validate here clientId (pass validator as dependency)
-            console.log(chalk.green(`New request`), request);
+            console.log(chalk.green(`Received request`), request);
 
             // TODO: !!! Execution tools should be passed as dependency
             const executionTools = new OpenAiExecutionTools(OPENAI_API_KEY!, clientId);
@@ -36,14 +36,14 @@ export function createRemoteServer(options: RemoteServerOptions) {
             // TODO: !!! Split here between completion and chat
             const promptResult = await executionTools.gptChat(prompt);
 
-            socket.send('response', { promptResult } satisfies Ptps_Response);
+            socket.emit('response', { promptResult } satisfies Ptps_Response);
 
             // TODO: !!! Also handle progress and errors
             // TODO: !! Disconnect after some timeout
         });
 
         socket.on('disconnect', () => {
-            console.log(chalk.magenta(`Client disconnected: ${socket.id}`));
+            console.log(chalk.magenta(`Client disconnected`), socket.id);
         });
     });
 
