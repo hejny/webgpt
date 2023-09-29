@@ -148,6 +148,12 @@
             "focus": true
         },
         {
+            "name": "🌍 SSH pavolhejny.com",
+            "command": "ssh root@138.68.100.38",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🧸 Playground",
             "commands": ["ts-node ./scripts/playground/playground.ts"],
             "onlySingle": true,
