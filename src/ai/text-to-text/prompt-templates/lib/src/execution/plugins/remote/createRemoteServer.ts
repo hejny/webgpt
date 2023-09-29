@@ -47,7 +47,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
         });
     });
 
-    console.log(chalk.bgGreen(`Socket.io server listening on port ${port}`));
+    console.log(chalk.bgGreen(`PTP server listening on port ${port}`));
 }
 
 /**

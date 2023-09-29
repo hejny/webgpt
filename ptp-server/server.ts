@@ -1,9 +1,13 @@
 #!/usr/bin/env ts-node
 
+import * as dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
+
 import { createRemoteServer } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/remote/createRemoteServer';
 
 createRemoteServer({
-    port: 4455,
+    port: 4445,
 });
 
 /**
