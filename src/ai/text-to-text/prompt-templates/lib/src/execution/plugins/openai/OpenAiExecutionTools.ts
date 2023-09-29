@@ -1,12 +1,19 @@
+import OpenAI from 'openai';
 import spaceTrim from 'spacetrim';
 import { getSupabaseForServer } from '../../../../../../../../utils/supabase/getSupabaseForServer';
-import { getOpenaiForServer } from '../../../../../../getOpenaiForServer';
+import { string_token } from '../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../classes/Prompt';
 import { PromptChatResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 
 export class OpenAiExecutionTools implements PtpExecutionTools {
-    public constructor(private readonly clientId: string) {}
+    private readonly openai: OpenAI;
+
+    public constructor(openAiApiKey: string_token, private readonly clientId: string) {
+        this.openai = new OpenAI({
+            apiKey: openAiApiKey,
+        });
+    }
 
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
         const { request, modelRequirements } = prompt;
@@ -21,7 +28,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
         performance.mark(`${mark}-start`);
         const model = 'gpt-3.5-turbo'; /* <- TODO: To global config */
         const modelSettings = { model };
-        const completion = await getOpenaiForServer().chat.completions.create({
+        const completion = await this.openai.chat.completions.create({
             ...modelSettings,
             messages: [
                 {
@@ -119,6 +126,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
 }
 
 /**
+ * TODO: Pass here apiKey
  * TODO: !!! Annotate
  * TODO: !!! Create some common util for gptChat and gptComplete
  * TODO: [🧠] Logging+performance measure should be responsibility of some common/abstract code NOT OpenAiExecutionTools

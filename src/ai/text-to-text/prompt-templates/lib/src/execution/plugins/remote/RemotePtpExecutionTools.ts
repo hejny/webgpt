@@ -1,4 +1,5 @@
-import { SocketIoClient } from 'socket.io-client';
+import type { Socket } from 'socket.io-client';
+import { io } from 'socket.io-client';
 import { uuid } from '../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../classes/Prompt';
 import { PromptChatResult, PromptResult } from '../../PromptResult';
@@ -24,9 +25,11 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
         */
     }
 
-    private makeConnection(): Promise<SocketIoClient> {
+    private makeConnection(): Promise<Socket> {
         return new Promise((resolve, reject) => {
-            const socket = new SocketIoClient(this.remoteUrl.href);
+            const socket = io(this.remoteUrl.href, {
+                transports: ['websocket', 'polling'],
+            });
             socket.on('connect', () => {
                 resolve(socket);
             });

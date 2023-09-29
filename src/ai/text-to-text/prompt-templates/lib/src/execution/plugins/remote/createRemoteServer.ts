@@ -1,5 +1,6 @@
 import chalk from 'chalk';
-import { Server as SocketIoServer, Socket } from 'socket.io';
+import { Server, Socket } from 'socket.io';
+import { OPENAI_API_KEY } from '../../../../../../../../../config';
 import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
@@ -13,36 +14,36 @@ interface RemoteServerOptions {
 export function createRemoteServer(options: RemoteServerOptions) {
     const { port } = options;
 
-    const server = new SocketIoServer(port, {
+    const server: Server = new Server(port, {
         cors: {
             origin: '*',
             methods: ['GET', 'POST'],
         },
     });
 
-    server.on('connection', (socketConnection: Socket) => {
-        console.log(chalk.green(`Client connected: ${socketConnection.id}`));
+    server.on('connection', (socket: Socket) => {
+        console.log(chalk.green(`Client connected: ${socket.id}`));
 
-        socketConnection.on('request', async (request: Ptps_Request) => {
+        socket.on('request', async (request: Ptps_Request) => {
             const { prompt, clientId } = request;
             // TODO: !! Validate here clientId (pass validator as dependency)
             console.log(chalk.green(`New request`), request);
 
             // TODO: !!! Execution tools should be passed as dependency
-            const executionTools = new OpenAiExecutionTools(clientId);
+            const executionTools = new OpenAiExecutionTools(OPENAI_API_KEY!, clientId);
 
             // TODO: !!! Pass library as a dependency and check validity of the prompt
             // TODO: !!! Split here between completion and chat
             const promptResult = await executionTools.gptChat(prompt);
 
-            socketConnection.send('response', { promptResult } satisfies Ptps_Response);
+            socket.send('response', { promptResult } satisfies Ptps_Response);
 
             // TODO: !!! Also handle progress and errors
             // TODO: !! Disconnect after some timeout
         });
 
-        socketConnection.on('disconnect', () => {
-            console.log(chalk.magenta(`Client disconnected: ${socketConnection.id}`));
+        socket.on('disconnect', () => {
+            console.log(chalk.magenta(`Client disconnected: ${socket.id}`));
         });
     });
 

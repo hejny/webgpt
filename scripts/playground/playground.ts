@@ -6,11 +6,9 @@ dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import { join } from 'path';
-import {
-    ptpLibrary_writeWebsiteContent_EntryParams,
-    ptpLibrary_writeWebsiteContent_ResultParams,
-} from '../../src/ai/text-to-text/prompt-templates/ptpLibrary';
-import { ptpLibraryExecutor } from '../../src/ai/text-to-text/prompt-templates/ptpLibraryExecutor';
+import { OPENAI_API_KEY, SYSTEM_AUTHOR_ID } from '../../config';
+import { OpenAiExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/openai/OpenAiExecutionTools';
+import { ptpLibrary } from '../../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';
 
@@ -42,10 +40,12 @@ async function playground() {
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
         */
     };
-    const resultParams = await ptpLibraryExecutor.executePtp<
-        ptpLibrary_writeWebsiteContent_EntryParams,
-        ptpLibrary_writeWebsiteContent_ResultParams
-    >('writeWebsiteContent', entryParams);
+    const resultParams = await ptpLibrary.getExecutor(
+        'writeWebsiteContent',
+        new OpenAiExecutionTools(OPENAI_API_KEY!, SYSTEM_AUTHOR_ID),
+    )(entryParams, (taskProgress) => {
+        console.info({ taskProgress });
+    });
     console.info({ entryParams, resultParams });
 
     console.info(`[ Done 🧸  Playground ]`);

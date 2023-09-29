@@ -121,14 +121,15 @@ export default function NewWallpaperFromInstagramPage() {
 
                                     const { wallpaperId } = await createNewWallpaperForBrowser(
                                         {
+                                            title,
                                             author: await provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-                                            title,
+
                                             description /* <- TODO: ALter with biography_with_entities */,
                                             addSections: [
-                                                // TODO: Instagram AI component gallery 
+                                                // TODO: Instagram AI component gallery
                                                 // TODO: Add map from business_address_json
                                             ],
                                             links: [
@@ -146,8 +147,6 @@ export default function NewWallpaperFromInstagramPage() {
                                             ],
 
                                             // TODO: Maybe pass posts texts to give a flavour of the account and its style
-
-                                         
                                         },
                                         (newTaskProgress: TaskProgress) => {
                                             console.info('☑', newTaskProgress);

@@ -25,7 +25,7 @@ export function createPtpExecutor<
 >(options: CreatePtpExecutorOptions<TEntryParams, TResultParams>): PtpExecutor<TEntryParams, TResultParams> {
     const {
         ptp,
-        tools: { createChatThread, completeWithGpt },
+        tools: { gptChat },
     } = options;
 
     const ptpExecutor = async (
@@ -41,7 +41,9 @@ export function createPtpExecutor<
             if (onProgress) {
                 await onProgress({
                     name: `ptp-executor-frame-${resultingParamName}`,
-                    title: `Copywriting ${resultingParamName /* <- TODO: !!! Use real title + make looking good together with other tasks on new screen */}`,
+                    title: `Copywriting ${
+                        resultingParamName /* <- TODO: !!! Use real title + make looking good together with other tasks on new screen */
+                    }`,
                     isDone: false,
                 });
             }
@@ -50,13 +52,14 @@ export function createPtpExecutor<
 
             let response: string;
             if (currentPtp.modelRequirements.variant === 'CHAT') {
-                const chatThread = await createChatThread(prompt);
+                const chatThread = await gptChat(prompt);
                 // TODO: [🍬] Destroy chatThread
 
                 response = chatThread.response;
             } else if (currentPtp.modelRequirements.variant === 'COMPLETION') {
-                const completionResult = await completeWithGpt(prompt);
-                response = completionResult.response;
+                throw new Error(`Not implemented`);
+                // const completionResult = await completeWithGpt(prompt);
+                // response = completionResult.response;
             } else {
                 throw new Error(`Unknown model variant: ${currentPtp.modelRequirements.variant}`);
             }
