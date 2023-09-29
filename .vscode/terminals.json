@@ -4,7 +4,12 @@
         {
             "name": "👨🏽‍💻 Develop",
             "command": "npm run dev",
-            "focus": true
+            "focus": false
+        },
+        {
+            "name": "👨🏽‍💻 Run PTP server",
+            "commands": ["ts-node ./ptp-server/server.ts"],
+            "focus": false
         },
         {
             "name": "🌎 Expose",
