@@ -304,7 +304,10 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    const { wallpaperContent } = await ptpLibrary.getExecutor('writeWebsiteContent', getPtpToolsForWorker(author))(
+    const { contentBody, keywords, enhancedTitle, claim } = await ptpLibrary.getExecutor(
+        'writeWebsiteContent',
+        getPtpToolsForWorker(author),
+    )(
         {
             title,
             assigment,
@@ -314,34 +317,25 @@ export async function createNewWallpaper(
         onProgress,
     );
 
-    /*
-    TODO: !!!last Remove
-    const response3 /* <-[💩] * / = await fetch(
-        `/api/custom/write-wallpaper-content?clientId=${author /* <- TODO: Pass as clientId * /}`,
-        {
-            method: 'POST',
-            body: JSON.stringify({ title, assigment, links, addSections } satisfies WriteWallpaperContentRequest),
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-        },
+    const wallpaperContent = spaceTrim(
+        (block) => `
+
+            # ${block(enhancedTitle)}
+
+            > ${block(claim)}
+
+            ${block(contentBody)}
+        
+        
+        `,
     );
-
-    if (response3.ok === false) {
-        // TODO: [🈵] If 4XX error, show also the message from json body
-        throw new Error(`Copywriting failed with status ${response3.status}`);
-    }
-
-    const { wallpaperContent } = (await response3.json()) as WriteWallpaperContentResponse;
-    */
 
     await onProgress({
         name: 'write-wallpaper-content',
         isDone: true,
     });
 
-    console.info({ wallpaperContent });
+    console.info({ wallpaperContent, contentBody, keywords, enhancedTitle, claim });
     //-------[ /Write content ]---
     //===========================================================================
     //-------[ Save: ]---
