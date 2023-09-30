@@ -13,7 +13,9 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
     private makeConnection(): Promise<Socket> {
         return new Promise((resolve, reject) => {
             const socket = io(this.remoteUrl.href, {
-                transports: ['websocket', 'polling'],
+                path: '/ptp/socket.io',
+                // path: `${this.remoteUrl.pathname}/socket.io`,
+                transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
             });
             socket.on('connect', () => {
                 resolve(socket);

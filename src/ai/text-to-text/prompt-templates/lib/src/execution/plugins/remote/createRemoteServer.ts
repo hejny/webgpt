@@ -17,6 +17,10 @@ export function createRemoteServer(options: RemoteServerOptions) {
     const { port } = options;
 
     const httpServer = http.createServer({}, (request, response) => {
+        if (request.url?.includes('socket.io')) {
+            return;
+        }
+
         response.write(
             spaceTrim(`
                 Server for processing PTP requests is running
@@ -30,6 +34,8 @@ export function createRemoteServer(options: RemoteServerOptions) {
     });
 
     const server: Server = new Server(httpServer, {
+        path: '/ptp/socket.io',
+        transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
         cors: {
             origin: '*',
             methods: ['GET', 'POST'],
