@@ -26,7 +26,7 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
 
             setTimeout(() => {
                 reject(new Error(`Timeout while connecting to ${this.remoteUrl.href}`));
-            }, 5000 /* <- TODO: Timeout to config */);
+            }, 60000 /* <- TODO: Timeout to config */);
         });
     }
 
