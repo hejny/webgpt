@@ -5,7 +5,7 @@ module.exports = {
             namespace: '1-2i',
             script: 'ptp-server/server.ts',
             exec_mode: 'cluster',
-            interpreter: 'node@16.15.1',
+            interpreter: 'node@16.20.2',
         },
     ],
 };
