@@ -1,5 +1,7 @@
 import chalk from 'chalk';
+import http from 'http';
 import { Server, Socket } from 'socket.io';
+import spaceTrim from 'spacetrim';
 import { OPENAI_API_KEY } from '../../../../../../../../../config';
 import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
@@ -14,7 +16,20 @@ interface RemoteServerOptions {
 export function createRemoteServer(options: RemoteServerOptions) {
     const { port } = options;
 
-    const server: Server = new Server(port, {
+    const httpServer = http.createServer({}, (request, response) => {
+        response.write(
+            spaceTrim(`
+                Server for processing PTP requests is running
+
+                For more information look at:
+                https://github.com/hejny/ptp
+
+            `),
+        );
+        response.end();
+    });
+
+    const server: Server = new Server(httpServer, {
         cors: {
             origin: '*',
             methods: ['GET', 'POST'],
@@ -47,6 +62,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
         });
     });
 
+    httpServer.listen(port);
     console.log(chalk.bgGreen(`PTP server listening on port ${port}`));
 }
 
