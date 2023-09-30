@@ -17,9 +17,16 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
                 // path: `${this.remoteUrl.pathname}/socket.io`,
                 transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
             });
+
+            console.log('Connecting to', this.remoteUrl.href, { socket });
+
             socket.on('connect', () => {
                 resolve(socket);
             });
+
+            setTimeout(() => {
+                reject(new Error(`Timeout while connecting to ${this.remoteUrl.href}`));
+            }, 5000 /* <- TODO: Timeout to config */);
         });
     }
 
