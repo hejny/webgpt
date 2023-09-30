@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 import * as dotenv from 'dotenv';
 
 dotenv.config({ path: '.env' });
