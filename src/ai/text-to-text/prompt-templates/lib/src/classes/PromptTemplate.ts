@@ -1,8 +1,8 @@
 import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
-import { ModelRequirements, ModelVariant } from '../types/ModelRequirements';
+import { ModelRequirements } from '../types/ModelRequirements';
+import { Prompt } from '../types/Prompt';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { replaceParams } from '../utils/replaceParams';
-import { Prompt } from './Prompt';
 
 export class PromptTemplate<TEntryParams extends PromptTemplateParams, TResultParams extends PromptTemplateParams> {
     public constructor(
@@ -11,7 +11,9 @@ export class PromptTemplate<TEntryParams extends PromptTemplateParams, TResultPa
     ) {}
 
     writePrompt(params: PromptTemplateParams): Prompt {
-        let prompt = replaceParams(this.source, params);
-        return new Prompt(prompt, this.modelRequirements);
+        return {
+            request: replaceParams(this.source, params),
+            modelRequirements: this.modelRequirements,
+        };
     }
 }

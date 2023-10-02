@@ -1,4 +1,4 @@
-import { Prompt } from '../classes/Prompt';
+import { Prompt } from '../types/Prompt';
 import { PromptChatResult } from './PromptResult';
 
 export interface PtpExecutionTools {

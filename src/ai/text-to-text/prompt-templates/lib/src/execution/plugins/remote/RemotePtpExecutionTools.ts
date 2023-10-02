@@ -1,7 +1,7 @@
 import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
 import { uuid } from '../../../../../../../../utils/typeAliases';
-import { Prompt } from '../../../classes/Prompt';
+import { Prompt } from '../../../types/Prompt';
 import { PromptChatResult, PromptResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';

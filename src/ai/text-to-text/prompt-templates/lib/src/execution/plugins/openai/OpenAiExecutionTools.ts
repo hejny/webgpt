@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 import spaceTrim from 'spacetrim';
 import { getSupabaseForServer } from '../../../../../../../../utils/supabase/getSupabaseForServer';
 import { string_token } from '../../../../../../../../utils/typeAliases';
-import { Prompt } from '../../../classes/Prompt';
+import { Prompt } from '../../../types/Prompt';
 import { PromptChatResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 
@@ -66,7 +66,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
             spaceTrim(
                 (block) => `
                     ===========================[ Chat: ]===
-                    [🧑] ${block(prompt.toString())}
+                    [🧑] ${block(prompt.request)}
                     [🤖] ${block(response)}
                     ---
                     Executed in ${block(
