@@ -13,6 +13,6 @@ Počet normostran
 -->
 
 
-Před pár týdny o sobě dala vědět nově vzniklá České asociace umělé inteligence (ČAUI). Samozřejmě jsem se stal jedním z prvních členů, protože velmi souzním s jejími cíli a dostal jsem pak několik dotazů od známých, co je vlastně ta asociace zač. Proto jsem se rozhodl vyzpovídat jejího zakladatele a ředitele Lukáše Benzla.
+Před pár týdny o sobě dal vědět nově vzniklá České asociace umělé inteligence (ČAUI). Samozřejmě jsem se stal jedním z prvních členů, protože velmi souzním s jejími cíli a dostal jsem pak několik dotazů od známých, co je vlastně ta asociace zač. Proto jsem se rozhodl vyzpovídat jejího zakladatele a ředitele Lukáše Benzla.
 
 **Co si mají čtenáři představit pod Českou asociací umělé inteligence?**
