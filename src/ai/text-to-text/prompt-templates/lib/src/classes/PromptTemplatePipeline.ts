@@ -73,5 +73,5 @@ export class PromptTemplatePipeline<
  * TODO: Can be Array elegantly typed such as it must have at least one element?
  * TODO: [🧠] Each PromptTemplatePipeline should have its unique hash to be able to compare them and execute on server ONLY the desired ones
  * TODO: [🧠] Some method to compare PromptTemplatePipeline, PromptTemplate, Prompt, PromptExecution
- * TODO: !!! Rename supabase table Prompt to PromptExecution (Prompt + PromptResult) to be more clear
+ * TODO: !!!last Rename supabase table Prompt to PromptExecution (Prompt + PromptResult) to be more clear
  */

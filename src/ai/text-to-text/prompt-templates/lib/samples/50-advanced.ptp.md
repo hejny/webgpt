@@ -2,6 +2,11 @@
 
 Trying the language capabilities of GPT models.
 
+## ~Requirements:
+
+-   Use Chat
+-   Use GPT-3
+
 ## Synonym
 
 Write synonym for "{word}"
@@ -18,32 +23,31 @@ Write sentence with "{word}" and "{wordSynonym}" in it
 
 Remove word "{word}" from sentence and modify it so that it makes sense:
 
-### Rules:
+**Rules:**
 
 -   Sentence must be grammatically correct
 -   Sentence must make sense after removing the word
 
-#### The Sentence:
+**The Sentence:**
 
 > {sentenceWithTwoSynonyms}
 
 -> {sentenceWithOriginalWordRemoved}
 
-## Comparison
+## ~Requirements:
 
-### Requirements:
-
+-   Use Chat
 -   Use GPT-4
 
----
+## Comparison
 
 Compare meaning of thee two sentences:
 
-### Sentence 1:
+**Sentence 1:**
 
 > {sentenceWithTwoSynonyms}
 
-### Sentence 2:
+**Sentence 2:**
 
 > {sentenceWithOriginalWordRemoved}
 

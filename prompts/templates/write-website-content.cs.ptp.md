@@ -3,7 +3,7 @@
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/hejny/ptp).
 
 <!--
-TODO: !!! Parse this new format
+TODO: !!! [🚲] Parse this new format
 -->
 
 ## ~Requirements
