@@ -23,6 +23,8 @@ Co zmínit:
 - Já jsem primárně aplikační vývojář na výzkumník založil jsem H-edu colboard a teď mi dává smysl dělat tohle
 - Dynamické galerie, divadlo či prezentace specificky pro publikum co mě ale napadá že by mohla být dokonalá forma Pro tuhle novou generativní technologie jsou počítačové hry například už před 15 lety Minecraft byl první hrou která masově rozšířila koncept procedurálně generovaných světů –
 - Řekni mi o tom víc ty sám jsi vyvíjel počítačovou hru
+- Důležité je vědět K čemu jsou technologie dobré A k čemu dobré nejsou – Každý by mě pokud lidé kteří Můj syn který má teď rok a půl bude Podle statistiky žít do roku 2100- není prakticky možné aby uspěl ve světě se znalostmi 20 století bude naprosto nutné je naprosto nutné a nejenom pro ní ale i pro mě naučit se pracovat s generativními velmi počítačové znalosti jsou prakticky jsou naprostá nezbytnost a obecně Těžko říct jestli je nutné umět programovat Spíš bych řekl že je důležité umět mít počítačové přemýšlení a umět skriptovat a také Těžko říct na kolik bude zásadní znalost mluvit v cizím jazykem – podle mě bude důležité umět mluvit a dorozumět se gramatika bude ale asi stále lépe a lépe pustínitelné jazykovými modely
+- generativní textová umělá inteligence zcela jistě změní i povahu jazyka – mnoho věcí v jazyce vychází z technologických možností úplně jinak používáme jazyk v mluvené formě když přišla 19 století masová potřeba aby plošně populace uměla číst a psát nejenom mluvit přišla také potřeba kodifikovat pravidla
 
 
 
