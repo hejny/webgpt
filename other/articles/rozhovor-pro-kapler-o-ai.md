@@ -21,8 +21,8 @@ Co zmínit:
 - programování má stejně daleko k matematice jako lingvistice i když běžný stereotyp ještě před pár lety byl že programování je primárně o matematice
 - technologie zásnění kulturu- velmi pravděpodobně to budeme mít zásadní kulturní díla 21 století pomocí generativní umělé inteligence Případně se bude jednat o věc Na Pomezí kódu a textu například něco jako šablona nebo instrukce
 - Já jsem primárně aplikační vývojář na výzkumník založil jsem H-edu colboard a teď mi dává smysl dělat tohle
-- 
-- 
+- Dynamické galerie, divadlo či prezentace specificky pro publikum co mě ale napadá že by mohla být dokonalá forma Pro tuhle novou generativní technologie jsou počítačové hry například už před 15 lety Minecraft byl první hrou která masově rozšířila koncept procedurálně generovaných světů –
+- Řekni mi o tom víc ty sám jsi vyvíjel počítačovou hru
 
 
 
