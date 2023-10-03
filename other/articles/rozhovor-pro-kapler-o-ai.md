@@ -12,9 +12,8 @@ Počet normostran: 5
 
 Co zmínit:
 
-- primární a sekundární služby
-- Proč je dali tři velká věc
-- GPT a generování obrázků jsou pouze stavební bloky podobně Jak byl tranzistor
+- Proč je generátor obrázků Dalle-3 velká věc
+- primární a sekundární služby: GPT a generování obrázků jsou pouze stavební bloky podobně Jak byl tranzistor
 - celá ta revoluce přišla až přišla do širokého povědomí až chat GPT co není technické co není až tak technický průlom ale víc UX průlom
 - zcela jistě se vynoří spousta různých forem jak generativní Ai ovládat-
 - vznik zcela nového odvětví Na Pomezí programování a psaní textu
@@ -35,11 +34,6 @@ Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a c
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
 
-
 rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky kavárna Pod Kaštanem
-
-
-
-
 
 ---
