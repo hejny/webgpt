@@ -10,7 +10,7 @@ export class PromptTemplate<TEntryParams extends PromptTemplateParams, TResultPa
         public readonly modelRequirements: ModelRequirements,
     ) {}
 
-    writePrompt(params: PromptTemplateParams): Prompt {
+    public writePrompt(params: PromptTemplateParams): Prompt {
         return {
             request: replaceParams(this.source, params),
             modelRequirements: this.modelRequirements,
