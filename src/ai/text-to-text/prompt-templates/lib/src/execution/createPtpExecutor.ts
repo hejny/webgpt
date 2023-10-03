@@ -15,7 +15,7 @@ interface CreatePtpExecutorOptions<
 }
 
 /**
- * @@@
+ * Creates executor function from prompt template pipeline and execution tools.
  *
  * Note: Consider using getExecutor method of the library instead of using this function
  */

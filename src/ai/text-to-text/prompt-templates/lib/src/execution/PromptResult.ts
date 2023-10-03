@@ -1,6 +1,15 @@
 import { string_model_name } from '../../../../../../utils/typeAliases';
 
+/**
+ * Prompt result is the simplest concept of execution.
+ * It is the result of executing one prompt _(NOT a template)_.
+ *
+ * @see https://github.com/hejny/ptp#prompt-result
+ */
 export interface PromptResult {
+    /**
+     * Exact text response from the model.
+     */
     readonly response: string;
     readonly model: string_model_name;
 }

@@ -4,10 +4,27 @@ import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson'
 import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplatePipelineSourceValid';
 import { PromptTemplate } from './PromptTemplate';
 
+/**
+ * Prompt template pipeline is the **core concept of this library**.
+ * It represents a series of prompt templates chained together to form a pipeline / one big prompt template with input and result params.
+ *
+ * It can have 3 formats:
+ * -   **.ptp.md file** in custom markdown format described above
+ * -   **JSON** format, parsed from the .ptp.md file
+ * -   _(this)_ **Object** which is created from JSON format and bound with tools around (but not the execution logic)
+ *
+ * @see https://github.com/hejny/ptp#prompt-template-pipeline
+ */
 export class PromptTemplatePipeline<
     TEntryParams extends PromptTemplateParams,
     TResultParams extends PromptTemplateParams,
 > {
+    /**
+     * Constructs PromptTemplatePipeline from JSON source
+     *
+     * @param source
+     * @returns PromptTemplatePipeline
+     */
     public static fromJson<TEntryParams extends PromptTemplateParams, TResultParams extends PromptTemplateParams>(
         source: PromptTemplatePipelineJson,
     ): PromptTemplatePipeline<TEntryParams, TResultParams> {
@@ -37,10 +54,16 @@ export class PromptTemplatePipeline<
         }
     }
 
+    /**
+     * Returns the first prompt template in the pipeline
+     */
     public get entryPromptTemplate(): PromptTemplate<TEntryParams, PromptTemplateParams> {
         return this.promptTemplates[0]!.promptTemplate;
     }
 
+    /**
+     * Gets the name of the param that is the result of given prompt template
+     */
     public getResultingParamName(
         curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
     ): string_attribute {
@@ -52,6 +75,9 @@ export class PromptTemplatePipeline<
         return this.promptTemplates[index]!.resultingParamName;
     }
 
+    /**
+     * Gets the following prompt template in the pipeline or null if there is no following prompt template and this is the last one
+     */
     public getFollowingPromptTemplate(
         curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
     ): PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null {

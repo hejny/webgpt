@@ -1,3 +1,14 @@
+/**
+ * Parameters that are placed in the prompt template and replaced to create the prompt. It is a simple key-value object.
+ *
+ * Note: There are three types of template params, depending on how they are used in the prompt template pipeline:
+ *     -   **Entry params** are required to execute the prompt template pipeline.
+ *     -   **Intermediate params** are used internally in the prompt template pipeline.
+ *     -   **Result params** are not used internally in the prompt template pipeline, but are returned as the result of the prompt template pipeline execution.
+ *
+ * @see https://github.com/hejny/ptp#prompt-template-params
+ *
+ */
 export type PromptTemplateParams = {
     /* Note: We dont want index signature here because of:
              1) It can lead to runtime errors when reading undefined params which fits into index signature

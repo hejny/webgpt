@@ -13,6 +13,14 @@ interface RemoteServerOptions {
     // TODO: isVerbose
 }
 
+/**
+ * Remote server is a proxy server that uses its execution tools internally and exposes the executor interface externally.
+ *
+ * You can simply use `RemoteExecutionTools` on client-side javascript and connect to your remote server.
+ * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
+ *
+ * @see https://github.com/hejny/ptp#remote-server
+ */
 export function createRemoteServer(options: RemoteServerOptions) {
     const { port } = options;
 

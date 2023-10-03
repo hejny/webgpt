@@ -3,6 +3,9 @@ import { removeContentComments } from '../../../../../../utils/content/removeCon
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 
+/**
+ * Converts prompt template pipeline from string format to JSON format
+ */
 export function promptTemplatePipelineStringToJson(
     promptTemplatePipelineString: PromptTemplatePipelineString,
 ): PromptTemplatePipelineJson {

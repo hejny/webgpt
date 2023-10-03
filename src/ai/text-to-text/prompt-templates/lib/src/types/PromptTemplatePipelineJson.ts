@@ -2,13 +2,15 @@ import { string_prompt, string_template } from '../../../../../../utils/typeAlia
 import { ModelRequirements } from './ModelRequirements';
 
 /**
+ * Prompt template pipeline is the **core concept of this library**.
+ * It represents a series of prompt templates chained together to form a pipeline / one big prompt template with input and result params.
  *
- * TODO: !! Copy to all 3
+ * It can have 3 formats:
+ * -   **.ptp.md file** in custom markdown format described above
+ * -   _(this)_ **JSON** format, parsed from the .ptp.md file
+ * -   **Object** which is created from JSON format and bound with tools around (but not the execution logic)
  *
- * Note: Theese 3 are representing same thing, but in different forms
- *     - `PromptTemplatePipelineString` !!
- *     - `PromptTemplatePipelineJson` !!
- *     - `PromptTemplatePipeline` !!
+ * @see https://github.com/hejny/ptp#prompt-template-pipeline
  */
 export interface PromptTemplatePipelineJson {
     promptTemplates: Array<{

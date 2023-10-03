@@ -6,7 +6,13 @@ import { Prompt } from '../../../types/Prompt';
 import { PromptChatResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 
+/**
+ * Execution Tools for calling OpenAI API.
+ */
 export class OpenAiExecutionTools implements PtpExecutionTools {
+    /**
+     * OpenAI API client.
+     */
     private readonly openai: OpenAI;
 
     public constructor(openAiApiKey: string_token, private readonly clientId: string) {
@@ -15,6 +21,9 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
         });
     }
 
+    /**
+     * Calls OpenAI API to use a chat model.
+     */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
         const { request, modelRequirements } = prompt;
 

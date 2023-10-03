@@ -7,6 +7,14 @@ import { PtpExecutionTools } from '../../PtpExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 
+/**
+ * Remote server is a proxy server that uses its execution tools internally and exposes the executor interface externally.
+ *
+ * You can simply use `RemoteExecutionTools` on client-side javascript and connect to your remote server.
+ * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
+ *
+ * @see https://github.com/hejny/ptp#remote-server
+ */
 export class RemotePtpExecutionTools implements PtpExecutionTools {
     constructor(private readonly remoteUrl: URL, private readonly clientId: uuid) {}
 
@@ -30,6 +38,9 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
         });
     }
 
+    /**
+     * Calls remote proxy server to use a chat model.
+     */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
         const { request, modelRequirements } = prompt;
 

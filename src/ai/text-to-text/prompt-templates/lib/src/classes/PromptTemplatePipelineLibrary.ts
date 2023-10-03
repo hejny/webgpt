@@ -5,6 +5,15 @@ import { PtpExecutor } from '../execution/PtpExecutor';
 import { Prompt } from '../types/Prompt';
 import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 
+/**
+ * Library of prompt template pipelines that groups together prompt template pipelines for an application. This is a very thin wrapper around the Array / Set of prompt template pipelines.
+ *
+ * Prompt Template Pipeline library is a useful helper in execution, it can be shared between execution and consumer parts of the app and make common knowledge about prompt template pipelines.
+ *
+ * It allows to create executor functions from prompt template pipelines in the library.
+ *
+ * @see https://github.com/hejny/ptp#prompt-template-pipeline-library
+ */
 export class PromptTemplatePipelineLibrary {
     /*
     TODO: 
@@ -22,6 +31,9 @@ export class PromptTemplatePipelineLibrary {
         >,
     ) {}
 
+    /**
+     * Gets prompt template pipeline by name
+     */
     public getPtp(name: string_name): PromptTemplatePipeline<any /* <- TODO: Get rid of anys */, any> {
         const promptTemplatePipeline = this.promptTemplatePipelines[name];
         if (!promptTemplatePipeline) {
@@ -30,11 +42,17 @@ export class PromptTemplatePipelineLibrary {
         return promptTemplatePipeline;
     }
 
+    /**
+     * Checks whether prompt is in the library
+     */
     public isPromptInLibrary(prompt: Prompt): boolean {
         // TODO: DO not hardcode this, really validate whether the prompt is in the library
         return true;
     }
 
+    /**
+     * Gets executor function for given prompt template pipeline
+     */
     public getExecutor(
         name: string_name,
         tools: PtpExecutionTools,
