@@ -439,13 +439,13 @@ export type string_person_profile = string;
  * Full profile of the person with his email and web (like in package.json)
  */
 export interface IPersonProfile {
-    name?: string_person_fullname;
+    readonly name?: string_person_fullname;
 
     /**
      * Note: Photos are taken from Gravatar by email
      */
-    email?: string_email;
-    url?: string_url;
+    readonly email?: string_email;
+    readonly url?: string_url;
 }
 
 /**
@@ -459,16 +459,16 @@ export type string_license = string;
  * License with its type and url like in package.json
  */
 export interface ILicense {
-    type?: string_license;
-    url?: string;
+    readonly type?: string_license;
+    readonly url?: string;
 }
 
 /**
  * Repository with its type and url like in package.json
  */
 export interface IRepository {
-    type?: string | 'git';
-    url?: string;
+    readonly type?: string | 'git';
+    readonly url?: string;
 }
 
 /**

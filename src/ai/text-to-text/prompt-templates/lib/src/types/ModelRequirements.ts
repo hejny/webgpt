@@ -2,7 +2,7 @@ export const MODEL_VARIANTS = ['COMPLETION', 'CHAT'] as const;
 export type ModelVariant = typeof MODEL_VARIANTS[number];
 
 export interface ModelRequirements {
-    variant: ModelVariant;
+    readonly variant: ModelVariant;
 }
 
 /**

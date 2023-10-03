@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import whoiser, { WhoisSearchResult } from 'whoiser';
 
 interface RegisterResponse {
-    result: WhoisSearchResult;
+    readonly result: WhoisSearchResult;
 }
 
 /**

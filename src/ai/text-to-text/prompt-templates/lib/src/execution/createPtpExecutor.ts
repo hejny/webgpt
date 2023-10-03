@@ -10,8 +10,8 @@ interface CreatePtpExecutorOptions<
     TEntryParams extends PromptTemplateParams,
     TResultParams extends PromptTemplateParams,
 > {
-    ptp: PromptTemplatePipeline<TEntryParams, TResultParams>;
-    tools: PtpExecutionTools;
+    readonly ptp: PromptTemplatePipeline<TEntryParams, TResultParams>;
+    readonly tools: PtpExecutionTools;
 }
 
 /**

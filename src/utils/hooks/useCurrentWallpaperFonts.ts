@@ -7,12 +7,12 @@ interface WallpaperFonts {
     /**
      * The main font of the wallpaper page
      */
-    mainWallpaperFont: string_font_family;
+    readonly mainWallpaperFont: string_font_family;
 
     /**
      * All the fonts used on the wallpaper page
      */
-    allWallpaperFonts: Set<string_font_family>;
+    readonly allWallpaperFonts: Set<string_font_family>;
 }
 
 /**

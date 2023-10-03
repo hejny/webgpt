@@ -12,6 +12,5 @@ export interface PromptChatResult extends PromptResult {
 /**
  * TODO: [🧠] Add more execution stats like: tokens, spent, time, etc.
  *            + wrap in subobject stats
- * TODO: !!! ACRY add readonly to all properties
  * TODO: !!! ACRY add public / private /... to all methods
  */

@@ -8,12 +8,12 @@ export interface IsClientVerifiedResponse {
     /**
      * Is client inserted into the database
      */
-    isClientInserted: boolean;
+    readonly isClientInserted: boolean;
 
     /**
      * Is client verified by email
      */
-    isClientVerified: boolean;
+    readonly isClientVerified: boolean;
 }
 
 export default async function isClientVerifiedHandler(
@@ -23,14 +23,11 @@ export default async function isClientVerifiedHandler(
     const clientId = request.query.clientId;
 
     if (!isValidClientId(clientId)) {
-        return response
-            .status(400)
-            .json(
-                {
-                    message:
-                        'GET param clientId is not valid client ID' /* <- TODO: [🌻] Unite wrong GET param message */,
-                } as any /* <-[🌋] */,
-            );
+        return response.status(400).json(
+            {
+                message: 'GET param clientId is not valid client ID' /* <- TODO: [🌻] Unite wrong GET param message */,
+            } as any /* <-[🌋] */,
+        );
     }
 
     const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);

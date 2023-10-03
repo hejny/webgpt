@@ -10,7 +10,7 @@ export interface WriteWallpaperContentOptions {
     /**
      * Client ID to validate the request
      */
-    clientId: uuid /* <-[🌺] */;
+    readonly clientId: uuid /* <-[🌺] */;
 
    
 }

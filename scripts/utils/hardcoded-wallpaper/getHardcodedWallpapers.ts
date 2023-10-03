@@ -20,10 +20,10 @@ import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpaper
  * @@@
  */
 interface IWallpaperSerializedWithExtra extends IWallpaperSerialized {
-    metadataFilePath: string_file_path;
-    srcFilePath: string_file_path;
-    colorStatsFilePath: string_file_path;
-    contentFilePath: string_file_path;
+    readonly metadataFilePath: string_file_path;
+    readonly srcFilePath: string_file_path;
+    readonly colorStatsFilePath: string_file_path;
+    readonly contentFilePath: string_file_path;
 }
 
 /**

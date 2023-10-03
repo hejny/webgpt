@@ -8,7 +8,7 @@ import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 
 interface RemoteServerOptions {
-    port: number;
+    readonly port: number;
 
     // TODO: isVerbose
 }

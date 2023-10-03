@@ -36,18 +36,18 @@ export interface ICreateNewWallpaperRequest {
      * If set, the generated content will start with this title
      * If null, it will be written by AI
      */
-    title: Exclude<title, JSX.Element> | null;
+    readonly title: Exclude<title, JSX.Element> | null;
 
     /**
      * Author of the wallpaper
      * Note: It must be valid client ID and same as identity of the user
      */
-    author: uuid;
+    readonly author: uuid;
 
     /**
      * Image of the wallpaper
      */
-    wallpaperImage: Blob;
+    readonly wallpaperImage: Blob;
 
     /**
      * Description of the wallpaper
@@ -60,7 +60,7 @@ export interface ICreateNewWallpaperRequest {
      * - `description` which describes content of the image
      * - `assigment` which describes requirements for the page
      */
-    description: Exclude<description, JSX.Element> | null;
+    readonly description: Exclude<description, JSX.Element> | null;
 
     /**
      * Assigment of the wallpaper
@@ -74,33 +74,33 @@ export interface ICreateNewWallpaperRequest {
      * - `description` which describes content of the image
      * - `assigment` which describes requirements for the page
      */
-    assigment?: Exclude<description, JSX.Element> | null;
+    readonly assigment?: Exclude<description, JSX.Element> | null;
 
     /**
      * Additional sections to be added to the content
      */
-    addSections: Array<{
+    readonly addSections: Array<{
         /**
          * Unique name of the section
          * Note: It is used for example as element ID to lead anchor links to this section
          */
-        name: string_name;
+        readonly name: string_name;
 
         /**
          * Title of the section
          */
-        title: Exclude<title, JSX.Element>;
+        readonly title: Exclude<title, JSX.Element>;
 
         /**
          * Order of the section
          * TODO: [🧠] Some transparent system to order sections
          */
-        order: number;
+        readonly order: number;
 
         /**
          * Content of the section
          */
-        content: string_markdown;
+        readonly content: string_markdown;
 
         // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assigment and auto generate
     }>;
@@ -108,21 +108,21 @@ export interface ICreateNewWallpaperRequest {
     /**
      * Links to be added to the content
      */
-    links: Array<{
+    readonly links: Array<{
         /**
          * Title of the link - it is used as link text and also as title attribute
          */
-        title: Exclude<title, JSX.Element>;
+        readonly title: Exclude<title, JSX.Element>;
 
         /**
          * URL of the link
          */
-        url: string_url;
+        readonly url: string_url;
     }>;
 }
 
 export interface ICreateNewWallpaperResult {
-    wallpaperId: string_wallpaper_id;
+    readonly wallpaperId: string_wallpaper_id;
 }
 
 /**

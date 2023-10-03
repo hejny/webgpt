@@ -17,15 +17,15 @@ export const ptpLibrary = new PromptTemplatePipelineLibrary({
 });
 
 export interface ptpLibrary_writeWebsiteContent_EntryParams {
-    title: string;
-    assigment: string;
+    readonly title: string;
+    readonly assigment: string;
 }
 
 export interface ptpLibrary_writeWebsiteContent_ResultParams {
-    contentBody: string;
-    keywords: string;
-    enhancedTitle: string;
-    claim: string;
+    readonly contentBody: string;
+    readonly keywords: string;
+    readonly enhancedTitle: string;
+    readonly claim: string;
 }
 
 /**

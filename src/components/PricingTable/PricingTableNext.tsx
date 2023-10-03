@@ -12,22 +12,22 @@ interface Plan {
     /**
      * @@@
      */
-    id: number;
+    readonly id: number;
 
     /**
      * @@@
      */
-    title: title;
+    readonly title: title;
 
     /**
      * @@@
      */
-    price: number_positive;
+    readonly price: number_positive;
 
     /**
      * @@@
      */
-    benefits: string[];
+    readonly benefits: string[];
 }
 
 /**

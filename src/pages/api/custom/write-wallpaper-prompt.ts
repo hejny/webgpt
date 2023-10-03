@@ -6,7 +6,7 @@ import { isValidUrl } from '../../../utils/validators/isValidUrl';
 
 export interface WriteWallpaperPromptResponse {
     // TODO: [🌋] ErrorableResponse
-    wallpaperDescription: Exclude<image_description, JSX.Element>;
+    readonly wallpaperDescription: Exclude<image_description, JSX.Element>;
 }
 
 export default async function writeWallpaperPromptHandler(

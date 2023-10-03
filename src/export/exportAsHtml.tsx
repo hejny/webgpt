@@ -26,7 +26,7 @@ import { removeSourceMaps } from './utils/removeSourceMaps';
 import { removeTodoComments } from './utils/removeTodoComments';
 
 interface HtmlExport {
-    files: Array<HtmlExportFile>;
+    readonly files: Array<HtmlExportFile>;
 }
 
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {

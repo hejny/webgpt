@@ -10,7 +10,7 @@ export type WriteWallpaperContentRequest = Omit<WriteWallpaperContentOptions, 'c
 
 export interface WriteWallpaperContentResponse {
     // TODO: [🌋] ErrorableResponse
-    wallpaperContent: string_markdown;
+    readonly wallpaperContent: string_markdown;
 }
 
 export default async function writeWallpaperContentHandler(
