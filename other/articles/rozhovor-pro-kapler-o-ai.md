@@ -2,7 +2,96 @@
 
 > Rozhovor s [Pavolem Hejným](https://www.pavolhejny.com/) pro [Kapler o AI](https://www.kapler.cz/category/AI/)
 
+Před pár dny o sobě dal vědět [Pavol Hejný](https://www.pavolhejny.com/) s projektem na [generování webů pomomocí AI](https://webgpt.cz/).
+Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a co nás čeká v budoucnu.
+
+**Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
+
+Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny !!!Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
+
+**Jak to funguje?**
+
+V principu je to spojení jazykového modelu, obrázkového generátoru, rozpoznání obrázků a několika dalších technologií.
+Uživatel má vícero možností:
+
+-   Mám **obrázek**, ten se mi analyzuje a na základě něj se vygeneruje zadaní, které mohu upravit
+-   Mám **zadání** a z něj se mi vygeneruje obrázek a web
+-   Mám **nápad**, ze kterého se vygeneruje zadaní
+-   Mám **Instagram** / Facebook / Starý web, který se mi přegeneruje do nové podoby
+-   Nemám **nic** a nechám se překvapit
+
+Samozřejmě je na pozadí mnoho dalších věcí, například analýza obrázku a sestavení palety barev, fontů a dalších věcí.
+
+**Jaké jsou výhody a nevýhody generování webů pomocí AI?**
+
+Je to hlavně o ekonomice a časové náročnosti. Pokud chci jednoduchý web, který má za cíl ukázat jednu konkrétní věc, tak je to ideální řešení.
+Naopak pro složitější weby, e-shopy, webové aplikace to není.
+
+Obecně u prezentačních webů platí jedna věc – dokáží sežrat prakticky neomezené množství času a peněz bez zvyšování hodnoty.
+Ostatně oba to známe z hackathonů, jednoduchá aplikace se dá udělat za pár hodin, ale pokud se chceš pustit do vylepšování, tak to může trvat nekonečně dlouho. U aplikací se to může vyplatit, ale u prezentačních webů to obvykle jsou utopené náklady.
+
+**A nedají se všechny tyhle věci udělat jen s ChatGPT?**
+
+Rozhodně ano, tohle ostatně na pozadí GPT API využívá. Zase je to jen o času. Pokud jsi majitelem malé pizzerie, máš se soustředit na nejlepší pizzu ne na to, jak napsat prompt, který napíše nejlepší text pro tvůj web. A pak je tu mnoho technických detailů, které jsou potřeba na webu správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
+
+**Není lepší použít Wordpress nebo jiný redakční systém**
+
+Pro některé případy určitě je. Ale opět přichází na řadu stejná otázka, co SEO, responzivita, rychlost, bezpečnost, přístupnost,... WordPress (a jiné redakční systémy) tyhle věci řeší, ale je potřeba je nastavit, spravovat a aktualizovat. A zase je to otázka času, peněz a kapacity.
+
+Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit. To může přínést i zásadní společenský problém do budoucna – výrazně se zvýší laťka a mnoho lidí dělající jednoduchou práci přijde o ekonomický benefit jejich času.
+
+**Jaké jsou největší výzvy při generování webů?**
+
+Velkou výzvou je "zkrocení" GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
+
+-   Pokud mám jednoduché zadání / prompt "Jaký zvuk dělá kočička", tak dostanu odpověď "Mňau" nebo ""Mňau"" _(v uvozovkách)_ případně "Kočička dělá "Mňau"" nebo něco podobného.
+-   Pokud mám komplexní prompt "Napiš mi komplení obsah webu v markdownu pro kavárnu {name}", tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
+
+Jakmile je potřeba něco složitějšího, existují v principu čtyři metody, jak na to:
+
+-
+-
+-
+-
+
+foo foo
+
+**A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
+
+foo foo
+
+**Myslíš, že generativní AI ještě není na svém vrcholu?**
+
+foo foo
+
 <!--
+ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
+-->
+
+**Jakým způsobem teda ovlivní AI jazyk a kulturu?**
+
+foo foo
+
+**Řekni něco víc o hře Towns, co jsi vyvíjel**
+
+foo foo
+
+**Řekni něco víc o modulech do Collboardu**
+
+foo foo
+
+**Nebylo by teda lepší generativní AI ve školách zakázat?**
+
+foo foo
+
+<!--
+Kalkulačka
+Musíme se naučit skákat z postavené laťky ne ze země přeskakovat laťku.
+-->
+
+<!--
+
+======================================================================================================================
 
 Jsi zkušený novinář a vydavatel, který se věnuje tématu umělé inteligence.
 Před pár dny o sobě dal Pavol Hejný vědět s projektem na generování webů pomomocí AI.
@@ -65,12 +154,3 @@ V principu máme hodně pokročilou surovou technologii která umí pokračovat 
 A nyní veď rozhovor.
 
 -->
-
-Před pár dny o sobě dal vědět [Pavol Hejný](https://www.pavolhejny.com/) s projektem na [generování webů pomomocí AI](https://webgpt.cz/).
-Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a co nás čeká v budoucnu.
-
-**Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
-
-rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky kavárna Pod Kaštanem
-
----
