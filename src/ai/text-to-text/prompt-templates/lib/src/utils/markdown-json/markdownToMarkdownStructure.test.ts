@@ -3,14 +3,6 @@ import spaceTrim from 'spacetrim';
 import { markdownToMarkdownStructure } from './markdownToMarkdownStructure';
 
 describe('markdownToMarkdownStructure', () => {
-    it('parses supersimple case', () => {
-        expect(markdownToMarkdownStructure(``)).toEqual({
-            title: null,
-            text: '',
-            sections: [],
-        });
-    });
-
     it('parses simple case', () => {
         expect(markdownToMarkdownStructure(`# Title`)).toEqual({
             title: 'Title',
@@ -131,8 +123,32 @@ describe('markdownToMarkdownStructure', () => {
         });
     });
 
+    it('fails when there is no structure', () => {
+        expect(() => markdownToMarkdownStructure(``)).toThrowError();
+    });
+
+    it('fails when the first heading is not h1', () => {
+        expect(() => markdownToMarkdownStructure(`## Section 1`)).toThrowError();
+    });
+
+    it('fails when there is heading level mismatch', () => {
+        expect(() =>
+            markdownToMarkdownStructure(
+                spaceTrim(`
+                    # Title
+                    
+                    Text below title
+                    
+                    ### Subsection 1.1
+                    
+                    Text below subsection 1.1
+                `),
+            ),
+        ).toThrowError();
+    });
+
     it('parses advanced case', () => {
-        expect(
+        expect(() =>
             markdownToMarkdownStructure(
                 spaceTrim(`
                     # Title

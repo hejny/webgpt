@@ -1,5 +1,5 @@
 export interface MarkdownStructure {
-    title: string | null;
+    title: string;
     text: string;
     sections: MarkdownStructure[];
 }

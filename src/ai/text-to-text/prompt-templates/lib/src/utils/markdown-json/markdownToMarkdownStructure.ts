@@ -1,110 +1,81 @@
+import spaceTrim from 'spacetrim';
 import { MarkdownStructure } from './MarkdownStructure';
 
-type MarkdownStructureFlatSegment = Omit<MarkdownStructure, 'sections'> & {
-    level: number;
-};
+export function markdownToMarkdownStructure(input: string): MarkdownStructure {
+    const lines = input
+        .split('\n')
+        .map((line) => line.trim())
+        .filter((line) => line.length > 0);
 
-export function markdownToMarkdownStructure(markdown: string): MarkdownStructure {
-    let flatStructureCurrentSegment: MarkdownStructureFlatSegment | null = null;
-    const flatStructure: Array<MarkdownStructureFlatSegment> = [];
-
-    for (const line of markdown.split('\n')) {
-        if (line.startsWith('#')) {
-            if (flatStructureCurrentSegment !== null) {
-                flatStructure.push(flatStructureCurrentSegment);
-            }
-
-            flatStructureCurrentSegment = {
-                level: line.split('#').length - 1,
-                title: line.slice(1).trim(),
-                text: '',
-            };
-        } else {
-            if (flatStructureCurrentSegment === null) {
-                throw new Error(`Unexpected line: ${line}`);
-            }
-
-            flatStructureCurrentSegment.text += line + '\n';
-        }
+    if (lines.length === 0) {
+        throw new Error('No structure');
     }
 
-    if (flatStructureCurrentSegment !== null) {
-        flatStructure.push(flatStructureCurrentSegment);
-    }
-
-    const structure: MarkdownStructure = {
-        title: null,
-        text: '',
-        sections: [],
-    };
-
+    let currentHeadingLevel = 0;
     let currentSection: MarkdownStructure | null = null;
-    let currentSectionLevel: number | null = null;
+    const sectionsStack: MarkdownStructure[] = [];
 
-    for (const flatStructureSegment of flatStructure) {
-        if (flatStructureSegment.level === 1) {
-            if (currentSection !== null) {
-                structure.sections.push(currentSection);
+    for (const line of lines) {
+        const headingMatch = line.match(/^(#{1,6}) (.*)$/);
+        if (headingMatch) {
+            const headingLevel = headingMatch[1]!.length;
+            const headingTitle = headingMatch[2];
+
+            if (headingLevel > currentHeadingLevel + 1) {
+                throw new Error('Heading level mismatch');
             }
 
-            currentSection = {
-                title: flatStructureSegment.title,
-                text: flatStructureSegment.text,
+            const newSection: MarkdownStructure = {
+                title: headingTitle!,
+                text: '',
                 sections: [],
             };
 
-            currentSectionLevel = 1;
-        } else if (flatStructureSegment.level === 2) {
-            if (currentSection === null) {
-                throw new Error(`Unexpected level 2 segment: ${flatStructureSegment.title}`);
+            if (currentSection && headingLevel > currentHeadingLevel) {
+                currentSection.sections.push(newSection);
+                sectionsStack.push(currentSection);
+            } else if (currentSection && headingLevel <= currentHeadingLevel) {
+                while (
+                    sectionsStack.length > 0 &&
+                    sectionsStack[sectionsStack.length - 1]!.title.startsWith('#'.repeat(headingLevel))
+                ) {
+                    sectionsStack.pop();
+                }
+                if (sectionsStack.length > 0) {
+                    sectionsStack[sectionsStack.length - 1]!.sections.push(newSection);
+                }
+            } else if (!currentSection) {
+                currentSection = newSection;
             }
 
-            if (currentSectionLevel === 2) {
-                structure.sections.push(currentSection);
-                currentSection = {
-                    title: flatStructureSegment.title,
-                    text: flatStructureSegment.text,
-                    sections: [],
-                };
-            } else {
-                currentSection.sections.push({
-                    title: flatStructureSegment.title,
-                    text: flatStructureSegment.text,
-                    sections: [],
-                });
-            }
-
-            currentSectionLevel = 2;
-        } else if (flatStructureSegment.level === 3) {
-            if (currentSection === null) {
-                throw new Error(`Unexpected level 3 segment: ${flatStructureSegment.title}`);
-            }
-
-            if (currentSectionLevel === 3) {
-                currentSection.sections.push({
-                    title: flatStructureSegment.title,
-                    text: flatStructureSegment.text,
-                    sections: [],
-                });
-            } else {
-                currentSection.sections.push({
-                    title: null,
-                    text: '',
-                    sections: [
-                        {
-                            title: flatStructureSegment.title,
-                            text: flatStructureSegment.text,
-                            sections: [],
-                        },
-                    ],
-                });
-            }
-
-            currentSectionLevel = 3;
+            currentHeadingLevel = headingLevel;
+            currentSection = newSection;
         } else {
-            throw new Error(`Unexpected level: ${flatStructureSegment.level}`);
+            if (currentSection) {
+                currentSection.text += line + '\n';
+            } else {
+                throw new Error('The first heading is not h1');
+            }
         }
     }
 
-    return structure;
+    if (currentSection && sectionsStack.length > 0) {
+        while (sectionsStack.length > 0) {
+            const parentSection = sectionsStack.pop();
+            if (parentSection) {
+                parentSection.sections.push(currentSection);
+                currentSection = parentSection;
+            }
+        }
+    }
+
+    if (!currentSection) {
+        return { title: '', text: '', sections: [] };
+    }
+
+    currentSection.text = spaceTrim(currentSection.text);
+
+    console.log(currentSection);
+
+    return currentSection;
 }
