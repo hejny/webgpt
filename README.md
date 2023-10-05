@@ -1,3 +1,3 @@
-# ⏣ AI web maker
+# ⏣ WebGPT
 
 https://webgpt.cz/

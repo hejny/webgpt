@@ -8,7 +8,6 @@ import styles from './Scenarios.module.css';
 export function Scenarios() {
     return (
         <div className={styles.Scenarios}>
-            Pick a scenario to <b>create a your website</b>:
             <ul>
                 <li>
                     <Link href="/random">
@@ -42,8 +41,7 @@ export function Scenarios() {
                         </CreateZone>
                     </Link>
                 </li>
-            </ul>grid-template
-            
+            </ul>
         </div>
     );
 }
