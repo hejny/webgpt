@@ -130,11 +130,12 @@ describe('markdownToMarkdownStructure', () => {
         });
     });
 
-    /*
-    TODO:
     it('fails when there is no structure', () => {
         expect(() => markdownToMarkdownStructure(``)).toThrowError();
     });
+
+    /*
+    TODO: [🧠] Should theese cases fail or not?
 
     it('fails when the first heading is not h1', () => {
         expect(() => markdownToMarkdownStructure(`## Section 1`)).toThrowError();
