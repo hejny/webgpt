@@ -12,6 +12,7 @@ import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
+import { PricingPlan, PricingPlans } from '../PricingTable/plans';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
@@ -34,13 +35,6 @@ const ExportSystem = {
     OTHER: '🤷 Other / Custom / Not sure',
 } as const;
 
-const ExportPlan = {
-    FREE: 'Free',
-    SIMPLE: 'Simple',
-    ADVANCED: 'Advanced',
-    ENTERPRISE: 'Enterprise',
-} as const;
-
 /**
  * Renders the main export modal
  */
@@ -52,7 +46,7 @@ export function ExportModal() {
     const [email, setEmail] = useState<string_email>('');
     // const [projectName, setProjectName] = useState<string>('');
     const [system, setSystem] = useState<keyof typeof ExportSystem>('STATIC');
-    const [plan, setPlan] = useState<keyof typeof ExportPlan>('SIMPLE');
+    const [plan, setPlan] = useState<PricingPlan>('SIMPLE');
     const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
 
     const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
@@ -201,7 +195,7 @@ export function ExportModal() {
                         label=""
                         value={plan}
                         onChange={(newPlan) => setPlan(newPlan)}
-                        options={ExportPlan}
+                        options={PricingPlans}
                         visibleButtons={Infinity}
                     />
 

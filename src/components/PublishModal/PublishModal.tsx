@@ -12,34 +12,11 @@ import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
+import { PricingPlan, PricingPlans } from '../PricingTable/plans';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './PublishModal.module.css';
-
-const PublishSystem = {
-    STATIC: 'Static',
-
-    WORDPRESS: 'WordPress',
-    WIX: 'Wix',
-    SQUARESPACE: 'Squarespace',
-    WEBFLOW: 'Webflow',
-    SHOPIFY: 'Shopify',
-
-    PHP: 'PHP',
-    NETTE: 'Nette',
-    LARAVEL: 'Laravel',
-    SYMFONY: 'Symfony',
-
-    OTHER: '🤷 Other / Custom / Not sure',
-} as const;
-
-const PublishPlan = {
-    FREE: 'Free',
-    SIMPLE: 'Simple',
-    ADVANCED: 'Advanced',
-    ENTERPRISE: 'Enterprise',
-} as const;
 
 /**
  * Renders the main publish modal
@@ -51,8 +28,7 @@ export function PublishModal() {
     const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
     const [email, setEmail] = useState<string_email>('');
     // const [projectName, setProjectName] = useState<string>('');
-    const [system, setSystem] = useState<keyof typeof PublishSystem>('STATIC');
-    const [plan, setPlan] = useState<keyof typeof PublishPlan>('SIMPLE');
+    const [plan, setPlan] = useState<PricingPlan>('SIMPLE');
     const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
 
     const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
@@ -80,13 +56,7 @@ export function PublishModal() {
                         ]);
                     console.info('⬆', { insertSiteResult });
 
-                    if (
-                        isHelpNeeded ||
-                        isUrlUnsure ||
-                        plan === 'ADVANCED' ||
-                        plan === 'ENTERPRISE' ||
-                        system !== 'STATIC'
-                    ) {
+                    if (isHelpNeeded || isUrlUnsure || plan === 'ADVANCED' || plan === 'ENTERPRISE') {
                         const insertSupportRequestResult = await getSupabaseForBrowser()
                             .from('SupportRequest')
                             .insert([
@@ -106,7 +76,6 @@ export function PublishModal() {
 
                                         ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
                                         My plan: ${plan}
-                                        My system: ${system}
                                     `),
                                 },
                             ]);
@@ -182,17 +151,7 @@ export function PublishModal() {
                     />
                 </label>
                 */}
-                <label className={styles.setting}>
-                    <div className={styles.key}>System:</div>
-                    <Select
-                        className={styles.value}
-                        label=""
-                        value={system}
-                        onChange={(newSystem) => setSystem(newSystem)}
-                        options={PublishSystem}
-                        visibleButtons={1}
-                    />
-                </label>
+
                 <label className={styles.setting}>
                     <div className={styles.key}>Plan:</div>
 
@@ -201,7 +160,7 @@ export function PublishModal() {
                         label=""
                         value={plan}
                         onChange={(newPlan) => setPlan(newPlan)}
-                        options={PublishPlan}
+                        options={PricingPlans}
                         visibleButtons={Infinity}
                     />
 
@@ -244,11 +203,7 @@ export function PublishModal() {
                 </label>
 
                 <pre style={{ display: 'none', width: 200, height: 200, overflow: 'scroll' }}>
-                    {JSON.stringify(
-                        { wallpaperId: wallpaper.id, publicUrl, email, system, plan, isHelpNeeded },
-                        null,
-                        4,
-                    )}
+                    {JSON.stringify({ wallpaperId: wallpaper.id, publicUrl, email, plan, isHelpNeeded }, null, 4)}
                 </pre>
             </form>
         </Modal>
