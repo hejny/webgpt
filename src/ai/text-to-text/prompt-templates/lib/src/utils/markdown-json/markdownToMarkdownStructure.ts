@@ -44,26 +44,32 @@ export function markdownToMarkdownStructure(markdown: string): MarkdownStructure
         } else {
             const level = headingMatch.groups!.mark!.length;
             const title = headingMatch.groups!.title!.trim();
-            let section: ParsingMarkdownStructure;
+            let parent: ParsingMarkdownStructure;
 
             if (level > current.level) {
-                // Note: Going deeper
-                section = { level, title, contentLines: [], sections: [], parent: current };
+                // Note: Going deeper (next section is child of current)
+                parent = current;
             } else {
-                // Note: Going up or staying at the same level
-                let parent = current.parent; /* <- DRY */
-                while (parent !== null) {
-                    if (parent.level < level || parent.parent === null) {
-                        section = { level, title, contentLines: [], sections: [], parent: current };
-                        break;
-                    } else {
-                        parent = current.parent /* <- DRY */;
+                // Note: Going up or staying at the same level (next section is sibling or parent or grandparent,... of current)
+                parent = current;
+                while (parent.level !== level - 1) {
+                    if (parent.parent === null /* <- Note: We are in root */) {
+                        throw new Error(
+                            spaceTrim(`
+                                The file has an invalid structure.
+                                The markdown file must have exactly one top-level section.
+                            `),
+                        );
                     }
+                    parent = parent.parent;
                 }
             }
 
-            section!.parent!.sections.push(section!);
-            current = section!;
+            console.log('parent', parent);
+
+            const section = { level, title, contentLines: [], sections: [], parent };
+            parent.sections.push(section);
+            current = section;
         }
     }
 
