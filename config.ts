@@ -993,3 +993,5 @@ export const CDN = (CDN_BUCKET &&
     })) as DigitalOceanSpaces;
 
 export const MIDJOURNEY_WHOLE_GALLERY_PATH = 'X:/Mythings/MidJourney';
+
+export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
