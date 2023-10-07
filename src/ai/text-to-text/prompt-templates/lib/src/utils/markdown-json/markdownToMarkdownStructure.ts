@@ -1,81 +1,78 @@
 import spaceTrim from 'spacetrim';
 import { MarkdownStructure } from './MarkdownStructure';
 
-export function markdownToMarkdownStructure(input: string): MarkdownStructure {
-    const lines = input
-        .split('\n')
-        .map((line) => line.trim())
-        .filter((line) => line.length > 0);
+/**
+ * @private
+ */
+type ParsingMarkdownStructure = Omit<MarkdownStructure, 'content'> & {
+    contentLines: string[];
+    sections: ParsingMarkdownStructure[];
+    parent: ParsingMarkdownStructure | null;
+};
 
-    if (lines.length === 0) {
-        throw new Error('No structure');
-    }
+/**
+ * @private
+ */
+function parsingMarkdownStructureToMarkdownStructure(
+    parsingMarkdownStructure: ParsingMarkdownStructure,
+): MarkdownStructure {
+    const { level, title, contentLines, sections } = parsingMarkdownStructure;
 
-    let currentHeadingLevel = 0;
-    let currentSection: MarkdownStructure | null = null;
-    const sectionsStack: MarkdownStructure[] = [];
+    return {
+        level,
+        title,
+        content: spaceTrim(contentLines.join('\n')),
+        sections: sections.map(parsingMarkdownStructureToMarkdownStructure),
+    };
+}
+
+/**
+ * Parses a markdown string into a MarkdownStructure object.
+ *
+ * @param markdown The markdown string to parse.
+ * @returns The MarkdownStructure object.
+ */
+export function markdownToMarkdownStructure(markdown: string): MarkdownStructure {
+    const lines = markdown.split('\n');
+    const root: ParsingMarkdownStructure = { level: 0, title: '', contentLines: [], sections: [], parent: null };
+    let current: ParsingMarkdownStructure = root;
 
     for (const line of lines) {
-        const headingMatch = line.match(/^(#{1,6}) (.*)$/);
-        if (headingMatch) {
-            const headingLevel = headingMatch[1]!.length;
-            const headingTitle = headingMatch[2];
-
-            if (headingLevel > currentHeadingLevel + 1) {
-                throw new Error('Heading level mismatch');
-            }
-
-            const newSection: MarkdownStructure = {
-                title: headingTitle!,
-                text: '',
-                sections: [],
-            };
-
-            if (currentSection && headingLevel > currentHeadingLevel) {
-                currentSection.sections.push(newSection);
-                sectionsStack.push(currentSection);
-            } else if (currentSection && headingLevel <= currentHeadingLevel) {
-                while (
-                    sectionsStack.length > 0 &&
-                    sectionsStack[sectionsStack.length - 1]!.title.startsWith('#'.repeat(headingLevel))
-                ) {
-                    sectionsStack.pop();
-                }
-                if (sectionsStack.length > 0) {
-                    sectionsStack[sectionsStack.length - 1]!.sections.push(newSection);
-                }
-            } else if (!currentSection) {
-                currentSection = newSection;
-            }
-
-            currentHeadingLevel = headingLevel;
-            currentSection = newSection;
+        const headingMatch = line.match(/^(?<mark>#{1,6})\s(?<title>.*)/);
+        if (!headingMatch) {
+            current.contentLines.push(line);
         } else {
-            if (currentSection) {
-                currentSection.text += line + '\n';
+            const level = headingMatch.groups!.mark!.length;
+            const title = headingMatch.groups!.title!.trim();
+            let section: ParsingMarkdownStructure;
+
+            if (level > current.level) {
+                // Note: Going deeper
+                section = { level, title, contentLines: [], sections: [], parent: current };
             } else {
-                throw new Error('The first heading is not h1');
+                // Note: Going up or staying at the same level
+                let parent = current.parent; /* <- DRY */
+                while (parent !== null) {
+                    if (parent.level < level || parent.parent === null) {
+                        section = { level, title, contentLines: [], sections: [], parent: current };
+                        break;
+                    } else {
+                        parent = current.parent /* <- DRY */;
+                    }
+                }
             }
+
+            section!.parent!.sections.push(section!);
+            current = section!;
         }
     }
 
-    if (currentSection && sectionsStack.length > 0) {
-        while (sectionsStack.length > 0) {
-            const parentSection = sectionsStack.pop();
-            if (parentSection) {
-                parentSection.sections.push(currentSection);
-                currentSection = parentSection;
-            }
-        }
+    if (root.sections.length === 1) {
+        const markdownStructure = parsingMarkdownStructureToMarkdownStructure(root.sections[0]!);
+        console.log('markdownStructure', markdownStructure);
+        return markdownStructure;
     }
 
-    if (!currentSection) {
-        return { title: '', text: '', sections: [] };
-    }
-
-    currentSection.text = spaceTrim(currentSection.text);
-
-    console.log(currentSection);
-
-    return currentSection;
+    throw new Error('The markdown file must have exactly one top-level section.');
+    // return root;
 }
