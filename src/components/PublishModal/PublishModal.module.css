@@ -1,0 +1,91 @@
+.settings {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    /*background-color: rgba(41, 81, 168, 0.308);*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting {
+    /*/
+    outline: 1px dotted rgb(9, 187, 9);
+    /**/
+
+    width: calc(100% - 20px);
+    max-width: 600px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: solid 1px rgba(156, 210, 255, 0.479);
+}
+
+.settingCentered {
+    justify-content: center;
+}
+
+.setting .key {
+    /*/
+    outline: 1px dotted rgb(13, 102, 138);
+    /**/
+
+    width: 30%;
+}
+
+.setting .value {
+    /*/
+    outline: 1px dotted rgb(13, 138, 138) !important;
+    /**/
+
+    justify-content: flex-start !important;
+}
+
+.setting .value:not([type='checkbox']) {
+    width: 350px;
+    max-width: 100%;
+}
+
+.setting .value[type='checkbox'] {
+    display: inline;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.setting .extra {
+    /*/
+    outline: 1px dotted rgb(13, 53, 138);
+    /**/
+    display: block;
+    color: inherit;
+}
+
+.setting button.getTheWeb {
+    color: #fff;
+    background-color: rgba(20, 35, 121, 0.384);
+    border: rgb(69, 214, 250) solid 2px;
+
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 650px) {
+    .settings {
+        justify-content: flex-start;
+    }
+}

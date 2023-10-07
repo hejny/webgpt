@@ -274,7 +274,7 @@ export function CopilotPanel() {
                         )}
                         <li className={styles.featured}>
                             <WallpaperLink
-                                modal="export"
+                                modal="publish"
                                 role="OWNER"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >

@@ -23,7 +23,7 @@ export function ControlPanelLikeButtons() {
                 <div className={styles.group}>
                     <WallpaperLink
                         className={classNames(styles.button, styles.callToAction)}
-                        modal="export"
+                        modal="publish"
                         role="OWNER"
                         /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                     >
