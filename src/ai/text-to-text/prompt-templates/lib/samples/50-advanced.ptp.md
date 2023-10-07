@@ -1,26 +1,49 @@
-# 👁‍🗨 Language Capabilities
+# Sample: Language Capabilities
 
 Trying the language capabilities of GPT models.
 
-## ~Requirements:
+## ~Entry Parameters
+
+-   `{word}` The word to use in the prompt.
+
+## ~Requirements
 
 -   Use Chat
 -   Use GPT-3
 
 ## Synonym
 
-Write synonym for "{word}"
+Synonym for {word}
 
--> removeQuotes -> {wordSynonym}
+```prompt
+Write synonym for "{word}"
+```
+
+`-> {wordSynonymRaw}`
+
+## Unquote synonym
+
+```javascript
+removeQuotes(wordSynonymRaw);
+```
+
+`-> {wordSynonym}`
 
 ## Sentence with Synonym
 
-Write sentence with "{word}" and "{wordSynonym}" in it
+Sentence with {word} and {wordSynonym}
 
--> {sentenceWithTwoSynonyms}
+```prompt
+Write sentence with "{word}" and "{wordSynonym}" in it
+```
+
+`-> {sentenceWithTwoSynonyms}`
 
 ## Sentence without original word
 
+Sentence "{sentenceWithTwoSynonyms}" without "{word}".
+
+```prompt
 Remove word "{word}" from sentence and modify it so that it makes sense:
 
 **Rules:**
@@ -32,7 +55,9 @@ Remove word "{word}" from sentence and modify it so that it makes sense:
 
 > {sentenceWithTwoSynonyms}
 
--> {sentenceWithOriginalWordRemoved}
+```
+
+`-> {sentenceWithOriginalWordRemoved}`
 
 ## ~Requirements:
 
@@ -41,6 +66,9 @@ Remove word "{word}" from sentence and modify it so that it makes sense:
 
 ## Comparison
 
+Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRemoved}".
+
+```prompt
 Compare meaning of thee two sentences:
 
 **Sentence 1:**
@@ -50,5 +78,6 @@ Compare meaning of thee two sentences:
 **Sentence 2:**
 
 > {sentenceWithOriginalWordRemoved}
+```
 
--> {comparisonOfTwoSentences}
+`-> {comparisonOfTwoSentences}`
