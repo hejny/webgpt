@@ -1,0 +1,12 @@
+{
+    promptTemplates: [
+        {
+            modelRequirements: {
+                variant: 'CHAT',
+            },
+            promptTemplate: 'Hello',
+            resultingParamName: 'greeting',
+        },
+    ],
+});
+}

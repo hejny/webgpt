@@ -1,230 +1,105 @@
 import { describe, expect, it } from '@jest/globals';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import spaceTrim from 'spacetrim';
 import { string_file_path } from '../../../../../../utils/typeAliases';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
 
 describe('promptTemplatePipelineStringToJson', () => {
-    /*
-    TODO:
-    it('should parse empty promptTemplatePipeline', () => {
-        expect(promptTemplatePipelineStringToJson(``)).toEqual({
-            promptTemplates: [],
-        });
-    });
-    */
-
     it('should parse simple promptTemplatePipeline', () => {
-        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/00-simple.ptp.md'))).toEqual({
-            promptTemplates: [
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: 'Hello',
-                    resultingParamName: 'greeting',
-                },
-            ],
-        });
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/00-simple.ptp.md'))).toEqual(
+            importPtp('../../samples/00-simple.ptp.json'),
+        );
     });
 
     it('should parse promptTemplatePipeline with comment', () => {
-        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/05-comment.ptp.md'))).toEqual({
-            promptTemplates: [
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: 'Hello',
-                    resultingParamName: 'greeting',
-                },
-            ],
-        });
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/05-comment.ptp.md'))).toEqual(
+            importPtp('../../samples/05-comment.ptp.md'),
+        );
     });
-
     it('should parse promptTemplatePipeline with one template', () => {
-        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/10-single.ptp.md'))).toEqual({
-            promptTemplates: [
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: `Write synonym for "{word}"`,
-                    resultingParamName: 'wordSynonym',
-                },
-            ],
-        });
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/10-single.ptp.md'))).toEqual(
+            importPtp('../../samples/10-single.ptp.md'),
+        );
+    });
+    it('should parse promptTemplatePipeline with two templates', () => {
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/20-two.ptp.md'))).toEqual(
+            importPtp('../../samples/20-two.ptp.md'),
+        );
     });
 
-    it('should parse promptTemplatePipeline with two templates', () => {
-        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/20-two.ptp.md'))).toEqual({
-            promptTemplates: [
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: `Write synonym for "{word}"`,
-                    resultingParamName: 'wordSynonym',
-                },
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: 'Write sentence with "{word}" and "{wordSynonym}" in it',
-                    resultingParamName: 'sentenceWithTwoSynonyms',
-                },
-            ],
-        });
+    it('should parse with escape characters', () => {
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/30-escaping.ptp.md'))).toEqual(
+            importPtp('../../samples/30-escaping.ptp.md'),
+        );
     });
 
     it('should parse promptTemplatePipeline with advanced structure', () => {
-        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/50-advanced.ptp.md'))).toEqual({
-            promptTemplates: [
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: `Write synonym for "{word}"`,
-                    resultingParamName: 'wordSynonym',
-                },
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: `Write sentence with "{word}" and "{wordSynonym}" in it`,
-                    resultingParamName: 'sentenceWithTwoSynonyms',
-                },
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: spaceTrim(`
-                    
-                        Remove word "{word}" from sentence and modify it so that it makes sense:
-
-                        ## Rules:
-
-                        -   Sentence must be grammatically correct
-                        -   Sentence must make sense after removing the word
-
-                        ## The Sentence:
-
-                        > {sentenceWithTwoSynonyms}
-
-                    `),
-                    resultingParamName: 'sentenceWithOriginalWordRemoved',
-                },
-                {
-                    modelRequirements: {
-                        variant: 'CHAT',
-                    },
-                    promptTemplate: spaceTrim(`
-                    
-                        Compare meaning of thee two sentences:
-
-                        ## Sentence 1:
-                        
-                        > {sentenceWithTwoSynonyms}
-                        
-                        ## Sentence 2:
-                        
-                        > {sentenceWithOriginalWordRemoved}
-
-                    `),
-                    resultingParamName: 'comparisonOfTwoSentences',
-                },
-            ],
-        });
+        expect(promptTemplatePipelineStringToJson(importPtp('../../samples/50-advanced.ptp.md'))).toEqual(
+            importPtp('../../samples/50-advanced.ptp.md'),
+        );
     });
 
-    /*
-    // TODO: Are there even any syntax errors in .promptTemplatePipeline.md files? (see TODO below)
-    // TODO: Theese crashes are more runtime/logic like errors, not parsing (syntax) ones - check in in the resulting json String OR make separate tests for them
-    it('should crash on invalid promptTemplatePipeline', () => {
+    it('fail on invalid language block', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(
-                spaceTrim(`
-                    Pure text
-                `),
-            ),
-        ).toThrowError();
-        expect(() =>
-            promptTemplatePipelineStringToJson(
-                spaceTrim(`
-                    Just a **markdown** file
-                `),
-            ),
-        ).toThrowError();
-
-        expect(() =>
-            promptTemplatePipelineStringToJson(
-                spaceTrim(`
-                    No
-
-                    ---
-
-                    Variables
-                `),
-            ),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/invalid-language.ptp.md')),
         ).toThrowError();
     });
-    it('should crash when using undefined variable name', () => {
+    it('fail on missing block on prompt template', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(
-                spaceTrim(`
-                    Write random word
-
-                    -> {foo}
-
-                    ---
-
-                    Defined foo but using {bar}
-                `),
-            ),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/missing-block.ptp.md')),
         ).toThrowError();
     });
-    it('should crash on variable name collision', () => {
+    it('fail on missing return declaration', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(
-                spaceTrim(`
-                    Write synonym of {word}
-
-                    -> {word}
-
-                    <!-- Collision of {word} variable -->
-                `),
-            ),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/missing-return-1.ptp.md')),
         ).toThrowError();
     });
-
-    it('should crash when using variable before the definition', () => {
+    it('fail on invalid return declaration', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(
-                spaceTrim(`
-                    Write sentence with {wordSynonym}
-
-                    -> {sentence}
-                    
-                    ---
-
-                    Write synonym of {word}
-
-                    -> {wordSynonym}
-
-                    
-                `),
-            ),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/missing-return-2.ptp.md')),
         ).toThrowError();
     });
-    */
+    it('fail on multiple prompts in one prompt template', () => {
+        expect(() =>
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/multiple-blocks.ptp.md')),
+        ).toThrowError();
+    });
+    it('fail on lack of structure ', () => {
+        expect(() =>
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/no-heading.ptp.md')),
+        ).toThrowError();
+    });
+    it('fail on using parameter before defining', () => {
+        expect(() =>
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/parameter-used-before-defining.ptp.md')),
+        ).toThrowError();
+    });
+    it('fail on parameters collision', () => {
+        expect(() =>
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/parameters-collision.ptp.md')),
+        ).toThrowError();
+    });
 });
 
 /**
- * Note: Using here !!!
+ * Import the text file
+ *
+ * Note: Using here custom import to work in jest tests
  * Note: Using sync version is 💩 in the production code, but it's ok here in tests
+ *
+ * @private
  */
-function importPtp(path: string_file_path): PromptTemplatePipelineString {
-    return readFileSync(join(__dirname, path), 'utf-8') as PromptTemplatePipelineString;
+function importPtp(path: `${string}.ptp.md`): PromptTemplatePipelineString;
+function importPtp(path: `${string}.ptp.json`): PromptTemplatePipelineJson;
+function importPtp(path: string_file_path): PromptTemplatePipelineString | PromptTemplatePipelineJson {
+    const content = readFileSync(join(__dirname, path), 'utf-8');
+    if (path.endsWith('.ptp.json')) {
+        return JSON.parse(content) as PromptTemplatePipelineJson;
+    } else if (path.endsWith('.ptp.md')) {
+        return content as PromptTemplatePipelineString;
+    } else {
+        throw new Error(`This should be used only for .ptp.md or .ptp.json files`);
+    }
 }

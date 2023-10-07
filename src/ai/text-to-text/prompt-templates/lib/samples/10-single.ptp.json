@@ -1,0 +1,12 @@
+{
+    promptTemplates: [
+        {
+            modelRequirements: {
+                variant: 'CHAT',
+            },
+            promptTemplate: `Write synonym for "{word}"`,
+            resultingParamName: 'wordSynonym',
+        },
+    ],
+});
+}

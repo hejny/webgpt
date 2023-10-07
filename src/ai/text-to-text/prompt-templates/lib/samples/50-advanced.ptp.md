@@ -2,9 +2,14 @@
 
 Trying the language capabilities of GPT models.
 
+<!--
+
+TODO: !!! [🧠] How to do this propperly?
+
 ## ~Entry Parameters
 
 -   `{word}` The word to use in the prompt.
+-->
 
 ## ~Requirements
 

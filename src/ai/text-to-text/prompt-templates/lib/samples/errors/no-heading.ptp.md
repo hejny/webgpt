@@ -1,4 +1,4 @@
-Sample of wrong prompt template pipeline that omits a structure
+Sample of wrong prompt template pipeline that lacks a structure
 
 ```
 Hello
