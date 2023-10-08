@@ -1,4 +1,4 @@
-import { Promisable } from 'type-fest';
+import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { string_data_url } from '../../utils/typeAliases';
 
 /**
@@ -6,22 +6,21 @@ import { string_data_url } from '../../utils/typeAliases';
  * Tip: Consider using ObjectUrl class instead
  * Tip: You can pass dataurl and it will be returned as is
  */
-export function blobToDataurl(source: Blob | File | string_data_url): Promisable<string_data_url> {
-    if (typeof source === 'string') {
-        // TODO: Probably check isValidUrl and if not throw error
-        return source;
-    } else if (source instanceof Blob) {
-        return new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.addEventListener('load', async (event) => {
-                const dataurl = event.target!.result as string;
-                resolve(dataurl);
-            });
-            reader.readAsDataURL(source);
-        });
-    } else {
-        throw new TypeError(`Can not convert ${typeof source} to data URL.`);
+export async function blobToDataurl(source: Blob | File): Promise<string_data_url> {
+    if (isRunningInNode()) {
+        let buffer = Buffer.from(await source.text());
+        let base64 = buffer.toString('base64');
+        return `data:${source.type};base64,${base64}`;
     }
+
+    return new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.addEventListener('load', async (event) => {
+            const dataurl = event.target!.result as string;
+            resolve(dataurl);
+        });
+        reader.readAsDataURL(source);
+    });
 }
 
 /**

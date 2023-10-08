@@ -1,4 +1,4 @@
-import { isRunningInBrowser } from 'openai/core';
+import { isRunningInNode } from '../../utils/isRunningInWhatever';
 import { blobToDataurl } from './blobToDataurl';
 
 /**
@@ -8,12 +8,12 @@ import { blobToDataurl } from './blobToDataurl';
  *
  */
 export async function blobToBase64(source: Blob | File): Promise<string> {
-    if (isRunningInBrowser()) {
-        const dataurl = await blobToDataurl(source);
-        const base64 = dataurl.split(',')[1]!;
-        return base64;
-    } else {
+    if (isRunningInNode()) {
         let buffer = Buffer.from(await source.text());
         return buffer.toString('base64');
     }
+
+    const dataurl = await blobToDataurl(source);
+    const base64 = dataurl.split(',')[1]!;
+    return base64;
 }
