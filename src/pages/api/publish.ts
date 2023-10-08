@@ -59,7 +59,8 @@ export default async function publishWebsiteHandler(
                     // TODO: !!! Simple function
                     return {
                         path,
-                        content: await file.async('blob'),
+                        contentEncoding: 'base64',
+                        content: await file.async('base64'),
                     };
                 }),
         );
@@ -73,8 +74,15 @@ export default async function publishWebsiteHandler(
             '!!!',
             files.map(({ path }) => path),
         );
-        */
+         */
+
         const CNAME = await bundleZip.files.CNAME!.async('string');
+
+        /*
+        // !!!
+        const testImage = await bundleZip.files['images/stripes-black.png']!.async('base64');
+        await writeFile('testImage.png', testImage, 'base64');
+        */
 
         await publishToRepository({
             organizationName: '1-2i',

@@ -3,5 +3,6 @@
  */
 export interface IFileToPublish {
     path: string;
-    content: string | Blob;
+    contentEncoding: 'utf-8' | 'base64';
+    content: string;
 }

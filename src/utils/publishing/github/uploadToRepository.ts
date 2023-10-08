@@ -25,9 +25,9 @@ export async function uploadToRepository(options: UploadToRepositoryOptions) {
     const currentCommit = await getCurrentCommit({ organizationName, repositoryName, branch });
 
     const filesForGithub: Array<IFileForGithub> = await Promise.all(
-        files.map(async ({ path, content }) => ({
+        files.map(async ({ path, content, contentEncoding }) => ({
             path,
-            content: await createBlobForGithub({ organizationName, repositoryName, content }),
+            content: await createBlobForGithub({ organizationName, repositoryName, content, contentEncoding }),
         })),
     );
 
