@@ -30,6 +30,7 @@ export function PublishLink(props: PublishLinkProps) {
  * Renders text of the publish button
  */
 export function PublishText(props: PublishLinkProps) {
+    // TODO: !! Use Openmoji
     return <>🌍 Make the web</>;
 }
 
