@@ -13,6 +13,7 @@ import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
+import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
 
 /**
@@ -27,7 +28,7 @@ export function PublishModal() {
     const isFormComplete = Boolean(publicUrl !== null && email);
 
     return (
-        <Modal title={'Get the web'} isCloseable>
+        <Modal title={<PublishText />} isCloseable>
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {

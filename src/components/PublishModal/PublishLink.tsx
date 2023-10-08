@@ -21,7 +21,18 @@ export function PublishLink(props: PublishLinkProps) {
             {...{ className }}
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
         >
-            Get the web
+            <PublishText />
         </WallpaperLink>
     );
 }
+
+/**
+ * Renders text of the publish button
+ */
+export function PublishText(props: PublishLinkProps) {
+    return <>🌍 Make the web</>;
+}
+
+/**
+ * TODO: [🧠] Best text for this button> "Get the web", "Make the web", "Publish", "🌍"
+ */
