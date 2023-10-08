@@ -37,7 +37,7 @@ export async function uploadToRepository(options: UploadToRepositoryOptions) {
         files: filesForGithub,
         parentTreeSha: currentCommit.treeSha,
     });
-    const commitMessage = `My commit message`; /* <- !!! Pass as param */
+    const commitMessage = `My commit message`; /* <- !!!! Pass as param */
     const newCommit = await createNewCommit({
         organizationName,
         repositoryName,

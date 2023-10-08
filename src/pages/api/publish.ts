@@ -4,7 +4,6 @@ import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
 import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
-import { randomJavascriptName } from '../../utils/randomJavascriptName';
 import { string_url } from '../../utils/typeAliases';
 
 export interface PublishWebsiteResponse {
@@ -55,41 +54,21 @@ export default async function publishWebsiteHandler(
         const files: Array<IFileToPublish> = await Promise.all(
             Object.entries(bundleZip.files)
                 .filter(([path, { dir }]) => !dir)
-                .map(async ([path, file]) => {
-                    // TODO: !!! Simple function
-                    return {
-                        path,
-                        contentEncoding: 'base64',
-                        content: await file.async('base64'),
-                    };
-                }),
+                .map(async ([path, file]) => ({
+                    path,
+                    contentEncoding: 'base64',
+                    content: await file.async('base64'),
+                })),
         );
-
-        /*
-        Remove !!!
-        console.log(`-----------------------`);
-        console.log(bundleZip.files['build/']);
-        console.log(`-----------------------`);
-        console.log(
-            '!!!',
-            files.map(({ path }) => path),
-        );
-         */
 
         const CNAME = await bundleZip.files.CNAME!.async('string');
 
-        /*
-        // !!!
-        const testImage = await bundleZip.files['images/stripes-black.png']!.async('base64');
-        await writeFile('testImage.png', testImage, 'base64');
-        */
-
         await publishToRepository({
-            organizationName: '1-2i',
-            repositoryName: randomJavascriptName({
-                prefix: `test-${CNAME}-`,
-                length: 8,
-            }) /* <- TODO: !!! [🧠] Utility to make unique repository names - maybe 1:1 with CNAME domain */,
+            organizationName: '1-2i' /* <- TODO: !!!! Change to WebGPT */ /* <- TODO: Unhardcode */,
+            repositoryName: CNAME,
+            /*                   <- TODO: [🧠] Utility to make unique repository names
+                                               Maybe KEEP 1:1 with CNAME domain
+            */
             files,
         });
 

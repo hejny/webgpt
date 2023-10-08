@@ -22,7 +22,8 @@ import styles from './PublishModal.module.css';
 export function PublishModal() {
     const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
-    const [publicUrl, setPublicUrl /* <- TODO: !!! Change to domain NOT URL */] = useState<null | URL>(null);
+    const [publicUrl, setPublicUrl /* <- TODO: !!!! Change to domain NOT URL */ /* <- TODO: !!!! Offer the domain */] =
+        useState<null | URL>(null);
     const [email, setEmail] = useState<string_email>('');
 
     const isFormComplete = Boolean(publicUrl !== null && email);
@@ -36,8 +37,8 @@ export function PublishModal() {
 
                     console.info(`📦 Publishing to ${publicUrl}`);
 
-                    // TODO: !!! Extract to separate publishWebsite function
-                    // TODO: !!! Do some new validation here
+                    // TODO: !!!! Extract to separate publishWebsite function
+                    // TODO: !!!! Do some new validation here
                     const insertSiteResult = await getSupabaseForBrowser()
                         .from('Site')
                         .insert([
@@ -84,7 +85,7 @@ export function PublishModal() {
                     }
                     */
 
-                    // Note: [🛣] !!! In ideal case, here should be tar file, but exportAsTar is not working in browser and strangely lags
+                    // Note: [🛣] In ideal case, here should be tar file, but exportAsTar is not working in browser and strangely lags
                     const zipBundle = await exportAsZip(wallpaper, { publicUrl });
 
                     console.info('📦', { zipBundle });
@@ -112,17 +113,17 @@ export function PublishModal() {
 
                     console.info('🌍', { websiteUrl });
 
-                    // TODO: !!! Wait until website is ready and fully deployed
-                    // TODO: !!! [🧠] Maybe do after publishing open new tab, show iframe,...
+                    // TODO: !!!! Wait until website is ready and fully deployed
+                    // TODO: !!!! [🧠] Maybe do after publishing open new tab, show iframe,...
                     router.push(websiteUrl);
                 }}
             >
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
-                        // TODO: !!! Allow URL, domain, subdomain, etc. - NEED of domain
-                        // TODO: !!! [🧠] Check (sub)domain availability
-                        // TODO: !!! [🧠] Information how to register domain + set CNAME
+                        // TODO: !!!! Allow URL, domain, subdomain, etc. - NEED of domain
+                        // TODO: !!!! [🧠] Check (sub)domain availability
+                        // TODO: !!!! [🧠] Information how to register domain + set CNAME
                         className={classNames(styles.value, stylesForSelect.option)}
                         required
                         defaultValue={publicUrl?.href || ''}
@@ -145,8 +146,8 @@ export function PublishModal() {
                 <label className={styles.setting}>
                     <div className={styles.key}>Your Email:</div>
                     <input
-                        // TODO: !!! Put here existing email
-                        // TODO: !!! Less visible + warning
+                        // TODO: !!!! Put here existing email
+                        // TODO: !!!! Less visible + warning
                         className={classNames(styles.value, stylesForSelect.option)}
                         required
                         defaultValue={email}
@@ -197,6 +198,6 @@ export function PublishModal() {
 
 /**
  * TODO: [🧠] Maybe allow here ask for support request
- * TODO: !!! [🧠] Registration should return some token which will be put into publish
- * TODO: !!! [🧠] Each build should have unique id + build metadata (like date, aiai version, etc.)
+ * TODO: !!!! [🧠] Registration should return some token which will be put into publish
+ * TODO: !!!! [🧠] Each build should have unique id + build metadata (like date, aiai version, etc.)
  */

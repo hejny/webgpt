@@ -18,7 +18,7 @@ export async function publishToRepository(options: CreateNewRepositoryOptions) {
     const { organizationName, repositoryName, files } = options;
 
     /**/
-    // TODO: !!! Detect that repository already exists
+    // TODO: !!!! Detect that repository already exists
     console.info(chalk.cyan(` ➕  Creating new repository ${repositoryName} `));
     const createResult = await githubOctokit.repos.createInOrg({
         org: organizationName,
@@ -37,7 +37,7 @@ export async function publishToRepository(options: CreateNewRepositoryOptions) {
         repositoryName,
         branch: 'main',
         files,
-        // TODO: !!! Pass commit message
+        // TODO: !!!! Pass commit message
     });
     // console.log(uploadResult);
     console.info(chalk.green(`Uploaded into repository ${repositoryName}`));
