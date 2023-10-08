@@ -26,6 +26,9 @@ export async function createBlobForGithub(options: CreateBlobForGithubOptions) {
                   owner: organizationName,
                   repo,
                   content: await blobToBase64(content),
+                  mediaType: {
+                      format: 'base64',
+                  },
                   encoding: 'base64',
               },
     );

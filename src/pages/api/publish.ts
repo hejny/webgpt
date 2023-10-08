@@ -74,31 +74,19 @@ export default async function publishWebsiteHandler(
             files.map(({ path }) => path),
         );
         */
+        const CNAME = await bundleZip.files.CNAME!.async('string');
 
         await publishToRepository({
             organizationName: '1-2i',
             repositoryName: randomJavascriptName({
-                prefix: 'test-',
+                prefix: `test-${CNAME}-`,
                 length: 8,
             }) /* <- TODO: !!! [🧠] Utility to make unique repository names - maybe 1:1 with CNAME domain */,
             files,
-            /*
-            TODO: !!! Use and remove
-            : [
-                {
-                    path: 'index.html',
-                    content: `<h1>Welcome to ${'test'}!</h1>`,
-                },
-                {
-                    path: 'CNAME',
-                    content: `test.webgpt.cz`,
-                },
-            ],
-            */
         });
 
         return response.status(201).json({
-            websiteUrl: `https://test8.webgpt.cz/`,
+            websiteUrl: `https://${CNAME}/`,
         } satisfies PublishWebsiteResponse);
     } catch (error) {
         if (!(error instanceof Error)) {
