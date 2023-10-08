@@ -338,7 +338,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             name: 'stripes-black.png',
             src: stripesBlackImage.src,
         },
-        // <- TODO: In future put image assets dynamically NOT just one hardcoded stripes-grey.png and stripes-black.png file
+        // <- TODO: [4] In future put image assets universally and dynamically NOT just one hardcoded stripes-grey.png and stripes-black.png file
     ]) {
         for (const file of files) {
             if (file.content instanceof Blob) {
@@ -347,7 +347,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             if (file.mimeType !== 'text/css') {
                 continue;
             }
-            file.content = file.content.split(`/patterns/simple/${name}`).join(`images/${name}`);
+            file.content = file.content
+                .split(`/patterns/simple/${name}`)
+                .join(`../images/${name}` /* <- TODO: [4] Do this universally NOT only for hardcoded paths */);
         }
         files.push({
             type: 'asset',
