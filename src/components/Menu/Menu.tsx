@@ -6,6 +6,7 @@ import { useRole } from '../../utils/hooks/useRole';
 import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
+import { PublishLink } from '../PublishModal/PublishLink';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Menu.module.css';
 
@@ -36,13 +37,7 @@ export function Menu() {
                             </li>
                             {!isExported && (
                                 <li className={styles.featured}>
-                                    <WallpaperLink
-                                        modal="publish"
-                                        role="OWNER"
-                                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                                    >
-                                        Get the web
-                                    </WallpaperLink>
+                                    <PublishLink />
                                 </li>
                             )}
 

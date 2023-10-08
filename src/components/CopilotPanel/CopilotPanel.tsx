@@ -23,6 +23,7 @@ import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parse
 import { Hint } from '../Hint/Hint';
 import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
+import { PublishLink } from '../PublishModal/PublishLink';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
@@ -273,13 +274,7 @@ export function CopilotPanel() {
                             </li>
                         )}
                         <li className={styles.featured}>
-                            <WallpaperLink
-                                modal="publish"
-                                role="OWNER"
-                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                            >
-                                Get the web
-                            </WallpaperLink>
+                            <PublishLink />
                         </li>
                         <li>
                             <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
