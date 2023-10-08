@@ -111,7 +111,9 @@ export function PublishModal() {
 
                     console.info('🌍', { websiteUrl });
 
-                    // TODO: !!! Reset form
+                    // TODO: !!! Wait until website is ready and fully deployed
+                    // TODO: !!! [🧠] Maybe do after publishing open new tab, show iframe,...
+                    router.push(websiteUrl);
                 }}
             >
                 <label className={styles.setting}>
