@@ -320,6 +320,15 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         content: removeContentComments(wallpaper.content),
     });
 
+    if (publicUrl) {
+        files.push({
+            type: 'other',
+            mimeType: 'text/markdown',
+            pathname: 'CNAME',
+            content: publicUrl.hostname,
+        });
+    }
+
     for (const { name, src } of [
         {
             name: 'stripes-grey.png',
@@ -381,7 +390,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
  * TODO: Article_Article__fAEyv -> Article etc.
  * TODO: [🧠] /images vs /assets in exported zip
  * TODO: [🧠] Add TODOs into README.md OR TODO.md/txt
- * TODO: [🧠] Add CNAME, .htaccess, package.json, .vscode, .github, robots.txt, sitemap.xml, security.txt, .prettierrc,... allow user to choose according to needs and system
+ * TODO: [🧠] Add .htaccess, package.json, .vscode, .github, robots.txt, sitemap.xml, security.txt, .prettierrc,... allow user to choose according to needs and system
  * TODO: !! Add Favicon in zip (+other icons)
  * TODO: !! Add license file into zip
  * TODO: !! Fix translations in export
