@@ -2,7 +2,9 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
 import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
+import { randomJavascriptName } from '../../utils/randomJavascriptName';
 import { string_url } from '../../utils/typeAliases';
 
 export interface PublishWebsiteResponse {
@@ -50,13 +52,39 @@ export default async function publishWebsiteHandler(
         const bundleBuffer = await readFile(bundle.filepath);
         const bundleZip = await JSZip.loadAsync(bundleBuffer);
 
-        console.info(bundleZip.files);
+        const files: Array<IFileToPublish> = await Promise.all(
+            Object.entries(bundleZip.files)
+                .filter(([path, { dir }]) => !dir)
+                .map(async ([path, file]) => {
+                    // TODO: !!! Simple function
+                    return {
+                        path,
+                        content: await file.async('blob'),
+                    };
+                }),
+        );
+
+        /*
+        Remove !!!
+        console.log(`-----------------------`);
+        console.log(bundleZip.files['build/']);
+        console.log(`-----------------------`);
+        console.log(
+            '!!!',
+            files.map(({ path }) => path),
+        );
+        */
 
         await publishToRepository({
             organizationName: '1-2i',
-            repositoryName:
-                'test8' /* <- TODO: !!! [🧠] Utility to make unique repository names - maybe 1:1 with CNAME domain */,
-            files: [
+            repositoryName: randomJavascriptName({
+                prefix: 'test-',
+                length: 8,
+            }) /* <- TODO: !!! [🧠] Utility to make unique repository names - maybe 1:1 with CNAME domain */,
+            files,
+            /*
+            TODO: !!! Use and remove
+            : [
                 {
                     path: 'index.html',
                     content: `<h1>Welcome to ${'test'}!</h1>`,
@@ -66,6 +94,7 @@ export default async function publishWebsiteHandler(
                     content: `test.webgpt.cz`,
                 },
             ],
+            */
         });
 
         return response.status(201).json({

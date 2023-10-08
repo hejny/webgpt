@@ -3,5 +3,5 @@
  */
 export interface IFileToPublish {
     path: string;
-    content: string;
+    content: string | Blob;
 }

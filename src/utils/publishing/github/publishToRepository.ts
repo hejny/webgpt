@@ -15,7 +15,7 @@ interface CreateNewRepositoryOptions {
  * @public
  */
 export async function publishToRepository(options: CreateNewRepositoryOptions) {
-    const { organizationName, repositoryName } = options;
+    const { organizationName, repositoryName, files } = options;
 
     /**/
     // TODO: !!! Detect that repository already exists
@@ -36,18 +36,8 @@ export async function publishToRepository(options: CreateNewRepositoryOptions) {
         organizationName,
         repositoryName,
         branch: 'main',
-        files: [
-            {
-                path: 'index.html',
-                content: `<h1>Welcome to ${repositoryName}!</h1>`,
-            },
-            {
-                path: 'CNAME',
-                content: `${repositoryName}.webgpt.cz`,
-            },
-            // TODO: !!! Add commit message
-            // TODO: !!! Change default README.md
-        ],
+        files,
+        // TODO: !!! Pass commit message
     });
     // console.log(uploadResult);
     console.info(chalk.green(`Uploaded into repository ${repositoryName}`));
