@@ -1,10 +1,12 @@
 import chalk from 'chalk';
 import { githubOctokit } from './githubOctokit';
+import { IFileToPublish } from './interfaces/IFileToPublish';
 import { uploadToRepository } from './uploadToRepository';
 
 interface CreateNewRepositoryOptions {
     organizationName: string;
     repositoryName: string;
+    files: Array<IFileToPublish>;
 }
 
 /**
@@ -12,10 +14,11 @@ interface CreateNewRepositoryOptions {
  *
  * @public
  */
-export async function createNewRepository(options: CreateNewRepositoryOptions) {
+export async function publishToRepository(options: CreateNewRepositoryOptions) {
     const { organizationName, repositoryName } = options;
 
     /**/
+    // TODO: !!! Detect that repository already exists
     console.info(chalk.cyan(` ➕  Creating new repository ${repositoryName} `));
     const createResult = await githubOctokit.repos.createInOrg({
         org: organizationName,

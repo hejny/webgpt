@@ -123,7 +123,7 @@ export function ExportModal() {
                         onChange={(e) => {
                             const value = e.target.value;
 
-                            if (isValidUrl(value)) {
+                            if (!isValidUrl(value)) {
                                 return;
                             }
 

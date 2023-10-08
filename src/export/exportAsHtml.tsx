@@ -25,10 +25,23 @@ import { prettifyJavascript } from './utils/prettifyJavascript';
 import { removeSourceMaps } from './utils/removeSourceMaps';
 import { removeTodoComments } from './utils/removeTodoComments';
 
+/**
+ * Exported website to publish / download
+ */
 interface HtmlExport {
+    /**
+     * List of files to export
+     */
     files: Array<HtmlExportFile>;
 }
 
+/**
+ * Exports wallpaper as HTML website into list of files
+ *
+ * @param wallpaper Wallpaper to make website from
+ * @param options
+ * @returns List of files with its content
+ */
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
     const { stylesPlace, publicUrl } = options;
 

@@ -2,15 +2,15 @@ import { createBlobForGithub } from './createBlobForGithub';
 import { createNewCommit } from './createNewCommit';
 import { createNewTree } from './createNewTree';
 import { getCurrentCommit } from './getCurrentCommit';
-import { IFile } from './interfaces/IFile';
 import { IFileForGithub } from './interfaces/IFileForGithub';
+import { IFileToPublish } from './interfaces/IFileToPublish';
 import { setBranchToCommit } from './setBranchToCommit';
 
 interface UploadToRepositoryOptions {
-  organizationName: string;
-  repositoryName: string;
-  branch: string;
-  files: Array<IFile>;
+    organizationName: string;
+    repositoryName: string;
+    branch: string;
+    files: Array<IFileToPublish>;
 }
 
 /**

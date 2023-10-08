@@ -3,7 +3,7 @@ import { useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
-import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { PublishWebsiteResponse } from '../../pages/api/publish';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
@@ -12,10 +12,7 @@ import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
-import { PricingPlan, PricingPlans } from '../PricingTable/plans';
-import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
-import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './PublishModal.module.css';
 
 /**
@@ -24,14 +21,10 @@ import styles from './PublishModal.module.css';
 export function PublishModal() {
     const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
-    const [publicUrl, setPublicUrl] = useState<null | URL>(null);
-    const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
+    const [publicUrl, setPublicUrl /* <- TODO: !!! Change to domain NOT URL */] = useState<null | URL>(null);
     const [email, setEmail] = useState<string_email>('');
-    // const [projectName, setProjectName] = useState<string>('');
-    const [plan, setPlan] = useState<PricingPlan>('SIMPLE');
-    const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
 
-    const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
+    const isFormComplete = Boolean(publicUrl !== null && email);
 
     return (
         <Modal title={'Get the web'} isCloseable>
@@ -40,6 +33,10 @@ export function PublishModal() {
                 onSubmit={async (event) => {
                     event.preventDefault();
 
+                    console.info(`📦 Publishing to ${publicUrl}`);
+
+                    // TODO: !!! Extract to separate publishWebsite function
+                    // TODO: !!! Do some new validation here
                     const insertSiteResult = await getSupabaseForBrowser()
                         .from('Site')
                         .insert([
@@ -48,7 +45,7 @@ export function PublishModal() {
                                 url: (publicUrl || new URL(`https://webgpt.cz/${wallpaper.id}}`))
                                     .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
                                 ownerEmail: email,
-                                plan,
+
                                 author: await provideClientId({
                                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                                 }),
@@ -56,6 +53,8 @@ export function PublishModal() {
                         ]);
                     console.info('⬆', { insertSiteResult });
 
+                    /* 
+                    TODO: [🧠] Do here some SupportRequest insert
                     if (isHelpNeeded || isUrlUnsure || plan === 'ADVANCED' || plan === 'ENTERPRISE') {
                         const insertSupportRequestResult = await getSupabaseForBrowser()
                             .from('SupportRequest')
@@ -82,23 +81,52 @@ export function PublishModal() {
 
                         console.info('⬆', { insertSupportRequestResult });
                     }
+                    */
 
-                    /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
+                    // Note: [🛣] !!! In ideal case, here should be tar file, but exportAsTar is not working in browser and strangely lags
+                    const zipBundle = await exportAsZip(wallpaper, { publicUrl });
 
-                    // TODO: Reset form
+                    console.info('📦', { zipBundle });
+
+                    const formData = new FormData();
+                    formData.append('bundle', zipBundle);
+
+                    const response1 /* <-[💩] */ = await fetch('/api/publish', {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    if (response1.ok === false) {
+                        const { message } = (await response1.json()) as any; /* <-[🌋]  */
+                        throw new Error(
+                            spaceTrim(`
+                                Upload wallpaper failed with status ${response1.status}
+
+                                ${message}
+                            `),
+                        );
+                    }
+
+                    const { websiteUrl } = (await response1.json()) as PublishWebsiteResponse;
+
+                    console.info('🌍', { websiteUrl });
+
+                    // TODO: !!! Reset form
                 }}
             >
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
+                        // TODO: !!! Allow URL, domain, subdomain, etc. - NEED of domain
+                        // TODO: !!! [🧠] Check (sub)domain availability
+                        // TODO: !!! [🧠] Information how to register domain + set CNAME
                         className={classNames(styles.value, stylesForSelect.option)}
-                        disabled={isUrlUnsure}
-                        required={!isUrlUnsure}
+                        required
                         defaultValue={publicUrl?.href || ''}
                         onChange={(e) => {
                             const value = e.target.value;
 
-                            if (isValidUrl(value)) {
+                            if (!isValidUrl(value)) {
                                 return;
                             }
 
@@ -109,25 +137,13 @@ export function PublishModal() {
                         title="Enter a valid website url like https://www.your-awesome-project.com/"
                         pattern="https?://.*"
                     />
-                    {/* * We need ... */}
-
-                    <label className={styles.extra}>
-                        <input
-                            className={classNames(styles.value, stylesForSelect.option)}
-                            checked={isUrlUnsure}
-                            onChange={(e) => {
-                                setUrlUnsure(!isUrlUnsure);
-                            }}
-                            placeholder="john@smith.org"
-                            type="checkbox"
-                        />
-                        I am not sure about the url
-                    </label>
                 </label>
 
                 <label className={styles.setting}>
                     <div className={styles.key}>Your Email:</div>
                     <input
+                        // TODO: !!! Put here existing email
+                        // TODO: !!! Less visible + warning
                         className={classNames(styles.value, stylesForSelect.option)}
                         required
                         defaultValue={email}
@@ -152,40 +168,6 @@ export function PublishModal() {
                 </label>
                 */}
 
-                <label className={styles.setting}>
-                    <div className={styles.key}>Plan:</div>
-
-                    <Select
-                        className={styles.value}
-                        label=""
-                        value={plan}
-                        onChange={(newPlan) => setPlan(newPlan)}
-                        options={PricingPlans}
-                        visibleButtons={Infinity}
-                    />
-
-                    <WallpaperLink
-                        page="pricing"
-                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */ target={'_blank'}
-                        className={styles.extra}
-                    >
-                        More info about plans
-                    </WallpaperLink>
-                </label>
-
-                <label className={styles.setting}>
-                    <input
-                        className={classNames(styles.value, stylesForSelect.option)}
-                        checked={isHelpNeeded}
-                        onChange={(e) => {
-                            setHelpNeeded(!isHelpNeeded);
-                        }}
-                        placeholder="john@smith.org"
-                        type="checkbox"
-                    />
-                    I need help with setting up my website
-                </label>
-
                 <label className={classNames(styles.setting, styles.settingCentered)}>
                     <button
                         className={classNames('button', styles.getTheWeb)}
@@ -202,8 +184,8 @@ export function PublishModal() {
                     </button>
                 </label>
 
-                <pre style={{ display: 'none', width: 200, height: 200, overflow: 'scroll' }}>
-                    {JSON.stringify({ wallpaperId: wallpaper.id, publicUrl, email, plan, isHelpNeeded }, null, 4)}
+                <pre style={{ display: 'nonex', width: 200, height: 200, overflow: 'scroll' }}>
+                    {JSON.stringify({ wallpaperId: wallpaper.id, publicUrl, email }, null, 4)}
                 </pre>
             </form>
         </Modal>
@@ -211,6 +193,7 @@ export function PublishModal() {
 }
 
 /**
- * TODO: Registration should return some token which will be put into publish
- * TODO: Each build should have unique id + build metadata (like date, aiai version, etc.)
+ * TODO: [🧠] Maybe allow here ask for support request
+ * TODO: !!! [🧠] Registration should return some token which will be put into publish
+ * TODO: !!! [🧠] Each build should have unique id + build metadata (like date, aiai version, etc.)
  */

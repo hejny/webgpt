@@ -1,6 +1,8 @@
 import formidable from 'formidable';
 import { readFile } from 'fs/promises';
+import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
 import { string_url } from '../../utils/typeAliases';
 
 export interface PublishWebsiteResponse {
@@ -32,25 +34,42 @@ export default async function publishWebsiteHandler(
         });
     });
 
-    const websitePackageArray = files.website;
+    const bundlesArray = files.bundle;
 
-    if (!websitePackageArray || websitePackageArray.length !== 1) {
-        return response.status(400).json({ message: 'In form data there is not EXACTLY one "website" field' } as any);
+    if (!bundlesArray || bundlesArray.length !== 1) {
+        return response.status(400).json({ message: 'In form data there is not EXACTLY one "bundle" field' } as any);
     }
 
-    const websitePackage = websitePackageArray[0]!;
+    const bundle = bundlesArray[0]!;
 
-    if (!websitePackage.mimetype?.startsWith('application/x-tar')) {
-        return response.status(400).json({ message: 'Only tar files are allowed' } as any);
+    if (!bundle.mimetype?.startsWith('application/zip')) {
+        return response.status(400).json({ message: 'Only zip files are allowed' } as any);
     }
 
     try {
-        const websitePackageBuffer = await readFile(websitePackage.filepath);
+        const bundleBuffer = await readFile(bundle.filepath);
+        const bundleZip = await JSZip.loadAsync(bundleBuffer);
 
-        // TODO: !!! Implement
+        console.info(bundleZip.files);
+
+        await publishToRepository({
+            organizationName: '1-2i',
+            repositoryName:
+                'test8' /* <- TODO: !!! [🧠] Utility to make unique repository names - maybe 1:1 with CNAME domain */,
+            files: [
+                {
+                    path: 'index.html',
+                    content: `<h1>Welcome to ${'test'}!</h1>`,
+                },
+                {
+                    path: 'CNAME',
+                    content: `test.webgpt.cz`,
+                },
+            ],
+        });
 
         return response.status(201).json({
-            websiteUrl: `!!!`,
+            websiteUrl: `https://test8.webgpt.cz/`,
         } satisfies PublishWebsiteResponse);
     } catch (error) {
         if (!(error instanceof Error)) {
