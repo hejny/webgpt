@@ -79,6 +79,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     }
 
     // Note: [🕋] Filter UI fonts
+    console.log(
+        '!!! UI Fonts ',
+        styles.filter((style) => style.includes('@font-face')),
+    );
     styles = styles.filter((style) => !style.includes('@font-face'));
 
     // Note: [♑][1] Use main wallpaper font globally
@@ -87,12 +91,14 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         // TODO: Unhardcode dark color scheme - dynamically detect from wallpaper
         `
             html {
+                /* !!! Hardcoded */
                 color-scheme: dark;
             }
         
         `,
         `
             body {
+                /* !!! Hardcoded */
                 font-family: '${mainWallpaperFont}', sans-serif;
                 margin: 0;
                 overflow-x: hidden;
@@ -107,6 +113,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     // Note: Split styles into rules
     const rules = splitCss(style);
+    console.log('!!!', { rules });
 
     // Note: Group style rules into 34️⃣ groups:
     const importRules: Array<string_css> = [];
