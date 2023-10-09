@@ -78,15 +78,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         );
     }
 
-    console.log(
-        '!!! UI Fonts ',
-        styles.filter((style) => style.includes('@font-face')),
-    );
-    console.log(
-        '!!! NON UI Fonts ',
-        styles.filter((style) => !style.includes('@font-face')),
-    );
-
     // Note: [♑][1] Use main wallpaper font globally
     const { mainWallpaperFont } = parseFontsFromWallpaper(wallpaper);
     styles = [
@@ -107,12 +98,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     // Note: [🕋] Filter UI fonts
     const rules = rulesUnfiltered.filter((rule) => !rule.includes('@font-face'));
-
-    console.log('!!!', {
-        rules,
-        rulesWithFonts: rulesUnfiltered.filter((rule) => rule.includes('@font-face')),
-        rulesUnfiltered,
-    });
 
     // Note: Group style rules into 34️⃣ groups:
     const importRules: Array<string_css> = [];
