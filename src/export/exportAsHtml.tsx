@@ -87,6 +87,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         `
             body {
                 font-family: '${mainWallpaperFont}', sans-serif;
+                margin: 0;
+                overflow-x: hidden;
             }
         
         `,
