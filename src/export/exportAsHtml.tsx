@@ -84,6 +84,13 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     // Note: [♑][1] Use main wallpaper font globally
     const { mainWallpaperFont } = parseFontsFromWallpaper(wallpaper);
     styles = [
+        // TODO: Unhardcode dark color scheme - dynamically detect from wallpaper
+        `
+            html {
+                color-scheme: dark;
+            }
+        
+        `,
         `
             body {
                 font-family: '${mainWallpaperFont}', sans-serif;
