@@ -8,8 +8,9 @@ import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_email } from '../../utils/typeAliases';
-import { isValidUrl } from '../../utils/validators/isValidUrl';
+import { string_domain, string_email } from '../../utils/typeAliases';
+import { isValidDomain } from '../../utils/validators/isValidDomain';
+import { isValidEmail } from '../../utils/validators/isValidEmail';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
@@ -22,11 +23,10 @@ import styles from './PublishModal.module.css';
 export function PublishModal() {
     const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
-    const [publicUrl, setPublicUrl /* <- TODO: !!!! Change to domain NOT URL */ /* <- TODO: !!!! Offer the domain */] =
-        useState<null | URL>(null);
+    const [domain, setDomain] = useState<string_domain>(
+        `${wallpaper.id /* <- TODO: !! Better domain to Offer */}.webgpt.cz`,
+    );
     const [email, setEmail] = useState<string_email>('');
-
-    const isFormComplete = Boolean(publicUrl !== null && email);
 
     return (
         <Modal title={<PublishText />} isCloseable>
@@ -35,19 +35,28 @@ export function PublishModal() {
                 onSubmit={async (event) => {
                     event.preventDefault();
 
-                    console.info(`📦 Publishing to ${publicUrl}`);
+                    console.info(`📦 Publishing to ${domain}`);
+
+                    if (!isValidDomain(domain)) {
+                        alert(`Please enter valid domain name`);
+                        return;
+                    }
+
+                    if (!isValidEmail(email)) {
+                        alert(`Please enter valid email address`);
+                        return;
+                    }
+
+                    const publicUrl = new URL(`https://${domain}/`);
 
                     // TODO: !!!! Extract to separate publishWebsite function
-                    // TODO: !!!! Do some new validation here
                     const insertSiteResult = await getSupabaseForBrowser()
                         .from('Site')
                         .insert([
                             {
                                 wallpaperId: wallpaper.id,
-                                url: (publicUrl || new URL(`https://webgpt.cz/${wallpaper.id}}`))
-                                    .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
+                                url: publicUrl.href,
                                 ownerEmail: email,
-
                                 author: await provideClientId({
                                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                                 }),
@@ -126,20 +135,14 @@ export function PublishModal() {
                         // TODO: !!!! [🧠] Information how to register domain + set CNAME
                         className={classNames(styles.value, stylesForSelect.option)}
                         required
-                        defaultValue={publicUrl?.href || ''}
+                        defaultValue={domain || ''}
                         onChange={(e) => {
                             const value = e.target.value;
-
-                            if (!isValidUrl(value)) {
-                                return;
-                            }
-
-                            setPublicUrl(new URL(value));
+                            setDomain(value);
                         }}
-                        placeholder="https://www.your-awesome-project.com/"
+                        placeholder="your-awesome-project.webgpt.cz"
                         type="text"
-                        title="Enter a valid website url like https://www.your-awesome-project.com/"
-                        pattern="https?://.*"
+                        title="Enter a domain name like your-awesome-project.com"
                     />
                 </label>
 
@@ -181,7 +184,6 @@ export function PublishModal() {
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
                         }}
-                        // disabled={!isFormComplete}
                         type="submit"
                     >
                         <MarkdownContent content="Get the web 🚀" isUsingOpenmoji />
@@ -189,7 +191,7 @@ export function PublishModal() {
                 </label>
 
                 <pre style={{ display: 'nonex', width: 200, height: 200, overflow: 'scroll' }}>
-                    {JSON.stringify({ wallpaperId: wallpaper.id, publicUrl, email }, null, 4)}
+                    {JSON.stringify({ wallpaperId: wallpaper.id, domain, email }, null, 4)}
                 </pre>
             </form>
         </Modal>
