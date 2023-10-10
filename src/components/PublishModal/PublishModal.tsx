@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { classNames } from '../../utils/classNames';
+import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPart';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
@@ -18,9 +19,9 @@ import { publishWebsite } from './publishWebsite';
 export function PublishModal() {
     const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
-    const [domain, setDomain] = useState<string_domain>(
-        `${wallpaper.id /* <- TODO: !! Better domain to Offer */}.webgpt.cz`,
-    );
+    const defaultDomain =
+        useMemo(() => computeWallpaperDomainPart(wallpaper.content), [wallpaper.content]) + '.webgpt.cz';
+    const [domain, setDomain] = useState<string_domain>(defaultDomain);
     const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
 
     return (
@@ -52,9 +53,9 @@ export function PublishModal() {
                             const value = e.target.value;
                             setDomain(value);
                         }}
-                        placeholder="your-awesome-project.webgpt.cz"
+                        placeholder={defaultDomain}
                         type="text"
-                        title="Enter a domain name like your-awesome-project.com"
+                        title={`Enter a domain name like ${defaultDomain}`}
                     />
                 </label>
 
