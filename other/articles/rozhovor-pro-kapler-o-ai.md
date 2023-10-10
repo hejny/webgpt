@@ -54,15 +54,66 @@ Jakmile je potřeba něco složitějšího, existují v principu čtyři metody,
 -
 -
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Myslíš, že generativní AI ještě není na svém vrcholu?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 <!--
 ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
@@ -70,21 +121,109 @@ ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
 
 **Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Řekni něco víc o hře Towns, co jsi vyvíjel**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Řekni něco víc o modulech do Collboardu**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Nebylo by teda lepší generativní AI ve školách zakázat?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 <!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Kalkulačka
 Musíme se naučit skákat z postavené laťky ne ze země přeskakovat laťku.
 -->
