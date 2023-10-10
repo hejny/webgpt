@@ -7,7 +7,7 @@
     "homepage": "https://webgpt.cz/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/hejny/1-2i"
+        "url": "https://github.com/hejny/webgpt"
     },
     "scripts": {
         "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 4444",
