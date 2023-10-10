@@ -102,7 +102,7 @@ export function PublishModal() {
                     </button>
                 </label>
 
-                <pre style={{ display: 'nonex', width: 200, height: 200, overflow: 'scroll' }}>
+                <pre style={{ display: 'none', width: 200, height: 200, overflow: 'scroll' }}>
                     {JSON.stringify({ wallpaperId: wallpaper.id, domain, email }, null, 4)}
                 </pre>
             </form>
