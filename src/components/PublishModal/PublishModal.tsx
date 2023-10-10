@@ -9,6 +9,7 @@ import stylesForSelect from '../Select/Select.module.css';
 import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';
+import { GetTheWebTabs } from './GetTheWebTabs';
 
 /**
  * Renders the main publish modal
@@ -24,7 +25,7 @@ export function PublishModal() {
     return (
         <Modal title={<PublishText />} isCloseable>
 
-            
+            <GetTheWebTabs/>
 
             <form
                 className={styles.settings}

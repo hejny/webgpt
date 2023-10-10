@@ -12,6 +12,7 @@ import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
 import { exportWebsite } from './exportWebsite';
+import { GetTheWebTabs } from '../PublishModal/GetTheWebTabs';
 
 export const ExportSystem = {
     STATIC: 'Static',
@@ -45,6 +46,7 @@ export function ExportModal() {
 
     return (
         <Modal title={'Get the web'} isCloseable>
+            <GetTheWebTabs />
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {
