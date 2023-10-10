@@ -1,21 +1,17 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
-import spaceTrim from 'spacetrim';
-import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import { exportAsZip } from '../../export/exportAsZip';
-import { PublishWebsiteResponse } from '../../pages/api/publish';
+import { useMemo, useState } from 'react';
 import { classNames } from '../../utils/classNames';
+import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPart';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { provideClientId } from '../../utils/supabase/provideClientId';
+import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
-import { isValidDomain } from '../../utils/validators/isValidDomain';
-import { isValidEmail } from '../../utils/validators/isValidEmail';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
+import { GetTheWebTabs } from './GetTheWebTabs';
 import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
+import { publishWebsite } from './publishWebsite';
 
 /**
  * Renders the main publish modal
@@ -23,108 +19,25 @@ import styles from './PublishModal.module.css';
 export function PublishModal() {
     const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
-    const [domain, setDomain] = useState<string_domain>(
-        `${wallpaper.id /* <- TODO: !! Better domain to Offer */}.webgpt.cz`,
-    );
-    const [email, setEmail] = useState<string_email>('');
+    const defaultDomain =
+        useMemo(() => computeWallpaperDomainPart(wallpaper.content), [wallpaper.content]) + '.webgpt.cz';
+    const [domain, setDomain] = useState<string_domain>(defaultDomain);
+    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
 
     return (
         <Modal title={<PublishText />} isCloseable>
+            <GetTheWebTabs />
+
             <form
                 className={styles.settings}
                 onSubmit={async (event) => {
                     event.preventDefault();
-
-                    console.info(`📦 Publishing to ${domain}`);
-
-                    if (!isValidDomain(domain)) {
-                        alert(`Please enter valid domain name`);
-                        return;
-                    }
-
-                    if (!isValidEmail(email)) {
-                        alert(`Please enter valid email address`);
-                        return;
-                    }
-
-                    const publicUrl = new URL(`https://${domain}/`);
-
-                    // TODO: !!!! Extract to separate publishWebsite function
-                    const insertSiteResult = await getSupabaseForBrowser()
-                        .from('Site')
-                        .insert([
-                            {
-                                wallpaperId: wallpaper.id,
-                                url: publicUrl.href,
-                                ownerEmail: email,
-                                author: await provideClientId({
-                                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
-                                }),
-                            },
-                        ]);
-                    console.info('⬆', { insertSiteResult });
-
-                    /* 
-                    TODO: [🧠] Do here some SupportRequest insert
-                    if (isHelpNeeded || isUrlUnsure || plan === 'ADVANCED' || plan === 'ENTERPRISE') {
-                        const insertSupportRequestResult = await getSupabaseForBrowser()
-                            .from('SupportRequest')
-                            .insert([
-                                {
-                                    from: email,
-                                    author: await provideClientId({
-                                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
-                                    }),
-                                    message: spaceTrim(`
-                                        Hi,
-                                        ${
-                                            isHelpNeeded
-                                                ? `I need help with setting up my website.`
-                                                : `I am interested in your ${plan} plan.`
-                                        }
-                                        ${!isUrlUnsure ? `` : `I am not sure about my URL.`}
-
-                                        ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
-                                        My plan: ${plan}
-                                    `),
-                                },
-                            ]);
-
-                        console.info('⬆', { insertSupportRequestResult });
-                    }
-                    */
-
-                    // Note: [🛣] In ideal case, here should be tar file, but exportAsTar is not working in browser and strangely lags
-                    const zipBundle = await exportAsZip(wallpaper, { publicUrl });
-
-                    console.info('📦', { zipBundle });
-
-                    const formData = new FormData();
-                    formData.append('bundle', zipBundle);
-
-                    const response1 /* <-[💩] */ = await fetch('/api/publish', {
-                        method: 'POST',
-                        body: formData,
+                    await publishWebsite({
+                        wallpaper,
+                        domain,
+                        email,
                     });
-
-                    if (response1.ok === false) {
-                        const { message } = (await response1.json()) as any; /* <-[🌋]  */
-                        throw new Error(
-                            spaceTrim(`
-                                Upload wallpaper failed with status ${response1.status}
-
-                                ${message}
-                            `),
-                        );
-                    }
-
-                    const { websiteUrl } = (await response1.json()) as PublishWebsiteResponse;
-
-                    console.info('🌍', { websiteUrl });
-
-                    // TODO: !!!! Wait until website is ready and fully deployed
-                    // TODO: !!!! [🧠] Maybe do after publishing open new tab, show iframe,...
-                    router.push(websiteUrl);
+                    // TODO: [🧭] Reset form
                 }}
             >
                 <label className={styles.setting}>
@@ -140,17 +53,16 @@ export function PublishModal() {
                             const value = e.target.value;
                             setDomain(value);
                         }}
-                        placeholder="your-awesome-project.webgpt.cz"
+                        placeholder={defaultDomain}
                         type="text"
-                        title="Enter a domain name like your-awesome-project.com"
+                        title={`Enter a domain name like ${defaultDomain}`}
                     />
                 </label>
 
                 <label className={styles.setting}>
                     <div className={styles.key}>Your Email:</div>
                     <input
-                        // TODO: !!!! Put here existing email
-                        // TODO: !!!! Less visible + warning
+                        // TODO: !! Less visible + warning that email is your key
                         className={classNames(styles.value, stylesForSelect.option)}
                         required
                         defaultValue={email}
@@ -190,7 +102,7 @@ export function PublishModal() {
                     </button>
                 </label>
 
-                <pre style={{ display: 'nonex', width: 200, height: 200, overflow: 'scroll' }}>
+                <pre style={{ display: 'none', width: 200, height: 200, overflow: 'scroll' }}>
                     {JSON.stringify({ wallpaperId: wallpaper.id, domain, email }, null, 4)}
                 </pre>
             </form>
@@ -200,6 +112,4 @@ export function PublishModal() {
 
 /**
  * TODO: [🧠] Maybe allow here ask for support request
- * TODO: !!!! [🧠] Registration should return some token which will be put into publish
- * TODO: !!!! [🧠] Each build should have unique id + build metadata (like date, aiai version, etc.)
  */
