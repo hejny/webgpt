@@ -37,7 +37,7 @@ export async function uploadToRepository(options: UploadToRepositoryOptions) {
         files: filesForGithub,
         parentTreeSha: currentCommit.treeSha,
     });
-    const commitMessage = `💫 Publish exported website by WebGPT.cz`;
+    const commitMessage = `💫 Publish exported website by WebGPT.cz`; /* <- !!!! Pass as param */
     const newCommit = await createNewCommit({
         organizationName,
         repositoryName,

@@ -112,4 +112,6 @@ export function PublishModal() {
 
 /**
  * TODO: [🧠] Maybe allow here ask for support request
+ * TODO: !!!! [🧠] Registration should return some token which will be put into publish
+ * TODO: !!!! [🧠] Each build should have unique id + build metadata (like date, aiai version, etc.)
  */
