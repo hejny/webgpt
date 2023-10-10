@@ -2,14 +2,15 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
+import { GetTheWebTabs } from './GetTheWebTabs';
 import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';
-import { GetTheWebTabs } from './GetTheWebTabs';
 
 /**
  * Renders the main publish modal
@@ -20,12 +21,11 @@ export function PublishModal() {
     const [domain, setDomain] = useState<string_domain>(
         `${wallpaper.id /* <- TODO: !! Better domain to Offer */}.webgpt.cz`,
     );
-    const [email, setEmail] = useState<string_email>('');
+    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
 
     return (
         <Modal title={<PublishText />} isCloseable>
-
-            <GetTheWebTabs/>
+            <GetTheWebTabs />
 
             <form
                 className={styles.settings}
@@ -61,8 +61,7 @@ export function PublishModal() {
                 <label className={styles.setting}>
                     <div className={styles.key}>Your Email:</div>
                     <input
-                        // TODO: !!!! Put here existing email
-                        // TODO: !!!! Less visible + warning
+                        // TODO: !! Less visible + warning that email is your key
                         className={classNames(styles.value, stylesForSelect.option)}
                         required
                         defaultValue={email}

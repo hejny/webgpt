@@ -2,17 +2,18 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import { PricingPlan, PricingPlans } from '../PricingTable/plans';
+import { GetTheWebTabs } from '../PublishModal/GetTheWebTabs';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
 import { exportWebsite } from './exportWebsite';
-import { GetTheWebTabs } from '../PublishModal/GetTheWebTabs';
 
 export const ExportSystem = {
     STATIC: 'Static',
@@ -38,7 +39,7 @@ export function ExportModal() {
     const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
-    const [email, setEmail] = useState<string_email>('');
+    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
     // const [projectName, setProjectName] = useState<string>('');
     const [system, setSystem] = useState<keyof typeof ExportSystem>('STATIC');
     const [plan, setPlan] = useState<PricingPlan>('SIMPLE');
