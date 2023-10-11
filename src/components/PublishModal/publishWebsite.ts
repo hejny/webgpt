@@ -122,8 +122,4 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
     const { websiteUrl } = (await response1.json()) as PublishWebsiteResponse;
 
     console.info('🌍', { websiteUrl });
-
-    // TODO: !!!! Wait until website is ready and fully deployed
-    // TODO: !!!! [🧠] Maybe do after publishing open new tab, show iframe,...
-    // router.push(websiteUrl);
 }
