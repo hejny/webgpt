@@ -66,7 +66,7 @@ export function GallerySection() {
                                     <iframe
                                         // TODO: [🦋] Use here better preview image - with some palette wallpaper + title + smaller size
                                         // TODO: [🦋] Show likedStatus here
-                                        src={`https://1-2i.com` + `/${wallpaper.id}?mode=preview`}
+                                        src={`https://webgpt.cz` + `/${wallpaper.id}?mode=preview`}
                                         allowTransparency={false /* as a optimization */}
                                         scrolling="no" /* <- TODO: Why deprecated? */
                                         frameBorder="0" /* <- TODO: Why deprecated? */

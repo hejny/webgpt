@@ -16,8 +16,8 @@ describe('isUrlOnPrivateNetwork', () => {
         expect(isUrlOnPrivateNetwork('https://collboard.localhost.com')).toBe(false);
         expect(isUrlOnPrivateNetwork('https://localhost.false')).toBe(false);
         expect(isUrlOnPrivateNetwork('https://foo.com')).toBe(false);
-        expect(isUrlOnPrivateNetwork('https://1-2i.com/')).toBe(false);
-        expect(isUrlOnPrivateNetwork('https://1-2i.com/a-vibrant-avian-2m2pfomf4woc')).toBe(false);
+        expect(isUrlOnPrivateNetwork('https://webgpt.cz/')).toBe(false);
+        expect(isUrlOnPrivateNetwork('https://webgpt.cz/a-vibrant-avian-2m2pfomf4woc')).toBe(false);
     });
 
     it('isUrlOnPrivateNetwork returns true for private IP addresses', () => {

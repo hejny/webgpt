@@ -6,7 +6,7 @@ describe(`validation of emails`, () => {
         expect(isValidEmail(`me@pavolhejny.com`)).toBe(true);
         expect(isValidEmail(`pavol@hejny.com`)).toBe(true);
         expect(isValidEmail(`dddd+aaaa@gmail.com`)).toBe(true);
-        expect(isValidEmail(`strange-but-ok+email@1-2i.com`)).toBe(true);
+        expect(isValidEmail(`strange-but-ok+email@webgpt.cz`)).toBe(true);
         expect(isValidEmail(`test@new.tdls.zip`)).toBe(true);
     });
 
