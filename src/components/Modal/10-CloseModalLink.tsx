@@ -10,3 +10,7 @@ export function CloseModalLink(props: CloseModalLinkProps) {
     const { ...attributes } = props;
     return <WallpaperLink modal={null} {...attributes} />;
 }
+
+/**
+ * TODO: [🕙] Make some util getWallpaperLink
+ */

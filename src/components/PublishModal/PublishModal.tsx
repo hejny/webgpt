@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useMemo, useState } from 'react';
+import { FormEvent, useCallback, useMemo, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPart';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
@@ -23,23 +23,43 @@ export function PublishModal() {
         useMemo(() => computeWallpaperDomainPart(wallpaper.content), [wallpaper.content]) + '.webgpt.cz';
     const [domain, setDomain] = useState<string_domain>(defaultDomain);
     const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
+    const [isPublishing, setPublishing] = useState(false);
+    const submitHandler = useCallback(
+        async (event: FormEvent<HTMLFormElement>) => {
+            event.preventDefault();
+
+            if (isPublishing) {
+                alert(`Please wait until the website is published`);
+                return;
+            }
+
+            setPublishing(true);
+
+            try {
+                await publishWebsite({
+                    wallpaper,
+                    domain,
+                    email,
+                });
+                router.push({
+                    // TODO: [🕙] Make some util getWallpaperLink
+                    pathname: '/[wallpaperId]',
+                    query: {
+                        wallpaperId: wallpaper.id,
+                    },
+                });
+            } finally {
+                setPublishing(false);
+            }
+        },
+        [isPublishing, wallpaper, domain, email, setPublishing, router],
+    );
 
     return (
         <Modal title={<PublishText />} isCloseable>
             <GetTheWebTabs />
 
-            <form
-                className={styles.settings}
-                onSubmit={async (event) => {
-                    event.preventDefault();
-                    await publishWebsite({
-                        wallpaper,
-                        domain,
-                        email,
-                    });
-                    // TODO: [🧭] Reset form
-                }}
-            >
+            <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
@@ -47,6 +67,7 @@ export function PublishModal() {
                         // TODO: !!!! [🧠] Check (sub)domain availability
                         // TODO: !!!! [🧠] Information how to register domain + set CNAME
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isPublishing}
                         required
                         defaultValue={domain || ''}
                         onChange={(e) => {
@@ -64,6 +85,7 @@ export function PublishModal() {
                     <input
                         // TODO: !! Less visible + warning that email is your key
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isPublishing}
                         required
                         defaultValue={email}
                         onChange={(e) => {
@@ -90,6 +112,7 @@ export function PublishModal() {
                 <label className={classNames(styles.setting, styles.settingCentered)}>
                     <button
                         className={classNames('button', styles.getTheWeb)}
+                        disabled={isPublishing}
                         style={{
                             background: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',

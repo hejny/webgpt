@@ -1,5 +1,5 @@
 import spaceTrim from 'spacetrim';
-import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { IS_VERIFIED_EMAIL_REQUIRED, NEXT_PUBLIC_URL } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { PublishWebsiteResponse } from '../../pages/api/publish';
 import { IWallpaper } from '../../utils/IWallpaper';
@@ -43,6 +43,11 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
         alert(`Please enter valid email address`);
         return;
     }
+
+    const loadingUrl = new URL(NEXT_PUBLIC_URL);
+    loadingUrl.pathname = '/publish-loading';
+    loadingUrl.searchParams.set('domain', domain);
+    window.open(loadingUrl.href, '_blank');
 
     const publicUrl = new URL(`https://${domain}/`);
 

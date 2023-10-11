@@ -6,9 +6,9 @@ import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
+import { isValidEmail } from '../../utils/validators/isValidEmail';
 import { PricingPlan } from '../PricingTable/plans';
 import { ExportSystem } from './ExportModal';
-import { isValidEmail } from '../../utils/validators/isValidEmail';
 
 interface ExportWebsiteOptions {
     /**
@@ -20,7 +20,7 @@ interface ExportWebsiteOptions {
      * Email of website owner
      */
     email: string_email;
-    
+
     /**
      * System to export
      */
