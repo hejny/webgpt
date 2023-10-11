@@ -388,6 +388,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: [⛱] Add buildId into bundle
  * TODO: Enhance in export: AI Components multiline text templates OR preserve string ` literals
  * TODO: Article_Article__fAEyv -> Article etc.
  * TODO: [🧠] /images vs /assets in exported zip

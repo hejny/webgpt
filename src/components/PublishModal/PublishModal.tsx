@@ -5,10 +5,10 @@ import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPa
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
+import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
-import { GetTheWebTabs } from './GetTheWebTabs';
 import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';

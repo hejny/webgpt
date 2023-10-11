@@ -30,6 +30,7 @@ export async function exportAsZip(wallpaper: IWallpaper, options: PackageExportO
 }
 
 /**
+ * TODO: [⛱] Add buildId into bundle
  * TODO: [optimize] Do in worker
  * TODO: [optimize] Lazy-load jszip package
  * TODO: !! [🎍] Optionally: CNAME, Prettier, Vscode, GitHub

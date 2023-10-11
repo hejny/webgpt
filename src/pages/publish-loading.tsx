@@ -1,5 +1,6 @@
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { PublishLoading } from '../components/PublishModal/PublishLoading';
+import { OnlyReadyRouter } from '../components/NoSsr/OnlyReadyRouter';
+import { PublishLoading } from '../components/PublishLoading/PublishLoading';
 import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
 export default function PublishLoadingPage() {
@@ -17,7 +18,9 @@ export default function PublishLoadingPage() {
                     >
                         1-2i {/* <- TODO: !!!! ACRY Change "AI Web" and 1-2i */}
                     </h1>
-                    <PublishLoading />
+                    <OnlyReadyRouter>
+                        <PublishLoading />
+                    </OnlyReadyRouter>
                 </main>
             </div>
         </>
