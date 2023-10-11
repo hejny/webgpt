@@ -34,6 +34,14 @@ export function Scenarios() {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/new/from-url">
+                        <CreateZone className={styles.scenario}>
+                            <h2>Website</h2>
+                            To redesign your old site
+                        </CreateZone>
+                    </Link>
+                </li>
+                <li>
                     <Link href="/new/from-instagram">
                         <CreateZone className={styles.scenario}>
                             <h2>Instagram</h2>
