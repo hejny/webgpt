@@ -989,7 +989,7 @@ export const CDN = (CDN_BUCKET &&
         accessKeyId: CDN_ACCESS_KEY_ID!,
         secretAccessKey: CDN_SECRET_ACCESS_KEY!,
         cdnPublicUrl: CDN_PUBLIC_URL!,
-        gzip: false /* <- TODO: Maybe just remove this functionality from 1-2i repository */,
+        gzip: false /* <- TODO: Maybe just remove this functionality from WebGPT repository */,
     })) as DigitalOceanSpaces;
 
 export const MIDJOURNEY_WHOLE_GALLERY_PATH = 'X:/Mythings/MidJourney';

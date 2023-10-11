@@ -11,7 +11,7 @@ export default function DomainsPage() {
 
             <div className={styles.page}>
                 <main>
-                    <h1>AI Web Maker</h1>
+                    <h1>WebGPT</h1>
                     <p>Pick your domain:</p>
 
                     <NoSsr>

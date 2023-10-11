@@ -136,7 +136,7 @@ export function CopilotPanel() {
     }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotPanel)}>
+        <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
             <div
                 // Note: It is intended to have two divs embedded in each other
                 className={styles.CopilotPanelInner}
