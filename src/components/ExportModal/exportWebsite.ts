@@ -7,6 +7,8 @@ import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowse
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
 import { PricingPlan } from '../PricingTable/plans';
+import { ExportSystem } from './ExportModal';
+import { isValidEmail } from '../../utils/validators/isValidEmail';
 
 interface ExportWebsiteOptions {
     /**
@@ -19,7 +21,6 @@ interface ExportWebsiteOptions {
      */
     email: string_email;
     
-
     /**
      * System to export
      */
@@ -30,14 +31,8 @@ interface ExportWebsiteOptions {
      */
     plan: PricingPlan;
 
-
     /**
-     * User is not sure about URL
-     */
-    isUrlUnsure: boolean;
-
-    /**
-     * User nee
+     * User needs help with setting up website
      */
     isHelpNeeded: boolean;
 
@@ -47,8 +42,16 @@ interface ExportWebsiteOptions {
     wallpaper: IWallpaper;
 }
 
+/**
+ * Exports website to zip and downloads it
+ */
 export async function exportWebsite(options: ExportWebsiteOptions) {
-    const { publicUrl, email, system, plan,isUrlUnsure, isHelpNeeded, wallpaper } = options;
+    const { publicUrl, email, system, plan, isHelpNeeded, wallpaper } = options;
+
+    if (!isValidEmail(email)) {
+        alert(`Please enter valid email address`);
+        return;
+    }
 
     const insertSiteResult = await getSupabaseForBrowser()
         .from('Site')
@@ -66,7 +69,7 @@ export async function exportWebsite(options: ExportWebsiteOptions) {
         ]);
     console.info('⬆', { insertSiteResult });
 
-    if (isHelpNeeded || isUrlUnsure || plan === 'ADVANCED' || plan === 'ENTERPRISE' || system !== 'STATIC') {
+    if (isHelpNeeded || plan === 'ADVANCED' || plan === 'ENTERPRISE' || system !== 'STATIC') {
         const insertSupportRequestResult = await getSupabaseForBrowser()
             .from('SupportRequest')
             .insert([
@@ -82,11 +85,10 @@ export async function exportWebsite(options: ExportWebsiteOptions) {
                             ? `I need help with setting up my website.`
                             : `I am interested in your ${plan} plan.`
                     }
-                    ${!isUrlUnsure ? `` : `I am not sure about my URL.`}
 
                     ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
-                    My plan: ${plan}
-                    My system: ${system}
+                    My plan: ${plan.toString()}
+                    My system: ${system.toString()}
                 `),
                 },
             ]);
