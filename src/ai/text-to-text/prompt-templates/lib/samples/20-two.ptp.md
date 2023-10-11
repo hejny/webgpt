@@ -2,6 +2,8 @@
 
 Show how to use two consecutive prompts with one param each.
 
+-   Use PTP 1.0.0
+
 ## Synonym
 
 Synonym for {word}

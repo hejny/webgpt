@@ -2,19 +2,10 @@
 
 Trying the language capabilities of GPT models.
 
-<!--
-
-TODO: !!! [🧠] How to do this propperly?
-
-## ~Entry Parameters
-
--   `{word}` The word to use in the prompt.
--->
-
-## ~Requirements
-
+-   Use PTP 1.0.0
 -   Use Chat
 -   Use GPT-3
+-   `{word}` The word to use in the prompt.
 
 ## Synonym
 
@@ -32,7 +23,7 @@ Write synonym for "{word}"
 removeQuotes(wordSynonymRaw);
 ```
 
-`-> {wordSynonym}`
+`-> {wordSynonym}` Synonym for {word}
 
 ## Sentence with Synonym
 
@@ -42,7 +33,7 @@ Sentence with {word} and {wordSynonym}
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
-`-> {sentenceWithTwoSynonyms}`
+`-> {sentenceWithTwoSynonyms}` Sentence with {word} and {wordSynonym}
 
 ## Sentence without original word
 
@@ -62,16 +53,14 @@ Remove word "{word}" from sentence and modify it so that it makes sense:
 
 ```
 
-`-> {sentenceWithOriginalWordRemoved}`
-
-## ~Requirements:
-
--   Use Chat
--   Use GPT-4
+`-> {sentenceWithOriginalWordRemoved}` Sentence "{sentenceWithTwoSynonyms}" without "{word}"
 
 ## Comparison
 
 Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRemoved}".
+
+-   Use Chat
+-   Use GPT-4
 
 ```prompt
 Compare meaning of thee two sentences:
@@ -85,4 +74,4 @@ Compare meaning of thee two sentences:
 > {sentenceWithOriginalWordRemoved}
 ```
 
-`-> {comparisonOfTwoSentences}`
+`-> {comparisonOfTwoSentences}` Comparison between two sentences

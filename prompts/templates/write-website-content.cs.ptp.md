@@ -3,17 +3,18 @@
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/hejny/ptp).
 
 <!--
-TODO: !!! [🚲] Write this in newnew format
 TODO: !!! [🚲] Parse this new format
 -->
-
-## ~Requirements
 
 -   Use PTP 0.0.1
 -   Use chat
 -   Use GPT-3.5
+-   `{title}` Návrh názvu webu od zákazníka
+-   `{assigment}` Zadání webu od zákazníka
 
 ## Vylepšení názvu
+
+```prompt
 
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
 
@@ -22,26 +23,30 @@ Navrhovaný název od zákazníka:
 
 Zadání od zákazníka:
 
-```
+\`\`\`
 {assigment}
-```
+\`\`\`
 
 **Pokyny:**
 
 -   Napiště pouze jeden návrh názvu
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
 
--> {enhancedTitle}
+```
+
+`-> {enhancedTitle}` Vylepšený název
 
 ## Vymyšlení claimu
+
+```prompt
 
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{enhancedTitle}".
 
 Zadání webu od zákazníka:
 
-```
+\`\`\`
 {assigment}
-```
+\`\`\`
 
 **Pokyny:**
 
@@ -49,7 +54,9 @@ Zadání webu od zákazníka:
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
 
--> {claim}
+```
+
+`-> {claim}` Podtitulek pro web
 
 ## Analýza klíčových slov
 
@@ -57,13 +64,15 @@ Zadání webu od zákazníka:
 Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
 -->
 
+```prompt
+
 Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{enhancedTitle}".
 
 Zadání webu od zákazníka:
 
-```
+\`\`\`
 {assigment}
-```
+\`\`\`
 
 **Pokyny:**
 
@@ -80,37 +89,36 @@ Zadání webu od zákazníka:
 -   Itálie
 -   Řemeslo
 
--> {keywords}
+```
 
-<!--
+`-> {keywords}` Klíčová slova
 
-TODO:
-## Vytvoření před-obsahu webu
+## Vytvoření začátku obsahu webu
 
--->
-
-## ~Template
+```text
 
 \# {enhancedTitle}
 
 > {claim}
 
--> {contentBeginning}
+```
 
-## ~Requirements
+`-> {contentBeginning}` Začátek obsahu webu
+
+## Vytvoření obsahu webu
 
 -   Use completion
 -   Use GPT-3
 
-## Vytvoření obsahu webu
+```prompt
 
 Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {enhancedTitle}.
 
 Zadání webu od zákazníka:
 
-```
+\`\`\`
 {assigment}
-```
+\`\`\`
 
 **Pokyny:**
 
@@ -128,12 +136,18 @@ Zadání webu od zákazníka:
 
 {contentBeginning}
 
--> {contentBody}
+```
 
-## ~Template
+`-> {contentBody}` Prostředek obsahu webu
+
+## Spojení obsahu
+
+```text
 
 {contentBeginning}
 
 {contentBody}
 
--> {content}
+```
+
+`-> {content}` Obsah webu

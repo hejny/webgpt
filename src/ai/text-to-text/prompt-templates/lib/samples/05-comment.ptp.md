@@ -2,6 +2,8 @@
 
 Show how to use a simple prompt with no parameters and comments that should be ignored.
 
+-   Use PTP 1.0.0
+
 ## Prompt
 
 ```prompt
