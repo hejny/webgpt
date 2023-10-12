@@ -84,6 +84,14 @@
     font-size: 30px;
 }
 
+.domainStatus {
+    /*/
+    outline: 1px dotted rgb(13, 53, 138);
+    /**/
+
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 650px) {
     .settings {
         justify-content: flex-start;

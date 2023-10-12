@@ -1,32 +1,48 @@
 import Link from 'next/link';
-import { useState } from 'react';
-import { useWhois } from '../../../utils/domains/useWhois';
-import { string_domain } from '../../../utils/typeAliases';
-import styles from './WhoisDomain.module.css';
+import { useMemo } from 'react';
+import { classNames } from '../../../utils/classNames';
+import { checkDomain } from '../../../utils/domains/checkDomain';
+import { usePromise } from '../../../utils/hooks/usePromise';
+import { string_css_class, string_domain } from '../../../utils/typeAliases';
+import styles from './DomainStatus.module.css';
 
-interface WhoisDomainProps {
+interface DomainStatusProps {
     /**
      * The domain to check
      *
      * Note: The domain will be normalized - trimmed and lowercased
      */
     domain: string_domain;
+
+    /**
+     * Is button to open page shown?
+     */
+    isActionButtonShown?: boolean;
+
+    /**
+     * Optional CSS class name which will be added to root element
+     */
+    className?: string_css_class;
 }
 
 /**
  * Renderrs an info about a domain
+ *
  * Note: It internally fetches and displays the whois
  */
-export function WhoisDomain(props: WhoisDomainProps) {
-    let { domain } = props;
+export function DomainStatus(props: DomainStatusProps) {
+    const { domain, isActionButtonShown, className } = props;
 
-    domain = domain.trim().toLowerCase().split(' ').join('-');
+    // TODO: !!! Debounce
 
-    const [nonce, setNonce] = useState(0);
-    const { domainStatus, whois } = useWhois(domain, nonce);
+    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain]);
+    const { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
     return (
-        <div onClick={() => console.info(whois)} className={styles.whois}>
+        <div
+            // onClick={() => console.info(whois)}
+            className={classNames(styles.whois, className)}
+        >
             {
                 {
                     PENDING: (
@@ -55,28 +71,32 @@ export function WhoisDomain(props: WhoisDomainProps) {
                             <b>{domain}</b> status is unknown
                         </span>
                     ),
-                }[domainStatus]
+                }[domainStatus || 'PENDING']
             }
 
+            {/* TODO: [🧠] How to refresh the domain information?
             <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
                 Refresh
             </button>
+            */}
 
+            {/* TODO: [🧠] How/where to offer domain registration?
             {domainStatus === 'AVAILABLE' && (
                 <Link
                     className={styles.action}
                     href={
                         `https://subreg.cz/cz/domeny/registrace-domeny/?domain=${encodeURIComponent(
                             domain,
-                        )}` /* <- TODO: More registrators */
+                        )}` /* <- TODO: More registrators * /
                     }
                 >
                     Register
                 </Link>
             )}
+            */}
 
-            {domainStatus === 'REGISTERED' && (
-                <Link className={styles.action} href={`https://${domain}`}>
+            {isActionButtonShown && domainStatus === 'REGISTERED' && (
+                <Link className={styles.action} href={`https://${domain}`} target="_blank" rel="noopener noreferrer">
                     Open
                 </Link>
             )}

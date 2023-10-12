@@ -5,6 +5,7 @@ import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPa
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
+import { DomainStatus } from '../Domains/DomainStatus/DomainStatus';
 import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
@@ -22,8 +23,9 @@ export function PublishModal() {
     const defaultDomain =
         useMemo(() => computeWallpaperDomainPart(wallpaper.content), [wallpaper.content]) + '.webgpt.cz';
     const [domain, setDomain] = useState<string_domain>(defaultDomain);
-    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
     const [isPublishing, setPublishing] = useState(false);
+    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
+
     const submitHandler = useCallback(
         async (event: FormEvent<HTMLFormElement>) => {
             event.preventDefault();
@@ -78,6 +80,7 @@ export function PublishModal() {
                         type="text"
                         title={`Enter a domain name like ${defaultDomain}`}
                     />
+                    <DomainStatus {...{ domain }} className={styles.domainStatus}/>
                 </label>
 
                 <label className={styles.setting}>

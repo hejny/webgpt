@@ -1,8 +1,8 @@
 import { string_domain } from '../../../utils/typeAliases';
-import { WhoisDomain } from '../WhoisDomain/WhoisDomain';
-import styles from './WhoisDomains.module.css';
+import { DomainStatus } from '../DomainStatus/DomainStatus';
+import styles from './DomainsStatus.module.css';
 
-interface WhoisDomainsProps {
+interface DomainsStatusProps {
     /**
      * The domains to check
      *
@@ -15,13 +15,13 @@ interface WhoisDomainsProps {
  * Renderrs an info about multiple domains
  * Note: It internally fetches and displays the whois
  */
-export function WhoisDomains(props: WhoisDomainsProps) {
+export function DomainsStatus(props: DomainsStatusProps) {
     const { domains } = props;
 
     return (
-        <div className={styles.WhoisDomains}>
+        <div className={styles.DomainsStatus}>
             {domains.map((domain) => (
-                <WhoisDomain key={domain} {...{ domain }} />
+                <DomainStatus key={domain} {...{ domain }} isActionButtonShown />
             ))}
         </div>
     );

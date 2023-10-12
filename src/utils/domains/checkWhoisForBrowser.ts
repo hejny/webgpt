@@ -7,8 +7,11 @@ import { getDomainStatusFromWhois } from './getDomainStatusFromWhois';
 import { isValidDomain } from './isValidDomain';
 
 /**
- * Checks
+ * Checks domain availability using whois
  *
+ * Note: There are two similar functions:
+ *     - **checkDomain** which checks both whois of second level domains and availability of 3rd level our domains
+ *     - **checkWhoisForBrowser** which checks only whois of second level domains
  * Note: This function is available ONLY in browser
  *
  * @returns instance of supabase client
@@ -26,6 +29,8 @@ export async function checkWhoisForBrowser(domain: string_domain): Promise<{
     }
 
     // TODO: !!!! Allow ONLY 2nd level domains
+
+    // TODO: !!!! Allow ONLY valid TDLs
 
     const response = await fetch(`/api/check-whois?domain=${domain}`, {
         headers: {
