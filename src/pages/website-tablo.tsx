@@ -1,9 +1,9 @@
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { OnlyReadyRouter } from '../components/NoSsr/OnlyReadyRouter';
-import { PublishLoading } from '../components/PublishLoading/PublishLoading';
+import { WebsiteTablo } from '../components/WebsiteTablo/WebsiteTablo';
 import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
-export default function PublishLoadingPage() {
+export default function WebsiteTabloPage() {
     return (
         <>
             <StaticAppHead subtitle={null} />
@@ -19,7 +19,7 @@ export default function PublishLoadingPage() {
                         WebGPT
                     </h1>
                     <OnlyReadyRouter>
-                        <PublishLoading />
+                        <WebsiteTablo />
                     </OnlyReadyRouter>
                 </main>
             </div>

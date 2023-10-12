@@ -65,9 +65,7 @@ export function PublishModal() {
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
-                        // TODO: !!!! Allow URL, domain, subdomain, etc. - NEED of domain
-                        // TODO: !!!! [🧠] Check (sub)domain availability
-                        // TODO: !!!! [🧠] Information how to register domain + set CNAME
+                        
                         className={classNames(styles.value, stylesForSelect.option)}
                         disabled={isPublishing}
                         required
