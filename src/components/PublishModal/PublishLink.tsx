@@ -31,7 +31,7 @@ export function PublishLink(props: PublishLinkProps) {
  */
 export function PublishText(props: PublishLinkProps) {
     // TODO: !! Use Openmoji
-    return <>🌍 Make the web</>;
+    return <>🌍 Publish</>;
 }
 
 /**
