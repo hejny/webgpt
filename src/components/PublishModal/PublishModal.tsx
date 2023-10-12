@@ -122,7 +122,12 @@ export function PublishModal() {
                         }}
                         type="submit"
                     >
-                        <MarkdownContent content="Get the web 🚀" isUsingOpenmoji />
+                       
+
+
+<PublishText />
+
+
                     </button>
                 </label>
 
