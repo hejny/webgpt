@@ -1,8 +1,9 @@
 import { normalizeTo_PascalCase } from 'n12';
 import { useMemo } from 'react';
-import type WhoisSearchResult from 'whoiser' /* <- TODO: There should be probbably "import { type WhoisSearchResult } from 'whoiser' " */;
-import { usePromise } from '../../../utils/hooks/usePromise';
-import { string_domain } from '../../../utils/typeAliases';
+import type { WhoisSearchResult } from 'whoiser';
+import { WhoisHandlerResponse } from '../../pages/api/check-whois';
+import { usePromise } from '../hooks/usePromise';
+import { string_domain } from '../typeAliases';
 import { DomainStatus } from './DomainStatus';
 import { getDomainStatusFromWhois } from './getDomainStatusFromWhois';
 
@@ -13,7 +14,7 @@ export function useWhois(
     | { domainStatus: 'PENDING'; whois: null }
     | {
           domainStatus: keyof typeof DomainStatus;
-          whois: typeof WhoisSearchResult;
+          whois: WhoisSearchResult;
       } {
     const normalizedWithoutForbidden = domain.trim().toLowerCase().split(' ').join('');
 
@@ -23,24 +24,25 @@ export function useWhois(
 
     const whoisPromise = useMemo(
         () =>
-            new Promise<typeof WhoisSearchResult>(async (resolve) => {
+            new Promise<WhoisSearchResult>(async (resolve) => {
                 const key = `whois${normalizeTo_PascalCase(domain)}`;
                 const itemAsString = window.localStorage.getItem(key);
 
                 if (itemAsString) {
-                    const item = JSON.parse(itemAsString) as { nonce: number; whois: typeof WhoisSearchResult };
+                    const item = JSON.parse(itemAsString) as { nonce: number; whois: WhoisSearchResult };
 
                     if (item.nonce === nonce) {
                         return resolve(item.whois);
                     }
                 }
 
-                const response = await fetch(`/api/whois?domain=${domain}&version=${nonce}`);
-                const body = (await response.json()) as { result: typeof WhoisSearchResult };
+                // TODO: Use here checkWhoisForBrowser instead of direct fetch
+                const response = await fetch(`/api/check-whois?domain=${domain}&version=${nonce}`);
+                const { whois } = (await response.json()) as WhoisHandlerResponse;
 
-                window.localStorage.setItem(key, JSON.stringify({ nonce, whois: body.result }));
+                window.localStorage.setItem(key, JSON.stringify({ nonce, whois }));
 
-                return resolve(body.result);
+                return resolve(whois);
             }),
         [domain, nonce],
     );

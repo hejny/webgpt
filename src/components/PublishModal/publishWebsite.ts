@@ -2,11 +2,11 @@ import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED, NEXT_PUBLIC_URL } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { PublishWebsiteResponse } from '../../pages/api/publish';
+import { isValidDomain } from '../../utils/domains/isValidDomain';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_domain, string_email } from '../../utils/typeAliases';
-import { isValidDomain } from '../../utils/validators/isValidDomain';
 import { isValidEmail } from '../../utils/validators/isValidEmail';
 
 interface PublishWebsiteOptions {

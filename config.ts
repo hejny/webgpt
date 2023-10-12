@@ -20,6 +20,7 @@ const config = ConfigChecker.from({
     // Note: To expose env variables to the browser, using this seemingly strange syntax:
     //       @see https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#exposing-environment-variables-to-the-browser
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+    NEXT_PUBLIC_OUR_DOMAINS: process.env.NEXT_PUBLIC_OUR_DOMAINS,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });
@@ -40,6 +41,8 @@ if (isRunningInBrowser()) {
 }
 
 export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value;
+
+export const NEXT_PUBLIC_OUR_DOMAINS = config.get('NEXT_PUBLIC_OUR_DOMAINS').list().required().value;
 
 /**
  * The speed of the animations

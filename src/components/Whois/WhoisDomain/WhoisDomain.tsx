@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { useWhois } from '../../../utils/domains/useWhois';
 import { string_domain } from '../../../utils/typeAliases';
-import { useWhois } from '../utils/useWhois';
 import styles from './WhoisDomain.module.css';
 
 interface WhoisDomainProps {

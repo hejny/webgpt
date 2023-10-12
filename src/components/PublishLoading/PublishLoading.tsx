@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { forTime } from 'waitasecond';
-import { validateDomain } from '../../utils/validators/validateDomain';
+import { validateDomain } from '../../utils/domains/validateDomain';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { checkIfCertificateIsValid } from './utils/checkIfCertificateIsValid';
