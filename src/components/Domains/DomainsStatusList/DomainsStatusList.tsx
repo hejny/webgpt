@@ -1,8 +1,8 @@
 import { string_domain } from '../../../utils/typeAliases';
-import { DomainStatus } from '../DomainStatus/DomainStatus';
-import styles from './DomainsStatus.module.css';
+import { DomainStatusText } from '../DomainStatusText/DomainStatusText';
+import styles from './DomainsStatusList.module.css';
 
-interface DomainsStatusProps {
+interface DomainsStatusListProps {
     /**
      * The domains to check
      *
@@ -15,13 +15,13 @@ interface DomainsStatusProps {
  * Renderrs an info about multiple domains
  * Note: It internally fetches and displays the whois
  */
-export function DomainsStatus(props: DomainsStatusProps) {
+export function DomainsStatusList(props: DomainsStatusListProps) {
     const { domains } = props;
 
     return (
-        <div className={styles.DomainsStatus}>
+        <div className={styles.DomainsStatusList}>
             {domains.map((domain) => (
-                <DomainStatus key={domain} {...{ domain }} isActionButtonShown />
+                <DomainStatusText key={domain} {...{ domain }} isActionButtonShown isShownExceededLimit />
             ))}
         </div>
     );

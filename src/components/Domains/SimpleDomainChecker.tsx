@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { string_hostname } from '../../utils/typeAliases';
-import { DomainStatus } from './DomainStatus/DomainStatus';
+import { DomainStatus } from './DomainStatusText/DomainStatusText';
 
 /**
  * Renders a simple domain checker with a single input and single output

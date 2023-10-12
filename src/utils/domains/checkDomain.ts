@@ -1,7 +1,8 @@
 import { NEXT_PUBLIC_OUR_DOMAINS } from '../../../config';
-import { string_domain } from '../typeAliases';
+import type { CheckDeploymentHandlerResponse } from '../../pages/api/check-deployment';
+import type { string_domain } from '../typeAliases';
 import { checkWhoisForBrowser } from './checkWhoisForBrowser';
-import { DomainStatus } from './DomainStatus';
+import type { DomainStatus } from './DomainStatus';
 import { isSubdomainOf } from './isSubdomainOf';
 
 /**
@@ -11,10 +12,25 @@ import { isSubdomainOf } from './isSubdomainOf';
  *     - **checkDomain** which checks both whois of second level domains and availability of 3rd level our domains
  *     - **checkWhoisForBrowser** which checks only whois of second level domains
  */
-export async function checkDomain(domain: string_domain): Promise<keyof typeof DomainStatus /* <- TODO: !!! Extend this */> {
+export async function checkDomain(
+    domain: string_domain,
+): Promise<keyof typeof DomainStatus /* <- TODO: !!! Extend this */> {
     for (const ourDomain of NEXT_PUBLIC_OUR_DOMAINS) {
         if (isSubdomainOf(domain, ourDomain)) {
-            return 'UNKNOWN' /* <- TODO: !!! Check here our domains */;
+            const response = await fetch(`/api/check-deployment?domain=${domain}`, {
+                headers: {
+                    'Cache-Control': 'no-cache',
+                },
+            });
+            const { appRunning } = (await response.json()) as CheckDeploymentHandlerResponse;
+
+            if (appRunning === 'WEBGPT') {
+                return 'REGISTERED';
+            } else if (appRunning === 'UNKNOWN') {
+                return 'UNKNOWN';
+            } else if (appRunning === 'NOTHING') {
+                return 'AVAILABLE';
+            }
         }
     }
 

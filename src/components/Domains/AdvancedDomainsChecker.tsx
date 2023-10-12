@@ -2,7 +2,7 @@ import { useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { string_domain, string_tdl } from '../../utils/typeAliases';
 import styles from './AdvancedDomainsChecker.module.css';
-import { DomainsStatus } from './DomainsStatus/DomainsStatus';
+import { DomainsStatusList } from './DomainsStatusList/DomainsStatusList';
 import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
 
@@ -50,7 +50,7 @@ export function AdvancedDomainsChecker() {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <DomainsStatus domains={sortedDomains} />
+            <DomainsStatusList domains={sortedDomains} />
         </div>
     );
 }

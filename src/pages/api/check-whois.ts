@@ -3,14 +3,17 @@ import type { WhoisSearchResult } from 'whoiser';
 import whoiser from 'whoiser';
 import { isValidDomain } from '../../utils/domains/isValidDomain';
 
-export interface WhoisHandlerResponse {
+export interface CheckWhoisHandlerResponse {
     whois: WhoisSearchResult;
 }
 
 /**
  * API endpoint handler for checking domain availability
  */
-export default async function whoisHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
+export default async function checkWhoisHandler(
+    request: NextApiRequest,
+    response: NextApiResponse<CheckWhoisHandlerResponse>,
+) {
     const domain = request.query.domain;
 
     if (typeof domain !== 'string') {
@@ -33,7 +36,7 @@ export default async function whoisHandler(request: NextApiRequest, response: Ne
 
     // TODO: !! Limits + checkups
     const whois = await whoiser(domain);
-    return response.status(200).json({ whois } satisfies RegisterResponse);
+    return response.status(200).json({ whois } satisfies CheckWhoisHandlerResponse);
 }
 
 /**

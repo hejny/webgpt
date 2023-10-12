@@ -5,7 +5,7 @@ import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPa
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
-import { DomainStatus } from '../Domains/DomainStatus/DomainStatus';
+import { DomainStatus } from '../Domains/DomainStatusText/DomainStatusText';
 import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
@@ -80,7 +80,7 @@ export function PublishModal() {
                         type="text"
                         title={`Enter a domain name like ${defaultDomain}`}
                     />
-                    <DomainStatus {...{ domain }} className={styles.domainStatus}/>
+                    <DomainStatus {...{ domain }} className={styles.domainStatus} />
                 </label>
 
                 <label className={styles.setting}>

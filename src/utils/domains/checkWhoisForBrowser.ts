@@ -1,5 +1,5 @@
 import type { WhoisSearchResult } from 'whoiser';
-import { WhoisHandlerResponse } from '../../pages/api/check-whois';
+import type { CheckWhoisHandlerResponse } from '../../pages/api/check-whois';
 import { isRunningInBrowser } from '../isRunningInWhatever';
 import { string_domain } from '../typeAliases';
 import { DomainStatus } from './DomainStatus';
@@ -37,7 +37,7 @@ export async function checkWhoisForBrowser(domain: string_domain): Promise<{
             'Cache-Control': 'no-cache',
         },
     });
-    const { whois } = (await response.json()) as WhoisHandlerResponse;
+    const { whois } = (await response.json()) as CheckWhoisHandlerResponse;
     const domainStatus = getDomainStatusFromWhois(whois);
 
     return { domainStatus, whois };

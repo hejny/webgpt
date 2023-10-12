@@ -4,9 +4,9 @@ import { classNames } from '../../../utils/classNames';
 import { checkDomain } from '../../../utils/domains/checkDomain';
 import { usePromise } from '../../../utils/hooks/usePromise';
 import { string_css_class, string_domain } from '../../../utils/typeAliases';
-import styles from './DomainStatus.module.css';
+import styles from './DomainStatusText.module.css';
 
-interface DomainStatusProps {
+interface DomainStatusTextProps {
     /**
      * The domain to check
      *
@@ -20,6 +20,12 @@ interface DomainStatusProps {
     isActionButtonShown?: boolean;
 
     /**
+     * Is shown that the domain exceeded limit for whois lookups?
+     * If no or not set, it will be shown as UNKNOWN
+     */
+    isShownExceededLimit?: boolean;
+
+    /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
@@ -30,18 +36,22 @@ interface DomainStatusProps {
  *
  * Note: It internally fetches and displays the whois
  */
-export function DomainStatus(props: DomainStatusProps) {
-    const { domain, isActionButtonShown, className } = props;
+export function DomainStatusText(props: DomainStatusTextProps) {
+    const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
 
     // TODO: !!! Debounce
 
     const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain]);
-    const { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
+    let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
+
+    if (domainStatus === 'LIMIT' && !isShownExceededLimit) {
+        domainStatus = 'UNKNOWN';
+    }
 
     return (
         <div
             // onClick={() => console.info(whois)}
-            className={classNames(styles.whois, className)}
+            className={classNames(styles.DomainStatusText, className)}
         >
             {
                 {
