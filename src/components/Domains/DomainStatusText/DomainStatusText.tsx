@@ -39,8 +39,6 @@ interface DomainStatusTextProps {
 export function DomainStatusText(props: DomainStatusTextProps) {
     const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
 
-    // TODO: !!! Debounce
-
     const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain]);
     let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
@@ -115,3 +113,7 @@ export function DomainStatusText(props: DomainStatusTextProps) {
         </div>
     );
 }
+
+/**
+ * TODO: !! Probbably debounce the whois lookup
+ */

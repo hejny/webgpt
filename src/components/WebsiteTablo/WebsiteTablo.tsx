@@ -59,7 +59,7 @@ export function WebsiteTablo() {
                     isDone: false,
                 },
                 /*
-                TODO: [🧠]
+                TODO: [🧠][🚈]
                 {
                     name: 'uploading',
                     title: `Uploading files`,

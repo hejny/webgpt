@@ -12,8 +12,8 @@ export interface CheckDeploymentHandlerResponse {
      */
     isFullyReady: boolean;
 
-    // TODO: [🧠] checkedAt: string_date;
-    // TODO: [🧠] isSslCertificateReady: boolean;
+    // TODO: [🚈][🧠] checkedAt: string_date;
+    // TODO: [🚈][🧠] isSslCertificateReady: boolean;
     // TODO: [⛱] buildId: string;
 }
 
@@ -57,7 +57,7 @@ export default async function checkDeploymentHandler(
         // TODO: Better check
 
         isFullyReady = fetchResponse.ok;
-        appRunning = 'WEBGPT' /* <- TODO: !!! Do not assume this */;
+        appRunning = 'WEBGPT' /* <- TODO: [🚈] !! Do not assume this */;
     } catch (error) {
         appRunning = 'NOTHING';
     }
