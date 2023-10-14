@@ -3,7 +3,7 @@ import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { string_html, string_markdown, string_uriid } from './typeAliases';
 
 export function computeWallpaperDomainPart(wallpaperContent: string_markdown | string_html): string_uriid {
-    let title = extractTitleFromContent(wallpaperContent) || ''; /* <- TODO: !!! WHat if content is empty */
+    let title = extractTitleFromContent(wallpaperContent) || '';
 
     // Note: Ignore apostrophes and quotes in name to make URL
     title = title.split("'").join('');
@@ -28,6 +28,9 @@ export function computeWallpaperDomainPart(wallpaperContent: string_markdown | s
         }
     }
 
-    // TODO: [🧠] !!! What if uriParts is empty?
+    if (uriParts.length === 0) {
+        return 'untitled';
+    }
+
     return uriParts.join('-');
 }

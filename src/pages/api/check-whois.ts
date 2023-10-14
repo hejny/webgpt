@@ -32,7 +32,7 @@ export default async function checkWhoisHandler(
         );
     }
 
-    // TODO: !!!! Allow ONLY 2nd level domains
+    // TODO: !! Allow ONLY 2nd level domains
 
     // TODO: !! Limits + checkups
     const whois = await whoiser(domain);
