@@ -1,18 +1,1 @@
-{
-    promptTemplates: [
-        {
-            modelRequirements: {
-                variant: 'CHAT',
-            },
-            promptTemplate: `Write synonym for "{word}"`,
-            resultingParamName: 'wordSynonym',
-        },
-        {
-            modelRequirements: {
-                variant: 'CHAT',
-            },
-            promptTemplate: 'Write sentence with "{word}" and "{wordSynonym}" in it',
-            resultingParamName: 'sentenceWithTwoSynonyms',
-        },
-    ],
-}
+{}

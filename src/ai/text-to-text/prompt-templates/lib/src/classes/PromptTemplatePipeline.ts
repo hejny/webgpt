@@ -22,6 +22,8 @@ export class PromptTemplatePipeline<
     /**
      * Constructs PromptTemplatePipeline from JSON source
      *
+     * Note: During the construction the source is logic validated
+     *
      * @param source
      * @returns PromptTemplatePipeline
      */

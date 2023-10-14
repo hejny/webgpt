@@ -48,7 +48,7 @@ export function markdownToMarkdownStructure(markdown: string): MarkdownStructure
                 }
             }
 
-            console.log('parent', parent);
+           
 
             const section = { level, title, contentLines: [], sections: [], parent };
             parent.sections.push(section);
@@ -58,7 +58,6 @@ export function markdownToMarkdownStructure(markdown: string): MarkdownStructure
 
     if (root.sections.length === 1) {
         const markdownStructure = parsingMarkdownStructureToMarkdownStructure(root.sections[0]!);
-        console.log('markdownStructure', markdownStructure);
         return markdownStructure;
     }
 

@@ -1,11 +1,8 @@
 {
-    "promptTemplates": [
+    "parameters": [
         {
-            "modelRequirements": {
-                "variant": "CHAT"
-            },
-            "promptTemplate": "Hello",
-            "resultingParamName": "greeting"
+            "name": "greeting"
         }
-    ]
+    ],
+    "promptTemplates": []
 }
