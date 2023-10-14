@@ -66,7 +66,7 @@ export function CopilotInput(props: useRouterProps) {
     }, [inputRef, onPrompt, isRunning]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotInput)}>
+        <div className={classNames('webgpt-controls', styles.CopilotInput)}>
             <label htmlFor="copilot-input">{label}</label>
             <div
                 // Note: It is intended to have two divs embedded in each other

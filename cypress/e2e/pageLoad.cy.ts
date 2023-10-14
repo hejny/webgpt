@@ -7,7 +7,7 @@ context('localhost', () => {
 
     describe('Visiting the page', () => {
         it('should be able to see the heading', () => {
-            cy.contains(/Aiai/i);
+            cy.contains(/WebGPT/i);
         });
     });
 });

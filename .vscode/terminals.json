@@ -171,9 +171,8 @@
             "onlySingle": true,
             "focus": true
         },
-
         {
-            "name": "👨🏽‍💻 Clean dev cache + Force reinstall of node modules",
+            "name": "🔓👨🏽‍💻 Clean dev cache + Force reinstall of node modules",
             "commands": [
                 "npx kill-port 4444",
                 "rm -rf .next",
@@ -181,6 +180,14 @@
                 "rm -rf ./node_modules",
                 "npm cache clean",
                 "npm install"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🔓👨🏽‍💻 Delete git lock",
+            "commands": [
+                "rm -f .git/index.lock"
             ],
             "onlySingle": true,
             "focus": true

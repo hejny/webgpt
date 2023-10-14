@@ -1,5 +1,5 @@
 {
-    "name": "1-2i",
+    "name": "webgpt",
     "version": "1.8.1",
     "private": false,
     "license": "SEE LICENSE IN LICENSE",
@@ -26,9 +26,10 @@
         "prettier": "prettier --config .prettierrc --ignore-unknown --write \"{pages,public,styles}/**/*\"",
         "prettier-commit": "git diff --exit-code && npm run prettier && git add . && git commit --allow-empty -m \"🧹 Prettier\"",
         "preversion": "git pull && npm run prettier-commit && npm run test-types && npm run lint && npm test && npm run test-build",
-        "postversion": "git push && git push --tags && echo \"Check the deploy process: https://github.com/hejny/aiai/actions/\""
+        "postversion": "git push && git push --tags && echo \"Check the deploy process: https://github.com/hejny/webgpt/actions/\""
     },
     "dependencies": {
+        "@octokit/rest": "18.12.0",
         "@aws-sdk/client-s3": "3.378.0",
         "@azure/cognitiveservices-computervision": "8.2.0",
         "@azure/ms-rest-azure-js": "2.1.0",

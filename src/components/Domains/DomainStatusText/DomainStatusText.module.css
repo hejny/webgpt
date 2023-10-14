@@ -1,24 +1,24 @@
-.whois .pending {
+.DomainStatusText .pending {
     color: #888888;
 }
 
-.whois .available {
+.DomainStatusText .available {
     color: #0bee57;
 }
 
-.whois .registered {
+.DomainStatusText .registered {
     color: #dd1b1b;
 }
 
-.whois .unknown {
+.DomainStatusText .unknown {
     color: #888888;
 }
 
-.whois span b {
+.DomainStatusText span b {
     color: inherit;
 }
 
-.action {
+.DomainStatusText .action {
     outline: none;
     border: 1px solid #ccc;
 
@@ -26,9 +26,11 @@
     background-color: #222222;
     color: #ccc;
     border-radius: 3px;
-    padding: 0;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
     margin: 0;
     margin-left: 5px;
+    text-decoration: none;
 }
