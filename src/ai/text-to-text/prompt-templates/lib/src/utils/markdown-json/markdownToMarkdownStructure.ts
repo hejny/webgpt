@@ -9,6 +9,8 @@ import { MarkdownStructure } from './MarkdownStructure';
  *
  * @param markdown The markdown string to parse.
  * @returns The MarkdownStructure object.
+ * 
+ * @private within the library
  */
 export function markdownToMarkdownStructure(markdown: string): MarkdownStructure {
     const lines = markdown.split('\n');

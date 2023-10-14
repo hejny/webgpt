@@ -6,6 +6,8 @@ import { string_template } from '../../../../../../utils/typeAliases';
  * @param template the template with params in {curly} braces
  * @param params the object with params
  * @returns the template with replaced params
+ *
+ * @private within the library
  */
 export function replaceParams(template: string_template, params: {}): string {
     let result = '';

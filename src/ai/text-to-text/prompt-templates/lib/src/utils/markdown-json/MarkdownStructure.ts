@@ -1,5 +1,7 @@
 /**
  * Represents the structure of a markdown file.
+ * 
+ * @private within the library
  */
 export interface MarkdownStructure {
     /**
