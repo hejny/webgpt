@@ -12,8 +12,8 @@ import { PromptTemplateParams } from '../types/PromptTemplateParams';
  *
  * @see https://github.com/hejny/ptp#executor
  */
-export interface PtpExecutor<TEntryParams extends PromptTemplateParams, TResultParams extends PromptTemplateParams> {
-    (entryParams: TEntryParams, onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<TResultParams>;
+export interface PtpExecutor<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams> {
+    (inputParams: TInputParams, onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<TOutputParams>;
 }
 
 /**

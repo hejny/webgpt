@@ -7,10 +7,10 @@ import { PtpExecutionTools } from './PtpExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
 interface CreatePtpExecutorOptions<
-    TEntryParams extends PromptTemplateParams,
-    TResultParams extends PromptTemplateParams,
+    TInputParams extends PromptTemplateParams,
+    TOutputParams extends PromptTemplateParams,
 > {
-    readonly ptp: PromptTemplatePipeline<TEntryParams, TResultParams>;
+    readonly ptp: PromptTemplatePipeline<TInputParams, TOutputParams>;
     readonly tools: PtpExecutionTools;
 }
 
@@ -20,16 +20,16 @@ interface CreatePtpExecutorOptions<
  * Note: Consider using getExecutor method of the library instead of using this function
  */
 export function createPtpExecutor<
-    TEntryParams extends PromptTemplateParams,
-    TResultParams extends PromptTemplateParams,
->(options: CreatePtpExecutorOptions<TEntryParams, TResultParams>): PtpExecutor<TEntryParams, TResultParams> {
+    TInputParams extends PromptTemplateParams,
+    TOutputParams extends PromptTemplateParams,
+>(options: CreatePtpExecutorOptions<TInputParams, TOutputParams>): PtpExecutor<TInputParams, TOutputParams> {
     const { ptp, tools } = options;
 
     const ptpExecutor = async (
-        entryParams: TEntryParams,
+        inputParams: TInputParams,
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
-        let paramsToPass: PromptTemplateParams = entryParams;
+        let paramsToPass: PromptTemplateParams = inputParams;
         let currentPtp: PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
@@ -76,8 +76,8 @@ export function createPtpExecutor<
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!);
         }
 
-        // TODO:             <- We are assigning TResultParams to TResultParams, but we are not sure if it's correct, maybe check in runtime
-        return paramsToPass as TResultParams;
+        // TODO:             <- We are assigning TOutputParams to TOutputParams, but we are not sure if it's correct, maybe check in runtime
+        return paramsToPass as TOutputParams;
     };
 
     return ptpExecutor;

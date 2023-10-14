@@ -7,11 +7,12 @@ TODO: !!! [🚲] New format
 TODO: !!! [🚲] Parse this new format
 -->
 
--   Use PTP 0.0.1
+-   PTP version 0.0.1
 -   Use chat
 -   Use GPT-3.5
--   `{title}` Návrh názvu webu od zákazníka
--   `{assigment}` Zadání webu od zákazníka
+-   Input param `{title}` Návrh názvu webu od zákazníka
+-   Input param `{assigment}` Zadání webu od zákazníka
+-   Output param {content}` Obsah webu
 
 ## Vylepšení názvu
 

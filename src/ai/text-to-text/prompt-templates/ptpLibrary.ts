@@ -16,12 +16,12 @@ export const ptpLibrary = new PromptTemplatePipelineLibrary({
     ),
 });
 
-export interface ptpLibrary_writeWebsiteContent_EntryParams {
+export interface ptpLibrary_writeWebsiteContent_InputParams {
     readonly title: string;
     readonly assigment: string;
 }
 
-export interface ptpLibrary_writeWebsiteContent_ResultParams {
+export interface ptpLibrary_writeWebsiteContent_OutputParams {
     readonly contentBody: string;
     readonly keywords: string;
     readonly enhancedTitle: string;

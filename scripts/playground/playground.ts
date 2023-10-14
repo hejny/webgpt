@@ -32,7 +32,7 @@ async function playground() {
 
     // Do here stuff you want to test
 
-    const entryParams = {
+    const inputParams = {
         title: `Kočky`,
         assigment: `Web o kočičím hotelu v Praze, otevřeno 24/7`,
         /*
@@ -40,13 +40,13 @@ async function playground() {
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
         */
     };
-    const resultParams = await ptpLibrary.getExecutor(
+    const outputParams = await ptpLibrary.getExecutor(
         'writeWebsiteContent',
         new OpenAiExecutionTools(OPENAI_API_KEY!, SYSTEM_AUTHOR_ID),
-    )(entryParams, (taskProgress) => {
+    )(inputParams, (taskProgress) => {
         console.info({ taskProgress });
     });
-    console.info({ entryParams, resultParams });
+    console.info({ inputParams, outputParams });
 
     console.info(`[ Done 🧸  Playground ]`);
 }

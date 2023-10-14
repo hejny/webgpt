@@ -16,8 +16,8 @@ import { PromptTemplate } from './PromptTemplate';
  * @see https://github.com/hejny/ptp#prompt-template-pipeline
  */
 export class PromptTemplatePipeline<
-    TEntryParams extends PromptTemplateParams,
-    TResultParams extends PromptTemplateParams,
+    TInputParams extends PromptTemplateParams,
+    TOutputParams extends PromptTemplateParams,
 > {
     /**
      * Constructs PromptTemplatePipeline from JSON source
@@ -25,9 +25,9 @@ export class PromptTemplatePipeline<
      * @param source
      * @returns PromptTemplatePipeline
      */
-    public static fromJson<TEntryParams extends PromptTemplateParams, TResultParams extends PromptTemplateParams>(
+    public static fromJson<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams>(
         source: PromptTemplatePipelineJson,
-    ): PromptTemplatePipeline<TEntryParams, TResultParams> {
+    ): PromptTemplatePipeline<TInputParams, TOutputParams> {
         if (!isPromptTemplatePipelineJsonValid(source)) {
             // TODO: Better error message - maybe even error from isPromptTemplatePipelineSourceValid -> validatePromptTemplatePipelineSource
             throw new Error('Invalid propmt template pipeline source');
@@ -43,8 +43,8 @@ export class PromptTemplatePipeline<
     private constructor(
         private readonly promptTemplates: Array<{
             //                                <- TODO: Constrain this types such as it must contain at least one element
-            //                                                                   and first one should have TEntryParams
-            //                                                                   and last one should have TResultParams
+            //                                                                   and first one should have TInputParams
+            //                                                                   and last one should have TOutputParams
             promptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>;
             resultingParamName: string;
         }>,
@@ -57,7 +57,7 @@ export class PromptTemplatePipeline<
     /**
      * Returns the first prompt template in the pipeline
      */
-    public get entryPromptTemplate(): PromptTemplate<TEntryParams, PromptTemplateParams> {
+    public get entryPromptTemplate(): PromptTemplate<TInputParams, PromptTemplateParams> {
         return this.promptTemplates[0]!.promptTemplate;
     }
 

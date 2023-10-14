@@ -5,7 +5,8 @@ Trying the language capabilities of GPT models.
 -   Use PTP 1.0.0
 -   Use Chat
 -   Use GPT-3
--   `{word}` The word to use in the prompt.
+-   Input param `{word}` The word to use in the prompt.
+-   Output param `{comparisonOfTwoSentences}` Comparison between two sentences
 
 ## Synonym
 
