@@ -10,7 +10,6 @@ import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
-import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';
 
@@ -58,14 +57,13 @@ export function PublishModal() {
     );
 
     return (
-        <Modal title={<PublishText />} isCloseable>
+        <Modal title={<MarkdownContent content="🌍 Publish" isUsingOpenmoji />} isCloseable>
             <GetTheWebTabs />
 
             <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
-                        
                         className={classNames(styles.value, stylesForSelect.option)}
                         disabled={isPublishing}
                         required
@@ -122,12 +120,7 @@ export function PublishModal() {
                         }}
                         type="submit"
                     >
-                       
-
-
-<PublishText />
-
-
+                        <MarkdownContent content="Publish 🚀" isUsingOpenmoji />
                     </button>
                 </label>
 

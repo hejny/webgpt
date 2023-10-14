@@ -78,7 +78,7 @@ export function ExportModal() {
 
     return (
         <Modal title={'Get the web'} isCloseable>
-            <GetTheWebTabs /* <- TODO: !!!! Fix layout */ />
+            <GetTheWebTabs />
             <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
