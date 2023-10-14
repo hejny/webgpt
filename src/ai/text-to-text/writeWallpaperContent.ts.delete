@@ -26,7 +26,7 @@ export interface WriteWallpaperContentOptions {
 export async function writeWallpaperContent(options: WriteWallpaperContentOptions): Promise<string_markdown> {
     const { clientId, title, assigment, addSections, links } = options;
 
-    // TODO: !!! Switch here language versions
+    // TODO: !!!lastSwitch here language versions
 
     const { contentBody } = await ptpLibraryExecutor.executePtp<
         ptpLibrary_writeWebsiteContent_InputParams,
@@ -34,13 +34,13 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
     >('writeWebsiteContent', {
         title: title || '',
         assigment: assigment || '',
-        // TODO: !!! addSections:addSections || '',
-        // TODO: !!!  links:links || '',
-        /* <- TODO: !!! Allow null in params */
+        // TODO: !!!lastaddSections:addSections || '',
+        // TODO: !!!last links:links || '',
+        /* <- TODO: !!!lastAllow null in params */
     });
 
     const content = spaceTrim(
-        // TODO: !!! Allow to bundle combinated vars directly in PTPs
+        // TODO: !!!lastAllow to bundle combinated vars directly in PTPs
         (block) => `
             # ${title}
 
@@ -48,7 +48,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
     `,
     );
 
-    return content as string_markdown /* <- TODO: !!! Type strongly */;
+    return content as string_markdown /* <- TODO: !!!lastType strongly */;
 
     /*
     const { clientId, assigment, addSections, links } = options;
@@ -106,7 +106,7 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
     );
 
 <<<<<<< HEAD:src/ai/text-to-text/writeWallpaperContent.ts.delete
-    // TODO: !!! Use or makeWrite WRITE_WEBSITE_CONTENT_TEMPLATE
+    // TODO: !!!lastUse or makeWrite WRITE_WEBSITE_CONTENT_TEMPLATE
 
 
 =======
@@ -135,8 +135,8 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
 /**
  * TODO: !!!last Go through this file and remove it
- * TODO: !!! Allow to be controlled by frontend - DO not have writeWallpaperContent OR write-wallpaper-content.ts BUT universal run-ptp-frame
- * TODO: !!! Make this function only as wrapper above writeWebsiteContentEn and writeWebsiteContentCs
+ * TODO: !!!lastAllow to be controlled by frontend - DO not have writeWallpaperContent OR write-wallpaper-content.ts BUT universal run-ptp-frame
+ * TODO: !!!lastMake this function only as wrapper above writeWebsiteContentEn and writeWebsiteContentCs
  * TODO: [🧠] Naming writeWallpaperContent vs writeWebsiteContent
  * TODO: !! Put step by step instructions how the content is generated in footer comment
  * TODO: [👸] Use in generate-wallpapers-content and DRY

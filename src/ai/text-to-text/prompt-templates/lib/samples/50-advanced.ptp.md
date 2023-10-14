@@ -50,12 +50,12 @@ Sentence "{sentenceWithTwoSynonyms}" without "{word}".
 ```prompttemplate
 Remove word "{word}" from sentence and modify it so that it makes sense:
 
-**Rules:**
+## Rules:
 
 -   Sentence must be grammatically correct
 -   Sentence must make sense after removing the word
 
-**The Sentence:**
+## The Sentence:
 
 > {sentenceWithTwoSynonyms}
 
@@ -74,11 +74,11 @@ Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRem
 ```prompttemplate
 Compare meaning of thee two sentences:
 
-**Sentence 1:**
+## Sentence 1:
 
 > {sentenceWithTwoSynonyms}
 
-**Sentence 2:**
+## Sentence 2:
 
 > {sentenceWithOriginalWordRemoved}
 ```
