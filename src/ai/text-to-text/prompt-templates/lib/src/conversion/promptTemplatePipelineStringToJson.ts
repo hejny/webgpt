@@ -1,5 +1,7 @@
 import spaceTrim from 'spacetrim';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
+import { DEFAULT_MODEL_REQUIREMENTS, PTP_VERSION } from '../config';
+import { ModelRequirements } from '../types/ModelRequirements';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 import { countMarkdownStructureDeepness } from '../utils/markdown-json/countMarkdownStructureDeepness';
@@ -13,8 +15,9 @@ import { markdownToMarkdownStructure } from '../utils/markdown-json/markdownToMa
 export function promptTemplatePipelineStringToJson(
     promptTemplatePipelineString: PromptTemplatePipelineString,
 ): PromptTemplatePipelineJson {
-    const ptpJson: PromptTemplatePipelineJson = { parameters: [], promptTemplates: [] };
+    const ptpJson: PromptTemplatePipelineJson = { ptpVersion: PTP_VERSION, parameters: [], promptTemplates: [] };
 
+    // =============================================================
     // Note: 1️⃣ Normalization of the PTP string
     promptTemplatePipelineString = removeContentComments(promptTemplatePipelineString);
     promptTemplatePipelineString = promptTemplatePipelineString.replaceAll(
@@ -26,21 +29,22 @@ export function promptTemplatePipelineStringToJson(
         '-> {$<paramName>}',
     ) as PromptTemplatePipelineString;
 
+    // =============================================================
     // Note: 2️⃣ Parse the static part - the parameters
-    console.log('!!! promptTemplatePipelineString', promptTemplatePipelineString);
+    //console.log('!!! promptTemplatePipelineString', promptTemplatePipelineString);
     const parametersMatches = Array.from(
         promptTemplatePipelineString.matchAll(/\{(?<paramName>[a-z0-9_]+)\}\s*(?<paramDescription>.*)$/gim) || [],
     );
-    console.log('!!! parametersMatch', parametersMatches);
-    console.log('!!!  Array.from(parametersMatch).length', parametersMatches.length);
+    //console.log('!!! parametersMatch', parametersMatches);
+    //console.log('!!!  Array.from(parametersMatch).length', parametersMatches.length);
     if (parametersMatches.length === 0) {
         throw new Error('No parameters found');
     }
     for (const match of parametersMatches) {
-        console.log('!!! match', match);
+        //console.log('!!! match', match);
         const name = match.groups!.paramName!;
         const description = spaceTrim(match.groups!.paramDescription || '') || undefined;
-        console.log('!!!', { name, description });
+        //console.log('!!!', { name, description });
         const existingParameter = ptpJson.parameters.find((parameter) => parameter.name === name);
         if (existingParameter && existingParameter.description && existingParameter.description !== description) {
             throw new Error(
@@ -65,6 +69,7 @@ export function promptTemplatePipelineStringToJson(
         }
     }
 
+    // =============================================================
     // Note: 3️⃣ Parse the dynamic part - the template pipeline
     const markdownStructure = markdownToMarkdownStructure(promptTemplatePipelineString);
     const markdownStructureDeepness = countMarkdownStructureDeepness(markdownStructure);
@@ -79,6 +84,33 @@ export function promptTemplatePipelineStringToJson(
         );
     }
 
+    const defaultModelRequirements: ModelRequirements = { ...DEFAULT_MODEL_REQUIREMENTS };
+    const listItems = extractAllListItemsFromMarkdown(markdownStructure.content);
+    for (const listItem of listItems) {
+        // TODO: !!! Parse description
+        // TODO: !!! Parse version
+        // TODO: !!! Parse defaultModelRequirements
+    }
+
+    for (const section of markdownStructure.sections) {
+        const listItems = extractAllListItemsFromMarkdown(section.content);
+        for (const listItem of listItems) {
+            // TODO: !!! Parse description
+            // TODO: !!! Parse defaultModelRequirements
+        }
+
+        const { language, content } = extractOneBlockFromMarkdown(section.content);
+
+        ptpJson.promptTemplates.push({
+            executionType: 'PROMPT_TEMPLATE' /* <- !!! Unhardcode */,
+            modelRequirements: defaultModelRequirements /* <- !!! More specific */,
+            /*  !!! Add language */
+            promptTemplate: content,
+            resultingParameterName: 'result' /* <- !!! Unhardcode */,
+        });
+    }
+
+    // =============================================================
     return ptpJson;
 
     /*

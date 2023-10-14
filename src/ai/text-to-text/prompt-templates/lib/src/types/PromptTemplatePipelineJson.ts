@@ -1,4 +1,4 @@
-import { string_prompt, string_template } from '../../../../../../utils/typeAliases';
+import { string_prompt, string_template, string_version } from '../../../../../../utils/typeAliases';
 import { ExecutionType } from './ExecutionTypes';
 import { ModelRequirements } from './ModelRequirements';
 
@@ -14,6 +14,7 @@ import { ModelRequirements } from './ModelRequirements';
  * @see https://github.com/hejny/ptp#prompt-template-pipeline
  */
 export interface PromptTemplatePipelineJson {
+    ptpVersion: string_version;
     parameters: Array<{ name: string; description?: string }>;
     promptTemplates: Array<{
         executionType: ExecutionType;

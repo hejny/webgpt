@@ -1,9 +1,11 @@
+import { TupleToUnion } from 'type-fest';
+
 /**
  * Execution type describes the way how the block is executed
  *
  * @see https://github.com/hejny/ptp#execution-type
  */
-export type ExecutionType = keyof typeof ExecutionTypes;
+export type ExecutionType = TupleToUnion<typeof ExecutionTypes>;
 
 /**
  * Execution type describes the way how the block is executed
