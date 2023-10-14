@@ -2,6 +2,7 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { PUBLISH_TO_GITHUB_ORGANIZATION } from '../../../config';
 import { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
 import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
 import { string_url } from '../../utils/typeAliases';
@@ -64,7 +65,7 @@ export default async function publishWebsiteHandler(
         const CNAME = await bundleZip.files.CNAME!.async('string');
 
         await publishToRepository({
-            organizationName: '1-2i' /* <- TODO: !!!! Change to WebGPT */ /* <- TODO: Unhardcode */,
+            organizationName: PUBLISH_TO_GITHUB_ORGANIZATION!,
             repositoryName: CNAME,
             /*                   <- TODO: [🧠] Utility to make unique repository names
                                                Maybe KEEP 1:1 with CNAME domain
