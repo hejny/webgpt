@@ -12,9 +12,7 @@ import { isSubdomainOf } from './isSubdomainOf';
  *     - **checkDomain** which checks both whois of second level domains and availability of 3rd level our domains
  *     - **checkWhoisForBrowser** which checks only whois of second level domains
  */
-export async function checkDomain(
-    domain: string_domain,
-): Promise<keyof typeof DomainStatus /* <- TODO: !!! Extend this */> {
+export async function checkDomain(domain: string_domain): Promise<keyof typeof DomainStatus> {
     for (const ourDomain of NEXT_PUBLIC_OUR_DOMAINS) {
         if (isSubdomainOf(domain, ourDomain)) {
             const response = await fetch(`/api/check-deployment?domain=${domain}`, {

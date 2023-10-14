@@ -9,7 +9,7 @@ describe('isSubdomainOf', () => {
     });
 
     it('is NOT subdomain of', () => {
-        expect(isSubdomainOf('webgpt.cz', 'webgpt.cz')).toBe(true);
-        expect(isSubdomainOf('foo.google.cz', 'google.com')).toBe(true);
+        expect(isSubdomainOf('webgpt.cz', 'webgpt.cz')).toBe(false);
+        expect(isSubdomainOf('foo.google.cz', 'google.com')).toBe(false);
     });
 });

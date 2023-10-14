@@ -28,9 +28,8 @@ export async function checkWhoisForBrowser(domain: string_domain): Promise<{
         throw new Error(`Domain needs to be valid.`);
     }
 
-    // TODO: !!!! Allow ONLY 2nd level domains
-
-    // TODO: !!!! Allow ONLY valid TDLs
+    // TODO: !! Allow ONLY 2nd level domains
+    // TODO: !! Allow ONLY valid TDLs
 
     const response = await fetch(`/api/check-whois?domain=${domain}`, {
         headers: {
