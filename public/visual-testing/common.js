@@ -9,7 +9,7 @@ window.document.querySelectorAll('iframe').forEach((iframeElement) => {
                 body{
                     overflow: auto !important;
                 }
-                nextjs-portal, .aiai-controls {
+                nextjs-portal, .webgpt-controls {
                     display: none;
                     pointer-events: none;
                 }

@@ -5,7 +5,7 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { provideClientIdWithoutVerification } from '../../utils/supabase/provideClientIdWithoutVerification';
 import { Hint } from '../Hint/Hint';
-import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
+import { PublishLink } from '../PublishModal/PublishLink';
 import styles from './ControlPanel.module.css';
 
 /**
@@ -21,14 +21,7 @@ export function ControlPanelLikeButtons() {
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             {(['LOVE', 'LIKE'].includes(likedStatus) || wallpaper.author === provideClientIdWithoutVerification()) && (
                 <div className={styles.group}>
-                    <WallpaperLink
-                        className={classNames(styles.button, styles.callToAction)}
-                        modal="export"
-                        role="OWNER"
-                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                    >
-                        Get the web
-                    </WallpaperLink>
+                    <PublishLink className={classNames(styles.button, styles.callToAction)} />
                 </div>
             )}
 

@@ -1431,7 +1431,7 @@ ALTER TABLE public."Site" OWNER TO postgres;
 -- Name: TABLE "Site"; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON TABLE public."Site" IS 'Registered sites for AiAi';
+COMMENT ON TABLE public."Site" IS 'Registered sites for WebGPT';
 
 
 --

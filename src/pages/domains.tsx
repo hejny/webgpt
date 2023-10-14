@@ -1,6 +1,6 @@
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
+import { AdvancedDomainsChecker } from '../components/Domains/AdvancedDomainsChecker';
 import { NoSsr } from '../components/NoSsr/NoSsr';
-import { AdvancedDomainsChecker } from '../components/Whois/AdvancedDomainsChecker';
 import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 
@@ -11,7 +11,7 @@ export default function DomainsPage() {
 
             <div className={styles.page}>
                 <main>
-                    <h1>AI Web Maker</h1>
+                    <h1>WebGPT</h1>
                     <p>Pick your domain:</p>
 
                     <NoSsr>

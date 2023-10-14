@@ -28,7 +28,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 
             <div className={styles.page}>
                 <main>
-                    <h1>AI Web Maker</h1>
+                    <h1>WebGPT</h1>
                     <p>Web pages listed here are pre-generated using AI:</p>
 
                     {homeUrl && (

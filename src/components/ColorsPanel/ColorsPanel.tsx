@@ -52,7 +52,7 @@ export function ColorsPanel() {
     return (
         <div
             className={classNames(
-                'aiai-controls' /* <- TODO: [🧠] ACRY remove aiai-controls class OR figure out how to propperly and semantically mark controls */,
+                'webgpt-controls' /* <- TODO: [🧠] ACRY remove webgpt-controls class OR figure out how to propperly and semantically mark controls */,
                 styles.ColorsPanel,
                 isOpen && styles.open,
             )}

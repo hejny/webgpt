@@ -18,7 +18,7 @@ export default function HomePage() {
                         <Image alt="WebGPT logo" src={webgptLogo} />
                         {/*
                         <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
-                            AI Web Maker
+                            WebGPT
                         </HandwrittenText>
                         */}
                     </h1>
@@ -54,5 +54,5 @@ export default function HomePage() {
 }
 
 /**
- * TODO: [🌾] 1-2i page should be made as 1-2i static page
+ * TODO: [🌾] WebGPT page should be made as WebGPT static page
  */
