@@ -8,4 +8,4 @@ Sample of wrong prompt template pipeline that does not wrap the return parameter
 Hello
 ```
 
--> {greeting}
+-> greeting

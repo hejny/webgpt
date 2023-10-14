@@ -6,7 +6,7 @@ Sample of wrong prompt template pipeline with undefined parameter
 
 Synonym for {word}
 
-```prompt
+```prompttemplate
 Write synonym for "{word}"
 ```
 

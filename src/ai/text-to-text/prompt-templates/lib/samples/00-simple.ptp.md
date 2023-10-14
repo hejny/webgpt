@@ -2,11 +2,11 @@
 
 Show how to use a simple prompt with no parameters.
 
--   Use PTP 1.0.0
+-   PTP version 1.0.0
 
 ## Prompt
 
-```prompt
+```prompttemplate
 Hello
 ```
 

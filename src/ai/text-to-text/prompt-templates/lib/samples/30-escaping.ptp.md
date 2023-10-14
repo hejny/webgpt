@@ -2,7 +2,7 @@
 
 Show how to put
 
--   Use PTP 1.0.0
+-   PTP version 1.0.0
 
 ## Prompt
 

@@ -2,13 +2,13 @@
 
 Show how to use a simple prompt with one param.
 
--   Use PTP 1.0.0
+-   PTP version 1.0.0
 
 ## Synonym
 
 Synonym for {word}
 
-```prompt
+```prompttemplate
 Write synonym for "{word}"
 ```
 

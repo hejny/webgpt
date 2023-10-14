@@ -16,7 +16,7 @@ TODO: !!! [🚲] Parse this new format
 
 ## Vylepšení názvu
 
-```prompt
+```prompttemplate
 
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
 
@@ -40,7 +40,7 @@ Zadání od zákazníka:
 
 ## Vymyšlení claimu
 
-```prompt
+```prompttemplate
 
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{enhancedTitle}".
 
@@ -66,7 +66,7 @@ Zadání webu od zákazníka:
 Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
 -->
 
-```prompt
+```prompttemplate
 
 Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{enhancedTitle}".
 
@@ -112,7 +112,7 @@ Zadání webu od zákazníka:
 -   Use completion
 -   Use GPT-3
 
-```prompt
+```prompttemplate
 
 Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {enhancedTitle}.
 

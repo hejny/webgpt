@@ -2,13 +2,13 @@
 
 Show how to use two consecutive prompts with one param each.
 
--   Use PTP 1.0.0
+-   PTP version 1.0.0
 
 ## Synonym
 
 Synonym for {word}
 
-```prompt
+```prompttemplate
 Write synonym for "{word}"
 ```
 
@@ -18,7 +18,7 @@ Write synonym for "{word}"
 
 Sentence with {word} and {wordSynonym}
 
-```prompt
+```prompttemplate
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 

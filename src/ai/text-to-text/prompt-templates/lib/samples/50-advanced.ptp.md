@@ -2,23 +2,26 @@
 
 Trying the language capabilities of GPT models.
 
--   Use PTP 1.0.0
+-   PTP version 1.0.0
 -   Use Chat
 -   Use GPT-3
 -   Input param `{word}` The word to use in the prompt.
 -   Output param `{comparisonOfTwoSentences}` Comparison between two sentences
+-   Output param `{summary}` The overall summary of the comparison
 
 ## Synonym
 
 Synonym for {word}
 
-```prompt
+```prompttemplate
 Write synonym for "{word}"
 ```
 
 `-> {wordSynonymRaw}`
 
 ## Unquote synonym
+
+-   Execute script
 
 ```javascript
 removeQuotes(wordSynonymRaw);
@@ -30,7 +33,9 @@ removeQuotes(wordSynonymRaw);
 
 Sentence with {word} and {wordSynonym}
 
-```prompt
+-   Execute prompt template <!-- This is the default -->
+
+```prompttemplate
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
@@ -40,7 +45,9 @@ Write sentence with "{word}" and "{wordSynonym}" in it
 
 Sentence "{sentenceWithTwoSynonyms}" without "{word}".
 
-```prompt
+-   Execute prompt template <!-- This is the default -->
+
+```prompttemplate
 Remove word "{word}" from sentence and modify it so that it makes sense:
 
 **Rules:**
@@ -62,8 +69,9 @@ Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRem
 
 -   Use Chat
 -   Use GPT-4
+-   Execute prompt template <!-- This is the default -->
 
-```prompt
+```prompttemplate
 Compare meaning of thee two sentences:
 
 **Sentence 1:**
@@ -76,3 +84,15 @@ Compare meaning of thee two sentences:
 ```
 
 `-> {comparisonOfTwoSentences}` Comparison between two sentences
+
+## Summary
+
+-   Execute simple template
+
+```markdown
+You have entered a word **{word}**. For this word the best synonym is **{wordSynonym}**. The sentence with both words is **{sentenceWithTwoSynonyms}**. The sentence without the original word is **{sentenceWithOriginalWordRemoved}**. And the comparison between the two sentences is:
+
+> {comparisonOfTwoSentences}
+```
+
+`-> {summary}`
