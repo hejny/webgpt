@@ -10,5 +10,5 @@ export interface HtmlExportFile {
     readonly type: 'page' | 'code' | 'asset' | 'other';
     readonly mimeType: string_mime_type;
     readonly pathname: string_file_relative_path;
-    readonly content: string_html | string_css | string_markdown | Blob;
+    content: string_html | string_css | string_markdown | Blob;
 }
