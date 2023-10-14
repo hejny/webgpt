@@ -130,6 +130,54 @@ describe('markdownToMarkdownStructure', () => {
         });
     });
 
+    it('ignores structure in code blocks', () => {
+        expect(
+            markdownToMarkdownStructure(
+                spaceTrim(`
+                    # Title
+                    
+                    Text below title
+                    
+                    ## Section 1
+                    
+                    Text below section 1
+
+                    \`\`\`markdown
+
+                    ### Title in code block
+
+                    Text below title in code block
+
+                    \`\`\`
+                `),
+            ),
+        ).toEqual({
+            level: 1,
+            title: 'Title',
+            content: 'Text below title',
+            sections: [
+                {
+                    level: 2,
+                    title: 'Section 1',
+                    content: spaceTrim(`
+
+                        Text below section 1
+
+                        \`\`\`markdown
+
+                        ### Title in code block
+
+                        Text below title in code block
+
+                        \`\`\`
+                    
+                    `),
+                    sections: [],
+                },
+            ],
+        });
+    });
+
     it('fails when there is no structure', () => {
         expect(() => markdownToMarkdownStructure(``)).toThrowError();
     });
