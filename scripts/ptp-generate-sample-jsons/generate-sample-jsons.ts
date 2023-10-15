@@ -45,11 +45,17 @@ async function generateSampleJsons({ isCommited }: { isCommited: boolean }) {
         console.info(`🌠  Generating JSON from ${ptpMarkdownFilePath}`);
         const ptpMarkdown = await readFile(ptpMarkdownFilePath, 'utf-8');
 
-        const ptpJson = promptTemplatePipelineStringToJson(ptpMarkdown as any /* <- TODO: Remove any */);
-
-        const ptpJsonFilePath = ptpMarkdownFilePath.replace(/\.ptp\.md$/, '.ptp.json');
-
-        await writeFile(ptpJsonFilePath, JSON.stringify(ptpJson, null, 4));
+        try {
+            const ptpJson = promptTemplatePipelineStringToJson(ptpMarkdown as any /* <- TODO: Remove any */);
+            const ptpJsonFilePath = ptpMarkdownFilePath.replace(/\.ptp\.md$/, '.ptp.json');
+            await writeFile(ptpJsonFilePath, JSON.stringify(ptpJson, null, 4) + '\n');
+        } catch (error) {
+            console.info(chalk.bgGray('========================='));
+            console.info(chalk.red(`Error in ${ptpMarkdownFilePath}`));
+            console.error(chalk.bgRed(error.name));
+            console.error(error);
+            console.info(chalk.bgGray('========================='));
+        }
     }
 
     if (isCommited) {
