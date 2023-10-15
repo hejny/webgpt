@@ -117,6 +117,12 @@
             "focus": true
         },
         {
+            "name": "🏭🌠 Generate JSONs from PTP samples",
+            "commands": ["ts-node ./scripts/ptp-generate-sample-jsons/generate-sample-jsons.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🏭🥫 Generate Supabase types",
             "commands": [
                 "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
@@ -186,9 +192,7 @@
         },
         {
             "name": "🔓👨🏽‍💻 Delete git lock",
-            "commands": [
-                "rm -f .git/index.lock"
-            ],
+            "commands": ["rm -f .git/index.lock"],
             "onlySingle": true,
             "focus": true
         },
