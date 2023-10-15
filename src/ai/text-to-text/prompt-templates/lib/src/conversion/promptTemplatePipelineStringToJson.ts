@@ -35,7 +35,8 @@ export function promptTemplatePipelineStringToJson(
     // Note: 2️⃣ Parse the static part - the parameters
     //console.log('!!! promptTemplatePipelineString', promptTemplatePipelineString);
     const parametersMatches = Array.from(
-        promptTemplatePipelineString.matchAll(/\{(?<paramName>[a-z0-9_]+)\}\s*(?<paramDescription>.*)$/gim) || [],
+        promptTemplatePipelineString.matchAll(/\{(?<paramName>[a-z0-9_]+)\}[^\S\r\n]*(?<paramDescription>.*)$/gim) ||
+            [],
     );
     //console.log('!!! parametersMatch', parametersMatches);
     //console.log('!!!  Array.from(parametersMatch).length', parametersMatches.length);
