@@ -1,3 +1,5 @@
+import { string_markdown } from "../../../../../../../utils/typeAliases";
+
 /**
  * Utility function to extract all list items from markdown
  *
@@ -9,7 +11,7 @@
  * @param markdown any valid markdown
  * @returns
  */
-export function extractAllListItemsFromMarkdown(markdown: string): string[] {
+export function extractAllListItemsFromMarkdown(markdown: string_markdown): string_markdown[] {
     const lines = markdown.split('\n');
     const listItems: string[] = [];
 
