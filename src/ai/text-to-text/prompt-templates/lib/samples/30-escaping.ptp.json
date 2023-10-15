@@ -1,10 +1,6 @@
 {
     "ptpVersion": "0.1.0",
-    "parameters": [
-        {
-            "name": "greeting"
-        }
-    ],
+    "parameters": [],
     "promptTemplates": [
         {
             "executionType": "PROMPT_TEMPLATE",
