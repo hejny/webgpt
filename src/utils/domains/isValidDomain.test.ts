@@ -1,5 +1,4 @@
 import { describe, expect, it } from '@jest/globals';
-import { string_domain } from '../typeAliases';
 import { isValidDomain } from './isValidDomain';
 //import { isValidDomain } from './isValidDomain';
 
@@ -9,6 +8,8 @@ describe(`validation of domains`, () => {
         expect(isValidDomain(`www.webgpt.cz`)).toBe(true);
         expect(isValidDomain(`owl.animals.webgpt.cz`)).toBe(true);
         expect(isValidDomain(`google.com`)).toBe(true);
+        expect(isValidDomain(`test.1-2i.com`)).toBe(true);
+        expect(isValidDomain(`test.xxx.com`)).toBe(true);
     });
 
     it(`is NOT valid`, () => {
@@ -27,4 +28,3 @@ describe(`validation of domains`, () => {
         // expect(isValidDomain(`example.com`)).toBe(false);
     });
 });
-
