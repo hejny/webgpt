@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { NEXT_PUBLIC_URL } from '../../../config';
+import { Color } from '../../utils/color/Color';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
@@ -18,11 +19,15 @@ export function PreviewGallery() {
             wallpapers = shuffleItems(...wallpapers);
             wallpapers = wallpapers.slice(0, 4);
 
-            // TODO: !!! Return full URLs
             // TODO: !!! Always add Ainautes and Pavolhejny
             // TODO: !!! Pick different wallpapers by color
             // TODO: !!! Preview on different devices and scales
-            return wallpapers;
+
+            return wallpapers.map(({ id, primaryColor }) => ({
+                id,
+                src: `${NEXT_PUBLIC_URL.href}/${id}?role=visitor`,
+                primaryColor: Color.fromString(primaryColor),
+            }));
         },
         [
             // Note: Do just once per page load
@@ -31,7 +36,7 @@ export function PreviewGallery() {
     const { value: wallpapers } = usePromise(wallpapersPromise);
 
     if (!wallpapers) {
-        return <div className={styles.PreviewGallery}>Loading...</div>;
+        return <>{/* TODO: Maybe some loading */}</>;
     }
 
     return (
@@ -42,8 +47,8 @@ export function PreviewGallery() {
                     <DeviceIframe
                         key={wallpaper.id}
                         className={styles.PreviewGalleryItem}
-                        src={`${NEXT_PUBLIC_URL.href}/${wallpaper.id}?role=visitor`}
-                        // TODO: !!! color={wallpaper.color}
+                        src={wallpaper.src}
+                        color={wallpaper.primaryColor}
                         isInteractive={false}
                     />
                 ))}
