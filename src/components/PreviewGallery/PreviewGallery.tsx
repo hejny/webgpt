@@ -17,6 +17,13 @@ export function PreviewGallery() {
     const wallpapersPromise = useMemo(
         async () => {
             let welcomeWallpapers = await RandomWallpaperManager.getInstance().getWelcomeWallpapers();
+
+            welcomeWallpapers = welcomeWallpapers.filter(
+                ({ id }) =>
+                    id !==
+                    'caadd184-364b-4ec7-a0cc-436d0e3b5330' /* <- Note: Filtering out Ainautes which are added as deployed version */,
+            );
+
             welcomeWallpapers = [
                 randomItem(...welcomeWallpapers),
                 randomItem(...welcomeWallpapers) /* <- TODO: randomItems(2,...welcomeWallpapers) */,
