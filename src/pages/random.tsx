@@ -9,6 +9,7 @@ export default function RandomPage() {
     const router = useRouter();
     useEffect(() => {
         (async () => {
+            // TODO: !!! Fix
             const randomWallpaperManager = RandomWallpaperManager.getInstance();
             const wallpaper = await randomWallpaperManager.getWelcomeWallpaper();
             router.replace(`/${wallpaper.id}?scenario=gallery`);

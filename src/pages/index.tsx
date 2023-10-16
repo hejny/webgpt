@@ -2,6 +2,7 @@ import Image from 'next/image';
 import webgptLogo from '../../public/logo/webgpt.white.svg';
 import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
 import { PavolHejny } from '../components/PavolHejny/PavolHejny';
+import { PreviewGallery } from '../components/PreviewGallery/PreviewGallery';
 import { Scenarios } from '../components/Scenarios/Scenarios';
 import { Center } from '../components/SimpleLayout/Center';
 import { StaticLayout } from '../components/StaticLayout/StaticLayout';
@@ -45,6 +46,10 @@ export default function HomePage() {
                 <MarkdownContent content={PAGES_CONTENTS.pricing!} />
             </article>
             */}
+
+            <article>
+                <PreviewGallery />
+            </article>
 
             <article>
                 <PavolHejny />

@@ -148,7 +148,9 @@ export class RandomWallpaperManager {
         id: string_wallpaper_id;
     }> = null;
 
-    public async getWelcomeWallpaper(): Promise<Omit</* <- TODO: [2] Remove Omit*/ IWallpaperInStorage, 'src'>> {
+    public async getWelcomeWallpapers(): Promise<
+        Array<Omit</* <- TODO: [2] Remove Omit*/ IWallpaperInStorage, 'src'>>
+    > {
         if (this.welcomeWallpapers === null) {
             const response = await fetch(`${NEXT_PUBLIC_URL.href}mocked-api/wallpapers-min-loved.json`);
             const { wallpapers } = (await response.json()) as {
@@ -163,7 +165,12 @@ export class RandomWallpaperManager {
         }
         // TODO: Do here a preloading when [2] there will be src in wallpapers-min-loved.json
         //     > await this.preloadRandomWallpaper(randomWallpaper);
-        return randomItem(...this.welcomeWallpapers);
+        return this.welcomeWallpapers;
+    }
+
+    public async getWelcomeWallpaper(): Promise<Omit</* <- TODO: [2] Remove Omit*/ IWallpaperInStorage, 'src'>> {
+        const welcomeWallpapers = await this.getWelcomeWallpapers();
+        return randomItem(...welcomeWallpapers);
     }
 
     public async getRandomWallpaper(): Promise<IWallpaperInStorage> {
