@@ -37,6 +37,7 @@ export function promptTemplatePipelineStringToJson(
 
     // =============================================================
     // Note: 2️⃣ Parse the static part - the parameters
+    // Note: [🌔]
     //console.log('!!! promptTemplatePipelineString', promptTemplatePipelineString);
     // TODO: !!! Remove the codeblocks for this task
     const parametersMatches = Array.from(
