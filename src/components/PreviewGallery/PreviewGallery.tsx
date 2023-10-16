@@ -50,8 +50,10 @@ export function PreviewGallery() {
 
     return (
         <div className={styles.PreviewGallery}>
-            <h2>Our webs</h2>
-            <p style={{ textAlign: 'center' }}>Theese are some random picked websites that are created by WebGPT:</p>
+            <h2>Portfolio</h2>
+            <p style={{ textAlign: 'center' }}>
+                Theese are some <b>random</b> picked websites that are created by WebGPT:
+            </p>
             <div className={styles.PreviewGalleryItems}>
                 {wallpapers.map((wallpaper) => (
                     <DeviceIframe
