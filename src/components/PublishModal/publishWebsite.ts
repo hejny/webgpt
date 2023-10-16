@@ -35,13 +35,11 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
     console.info(`📦 Publishing to ${domain}`);
 
     if (!isValidDomain(domain)) {
-        alert(`Please enter valid domain name`);
-        return;
+        throw new Error(`Please enter valid domain name`);
     }
 
     if (!isValidEmail(email)) {
-        alert(`Please enter valid email address`);
-        return;
+        throw new Error(`Please enter valid email address`);
     }
 
     const loadingUrl = new URL(NEXT_PUBLIC_URL);

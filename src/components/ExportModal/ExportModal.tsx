@@ -1,4 +1,5 @@
 import { FormEvent, useCallback, useState } from 'react';
+import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
@@ -68,6 +69,22 @@ export function ExportModal() {
                     plan,
                     isHelpNeeded,
                 });
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                alert(
+                    // <- TODO: Use here alertDialogue
+                    // TODO: [🦻] DRY User error message
+                    spaceTrim(`
+                        Sorry for the inconvenience 😔
+                        Something went wrong while making your website.
+                        Please try it again or write me an email to me@pavolhejny.com
+
+                        ${error.message}
+                    `),
+                );
             } finally {
                 setExporting(false);
                 // TODO: Maybe reset the form

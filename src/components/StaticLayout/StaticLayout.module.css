@@ -1,6 +1,13 @@
 .StaticLayout {
+    /*/
+    outline: 1px dotted rgb(255, 99, 38);
+    /**/
+
     padding-top: 70px;
     background: url(/patterns/simple/stripes-black.png);
+
+    margin-top: 50px;
+    padding-bottom: 70px;
 }
 
 .StaticLayout a {
@@ -19,11 +26,16 @@
     outline: 1px dotted rgb(38, 212, 255);
     /**/
 
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .StaticLayout header {
+}
+
+.StaticLayout main {
+    padding-right: calc(50vw - 400px);
+    padding-left: calc(50vw - 400px);
 }
 
 .StaticLayout article {

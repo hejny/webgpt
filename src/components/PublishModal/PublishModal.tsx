@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { FormEvent, useCallback, useMemo, useState } from 'react';
+import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPart';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
@@ -49,6 +50,22 @@ export function PublishModal() {
                         wallpaperId: wallpaper.id,
                     },
                 });
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                alert(
+                     // <- TODO: Use here alertDialogue
+                    // TODO: [🦻] DRY User error message
+                    spaceTrim(`
+                        Sorry for the inconvenience 😔
+                        Something went wrong while making your website.
+                        Please try it again or write me an email to me@pavolhejny.com
+
+                        ${error.message}
+                    `),
+                );
             } finally {
                 setPublishing(false);
             }

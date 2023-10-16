@@ -5,9 +5,12 @@ import type { RecommendWallpaperResponse } from '../../../pages/api/recommend-wa
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { provideClientIdWithoutVerification } from '../../../utils/supabase/provideClientIdWithoutVerification';
-import { string_wallpaper_id } from '../../../utils/typeAliases';
+import { string_color } from '../../../utils/typeAliases';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;
+export type IWallpaperInMockedApi = Pick<IWallpaperSerialized, 'id'> & {
+    primaryColor: string_color;
+};
 
 /**
  * RandomWallpaperManager is a class that manages the random wallpapers which will be shown next.
@@ -144,26 +147,24 @@ export class RandomWallpaperManager {
         return /* not await */ this.prefetchIfNeeded();
     }
 
-    private welcomeWallpapers: null | Array<{
-        id: string_wallpaper_id;
-    }> = null;
+    private welcomeWallpapers: null | Array<IWallpaperInMockedApi> = null;
 
-    public async getWelcomeWallpaper(): Promise<Omit</* <- TODO: [2] Remove Omit*/ IWallpaperInStorage, 'src'>> {
+    public async getWelcomeWallpapers(): Promise<Array<IWallpaperInMockedApi>> {
         if (this.welcomeWallpapers === null) {
             const response = await fetch(`${NEXT_PUBLIC_URL.href}mocked-api/wallpapers-min-loved.json`);
             const { wallpapers } = (await response.json()) as {
-                wallpapers: Array<{
-                    id: string_wallpaper_id;
-                    // [2]
-                    // primaryColor: string_color;
-                    // likedStatus: keyof typeof LikedStatus;
-                }>;
+                wallpapers: Array<IWallpaperInMockedApi>;
             };
             this.welcomeWallpapers = wallpapers;
         }
-        // TODO: Do here a preloading when [2] there will be src in wallpapers-min-loved.json
+        // TODO: Do here a preloading when there will be src in wallpapers-min-loved.json
         //     > await this.preloadRandomWallpaper(randomWallpaper);
-        return randomItem(...this.welcomeWallpapers);
+        return this.welcomeWallpapers;
+    }
+
+    public async getWelcomeWallpaper(): Promise<IWallpaperInMockedApi> {
+        const welcomeWallpapers = await this.getWelcomeWallpapers();
+        return randomItem(...welcomeWallpapers);
     }
 
     public async getRandomWallpaper(): Promise<IWallpaperInStorage> {

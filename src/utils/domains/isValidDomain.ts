@@ -7,6 +7,6 @@ export function isValidDomain(value: unknown): value is string_domain {
     if (typeof value !== 'string') {
         return false;
     }
-    const domainPattern = /^(?!:\/\/)(?![0-9]+$)(?!-)[a-zA-Z0-9-]{1,63}(?<!-)(\.[a-zA-Z]{2,})+$/;
+    const domainPattern = /^(?!:\/\/)(?![0-9]+$)(?!-)[a-zA-Z0-9-]{1,63}(?<!-)(\.[a-zA-Z0-9-]{2,})+$/;
     return domainPattern.test(value);
 }

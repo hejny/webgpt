@@ -78,8 +78,8 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
 
                         alert(
                             // <- TODO: Use here alertDialogue
-                            // TODO: [🏔] DRY
                             spaceTrim(
+                                // TODO: [🦻] DRY User error message
                                 (block) => `
                                     Sorry for the inconvenience 😔
                                     Something went wrong while making your website.

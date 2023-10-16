@@ -49,8 +49,7 @@ export async function exportWebsite(options: ExportWebsiteOptions) {
     const { publicUrl, email, system, plan, isHelpNeeded, wallpaper } = options;
 
     if (!isValidEmail(email)) {
-        alert(`Please enter valid email address`);
-        return;
+        throw new Error(`Please enter valid email address`);
     }
 
     const insertSiteResult = await getSupabaseForBrowser()
