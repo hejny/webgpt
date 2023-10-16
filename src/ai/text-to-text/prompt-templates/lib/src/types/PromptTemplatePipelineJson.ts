@@ -7,6 +7,7 @@ import {
 } from '../../../../../../utils/typeAliases';
 import { ExecutionType } from './ExecutionTypes';
 import { ModelRequirements } from './ModelRequirements';
+import { ScriptLanguage } from './ScriptLanguage';
 
 /**
  * Prompt template pipeline is the **core concept of this library**.
@@ -33,7 +34,7 @@ export interface PromptTemplatePipelineJson {
         resultingParameterName: string;
     }>;
 }
-SUPPORTED_SCRIPT_LANGUAGES;
+
 /**
  * TODO: [🧠] Best format of this code?
  *             There must be possible to make

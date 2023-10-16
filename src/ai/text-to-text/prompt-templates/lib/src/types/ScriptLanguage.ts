@@ -8,4 +8,4 @@ export const SUPPORTED_SCRIPT_LANGUAGES = ['javascript'] as const;
 /**
  * Script language
  */
-export const ScriptLanguage = TupleToUnion<typeof SUPPORTED_SCRIPT_LANGUAGES>;
+export type ScriptLanguage = TupleToUnion<typeof SUPPORTED_SCRIPT_LANGUAGES>;

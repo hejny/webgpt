@@ -6,7 +6,7 @@ import { ExecutionType } from '../types/ExecutionTypes';
 import { ModelRequirements } from '../types/ModelRequirements';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
-import { SUPPORTED_SCRIPT_LANGUAGES } from '../types/ScriptLanguage';
+import { ScriptLanguage, SUPPORTED_SCRIPT_LANGUAGES } from '../types/ScriptLanguage';
 import { countMarkdownStructureDeepness } from '../utils/markdown-json/countMarkdownStructureDeepness';
 import { markdownToMarkdownStructure } from '../utils/markdown-json/markdownToMarkdownStructure';
 import { extractAllListItemsFromMarkdown } from '../utils/markdown/extractAllListItemsFromMarkdown';
@@ -185,13 +185,35 @@ export function promptTemplatePipelineStringToJson(
             }
         }
 
+        const lastLine = section.content.split('\n').pop()!;
+        const match = /^\-\>\s*\{(?<resultingParamName>[a-z0-9_]+)\}\s*$/im.exec(lastLine);
+        if (!match || match.groups === undefined || match.groups.resultingParamName === undefined) {
+            throw new Error(
+                spaceTrim(
+                    (block) => `
+                        Invalid template - each section must end with "-> {...}"
+                        
+                        Invalid section:
+                        ${block(
+                            // TODO: Show code of invalid sections each time + DRY
+                            section.content
+                                .split('\n')
+                                .map((line) => `> ${line}`)
+                                .join('\n'),
+                        )}
+                        `,
+                ),
+            );
+        }
+        const resultingParameterName = match.groups.resultingParamName;
+
         ptpJson.promptTemplates.push({
             title: section.title,
             executionType,
             modelRequirements: templateModelRequirements,
-            scriptLanguage: executionType === 'SCRIPT' ? language! : undefined,
+            scriptLanguage: executionType === 'SCRIPT' ? (language as ScriptLanguage) : undefined,
             promptTemplate: content,
-            resultingParameterName: 'result' /* <- !!! Unhardcode */,
+            resultingParameterName,
         });
     }
 
