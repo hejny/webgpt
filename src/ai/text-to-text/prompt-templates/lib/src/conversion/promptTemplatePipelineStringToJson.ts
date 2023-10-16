@@ -1,9 +1,12 @@
 import spaceTrim from 'spacetrim';
+import { Writable } from 'type-fest';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
 import { DEFAULT_MODEL_REQUIREMENTS, PTP_VERSION } from '../config';
+import { ExecutionType } from '../types/ExecutionTypes';
 import { ModelRequirements } from '../types/ModelRequirements';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
+import { SUPPORTED_SCRIPT_LANGUAGES } from '../types/ScriptLanguage';
 import { countMarkdownStructureDeepness } from '../utils/markdown-json/countMarkdownStructureDeepness';
 import { markdownToMarkdownStructure } from '../utils/markdown-json/markdownToMarkdownStructure';
 import { extractAllListItemsFromMarkdown } from '../utils/markdown/extractAllListItemsFromMarkdown';
@@ -93,18 +96,18 @@ export function promptTemplatePipelineStringToJson(
         );
     }
 
-    const defaultModelRequirements: ModelRequirements = { ...DEFAULT_MODEL_REQUIREMENTS };
+    const defaultModelRequirements: Writable<ModelRequirements> = { ...DEFAULT_MODEL_REQUIREMENTS };
     const listItems = extractAllListItemsFromMarkdown(markdownStructure.content);
     for (const listItem of listItems) {
         const command = parseCommand(listItem);
 
         switch (command.type) {
             case 'USE':
-                // TODO: !!! Parse defaultModelRequirements
+                defaultModelRequirements[command.key] = command.value;
                 break;
 
             case 'PTP_VERSION':
-                // TODO: !!! Parse ptp version
+                ptpJson.ptpVersion = command.ptpVersion;
                 break;
 
             case 'PARAMETER':
@@ -129,16 +132,26 @@ export function promptTemplatePipelineStringToJson(
     for (const section of markdownStructure.sections) {
         // TODO: Parse prompt template description (the content out of the codeblock and lists)
 
+        const templateModelRequirements: Writable<ModelRequirements> = { ...defaultModelRequirements };
         const listItems = extractAllListItemsFromMarkdown(section.content);
+        let executionType: ExecutionType = 'PROMPT_TEMPLATE';
+        let isExecutionTypeChanged = false;
+
         for (const listItem of listItems) {
             const command = parseCommand(listItem);
             switch (command.type) {
                 case 'EXECUTE':
-                    // !!!
+                    if (isExecutionTypeChanged) {
+                        throw new Error(
+                            `Execution type is already defined in the prompt template. It can be defined only once.`,
+                        );
+                    }
+                    executionType = command.executionType;
+                    isExecutionTypeChanged = true;
                     break;
 
                 case 'USE':
-                    // !!!
+                    templateModelRequirements[command.key] = command.value;
                     break;
 
                 case 'PARAMETER':
@@ -154,11 +167,29 @@ export function promptTemplatePipelineStringToJson(
 
         const { language, content } = extractOneBlockFromMarkdown(section.content);
 
+        if (executionType === 'SCRIPT') {
+            if (!language) {
+                throw new Error(`You must specify the language of the script in the prompt template`);
+            } else if (!SUPPORTED_SCRIPT_LANGUAGES.includes(language)) {
+                throw new Error(
+                    spaceTrim(
+                        (block) => `
+                            Script language ${language} is not supported.
+                            
+                            Supported languages are:
+                            ${block(SUPPORTED_SCRIPT_LANGUAGES.join(', '))}
+                            
+                        `,
+                    ),
+                );
+            }
+        }
+
         ptpJson.promptTemplates.push({
             title: section.title,
-            executionType: 'PROMPT_TEMPLATE' /* <- !!! Unhardcode */,
-            modelRequirements: defaultModelRequirements /* <- !!! More specific */,
-            /*  !!! Add language */
+            executionType,
+            modelRequirements: templateModelRequirements,
+            scriptLanguage: executionType === 'SCRIPT' ? language! : undefined,
             promptTemplate: content,
             resultingParameterName: 'result' /* <- !!! Unhardcode */,
         });

@@ -1,3 +1,4 @@
+import { TupleToUnion } from 'type-fest';
 import { string_version } from '../../../../../utils/typeAliases';
 import { ModelRequirements } from './types/ModelRequirements';
 

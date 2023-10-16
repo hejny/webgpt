@@ -1,4 +1,10 @@
-import { string_prompt, string_template, string_version } from '../../../../../../utils/typeAliases';
+import {
+    string_javascript,
+    string_markdown,
+    string_prompt,
+    string_template,
+    string_version,
+} from '../../../../../../utils/typeAliases';
 import { ExecutionType } from './ExecutionTypes';
 import { ModelRequirements } from './ModelRequirements';
 
@@ -21,11 +27,13 @@ export interface PromptTemplatePipelineJson {
         description?: string;
         executionType: ExecutionType;
         modelRequirements?: ModelRequirements;
-        promptTemplate: string_prompt & string_template /* <- TODO: Just one helper type */;
+        scriptLanguage?: ScriptLanguage /* <- TODO: Better type that require scriptLanguage for executionType SCRIPT */;
+        promptTemplate: (string_prompt | string_javascript | string_markdown) &
+            string_template /* <- TODO: Just one helper type */;
         resultingParameterName: string;
     }>;
 }
-
+SUPPORTED_SCRIPT_LANGUAGES;
 /**
  * TODO: [🧠] Best format of this code?
  *             There must be possible to make

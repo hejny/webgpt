@@ -18,7 +18,7 @@ export type Command =
       }
     | {
           type: 'PTP_VERSION';
-          version: string_version;
+          ptpVersion: string_version;
       }
     | {
           type: 'PARAMETER';
