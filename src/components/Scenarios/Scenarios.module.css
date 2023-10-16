@@ -7,10 +7,13 @@
 }
 
 .Scenarios ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    /*/
+    outline: 1px dotted rgb(38, 255, 146);
+    /**/
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: stretch;
 
     list-style: none;
     margin: 0;
@@ -19,14 +22,26 @@
     /* TODO: !!! Align in 2x2 grid */
 }
 
-.Scenarios ul a {
+.Scenarios ul li {
+    /*/
+    outline: 1px dotted rgb(178, 189, 184);
+    /**/
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Scenarios ul li a {
     text-decoration: none;
 }
 
-.Scenarios ul a {
+.Scenarios ul li a {
     text-decoration: none;
 }
 
-.Scenarios .scenario {
+.Scenarios ul li a .scenario {
     margin: 10px;
 }

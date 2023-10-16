@@ -22,6 +22,7 @@ export function PreviewGallery() {
             // TODO: !!! Always add Ainautes and Pavolhejny
             // TODO: !!! Pick different wallpapers by color
             // TODO: !!! Preview on different devices and scales
+            // TODO: !!! role=preview with body{ overflow: hidden; } + split link and iframe src
             return wallpapers;
         },
         [
