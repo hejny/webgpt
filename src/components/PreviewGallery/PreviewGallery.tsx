@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { Color } from '../../utils/color/Color';
 import { usePromise } from '../../utils/hooks/usePromise';
+import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
@@ -15,16 +16,27 @@ export function PreviewGallery() {
 
     const wallpapersPromise = useMemo(
         async () => {
-            let wallpapers = await RandomWallpaperManager.getInstance().getWelcomeWallpapers();
-            wallpapers = shuffleItems(...wallpapers);
+            let welcomeWallpapers = await RandomWallpaperManager.getInstance().getWelcomeWallpapers();
+            welcomeWallpapers = [
+                randomItem(...welcomeWallpapers),
+                randomItem(...welcomeWallpapers) /* <- TODO: randomItems(2,...welcomeWallpapers) */,
+            ];
 
-            wallpapers = wallpapers.slice(0, 4);
-
-            return wallpapers.map(({ id, primaryColor }) => ({
+            let wallpapers = welcomeWallpapers.map(({ id, primaryColor }) => ({
                 id,
                 src: `${NEXT_PUBLIC_URL.href}/${id}?role=visitor`,
                 primaryColor: Color.fromString(primaryColor),
             }));
+
+            wallpapers = [
+                { id: 'pavolhejny.com', src: 'https://www.pavolhejny.com/', primaryColor: Color.fromString('#ffe5b3') },
+                { id: 'ainautes.com', src: 'https://www.ainautes.com/', primaryColor: Color.fromString('#270e1b') },
+                ...wallpapers,
+            ];
+
+            wallpapers = shuffleItems(...wallpapers);
+
+            return wallpapers;
         },
         [
             // Note: Do just once per page load
@@ -55,7 +67,6 @@ export function PreviewGallery() {
 }
 
 /**
- * TODO: !! Always add Ainautes and Pavolhejny
  * TODO: !! Pick different wallpapers by color
  * TODO: !! Preview on different devices and scales
  */
