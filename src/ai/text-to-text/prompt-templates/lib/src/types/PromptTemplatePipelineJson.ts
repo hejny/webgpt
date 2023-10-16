@@ -17,6 +17,8 @@ export interface PromptTemplatePipelineJson {
     ptpVersion: string_version;
     parameters: Array<{ name: string; description?: string }>;
     promptTemplates: Array<{
+        title: string;
+        description?: string;
         executionType: ExecutionType;
         modelRequirements?: ModelRequirements;
         promptTemplate: string_prompt & string_template /* <- TODO: Just one helper type */;

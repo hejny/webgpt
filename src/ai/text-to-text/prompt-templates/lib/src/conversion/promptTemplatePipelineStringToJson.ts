@@ -8,6 +8,7 @@ import { countMarkdownStructureDeepness } from '../utils/markdown-json/countMark
 import { markdownToMarkdownStructure } from '../utils/markdown-json/markdownToMarkdownStructure';
 import { extractAllListItemsFromMarkdown } from '../utils/markdown/extractAllListItemsFromMarkdown';
 import { extractOneBlockFromMarkdown } from '../utils/markdown/extractOneBlockFromMarkdown';
+import { parseCommand } from './parseCommand';
 
 /**
  * Parse prompt template pipeline from string format to JSON format
@@ -95,21 +96,66 @@ export function promptTemplatePipelineStringToJson(
     const defaultModelRequirements: ModelRequirements = { ...DEFAULT_MODEL_REQUIREMENTS };
     const listItems = extractAllListItemsFromMarkdown(markdownStructure.content);
     for (const listItem of listItems) {
-        // TODO: !!! Parse description
-        // TODO: !!! Parse version
-        // TODO: !!! Parse defaultModelRequirements
+        const command = parseCommand(listItem);
+
+        switch (command.type) {
+            case 'USE':
+                // TODO: !!! Parse defaultModelRequirements
+                break;
+
+            case 'PTP_VERSION':
+                // TODO: !!! Parse ptp version
+                break;
+
+            case 'PARAMETER':
+                // Note: Do nothing, it's already parsed
+                break;
+
+            case 'INPUT_PARAMETER':
+                // Note: Do nothing, it's already parsed
+                break;
+
+            case 'OUTPUT_PARAMETER':
+                // Note: Do nothing, it's already parsed
+                break;
+
+            default:
+                throw new Error(
+                    `Command ${command.type} is not allowed in the head of the prompt template pipeline ONLY at the prompt template block`,
+                );
+        }
     }
 
     for (const section of markdownStructure.sections) {
+        // TODO: Parse prompt template description (the content out of the codeblock and lists)
+
         const listItems = extractAllListItemsFromMarkdown(section.content);
         for (const listItem of listItems) {
-            // TODO: !!! Parse description
-            // TODO: !!! Parse defaultModelRequirements
+            const command = parseCommand(listItem);
+            switch (command.type) {
+                case 'EXECUTE':
+                    // !!!
+                    break;
+
+                case 'USE':
+                    // !!!
+                    break;
+
+                case 'PARAMETER':
+                    // Note: Do nothing, it's already parsed
+                    break;
+
+                default:
+                    throw new Error(
+                        `Command ${command.type} is not allowed in the block of the prompt template ONLY at the head of the prompt template pipeline`,
+                    );
+            }
         }
 
         const { language, content } = extractOneBlockFromMarkdown(section.content);
 
         ptpJson.promptTemplates.push({
+            title: section.title,
             executionType: 'PROMPT_TEMPLATE' /* <- !!! Unhardcode */,
             modelRequirements: defaultModelRequirements /* <- !!! More specific */,
             /*  !!! Add language */

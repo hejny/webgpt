@@ -5,6 +5,8 @@ import { string_markdown } from "../../../../../../../utils/typeAliases";
  *
  * @param markdown any valid markdown
  * @returns code blocks with language and content
+ * 
+ * @private within the library
  */
 export function extractBlocksFromMarkdown(markdown: string_markdown): Array<{ language: string | null; content: string }> {
     const codeBlocks: { language: string | null; content: string }[] = [];
