@@ -10,7 +10,7 @@
     perspective: 1000px;
 }
 
-.DeviceIframe iframe {
+.DeviceIframe .iframe {
     /*/
     outline: 1px dotted rgb(103, 223, 79);
     /**/
@@ -30,6 +30,6 @@
     /**/
 }
 
-.DeviceIframe:hover iframe {
+.DeviceIframe:hover .iframe {
     transform: scale(0.9) rotateY(0deg);
 }

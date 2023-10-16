@@ -1,6 +1,10 @@
 import Link from 'next/link';
+import { useState } from 'react';
+import { IS_DEVELOPMENT } from '../../../config';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
+import { textColor } from '../../utils/color/operators/furthest';
+import { WithTake } from '../../utils/take/interfaces/ITakeChain';
 import { string_css_class, string_url } from '../../utils/typeAliases';
 import styles from './DeviceIframe.module.css';
 
@@ -24,7 +28,7 @@ interface DeviceIframeProps {
     /**
      * Placeholder color before the iframe is loaded
      */
-    color?: Color;
+    color?: WithTake<Color>;
 }
 
 /**
@@ -33,7 +37,27 @@ interface DeviceIframeProps {
 export function DeviceIframe(props: DeviceIframeProps) {
     const { src, isInteractive, className, color } = props;
 
-    if (isInteractive) {
+    const [isIframeShownInDevelopment, setIframeShownInDevelopment] = useState(false);
+
+    if (IS_DEVELOPMENT && !isIframeShownInDevelopment) {
+        return (
+            <div
+                className={classNames(styles.DeviceIframe, className)}
+                onClick={() => setIframeShownInDevelopment(true)}
+            >
+                <div
+                    className={styles.iframe}
+                    style={{
+                        padding: 30,
+                        color: !color ? 'transparent' : color.then(textColor).toHex(),
+                        backgroundColor: !color ? 'transparent' : color.toHex(),
+                    }}
+                >
+                    Due to optimization NOT showing the {'<DeviceIframe />'} in development until you click here
+                </div>
+            </div>
+        );
+    } else if (isInteractive) {
         return (
             <div
                 // TODO: DRY commonContainerProps and commonIframeProps
@@ -42,6 +66,7 @@ export function DeviceIframe(props: DeviceIframeProps) {
                 <iframe
                     {...{ src }}
                     frameBorder="0"
+                    className={styles.iframe}
                     style={{
                         backgroundColor: !color ? 'transparent' : color.toHex(),
                     }}
@@ -59,6 +84,7 @@ export function DeviceIframe(props: DeviceIframeProps) {
                     {...{ src }}
                     frameBorder="0"
                     scrolling="no"
+                    className={styles.iframe}
                     style={{ pointerEvents: 'none', backgroundColor: !color ? 'transparent' : color.toHex() }}
                 />
             </Link>

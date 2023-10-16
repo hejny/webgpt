@@ -17,11 +17,8 @@ export function PreviewGallery() {
         async () => {
             let wallpapers = await RandomWallpaperManager.getInstance().getWelcomeWallpapers();
             wallpapers = shuffleItems(...wallpapers);
-            wallpapers = wallpapers.slice(0, 4);
 
-            // TODO: !!! Always add Ainautes and Pavolhejny
-            // TODO: !!! Pick different wallpapers by color
-            // TODO: !!! Preview on different devices and scales
+            wallpapers = wallpapers.slice(0, 4);
 
             return wallpapers.map(({ id, primaryColor }) => ({
                 id,
@@ -56,3 +53,9 @@ export function PreviewGallery() {
         </div>
     );
 }
+
+/**
+ * TODO: !! Always add Ainautes and Pavolhejny
+ * TODO: !! Pick different wallpapers by color
+ * TODO: !! Preview on different devices and scales
+ */
