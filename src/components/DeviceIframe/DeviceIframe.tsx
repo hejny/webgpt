@@ -40,7 +40,7 @@ export function DeviceIframe(props: DeviceIframeProps) {
                 href={src}
                 prefetch={false /* <- Note: Because already prefetching by rendering <iframe/> */}
             >
-                <iframe {...{ src }} frameBorder="0" style={{ pointerEvents: 'none' }} />
+                <iframe {...{ src }} frameBorder="0" scrolling="no" style={{ pointerEvents: 'none' }} />
             </Link>
         );
     }
