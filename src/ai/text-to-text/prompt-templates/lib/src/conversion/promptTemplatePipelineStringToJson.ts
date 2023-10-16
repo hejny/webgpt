@@ -171,7 +171,7 @@ export function promptTemplatePipelineStringToJson(
         if (executionType === 'SCRIPT') {
             if (!language) {
                 throw new Error(`You must specify the language of the script in the prompt template`);
-            } else if (!SUPPORTED_SCRIPT_LANGUAGES.includes(language)) {
+            } else if (!SUPPORTED_SCRIPT_LANGUAGES.includes(language as ScriptLanguage)) {
                 throw new Error(
                     spaceTrim(
                         (block) => `
