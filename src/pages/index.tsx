@@ -27,11 +27,9 @@ export default function HomePage() {
                 </Center>
             </header>
 
-            <NoSsr>
-                <main>
-                    <Scenarios />
-                </main>
-            </NoSsr>
+            <main>
+                <Scenarios />
+            </main>
 
             <article>
                 <MarkdownContent content={PAGES_CONTENTS.explanation!} />
@@ -51,9 +49,11 @@ export default function HomePage() {
             </article>
             */}
 
-            <article>
-                <PreviewGallery />
-            </article>
+            <NoSsr>
+                <article>
+                    <PreviewGallery />
+                </article>
+            </NoSsr>
 
             <article>
                 <PavolHejny />
