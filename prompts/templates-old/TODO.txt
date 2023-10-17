@@ -1,1 +1,1 @@
-TODO: !!!last Remove this folder and use only ptp.md version
+TODO: Remove this folder and use only ptp.md version

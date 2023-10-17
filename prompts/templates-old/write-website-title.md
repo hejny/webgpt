@@ -1,3 +1,8 @@
+<!--
+Note: This is an old approach, the new one is to use .ptp.md files in ../templates/
+TODO: Delete this file
+-->
+
 Craft a title for webpage which incorporates the following wallpaper description as an alt text:
 
 "${block(wallpaperAssigment)}"
