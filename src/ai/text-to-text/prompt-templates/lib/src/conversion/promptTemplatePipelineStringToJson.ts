@@ -68,7 +68,7 @@ export function promptTemplatePipelineStringToJson(
             ptpJson.parameters.push({
                 name: parameterName,
                 description: parameterDescription || undefined,
-                isInputParameter: isInputParameter,
+                isInput: isInputParameter,
             });
         }
     };

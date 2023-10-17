@@ -22,7 +22,7 @@ import { ScriptLanguage } from './ScriptLanguage';
  */
 export interface PromptTemplatePipelineJson {
     ptpVersion: string_version;
-    parameters: Array<{ name: string; isInputParameter: boolean; description?: string }>;
+    parameters: Array<{ name: string; isInput: boolean; description?: string }>;
     promptTemplates: Array<{
         title: string;
         description?: string;
