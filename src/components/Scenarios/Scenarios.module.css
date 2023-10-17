@@ -18,7 +18,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .Scenarios ul li {
@@ -41,6 +40,10 @@
     text-decoration: none;
 }
 
-.Scenarios ul li a .scenario {
+.Scenarios ul li .scenario {
     margin: 10px;
+}
+
+.Scenarios ul li .scenario h2 {
+    margin: 0;
 }
