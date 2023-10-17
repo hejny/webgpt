@@ -32,7 +32,7 @@ export function parseCommand(listItem: string_markdown): Command {
                     (block) => `
                         Unknown execution type in command:
 
-                        - ${block(listItem)}
+                        - ${listItem}
 
                         Supported execution types are:
                         ${block(ExecutionTypes.join(', '))}
@@ -65,7 +65,7 @@ export function parseCommand(listItem: string_markdown): Command {
                     (block) => `
                         Unknown variant in command:
 
-                        - ${block(listItem)}
+                        - ${listItem}
 
                         Supported variants are:
                         ${block(['CHAT', 'COMPLETION'].join(', '))}
@@ -86,10 +86,10 @@ export function parseCommand(listItem: string_markdown): Command {
         if (!parametersMatch || !parametersMatch.groups || !parametersMatch.groups.parameterName) {
             throw new Error(
                 spaceTrim(
-                    (block) => `
+                    `
                         Invalid parameter in command:
 
-                        - ${block(listItem)}
+                        - ${listItem}
                     `,
                 ),
             );
@@ -103,7 +103,7 @@ export function parseCommand(listItem: string_markdown): Command {
                     (block) => `
                         Parameter {${parameterName}} can not contain another parameter in description:
 
-                        - ${block(listItem)}
+                        - ${listItem}
                     `,
                 ),
             );
@@ -126,10 +126,10 @@ export function parseCommand(listItem: string_markdown): Command {
         if (!ptpVersion || ptpVersion === '' || ptpVersion.toUpperCase() === 'VERSION') {
             throw new Error(
                 spaceTrim(
-                    (block) => `
+                    `
                         Invalid PTP_VERSION command:
 
-                        - ${block(listItem)}
+                        - ${listItem}
                     `,
                 ),
             );
@@ -144,10 +144,10 @@ export function parseCommand(listItem: string_markdown): Command {
     } else {
         throw new Error(
             spaceTrim(
-                (block) => `
+                `
                     Unknown command:
 
-                    - ${block(listItem)}
+                    - ${listItem}
 
                     Supported commands are:
                     - Execute
