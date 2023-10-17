@@ -2,6 +2,7 @@ import spaceTrim from 'spacetrim';
 import { Writable } from 'type-fest';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
 import { DEFAULT_MODEL_REQUIREMENTS, PTP_VERSION } from '../config';
+import { ParameterCommand } from '../types/Command';
 import { ExecutionType } from '../types/ExecutionTypes';
 import { ModelRequirements } from '../types/ModelRequirements';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
@@ -36,10 +37,48 @@ export function promptTemplatePipelineStringToJson(
     ) as PromptTemplatePipelineString;
 
     // =============================================================
+    ///Note: 2️⃣ !!!last annotate
+    const addParam = (parameterCommand: ParameterCommand) => {
+        const { parameterName, parameterDescription, isInputParameter } = parameterCommand;
+
+        const existingParameter = ptpJson.parameters.find((parameter) => parameter.name === parameterName);
+        if (
+            existingParameter &&
+            existingParameter.description &&
+            existingParameter.description !== parameterDescription
+        ) {
+            throw new Error(
+                spaceTrim(
+                    (block) => `
+                        Parameter {${name}} is defined multiple times with different description.
+
+                        First definition:
+                        ${block(existingParameter.description!)}
+
+                        Second definition:
+                        ${block(parameterDescription!)}
+                    `,
+                ),
+            );
+        }
+
+        if (existingParameter) {
+            existingParameter.description = parameterDescription;
+        } else {
+            ptpJson.parameters.push({
+                name: parameterName,
+                description: parameterDescription,
+                isInputParameter: isInputParameter,
+            });
+        }
+    };
+
+    /*
+    TODO: !!!last Remove and fix numbers
     // Note: 2️⃣ Parse the static part - the parameters
     // Note: [🌔]
     //console.log('!!!l promptTemplatePipelineString', promptTemplatePipelineString);
-    // TODO: !!! Remove the codeblocks for this task OR [🌔] poarse propperly
+    // TODO: !! Remove the codeblocks for this task OR [🌔] poarse propperly
     const parametersMatches = Array.from(
         promptTemplatePipelineString.matchAll(/\{(?<paramName>[a-z0-9_]+)\}[^\S\r\n]*(?<paramDescription>.*)$/gim) ||
             [],
@@ -81,6 +120,7 @@ export function promptTemplatePipelineStringToJson(
             ptpJson.parameters.push({ name, description });
         }
     }
+    */
 
     // =============================================================
     // Note: 3️⃣ Parse the dynamic part - the template pipeline
@@ -112,15 +152,7 @@ export function promptTemplatePipelineStringToJson(
                 break;
 
             case 'PARAMETER':
-                // Note: Do nothing, it's already parsed
-                break;
-
-            case 'INPUT_PARAMETER':
-                // Note: Do nothing, it's already parsed
-                break;
-
-            case 'OUTPUT_PARAMETER':
-                // Note: Do nothing, it's already parsed
+                addParam(command);
                 break;
 
             default:
@@ -156,7 +188,7 @@ export function promptTemplatePipelineStringToJson(
                     break;
 
                 case 'PARAMETER':
-                    // Note: Do nothing, it's already parsed
+                    addParam(command);
                     break;
 
                 default:
