@@ -37,7 +37,7 @@ export function promptTemplatePipelineStringToJson(
     ) as PromptTemplatePipelineString;
 
     // =============================================================
-    ///Note: 2️⃣ !!!last annotate
+    ///Note: 2️⃣ Function for adding parameters
     const addParam = (parameterCommand: ParameterCommand) => {
         const { parameterName, parameterDescription, isInputParameter } = parameterCommand;
 
@@ -75,55 +75,6 @@ export function promptTemplatePipelineStringToJson(
             });
         }
     };
-
-    /*
-    TODO: !!!last Remove and fix numbers
-    // Note: 2️⃣ Parse the static part - the parameters
-    // Note: [🌔]
-    //console.log('!!!l promptTemplatePipelineString', promptTemplatePipelineString);
-    // TODO: !! Remove the codeblocks for this task OR [🌔] poarse propperly
-    const parametersMatches = Array.from(
-        promptTemplatePipelineString.matchAll(/\{(?<paramName>[a-z0-9_]+)\}[^\S\r\n]*(?<paramDescription>.*)$/gim) ||
-            [],
-    );
-    //console.log('!!!l parametersMatch', parametersMatches);
-    //console.log('!!!l  Array.from(parametersMatch).length', parametersMatches.length);
-    if (parametersMatches.length === 0) {
-        throw new Error('No parameters found');
-    }
-    for (const match of parametersMatches) {
-        //console.log('!!!l match', match);
-        const name = match.groups!.paramName!;
-        const description = spaceTrim(match.groups!.paramDescription || '') || undefined;
-
-        if (!description) {
-            continue;
-        }
-
-        const existingParameter = ptpJson.parameters.find((parameter) => parameter.name === name);
-        if (existingParameter && existingParameter.description && existingParameter.description !== description) {
-            throw new Error(
-                spaceTrim(
-                    (block) => `
-                        Parameter {${name}} is defined multiple times with different description.
-
-                        First definition:
-                        ${block(existingParameter.description!)}
-
-                        Second definition:
-                        ${block(description!)}
-                    `,
-                ),
-            );
-        }
-
-        if (existingParameter) {
-            existingParameter.description = description;
-        } else {
-            ptpJson.parameters.push({ name, description });
-        }
-    }
-    */
 
     // =============================================================
     // Note: 3️⃣ Parse the dynamic part - the template pipeline
@@ -255,88 +206,6 @@ export function promptTemplatePipelineStringToJson(
 
     // =============================================================
     return ptpJson;
-
-    /*
-    =============================================
-    TODO: !!!last Remove the code below
-
-    const promptTemplates: PromptTemplatePipelineJson['promptTemplates'] = [];
-
-
-    
-    promptTemplatePipelineString = removeContentComments(promptTemplatePipelineString);
-
-    for (let templateContent of promptTemplatePipelineString.split(/^\-{3,}?\s*$/gm)) {
-        templateContent = spaceTrim(templateContent);
-        const lines = templateContent.split('\n');
-
-        // TODO: [🚲] !! Parse newest format
-        // TODO: [🚲] !! Parse Model requirements
-
-        if (!(lines.length >= 2)) {
-            throw new Error(
-                spaceTrim(
-                    (block) => `
-                        Invalid template - each section must have at least 2 lines
-                        (template + resulting variable name)
-                        
-                        Invalid section:
-                        ${block(
-                            templateContent
-                                .split('\n')
-                                .map((line) => `> ${line}`)
-                                //               <- TODO: Put here line numbers from original promptTemplatePipelineString
-                                .join('\n'),
-                        )}
-
-
-                        ${
-                            templateContent.trim() !== ''
-                                ? ''
-                                : 'The section is completely empty (containing only white space and comments)'
-                        }
-                    `,
-                ),
-            );
-        }
-
-        const lastLine = lines.pop()!;
-
-        const match = /^\-\>\s*\{(?<resultingParamName>[a-z0-9_]+)\}\s*$/im.exec(lastLine);
-
-        if (!match || match.groups === undefined || match.groups.resultingParamName === undefined) {
-            throw new Error(
-                spaceTrim(
-                    (block) => `
-                        Invalid template - each section must end with "-> {...}"
-                        
-                        Invalid section:
-                        ${block(
-                            templateContent
-                                .split('\n')
-                                .map((line) => `> ${line}`)
-                                //               <- TODO: Put here line numbers from original promptTemplatePipelineString
-                                .join('\n'),
-                        )}
-                    `,
-                ),
-            );
-        }
-
-        const resultingParamName = match.groups.resultingParamName;
-
-        promptTemplates.push({
-            modelRequirements: {
-                variant: 'CHAT',
-                //             <- TODO: [🚲] !! Unhardcode
-            },
-            promptTemplate: spaceTrim(lines.join('\n')),
-            resultingParamName,
-        });
-    }
-
-    return { promptTemplates };
-    */
 }
 
 /**
