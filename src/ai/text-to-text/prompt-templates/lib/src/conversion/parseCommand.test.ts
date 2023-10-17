@@ -19,7 +19,7 @@ describe('how parseCommand works', () => {
             type: 'EXECUTE',
             executionType: 'PROMPT_DIALOG',
         });
-        expect(parseCommand('  execute prompt         template')).toEqual({
+        expect(parseCommand('  execute    prompt         template')).toEqual({
             type: 'EXECUTE',
             executionType: 'PROMPT_TEMPLATE',
         });
@@ -35,7 +35,7 @@ describe('how parseCommand works', () => {
 
     it('should fail parsing EXECUTE command', () => {
         expect(() => parseCommand('execute fooo')).toThrowError();
-        expect(() => parseCommand('execute {script}')).toThrowError();
+        expect(() => parseCommand('execute script prompt template')).toThrowError();
     });
 
     it('should parse USE command', () => {
@@ -71,11 +71,37 @@ describe('how parseCommand works', () => {
             type: 'PTP_VERSION',
             ptpVersion: '1.0.0',
         });
+        expect(parseCommand('PTP version 1.0.0')).toEqual({
+            type: 'PTP_VERSION',
+            ptpVersion: '1.0.0',
+        });
     });
 
-    // TODO: Also test invalid PTP_VERSION command
+    it('should fail parsing PTP_VERSION command', () => {
+        expect(() => parseCommand('PTP version')).toThrowError();
+        expect(() => parseCommand('PTP version   ')).toThrowError();
+        // TODO: Also test invalid version in PTP_VERSION command
+    });
 
     it('should parse PARAMETER command', () => {
+        expect(parseCommand('param {name} Name for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
+        expect(parseCommand('{name} Name for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
+        expect(parseCommand('{name} Input for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Input for the hero',
+        });
         expect(parseCommand('input parameter {name} Name for the hero')).toEqual({
             type: 'PARAMETER',
             isInputParameter: true,
@@ -88,25 +114,20 @@ describe('how parseCommand works', () => {
             parameterName: 'name',
             parameterDescription: null,
         });
-        expect(parseCommand('input parameter {name}          ')).toEqual({
+        expect(parseCommand('input   parameter {name}          ')).toEqual({
             type: 'PARAMETER',
             isInputParameter: true,
             parameterName: 'name',
             parameterDescription: null,
         });
-        expect(parseCommand('param {name} Name for the hero')).toEqual({
-            type: 'PARAMETER',
-            isInputParameter: false,
-            parameterName: 'name',
-            parameterDescription: 'Name for the hero',
-        });
+
         expect(parseCommand('OUTPUT param {name} Name for the hero')).toEqual({
             type: 'PARAMETER',
             isInputParameter: false,
             parameterName: 'name',
             parameterDescription: 'Name for the hero',
         });
-        expect(parseCommand('parameter {name}        Name for the hero         ')).toEqual({
+        expect(parseCommand('   parameter    {name}        Name for the hero         ')).toEqual({
             type: 'PARAMETER',
             isInputParameter: false,
             parameterName: 'name',
@@ -118,14 +139,27 @@ describe('how parseCommand works', () => {
             parameterName: 'name',
             parameterDescription: '**Name** for the hero',
         });
+        expect(parseCommand('parameter {name} **Name** for `the` {')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: '**Name** for `the` {',
+        });
     });
 
     it('should fail parsing PARAMETER command', () => {
-        expect(() => parseCommand('parameter {name}')).toThrowError();
+        expect(() => parseCommand('parameter {}')).toThrowError();
+        expect(() => parseCommand('parameter { name }')).toThrowError();
+        expect(() => parseCommand('parameter name')).toThrowError();
         expect(() => parseCommand('parameter {name} {name}')).toThrowError();
         expect(() => parseCommand('parameter {name} {name} Name for the hero')).toThrowError();
         expect(() => parseCommand('parameter {name} Name for the hero {name}')).toThrowError();
         expect(() => parseCommand('parameter {name} Name for the hero {name} Name for the hero')).toThrowError();
         expect(() => parseCommand('parmeter {name} Name for the hero')).toThrowError();
+    });
+
+    it('should fail parsing multiline command', () => {
+        expect(() => parseCommand('execute\nprompt template')).toThrowError();
+        expect(() => parseCommand('execute prompt template\n')).toThrowError();
     });
 });

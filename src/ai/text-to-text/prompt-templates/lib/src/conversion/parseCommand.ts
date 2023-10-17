@@ -8,6 +8,10 @@ import { ExecutionTypes } from '../types/ExecutionTypes';
  * Parses one line of ul/ol to command
  */
 export function parseCommand(listItem: string_markdown): Command {
+    if (listItem.includes('\n') || listItem.includes('\r')) {
+        throw new Error(`Command can not contain new line characters:`);
+    }
+
     let type = listItem.trim();
     type = type.split('`').join('');
     type = type.split('"').join('');
@@ -20,15 +24,15 @@ export function parseCommand(listItem: string_markdown): Command {
     type = normalizeTo_SCREAMING_CASE(type);
 
     if (type.startsWith('EXECUTE')) {
-        const executionType = ExecutionTypes.find((executionType) => type.includes(executionType));
+        const executionTypes = ExecutionTypes.filter((executionType) => type.includes(executionType));
 
-        if (!executionType) {
+        if (executionTypes.length !== 1) {
             throw new Error(
                 spaceTrim(
                     (block) => `
                         Unknown execution type in command:
 
-                        - ${listItem}
+                        - ${block(listItem)}
 
                         Supported execution types are:
                         ${block(ExecutionTypes.join(', '))}
@@ -39,7 +43,7 @@ export function parseCommand(listItem: string_markdown): Command {
 
         return {
             type: 'EXECUTE',
-            executionType,
+            executionType: executionTypes[0]!,
         };
     } else if (type.startsWith('USE')) {
         // TODO: Make this more elegant and dynamically
@@ -61,7 +65,7 @@ export function parseCommand(listItem: string_markdown): Command {
                     (block) => `
                         Unknown variant in command:
 
-                        - ${listItem}
+                        - ${block(listItem)}
 
                         Supported variants are:
                         ${block(['CHAT', 'COMPLETION'].join(', '))}
@@ -69,17 +73,17 @@ export function parseCommand(listItem: string_markdown): Command {
                 ),
             );
         }
-    } else if (type.startsWith('PARAM') || type.startsWith('{')) {
+    } else if (
+        type.startsWith('PARAM') ||
+        type.startsWith('INPUT_PARAM') ||
+        type.startsWith('OUTPUT_PARAM') ||
+        listItem.startsWith('{')
+    ) {
         const parametersMatch = listItem.match(
             /\{(?<parameterName>[a-z0-9_]+)\}[^\S\r\n]*(?<parameterDescription>.*)$/im,
         );
 
-        if (
-            !parametersMatch ||
-            !parametersMatch.groups ||
-            !parametersMatch.groups.parameterName ||
-            !parametersMatch.groups.parameterDescription
-        ) {
+        if (!parametersMatch || !parametersMatch.groups || !parametersMatch.groups.parameterName) {
             throw new Error(
                 spaceTrim(
                     (block) => `
@@ -93,13 +97,49 @@ export function parseCommand(listItem: string_markdown): Command {
 
         const { parameterName, parameterDescription } = parametersMatch.groups as any;
 
-        const isInputParameter = type.includes('INPUT');
+        if (parameterDescription && parameterDescription.match(/\{(?<parameterName>[a-z0-9_]+)\}/im)) {
+            throw new Error(
+                spaceTrim(
+                    (block) => `
+                        Parameter {${parameterName}} can not contain another parameter in description:
+
+                        - ${block(listItem)}
+                    `,
+                ),
+            );
+        }
+
+        const isInputParameter = type.startsWith('INPUT');
 
         return {
             type: 'PARAMETER',
             parameterName,
-            parameterDescription,
+            parameterDescription: parameterDescription.trim() || null,
             isInputParameter,
+        };
+    } else if (type.startsWith('PTP_VERSION')) {
+        const ptpVersion = listItem
+            .split(' ')
+            .filter((item) => item !== '')
+            .pop();
+
+        if (!ptpVersion || ptpVersion === '' || ptpVersion.toUpperCase() === 'VERSION') {
+            throw new Error(
+                spaceTrim(
+                    (block) => `
+                        Invalid PTP_VERSION command:
+
+                        - ${block(listItem)}
+                    `,
+                ),
+            );
+        }
+
+        // TODO: Validate version
+
+        return {
+            type: 'PTP_VERSION',
+            ptpVersion,
         };
     } else {
         throw new Error(
@@ -107,10 +147,15 @@ export function parseCommand(listItem: string_markdown): Command {
                 (block) => `
                     Unknown command:
 
-                    - ${listItem}
+                    - ${block(listItem)}
 
                     Supported commands are:
-                    ${block(ExecutionTypes.join(', '))}
+                    - Execute
+                    - Use
+                    - Parameter
+                    - Input Parameter
+                    - Output Parameter
+                    - PTP Version
                 `,
             ),
         );

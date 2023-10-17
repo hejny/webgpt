@@ -63,11 +63,11 @@ export function promptTemplatePipelineStringToJson(
         }
 
         if (existingParameter) {
-            existingParameter.description = parameterDescription;
+            existingParameter.description = parameterDescription || undefined;
         } else {
             ptpJson.parameters.push({
                 name: parameterName,
-                description: parameterDescription,
+                description: parameterDescription || undefined,
                 isInputParameter: isInputParameter,
             });
         }

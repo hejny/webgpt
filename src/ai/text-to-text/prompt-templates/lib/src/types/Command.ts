@@ -28,7 +28,7 @@ export interface ParameterCommand {
     type: 'PARAMETER';
     isInputParameter: boolean;
     parameterName: string_name;
-    parameterDescription: string_markdown_text;
+    parameterDescription: string_markdown_text | null;
 }
 
 /**
