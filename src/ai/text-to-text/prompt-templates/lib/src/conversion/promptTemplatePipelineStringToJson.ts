@@ -38,19 +38,19 @@ export function promptTemplatePipelineStringToJson(
     // =============================================================
     // Note: 2️⃣ Parse the static part - the parameters
     // Note: [🌔]
-    //console.log('!!! promptTemplatePipelineString', promptTemplatePipelineString);
-    // TODO: !!! Remove the codeblocks for this task
+    //console.log('!!!l promptTemplatePipelineString', promptTemplatePipelineString);
+    // TODO: !!! Remove the codeblocks for this task OR [🌔] poarse propperly
     const parametersMatches = Array.from(
         promptTemplatePipelineString.matchAll(/\{(?<paramName>[a-z0-9_]+)\}[^\S\r\n]*(?<paramDescription>.*)$/gim) ||
             [],
     );
-    //console.log('!!! parametersMatch', parametersMatches);
-    //console.log('!!!  Array.from(parametersMatch).length', parametersMatches.length);
+    //console.log('!!!l parametersMatch', parametersMatches);
+    //console.log('!!!l  Array.from(parametersMatch).length', parametersMatches.length);
     if (parametersMatches.length === 0) {
         throw new Error('No parameters found');
     }
     for (const match of parametersMatches) {
-        //console.log('!!! match', match);
+        //console.log('!!!l match', match);
         const name = match.groups!.paramName!;
         const description = spaceTrim(match.groups!.paramDescription || '') || undefined;
 

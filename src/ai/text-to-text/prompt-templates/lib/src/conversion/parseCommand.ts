@@ -89,7 +89,3 @@ export function parseCommand(listItem: string_markdown): Command {
         );
     }
 }
-
-/**
- * TODO: !!! Parse both param and parameter
- */
