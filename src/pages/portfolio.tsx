@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import webgptLogo from '../../public/logo/webgpt.white.svg';
+import { NoSsr } from '../components/NoSsr/NoSsr';
 import { PreviewGallery } from '../components/PreviewGallery/PreviewGallery';
 import { Center } from '../components/SimpleLayout/Center';
 import { StaticLayout } from '../components/StaticLayout/StaticLayout';
@@ -22,9 +23,13 @@ export default function PortfolioPage() {
                 </Center>
             </header>
 
-            <main>
-                <PreviewGallery numberOfWallpapers={120 /* <- TODO: Make some highly composite number generator  */} />
-            </main>
+            <NoSsr>
+                <main>
+                    <PreviewGallery
+                        numberOfWallpapers={120 /* <- TODO: Make some highly composite number generator  */}
+                    />
+                </main>
+            </NoSsr>
         </StaticLayout>
     );
 }
