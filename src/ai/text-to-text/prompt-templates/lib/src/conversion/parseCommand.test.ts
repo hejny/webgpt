@@ -105,6 +105,12 @@ describe('how parseCommand works', () => {
             parameterName: 'name',
             parameterDescription: 'Name for the hero',
         });
+        expect(parseCommand('> {name} Name for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
         expect(parseCommand('{name} Input for the hero')).toEqual({
             type: 'PARAMETER',
             isInputParameter: false,
