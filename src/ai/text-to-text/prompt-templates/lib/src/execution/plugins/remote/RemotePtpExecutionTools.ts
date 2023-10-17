@@ -18,6 +18,9 @@ import { Ptps_Response } from './interfaces/Ptps_Response';
 export class RemotePtpExecutionTools implements PtpExecutionTools {
     constructor(private readonly remoteUrl: URL, private readonly clientId: uuid) {}
 
+    /**
+     * Creates a connection to the remote proxy server.
+     */
     private makeConnection(): Promise<Socket> {
         return new Promise((resolve, reject) => {
             const socket = io(this.remoteUrl.href, {
@@ -64,7 +67,6 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
 }
 
 /**
- * TODO: !!!last Annotate
  * TODO: !!! Create some common util for gptChat and gptComplete
  * TODO: [🤹‍♂️] RemotePtpExecutionTools should extend Destroyable and implement IDestroyable
  */
