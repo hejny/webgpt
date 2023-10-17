@@ -10,4 +10,14 @@ Synonym for word
 Write synonym for "{word}"
 ```
 
-`-> {word}`
+`-> {word}` word
+
+## Another Synonym
+
+Synonym for word
+
+```prompttemplate
+Write synonym for "{word}"
+```
+
+`-> {word}` another word

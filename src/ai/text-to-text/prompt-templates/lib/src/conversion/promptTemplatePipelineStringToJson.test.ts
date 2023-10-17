@@ -15,29 +15,29 @@ describe('promptTemplatePipelineStringToJson', () => {
 
     it('should parse promptTemplatePipeline with comment', () => {
         expect(promptTemplatePipelineStringToJson(importPtp('../../samples/05-comment.ptp.md'))).toEqual(
-            importPtp('../../samples/05-comment.ptp.md'),
+            importPtp('../../samples/05-comment.ptp.json'),
         );
     });
     it('should parse promptTemplatePipeline with one template', () => {
         expect(promptTemplatePipelineStringToJson(importPtp('../../samples/10-single.ptp.md'))).toEqual(
-            importPtp('../../samples/10-single.ptp.md'),
+            importPtp('../../samples/10-single.ptp.json'),
         );
     });
     it('should parse promptTemplatePipeline with two templates', () => {
         expect(promptTemplatePipelineStringToJson(importPtp('../../samples/20-two.ptp.md'))).toEqual(
-            importPtp('../../samples/20-two.ptp.md'),
+            importPtp('../../samples/20-two.ptp.json'),
         );
     });
 
     it('should parse with escape characters', () => {
         expect(promptTemplatePipelineStringToJson(importPtp('../../samples/30-escaping.ptp.md'))).toEqual(
-            importPtp('../../samples/30-escaping.ptp.md'),
+            importPtp('../../samples/30-escaping.ptp.json'),
         );
     });
 
     it('should parse promptTemplatePipeline with advanced structure', () => {
         expect(promptTemplatePipelineStringToJson(importPtp('../../samples/50-advanced.ptp.md'))).toEqual(
-            importPtp('../../samples/50-advanced.ptp.md'),
+            importPtp('../../samples/50-advanced.ptp.json'),
         );
     });
 
@@ -71,11 +71,16 @@ describe('promptTemplatePipelineStringToJson', () => {
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/no-heading.ptp.md')),
         ).toThrowError();
     });
+
+    /*
+    Note: This is a logic error, not syntax error
     it('fail on using parameter before defining', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/parameter-used-before-defining.ptp.md')),
         ).toThrowError();
     });
+    */
+
     it('fail on parameters collision', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/parameters-collision.ptp.md')),
