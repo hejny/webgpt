@@ -1,14 +1,20 @@
 {
-    "ptpVersion": "0.1.0",
-    "parameters": [],
+    "ptpVersion": "1.0.0",
+    "parameters": [
+        {
+            "name": "greeting",
+            "isInput": false
+        }
+    ],
     "promptTemplates": [
         {
+            "title": "Prompt",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
             "promptTemplate": "Rewrite the function\n\n\\`\\`\\`javascript\nfunction greet() {\n  return 'Hello';\n}\n\\`\\`\\`\n\nTo return \"Goodbye\" instead.\n",
-            "resultingParameterName": "result"
+            "resultingParameterName": "greeting"
         }
     ]
 }
