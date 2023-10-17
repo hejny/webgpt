@@ -12,3 +12,6 @@ export interface UpdateWallpaperContentResponse {
     // TODO: [🌋] ErrorableResponse
     readonly updatedWallpaper: Pick<IWallpaperSerialized, 'content'>;
 }
+
+
+// TODO: !!!last Implement
