@@ -182,6 +182,18 @@ export type string_markdown = string;
 /**
  * Semantic helper
  *
+ * Markdown text without any structure like h1, h2, lists, blockquotes, blocks, etc.
+ * BUT with bold, italic, etc.
+ *
+ * For example `"**Hello** World!"`
+ */
+export type string_markdown_text = string;
+
+// TODO: !!! Go through all string_markdown usage and change it to string_markdown_text if better fits
+
+/**
+ * Semantic helper
+ *
  * For example `"towns.cz"`
  */
 export type string_domain = string;
