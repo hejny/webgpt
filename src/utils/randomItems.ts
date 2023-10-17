@@ -11,3 +11,7 @@ export function randomItems<TItem>(count: number, ...items: Array<TItem>): Array
     }
     return result;
 }
+
+/**
+ * TODO: !!! Pick distinct items
+ */
