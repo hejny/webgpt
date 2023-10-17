@@ -1,13 +1,13 @@
 import { normalizeTo_SCREAMING_CASE } from 'n12';
 import spaceTrim from 'spacetrim';
-import { string_markdown } from '../../../../../../utils/typeAliases';
+import { string_markdown_text } from '../../../../../../utils/typeAliases';
 import { Command } from '../types/Command';
 import { ExecutionTypes } from '../types/ExecutionTypes';
 
 /**
  * Parses one line of ul/ol to command
  */
-export function parseCommand(listItem: string_markdown): Command {
+export function parseCommand(listItem: string_markdown_text): Command {
     if (listItem.includes('\n') || listItem.includes('\r')) {
         throw new Error(`Command can not contain new line characters:`);
     }

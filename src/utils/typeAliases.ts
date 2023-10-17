@@ -189,8 +189,6 @@ export type string_markdown = string;
  */
 export type string_markdown_text = string;
 
-// TODO: !!! Go through all string_markdown usage and change it to string_markdown_text if better fits
-
 /**
  * Semantic helper
  *

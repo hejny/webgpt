@@ -1,4 +1,4 @@
-import { string_markdown } from "../typeAliases";
+import { string_markdown } from '../typeAliases';
 
 /**
  * Removes Markdown formatting tags from a string.
@@ -12,5 +12,6 @@ export function removeMarkdownFormatting(str: string_markdown): string {
 }
 
 /**
+ * TODO: Maybe use as input type string_markdown_text
  * @see https://chat.openai.com/chat/bb7c3a5b-fe9c-4ccc-9057-f47e0fd66489
  */
