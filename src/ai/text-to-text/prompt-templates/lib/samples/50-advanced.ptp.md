@@ -4,7 +4,7 @@ Trying the language capabilities of GPT models.
 
 -   PTP version 1.0.0
 -   Use Chat
--   Use GPT-3
+<!-- TODO: [🌚]> -   Use GPT-3 -->
 -   Input param `{word}` The word to use in the prompt.
 -   Output param `{comparisonOfTwoSentences}` Comparison between two sentences
 -   Output param `{summary}` The overall summary of the comparison

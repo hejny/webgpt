@@ -59,6 +59,15 @@ describe('how parseCommand works', () => {
             key: 'variant',
             value: 'CHAT',
         });
+
+        /*
+        TODO: [🌚]
+        expect(parseCommand('use GPT-3.5')).toEqual({
+            type: 'USE',
+            key: 'variant',
+            value: 'CHAT',
+        });
+        */
     });
 
     it('should fail parsing USE command', () => {

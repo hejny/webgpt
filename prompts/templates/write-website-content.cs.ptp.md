@@ -9,7 +9,7 @@ TODO: !!! [🚲] Parse this new format
 
 -   PTP version 0.0.1
 -   Use chat
--   Use GPT-3.5
+<!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{title}` Návrh názvu webu od zákazníka
 -   Input param `{assigment}` Zadání webu od zákazníka
 -   Output param {content}` Obsah webu
@@ -110,7 +110,7 @@ Zadání webu od zákazníka:
 ## Vytvoření obsahu webu
 
 -   Use completion
--   Use GPT-3
+<!-- TODO: [🌚]> -   Use GPT-3 -->
 
 ```prompttemplate
 
