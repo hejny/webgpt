@@ -69,10 +69,37 @@ export function parseCommand(listItem: string_markdown): Command {
                 ),
             );
         }
-    } else if (type.includes('PARAM')) {
+    } else if (type.startsWith('PARAM') || type.startsWith('{')) {
+        const parametersMatch = listItem.match(
+            /\{(?<parameterName>[a-z0-9_]+)\}[^\S\r\n]*(?<parameterDescription>.*)$/im,
+        );
+
+        if (
+            !parametersMatch ||
+            !parametersMatch.groups ||
+            !parametersMatch.groups.parameterName ||
+            !parametersMatch.groups.parameterDescription
+        ) {
+            throw new Error(
+                spaceTrim(
+                    (block) => `
+                        Invalid parameter in command:
+
+                        - ${block(listItem)}
+                    `,
+                ),
+            );
+        }
+
+        const { parameterName, parameterDescription } = parametersMatch.groups as any;
+
+        const isInputParameter = type.includes('INPUT');
+
         return {
             type: 'PARAMETER',
-            parameterName: `never` /* <- Note: [🌔] this never happen because params are processed separatelly */,
+            parameterName,
+            parameterDescription,
+            isInputParameter,
         };
     } else {
         throw new Error(

@@ -1,0 +1,131 @@
+import { describe, expect, it } from '@jest/globals';
+import { parseCommand } from './parseCommand';
+
+describe('how parseCommand works', () => {
+    it('should parse EXECUTE command', () => {
+        expect(parseCommand('execute prompt template')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'PROMPT_TEMPLATE',
+        });
+        expect(parseCommand('execute simple template')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'SIMPLE_TEMPLATE',
+        });
+        expect(parseCommand('execute script')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'SCRIPT',
+        });
+        expect(parseCommand('execute prompt dialog')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'PROMPT_DIALOG',
+        });
+        expect(parseCommand('  execute prompt         template')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'PROMPT_TEMPLATE',
+        });
+        expect(parseCommand('execute PROMPT_TEMPLATE')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'PROMPT_TEMPLATE',
+        });
+        expect(parseCommand('execute `prompt template`')).toEqual({
+            type: 'EXECUTE',
+            executionType: 'PROMPT_TEMPLATE',
+        });
+    });
+
+    it('should fail parsing EXECUTE command', () => {
+        expect(() => parseCommand('execute fooo')).toThrowError();
+        expect(() => parseCommand('execute {script}')).toThrowError();
+    });
+
+    it('should parse USE command', () => {
+        expect(parseCommand('use chat')).toEqual({
+            type: 'USE',
+            key: 'variant',
+            value: 'CHAT',
+        });
+        expect(parseCommand('use completion')).toEqual({
+            type: 'USE',
+            key: 'variant',
+            value: 'COMPLETION',
+        });
+        expect(parseCommand('use CHAT')).toEqual({
+            type: 'USE',
+            key: 'variant',
+            value: 'CHAT',
+        });
+        expect(parseCommand('use `CHAT`')).toEqual({
+            type: 'USE',
+            key: 'variant',
+            value: 'CHAT',
+        });
+    });
+
+    it('should fail parsing USE command', () => {
+        expect(() => parseCommand('use wet')).toThrowError();
+        expect(() => parseCommand('use {script}')).toThrowError();
+    });
+
+    it('should parse PTP_VERSION command', () => {
+        expect(parseCommand('ptp version 1.0.0')).toEqual({
+            type: 'PTP_VERSION',
+            ptpVersion: '1.0.0',
+        });
+    });
+
+    // TODO: Also test invalid PTP_VERSION command
+
+    it('should parse PARAMETER command', () => {
+        expect(parseCommand('input parameter {name} Name for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: true,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
+        expect(parseCommand('input parameter {name}')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: true,
+            parameterName: 'name',
+            parameterDescription: null,
+        });
+        expect(parseCommand('input parameter {name}          ')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: true,
+            parameterName: 'name',
+            parameterDescription: null,
+        });
+        expect(parseCommand('param {name} Name for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
+        expect(parseCommand('OUTPUT param {name} Name for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
+        expect(parseCommand('parameter {name}        Name for the hero         ')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: 'Name for the hero',
+        });
+        expect(parseCommand('parameter {name} **Name** for the hero')).toEqual({
+            type: 'PARAMETER',
+            isInputParameter: false,
+            parameterName: 'name',
+            parameterDescription: '**Name** for the hero',
+        });
+    });
+
+    it('should fail parsing PARAMETER command', () => {
+        expect(() => parseCommand('parameter {name}')).toThrowError();
+        expect(() => parseCommand('parameter {name} {name}')).toThrowError();
+        expect(() => parseCommand('parameter {name} {name} Name for the hero')).toThrowError();
+        expect(() => parseCommand('parameter {name} Name for the hero {name}')).toThrowError();
+        expect(() => parseCommand('parameter {name} Name for the hero {name} Name for the hero')).toThrowError();
+        expect(() => parseCommand('parmeter {name} Name for the hero')).toThrowError();
+    });
+});
