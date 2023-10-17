@@ -1,4 +1,4 @@
-import { string_name, string_version } from '../../../../../../utils/typeAliases';
+import { string_markdown_text, string_name, string_version } from '../../../../../../utils/typeAliases';
 import { ExecutionType } from './ExecutionTypes';
 import { ModelRequirements } from './ModelRequirements';
 
@@ -20,18 +20,16 @@ export type Command =
           type: 'PTP_VERSION';
           ptpVersion: string_version;
       }
-    | {
-          type: 'PARAMETER';
-          parameterName: string_name;
-      }
-    | {
-          type: 'INPUT_PARAMETER';
-          parameterName: string_name;
-      }
-    | {
-          type: 'OUTPUT_PARAMETER';
-          parameterName: string_name;
-      };
+    | ParameterCommand;
+
+// TODO: !!!last Split + annotate each command
+
+export interface ParameterCommand {
+    type: 'PARAMETER';
+    isInputParameter: boolean;
+    parameterName: string_name;
+    parameterDescription: string_markdown_text;
+}
 
 /**
  * TODO: [🧠] Best ACRY "param" vs "parameter"
