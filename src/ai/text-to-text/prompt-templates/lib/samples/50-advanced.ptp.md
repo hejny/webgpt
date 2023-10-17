@@ -11,7 +11,7 @@ Trying the language capabilities of GPT models.
 
 ## Synonym
 
-Synonym for {word}
+Synonym for word
 
 ```prompttemplate
 Write synonym for "{word}"
@@ -27,11 +27,11 @@ Write synonym for "{word}"
 removeQuotes(wordSynonymRaw);
 ```
 
-`-> {wordSynonym}` Synonym for {word}
+`-> {wordSynonym}` Synonym for word
 
 ## Sentence with Synonym
 
-Sentence with {word} and {wordSynonym}
+Sentence with word and wordSynonym
 
 -   Execute prompt template <!-- This is the default -->
 
@@ -39,7 +39,7 @@ Sentence with {word} and {wordSynonym}
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
-`-> {sentenceWithTwoSynonyms}` Sentence with {word} and {wordSynonym}
+`-> {sentenceWithTwoSynonyms}` Sentence with word and wordSynonym
 
 ## Sentence without original word
 
@@ -61,14 +61,14 @@ Remove word "{word}" from sentence and modify it so that it makes sense:
 
 ```
 
-`-> {sentenceWithOriginalWordRemoved}` Sentence "{sentenceWithTwoSynonyms}" without "{word}"
+`-> {sentenceWithOriginalWordRemoved}` Sentence with both synomyms but without a original word
 
 ## Comparison
 
 Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRemoved}".
 
 -   Use Chat
--   Use GPT-4
+<!-- TODO: [🌚]> -   Use GPT-4 -->
 -   Execute prompt template <!-- This is the default -->
 
 ```prompttemplate

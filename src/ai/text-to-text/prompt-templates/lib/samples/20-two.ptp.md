@@ -6,7 +6,7 @@ Show how to use two consecutive prompts with one param each.
 
 ## Synonym
 
-Synonym for {word}
+Synonym for word
 
 ```prompttemplate
 Write synonym for "{word}"
@@ -16,7 +16,7 @@ Write synonym for "{word}"
 
 ## Sentence
 
-Sentence with {word} and {wordSynonym}
+Sentence with word and wordSynonym
 
 ```prompttemplate
 Write sentence with "{word}" and "{wordSynonym}" in it

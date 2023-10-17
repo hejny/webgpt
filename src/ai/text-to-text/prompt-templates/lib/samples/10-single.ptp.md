@@ -6,7 +6,7 @@ Show how to use a simple prompt with one param.
 
 ## Synonym
 
-Synonym for {word}
+Synonym for word
 
 ```prompttemplate
 Write synonym for "{word}"
