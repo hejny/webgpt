@@ -45,25 +45,28 @@ export function promptTemplatePipelineStringToJson(
         if (
             existingParameter &&
             existingParameter.description &&
-            existingParameter.description !== parameterDescription
+            existingParameter.description !== parameterDescription &&
+            parameterDescription
         ) {
             throw new Error(
                 spaceTrim(
                     (block) => `
-                        Parameter {${name}} is defined multiple times with different description.
+                        Parameter {${parameterName}} is defined multiple times with different description.
 
                         First definition:
-                        ${block(existingParameter.description!)}
+                        ${block(existingParameter.description || '[undefined]')}
 
                         Second definition:
-                        ${block(parameterDescription!)}
+                        ${block(parameterDescription || '[undefined]')}
                     `,
                 ),
             );
         }
 
         if (existingParameter) {
-            existingParameter.description = parameterDescription || undefined;
+            if (parameterDescription) {
+                existingParameter.description = parameterDescription;
+            }
         } else {
             ptpJson.parameters.push({
                 name: parameterName,
@@ -219,7 +222,7 @@ export function promptTemplatePipelineStringToJson(
         }
 
         const lastLine = section.content.split('\n').pop()!;
-        const match = /^\-\>\s*\{(?<resultingParamName>[a-z0-9_]+)\}\s*$/im.exec(lastLine);
+        const match = /^\-\>\s*\{(?<resultingParamName>[a-z0-9_]+)\}/im.exec(lastLine);
         if (!match || match.groups === undefined || match.groups.resultingParamName === undefined) {
             throw new Error(
                 spaceTrim(
