@@ -6,7 +6,7 @@ import { DEFAULT_MODEL_REQUIREMENTS, PTP_VERSION } from '../config';
 import { ParameterCommand } from '../types/Command';
 import { ExecutionType } from '../types/ExecutionTypes';
 import { ModelRequirements } from '../types/ModelRequirements';
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 import { ScriptLanguage, SUPPORTED_SCRIPT_LANGUAGES } from '../types/ScriptLanguage';
 import { countMarkdownStructureDeepness } from '../utils/markdown-json/countMarkdownStructureDeepness';

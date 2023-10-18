@@ -1,4 +1,4 @@
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
 
 /**
  * Validates PromptTemplatePipelineJson if it is logically valid.

@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { string_file_path } from '../../../../../../utils/typeAliases';
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 
 /**
