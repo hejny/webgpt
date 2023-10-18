@@ -11,7 +11,9 @@ import { replaceParams } from '../utils/replaceParams';
  */
 export class PromptTemplate<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams> {
     public constructor(
-        private readonly source: string_prompt & string_template /* <- TODO: Just one helper type */,
+        // TODO: [🧠] Maybe> private readonly inputParameters: Set<PromptTemplatePipelineJsonParameter | { isInput: true }>,
+        // TODO: [🧠] Maybe> private readonly outputParameters: Set<PromptTemplatePipelineJsonParameter | { isInput: false }>,
+        private readonly content: string_prompt & string_template /* <- TODO: Just one helper type */,
         public readonly modelRequirements: ModelRequirements,
     ) {}
 
@@ -23,7 +25,7 @@ export class PromptTemplate<TInputParams extends PromptTemplateParams, TOutputPa
      */
     public writePrompt(params: PromptTemplateParams): Prompt {
         return {
-            request: replaceParams(this.source, params),
+            request: replaceParams(this.content, params),
             modelRequirements: this.modelRequirements,
         };
     }

@@ -1,7 +1,8 @@
-import { string_attribute } from '../../../../../../utils/typeAliases';
+import { string_name } from '../../../../../../utils/typeAliases';
 import { validatePromptTemplatePipelineJson } from '../conversion/validatePromptTemplatePipelineJson';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineJsonParameter } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonParameter';
 import { PromptTemplate } from './PromptTemplate';
 
 /**
@@ -33,6 +34,7 @@ export class PromptTemplatePipeline<
         validatePromptTemplatePipelineJson(source);
 
         return new PromptTemplatePipeline(
+            Object.fromEntries(source.parameters.map((parameter) => [parameter.name, parameter])),
             source.promptTemplates.map(({ modelRequirements, content, resultingParameterName }) => ({
                 promptTemplate: new PromptTemplate(content, modelRequirements),
                 resultingParameterName,
@@ -41,6 +43,7 @@ export class PromptTemplatePipeline<
     }
 
     private constructor(
+        private readonly parameters: Record<string_name, PromptTemplatePipelineJsonParameter>,
         private readonly promptTemplates: Array<{
             //                                <- TODO: Constrain this types such as it must contain at least one element
             //                                                                   and first one should have TInputParams
@@ -62,17 +65,20 @@ export class PromptTemplatePipeline<
     }
 
     /**
-     * Gets the name of the param that is the result of given prompt template
+     * !!! Gets the name of the param that is the result of given prompt template
      */
-    public getResultingParamName(
+    public getResultingParameter(
         curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
-    ): string_attribute {
+    ): PromptTemplatePipelineJsonParameter {
         const index = this.promptTemplates.findIndex(({ promptTemplate }) => promptTemplate === curentPromptTemplate);
         if (index === -1) {
             throw new Error(`Prompt template is not in this pipeline`);
         }
 
-        return this.promptTemplates[index]!.resultingParameterName;
+        const resultingParameterName = this.promptTemplates[index]!.resultingParameterName;
+        const resultingParameter = this.parameters[resultingParameterName]!;
+
+        return resultingParameter;
     }
 
     /**
@@ -95,6 +101,7 @@ export class PromptTemplatePipeline<
 }
 
 /**
+ * TODO: !!! ACRY PTP Rename param -> parameter
  * TODO: !! Add generic type for entry and result params
  * TODO: Can be Array elegantly typed such as it must have at least one element?
  * TODO: [🧠] Each PromptTemplatePipeline should have its unique hash to be able to compare them and execute on server ONLY the desired ones
