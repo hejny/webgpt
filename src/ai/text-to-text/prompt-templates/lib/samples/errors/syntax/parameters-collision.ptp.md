@@ -20,4 +20,4 @@ Synonym for word
 Write synonym for "{word}"
 ```
 
-`-> {word}` another word
+`-> {word}` another word with different description

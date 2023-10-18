@@ -1,2 +1,2 @@
 TODO: Maybe add more error samples
-TODO: Split between syntax and logic
+TODO: Make custom error types PtpSyntaxError and PtpLogicError

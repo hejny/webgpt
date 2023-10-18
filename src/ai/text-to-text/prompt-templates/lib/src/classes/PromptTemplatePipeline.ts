@@ -1,7 +1,7 @@
 import { string_attribute } from '../../../../../../utils/typeAliases';
+import { validatePromptTemplatePipelineJson } from '../conversion/validatePromptTemplatePipelineJson';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
-import { isPromptTemplatePipelineJsonValid } from '../validation/isPromptTemplatePipelineSourceValid';
 import { PromptTemplate } from './PromptTemplate';
 
 /**
@@ -30,14 +30,12 @@ export class PromptTemplatePipeline<
     public static fromJson<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams>(
         source: PromptTemplatePipelineJson,
     ): PromptTemplatePipeline<TInputParams, TOutputParams> {
-        if (!isPromptTemplatePipelineJsonValid(source)) {
-            // TODO: Better error message - maybe even error from isPromptTemplatePipelineSourceValid -> validatePromptTemplatePipelineSource
-            throw new Error('Invalid propmt template pipeline source');
-        }
+        validatePromptTemplatePipelineJson(source);
+
         return new PromptTemplatePipeline(
-            source.promptTemplates.map(({ modelRequirements, promptTemplate, resultingParamName }) => ({
+            source.promptTemplates.map(({ modelRequirements, promptTemplate, resultingParameterName }) => ({
                 promptTemplate: new PromptTemplate(promptTemplate, modelRequirements),
-                resultingParamName,
+                resultingParameterName,
             })),
         );
     }
@@ -48,7 +46,7 @@ export class PromptTemplatePipeline<
             //                                                                   and first one should have TInputParams
             //                                                                   and last one should have TOutputParams
             promptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>;
-            resultingParamName: string;
+            resultingParameterName: string;
         }>,
     ) {
         if (promptTemplates.length === 0) {
@@ -74,7 +72,7 @@ export class PromptTemplatePipeline<
             throw new Error(`Prompt template is not in this pipeline`);
         }
 
-        return this.promptTemplates[index]!.resultingParamName;
+        return this.promptTemplates[index]!.resultingParameterName;
     }
 
     /**

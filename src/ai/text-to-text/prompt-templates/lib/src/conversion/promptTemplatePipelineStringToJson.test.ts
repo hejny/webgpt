@@ -1,10 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
-import { readFileSync } from 'fs';
-import { join } from 'path';
-import { string_file_path } from '../../../../../../utils/typeAliases';
-import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson';
-import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
+import { importPtp } from './_importPtp';
 
 describe('promptTemplatePipelineStringToJson', () => {
     it('should parse simple promptTemplatePipeline', () => {
@@ -43,68 +39,38 @@ describe('promptTemplatePipelineStringToJson', () => {
 
     it('fail on invalid language block', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/invalid-language.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/invalid-language.ptp.md')),
         ).toThrowError();
     });
     it('fail on missing block on prompt template', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/missing-block.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-block.ptp.md')),
         ).toThrowError();
     });
     it('fail on missing return declaration', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/missing-return-1.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-return-1.ptp.md')),
         ).toThrowError();
     });
     it('fail on invalid return declaration', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/missing-return-2.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-return-2.ptp.md')),
         ).toThrowError();
     });
     it('fail on multiple prompts in one prompt template', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/multiple-blocks.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/multiple-blocks.ptp.md')),
         ).toThrowError();
     });
     it('fail on lack of structure ', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/no-heading.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/no-heading.ptp.md')),
         ).toThrowError();
     });
-
-    /*
-    Note: This is a logic error, not syntax error
-    it('fail on using parameter before defining', () => {
-        expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/parameter-used-before-defining.ptp.md')),
-        ).toThrowError();
-    });
-    */
 
     it('fail on parameters collision', () => {
         expect(() =>
-            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/parameters-collision.ptp.md')),
+            promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/parameters-collision.ptp.md')),
         ).toThrowError();
     });
 });
-
-/**
- * Import the text file
- *
- * Note: Using here custom import to work in jest tests
- * Note: Using sync version is 💩 in the production code, but it's ok here in tests
- *
- * @private
- */
-function importPtp(path: `${string}.ptp.md`): PromptTemplatePipelineString;
-function importPtp(path: `${string}.ptp.json`): PromptTemplatePipelineJson;
-function importPtp(path: string_file_path): PromptTemplatePipelineString | PromptTemplatePipelineJson {
-    const content = readFileSync(join(__dirname, path), 'utf-8');
-    if (path.endsWith('.ptp.json')) {
-        return JSON.parse(content) as PromptTemplatePipelineJson;
-    } else if (path.endsWith('.ptp.md')) {
-        return content as PromptTemplatePipelineString;
-    } else {
-        throw new Error(`This should be used only for .ptp.md or .ptp.json files`);
-    }
-}

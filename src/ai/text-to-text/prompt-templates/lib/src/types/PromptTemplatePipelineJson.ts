@@ -27,7 +27,7 @@ export interface PromptTemplatePipelineJson {
         title: string;
         description?: string;
         executionType: ExecutionType;
-        modelRequirements?: ModelRequirements;
+        modelRequirements: ModelRequirements;
         scriptLanguage?: ScriptLanguage /* <- TODO: Better type that require scriptLanguage for executionType SCRIPT */;
         promptTemplate: (string_prompt | string_javascript | string_markdown) &
             string_template /* <- TODO: Just one helper type */;
