@@ -3,8 +3,25 @@ import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStri
 import { validatePromptTemplatePipelineJson } from './validatePromptTemplatePipelineJson';
 import { importPtp } from './_importPtp';
 
-describe('promptTemplatePipelineStringToJson', () => {
-    it('fail on using parameter before defining', () => {
+describe('validatePromptTemplatePipelineJson', () => {
+    it('should work in valid samples', () => {
+        for (const path of [
+            '../../samples/00-simple.ptp.md',
+            '../../samples/05-comment.ptp.md',
+            '../../samples/10-single.ptp.md',
+            '../../samples/20-two.ptp.md',
+            '../../samples/30-escaping.ptp.md',
+            '../../samples/50-advanced.ptp.md',
+        ] as const) {
+            expect(() => {
+                const ptpString = importPtp(path);
+                const ptpJson = promptTemplatePipelineStringToJson(ptpString);
+                validatePromptTemplatePipelineJson(ptpJson);
+            }).not.toThrowError();
+        }
+    });
+
+    it('should fail on using parameter before defining', () => {
         expect(() => {
             const ptpString = importPtp('../../samples/errors/logic/parameter-used-before-defining.ptp.md');
             const ptpJson = promptTemplatePipelineStringToJson(ptpString);
