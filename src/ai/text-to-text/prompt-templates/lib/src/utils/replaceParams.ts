@@ -27,7 +27,7 @@ export function replaceParams(template: string_template, params: {}): string {
                 throw new Error(`Parameter is not opened`);
             }
             if (paramsChecked[openedParamName] === undefined) {
-                throw new Error(`Parameter "${openedParamName}" is not defined`);
+                throw new Error(`Parameter {${openedParamName}} is not defined`);
             }
             result += paramsChecked[openedParamName];
             openedParamName = null;

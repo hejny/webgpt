@@ -156,8 +156,8 @@ export function parseCommand(listItem: string_markdown_text): Command {
                     - Execute
                     - Use
                     - Parameter
-                    - Input Parameter
-                    - Output Parameter
+                    - Input parameter
+                    - Output parameter
                     - PTP Version
                 `,
             ),
