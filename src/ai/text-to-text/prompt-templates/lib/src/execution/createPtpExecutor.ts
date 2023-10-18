@@ -33,14 +33,12 @@ export function createPtpExecutor<
         let currentPtp: PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
-            const resultingParamName = ptp.getResultingParamName(currentPtp!);
+            const { name, description } = ptp.getResultingParameter(currentPtp!);
 
             if (onProgress) {
                 await onProgress({
-                    name: `ptp-executor-frame-${resultingParamName}`,
-                    title: `Copywriting ${
-                        resultingParamName /* <- TODO: !!! Use real title + make looking good together with other tasks on new screen */
-                    }`,
+                    name: `ptp-executor-frame-${name}`,
+                    title: `🖋 ${description}`,
                     isDone: false,
                 });
             }
@@ -63,14 +61,14 @@ export function createPtpExecutor<
 
             if (onProgress) {
                 onProgress({
-                    name: `ptp-executor-frame-${resultingParamName}`,
+                    name: `ptp-executor-frame-${name}`,
                     isDone: true,
                 });
             }
 
             paramsToPass = {
                 ...paramsToPass,
-                [resultingParamName]: response /* <- TODO: Detect param collision here */,
+                [name]: response /* <- TODO: Detect param collision here */,
             };
 
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!);

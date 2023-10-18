@@ -65,7 +65,7 @@ export class PromptTemplatePipeline<
     }
 
     /**
-     * !!! Gets the name of the param that is the result of given prompt template
+     * Gets the parameter that is the result of given prompt template
      */
     public getResultingParameter(
         curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
