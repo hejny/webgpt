@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { classNames } from '../../../utils/classNames';
 import { Hint } from '../../Hint/Hint';
+import { WallpaperLink } from '../../WallpaperLink/WallpaperLink';
 import styles from '../ControlPanel.module.css';
 import { useRandomWallpaper } from './useRandomWallpaper';
 
@@ -29,12 +29,10 @@ export function RandomWallpaperButton() {
 
     return (
         <Hint id="control-next" title="Show next page" reapearCount={5}>
-            <Link
+            <WallpaperLink
                 className={classNames(/*'button',*/ styles.button)}
-                href={`/${randomWallpaper.id}`}
-                /* Note: Keeping prefetch because we want to be this as-fast-as-possible
-                     + We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager
-            */
+                wallpaperId={randomWallpaper.id}
+                // Note:  We are doing extra prefetching in the background of the wallpaper image in randomWallpaperManager on top of the next/link prefetching
 
                 onClick={consumeRandomWallpaper}
                 style={
@@ -50,7 +48,7 @@ export function RandomWallpaperButton() {
 
                 <Image alt="⏭" src="/icons/openmoji/23ED.black.svg" width={40} height={40} /* <-[🧥] */ />
                 {/*  <MarkdownContent content="🎲" isUsingOpenmoji /> */}
-            </Link>{' '}
+            </WallpaperLink>
         </Hint>
     );
 }
