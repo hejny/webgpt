@@ -5,6 +5,12 @@
         "description": "Immediately Invoked Function Expression",
         "body": ["((async ()=>{/*Do some stuff*/})())"]
     },
+    "catch": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "Catch error instanceof Error",
+        "description": "Immediately Invoked Function Expression",
+        "body": ["if (!(error instanceof Error)) {", "    throw error;", "}"]
+    },
     "eslint-disable": {
         "scope": "typescript,typescriptreact",
         "prefix": "Disable ES Lint",

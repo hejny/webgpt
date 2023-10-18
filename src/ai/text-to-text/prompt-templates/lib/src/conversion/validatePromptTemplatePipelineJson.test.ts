@@ -1,4 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
+import spaceTrim from 'spacetrim';
 import { promptTemplatePipelineStringToJson } from './promptTemplatePipelineStringToJson';
 import { validatePromptTemplatePipelineJson } from './validatePromptTemplatePipelineJson';
 import { importPtp } from './_importPtp';
@@ -14,9 +15,27 @@ describe('validatePromptTemplatePipelineJson', () => {
             '../../samples/50-advanced.ptp.md',
         ] as const) {
             expect(() => {
-                const ptpString = importPtp(path);
-                const ptpJson = promptTemplatePipelineStringToJson(ptpString);
-                validatePromptTemplatePipelineJson(ptpJson);
+                try {
+                    const ptpString = importPtp(path);
+                    const ptpJson = promptTemplatePipelineStringToJson(ptpString);
+                    validatePromptTemplatePipelineJson(ptpJson);
+                } catch (error) {
+                    if (!(error instanceof Error)) {
+                        throw error;
+                    }
+
+                    throw new Error(
+                        spaceTrim(
+                            (block) => `
+                    
+                                Error in ${path}:
+                                
+                                ${block((error as Error).message)}
+                            
+                            `,
+                        ),
+                    );
+                }
             }).not.toThrowError();
         }
     });

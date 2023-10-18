@@ -3,6 +3,7 @@
 Show how to use two consecutive prompts with one param each.
 
 -   PTP version 1.0.0
+-   Input parameter `{word}` Any single word
 
 ## Synonym
 

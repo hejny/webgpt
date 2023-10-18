@@ -14,15 +14,29 @@ import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson'
  * @throws {Error} if invalid
  */
 export function validatePromptTemplatePipelineJson(ptp: PromptTemplatePipelineJson): void {
-    if (typeof ptp !== 'object') {
-        throw new Error(`Prompt template pipeline must be an object`);
-    }
-    if (Array.isArray(ptp)) {
-        throw new Error(`Prompt template pipeline must have promptTemplates property`);
+    const definedParameters: Set<string> = new Set(
+        ptp.parameters.filter(({ isInput }) => isInput).map(({ name }) => name),
+    );
+
+    for (const template of ptp.promptTemplates) {
+        for (const match of Array.from(template.promptTemplate.matchAll(/\{(?<parameterName>[a-z0-9_]+)\}/gi))) {
+            const parameterName = match!.groups!.parameterName!;
+
+            if (!definedParameters.has(parameterName)) {
+                throw new Error(`Parameter {${template.resultingParameterName}} is not defined before its usage`);
+            }
+        }
+
+        if (definedParameters.has(template.resultingParameterName)) {
+            throw new Error(`Parameter {${template.resultingParameterName}} is defined multiple times`);
+        }
+
+        definedParameters.add(template.resultingParameterName);
     }
 }
 
 /**
+ * TODO: [🧠] Work with ptpVersion
  * TODO: Use here some json-schema, Zod or something similar and change it to:
  *     > /**
  *     >  * Validates PromptTemplatePipelineJson if it is logically valid.
