@@ -6,7 +6,7 @@ import { PromptTemplatePipelineString } from '../../../types/PromptTemplatePipel
 import { createPtpExecutor } from '../../createPtpExecutor';
 import { MockedEchoExecutionTools } from './MockedEchoExecutionTools';
 
-describe('MockedEchoExecutionTools', () => {
+describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt', () => {
     const ptpJson = promptTemplatePipelineStringToJson(
         spaceTrim(`
             # Sample prompt
