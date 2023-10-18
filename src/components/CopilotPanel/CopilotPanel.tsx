@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
@@ -310,15 +311,19 @@ export function CopilotPanel() {
                             </WallpaperLink>
                         </li>
                         <li>
+                            <Link href="/">Make new web</Link>
+                        </li>
+                        <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>
                         </li>
+
                         {/*
                         TODO: !! The menu should be like this: 
 
                         - [x] Show as visitor
                         - [~] Share
                         - [x] Get the web
-                        - [ ] Edit
+                        - [x] Edit
                         - [ ] - advanced prompting
                         - [ ] - colors
                         - [ ] - content
