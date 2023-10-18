@@ -2,6 +2,11 @@
     "ptpVersion": "1.0.0",
     "parameters": [
         {
+            "name": "word",
+            "description": "Any single word",
+            "isInput": true
+        },
+        {
             "name": "wordSynonym",
             "isInput": false
         },
