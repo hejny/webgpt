@@ -101,7 +101,6 @@ export class PromptTemplatePipeline<
 }
 
 /**
- * TODO: !!! ACRY PTP Rename param -> parameter
  * TODO: !! Add generic type for entry and result params
  * TODO: Can be Array elegantly typed such as it must have at least one element?
  * TODO: [🧠] Each PromptTemplatePipeline should have its unique hash to be able to compare them and execute on server ONLY the desired ones

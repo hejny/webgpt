@@ -93,7 +93,7 @@ describe('how parseCommand works', () => {
     });
 
     it('should parse PARAMETER command', () => {
-        expect(parseCommand('param {name} Name for the hero')).toEqual({
+        expect(parseCommand('parameter {name} Name for the hero')).toEqual({
             type: 'PARAMETER',
             isInputParameter: false,
             parameterName: 'name',
@@ -136,7 +136,7 @@ describe('how parseCommand works', () => {
             parameterDescription: null,
         });
 
-        expect(parseCommand('OUTPUT param {name} Name for the hero')).toEqual({
+        expect(parseCommand('OUTPUT parameter {name} Name for the hero')).toEqual({
             type: 'PARAMETER',
             isInputParameter: false,
             parameterName: 'name',

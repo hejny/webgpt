@@ -1,6 +1,6 @@
 # Sample prompt
 
-Show how to use a simple prompt with one param.
+Show how to use a simple prompt with one parameter.
 
 -   PTP version 1.0.0
 -   Input parameter `{word}` Any single word

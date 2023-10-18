@@ -1,14 +1,16 @@
-import { string_markdown } from "../../../../../../../utils/typeAliases";
+import { string_markdown } from '../../../../../../../utils/typeAliases';
 
 /**
  * Extracts all code blocks from markdown.
  *
  * @param markdown any valid markdown
  * @returns code blocks with language and content
- * 
+ *
  * @private within the library
  */
-export function extractBlocksFromMarkdown(markdown: string_markdown): Array<{ language: string | null; content: string }> {
+export function extractBlocksFromMarkdown(
+    markdown: string_markdown,
+): Array<{ language: string | null; content: string }> {
     const codeBlocks: { language: string | null; content: string }[] = [];
     const lines = markdown.split('\n');
 

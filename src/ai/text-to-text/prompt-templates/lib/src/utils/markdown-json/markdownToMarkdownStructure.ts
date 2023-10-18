@@ -9,7 +9,7 @@ import { MarkdownStructure } from './MarkdownStructure';
  *
  * @param markdown The markdown string to parse.
  * @returns The MarkdownStructure object.
- * 
+ *
  * @private within the library
  */
 export function markdownToMarkdownStructure(markdown: string): MarkdownStructure {
@@ -49,8 +49,6 @@ export function markdownToMarkdownStructure(markdown: string): MarkdownStructure
                     parent = parent.parent;
                 }
             }
-
-           
 
             const section = { level, title, contentLines: [], sections: [], parent };
             parent.sections.push(section);

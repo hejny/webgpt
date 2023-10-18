@@ -50,7 +50,3 @@ export interface ParameterCommand {
     parameterName: string_name;
     parameterDescription: string_markdown_text | null;
 }
-
-/**
- * TODO: [🧠] Best ACRY "param" vs "parameter"
- */

@@ -68,7 +68,7 @@ export function createPtpExecutor<
 
             paramsToPass = {
                 ...paramsToPass,
-                [name]: response /* <- TODO: Detect param collision here */,
+                [name]: response /* <- TODO: Detect parameter collision here */,
             };
 
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!);

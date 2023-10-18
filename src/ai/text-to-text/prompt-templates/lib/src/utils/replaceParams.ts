@@ -19,15 +19,15 @@ export function replaceParams(template: string_template, params: {}): string {
     for (const char of template.split('')) {
         if (char === '{') {
             if (openedParamName !== null) {
-                throw new Error(`Param is already opened`);
+                throw new Error(`Parameter is already opened`);
             }
             openedParamName = '';
         } else if (char === '}') {
             if (openedParamName === null) {
-                throw new Error(`Param is not opened`);
+                throw new Error(`Parameter is not opened`);
             }
             if (paramsChecked[openedParamName] === undefined) {
-                throw new Error(`Param "${openedParamName}" is not defined`);
+                throw new Error(`Parameter "${openedParamName}" is not defined`);
             }
             result += paramsChecked[openedParamName];
             openedParamName = null;
@@ -39,7 +39,7 @@ export function replaceParams(template: string_template, params: {}): string {
     }
 
     if (openedParamName !== null) {
-        throw new Error(`Param is not closed`);
+        throw new Error(`Parameter is not closed`);
     }
 
     return result;

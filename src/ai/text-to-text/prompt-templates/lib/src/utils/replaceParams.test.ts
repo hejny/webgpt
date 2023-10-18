@@ -13,15 +13,15 @@ describe('replaceParams', () => {
         expect(replaceParams('Hello world', {})).toBe('Hello world');
     });
 
-    it('should replace param at the end', () => {
+    it('should replace parameter at the end', () => {
         expect(replaceParams('Hello {name}', { name: 'world' })).toBe('Hello world');
     });
 
-    it('should replace param in the middle', () => {
+    it('should replace parameter in the middle', () => {
         expect(replaceParams('Hello {name}, how are you?', { name: 'world' })).toBe('Hello world, how are you?');
     });
 
-    it('should replace param at the beginning', () => {
+    it('should replace parameter at the beginning', () => {
         expect(replaceParams('{name}, how are you?', { name: 'world' })).toBe('world, how are you?');
     });
 
@@ -31,7 +31,7 @@ describe('replaceParams', () => {
         );
     });
 
-    it('should replace same param multiple times', () => {
+    it('should replace same parameter multiple times', () => {
         expect(
             replaceParams('{greeting} {name}, how are you? {greeting} {name}', { greeting: 'Hello', name: 'world' }),
         ).toBe('Hello world, how are you? Hello world');
@@ -56,23 +56,23 @@ describe('replaceParams', () => {
         );
     });
 
-    it('should throw error when param is not defined', () => {
+    it('should throw error when parameter is not defined', () => {
         expect(() => replaceParams('{greeting} {name}, how are you?', { greeting: 'Hello' })).toThrowError(
-            'Param "name" is not defined',
+            'Parameter "name" is not defined',
         );
     });
 
-    it('should throw error when param is not closed', () => {
+    it('should throw error when parameter is not closed', () => {
         expect(() => replaceParams('Hello {name', { name: 'world' })).toThrowError();
     });
 
-    it('should throw error when param is not opened', () => {
+    it('should throw error when parameter is not opened', () => {
         expect(() =>
             replaceParams('greeting} {name}, how are you?', { greeting: 'Hello', name: 'world' }),
         ).toThrowError();
     });
 
-    it('should throw error when param is embeded in another param', () => {
+    it('should throw error when parameter is embeded in another parameter', () => {
         expect(() =>
             replaceParams('{greeting {name}}, how are you?', { greeting: 'Hello', name: 'world' }),
         ).toThrowError();
