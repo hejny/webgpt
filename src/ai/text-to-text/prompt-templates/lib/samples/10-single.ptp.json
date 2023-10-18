@@ -13,12 +13,13 @@
     ],
     "promptTemplates": [
         {
+            "name": "Synonym",
             "title": "Synonym",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "promptTemplate": "Write synonym for \"{word}\"",
+            "content": "Write synonym for \"{word}\"",
             "resultingParameterName": "wordSynonym"
         }
     ]

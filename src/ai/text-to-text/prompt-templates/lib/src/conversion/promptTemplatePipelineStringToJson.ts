@@ -1,3 +1,4 @@
+import { normalizeTo_PascalCase } from 'n12';
 import spaceTrim from 'spacetrim';
 import { Writable } from 'type-fest';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
@@ -195,11 +196,12 @@ export function promptTemplatePipelineStringToJson(
         const resultingParameterName = match.groups.resultingParamName;
 
         ptpJson.promptTemplates.push({
+            name: normalizeTo_PascalCase(section.title),
             title: section.title,
             executionType,
             modelRequirements: templateModelRequirements,
-            scriptLanguage: executionType === 'SCRIPT' ? (language as ScriptLanguage) : undefined,
-            promptTemplate: content,
+            contentLanguage: executionType === 'SCRIPT' ? (language as ScriptLanguage) : undefined,
+            content: content,
             resultingParameterName,
         });
     }

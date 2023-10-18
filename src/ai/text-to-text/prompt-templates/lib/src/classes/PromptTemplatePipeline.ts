@@ -33,8 +33,8 @@ export class PromptTemplatePipeline<
         validatePromptTemplatePipelineJson(source);
 
         return new PromptTemplatePipeline(
-            source.promptTemplates.map(({ modelRequirements, promptTemplate, resultingParameterName }) => ({
-                promptTemplate: new PromptTemplate(promptTemplate, modelRequirements),
+            source.promptTemplates.map(({ modelRequirements, content, resultingParameterName }) => ({
+                promptTemplate: new PromptTemplate(content, modelRequirements),
                 resultingParameterName,
             })),
         );

@@ -21,23 +21,88 @@ import { ScriptLanguage } from './ScriptLanguage';
  * @see https://github.com/hejny/ptp#prompt-template-pipeline
  */
 export interface PromptTemplatePipelineJson {
+    /**
+     * Version of the .ptp.json file
+     */
     ptpVersion: string_version;
-    parameters: Array<{ name: string; isInput: boolean; description?: string }>;
-    promptTemplates: Array<{
-        title: string;
+
+    /**
+     * List of variables that are used across the pipeline
+     */
+    parameters: Array<{
+        /**
+         * Name of the parameter
+         * - It must be unique across the pipeline
+         * - It should start lowercase and contain letters and numbers
+         */
+        name: string;
+
+        /**
+         * The parameter is input of the pipeline
+         *
+         * Note: Output parameter is every parameter including input one
+         */
+        isInput: boolean;
+
+        /**
+         * Description of the parameter
+         * - It can use simple markdown formatting like **bold**, *italic*, [link](https://example.com), ... BUT not code blocks and structure
+         */
         description?: string;
+    }>;
+    promptTemplates: Array<{
+        /**
+         * Name of the parameter
+         * - It must be unique across the pipeline
+         * - It should start uppercase and contain letters and numbers
+         */
+        name: string;
+
+        /**
+         * Title of the prompt template
+         * - It can use simple markdown formatting like **bold**, *italic*, [link](https://example.com), ... BUT not code blocks and structure
+         */
+        title: string;
+
+        /**
+         * Description of the prompt template
+         * - It can use multiple paragraphs of simple markdown formatting like **bold**, *italic*, [link](https://example.com), ... BUT not code blocks and structure
+         */
+        description?: string;
+
+        /**
+         * Type of the execution
+         * This determines if the prompt template is send to LLM, user or some scripting evaluation
+         */
         executionType: ExecutionType;
+
+        /**
+         * Requirements for the model
+         * - This is required only for executionType PROMPT_TEMPLATE
+         */
         modelRequirements: ModelRequirements;
 
-        // TODO: !!!! Rename to content and contentLanguage
-        scriptLanguage?: ScriptLanguage /* <- TODO: Better type that require scriptLanguage for executionType SCRIPT */;
-        promptTemplate: (string_prompt | string_javascript | string_markdown) &
-            string_template /* <- TODO: Just one helper type */;
+        /**
+         * Language of the script
+         * - This is required only for executionType SCRIPT
+         *
+         */
+        contentLanguage?: ScriptLanguage;
+
+        /**
+         * Content of the template with {placeholders} for parameters
+         */
+        content: (string_prompt | string_javascript | string_markdown) & string_template;
+
+        /**
+         * Name of the parameter that is the result of the prompt template
+         */
         resultingParameterName: string;
     }>;
 }
 
 /**
+ * TODO: Better type that require scriptLanguage for executionType SCRIPT
  * TODO: [🧠] Best format of this code?
  *             There must be possible to make
  *             - Branching
@@ -45,4 +110,5 @@ export interface PromptTemplatePipelineJson {
  *             - Paralelization
  *             - ...and more
  * TODO: This is a cornerstone of .promptTemplatePipeline.json file
+ * TODO: ust one helper type> (string_prompt | string_javascript | string_markdown) & string_template
  */

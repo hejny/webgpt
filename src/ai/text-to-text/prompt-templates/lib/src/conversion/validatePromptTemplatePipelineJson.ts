@@ -19,7 +19,7 @@ export function validatePromptTemplatePipelineJson(ptp: PromptTemplatePipelineJs
     );
 
     for (const template of ptp.promptTemplates) {
-        for (const match of Array.from(template.promptTemplate.matchAll(/\{(?<parameterName>[a-z0-9_]+)\}/gi))) {
+        for (const match of Array.from(template.content.matchAll(/\{(?<parameterName>[a-z0-9_]+)\}/gi))) {
             const parameterName = match!.groups!.parameterName!;
 
             if (!definedParameters.has(parameterName)) {

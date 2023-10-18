@@ -38,58 +38,64 @@
     ],
     "promptTemplates": [
         {
+            "name": "Synonym",
             "title": "Synonym",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "promptTemplate": "Write synonym for \"{word}\"",
+            "content": "Write synonym for \"{word}\"",
             "resultingParameterName": "wordSynonymRaw"
         },
         {
+            "name": "UnquoteSynonym",
             "title": "Unquote synonym",
             "executionType": "SCRIPT",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "scriptLanguage": "javascript",
-            "promptTemplate": "removeQuotes(wordSynonymRaw);",
+            "contentLanguage": "javascript",
+            "content": "removeQuotes(wordSynonymRaw);",
             "resultingParameterName": "wordSynonym"
         },
         {
+            "name": "SentenceWithSynonym",
             "title": "Sentence with Synonym",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "promptTemplate": "Write sentence with \"{word}\" and \"{wordSynonym}\" in it",
+            "content": "Write sentence with \"{word}\" and \"{wordSynonym}\" in it",
             "resultingParameterName": "sentenceWithTwoSynonyms"
         },
         {
+            "name": "SentenceWithoutOriginalWord",
             "title": "Sentence without original word",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "promptTemplate": "Remove word \"{word}\" from sentence and modify it so that it makes sense:\n\n## Rules:\n\n-   Sentence must be grammatically correct\n-   Sentence must make sense after removing the word\n\n## The Sentence:\n\n> {sentenceWithTwoSynonyms}\n",
+            "content": "Remove word \"{word}\" from sentence and modify it so that it makes sense:\n\n## Rules:\n\n-   Sentence must be grammatically correct\n-   Sentence must make sense after removing the word\n\n## The Sentence:\n\n> {sentenceWithTwoSynonyms}\n",
             "resultingParameterName": "sentenceWithOriginalWordRemoved"
         },
         {
+            "name": "Comparison",
             "title": "Comparison",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "promptTemplate": "Compare meaning of thee two sentences:\n\n## Sentence 1:\n\n> {sentenceWithTwoSynonyms}\n\n## Sentence 2:\n\n> {sentenceWithOriginalWordRemoved}",
+            "content": "Compare meaning of thee two sentences:\n\n## Sentence 1:\n\n> {sentenceWithTwoSynonyms}\n\n## Sentence 2:\n\n> {sentenceWithOriginalWordRemoved}",
             "resultingParameterName": "comparisonOfTwoSentences"
         },
         {
+            "name": "Summary",
             "title": "Summary",
             "executionType": "SIMPLE_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "promptTemplate": "You have entered a word **{word}**. For this word the best synonym is **{wordSynonym}**. The sentence with both words is **{sentenceWithTwoSynonyms}**. The sentence without the original word is **{sentenceWithOriginalWordRemoved}**. And the comparison between the two sentences is:\n\n> {comparisonOfTwoSentences}",
+            "content": "You have entered a word **{word}**. For this word the best synonym is **{wordSynonym}**. The sentence with both words is **{sentenceWithTwoSynonyms}**. The sentence without the original word is **{sentenceWithOriginalWordRemoved}**. And the comparison between the two sentences is:\n\n> {comparisonOfTwoSentences}",
             "resultingParameterName": "summary"
         }
     ]
