@@ -1,6 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { Prompt } from '../../../types/Prompt';
-import { PromptChatResult } from '../../PromptResult';
+import { PromptChatResult, PromptCompletionResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 
 /**
@@ -10,7 +10,7 @@ export class MockedEchoExecutionTools implements PtpExecutionTools {
     public constructor() {}
 
     /**
-     * Calls OpenAI API to use a chat model.
+     * Mocks chat model
      */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
         return {
@@ -18,6 +18,22 @@ export class MockedEchoExecutionTools implements PtpExecutionTools {
                 (block) => `
                     You said:
                     ${block(prompt.request)}
+                `,
+            ),
+            model: `mocked-echo`,
+            // <- [🤹‍♂️]
+        };
+    }
+
+    /**
+     * Mocks completion model
+     */
+    public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
+        return {
+            response: spaceTrim(
+                (block) => `
+                    ${block(prompt.request)}
+                    And so on...
                 `,
             ),
             model: `mocked-echo`,

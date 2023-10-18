@@ -47,5 +47,5 @@ export function replaceParams(template: string_template, params: {}): string {
 
 /**
  * TODO: [🧠] More advanced templating
- * TODO: Maybe use some template engine / library not implemented own
+ * TODO: [🧠] Maybe use some template engine / library not own simple implementation
  */

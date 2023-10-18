@@ -1,5 +1,5 @@
 import { Prompt } from '../types/Prompt';
-import { PromptChatResult } from './PromptResult';
+import { PromptChatResult, PromptCompletionResult } from './PromptResult';
 
 /**
  * Execution Tools is a container for all the tools needed to execute prompts (template pipelines).
@@ -9,13 +9,15 @@ import { PromptChatResult } from './PromptResult';
  * @see https://github.com/hejny/ptp#execution-tools
  */
 export interface PtpExecutionTools {
-    // TODO: !!!> Maybe just make one variant of ->gptComplete<-/gptChat and resolve from modelRequirements
-    // TODO: !!!> gptComplete(prompt: Prompt): Promise<PromptResult>;
-
     /**
      * Use a chat model
      */
     gptChat(prompt: Prompt): Promise<PromptChatResult>;
+
+    /**
+     * Use a completion model
+     */
+    gptComplete(prompt: Prompt): Promise<PromptCompletionResult>;
 }
 
 /**

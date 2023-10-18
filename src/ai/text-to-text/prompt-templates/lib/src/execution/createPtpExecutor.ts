@@ -48,13 +48,13 @@ export function createPtpExecutor<
             let response: string;
             if (currentPtp.modelRequirements.variant === 'CHAT') {
                 const chatThread = await tools.gptChat(prompt);
+                // TODO: Use all information from chatThread like "model"
                 // TODO: [🍬] Destroy chatThread
-
                 response = chatThread.response;
             } else if (currentPtp.modelRequirements.variant === 'COMPLETION') {
-                throw new Error(`Not implemented`);
-                // const completionResult = await tools.gptComplete(prompt);
-                // response = completionResult.response;
+                const completionResult = await tools.gptComplete(prompt);
+                // TODO: Use all information from chatThread like "model"
+                response = completionResult.response;
             } else {
                 throw new Error(`Unknown model variant: ${currentPtp.modelRequirements.variant}`);
             }
