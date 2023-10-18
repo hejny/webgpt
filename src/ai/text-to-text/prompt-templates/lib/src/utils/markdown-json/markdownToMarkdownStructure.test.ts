@@ -178,18 +178,18 @@ describe('markdownToMarkdownStructure', () => {
         });
     });
 
-    it('fails when there is no structure', () => {
+    it('should fails when there is no structure', () => {
         expect(() => markdownToMarkdownStructure(``)).toThrowError();
     });
 
     /*
     TODO: [🧠] Should theese cases fail or not?
 
-    it('fails when the first heading is not h1', () => {
+    it('should fails when the first heading is not h1', () => {
         expect(() => markdownToMarkdownStructure(`## Section 1`)).toThrowError();
     });
 
-    it('fails when there is heading level mismatch', () => {
+    it('should fails when there is heading level mismatch', () => {
         expect(() =>
             markdownToMarkdownStructure(
                 spaceTrim(`

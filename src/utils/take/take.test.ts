@@ -9,13 +9,13 @@ describe('how take utility works', () => {
         return { ...o, b: o.b + 1 };
     }
 
-    it('will use take in object with one property', () => {
+    it('should use take in object with one property', () => {
         expect(take({ a: 0 }).a).toBe(0);
         expect(take({ a: 0 }).then(addOneToA).a).toBe(1);
         expect(take({ a: 0 }).then(addOneToA).then(addOneToA).then(addOneToA).then(addOneToA).a).toBe(4);
     });
 
-    it('will use take in object with multiple properties testing each value', () => {
+    it('should use take in object with multiple properties testing each value', () => {
         const { a, b } = take({ a: 0, b: 0 })
             .then(addOneToA)
             .then(addOneToA)
@@ -29,7 +29,7 @@ describe('how take utility works', () => {
         expect({ a, b }).toEqual({ a: 4, b: 5 });
     });
 
-    it('will use take in object with multiple properties accessing through the value property', () => {
+    it('should use take in object with multiple properties accessing through the value property', () => {
         expect(
             take({ a: 0, b: 0 })
                 .then(addOneToA)
@@ -44,7 +44,7 @@ describe('how take utility works', () => {
         ).toEqual({ a: 4, b: 5 });
     });
 
-    it('will use take in object with multiple properties accessing directly', () => {
+    it('should use take in object with multiple properties accessing directly', () => {
         const { a, b } = take({ a: 0, b: 0 })
             .then(addOneToA)
             .then(addOneToA)
@@ -59,7 +59,7 @@ describe('how take utility works', () => {
         expect({ a, b }).toMatchObject({ a: 4, b: 5 });
     });
 
-    it('will use take in deep objects', () => {
+    it('should use take in deep objects', () => {
         const { a, b } = take({ object: { a: 0, b: 0 } })
             .then(({ object }) => object)
             .then(addOneToA)
@@ -76,31 +76,31 @@ describe('how take utility works', () => {
 
     /*
     TODO:
-    it('will take primitives as a first value', () => {
+    it('should take primitives as a first value', () => {
     });
     */
 
     /*
     TODO:
-    it('will take primitives deep in chain', () => {
+    it('should take primitives deep in chain', () => {
     });
     */
 
     /*
     TODO:
-    it('will do sideeffects with use', () => {
+    it('should do sideeffects with use', () => {
     });
     */
 
     /*
     TODO:
-    it('will change the chain to promise chain', () => {
+    it('should change the chain to promise chain', () => {
     });
     */
 
     /*
     TODO:
-    it('will catch an error', () => {
+    it('should catch an error', () => {
 
         // Just stop
         // Catch and do more

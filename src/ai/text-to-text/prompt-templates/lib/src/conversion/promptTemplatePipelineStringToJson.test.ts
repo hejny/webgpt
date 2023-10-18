@@ -37,38 +37,38 @@ describe('promptTemplatePipelineStringToJson', () => {
         );
     });
 
-    it('fail on invalid language block', () => {
+    it('should fail on invalid language block', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/invalid-language.ptp.md')),
         ).toThrowError();
     });
-    it('fail on missing block on prompt template', () => {
+    it('should fail on missing block on prompt template', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-block.ptp.md')),
         ).toThrowError();
     });
-    it('fail on missing return declaration', () => {
+    it('should fail on missing return declaration', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-return-1.ptp.md')),
         ).toThrowError();
     });
-    it('fail on invalid return declaration', () => {
+    it('should fail on invalid return declaration', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-return-2.ptp.md')),
         ).toThrowError();
     });
-    it('fail on multiple prompts in one prompt template', () => {
+    it('should fail on multiple prompts in one prompt template', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/multiple-blocks.ptp.md')),
         ).toThrowError();
     });
-    it('fail on lack of structure ', () => {
+    it('should fail on lack of structure ', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/no-heading.ptp.md')),
         ).toThrowError();
     });
 
-    it('fail on parameters collision', () => {
+    it('should fail on parameters collision', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/parameters-collision.ptp.md')),
         ).toThrowError();
