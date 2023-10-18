@@ -8,7 +8,7 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{title}` Návrh názvu webu od zákazníka
 -   Input param `{assigment}` Zadání webu od zákazníka
--   Output param {content}` Obsah webu
+-   Output param `{content}` Obsah webu
 
 ## Vylepšení názvu
 
@@ -148,4 +148,4 @@ Zadání webu od zákazníka:
 
 ```
 
-`-> {content}` Obsah webu
+`-> {content}`
