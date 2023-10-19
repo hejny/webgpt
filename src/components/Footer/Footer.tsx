@@ -23,7 +23,7 @@ export function FooterSection() {
                 </li>
 
                 <li>
-                    <WallpaperLink page="explanation">AI Web</WallpaperLink>
+                    <WallpaperLink page="explanation">WebGPT</WallpaperLink>
                 </li>
 
                 <li>
@@ -32,7 +32,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <a href="https://github.com/hejny/aiai/">v{APP_VERSION}</a>
+                    <a href="https://github.com/hejny/webgpt/">v{APP_VERSION}</a>
                 </li>
                 */}
             </ul>

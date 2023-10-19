@@ -70,6 +70,6 @@ describe(`computeWallpaperDomainPart`, () => {
     });
 
     it(`works without title in content`, () => {
-        expect(computeWallpaperDomainPart('This content has no title.')).toBe(`` /*<- !!! */);
+        expect(computeWallpaperDomainPart('This content has no title.')).toBe(`untitled`);
     });
 });

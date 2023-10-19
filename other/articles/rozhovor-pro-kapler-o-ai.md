@@ -7,7 +7,7 @@ Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a c
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
 
-Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny !!!Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
+Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
 
 **Jak to funguje?**
 

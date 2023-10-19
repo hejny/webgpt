@@ -1,14 +1,13 @@
-import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { FormEvent, useCallback, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
+import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import { PricingPlan, PricingPlans } from '../PricingTable/plans';
-import { GetTheWebTabs } from '../PublishModal/GetTheWebTabs';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
@@ -36,7 +35,6 @@ export const ExportSystem = {
  * Renders the main export modal
  */
 export function ExportModal() {
-    const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
@@ -44,35 +42,49 @@ export function ExportModal() {
     const [system, setSystem] = useState<keyof typeof ExportSystem>('STATIC');
     const [plan, setPlan] = useState<PricingPlan>('SIMPLE');
     const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
+    const [isExporting, setExporting] = useState(false);
+    const submitHandler = useCallback(
+        async (event: FormEvent<HTMLFormElement>) => {
+            event.preventDefault();
+
+            if (isExporting) {
+                alert(`Please wait until the website is exported`);
+                return;
+            }
+
+            if (publicUrl === null) {
+                alert(`Please enter the website url`);
+                return;
+            }
+
+            setExporting(true);
+
+            try {
+                await exportWebsite({
+                    wallpaper,
+                    publicUrl,
+                    email,
+                    system,
+                    plan,
+                    isHelpNeeded,
+                });
+            } finally {
+                setExporting(false);
+                // TODO: Maybe reset the form
+            }
+        },
+        [isExporting, publicUrl, email, system, plan, isHelpNeeded, wallpaper],
+    );
 
     return (
         <Modal title={'Get the web'} isCloseable>
             <GetTheWebTabs />
-            <form
-                className={styles.settings}
-                onSubmit={async (event) => {
-                    event.preventDefault();
-
-                    if (publicUrl === null) {
-                        alert(`Please enter the website url`);
-                        return;
-                    }
-
-                    await exportWebsite({
-                        wallpaper,
-                        publicUrl,
-                        email,
-                        system,
-                        plan,
-                        isHelpNeeded,
-                    });
-                    // TODO: [🧭] Reset form
-                }}
-            >
+            <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isExporting}
                         required
                         defaultValue={publicUrl?.href || ''}
                         onChange={(e) => {
@@ -95,6 +107,7 @@ export function ExportModal() {
                     <div className={styles.key}>Your Email:</div>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isExporting}
                         required
                         defaultValue={email}
                         onChange={(e) => {
@@ -121,6 +134,7 @@ export function ExportModal() {
                     <div className={styles.key}>System:</div>
                     <Select
                         className={styles.value}
+                        isDisabled={isExporting}
                         label=""
                         value={system}
                         onChange={(newSystem) => setSystem(newSystem)}
@@ -133,6 +147,7 @@ export function ExportModal() {
 
                     <Select
                         className={styles.value}
+                        isDisabled={isExporting}
                         label=""
                         value={plan}
                         onChange={(newPlan) => setPlan(newPlan)}
@@ -152,6 +167,7 @@ export function ExportModal() {
                 <label className={styles.setting}>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isExporting}
                         checked={isHelpNeeded}
                         onChange={(e) => {
                             setHelpNeeded(!isHelpNeeded);
@@ -165,6 +181,7 @@ export function ExportModal() {
                 <label className={classNames(styles.setting, styles.settingCentered)}>
                     <button
                         className={classNames('button', styles.getTheWeb)}
+                        disabled={isExporting}
                         style={{
                             background: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',
@@ -192,5 +209,5 @@ export function ExportModal() {
 
 /**
  * TODO: Registration should return some token which will be put into export
- * TODO: Each build should have unique id + build metadata (like date, aiai version, etc.)
+ * TODO: Each build should have unique id + build metadata (like date, WebGPT version, etc.)
  */

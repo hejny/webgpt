@@ -2,16 +2,15 @@ import { useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { string_domain, string_tdl } from '../../utils/typeAliases';
 import styles from './AdvancedDomainsChecker.module.css';
+import { DomainsStatusList } from './DomainsStatusList/DomainsStatusList';
 import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
-import { WhoisDomains } from './WhoisDomains/WhoisDomains';
-
 
 /**
  * Renders a domain checker with advanced options and patterns
  */
 export function AdvancedDomainsChecker() {
-    const [names, setNames] = useState<Array<string_domain>>(['ai', 'project']);
+    const [names, setNames] = useState<Array<string_domain>>(['web', 'gpt']);
     const [tdls, setTdls] = useState<Array<string_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
 
     const namePartsCombinations = createAllSubsetsOf(...names);
@@ -20,7 +19,9 @@ export function AdvancedDomainsChecker() {
         subset.length === 0 ? [] : [subset.join('') /*, subset.join('-')*/],
     );
 
-    const domains = nameCombinations.flatMap((name) => tdls.map((tdl) => `${name}.${tdl}`));
+    const domains = nameCombinations
+        .flatMap((name) => tdls.map((tdl) => `${name}.${tdl}`))
+        .map((domain) => domain.trim().toLowerCase().split(' ').join('-'));
     const uniqueDomains = [...new Set(domains)];
     const sortedDomains = uniqueDomains.sort((a, b) => a.length - b.length);
 
@@ -49,7 +50,7 @@ export function AdvancedDomainsChecker() {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <WhoisDomains domains={sortedDomains} />
+            <DomainsStatusList domains={sortedDomains} />
         </div>
     );
 }

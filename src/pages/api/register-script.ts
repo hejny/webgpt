@@ -54,7 +54,7 @@ export default async function registerScriptHandler(
                         /**
                          * Note: [🔌] This script will register your page ${
                              NEXT_PUBLIC_URL.href
-                         } into the 1-2i database of sites
+                         } into the WebGPT database of sites
                          **/
 
                         (()=>{

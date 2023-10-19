@@ -1,4 +1,5 @@
 import { string_css_class } from '../../utils/typeAliases';
+import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 interface PublishLinkProps {
@@ -21,19 +22,7 @@ export function PublishLink(props: PublishLinkProps) {
             {...{ className }}
             /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
         >
-            <PublishText />
+            <MarkdownContent content="🌍 Publish" isUsingOpenmoji />
         </WallpaperLink>
     );
 }
-
-/**
- * Renders text of the publish button
- */
-export function PublishText(props: PublishLinkProps) {
-    // TODO: !! Use Openmoji
-    return <>🌍 Make the web</>;
-}
-
-/**
- * TODO: [🧠] Best text for this button> "Get the web", "Make the web", "Publish", "🌍"
- */

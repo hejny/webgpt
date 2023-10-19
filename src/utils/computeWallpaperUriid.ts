@@ -1,7 +1,7 @@
 import seedrandom from 'seedrandom';
-import { IWallpaper } from './IWallpaper';
 import { computeWallpaperDomainPart } from './computeWallpaperDomainPart';
 import { serializeColorStats } from './image/utils/serializeColorStats';
+import { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
 import { string_uriid } from './typeAliases';
 
@@ -47,7 +47,7 @@ export function computeWallpaperUriid(
         wallpaperPart,
     });
 
-    return `${domainPart !== '' ? `${domainPart}-` : ''}${wallpaperPart}`;
+    return `${domainPart !== 'untitled' ? `${domainPart}-` : ''}${wallpaperPart}`;
 }
 
 /**

@@ -1,23 +1,23 @@
-import type WhoisSearchResult from 'whoiser';
+import type { WhoisSearchResult } from 'whoiser';
 import { DomainStatus } from './DomainStatus';
 
-export function getDomainStatusFromWhois(whois: typeof WhoisSearchResult): keyof typeof DomainStatus {
+export function getDomainStatusFromWhois(whois: WhoisSearchResult): keyof typeof DomainStatus {
     if (whois === null) {
         return 'UNKNOWN';
     }
 
     for (const dns of Object.values(whois)) {
-        if (dns.Registrar) {
+        if ((dns as WhoisSearchResult).Registrar) {
             return 'REGISTERED';
         }
 
-        const domainStatus = dns['Domain Status'];
+        const domainStatus = (dns as WhoisSearchResult)['Domain Status'];
 
         if (Array.isArray(domainStatus) && domainStatus.length > 0) {
             return 'REGISTERED';
         }
 
-        let text = dns['text'];
+        let text = (dns as WhoisSearchResult)['text'];
 
         if (Array.isArray(text)) {
             text = text.join('\n');

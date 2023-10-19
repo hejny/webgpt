@@ -74,3 +74,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
         );
     }
 }
+
+/**
+ * TODO: [🕙] Make some util getWallpaperLink
+ */

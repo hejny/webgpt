@@ -1,15 +1,15 @@
 import { useRouter } from 'next/router';
-import { useMemo, useState } from 'react';
+import { FormEvent, useCallback, useMemo, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPart';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
+import { DomainStatusText } from '../Domains/DomainStatusText/DomainStatusText';
+import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
-import { GetTheWebTabs } from './GetTheWebTabs';
-import { PublishText } from './PublishLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';
 
@@ -22,31 +22,50 @@ export function PublishModal() {
     const defaultDomain =
         useMemo(() => computeWallpaperDomainPart(wallpaper.content), [wallpaper.content]) + '.webgpt.cz';
     const [domain, setDomain] = useState<string_domain>(defaultDomain);
+    const [isPublishing, setPublishing] = useState(false);
     const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
 
+    const submitHandler = useCallback(
+        async (event: FormEvent<HTMLFormElement>) => {
+            event.preventDefault();
+
+            if (isPublishing) {
+                alert(`Please wait until the website is published`);
+                return;
+            }
+
+            setPublishing(true);
+
+            try {
+                await publishWebsite({
+                    wallpaper,
+                    domain,
+                    email,
+                });
+                router.push({
+                    // TODO: [🕙] Make some util getWallpaperLink
+                    pathname: '/[wallpaperId]',
+                    query: {
+                        wallpaperId: wallpaper.id,
+                    },
+                });
+            } finally {
+                setPublishing(false);
+            }
+        },
+        [isPublishing, wallpaper, domain, email, setPublishing, router],
+    );
+
     return (
-        <Modal title={<PublishText />} isCloseable>
+        <Modal title={<MarkdownContent content="🌍 Publish" isUsingOpenmoji />} isCloseable>
             <GetTheWebTabs />
 
-            <form
-                className={styles.settings}
-                onSubmit={async (event) => {
-                    event.preventDefault();
-                    await publishWebsite({
-                        wallpaper,
-                        domain,
-                        email,
-                    });
-                    // TODO: [🧭] Reset form
-                }}
-            >
+            <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
-                        // TODO: !!!! Allow URL, domain, subdomain, etc. - NEED of domain
-                        // TODO: !!!! [🧠] Check (sub)domain availability
-                        // TODO: !!!! [🧠] Information how to register domain + set CNAME
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isPublishing}
                         required
                         defaultValue={domain || ''}
                         onChange={(e) => {
@@ -57,6 +76,7 @@ export function PublishModal() {
                         type="text"
                         title={`Enter a domain name like ${defaultDomain}`}
                     />
+                    <DomainStatusText {...{ domain }} className={styles.domainStatus} />
                 </label>
 
                 <label className={styles.setting}>
@@ -64,6 +84,7 @@ export function PublishModal() {
                     <input
                         // TODO: !! Less visible + warning that email is your key
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isPublishing}
                         required
                         defaultValue={email}
                         onChange={(e) => {
@@ -90,6 +111,7 @@ export function PublishModal() {
                 <label className={classNames(styles.setting, styles.settingCentered)}>
                     <button
                         className={classNames('button', styles.getTheWeb)}
+                        disabled={isPublishing}
                         style={{
                             background: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',
@@ -98,7 +120,7 @@ export function PublishModal() {
                         }}
                         type="submit"
                     >
-                        <MarkdownContent content="Get the web 🚀" isUsingOpenmoji />
+                        <MarkdownContent content="Publish 🚀" isUsingOpenmoji />
                     </button>
                 </label>
 
