@@ -47,9 +47,8 @@ Velkou výzvou je "zkrocení" GPT k tomu, aby dělalo přesně to, co potřebuju
 -   Pokud mám jednoduché zadání / prompt "Jaký zvuk dělá kočička", tak dostanu odpověď "Mňau" nebo ""Mňau"" _(v uvozovkách)_ případně "Kočička dělá "Mňau"" nebo něco podobného.
 -   Pokud mám komplexní prompt "Napiš mi komplení obsah webu v markdownu pro kavárnu {name}", tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
-Jakmile je potřeba něco složitějšího, existují v principu čtyři metody, jak na to:
+Jakmile je potřeba něco složitějšího, existují v principu tři metody, jak na to:
 
--
 -
 -
 -
