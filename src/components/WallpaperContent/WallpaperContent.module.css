@@ -129,8 +129,17 @@
     height: auto;
 }
 .Article iframe {
-    width: 100%;
+    width: calc(100% - 20px);
     aspect-ratio: 3/2;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* 📱 Smartphones */
+
+    .Article iframe {
+        aspect-ratio: 2/3;
+    }
 }
 
 .Article .button {
