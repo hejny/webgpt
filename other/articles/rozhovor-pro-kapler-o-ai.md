@@ -7,7 +7,7 @@ Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a c
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
 
-Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny !!!Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
+Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
 
 **Jak to funguje?**
 
@@ -47,22 +47,72 @@ Velkou výzvou je "zkrocení" GPT k tomu, aby dělalo přesně to, co potřebuju
 -   Pokud mám jednoduché zadání / prompt "Jaký zvuk dělá kočička", tak dostanu odpověď "Mňau" nebo ""Mňau"" _(v uvozovkách)_ případně "Kočička dělá "Mňau"" nebo něco podobného.
 -   Pokud mám komplexní prompt "Napiš mi komplení obsah webu v markdownu pro kavárnu {name}", tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
-Jakmile je potřeba něco složitějšího, existují v principu čtyři metody, jak na to:
+Jakmile je potřeba něco složitějšího, existují v principu tři metody, jak na to:
 
 -
 -
 -
--
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Myslíš, že generativní AI ještě není na svém vrcholu?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 <!--
 ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
@@ -70,21 +120,109 @@ ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
 
 **Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Řekni něco víc o hře Towns, co jsi vyvíjel**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Řekni něco víc o modulech do Collboardu**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 **Nebylo by teda lepší generativní AI ve školách zakázat?**
 
-foo foo
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 
 <!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Kalkulačka
 Musíme se naučit skákat z postavené laťky ne ze země přeskakovat laťku.
 -->
