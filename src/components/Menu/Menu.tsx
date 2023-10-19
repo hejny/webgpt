@@ -6,7 +6,6 @@ import { useRole } from '../../utils/hooks/useRole';
 import { activateMenuComponent } from '../AiComponents/activateMenuComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
-import { PublishLink } from '../PublishModal/PublishLink';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Menu.module.css';
 
@@ -35,20 +34,16 @@ export function Menu() {
                             <li>
                                 <WallpaperLink page={'index'}>Home</WallpaperLink>
                             </li>
-                            {!isExported && (
-                                <li className={styles.featured}>
-                                    <PublishLink />
-                                </li>
-                            )}
 
                             <li>
                                 <WallpaperLink
                                     page="explanation"
                                     prefetch={false /* <- Note: Because it is rare option */}
                                 >
-                                    How it works?
+                                    FAQ?
                                 </WallpaperLink>
                             </li>
+
                             <li>
                                 <WallpaperLink page="pricing" prefetch={false /* <- Note: Because it is rare option */}>
                                     Pricing
@@ -59,30 +54,6 @@ export function Menu() {
                                     Gallery
                                 </WallpaperLink>
                             </li>
-                            {wallpaper.parent && (
-                                <li>
-                                    <WallpaperLink
-                                        wallpaperId={wallpaper.parent}
-                                        modal={null}
-                                        page={'index'}
-                                        // Note: Preserving mode
-                                        prefetch={false /* <- Note: Because it is rare option */}
-                                    >
-                                        Unedited version
-                                    </WallpaperLink>
-                                </li>
-                            )}
-                            {!isExported && (
-                                <li>
-                                    {role === 'OWNER' ? (
-                                        <WallpaperLink role="OWNER_AS_VISITOR">Show as visitor</WallpaperLink>
-                                    ) : role === 'OWNER_AS_VISITOR' ? (
-                                        <WallpaperLink role="OWNER">Edit the page</WallpaperLink>
-                                    ) : (
-                                        <></>
-                                    )}
-                                </li>
-                            )}
 
                             <li>
                                 <WallpaperLink page="contact">Contact</WallpaperLink>

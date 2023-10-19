@@ -57,18 +57,28 @@
 TODO: Share CSS Between static and dynamic articles
 */
 
+.StaticLayout main h1,
+.StaticLayout main h2,
+.StaticLayout main h3,
+.StaticLayout main h4,
+.StaticLayout main h5,
+.StaticLayout main h6,
 .StaticLayout article h1,
 .StaticLayout article h2,
 .StaticLayout article h3,
 .StaticLayout article h4,
 .StaticLayout article h5,
-.StaticLayout article h6 {
+.StaticLayout article h6
+/* <- TODO: Optimize this selector via new css functionalities*/ {
     text-align: center;
     margin-top: 50px;
 }
 
+.StaticLayout main ul,
+.StaticLayout main ol,
 .StaticLayout article ul,
-.StaticLayout article ol {
+.StaticLayout article ol
+/* <- TODO: Optimize this selector via new css functionalities*/ {
     margin-top: 20px;
     margin-bottom: 20px;
 }

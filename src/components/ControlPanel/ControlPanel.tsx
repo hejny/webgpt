@@ -97,7 +97,7 @@ export function ControlPanel() {
                 )}
 
                 {/*
-                Note: In the <Menu/>
+                TODO: [🧠]  What is the best way how to navigate home?
                 <Link
                     href={'/'}
                     className={classNames(styles.button)}

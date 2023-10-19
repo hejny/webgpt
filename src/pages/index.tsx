@@ -51,7 +51,12 @@ export default function HomePage() {
 
             <NoSsr>
                 <article>
-                    <PreviewGallery />
+                    <PreviewGallery numberOfWallpapers={4} />
+                    {/*
+                    <Link href="/portfolio" className="button">
+                        More
+                    </Link>
+                    */}
                 </article>
             </NoSsr>
 
