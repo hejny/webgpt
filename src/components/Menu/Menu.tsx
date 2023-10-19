@@ -40,7 +40,7 @@ export function Menu() {
                                     page="explanation"
                                     prefetch={false /* <- Note: Because it is rare option */}
                                 >
-                                    How it works?
+                                    FAQ?
                                 </WallpaperLink>
                             </li>
 
