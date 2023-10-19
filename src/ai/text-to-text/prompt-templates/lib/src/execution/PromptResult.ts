@@ -34,6 +34,5 @@ export interface PromptCommonResult {
 }
 
 /**
- * TODO: [🧠] Add more execution stats like: tokens, spent, time, etc.
- *            + wrap in subobject stats
+ * TODO: [🧠] !!! Add more execution stats like: model used, previousMessage, chat thread, tokens, spent, full response, etc.
  */

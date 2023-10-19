@@ -3,6 +3,7 @@ import http from 'http';
 import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
 import { OPENAI_API_KEY } from '../../../../../../../../../config';
+import { SupabaseLoggerWrapperOfExecutionTools } from '../logger/SupabaseLoggerWrapperOfExecutionTools';
 import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
@@ -50,6 +51,9 @@ export function createRemoteServer(options: RemoteServerOptions) {
         },
     });
 
+    // TODO: !!! Execution tools should be passed as dependency
+    const executionTools = new OpenAiExecutionTools(OPENAI_API_KEY!);
+
     server.on('connection', (socket: Socket) => {
         console.log(chalk.green(`Client connected`), socket.id);
 
@@ -58,16 +62,15 @@ export function createRemoteServer(options: RemoteServerOptions) {
             // TODO: !! Validate here clientId (pass validator as dependency)
             console.log(chalk.green(`Received request`), request);
 
-            // TODO: !!! Execution tools should be passed as dependency
-            const executionTools = new OpenAiExecutionTools(OPENAI_API_KEY!, clientId);
+            const executionToolsForClient = new SupabaseLoggerWrapperOfExecutionTools(executionTools, clientId);
 
-            // TODO: !!! Pass library as a dependency and check validity of the prompt
+            // TODO: !! Pass PTP library as a dependency and check validity of the prompt
             // TODO: !!! Split here between completion and chat
-            const promptResult = await executionTools.gptChat(prompt);
+            const promptResult = await executionToolsForClient.gptChat(prompt);
 
             socket.emit('response', { promptResult } satisfies Ptps_Response);
 
-            // TODO: !!! Also handle progress and errors
+            // TODO: !! Also handle progress and errors
             // TODO: !! Disconnect after some timeout
         });
 

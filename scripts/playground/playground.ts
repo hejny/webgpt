@@ -7,6 +7,7 @@ dotenv.config({ path: '.env' });
 import chalk from 'chalk';
 import { join } from 'path';
 import { OPENAI_API_KEY, SYSTEM_AUTHOR_ID } from '../../config';
+import { SupabaseLoggerWrapperOfExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/logger/SupabaseLoggerWrapperOfExecutionTools';
 import { OpenAiExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/openai/OpenAiExecutionTools';
 import { ptpLibrary } from '../../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
@@ -42,7 +43,7 @@ async function playground() {
     };
     const outputParams = await ptpLibrary.getExecutor(
         'writeWebsiteContent',
-        new OpenAiExecutionTools(OPENAI_API_KEY!, SYSTEM_AUTHOR_ID),
+        new SupabaseLoggerWrapperOfExecutionTools(new OpenAiExecutionTools(OPENAI_API_KEY!), SYSTEM_AUTHOR_ID),
     )(inputParams, (taskProgress) => {
         console.info({ taskProgress });
     });
