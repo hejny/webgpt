@@ -1,4 +1,3 @@
-
 .Article {
     margin-top: 0px;
     text-align: center;
@@ -62,6 +61,10 @@
 
 .Article p {
     text-align: left;
+}
+
+.Article p:has(:global(.button)) {
+    text-align: center;
 }
 
 .Article ol,
