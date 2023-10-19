@@ -1,23 +1,21 @@
-import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { FormEvent, useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import { exportAsZip } from '../../export/exportAsZip';
-import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { provideClientId } from '../../utils/supabase/provideClientId';
+import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
+import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
+import { PricingPlan, PricingPlans } from '../PricingTable/plans';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './ExportModal.module.css';
+import { exportWebsite } from './exportWebsite';
 
-const ExportSystem = {
+export const ExportSystem = {
     STATIC: 'Static',
 
     WORDPRESS: 'WordPress',
@@ -34,102 +32,82 @@ const ExportSystem = {
     OTHER: '🤷 Other / Custom / Not sure',
 } as const;
 
-const ExportPlan = {
-    FREE: 'Free',
-    SIMPLE: 'Simple',
-    ADVANCED: 'Advanced',
-    ENTERPRISE: 'Enterprise',
-} as const;
-
 /**
  * Renders the main export modal
  */
 export function ExportModal() {
-    const router = useRouter();
     const [wallpaper] = useCurrentWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
-    const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
-    const [email, setEmail] = useState<string_email>('');
+    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
     // const [projectName, setProjectName] = useState<string>('');
     const [system, setSystem] = useState<keyof typeof ExportSystem>('STATIC');
-    const [plan, setPlan] = useState<keyof typeof ExportPlan>('SIMPLE');
+    const [plan, setPlan] = useState<PricingPlan>('SIMPLE');
     const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
+    const [isExporting, setExporting] = useState(false);
+    const submitHandler = useCallback(
+        async (event: FormEvent<HTMLFormElement>) => {
+            event.preventDefault();
 
-    const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
+            if (isExporting) {
+                alert(`Please wait until the website is exported`);
+                return;
+            }
+
+            if (publicUrl === null) {
+                alert(`Please enter the website url`);
+                return;
+            }
+
+            setExporting(true);
+
+            try {
+                await exportWebsite({
+                    wallpaper,
+                    publicUrl,
+                    email,
+                    system,
+                    plan,
+                    isHelpNeeded,
+                });
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                alert(
+                    // <- TODO: Use here alertDialogue
+                    // TODO: [🦻] DRY User error message
+                    spaceTrim(`
+                        Sorry for the inconvenience 😔
+                        Something went wrong while making your website.
+                        Please try it again or write me an email to me@pavolhejny.com
+
+                        ${error.message}
+                    `),
+                );
+            } finally {
+                setExporting(false);
+                // TODO: Maybe reset the form
+            }
+        },
+        [isExporting, publicUrl, email, system, plan, isHelpNeeded, wallpaper],
+    );
 
     return (
         <Modal title={'Get the web'} isCloseable>
-            <form
-                className={styles.settings}
-                onSubmit={async (event) => {
-                    event.preventDefault();
-
-                    const insertSiteResult = await getSupabaseForBrowser()
-                        .from('Site')
-                        .insert([
-                            {
-                                wallpaperId: wallpaper.id,
-                                url: (publicUrl || new URL(`https://webgpt.cz/${wallpaper.id}}`))
-                                    .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
-                                ownerEmail: email,
-                                plan,
-                                author: await provideClientId({
-                                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
-                                }),
-                            },
-                        ]);
-                    console.info('⬆', { insertSiteResult });
-
-                    if (
-                        isHelpNeeded ||
-                        isUrlUnsure ||
-                        plan === 'ADVANCED' ||
-                        plan === 'ENTERPRISE' ||
-                        system !== 'STATIC'
-                    ) {
-                        const insertSupportRequestResult = await getSupabaseForBrowser()
-                            .from('SupportRequest')
-                            .insert([
-                                {
-                                    from: email,
-                                    author: await provideClientId({
-                                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
-                                    }),
-                                    message: spaceTrim(`
-                                        Hi,
-                                        ${
-                                            isHelpNeeded
-                                                ? `I need help with setting up my website.`
-                                                : `I am interested in your ${plan} plan.`
-                                        }
-                                        ${!isUrlUnsure ? `` : `I am not sure about my URL.`}
-
-                                        ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
-                                        My plan: ${plan}
-                                        My system: ${system}
-                                    `),
-                                },
-                            ]);
-
-                        console.info('⬆', { insertSupportRequestResult });
-                    }
-
-                    /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-
-                    // TODO: Reset form
-                }}
-            >
+            <GetTheWebTabs />
+            <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
                     <div className={styles.key}>Site url:</div>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
-                        disabled={isUrlUnsure}
-                        required={!isUrlUnsure}
+                        disabled={isExporting}
+                        required
                         defaultValue={publicUrl?.href || ''}
                         onChange={(e) => {
                             const value = e.target.value;
 
-                            if (isValidUrl(value)) {
+                            if (!isValidUrl(value)) {
                                 return;
                             }
 
@@ -140,26 +118,13 @@ export function ExportModal() {
                         title="Enter a valid website url like https://www.your-awesome-project.com/"
                         pattern="https?://.*"
                     />
-                    {/* * We need ... */}
-
-                    <label className={styles.extra}>
-                        <input
-                            className={classNames(styles.value, stylesForSelect.option)}
-                            checked={isUrlUnsure}
-                            onChange={(e) => {
-                                setUrlUnsure(!isUrlUnsure);
-                            }}
-                            placeholder="john@smith.org"
-                            type="checkbox"
-                        />
-                        I am not sure about the url
-                    </label>
                 </label>
 
                 <label className={styles.setting}>
                     <div className={styles.key}>Your Email:</div>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isExporting}
                         required
                         defaultValue={email}
                         onChange={(e) => {
@@ -186,6 +151,7 @@ export function ExportModal() {
                     <div className={styles.key}>System:</div>
                     <Select
                         className={styles.value}
+                        isDisabled={isExporting}
                         label=""
                         value={system}
                         onChange={(newSystem) => setSystem(newSystem)}
@@ -198,10 +164,11 @@ export function ExportModal() {
 
                     <Select
                         className={styles.value}
+                        isDisabled={isExporting}
                         label=""
                         value={plan}
                         onChange={(newPlan) => setPlan(newPlan)}
-                        options={ExportPlan}
+                        options={PricingPlans}
                         visibleButtons={Infinity}
                     />
 
@@ -217,6 +184,7 @@ export function ExportModal() {
                 <label className={styles.setting}>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isExporting}
                         checked={isHelpNeeded}
                         onChange={(e) => {
                             setHelpNeeded(!isHelpNeeded);
@@ -230,6 +198,7 @@ export function ExportModal() {
                 <label className={classNames(styles.setting, styles.settingCentered)}>
                     <button
                         className={classNames('button', styles.getTheWeb)}
+                        disabled={isExporting}
                         style={{
                             background: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',
@@ -257,5 +226,5 @@ export function ExportModal() {
 
 /**
  * TODO: Registration should return some token which will be put into export
- * TODO: Each build should have unique id + build metadata (like date, aiai version, etc.)
+ * TODO: Each build should have unique id + build metadata (like date, WebGPT version, etc.)
  */

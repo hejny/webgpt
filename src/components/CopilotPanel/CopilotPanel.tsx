@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
@@ -23,6 +24,7 @@ import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parse
 import { Hint } from '../Hint/Hint';
 import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
+import { PublishLink } from '../PublishModal/PublishLink';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
@@ -135,7 +137,7 @@ export function CopilotPanel() {
     }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotPanel)}>
+        <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
             <div
                 // Note: It is intended to have two divs embedded in each other
                 className={styles.CopilotPanelInner}
@@ -273,13 +275,7 @@ export function CopilotPanel() {
                             </li>
                         )}
                         <li className={styles.featured}>
-                            <WallpaperLink
-                                modal="export"
-                                role="OWNER"
-                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                            >
-                                Get the web
-                            </WallpaperLink>
+                            <PublishLink />
                         </li>
                         <li>
                             <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
@@ -315,15 +311,19 @@ export function CopilotPanel() {
                             </WallpaperLink>
                         </li>
                         <li>
+                            <Link href="/">Make new web</Link>
+                        </li>
+                        <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>
                         </li>
+
                         {/*
                         TODO: !! The menu should be like this: 
 
                         - [x] Show as visitor
                         - [~] Share
                         - [x] Get the web
-                        - [ ] Edit
+                        - [x] Edit
                         - [ ] - advanced prompting
                         - [ ] - colors
                         - [ ] - content

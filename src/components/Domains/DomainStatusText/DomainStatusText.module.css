@@ -1,0 +1,36 @@
+.DomainStatusText .pending {
+    color: #888888;
+}
+
+.DomainStatusText .available {
+    color: #0bee57;
+}
+
+.DomainStatusText .registered {
+    color: #dd1b1b;
+}
+
+.DomainStatusText .unknown {
+    color: #888888;
+}
+
+.DomainStatusText span b {
+    color: inherit;
+}
+
+.DomainStatusText .action {
+    outline: none;
+    border: 1px solid #ccc;
+
+    display: inline-block;
+    background-color: #222222;
+    color: #ccc;
+    border-radius: 3px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+    margin-left: 5px;
+    text-decoration: none;
+}

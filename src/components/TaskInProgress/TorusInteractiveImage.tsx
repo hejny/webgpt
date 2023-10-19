@@ -22,7 +22,7 @@ interface TorusInteractiveProps {
 
 /**
  * Renders <canvas/> with a torus mesh and a camera that rotates around it
- * It is use as indicator that the app is working on something and as a "mascot" of the 1-2i app
+ * It is use as indicator that the app is working on something and as a "mascot" of the WebGPT app
  */
 export function TorusInteractiveImage(props: TorusInteractiveProps) {
     const { width, height, className } = props;

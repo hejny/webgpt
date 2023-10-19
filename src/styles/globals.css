@@ -1,5 +1,5 @@
 html {
-    color-scheme: dark;
+    color-scheme: dark /* <- TODO: Unhardcode dark color scheme - dynamically detect from wallpaper */;
     image-rendering: smooth;
     scroll-behavior: smooth;
     scroll-padding-top: 10px;

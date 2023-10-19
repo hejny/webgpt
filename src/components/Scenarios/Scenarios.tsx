@@ -41,6 +41,12 @@ export function Scenarios() {
                         </CreateZone>
                     </Link>
                 </li>
+                <li  className={styles.preparing}>
+                    <CreateZone className={styles.scenario}>
+                        <h2>Preparing</h2>
+                        new options are coming soon
+                    </CreateZone>
+                </li>
             </ul>
         </div>
     );

@@ -1,17 +1,17 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { INSTAGRAM_PLACEHOLDERS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
-import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenText';
 import { Center } from '../../components/SimpleLayout/Center';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { Color } from '../../utils/color/Color';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
 import { randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
@@ -38,16 +38,11 @@ export default function NewWallpaperFromInstagramPage() {
                     <Center>
                         <h1
                             style={{
-                                maxWidth: '400px',
-                                // outline: '1px solid red',
-                                // transform: 'translate(0,20px)',
+                                transform: 'translate(0,-20px)',
                             }}
                         >
-                            <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
-                                AI Web Maker
-                            </HandwrittenText>
+                            <Image alt="WebGPT logo" src={webgptLogo} />
                         </h1>
-
                         <CopilotInput
                             {...{ placeholders }}
                             label="Enter your Instagram:"
@@ -128,7 +123,7 @@ export default function NewWallpaperFromInstagramPage() {
                                             title,
                                             description /* <- TODO: ALter with biography_with_entities */,
                                             addSections: [
-                                                // TODO: Instagram AI component gallery 
+                                                // TODO: Instagram AI component gallery
                                                 // TODO: Add map from business_address_json
                                             ],
                                             links: [
@@ -146,8 +141,6 @@ export default function NewWallpaperFromInstagramPage() {
                                             ],
 
                                             // TODO: Maybe pass posts texts to give a flavour of the account and its style
-
-                                         
                                         },
                                         (newTaskProgress: TaskProgress) => {
                                             console.info('☑', newTaskProgress);
@@ -167,8 +160,8 @@ export default function NewWallpaperFromInstagramPage() {
 
                                     alert(
                                         // <- TODO: Use here alertDialogue
-                                        // TODO: [🏔] DRY
                                         spaceTrim(
+                                            // TODO: [🦻] DRY User error message
                                             (block) => `
                                                 Sorry for the inconvenience 😔
                                                 Something went wrong while making your website.
