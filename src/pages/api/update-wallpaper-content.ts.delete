@@ -73,7 +73,7 @@ export default async function updateWallpaperContentHandler(
 }
 
 /**
- * TODO: !!!last Go through this file and remove it=
+ * TODO: !!! Make PTP from this and delete
  * TODO: !! Allow only POST OR PUT (Which is better?)
  * TODO: !! Allow to mix user and copilot edits
  * TODO: !! Preserve fonts

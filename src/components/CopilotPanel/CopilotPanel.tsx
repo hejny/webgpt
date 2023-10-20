@@ -86,6 +86,7 @@ export function CopilotPanel() {
 
             const { content: oldContent } = wallpaper;
 
+            // TODO: Use here PTP for update-wallpaper-content
             const response = await fetch(
                 `/api/update-wallpaper-content?clientId=${await provideClientId({
                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,

@@ -13,5 +13,4 @@ export interface UpdateWallpaperContentResponse {
     readonly updatedWallpaper: Pick<IWallpaperSerialized, 'content'>;
 }
 
-
-// TODO: !!!last Implement
+// TODO: !!! Make PTP from this and delete - the pipeline will be controlled from library on frontend
