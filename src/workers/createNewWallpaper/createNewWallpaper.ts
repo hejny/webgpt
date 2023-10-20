@@ -304,7 +304,7 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    const { contentBody, keywords, enhancedTitle, claim } = await ptpLibrary.getExecutor(
+    const { contentBody, keywords, enhancedTitle, claim } = await ptpLibrary.createExecutor(
         'writeWebsiteContent',
         getPtpToolsForWorker(author),
     )(

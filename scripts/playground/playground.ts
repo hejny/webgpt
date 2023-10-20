@@ -41,7 +41,7 @@ async function playground() {
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
         */
     };
-    const outputParams = await ptpLibrary.getExecutor(
+    const outputParams = await ptpLibrary.createExecutor(
         'writeWebsiteContent',
         new SupabaseLoggerWrapperOfExecutionTools(new OpenAiExecutionTools(OPENAI_API_KEY!), SYSTEM_AUTHOR_ID),
     )(inputParams, (taskProgress) => {
