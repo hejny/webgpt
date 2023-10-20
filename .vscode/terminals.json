@@ -172,12 +172,6 @@
             "focus": true
         },
         {
-            "name": "⏫ Trigger Build",
-            "commands": ["git commit --allow-empty -m \"⏫ Trigger Build\"", "git push"],
-            "onlySingle": true,
-            "focus": true
-        },
-        {
             "name": "🔓👨🏽‍💻 Clean dev cache + Force reinstall of node modules",
             "commands": [
                 "npx kill-port 4444",
@@ -227,6 +221,12 @@
         {
             "name": "🍴⏬ Git pull all branches",
             "command": "git diff --exit-code && ./scripts/pull-all-branches.sh",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🔼 Trigger deployment",
+            "commands": ["git commit --allow-empty -m \"🔼 Trigger deployment\"", "git push"],
             "onlySingle": true,
             "focus": true
         },
