@@ -2,16 +2,36 @@ import chalk from 'chalk';
 import http from 'http';
 import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
-import { OPENAI_API_KEY } from '../../../../../../../../../config';
+import { PromptTemplatePipelineLibrary } from '../../../classes/PromptTemplatePipelineLibrary';
 import { SupabaseLoggerWrapperOfExecutionTools } from '../logger/SupabaseLoggerWrapperOfExecutionTools';
 import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 
 interface RemoteServerOptions {
+    /**
+     * Port on which the server will listen
+     */
     readonly port: number;
 
-    // TODO: isVerbose
+    /**
+     * Prompt template pipeline library to use
+     *
+     * THis is used to checkl validity of the prompt to prevent DDoS
+     */
+    readonly ptpLibrary: PromptTemplatePipelineLibrary;
+
+    /**
+     * Execution tools to use
+     *
+     * Note: Theese tools will be wrapped in a logger for each client to log all requests
+     */
+    readonly executionTools: OpenAiExecutionTools;
+
+    /**
+     * If true, the server will log all requests and responses
+     */
+    readonly isVerbose?: boolean;
 }
 
 /**
@@ -23,7 +43,7 @@ interface RemoteServerOptions {
  * @see https://github.com/hejny/ptp#remote-server
  */
 export function createRemoteServer(options: RemoteServerOptions) {
-    const { port } = options;
+    const { port, ptpLibrary, executionTools, isVerbose } = options;
 
     const httpServer = http.createServer({}, (request, response) => {
         if (request.url?.includes('socket.io')) {
@@ -51,8 +71,6 @@ export function createRemoteServer(options: RemoteServerOptions) {
         },
     });
 
-    // TODO: !!! Execution tools should be passed as dependency
-    const executionTools = new OpenAiExecutionTools(OPENAI_API_KEY!);
 
     server.on('connection', (socket: Socket) => {
         console.log(chalk.green(`Client connected`), socket.id);
@@ -60,11 +78,14 @@ export function createRemoteServer(options: RemoteServerOptions) {
         socket.on('request', async (request: Ptps_Request) => {
             const { prompt, clientId } = request;
             // TODO: !! Validate here clientId (pass validator as dependency)
-            console.log(chalk.green(`Received request`), request);
+
+            if (isVerbose) {
+                console.info(chalk.green(`Received request`), request);
+            }
 
             const executionToolsForClient = new SupabaseLoggerWrapperOfExecutionTools(executionTools, clientId);
 
-            // TODO: !! Pass PTP library as a dependency and check validity of the prompt
+            // TODO: !!! Check validity of the prompt against ptpLibrary
             // TODO: !!! Split here between completion and chat
             const promptResult = await executionToolsForClient.gptChat(prompt);
 
@@ -75,12 +96,18 @@ export function createRemoteServer(options: RemoteServerOptions) {
         });
 
         socket.on('disconnect', () => {
-            console.log(chalk.magenta(`Client disconnected`), socket.id);
+            // TODO: Destroy here executionToolsForClient
+            if (isVerbose) {
+                console.info(chalk.magenta(`Client disconnected`), socket.id);
+            }
         });
     });
 
     httpServer.listen(port);
-    console.log(chalk.bgGreen(`PTP server listening on port ${port}`));
+
+    if (isVerbose) {
+        console.info(chalk.bgGreen(`PTP server listening on port ${port}`));
+    }
 }
 
 /**

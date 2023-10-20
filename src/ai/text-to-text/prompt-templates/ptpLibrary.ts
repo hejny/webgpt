@@ -4,7 +4,7 @@ import { PromptTemplatePipelineLibrary } from './lib/src/classes/PromptTemplateP
 import { promptTemplatePipelineStringToJson } from './lib/src/conversion/promptTemplatePipelineStringToJson';
 
 /**
- * This is The main library of prompt template pipelines for 1-2i app
+ * This is The main library of prompt template pipelines for WebGPT app
  *
  * @singleton
  */
