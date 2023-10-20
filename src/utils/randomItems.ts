@@ -1,7 +1,7 @@
 import { randomItem } from './randomItem';
 
 /**
- * Pick multiple distinct random items from the recieved array
+ * Pick multiple distinct random items from the recieved items
  */
 export function randomItems<TItem>(count: number, ...items: Array<TItem>): Array<TItem> {
     if (count === 1) {
