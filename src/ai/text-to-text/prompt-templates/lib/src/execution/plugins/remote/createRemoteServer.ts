@@ -3,6 +3,7 @@ import http from 'http';
 import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
 import { PromptTemplatePipelineLibrary } from '../../../classes/PromptTemplatePipelineLibrary';
+import { PromptResult } from '../../PromptResult';
 import { SupabaseLoggerWrapperOfExecutionTools } from '../logger/SupabaseLoggerWrapperOfExecutionTools';
 import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
@@ -71,7 +72,6 @@ export function createRemoteServer(options: RemoteServerOptions) {
         },
     });
 
-
     server.on('connection', (socket: Socket) => {
         console.log(chalk.green(`Client connected`), socket.id);
 
@@ -86,12 +86,21 @@ export function createRemoteServer(options: RemoteServerOptions) {
             const executionToolsForClient = new SupabaseLoggerWrapperOfExecutionTools(executionTools, clientId);
 
             // TODO: !!! Check validity of the prompt against ptpLibrary
-            // TODO: !!! Split here between completion and chat
-            const promptResult = await executionToolsForClient.gptChat(prompt);
+
+            let promptResult: PromptResult;
+            if (prompt.modelRequirements.variant === 'CHAT') {
+                promptResult = await executionToolsForClient.gptChat(prompt);
+            }
+            if (prompt.modelRequirements.variant === 'COMPLETION') {
+                promptResult = await executionToolsForClient.gptComplete(prompt);
+            } else {
+                throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+            }
 
             socket.emit('response', { promptResult } satisfies Ptps_Response);
 
-            // TODO: !! Also handle progress and errors
+            // TODO: !!! Handle errors
+            // TODO: !! Handle progress
             // TODO: !! Disconnect after some timeout
         });
 

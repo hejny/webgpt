@@ -73,7 +73,9 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
     /**
      * Calls a completion model and logs the request+result
      */
-    public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {}
+    public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
+        throw new Error(`Not implemented !!!`);
+    }
 }
 
 /**

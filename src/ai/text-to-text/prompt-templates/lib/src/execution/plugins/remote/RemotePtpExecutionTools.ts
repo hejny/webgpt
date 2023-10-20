@@ -2,7 +2,7 @@ import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
 import { uuid } from '../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../types/Prompt';
-import { PromptChatResult, PromptResult } from '../../PromptResult';
+import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
@@ -44,13 +44,21 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
     /**
      * Calls remote proxy server to use a chat model.
      */
-    public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
-        const { request, modelRequirements } = prompt;
+    public gptChat(prompt: Prompt): Promise<PromptChatResult> {
+        return /* not await */ this.gptCommon(prompt);
+    }
 
-        if (modelRequirements.variant !== 'CHAT') {
-            throw new Error(`Use gptChat only for CHAT variant`);
-        }
+    /**
+     * Calls remote proxy server to use a completion model.
+     */
+    public gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
+        return /* not await */ this.gptCommon(prompt);
+    }
 
+    /**
+     * Calls remote proxy server to use both completion or chat model.
+     */
+    private async gptCommon(prompt: Prompt): Promise<PromptResult> {
         const socket = await this.makeConnection();
         socket.emit('request', { clientId: this.clientId, prompt } satisfies Ptps_Request);
 
