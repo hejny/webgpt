@@ -84,6 +84,36 @@ export interface Database {
         }
         Relationships: []
       }
+      PromptExecution: {
+        Row: {
+          clientId: string | null
+          createdAt: string
+          id: number
+          prompt: Json | null
+          promptAt: string | null
+          result: Json | null
+          resultAt: string | null
+        }
+        Insert: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          prompt?: Json | null
+          promptAt?: string | null
+          result?: Json | null
+          resultAt?: string | null
+        }
+        Update: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          prompt?: Json | null
+          promptAt?: string | null
+          result?: Json | null
+          resultAt?: string | null
+        }
+        Relationships: []
+      }
       Reaction: {
         Row: {
           author: string
