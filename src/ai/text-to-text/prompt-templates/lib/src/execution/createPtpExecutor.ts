@@ -56,7 +56,7 @@ export function createPtpExecutor<
                 // TODO: Use all information from chatThread like "model"
                 response = completionResult.response;
             } else {
-                throw new Error(`Unknown model variant: ${currentPtp.modelRequirements.variant}`);
+                throw new Error(`Unknown model variant "${currentPtp.modelRequirements.variant}"`);
             }
 
             if (onProgress) {

@@ -40,8 +40,7 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
         let result: PromptResult;
         if (prompt.modelRequirements.variant === 'CHAT') {
             result = await this.ptpExecutionTools.gptChat(prompt);
-        }
-        if (prompt.modelRequirements.variant === 'COMPLETION') {
+        } else if (prompt.modelRequirements.variant === 'COMPLETION') {
             result = await this.ptpExecutionTools.gptComplete(prompt);
         } else {
             throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);

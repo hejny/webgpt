@@ -73,14 +73,14 @@ export function createRemoteServer(options: RemoteServerOptions) {
     });
 
     server.on('connection', (socket: Socket) => {
-        console.log(chalk.green(`Client connected`), socket.id);
+        console.log(chalk.gray(`Client connected`), socket.id);
 
         socket.on('request', async (request: Ptps_Request) => {
             const { prompt, clientId } = request;
             // TODO: !! Validate here clientId (pass validator as dependency)
 
             if (isVerbose) {
-                console.info(chalk.green(`Received request`), request);
+                console.info(chalk.bgGray(`  Prompt:  `), chalk.gray(JSON.stringify(request, null, 4)));
             }
 
             const executionToolsForClient = new SupabaseLoggerWrapperOfExecutionTools(executionTools, clientId);
@@ -90,11 +90,14 @@ export function createRemoteServer(options: RemoteServerOptions) {
             let promptResult: PromptResult;
             if (prompt.modelRequirements.variant === 'CHAT') {
                 promptResult = await executionToolsForClient.gptChat(prompt);
-            }
-            if (prompt.modelRequirements.variant === 'COMPLETION') {
+            } else if (prompt.modelRequirements.variant === 'COMPLETION') {
                 promptResult = await executionToolsForClient.gptComplete(prompt);
             } else {
                 throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+            }
+
+            if (isVerbose) {
+                console.info(chalk.bgGreen(`  PromptResult:  `), chalk.green(JSON.stringify(promptResult, null, 4)));
             }
 
             socket.emit('response', { promptResult } satisfies Ptps_Response);
@@ -107,7 +110,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
         socket.on('disconnect', () => {
             // TODO: Destroy here executionToolsForClient
             if (isVerbose) {
-                console.info(chalk.magenta(`Client disconnected`), socket.id);
+                console.info(chalk.gray(`Client disconnected`), socket.id);
             }
         });
     });
