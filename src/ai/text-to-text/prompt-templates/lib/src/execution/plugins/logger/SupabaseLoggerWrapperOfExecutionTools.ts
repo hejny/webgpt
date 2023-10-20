@@ -1,14 +1,15 @@
 import { isRunningInNode } from '../../../../../../../../utils/isRunningInWhatever';
 import { getSupabaseForServer } from '../../../../../../../../utils/supabase/getSupabaseForServer';
+import { uuid } from '../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../types/Prompt';
-import { PromptChatResult, PromptCompletionResult } from '../../PromptResult';
+import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../PromptResult';
 import { PtpExecutionTools } from '../../PtpExecutionTools';
 
 /**
  * Wrapper for any PtpExecutionTools which logs every request+result to Supabase.
  */
 export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools {
-    public constructor(private readonly ptpExecutionTools: PtpExecutionTools, private readonly clientId: string) {
+    public constructor(private readonly ptpExecutionTools: PtpExecutionTools, private readonly clientId: uuid) {
         if (!isRunningInNode()) {
             throw new Error(`SupabaseLoggerWrapperOfExecutionTools can be used only on server`);
         }
@@ -17,12 +18,34 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
     /**
      * Calls a chat model and logs the request+result
      */
-    public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
-        const mark = `gpt-chat`;
+    public gptChat(prompt: Prompt): Promise<PromptChatResult> {
+        return /* not await */ this.gptCommon(prompt);
+    }
+
+    /**
+     * Calls a completion model and logs the request+result
+     */
+    public gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
+        return /* not await */ this.gptCommon(prompt);
+    }
+
+    /**
+     * Calls both completion or chat model and logs the request+result
+     */
+    public async gptCommon(prompt: Prompt): Promise<PromptResult> {
+        const mark = `gpt-call`;
         const promptAt = new Date();
         performance.mark(`${mark}-start`);
 
-        const result = await this.ptpExecutionTools.gptChat(prompt);
+        let result: PromptResult;
+        if (prompt.modelRequirements.variant === 'CHAT') {
+            result = await this.ptpExecutionTools.gptChat(prompt);
+        }
+        if (prompt.modelRequirements.variant === 'COMPLETION') {
+            result = await this.ptpExecutionTools.gptComplete(prompt);
+        } else {
+            throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+        }
 
         performance.mark(`${mark}-end`);
         const resultAt = new Date();
@@ -60,7 +83,7 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
                     // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
                     // <- TODO: [🎠] There should be a prompt template+template version+template language version (to A/B test performance of prompts)
                     // <- TODO: Use here more precise performance measure
-                } /* TODO: !!! Remove or uncomment> as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
+                } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
             )
             .then((insertResult) => {
                 // TODO: !! Util isInsertSuccessfull
@@ -69,18 +92,10 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
 
         return result;
     }
-
-    /**
-     * Calls a completion model and logs the request+result
-     */
-    public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
-        throw new Error(`Not implemented !!!`);
-    }
 }
 
 /**
  * TODO: [🧠] Best name for this class "SupabaseLoggerWrapperOfExecutionTools" vs "ExecutionToolsWithSupabaseLogger" or just helper "withSupabaseLogger"
- * TODO: Maybe Create some common util for gptChat and gptComplete
  * TODO: Log also failed results
  * TODO: Create abstract LoggerWrapperOfExecutionTools which can be extended to implement more loggers
  */
