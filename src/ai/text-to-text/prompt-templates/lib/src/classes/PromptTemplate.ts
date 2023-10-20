@@ -25,7 +25,7 @@ export class PromptTemplate<TInputParams extends PromptTemplateParams, TOutputPa
      */
     public writePrompt(params: PromptTemplateParams): Prompt {
         return {
-            request: replaceParams(this.content, params),
+            content: replaceParams(this.content, params),
             modelRequirements: this.modelRequirements,
         };
     }

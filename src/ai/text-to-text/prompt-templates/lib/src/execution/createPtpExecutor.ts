@@ -45,16 +45,16 @@ export function createPtpExecutor<
 
             const prompt = currentPtp.writePrompt(paramsToPass);
 
-            let response: string;
+            let resultContent: string;
             if (currentPtp.modelRequirements.variant === 'CHAT') {
                 const chatThread = await tools.gptChat(prompt);
                 // TODO: Use all information from chatThread like "model"
                 // TODO: [🍬] Destroy chatThread
-                response = chatThread.response;
+                resultContent = chatThread.content;
             } else if (currentPtp.modelRequirements.variant === 'COMPLETION') {
                 const completionResult = await tools.gptComplete(prompt);
                 // TODO: Use all information from chatThread like "model"
-                response = completionResult.response;
+                resultContent = completionResult.content;
             } else {
                 throw new Error(`Unknown model variant "${currentPtp.modelRequirements.variant}"`);
             }
@@ -68,7 +68,7 @@ export function createPtpExecutor<
 
             paramsToPass = {
                 ...paramsToPass,
-                [name]: response /* <- TODO: Detect parameter collision here */,
+                [name]: resultContent /* <- TODO: Detect parameter collision here */,
             };
 
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!);

@@ -23,7 +23,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
      * Calls OpenAI API to use a chat model.
      */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
-        const { request, modelRequirements } = prompt;
+        const { content, modelRequirements } = prompt;
 
         // TODO: [☂] Use here more modelRequirements
         if (modelRequirements.variant !== 'CHAT') {
@@ -37,7 +37,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
             messages: [
                 {
                     role: 'user',
-                    content: request,
+                    content,
                 },
             ],
         });
@@ -51,14 +51,14 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
             throw new Error(`More than one choise from OpenAPI`);
         }
 
-        const response = completion.choices[0].message.content;
+        const resultContent = completion.choices[0].message.content;
 
-        if (!response) {
+        if (!resultContent) {
             throw new Error(`No response message from OpenAPI`);
         }
 
         return {
-            response,
+            content: resultContent,
             model,
             // <- [🤹‍♂️]
         };
@@ -68,7 +68,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
      * Calls OpenAI API to use a complete model.
      */
     public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
-        const { request, modelRequirements } = prompt;
+        const { content, modelRequirements } = prompt;
 
         // TODO: [☂] Use here more modelRequirements
         if (modelRequirements.variant !== 'CHAT') {
@@ -80,7 +80,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
 
         const completion = await this.openai.completions.create({
             ...modelSettings,
-            prompt: request,
+            prompt: content,
         });
 
         if (!completion.choices[0]) {
@@ -92,14 +92,14 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
             throw new Error(`More than one choise from OpenAPI`);
         }
 
-        const response = completion.choices[0].text;
+        const resultContent = completion.choices[0].text;
 
-        if (!response) {
+        if (!resultContent) {
             throw new Error(`No response message from OpenAPI`);
         }
 
         return {
-            response,
+            content: resultContent,
             model,
             // <- [🤹‍♂️]
         };

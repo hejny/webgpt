@@ -25,7 +25,7 @@ export interface PromptCommonResult {
     /**
      * Exact text response from the model.
      */
-    readonly response: string;
+    readonly content: string;
 
     /**
      * Name of the model used to generate the response.
@@ -33,7 +33,7 @@ export interface PromptCommonResult {
     readonly model: string_model_name;
 
     /*
-    rawResponse:
+    rawResponse: 
         {
         "id": "cmpl-7zIMLeY4GOakQxVLPm1YU3Nsd4dgG",
         "model": "text-davinci-003",

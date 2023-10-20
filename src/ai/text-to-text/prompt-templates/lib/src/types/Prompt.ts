@@ -13,7 +13,7 @@ export interface Prompt {
      * Note: This is not a template, this is exactly the text that will be sent to the model
      * @example "What is the capital of France?"
      */
-    readonly request: string_prompt;
+    readonly content: string_prompt;
 
     /**
      * Requirements for the model

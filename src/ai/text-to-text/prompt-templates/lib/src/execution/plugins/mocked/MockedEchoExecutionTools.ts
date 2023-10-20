@@ -14,10 +14,10 @@ export class MockedEchoExecutionTools implements PtpExecutionTools {
      */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
         return {
-            response: spaceTrim(
+            content: spaceTrim(
                 (block) => `
                     You said:
-                    ${block(prompt.request)}
+                    ${block(prompt.content)}
                 `,
             ),
             model: `mocked-echo`,
@@ -30,9 +30,9 @@ export class MockedEchoExecutionTools implements PtpExecutionTools {
      */
     public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
         return {
-            response: spaceTrim(
+            content: spaceTrim(
                 (block) => `
-                    ${block(prompt.request)}
+                    ${block(prompt.content)}
                     And so on...
                 `,
             ),
