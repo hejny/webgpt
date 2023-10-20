@@ -123,7 +123,6 @@ export function createRemoteServer(options: RemoteServerOptions) {
 }
 
 /**
- * TODO: !!!last Annotate
  * TODO: [🤹‍♂️] Do not hang up immediately but wait until client closes OR timeout
  * TODO: [🤹‍♂️] Timeout on chat to free up resources
  * TODO: [🃏] Pass here some security token to prevent DDoS
