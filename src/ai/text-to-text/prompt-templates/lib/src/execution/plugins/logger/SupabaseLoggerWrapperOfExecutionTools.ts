@@ -18,13 +18,6 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
      * Calls a chat model and logs the request+result
      */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
-        const { request, modelRequirements } = prompt;
-
-        // TODO: Use here more modelRequirements
-        if (modelRequirements.variant !== 'CHAT') {
-            throw new Error(`Use gptChat only for CHAT variant`);
-        }
-
         const mark = `gpt-chat`;
         const promptAt = new Date();
         performance.mark(`${mark}-start`);
@@ -32,8 +25,7 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
         const result = await this.ptpExecutionTools.gptChat(prompt);
 
         performance.mark(`${mark}-end`);
-        const answerAt = new Date();
-        // console.log(performance.measure(mark, `${mark}-start`, `${mark}-end`));
+        const resultAt = new Date();
 
         /*/
         // TODO: [🧠] Make config value DEBUG_LOG_GPT
@@ -61,8 +53,8 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
                 {
                     clientId: this.clientId,
                     promptAt,
-                    request,
-                    answerAt,
+                    prompt,
+                    resultAt,
                     result,
 
                     // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
