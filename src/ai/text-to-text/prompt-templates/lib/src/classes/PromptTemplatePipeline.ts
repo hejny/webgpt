@@ -3,7 +3,7 @@ import { validatePromptTemplatePipelineJson } from '../conversion/validatePrompt
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineJsonParameter } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonParameter';
-import { PromptTemplate } from './PromptTemplate';
+import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
 
 /**
  * Prompt template pipeline is the **core concept of this library**.
@@ -35,22 +35,13 @@ export class PromptTemplatePipeline<
 
         return new PromptTemplatePipeline(
             Object.fromEntries(source.parameters.map((parameter) => [parameter.name, parameter])),
-            source.promptTemplates.map(({ modelRequirements, content, resultingParameterName }) => ({
-                promptTemplate: new PromptTemplate(content, modelRequirements),
-                resultingParameterName,
-            })),
+            source.promptTemplates,
         );
     }
 
     private constructor(
         private readonly parameters: Record<string_name, PromptTemplatePipelineJsonParameter>,
-        private readonly promptTemplates: Array<{
-            //                                <- TODO: Constrain this types such as it must contain at least one element
-            //                                                                   and first one should have TInputParams
-            //                                                                   and last one should have TOutputParams
-            promptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>;
-            resultingParameterName: string;
-        }>,
+        private readonly promptTemplates: Array<PromptTemplatePipelineJsonTemplate>,
     ) {
         if (promptTemplates.length === 0) {
             throw new Error(`Prompt template pipeline must have at least one prompt template`);
@@ -60,17 +51,15 @@ export class PromptTemplatePipeline<
     /**
      * Returns the first prompt template in the pipeline
      */
-    public get entryPromptTemplate(): PromptTemplate<TInputParams, PromptTemplateParams> {
-        return this.promptTemplates[0]!.promptTemplate;
+    public get entryPromptTemplate(): PromptTemplatePipelineJsonTemplate {
+        return this.promptTemplates[0]!;
     }
 
     /**
      * Gets the parameter that is the result of given prompt template
      */
-    public getResultingParameter(
-        curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
-    ): PromptTemplatePipelineJsonParameter {
-        const index = this.promptTemplates.findIndex(({ promptTemplate }) => promptTemplate === curentPromptTemplate);
+    public getResultingParameter(promptTemplateName: string_name): PromptTemplatePipelineJsonParameter {
+        const index = this.promptTemplates.findIndex(({ name }) => name === promptTemplateName);
         if (index === -1) {
             throw new Error(`Prompt template is not in this pipeline`);
         }
@@ -84,10 +73,8 @@ export class PromptTemplatePipeline<
     /**
      * Gets the following prompt template in the pipeline or null if there is no following prompt template and this is the last one
      */
-    public getFollowingPromptTemplate(
-        curentPromptTemplate: PromptTemplate<PromptTemplateParams, PromptTemplateParams>,
-    ): PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null {
-        const index = this.promptTemplates.findIndex(({ promptTemplate }) => promptTemplate === curentPromptTemplate);
+    public getFollowingPromptTemplate(promptTemplateName: string_name): PromptTemplatePipelineJsonTemplate | null {
+        const index = this.promptTemplates.findIndex(({ name }) => name === promptTemplateName);
         if (index === -1) {
             throw new Error(`Prompt template is not in this pipeline`);
         }
@@ -96,7 +83,7 @@ export class PromptTemplatePipeline<
             return null;
         }
 
-        return this.promptTemplates[index + 1]!.promptTemplate;
+        return this.promptTemplates[index + 1]!;
     }
 }
 

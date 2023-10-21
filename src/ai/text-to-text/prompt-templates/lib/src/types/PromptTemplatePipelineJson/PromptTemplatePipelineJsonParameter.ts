@@ -24,3 +24,7 @@ export interface PromptTemplatePipelineJsonParameter {
      */
     description?: string;
 }
+
+/**
+ * TODO: !!! Rename to PromptTemplateParameterJson
+ */

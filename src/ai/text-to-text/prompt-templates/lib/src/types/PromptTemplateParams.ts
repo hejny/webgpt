@@ -19,7 +19,8 @@ export type PromptTemplateParams = {
 };
 
 /**
- * TODO: [🧠][🤜] Maybe remove typescript types for entry/result params and use only runtime validation
+ * TODO: !!! Delete the file
+ * TODO: [🧠][🤜] !!! Maybe remove typescript types for entry/result params and use only runtime validation
  * TODO: Maybe allow richer types for values
  * TODO: [🧠] Rename "PromptTemplateParams" in such a way that short name is not "PTP" (because it colides with "PromptTemplatePipeline")
  */

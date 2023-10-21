@@ -15,8 +15,11 @@ export interface ExecutionTools {
 
     /**
      * Tools for executing scripts
+     *
+     * Note: You can pass multiple ScriptExecutionTools, they will be tried one by one until one of them supports the script
+     *       If none of them supports the script, an error is thrown
      */
-    script: ScriptExecutionTools;
+    script: Array<ScriptExecutionTools>;
 
     /**
      * Tools for interacting with the user

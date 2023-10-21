@@ -3,7 +3,11 @@
  *
  * @see https://github.com/webgptorg/ptp#script-execution-tools
  */
-export interface ScriptExecutionTools {}
+export interface ScriptExecutionTools {
+
+
+    // isScriptSupported(script: string_scriptname): boolean;
+}
 
 /**
  * !!! Make

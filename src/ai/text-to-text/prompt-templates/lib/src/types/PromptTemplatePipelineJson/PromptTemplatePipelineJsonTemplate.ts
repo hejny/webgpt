@@ -63,6 +63,7 @@ export interface PromptTemplatePipelineJsonTemplate {
 }
 
 /**
+ * TODO: !!! Rename to PromptTemplateJson
  * TODO: Better type that require scriptLanguage for executionType SCRIPT
  * TODO: ust one helper type> (string_prompt | string_javascript | string_markdown) & string_template
  */

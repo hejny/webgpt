@@ -1,8 +1,9 @@
 import { Promisable } from 'type-fest';
 import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
-import { PromptTemplate } from '../classes/PromptTemplate';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
+import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
+import { replaceParams } from '../utils/replaceParams';
 import { ExecutionTools } from './ExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
@@ -30,7 +31,7 @@ export function createPtpExecutor<
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
         let paramsToPass: PromptTemplateParams = inputParams;
-        let currentPtp: PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null = ptp.entryPromptTemplate;
+        let currentPtp: PromptTemplatePipelineJsonTemplate | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
             const { name, description } = ptp.getResultingParameter(currentPtp!);
@@ -43,10 +44,17 @@ export function createPtpExecutor<
                 });
             }
 
-            const prompt = currentPtp.writePrompt(paramsToPass);
-
-            // TODO: !!! Use here also execution type
             let promptResult: string;
+
+            // TODO: !!! Use here execution type
+            //  switch (currentPtp.executionType) {
+
+            const prompt = {
+                ptpUrl: '!!!',
+                parameters: paramsToPass,
+                content: replaceParams(currentPtp.content, paramsToPass),
+                modelRequirements: currentPtp.modelRequirements,
+            };
             switch (currentPtp.modelRequirements.variant) {
                 case 'CHAT':
                     const chatThread = await tools.natural.gptChat(prompt);
