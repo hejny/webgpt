@@ -9,6 +9,8 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Input param `{assigment}` Zadání webu od zákazníka
 -   Output param `{content}` Obsah webu
 
+<!-- !!!! Use here - Execute prompt dialog -->
+
 ## Vylepšení názvu
 
 ```prompttemplate
@@ -32,6 +34,9 @@ Zadání od zákazníka:
 ```
 
 `-> {enhancedTitle}` Vylepšený název
+
+<!-- !!! Use here - Execute script removeQuotes-->
+<!-- !!!! Use here - Execute prompt dialog -->
 
 ## Vymyšlení claimu
 
@@ -148,3 +153,5 @@ Zadání webu od zákazníka:
 ```
 
 `-> {content}`
+
+<!-- !!! Use here - Execute simple template-->

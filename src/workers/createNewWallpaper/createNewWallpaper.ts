@@ -281,6 +281,7 @@ export async function createNewWallpaper(
 
     // TODO: [🧠] !! Wording: Assigment, Description, Prompt, biography | Make string_semantics for each of them
     // TODO: Should be here onProgress task?
+    // TODO: !!! Remove from here and put to PTP
     const answer = await promptDialogue({
         prompt: `What is your web about?`,
         defaultValue: description,

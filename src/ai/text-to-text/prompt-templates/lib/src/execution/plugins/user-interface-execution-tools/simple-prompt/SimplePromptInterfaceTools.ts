@@ -1,4 +1,4 @@
-import { UserInterfaceTools } from '../../../UserInterfaceTools';
+import { UserInterfaceTools, UserInterfaceToolsPromptDialogOptions } from '../../../UserInterfaceTools';
 
 /**
  * Wrapper around `window.prompt` synchronous function that interacts with the user via browser prompt
@@ -10,8 +10,8 @@ export class SimplePromptInterfaceTools implements UserInterfaceTools {
     /**
      * Trigger window.prompt dialog
      */
-    public async promptDialog(prompt: string): Promise<string> {
-        const answer = window.prompt(prompt);
+    public async promptDialog(options: UserInterfaceToolsPromptDialogOptions): Promise<string> {
+        const answer = window.prompt(options.prompt);
         if (answer === null) {
             throw new Error('User cancelled prompt');
         }
