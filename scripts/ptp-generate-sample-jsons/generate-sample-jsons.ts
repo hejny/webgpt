@@ -50,6 +50,10 @@ async function generateSampleJsons({ isCommited }: { isCommited: boolean }) {
             const ptpJsonFilePath = ptpMarkdownFilePath.replace(/\.ptp\.md$/, '.ptp.json');
             await writeFile(ptpJsonFilePath, JSON.stringify(ptpJson, null, 4) + '\n');
         } catch (error) {
+            if (!(error instanceof Error)) {
+                throw error;
+            }
+
             console.info(chalk.bgGray('========================='));
             console.info(chalk.red(`Error in ${ptpMarkdownFilePath}`));
             console.error(chalk.bgRed(error.name));

@@ -32,7 +32,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
 
         const model = 'gpt-3.5-turbo'; /* <- TODO: [☂] Use here more modelRequirements */
         const modelSettings = { model };
-        const completion = await this.openai.chat.completions.create({
+        const raw = await this.openai.chat.completions.create({
             ...modelSettings,
             messages: [
                 {
@@ -42,16 +42,16 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
             ],
         });
 
-        if (!completion.choices[0]) {
+        if (!raw.choices[0]) {
             throw new Error(`No choises from OpenAPI`);
         }
 
-        if (completion.choices.length > 1) {
+        if (raw.choices.length > 1) {
             // TODO: This should be maybe only warning
             throw new Error(`More than one choise from OpenAPI`);
         }
 
-        const resultContent = completion.choices[0].message.content;
+        const resultContent = raw.choices[0].message.content;
 
         if (!resultContent) {
             throw new Error(`No response message from OpenAPI`);
@@ -60,6 +60,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
         return {
             content: resultContent,
             model,
+            raw,
             // <- [🤹‍♂️]
         };
     }
@@ -78,21 +79,21 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
         const model = 'text-davinci-003'; /* <- TODO: [☂] Use here more modelRequirements */
         const modelSettings = { model };
 
-        const completion = await this.openai.completions.create({
+        const raw = await this.openai.completions.create({
             ...modelSettings,
             prompt: content,
         });
 
-        if (!completion.choices[0]) {
+        if (!raw.choices[0]) {
             throw new Error(`No choises from OpenAPI`);
         }
 
-        if (completion.choices.length > 1) {
+        if (raw.choices.length > 1) {
             // TODO: This should be maybe only warning
             throw new Error(`More than one choise from OpenAPI`);
         }
 
-        const resultContent = completion.choices[0].text;
+        const resultContent = raw.choices[0].text;
 
         if (!resultContent) {
             throw new Error(`No response message from OpenAPI`);
@@ -101,6 +102,7 @@ export class OpenAiExecutionTools implements PtpExecutionTools {
         return {
             content: resultContent,
             model,
+            raw,
             // <- [🤹‍♂️]
         };
     }

@@ -1,4 +1,4 @@
-import { string_prompt } from '../../../../../../utils/typeAliases';
+import { string_prompt, string_ptp_url } from '../../../../../../utils/typeAliases';
 import { ModelRequirements } from './ModelRequirements';
 import { PromptTemplateParams } from './PromptTemplateParams';
 

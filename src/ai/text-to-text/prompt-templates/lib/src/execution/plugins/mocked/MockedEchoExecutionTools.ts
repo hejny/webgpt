@@ -21,6 +21,9 @@ export class MockedEchoExecutionTools implements PtpExecutionTools {
                 `,
             ),
             model: `mocked-echo`,
+            raw: {
+                note: `This is mocked echo`,
+            },
             // <- [🤹‍♂️]
         };
     }
@@ -37,6 +40,9 @@ export class MockedEchoExecutionTools implements PtpExecutionTools {
                 `,
             ),
             model: `mocked-echo`,
+            raw: {
+                note: `This is mocked echo`,
+            },
             // <- [🤹‍♂️]
         };
     }

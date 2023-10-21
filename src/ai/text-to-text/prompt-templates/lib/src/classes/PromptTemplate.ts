@@ -25,8 +25,14 @@ export class PromptTemplate<TInputParams extends PromptTemplateParams, TOutputPa
      */
     public writePrompt(params: PromptTemplateParams): Prompt {
         return {
+            ptpUrl: '!!!',
+            parameters: params,
             content: replaceParams(this.content, params),
             modelRequirements: this.modelRequirements,
         };
     }
 }
+
+/**
+ * TODO: !!! ACRY rename params to parameters
+ */
