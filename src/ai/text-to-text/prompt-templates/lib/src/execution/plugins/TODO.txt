@@ -1,4 +1,1 @@
-TODO: Every execution tools here should have its own sublibrary
-TODO: Implement AzureOpenAiExecutionTools
-TODO: Implement BardExecutionTools
-TODO: Implement LamaExecutionTools
+TODO: Every piece here should have its own sublibrary

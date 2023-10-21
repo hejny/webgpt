@@ -2,7 +2,7 @@ import { NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
 import { ExecutionTools } from './lib/src/execution/ExecutionTools';
-import { RemoteNaturalExecutionTools } from './lib/src/execution/plugins/ExecutionTools/remote/RemoteNaturalExecutionTools';
+import { RemoteNaturalExecutionTools } from './lib/src/execution/plugins/natural/remote/RemoteNaturalExecutionTools';
 
 /**
  * Theese are tools for PTP execution
