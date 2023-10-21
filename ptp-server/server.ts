@@ -4,8 +4,8 @@ dotenv.config({ path: '.env' });
 
 import { OPENAI_API_KEY } from '../config';
 import { PromptTemplatePipelineLibrary } from '../src/ai/text-to-text/prompt-templates/lib/src/classes/PromptTemplatePipelineLibrary';
-import { OpenAiExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/natural/openai/OpenAiExecutionTools';
-import { createRemoteServer } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/natural/remote/createRemoteServer';
+import { OpenAiExecutionTools } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/natural-execution-tools/openai/OpenAiExecutionTools';
+import { createRemoteServer } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/natural-execution-tools/remote/createRemoteServer';
 // import { ptpLibrary } from '../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
 createRemoteServer({
