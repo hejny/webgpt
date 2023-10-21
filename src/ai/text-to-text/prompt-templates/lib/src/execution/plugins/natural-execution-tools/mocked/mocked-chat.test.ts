@@ -56,7 +56,5 @@ describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt',
 });
 
 /**
- * TODO: !!! Make equivalent test for script execution tools
- * TODO: !!! Make equivalent test for CallbackInterfaceTools
  * TODO: [🧠] What should be name of this test "MockedEchoExecutionTools.test.ts" or "createPtpExecutor.test.ts"
  */
