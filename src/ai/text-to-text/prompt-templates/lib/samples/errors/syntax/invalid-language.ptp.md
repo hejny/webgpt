@@ -8,7 +8,7 @@ This prompt is invalid because it is declared in a language that is not supporte
 
 -   Execute script
 
-```typescript
+```coffeescript
 Hello;
 ```
 
