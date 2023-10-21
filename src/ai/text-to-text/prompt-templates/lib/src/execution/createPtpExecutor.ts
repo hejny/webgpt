@@ -83,7 +83,6 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     let isSuccessful = false;
 
                     scripts: for (const scriptTools of tools.script) {
-                        console.log('for1', scriptTools.constructor.name);
                         try {
                             promptResult = await scriptTools.execute({
                                 scriptLanguage: currentPtp.contentLanguage,
@@ -91,7 +90,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                                 parameters: parametersToPass,
                             });
                             isSuccessful = true;
-                            console.log('for2', isSuccessful, scriptTools.constructor.name);
+
                             break scripts;
                         } catch (error) {
                             if (!(error instanceof Error)) {
@@ -103,7 +102,6 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     }
 
                     if (isSuccessful) {
-                        console.log('break executionType');
                         break executionType;
                     }
 
@@ -122,8 +120,6 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     }
 
                     // Note: This line is unreachable because of the break executionType above
-                    console.log('This line is unreachable');
-                    promptResult = null;
                     break executionType;
 
                 case 'PROMPT_DIALOG':
@@ -139,8 +135,6 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                 default:
                     throw new Error(`Unknown execution type "${currentPtp.executionType}"`);
             }
-
-            console.log('finish');
 
             if (promptResult === null) {
                 //              <- TODO: Make some NeverShouldHappenError
