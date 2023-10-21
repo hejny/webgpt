@@ -1,6 +1,5 @@
 import { string_name } from '../../../../../../utils/typeAliases';
 import { validatePromptTemplatePipelineJson } from '../conversion/validatePromptTemplatePipelineJson';
-import { PromptTemplateParams } from '../types/PromptTemplateParams';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
 import { PromptTemplatePipelineJsonParameter } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonParameter';
 import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
@@ -16,10 +15,7 @@ import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipel
  *
  * @see https://github.com/webgptorg/ptp#prompt-template-pipeline
  */
-export class PromptTemplatePipeline<
-    TInputParams extends PromptTemplateParams,
-    TOutputParams extends PromptTemplateParams,
-> {
+export class PromptTemplatePipeline {
     /**
      * Constructs PromptTemplatePipeline from JSON source
      *
@@ -28,9 +24,7 @@ export class PromptTemplatePipeline<
      * @param source
      * @returns PromptTemplatePipeline
      */
-    public static fromJson<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams>(
-        source: PromptTemplatePipelineJson,
-    ): PromptTemplatePipeline<TInputParams, TOutputParams> {
+    public static fromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {
         validatePromptTemplatePipelineJson(source);
 
         return new PromptTemplatePipeline(

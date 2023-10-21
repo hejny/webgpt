@@ -24,17 +24,12 @@ export class PromptTemplatePipelineLibrary {
     }
     */
 
-    public constructor(
-        private readonly promptTemplatePipelines: Record<
-            string_name,
-            PromptTemplatePipeline<any /* <- TODO: Get rid of anys */, any>
-        >,
-    ) {}
+    public constructor(private readonly promptTemplatePipelines: Record<string_name, PromptTemplatePipeline>) {}
 
     /**
      * Gets prompt template pipeline by name
      */
-    public getPtp(name: string_name): PromptTemplatePipeline<any /* <- TODO: Get rid of anys */, any> {
+    public getPtp(name: string_name): PromptTemplatePipeline {
         const promptTemplatePipeline = this.promptTemplatePipelines[name];
         if (!promptTemplatePipeline) {
             throw new Error(`Prompt template pipeline with name "${name}" not found`);
@@ -53,10 +48,7 @@ export class PromptTemplatePipelineLibrary {
     /**
      * Gets executor function for given prompt template pipeline
      */
-    public createExecutor(
-        name: string_name,
-        tools: ExecutionTools,
-    ): PtpExecutor<any /* <- TODO: Get rid of anys */, any> {
+    public createExecutor(name: string_name, tools: ExecutionTools): PtpExecutor {
         const ptp = this.getPtp(name);
         return createPtpExecutor({ ptp, tools });
     }

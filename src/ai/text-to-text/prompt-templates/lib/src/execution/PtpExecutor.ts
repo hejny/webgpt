@@ -1,6 +1,6 @@
 import { Promisable } from 'type-fest';
 import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
-import { PromptTemplateParams } from '../types/PromptTemplateParams';
+import { string_name } from '../../../../../../utils/typeAliases';
 
 /**
  * Executor is a simple async function that takes input params and returns result params _(along with all intermediate params and input params = it extends input object)_.
@@ -12,8 +12,10 @@ import { PromptTemplateParams } from '../types/PromptTemplateParams';
  *
  * @see https://github.com/webgptorg/ptp#executor
  */
-export interface PtpExecutor<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams> {
-    (inputParams: TInputParams, onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<TOutputParams>;
+export interface PtpExecutor {
+    (inputParams: Record<string_name, string>, onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<
+        Record<string_name, string>
+    >;
 }
 
 /**

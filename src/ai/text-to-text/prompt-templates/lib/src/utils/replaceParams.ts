@@ -1,4 +1,4 @@
-import { string_template } from '../../../../../../utils/typeAliases';
+import { string_name, string_template } from '../../../../../../utils/typeAliases';
 
 /**
  * Replaces params in template with values from params object
@@ -14,7 +14,10 @@ export function replaceParams(template: string_template, params: {}): string {
     let openedParamName: string | null = null;
 
     // Note: We dont want params with index signature here because it wont be compatible with PromptTemplateParams which has its own reasons to not have index signature
-    const paramsChecked = params as Record<string, string>; /* <- TODO: Make here some util validateTemplateParams */
+    const paramsChecked = params as Record<
+        string_name,
+        string
+    >; /* <- TODO: Make here some util validateTemplateParams */
 
     for (const char of template.split('')) {
         if (char === '{') {

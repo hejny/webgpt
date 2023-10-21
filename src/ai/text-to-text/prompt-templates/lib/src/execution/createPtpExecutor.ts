@@ -1,18 +1,16 @@
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
+import { string_name } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
-import { PromptTemplateParams } from '../types/PromptTemplateParams';
+
 import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
 import { replaceParams } from '../utils/replaceParams';
 import { ExecutionTools } from './ExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
-interface CreatePtpExecutorOptions<
-    TInputParams extends PromptTemplateParams,
-    TOutputParams extends PromptTemplateParams,
-> {
-    readonly ptp: PromptTemplatePipeline<TInputParams, TOutputParams>;
+interface CreatePtpExecutorOptions {
+    readonly ptp: PromptTemplatePipeline;
     readonly tools: ExecutionTools;
 }
 
@@ -21,17 +19,14 @@ interface CreatePtpExecutorOptions<
  *
  * Note: Consider using getExecutor method of the library instead of using this function
  */
-export function createPtpExecutor<
-    TInputParams extends PromptTemplateParams,
-    TOutputParams extends PromptTemplateParams,
->(options: CreatePtpExecutorOptions<TInputParams, TOutputParams>): PtpExecutor<TInputParams, TOutputParams> {
+export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecutor {
     const { ptp, tools } = options;
 
     const ptpExecutor = async (
-        inputParams: TInputParams,
+        inputParams: Record<string_name, string>,
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
-        let paramsToPass: PromptTemplateParams = inputParams;
+        let paramsToPass: Record<string_name, string> = inputParams;
         let currentPtp: PromptTemplatePipelineJsonTemplate | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
@@ -128,7 +123,13 @@ export function createPtpExecutor<
 
                 case 'PROMPT_DIALOG':
                     const promptToUser = replaceParams(currentPtp.content, paramsToPass);
-                    promptResult = await tools.userInterface.promptDialog(promptToUser);
+                    promptResult = await tools.userInterface.promptDialog({
+                        prompt: promptToUser,
+
+                        // TODO: [🧠] !!! Figure out how to use defaultValue and placeholder
+                        defaultValue: null,
+                        placeholder: undefined,
+                    });
                     break executionType;
 
                 default:
@@ -155,8 +156,7 @@ export function createPtpExecutor<
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!.name);
         }
 
-        // TODO:             <- We are assigning TOutputParams to TOutputParams, but we are not sure if it's correct, maybe check in runtime
-        return paramsToPass as TOutputParams;
+        return paramsToPass as Record<string_name, string>;
     };
 
     return ptpExecutor;

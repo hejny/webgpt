@@ -1,6 +1,5 @@
-import { string_prompt, string_ptp_url } from '../../../../../../utils/typeAliases';
+import { string_name, string_prompt, string_ptp_url_with_hashtemplate } from '../../../../../../utils/typeAliases';
 import { ModelRequirements } from './ModelRequirements';
-import { PromptTemplateParams } from './PromptTemplateParams';
 
 /**
  * Prompt in a text along with model requirements, but without any execution or templating logic.
@@ -21,10 +20,19 @@ export interface Prompt {
      */
     readonly modelRequirements: ModelRequirements;
 
-    readonly ptpUrl: string_ptp_url;
+    /**
+     * Unique identifier of the prompt template pipeline with specific template name as hash
+     *
+     * @example https://ptp.webgpt.com/cs/write-wallpaper-content@v2.4.15#keywords
+     */
+    readonly ptpUrl: string_ptp_url_with_hashtemplate;
 
-    //redundant
-    readonly parameters: PromptTemplateParams;
+    /**
+     * Parameters used in the prompt
+     *
+     * Note: This is redundant (same information is in ptpUrl+content) but useful for logging and debugging
+     */
+    readonly parameters: Record<string_name, string>;
 }
 
 /**

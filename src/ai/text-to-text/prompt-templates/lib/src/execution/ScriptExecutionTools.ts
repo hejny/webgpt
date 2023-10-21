@@ -1,4 +1,4 @@
-import { string_script } from '../../../../../../utils/typeAliases';
+import { string_name, string_script } from '../../../../../../utils/typeAliases';
 import { ScriptLanguage } from '../types/ScriptLanguage';
 
 /**
@@ -13,7 +13,7 @@ export interface ScriptExecutionTools {
 export interface ScriptExecutionToolsExecuteOptions {
     script: string_script;
     scriptLanguage: ScriptLanguage;
-    parameters: Record<string, string>;
+    parameters: Record<string_name, string>;
 }
 
 /**
