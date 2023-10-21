@@ -13,7 +13,8 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
      * Executes a JavaScript
      */
     public async execute(options: ScriptExecutionToolsExecuteOptions): Promise<string> {
-        const { scriptLanguage, script, parameters } = options;
+        const { scriptLanguage, parameters } = options;
+        let { script } = options;
 
         if (scriptLanguage !== 'javascript') {
             throw new Error(
@@ -27,9 +28,12 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         const removeQuotes = _removeQuotes;
         removeQuotes;
 
+        if (!script.includes('return')) {
+            script = `return ${script}`;
+        }
+
         const statementToEvaluate = spaceTrim(
             (block) => `
-        
                 ${block(
                     Object.entries(parameters)
                         .map(([key, value]) => `const ${key} = ${JSON.stringify(value)};`)
