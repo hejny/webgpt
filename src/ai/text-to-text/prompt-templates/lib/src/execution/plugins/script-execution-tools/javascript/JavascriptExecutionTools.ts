@@ -2,11 +2,10 @@ import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../
 
 /**
  * ScriptExecutionTools for JavaScript implemented via vm2
- * 
+ *
  * Warning: This is not implemented yet
  */
 export class JavascriptExecutionTools implements ScriptExecutionTools {
-
     /**
      * Executes a JavaScript
      */
@@ -24,5 +23,6 @@ export class JavascriptExecutionTools implements ScriptExecutionTools {
 }
 
 /**
+ * TODO: !! Probbably make some common util createStatementToEvaluate
  * TODO: !! Implement via vm2
  */

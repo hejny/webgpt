@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**
@@ -18,8 +19,23 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
                 `Script language ${scriptLanguage} not supported to be executed by JavascriptEvalExecutionTools`,
             );
         }
+        const statementToEvaluate = spaceTrim(
+            (block) => `
+                ${block(
+                    Object.entries(parameters)
+                        .map(([key, value]) => `const ${key} = ${JSON.stringify(value)};`)
+                        .join('\n'),
+                )})
+                (function() { ${script} })()
+            `,
+        );
+        const result = eval(statementToEvaluate);
 
-        throw new Error('Not implemented !!!');
+        if (typeof result !== 'string') {
+            throw new Error(`Script must return a string, but returned ${typeof result}`);
+        }
+
+        return result;
     }
 }
 
