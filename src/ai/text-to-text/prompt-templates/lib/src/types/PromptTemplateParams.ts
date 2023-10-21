@@ -6,7 +6,7 @@
  *     -   **Intermediate params** are used internally in the prompt template pipeline.
  *     -   **Result params** are not used internally in the prompt template pipeline, but are returned as the result of the prompt template pipeline execution.
  *
- * @see https://github.com/hejny/ptp#prompt-template-params
+ * @see https://github.com/webgptorg/ptp#prompt-template-params
  *
  */
 export type PromptTemplateParams = {

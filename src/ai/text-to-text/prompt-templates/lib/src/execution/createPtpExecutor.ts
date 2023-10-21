@@ -3,7 +3,7 @@ import { TaskProgress } from '../../../../../../components/TaskInProgress/task/T
 import { PromptTemplate } from '../classes/PromptTemplate';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 import { PromptTemplateParams } from '../types/PromptTemplateParams';
-import { PtpExecutionTools } from './PtpExecutionTools';
+import { ExecutionTools } from './ExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
 interface CreatePtpExecutorOptions<
@@ -11,7 +11,7 @@ interface CreatePtpExecutorOptions<
     TOutputParams extends PromptTemplateParams,
 > {
     readonly ptp: PromptTemplatePipeline<TInputParams, TOutputParams>;
-    readonly tools: PtpExecutionTools;
+    readonly tools: ExecutionTools;
 }
 
 /**
@@ -49,13 +49,13 @@ export function createPtpExecutor<
             let promptResult: string;
             switch (currentPtp.modelRequirements.variant) {
                 case 'CHAT':
-                    const chatThread = await tools.gptChat(prompt);
+                    const chatThread = await tools.natural.gptChat(prompt);
                     // TODO: Use all information from chatThread like "model"
                     // TODO: [🍬] Destroy chatThread
                     promptResult = chatThread.content;
                     break;
                 case 'COMPLETION':
-                    const completionResult = await tools.gptComplete(prompt);
+                    const completionResult = await tools.natural.gptComplete(prompt);
                     // TODO: Use all information from chatThread like "model"
                     promptResult = completionResult.content;
                     break;

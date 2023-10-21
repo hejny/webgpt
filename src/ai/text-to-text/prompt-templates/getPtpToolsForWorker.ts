@@ -1,8 +1,8 @@
 import { NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
-import { RemotePtpExecutionTools } from './lib/src/execution/plugins/ExecutionTools/remote/RemotePtpExecutionTools';
-import { PtpExecutionTools } from './lib/src/execution/PtpExecutionTools';
+import { ExecutionTools } from './lib/src/execution/ExecutionTools';
+import { RemoteNaturalExecutionTools } from './lib/src/execution/plugins/ExecutionTools/remote/RemoteNaturalExecutionTools';
 
 /**
  * Theese are tools for PTP execution
@@ -11,7 +11,7 @@ import { PtpExecutionTools } from './lib/src/execution/PtpExecutionTools';
  * @private
  * @singleton
  */
-let ptpExecutionTools: PtpExecutionTools;
+let executionTools: ExecutionTools;
 
 /**
  * Get PTP execution tools
@@ -19,18 +19,22 @@ let ptpExecutionTools: PtpExecutionTools;
  * Note: Tools are cached, so it's safe to call this function multiple times
  * Note: This function is available ONLY in worker
  *
- * @returns PtpExecutionTools
+ * @returns ExecutionTools
  */
 export function getPtpToolsForWorker(clientId: uuid) {
     if (!isRunningInWebWorker()) {
         throw new Error('This function is available ONLY in worker');
     }
 
-    if (!ptpExecutionTools) {
-        ptpExecutionTools = new RemotePtpExecutionTools(NEXT_PUBLIC_PTP_SERVER_URL, clientId);
+    if (!executionTools) {
+        executionTools = {
+            natural: new RemoteNaturalExecutionTools(NEXT_PUBLIC_PTP_SERVER_URL, clientId),
+            script: '!!!' as any,
+            userInterface: '!!!' as any,
+        };
     }
 
-    return ptpExecutionTools;
+    return executionTools;
 }
 
 /**

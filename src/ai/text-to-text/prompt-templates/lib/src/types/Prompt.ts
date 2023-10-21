@@ -5,10 +5,9 @@ import { PromptTemplateParams } from './PromptTemplateParams';
 /**
  * Prompt in a text along with model requirements, but without any execution or templating logic.
  *
- * @see https://github.com/hejny/ptp#prompt
+ * @see https://github.com/webgptorg/ptp#prompt
  */
 export interface Prompt {
-    
     /**
      * The text of the prompt
      *
@@ -22,13 +21,10 @@ export interface Prompt {
      */
     readonly modelRequirements: ModelRequirements;
 
-    
-     readonly ptpUrl: string_ptp_url;
+    readonly ptpUrl: string_ptp_url;
 
-     //redundant
-     readonly parameters: PromptTemplateParams;
-
-
+    //redundant
+    readonly parameters: PromptTemplateParams;
 }
 
 /**

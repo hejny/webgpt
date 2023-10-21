@@ -4,7 +4,7 @@ import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
 import { PromptTemplatePipelineLibrary } from '../../../../classes/PromptTemplatePipelineLibrary';
 import { PromptResult } from '../../../PromptResult';
-import { SupabaseLoggerWrapperOfExecutionTools } from '../logger/SupabaseLoggerWrapperOfExecutionTools';
+import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
 import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
@@ -41,7 +41,7 @@ interface RemoteServerOptions {
  * You can simply use `RemoteExecutionTools` on client-side javascript and connect to your remote server.
  * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
  *
- * @see https://github.com/hejny/ptp#remote-server
+ * @see https://github.com/webgptorg/ptp#remote-server
  */
 export function createRemoteServer(options: RemoteServerOptions) {
     const { port, ptpLibrary, executionTools, isVerbose } = options;
@@ -56,7 +56,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 Server for processing PTP requests is running
 
                 For more information look at:
-                https://github.com/hejny/ptp
+                https://github.com/webgptorg/ptp
 
             `),
         );
@@ -83,7 +83,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 console.info(chalk.bgGray(`  Prompt:  `), chalk.gray(JSON.stringify(request, null, 4)));
             }
 
-            const executionToolsForClient = new SupabaseLoggerWrapperOfExecutionTools(executionTools, clientId);
+            const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools(executionTools, clientId);
 
             // TODO: !!! Check validity of the prompt against ptpLibrary
 

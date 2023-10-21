@@ -7,7 +7,7 @@ import { replaceParams } from '../utils/replaceParams';
 /**
  * Similar concept to Prompt, but with templating logic.
  *
- * @see https://github.com/hejny/ptp#prompt-template
+ * @see https://github.com/webgptorg/ptp#prompt-template
  */
 export class PromptTemplate<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams> {
     public constructor(

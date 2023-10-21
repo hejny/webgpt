@@ -2,8 +2,8 @@ import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
 import { uuid } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
+import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../../PromptResult';
-import { PtpExecutionTools } from '../../../PtpExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 
@@ -13,9 +13,9 @@ import { Ptps_Response } from './interfaces/Ptps_Response';
  * You can simply use `RemoteExecutionTools` on client-side javascript and connect to your remote server.
  * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
  *
- * @see https://github.com/hejny/ptp#remote-server
+ * @see https://github.com/webgptorg/ptp#remote-server
  */
-export class RemotePtpExecutionTools implements PtpExecutionTools {
+export class RemoteNaturalExecutionTools implements NaturalExecutionTools {
     constructor(private readonly remoteUrl: URL, private readonly clientId: uuid) {}
 
     /**
@@ -75,5 +75,5 @@ export class RemotePtpExecutionTools implements PtpExecutionTools {
 }
 
 /**
- * TODO: [🤹‍♂️] RemotePtpExecutionTools should extend Destroyable and implement IDestroyable
+ * TODO: [🤹‍♂️] RemoteNaturalExecutionTools should extend Destroyable and implement IDestroyable
  */

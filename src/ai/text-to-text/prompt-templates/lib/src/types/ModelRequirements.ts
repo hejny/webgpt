@@ -12,7 +12,7 @@ export type ModelVariant = typeof MODEL_VARIANTS[number];
 /**
  * Abstract way to specify the LLM. It does not specify the LLM with concrete version itself, only the requirements for the LLM.
  *
- * @see https://github.com/hejny/ptp#model-requirements
+ * @see https://github.com/webgptorg/ptp#model-requirements
  */
 export interface ModelRequirements {
     /**

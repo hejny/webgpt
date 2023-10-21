@@ -1,7 +1,6 @@
 # Obsah webové stránky
 
-Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/hejny/ptp).
-
+Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
 
 -   PTP version 0.0.1
 -   Use chat

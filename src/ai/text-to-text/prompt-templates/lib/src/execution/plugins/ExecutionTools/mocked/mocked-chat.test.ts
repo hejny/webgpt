@@ -4,7 +4,7 @@ import { PromptTemplatePipeline } from '../../../../classes/PromptTemplatePipeli
 import { promptTemplatePipelineStringToJson } from '../../../../conversion/promptTemplatePipelineStringToJson';
 import { PromptTemplatePipelineString } from '../../../../types/PromptTemplatePipelineString';
 import { createPtpExecutor } from '../../../createPtpExecutor';
-import { MockedEchoExecutionTools } from './MockedEchoExecutionTools';
+import { MockedEchoNaturalExecutionTools } from './MockedEchoNaturalExecutionTools';
 
 describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt', () => {
     const ptpJson = promptTemplatePipelineStringToJson(
@@ -29,7 +29,7 @@ describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt',
     const ptp = PromptTemplatePipeline.fromJson(ptpJson);
     const ptpExecutor = createPtpExecutor({
         ptp,
-        tools: new MockedEchoExecutionTools(),
+        tools: { natural: new MockedEchoNaturalExecutionTools(), script: null as any, userInterface: null as any },
     });
 
     it('should work when every input parameter defined', () => {
@@ -56,5 +56,7 @@ describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt',
 });
 
 /**
+ * TODO: !!! Make equivalent test for script execution tools
+ * TODO: !!! Make equivalent test for CallbackInterfaceTools
  * TODO: [🧠] What should be name of this test "MockedEchoExecutionTools.test.ts" or "createPtpExecutor.test.ts"
  */

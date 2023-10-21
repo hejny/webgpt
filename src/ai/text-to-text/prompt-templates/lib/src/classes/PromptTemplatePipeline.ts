@@ -14,7 +14,7 @@ import { PromptTemplate } from './PromptTemplate';
  * -   **JSON** format, parsed from the .ptp.md file
  * -   _(this)_ **Object** which is created from JSON format and bound with tools around (but not the execution logic)
  *
- * @see https://github.com/hejny/ptp#prompt-template-pipeline
+ * @see https://github.com/webgptorg/ptp#prompt-template-pipeline
  */
 export class PromptTemplatePipeline<
     TInputParams extends PromptTemplateParams,

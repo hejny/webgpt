@@ -7,7 +7,7 @@ dotenv.config({ path: '.env' });
 import chalk from 'chalk';
 import { join } from 'path';
 import { OPENAI_API_KEY, SYSTEM_AUTHOR_ID } from '../../config';
-import { SupabaseLoggerWrapperOfExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/ExecutionTools/logger/SupabaseLoggerWrapperOfExecutionTools';
+import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/ExecutionTools/logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
 import { OpenAiExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/ExecutionTools/openai/OpenAiExecutionTools';
 import { ptpLibrary } from '../../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
@@ -41,10 +41,14 @@ async function playground() {
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
         */
     };
-    const outputParams = await ptpLibrary.createExecutor(
-        'writeWebsiteContent',
-        new SupabaseLoggerWrapperOfExecutionTools(new OpenAiExecutionTools(OPENAI_API_KEY!), SYSTEM_AUTHOR_ID),
-    )(inputParams, (taskProgress) => {
+    const outputParams = await ptpLibrary.createExecutor('writeWebsiteContent', {
+        natural: new SupabaseLoggerWrapperOfNaturalExecutionTools(
+            new OpenAiExecutionTools(OPENAI_API_KEY!),
+            SYSTEM_AUTHOR_ID,
+        ),
+        script: null as any,
+        userInterface: null as any,
+    })(inputParams, (taskProgress) => {
         console.info({ taskProgress });
     });
     console.info({ inputParams, outputParams });

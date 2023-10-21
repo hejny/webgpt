@@ -10,7 +10,7 @@ import { PromptTemplateParams } from '../types/PromptTemplateParams';
  * -   From `PromptTemplatePipelineLibrary.getExecutor` method
  * -   `createPtpExecutor` utility function
  *
- * @see https://github.com/hejny/ptp#executor
+ * @see https://github.com/webgptorg/ptp#executor
  */
 export interface PtpExecutor<TInputParams extends PromptTemplateParams, TOutputParams extends PromptTemplateParams> {
     (inputParams: TInputParams, onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<TOutputParams>;

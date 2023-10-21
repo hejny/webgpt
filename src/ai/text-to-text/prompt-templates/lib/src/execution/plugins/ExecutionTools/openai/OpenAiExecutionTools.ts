@@ -1,13 +1,13 @@
 import OpenAI from 'openai';
 import { string_token } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
+import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult } from '../../../PromptResult';
-import { PtpExecutionTools } from '../../../PtpExecutionTools';
 
 /**
  * Execution Tools for calling OpenAI API.
  */
-export class OpenAiExecutionTools implements PtpExecutionTools {
+export class OpenAiExecutionTools implements NaturalExecutionTools {
     /**
      * OpenAI API client.
      */

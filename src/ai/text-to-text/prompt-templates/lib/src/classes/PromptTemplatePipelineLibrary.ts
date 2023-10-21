@@ -1,6 +1,6 @@
 import { string_name } from '../../../../../../utils/typeAliases';
 import { createPtpExecutor } from '../execution/createPtpExecutor';
-import { PtpExecutionTools } from '../execution/PtpExecutionTools';
+import { ExecutionTools } from '../execution/ExecutionTools';
 import { PtpExecutor } from '../execution/PtpExecutor';
 import { Prompt } from '../types/Prompt';
 import { PromptTemplatePipeline } from './PromptTemplatePipeline';
@@ -12,7 +12,7 @@ import { PromptTemplatePipeline } from './PromptTemplatePipeline';
  *
  * It allows to create executor functions from prompt template pipelines in the library.
  *
- * @see https://github.com/hejny/ptp#prompt-template-pipeline-library
+ * @see https://github.com/webgptorg/ptp#prompt-template-pipeline-library
  */
 export class PromptTemplatePipelineLibrary {
     /*
@@ -55,7 +55,7 @@ export class PromptTemplatePipelineLibrary {
      */
     public createExecutor(
         name: string_name,
-        tools: PtpExecutionTools,
+        tools: ExecutionTools,
     ): PtpExecutor<any /* <- TODO: Get rid of anys */, any> {
         const ptp = this.getPtp(name);
         return createPtpExecutor({ ptp, tools });

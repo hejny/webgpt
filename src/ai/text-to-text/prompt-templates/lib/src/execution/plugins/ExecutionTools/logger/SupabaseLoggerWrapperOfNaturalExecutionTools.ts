@@ -2,14 +2,14 @@ import { isRunningInNode } from '../../../../../../../../../utils/isRunningInWha
 import { getSupabaseForServer } from '../../../../../../../../../utils/supabase/getSupabaseForServer';
 import { uuid } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
+import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../../PromptResult';
-import { PtpExecutionTools } from '../../../PtpExecutionTools';
 
 /**
  * Wrapper for any PtpExecutionTools which logs every request+result to Supabase.
  */
-export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools {
-    public constructor(private readonly ptpExecutionTools: PtpExecutionTools, private readonly clientId: uuid) {
+export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExecutionTools {
+    public constructor(private readonly naturalExecutionTools: NaturalExecutionTools, private readonly clientId: uuid) {
         if (!isRunningInNode()) {
             throw new Error(`SupabaseLoggerWrapperOfExecutionTools can be used only on server`);
         }
@@ -40,10 +40,10 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
         let promptResult: PromptResult;
         switch (prompt.modelRequirements.variant) {
             case 'CHAT':
-                promptResult = await this.ptpExecutionTools.gptChat(prompt);
+                promptResult = await this.naturalExecutionTools.gptChat(prompt);
                 break;
             case 'COMPLETION':
-                promptResult = await this.ptpExecutionTools.gptComplete(prompt);
+                promptResult = await this.naturalExecutionTools.gptComplete(prompt);
                 break;
             default:
                 throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
@@ -97,7 +97,8 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
 }
 
 /**
- * TODO: [🧠] Best name for this class "SupabaseLoggerWrapperOfExecutionTools" vs "ExecutionToolsWithSupabaseLogger" or just helper "withSupabaseLogger"
+ * TODO: [🧠] Best name for this class "SupabaseLoggerWrapperOfNaturalExecutionTools" vs "NaturalExecutionToolsWithSupabaseLogger" or just helper "withSupabaseLogger"
  * TODO: Log also failed results
- * TODO: Create abstract LoggerWrapperOfExecutionTools which can be extended to implement more loggers
+ * TODO: [🧠] Maybe do equivalent for UserInterfaceTools OR make this for whole ExecutionTools
+ * TODO: Create abstract LoggerWrapperOfNaturalExecutionTools which can be extended to implement more loggers
  */
