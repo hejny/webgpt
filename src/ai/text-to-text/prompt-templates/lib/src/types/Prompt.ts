@@ -1,5 +1,6 @@
 import { string_prompt } from '../../../../../../utils/typeAliases';
 import { ModelRequirements } from './ModelRequirements';
+import { PromptTemplateParams } from './PromptTemplateParams';
 
 /**
  * Prompt in a text along with model requirements, but without any execution or templating logic.
@@ -7,6 +8,7 @@ import { ModelRequirements } from './ModelRequirements';
  * @see https://github.com/hejny/ptp#prompt
  */
 export interface Prompt {
+    
     /**
      * The text of the prompt
      *
@@ -19,6 +21,14 @@ export interface Prompt {
      * Requirements for the model
      */
     readonly modelRequirements: ModelRequirements;
+
+    
+     readonly ptpUrl: string_ptp_url;
+
+     //redundant
+     readonly parameters: PromptTemplateParams;
+
+
 }
 
 /**
