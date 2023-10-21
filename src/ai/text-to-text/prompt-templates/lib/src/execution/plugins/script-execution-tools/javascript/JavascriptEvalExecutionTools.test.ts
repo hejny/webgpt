@@ -12,6 +12,15 @@ describe('JavascriptEvalExecutionTools', () => {
                 parameters: {
                     animal: 'cat',
                 },
+                script: `animal`,
+            }),
+        ).resolves.toEqual('cat');
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {
+                    animal: 'cat',
+                },
                 script: `return animal`,
             }),
         ).resolves.toEqual('cat');
