@@ -195,13 +195,24 @@ export function promptTemplatePipelineStringToJson(
         }
         const resultingParameterName = match.groups.resultingParamName;
 
+        let description: string | undefined = section.content;
+        // Note: Remove codeblocks
+        description = description.split(/^```.*^```/gms).join('');
+        //Note: Remove lists and return statement
+        description = description.split(/^(?:(?:-)|(?:\d\))|(?:`?->))\s+.*$/gm).join('');
+        description = spaceTrim(description);
+        if (description === '') {
+            description = undefined;
+        }
+
         ptpJson.promptTemplates.push({
             name: normalizeTo_PascalCase(section.title),
             title: section.title,
+            description,
             executionType,
             modelRequirements: templateModelRequirements,
             contentLanguage: executionType === 'SCRIPT' ? (language as ScriptLanguage) : undefined,
-            content: content,
+            content,
             resultingParameterName,
         });
     }
