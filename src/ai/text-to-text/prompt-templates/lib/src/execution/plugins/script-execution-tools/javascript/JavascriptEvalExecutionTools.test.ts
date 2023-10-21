@@ -98,7 +98,7 @@ describe('JavascriptEvalExecutionTools', () => {
                     print(animal);
                 `),
             }),
-        ).rejects.toThrowError(/not supported/);
+        ).rejects.toThrowError(/not supported/i);
     });
 });
 

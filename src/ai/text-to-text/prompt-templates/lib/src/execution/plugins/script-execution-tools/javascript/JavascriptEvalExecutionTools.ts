@@ -1,4 +1,5 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim as _spaceTrim } from 'spacetrim';
+import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
 import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**
@@ -19,16 +20,25 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
                 `Script language ${scriptLanguage} not supported to be executed by JavascriptEvalExecutionTools`,
             );
         }
+
+        // Note: Using direct eval, following variables are in same scope as eval call so they are accessible from inside the evaluated script:
+        const spaceTrim = _spaceTrim;
+        spaceTrim;
+        const removeQuotes = _removeQuotes;
+        removeQuotes;
+
         const statementToEvaluate = spaceTrim(
             (block) => `
+        
                 ${block(
                     Object.entries(parameters)
                         .map(([key, value]) => `const ${key} = ${JSON.stringify(value)};`)
                         .join('\n'),
-                )})
-                (function() { ${script} })()
+                )}
+                (()=>{ ${script} })()
             `,
         );
+
         const result = eval(statementToEvaluate);
 
         if (typeof result !== 'string') {
