@@ -1,6 +1,6 @@
 /**
  * Prompt template pipeline is the **core concept of this library**.
- * It represents a series of prompt templates chained together to form a pipeline / one big prompt template with input and result params.
+ * It represents a series of prompt templates chained together to form a pipeline / one big prompt template with input and result parameters.
  *
  * It can have 3 formats:
  * -   _(this)_ **.ptp.md file** in custom markdown format described above

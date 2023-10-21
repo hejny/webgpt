@@ -3,7 +3,7 @@ import { TaskProgress } from '../../../../../../components/TaskInProgress/task/T
 import { string_name } from '../../../../../../utils/typeAliases';
 
 /**
- * Executor is a simple async function that takes input params and returns result params _(along with all intermediate params and input params = it extends input object)_.
+ * Executor is a simple async function that takes input parameters and returns result parameters _(along with all intermediate parameters and input parameters = it extends input object)_.
  * Executor is made by combining execution tools and prompt template pipeline library.
  *
  * It can be done in two ways:
@@ -13,9 +13,10 @@ import { string_name } from '../../../../../../utils/typeAliases';
  * @see https://github.com/webgptorg/ptp#executor
  */
 export interface PtpExecutor {
-    (inputParams: Record<string_name, string>, onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<
-        Record<string_name, string>
-    >;
+    (
+        inputParameters: Record<string_name, string>,
+        onProgress: (taskProgress: TaskProgress) => Promisable<void>,
+    ): Promise<Record<string_name, string>>;
 }
 
 /**

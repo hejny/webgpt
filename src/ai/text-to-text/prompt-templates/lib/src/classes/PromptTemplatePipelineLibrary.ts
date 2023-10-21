@@ -55,7 +55,7 @@ export class PromptTemplatePipelineLibrary {
 }
 
 /**
- * TODO: [🤜] Add generic type for entry and result params
+ * TODO: [🤜] Add generic type for entry and result parameters
  * TODO: [🧠] Is it better to ptpLibrary.executePtp('writeXyz',{...}) OR ptpLibrary.createExecutor('writeXyz')({...}) OR createExecutor(ptpLibrary.getPtp('writeXyz'))
  * TODO: [🧠] Formarly (before commit 62229afce7668a5b85077cc18becf798b583bf8d) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)
  * TODO: [🧠] Is it better to pass tools into getExecutor or into constructor

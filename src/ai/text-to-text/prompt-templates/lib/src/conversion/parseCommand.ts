@@ -80,7 +80,7 @@ export function parseCommand(listItem: string_markdown_text): Command {
         listItem.startsWith('{') ||
         listItem.startsWith(
             '> {',
-        ) /* <- Note: This is a bit hack to parse return params defined at the end of each section */
+        ) /* <- Note: This is a bit hack to parse return parameters defined at the end of each section */
     ) {
         const parametersMatch = listItem.match(
             /\{(?<parameterName>[a-z0-9_]+)\}[^\S\r\n]*(?<parameterDescription>.*)$/im,

@@ -1,23 +1,23 @@
 import { string_name, string_template } from '../../../../../../utils/typeAliases';
 
 /**
- * Replaces params in template with values from params object
+ * Replaces parameters in template with values from parameters object
  *
- * @param template the template with params in {curly} braces
- * @param params the object with params
- * @returns the template with replaced params
+ * @param template the template with parameters in {curly} braces
+ * @param parameters the object with parameters
+ * @returns the template with replaced parameters
  *
  * @private within the library
  */
-export function replaceParams(template: string_template, params: {}): string {
+export function replaceParameters(template: string_template, parameters: {}): string {
     let result = '';
     let openedParamName: string | null = null;
 
-    // Note: We dont want params with index signature here because it wont be compatible with PromptTemplateParams which has its own reasons to not have index signature
-    const paramsChecked = params as Record<
+    // Note: We dont want parameters with index signature here because it wont be compatible with PromptTemplateParameters which has its own reasons to not have index signature
+    const parametersChecked = parameters as Record<
         string_name,
         string
-    >; /* <- TODO: Make here some util validateTemplateParams */
+    >; /* <- TODO: Make here some util validateTemplateParameters */
 
     for (const char of template.split('')) {
         if (char === '{') {
@@ -29,10 +29,10 @@ export function replaceParams(template: string_template, params: {}): string {
             if (openedParamName === null) {
                 throw new Error(`Parameter is not opened`);
             }
-            if (paramsChecked[openedParamName] === undefined) {
+            if (parametersChecked[openedParamName] === undefined) {
                 throw new Error(`Parameter {${openedParamName}} is not defined`);
             }
-            result += paramsChecked[openedParamName];
+            result += parametersChecked[openedParamName];
             openedParamName = null;
         } else if (openedParamName === null) {
             result += char;

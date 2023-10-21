@@ -6,7 +6,7 @@ import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipel
 
 /**
  * Prompt template pipeline is the **core concept of this library**.
- * It represents a series of prompt templates chained together to form a pipeline / one big prompt template with input and result params.
+ * It represents a series of prompt templates chained together to form a pipeline / one big prompt template with input and result parameters.
  *
  * It can have 3 formats:
  * -   **.ptp.md file** in custom markdown format described above
@@ -82,7 +82,7 @@ export class PromptTemplatePipeline {
 }
 
 /**
- * TODO: !! Add generic type for entry and result params
+ * TODO: !! Add generic type for entry and result parameters
  * TODO: Can be Array elegantly typed such as it must have at least one element?
  * TODO: [🧠] Each PromptTemplatePipeline should have its unique hash to be able to compare them and execute on server ONLY the desired ones
  */

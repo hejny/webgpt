@@ -5,7 +5,7 @@ import { string_name } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 
 import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
-import { replaceParams } from '../utils/replaceParams';
+import { replaceParameters } from '../utils/replaceParameters';
 import { ExecutionTools } from './ExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
@@ -23,10 +23,10 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
     const { ptp, tools } = options;
 
     const ptpExecutor = async (
-        inputParams: Record<string_name, string>,
+        inputParameters: Record<string_name, string>,
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
-        let paramsToPass: Record<string_name, string> = inputParams;
+        let parametersToPass: Record<string_name, string> = inputParameters;
         let currentPtp: PromptTemplatePipelineJsonTemplate | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
@@ -44,14 +44,14 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 
             executionType: switch (currentPtp.executionType) {
                 case 'SIMPLE_TEMPLATE':
-                    promptResult = replaceParams(currentPtp.content, paramsToPass);
+                    promptResult = replaceParameters(currentPtp.content, parametersToPass);
                     break executionType;
 
                 case 'PROMPT_TEMPLATE':
                     const prompt = {
                         ptpUrl: '!!!',
-                        parameters: paramsToPass,
-                        content: replaceParams(currentPtp.content, paramsToPass),
+                        parameters: parametersToPass,
+                        content: replaceParameters(currentPtp.content, parametersToPass),
                         modelRequirements: currentPtp.modelRequirements,
                     };
                     variant: switch (currentPtp.modelRequirements.variant) {
@@ -87,7 +87,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                             promptResult = await scriptTools.execute({
                                 scriptLanguage: currentPtp.contentLanguage,
                                 script: currentPtp.content,
-                                parameters: paramsToPass,
+                                parameters: parametersToPass,
                             });
                             isSuccessful = true;
                             break script;
@@ -123,8 +123,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 
                 case 'PROMPT_DIALOG':
                     promptResult = await tools.userInterface.promptDialog({
-                        prompt: replaceParams(currentPtp.description || '', paramsToPass),
-                        defaultValue: replaceParams(currentPtp.content, paramsToPass),
+                        prompt: replaceParameters(currentPtp.description || '', parametersToPass),
+                        defaultValue: replaceParameters(currentPtp.content, parametersToPass),
 
                         // TODO: [🧠] !! Figure out how to define placeholder in .ptp.md file
                         placeholder: undefined,
@@ -147,15 +147,15 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                 });
             }
 
-            paramsToPass = {
-                ...paramsToPass,
+            parametersToPass = {
+                ...parametersToPass,
                 [name]: promptResult /* <- Note: Not need to detect parameter collision here because PromptTemplatePipeline checks logic consistency during construction */,
             };
 
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!.name);
         }
 
-        return paramsToPass as Record<string_name, string>;
+        return parametersToPass as Record<string_name, string>;
     };
 
     return ptpExecutor;
