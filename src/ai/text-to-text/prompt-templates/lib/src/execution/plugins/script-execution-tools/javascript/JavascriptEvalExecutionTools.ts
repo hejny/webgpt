@@ -25,4 +25,5 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
 
 /**
  * TODO: !!! Implement
+ * TODO: !!! Put here some predefined functions like removeQuotes, spaceTrim, etc.
  */
