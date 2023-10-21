@@ -122,12 +122,11 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     break executionType;
 
                 case 'PROMPT_DIALOG':
-                    const promptToUser = replaceParams(currentPtp.content, paramsToPass);
                     promptResult = await tools.userInterface.promptDialog({
-                        prompt: promptToUser,
+                        prompt: replaceParams(currentPtp.description || '', paramsToPass),
+                        defaultValue: replaceParams(currentPtp.content, paramsToPass),
 
-                        // TODO: [🧠] !!! Figure out how to use defaultValue and placeholder
-                        defaultValue: null,
+                        // TODO: [🧠] !! Figure out how to define placeholder in .ptp.md file
                         placeholder: undefined,
                     });
                     break executionType;

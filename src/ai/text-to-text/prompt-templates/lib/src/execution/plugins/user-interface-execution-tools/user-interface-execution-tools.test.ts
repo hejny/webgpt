@@ -19,7 +19,7 @@ describe('createPtpExecutor + executing user interface prompts in ptp', () => {
             
             ## Prompt
 
-            -   Execute user prompt
+            -   Execute prompt dialog
 
             What is your favorite {thing} to buy?
             
@@ -49,7 +49,8 @@ describe('createPtpExecutor + executing user interface prompts in ptp', () => {
         });
         expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toEqual({
             thing: 'a cup of coffee',
-            bhing: 'Answer to question "What is your favorite a cup of coffee to buy?" is not a cup of coffee but Pear.',
+            favoriteThing:
+                'Answer to question "What is your favorite a cup of coffee to buy?" is not a cup of coffee but Pear.',
         });
     });
 
