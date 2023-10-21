@@ -10,7 +10,7 @@ export interface ScriptExecutionTools {
     execute(options: ScriptExecutionToolsExecuteOptions): Promise<string>;
 }
 
-interface ScriptExecutionToolsExecuteOptions {
+export interface ScriptExecutionToolsExecuteOptions {
     script: string_script;
     scriptLanguage: ScriptLanguage;
     parameters: Record<string, string>;

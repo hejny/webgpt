@@ -1,8 +1,28 @@
-import { ScriptExecutionTools } from '../../../ScriptExecutionTools';
-
-export class JavascriptExecutionTools implements ScriptExecutionTools {}
+import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**
- * TODO: !!! Implement via vm2
- * TODO: !!! Annotate
+ * ScriptExecutionTools for JavaScript implemented via vm2
+ * 
+ * Warning: This is not implemented yet
+ */
+export class JavascriptExecutionTools implements ScriptExecutionTools {
+
+    /**
+     * Executes a JavaScript
+     */
+    public async execute(options: ScriptExecutionToolsExecuteOptions): Promise<string> {
+        const { scriptLanguage, script, parameters } = options;
+
+        if (scriptLanguage !== 'javascript') {
+            throw new Error(
+                `Script language ${scriptLanguage} not supported to be executed by JavascriptExecutionTools`,
+            );
+        }
+
+        throw new Error('Not implemented');
+    }
+}
+
+/**
+ * TODO: !! Implement via vm2
  */
