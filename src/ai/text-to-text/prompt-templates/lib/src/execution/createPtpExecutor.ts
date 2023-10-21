@@ -45,7 +45,7 @@ export function createPtpExecutor<
                 });
             }
 
-            let promptResult: string;
+            let promptResult: string | null = null;
 
             executionType: switch (currentPtp.executionType) {
                 case 'SIMPLE_TEMPLATE':
@@ -122,8 +122,8 @@ export function createPtpExecutor<
                             );
                         }
                     }
-                    promptResult = '';
                     // Note: This line is unreachable because of the break executionType above
+                    promptResult = null;
                     break executionType;
 
                 case 'PROMPT_DIALOG':
@@ -133,6 +133,11 @@ export function createPtpExecutor<
 
                 default:
                     throw new Error(`Unknown execution type "${currentPtp.executionType}"`);
+            }
+
+            if (promptResult === null) {
+                //              <- TODO: Make some NeverShouldHappenError
+                throw new Error(`Something went wrong and prompt result is null`);
             }
 
             if (onProgress) {
