@@ -82,7 +82,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     const errors: Array<Error> = [];
                     let isSuccessful = false;
 
-                    script: for (const scriptTools of tools.script) {
+                    scripts: for (const scriptTools of tools.script) {
+                        console.log('for1', scriptTools.constructor.name);
                         try {
                             promptResult = await scriptTools.execute({
                                 scriptLanguage: currentPtp.contentLanguage,
@@ -90,7 +91,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                                 parameters: parametersToPass,
                             });
                             isSuccessful = true;
-                            break script;
+                            console.log('for2', isSuccessful, scriptTools.constructor.name);
+                            break scripts;
                         } catch (error) {
                             if (!(error instanceof Error)) {
                                 throw error;
@@ -98,26 +100,29 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 
                             errors.push(error);
                         }
+                    }
 
-                        if (isSuccessful) {
-                            break executionType;
-                        }
+                    if (isSuccessful) {
+                        console.log('break executionType');
+                        break executionType;
+                    }
 
-                        if (errors.length === 1) {
-                            throw errors[0];
-                        } else {
-                            throw new Error(
-                                spaceTrim(
-                                    (block) => `
+                    if (errors.length === 1) {
+                        throw errors[0];
+                    } else {
+                        throw new Error(
+                            spaceTrim(
+                                (block) => `
                                         Script execution failed ${errors.length} times
 
                                         ${block(errors.map((error) => '- ' + error.message).join('\n\n'))}
                                     `,
-                                ),
-                            );
-                        }
+                            ),
+                        );
                     }
+
                     // Note: This line is unreachable because of the break executionType above
+                    console.log('This line is unreachable');
                     promptResult = null;
                     break executionType;
 
@@ -134,6 +139,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                 default:
                     throw new Error(`Unknown execution type "${currentPtp.executionType}"`);
             }
+
+            console.log('finish');
 
             if (promptResult === null) {
                 //              <- TODO: Make some NeverShouldHappenError
