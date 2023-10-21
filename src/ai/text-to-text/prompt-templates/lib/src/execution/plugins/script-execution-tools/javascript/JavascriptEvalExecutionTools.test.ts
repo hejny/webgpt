@@ -5,18 +5,86 @@ import { JavascriptEvalExecutionTools } from './JavascriptEvalExecutionTools';
 describe('JavascriptEvalExecutionTools', () => {
     const javascriptEvalExecutionTools = new JavascriptEvalExecutionTools();
 
-    it('should evaluate simple script', () => {
+    it('should evaluate supersimple statement', () => {
         expect(
             javascriptEvalExecutionTools.execute({
                 scriptLanguage: 'javascript',
                 parameters: {
                     animal: 'cat',
                 },
-                script: spaceTrim(`
-                    animal
-                `),
+                script: `return animal`,
             }),
         ).resolves.toEqual('cat');
+    });
+
+    it('should evaluate single statement', () => {
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {
+                    animal: 'cat',
+                },
+                script: `return animal.split('').reverse().join('-')`,
+            }),
+        ).resolves.toEqual('t-a-c');
+    });
+
+    it('should evaluate build-in function', () => {
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {
+                    animal: '"cat"',
+                },
+                script: `return removeQuotes(animal)`,
+            }),
+        ).resolves.toEqual('cat');
+    });
+
+    it('should evaluate multiple statements', () => {
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {
+                    animal: 'cat',
+                    sound: 'meow',
+                },
+                script: spaceTrim(`
+                    const sentence1 = animal + ' makes ' + sound + '.';
+                    const sentence2 = \`Two \${animal}s makes \${sound} \${sound}.\`;
+                    const sentence3 = \`Three \${animal}s makes \${sound} \${sound} \${sound}.\`;
+                    return spaceTrim(\`
+                        \${sentence1}
+                        \${sentence2}
+                        \${sentence3}
+                    \`);
+                `),
+            }),
+        ).resolves.toEqual(
+            spaceTrim(`
+                cat makes meow.
+                Two cats makes meow meow.
+                Three cats makes meow meow meow.
+            `),
+        );
+    });
+
+    it('should evaluate custom function', () => {
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {
+                    animal: 'cat',
+                    sound: 'meow',
+                },
+                script: spaceTrim(`
+                    function makeSentence(animal, sound) {
+                        return animal + ' makes ' + sound + '.';
+                    }
+                    return makeSentence(animal, sound);
+                `),
+            }),
+        ).resolves.toEqual('cat makes meow.');
     });
 
     it('should fail on python script', () => {
