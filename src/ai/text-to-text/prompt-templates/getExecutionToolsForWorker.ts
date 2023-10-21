@@ -25,7 +25,7 @@ let executionTools: ExecutionTools;
  *
  * @returns ExecutionTools
  */
-export function getPtpToolsForWorker(clientId: uuid) {
+export function getExecutionToolsForWorker(clientId: uuid): ExecutionTools {
     if (!isRunningInWebWorker()) {
         throw new Error('This function is available ONLY in worker');
     }

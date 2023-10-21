@@ -4,7 +4,7 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { getPtpToolsForWorker } from '../../ai/text-to-text/prompt-templates/getPtpToolsForWorker';
+import { getExecutionToolsForWorker } from '../../ai/text-to-text/prompt-templates/getExecutionToolsForWorker';
 import { ptpLibrary } from '../../ai/text-to-text/prompt-templates/ptpLibrary';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
@@ -307,7 +307,7 @@ export async function createNewWallpaper(
 
     const { contentBody, keywords, enhancedTitle, claim } = await ptpLibrary.createExecutor(
         'writeWebsiteContent',
-        getPtpToolsForWorker(author),
+        getExecutionToolsForWorker(author),
     )(
         {
             title,
