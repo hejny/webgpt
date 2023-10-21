@@ -3,9 +3,9 @@ import http from 'http';
 import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
 import { PromptTemplatePipelineLibrary } from '../../../../classes/PromptTemplatePipelineLibrary';
+import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptResult } from '../../../PromptResult';
 import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
-import { OpenAiExecutionTools } from '../openai/OpenAiExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 
@@ -23,11 +23,11 @@ interface RemoteServerOptions {
     readonly ptpLibrary: PromptTemplatePipelineLibrary;
 
     /**
-     * Execution tools to use
+     * Natural execution tools to use
      *
      * Note: Theese tools will be wrapped in a logger for each client to log all requests
      */
-    readonly executionTools: OpenAiExecutionTools;
+    readonly naturalExecutionTools: NaturalExecutionTools;
 
     /**
      * If true, the server will log all requests and responses
@@ -44,7 +44,7 @@ interface RemoteServerOptions {
  * @see https://github.com/webgptorg/ptp#remote-server
  */
 export function createRemoteServer(options: RemoteServerOptions) {
-    const { port, ptpLibrary, executionTools, isVerbose } = options;
+    const { port, ptpLibrary, naturalExecutionTools, isVerbose } = options;
 
     const httpServer = http.createServer({}, (request, response) => {
         if (request.url?.includes('socket.io')) {
@@ -83,7 +83,10 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 console.info(chalk.bgGray(`  Prompt:  `), chalk.gray(JSON.stringify(request, null, 4)));
             }
 
-            const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools(executionTools, clientId);
+            const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools(
+                naturalExecutionTools,
+                clientId,
+            );
 
             // TODO: !!! Check validity of the prompt against ptpLibrary
 

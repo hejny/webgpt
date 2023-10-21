@@ -14,7 +14,7 @@ createRemoteServer({
     ptpLibrary: new PromptTemplatePipelineLibrary({
         /* <- TODO: !!! Use here real PTP library */
     }),
-    executionTools: new OpenAiExecutionTools(OPENAI_API_KEY!),
+    naturalExecutionTools: new OpenAiExecutionTools(OPENAI_API_KEY!),
 });
 
 /**
