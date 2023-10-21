@@ -2,4 +2,3 @@ TODO: Every execution tools here should have its own sublibrary
 TODO: Implement AzureOpenAiExecutionTools
 TODO: Implement BardExecutionTools
 TODO: Implement LamaExecutionTools
-TODO: Implement UserExecutionTools (which can be internal part of @ptp/core)

@@ -1,9 +1,9 @@
 import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
-import { PromptTemplatePipeline } from '../../../classes/PromptTemplatePipeline';
-import { promptTemplatePipelineStringToJson } from '../../../conversion/promptTemplatePipelineStringToJson';
-import { PromptTemplatePipelineString } from '../../../types/PromptTemplatePipelineString';
-import { createPtpExecutor } from '../../createPtpExecutor';
+import { PromptTemplatePipeline } from '../../../../classes/PromptTemplatePipeline';
+import { promptTemplatePipelineStringToJson } from '../../../../conversion/promptTemplatePipelineStringToJson';
+import { PromptTemplatePipelineString } from '../../../../types/PromptTemplatePipelineString';
+import { createPtpExecutor } from '../../../createPtpExecutor';
 import { MockedEchoExecutionTools } from './MockedEchoExecutionTools';
 
 describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt', () => {

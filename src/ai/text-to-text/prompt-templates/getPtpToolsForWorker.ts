@@ -1,7 +1,7 @@
 import { NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
-import { RemotePtpExecutionTools } from './lib/src/execution/plugins/remote/RemotePtpExecutionTools';
+import { RemotePtpExecutionTools } from './lib/src/execution/plugins/ExecutionTools/remote/RemotePtpExecutionTools';
 import { PtpExecutionTools } from './lib/src/execution/PtpExecutionTools';
 
 /**

@@ -1,8 +1,8 @@
 import OpenAI from 'openai';
-import { string_token } from '../../../../../../../../utils/typeAliases';
-import { Prompt } from '../../../types/Prompt';
-import { PromptChatResult, PromptCompletionResult } from '../../PromptResult';
-import { PtpExecutionTools } from '../../PtpExecutionTools';
+import { string_token } from '../../../../../../../../../utils/typeAliases';
+import { Prompt } from '../../../../types/Prompt';
+import { PromptChatResult, PromptCompletionResult } from '../../../PromptResult';
+import { PtpExecutionTools } from '../../../PtpExecutionTools';
 
 /**
  * Execution Tools for calling OpenAI API.

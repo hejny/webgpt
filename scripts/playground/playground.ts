@@ -7,8 +7,8 @@ dotenv.config({ path: '.env' });
 import chalk from 'chalk';
 import { join } from 'path';
 import { OPENAI_API_KEY, SYSTEM_AUTHOR_ID } from '../../config';
-import { SupabaseLoggerWrapperOfExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/logger/SupabaseLoggerWrapperOfExecutionTools';
-import { OpenAiExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/openai/OpenAiExecutionTools';
+import { SupabaseLoggerWrapperOfExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/ExecutionTools/logger/SupabaseLoggerWrapperOfExecutionTools';
+import { OpenAiExecutionTools } from '../../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/ExecutionTools/openai/OpenAiExecutionTools';
 import { ptpLibrary } from '../../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
 // import { ChatThread } from '../../src/ai/text-to-text/ChatThread';

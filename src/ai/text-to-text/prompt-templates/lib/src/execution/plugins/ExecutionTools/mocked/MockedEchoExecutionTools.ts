@@ -1,7 +1,7 @@
 import spaceTrim from 'spacetrim';
-import { Prompt } from '../../../types/Prompt';
-import { PromptChatResult, PromptCompletionResult } from '../../PromptResult';
-import { PtpExecutionTools } from '../../PtpExecutionTools';
+import { Prompt } from '../../../../types/Prompt';
+import { PromptChatResult, PromptCompletionResult } from '../../../PromptResult';
+import { PtpExecutionTools } from '../../../PtpExecutionTools';
 
 /**
  * Mocked execution Tools for just echoing the requests for testing purposes.
