@@ -46,6 +46,10 @@ export function createPtpExecutor<
             const prompt = currentPtp.writePrompt(paramsToPass);
 
             let resultContent: string;
+
+            // TODO: !!! Use here also execution type
+
+            // TODO: !!! ACRY Maybe use switch instead of if in all CHAT vs COMPLETION cases
             if (currentPtp.modelRequirements.variant === 'CHAT') {
                 const chatThread = await tools.gptChat(prompt);
                 // TODO: Use all information from chatThread like "model"
