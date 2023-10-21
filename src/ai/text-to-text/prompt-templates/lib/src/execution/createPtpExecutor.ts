@@ -45,22 +45,22 @@ export function createPtpExecutor<
 
             const prompt = currentPtp.writePrompt(paramsToPass);
 
-            let resultContent: string;
-
             // TODO: !!! Use here also execution type
-
-            // TODO: !!! ACRY Maybe use switch instead of if in all CHAT vs COMPLETION cases
-            if (currentPtp.modelRequirements.variant === 'CHAT') {
-                const chatThread = await tools.gptChat(prompt);
-                // TODO: Use all information from chatThread like "model"
-                // TODO: [🍬] Destroy chatThread
-                resultContent = chatThread.content;
-            } else if (currentPtp.modelRequirements.variant === 'COMPLETION') {
-                const completionResult = await tools.gptComplete(prompt);
-                // TODO: Use all information from chatThread like "model"
-                resultContent = completionResult.content;
-            } else {
-                throw new Error(`Unknown model variant "${currentPtp.modelRequirements.variant}"`);
+            let promptResult: string;
+            switch (currentPtp.modelRequirements.variant) {
+                case 'CHAT':
+                    const chatThread = await tools.gptChat(prompt);
+                    // TODO: Use all information from chatThread like "model"
+                    // TODO: [🍬] Destroy chatThread
+                    promptResult = chatThread.content;
+                    break;
+                case 'COMPLETION':
+                    const completionResult = await tools.gptComplete(prompt);
+                    // TODO: Use all information from chatThread like "model"
+                    promptResult = completionResult.content;
+                    break;
+                default:
+                    throw new Error(`Unknown model variant "${currentPtp.modelRequirements.variant}"`);
             }
 
             if (onProgress) {
@@ -72,7 +72,7 @@ export function createPtpExecutor<
 
             paramsToPass = {
                 ...paramsToPass,
-                [name]: resultContent /* <- TODO: Detect parameter collision here */,
+                [name]: promptResult /* <- Note: Not need to detect parameter collision here because PromptTemplatePipeline checks logic consistency during construction */,
             };
 
             currentPtp = ptp.getFollowingPromptTemplate(currentPtp!);

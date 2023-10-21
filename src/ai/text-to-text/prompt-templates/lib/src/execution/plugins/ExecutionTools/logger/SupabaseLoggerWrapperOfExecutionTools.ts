@@ -37,13 +37,16 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
         const promptAt = new Date();
         performance.mark(`${mark}-start`);
 
-        let result: PromptResult;
-        if (prompt.modelRequirements.variant === 'CHAT') {
-            result = await this.ptpExecutionTools.gptChat(prompt);
-        } else if (prompt.modelRequirements.variant === 'COMPLETION') {
-            result = await this.ptpExecutionTools.gptComplete(prompt);
-        } else {
-            throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+        let promptResult: PromptResult;
+        switch (prompt.modelRequirements.variant) {
+            case 'CHAT':
+                promptResult = await this.ptpExecutionTools.gptChat(prompt);
+                break;
+            case 'COMPLETION':
+                promptResult = await this.ptpExecutionTools.gptComplete(prompt);
+                break;
+            default:
+                throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
         }
 
         performance.mark(`${mark}-end`);
@@ -77,7 +80,7 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
                     promptAt,
                     prompt,
                     resultAt,
-                    result,
+                    result: promptResult,
 
                     // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
                     // <- TODO: [🎠] There should be a prompt template+template version+template language version (to A/B test performance of prompts)
@@ -89,7 +92,7 @@ export class SupabaseLoggerWrapperOfExecutionTools implements PtpExecutionTools 
                 // console.log('ChatThread', { insertResult });
             });
 
-        return result;
+        return promptResult;
     }
 }
 

@@ -88,12 +88,15 @@ export function createRemoteServer(options: RemoteServerOptions) {
             // TODO: !!! Check validity of the prompt against ptpLibrary
 
             let promptResult: PromptResult;
-            if (prompt.modelRequirements.variant === 'CHAT') {
-                promptResult = await executionToolsForClient.gptChat(prompt);
-            } else if (prompt.modelRequirements.variant === 'COMPLETION') {
-                promptResult = await executionToolsForClient.gptComplete(prompt);
-            } else {
-                throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+            switch (prompt.modelRequirements.variant) {
+                case 'CHAT':
+                    promptResult = await executionToolsForClient.gptChat(prompt);
+                    break;
+                case 'COMPLETION':
+                    promptResult = await executionToolsForClient.gptComplete(prompt);
+                    break;
+                default:
+                    throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
             }
 
             if (isVerbose) {
