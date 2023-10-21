@@ -218,6 +218,15 @@ export type string_css = string;
  */
 export type string_svg = string;
 
+
+/**
+ * Semantic helper
+ *
+ * For example `console.info("Hello World!")` or `print("Hello World!")`
+ */
+export type string_script = string;
+
+
 /**
  * Semantic helper
  *
