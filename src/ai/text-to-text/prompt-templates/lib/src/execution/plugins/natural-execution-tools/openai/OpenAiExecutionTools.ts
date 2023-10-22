@@ -101,7 +101,7 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const model = 'gpt-3.5-turbo-instruct'; /* <- TODO: [☂] Use here more modelRequirements */
         const modelSettings = {
             model,
-            maxTokens: 1000 /* <- TODO: [☂] Use here more modelRequirements */,
+            // !!! maxTokens: 1000 /* <- TODO: [☂] Use here more modelRequirements */,
         };
 
         const rawRequest: OpenAI.Completions.CompletionCreateParamsNonStreaming = {

@@ -1,5 +1,6 @@
 import { MeshBuilder } from 'babylonjs';
 import { useEffect } from 'react';
+import { IS_DEVELOPMENT } from '../../../config';
 import { useGraph } from '../../utils/hooks/useGraph';
 import { Dialogues } from '../Dialogues/Dialogues';
 import { TaskProgress } from './task/TaskProgress';
@@ -55,10 +56,9 @@ export function TasksInProgress(props: TaskInProgressProps) {
             // Note: Rotate the the camera around the mesh and make it look down initially
             const initialBeta = Math.PI * 2;
             const targetBeta = (Math.PI / 2) * (1.8 / 3);
-            let beta = initialBeta;
+            camera.beta = initialBeta;
             scene.registerBeforeRender(() => {
-                beta = (beta - targetBeta) * 0.95 + targetBeta;
-                camera.beta = beta;
+                camera.beta = (camera.beta - targetBeta) * 0.95 + targetBeta;
                 camera.alpha += 0.02 /* <- TODO: Maybe stop spinning when dialogue is opened */;
             });
         },
@@ -70,14 +70,32 @@ export function TasksInProgress(props: TaskInProgressProps) {
     return (
         <>
             <div className={styles.TasksInProgress}>
-                <canvas ref={sceneRef} className={styles.scene} />
+                <canvas
+                    ref={sceneRef}
+                    className={styles.scene}
+                    style={{
+                        // Note: In development we want to be able to click on the tasks
+                        pointerEvents: IS_DEVELOPMENT ? 'none' : undefined,
+                    }}
+                />
 
                 {tasksProgress && (
-                    <div className={styles.tasklist}>
+                    <div
+                        className={styles.tasklist}
+                        style={{
+                            pointerEvents: IS_DEVELOPMENT ? 'all' : undefined,
+                        }}
+                    >
                         <ul>
-                            {tasksProgress.map(({ name, title, isDone }) => (
-                                <li key={name} className={isDone ? styles.done : styles.pending}>
-                                    {title}
+                            {tasksProgress.map((taskProgress) => (
+                                <li
+                                    key={taskProgress.name}
+                                    className={taskProgress.isDone ? styles.done : styles.pending}
+                                    onClick={() => {
+                                        console.info({ taskProgress });
+                                    }}
+                                >
+                                    {taskProgress.title}
                                 </li>
                             ))}
                         </ul>
