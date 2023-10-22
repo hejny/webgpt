@@ -9,6 +9,8 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku
 -   Output param `{content}` Obsah webu
 
+<!-- TODO: !!! Translate -->
+
 ## Upřesnění zadání uživatelem
 
 Popište cíl vašeho webu
