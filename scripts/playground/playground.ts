@@ -37,7 +37,7 @@ async function playground() {
 
     const rawResponse = await openai.completions.create({
         model: 'gpt-3.5-turbo-instruct',
-        max_tokens: 100,
+        max_tokens: 1000,
         prompt: spaceTrim(`
             
             Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku Nestvořené dětské světy.

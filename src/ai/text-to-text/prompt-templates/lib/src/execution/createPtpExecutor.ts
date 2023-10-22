@@ -1,6 +1,8 @@
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
+import { removeEmojis } from '../../../../../../utils/content/removeEmojis';
+import { removeMarkdownFormatting } from '../../../../../../utils/content/removeMarkdownFormatting';
 import { string_name } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 
@@ -30,16 +32,14 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
         let currentTemplate: PromptTemplateJson | null = ptp.entryPromptTemplate;
 
         while (currentTemplate !== null) {
-            const { name, description } = ptp.getResultingParameter(currentTemplate.name);
+            const resultingParameter = ptp.getResultingParameter(currentTemplate.name);
 
-            const isPrograssLoggedForCurrentTemplate = ['PROMPT_TEMPLATE', 'PROMPT_DIALOG'].includes(
-                currentTemplate.executionType,
-            );
+            const isPrograssLoggedForCurrentTemplate = currentTemplate.executionType === 'PROMPT_TEMPLATE';
 
             if (onProgress && isPrograssLoggedForCurrentTemplate) {
                 await onProgress({
-                    name: `ptp-executor-frame-${name}`,
-                    title: `🖋 ${description}`,
+                    name: `ptp-executor-frame-${currentTemplate.name}`,
+                    title: `🖋 ${removeEmojis(removeMarkdownFormatting(currentTemplate.title))}`,
                     isDone: false,
                 });
             }
@@ -151,14 +151,15 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 
             if (onProgress && isPrograssLoggedForCurrentTemplate) {
                 onProgress({
-                    name: `ptp-executor-frame-${name}`,
+                    name: `ptp-executor-frame-${currentTemplate.name}`,
                     isDone: true,
                 });
             }
 
             parametersToPass = {
                 ...parametersToPass,
-                [name]: promptResult /* <- Note: Not need to detect parameter collision here because PromptTemplatePipeline checks logic consistency during construction */,
+                [resultingParameter.name]:
+                    promptResult /* <- Note: Not need to detect parameter collision here because PromptTemplatePipeline checks logic consistency during construction */,
             };
 
             currentTemplate = ptp.getFollowingPromptTemplate(currentTemplate!.name);

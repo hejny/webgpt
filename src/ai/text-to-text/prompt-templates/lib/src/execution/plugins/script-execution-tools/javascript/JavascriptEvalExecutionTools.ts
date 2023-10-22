@@ -13,6 +13,7 @@ import {
     removeDiacritics as _removeDiacritics,
 } from 'n12';
 import { spaceTrim as _spaceTrim } from 'spacetrim';
+import { removeEmojis as _removeEmojis } from '../../../../../../../../../utils/content/removeEmojis';
 import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
 import { unwrapResult as _unwrapResult } from '../../../../../../../../../utils/content/unwrapResult';
 import { CommonExecutionToolsOptions } from '../../../CommonExecutionToolsOptions';
@@ -51,6 +52,9 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         trim;
         const reverse = (str: string) => str.split('').reverse().join('');
         reverse;
+        const removeEmojis = _removeEmojis;
+        removeEmojis;
+
         //-------[n12:]---
         const capitalize = _capitalize;
         const decapitalize = _decapitalize;

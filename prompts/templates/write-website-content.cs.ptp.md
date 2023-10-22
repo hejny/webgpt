@@ -13,7 +13,6 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 ## 🖋 Zadání v Češtině
 
 -   Use completion
-
 -   Postprocessing `trim`
 
 ```text
@@ -31,6 +30,10 @@ English assignment:
 
 Popište cíl vašeho webu
 
+<!--
+TODO: !!! [🧠] Maybe just "prompt dialog" and "simple template"
+-->
+
 -   Execute prompt dialog
 
 ```text
@@ -40,6 +43,8 @@ Popište cíl vašeho webu
 `-> {assigment}` Zadání webu
 
 ## 💬 Vylepšení názvu
+
+-   Postprocessing `unwrapResult`
 
 ```markdown
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
@@ -59,18 +64,7 @@ Zadání od zákazníka:
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
 ```
 
-`-> {enhancedTitleQuoted}` Vylepšený název
-
-## Vylepšení názvu (Odstranění uvozovek)
-
--   Execute script
--   Postprocessing `unwrapResult`
-
-```javascript
-unwrapResult(enhancedTitleQuoted);
-```
-
-`-> {enhancedTitle}` Vylepšený název (bez uvozovek)
+`-> {enhancedTitle}` Vylepšený název
 
 ## 👤 Schválení názvu uživatelem
 
@@ -84,7 +78,7 @@ Je název Vašeho webu v pořádku?
 
 `-> {title}` Název webu
 
-## 💬 Vymyšlení claimu
+## 💬 Kulervoucí podtitulek
 
 -   Postprocessing `unwrapResult`
 

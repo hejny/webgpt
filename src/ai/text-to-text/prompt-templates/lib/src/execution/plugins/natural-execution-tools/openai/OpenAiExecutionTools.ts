@@ -46,21 +46,20 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
                 },
             ],
         };
+
+        if (this.options.isVerbose) {
+            console.error(chalk.bgGray('rawRequest'), JSON.stringify(rawRequest, null, 4));
+        }
         const rawResponse = await this.openai.chat.completions.create(rawRequest);
+        if (this.options.isVerbose) {
+            console.error(chalk.bgGray('rawResponse'), JSON.stringify(rawResponse, null, 4));
+        }
 
         if (!rawResponse.choices[0]) {
-            if (this.options.isVerbose) {
-                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
-            }
             throw new Error(`No choises from OpenAPI`);
         }
 
         if (rawResponse.choices.length > 1) {
-            if (this.options.isVerbose) {
-                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
-            }
             // TODO: This should be maybe only warning
             throw new Error(`More than one choise from OpenAPI`);
         }
@@ -68,10 +67,6 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const resultContent = rawResponse.choices[0].message.content;
 
         if (!resultContent) {
-            if (this.options.isVerbose) {
-                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
-            }
             throw new Error(`No response message from OpenAPI`);
         }
 
@@ -101,28 +96,27 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const model = 'gpt-3.5-turbo-instruct'; /* <- TODO: [☂] Use here more modelRequirements */
         const modelSettings = {
             model,
-            max_tokens: 100 /* <- TODO: [☂] Use here more modelRequirements */,
+            max_tokens: 2000 /* <- TODO: [☂] Use here more modelRequirements */,
         };
 
         const rawRequest: OpenAI.Completions.CompletionCreateParamsNonStreaming = {
             ...modelSettings,
             prompt: content,
         };
+
+        if (this.options.isVerbose) {
+            console.error(chalk.bgGray('rawRequest'), JSON.stringify(rawRequest, null, 4));
+        }
         const rawResponse = await this.openai.completions.create(rawRequest);
+        if (this.options.isVerbose) {
+            console.error(chalk.bgGray('rawResponse'), JSON.stringify(rawResponse, null, 4));
+        }
 
         if (!rawResponse.choices[0]) {
-            if (this.options.isVerbose) {
-                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
-            }
             throw new Error(`No choises from OpenAPI`);
         }
 
         if (rawResponse.choices.length > 1) {
-            if (this.options.isVerbose) {
-                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
-            }
             // TODO: This should be maybe only warning
             throw new Error(`More than one choise from OpenAPI`);
         }
@@ -130,10 +124,6 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const resultContent = rawResponse.choices[0].text;
 
         if (!resultContent) {
-            if (this.options.isVerbose) {
-                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
-            }
             throw new Error(`No response message from OpenAPI`);
         }
 

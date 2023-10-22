@@ -12,7 +12,7 @@ import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetw
 import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const APP_VERSION = packageJson.version;
-export const APP_NAME = packageJson.name;
+export const APP_NAME = 'WebGPT';
 
 const config = ConfigChecker.from({
     ...process.env,

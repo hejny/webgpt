@@ -53,7 +53,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
             // TODO: !! Validate here clientId (pass validator as dependency)
 
             if (isVerbose) {
-                console.info(chalk.bgGray(`  Prompt:  `), chalk.gray(JSON.stringify(request, null, 4)));
+                console.info(chalk.bgGray(`Prompt:`), chalk.gray(JSON.stringify(request, null, 4)));
             }
 
             const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools({

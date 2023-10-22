@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import Link from 'next/link';
+import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Center } from '../../components/SimpleLayout/Center';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
