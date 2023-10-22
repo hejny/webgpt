@@ -41,7 +41,7 @@ Zadání od zákazníka:
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
 ```
 
-`-> {enhancedTitleQuoted}` Vylepšený název (s možnými uvozovkami)
+`-> {enhancedTitleQuoted}` Vylepšený název
 
 ## Vylepšení názvu (Odstranění uvozovek)
 
@@ -51,7 +51,7 @@ Zadání od zákazníka:
 removeQuotes(enhancedTitleQuoted);
 ```
 
-`-> {enhancedTitle}` Vylepšený název
+`-> {enhancedTitle}` Vylepšený název (bez uvozovek)
 
 ## Schválení názvu uživatelem
 
@@ -163,7 +163,7 @@ Zadání webu od zákazníka:
 {contentBeginning}
 ```
 
-`-> {contentBody}` Prostředek obsahu webu
+`-> {contentBody}` Stať obsahu webu
 
 ## Spojení obsahu
 
