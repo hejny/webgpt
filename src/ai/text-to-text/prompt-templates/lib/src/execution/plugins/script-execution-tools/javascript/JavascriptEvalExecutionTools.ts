@@ -1,5 +1,5 @@
 import { spaceTrim as _spaceTrim } from 'spacetrim';
-import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
+import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/unwrapResult';
 import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**

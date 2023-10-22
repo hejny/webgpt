@@ -62,10 +62,12 @@ Zadání od zákazníka:
 
 ## Vylepšení názvu (Odstranění uvozovek)
 
+<!-- TODO: !!! Do it via - postprocessing unwrapResult -->
+
 -   Execute script
 
 ```javascript
-removeQuotes(enhancedTitleQuoted);
+unwrapResult(enhancedTitleQuoted);
 ```
 
 `-> {enhancedTitle}` Vylepšený název (bez uvozovek)

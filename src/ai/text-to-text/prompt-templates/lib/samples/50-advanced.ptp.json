@@ -56,7 +56,7 @@
                 "variant": "CHAT"
             },
             "contentLanguage": "javascript",
-            "content": "removeQuotes(wordSynonymRaw);",
+            "content": "unwrapResult(wordSynonymRaw);",
             "resultingParameterName": "wordSynonym"
         },
         {

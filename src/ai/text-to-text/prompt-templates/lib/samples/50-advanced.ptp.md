@@ -21,10 +21,12 @@ Write synonym for "{word}"
 
 ## Unquote synonym
 
+<!-- TODO: !!! Both sample of postprocessing and script -->
+
 -   Execute script
 
 ```javascript
-removeQuotes(wordSynonymRaw);
+unwrapResult(wordSynonymRaw);
 ```
 
 `-> {wordSynonym}` Synonym for word

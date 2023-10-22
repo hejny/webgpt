@@ -48,6 +48,16 @@ describe('JavascriptEvalExecutionTools', () => {
                 script: `return removeQuotes(animal)`,
             }),
         ).resolves.toEqual('cat');
+
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {
+                    animal: 'The animal is: "dog"',
+                },
+                script: `return unwrapResult(animal)`,
+            }),
+        ).resolves.toEqual('dog');
     });
 
     it('should evaluate multiple statements', () => {
