@@ -23,7 +23,7 @@ export function validatePromptTemplatePipelineJson(ptp: PromptTemplatePipelineJs
             const parameterName = match!.groups!.parameterName!;
 
             if (!definedParameters.has(parameterName)) {
-                throw new Error(`Parameter {${template.resultingParameterName}} is not defined before its usage`);
+                throw new Error(`Parameter {${template.resultingParameterName}} used before defined`);
             }
         }
 
