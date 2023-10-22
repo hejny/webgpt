@@ -62,7 +62,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 clientId,
             });
 
-            // TODO: !!! Check validity of the prompt against ptpLibrary
+            // TODO: [🎛] Check validity of the prompt against ptpLibrary
 
             let promptResult: PromptResult;
             switch (prompt.modelRequirements.variant) {
