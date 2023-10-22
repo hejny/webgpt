@@ -1,3 +1,19 @@
+import {
+    capitalize as _capitalize,
+    decapitalize as _decapitalize,
+    nameToUriPart as _nameToUriPart,
+    nameToUriParts as _nameToUriParts,
+    normalizeToKebabCase as _normalizeToKebabCase,
+    normalizeTo_camelCase as _normalizeTo_camelCase,
+    normalizeTo_PascalCase as _normalizeTo_PascalCase,
+    normalizeTo_SCREAMING_CASE as _normalizeTo_SCREAMING_CASE,
+    normalizeTo_snake_case as _normalizeTo_snake_case,
+    normalizeWhitespaces as _normalizeWhitespaces,
+    parseKeywords as _parseKeywords,
+    parseKeywordsFromString as _parseKeywordsFromString,
+    removeDiacritics as _removeDiacritics,
+    searchKeywords as _searchKeywords,
+} from 'n12';
 import { spaceTrim as _spaceTrim } from 'spacetrim';
 import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
 import { unwrapResult as _unwrapResult } from '../../../../../../../../../utils/content/unwrapResult';
@@ -30,6 +46,40 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         removeQuotes;
         const unwrapResult = _unwrapResult;
         unwrapResult;
+        const trim = (str: string) => str.trim();
+        trim;
+        const reverse = (str: string) => str.split('').reverse().join('');
+        reverse;
+        //-------[n12:]---
+        const capitalize = _capitalize;
+        const decapitalize = _decapitalize;
+        const parseKeywords = _parseKeywords;
+        const nameToUriPart = _nameToUriPart;
+        const searchKeywords = _searchKeywords;
+        const nameToUriParts = _nameToUriParts;
+        const removeDiacritics = _removeDiacritics;
+        const normalizeWhitespaces = _normalizeWhitespaces;
+        const normalizeToKebabCase = _normalizeToKebabCase;
+        const normalizeTo_camelCase = _normalizeTo_camelCase;
+        const normalizeTo_snake_case = _normalizeTo_snake_case;
+        const normalizeTo_PascalCase = _normalizeTo_PascalCase;
+        const parseKeywordsFromString = _parseKeywordsFromString;
+        const normalizeTo_SCREAMING_CASE = _normalizeTo_SCREAMING_CASE;
+        capitalize;
+        decapitalize;
+        parseKeywords;
+        nameToUriPart;
+        searchKeywords;
+        nameToUriParts;
+        removeDiacritics;
+        normalizeWhitespaces;
+        normalizeToKebabCase;
+        normalizeTo_camelCase;
+        normalizeTo_snake_case;
+        normalizeTo_PascalCase;
+        parseKeywordsFromString;
+        normalizeTo_SCREAMING_CASE;
+        //-------[/n12]---
 
         // TODO: !!! Add all n12 functions as global functions for postprocessing
 
