@@ -5,11 +5,26 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   PTP version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
--   Input param `{rawTitle}` Automatický návrh názvu webu nebo prázdný text
--   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku
--   Output param `{content}` Obsah webu
+-   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
+-   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku _v Angličtině_
+-   Output param `{content}` Obsah webu _v Češtině_
 
 <!-- TODO: !!! Translate -->
+
+## Zadání v Češtině
+
+-   Use completion
+
+```text
+
+English assignment:
+> {rawAssigment}
+
+České zadání:
+>
+```
+
+`-> {rawAssigmentCs}` Zadání webu v Češtině
 
 ## Upřesnění zadání uživatelem
 
@@ -18,7 +33,7 @@ Popište cíl vašeho webu
 -   Execute prompt dialog
 
 ```text
-{rawAssigment}
+{rawAssigmentCs}
 ```
 
 `-> {assigment}` Zadání webu
