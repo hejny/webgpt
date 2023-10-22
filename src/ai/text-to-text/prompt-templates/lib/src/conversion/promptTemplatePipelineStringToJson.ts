@@ -1,9 +1,9 @@
-import { normalizeTo_PascalCase } from 'n12';
+import { normalizeTo_camelCase, normalizeTo_PascalCase } from 'n12';
 import spaceTrim from 'spacetrim';
 import { Writable } from 'type-fest';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
 import { DEFAULT_MODEL_REQUIREMENTS, PTP_VERSION } from '../config';
-import { ParameterCommand } from '../types/Command';
+import { ParameterCommand, PostprocessCommand } from '../types/Command';
 import { ExecutionType } from '../types/ExecutionTypes';
 import { ModelRequirements } from '../types/ModelRequirements';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
@@ -123,6 +123,7 @@ export function promptTemplatePipelineStringToJson(
         // TODO: Parse prompt template description (the content out of the codeblock and lists)
 
         const templateModelRequirements: Writable<ModelRequirements> = { ...defaultModelRequirements };
+        const postprocessingCommands: Array<PostprocessCommand> = [];
         const listItems = extractAllListItemsFromMarkdown(section.content);
         let executionType: ExecutionType = 'PROMPT_TEMPLATE';
         let isExecutionTypeChanged = false;
@@ -149,7 +150,7 @@ export function promptTemplatePipelineStringToJson(
                     break;
 
                 case 'POSTPROCESS':
-                    // !!! Impelment postprocessing
+                    postprocessingCommands.push(command);
                     break;
 
                 default:
@@ -211,6 +212,14 @@ export function promptTemplatePipelineStringToJson(
             description = undefined;
         }
 
+        let getParameterName = (i: number) =>
+            postprocessingCommands.length <= i
+                ? resultingParameterName
+                : normalizeTo_camelCase(
+                      `${resultingParameterName} before ${postprocessingCommands[i]!.functionName}`,
+                      // <- TODO: Make this work even if using multiple same postprocessing functions
+                  );
+
         ptpJson.promptTemplates.push({
             name: normalizeTo_PascalCase(section.title),
             title: section.title,
@@ -219,8 +228,28 @@ export function promptTemplatePipelineStringToJson(
             modelRequirements: templateModelRequirements,
             contentLanguage: executionType === 'SCRIPT' ? (language as ScriptLanguage) : undefined,
             content,
-            resultingParameterName,
+            resultingParameterName: getParameterName(0),
         });
+
+        for (const [functionName, i] of postprocessingCommands.map(
+            ({ functionName }, i) => [functionName, i] as const,
+        )) {
+            ptpJson.promptTemplates.push({
+                name: normalizeTo_PascalCase(section.title),
+                title: section.title,
+                description: `Postprocessing of {${getParameterName(i)}}`,
+                executionType: 'SCRIPT',
+                contentLanguage: 'javascript',
+                content: `${functionName}(${getParameterName(i)})`,
+                resultingParameterName: getParameterName(i + 1),
+            });
+        }
+
+        /*
+        TODO: !!! Remove or use
+        for(const [isLast] of postprocessingCommands.length===0?[true,]:){
+        }
+        */
     }
 
     // =============================================================

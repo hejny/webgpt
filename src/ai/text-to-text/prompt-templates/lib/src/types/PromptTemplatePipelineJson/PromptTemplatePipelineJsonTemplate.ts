@@ -42,7 +42,7 @@ export interface PromptTemplatePipelineJsonTemplate {
      * Requirements for the model
      * - This is required only for executionType PROMPT_TEMPLATE
      */
-    modelRequirements: ModelRequirements;
+    modelRequirements?: ModelRequirements;
 
     /**
      * Language of the script
@@ -64,6 +64,6 @@ export interface PromptTemplatePipelineJsonTemplate {
 
 /**
  * TODO: !!! Rename to PromptTemplateJson
- * TODO: Better type that require scriptLanguage for executionType SCRIPT
+ * TODO: Better type that require scriptLanguage for executionType SCRIPT - split between 'PromptTemplateJson', 'SimpleTemplateJson', 'ScriptJson', 'PromptDialogJson'
  * TODO: ust one helper type> (string_prompt | string_javascript | string_markdown) & string_template
  */

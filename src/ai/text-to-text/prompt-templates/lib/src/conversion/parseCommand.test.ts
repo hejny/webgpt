@@ -167,6 +167,14 @@ describe('how parseCommand works', () => {
             type: 'POSTPROCESS',
             functionName: 'spaceTrim',
         });
+        expect(parseCommand('Postprocess `spaceTrim`')).toEqual({
+            type: 'POSTPROCESS',
+            functionName: 'spaceTrim',
+        });
+        expect(parseCommand('Postprocess **spaceTrim**')).toEqual({
+            type: 'POSTPROCESS',
+            functionName: 'spaceTrim',
+        });
         expect(parseCommand('Post-process spaceTrim')).toEqual({
             type: 'POSTPROCESS',
             functionName: 'spaceTrim',

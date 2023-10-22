@@ -1,5 +1,6 @@
 import { normalizeTo_SCREAMING_CASE } from 'n12';
 import spaceTrim from 'spacetrim';
+import { removeMarkdownFormatting } from '../../../../../../utils/content/removeMarkdownFormatting';
 import { string_markdown_text } from '../../../../../../utils/typeAliases';
 import { Command } from '../types/Command';
 import { ExecutionTypes } from '../types/ExecutionTypes';
@@ -145,7 +146,7 @@ export function parseCommand(listItem: string_markdown_text): Command {
             ptpVersion,
         };
     } else if (type.startsWith('POSTPROCESS') || type.startsWith('POST_PROCESS')) {
-        const functionName = listItem
+        let functionName = listItem
             .split(' ')
             .filter((item) => item !== '')
             .pop();
@@ -161,6 +162,8 @@ export function parseCommand(listItem: string_markdown_text): Command {
                 ),
             );
         }
+
+        functionName = removeMarkdownFormatting(functionName);
 
         return {
             type: 'POSTPROCESS',

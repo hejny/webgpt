@@ -25,6 +25,15 @@
                 "variant": "CHAT"
             },
             "content": "Write synonym for \"{word}\"",
+            "resultingParameterName": "wordSynonymBeforeUnwrapResult"
+        },
+        {
+            "name": "Synonym",
+            "title": "Synonym",
+            "description": "Postprocessing of {wordSynonymBeforeUnwrapResult}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "unwrapResult(wordSynonymBeforeUnwrapResult)",
             "resultingParameterName": "wordSynonym"
         },
         {
@@ -36,6 +45,24 @@
                 "variant": "CHAT"
             },
             "content": "Write sentence with \"{word}\" and \"{wordSynonym}\" in it",
+            "resultingParameterName": "sentenceWithTwoSynonymsBeforeUnwrapResult"
+        },
+        {
+            "name": "Sentence",
+            "title": "Sentence",
+            "description": "Postprocessing of {sentenceWithTwoSynonymsBeforeUnwrapResult}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "unwrapResult(sentenceWithTwoSynonymsBeforeUnwrapResult)",
+            "resultingParameterName": "sentenceWithTwoSynonymsBeforeSpaceTrim"
+        },
+        {
+            "name": "Sentence",
+            "title": "Sentence",
+            "description": "Postprocessing of {sentenceWithTwoSynonymsBeforeSpaceTrim}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "spaceTrim(sentenceWithTwoSynonymsBeforeSpaceTrim)",
             "resultingParameterName": "sentenceWithTwoSynonyms"
         }
     ]

@@ -45,6 +45,15 @@
                 "variant": "CHAT"
             },
             "content": "Write synonym for \"{word}\"",
+            "resultingParameterName": "wordSynonymBeforeUnwrapResult"
+        },
+        {
+            "name": "Synonym",
+            "title": "Synonym",
+            "description": "Postprocessing of {wordSynonymBeforeUnwrapResult}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "unwrapResult(wordSynonymBeforeUnwrapResult)",
             "resultingParameterName": "wordSynonym"
         },
         {
