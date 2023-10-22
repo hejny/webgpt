@@ -284,7 +284,6 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    // TODO: !!! Do not progress simple template and script tasks
     const { content } = await ptpLibrary.createExecutor('writeWebsiteContent', getExecutionToolsForWorker(author))(
         {
             rawTitle:

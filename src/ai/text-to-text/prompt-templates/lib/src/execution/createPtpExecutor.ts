@@ -32,7 +32,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
         while (currentTemplate !== null) {
             const { name, description } = ptp.getResultingParameter(currentTemplate.name);
 
-            if (onProgress) {
+            if (onProgress && ['PROMPT_TEMPLATE', 'PROMPT_DIALOG'].includes(currentTemplate.executionType)) {
                 await onProgress({
                     name: `ptp-executor-frame-${name}`,
                     title: `🖋 ${description}`,
