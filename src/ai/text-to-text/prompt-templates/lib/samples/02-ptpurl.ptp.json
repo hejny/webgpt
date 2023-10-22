@@ -1,4 +1,5 @@
 {
+    "title": "✨ Sample prompt with URL",
     "ptpUrl": "https://ptp.example.com/samples/simple.ptp.md@v1",
     "ptpVersion": "1.0.0",
     "parameters": [

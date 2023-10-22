@@ -1,4 +1,5 @@
 {
+    "title": "✨ Sample prompt with two consecutive prompts",
     "ptpUrl": "https://ptp.example.com/samples/two.ptp.md@v1",
     "ptpVersion": "1.0.0",
     "parameters": [

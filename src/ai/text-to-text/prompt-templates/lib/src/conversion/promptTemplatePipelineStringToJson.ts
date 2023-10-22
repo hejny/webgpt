@@ -24,7 +24,8 @@ export function promptTemplatePipelineStringToJson(
     promptTemplatePipelineString: PromptTemplatePipelineString,
 ): PromptTemplatePipelineJson {
     const ptpJson: WritableDeep<PromptTemplatePipelineJson> = {
-        ptpUrl: undefined /* <- Note: Putting here placeholder to keep ptpUrl on top at final JSON */,
+        title: undefined as any /* <- Note: Putting here placeholder to keep `title` on top at final JSON */,
+        ptpUrl: undefined /* <- Note: Putting here placeholder to keep `ptpUrl` on top at final JSON */,
         ptpVersion: PTP_VERSION,
         parameters: [],
         promptTemplates: [],
@@ -96,6 +97,8 @@ export function promptTemplatePipelineStringToJson(
             `),
         );
     }
+
+    ptpJson.title = markdownStructure.title;
 
     const defaultModelRequirements: Writable<ModelRequirements> = { ...DEFAULT_MODEL_REQUIREMENTS };
     const listItems = extractAllListItemsFromMarkdown(markdownStructure.content);

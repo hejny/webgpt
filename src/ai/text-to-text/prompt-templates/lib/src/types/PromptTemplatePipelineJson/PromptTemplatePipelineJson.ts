@@ -26,6 +26,12 @@ export interface PromptTemplatePipelineJson {
     readonly ptpUrl?: string_ptp_url;
 
     /**
+     * Title of the prompt template pipeline
+     * - It can use simple markdown formatting like **bold**, *italic*, [link](https://example.com), ... BUT not code blocks and structure
+     */
+    readonly title: string;
+
+    /**
      * Version of the .ptp.json file
      */
     readonly ptpVersion: string_version;
