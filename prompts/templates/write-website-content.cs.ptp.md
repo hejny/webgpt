@@ -86,6 +86,8 @@ Je název Vašeho webu v pořádku?
 
 ## 💬 Vymyšlení claimu
 
+<!-- !!! postprocessing unwrapResult -->
+
 ```markdown
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".
 
