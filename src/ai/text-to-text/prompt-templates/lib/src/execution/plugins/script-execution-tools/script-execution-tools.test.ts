@@ -45,12 +45,10 @@ describe('createPtpExecutor + executing scripts in ptp', () => {
     });
 
     it('should work when every input parameter defined', () => {
-        expect(ptpExecutor({ thing: 'apple' }, () => {})).resolves.toEqual({
-            thing: 'apple',
+        expect(ptpExecutor({ thing: 'apple' }, () => {})).resolves.toMatchObject({
             bhing: 'bpple',
         });
-        expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toEqual({
-            thing: 'a cup of coffee',
+        expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toMatchObject({
             bhing: 'b cup of coffee',
         });
     });

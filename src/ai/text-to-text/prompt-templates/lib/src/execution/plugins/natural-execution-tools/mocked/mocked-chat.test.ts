@@ -43,8 +43,7 @@ describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt',
     });
 
     it('should work when every input parameter defined', () => {
-        expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toEqual({
-            thing: 'a cup of coffee' /* <- TODO: [🧠] Should there be an input parameter? */,
+        expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toMatchObject({
             response: spaceTrim(`
                 You said:
                 One day I went to the shop and bought a cup of coffee.

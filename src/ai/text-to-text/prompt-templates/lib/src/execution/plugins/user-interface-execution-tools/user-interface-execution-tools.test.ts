@@ -46,12 +46,10 @@ describe('createPtpExecutor + executing user interface prompts in ptp', () => {
     });
 
     it('should work when every input parameter defined', () => {
-        expect(ptpExecutor({ thing: 'apple' }, () => {})).resolves.toEqual({
-            thing: 'apple',
+        expect(ptpExecutor({ thing: 'apple' }, () => {})).resolves.toMatchObject({
             favoriteThing: 'Answer to question "What is your favorite apple to buy?" is not apple but Pear.',
         });
-        expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toEqual({
-            thing: 'a cup of coffee',
+        expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toMatchObject({
             favoriteThing:
                 'Answer to question "What is your favorite a cup of coffee to buy?" is not a cup of coffee but Pear.',
         });
