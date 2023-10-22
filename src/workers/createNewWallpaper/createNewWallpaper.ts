@@ -6,7 +6,6 @@ import {
 } from '../../../config';
 import { getExecutionToolsForWorker } from '../../ai/text-to-text/prompt-templates/getExecutionToolsForWorker';
 import { ptpLibrary } from '../../ai/text-to-text/prompt-templates/ptpLibrary';
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
@@ -277,26 +276,6 @@ export async function createNewWallpaper(
 
     //-------[ /Write description ]---
     //===========================================================================
-    //-------[ Modify Web Assigment: ]---
-
-    // TODO: Should be here onProgress task?
-
-    // TODO: !!! Move to write-website-content.cs.ptp.md
-    const answer = await promptDialogue({
-        prompt: `What is your web about?`,
-        defaultValue: description,
-        placeholder: `Describe your web` /* <- TODO: Better and maybe with rotation */,
-    });
-    if (answer === null) {
-        // TODO: Retry automatically (maybe with taskify)
-        throw new Error(`You must write at least some description of your web`);
-    }
-
-    const assigment = answer;
-    console.info({ wallpaperAssigment: assigment });
-    //-------[ /Modify Web Assigment ]---
-
-    //===========================================================================
     //-------[ Write content: ]---
     await onProgress({
         name: 'write-wallpaper-content',
@@ -308,8 +287,9 @@ export async function createNewWallpaper(
     // TODO: !!! Do not progress simple template and script tasks
     const { content } = await ptpLibrary.createExecutor('writeWebsiteContent', getExecutionToolsForWorker(author))(
         {
-            title: title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
-            assigment,
+            rawTitle:
+                title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
+            rawAssigment: description,
 
             /*
             TODO: !! Use in write-website-content.cs.ptp.md and uncomment here
@@ -342,7 +322,7 @@ export async function createNewWallpaper(
         prompt: description,
         colorStats: await colorStatsPromise,
         naturalSize: originalSize,
-        content: wallpaperContent,
+        content: content! /* <- TODO: !!! Strongly type the executors to avoid need of remove nullables */,
         saveStage: 'SAVING',
     });
 

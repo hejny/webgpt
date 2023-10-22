@@ -5,11 +5,21 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   PTP version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
--   Input param `{title}` Návrh názvu webu od zákazníka
--   Input param `{assigment}` Zadání webu od zákazníka
+-   Input param `{rawTitle}` Návrh názvu webu od zákazníka
+-   Input param `{rawAssigment}` Zadání webu od zákazníka
 -   Output param `{content}` Obsah webu
 
 <!-- !!!! Use here - Execute prompt dialog -->
+
+## Upřesnění zadání
+
+Popište cíl vašeho webu
+
+-   Execute prompt dialog
+
+```
+{rawAssigment}
+```
 
 ## Vylepšení názvu
 
@@ -33,7 +43,7 @@ Zadání od zákazníka:
 
 ```
 
-`-> {enhancedTitle}` Vylepšený název
+`-> {title}` Vylepšený název
 
 <!-- !!! Use here - Execute script removeQuotes-->
 <!-- !!!! Use here - Execute prompt dialog -->
@@ -42,7 +52,7 @@ Zadání od zákazníka:
 
 ```prompttemplate
 
-Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{enhancedTitle}".
+Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".
 
 Zadání webu od zákazníka:
 
@@ -68,7 +78,7 @@ Note+TODO: This is not a real keyword analysis, but rather a list of keywords th
 
 ```prompttemplate
 
-Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{enhancedTitle}".
+Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{title}".
 
 Zadání webu od zákazníka:
 
@@ -99,7 +109,7 @@ Zadání webu od zákazníka:
 
 ```text
 
-# {enhancedTitle}
+# {title}
 
 > {claim}
 
@@ -114,7 +124,7 @@ Zadání webu od zákazníka:
 
 ```prompttemplate
 
-Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {enhancedTitle}.
+Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {title}.
 
 Zadání webu od zákazníka:
 
@@ -157,8 +167,3 @@ Zadání webu od zákazníka:
 `-> {content}`
 
 <!-- !!! Use here - Execute simple template-->
-
-
-
-
-
