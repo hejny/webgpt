@@ -48,7 +48,7 @@ Zadání od zákazníka:
 -   Execute script
 
 ```javascript
-removeQuotes(titleQuoted);
+removeQuotes(enhancedTitleQuoted);
 ```
 
 `-> {enhancedTitle}` Vylepšený název
