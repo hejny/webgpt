@@ -1,5 +1,6 @@
 import { spaceTrim as _spaceTrim } from 'spacetrim';
-import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/unwrapResult';
+import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
+import { unwrapResult as _unwrapResult } from '../../../../../../../../../utils/content/unwrapResult';
 import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**
@@ -27,6 +28,8 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         spaceTrim;
         const removeQuotes = _removeQuotes;
         removeQuotes;
+        const unwrapResult = _unwrapResult;
+        unwrapResult;
 
         if (!script.includes('return')) {
             script = `return ${script}`;
