@@ -43,9 +43,9 @@
             "resultingParameterName": "wordSynonymBeforeUnwrapResult"
         },
         {
-            "name": "Synonym",
-            "title": "Synonym",
-            "description": "Postprocessing of {wordSynonymBeforeUnwrapResult}",
+            "name": "SynonymPostprocessing0",
+            "title": "(1/1) Synonym postprocessing",
+            "description": "Postprocessing of section Synonym finally with resulting parameter {wordSynonym}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "unwrapResult(wordSynonymBeforeUnwrapResult)",
@@ -63,18 +63,18 @@
             "resultingParameterName": "sentenceWithTwoSynonymsBeforeUnwrapResult"
         },
         {
-            "name": "Sentence",
-            "title": "Sentence",
-            "description": "Postprocessing of {sentenceWithTwoSynonymsBeforeUnwrapResult}",
+            "name": "SentencePostprocessing0",
+            "title": "(1/2) Sentence postprocessing",
+            "description": "Postprocessing of section Sentence finally with resulting parameter {sentenceWithTwoSynonyms}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "unwrapResult(sentenceWithTwoSynonymsBeforeUnwrapResult)",
             "resultingParameterName": "sentenceWithTwoSynonymsBeforeSpaceTrim"
         },
         {
-            "name": "Sentence",
-            "title": "Sentence",
-            "description": "Postprocessing of {sentenceWithTwoSynonymsBeforeSpaceTrim}",
+            "name": "SentencePostprocessing1",
+            "title": "(2/2) Sentence postprocessing",
+            "description": "Postprocessing of section Sentence finally with resulting parameter {sentenceWithTwoSynonyms}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "spaceTrim(sentenceWithTwoSynonymsBeforeSpaceTrim)",

@@ -258,9 +258,9 @@ export function promptTemplatePipelineStringToJson(
             ({ functionName }, i) => [functionName, i] as const,
         )) {
             ptpJson.promptTemplates.push({
-                name: normalizeTo_PascalCase(section.title),
-                title: section.title,
-                description: `Postprocessing of {${getParameterName(i)}}`,
+                name: normalizeTo_PascalCase(section.title + ' Postprocessing ' + i),
+                title: `(${i + 1}/${postprocessingCommands.length}) ${section.title} postprocessing`,
+                description: `Postprocessing of section ${section.title} finally with resulting parameter {${resultingParameterName}}`,
                 executionType: 'SCRIPT',
                 contentLanguage: 'javascript',
                 content: `${functionName}(${getParameterName(i)})`,

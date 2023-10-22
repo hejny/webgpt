@@ -53,9 +53,9 @@
             "resultingParameterName": "wordSynonymBeforeUnwrapResult"
         },
         {
-            "name": "Synonym",
-            "title": "Synonym",
-            "description": "Postprocessing of {wordSynonymBeforeUnwrapResult}",
+            "name": "SynonymPostprocessing0",
+            "title": "(1/1) Synonym postprocessing",
+            "description": "Postprocessing of section Synonym finally with resulting parameter {wordSynonym}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "unwrapResult(wordSynonymBeforeUnwrapResult)",

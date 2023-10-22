@@ -78,7 +78,7 @@ async function playground() {
         },
     });
 
-    const result = ptpExecutor({ yourName: 'Paůl' }, () => {});
+    const result = await ptpExecutor({ yourName: 'DAVID' }, () => {});
 
     console.info(result);
 
