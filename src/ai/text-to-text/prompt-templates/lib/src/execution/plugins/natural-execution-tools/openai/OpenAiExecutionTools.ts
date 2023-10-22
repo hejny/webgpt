@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import OpenAI from 'openai';
 import { string_token } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
@@ -43,17 +44,20 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         });
 
         if (!raw.choices[0]) {
+            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
             throw new Error(`No choises from OpenAPI`);
         }
 
         if (raw.choices.length > 1) {
             // TODO: This should be maybe only warning
+            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
             throw new Error(`More than one choise from OpenAPI`);
         }
 
         const resultContent = raw.choices[0].message.content;
 
         if (!resultContent) {
+            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
             throw new Error(`No response message from OpenAPI`);
         }
 
@@ -85,17 +89,20 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         });
 
         if (!raw.choices[0]) {
+            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
             throw new Error(`No choises from OpenAPI`);
         }
 
         if (raw.choices.length > 1) {
             // TODO: This should be maybe only warning
+            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
             throw new Error(`More than one choise from OpenAPI`);
         }
 
         const resultContent = raw.choices[0].text;
 
         if (!resultContent) {
+            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
             throw new Error(`No response message from OpenAPI`);
         }
 
@@ -109,6 +116,7 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
 }
 
 /**
+ * TODO: Pass isVerbose to constructor and use it in gptChat and gptComplete
  * TODO: Maybe Create some common util for gptChat and gptComplete
  * TODO: Maybe make custom OpenaiError
  */
