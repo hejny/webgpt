@@ -79,14 +79,18 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
                     // TODO: !!! Spread values inserting into PromptExecution
                     // TODO: !!! Update table PromptExecution according to new fields in Prompt and PromptChatResult
                     clientId: this.clientId,
+                    ptpUrl: prompt.ptpUrl,
                     promptAt,
-                    prompt,
+                    promptContent: prompt.content,
+                    promptModelRequirements: prompt.modelRequirements,
+                    promptParameters: prompt.parameters,
                     resultAt,
-                    result: promptResult,
+                    resultContent: promptResult.content,
+                    usedModel: promptResult.model,
+                    rawResponse: promptResult.rawResponse,
 
                     // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
-                    // <- TODO: [🎠] There should be a prompt template+template version+template language version (to A/B test performance of prompts)
-                    // <- TODO: Use here more precise performance measure
+                    // <- TODO: Maybe use here more precise performance measure
                 } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
             )
             .then((insertResult) => {
