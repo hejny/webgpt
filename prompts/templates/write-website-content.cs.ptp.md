@@ -99,7 +99,7 @@ Zadání webu od zákazníka:
 
 ```text
 
-\# {enhancedTitle}
+# {enhancedTitle}
 
 > {claim}
 
@@ -134,7 +134,9 @@ Zadání webu od zákazníka:
 
 {keywords}
 
-**Pokraujte obsahem:**
+**Zde začíná obsah:**
+
+---
 
 {contentBeginning}
 

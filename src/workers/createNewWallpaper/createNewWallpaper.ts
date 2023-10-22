@@ -306,31 +306,18 @@ export async function createNewWallpaper(
     });
 
     // TODO: !!! Do not progress simple template and script tasks
-    const { contentBody, keywords, enhancedTitle, claim } = await ptpLibrary.createExecutor(
-        'writeWebsiteContent',
-        getExecutionToolsForWorker(author),
-    )(
+    const { content } = await ptpLibrary.createExecutor('writeWebsiteContent', getExecutionToolsForWorker(author))(
         {
-            title,
+            title: title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
             assigment,
+
+            /*
+            TODO: !! Use in write-website-content.cs.ptp.md and uncomment here
             links,
             addSections,
+            */
         },
         onProgress,
-    );
-
-    // TODO: !!! Move to write-website-content.cs.ptp.md
-    const wallpaperContent = spaceTrim(
-        (block) => `
-
-            # ${block(enhancedTitle)}
-
-            > ${block(claim)}
-
-            ${block(contentBody)}
-        
-        
-        `,
     );
 
     await onProgress({
@@ -338,7 +325,6 @@ export async function createNewWallpaper(
         isDone: true,
     });
 
-    console.info({ wallpaperContent, contentBody, keywords, enhancedTitle, claim });
     //-------[ /Write content ]---
     //===========================================================================
     //-------[ Save: ]---
