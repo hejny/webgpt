@@ -8,11 +8,8 @@ import {
     normalizeTo_PascalCase as _normalizeTo_PascalCase,
     normalizeTo_SCREAMING_CASE as _normalizeTo_SCREAMING_CASE,
     normalizeTo_snake_case as _normalizeTo_snake_case,
-    normalizeWhitespaces as _normalizeWhitespaces,
-    parseKeywords as _parseKeywords,
-    parseKeywordsFromString as _parseKeywordsFromString,
-    removeDiacritics as _removeDiacritics,
-    searchKeywords as _searchKeywords,
+    normalizeWhitespaces as _normalizeWhitespaces, parseKeywordsFromString as _parseKeywordsFromString,
+    removeDiacritics as _removeDiacritics
 } from 'n12';
 import { spaceTrim as _spaceTrim } from 'spacetrim';
 import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
@@ -53,9 +50,7 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         //-------[n12:]---
         const capitalize = _capitalize;
         const decapitalize = _decapitalize;
-        const parseKeywords = _parseKeywords;
         const nameToUriPart = _nameToUriPart;
-        const searchKeywords = _searchKeywords;
         const nameToUriParts = _nameToUriParts;
         const removeDiacritics = _removeDiacritics;
         const normalizeWhitespaces = _normalizeWhitespaces;
@@ -63,13 +58,11 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         const normalizeTo_camelCase = _normalizeTo_camelCase;
         const normalizeTo_snake_case = _normalizeTo_snake_case;
         const normalizeTo_PascalCase = _normalizeTo_PascalCase;
-        const parseKeywordsFromString = _parseKeywordsFromString;
+        const parseKeywords = _parseKeywordsFromString; /* <- TODO: !!! Change to return string */
         const normalizeTo_SCREAMING_CASE = _normalizeTo_SCREAMING_CASE;
         capitalize;
         decapitalize;
-        parseKeywords;
         nameToUriPart;
-        searchKeywords;
         nameToUriParts;
         removeDiacritics;
         normalizeWhitespaces;
@@ -77,11 +70,9 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         normalizeTo_camelCase;
         normalizeTo_snake_case;
         normalizeTo_PascalCase;
-        parseKeywordsFromString;
+        parseKeywords;
         normalizeTo_SCREAMING_CASE;
         //-------[/n12]---
-
-        // TODO: !!! Add all n12 functions as global functions for postprocessing
 
         if (!script.includes('return')) {
             script = `return ${script}`;
