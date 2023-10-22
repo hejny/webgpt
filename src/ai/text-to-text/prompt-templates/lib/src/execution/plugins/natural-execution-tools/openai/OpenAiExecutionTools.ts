@@ -72,8 +72,8 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const { content, modelRequirements } = prompt;
 
         // TODO: [☂] Use here more modelRequirements
-        if (modelRequirements.variant !== 'CHAT') {
-            throw new Error(`Use gptChat only for CHAT variant`);
+        if (modelRequirements.variant !== 'COMPLETION') {
+            throw new Error(`Use gptComplete only for COMPLETION variant`);
         }
 
         const model = 'text-davinci-003'; /* <- TODO: [☂] Use here more modelRequirements */
