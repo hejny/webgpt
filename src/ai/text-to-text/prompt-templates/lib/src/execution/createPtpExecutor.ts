@@ -32,7 +32,11 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
         while (currentTemplate !== null) {
             const { name, description } = ptp.getResultingParameter(currentTemplate.name);
 
-            if (onProgress && ['PROMPT_TEMPLATE', 'PROMPT_DIALOG'].includes(currentTemplate.executionType)) {
+            const isPrograssLoggedForCurrentTemplate = ['PROMPT_TEMPLATE', 'PROMPT_DIALOG'].includes(
+                currentTemplate.executionType,
+            );
+
+            if (onProgress && isPrograssLoggedForCurrentTemplate) {
                 await onProgress({
                     name: `ptp-executor-frame-${name}`,
                     title: `🖋 ${description}`,
@@ -145,7 +149,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                 throw new Error(`Something went wrong and prompt result is null`);
             }
 
-            if (onProgress) {
+            if (onProgress && isPrograssLoggedForCurrentTemplate) {
                 onProgress({
                     name: `ptp-executor-frame-${name}`,
                     isDone: true,
