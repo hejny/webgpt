@@ -13,7 +13,7 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 
 -   Use completion
 
-<!-- TODO: !!! Postprocessing trim -->
+-   Postprocessing `trim`
 
 ```text
 
@@ -62,9 +62,8 @@ Zadání od zákazníka:
 
 ## Vylepšení názvu (Odstranění uvozovek)
 
-<!-- TODO: !!! Do it via - postprocessing unwrapResult -->
-
 -   Execute script
+-   Postprocessing `unwrapResult`
 
 ```javascript
 unwrapResult(enhancedTitleQuoted);
@@ -86,7 +85,7 @@ Je název Vašeho webu v pořádku?
 
 ## 💬 Vymyšlení claimu
 
-<!-- !!! postprocessing unwrapResult -->
+-   Postprocessing `unwrapResult`
 
 ```markdown
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".

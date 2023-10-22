@@ -54,3 +54,7 @@ describe('createPtpExecutor + executing scripts in ptp', () => {
         expect(ptpExecutor({}, () => {})).rejects.toThrowError(/not defined/i);
     });
 });
+
+/**
+ * TODO: !!! Test throwing errors from script execution
+ */

@@ -2,6 +2,12 @@ import { describe, expect, it } from '@jest/globals';
 import { parseCommand } from './parseCommand';
 
 describe('how parseCommand works', () => {
+    it('should fail parsing PTP_VERSION command', () => {
+        expect(() => parseCommand('PTP version')).toThrowError();
+        expect(() => parseCommand('PTP version   ')).toThrowError();
+        // TODO: Also test invalid version in PTP_VERSION command
+    });
+
     it('should parse EXECUTE command', () => {
         expect(parseCommand('execute prompt template')).toEqual({
             type: 'EXECUTE',
@@ -86,12 +92,6 @@ describe('how parseCommand works', () => {
         });
     });
 
-    it('should fail parsing PTP_VERSION command', () => {
-        expect(() => parseCommand('PTP version')).toThrowError();
-        expect(() => parseCommand('PTP version   ')).toThrowError();
-        // TODO: Also test invalid version in PTP_VERSION command
-    });
-
     it('should parse PARAMETER command', () => {
         expect(parseCommand('parameter {name} Name for the hero')).toEqual({
             type: 'PARAMETER',
@@ -160,6 +160,27 @@ describe('how parseCommand works', () => {
             parameterName: 'name',
             parameterDescription: '**Name** for `the` {',
         });
+    });
+
+    it('should parse POSTPROCESS command', () => {
+        expect(parseCommand('Postprocess spaceTrim')).toEqual({
+            type: 'POSTPROCESS',
+            functionName: 'spaceTrim',
+        });
+        expect(parseCommand('Post-process spaceTrim')).toEqual({
+            type: 'POSTPROCESS',
+            functionName: 'spaceTrim',
+        });
+        expect(parseCommand('Postprocessing unwrapResult')).toEqual({
+            type: 'POSTPROCESS',
+            functionName: 'unwrapResult',
+        });
+    });
+
+    it('should fail parsing POSTPROCESS command', () => {
+        expect(() => parseCommand('Postprocess spaceTrim unwrapResult')).toThrowError;
+        expect(() => parseCommand('Process spaceTrim')).toThrowError;
+        expect(() => parseCommand('Postprocess')).toThrowError;
     });
 
     it('should fail parsing PARAMETER command', () => {

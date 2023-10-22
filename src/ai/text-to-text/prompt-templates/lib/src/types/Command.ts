@@ -6,7 +6,18 @@ import { ModelRequirements } from './ModelRequirements';
  * Command is one piece of the prompt template which adds some logic to the prompt template or the whole pipeline.
  * It is parsed from the markdown from ul/ol items - one command per one item.
  */
-export type Command = ExecuteCommand | UseCommand | PtpVersionCommand | ParameterCommand;
+export type Command = PtpVersionCommand | ExecuteCommand | UseCommand | ParameterCommand | PostprocessCommand;
+
+/**
+ * PtpVersion command tells which version is .ptp file using
+ *
+ * - It is used for backward compatibility
+ * - It is defined per whole .ptp file in the header
+ */
+export interface PtpVersionCommand {
+    type: 'PTP_VERSION';
+    ptpVersion: string_version;
+}
 
 /**
  * Execute command tells how to execute the section
@@ -27,17 +38,6 @@ export interface UseCommand {
 }
 
 /**
- * PtpVersion command tells which version is .ptp file using
- *
- * - It is used for backward compatibility
- * - It is defined per whole .ptp file in the header
- */
-export interface PtpVersionCommand {
-    type: 'PTP_VERSION';
-    ptpVersion: string_version;
-}
-
-/**
  * Parameter command describes one parameter of the prompt template
  *
  * - It can tell if it is input or output parameter
@@ -49,4 +49,13 @@ export interface ParameterCommand {
     isInputParameter: boolean;
     parameterName: string_name;
     parameterDescription: string_markdown_text | null;
+}
+
+/**
+ * Postprocess command describes which function to use for postprocessing
+ * This will be created as separate execute script block bellow
+ */
+export interface PostprocessCommand {
+    type: 'POSTPROCESS';
+    functionName: string_name;
 }

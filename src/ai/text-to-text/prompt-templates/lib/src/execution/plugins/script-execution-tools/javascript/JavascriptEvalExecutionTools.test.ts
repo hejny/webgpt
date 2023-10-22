@@ -122,5 +122,6 @@ describe('JavascriptEvalExecutionTools', () => {
 });
 
 /**
+ * TODO: !!! Test throwing errors from script execution
  * TODO: !! Make shared test between JavascriptEvalExecutionTools and JavascriptExecutionTools to test the same functionality when implemented via vm2
  */

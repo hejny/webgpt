@@ -13,23 +13,28 @@ Trying the language capabilities of GPT models.
 
 Synonym for word
 
+-   Postprocessing `unwrapResult`
+
 ```prompttemplate
 Write synonym for "{word}"
 ```
 
-`-> {wordSynonymRaw}`
+`-> {wordSynonym}`
 
-## Unquote synonym
+## Test that word is not a cat
 
-<!-- TODO: !!! Both sample of postprocessing and script -->
+<!-- TODO: !!! Prefix all samples same as write-website-content.cs.ptp.md -->
+<!-- TODO: !!! ACRY Change prompttemplate -> markdown / text -->
 
 -   Execute script
 
 ```javascript
-unwrapResult(wordSynonymRaw);
+if (wordSynonym === 'cat') {
+    throw new Error('Word cannot be a cat');
+}
 ```
 
-`-> {wordSynonym}` Synonym for word
+`-> {wordSynonymTested}`
 
 ## Sentence with Synonym
 

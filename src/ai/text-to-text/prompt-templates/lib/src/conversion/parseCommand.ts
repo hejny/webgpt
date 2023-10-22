@@ -144,6 +144,28 @@ export function parseCommand(listItem: string_markdown_text): Command {
             type: 'PTP_VERSION',
             ptpVersion,
         };
+    } else if (type.startsWith('POSTPROCESS') || type.startsWith('POST_PROCESS')) {
+        const functionName = listItem
+            .split(' ')
+            .filter((item) => item !== '')
+            .pop();
+
+        if (!functionName || functionName === '') {
+            throw new Error(
+                spaceTrim(
+                    `
+                        Invalid POSTPROCESSING command:
+
+                        - ${listItem}
+                    `,
+                ),
+            );
+        }
+
+        return {
+            type: 'POSTPROCESS',
+            functionName,
+        };
     } else if (type.startsWith('!!!')) {
         // TODO: !!! Parsing ptpUrl from markdown
         throw new Error(`Temporary`);

@@ -31,6 +31,8 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         const unwrapResult = _unwrapResult;
         unwrapResult;
 
+        // TODO: !!! Add all n12 functions as global functions for postprocessing
+
         if (!script.includes('return')) {
             script = `return ${script}`;
         }
@@ -57,7 +59,5 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
 }
 
 /**
- * TODO: !!! Implement
- * TODO: !!! Put here some predefined functions like removeQuotes, spaceTrim, etc.
- *           + Put it into annotation OR pass into constructor
+ * TODO: Put predefined functions (like removeQuotes, spaceTrim, etc.) into annotation OR pass into constructor
  */

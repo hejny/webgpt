@@ -17,12 +17,11 @@
             "isInput": false
         },
         {
-            "name": "wordSynonymRaw",
+            "name": "wordSynonym",
             "isInput": false
         },
         {
-            "name": "wordSynonym",
-            "description": "Synonym for word",
+            "name": "wordSynonymTested",
             "isInput": false
         },
         {
@@ -46,18 +45,18 @@
                 "variant": "CHAT"
             },
             "content": "Write synonym for \"{word}\"",
-            "resultingParameterName": "wordSynonymRaw"
+            "resultingParameterName": "wordSynonym"
         },
         {
-            "name": "UnquoteSynonym",
-            "title": "Unquote synonym",
+            "name": "TestThatWordIsNotACat",
+            "title": "Test that word is not a cat",
             "executionType": "SCRIPT",
             "modelRequirements": {
                 "variant": "CHAT"
             },
             "contentLanguage": "javascript",
-            "content": "unwrapResult(wordSynonymRaw);",
-            "resultingParameterName": "wordSynonym"
+            "content": "if (wordSynonym === 'cat') {\n    throw new Error('Word cannot be a cat');\n}",
+            "resultingParameterName": "wordSynonymTested"
         },
         {
             "name": "SentenceWithSynonym",
