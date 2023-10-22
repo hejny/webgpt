@@ -5,26 +5,23 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   PTP version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
--   Input param `{rawTitle}` Návrh názvu webu od zákazníka
--   Input param `{rawAssigment}` Zadání webu od zákazníka
+-   Input param `{rawTitle}` Automatický návrh názvu webu nebo prázdný text
+-   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku
 -   Output param `{content}` Obsah webu
 
-<!-- !!!! Use here - Execute prompt dialog -->
-
-## Upřesnění zadání
+## Upřesnění zadání uživatelem
 
 Popište cíl vašeho webu
 
 -   Execute prompt dialog
 
-```
+```text
 {rawAssigment}
 ```
 
 ## Vylepšení názvu
 
-```prompttemplate
-
+```markdown
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
 
 Navrhovaný název od zákazníka:
@@ -40,18 +37,35 @@ Zadání od zákazníka:
 
 -   Napiště pouze jeden návrh názvu
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
-
 ```
 
-`-> {title}` Vylepšený název
+`-> {enhancedTitleQuoted}` Vylepšený název (s možnými uvozovkami)
 
-<!-- !!! Use here - Execute script removeQuotes-->
-<!-- !!!! Use here - Execute prompt dialog -->
+## Vylepšení názvu (Odstranění uvozovek)
+
+-   Execute script
+
+```javascript
+removeQuotes(titleQuoted);
+```
+
+`-> {enhancedTitle}` Vylepšený název
+
+## Schválení názvu uživatelem
+
+Je název Vašeho webu v pořádku?
+
+-   Execute prompt dialog
+
+```text
+{enhancedTitle}
+```
+
+`-> {title}` Název webu
 
 ## Vymyšlení claimu
 
-```prompttemplate
-
+```markdown
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".
 
 Zadání webu od zákazníka:
@@ -65,7 +79,6 @@ Zadání webu od zákazníka:
 -   Napiště pouze jeden návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
-
 ```
 
 `-> {claim}` Podtitulek pro web
@@ -76,8 +89,7 @@ Zadání webu od zákazníka:
 Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
 -->
 
-```prompttemplate
-
+```markdown
 Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{title}".
 
 Zadání webu od zákazníka:
@@ -100,7 +112,6 @@ Zadání webu od zákazníka:
 -   Tradice
 -   Itálie
 -   Řemeslo
-
 ```
 
 `-> {keywords}` Klíčová slova
@@ -122,8 +133,7 @@ Zadání webu od zákazníka:
 -   Use completion
 <!-- TODO: [🌚]> -   Use GPT-3 -->
 
-```prompttemplate
-
+```markdown
 Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {title}.
 
 Zadání webu od zákazníka:
@@ -149,21 +159,18 @@ Zadání webu od zákazníka:
 ---
 
 {contentBeginning}
-
 ```
 
 `-> {contentBody}` Prostředek obsahu webu
 
 ## Spojení obsahu
 
-```text
+-   Execute simple template
 
+```markdown
 {contentBeginning}
 
 {contentBody}
-
 ```
 
 `-> {content}`
-
-<!-- !!! Use here - Execute simple template-->
