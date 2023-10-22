@@ -2,6 +2,7 @@
 
 Trying the language capabilities of GPT models.
 
+-   PTP URL https://ptp.example.com/samples/language-capabilities.ptp.md@v1
 -   PTP version 1.0.0
 -   Use Chat
 <!-- TODO: [🌚]> -   Use GPT-3 -->
@@ -23,7 +24,7 @@ Write synonym for "{word}"
 
 ## Test that word is not a cat
 
-<!-- TODO: !!! Prefix all samples same as write-website-content.cs.ptp.md -->
+<!-- TODO: !!! Prefix all ## templates in samples same as write-website-content.cs.ptp.md -->
 <!-- TODO: !!! ACRY Change prompttemplate -> markdown / text -->
 
 -   Execute script

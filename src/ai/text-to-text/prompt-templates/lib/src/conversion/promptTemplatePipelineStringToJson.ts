@@ -24,6 +24,7 @@ export function promptTemplatePipelineStringToJson(
     promptTemplatePipelineString: PromptTemplatePipelineString,
 ): PromptTemplatePipelineJson {
     const ptpJson: WritableDeep<PromptTemplatePipelineJson> = {
+        ptpUrl: undefined /* <- Note: Putting here placeholder to keep ptpUrl on top at final JSON */,
         ptpVersion: PTP_VERSION,
         parameters: [],
         promptTemplates: [],
@@ -102,7 +103,9 @@ export function promptTemplatePipelineStringToJson(
         const command = parseCommand(listItem);
 
         switch (command.type) {
-            // TODO: !!! Parsing ptpUrl from markdown
+            case 'PTP_URL':
+                ptpJson.ptpUrl = command.ptpUrl.href;
+                break;
 
             case 'PTP_VERSION':
                 ptpJson.ptpVersion = command.ptpVersion;
@@ -267,12 +270,6 @@ export function promptTemplatePipelineStringToJson(
                 resultingParameterName: getParameterName(i + 1),
             });
         }
-
-        /*
-        TODO: !!! Remove or use
-        for(const [isLast] of postprocessingCommands.length===0?[true,]:){
-        }
-        */
     }
 
     // =============================================================

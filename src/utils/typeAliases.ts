@@ -270,14 +270,14 @@ export type string_url = string;
 /**
  * Semantic helper
  *
- * For example `"https://ptp.webgpt.com/cs/write-wallpaper-content@v2.4.15"`
+ * For example `"https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v2.4.15"`
  */
 export type string_ptp_url = string;
 
 /**
  * Semantic helper
  *
- * For example `"https://ptp.webgpt.com/cs/write-wallpaper-content@v2.4.15#keywords"`
+ * For example `"https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v2.4.15#keywords"`
  */
 export type string_ptp_url_with_hashtemplate = string;
 

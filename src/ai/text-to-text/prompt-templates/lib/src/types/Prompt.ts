@@ -23,7 +23,7 @@ export interface Prompt {
     /**
      * Unique identifier of the prompt template pipeline with specific template name as hash
      *
-     * @example https://ptp.webgpt.com/cs/write-wallpaper-content@v2.4.15#keywords
+     * @example https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v2.4.15#keywords
      */
     readonly ptpUrl: string_ptp_url_with_hashtemplate;
 

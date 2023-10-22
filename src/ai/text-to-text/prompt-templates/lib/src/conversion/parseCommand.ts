@@ -24,7 +24,84 @@ export function parseCommand(listItem: string_markdown_text): Command {
     type = type.split(')').join('');
     type = normalizeTo_SCREAMING_CASE(type);
 
-    if (type.startsWith('EXECUTE')) {
+    const listItemParts = listItem
+        .split(' ')
+        .map((part) => part.trim())
+        .filter((item) => item !== '')
+        .filter((item) => !/^PTP$/i.test(item))
+        .map(removeMarkdownFormatting);
+
+    if (type.startsWith('URL') || type.startsWith('PTP_URL') || type.startsWith('PTPURL') || type.startsWith('HTTPS')) {
+        if (!(listItemParts.length === 2 || (listItemParts.length === 1 && type.startsWith('HTTPS')))) {
+            console.log('!!!', { listItemParts });
+            throw new Error(
+                spaceTrim(
+                    `
+                        Invalid PTP_URL command:
+
+                        - ${listItem}
+                    `,
+                ),
+            );
+        }
+
+        const ptpUrlString = listItemParts.pop()!;
+        const ptpUrl = new URL(ptpUrlString);
+
+        if (ptpUrl.protocol !== 'https:') {
+            throw new Error(
+                spaceTrim(
+                    `
+                        Invalid PTP_URL command:
+
+                        - ${listItem}
+
+                        Protocol must be HTTPS
+                    `,
+                ),
+            );
+        }
+
+        if (ptpUrl.hash !== '') {
+            throw new Error(
+                spaceTrim(
+                    `
+                        Invalid PTP_URL command:
+
+                        - ${listItem}
+
+                        URL must not contain hash
+                        Hash is used for identification of the prompt template in the pipeline
+                    `,
+                ),
+            );
+        }
+
+        return {
+            type: 'PTP_URL',
+            ptpUrl,
+        };
+    } else if (type.startsWith('PTP_VERSION')) {
+        if (listItemParts.length !== 2) {
+            throw new Error(
+                spaceTrim(
+                    `
+                        Invalid PTP_VERSION command:
+
+                        - ${listItem}
+                    `,
+                ),
+            );
+        }
+
+        const ptpVersion = listItemParts.pop()!;
+        // TODO: Validate version
+
+        return {
+            type: 'PTP_VERSION',
+            ptpVersion,
+        };
+    } else if (type.startsWith('EXECUTE')) {
         const executionTypes = ExecutionTypes.filter((executionType) => type.includes(executionType));
 
         if (executionTypes.length !== 1) {
@@ -121,33 +198,7 @@ export function parseCommand(listItem: string_markdown_text): Command {
             parameterDescription: parameterDescription.trim() || null,
             isInputParameter,
         };
-    } else if (type.startsWith('PTP_VERSION')) {
-        const ptpVersion = listItem
-            .split(' ')
-            .filter((item) => item !== '')
-            .pop();
-
-        if (!ptpVersion || ptpVersion === '' || ptpVersion.toUpperCase() === 'VERSION') {
-            throw new Error(
-                spaceTrim(
-                    `
-                        Invalid PTP_VERSION command:
-
-                        - ${listItem}
-                    `,
-                ),
-            );
-        }
-
-        // TODO: Validate version
-
-        return {
-            type: 'PTP_VERSION',
-            ptpVersion,
-        };
     } else if (type.startsWith('POSTPROCESS') || type.startsWith('POST_PROCESS')) {
-        const listItemParts = listItem.split(' ').filter((item) => item !== '');
-
         if (listItemParts.length !== 2) {
             throw new Error(
                 spaceTrim(
@@ -160,17 +211,12 @@ export function parseCommand(listItem: string_markdown_text): Command {
             );
         }
 
-        let functionName = listItemParts.pop();
-
-        functionName = removeMarkdownFormatting(functionName!);
+        const functionName = listItemParts.pop()!;
 
         return {
             type: 'POSTPROCESS',
             functionName,
         };
-    } else if (type.startsWith('!!!')) {
-        // TODO: !!! Parsing ptpUrl from markdown
-        throw new Error(`Temporary`);
     } else {
         throw new Error(
             spaceTrim(

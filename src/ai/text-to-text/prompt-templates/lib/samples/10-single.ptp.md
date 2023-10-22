@@ -2,6 +2,7 @@
 
 Show how to use a simple prompt with one parameter.
 
+-   PTP URL https://ptp.example.com/samples/single.ptp.md@v1
 -   PTP version 1.0.0
 -   Input parameter `{word}` Any single word
 

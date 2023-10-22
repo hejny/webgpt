@@ -2,6 +2,7 @@
 
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
 
+-   PTP URL https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v0.1.0
 -   PTP version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->

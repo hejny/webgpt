@@ -1,5 +1,5 @@
 {
-    "ptpUrl": "https://ptp.example.com/samples/escaping.ptp.md@v1",
+    "ptpUrl": "https://ptp.example.com/samples/simple.ptp.md@v1",
     "ptpVersion": "1.0.0",
     "parameters": [
         {
@@ -15,7 +15,7 @@
             "modelRequirements": {
                 "variant": "CHAT"
             },
-            "content": "Rewrite the function\n\n\\`\\`\\`javascript\nfunction greet() {\n  return 'Hello';\n}\n\\`\\`\\`\n\nTo return \"Goodbye\" instead.\n",
+            "content": "Hello",
             "resultingParameterName": "greeting"
         }
     ]

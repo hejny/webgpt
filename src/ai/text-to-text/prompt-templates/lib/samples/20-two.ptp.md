@@ -2,6 +2,7 @@
 
 Show how to use two consecutive prompts with one parameter each.
 
+-   PTP URL https://ptp.example.com/samples/two.ptp.md@v1
 -   PTP version 1.0.0
 -   Input parameter `{word}` Any single word
 

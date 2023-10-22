@@ -1,4 +1,4 @@
-import { string_version } from '../../../../../../../utils/typeAliases';
+import { string_ptp_url, string_version } from '../../../../../../../utils/typeAliases';
 import { PromptTemplateJson } from './PromptTemplateJson';
 import { PromptTemplateParameterJson } from './PromptTemplateParameterJson';
 
@@ -14,6 +14,17 @@ import { PromptTemplateParameterJson } from './PromptTemplateParameterJson';
  * @see https://github.com/webgptorg/ptp#prompt-template-pipeline
  */
 export interface PromptTemplatePipelineJson {
+    /**
+     * Unique identifier of the prompt template pipeline
+     *
+     * Note: It must be unique across all prompt template pipelines
+     * Note: It must use HTTPs URL
+     * Tip: You can do versioning in the URL
+     *      For example: https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@1.0.0
+     * Warning: Do not hash part of the URL, hash part is used for identification of the prompt template in the pipeline
+     */
+    readonly ptpUrl?: string_ptp_url;
+
     /**
      * Version of the .ptp.json file
      */

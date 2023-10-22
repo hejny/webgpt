@@ -27,10 +27,10 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
         let parametersToPass: Record<string_name, string> = inputParameters;
-        let currentPtp: PromptTemplateJson | null = ptp.entryPromptTemplate;
+        let currentTemplate: PromptTemplateJson | null = ptp.entryPromptTemplate;
 
-        while (currentPtp !== null) {
-            const { name, description } = ptp.getResultingParameter(currentPtp.name);
+        while (currentTemplate !== null) {
+            const { name, description } = ptp.getResultingParameter(currentTemplate.name);
 
             if (onProgress) {
                 await onProgress({
@@ -42,19 +42,23 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 
             let promptResult: string | null = null;
 
-            executionType: switch (currentPtp.executionType) {
+            executionType: switch (currentTemplate.executionType) {
                 case 'SIMPLE_TEMPLATE':
-                    promptResult = replaceParameters(currentPtp.content, parametersToPass);
+                    promptResult = replaceParameters(currentTemplate.content, parametersToPass);
                     break executionType;
 
                 case 'PROMPT_TEMPLATE':
                     const prompt = {
-                        ptpUrl: '!!!',
+                        ptpUrl: `${
+                            ptp.ptpUrl
+                                ? ptp.ptpUrl.href
+                                : 'anonymous' /* <- [🧠] How to deal with anonymous PTPs, do here some auto-url like SHA-256 based ad-hoc identifier? */
+                        }#${currentTemplate.name}`,
                         parameters: parametersToPass,
-                        content: replaceParameters(currentPtp.content, parametersToPass),
-                        modelRequirements: currentPtp.modelRequirements!,
+                        content: replaceParameters(currentTemplate.content, parametersToPass),
+                        modelRequirements: currentTemplate.modelRequirements!,
                     };
-                    variant: switch (currentPtp.modelRequirements!.variant) {
+                    variant: switch (currentTemplate.modelRequirements!.variant) {
                         case 'CHAT':
                             const chatThread = await tools.natural.gptChat(prompt);
                             // TODO: Use all information from chatThread like "model"
@@ -67,7 +71,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                             promptResult = completionResult.content;
                             break variant;
                         default:
-                            throw new Error(`Unknown model variant "${currentPtp.modelRequirements!.variant}"`);
+                            throw new Error(`Unknown model variant "${currentTemplate.modelRequirements!.variant}"`);
                     }
                     break executionType;
 
@@ -75,8 +79,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     if (tools.script.length === 0) {
                         throw new Error(`No script execution tools are available`);
                     }
-                    if (!currentPtp.contentLanguage) {
-                        throw new Error(`Script language is not defined for prompt template "${currentPtp.name}"`);
+                    if (!currentTemplate.contentLanguage) {
+                        throw new Error(`Script language is not defined for prompt template "${currentTemplate.name}"`);
                     }
 
                     const errors: Array<Error> = [];
@@ -85,8 +89,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     scripts: for (const scriptTools of tools.script) {
                         try {
                             promptResult = await scriptTools.execute({
-                                scriptLanguage: currentPtp.contentLanguage,
-                                script: currentPtp.content,
+                                scriptLanguage: currentTemplate.contentLanguage,
+                                script: currentTemplate.content,
                                 parameters: parametersToPass,
                             });
                             isSuccessful = true;
@@ -124,8 +128,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 
                 case 'PROMPT_DIALOG':
                     promptResult = await tools.userInterface.promptDialog({
-                        prompt: replaceParameters(currentPtp.description || '', parametersToPass),
-                        defaultValue: replaceParameters(currentPtp.content, parametersToPass),
+                        prompt: replaceParameters(currentTemplate.description || '', parametersToPass),
+                        defaultValue: replaceParameters(currentTemplate.content, parametersToPass),
 
                         // TODO: [🧠] !! Figure out how to define placeholder in .ptp.md file
                         placeholder: undefined,
@@ -133,7 +137,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     break executionType;
 
                 default:
-                    throw new Error(`Unknown execution type "${(currentPtp as any).executionType}"`);
+                    throw new Error(`Unknown execution type "${(currentTemplate as any).executionType}"`);
             }
 
             if (promptResult === null) {
@@ -153,7 +157,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                 [name]: promptResult /* <- Note: Not need to detect parameter collision here because PromptTemplatePipeline checks logic consistency during construction */,
             };
 
-            currentPtp = ptp.getFollowingPromptTemplate(currentPtp!.name);
+            currentTemplate = ptp.getFollowingPromptTemplate(currentTemplate!.name);
         }
 
         return parametersToPass as Record<string_name, string>;

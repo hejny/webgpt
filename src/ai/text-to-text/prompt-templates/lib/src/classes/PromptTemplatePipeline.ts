@@ -28,12 +28,14 @@ export class PromptTemplatePipeline {
         validatePromptTemplatePipelineJson(source);
 
         return new PromptTemplatePipeline(
+            source.ptpUrl ? new URL(source.ptpUrl) : null,
             Object.fromEntries(source.parameters.map((parameter) => [parameter.name, parameter])),
             source.promptTemplates,
         );
     }
 
     private constructor(
+        public readonly ptpUrl: URL | null,
         private readonly parameters: Record<string_name, PromptTemplateParameterJson>,
         private readonly promptTemplates: Array<PromptTemplateJson>,
     ) {

@@ -6,7 +6,24 @@ import { ModelRequirements } from './ModelRequirements';
  * Command is one piece of the prompt template which adds some logic to the prompt template or the whole pipeline.
  * It is parsed from the markdown from ul/ol items - one command per one item.
  */
-export type Command = PtpVersionCommand | ExecuteCommand | UseCommand | ParameterCommand | PostprocessCommand;
+export type Command =
+    | PtpUrlCommand
+    | PtpVersionCommand
+    | ExecuteCommand
+    | UseCommand
+    | ParameterCommand
+    | PostprocessCommand;
+
+/**
+ * PtpVersion command tells which version is .ptp file using
+ *
+ * - It is used for backward compatibility
+ * - It is defined per whole .ptp file in the header
+ */
+export interface PtpUrlCommand {
+    readonly type: 'PTP_URL';
+    readonly ptpUrl: URL;
+}
 
 /**
  * PtpVersion command tells which version is .ptp file using
