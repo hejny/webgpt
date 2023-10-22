@@ -1,0 +1,53 @@
+{
+    "ptpVersion": "1.0.0",
+    "parameters": [
+        {
+            "name": "yourName",
+            "description": "Name of the hero",
+            "isInput": true
+        },
+        {
+            "name": "greeting",
+            "isInput": false
+        }
+    ],
+    "promptTemplates": [
+        {
+            "name": "Question",
+            "title": "Question",
+            "executionType": "PROMPT_TEMPLATE",
+            "modelRequirements": {
+                "variant": "CHAT"
+            },
+            "content": "Hello {yourName}!",
+            "resultingParameterName": "greetingBeforeReverse"
+        },
+        {
+            "name": "Question",
+            "title": "Question",
+            "description": "Postprocessing of {greetingBeforeReverse}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "reverse(greetingBeforeReverse)",
+            "resultingParameterName": "greetingBeforeRemoveDiacritics"
+        },
+        {
+            "name": "Question",
+            "title": "Question",
+            "description": "Postprocessing of {greetingBeforeRemoveDiacritics}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "removeDiacritics(greetingBeforeRemoveDiacritics)",
+            "resultingParameterName": "greetingBeforeNormalizeToScreamingCase"
+        },
+        {
+            "name": "Question",
+            "title": "Question",
+            "description": "Postprocessing of {greetingBeforeNormalizeToScreamingCase}",
+            "executionType": "SCRIPT",
+            "contentLanguage": "javascript",
+            "content": "normalizeTo_SCREAMING_CASE(greetingBeforeNormalizeToScreamingCase)",
+            "resultingParameterName": "greeting"
+        }
+    ]
+}
