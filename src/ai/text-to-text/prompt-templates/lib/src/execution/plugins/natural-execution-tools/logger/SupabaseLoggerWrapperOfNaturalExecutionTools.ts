@@ -1,15 +1,16 @@
+import spaceTrim from 'spacetrim';
 import { isRunningInNode } from '../../../../../../../../../utils/isRunningInWhatever';
 import { getSupabaseForServer } from '../../../../../../../../../utils/supabase/getSupabaseForServer';
-import { uuid } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
 import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../../PromptResult';
+import { SupabaseLoggerWrapperOfNaturalExecutionToolsOptions } from './SupabaseLoggerWrapperOfNaturalExecutionToolsOptions';
 
 /**
  * Wrapper for any PtpExecutionTools which logs every request+result to Supabase.
  */
 export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExecutionTools {
-    public constructor(private readonly naturalExecutionTools: NaturalExecutionTools, private readonly clientId: uuid) {
+    public constructor(private readonly options: SupabaseLoggerWrapperOfNaturalExecutionToolsOptions) {
         if (!isRunningInNode()) {
             throw new Error(`SupabaseLoggerWrapperOfExecutionTools can be used only on server`);
         }
@@ -40,10 +41,10 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
         let promptResult: PromptResult;
         switch (prompt.modelRequirements.variant) {
             case 'CHAT':
-                promptResult = await this.naturalExecutionTools.gptChat(prompt);
+                promptResult = await this.options.naturalExecutionTools.gptChat(prompt);
                 break;
             case 'COMPLETION':
-                promptResult = await this.naturalExecutionTools.gptComplete(prompt);
+                promptResult = await this.options.naturalExecutionTools.gptComplete(prompt);
                 break;
             default:
                 throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
@@ -52,31 +53,30 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
         performance.mark(`${mark}-end`);
         const resultAt = new Date();
 
-        /*/
-        // TODO: [🧠] Make config value DEBUG_LOG_GPT
-        console.info(
-            spaceTrim(
-                (block) => `
-                    ===========================[ Chat: ]===
-                    [🧑] ${block(prompt.request)}
-                    [🤖] ${block(result.response)}
-                    ---
-                    Executed in ${block(
-                        performance.measure(mark, `${mark}-start`, `${mark}-end`).duration.toString(),
-                    )}ms 
-                    ${completion.usage?.total_tokens} tokens used
-                    ===========================[ /Chat ]===
-                `,
-            ),
-        );
-        /**/
+        if (this.options.isVerbose) {
+            console.info(
+                spaceTrim(
+                    (block) => `
+                        ===========================[ Chat: ]===
+                        [🧑] ${block(prompt.content)}
+                        [🤖] ${block(promptResult.content)}
+                        ---
+                        Executed in ${block(
+                            performance.measure(mark, `${mark}-start`, `${mark}-end`).duration.toString(),
+                        )}ms 
+                        ${(promptResult.rawResponse as any).usage?.total_tokens} tokens used
+                        ===========================[ /Chat ]===
+                    `,
+                ),
+            );
+        }
 
         // Note: We do not want to wait for the insert to the database
         /* not await */ getSupabaseForServer()
             .from('PromptExecution')
             .insert(
                 {
-                    clientId: this.clientId,
+                    clientId: this.options.clientId,
                     ptpUrl: prompt.ptpUrl,
                     promptAt,
                     promptContent: prompt.content,
@@ -93,7 +93,10 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
             )
             .then((insertResult) => {
                 // TODO: !! Util isInsertSuccessfull
-                // console.log('ChatThread', { insertResult });
+
+                if (this.options.isVerbose) {
+                    console.info('ChatThread', { insertResult });
+                }
             });
 
         return promptResult;

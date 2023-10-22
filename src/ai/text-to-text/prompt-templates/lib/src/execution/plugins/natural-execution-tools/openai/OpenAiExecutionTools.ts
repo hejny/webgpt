@@ -1,9 +1,9 @@
 import chalk from 'chalk';
 import OpenAI from 'openai';
-import { string_token } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
 import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult } from '../../../PromptResult';
+import { OpenAiExecutionToolsOptions } from './OpenAiExecutionToolsOptions';
 
 /**
  * Execution Tools for calling OpenAI API.
@@ -14,9 +14,9 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
      */
     private readonly openai: OpenAI;
 
-    public constructor(openAiApiKey: string_token) {
+    public constructor(private readonly options: OpenAiExecutionToolsOptions) {
         this.openai = new OpenAI({
-            apiKey: openAiApiKey,
+            apiKey: this.options.openAiApiKey,
         });
     }
 
@@ -24,6 +24,10 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
      * Calls OpenAI API to use a chat model.
      */
     public async gptChat(prompt: Prompt): Promise<PromptChatResult> {
+        if (this.options.isVerbose) {
+            console.info(`💬 OpenAI gptChat call`);
+        }
+
         const { content, modelRequirements } = prompt;
 
         // TODO: [☂] Use here more modelRequirements
@@ -45,23 +49,29 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const rawResponse = await this.openai.chat.completions.create(rawRequest);
 
         if (!rawResponse.choices[0]) {
-            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            if (this.options.isVerbose) {
+                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            }
             throw new Error(`No choises from OpenAPI`);
         }
 
         if (rawResponse.choices.length > 1) {
+            if (this.options.isVerbose) {
+                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            }
             // TODO: This should be maybe only warning
-            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`More than one choise from OpenAPI`);
         }
 
         const resultContent = rawResponse.choices[0].message.content;
 
         if (!resultContent) {
-            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            if (this.options.isVerbose) {
+                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            }
             throw new Error(`No response message from OpenAPI`);
         }
 
@@ -77,6 +87,10 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
      * Calls OpenAI API to use a complete model.
      */
     public async gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
+        if (this.options.isVerbose) {
+            console.info(`🖋 OpenAI gptComplete call`);
+        }
+
         const { content, modelRequirements } = prompt;
 
         // TODO: [☂] Use here more modelRequirements
@@ -97,23 +111,29 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         const rawResponse = await this.openai.completions.create(rawRequest);
 
         if (!rawResponse.choices[0]) {
-            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            if (this.options.isVerbose) {
+                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            }
             throw new Error(`No choises from OpenAPI`);
         }
 
         if (rawResponse.choices.length > 1) {
+            if (this.options.isVerbose) {
+                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            }
             // TODO: This should be maybe only warning
-            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`More than one choise from OpenAPI`);
         }
 
         const resultContent = rawResponse.choices[0].text;
 
         if (!resultContent) {
-            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
-            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            if (this.options.isVerbose) {
+                console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+                console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
+            }
             throw new Error(`No response message from OpenAPI`);
         }
 
@@ -127,7 +147,6 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
 }
 
 /**
- * TODO: !!! Pass isVerbose to constructor and use it in gptChat and gptComplete
  * TODO: Maybe Create some common util for gptChat and gptComplete
  * TODO: Maybe make custom OpenaiError
  */

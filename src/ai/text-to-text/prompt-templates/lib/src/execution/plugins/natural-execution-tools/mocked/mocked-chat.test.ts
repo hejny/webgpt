@@ -4,6 +4,7 @@ import { PromptTemplatePipeline } from '../../../../classes/PromptTemplatePipeli
 import { promptTemplatePipelineStringToJson } from '../../../../conversion/promptTemplatePipelineStringToJson';
 import { PromptTemplatePipelineString } from '../../../../types/PromptTemplatePipelineString';
 import { createPtpExecutor } from '../../../createPtpExecutor';
+import { CallbackInterfaceTools } from '../../user-interface-execution-tools/callback/CallbackInterfaceTools';
 import { MockedEchoNaturalExecutionTools } from './MockedEchoNaturalExecutionTools';
 
 describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt', () => {
@@ -29,7 +30,16 @@ describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt',
     const ptp = PromptTemplatePipeline.fromJson(ptpJson);
     const ptpExecutor = createPtpExecutor({
         ptp,
-        tools: { natural: new MockedEchoNaturalExecutionTools(), script: null as any, userInterface: null as any },
+        tools: {
+            natural: new MockedEchoNaturalExecutionTools({ isVerbose: true }),
+            script: [],
+            userInterface: new CallbackInterfaceTools({
+                isVerbose: true,
+                async callback() {
+                    return 'Hello';
+                },
+            }),
+        },
     });
 
     it('should work when every input parameter defined', () => {

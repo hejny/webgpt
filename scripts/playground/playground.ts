@@ -41,11 +41,14 @@ async function playground() {
         assigment: `Web about cat hotel in Prague old town, Open 24/7`,
         */
     };
+    const isVerbose = true;
+
     const outputParams = await ptpLibrary.createExecutor('writeWebsiteContent', {
-        natural: new SupabaseLoggerWrapperOfNaturalExecutionTools(
-            new OpenAiExecutionTools(OPENAI_API_KEY!),
-            SYSTEM_AUTHOR_ID,
-        ),
+        natural: new SupabaseLoggerWrapperOfNaturalExecutionTools({
+            isVerbose,
+            naturalExecutionTools: new OpenAiExecutionTools({ isVerbose, openAiApiKey: OPENAI_API_KEY! }),
+            clientId: SYSTEM_AUTHOR_ID,
+        }),
         script: null as any,
         userInterface: null as any,
     })(inputParams, (taskProgress) => {

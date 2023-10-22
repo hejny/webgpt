@@ -1,3 +1,4 @@
+import { CommonExecutionToolsOptions } from '../../../CommonExecutionToolsOptions';
 import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**
@@ -6,6 +7,8 @@ import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../
  * Warning: This is not implemented yet
  */
 export class JavascriptExecutionTools implements ScriptExecutionTools {
+    public constructor(private readonly options: CommonExecutionToolsOptions) {}
+
     /**
      * Executes a JavaScript
      */
@@ -23,6 +26,7 @@ export class JavascriptExecutionTools implements ScriptExecutionTools {
 }
 
 /**
+ * TODO: !! Pass isVerbose to constructor and use it
  * TODO: !! Probbably make some common util createStatementToEvaluate
  * TODO: !! Implement via vm2
  */

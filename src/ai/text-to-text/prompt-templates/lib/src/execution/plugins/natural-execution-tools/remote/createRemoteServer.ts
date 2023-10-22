@@ -2,38 +2,11 @@ import chalk from 'chalk';
 import http from 'http';
 import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
-import { PromptTemplatePipelineLibrary } from '../../../../classes/PromptTemplatePipelineLibrary';
-import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptResult } from '../../../PromptResult';
 import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
-
-interface RemoteServerOptions {
-    /**
-     * Port on which the server will listen
-     */
-    readonly port: number;
-
-    /**
-     * Prompt template pipeline library to use
-     *
-     * THis is used to checkl validity of the prompt to prevent DDoS
-     */
-    readonly ptpLibrary: PromptTemplatePipelineLibrary;
-
-    /**
-     * Natural execution tools to use
-     *
-     * Note: Theese tools will be wrapped in a logger for each client to log all requests
-     */
-    readonly naturalExecutionTools: NaturalExecutionTools;
-
-    /**
-     * If true, the server will log all requests and responses
-     */
-    readonly isVerbose?: boolean;
-}
+import { RemoteServerOptions } from './interfaces/RemoteServerOptions';
 
 /**
  * Remote server is a proxy server that uses its execution tools internally and exposes the executor interface externally.
@@ -83,10 +56,11 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 console.info(chalk.bgGray(`  Prompt:  `), chalk.gray(JSON.stringify(request, null, 4)));
             }
 
-            const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools(
+            const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools({
+                isVerbose,
                 naturalExecutionTools,
                 clientId,
-            );
+            });
 
             // TODO: !!! Check validity of the prompt against ptpLibrary
 

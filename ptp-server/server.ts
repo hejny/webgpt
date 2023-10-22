@@ -8,13 +8,15 @@ import { OpenAiExecutionTools } from '../src/ai/text-to-text/prompt-templates/li
 import { createRemoteServer } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/natural-execution-tools/remote/createRemoteServer';
 // import { ptpLibrary } from '../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
+const isVerbose = true;
+
 createRemoteServer({
-    isVerbose: true,
+    isVerbose,
     port: 4445 /* <- TODO: Unhardcode (all ports) */,
     ptpLibrary: new PromptTemplatePipelineLibrary({
         /* <- TODO: !!! Use here real PTP library */
     }),
-    naturalExecutionTools: new OpenAiExecutionTools(OPENAI_API_KEY!),
+    naturalExecutionTools: new OpenAiExecutionTools({ isVerbose, openAiApiKey: OPENAI_API_KEY! }),
 });
 
 /**

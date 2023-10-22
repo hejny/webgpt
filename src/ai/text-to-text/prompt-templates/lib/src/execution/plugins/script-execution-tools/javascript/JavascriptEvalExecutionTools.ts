@@ -8,12 +8,14 @@ import {
     normalizeTo_PascalCase as _normalizeTo_PascalCase,
     normalizeTo_SCREAMING_CASE as _normalizeTo_SCREAMING_CASE,
     normalizeTo_snake_case as _normalizeTo_snake_case,
-    normalizeWhitespaces as _normalizeWhitespaces, parseKeywordsFromString as _parseKeywordsFromString,
-    removeDiacritics as _removeDiacritics
+    normalizeWhitespaces as _normalizeWhitespaces,
+    parseKeywordsFromString as _parseKeywordsFromString,
+    removeDiacritics as _removeDiacritics,
 } from 'n12';
 import { spaceTrim as _spaceTrim } from 'spacetrim';
 import { removeQuotes as _removeQuotes } from '../../../../../../../../../utils/content/removeQuotes';
 import { unwrapResult as _unwrapResult } from '../../../../../../../../../utils/content/unwrapResult';
+import { CommonExecutionToolsOptions } from '../../../CommonExecutionToolsOptions';
 import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../../ScriptExecutionTools';
 
 /**
@@ -23,6 +25,8 @@ import { ScriptExecutionTools, ScriptExecutionToolsExecuteOptions } from '../../
  *          **NOT intended to use in the production** due to its unsafe nature, use `JavascriptExecutionTools` instead.
  */
 export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
+    public constructor(private readonly options: CommonExecutionToolsOptions) {}
+
     /**
      * Executes a JavaScript
      */
@@ -89,6 +93,17 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
             `,
         );
 
+        if (this.options.isVerbose) {
+            console.info(
+                spaceTrim(
+                    (block) => `
+                        🚀 Evaluating ${scriptLanguage} script:
+                        
+                        ${block(statementToEvaluate)}`,
+                ),
+            );
+        }
+
         const result = eval(statementToEvaluate);
 
         if (typeof result !== 'string') {
@@ -100,5 +115,6 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
 }
 
 /**
+ * TODO: !!! Pass isVerbose to constructor and use it
  * TODO: Put predefined functions (like removeQuotes, spaceTrim, etc.) into annotation OR pass into constructor
  */

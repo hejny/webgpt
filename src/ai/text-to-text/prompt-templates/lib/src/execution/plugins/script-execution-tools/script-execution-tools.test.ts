@@ -33,9 +33,14 @@ describe('createPtpExecutor + executing scripts in ptp', () => {
     const ptpExecutor = createPtpExecutor({
         ptp,
         tools: {
-            natural: new MockedEchoNaturalExecutionTools(),
-            script: [new JavascriptEvalExecutionTools()],
-            userInterface: new CallbackInterfaceTools(async () => 'Hello'),
+            natural: new MockedEchoNaturalExecutionTools({ isVerbose: true }),
+            script: [new JavascriptEvalExecutionTools({ isVerbose: true })],
+            userInterface: new CallbackInterfaceTools({
+                isVerbose: true,
+                async callback() {
+                    return 'Hello';
+                },
+            }),
         },
     });
 

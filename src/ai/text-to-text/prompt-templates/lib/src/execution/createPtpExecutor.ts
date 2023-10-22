@@ -30,7 +30,8 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
         let currentPtp: PromptTemplateJson | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
-            const { name, description } = ptp.getResultingParameter(currentPtp!.name);
+            console.log('!!! currentPtp', currentPtp);
+            const { name, description } = ptp.getResultingParameter(currentPtp.name);
 
             if (onProgress) {
                 await onProgress({

@@ -1,5 +1,5 @@
 import spaceTrim from 'spacetrim';
-import { NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
 import { promptDialogue } from '../../../components/Dialogues/dialogues/promptDialogue';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
@@ -31,30 +31,37 @@ export function getExecutionToolsForWorker(clientId: uuid): ExecutionTools {
     }
 
     if (!executionTools) {
+        const isVerbose = IS_DEVELOPMENT;
+
         executionTools = {
-            natural: new RemoteNaturalExecutionTools(NEXT_PUBLIC_PTP_SERVER_URL, clientId),
-            script: [new JavascriptEvalExecutionTools(/* <- TODO: !! Change to JavascriptExecutionTools */)],
-            userInterface: new CallbackInterfaceTools(async (options) => {
-                // TODO: !! Make util promptDialogueRequired
-                let answer: null | string = null;
+            natural: new RemoteNaturalExecutionTools({ isVerbose, remoteUrl: NEXT_PUBLIC_PTP_SERVER_URL, clientId }),
+            script: [
+                new JavascriptEvalExecutionTools(/* <- TODO: !! Change to JavascriptExecutionTools */ { isVerbose }),
+            ],
+            userInterface: new CallbackInterfaceTools({
+                isVerbose,
+                async callback(options) {
+                    // TODO: !! Make util promptDialogueRequired
+                    let answer: null | string = null;
 
-                // TODO: Configure how many retries
-                for (let i = 0; i < 3; i++) {
-                    answer = await promptDialogue({
-                        ...options,
-                        prompt: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
-                    });
+                    // TODO: Configure how many retries
+                    for (let i = 0; i < 3; i++) {
+                        answer = await promptDialogue({
+                            ...options,
+                            prompt: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
+                        });
 
-                    if (answer !== null && spaceTrim(answer) !== '') {
-                        break;
+                        if (answer !== null && spaceTrim(answer) !== '') {
+                            break;
+                        }
                     }
-                }
 
-                if (answer === null) {
-                    throw new Error('User cancelled prompt or provided empty answers');
-                }
+                    if (answer === null) {
+                        throw new Error('User cancelled prompt or provided empty answers');
+                    }
 
-                return answer;
+                    return answer;
+                },
             }),
         };
     }

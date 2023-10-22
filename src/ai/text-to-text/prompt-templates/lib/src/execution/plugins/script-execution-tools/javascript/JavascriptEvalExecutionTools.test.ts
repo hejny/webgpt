@@ -3,7 +3,7 @@ import spaceTrim from 'spacetrim';
 import { JavascriptEvalExecutionTools } from './JavascriptEvalExecutionTools';
 
 describe('JavascriptEvalExecutionTools', () => {
-    const javascriptEvalExecutionTools = new JavascriptEvalExecutionTools();
+    const javascriptEvalExecutionTools = new JavascriptEvalExecutionTools({ isVerbose: true });
 
     it('should evaluate supersimple statement', () => {
         expect(

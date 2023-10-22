@@ -1,11 +1,11 @@
 import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
-import { uuid } from '../../../../../../../../../utils/typeAliases';
 import { Prompt } from '../../../../types/Prompt';
 import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../../PromptResult';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
+import { RemoteNaturalExecutionToolsOptions } from './RemoteNaturalExecutionToolsOptions';
 
 /**
  * Remote server is a proxy server that uses its execution tools internally and exposes the executor interface externally.
@@ -16,27 +16,27 @@ import { Ptps_Response } from './interfaces/Ptps_Response';
  * @see https://github.com/webgptorg/ptp#remote-server
  */
 export class RemoteNaturalExecutionTools implements NaturalExecutionTools {
-    constructor(private readonly remoteUrl: URL, private readonly clientId: uuid) {}
+    public constructor(private readonly options: RemoteNaturalExecutionToolsOptions) {}
 
     /**
      * Creates a connection to the remote proxy server.
      */
     private makeConnection(): Promise<Socket> {
         return new Promise((resolve, reject) => {
-            const socket = io(this.remoteUrl.href, {
+            const socket = io(this.options.remoteUrl.href, {
                 path: '/ptp/socket.io',
                 // path: `${this.remoteUrl.pathname}/socket.io`,
                 transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
             });
 
-            console.log('Connecting to', this.remoteUrl.href, { socket });
+            console.log('Connecting to', this.options.remoteUrl.href, { socket });
 
             socket.on('connect', () => {
                 resolve(socket);
             });
 
             setTimeout(() => {
-                reject(new Error(`Timeout while connecting to ${this.remoteUrl.href}`));
+                reject(new Error(`Timeout while connecting to ${this.options.remoteUrl.href}`));
             }, 60000 /* <- TODO: Timeout to config */);
         });
     }
@@ -45,6 +45,9 @@ export class RemoteNaturalExecutionTools implements NaturalExecutionTools {
      * Calls remote proxy server to use a chat model.
      */
     public gptChat(prompt: Prompt): Promise<PromptChatResult> {
+        if (this.options.isVerbose) {
+            console.info(`🖋 Remote gptChat call`);
+        }
         return /* not await */ this.gptCommon(prompt);
     }
 
@@ -52,6 +55,9 @@ export class RemoteNaturalExecutionTools implements NaturalExecutionTools {
      * Calls remote proxy server to use a completion model.
      */
     public gptComplete(prompt: Prompt): Promise<PromptCompletionResult> {
+        if (this.options.isVerbose) {
+            console.info(`💬 Remote gptComplete call`);
+        }
         return /* not await */ this.gptCommon(prompt);
     }
 
@@ -60,7 +66,7 @@ export class RemoteNaturalExecutionTools implements NaturalExecutionTools {
      */
     private async gptCommon(prompt: Prompt): Promise<PromptResult> {
         const socket = await this.makeConnection();
-        socket.emit('request', { clientId: this.clientId, prompt } satisfies Ptps_Request);
+        socket.emit('request', { clientId: this.options.clientId, prompt } satisfies Ptps_Request);
 
         const promptResult = await new Promise<PromptResult>((resolve, reject) => {
             socket.on('response', (response: Ptps_Response) => {

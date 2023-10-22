@@ -34,11 +34,14 @@ describe('createPtpExecutor + executing user interface prompts in ptp', () => {
     const ptpExecutor = createPtpExecutor({
         ptp,
         tools: {
-            natural: new MockedEchoNaturalExecutionTools(),
+            natural: new MockedEchoNaturalExecutionTools({ isVerbose: true }),
             script: [],
-            userInterface: new CallbackInterfaceTools(
-                async ({ prompt, defaultValue }) => `Answer to question "${prompt}" is not ${defaultValue} but Pear.`,
-            ),
+            userInterface: new CallbackInterfaceTools({
+                isVerbose: true,
+                async callback({ prompt, defaultValue }) {
+                    return `Answer to question "${prompt}" is not ${defaultValue} but Pear.`;
+                },
+            }),
         },
     });
 
