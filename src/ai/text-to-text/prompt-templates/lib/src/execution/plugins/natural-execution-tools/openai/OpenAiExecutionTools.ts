@@ -85,7 +85,10 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
         }
 
         const model = 'gpt-3.5-turbo-instruct'; /* <- TODO: [☂] Use here more modelRequirements */
-        const modelSettings = { model };
+        const modelSettings = {
+            model,
+            maxTokens: 1000 /* <- TODO: [☂] Use here more modelRequirements */,
+        };
 
         const rawRequest: OpenAI.Completions.CompletionCreateParamsNonStreaming = {
             ...modelSettings,
@@ -124,7 +127,7 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
 }
 
 /**
- * TODO: Pass isVerbose to constructor and use it in gptChat and gptComplete
+ * TODO: !!! Pass isVerbose to constructor and use it in gptChat and gptComplete
  * TODO: Maybe Create some common util for gptChat and gptComplete
  * TODO: Maybe make custom OpenaiError
  */
