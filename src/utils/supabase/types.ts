@@ -89,28 +89,43 @@ export interface Database {
           clientId: string | null
           createdAt: string
           id: number
-          prompt: Json | null
           promptAt: string | null
-          result: Json | null
+          promptContent: string | null
+          promptModelRequirements: Json | null
+          promptParameters: Json | null
+          ptpUrl: string | null
+          rawResponse: Json | null
           resultAt: string | null
+          resultContent: string | null
+          usedModel: string | null
         }
         Insert: {
           clientId?: string | null
           createdAt?: string
           id?: number
-          prompt?: Json | null
           promptAt?: string | null
-          result?: Json | null
+          promptContent?: string | null
+          promptModelRequirements?: Json | null
+          promptParameters?: Json | null
+          ptpUrl?: string | null
+          rawResponse?: Json | null
           resultAt?: string | null
+          resultContent?: string | null
+          usedModel?: string | null
         }
         Update: {
           clientId?: string | null
           createdAt?: string
           id?: number
-          prompt?: Json | null
           promptAt?: string | null
-          result?: Json | null
+          promptContent?: string | null
+          promptModelRequirements?: Json | null
+          promptParameters?: Json | null
+          ptpUrl?: string | null
+          rawResponse?: Json | null
           resultAt?: string | null
+          resultContent?: string | null
+          usedModel?: string | null
         }
         Relationships: []
       }
