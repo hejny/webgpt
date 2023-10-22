@@ -27,7 +27,7 @@ Popište cíl vašeho webu
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
 
 Navrhovaný název od zákazníka:
-"{title}"
+"{rawTitle}"
 
 Zadání od zákazníka:
 
