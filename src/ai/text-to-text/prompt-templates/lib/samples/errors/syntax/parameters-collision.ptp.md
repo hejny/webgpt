@@ -6,7 +6,7 @@ Sample of wrong prompt template pipeline with undefined parameter
 
 Synonym for word
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 
@@ -16,7 +16,7 @@ Write synonym for "{word}"
 
 Synonym for word
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 

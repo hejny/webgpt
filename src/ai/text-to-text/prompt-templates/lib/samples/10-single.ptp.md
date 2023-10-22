@@ -10,7 +10,7 @@ Show how to use a simple prompt with one parameter.
 
 Synonym for word
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 

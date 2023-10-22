@@ -7,7 +7,7 @@ Show how to use a simple prompt with no parameters.
 
 ## Prompt
 
-```prompttemplate
+```text
 Hello
 ```
 

@@ -12,7 +12,7 @@ Synonym for word
 
 -   Postprocessing `unwrapResult`
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 
@@ -25,7 +25,7 @@ Sentence with word and wordSynonym
 -   Postprocessing `unwrapResult`
 -   Postprocessing `spaceTrim`
 
-```prompttemplate
+```text
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 

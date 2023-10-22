@@ -7,7 +7,7 @@ Show how to use a simple prompt with no parameters and comments that should be i
 
 ## Prompt
 
-```prompttemplate
+```text
 Hello
 ```
 
@@ -19,7 +19,7 @@ Hello
 
 ## Commented Prompt
 
-```prompttemplate
+```text
 Hello
 ```
 

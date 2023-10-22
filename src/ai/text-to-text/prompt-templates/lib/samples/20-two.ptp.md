@@ -10,7 +10,7 @@ Show how to use two consecutive prompts with one parameter each.
 
 Synonym for word
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 
@@ -20,7 +20,7 @@ Write synonym for "{word}"
 
 Sentence with word and wordSynonym
 
-```prompttemplate
+```text
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 

@@ -6,7 +6,7 @@ Sample of wrong prompt template pipeline with undefined parameter
 
 Sentence with word and wordSynonym
 
-```prompttemplate
+```text
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
@@ -16,7 +16,7 @@ Write sentence with "{word}" and "{wordSynonym}" in it
 
 Synonym for word
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 

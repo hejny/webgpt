@@ -16,7 +16,7 @@ Synonym for word
 
 -   Postprocessing `unwrapResult`
 
-```prompttemplate
+```text
 Write synonym for "{word}"
 ```
 
@@ -25,7 +25,6 @@ Write synonym for "{word}"
 ## Test that word is not a cat
 
 <!-- TODO: !!! Prefix all ## templates in samples same as write-website-content.cs.ptp.md -->
-<!-- TODO: !!! ACRY Change prompttemplate -> markdown / text -->
 
 -   Execute script
 
@@ -43,7 +42,7 @@ Sentence with word and wordSynonym
 
 -   Execute prompt template <!-- This is the default -->
 
-```prompttemplate
+```text
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
@@ -55,7 +54,7 @@ Sentence "{sentenceWithTwoSynonyms}" without "{word}".
 
 -   Execute prompt template <!-- This is the default -->
 
-```prompttemplate
+```markdown
 Remove word "{word}" from sentence and modify it so that it makes sense:
 
 ## Rules:
@@ -66,7 +65,6 @@ Remove word "{word}" from sentence and modify it so that it makes sense:
 ## The Sentence:
 
 > {sentenceWithTwoSynonyms}
-
 ```
 
 `-> {sentenceWithOriginalWordRemoved}` Sentence with both synomyms but without a original word
@@ -79,7 +77,7 @@ Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRem
 <!-- TODO: [🌚]> -   Use GPT-4 -->
 -   Execute prompt template <!-- This is the default -->
 
-```prompttemplate
+```markdown
 Compare meaning of thee two sentences:
 
 ## Sentence 1:
