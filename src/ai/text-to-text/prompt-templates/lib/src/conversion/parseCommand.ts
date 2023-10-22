@@ -144,6 +144,9 @@ export function parseCommand(listItem: string_markdown_text): Command {
             type: 'PTP_VERSION',
             ptpVersion,
         };
+    } else if (type.startsWith('!!!')) {
+        // TODO: !!! Parsing ptpUrl from markdown
+        throw new Error(`Temporary`);
     } else {
         throw new Error(
             spaceTrim(

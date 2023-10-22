@@ -76,6 +76,8 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
             .from('PromptExecution')
             .insert(
                 {
+                    // TODO: !!! Spread values inserting into PromptExecution
+                    // TODO: !!! Update table PromptExecution according to new fields in Prompt and PromptChatResult
                     clientId: this.clientId,
                     promptAt,
                     prompt,

@@ -98,6 +98,8 @@ export function promptTemplatePipelineStringToJson(
         const command = parseCommand(listItem);
 
         switch (command.type) {
+
+            // TODO: !!! Parsing ptpUrl from markdown
             case 'USE':
                 defaultModelRequirements[command.key] = command.value;
                 break;

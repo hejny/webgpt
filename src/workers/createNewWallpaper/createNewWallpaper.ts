@@ -279,9 +279,9 @@ export async function createNewWallpaper(
     //===========================================================================
     //-------[ Modify Web Assigment: ]---
 
-    // TODO: [🧠] !! Wording: Assigment, Description, Prompt, biography | Make string_semantics for each of them
     // TODO: Should be here onProgress task?
-    // TODO: !!! Remove from here and put to PTP
+
+    // TODO: !!! Move to write-website-content.cs.ptp.md
     const answer = await promptDialogue({
         prompt: `What is your web about?`,
         defaultValue: description,
@@ -305,6 +305,7 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
+    // TODO: !!! Do not progress simple template and script tasks
     const { contentBody, keywords, enhancedTitle, claim } = await ptpLibrary.createExecutor(
         'writeWebsiteContent',
         getExecutionToolsForWorker(author),
@@ -318,6 +319,7 @@ export async function createNewWallpaper(
         onProgress,
     );
 
+    // TODO: !!! Move to write-website-content.cs.ptp.md
     const wallpaperContent = spaceTrim(
         (block) => `
 
