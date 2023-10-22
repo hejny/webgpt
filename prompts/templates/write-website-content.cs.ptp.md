@@ -1,4 +1,4 @@
-# Obsah webové stránky
+# 🌍 Obsah webové stránky
 
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
 
@@ -9,11 +9,11 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
 
-<!-- TODO: !!! Translate -->
-
-## Zadání v Češtině
+## 🖋 Zadání v Češtině
 
 -   Use completion
+
+<!-- TODO: !!! Postprocessing trim -->
 
 ```text
 
@@ -26,7 +26,7 @@ English assignment:
 
 `-> {rawAssigmentCs}` Zadání webu v Češtině
 
-## Upřesnění zadání uživatelem
+## 👤 Upřesnění zadání uživatelem
 
 Popište cíl vašeho webu
 
@@ -38,7 +38,7 @@ Popište cíl vašeho webu
 
 `-> {assigment}` Zadání webu
 
-## Vylepšení názvu
+## 💬 Vylepšení názvu
 
 ```markdown
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
@@ -52,7 +52,7 @@ Zadání od zákazníka:
 {assigment}
 \`\`\`
 
-**Pokyny:**
+## Pokyny:
 
 -   Napiště pouze jeden návrh názvu
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
@@ -72,7 +72,7 @@ unwrapResult(enhancedTitleQuoted);
 
 `-> {enhancedTitle}` Vylepšený název (bez uvozovek)
 
-## Schválení názvu uživatelem
+## 👤 Schválení názvu uživatelem
 
 Je název Vašeho webu v pořádku?
 
@@ -84,7 +84,7 @@ Je název Vašeho webu v pořádku?
 
 `-> {title}` Název webu
 
-## Vymyšlení claimu
+## 💬 Vymyšlení claimu
 
 ```markdown
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".
@@ -95,7 +95,7 @@ Zadání webu od zákazníka:
 {assigment}
 \`\`\`
 
-**Pokyny:**
+## Pokyny:
 
 -   Napiště pouze jeden návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
@@ -104,7 +104,7 @@ Zadání webu od zákazníka:
 
 `-> {claim}` Podtitulek pro web
 
-## Analýza klíčových slov
+## 💬 Analýza klíčových slov
 
 <!--
 Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
@@ -119,12 +119,12 @@ Zadání webu od zákazníka:
 {assigment}
 \`\`\`
 
-**Pokyny:**
+## Pokyny:
 
 -   Napiště seznam klíčových slov
 -   Klíčové slova jsou v základním tvaru
 
-**Příklad:**
+## Příklad:
 
 -   Zmrzlina
 -   Olomouc
@@ -137,7 +137,9 @@ Zadání webu od zákazníka:
 
 `-> {keywords}` Klíčová slova
 
-## Vytvoření začátku obsahu webu
+## + Vytvoření začátku obsahu webu
+
+-   Execute simple template
 
 ```text
 
@@ -149,7 +151,7 @@ Zadání webu od zákazníka:
 
 `-> {contentBeginning}` Začátek obsahu webu
 
-## Vytvoření obsahu webu
+## 🖋 Vytvoření obsahu webu
 
 -   Use completion
 <!-- TODO: [🌚]> -   Use GPT-3 -->
@@ -163,7 +165,7 @@ Zadání webu od zákazníka:
 {assigment}
 \`\`\`
 
-**Pokyny:**
+## Pokyny:
 
 -   Formátování textu je v Markdownu
 -   Buďte struční a výstižní
@@ -171,20 +173,18 @@ Zadání webu od zákazníka:
 -   Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
 -   Použijte nadpisy, odrážky, formátování textu
 
-**Klíčová slova:**
+## Klíčová slova:
 
 {keywords}
 
-**Zde začíná obsah:**
-
----
+## Obsah webu:
 
 {contentBeginning}
 ```
 
 `-> {contentBody}` Stať obsahu webu
 
-## Spojení obsahu
+## + Spojení obsahu
 
 -   Execute simple template
 
