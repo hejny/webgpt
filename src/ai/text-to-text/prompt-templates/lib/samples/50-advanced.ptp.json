@@ -2,6 +2,7 @@
     "title": "✨ Sample: Language Capabilities",
     "ptpUrl": "https://ptp.example.com/samples/language-capabilities.ptp.md@v1",
     "ptpVersion": "1.0.0",
+    "description": "Trying the language capabilities of GPT models.",
     "parameters": [
         {
             "name": "word",

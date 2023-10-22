@@ -2,6 +2,7 @@
     "title": "✨ Sample prompt",
     "ptpUrl": "https://ptp.example.com/samples/single.ptp.md@v1",
     "ptpVersion": "1.0.0",
+    "description": "Show how to use a simple prompt with one parameter.",
     "parameters": [
         {
             "name": "word",

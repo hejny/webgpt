@@ -2,6 +2,7 @@
     "title": "✨ Sample: Postprocessing 2",
     "ptpUrl": "https://ptp.example.com/samples/postprocessing-2.ptp.md@v1",
     "ptpVersion": "1.0.0",
+    "description": "Show how to use a simple prompt with no parameters.",
     "parameters": [
         {
             "name": "yourName",

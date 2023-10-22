@@ -27,6 +27,7 @@ export function promptTemplatePipelineStringToJson(
         title: undefined as any /* <- Note: Putting here placeholder to keep `title` on top at final JSON */,
         ptpUrl: undefined /* <- Note: Putting here placeholder to keep `ptpUrl` on top at final JSON */,
         ptpVersion: PTP_VERSION,
+        description: undefined /* <- Note: Putting here placeholder to keep `description` on top at final JSON */,
         parameters: [],
         promptTemplates: [],
     };
@@ -99,6 +100,19 @@ export function promptTemplatePipelineStringToJson(
     }
 
     ptpJson.title = markdownStructure.title;
+
+    // TODO: [1] DRY description
+    let description: string | undefined = markdownStructure.content;
+
+    // Note: Remove codeblocks
+    description = description.split(/^```.*^```/gms).join('');
+    //Note: Remove lists and return statement
+    description = description.split(/^(?:(?:-)|(?:\d\))|(?:`?->))\s+.*$/gm).join('');
+    description = spaceTrim(description);
+    if (description === '') {
+        description = undefined;
+    }
+    ptpJson.description = description;
 
     const defaultModelRequirements: Writable<ModelRequirements> = { ...DEFAULT_MODEL_REQUIREMENTS };
     const listItems = extractAllListItemsFromMarkdown(markdownStructure.content);
@@ -212,7 +226,9 @@ export function promptTemplatePipelineStringToJson(
         }
         const resultingParameterName = match.groups.resultingParamName;
 
+        // TODO: [1] DRY description
         let description: string | undefined = section.content;
+
         // Note: Remove codeblocks
         description = description.split(/^```.*^```/gms).join('');
         //Note: Remove lists and return statement
