@@ -138,7 +138,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
             }
 
             if (promptResult === null) {
-                //              <- TODO: Make some NeverShouldHappenError
+                //              <- TODO: [🥨] Make some NeverShouldHappenError
                 throw new Error(`Something went wrong and prompt result is null`);
             }
 

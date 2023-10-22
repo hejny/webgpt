@@ -59,7 +59,14 @@ export class PromptTemplatePipeline {
         }
 
         const resultingParameterName = this.promptTemplates[index]!.resultingParameterName;
-        const resultingParameter = this.parameters[resultingParameterName]!;
+        const resultingParameter = this.parameters[resultingParameterName];
+
+        if (!resultingParameter) {
+            //              <- TODO: [🥨] Make some NeverShouldHappenError
+            throw new Error(
+                `Resulting parameter of prompt template ${promptTemplateName} {${resultingParameterName}} is not defined`,
+            );
+        }
 
         return resultingParameter;
     }
