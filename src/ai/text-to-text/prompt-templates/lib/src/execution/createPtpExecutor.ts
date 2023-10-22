@@ -4,7 +4,7 @@ import { TaskProgress } from '../../../../../../components/TaskInProgress/task/T
 import { string_name } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
 
-import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
+import { PromptTemplateJson } from '../types/PromptTemplatePipelineJson/PromptTemplateJson';
 import { replaceParameters } from '../utils/replaceParameters';
 import { ExecutionTools } from './ExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
@@ -27,7 +27,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
         let parametersToPass: Record<string_name, string> = inputParameters;
-        let currentPtp: PromptTemplatePipelineJsonTemplate | null = ptp.entryPromptTemplate;
+        let currentPtp: PromptTemplateJson | null = ptp.entryPromptTemplate;
 
         while (currentPtp !== null) {
             const { name, description } = ptp.getResultingParameter(currentPtp!.name);
@@ -52,9 +52,9 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                         ptpUrl: '!!!',
                         parameters: parametersToPass,
                         content: replaceParameters(currentPtp.content, parametersToPass),
-                        modelRequirements: currentPtp.modelRequirements,
+                        modelRequirements: currentPtp.modelRequirements!,
                     };
-                    variant: switch (currentPtp.modelRequirements.variant) {
+                    variant: switch (currentPtp.modelRequirements!.variant) {
                         case 'CHAT':
                             const chatThread = await tools.natural.gptChat(prompt);
                             // TODO: Use all information from chatThread like "model"
@@ -67,7 +67,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                             promptResult = completionResult.content;
                             break variant;
                         default:
-                            throw new Error(`Unknown model variant "${currentPtp.modelRequirements.variant}"`);
+                            throw new Error(`Unknown model variant "${currentPtp.modelRequirements!.variant}"`);
                     }
                     break executionType;
 
@@ -133,7 +133,7 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
                     break executionType;
 
                 default:
-                    throw new Error(`Unknown execution type "${currentPtp.executionType}"`);
+                    throw new Error(`Unknown execution type "${(currentPtp as any).executionType}"`);
             }
 
             if (promptResult === null) {

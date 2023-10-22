@@ -1,6 +1,6 @@
 import { normalizeTo_camelCase, normalizeTo_PascalCase } from 'n12';
 import spaceTrim from 'spacetrim';
-import { Writable } from 'type-fest';
+import { Writable, WritableDeep } from 'type-fest';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
 import { DEFAULT_MODEL_REQUIREMENTS, PTP_VERSION } from '../config';
 import { ParameterCommand, PostprocessCommand } from '../types/Command';
@@ -23,7 +23,11 @@ import { parseCommand } from './parseCommand';
 export function promptTemplatePipelineStringToJson(
     promptTemplatePipelineString: PromptTemplatePipelineString,
 ): PromptTemplatePipelineJson {
-    const ptpJson: PromptTemplatePipelineJson = { ptpVersion: PTP_VERSION, parameters: [], promptTemplates: [] };
+    const ptpJson: WritableDeep<PromptTemplatePipelineJson> = {
+        ptpVersion: PTP_VERSION,
+        parameters: [],
+        promptTemplates: [],
+    };
 
     // =============================================================
     // Note: 1️⃣ Normalization of the PTP string

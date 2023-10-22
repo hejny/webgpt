@@ -1,8 +1,8 @@
 import { string_name } from '../../../../../../utils/typeAliases';
 import { validatePromptTemplatePipelineJson } from '../conversion/validatePromptTemplatePipelineJson';
+import { PromptTemplateJson } from '../types/PromptTemplatePipelineJson/PromptTemplateJson';
+import { PromptTemplateParameterJson } from '../types/PromptTemplatePipelineJson/PromptTemplateParameterJson';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
-import { PromptTemplatePipelineJsonParameter } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonParameter';
-import { PromptTemplatePipelineJsonTemplate } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJsonTemplate';
 
 /**
  * Prompt template pipeline is the **core concept of this library**.
@@ -34,8 +34,8 @@ export class PromptTemplatePipeline {
     }
 
     private constructor(
-        private readonly parameters: Record<string_name, PromptTemplatePipelineJsonParameter>,
-        private readonly promptTemplates: Array<PromptTemplatePipelineJsonTemplate>,
+        private readonly parameters: Record<string_name, PromptTemplateParameterJson>,
+        private readonly promptTemplates: Array<PromptTemplateJson>,
     ) {
         if (promptTemplates.length === 0) {
             throw new Error(`Prompt template pipeline must have at least one prompt template`);
@@ -45,14 +45,14 @@ export class PromptTemplatePipeline {
     /**
      * Returns the first prompt template in the pipeline
      */
-    public get entryPromptTemplate(): PromptTemplatePipelineJsonTemplate {
+    public get entryPromptTemplate(): PromptTemplateJson {
         return this.promptTemplates[0]!;
     }
 
     /**
      * Gets the parameter that is the result of given prompt template
      */
-    public getResultingParameter(promptTemplateName: string_name): PromptTemplatePipelineJsonParameter {
+    public getResultingParameter(promptTemplateName: string_name): PromptTemplateParameterJson {
         const index = this.promptTemplates.findIndex(({ name }) => name === promptTemplateName);
         if (index === -1) {
             throw new Error(`Prompt template is not in this pipeline`);
@@ -67,7 +67,7 @@ export class PromptTemplatePipeline {
     /**
      * Gets the following prompt template in the pipeline or null if there is no following prompt template and this is the last one
      */
-    public getFollowingPromptTemplate(promptTemplateName: string_name): PromptTemplatePipelineJsonTemplate | null {
+    public getFollowingPromptTemplate(promptTemplateName: string_name): PromptTemplateJson | null {
         const index = this.promptTemplates.findIndex(({ name }) => name === promptTemplateName);
         if (index === -1) {
             throw new Error(`Prompt template is not in this pipeline`);

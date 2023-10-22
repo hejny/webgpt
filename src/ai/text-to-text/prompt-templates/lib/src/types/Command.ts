@@ -15,8 +15,8 @@ export type Command = PtpVersionCommand | ExecuteCommand | UseCommand | Paramete
  * - It is defined per whole .ptp file in the header
  */
 export interface PtpVersionCommand {
-    type: 'PTP_VERSION';
-    ptpVersion: string_version;
+    readonly type: 'PTP_VERSION';
+    readonly ptpVersion: string_version;
 }
 
 /**
@@ -24,17 +24,17 @@ export interface PtpVersionCommand {
  * It can be either prompt template, script or simple template etc.
  */
 export interface ExecuteCommand {
-    type: 'EXECUTE';
-    executionType: ExecutionType;
+    readonly type: 'EXECUTE';
+    readonly executionType: ExecutionType;
 }
 
 /**
  * Use command tells which model and modelRequirements to use for the prompt template. execution
  */
 export interface UseCommand {
-    type: 'USE';
-    key: keyof ModelRequirements;
-    value: any /* <- TODO: Infer from used key, can it be done in TypeScript */;
+    readonly type: 'USE';
+    readonly key: keyof ModelRequirements;
+    readonly value: any /* <- TODO: Infer from used key, can it be done in TypeScript */;
 }
 
 /**
@@ -45,10 +45,10 @@ export interface UseCommand {
  * - In description it can have simple formatting BUT not markdown structure or reference to other parameters
  */
 export interface ParameterCommand {
-    type: 'PARAMETER';
-    isInputParameter: boolean;
-    parameterName: string_name;
-    parameterDescription: string_markdown_text | null;
+    readonly type: 'PARAMETER';
+    readonly isInputParameter: boolean;
+    readonly parameterName: string_name;
+    readonly parameterDescription: string_markdown_text | null;
 }
 
 /**
@@ -56,6 +56,6 @@ export interface ParameterCommand {
  * This will be created as separate execute script block bellow
  */
 export interface PostprocessCommand {
-    type: 'POSTPROCESS';
-    functionName: string_name;
+    readonly type: 'POSTPROCESS';
+    readonly functionName: string_name;
 }

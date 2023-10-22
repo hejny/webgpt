@@ -1,6 +1,6 @@
 import { string_version } from '../../../../../../../utils/typeAliases';
-import { PromptTemplatePipelineJsonParameter } from './PromptTemplatePipelineJsonParameter';
-import { PromptTemplatePipelineJsonTemplate } from './PromptTemplatePipelineJsonTemplate';
+import { PromptTemplateJson } from './PromptTemplateJson';
+import { PromptTemplateParameterJson } from './PromptTemplateParameterJson';
 
 /**
  * Prompt template pipeline is the **core concept of this library**.
@@ -17,17 +17,17 @@ export interface PromptTemplatePipelineJson {
     /**
      * Version of the .ptp.json file
      */
-    ptpVersion: string_version;
+    readonly ptpVersion: string_version;
 
     /**
      * Set of variables that are used across the pipeline
      */
-    parameters: Array<PromptTemplatePipelineJsonParameter>;
+    readonly parameters: Array<PromptTemplateParameterJson>;
 
     /**
      * Sequence of prompt templates that are chained together to form a pipeline
      */
-    promptTemplates: Array<PromptTemplatePipelineJsonTemplate>;
+    readonly promptTemplates: Array<PromptTemplateJson>;
 }
 
 /**

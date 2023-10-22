@@ -218,14 +218,12 @@ export type string_css = string;
  */
 export type string_svg = string;
 
-
 /**
  * Semantic helper
  *
  * For example `console.info("Hello World!")` or `print("Hello World!")`
  */
 export type string_script = string;
-
 
 /**
  * Semantic helper
@@ -362,7 +360,7 @@ export type string_email = string;
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  */
 export type uuid = string & {
-    __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
+    readonly __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
 };
 
 /**

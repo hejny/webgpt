@@ -3,7 +3,7 @@ import { TupleToUnion } from 'type-fest';
 /**
  * Supported script languages
  */
-export const SUPPORTED_SCRIPT_LANGUAGES = ['javascript' , 'typescript' , 'python'] as const;
+export const SUPPORTED_SCRIPT_LANGUAGES = ['javascript', 'typescript', 'python'] as const;
 
 /**
  * Script language
