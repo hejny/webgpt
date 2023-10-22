@@ -33,7 +33,6 @@ export function parseCommand(listItem: string_markdown_text): Command {
 
     if (type.startsWith('URL') || type.startsWith('PTP_URL') || type.startsWith('PTPURL') || type.startsWith('HTTPS')) {
         if (!(listItemParts.length === 2 || (listItemParts.length === 1 && type.startsWith('HTTPS')))) {
-            console.log('!!!', { listItemParts });
             throw new Error(
                 spaceTrim(
                     `
