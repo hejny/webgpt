@@ -3,7 +3,6 @@ import { Prompt } from '../../../../types/Prompt';
 import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult } from '../../../PromptResult';
 
-
 /**
  * Mocked execution Tools for just echoing the requests for testing purposes.
  */
@@ -22,7 +21,7 @@ export class MockedEchoNaturalExecutionTools implements NaturalExecutionTools {
                 `,
             ),
             model: `mocked-echo`,
-            raw: {
+            rawResponse: {
                 note: `This is mocked echo`,
             },
             // <- [🤹‍♂️]
@@ -41,7 +40,7 @@ export class MockedEchoNaturalExecutionTools implements NaturalExecutionTools {
                 `,
             ),
             model: `mocked-echo`,
-            raw: {
+            rawResponse: {
                 note: `This is mocked echo`,
             },
             // <- [🤹‍♂️]

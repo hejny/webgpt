@@ -35,7 +35,7 @@ export interface PromptCommonResult {
     /**
      * Raw response from the model
      */
-    readonly raw: object;
+    readonly rawResponse: object;
 }
 
 /**

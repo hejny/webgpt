@@ -33,7 +33,7 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
 
         const model = 'gpt-3.5-turbo'; /* <- TODO: [☂] Use here more modelRequirements */
         const modelSettings = { model };
-        const raw = await this.openai.chat.completions.create({
+        const rawRequest: OpenAI.Chat.Completions.CompletionCreateParamsNonStreaming = {
             ...modelSettings,
             messages: [
                 {
@@ -41,30 +41,34 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
                     content,
                 },
             ],
-        });
+        };
+        const rawResponse = await this.openai.chat.completions.create(rawRequest);
 
-        if (!raw.choices[0]) {
-            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
+        if (!rawResponse.choices[0]) {
+            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`No choises from OpenAPI`);
         }
 
-        if (raw.choices.length > 1) {
+        if (rawResponse.choices.length > 1) {
             // TODO: This should be maybe only warning
-            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
+            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`More than one choise from OpenAPI`);
         }
 
-        const resultContent = raw.choices[0].message.content;
+        const resultContent = rawResponse.choices[0].message.content;
 
         if (!resultContent) {
-            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
+            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`No response message from OpenAPI`);
         }
 
         return {
             content: resultContent,
             model,
-            raw,
+            rawResponse,
             // <- [🤹‍♂️]
         };
     }
@@ -80,36 +84,40 @@ export class OpenAiExecutionTools implements NaturalExecutionTools {
             throw new Error(`Use gptComplete only for COMPLETION variant`);
         }
 
-        const model = 'text-davinci-003'; /* <- TODO: [☂] Use here more modelRequirements */
+        const model = 'gpt-3.5-turbo-instruct'; /* <- TODO: [☂] Use here more modelRequirements */
         const modelSettings = { model };
 
-        const raw = await this.openai.completions.create({
+        const rawRequest: OpenAI.Completions.CompletionCreateParamsNonStreaming = {
             ...modelSettings,
             prompt: content,
-        });
+        };
+        const rawResponse = await this.openai.completions.create(rawRequest);
 
-        if (!raw.choices[0]) {
-            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
+        if (!rawResponse.choices[0]) {
+            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`No choises from OpenAPI`);
         }
 
-        if (raw.choices.length > 1) {
+        if (rawResponse.choices.length > 1) {
             // TODO: This should be maybe only warning
-            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
+            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`More than one choise from OpenAPI`);
         }
 
-        const resultContent = raw.choices[0].text;
+        const resultContent = rawResponse.choices[0].text;
 
         if (!resultContent) {
-            console.error(chalk.bgRed('raw'), chalk.red(JSON.stringify(raw, null, 4)));
+            console.error(chalk.bgRed('rawRequest'), chalk.red(JSON.stringify(rawRequest, null, 4)));
+            console.error(chalk.bgRed('rawResponse'), chalk.red(JSON.stringify(rawResponse, null, 4)));
             throw new Error(`No response message from OpenAPI`);
         }
 
         return {
             content: resultContent,
             model,
-            raw,
+            rawResponse,
             // <- [🤹‍♂️]
         };
     }
