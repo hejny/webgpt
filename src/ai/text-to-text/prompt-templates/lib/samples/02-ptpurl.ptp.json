@@ -10,7 +10,7 @@
     "promptTemplates": [
         {
             "name": "Prompt",
-            "title": "Prompt",
+            "title": "💬 Prompt",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"

@@ -1,4 +1,4 @@
-# Sample
+# ✨ Sample logic error
 
 Sample of wrong prompt template pipeline with undefined parameter
 

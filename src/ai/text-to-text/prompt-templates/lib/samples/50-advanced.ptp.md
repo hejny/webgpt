@@ -1,4 +1,4 @@
-# Sample: Language Capabilities
+# ✨ Sample: Language Capabilities
 
 Trying the language capabilities of GPT models.
 
@@ -10,7 +10,7 @@ Trying the language capabilities of GPT models.
 -   Output parameter `{comparisonOfTwoSentences}` Comparison between two sentences
 -   Output parameter `{summary}` The overall summary of the comparison
 
-## Synonym
+## 💬 Synonym
 
 Synonym for word
 
@@ -22,9 +22,7 @@ Write synonym for "{word}"
 
 `-> {wordSynonym}`
 
-## Test that word is not a cat
-
-<!-- TODO: !!! Prefix all ## templates in samples same as write-website-content.cs.ptp.md -->
+## ⚙ Test that word is not a cat
 
 -   Execute script
 
@@ -36,7 +34,7 @@ if (wordSynonym === 'cat') {
 
 `-> {wordSynonymTested}`
 
-## Sentence with Synonym
+## 💬 Sentence with Synonym
 
 Sentence with word and wordSynonym
 
@@ -48,7 +46,7 @@ Write sentence with "{word}" and "{wordSynonym}" in it
 
 `-> {sentenceWithTwoSynonyms}` Sentence with word and wordSynonym
 
-## Sentence without original word
+## 💬 Sentence without original word
 
 Sentence "{sentenceWithTwoSynonyms}" without "{word}".
 
@@ -69,7 +67,7 @@ Remove word "{word}" from sentence and modify it so that it makes sense:
 
 `-> {sentenceWithOriginalWordRemoved}` Sentence with both synomyms but without a original word
 
-## Comparison
+## 💬 Comparison
 
 Comparison between "{sentenceWithTwoSynonyms}" and "{sentenceWithOriginalWordRemoved}".
 
@@ -91,7 +89,7 @@ Compare meaning of thee two sentences:
 
 `-> {comparisonOfTwoSentences}` Comparison between two sentences
 
-## Summary
+## 🔗 Summary
 
 -   Execute simple template
 

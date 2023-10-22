@@ -180,7 +180,7 @@ Zadání webu od zákazníka:
 
 `-> {contentBody}` Stať obsahu webu
 
-## + Spojení obsahu
+## 🔗 Spojení obsahu
 
 -   Execute simple template
 

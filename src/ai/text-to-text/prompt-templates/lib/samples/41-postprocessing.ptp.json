@@ -13,24 +13,24 @@
         },
         {
             "name": "greetingBeforeReverse",
-            "description": "*(Question postprocessing 1/3)* {greeting} before `reverse`",
+            "description": "*(💬 Question postprocessing 1/3)* {greeting} before `reverse`",
             "isInput": false
         },
         {
             "name": "greetingBeforeRemoveDiacritics",
-            "description": "*(Question postprocessing 2/3)* {greeting} before `removeDiacritics`",
+            "description": "*(💬 Question postprocessing 2/3)* {greeting} before `removeDiacritics`",
             "isInput": false
         },
         {
             "name": "greetingBeforeNormalizeToScreamingCase",
-            "description": "*(Question postprocessing 3/3)* {greeting} before `normalizeTo_SCREAMING_CASE`",
+            "description": "*(💬 Question postprocessing 3/3)* {greeting} before `normalizeTo_SCREAMING_CASE`",
             "isInput": false
         }
     ],
     "promptTemplates": [
         {
             "name": "Question",
-            "title": "Question",
+            "title": "💬 Question",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"
@@ -40,8 +40,8 @@
         },
         {
             "name": "QuestionPostprocessing0",
-            "title": "(1/3) Question postprocessing",
-            "description": "Postprocessing of section Question finally with resulting parameter {greeting}",
+            "title": "(1/3) 💬 Question postprocessing",
+            "description": "Postprocessing of section 💬 Question finally with resulting parameter {greeting}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "reverse(greetingBeforeReverse)",
@@ -49,8 +49,8 @@
         },
         {
             "name": "QuestionPostprocessing1",
-            "title": "(2/3) Question postprocessing",
-            "description": "Postprocessing of section Question finally with resulting parameter {greeting}",
+            "title": "(2/3) 💬 Question postprocessing",
+            "description": "Postprocessing of section 💬 Question finally with resulting parameter {greeting}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "removeDiacritics(greetingBeforeRemoveDiacritics)",
@@ -58,8 +58,8 @@
         },
         {
             "name": "QuestionPostprocessing2",
-            "title": "(3/3) Question postprocessing",
-            "description": "Postprocessing of section Question finally with resulting parameter {greeting}",
+            "title": "(3/3) 💬 Question postprocessing",
+            "description": "Postprocessing of section 💬 Question finally with resulting parameter {greeting}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "normalizeTo_SCREAMING_CASE(greetingBeforeNormalizeToScreamingCase)",

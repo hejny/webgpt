@@ -1,8 +1,8 @@
-# Sample
+# ✨ Sample parsing error
 
 Sample of wrong prompt template pipeline with undefined parameter
 
-## Synonym
+## 💬 Synonym
 
 Synonym for word
 
@@ -12,7 +12,7 @@ Write synonym for "{word}"
 
 `-> {word}` word
 
-## Another Synonym
+## 💬 Another Synonym
 
 Synonym for word
 

@@ -1,10 +1,10 @@
-# Sample prompt
+# ✨ Sample prompt
 
 Show how to use a simple prompt with no parameters.
 
 -   PTP version 1.0.0
 
-## Prompt
+## 💬 Prompt
 
 ```text
 Hello

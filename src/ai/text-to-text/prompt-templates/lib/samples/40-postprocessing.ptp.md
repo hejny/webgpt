@@ -1,4 +1,4 @@
-# Sample prompt
+# ✨ Sample: Postprocessing 1
 
 Show how to use two consecutive prompts with one parameter each.
 
@@ -6,7 +6,7 @@ Show how to use two consecutive prompts with one parameter each.
 -   PTP version 1.0.0
 -   Input parameter `{word}` Any single word
 
-## Synonym
+## 💬 Synonym
 
 Synonym for word
 
@@ -18,7 +18,7 @@ Write synonym for "{word}"
 
 `-> {wordSynonym}`
 
-## Sentence
+## 💬 Sentence
 
 Sentence with word and wordSynonym
 

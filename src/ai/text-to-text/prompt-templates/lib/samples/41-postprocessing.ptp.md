@@ -1,4 +1,4 @@
-# Sample prompt
+# ✨ Sample: Postprocessing 2
 
 Show how to use a simple prompt with no parameters.
 
@@ -6,7 +6,7 @@ Show how to use a simple prompt with no parameters.
 -   PTP version 1.0.0
 -   Input parameter {yourName} Name of the hero
 
-## Question
+## 💬 Question
 
 -   Postprocess reverse
 -   Postprocess removeDiacritics

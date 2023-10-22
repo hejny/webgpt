@@ -1,8 +1,8 @@
-# Sample
+# ✨ Sample
 
 Sample of wrong prompt template pipeline that has multiple blocks.
 
-## Prompt
+## 💬 Prompt
 
 ```
 Hello

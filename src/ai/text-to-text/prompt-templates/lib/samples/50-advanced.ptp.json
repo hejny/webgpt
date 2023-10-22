@@ -23,7 +23,7 @@
         },
         {
             "name": "wordSynonymBeforeUnwrapResult",
-            "description": "*(Synonym postprocessing 1/1)* {wordSynonym} before `unwrapResult`",
+            "description": "*(💬 Synonym postprocessing 1/1)* {wordSynonym} before `unwrapResult`",
             "isInput": false
         },
         {
@@ -44,7 +44,7 @@
     "promptTemplates": [
         {
             "name": "Synonym",
-            "title": "Synonym",
+            "title": "💬 Synonym",
             "description": "Synonym for word",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
@@ -55,8 +55,8 @@
         },
         {
             "name": "SynonymPostprocessing0",
-            "title": "(1/1) Synonym postprocessing",
-            "description": "Postprocessing of section Synonym finally with resulting parameter {wordSynonym}",
+            "title": "(1/1) 💬 Synonym postprocessing",
+            "description": "Postprocessing of section 💬 Synonym finally with resulting parameter {wordSynonym}",
             "executionType": "SCRIPT",
             "contentLanguage": "javascript",
             "content": "unwrapResult(wordSynonymBeforeUnwrapResult)",
@@ -64,7 +64,7 @@
         },
         {
             "name": "TestThatWordIsNotACat",
-            "title": "Test that word is not a cat",
+            "title": "⚙ Test that word is not a cat",
             "executionType": "SCRIPT",
             "modelRequirements": {
                 "variant": "CHAT"
@@ -75,7 +75,7 @@
         },
         {
             "name": "SentenceWithSynonym",
-            "title": "Sentence with Synonym",
+            "title": "💬 Sentence with Synonym",
             "description": "Sentence with word and wordSynonym",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
@@ -86,7 +86,7 @@
         },
         {
             "name": "SentenceWithoutOriginalWord",
-            "title": "Sentence without original word",
+            "title": "💬 Sentence without original word",
             "description": "Sentence \"{sentenceWithTwoSynonyms}\" without \"{word}\".",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
@@ -97,7 +97,7 @@
         },
         {
             "name": "Comparison",
-            "title": "Comparison",
+            "title": "💬 Comparison",
             "description": "Comparison between \"{sentenceWithTwoSynonyms}\" and \"{sentenceWithOriginalWordRemoved}\".",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
@@ -108,7 +108,7 @@
         },
         {
             "name": "Summary",
-            "title": "Summary",
+            "title": "🔗 Summary",
             "executionType": "SIMPLE_TEMPLATE",
             "modelRequirements": {
                 "variant": "CHAT"

@@ -15,7 +15,7 @@
     "promptTemplates": [
         {
             "name": "Synonym",
-            "title": "Synonym",
+            "title": "💬 Synonym",
             "description": "Synonym for word",
             "executionType": "PROMPT_TEMPLATE",
             "modelRequirements": {
