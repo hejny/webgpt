@@ -1,4 +1,4 @@
-import { string_markdown } from '../typeAliases';
+import { string_markdown_text } from '../typeAliases';
 
 /**
  * Removes Markdown formatting tags from a string.
@@ -6,12 +6,15 @@ import { string_markdown } from '../typeAliases';
  * @param {string} str - The string to remove Markdown tags from.
  * @returns {string} The input string with all Markdown tags removed.
  */
-export function removeMarkdownFormatting(str: string_markdown): string {
-    // Use regular expressions to remove Markdown tags from the string
-    return str.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\*([^*]+)\*/g, '$1');
-}
+export function removeMarkdownFormatting(str: string_markdown_text): string {
+    // Remove bold formatting
+    str = str.replace(/\*\*(.*?)\*\*/g, '$1');
 
-/**
- * TODO: Maybe use as input type string_markdown_text
- * @see https://chat.openai.com/chat/bb7c3a5b-fe9c-4ccc-9057-f47e0fd66489
- */
+    // Remove italic formatting
+    str = str.replace(/\*(.*?)\*/g, '$1');
+
+    // Remove code formatting
+    str = str.replace(/`(.*?)`/g, '$1');
+
+    return str;
+}
