@@ -11,7 +11,22 @@
             "isInput": false
         },
         {
+            "name": "wordSynonymBeforeUnwrapResult",
+            "description": "*(Synonym postprocessing 1/1)* {wordSynonym} before `unwrapResult`",
+            "isInput": false
+        },
+        {
             "name": "sentenceWithTwoSynonyms",
+            "isInput": false
+        },
+        {
+            "name": "sentenceWithTwoSynonymsBeforeUnwrapResult",
+            "description": "*(Sentence postprocessing 1/2)* {sentenceWithTwoSynonyms} before `unwrapResult`",
+            "isInput": false
+        },
+        {
+            "name": "sentenceWithTwoSynonymsBeforeSpaceTrim",
+            "description": "*(Sentence postprocessing 2/2)* {sentenceWithTwoSynonyms} before `spaceTrim`",
             "isInput": false
         }
     ],

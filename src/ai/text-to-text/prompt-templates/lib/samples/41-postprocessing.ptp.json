@@ -9,6 +9,21 @@
         {
             "name": "greeting",
             "isInput": false
+        },
+        {
+            "name": "greetingBeforeReverse",
+            "description": "*(Question postprocessing 1/3)* {greeting} before `reverse`",
+            "isInput": false
+        },
+        {
+            "name": "greetingBeforeRemoveDiacritics",
+            "description": "*(Question postprocessing 2/3)* {greeting} before `removeDiacritics`",
+            "isInput": false
+        },
+        {
+            "name": "greetingBeforeNormalizeToScreamingCase",
+            "description": "*(Question postprocessing 3/3)* {greeting} before `normalizeTo_SCREAMING_CASE`",
+            "isInput": false
         }
     ],
     "promptTemplates": [

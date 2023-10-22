@@ -1,4 +1,4 @@
-import { normalizeTo_camelCase, normalizeTo_PascalCase } from 'n12';
+import { capitalize, normalizeTo_camelCase, normalizeTo_PascalCase } from 'n12';
 import spaceTrim from 'spacetrim';
 import { Writable, WritableDeep } from 'type-fest';
 import { removeContentComments } from '../../../../../../utils/content/removeContentComments';
@@ -43,7 +43,7 @@ export function promptTemplatePipelineStringToJson(
 
     // =============================================================
     ///Note: 2️⃣ Function for adding parameters
-    const addParam = (parameterCommand: ParameterCommand) => {
+    const addParam = (parameterCommand: Omit<ParameterCommand, 'type'>) => {
         const { parameterName, parameterDescription, isInputParameter } = parameterCommand;
 
         const existingParameter = ptpJson.parameters.find((parameter) => parameter.name === parameterName);
@@ -216,13 +216,32 @@ export function promptTemplatePipelineStringToJson(
             description = undefined;
         }
 
-        let getParameterName = (i: number) =>
-            postprocessingCommands.length <= i
-                ? resultingParameterName
-                : normalizeTo_camelCase(
-                      `${resultingParameterName} before ${postprocessingCommands[i]!.functionName}`,
-                      // <- TODO: Make this work even if using multiple same postprocessing functions
-                  );
+        let getParameterName = (i: number) => {
+            const parameterName =
+                postprocessingCommands.length <= i
+                    ? resultingParameterName
+                    : normalizeTo_camelCase(
+                          `${resultingParameterName} before ${postprocessingCommands[i]!.functionName}`,
+                          // <- TODO: Make this work even if using multiple same postprocessing functions
+                      );
+
+            const isParameterDefined = ptpJson.parameters.some((parameter) => parameter.name === parameterName);
+
+            if (!isParameterDefined) {
+                const parameterDescription = `*(${capitalize(section.title)} postprocessing ${i + 1}/${
+                    postprocessingCommands.length
+                })* {${resultingParameterName}} before \`${postprocessingCommands[i]!.functionName}\``;
+
+                addParam({
+                    parameterName,
+                    parameterDescription,
+                    isInputParameter: false,
+                    // TODO:> isPrivate: true,
+                });
+            }
+
+            return parameterName;
+        };
 
         ptpJson.promptTemplates.push({
             name: normalizeTo_PascalCase(section.title),
