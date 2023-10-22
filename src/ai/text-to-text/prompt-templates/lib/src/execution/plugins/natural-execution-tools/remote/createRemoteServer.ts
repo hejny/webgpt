@@ -97,8 +97,10 @@ export function createRemoteServer(options: RemoteServerOptions) {
 
     httpServer.listen(port);
 
+    // Note: We want to log this also in non-verbose mode
+    console.info(chalk.bgGreen(`PTP server listening on port ${port}`));
     if (isVerbose) {
-        console.info(chalk.bgGreen(`PTP server listening on port ${port}`));
+        console.info(chalk.green(`Verbose mode is enabled`));
     }
 }
 
