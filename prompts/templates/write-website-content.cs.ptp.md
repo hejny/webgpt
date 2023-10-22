@@ -19,6 +19,8 @@ Popište cíl vašeho webu
 {rawAssigment}
 ```
 
+`-> {assigment}` Zadání webu
+
 ## Vylepšení názvu
 
 ```markdown
