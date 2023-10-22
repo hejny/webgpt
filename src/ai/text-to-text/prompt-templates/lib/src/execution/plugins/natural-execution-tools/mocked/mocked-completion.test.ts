@@ -55,13 +55,13 @@ describe('createPtpExecutor + MockedEchoExecutionTools with sample chat prompt',
     });
 
     it('should fail when some input parameter is missing', () => {
-        expect(ptpExecutor({}, () => {})).rejects.toThrowError(`Parameter {thing} is not defined`);
+        expect(ptpExecutor({}, () => {})).rejects.toThrowError(/Parameter \{thing\} is not defined/i);
     });
 
     /*
     TODO: [🧠] Should be this failing or not?
     it('should fail when there is input parameter extra', () => {
-        expect(ptpExecutor({ thing: 'a cup of coffee', sound: 'Meow!' }, () => {})).rejects.toThrowError(`@`);
+        expect(ptpExecutor({ thing: 'a cup of coffee', sound: 'Meow!' }, () => {})).rejects.toThrowError(/Parameter \{sound\} should not be defined/i);
     });
     */
 });

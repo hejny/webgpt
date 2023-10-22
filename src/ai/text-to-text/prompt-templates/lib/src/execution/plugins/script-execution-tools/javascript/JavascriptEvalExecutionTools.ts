@@ -115,6 +115,5 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
 }
 
 /**
- * TODO: !!! Pass isVerbose to constructor and use it
  * TODO: Put predefined functions (like removeQuotes, spaceTrim, etc.) into annotation OR pass into constructor
  */

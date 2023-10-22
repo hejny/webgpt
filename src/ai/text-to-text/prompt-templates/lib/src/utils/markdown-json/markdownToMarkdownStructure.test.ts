@@ -179,14 +179,16 @@ describe('markdownToMarkdownStructure', () => {
     });
 
     it('should fails when there is no structure', () => {
-        expect(() => markdownToMarkdownStructure(``)).toThrowError();
+        expect(() => markdownToMarkdownStructure(``)).toThrowError(
+            /The markdown file must have exactly one top\-level section/i,
+        );
     });
 
     /*
     TODO: [🧠] Should theese cases fail or not?
 
     it('should fails when the first heading is not h1', () => {
-        expect(() => markdownToMarkdownStructure(`## Section 1`)).toThrowError();
+        expect(() => markdownToMarkdownStructure(`## Section 1`)).toThrowError(/The file has an invalid structure/i);
     });
 
     it('should fails when there is heading level mismatch', () => {
@@ -202,7 +204,7 @@ describe('markdownToMarkdownStructure', () => {
                     Text below subsection 1.1
                 `),
             ),
-        ).toThrowError();
+        ).toThrowError(/The file has an invalid structure/i);
     });
     */
 

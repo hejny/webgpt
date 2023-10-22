@@ -146,24 +146,23 @@ export function parseCommand(listItem: string_markdown_text): Command {
             ptpVersion,
         };
     } else if (type.startsWith('POSTPROCESS') || type.startsWith('POST_PROCESS')) {
-        let functionName = listItem
-            .split(' ')
-            .filter((item) => item !== '')
-            .pop();
+        const listItemParts = listItem.split(' ').filter((item) => item !== '');
 
-        if (!functionName || functionName === '') {
+        if (listItemParts.length !== 2) {
             throw new Error(
                 spaceTrim(
                     `
-                        Invalid POSTPROCESSING command:
+                Invalid POSTPROCESSING command:
 
-                        - ${listItem}
-                    `,
+                - ${listItem}
+            `,
                 ),
             );
         }
 
-        functionName = removeMarkdownFormatting(functionName);
+        let functionName = listItemParts.pop();
+
+        functionName = removeMarkdownFormatting(functionName!);
 
         return {
             type: 'POSTPROCESS',

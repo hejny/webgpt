@@ -45,6 +45,6 @@ describe('validatePromptTemplatePipelineJson', () => {
             const ptpString = importPtp('../../samples/errors/logic/parameter-used-before-defining.ptp.md');
             const ptpJson = promptTemplatePipelineStringToJson(ptpString);
             validatePromptTemplatePipelineJson(ptpJson);
-        }).toThrowError();
+        }).toThrowError(/Parameter \{word\} used before defined/i);
     });
 });

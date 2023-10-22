@@ -61,23 +61,23 @@ describe('replaceParameters', () => {
 
     it('should throw error when parameter is not defined', () => {
         expect(() => replaceParameters('{greeting} {name}, how are you?', { greeting: 'Hello' })).toThrowError(
-            'Parameter {name} is not defined',
+            /Parameter \{name\} is not defined/i,
         );
     });
 
     it('should throw error when parameter is not closed', () => {
-        expect(() => replaceParameters('Hello {name', { name: 'world' })).toThrowError();
+        expect(() => replaceParameters('Hello {name', { name: 'world' })).toThrowError(/Parameter is not closed/i);
     });
 
     it('should throw error when parameter is not opened', () => {
         expect(() =>
             replaceParameters('greeting} {name}, how are you?', { greeting: 'Hello', name: 'world' }),
-        ).toThrowError();
+        ).toThrowError(/Parameter is not opened/i);
     });
 
     it('should throw error when parameter is embeded in another parameter', () => {
         expect(() =>
             replaceParameters('{greeting {name}}, how are you?', { greeting: 'Hello', name: 'world' }),
-        ).toThrowError();
+        ).toThrowError(/Parameter is already opened/);
     });
 });

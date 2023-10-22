@@ -56,6 +56,6 @@ describe('createPtpExecutor + executing user interface prompts in ptp', () => {
     });
 
     it('should fail when some input parameter is missing', () => {
-        expect(ptpExecutor({}, () => {})).rejects.toThrowError(`Parameter {thing} is not defined`);
+        expect(ptpExecutor({}, () => {})).rejects.toThrowError(/Parameter \{thing\} is not defined/i);
     });
 });

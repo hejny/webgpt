@@ -40,37 +40,37 @@ describe('promptTemplatePipelineStringToJson', () => {
     it('should fail on invalid language block', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/invalid-language.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/coffeescript is not supported/i);
     });
     it('should fail on missing block on prompt template', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-block.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
     });
     it('should fail on missing return declaration', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-return-1.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/Invalid template/i);
     });
     it('should fail on invalid return declaration', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/missing-return-2.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/Unknown command/i);
     });
     it('should fail on multiple prompts in one prompt template', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/multiple-blocks.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
     });
     it('should fail on lack of structure ', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/no-heading.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/The markdown file must have exactly one top-level section/i);
     });
 
     it('should fail on parameters collision', () => {
         expect(() =>
             promptTemplatePipelineStringToJson(importPtp('../../samples/errors/syntax/parameters-collision.ptp.md')),
-        ).toThrowError();
+        ).toThrowError(/Parameter \{word\} is defined multiple times/i);
     });
 });

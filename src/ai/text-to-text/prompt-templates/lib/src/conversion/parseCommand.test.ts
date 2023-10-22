@@ -3,8 +3,8 @@ import { parseCommand } from './parseCommand';
 
 describe('how parseCommand works', () => {
     it('should fail parsing PTP_VERSION command', () => {
-        expect(() => parseCommand('PTP version')).toThrowError();
-        expect(() => parseCommand('PTP version   ')).toThrowError();
+        expect(() => parseCommand('PTP version')).toThrowError(/Invalid PTP_VERSION command/i);
+        expect(() => parseCommand('PTP version   ')).toThrowError(/Invalid PTP_VERSION command/i);
         // TODO: Also test invalid version in PTP_VERSION command
     });
 
@@ -40,8 +40,8 @@ describe('how parseCommand works', () => {
     });
 
     it('should fail parsing EXECUTE command', () => {
-        expect(() => parseCommand('execute fooo')).toThrowError();
-        expect(() => parseCommand('execute script prompt template')).toThrowError();
+        expect(() => parseCommand('execute fooo')).toThrowError(/Unknown execution type/i);
+        expect(() => parseCommand('execute script prompt template')).toThrowError(/Unknown execution type/i);
     });
 
     it('should parse USE command', () => {
@@ -77,8 +77,8 @@ describe('how parseCommand works', () => {
     });
 
     it('should fail parsing USE command', () => {
-        expect(() => parseCommand('use wet')).toThrowError();
-        expect(() => parseCommand('use {script}')).toThrowError();
+        expect(() => parseCommand('use wet')).toThrowError(/Unknown variant/i);
+        expect(() => parseCommand('use {script}')).toThrowError(/Unknown variant/i);
     });
 
     it('should parse PTP_VERSION command', () => {
@@ -186,24 +186,40 @@ describe('how parseCommand works', () => {
     });
 
     it('should fail parsing POSTPROCESS command', () => {
-        expect(() => parseCommand('Postprocess spaceTrim unwrapResult')).toThrowError;
-        expect(() => parseCommand('Process spaceTrim')).toThrowError;
-        expect(() => parseCommand('Postprocess')).toThrowError;
+        expect(() => parseCommand('Postprocess spaceTrim unwrapResult')).toThrowError(
+            /Invalid POSTPROCESSING command/i,
+        );
+        expect(() => parseCommand('Process spaceTrim')).toThrowError(/Unknown command/i);
+        expect(() => parseCommand('Postprocess')).toThrowError(/Invalid POSTPROCESSING command/i);
     });
 
     it('should fail parsing PARAMETER command', () => {
-        expect(() => parseCommand('parameter {}')).toThrowError();
-        expect(() => parseCommand('parameter { name }')).toThrowError();
-        expect(() => parseCommand('parameter name')).toThrowError();
-        expect(() => parseCommand('parameter {name} {name}')).toThrowError();
-        expect(() => parseCommand('parameter {name} {name} Name for the hero')).toThrowError();
-        expect(() => parseCommand('parameter {name} Name for the hero {name}')).toThrowError();
-        expect(() => parseCommand('parameter {name} Name for the hero {name} Name for the hero')).toThrowError();
-        expect(() => parseCommand('parmeter {name} Name for the hero')).toThrowError();
+        expect(() => parseCommand('parameter {}')).toThrowError(/Invalid parameter/i);
+        expect(() => parseCommand('parameter { name }')).toThrowError(/Invalid parameter/i);
+        expect(() => parseCommand('parameter name')).toThrowError(/Invalid parameter/i);
+        expect(() => parseCommand('parameter {name} {name}')).toThrowError(
+            /Can not contain another parameter in description/i,
+        );
+        expect(() => parseCommand('parameter {name} {name} Name for the hero')).toThrowError(
+            /Can not contain another parameter in description/i,
+        );
+        expect(() => parseCommand('parameter {name} Name for the hero {name}')).toThrowError(
+            /Can not contain another parameter in description/i,
+        );
+        expect(() => parseCommand('parameter {name} Name for the hero {name} Name for the hero')).toThrowError(
+            /Can not contain another parameter in description/i,
+        );
+        expect(() => parseCommand('parmeter {name} Name for the hero')).toThrowError(/Unknown command/i);
     });
 
     it('should fail parsing multiline command', () => {
-        expect(() => parseCommand('execute\nprompt template')).toThrowError();
-        expect(() => parseCommand('execute prompt template\n')).toThrowError();
+        expect(() => parseCommand('execute\nprompt template')).toThrowError(/Can not contain new line/i);
+        expect(() => parseCommand('execute prompt template\n')).toThrowError(/Can not contain new line/i);
+    });
+
+    it('should fail parsing unknown command', () => {
+        expect(() => parseCommand('afasf ddd')).toThrowError(/Unknown command/i);
+        expect(() => parseCommand('nothing to get')).toThrowError(/Unknown command/i);
+        expect(() => parseCommand('prameter {name}')).toThrowError(/Unknown command/i);
     });
 });

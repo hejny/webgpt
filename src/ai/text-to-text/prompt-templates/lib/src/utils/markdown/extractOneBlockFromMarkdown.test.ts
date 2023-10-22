@@ -40,7 +40,7 @@ describe('how extractOneBlockFromMarkdown works', () => {
                     Hello world
                 `),
             ),
-        ).toThrowError(`There should be exactly one code block in the markdown`);
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
 
         expect(() =>
             extractOneBlockFromMarkdown(
@@ -49,7 +49,7 @@ describe('how extractOneBlockFromMarkdown works', () => {
                     Hello world
                 `),
             ),
-        ).toThrowError(`There should be exactly one code block in the markdown`);
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
 
         expect(() =>
             extractOneBlockFromMarkdown(
@@ -59,7 +59,7 @@ describe('how extractOneBlockFromMarkdown works', () => {
                     Content with **bold** and *italic* text
                 `),
             ),
-        ).toThrowError(`There should be exactly one code block in the markdown`);
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
 
         expect(() =>
             extractOneBlockFromMarkdown(
@@ -83,7 +83,7 @@ describe('how extractOneBlockFromMarkdown works', () => {
                     \`Lennon Wall\` is a wall in Prague. It is located in the center of Prague. On this wall, you can see many graffiti like %#2/*\`\`\`7#^
                 `),
             ),
-        ).toThrowError(`There should be exactly one code block in the markdown`);
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
     });
 
     it('should fail with sample with multiple code blocks of one line', () => {
@@ -111,6 +111,6 @@ describe('how extractOneBlockFromMarkdown works', () => {
                     \`\`\`
                 `),
             ),
-        ).toThrowError(`There should be exactly one code block in the markdown`);
+        ).toThrowError(/There should be exactly one code block in the markdown/i);
     });
 });
