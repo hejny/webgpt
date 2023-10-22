@@ -18,6 +18,7 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
 
         if (!joinedTaskProgress) {
             if (!newTaskProgress.title) {
+                console.info({ newTaskProgress });
                 throw new Error(`Missing title for task "${newTaskProgress.name}"`);
             }
             joinedTasksProgress.push(newTaskProgress);
