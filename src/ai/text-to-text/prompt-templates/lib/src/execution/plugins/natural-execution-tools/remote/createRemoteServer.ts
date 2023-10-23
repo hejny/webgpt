@@ -69,7 +69,6 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 let promptResult: PromptResult;
                 switch (prompt.modelRequirements.variant) {
                     case 'CHAT':
-                        throw new Error(`Hohoho`);
                         promptResult = await executionToolsForClient.gptChat(prompt);
                         break;
                     case 'COMPLETION':
