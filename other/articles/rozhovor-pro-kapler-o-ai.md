@@ -2,7 +2,7 @@
 
 > Rozhovor s [Pavolem Hejným](https://www.pavolhejny.com/) pro [Kapler o AI](https://www.kapler.cz/category/AI/)
 
-Před pár dny o sobě dal vědět [Pavol Hejný](https://www.pavolhejny.com/) s projektem na [generování webů pomomocí AI](https://webgpt.cz/).
+Před měsícem dal o sobě vědět [Pavol Hejný](https://www.pavolhejny.com/) s projektem na [generování webů pomomocí AI WebGPT](https://webgpt.cz/).
 Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a co nás čeká v budoucnu.
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
@@ -42,56 +42,23 @@ Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, 
 
 **Jaké jsou největší výzvy při generování webů?**
 
-Velkou výzvou je "zkrocení" GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
+Velkou výzvou je _"zkrocení"_ GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
 
--   Pokud mám jednoduché zadání / prompt "Jaký zvuk dělá kočička", tak dostanu odpověď "Mňau" nebo ""Mňau"" _(v uvozovkách)_ případně "Kočička dělá "Mňau"" nebo něco podobného.
--   Pokud mám komplexní prompt "Napiš mi komplení obsah webu v markdownu pro kavárnu {name}", tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
+-   Pokud mám jednoduché zadání / prompt _"Jaký zvuk dělá kočička"_, tak dostanu odpověď _"Mňau"_ nebo *""*Mňau*""* _(v uvozovkách)_ případně *"Kočička dělá "*Mňau*""* nebo něco podobného.
+-   Pokud mám komplexní prompt _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_, tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
-Jakmile je potřeba něco složitějšího, existují v principu tři metody, jak na to:
+Jakmile je potřeba něco složitějšího, existují v principu čtyři metody, jak na to:
 
--
--
--
-
-<!--
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
+-   **Fine tunning**, kdy se model dotrénuje na konkrétní úkol. Pokud mám tisíce příkladů vstupů a výstupů, tak to funguje dobře. Na rychlé prototypování je to ale pomalé a náročné.
+-   **Prompt tunning**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _"kapacitu"_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
+-   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _"Napiš mi název kavárny"_, _"Napiš mi popis kavárny"_, _"Napiš mi menu kavárny"_, _"Vygeneruj mi fotky kavárny"_, _"Napiš mi odkaz na sociální sítě kavárny"_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
+-   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického if/else programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _"Programuješ i v TypeScriptu nebo mám napsat jen JavaScript"_. Také je občas potřeba určité informace dohledat a ne si je "vyhalucinovat". V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **Prompt template pipelines**](https://github.com/webgptorg/ptp) aby šli podobné postupy psát i neprogramátorem v dokumentech.
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-<!--
+To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech. V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
+Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky nemožné
 
 **Myslíš, že generativní AI ještě není na svém vrcholu?**
 
@@ -238,7 +205,7 @@ Rozhodl jsi se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a co
 Co zmínit v rozhovoru:
 
 - Proč je generátor obrázků Dalle-3 velká věc [1]
-- primární a sekundární služby: GPT a generování obrázků jsou "pouze" stavební bloky podobné jakými byl tranzistor [1]
+- primární a sekundární služby: GPT a generování obrázků jsou *"pouze"* stavební bloky podobné jakými byl tranzistor [1]
 - Do širokého povědomí dostal AI až ChatGPT, co je víc UX než technický průlom [2]
 - Zcela jistě se vynoří spousta různých forem jak generativní AI ovládat [2]
 - vznik zcela nového odvětví na pomezí programování a psaní textu
@@ -259,9 +226,9 @@ Počet normostran: 5
 
 ---
 
-[1] Ač se na první pohled může zdát, že se jedná o "pouze další představení obrázkového generátoru", tak tomu však absolutně není.
+[1] Ač se na první pohled může zdát, že se jedná o *"pouze další představení obrázkového generátoru"*, tak tomu však absolutně není.
 
-Doposud byl hype a pozornost kolem primárních služeb, které poskytují "cihly, maltu, beton, železo" v podobě generátoru textu, generátoru obrázků, přepisu a syntézy zvuku,...
+Doposud byl hype a pozornost kolem primárních služeb, které poskytují *"cihly, maltu, beton, železo"* v podobě generátoru textu, generátoru obrázků, přepisu a syntézy zvuku,...
 
 Přichází ale doba sekundárních služeb postavených z těchto ingrediencí, které budou umět generovat kompletní kulturní jednotky např. celé knihy, prezentace, návrhy fyzických produktů, matematické důkazy, návrhy byznys plánů, složení celého koncertu, navržení galerie nebo vygenerování celého webu.
 
