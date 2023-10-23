@@ -27,6 +27,7 @@
     height: 80vh /* <- TODO: For feature/scenarios this should be 100vh */;
 
     outline: none;
+    pointer-events: visibleFill;
 }
 
 .tasklist {

@@ -51,7 +51,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
             <Image
                 className={styles.primaryImage}
                 alt={children}
-                src={aiai}
+                src={webgptLogo}
                 draggable="false"
                 placeholder="empty" /* <- TODO: Blur * /
             />

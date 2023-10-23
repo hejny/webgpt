@@ -1,5 +1,6 @@
 import { readFile } from 'fs/promises';
 import { GetStaticPaths } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { WallpaperAppHead } from '../components/AppHead/WallpaperAppHead';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
@@ -104,6 +105,7 @@ export async function getStaticProps({
 
     return {
         props: {
+            ...(await serverSideTranslations(locale, ['common'])),
             currentWallpaper,
         },
     };
@@ -117,6 +119,10 @@ export async function getStaticProps({
 
  * TODO: Add somewhere button [Get in touch]
  * TODO: [🪒] Can be getStaticProps shared between all pages?
+ * TODO: Some linting rule not to use:
+ *       NOT> import { useTranslation } from 'react-i18next';
+ *       BUT
+ *       YES> import { useTranslation } from 'next-i18next';
  * TODO: !! Better url than /...
  * TODO: [👕][🧠] What should be the ID of customized wallpaper?
  */

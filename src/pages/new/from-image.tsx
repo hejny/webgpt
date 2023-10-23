@@ -1,32 +1,40 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
-import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenText';
+import { Hint } from '../../components/Hint/Hint';
+import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
+import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
 import { Center } from '../../components/SimpleLayout/Center';
+import { Translate } from '../../components/Translate/Translate';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { Color } from '../../utils/color/Color';
 
 export default function NewWallpaperFromImagePage() {
     return (
         <>
             <StaticAppHead subtitle={null} />
+            <LanguagePickerWithHint />
 
             <div className={styles.page}>
                 <main>
                     <Center>
                         <h1
                             style={{
-                                maxWidth: '400px',
-                                // outline: '1px solid red',
-                                // transform: 'translate(0,20px)',
+                                transform: 'translate(0,-20px)',
                             }}
                         >
-                            <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
-                                AI Web Maker
-                            </HandwrittenText>
+                            <Image alt="WebGPT logo" src={webgptLogo} />
                         </h1>
+
                         <UploadNewWallpaper />
-                        <Link href="/">I have no image</Link>
+                        <Link href="/">
+                            <>
+                                {/* [⛳] */}
+                                <Translate locale="en">I have no image</Translate>
+                                <Translate locale="cs">Nemám obrázek</Translate>
+                            </>
+                        </Link>
                     </Center>
                 </main>
 
@@ -41,6 +49,7 @@ export default function NewWallpaperFromImagePage() {
 }
 
 /**
+ * TODO: Add <LanguagePicker /> to all new pages
  * TODO: Split between /new/from-image and /new/just-from-image
  * TODO: Allow to use Camera (maybe in new route /new/from-camera)
  * TODO: [🌾] Unite design of all /new/* pages

@@ -8,5 +8,5 @@ import { string_html, string_markdown } from '../typeAliases';
  * @returns {string} The input string with all comments removed.
  */
 export function removeContentComments<TContent extends string_html | string_markdown>(content: TContent): TContent {
-    return spaceTrim(content.replaceAll(/<!--(.*?)-->/gis, '')) as TContent;
+    return spaceTrim(content.replace(/<!--(.*?)-->/gs, '')) as TContent;
 }

@@ -84,6 +84,51 @@ export interface Database {
         }
         Relationships: []
       }
+      PromptExecution: {
+        Row: {
+          clientId: string | null
+          createdAt: string
+          id: number
+          promptAt: string | null
+          promptContent: string | null
+          promptModelRequirements: Json | null
+          promptParameters: Json | null
+          ptpUrl: string | null
+          rawResponse: Json | null
+          resultAt: string | null
+          resultContent: string | null
+          usedModel: string | null
+        }
+        Insert: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          promptAt?: string | null
+          promptContent?: string | null
+          promptModelRequirements?: Json | null
+          promptParameters?: Json | null
+          ptpUrl?: string | null
+          rawResponse?: Json | null
+          resultAt?: string | null
+          resultContent?: string | null
+          usedModel?: string | null
+        }
+        Update: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          promptAt?: string | null
+          promptContent?: string | null
+          promptModelRequirements?: Json | null
+          promptParameters?: Json | null
+          ptpUrl?: string | null
+          rawResponse?: Json | null
+          resultAt?: string | null
+          resultContent?: string | null
+          usedModel?: string | null
+        }
+        Relationships: []
+      }
       Reaction: {
         Row: {
           author: string

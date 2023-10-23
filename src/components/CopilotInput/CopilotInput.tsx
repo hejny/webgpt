@@ -4,7 +4,7 @@ import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
-import { string_prompt } from '../../utils/typeAliases';
+import { message, string_prompt } from '../../utils/typeAliases';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import styles from './CopilotInput.module.css';
 
@@ -12,7 +12,7 @@ interface useRouterProps {
     /**
      * Label for the input
      */
-    label: string;
+    label: message;
 
     /**
      * The html comment to export
@@ -66,7 +66,7 @@ export function CopilotInput(props: useRouterProps) {
     }, [inputRef, onPrompt, isRunning]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotInput)}>
+        <div className={classNames('webgpt-controls', styles.CopilotInput)}>
             <label htmlFor="copilot-input">{label}</label>
             <div
                 // Note: It is intended to have two divs embedded in each other

@@ -22,7 +22,7 @@ export async function mockedMultitask(onProgress: (taskProgress: TaskProgress) =
     const queue = [...MOCKED_TASKS_PROGRESS_QUEUE];
 
     while (true) {
-        await forTime(Math.random() * 1000 + 500);
+        await forTime(Math.random() * 500 + 100);
 
         const newTaskProgress = queue.shift();
         if (!newTaskProgress) {

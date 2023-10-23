@@ -39,7 +39,7 @@ describe('conversion of JSX to HTML', () => {
         ).toBe('<div>deep <span>bar</span></div>');
     });
 
-    it('will convert emptiness', () => {
+    it('should convert emptiness', () => {
         expect(jsxToHtml(<></>)).toBe('');
         expect(jsxToHtml(<div />)).toBe('<div></div>');
         expect(jsxToHtml(<div></div>)).toBe('<div></div>');

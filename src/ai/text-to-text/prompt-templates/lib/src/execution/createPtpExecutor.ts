@@ -1,85 +1,177 @@
+import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { TaskProgress } from '../../../../../../components/TaskInProgress/task/TaskProgress';
-import { PromptTemplate } from '../classes/PromptTemplate';
+import { removeEmojis } from '../../../../../../utils/content/removeEmojis';
+import { removeMarkdownFormatting } from '../../../../../../utils/content/removeMarkdownFormatting';
+import { string_name } from '../../../../../../utils/typeAliases';
 import { PromptTemplatePipeline } from '../classes/PromptTemplatePipeline';
-import { PromptTemplateParams } from '../types/PromptTemplateParams';
-import { PtpExecutionTools } from '../types/PtpExecutionTools';
+
+import { PromptTemplateJson } from '../types/PromptTemplatePipelineJson/PromptTemplateJson';
+import { replaceParameters } from '../utils/replaceParameters';
+import { ExecutionTools } from './ExecutionTools';
 import { PtpExecutor } from './PtpExecutor';
 
-interface CreatePtpExecutorOptions<
-    TEntryParams extends PromptTemplateParams,
-    TResultParams extends PromptTemplateParams,
-> {
-    ptp: PromptTemplatePipeline<TEntryParams, TResultParams>;
-    tools: PtpExecutionTools;
+interface CreatePtpExecutorOptions {
+    readonly ptp: PromptTemplatePipeline;
+    readonly tools: ExecutionTools;
 }
 
-export function createPtpExecutor<
-    TEntryParams extends PromptTemplateParams,
-    TResultParams extends PromptTemplateParams,
->(options: CreatePtpExecutorOptions<TEntryParams, TResultParams>): PtpExecutor<TEntryParams, TResultParams> {
-    const {
-        ptp,
-        tools: {
-            gpt: { createChatThread, completeWithGpt },
-        },
-    } = options;
+/**
+ * Creates executor function from prompt template pipeline and execution tools.
+ *
+ * Note: Consider using getExecutor method of the library instead of using this function
+ */
+export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecutor {
+    const { ptp, tools } = options;
 
     const ptpExecutor = async (
-        entryParams: TEntryParams,
+        inputParameters: Record<string_name, string>,
         onProgress?: (taskProgress: TaskProgress) => Promisable<void>,
     ) => {
-        let paramsToPass: PromptTemplateParams = entryParams;
-        let currentPtp: PromptTemplate<PromptTemplateParams, PromptTemplateParams> | null = ptp.entryPromptTemplate;
+        let parametersToPass: Record<string_name, string> = inputParameters;
+        let currentTemplate: PromptTemplateJson | null = ptp.entryPromptTemplate;
 
-        while (currentPtp !== null) {
-            const resultingParamName = ptp.getResultingParamName(currentPtp!);
+        while (currentTemplate !== null) {
+            const resultingParameter = ptp.getResultingParameter(currentTemplate.name);
 
-            if (onProgress) {
+            const isPrograssLoggedForCurrentTemplate = currentTemplate.executionType === 'PROMPT_TEMPLATE';
+
+            if (onProgress && isPrograssLoggedForCurrentTemplate) {
                 await onProgress({
-                    name: `ptp-executor-frame-${resultingParamName}`,
-                    title: `Copywriting ${resultingParamName /* <- TODO: !!! Use real title */}`,
+                    name: `ptp-executor-frame-${currentTemplate.name}`,
+                    title: `🖋 ${removeEmojis(removeMarkdownFormatting(currentTemplate.title))}`,
                     isDone: false,
                 });
             }
 
-            const prompt = currentPtp.writePrompt(paramsToPass);
+            let promptResult: string | null = null;
 
-            let response: string;
-            if (currentPtp.modelRequirements.variant === 'CHAT') {
-                const chatThread = await createChatThread(prompt);
-                response = chatThread.response;
-            } else if (currentPtp.modelRequirements.variant === 'COMPLETION') {
-                const completionResult = await completeWithGpt(prompt);
-                response = completionResult.response;
-            } else {
-                throw new Error(`Unknown model variant: ${currentPtp.modelRequirements.variant}`);
+            executionType: switch (currentTemplate.executionType) {
+                case 'SIMPLE_TEMPLATE':
+                    promptResult = replaceParameters(currentTemplate.content, parametersToPass);
+                    break executionType;
+
+                case 'PROMPT_TEMPLATE':
+                    const prompt = {
+                        ptpUrl: `${
+                            ptp.ptpUrl
+                                ? ptp.ptpUrl.href
+                                : 'anonymous' /* <- [🧠] How to deal with anonymous PTPs, do here some auto-url like SHA-256 based ad-hoc identifier? */
+                        }#${currentTemplate.name}`,
+                        parameters: parametersToPass,
+                        content: replaceParameters(currentTemplate.content, parametersToPass),
+                        modelRequirements: currentTemplate.modelRequirements!,
+                    };
+                    variant: switch (currentTemplate.modelRequirements!.variant) {
+                        case 'CHAT':
+                            const chatThread = await tools.natural.gptChat(prompt);
+                            // TODO: Use all information from chatThread like "model"
+                            // TODO: [🍬] Destroy chatThread
+                            promptResult = chatThread.content;
+                            break variant;
+                        case 'COMPLETION':
+                            const completionResult = await tools.natural.gptComplete(prompt);
+                            // TODO: Use all information from chatThread like "model"
+                            promptResult = completionResult.content;
+                            break variant;
+                        default:
+                            throw new Error(`Unknown model variant "${currentTemplate.modelRequirements!.variant}"`);
+                    }
+                    break executionType;
+
+                case 'SCRIPT':
+                    if (tools.script.length === 0) {
+                        throw new Error(`No script execution tools are available`);
+                    }
+                    if (!currentTemplate.contentLanguage) {
+                        throw new Error(`Script language is not defined for prompt template "${currentTemplate.name}"`);
+                    }
+
+                    const errors: Array<Error> = [];
+                    let isSuccessful = false;
+
+                    scripts: for (const scriptTools of tools.script) {
+                        try {
+                            promptResult = await scriptTools.execute({
+                                scriptLanguage: currentTemplate.contentLanguage,
+                                script: currentTemplate.content,
+                                parameters: parametersToPass,
+                            });
+                            isSuccessful = true;
+
+                            break scripts;
+                        } catch (error) {
+                            if (!(error instanceof Error)) {
+                                throw error;
+                            }
+
+                            errors.push(error);
+                        }
+                    }
+
+                    if (isSuccessful) {
+                        break executionType;
+                    }
+
+                    if (errors.length === 1) {
+                        throw errors[0];
+                    } else {
+                        throw new Error(
+                            spaceTrim(
+                                (block) => `
+                                        Script execution failed ${errors.length} times
+
+                                        ${block(errors.map((error) => '- ' + error.message).join('\n\n'))}
+                                    `,
+                            ),
+                        );
+                    }
+
+                    // Note: This line is unreachable because of the break executionType above
+                    break executionType;
+
+                case 'PROMPT_DIALOG':
+                    promptResult = await tools.userInterface.promptDialog({
+                        prompt: replaceParameters(currentTemplate.description || '', parametersToPass),
+                        defaultValue: replaceParameters(currentTemplate.content, parametersToPass),
+
+                        // TODO: [🧠] !! Figure out how to define placeholder in .ptp.md file
+                        placeholder: undefined,
+                    });
+                    break executionType;
+
+                default:
+                    throw new Error(`Unknown execution type "${(currentTemplate as any).executionType}"`);
             }
 
-            if (onProgress) {
+            if (promptResult === null) {
+                //              <- TODO: [🥨] Make some NeverShouldHappenError
+                throw new Error(`Something went wrong and prompt result is null`);
+            }
+
+            if (onProgress && isPrograssLoggedForCurrentTemplate) {
                 onProgress({
-                    name: `ptp-executor-frame-${resultingParamName}`,
+                    name: `ptp-executor-frame-${currentTemplate.name}`,
                     isDone: true,
                 });
             }
 
-            paramsToPass = {
-                ...paramsToPass,
-                [resultingParamName]: response /* <- TODO: Detect param collision here */,
+            parametersToPass = {
+                ...parametersToPass,
+                [resultingParameter.name]:
+                    promptResult /* <- Note: Not need to detect parameter collision here because PromptTemplatePipeline checks logic consistency during construction */,
             };
 
-            currentPtp = ptp.getFollowingPromptTemplate(currentPtp!);
+            currentTemplate = ptp.getFollowingPromptTemplate(currentTemplate!.name);
         }
 
-        // TODO:             <- We are assigning TResultParams to TResultParams, but we are not sure if it's correct, maybe check in runtime
-        return paramsToPass as TResultParams;
+        return parametersToPass as Record<string_name, string>;
     };
 
     return ptpExecutor;
 }
 
 /**
- * TODO: !!! Do not export from library, make in private within the PTP library
- * TODO: !!! Implement
+ * TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
  * Note: CreatePtpExecutorOptions are just connected to PtpExecutor so do not extract to types folder
  */

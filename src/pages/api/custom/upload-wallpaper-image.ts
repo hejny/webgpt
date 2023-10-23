@@ -7,7 +7,7 @@ import { string_url } from '../../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
-    wallpaperUrl: string_url;
+    readonly wallpaperUrl: string_url;
 }
 
 export const config = {

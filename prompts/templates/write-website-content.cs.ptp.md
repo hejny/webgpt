@@ -1,9 +1,55 @@
+# 🌍 Vytvoření obsahu webové stránky
+
+Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
+
+-   PTP URL https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v0.1.0
+-   PTP version 0.0.1
+-   Use chat
+<!-- TODO: [🌚]> -   Use GPT-3.5 -->
+-   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
+-   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku _v Angličtině_
+-   Output param `{content}` Obsah webu _v Češtině_
+
+## 🖋 Zadání v Češtině
+
+-   Use completion
+-   Postprocessing `trim`
+
+```text
+
+English assignment:
+> {rawAssigment}
+
+České zadání:
+>
+```
+
+`-> {rawAssigmentCs}` Zadání webu v Češtině
+
+## 👤 Upřesnění zadání uživatelem
+
+Popište cíl vašeho webu
+
+-   Prompt dialog
+
+```text
+{rawAssigmentCs}
+```
+
+`-> {assigment}` Zadání webu
+
+## 💬 Vylepšení názvu
+
+-   Postprocessing `unwrapResult`
+
+```markdown
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
 
 Navrhovaný název od zákazníka:
-"{title}"
+"{rawTitle}"
 
 Zadání od zákazníka:
+
 \`\`\`
 {assigment}
 \`\`\`
@@ -12,14 +58,31 @@ Zadání od zákazníka:
 
 -   Napiště pouze jeden návrh názvu
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
+```
 
--> {enhancedTitle}
+`-> {enhancedTitle}` Vylepšený název
 
----
+## 👤 Schválení názvu uživatelem
 
-Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{enhancedTitle}".
+Je název Vašeho webu v pořádku?
+
+-   Prompt dialog
+
+```text
+{enhancedTitle}
+```
+
+`-> {title}` Název webu
+
+## 💬 Kulervoucí podtitulek
+
+-   Postprocessing `unwrapResult`
+
+```markdown
+Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".
 
 Zadání webu od zákazníka:
+
 \`\`\`
 {assigment}
 \`\`\`
@@ -29,14 +92,21 @@ Zadání webu od zákazníka:
 -   Napiště pouze jeden návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
+```
 
--> {claim}
+`-> {claim}` Podtitulek pro web
 
----
+## 💬 Analýza klíčových slov
 
-Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{enhancedTitle}".
+<!--
+Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
+-->
+
+```markdown
+Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{title}".
 
 Zadání webu od zákazníka:
+
 \`\`\`
 {assigment}
 \`\`\`
@@ -55,14 +125,34 @@ Zadání webu od zákazníka:
 -   Tradice
 -   Itálie
 -   Řemeslo
+```
 
--> {keywords}
+`-> {keywords}` Klíčová slova
 
----
+## 🔗 Vytvoření začátku obsahu webu
 
-Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {enhancedTitle}.
+-   Simple template
+
+```text
+
+# {title}
+
+> {claim}
+
+```
+
+`-> {contentBeginning}` Začátek obsahu webu
+
+## 🖋 Vytvoření obsahu webu
+
+-   Use completion
+<!-- TODO: [🌚]> -   Use GPT-3 -->
+
+```markdown
+Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku {title}.
 
 Zadání webu od zákazníka:
+
 \`\`\`
 {assigment}
 \`\`\`
@@ -79,14 +169,21 @@ Zadání webu od zákazníka:
 
 {keywords}
 
-## Pokraujte obsahem:
+## Obsah webu:
 
-\`\`\`
+{contentBeginning}
+```
 
-# {enhancedTitle}
+`-> {contentBody}` Stať obsahu webu
 
-> {claim}
+## 🔗 Spojení obsahu
 
-\`\`\`
+-   Simple template
 
--> {contentBody}
+```markdown
+{contentBeginning}
+
+{contentBody}
+```
+
+`-> {content}`

@@ -14,7 +14,7 @@ export interface ScrapeInstagramUserResponse {
     /**
      * Information about the Instagram user
      */
-    instagramUser: GraphqlUser;
+    readonly instagramUser: GraphqlUser;
 }
 
 /**

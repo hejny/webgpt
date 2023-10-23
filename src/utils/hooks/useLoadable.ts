@@ -15,31 +15,31 @@ export enum IUseLoadableResultStatus {
 }
 
 export interface IUseLoadableResultPending {
-    status: IUseLoadableResultStatus.Pending;
-    value: undefined;
-    error: undefined;
-    isComplete: false;
+    readonly status: IUseLoadableResultStatus.Pending;
+    readonly value: undefined;
+    readonly error: undefined;
+    readonly isComplete: false;
 }
 
 interface IUseLoadableResultOngoing<TValue> {
-    status: IUseLoadableResultStatus.Ongoing;
-    value: TValue;
-    error: null;
-    isComplete: false;
+    readonly status: IUseLoadableResultStatus.Ongoing;
+    readonly value: TValue;
+    readonly error: null;
+    readonly isComplete: false;
 }
 
 export interface IUseLoadableResultError {
-    status: IUseLoadableResultStatus.Error;
-    error: Error;
-    value: null;
-    isComplete: true;
+    readonly status: IUseLoadableResultStatus.Error;
+    readonly error: Error;
+    readonly value: null;
+    readonly isComplete: true;
 }
 
 export interface IUseLoadableResultComplete<TValue> {
-    status: IUseLoadableResultStatus.Complete;
-    value: TValue;
-    error: null;
-    isComplete: true;
+    readonly status: IUseLoadableResultStatus.Complete;
+    readonly value: TValue;
+    readonly error: null;
+    readonly isComplete: true;
 }
 
 export type IUseLoadableResult<TValue> =

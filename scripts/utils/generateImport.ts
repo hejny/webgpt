@@ -1,11 +1,11 @@
 import { dirname, relative } from 'path';
 
 interface ImportOptions {
-    entityName: string;
-    entityPath: string;
-    itselfPath: string;
-    isNamedImport: boolean;
-    isDebug?: boolean;
+    readonly entityName: string;
+    readonly entityPath: string;
+    readonly itselfPath: string;
+    readonly isNamedImport: boolean;
+    readonly isDebug?: boolean;
 }
 
 export function generateImport(options: ImportOptions): string {

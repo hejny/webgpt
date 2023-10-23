@@ -10,7 +10,7 @@ interface StaticLayoutProps extends StaticAppHeadProps {
 }
 
 /**
- * Renders a page in layout with 1-2i design
+ * Renders a page in layout with WebGPT design
  *
  * The design has several features:
  * - Automatically adds <StaticAppHead/> to the page
@@ -24,11 +24,12 @@ export function StaticLayout(props: StaticLayoutProps) {
     return (
         <>
             <StaticAppHead {...{ subtitle }} />
+            {/* TODO: !! Translate the main page and enable: <LanguagePicker /> */}
             <div className={styles.StaticLayout}>{children}</div>
         </>
     );
 }
 
 /**
- * TODO: [🌾] This should became AiComponentLayout and 1-2i page should be made as 1-2i static page
+ * TODO: [🌾] This should became AiComponentLayout and WebGPT page should be made as WebGPT static page
  */

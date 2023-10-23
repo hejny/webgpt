@@ -3,8 +3,8 @@ import { IVector } from 'xyzt';
 export type ISvgPath = Array<ISvgPathSegment>;
 
 export interface ISvgPathSegment {
-    command: ISvgPathSegmentCommand;
-    positions: Array<IVector>;
+    readonly command: ISvgPathSegmentCommand;
+    readonly positions: Array<IVector>;
 }
 
 /**

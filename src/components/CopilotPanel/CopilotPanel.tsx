@@ -1,14 +1,14 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import type {
-    UpdateWallpaperContentRequest,
-    UpdateWallpaperContentResponse,
-} from '../../pages/api/update-wallpaper-content';
+import { getExecutionTools } from '../../ai/text-to-text/prompt-templates/getExecutionTools';
+import { webgptPtpLibrary } from '../../ai/text-to-text/prompt-templates/webgptPtpLibrary';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
+import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
@@ -21,8 +21,11 @@ import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
+import { addFontToContent } from '../ImportFonts/addFontToContent';
 import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
+import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
+import { PublishLink } from '../PublishModal/PublishLink';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
@@ -39,7 +42,7 @@ export function CopilotPanel() {
     const placeholders = useMemo(() => shuffleItems(...COPILOT_PLACEHOLDERS), []);
     const placeholder = useRotatingPlaceholder(...placeholders);
     const randomFont = useMemo(
-        () => randomItem(...FONTS) /* <- TODO: [🧠] Some better heurictic than pure random */,
+        () => randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
         // Note: Wallpaper is dependency because we want to offer new font after each change of the font
         /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaper],
@@ -82,37 +85,63 @@ export function CopilotPanel() {
             `),
             );
 
-            const { content: oldContent } = wallpaper;
+            let { content: oldContent } = wallpaper;
 
-            const response = await fetch(
-                `/api/update-wallpaper-content?clientId=${await provideClientId({
-                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
-                })}`,
+            const fonts = extractFontsFromContent(oldContent);
+            if (fonts.size !== 1) {
+                throw new Error(`Expected exactly one font in the content, got ${fonts.size}`);
+            }
+            const font = Array.from(fonts)[0]!;
+
+            oldContent = removeContentComments(oldContent);
+
+            const { newContent } = await webgptPtpLibrary.createExecutor(
+                'updateWebsiteContent' /* <- TODO: Deal here with locale */,
+                getExecutionTools(
+                    await provideClientId({
+                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
+                    }),
+                ),
+            )(
                 {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        prompt,
-                        wallpaper: { content: oldContent },
-                    } satisfies UpdateWallpaperContentRequest),
+                    oldContent,
+                    rawAssigment: prompt,
+                },
+                (taskProgress) => {
+                    console.info('CopilotPanel: Update wallpaper content: ', { taskProgress });
                 },
             );
 
-            if (response.ok === false) {
-                // TODO: [🈵] If 4XX error, show also the message from json body
-                throw new Error(`Prompt failed with status ${response.status}`);
-            }
+            const newContentWithFont = addFontToContent(newContent || '', font);
 
-            const {
-                updatedWallpaper: { content: newContent },
-            } = (await response.json()) as UpdateWallpaperContentResponse;
+            /*/
+            const newContentWithMetadata = spaceTrim(
+                (block) => `
+                    ${block(newContentWithFont)}
 
-            console.info({ oldContent, newContent });
+                    --- 
+
+                    <div style="opacity: 0.5">
+
+                    ## Old content:
+
+                    ${block(oldContent)}
+
+                    </div>
+                `, // <- TODO: !! Just newContent, maybe use this in some debug mode
+            );
+            /**/
+            /**/
+            const newContentWithMetadata = newContentWithFont;
+            /**/
+
+            console.info('CopilotPanel: Update wallpaper content: ', { oldContent, newContent });
 
             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
                 // TODO: Use here addWallpaperComputables
                 modifiedWallpaper.parent = modifiedWallpaper.id;
-                modifiedWallpaper.content = newContent + '\n\n<hr/>' + prompt;
+                modifiedWallpaper.content = newContentWithMetadata;
                 modifiedWallpaper.saveStage = 'SAVING';
                 modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
                 modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
@@ -135,7 +164,7 @@ export function CopilotPanel() {
     }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotPanel)}>
+        <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
             <div
                 // Note: It is intended to have two divs embedded in each other
                 className={styles.CopilotPanelInner}
@@ -273,13 +302,7 @@ export function CopilotPanel() {
                             </li>
                         )}
                         <li className={styles.featured}>
-                            <WallpaperLink
-                                modal="export"
-                                role="OWNER"
-                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                            >
-                                Get the web
-                            </WallpaperLink>
+                            <PublishLink />
                         </li>
                         <li>
                             <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
@@ -315,15 +338,19 @@ export function CopilotPanel() {
                             </WallpaperLink>
                         </li>
                         <li>
+                            <Link href="/">Make new web</Link>
+                        </li>
+                        <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>
                         </li>
+
                         {/*
                         TODO: !! The menu should be like this: 
 
                         - [x] Show as visitor
                         - [~] Share
                         - [x] Get the web
-                        - [ ] Edit
+                        - [x] Edit
                         - [ ] - advanced prompting
                         - [ ] - colors
                         - [ ] - content

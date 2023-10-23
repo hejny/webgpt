@@ -3,7 +3,7 @@ import { IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
 export interface RandomWallpaperResponse {
-    randomWallpaper: IWallpaperSerialized;
+    readonly randomWallpaper: IWallpaperSerialized;
 }
 
 /**

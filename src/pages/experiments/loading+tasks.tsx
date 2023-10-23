@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { mockedMultitask } from '../../components/TaskInProgress/task/mock/mockedMultitask';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
@@ -18,9 +17,5 @@ export default function TestTasksProgressPage() {
         ],
     );
 
-    return (
-        <StaticLayout subtitle="Test loading with tasks">
-            <TasksInProgress {...{ tasksProgress }} />
-        </StaticLayout>
-    );
+    return <TasksInProgress {...{ tasksProgress }} />;
 }

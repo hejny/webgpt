@@ -9,6 +9,7 @@ import { Dialogues } from '../Dialogues/Dialogues';
 import { EditContentModal } from '../EditContentModal/EditContentModal';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
+import { PublishModal } from '../PublishModal/PublishModal';
 import { PreventUnsavedChanges } from './PreventUnsavedChanges';
 
 /**
@@ -23,6 +24,7 @@ export function WallpaperEditing() {
             <PreventUnsavedChanges />
             <Dialogues />
 
+            {modal === 'publish' && <PublishModal />}
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}

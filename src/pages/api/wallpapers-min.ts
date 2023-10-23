@@ -3,7 +3,7 @@ import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpap
 import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
 interface WallpapersResponse {
-    wallpapers: Array<{ id: string_wallpaper_id; primaryColor: string_color }>;
+    readonly wallpapers: Array<{ id: string_wallpaper_id; primaryColor: string_color }>;
 }
 
 /**
