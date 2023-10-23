@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import { StaticAppHead, StaticAppHeadProps } from '../AppHead/StaticAppHead';
-import { LanguagePicker } from '../LanguagePicker/LanguagePicker';
 import styles from './StaticLayout.module.css';
 
 interface StaticLayoutProps extends StaticAppHeadProps {
@@ -25,7 +24,7 @@ export function StaticLayout(props: StaticLayoutProps) {
     return (
         <>
             <StaticAppHead {...{ subtitle }} />
-            <LanguagePicker />
+            {/* TODO: !! Translate the main page and enable: <LanguagePicker /> */}
             <div className={styles.StaticLayout}>{children}</div>
         </>
     );

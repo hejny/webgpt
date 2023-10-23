@@ -8,7 +8,7 @@ import { useLocale } from '../../utils/hooks/useLocale';
 import styles from './LanguagePicker.module.css';
 
 /**
- * A component that allows the user to switch between English and Czech languages ⁘
+ * A component that allows the user to switch between languages
  *
  * @returns {JSX.Element} A div element with two links to change the locale.
  */

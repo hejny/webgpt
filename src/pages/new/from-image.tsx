@@ -4,6 +4,7 @@ import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Hint } from '../../components/Hint/Hint';
 import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
+import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
 import { Center } from '../../components/SimpleLayout/Center';
 import { Translate } from '../../components/Translate/Translate';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
@@ -13,16 +14,7 @@ export default function NewWallpaperFromImagePage() {
     return (
         <>
             <StaticAppHead subtitle={null} />
-
-            <Hint
-                className={styles.Button}
-                id="language-for-new-wallpaper"
-                title="Switch language of your desired website"
-                reapearCount={3}
-                isDisabled // <- TODO: !! Enable - Fix layout of <Hint/>
-            >
-                <LanguagePicker />
-            </Hint>
+            <LanguagePickerWithHint />
 
             <div className={styles.page}>
                 <main>
