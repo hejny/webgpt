@@ -172,5 +172,6 @@ export function createPtpExecutor(options: CreatePtpExecutorOptions): PtpExecuto
 }
 
 /**
+ * TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
  * Note: CreatePtpExecutorOptions are just connected to PtpExecutor so do not extract to types folder
  */

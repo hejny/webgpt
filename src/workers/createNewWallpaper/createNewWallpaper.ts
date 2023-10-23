@@ -321,7 +321,8 @@ export async function createNewWallpaper(
         prompt: description,
         colorStats: await colorStatsPromise,
         naturalSize: originalSize,
-        content: content! /* <- TODO: !!! Strongly type the executors to avoid need of remove nullables */,
+        content:
+            content! /* <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json */,
         saveStage: 'SAVING',
     });
 

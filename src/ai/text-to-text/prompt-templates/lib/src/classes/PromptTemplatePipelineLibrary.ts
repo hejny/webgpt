@@ -60,4 +60,5 @@ export class PromptTemplatePipelineLibrary {
  * TODO: [🧠] Formarly (before commit 62229afce7668a5b85077cc18becf798b583bf8d) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)
  * TODO: [🧠] Is it better to pass tools into getExecutor or into constructor
  *             Maybe it is not a good idea to cache executors when they are can be created with different tools
+ * TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
  */
