@@ -40,5 +40,7 @@ export function LanguagePicker() {
 }
 
 /**
+ * TODO: Check here that ONLY one instance of <LanguagePicker /> is rendered
+ * TODO: [🧠] Use in wallpaper page and allow to pass into export
  * TODO: Probbably rename to <LanguageSwitcher (@see https://dev.to/adrai/static-html-export-with-i18n-compatibility-in-nextjs-8cd)
  */
