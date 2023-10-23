@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 
-
 /**
  * A component that renders its children only if the locale matches the router locale
  *
@@ -26,12 +25,15 @@ export function Translate(props: TranslateProps) {
     const router = useRouter();
 
     if (locale !== router.locale) {
-        return <></>;
+        return <>{/* [⛳] */}</>;
     }
 
     return <>{children}</>;
 }
 
 /**
- * TODO: !!! Implement i18n OR remove all the code related to it
+ * TODO: !! [⛳] Do here a translation instead of empty fragment
+ * TODO: !! Annotate
+ * TODO: [🦟] Use <MarkdownContent/> here and enable automatical markdown translations with auto-enhanced markdown
+ * TODO: [🦟][🧠] Should <Translate/> have same props as <MarkdownContent isUsingOpenmoji isEnhanced /> OR it should be set for all translate messages the same
  */

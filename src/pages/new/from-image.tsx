@@ -5,6 +5,7 @@ import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { Hint } from '../../components/Hint/Hint';
 import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
 import { Center } from '../../components/SimpleLayout/Center';
+import { Translate } from '../../components/Translate/Translate';
 import { UploadNewWallpaper } from '../../components/UploadNewWallpaper/UploadNewWallpaper';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 
@@ -35,7 +36,13 @@ export default function NewWallpaperFromImagePage() {
                         </h1>
 
                         <UploadNewWallpaper />
-                        <Link href="/">I have no image</Link>
+                        <Link href="/">
+                            <>
+                                {/* [⛳] */}
+                                <Translate locale="en">I have no image</Translate>
+                                <Translate locale="cs">Nemám obrázek</Translate>
+                            </>
+                        </Link>
                     </Center>
                 </main>
 

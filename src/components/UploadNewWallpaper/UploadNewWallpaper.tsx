@@ -9,6 +9,7 @@ import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/c
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
+import { Translate } from '../Translate/Translate';
 import { UploadZone } from '../UploadZone/UploadZone';
 import styles from './UploadNewWallpaper.module.css';
 
@@ -99,9 +100,19 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     children
                 ) : (
                     <>
-                        Drop image to
-                        <br />
-                        <b>make your web</b>
+                        {/* [⛳] */}
+                        <Translate locale="en">
+                            {/* [🦟] */}
+                            Drop image to
+                            <br />
+                            <b>make your web</b>
+                        </Translate>
+                        <Translate locale="cs">
+                            {/* [🦟] */}
+                            Přetažením obrázku
+                            <br />
+                            <b>vytvoříte svůj web</b>
+                        </Translate>
                     </>
                 )}
             </UploadZone>
