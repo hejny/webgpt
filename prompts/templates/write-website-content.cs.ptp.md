@@ -129,7 +129,7 @@ Zadání webu od zákazníka:
 
 `-> {keywords}` Klíčová slova
 
-## + Vytvoření začátku obsahu webu
+## 🔗 Vytvoření začátku obsahu webu
 
 -   Simple template
 
