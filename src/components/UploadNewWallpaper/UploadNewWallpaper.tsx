@@ -3,6 +3,7 @@ import { ReactNode, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
+import { useLocale } from '../../utils/hooks/useLocale';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
@@ -29,6 +30,7 @@ interface UploadZoneProps {
 export function UploadNewWallpaper(props: UploadZoneProps) {
     const { children, className } = props;
     const router = useRouter();
+    const locale = useLocale();
     const [isWorking, setWorking] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
@@ -52,6 +54,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     try {
                         const { wallpaperId } = await createNewWallpaperForBrowser(
                             {
+                                locale,
                                 author: await provideClientId({
                                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                 }),

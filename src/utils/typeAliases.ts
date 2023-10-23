@@ -586,7 +586,7 @@ export type string_translate_name_not_normalized = string;
  * TODO: Probably use enum
  * TODO: Rename - remove string_ prefix like ITranslateLanguageCode
  */
-export type string_translate_language = 'en' | 'cs' | 'sk' | 'uk';
+export type string_translate_language = 'en' | 'cs';
 
 /**
  * Semantic helper; For example "callbackName" or "renderMe"

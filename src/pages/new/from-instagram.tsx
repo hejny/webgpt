@@ -12,6 +12,7 @@ import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTask
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { useLocale } from '../../utils/hooks/useLocale';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
 import { randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
@@ -23,6 +24,7 @@ import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram
 
 export default function NewWallpaperFromInstagramPage() {
     const router = useRouter();
+    const locale = useLocale();
     const [isWorking, setWorking] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
@@ -116,6 +118,7 @@ export default function NewWallpaperFromInstagramPage() {
 
                                     const { wallpaperId } = await createNewWallpaperForBrowser(
                                         {
+                                            locale,
                                             title,
                                             author: await provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,

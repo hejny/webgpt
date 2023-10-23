@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
+import { useLocale } from '../../utils/hooks/useLocale';
 
 /**
  * A component that renders its children only if the locale matches the router locale
@@ -20,11 +20,11 @@ interface TranslateProps {
  * @@@
  */
 export function Translate(props: TranslateProps) {
-    const { locale, children } = props;
+    const { locale: childrenLocale, children } = props;
 
-    const router = useRouter();
+    const currentLocale = useLocale();
 
-    if (locale !== router.locale) {
+    if (childrenLocale !== currentLocale) {
         return <>{/* [⛳] */}</>;
     }
 

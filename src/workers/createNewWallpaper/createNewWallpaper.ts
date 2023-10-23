@@ -22,6 +22,7 @@ import {
     description,
     string_markdown,
     string_name,
+    string_translate_language,
     string_url,
     string_wallpaper_id,
     title,
@@ -29,6 +30,14 @@ import {
 } from '../../utils/typeAliases';
 
 export interface ICreateNewWallpaperRequest {
+    /**
+     * The language
+     * - It is used to select the right prompt template pipeline
+     * - The interaction with the user is in this language
+     * - The generated content is in this language
+     */
+    locale: string_translate_language;
+
     /**
      * Title of the wallpaper
      *
@@ -134,7 +143,7 @@ export async function createNewWallpaper(
     request: ICreateNewWallpaperRequest,
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<ICreateNewWallpaperResult> {
-    const { title, author, wallpaperImage: wallpaper, links, addSections } = request;
+    const { locale, title, author, wallpaperImage: wallpaper, links, addSections } = request;
     let { description } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
@@ -284,9 +293,14 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
+    const writeWebsiteContentLocaleMap = {
+        en: 'writeWebsiteContent',
+        cs: 'writeWebsiteContentCs',
+        /* <- TODO: [👧] Constrain key to only existing PTPs in the library */
+    };
+
     const { content } = await webgptPtpLibrary.createExecutor(
-        // TODO: !!! Switch cs/en based on locale
-        'writeWebsiteContent' /* <- TODO: [👧] Constrain key to only existing PTPs in the library */,
+        writeWebsiteContentLocaleMap[locale],
         getExecutionToolsForWorker(author),
     )(
         {
