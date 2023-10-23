@@ -120,9 +120,13 @@ export function CopilotPanel() {
 
                     --- 
 
+                    <div style="opacity: 0.5">
+
                     ## Old content:
 
-                    ${oldContent}
+                    ${block(oldContent)}
+
+                    </div>
                 `, // <- TODO: !! Just newContent, maybe use this in some debug mode
             );
 

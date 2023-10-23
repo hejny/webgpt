@@ -19,10 +19,14 @@ Instructions for creating web page content using [🌠 Prompt template pipelines
 Act as an experienced webdesigner and manager, you have a raw assigment from the user what to change on the web.
 Make a proffesional assigment from it.
 
+## Rules
+- Do not make it long
+- Do not greeting or signature
+
 ## Raw assigment:
 {rawAssigment}
 
-## Proffesional assigment:
+## Proffesional but short assigment:
 ```
 
 `-> {proffesionalAssigment}` Proffesional looking request for change
