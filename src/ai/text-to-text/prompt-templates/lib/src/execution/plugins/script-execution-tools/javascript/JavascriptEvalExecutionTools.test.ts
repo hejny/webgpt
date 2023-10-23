@@ -89,13 +89,14 @@ describe('JavascriptEvalExecutionTools', () => {
     });
 
     it('should throw error from script', () => {
-        expect(
-            javascriptEvalExecutionTools.execute({
-                scriptLanguage: 'javascript',
-                parameters: {},
-                script: `throw new Error('Some error')`,
-            }),
-        ).rejects.toEqual('Some error');
+        () =>
+            expect(
+                javascriptEvalExecutionTools.execute({
+                    scriptLanguage: 'javascript',
+                    parameters: {},
+                    script: `throw new Error('Some error')`,
+                }),
+            ).rejects.toThrowError('Some error');
     });
 
     it('should evaluate custom function', () => {
