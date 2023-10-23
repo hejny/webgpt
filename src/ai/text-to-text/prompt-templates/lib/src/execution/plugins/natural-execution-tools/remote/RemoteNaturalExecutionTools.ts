@@ -3,6 +3,7 @@ import { io } from 'socket.io-client';
 import { Prompt } from '../../../../types/Prompt';
 import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
 import { PromptChatResult, PromptCompletionResult, PromptResult } from '../../../PromptResult';
+import { Ptps_Error } from './interfaces/Ptps_Error';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 import { RemoteNaturalExecutionToolsOptions } from './RemoteNaturalExecutionToolsOptions';
@@ -71,6 +72,12 @@ export class RemoteNaturalExecutionTools implements NaturalExecutionTools {
         const promptResult = await new Promise<PromptResult>((resolve, reject) => {
             socket.on('response', (response: Ptps_Response) => {
                 resolve(response.promptResult);
+                socket.disconnect();
+            });
+            socket.on('error', (error: Ptps_Error) => {
+                //            <- TODO: Custom type of error
+                reject(new Error(error.errorMessage));
+                socket.disconnect();
             });
         });
 

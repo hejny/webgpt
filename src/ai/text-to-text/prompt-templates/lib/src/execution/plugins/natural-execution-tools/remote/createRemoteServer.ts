@@ -4,6 +4,7 @@ import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
 import { PromptResult } from '../../../PromptResult';
 import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
+import { Ptps_Error } from './interfaces/Ptps_Error';
 import { Ptps_Request } from './interfaces/Ptps_Request';
 import { Ptps_Response } from './interfaces/Ptps_Response';
 import { RemoteServerOptions } from './interfaces/RemoteServerOptions';
@@ -56,35 +57,42 @@ export function createRemoteServer(options: RemoteServerOptions) {
                 console.info(chalk.bgGray(`Prompt:`), chalk.gray(JSON.stringify(request, null, 4)));
             }
 
-            const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools({
-                isVerbose,
-                naturalExecutionTools,
-                clientId,
-            });
+            try {
+                const executionToolsForClient = new SupabaseLoggerWrapperOfNaturalExecutionTools({
+                    isVerbose,
+                    naturalExecutionTools,
+                    clientId,
+                });
 
-            // TODO: [🎛] Check validity of the prompt against ptpLibrary
+                // TODO: [🎛] Check validity of the prompt against ptpLibrary
 
-            let promptResult: PromptResult;
-            switch (prompt.modelRequirements.variant) {
-                case 'CHAT':
-                    promptResult = await executionToolsForClient.gptChat(prompt);
-                    break;
-                case 'COMPLETION':
-                    promptResult = await executionToolsForClient.gptComplete(prompt);
-                    break;
-                default:
-                    throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+                let promptResult: PromptResult;
+                switch (prompt.modelRequirements.variant) {
+                    case 'CHAT':
+                        throw new Error(`Hohoho`);
+                        promptResult = await executionToolsForClient.gptChat(prompt);
+                        break;
+                    case 'COMPLETION':
+                        promptResult = await executionToolsForClient.gptComplete(prompt);
+                        break;
+                    default:
+                        throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+                }
+
+                if (isVerbose) {
+                    console.info(chalk.bgGreen(`PromptResult:`), chalk.green(JSON.stringify(promptResult, null, 4)));
+                }
+
+                socket.emit('response', { promptResult } satisfies Ptps_Response);
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                socket.emit('error', { errorMessage: error.message } satisfies Ptps_Error);
+            } finally {
+                socket.disconnect();
             }
-
-            if (isVerbose) {
-                console.info(chalk.bgGreen(`  PromptResult:  `), chalk.green(JSON.stringify(promptResult, null, 4)));
-            }
-
-            socket.emit('response', { promptResult } satisfies Ptps_Response);
-
-            // TODO: !!! Handle errors
-            // TODO: !! Handle progress
-            // TODO: !! Disconnect after some timeout
         });
 
         socket.on('disconnect', () => {
@@ -105,6 +113,7 @@ export function createRemoteServer(options: RemoteServerOptions) {
 }
 
 /**
+ * TODO: Handle progress - support streaming
  * TODO: [🤹‍♂️] Do not hang up immediately but wait until client closes OR timeout
  * TODO: [🤹‍♂️] Timeout on chat to free up resources
  * TODO: [🃏] Pass here some security token to prevent DDoS
