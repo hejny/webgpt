@@ -285,7 +285,8 @@ export async function createNewWallpaper(
     });
 
     const { content } = await webgptPtpLibrary.createExecutor(
-        'writeWebsiteContent',
+        // TODO: !!! Switch cs/en based on locale
+        'writeWebsiteContent' /* <- TODO: [👧] Constrain key to only existing PTPs in the library */,
         getExecutionToolsForWorker(author),
     )(
         {
