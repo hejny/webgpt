@@ -29,7 +29,8 @@ export type string_model_name =
     | 'gpt-3.5-turbo-16k'
     | 'gpt-3.5-turbo-0301'
     | 'gpt-3.5-turbo-0613'
-    | 'gpt-3.5-turbo-16k-0613' /* <- TODO: Import from 'openai' package */;
+    | 'gpt-3.5-turbo-16k-0613'
+    | string /* <- TODO: Import from 'openai' package */;
 
 /**
  * Semantic helper
@@ -37,6 +38,13 @@ export type string_model_name =
  * For example `"A cat wearing a hat"`
  */
 export type string_prompt = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"A cat wearing a {ITEM}"`
+ */
+export type string_template = string;
 
 /**
  * Semantic helper
@@ -175,6 +183,16 @@ export type string_markdown = string;
 /**
  * Semantic helper
  *
+ * Markdown text without any structure like h1, h2, lists, blockquotes, blocks, etc.
+ * BUT with bold, italic, etc.
+ *
+ * For example `"**Hello** World!"`
+ */
+export type string_markdown_text = string;
+
+/**
+ * Semantic helper
+ *
  * For example `"towns.cz"`
  */
 export type string_domain = string;
@@ -199,6 +217,13 @@ export type string_css = string;
  * For example `"<svg><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /></svg>"`
  */
 export type string_svg = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `console.info("Hello World!")` or `print("Hello World!")`
+ */
+export type string_script = string;
 
 /**
  * Semantic helper
@@ -241,6 +266,20 @@ export type string_css_selector = string;
  * For example `"https://collboard.com/9SeSQTupmQHwuSrLi"`
  */
 export type string_url = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v2.4.15"`
+ */
+export type string_ptp_url = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v2.4.15#keywords"`
+ */
+export type string_ptp_url_with_hashtemplate = string;
 
 /**
  * Semantic helper
@@ -321,7 +360,7 @@ export type string_email = string;
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  */
 export type uuid = string & {
-    __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
+    readonly __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
 };
 
 /**
@@ -432,13 +471,13 @@ export type string_person_profile = string;
  * Full profile of the person with his email and web (like in package.json)
  */
 export interface IPersonProfile {
-    name?: string_person_fullname;
+    readonly name?: string_person_fullname;
 
     /**
      * Note: Photos are taken from Gravatar by email
      */
-    email?: string_email;
-    url?: string_url;
+    readonly email?: string_email;
+    readonly url?: string_url;
 }
 
 /**
@@ -452,16 +491,16 @@ export type string_license = string;
  * License with its type and url like in package.json
  */
 export interface ILicense {
-    type?: string_license;
-    url?: string;
+    readonly type?: string_license;
+    readonly url?: string;
 }
 
 /**
  * Repository with its type and url like in package.json
  */
 export interface IRepository {
-    type?: string | 'git';
-    url?: string;
+    readonly type?: string | 'git';
+    readonly url?: string;
 }
 
 /**
@@ -547,7 +586,7 @@ export type string_translate_name_not_normalized = string;
  * TODO: Probably use enum
  * TODO: Rename - remove string_ prefix like ITranslateLanguageCode
  */
-export type string_translate_language = 'en' | 'cs' | 'sk' | 'uk';
+export type string_translate_language = 'en' | 'cs';
 
 /**
  * Semantic helper; For example "callbackName" or "renderMe"

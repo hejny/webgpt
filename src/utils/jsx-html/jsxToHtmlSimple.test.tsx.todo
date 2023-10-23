@@ -24,7 +24,7 @@ describe('conversion of JSX to simple HTML', () => {
         ).toBe('<div>deep <span>bar</span></div>');
     });
 
-    it('will convert emptiness', () => {
+    it('should convert emptiness', () => {
         expect(jsxToHtmlSimple(<></>)).toBe('');
         // TODO: What behaviour is better to return "<div/>" or "<div></div>"?
         expect(jsxToHtmlSimple(<div />)).toBe('<div/>');

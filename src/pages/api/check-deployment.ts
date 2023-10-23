@@ -5,12 +5,12 @@ export interface CheckDeploymentHandlerResponse {
     /**
      * Type of app running on the domain
      */
-    appRunning: 'WEBGPT' | 'UNKNOWN' | 'NOTHING';
+    readonly appRunning: 'WEBGPT' | 'UNKNOWN' | 'NOTHING';
 
     /**
      * Is the page fully deployed
      */
-    isFullyReady: boolean;
+    readonly isFullyReady: boolean;
 
     // TODO: [🚈][🧠] checkedAt: string_date;
     // TODO: [🚈][🧠] isSslCertificateReady: boolean;

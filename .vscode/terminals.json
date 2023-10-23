@@ -4,7 +4,12 @@
         {
             "name": "👨🏽‍💻 Develop",
             "command": "npm run dev",
-            "focus": true
+            "focus": false
+        },
+        {
+            "name": "👨🏽‍💻 Run PTP server",
+            "commands": ["ts-node ./ptp-server/server.ts"],
+            "focus": false
         },
         {
             "name": "🌎 Expose",
@@ -112,6 +117,12 @@
             "focus": true
         },
         {
+            "name": "🏭🌠 Generate JSONs from PTP samples",
+            "commands": ["ts-node ./scripts/ptp-generate-sample-jsons/generate-sample-jsons.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🏭🥫 Generate Supabase types",
             "commands": [
                 "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
@@ -139,6 +150,12 @@
                 "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --dbname DATABASE_URL > database/dumps/structure+data.dump.pgsql"
             ],
             "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🌍 SSH pavolhejny.com",
+            "command": "ssh root@138.68.100.38",
             "onlySingle": true,
             "focus": true
         },

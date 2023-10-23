@@ -6,7 +6,7 @@ import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 interface RegisterResponse {
     // TODO: [🌋] ErrorableResponse
-    message: string;
+    readonly message: string;
 }
 
 /**

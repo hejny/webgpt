@@ -6,7 +6,7 @@ import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer'
 /*
 TODO:
 interface AboutResponse {
-    result: WhoisSearchResult;
+    readonly result: WhoisSearchResult;
 }
 */
 

@@ -1,3 +1,4 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import webgptLogo from '../../public/logo/webgpt.white.svg';
 import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
@@ -8,6 +9,8 @@ import { Scenarios } from '../components/Scenarios/Scenarios';
 import { Center } from '../components/SimpleLayout/Center';
 import { StaticLayout } from '../components/StaticLayout/StaticLayout';
 import { PAGES_CONTENTS } from '../components/WallpaperContent/getPageContent';
+
+
 
 export default function HomePage() {
     return (
@@ -65,6 +68,14 @@ export default function HomePage() {
             </article>
         </StaticLayout>
     );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['common'])),
+        },
+    };
 }
 
 /**

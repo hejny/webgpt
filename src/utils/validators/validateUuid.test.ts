@@ -16,14 +16,14 @@ describe(`validation of UUIDs`, () => {
     });
 
     it(`is NOT valid`, () => {
-        expect(() => validateUuid(``)).toThrowError();
-        expect(() => validateUuid(`1`)).toThrowError();
-        expect(() => validateUuid(`1.A`)).toThrowError();
-        expect(() => validateUuid(`Hello`)).toThrowError();
-        expect(() => validateUuid(`d132ff5f`)).toThrowError();
-        expect(() => validateUuid(`b4821d3c-5c73-4048-a07d`)).toThrowError();
-        expect(() => validateUuid(`9SeSQTupmQHwuSrLi`)).toThrowError();
-        expect(() => validateUuid(`wqgbh5qgkohkjhtetvh7`)).toThrowError();
-        expect(() => validateUuid(`uuyrr6h4niwaqfbmlb65`)).toThrowError();
+        expect(() => validateUuid(``)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`1`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`1.A`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`Hello`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`d132ff5f`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`b4821d3c-5c73-4048-a07d`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`9SeSQTupmQHwuSrLi`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`wqgbh5qgkohkjhtetvh7`)).toThrowError(/Invalid uuid/i);
+        expect(() => validateUuid(`uuyrr6h4niwaqfbmlb65`)).toThrowError(/Invalid uuid/i);
     });
 });

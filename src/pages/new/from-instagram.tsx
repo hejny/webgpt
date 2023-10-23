@@ -7,11 +7,14 @@ import { INSTAGRAM_PLACEHOLDERS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../con
 import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
 import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
+import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
 import { Center } from '../../components/SimpleLayout/Center';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
+import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { useLocale } from '../../utils/hooks/useLocale';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
 import { randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
@@ -23,6 +26,7 @@ import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram
 
 export default function NewWallpaperFromInstagramPage() {
     const router = useRouter();
+    const locale = useLocale();
     const [isWorking, setWorking] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
@@ -32,6 +36,7 @@ export default function NewWallpaperFromInstagramPage() {
     return (
         <>
             <StaticAppHead subtitle={null} />
+            <LanguagePickerWithHint />
 
             <div className={styles.page}>
                 <main>
@@ -45,7 +50,13 @@ export default function NewWallpaperFromInstagramPage() {
                         </h1>
                         <CopilotInput
                             {...{ placeholders }}
-                            label="Enter your Instagram:"
+                            label={
+                                <>
+                                    {/* [⛳] */}
+                                    <Translate locale="en">Enter your Instagram:</Translate>
+                                    <Translate locale="cs">Zadejte svůj Instagram:</Translate>
+                                </>
+                            }
                             onPrompt={async (prompt) => {
                                 setWorking(true);
                                 setTasksProgress([
@@ -116,11 +127,13 @@ export default function NewWallpaperFromInstagramPage() {
 
                                     const { wallpaperId } = await createNewWallpaperForBrowser(
                                         {
+                                            locale,
+                                            title,
                                             author: await provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-                                            title,
+
                                             description /* <- TODO: ALter with biography_with_entities */,
                                             addSections: [
                                                 // TODO: Instagram AI component gallery
@@ -185,7 +198,11 @@ export default function NewWallpaperFromInstagramPage() {
                                 }
                             }
                         >
-                            I have no Instagram account
+                            <>
+                                {/* [⛳] */}
+                                <Translate locale="en">I have no Instagram account</Translate>
+                                <Translate locale="cs">Nemám účet na Instagramu</Translate>
+                            </>
                         </Link>
                     </Center>
                 </main>

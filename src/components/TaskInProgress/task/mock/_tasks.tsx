@@ -79,4 +79,46 @@ export const MOCKED_TASKS_PROGRESS_QUEUE: Array<TaskProgress> = [
         title: 'Something different F (6)',
         isDone: true,
     },
+
+    {
+        name: 'content-1',
+        title: '🖋 Writing title',
+        isDone: false,
+    },
+
+    {
+        name: 'content-2',
+        title: '🖋 Writing title',
+        isDone: false,
+    },
+
+    {
+        name: 'content-3',
+        title: '🖋 Writing description',
+        isDone: false,
+    },
+
+    {
+        name: 'content-4',
+        title: '🖋 Keyword analysis',
+        isDone: false,
+    },
+
+    {
+        name: 'content-5',
+        title: '🖋 Writing foo',
+        isDone: false,
+    },
+
+    {
+        name: 'content-6',
+        title: '🖋 Writing bar',
+        isDone: false,
+    },
+
+    {
+        name: 'content-7',
+        title: '🖋 Writing baz',
+        isDone: false,
+    },
 ];

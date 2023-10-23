@@ -14,13 +14,13 @@ export type IMessageMainToWorker<TRequest extends TransferableObject> =
     | IMessagePromptDialogueAnswer;
 
 export interface IMessageRequest<TRequest extends TransferableObject> {
-    type: 'REQUEST';
-    request: TRequest;
+    readonly type: 'REQUEST';
+    readonly request: TRequest;
 }
 
 export interface IMessagePromptDialogueAnswer {
-    type: 'PROMPT_DIALOGUE_ANSWER';
-    promptAnswer: string | null /* <-[🍁] */;
+    readonly type: 'PROMPT_DIALOGUE_ANSWER';
+    readonly promptAnswer: string | null /* <-[🍁] */;
 }
 
 export type IMessageWorkerToMain<TResult extends TransferableObject> =
@@ -30,21 +30,21 @@ export type IMessageWorkerToMain<TResult extends TransferableObject> =
     | IMessagePromptDialogue;
 
 export interface IMessageProgress {
-    type: 'PROGRESS';
-    taskProgress: TaskProgress;
+    readonly type: 'PROGRESS';
+    readonly taskProgress: TaskProgress;
 }
 
 export interface IMessageResult<TResult extends TransferableObject> {
-    type: 'RESULT';
-    result: TResult;
+    readonly type: 'RESULT';
+    readonly result: TResult;
 }
 
 export interface IMessageError {
-    type: 'ERROR';
-    message: string;
+    readonly type: 'ERROR';
+    readonly message: string;
 }
 
 export interface IMessagePromptDialogue {
-    type: 'PROMPT_DIALOGUE';
-    promptOptions: IPromptDialogueOptions;
+    readonly type: 'PROMPT_DIALOGUE';
+    readonly promptOptions: IPromptDialogueOptions;
 }

@@ -22,3 +22,7 @@ export function Sample(props: SampleProps) {
     const { children, className } = props;
     return <div className={classNames(className, styles.Sample)}>{children}</div>;
 }
+
+/**
+ * TODO: [🧠] Should be the props readonly (for all react components)?
+ */
