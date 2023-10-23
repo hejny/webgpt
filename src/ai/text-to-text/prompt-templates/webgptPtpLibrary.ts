@@ -1,5 +1,5 @@
 import writeWebsiteContentCs from '../../../../prompts/templates/write-website-content.cs.ptp.md';
-import writeWebsiteContent from '../../../../prompts/templates/write-website-content.en.ptp.md';
+import writeWebsiteContent from '../../../../prompts/templates/write-website-content.ptp.md';
 import { PromptTemplatePipelineLibrary } from './lib/src/classes/PromptTemplatePipelineLibrary';
 
 /**
