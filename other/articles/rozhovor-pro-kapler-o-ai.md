@@ -54,6 +54,31 @@ Jakmile je potřeba něco složitějšího, existují v principu čtyři metody,
 -   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _"Napiš mi název kavárny"_, _"Napiš mi popis kavárny"_, _"Napiš mi menu kavárny"_, _"Vygeneruj mi fotky kavárny"_, _"Napiš mi odkaz na sociální sítě kavárny"_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
 -   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického if/else programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _"Programuješ i v TypeScriptu nebo mám napsat jen JavaScript"_. Také je občas potřeba určité informace dohledat a ne si je "vyhalucinovat". V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **Prompt template pipelines**](https://github.com/webgptorg/ptp) aby šli podobné postupy psát i neprogramátorem v dokumentech.
 
+
+
+v principu máme čtyři směry kterými dokážeme zlepšovat výsledek, ty se dají docela dobře kombinovat mezi sebou
+
+
+
+Tím prvním je zlepšovat Tím prvním je pokus je zlepšování na úrovni modelu, Dá se buď vybrat lepší či horší model Dá se nastavovat temperature nebo lze dělat fajn tuning kdy model dotrénovávám vlastními daty
+
+
+tím druhým je práce na úrovni promptu případně systém message
+
+tou třetí cestou je spojování do pipelines kdy výsledek 1 prombdu pro bublá do druhého a výsledek 2 do 3
+
+a tou čtvrtou je zapojení klasického programování
+
+tou pátou Je interakce s externími zdroji buď volání API nebo interakce s uživatelem
+
+
+
+
+
+
+
+
+
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
 To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech. V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
