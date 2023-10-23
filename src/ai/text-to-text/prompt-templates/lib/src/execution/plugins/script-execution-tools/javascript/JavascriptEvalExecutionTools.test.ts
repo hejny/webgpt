@@ -88,6 +88,16 @@ describe('JavascriptEvalExecutionTools', () => {
         );
     });
 
+    it('should throw error from script', () => {
+        expect(
+            javascriptEvalExecutionTools.execute({
+                scriptLanguage: 'javascript',
+                parameters: {},
+                script: `throw new Error('Some error')`,
+            }),
+        ).rejects.toEqual('Some error');
+    });
+
     it('should evaluate custom function', () => {
         expect(
             javascriptEvalExecutionTools.execute({
@@ -122,6 +132,5 @@ describe('JavascriptEvalExecutionTools', () => {
 });
 
 /**
- * TODO: !!! Test throwing errors from script execution
  * TODO: !! Make shared test between JavascriptEvalExecutionTools and JavascriptExecutionTools to test the same functionality when implemented via vm2
  */

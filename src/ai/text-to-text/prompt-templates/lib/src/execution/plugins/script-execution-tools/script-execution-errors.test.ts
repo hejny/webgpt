@@ -23,7 +23,10 @@ describe('createPtpExecutor + executing scripts in ptp', () => {
             -   Execute script
             
             \`\`\`javascript
-            thing.split('a').join('b')
+            if(/Apple/i.test(thing)){
+                throw new Error('I do not like Apples!');
+            }
+            return thing.split('a').join('b')
             \`\`\`
             
             -> {bhing}
@@ -44,16 +47,25 @@ describe('createPtpExecutor + executing scripts in ptp', () => {
         },
     });
 
-    it('should work when every input parameter defined', () => {
-        expect(ptpExecutor({ thing: 'apple' }, () => {})).resolves.toMatchObject({
-            bhing: 'bpple',
-        });
+    it('should work when every input parameter is allowed', () => {
         expect(ptpExecutor({ thing: 'a cup of coffee' }, () => {})).resolves.toMatchObject({
             bhing: 'b cup of coffee',
         });
+        expect(ptpExecutor({ thing: 'arrow' }, () => {})).resolves.toMatchObject({
+            bhing: 'brrow',
+        });
+        expect(ptpExecutor({ thing: 'aaa' }, () => {})).resolves.toMatchObject({
+            bhing: 'bbb',
+        });
     });
 
-    it('should fail when some input parameter is missing', () => {
-        expect(ptpExecutor({}, () => {})).rejects.toThrowError(/not defined/i);
+    it('should fail when input parameter is NOT allowed', () => {
+        expect(() => ptpExecutor({ thing: 'apple' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
+        expect(() => ptpExecutor({ thing: 'apples' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
+        expect(() => ptpExecutor({ thing: 'an apple' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
+        expect(() => ptpExecutor({ thing: 'Apple' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
+        expect(() => ptpExecutor({ thing: 'The Apple' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
+        expect(() => ptpExecutor({ thing: '🍏 Apple' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
+        expect(() => ptpExecutor({ thing: 'Apple 🍎' }, () => {})).rejects.toThrowError(/I do not like Apples/i);
     });
 });
