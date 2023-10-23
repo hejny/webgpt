@@ -1,5 +1,6 @@
 import { MeshBuilder } from 'babylonjs';
 import { useEffect } from 'react';
+import { Vector } from 'xyzt';
 import { IS_DEVELOPMENT } from '../../../config';
 import { useGraph } from '../../utils/hooks/useGraph';
 import { Dialogues } from '../Dialogues/Dialogues';
@@ -67,6 +68,13 @@ export function TasksInProgress(props: TaskInProgressProps) {
         ],
     );
 
+    let translateBy = Vector.zero();
+    const numberOfTasksToFitInPage = 5;
+    if (tasksProgress && tasksProgress.length > numberOfTasksToFitInPage) {
+        const numberOfTasksOutOfPage = tasksProgress.length - numberOfTasksToFitInPage;
+        translateBy = translateBy.add({ y: -numberOfTasksOutOfPage * 20 });
+    }
+
     return (
         <>
             <div className={styles.TasksInProgress}>
@@ -76,6 +84,9 @@ export function TasksInProgress(props: TaskInProgressProps) {
                     style={{
                         // Note: In development we want to be able to click on the tasks
                         pointerEvents: IS_DEVELOPMENT ? 'none' : undefined,
+                        transform: translateBy.isZero()
+                            ? undefined
+                            : `translate(${translateBy.x}px, ${translateBy.y}px)`,
                     }}
                 />
 
@@ -84,6 +95,9 @@ export function TasksInProgress(props: TaskInProgressProps) {
                         className={styles.tasklist}
                         style={{
                             pointerEvents: IS_DEVELOPMENT ? 'all' : undefined,
+                            transform: translateBy.isZero()
+                                ? undefined
+                                : `translate(${translateBy.x}px, ${translateBy.y}px)`,
                         }}
                     >
                         <ul>
