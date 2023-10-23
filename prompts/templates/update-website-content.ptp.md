@@ -20,9 +20,9 @@ Act as an experienced webdesigner and manager, you have a raw assigment from the
 Make a proffesional assigment from it.
 
 ## Rules
-- Do not make it long
-- Do not greeting or signature
-- Do not add polite words like please or thank you
+- Do NOT make it long
+- Do NOT greeting or signature
+- Do NOT add polite words like "please" or "thank"
 - Preserve the language of the original assigment
 
 ## Original assigment:
