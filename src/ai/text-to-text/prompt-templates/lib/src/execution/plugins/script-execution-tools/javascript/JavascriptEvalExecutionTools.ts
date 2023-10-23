@@ -9,7 +9,7 @@ import {
     normalizeTo_SCREAMING_CASE as _normalizeTo_SCREAMING_CASE,
     normalizeTo_snake_case as _normalizeTo_snake_case,
     normalizeWhitespaces as _normalizeWhitespaces,
-    parseKeywordsFromString as _parseKeywordsFromString,
+    parseKeywordsFromString,
     removeDiacritics as _removeDiacritics,
 } from 'n12';
 import { spaceTrim as _spaceTrim } from 'spacetrim';
@@ -66,7 +66,10 @@ export class JavascriptEvalExecutionTools implements ScriptExecutionTools {
         const normalizeTo_camelCase = _normalizeTo_camelCase;
         const normalizeTo_snake_case = _normalizeTo_snake_case;
         const normalizeTo_PascalCase = _normalizeTo_PascalCase;
-        const parseKeywords = _parseKeywordsFromString; /* <- TODO: !!! Change to return string */
+        const parseKeywords = (input: string) =>
+            Array.from(parseKeywordsFromString(input)).join(
+                ', ',
+            ); /* <- TODO: [🧠] What is the best format comma list, bullet list,...? */
         const normalizeTo_SCREAMING_CASE = _normalizeTo_SCREAMING_CASE;
         capitalize;
         decapitalize;
