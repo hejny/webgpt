@@ -41,6 +41,13 @@ export type string_prompt = string;
 /**
  * Semantic helper
  *
+ * For example `"A cat wearing a {ITEM}"`
+ */
+export type string_template = string;
+
+/**
+ * Semantic helper
+ *
  * For example `"A cat wearing a hat"`
  */
 export type string_image_prompt = string_prompt;

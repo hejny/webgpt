@@ -1,6 +1,7 @@
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
-import { string_chat_prompt, string_model_name, uuid } from '../../utils/typeAliases';
+import { string_model_name, uuid } from '../../utils/typeAliases';
 import { getOpenaiForServer } from './getOpenaiForServer';
+import { Prompt } from './prompt-templates/PromptTemplate';
 
 /**
  * Thread to the ChotGPT
@@ -14,7 +15,7 @@ export class ChatThread {
      * @param request text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public static async ask(request: string_chat_prompt, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
+    public static async ask(request: Prompt<'CHAT'>, clientId: uuid /* <-[🌺] */): Promise<ChatThread> {
         return /* not await */ ChatThread.create(null, request, clientId);
     }
 
@@ -24,7 +25,7 @@ export class ChatThread {
      */
     private static async create(
         parentChatThread: null | ChatThread,
-        request: string_chat_prompt,
+        request: Prompt<'CHAT'>,
         clientId: uuid /* <-[🌺] */,
     ): Promise<ChatThread> {
         const mark = `ask-gpt-${parentChatThread ? parentChatThread.chatSize : 1}`;
@@ -38,7 +39,7 @@ export class ChatThread {
             messages: [
                 {
                     role: 'user',
-                    content: request,
+                    content: request.toString(),
                 },
             ],
         });
@@ -109,7 +110,7 @@ export class ChatThread {
         public readonly clientId: uuid /* <-[🌺] */,
         public readonly parent: null | ChatThread,
         public readonly model: string_model_name,
-        public readonly request: string_chat_prompt,
+        public readonly request: Prompt<'CHAT'>,
         public readonly response: string,
     ) {}
 
@@ -119,7 +120,7 @@ export class ChatThread {
      * @param request text to send to the OpenAI API
      * @returns response from the OpenAI API wrapped in ChatThread
      */
-    public async ask(request: string_chat_prompt): Promise<ChatThread> {
+    public async ask(request: Prompt<'CHAT'>): Promise<ChatThread> {
         return /* not await */ ChatThread.create(this, request, this.clientId);
     }
 
@@ -129,8 +130,8 @@ export class ChatThread {
 }
 
 /**
- * TODO: [🚞] DRY ChatThread+completeWithGpt
  * TODO: [🧠] Wording: response or answer?
+ * TODO: [🚞] DRY ChatThread+completeWithGpt
  * TODO: [5] Log also failed requests as in completeWithGpt
  * TODO: Make IAskOptions
  */
