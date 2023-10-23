@@ -8,6 +8,8 @@ module.exports = {
     },
     localePath: join(__dirname, 'locales'),
     localeExtension: 'yml',
+
+    // TODO: !! Use here domains webgpt.cz, 1-2i.com
 };
 
 /**
