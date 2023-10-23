@@ -114,6 +114,7 @@ export function CopilotPanel() {
 
             const newContentWithFont = addFontToContent(newContent || '', font);
 
+            /*/
             const newContentWithMetadata = spaceTrim(
                 (block) => `
                     ${block(newContentWithFont)}
@@ -129,6 +130,10 @@ export function CopilotPanel() {
                     </div>
                 `, // <- TODO: !! Just newContent, maybe use this in some debug mode
             );
+            /**/
+            /**/
+            const newContentWithMetadata = newContentWithFont;
+            /**/
 
             console.info('CopilotPanel: Update wallpaper content: ', { oldContent, newContent });
 
