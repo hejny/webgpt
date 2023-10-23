@@ -95,6 +95,10 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
 
     let contentStart: string_markdown = '';
 
+    if (!assigment) {
+        throw new Error('You must provide assigment');
+    }
+
     if (title !== null) {
         contentStart = spaceTrim(
             (block) => `
@@ -105,9 +109,6 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
             `,
         );
     } else {
-        if (!assigment) {
-            throw new Error('Either title or assigment must be provided');
-        }
         const prompt = createTitlePromptTemplate(assigment);
         const chatThread = await ChatThread.ask(prompt, clientId);
         const { response } = chatThread;
@@ -129,11 +130,61 @@ export async function writeWallpaperContent(options: WriteWallpaperContentOption
         spaceTrim(
             // TODO: [🤡] This prompt should be also created in some template function
             // TODO: [🤡] Pefect this prompt
+
+            //       https://www.instagram.com/michelangelato.zmrzlinarna/
+            // TODO: !!! Try Completion (send do Dan) vs Chat
+            // TODO: !!! Unhardcode MichelanGELATO
+            // TODO: !!! Unhardcode CS
+            // TODO: !!! Unhardcode keywords
+
+            /*
+            Testing Assigments
+            
+            ---
+
+Nejlepší zmrzlina v Olomouci
+Gelato neboli tradiční italská zmrzlina.🍨❤️
+Pavelčákova 8, Olomouc. 
+Po - Ne od 10:00 - 19:00 hodin
+Řemeslně připravovaná v naší olomoucké kuchyni.👌
+Michaela.macakova@michelangelato.cz
+774 198 084
+http://michelangelato.cz/
+
+            --
+            
+            */
             (block) => `
 
-                Following is markdown content of a webpage:
+                Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření textu pro novou webovou stránku zmrzlinárny MichelanGELATO v Olomouci.
+                
+                Zadání od zákazníka:
+                \`\`\`
+                "${block(assigment)}"
+                \`\`\`
 
+                Pokyny:
+                - Formátování textu je v Markdownu
+                - Buďte struční a výstižní
+                - Použijte klíčová slova, avšak ta mají být přirozeně v textu
+                - Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
+                - Použijte nadpisy, odrážky, formátování textu
+                
+                Klíčová slova:
+                - Zmrzlina
+                - Olomouc
+                - Kvalita
+                - Rodina
+                - Tradice
+                - Itálie
+                - Řemeslo
+
+                Začátek obsahu:
+                \`\`\`
                 ${block(contentStart)}
+                \`\`\`
+
+                Pokračujte obsahem:
         
             `,
         ),
