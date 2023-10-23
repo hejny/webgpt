@@ -23,6 +23,7 @@ export function parseCommand(listItem: string_markdown_text): Command {
     type = type.split('(').join('');
     type = type.split(')').join('');
     type = normalizeTo_SCREAMING_CASE(type);
+    type = type.split('DIALOGUE').join('DIALOG');
 
     const listItemParts = listItem
         .split(' ')
@@ -100,7 +101,12 @@ export function parseCommand(listItem: string_markdown_text): Command {
             type: 'PTP_VERSION',
             ptpVersion,
         };
-    } else if (type.startsWith('EXECUTE')) {
+    } else if (
+        type.startsWith('EXECUTE') ||
+        type.startsWith('EXEC') ||
+        type.startsWith('PROMPT_DIALOG') ||
+        type.startsWith('SIMPLE_TEMPLATE')
+    ) {
         const executionTypes = ExecutionTypes.filter((executionType) => type.includes(executionType));
 
         if (executionTypes.length !== 1) {

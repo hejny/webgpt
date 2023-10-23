@@ -19,7 +19,7 @@ describe('createPtpExecutor + executing user interface prompts in ptp', () => {
             
             ## Prompt
 
-            -   Execute prompt dialog
+            -   Prompt dialog
 
             What is your favorite {thing} to buy?
             

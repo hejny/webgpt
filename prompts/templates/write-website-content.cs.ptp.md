@@ -30,11 +30,7 @@ English assignment:
 
 Popište cíl vašeho webu
 
-<!--
-TODO: !!! [🧠] Maybe just "prompt dialog" and "simple template"
--->
-
--   Execute prompt dialog
+-   Prompt dialog
 
 ```text
 {rawAssigmentCs}
@@ -70,7 +66,7 @@ Zadání od zákazníka:
 
 Je název Vašeho webu v pořádku?
 
--   Execute prompt dialog
+-   Prompt dialog
 
 ```text
 {enhancedTitle}
@@ -135,7 +131,7 @@ Zadání webu od zákazníka:
 
 ## + Vytvoření začátku obsahu webu
 
--   Execute simple template
+-   Simple template
 
 ```text
 
@@ -182,7 +178,7 @@ Zadání webu od zákazníka:
 
 ## 🔗 Spojení obsahu
 
--   Execute simple template
+-   Simple template
 
 ```markdown
 {contentBeginning}

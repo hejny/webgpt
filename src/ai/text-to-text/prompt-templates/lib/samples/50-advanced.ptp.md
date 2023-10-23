@@ -91,7 +91,7 @@ Compare meaning of thee two sentences:
 
 ## 🔗 Summary
 
--   Execute simple template
+-   Simple template
 
 ```markdown
 You have entered a word **{word}**. For this word the best synonym is **{wordSynonym}**. The sentence with both words is **{sentenceWithTwoSynonyms}**. The sentence without the original word is **{sentenceWithOriginalWordRemoved}**. And the comparison between the two sentences is:
