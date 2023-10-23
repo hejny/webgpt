@@ -1,3 +1,3 @@
 TODO: Implement PTP Imports
-TODO: [🧠] Maybe better to use: translate(en->cs)=>assigment=>translate(cs->en)=>write-website-content.en.ptp.md=>translate(en->cs)
+TODO: [🧠] Maybe better to use: translate(en->cs)=>assigment=>translate(cs->en)=>write-website-content.ptp.md=>translate(en->cs)
 TODO: [🧠] Wording: Assigment, Description, Prompt, biography

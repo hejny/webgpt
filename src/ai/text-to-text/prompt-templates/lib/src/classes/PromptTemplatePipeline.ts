@@ -1,8 +1,10 @@
 import { string_name } from '../../../../../../utils/typeAliases';
+import { promptTemplatePipelineStringToJson } from '../conversion/promptTemplatePipelineStringToJson';
 import { validatePromptTemplatePipelineJson } from '../conversion/validatePromptTemplatePipelineJson';
 import { PromptTemplateJson } from '../types/PromptTemplatePipelineJson/PromptTemplateJson';
 import { PromptTemplateParameterJson } from '../types/PromptTemplatePipelineJson/PromptTemplateParameterJson';
 import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 
 /**
  * Prompt template pipeline is the **core concept of this library**.
@@ -17,20 +19,51 @@ import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/
  */
 export class PromptTemplatePipeline {
     /**
+     * Constructs PromptTemplatePipeline from any source
+     *
+     * Note: During the construction syntax and logic of source is validated
+     *
+     * @param source content of .ptp.md or .ptp.json file
+     * @returns PromptTemplatePipeline
+     */
+    public static fromSource(
+        ptpSource: PromptTemplatePipelineString | PromptTemplatePipelineJson,
+    ): PromptTemplatePipeline {
+        if (typeof ptpSource === 'string') {
+            return PromptTemplatePipeline.fromString(ptpSource);
+        } else {
+            return PromptTemplatePipeline.fromJson(ptpSource);
+        }
+    }
+
+    /**
+     * Constructs PromptTemplatePipeline from markdown source
+     *
+     * Note: During the construction syntax and logic of source is validated
+     *
+     * @param ptpString content of .ptp.md file
+     * @returns PromptTemplatePipeline
+     */
+    public static fromString(ptpString: PromptTemplatePipelineString): PromptTemplatePipeline {
+        const ptpjson = promptTemplatePipelineStringToJson(ptpString);
+        return PromptTemplatePipeline.fromJson(ptpjson);
+    }
+
+    /**
      * Constructs PromptTemplatePipeline from JSON source
      *
      * Note: During the construction the source is logic validated
      *
-     * @param source
+     * @param ptpjson content of .ptp.json file parsed into JSON
      * @returns PromptTemplatePipeline
      */
-    public static fromJson(source: PromptTemplatePipelineJson): PromptTemplatePipeline {
-        validatePromptTemplatePipelineJson(source);
+    public static fromJson(ptpjson: PromptTemplatePipelineJson): PromptTemplatePipeline {
+        validatePromptTemplatePipelineJson(ptpjson);
 
         return new PromptTemplatePipeline(
-            source.ptpUrl ? new URL(source.ptpUrl) : null,
-            Object.fromEntries(source.parameters.map((parameter) => [parameter.name, parameter])),
-            source.promptTemplates,
+            ptpjson.ptpUrl ? new URL(ptpjson.ptpUrl) : null,
+            Object.fromEntries(ptpjson.parameters.map((parameter) => [parameter.name, parameter])),
+            ptpjson.promptTemplates,
         );
     }
 

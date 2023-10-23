@@ -3,6 +3,8 @@ import { createPtpExecutor } from '../execution/createPtpExecutor';
 import { ExecutionTools } from '../execution/ExecutionTools';
 import { PtpExecutor } from '../execution/PtpExecutor';
 import { Prompt } from '../types/Prompt';
+import { PromptTemplatePipelineJson } from '../types/PromptTemplatePipelineJson/PromptTemplatePipelineJson';
+import { PromptTemplatePipelineString } from '../types/PromptTemplatePipelineString';
 import { PromptTemplatePipeline } from './PromptTemplatePipeline';
 
 /**
@@ -15,16 +17,26 @@ import { PromptTemplatePipeline } from './PromptTemplatePipeline';
  * @see https://github.com/webgptorg/ptp#prompt-template-pipeline-library
  */
 export class PromptTemplatePipelineLibrary {
-    /*
-    TODO: 
-        !! Make library @ptp/tools
-        make createFromJsons, createFromDirectory
-        public static fromJsons(...sources: Array<PromptTemplatePipelineJson>): PromptTemplatePipelineLibrary {
-        return new PromptTemplatePipelineLibrary(sources.map((source) => PromptTemplatePipeline.fromJson(source)));
+    /**
+     * Constructs PromptTemplatePipeline from any sources
+     *
+     * Note: During the construction syntax and logic of all sources are validated
+     * Note: You can combine .ptp.md and .ptp.json files BUT it is not recommended
+     *
+     * @param ptpSources contents of .ptp.md or .ptp.json files
+     * @returns PromptTemplatePipelineLibrary
+     */
+    public static fromSources(
+        ptpSources: Record<string_name, PromptTemplatePipelineJson | PromptTemplatePipelineString>,
+    ): PromptTemplatePipelineLibrary {
+        const promptTemplatePipelines: Record<string_name, PromptTemplatePipeline> = {};
+        for (const [name, source] of Object.entries(ptpSources)) {
+            promptTemplatePipelines[name] = PromptTemplatePipeline.fromSource(source);
+        }
+        return new PromptTemplatePipelineLibrary(promptTemplatePipelines);
     }
-    */
 
-    public constructor(private readonly promptTemplatePipelines: Record<string_name, PromptTemplatePipeline>) {}
+    private constructor(private readonly promptTemplatePipelines: Record<string_name, PromptTemplatePipeline>) {}
 
     /**
      * Gets prompt template pipeline by name
@@ -55,6 +67,7 @@ export class PromptTemplatePipelineLibrary {
 }
 
 /**
+ * TODO: Static method fromDirectory
  * TODO: [🤜] Add generic type for entry and result parameters
  * TODO: [🧠] Is it better to ptpLibrary.executePtp('writeXyz',{...}) OR ptpLibrary.createExecutor('writeXyz')({...}) OR createExecutor(ptpLibrary.getPtp('writeXyz'))
  * TODO: [🧠] Formarly (before commit 62229afce7668a5b85077cc18becf798b583bf8d) there were two classes PromptTemplatePipelineLibrary+PtpLibraryExecutor (maybe it was better?)

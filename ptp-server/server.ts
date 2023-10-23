@@ -11,8 +11,8 @@ import { createRemoteServer } from '../src/ai/text-to-text/prompt-templates/lib/
 createRemoteServer({
     isVerbose: false /* <- Note: We want server to be silent and OpenAiExecutionTools to be verbose */,
     port: 4445 /* <- TODO: Unhardcode (all ports) */,
-    ptpLibrary: new PromptTemplatePipelineLibrary({
-        /* <- TODO: [🎛] Use here real PTP library */
+    ptpLibrary: PromptTemplatePipelineLibrary.fromSources({
+        /* <- TODO: [🎛] Use here real webgptPtpLibrary */
     }),
     naturalExecutionTools: new OpenAiExecutionTools({ isVerbose: IS_DEVELOPMENT, openAiApiKey: OPENAI_API_KEY! }),
 });

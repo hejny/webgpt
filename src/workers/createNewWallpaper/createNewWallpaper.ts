@@ -5,7 +5,7 @@ import {
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
 import { getExecutionToolsForWorker } from '../../ai/text-to-text/prompt-templates/getExecutionToolsForWorker';
-import { ptpLibrary } from '../../ai/text-to-text/prompt-templates/ptpLibrary';
+import { webgptPtpLibrary } from '../../ai/text-to-text/prompt-templates/webgptPtpLibrary';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
@@ -284,7 +284,10 @@ export async function createNewWallpaper(
         // TODO: Make it more granular
     });
 
-    const { content } = await ptpLibrary.createExecutor('writeWebsiteContent', getExecutionToolsForWorker(author))(
+    const { content } = await webgptPtpLibrary.createExecutor(
+        'writeWebsiteContent',
+        getExecutionToolsForWorker(author),
+    )(
         {
             rawTitle:
                 title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
