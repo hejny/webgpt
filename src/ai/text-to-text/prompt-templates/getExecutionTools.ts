@@ -1,7 +1,7 @@
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PTP_SERVER_URL } from '../../../../config';
 import { promptDialogue } from '../../../components/Dialogues/dialogues/promptDialogue';
-import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
+import { isRunningInBrowser, isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { uuid } from '../../../utils/typeAliases';
 import { ExecutionTools } from './lib/src/execution/ExecutionTools';
 import { RemoteNaturalExecutionTools } from './lib/src/execution/plugins/natural-execution-tools/remote/RemoteNaturalExecutionTools';
@@ -21,13 +21,13 @@ let executionTools: ExecutionTools;
  * Get PTP execution tools
  *
  * Note: Tools are cached, so it's safe to call this function multiple times
- * Note: This function is available ONLY in worker
+ * Note: This function is available ONLY in browser or worker
  *
  * @returns ExecutionTools
  */
-export function getExecutionToolsForWorker(clientId: uuid): ExecutionTools {
-    if (!isRunningInWebWorker()) {
-        throw new Error('This function is available ONLY in worker');
+export function getExecutionTools(clientId: uuid): ExecutionTools {
+    if (!isRunningInWebWorker() && !isRunningInBrowser()) {
+        throw new Error('This function is available ONLY in browser or worker');
     }
 
     if (!executionTools) {

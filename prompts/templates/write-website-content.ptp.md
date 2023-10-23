@@ -1,4 +1,4 @@
-# 🌍 Website content
+# 🌍 Create website content
 
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
 
@@ -10,7 +10,7 @@ Instructions for creating web page content using [🌠 Prompt template pipelines
 -   Input param `{rawAssigment}` Automatically generated site entry from image recognition
 -   Output param `{content}` Web content
 
-## 👤 👤 Specifying the assigment
+## 👤 Specifying the assigment
 
 What is your web about?
 

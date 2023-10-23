@@ -1,4 +1,4 @@
-# 🌍 Obsah webové stránky
+# 🌍 Vytvoření obsahu webové stránky
 
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
 

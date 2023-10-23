@@ -1,11 +1,13 @@
 import spaceTrim from 'spacetrim';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
+    FONTS,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { getExecutionToolsForWorker } from '../../ai/text-to-text/prompt-templates/getExecutionToolsForWorker';
+import { getExecutionTools } from '../../ai/text-to-text/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/text-to-text/prompt-templates/webgptPtpLibrary';
+import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
@@ -17,6 +19,7 @@ import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
+import { randomItem } from '../../utils/randomItem';
 import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
 import {
     description,
@@ -301,7 +304,7 @@ export async function createNewWallpaper(
 
     const { content } = await webgptPtpLibrary.createExecutor(
         writeWebsiteContentLocaleMap[locale],
-        getExecutionToolsForWorker(author),
+        getExecutionTools(author),
     )(
         {
             rawTitle:
@@ -324,6 +327,16 @@ export async function createNewWallpaper(
 
     //-------[ /Write content ]---
     //===========================================================================
+    //-------[ Picking font: ]---
+    const font = randomItem(...FONTS /* <- TODO: [🧠][🔠] Some better heurictic than pure random */);
+
+    const contentWithFont = addFontToContent(
+        content || '', // <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
+        font,
+    );
+
+    //-------[ /Picking font ]---
+    //===========================================================================
     //-------[ Save: ]---
     await onProgress({
         name: 'finishing',
@@ -339,8 +352,7 @@ export async function createNewWallpaper(
         prompt: description,
         colorStats: await colorStatsPromise,
         naturalSize: originalSize,
-        content:
-            content! /* <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json */,
+        content: contentWithFont,
         saveStage: 'SAVING',
     });
 

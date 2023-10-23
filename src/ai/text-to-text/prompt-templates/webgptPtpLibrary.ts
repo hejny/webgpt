@@ -1,3 +1,4 @@
+import updateWebsiteContent from '../../../../prompts/templates/update-website-content.ptp.md';
 import writeWebsiteContentCs from '../../../../prompts/templates/write-website-content.cs.ptp.md';
 import writeWebsiteContent from '../../../../prompts/templates/write-website-content.ptp.md';
 import { PromptTemplatePipelineLibrary } from './lib/src/classes/PromptTemplatePipelineLibrary';
@@ -10,6 +11,7 @@ import { PromptTemplatePipelineLibrary } from './lib/src/classes/PromptTemplateP
 export const webgptPtpLibrary = PromptTemplatePipelineLibrary.fromSources({
     writeWebsiteContentCs,
     writeWebsiteContent,
+    updateWebsiteContent,
 });
 
 /*
