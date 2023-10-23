@@ -31,3 +31,7 @@ export function Translate(props: TranslateProps) {
 
     return <>{children}</>;
 }
+
+/**
+ * TODO: !!! Implement i18n OR remove all the code related to it
+ */

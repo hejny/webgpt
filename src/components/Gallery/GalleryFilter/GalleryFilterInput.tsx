@@ -1,4 +1,5 @@
 import { debounce } from 'lodash';
+import { useTranslation } from 'next-i18next';
 import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
@@ -26,6 +27,8 @@ interface GalleryFilterProps {
  */
 export function GalleryFilterInput(props: GalleryFilterProps) {
     const { defaultFilter, onFilterChange } = props;
+
+    const { t } = useTranslation();
 
     const [fulltext, setFulltext] = useStateWithReporting<string | undefined>(defaultFilter.fulltext, (fulltext) =>
         onFilterChange({ fulltext }),

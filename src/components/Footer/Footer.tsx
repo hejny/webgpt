@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
@@ -7,6 +9,8 @@ import styles from './Footer.module.css';
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.FooterSection}>
             <ul>

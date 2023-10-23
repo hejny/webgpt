@@ -1,3 +1,4 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
@@ -57,6 +58,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
+            ...(await serverSideTranslations(locale, ['common'])),
             wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
                 const { id, parent, src, colorStats, naturalSize, title, keywords, isPublic, author } = fullWallpaper;
                 return {
