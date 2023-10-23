@@ -22,8 +22,10 @@ Make a proffesional assigment from it.
 ## Rules
 - Do not make it long
 - Do not greeting or signature
+- Do not add polite words like please or thank you
+- Preserve the language of the original assigment
 
-## Raw assigment:
+## Original assigment:
 {rawAssigment}
 
 ## Proffesional but short assigment:
