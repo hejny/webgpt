@@ -81,9 +81,21 @@ tou pátou Je interakce s externími zdroji buď volání API nebo interakce s u
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech. V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
+To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech.
+
+
+jde o takovou kuchařku receptů pro řízení velkých jazykových modelů i zcela neprogramátorama
+
+ V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
 
 Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky nemožné
+sehnat vývojáře, sehnat copyrightry je jednodušší a psaní podobných prompkuchařek bude zcela jistě nový druh práce a nový druh ekonomiky
+
+opravdu zajímavé na tom je že tahle práce má jak povahu copyrightingu tak povahu programování – pomocí přirozeného jazyka pracuji velmi podobně jako copyrighter nebo manažer a pomocí přirozeného jazyka popisuji postupy avšak tyto postupy nevykonává sekretářka ale zabalí se do úplně běžné funkce použitelné v rámci aplikace – jde opravdu o úplně obyčejnou asynchronní funkci kterou lze použít přesně jako jakoukoliv jinou funkci v kódu
+
+
+
+
 
 **Myslíš, že generativní AI ještě není na svém vrcholu?**
 
@@ -91,7 +103,15 @@ Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky 
 
 
 
+zcela jistě splaskne bublina a mnoho projektů zkrachuje neuspěje nebo zapadne do zapomnění avšak to je naprosto v pořádku – v tuhle chvíli nevíme co dává smysl a Co nedává smysl a bez praktického otestování to ani nezjistíme
 
+co jsem si však zcela jistý, že ještě Rozhodně nejsme Na Vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je mit Journey 5.x avšak Mid Journey se nedá použít přes API jako komponenta aplikace takže nad ním ještě nemohou vznikat žádné sekundární služby
+
+Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt 
+
+Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk
+
+zároveň je
 
 
 
