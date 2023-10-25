@@ -109,9 +109,9 @@ co jsem si však zcela jistý, že ještě Rozhodně nejsme Na Vrcholu – Např
 
 Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt 
 
-Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk
+ve společnosti je ohromná Míra neefektivity a neskutečně množství věcí se dělá se dá automatizovat, na to aby se to dělo existuje ohromný ekonomický tlak
 
-zároveň je
+Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk dobrého půl roku před chat GPT přišel k nám co pilot a ještě předtím to byl Tomáš Studeník který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry
 
 
 
@@ -126,20 +126,24 @@ zároveň je
 
 -->
 
-<!--
-ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
--->
-
-**Jakým způsobem teda ovlivní AI jazyk a kulturu?**
+** když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
 <!--
 
+obsah byl vždy ovlivněn formou a ekonomikou
+
+většina technologií neudělá fundamentální změnu v tom jaký obsah se dá vytvořit, spíš změní pravidla hry Jaký obsah dává smysl vytvořit
 
 
+knihtisk byl jen obyčejná technologie kdy Gutenberg přišel na způsob jak vytvořit Slatinu pro raznice avšak tahle Technologická změna odemkla ohromný potenciál a řádově zlevnila tištění knih – najednou byli knihy mnohem levnější mnohem dostupnější dávalo mnohem větší smysl umět je číst a zároveň před tím byla kniha naprosto luxusní zboží kdy se za kilo knihy platilo víc než za kilo zlata potom se z nich stala komodita a gramotnost se prudce zvýšila zároveň s tím se v Evropě odehrály neuvěřitelné společenské a sociální změny které pak nastartovali první průmyslovou revoluci které pak nastartovali reformaci a potom první průmyslovou revoluce
 
+internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo ale přestala hrát roli vzdálenost
 
+umělá inteligence přinese podobný skok – Stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér kdy Jeden člověk preferuje audio zatímco druhý preferuje psát text tyto bariéry byly doposud nepřekonatelné respektive tyto bariéry šly doposud překonat pouze z vynaložením Velkých ekonomických zdrojů, do pár let tu bude zcela běžné že já pošlu já tobě pošlu zprávu v libovolné formě Audio video a libovolném jazyce A ty jsi jí pustíš v libovolné kombinaci ového zcela bez
 
+zároveň bude možné aby vzniklo spolu mnoho obsahu který bude výrazně více na míru – mám takový J K Rowlingová v minulosti vytvořila naprosto pevný obsah a kolem toho vznikl ohromný Kult světa Harryho Pottera – moderní J K Rowling Rowlingová může vytvořit nějaký koncept takového světa kdy popíše konkrétní příklady konkrétní situace konkrétní části světa avšak každý čtenář se bude moc vytvořit vlastní příběh Nad tímto světem Možná se dokonce rozdělí autorství na autory těch světů a konceptů a na autory konkrétních příběhů v rámci těch světů
 
+zároveň bude velmi pravděpodobné že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst jiný si bude chtít povídat s postavami v nich jiný bude chtít poslouchat rádio vysílané z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru
 
 
 
@@ -151,7 +155,7 @@ ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
 
 -->
 
-**Řekni něco víc o hře Towns, co jsi vyvíjel**
+** když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl Řekni něco víc o hře Towns, co jsi vyvíjel**
 
 <!--
 
