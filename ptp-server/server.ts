@@ -8,13 +8,21 @@ import { OpenAiExecutionTools } from '../src/ai/text-to-text/prompt-templates/li
 import { createRemoteServer } from '../src/ai/text-to-text/prompt-templates/lib/src/execution/plugins/natural-execution-tools/remote/createRemoteServer';
 // [🎛] import { ptpLibrary } from '../src/ai/text-to-text/prompt-templates/ptpLibrary';
 
+
+const naturalExecutionTools = new OpenAiExecutionTools({ isVerbose: IS_DEVELOPMENT /* <- Note: [3] */, openAiApiKey: OPENAI_API_KEY! }
+
+
 createRemoteServer({
-    isVerbose: false /* <- Note: We want server to be silent and OpenAiExecutionTools to be verbose */,
+    isVerbose: false /* <- Note: [3] We want server to be silent and OpenAiExecutionTools to be verbose */,
     port: 4445 /* <- TODO: Unhardcode (all ports) */,
     ptpLibrary: PromptTemplatePipelineLibrary.fromSources({
         /* <- TODO: [🎛] Use here real webgptPtpLibrary */
     }),
-    naturalExecutionTools: new OpenAiExecutionTools({ isVerbose: IS_DEVELOPMENT, openAiApiKey: OPENAI_API_KEY! }),
+    createNaturalExecutionTools: (clientId)=>new SupabaseLoggerWrapperOfNaturalExecutionToot({
+        isVerbose: false /* <- Note: [3] */,
+        naturalExecutionTools,
+        clientId,
+    })),
 });
 
 /**
