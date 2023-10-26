@@ -1,6 +1,5 @@
-import { uuid } from '../../../.././types/typeAliases';
-import { CommonExecutionToolsOptions } from '../../../CommonExecutionToolsOptions';
-import { NaturalExecutionTools } from '../../../NaturalExecutionTools';
+import { CommonExecutionToolsOptions, NaturalExecutionTools } from '@gptp/core';
+import { uuid } from '../../../utils/typeAliases';
 
 /**
  * Options for SupabaseLoggerWrapperOfNaturalExecutionTools
