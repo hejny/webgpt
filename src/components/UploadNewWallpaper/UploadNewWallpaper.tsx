@@ -48,7 +48,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         return;
                     }
 
-                    console.log('!!! locale: ',locale);
+                    console.info('🏳 locale: ',locale);
 
                     setWorking(true);
                     setTasksProgress([]);
