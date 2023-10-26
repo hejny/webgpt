@@ -3,12 +3,40 @@
     "version": "1.8.1",
     "private": false,
     "license": "SEE LICENSE IN LICENSE",
-    "description": "We are the ...",
+    "description": "An AI-powered tool for web design",
     "homepage": "https://webgpt.cz/",
     "repository": {
         "type": "git",
         "url": "https://github.com/hejny/webgpt"
     },
+    "contributors": [
+        "Pavol Hejný <me@pavolhejny.com> (https://www.pavolhejny.com/)"
+    ],
+    "keywords": [
+        "AI",
+        "Web Design",
+        "Generative AI",
+        "ChatGPT",
+        "Dall-E",
+        "MidJourney",
+        "Stable Diffusion",
+        "Web Generation",
+        "Responsive Design",
+        "AI Design",
+        "Web Development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "autogpt",
+        "openai",
+        "gpt-3",
+        "gpt-4",
+        "chatgpt",
+        "machine-learning",
+        "web-generation",
+        "text-generation",
+        "language-model"
+    ],
     "scripts": {
         "dev": "npx chokidar \"locales/**/*.yml\" -c \"npx kill-port 4444 && NODE_OPTIONS='--inspect' next dev -p 4444\" --initial --debounce 500",
         "build": "next build",
