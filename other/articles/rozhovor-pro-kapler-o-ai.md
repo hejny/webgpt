@@ -2,7 +2,7 @@
 
 > Rozhovor s [Pavolem Hejným](https://www.pavolhejny.com/) pro [Kapler o AI](https://www.kapler.cz/category/AI/)
 
-Před pár dny o sobě dal vědět [Pavol Hejný](https://www.pavolhejny.com/) s projektem na [generování webů pomomocí AI](https://webgpt.cz/).
+Před měsícem dal o sobě vědět [Pavol Hejný](https://www.pavolhejny.com/) s projektem na [generování webů pomomocí AI WebGPT](https://webgpt.cz/).
 Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a co nás čeká v budoucnu.
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
@@ -42,22 +42,34 @@ Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, 
 
 **Jaké jsou největší výzvy při generování webů?**
 
-Velkou výzvou je "zkrocení" GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
+Velkou výzvou je _"zkrocení"_ GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
 
--   Pokud mám jednoduché zadání / prompt "Jaký zvuk dělá kočička", tak dostanu odpověď "Mňau" nebo ""Mňau"" _(v uvozovkách)_ případně "Kočička dělá "Mňau"" nebo něco podobného.
--   Pokud mám komplexní prompt "Napiš mi komplení obsah webu v markdownu pro kavárnu {name}", tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
+-   Pokud mám jednoduché zadání / prompt _"Jaký zvuk dělá kočička"_, tak dostanu odpověď _"Mňau"_ nebo *""*Mňau*""* _(v uvozovkách)_ případně *"Kočička dělá "*Mňau*""* nebo něco podobného.
+-   Pokud mám komplexní prompt _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_, tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
-Jakmile je potřeba něco složitějšího, existují v principu tři metody, jak na to:
+Jakmile je potřeba něco složitějšího, existují v principu čtyři metody, jak na to:
 
--
--
--
-
-<!--
-
+-   **Fine tunning**, kdy se model dotrénuje na konkrétní úkol. Pokud mám tisíce příkladů vstupů a výstupů, tak to funguje dobře. Na rychlé prototypování je to ale pomalé a náročné.
+-   **Prompt tunning**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _"kapacitu"_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
+-   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _"Napiš mi název kavárny"_, _"Napiš mi popis kavárny"_, _"Napiš mi menu kavárny"_, _"Vygeneruj mi fotky kavárny"_, _"Napiš mi odkaz na sociální sítě kavárny"_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
+-   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického if/else programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _"Programuješ i v TypeScriptu nebo mám napsat jen JavaScript"_. Také je občas potřeba určité informace dohledat a ne si je "vyhalucinovat". V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **Prompt template pipelines**](https://github.com/webgptorg/ptp) aby šli podobné postupy psát i neprogramátorem v dokumentech.
 
 
 
+v principu máme čtyři směry kterými dokážeme zlepšovat výsledek, ty se dají docela dobře kombinovat mezi sebou
+
+
+
+Tím prvním je zlepšovat Tím prvním je pokus je zlepšování na úrovni modelu, Dá se buď vybrat lepší či horší model Dá se nastavovat temperature nebo lze dělat fajn tuning kdy model dotrénovávám vlastními daty
+
+
+tím druhým je práce na úrovni promptu případně systém message
+
+tou třetí cestou je spojování do pipelines kdy výsledek 1 prombdu pro bublá do druhého a výsledek 2 do 3
+
+a tou čtvrtou je zapojení klasického programování
+
+tou pátou Je interakce s externími zdroji buď volání API nebo interakce s uživatelem
 
 
 
@@ -66,32 +78,24 @@ Jakmile je potřeba něco složitějšího, existují v principu tři metody, ja
 
 
 
-
-
-
-
--->
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-<!--
+To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech.
+
+
+jde o takovou kuchařku receptů pro řízení velkých jazykových modelů i zcela neprogramátorama
+
+ V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
+
+Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky nemožné
+sehnat vývojáře, sehnat copyrightry je jednodušší a psaní podobných prompkuchařek bude zcela jistě nový druh práce a nový druh ekonomiky
+
+opravdu zajímavé na tom je že tahle práce má jak povahu copyrightingu tak povahu programování – pomocí přirozeného jazyka pracuji velmi podobně jako copyrighter nebo manažer a pomocí přirozeného jazyka popisuji postupy avšak tyto postupy nevykonává sekretářka ale zabalí se do úplně běžné funkce použitelné v rámci aplikace – jde opravdu o úplně obyčejnou asynchronní funkci kterou lze použít přesně jako jakoukoliv jinou funkci v kódu
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
--->
 
 **Myslíš, že generativní AI ještě není na svém vrcholu?**
 
@@ -99,7 +103,15 @@ Jakmile je potřeba něco složitějšího, existují v principu tři metody, ja
 
 
 
+zcela jistě splaskne bublina a mnoho projektů zkrachuje neuspěje nebo zapadne do zapomnění avšak to je naprosto v pořádku – v tuhle chvíli nevíme co dává smysl a Co nedává smysl a bez praktického otestování to ani nezjistíme
 
+co jsem si však zcela jistý, že ještě Rozhodně nejsme Na Vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je mit Journey 5.x avšak Mid Journey se nedá použít přes API jako komponenta aplikace takže nad ním ještě nemohou vznikat žádné sekundární služby
+
+Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt 
+
+ve společnosti je ohromná Míra neefektivity a neskutečně množství věcí se dělá se dá automatizovat, na to aby se to dělo existuje ohromný ekonomický tlak
+
+Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk dobrého půl roku před chat GPT přišel k nám co pilot a ještě předtím to byl Tomáš Studeník který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry
 
 
 
@@ -113,33 +125,37 @@ Jakmile je potřeba něco složitějšího, existují v principu tři metody, ja
 
 
 -->
+
+** když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
 <!--
-ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
+
+obsah byl vždy ovlivněn formou a ekonomikou
+
+většina technologií neudělá fundamentální změnu v tom jaký obsah se dá vytvořit, spíš změní pravidla hry Jaký obsah dává smysl vytvořit
+
+
+knihtisk byl jen obyčejná technologie kdy Gutenberg přišel na způsob jak vytvořit Slatinu pro raznice avšak tahle Technologická změna odemkla ohromný potenciál a řádově zlevnila tištění knih – najednou byli knihy mnohem levnější mnohem dostupnější dávalo mnohem větší smysl umět je číst a zároveň před tím byla kniha naprosto luxusní zboží kdy se za kilo knihy platilo víc než za kilo zlata potom se z nich stala komodita a gramotnost se prudce zvýšila zároveň s tím se v Evropě odehrály neuvěřitelné společenské a sociální změny které pak nastartovali první průmyslovou revoluci které pak nastartovali reformaci a potom první průmyslovou revoluce
+
+internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo ale přestala hrát roli vzdálenost
+
+umělá inteligence přinese podobný skok – Stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér kdy Jeden člověk preferuje audio zatímco druhý preferuje psát text tyto bariéry byly doposud nepřekonatelné respektive tyto bariéry šly doposud překonat pouze z vynaložením Velkých ekonomických zdrojů, do pár let tu bude zcela běžné že já pošlu já tobě pošlu zprávu v libovolné formě Audio video a libovolném jazyce A ty jsi jí pustíš v libovolné kombinaci ového zcela bez
+
+zároveň bude možné aby vzniklo spolu mnoho obsahu který bude výrazně více na míru – mám takový J K Rowlingová v minulosti vytvořila naprosto pevný obsah a kolem toho vznikl ohromný Kult světa Harryho Pottera – moderní J K Rowling Rowlingová může vytvořit nějaký koncept takového světa kdy popíše konkrétní příklady konkrétní situace konkrétní části světa avšak každý čtenář se bude moc vytvořit vlastní příběh Nad tímto světem Možná se dokonce rozdělí autorství na autory těch světů a konceptů a na autory konkrétních příběhů v rámci těch světů
+
+zároveň bude velmi pravděpodobné že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst jiný si bude chtít povídat s postavami v nich jiný bude chtít poslouchat rádio vysílané z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru
+
+
+
+
+
+
+
+
+
 -->
 
-**Jakým způsobem teda ovlivní AI jazyk a kulturu?**
-
-<!--
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
-
-**Řekni něco víc o hře Towns, co jsi vyvíjel**
+** když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl Řekni něco víc o hře Towns, co jsi vyvíjel**
 
 <!--
 
@@ -238,7 +254,7 @@ Rozhodl jsi se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a co
 Co zmínit v rozhovoru:
 
 - Proč je generátor obrázků Dalle-3 velká věc [1]
-- primární a sekundární služby: GPT a generování obrázků jsou "pouze" stavební bloky podobné jakými byl tranzistor [1]
+- primární a sekundární služby: GPT a generování obrázků jsou *"pouze"* stavební bloky podobné jakými byl tranzistor [1]
 - Do širokého povědomí dostal AI až ChatGPT, co je víc UX než technický průlom [2]
 - Zcela jistě se vynoří spousta různých forem jak generativní AI ovládat [2]
 - vznik zcela nového odvětví na pomezí programování a psaní textu
@@ -259,9 +275,9 @@ Počet normostran: 5
 
 ---
 
-[1] Ač se na první pohled může zdát, že se jedná o "pouze další představení obrázkového generátoru", tak tomu však absolutně není.
+[1] Ač se na první pohled může zdát, že se jedná o *"pouze další představení obrázkového generátoru"*, tak tomu však absolutně není.
 
-Doposud byl hype a pozornost kolem primárních služeb, které poskytují "cihly, maltu, beton, železo" v podobě generátoru textu, generátoru obrázků, přepisu a syntézy zvuku,...
+Doposud byl hype a pozornost kolem primárních služeb, které poskytují *"cihly, maltu, beton, železo"* v podobě generátoru textu, generátoru obrázků, přepisu a syntézy zvuku,...
 
 Přichází ale doba sekundárních služeb postavených z těchto ingrediencí, které budou umět generovat kompletní kulturní jednotky např. celé knihy, prezentace, návrhy fyzických produktů, matematické důkazy, návrhy byznys plánů, složení celého koncertu, navržení galerie nebo vygenerování celého webu.
 
