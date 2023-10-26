@@ -81,9 +81,21 @@ tou pátou Je interakce s externími zdroji buď volání API nebo interakce s u
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech. V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
+To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech.
+
+
+jde o takovou kuchařku receptů pro řízení velkých jazykových modelů i zcela neprogramátorama
+
+ V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
 
 Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky nemožné
+sehnat vývojáře, sehnat copyrightry je jednodušší a psaní podobných prompkuchařek bude zcela jistě nový druh práce a nový druh ekonomiky
+
+opravdu zajímavé na tom je že tahle práce má jak povahu copyrightingu tak povahu programování – pomocí přirozeného jazyka pracuji velmi podobně jako copyrighter nebo manažer a pomocí přirozeného jazyka popisuji postupy avšak tyto postupy nevykonává sekretářka ale zabalí se do úplně běžné funkce použitelné v rámci aplikace – jde opravdu o úplně obyčejnou asynchronní funkci kterou lze použít přesně jako jakoukoliv jinou funkci v kódu
+
+
+
+
 
 **Myslíš, že generativní AI ještě není na svém vrcholu?**
 
@@ -91,7 +103,15 @@ Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky 
 
 
 
+zcela jistě splaskne bublina a mnoho projektů zkrachuje neuspěje nebo zapadne do zapomnění avšak to je naprosto v pořádku – v tuhle chvíli nevíme co dává smysl a Co nedává smysl a bez praktického otestování to ani nezjistíme
 
+co jsem si však zcela jistý, že ještě Rozhodně nejsme Na Vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je mit Journey 5.x avšak Mid Journey se nedá použít přes API jako komponenta aplikace takže nad ním ještě nemohou vznikat žádné sekundární služby
+
+Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt 
+
+ve společnosti je ohromná Míra neefektivity a neskutečně množství věcí se dělá se dá automatizovat, na to aby se to dělo existuje ohromný ekonomický tlak
+
+Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk dobrého půl roku před chat GPT přišel k nám co pilot a ještě předtím to byl Tomáš Studeník který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry
 
 
 
@@ -105,33 +125,37 @@ Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky 
 
 
 -->
+
+** když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
 <!--
-ChatGPT nebyl technologickým průlomem ale UX/Aligment průlomem
+
+obsah byl vždy ovlivněn formou a ekonomikou
+
+většina technologií neudělá fundamentální změnu v tom jaký obsah se dá vytvořit, spíš změní pravidla hry Jaký obsah dává smysl vytvořit
+
+
+knihtisk byl jen obyčejná technologie kdy Gutenberg přišel na způsob jak vytvořit Slatinu pro raznice avšak tahle Technologická změna odemkla ohromný potenciál a řádově zlevnila tištění knih – najednou byli knihy mnohem levnější mnohem dostupnější dávalo mnohem větší smysl umět je číst a zároveň před tím byla kniha naprosto luxusní zboží kdy se za kilo knihy platilo víc než za kilo zlata potom se z nich stala komodita a gramotnost se prudce zvýšila zároveň s tím se v Evropě odehrály neuvěřitelné společenské a sociální změny které pak nastartovali první průmyslovou revoluci které pak nastartovali reformaci a potom první průmyslovou revoluce
+
+internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo ale přestala hrát roli vzdálenost
+
+umělá inteligence přinese podobný skok – Stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér kdy Jeden člověk preferuje audio zatímco druhý preferuje psát text tyto bariéry byly doposud nepřekonatelné respektive tyto bariéry šly doposud překonat pouze z vynaložením Velkých ekonomických zdrojů, do pár let tu bude zcela běžné že já pošlu já tobě pošlu zprávu v libovolné formě Audio video a libovolném jazyce A ty jsi jí pustíš v libovolné kombinaci ového zcela bez
+
+zároveň bude možné aby vzniklo spolu mnoho obsahu který bude výrazně více na míru – mám takový J K Rowlingová v minulosti vytvořila naprosto pevný obsah a kolem toho vznikl ohromný Kult světa Harryho Pottera – moderní J K Rowling Rowlingová může vytvořit nějaký koncept takového světa kdy popíše konkrétní příklady konkrétní situace konkrétní části světa avšak každý čtenář se bude moc vytvořit vlastní příběh Nad tímto světem Možná se dokonce rozdělí autorství na autory těch světů a konceptů a na autory konkrétních příběhů v rámci těch světů
+
+zároveň bude velmi pravděpodobné že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst jiný si bude chtít povídat s postavami v nich jiný bude chtít poslouchat rádio vysílané z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru
+
+
+
+
+
+
+
+
+
 -->
 
-**Jakým způsobem teda ovlivní AI jazyk a kulturu?**
-
-<!--
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
-
-**Řekni něco víc o hře Towns, co jsi vyvíjel**
+** když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl Řekni něco víc o hře Towns, co jsi vyvíjel**
 
 <!--
 
