@@ -90,7 +90,7 @@ Je název Vašeho webu v pořádku?
 
 `-> {title}` Název webu
 
-## 💬 Kulervoucí podtitulek
+## 💬 Claim pro web
 
 -   Postprocessing `unwrapResult`
 
