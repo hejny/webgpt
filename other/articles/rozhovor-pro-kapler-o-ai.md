@@ -161,14 +161,12 @@ zároveň bude velmi pravděpodobné že v těchto světech bude možné existov
 
 
 
+šlo o online strategickou hru přes prohlížeč- taková kombinace mezi Age of Empires a travianem který v té v té době frčel – už je to poměrně dlouhá doba, doslova polovina a mého života kdy jsem tuhle věc začal dělat před 15 lety v mých 15 letech a docela jsem se na tom naučil programovat
+
+v jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa a zároveň člověk mohl libovolně kombinovat budovy– například postavit dva domy na hradbu nebo pět domů na sebe Z čeho vznikl něco jako mrakodrap všechno to bylo procedurálněgerované, takže a šlo o takovou velmi proto verzi nějak určitého vektorového prostoru všech možných budov
 
 
-
-
-
-
-
-
+zároveň to byl ale je svým způsobem velmi neivní projekt, kdy jsem neměl základní znalosti ohledně toho jak takovou věc škálovat nebo o ekonomice celé věci, Přesto to hrálo nižší tisíce lidí avšak Vzhledem k mé neznalosti jakékoliv optimalizace podobné věci To bylo neskutečně zasekané a chybové
 
 
 
@@ -176,19 +174,19 @@ zároveň bude velmi pravděpodobné že v těchto světech bude možné existov
 
 -->
 
-**Řekni něco víc o modulech do Collboardu**
+** další Z projektu díky kterému se známe je virtuální tabule kolboard Řekni něco víc o modulech do Collboardu**
 
 <!--
 
 
+jde o virtuální tabule kterou jsme založili v rámci elektronických učebnic hm které jsem také technicky zakládal kdy se nám stalo že na začátku pandemie covidu byla potřeba mít nějaký jednoduchý super jednoduchý nástroj pro učitele
 
 
+já Obecně mám rád modularitu a tak jsem celý systém navrhl tak, že jakýkoliv prvek je modulem
 
+momentálně připravuji připravujeme modely moduly pro generování obrázků přímo v rámci téhle tabule
 
-
-
-
-
+Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol
 
 
 
