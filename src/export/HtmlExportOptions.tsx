@@ -4,7 +4,12 @@ export interface HtmlExportOptions {
      * - `EMBED` - Place styles into <style> tag
      * - `EXTERNAL` - Place styles into <link rel="stylesheet" href="style.css">
      */
-    stylesPlace: 'EMBED' | 'EXTERNAL' /* <- TODO: Probbably just remove EMBED option */;
+    readonly stylesPlace: 'EMBED' | 'EXTERNAL' /* <- TODO: Probbably just remove EMBED option */;
 
-    publicUrl: URL | null;
+    /**
+     * Root url of the exported page
+     *
+     * Note: There are some places in html where you must use absolute url like og:image or twitter:image etc.
+     */
+    readonly publicUrl: URL | null;
 }

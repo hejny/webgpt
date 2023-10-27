@@ -4,7 +4,7 @@ import whoiser from 'whoiser';
 import { isValidDomain } from '../../utils/domains/isValidDomain';
 
 export interface CheckWhoisHandlerResponse {
-    whois: WhoisSearchResult;
+    readonly whois: WhoisSearchResult;
 }
 
 /**

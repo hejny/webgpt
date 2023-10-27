@@ -24,6 +24,7 @@ export function StaticLayout(props: StaticLayoutProps) {
     return (
         <>
             <StaticAppHead {...{ subtitle }} />
+            {/* TODO: !! Translate the main page and enable: <LanguagePicker /> */}
             <div className={styles.StaticLayout}>{children}</div>
         </>
     );

@@ -3,13 +3,13 @@ import { gzip, ungzip } from 'node-gzip';
 import { IFile, IIFilesStorageWithCdn } from '../interfaces/IFilesStorage';
 
 interface IDigitalOceanSpacesConfig {
-    bucket: string;
-    pathPrefix: string;
-    endpoint: string;
-    accessKeyId: string;
-    secretAccessKey: string;
-    cdnPublicUrl: URL;
-    gzip: boolean;
+    readonly bucket: string;
+    readonly pathPrefix: string;
+    readonly endpoint: string;
+    readonly accessKeyId: string;
+    readonly secretAccessKey: string;
+    readonly cdnPublicUrl: URL;
+    readonly gzip: boolean;
 
     // TODO: [⛳️] Probbably prefix should be in this config not on the consumer side
 }

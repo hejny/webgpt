@@ -59,6 +59,8 @@ export class Workerify<
                         type: 'ERROR',
                         message: error.message,
                     } satisfies IMessageError);
+                } finally {
+                    self.close();
                 }
             } else if (type === 'PROMPT_DIALOGUE_ANSWER') {
                 // Note: Do nothing here, because [👂][0] promptDialogue is also listening to this message

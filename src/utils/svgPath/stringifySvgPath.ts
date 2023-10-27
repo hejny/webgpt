@@ -2,8 +2,8 @@ import { IVector, Vector } from 'xyzt';
 import { ISvgPath } from './ISvgPath';
 
 interface IStringifySvgPathOptions {
-    path: ISvgPath;
-    topLeft: IVector;
+    readonly path: ISvgPath;
+    readonly topLeft: IVector;
 }
 
 /**

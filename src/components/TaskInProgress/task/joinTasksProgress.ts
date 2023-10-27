@@ -1,3 +1,4 @@
+import { Writable } from 'type-fest';
 import { TaskProgress } from './TaskProgress';
 
 /**
@@ -8,7 +9,7 @@ import { TaskProgress } from './TaskProgress';
  * @returns joined Array of TaskProgress
  */
 export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<TaskProgress> {
-    const joinedTasksProgress: Array<TaskProgress> = [];
+    const joinedTasksProgress: Array<Writable<TaskProgress>> = [];
 
     for (const newTaskProgress of tasksProgress) {
         const joinedTaskProgress = joinedTasksProgress.find(
@@ -17,6 +18,7 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
 
         if (!joinedTaskProgress) {
             if (!newTaskProgress.title) {
+                console.info({ newTaskProgress });
                 throw new Error(`Missing title for task "${newTaskProgress.name}"`);
             }
             joinedTasksProgress.push(newTaskProgress);
@@ -32,5 +34,5 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
         }
     }
 
-    return joinedTasksProgress;
+    return joinedTasksProgress as Array<TaskProgress>;
 }

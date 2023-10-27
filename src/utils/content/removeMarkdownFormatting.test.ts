@@ -20,6 +20,12 @@ describe('removeMarkdownFormatting', () => {
         expect(removeMarkdownFormatting(str)).toEqual(expected);
     });
 
+    it('should remove code formatting from a string', () => {
+        const str = 'This is name of the function `spaceTrim`.';
+        const expected = 'This is name of the function spaceTrim.';
+        expect(removeMarkdownFormatting(str)).toEqual(expected);
+    });
+
     it('should remove multiple instances of italic formatting from a string', () => {
         const str = 'This is *italic* and *also italic* text.';
         const expected = 'This is italic and also italic text.';
@@ -29,6 +35,20 @@ describe('removeMarkdownFormatting', () => {
     it('should return the original string if it contains no Markdown tags', () => {
         const str = 'This is a plain string.';
         expect(removeMarkdownFormatting(str)).toEqual(str);
+    });
+
+    it('should preserve just one mark text', () => {
+        const str1 = 'I am * You are';
+        expect(removeMarkdownFormatting(str1)).toEqual(str1);
+
+        const str2 = 'I am * You are * He is * She is * It is * We are * They are *';
+        expect(removeMarkdownFormatting(str1)).toEqual(str1);
+
+        const str3 = 'I`m here';
+        expect(removeMarkdownFormatting(str3)).toEqual(str3);
+
+        const str4 = "I'm here You`re here";
+        expect(removeMarkdownFormatting(str4)).toEqual(str4);
     });
 
     /*
@@ -79,7 +99,3 @@ describe('removeMarkdownFormatting', () => {
     });
     */
 });
-
-/**
- * @see https://chat.openai.com/chat/bb7c3a5b-fe9c-4ccc-9057-f47e0fd66489
- */
