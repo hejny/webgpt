@@ -184,11 +184,28 @@ jde o virtuální tabule kterou jsme založili v rámci elektronických učebnic
 
 já Obecně mám rád modularitu a tak jsem celý systém navrhl tak, že jakýkoliv prvek je modulem
 
+
+když se bavíme o školství, připravujete do hidu nebo kolboardu něco s umělou inteligencí
+
+
 momentálně připravuji připravujeme modely moduly pro generování obrázků přímo v rámci téhle tabule
 
-Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol
+
+pro H Edu pracujeme na chytrém asistentovi pro učitele který pomůže s psaním textu
+
+a v samotných učebnicích hledáme způsob jak vytvářet úlohy na míru pro potřeby konkrétních žáků
 
 
+jak se k tomu staví učitelé, nechtějí podobné věci spíš omezovat nebo zakazovat
+
+
+záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, Na kolik se učitelé dokázali popasovat s pandemií covidu a ze dne na den se z nich stali it správci virtuálních tříd a zároveň to dělali ke své práci učitele
+
+
+Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol a nebo i ty který překládáš který píše opravdu obrovské množství kvalitního obsahu v češtině
+
+
+jsem tam ale čtu i povzdechy o tom, jak žáci používají vygenerovaný text a otázky Jakým způsobem do lze efektivně detekovat a zakazovat
 
 
 
@@ -200,19 +217,19 @@ Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžas
 <!--
 
 
+ne, ale rozvedu svou odpověď
 
+bez ohledu na to, že jsem vývojář a nadšenec do nových technologií a vyvíjím nástroj nad velkými jazykovými modely, tak i kdybych nic z toho nedělal fakt jeden budoucnost s generativní umělou inteligencí je tady prakticky se jejím dopadům nelze vyhnout
 
+Pravděpodobně nebude existovat žádná intelektuální práce která by touhle revolucí nebyla ovlivněna – neříkám že zanikne, říkám že prakticky všechny profese které se zabývají manipulacemi manipulací s informacemi budou ovlivněny
 
+podle mě velmi dobrý příklad je počítač a kalkulačka, ve 40 letech bylo slovo počítač slovo počítač neznamenalo přístroj ale člověka který počítá tabulky obvykle balistických křivek pomocí logaritmického pravítka Computer byl člověk ne stroj
 
+představme si v té době utvrzovat budoucí žáky v tom že ty počítače jsou stejně jenom nějaký divný Hype a že je velmi důležité umět počítat sloupečky čísel ručně protože bez toho
 
+určitě je důležité umět počítat a mít přehled o tom jak funguje matematika, avšak a stejně tak je důležité znát jazyk ale vyhnout se použití jazykových použití a hlavně znalosti jazykových modelů je nesmírně hloupé, protože nás to nepřipravuje na budoucnost a jenom způsobí že zůstaneme montovnou Evropy
 
-
-
-
-
-
-
-
+je důležité nepřeskakovat laťku ze země ale použít je jako stupínek
 
 -->
 
