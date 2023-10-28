@@ -3,7 +3,7 @@ import {
     ExecutionTools,
     JavascriptEvalExecutionTools,
     RemoteNaturalExecutionTools,
-} from '@gptp/core';
+} from '@gptp/browser';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PTP_SERVER_URL } from '../../../config';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';

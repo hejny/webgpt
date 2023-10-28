@@ -1,4 +1,4 @@
-import { PromptTemplatePipelineLibrary } from '@gptp/core';
+import { PromptTemplatePipelineLibrary } from '@gptp/browser';
 import updateWebsiteContent from '../../../prompts/templates/update-website-content.ptp.md';
 import writeWebsiteContentCs from '../../../prompts/templates/write-website-content.cs.ptp.md';
 import writeWebsiteContent from '../../../prompts/templates/write-website-content.ptp.md';
