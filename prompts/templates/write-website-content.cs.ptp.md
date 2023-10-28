@@ -78,6 +78,7 @@ Zadání od zákazníka:
 ## Pokyny:
 
 -   Napiště pouze jeden návrh názvu
+-   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
 ```
 
