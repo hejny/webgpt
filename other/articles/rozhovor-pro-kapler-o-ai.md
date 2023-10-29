@@ -12,14 +12,6 @@ Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prez
 **Jak to funguje?**
 
 V principu je to spojení jazykového modelu, obrázkového generátoru, rozpoznání obrázků a několika dalších technologií.
-Uživatel má vícero možností:
-
-
--   Mám **obrázek**, ten se mi analyzuje a na základě něj se vygeneruje zadaní, které mohu upravit
--   Mám **zadání** a z něj se mi vygeneruje obrázek a web
--   Mám **nápad**, ze kterého se vygeneruje zadaní
--   Mám **Instagram** / Facebook / Starý web, který se mi přegeneruje do nové podoby
--   Nemám **nic** a nechám se překvapit
 
 Samozřejmě je na pozadí mnoho dalších věcí, například analýza obrázku a sestavení palety barev, fontů a dalších věcí.
 
