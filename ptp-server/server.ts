@@ -32,6 +32,5 @@ createRemoteServer({
 });
 
 /**
- * TODO: !!! Put this as a sample for @ptp/remote
  * TODO: [🃏] Pass here some security token to prevent DDoS
  */
