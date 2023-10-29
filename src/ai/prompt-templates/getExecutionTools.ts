@@ -1,7 +1,7 @@
-import { CallbackInterfaceTools } from '@gptp/core';
-import { JavascriptEvalExecutionTools } from '@gptp/execute-javascript';
-import { RemoteNaturalExecutionTools } from '@gptp/remote-client';
-import { ExecutionTools } from '@gptp/types';
+import { CallbackInterfaceTools } from '@promptbook/core';
+import { JavascriptEvalExecutionTools } from '@promptbook/execute-javascript';
+import { RemoteNaturalExecutionTools } from '@promptbook/remote-client';
+import { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PTP_SERVER_URL } from '../../../config';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
