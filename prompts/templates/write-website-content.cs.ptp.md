@@ -7,10 +7,10 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
--   Input param `{rawAssigment}` Automaticky vygenerované zadání webu z rozpoznání obrázku _v Angličtině_
+-   Input param `{rawAssigment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
 
-## 🖋 Zadání v Češtině
+## 🖋 Překlad popisu
 
 -   Use completion
 -   Postprocessing `trim`
@@ -24,7 +24,28 @@ English assignment:
 >
 ```
 
-`-> {rawAssigmentCs}` Zadání webu v Češtině
+`-> {rawAssigmentCs}` popis obrázku v češtině
+
+## Návrh zadání
+
+-   Use chat
+-   Postprocessing `trim`
+
+```text
+
+Vytvoř zadání reálného webu z čistého popisu co se nachází na obrázku
+
+## Pravidla
+- Zadání piš stručné, maximálně jeden odstavec textu
+- Zadání je strukturované
+
+Text na obrázku:
+> {rawAssigmentCs}
+
+
+```
+
+`-> {draftedAssigment}` Zadání webu v Češtině
 
 ## 👤 Upřesnění zadání uživatelem
 
@@ -33,7 +54,7 @@ Popište cíl vašeho webu
 -   Prompt dialog
 
 ```text
-{rawAssigmentCs}
+{draftedAssigment}
 ```
 
 `-> {assigment}` Zadání webu
@@ -57,6 +78,7 @@ Zadání od zákazníka:
 ## Pokyny:
 
 -   Napiště pouze jeden návrh názvu
+-   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
 ```
 
@@ -74,7 +96,7 @@ Je název Vašeho webu v pořádku?
 
 `-> {title}` Název webu
 
-## 💬 Kulervoucí podtitulek
+## 💬 Claim pro web
 
 -   Postprocessing `unwrapResult`
 

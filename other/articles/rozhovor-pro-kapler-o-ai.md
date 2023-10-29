@@ -7,18 +7,11 @@ Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a c
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
 
-Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
+Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny Pod Kaštanem, Osobní weby, weby svateb, konferencí, landing page pro produkty,...
 
 **Jak to funguje?**
 
 V principu je to spojení jazykového modelu, obrázkového generátoru, rozpoznání obrázků a několika dalších technologií.
-Uživatel má vícero možností:
-
--   Mám **obrázek**, ten se mi analyzuje a na základě něj se vygeneruje zadaní, které mohu upravit
--   Mám **zadání** a z něj se mi vygeneruje obrázek a web
--   Mám **nápad**, ze kterého se vygeneruje zadaní
--   Mám **Instagram** / Facebook / Starý web, který se mi přegeneruje do nové podoby
--   Nemám **nic** a nechám se překvapit
 
 Samozřejmě je na pozadí mnoho dalších věcí, například analýza obrázku a sestavení palety barev, fontů a dalších věcí.
 
@@ -27,18 +20,22 @@ Samozřejmě je na pozadí mnoho dalších věcí, například analýza obrázku
 Je to hlavně o ekonomice a časové náročnosti. Pokud chci jednoduchý web, který má za cíl ukázat jednu konkrétní věc, tak je to ideální řešení.
 Naopak pro složitější weby, e-shopy, webové aplikace to není.
 
-Obecně u prezentačních webů platí jedna věc – dokáží sežrat prakticky neomezené množství času a peněz bez zvyšování hodnoty.
-Ostatně oba to známe z hackathonů, jednoduchá aplikace se dá udělat za pár hodin, ale pokud se chceš pustit do vylepšování, tak to může trvat nekonečně dlouho. U aplikací se to může vyplatit, ale u prezentačních webů to obvykle jsou utopené náklady.
+Obecně u prezentačních webů platí jedna věc – dokáží žrát prakticky neomezené množství času a peněz bez zvyšování hodnoty.
+Ostatně oba to známe z hackathonů, jednoduchá aplikace se dá udělat za pár hodin, ale pokud se chceš pustit do vylepšování, tak to může trvat nekonečně dlouho. U aplikací se taková investice může vyplatit, ale u prezentačních webů to jsou obvykle utopené náklady.
 
-**A nedají se všechny tyhle věci udělat jen s ChatGPT?**
+**A nedají se všechny tyhle věci udělat čistě pomocí ChatGPT?**
 
-Rozhodně ano, tohle ostatně na pozadí GPT API využívá. Zase je to jen o času. Pokud jsi majitelem malé pizzerie, máš se soustředit na nejlepší pizzu ne na to, jak napsat prompt, který napíše nejlepší text pro tvůj web. A pak je tu mnoho technických detailů, které jsou potřeba na webu správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
+Rozhodně ano, WebGPT ostatně na pozadí OpenAI API využívá. Zase je to jen o nákladech. Pokud jsi majitelem pizzerie, máš umět tvořit nejlepší pizzu, ne nejlepší prompt.
+
+A pak je tu mnoho technických detailů, které jsou potřeba na webu udělat správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
 
 **Není lepší použít Wordpress nebo jiný redakční systém**
 
 Pro některé případy určitě je. Ale opět přichází na řadu stejná otázka, co SEO, responzivita, rychlost, bezpečnost, přístupnost,... WordPress (a jiné redakční systémy) tyhle věci řeší, ale je potřeba je nastavit, spravovat a aktualizovat. A zase je to otázka času, peněz a kapacity.
 
-Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit. To může přínést i zásadní společenský problém do budoucna – výrazně se zvýší laťka a mnoho lidí dělající jednoduchou práci přijde o ekonomický benefit jejich času.
+Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit.
+
+Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho administrace je přirozený text. 
 
 **Jaké jsou největší výzvy při generování webů?**
 
@@ -161,14 +158,12 @@ zároveň bude velmi pravděpodobné že v těchto světech bude možné existov
 
 
 
+šlo o online strategickou hru přes prohlížeč- taková kombinace mezi Age of Empires a travianem který v té v té době frčel – už je to poměrně dlouhá doba, doslova polovina a mého života kdy jsem tuhle věc začal dělat před 15 lety v mých 15 letech a docela jsem se na tom naučil programovat
+
+v jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa a zároveň člověk mohl libovolně kombinovat budovy– například postavit dva domy na hradbu nebo pět domů na sebe Z čeho vznikl něco jako mrakodrap všechno to bylo procedurálněgerované, takže a šlo o takovou velmi proto verzi nějak určitého vektorového prostoru všech možných budov
 
 
-
-
-
-
-
-
+zároveň to byl ale je svým způsobem velmi neivní projekt, kdy jsem neměl základní znalosti ohledně toho jak takovou věc škálovat nebo o ekonomice celé věci, Přesto to hrálo nižší tisíce lidí avšak Vzhledem k mé neznalosti jakékoliv optimalizace podobné věci To bylo neskutečně zasekané a chybové
 
 
 
@@ -176,21 +171,38 @@ zároveň bude velmi pravděpodobné že v těchto světech bude možné existov
 
 -->
 
-**Řekni něco víc o modulech do Collboardu**
+** další Z projektu díky kterému se známe je virtuální tabule kolboard Řekni něco víc o modulech do Collboardu**
 
 <!--
 
 
+jde o virtuální tabule kterou jsme založili v rámci elektronických učebnic hm které jsem také technicky zakládal kdy se nám stalo že na začátku pandemie covidu byla potřeba mít nějaký jednoduchý super jednoduchý nástroj pro učitele
 
 
+já Obecně mám rád modularitu a tak jsem celý systém navrhl tak, že jakýkoliv prvek je modulem
 
 
+když se bavíme o školství, připravujete do hidu nebo kolboardu něco s umělou inteligencí
 
 
+momentálně připravuji připravujeme modely moduly pro generování obrázků přímo v rámci téhle tabule
 
 
+pro H Edu pracujeme na chytrém asistentovi pro učitele který pomůže s psaním textu
+
+a v samotných učebnicích hledáme způsob jak vytvářet úlohy na míru pro potřeby konkrétních žáků
 
 
+jak se k tomu staví učitelé, nechtějí podobné věci spíš omezovat nebo zakazovat
+
+
+záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, Na kolik se učitelé dokázali popasovat s pandemií covidu a ze dne na den se z nich stali it správci virtuálních tříd a zároveň to dělali ke své práci učitele
+
+
+Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol a nebo i ty který překládáš který píše opravdu obrovské množství kvalitního obsahu v češtině
+
+
+jsem tam ale čtu i povzdechy o tom, jak žáci používají vygenerovaný text a otázky Jakým způsobem do lze efektivně detekovat a zakazovat
 
 
 
@@ -202,19 +214,19 @@ zároveň bude velmi pravděpodobné že v těchto světech bude možné existov
 <!--
 
 
+ne, ale rozvedu svou odpověď
 
+bez ohledu na to, že jsem vývojář a nadšenec do nových technologií a vyvíjím nástroj nad velkými jazykovými modely, tak i kdybych nic z toho nedělal fakt jeden budoucnost s generativní umělou inteligencí je tady prakticky se jejím dopadům nelze vyhnout
 
+Pravděpodobně nebude existovat žádná intelektuální práce která by touhle revolucí nebyla ovlivněna – neříkám že zanikne, říkám že prakticky všechny profese které se zabývají manipulacemi manipulací s informacemi budou ovlivněny
 
+podle mě velmi dobrý příklad je počítač a kalkulačka, ve 40 letech bylo slovo počítač slovo počítač neznamenalo přístroj ale člověka který počítá tabulky obvykle balistických křivek pomocí logaritmického pravítka Computer byl člověk ne stroj
 
+představme si v té době utvrzovat budoucí žáky v tom že ty počítače jsou stejně jenom nějaký divný Hype a že je velmi důležité umět počítat sloupečky čísel ručně protože bez toho
 
+určitě je důležité umět počítat a mít přehled o tom jak funguje matematika, avšak a stejně tak je důležité znát jazyk ale vyhnout se použití jazykových použití a hlavně znalosti jazykových modelů je nesmírně hloupé, protože nás to nepřipravuje na budoucnost a jenom způsobí že zůstaneme montovnou Evropy
 
-
-
-
-
-
-
-
+je důležité nepřeskakovat laťku ze země ale použít je jako stupínek
 
 -->
 
