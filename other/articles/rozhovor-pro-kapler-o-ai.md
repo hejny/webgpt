@@ -85,17 +85,21 @@ Opravdu zajímavé na tom je, že taková práce má jak povahu copywritingu, ta
 
 Jako výsledek dostanu úplně obyčejnou asynchronní funkci, kterou lze použít přesně jako jakoukoliv jinou funkci v rámci kódu.
 
-**A nemyslíš, že generativní AI a podobné....?**
+**A nemyslíš, že generativní AI a celý ten trend, že co týden vznikne stovka aplikací a knihoven, je jen další obrovská nafouknutá bublina jako například NFTs?**
 
-zcela jistě splaskne bublina a mnoho projektů zkrachuje neuspěje nebo zapadne do zapomnění avšak to je naprosto v pořádku – v tuhle chvíli nevíme co dává smysl a Co nedává smysl a bez praktického otestování to ani nezjistíme
+Zcela jistě splaskne bublina a mnoho projektů zkrachuje, neuspěje nebo zapadne do zapomnění. Avšak to je naprosto v pořádku – v tuhle chvíli nevíme, co dává smysl a co smysl nedává smysl a bez praktického otestování to ani nezjistíme. 
 
-co jsem si však zcela jistý, že ještě Rozhodně nejsme Na Vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je mit Journey 5.x avšak Mid Journey se nedá použít přes API jako komponenta aplikace takže nad ním ještě nemohou vznikat žádné sekundární služby
+Co jsem si však zcela jistý, že ještě rozhodně nejsme na vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je MidJourney 5.x,avšak MidJourney se nedá použít přes API jako komponenta aplikací jakou je například WebGPT, takže nad ním ještě nemohou vznikat žádné sekundární služby, které by fungovaly v reálném čase pro koncové uživatele.
 
-Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt
+Dalle-2, Stable Fusion se tímto způsobem použít dají, avšak ty jsou graficky na mnohem nižší úrovni. A jakmile se otevře Dalle-3, případně MidJourney API, přijde podobná exploze sekundárních služeb, jakou teď zažíváme nad textovými modely. 
 
-ve společnosti je ohromná Míra neefektivity a neskutečně množství věcí se dělá se dá automatizovat, na to aby se to dělo existuje ohromný ekonomický tlak
+Zároveň tam bude určitý synergický efekt, protože pro mnoho věcí dává smysl tyto dva typy modelů kombinovat – například pro WebGPT. 
 
-Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk dobrého půl roku před chat GPT přišel k nám co pilot a ještě předtím to byl Tomáš Studeník který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry
+A pak mám druhý důvod, proč se nemyslím, že jde o pouhou nafouknutou bublinu. Ve společnosti je ohromná míra neefektivity a neskutečné množství věcí lze nově automatizovat. 
+
+Také si je dobré uvědomit, že ChatGPT nebyl ani tolik technologický průlom, ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT-3, které trochu doladili a vylepšili a dokázali vytvořit rozhraní, se kterým dokáže pracovat zcela běžný člověk.
+
+Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub Co-pilot a ještě celý rok předtím to byl Tomáš Studeník, který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry. 
 
 **když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
