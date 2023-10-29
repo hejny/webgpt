@@ -20,12 +20,14 @@ Samozřejmě je na pozadí mnoho dalších věcí, například analýza obrázku
 Je to hlavně o ekonomice a časové náročnosti. Pokud chci jednoduchý web, který má za cíl ukázat jednu konkrétní věc, tak je to ideální řešení.
 Naopak pro složitější weby, e-shopy, webové aplikace to není.
 
-Obecně u prezentačních webů platí jedna věc – dokáží sežrat prakticky neomezené množství času a peněz bez zvyšování hodnoty.
-Ostatně oba to známe z hackathonů, jednoduchá aplikace se dá udělat za pár hodin, ale pokud se chceš pustit do vylepšování, tak to může trvat nekonečně dlouho. U aplikací se to může vyplatit, ale u prezentačních webů to obvykle jsou utopené náklady.
+Obecně u prezentačních webů platí jedna věc – dokáží žrát prakticky neomezené množství času a peněz bez zvyšování hodnoty.
+Ostatně oba to známe z hackathonů, jednoduchá aplikace se dá udělat za pár hodin, ale pokud se chceš pustit do vylepšování, tak to může trvat nekonečně dlouho. U aplikací se taková investice může vyplatit, ale u prezentačních webů to jsou obvykle utopené náklady.
 
-**A nedají se všechny tyhle věci udělat jen s ChatGPT?**
+**A nedají se všechny tyhle věci udělat čistě pomocí ChatGPT?**
 
-Rozhodně ano, tohle ostatně na pozadí OpenAI API využívá. Zase je to jen o nákladech. Pokud jsi majitelem malé pizzerie, máš se soustředit na nejlepší pizzu ne na to, jak napsat prompt, který napíše nejlepší text pro tvůj web. A pak je tu mnoho technických detailů, které jsou potřeba na webu správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
+Rozhodně ano, WebGPT ostatně na pozadí OpenAI API využívá. Zase je to jen o nákladech. Pokud jsi majitelem pizzerie, máš umět tvořit nejlepší pizzu, ne nejlepší prompt.
+
+A pak je tu mnoho technických detailů, které jsou potřeba na webu udělat správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
 
 **Není lepší použít Wordpress nebo jiný redakční systém**
 
