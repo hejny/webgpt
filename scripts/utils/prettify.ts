@@ -4,6 +4,13 @@ import prettier from 'prettier';
 import spaceTrim from 'spacetrim';
 import { promisify } from 'util';
 
+/**
+ * Prettifies a file
+ *
+ * @param fileContents Contents of the file to prettify
+ * @param parser language of parser to use
+ * @returns Prettified file contents
+ */
 export async function prettify(fileContents: string, parser = 'typescript'): Promise<string> {
     try {
         return prettier.format(fileContents, {

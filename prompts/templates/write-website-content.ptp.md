@@ -1,6 +1,6 @@
 # 🌍 Create website content
 
-Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
+Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTP URL https://ptp.webgpt.com/en/write-wallpaper-content.ptp.md@v0.1.0
 -   PTP version 0.0.1

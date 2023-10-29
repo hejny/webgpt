@@ -5,8 +5,8 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { getExecutionTools } from '../../ai/text-to-text/prompt-templates/getExecutionTools';
-import { webgptPtpLibrary } from '../../ai/text-to-text/prompt-templates/webgptPtpLibrary';
+import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
+import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
