@@ -35,7 +35,9 @@ Pro některé případy určitě je. Ale opět přichází na řadu stejná otá
 
 Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit.
 
-Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho administrace je přirozený text. 
+<!-- !!! Make all WebGPT active links with utm source-->
+
+Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho administrace je přirozený text.
 
 **Jaké jsou největší výzvy při generování webů?**
 
@@ -44,21 +46,20 @@ Velkou výzvou je _"zkrocení"_ GPT k tomu, aby dělalo přesně to, co potřebu
 -   Pokud mám jednoduché zadání / prompt _"Jaký zvuk dělá kočička"_, tak dostanu odpověď _"Mňau"_ nebo *""*Mňau*""* _(v uvozovkách)_ případně *"Kočička dělá "*Mňau*""* nebo něco podobného.
 -   Pokud mám komplexní prompt _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_, tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
-Jakmile je potřeba něco složitějšího, existují v principu čtyři metody, jak na to:
+Jakmile je potřeba něco složitějšího, máme čtyři v principu 6 směrů kterými dokážeme zlepšovat výsledek, ty se dají docela dobře kombinovat mezi sebou:
 
--   **Fine tunning**, kdy se model dotrénuje na konkrétní úkol. Pokud mám tisíce příkladů vstupů a výstupů, tak to funguje dobře. Na rychlé prototypování je to ale pomalé a náročné.
--   **Prompt tunning**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _"kapacitu"_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
+-   **Model picking** vybrat správný model pro mou potřebu. Obvykle je nejlepší začínat na `GPT-4 32k` a poté optimalizovat směrem dolů.
+-   **Param finding** ladit parametry jako `temperature ` nebo `top_t`
+-   **Fine tunning** dotrénovat správný model na konkrétní úkol. Pokud mám tisíce příkladů vstupů a výstupů, tak to funguje dobře. Na rychlé prototypování je to ale pomalé a náročné.
+-   **Prompt writing**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _"kapacitu"_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
 -   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _"Napiš mi název kavárny"_, _"Napiš mi popis kavárny"_, _"Napiš mi menu kavárny"_, _"Vygeneruj mi fotky kavárny"_, _"Napiš mi odkaz na sociální sítě kavárny"_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
--   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického if/else programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _"Programuješ i v TypeScriptu nebo mám napsat jen JavaScript"_. Také je občas potřeba určité informace dohledat a ne si je "vyhalucinovat". V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **📖 PromptBook**](https://github.com/webgptorg/promptbook) aby šli podobné postupy psát i neprogramátorem v dokumentech.
+-   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického `if/else` programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _"Programuješ i v TypeScriptu nebo mám napsat jen JavaScript"_. Také je občas potřeba určité informace dohledat a ne si je "vyhalucinovat". V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **📖 PromptBook**](https://github.com/webgptorg/promptbook) aby šli podobné postupy psát i neprogramátorem v dokumentech.
 
-
-
-v principu máme čtyři směry kterými dokážeme zlepšovat výsledek, ty se dají docela dobře kombinovat mezi sebou
-
-
-
+<!--
+TODO: !!! Remove all comments
+!!! Remove
+**
 Tím prvním je zlepšovat Tím prvním je pokus je zlepšování na úrovni modelu, Dá se buď vybrat lepší či horší model Dá se nastavovat temperature nebo lze dělat fajn tuning kdy model dotrénovávám vlastními daty
-
 
 tím druhým je práce na úrovni promptu případně systém message
 
@@ -68,29 +69,21 @@ a tou čtvrtou je zapojení klasického programování
 
 tou pátou Je interakce s externími zdroji buď volání API nebo interakce s uživatelem
 
-
-
-
-
-
-
-
+-->
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
-To co dělám je opravdu lehká nadstavba nad OpenAI API, která umožňuje psát podobné postupy i neprogramátorem v dokumentech.
+To co dělám je opravdu lehká nadstavba nad OpenAI API a dalšími, která umožňuje psát podobné postupy i neprogramátorem v dokumentech.
 
+Jde o takovou "kuchařku receptů" pro řízení velkých jazykových modelů i naprostým neprogramátorem.
 
-jde o takovou kuchařku receptů pro řízení velkých jazykových modelů i zcela neprogramátorama
+V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z modelu nebo od uživatele. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj uživatelských aplikací, takže tam řeším i interakci s UI, streamování výsledků, UX, atd...
 
- V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z GPT. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj aplikací pro uživatele, takže tam řeším i interakci s uživatelem, streamování výsledků, UX, atd...
+Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky nemožné sehnat vývojáře, sehnat copyrightry je jednodušší a psaní podobných promptbooků se zcela jistě stane novou profesí.
 
-Druhá důležitá věc je, že se snažím rozdělit role. Dneska je prakticky nemožné
-sehnat vývojáře, sehnat copyrightry je jednodušší a psaní podobných prompkuchařek bude zcela jistě nový druh práce a nový druh ekonomiky
+Opravdu zajímavé na tom je, že taková práce má jak povahu copywritingu, tak povahu programování pomocí přirozeného jazyka.
 
-opravdu zajímavé na tom je že tahle práce má jak povahu copyrightingu tak povahu programování – pomocí přirozeného jazyka pracuji velmi podobně jako copyrighter nebo manažer a pomocí přirozeného jazyka popisuji postupy avšak tyto postupy nevykonává sekretářka ale zabalí se do úplně běžné funkce použitelné v rámci aplikace – jde opravdu o úplně obyčejnou asynchronní funkci kterou lze použít přesně jako jakoukoliv jinou funkci v kódu
-
-
+Jako výsledek dostanu úplně obyčejnou asynchronní funkci, kterou lze použít přesně jako jakoukoliv jinou funkci v rámci kódu.
 
 
 
@@ -104,7 +97,7 @@ zcela jistě splaskne bublina a mnoho projektů zkrachuje neuspěje nebo zapadne
 
 co jsem si však zcela jistý, že ještě Rozhodně nejsme Na Vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je mit Journey 5.x avšak Mid Journey se nedá použít přes API jako komponenta aplikace takže nad ním ještě nemohou vznikat žádné sekundární služby
 
-Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt 
+Dalí i Stable Fusion se tímto způsobem použít dá avšak ty jsou graficky na mnohem nižší úrovni jakmile však přijde Dalí tři případně Mid Journey otevře API přijde podobná vlna záplava sekundárních služeb jako teď probíhá nad textovými modely zároveň tam bude určitý synergický efekt protože pro mnoho věcí dává smysl tyhle dva typy modelů zkombinovat – například pro webgpt
 
 ve společnosti je ohromná Míra neefektivity a neskutečně množství věcí se dělá se dá automatizovat, na to aby se to dělo existuje ohromný ekonomický tlak
 
