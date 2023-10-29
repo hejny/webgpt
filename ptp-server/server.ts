@@ -2,10 +2,12 @@ import * as dotenv from 'dotenv';
 
 dotenv.config({ path: '.env' });
 
-import { createRemoteServer, OpenAiExecutionTools, PromptTemplatePipelineLibrary } from '@gptp/core';
+import { PromptTemplatePipelineLibrary } from '@gptp/core';
+import { OpenAiExecutionTools } from '@gptp/openai';
+import { createRemoteServer } from '@gptp/remote-server';
 import { IS_DEVELOPMENT, OPENAI_API_KEY } from '../config';
 import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../src/ai/prompt-templates/logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
-// [🎛] import { ptpLibrary } from '../src/ai/text-to-text/prompt-templates/ptpLibrary';
+// [🎛] import { webgptPtpLibrary } from '../src/ai/prompt-templates/webgptPtpLibrary';
 
 const naturalExecutionTools = new OpenAiExecutionTools({
     isVerbose: IS_DEVELOPMENT /* <- Note: [3] */,

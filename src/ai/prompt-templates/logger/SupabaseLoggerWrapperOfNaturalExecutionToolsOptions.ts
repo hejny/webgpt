@@ -1,4 +1,4 @@
-import type { CommonExecutionToolsOptions, NaturalExecutionTools } from '@gptp/core';
+import type { CommonExecutionToolsOptions, NaturalExecutionTools } from '@gptp/types';
 import type { uuid } from '../../../utils/typeAliases';
 
 /**

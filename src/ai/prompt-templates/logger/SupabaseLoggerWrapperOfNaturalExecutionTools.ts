@@ -1,4 +1,10 @@
-import { NaturalExecutionTools, Prompt, PromptChatResult, PromptCompletionResult, PromptResult } from '@gptp/core';
+import type {
+    NaturalExecutionTools,
+    Prompt,
+    PromptChatResult,
+    PromptCompletionResult,
+    PromptResult,
+} from '@gptp/types';
 import spaceTrim from 'spacetrim';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServer';
