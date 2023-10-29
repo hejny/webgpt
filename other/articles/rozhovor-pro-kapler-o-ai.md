@@ -33,7 +33,9 @@ A pak je tu mnoho technických detailů, které jsou potřeba na webu udělat sp
 
 Pro některé případy určitě je. Ale opět přichází na řadu stejná otázka, co SEO, responzivita, rychlost, bezpečnost, přístupnost,... WordPress (a jiné redakční systémy) tyhle věci řeší, ale je potřeba je nastavit, spravovat a aktualizovat. A zase je to otázka času, peněz a kapacity.
 
-Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit. To může přínést i zásadní společenský problém do budoucna – výrazně se zvýší laťka a mnoho lidí dělající jednoduchou práci přijde o ekonomický benefit jejich času.
+Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit.
+
+Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho administrace je přirozený text. 
 
 **Jaké jsou největší výzvy při generování webů?**
 
