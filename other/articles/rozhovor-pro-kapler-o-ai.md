@@ -7,12 +7,13 @@ Rozhodl jsem se ho vyzpovídat a zjistit, co ho k tomu vedlo, jak to funguje a c
 
 **Co si mají čtenáři představit pod tím, když mluvíš o kompletně generovaných webech**
 
-Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny Pod Kaštanem, Osobní weby, weby jednoduchých událostí,...
+Rozhodně tím nemyslím velké webové aplikace, mám na mysli jednoduché prezentační weby které mají za cíl ukázat jednu konkrétní věc – typicky web kavárny Pod Kaštanem, Osobní weby, weby svateb, konferencí, landing page pro produkty,...
 
 **Jak to funguje?**
 
 V principu je to spojení jazykového modelu, obrázkového generátoru, rozpoznání obrázků a několika dalších technologií.
 Uživatel má vícero možností:
+
 
 -   Mám **obrázek**, ten se mi analyzuje a na základě něj se vygeneruje zadaní, které mohu upravit
 -   Mám **zadání** a z něj se mi vygeneruje obrázek a web
@@ -32,7 +33,7 @@ Ostatně oba to známe z hackathonů, jednoduchá aplikace se dá udělat za pá
 
 **A nedají se všechny tyhle věci udělat jen s ChatGPT?**
 
-Rozhodně ano, tohle ostatně na pozadí GPT API využívá. Zase je to jen o času. Pokud jsi majitelem malé pizzerie, máš se soustředit na nejlepší pizzu ne na to, jak napsat prompt, který napíše nejlepší text pro tvůj web. A pak je tu mnoho technických detailů, které jsou potřeba na webu správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
+Rozhodně ano, tohle ostatně na pozadí OpenAI API využívá. Zase je to jen o nákladech. Pokud jsi majitelem malé pizzerie, máš se soustředit na nejlepší pizzu ne na to, jak napsat prompt, který napíše nejlepší text pro tvůj web. A pak je tu mnoho technických detailů, které jsou potřeba na webu správně - SEO, responzivita, rychlost, bezpečnost, přístupnost... není to raketová věda, ale to všechno je potřeba řešit.
 
 **Není lepší použít Wordpress nebo jiný redakční systém**
 
