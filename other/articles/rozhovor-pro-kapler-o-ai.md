@@ -85,13 +85,7 @@ Opravdu zajímavé na tom je, že taková práce má jak povahu copywritingu, ta
 
 Jako výsledek dostanu úplně obyčejnou asynchronní funkci, kterou lze použít přesně jako jakoukoliv jinou funkci v rámci kódu.
 
-
-
-**Myslíš, že generativní AI ještě není na svém vrcholu?**
-
-<!--
-
-
+**A nemyslíš, že generativní AI a podobné....?**
 
 zcela jistě splaskne bublina a mnoho projektů zkrachuje neuspěje nebo zapadne do zapomnění avšak to je naprosto v pořádku – v tuhle chvíli nevíme co dává smysl a Co nedává smysl a bez praktického otestování to ani nezjistíme
 
@@ -103,27 +97,11 @@ ve společnosti je ohromná Míra neefektivity a neskutečně množství věcí 
 
 Také si je dobré uvědomit že chat GPT nebyl ani tolik technologický nebo Ai průlom ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT které trochu doladili a vylepšili A dokázali vytvořit rozhraní které se kterým dokáže pracovat zcela běžný člověk dobrého půl roku před chat GPT přišel k nám co pilot a ještě předtím to byl Tomáš Studeník který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry
 
-
-
-
-
-
-
-
-
-
-
-
--->
-
-** když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
-
-<!--
+**když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
 
 obsah byl vždy ovlivněn formou a ekonomikou
 
 většina technologií neudělá fundamentální změnu v tom jaký obsah se dá vytvořit, spíš změní pravidla hry Jaký obsah dává smysl vytvořit
-
 
 knihtisk byl jen obyčejná technologie kdy Gutenberg přišel na způsob jak vytvořit Slatinu pro raznice avšak tahle Technologická změna odemkla ohromný potenciál a řádově zlevnila tištění knih – najednou byli knihy mnohem levnější mnohem dostupnější dávalo mnohem větší smysl umět je číst a zároveň před tím byla kniha naprosto luxusní zboží kdy se za kilo knihy platilo víc než za kilo zlata potom se z nich stala komodita a gramotnost se prudce zvýšila zároveň s tím se v Evropě odehrály neuvěřitelné společenské a sociální změny které pak nastartovali první průmyslovou revoluci které pak nastartovali reformaci a potom první průmyslovou revoluce
 
@@ -135,79 +113,39 @@ zároveň bude možné aby vzniklo spolu mnoho obsahu který bude výrazně víc
 
 zároveň bude velmi pravděpodobné že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst jiný si bude chtít povídat s postavami v nich jiný bude chtít poslouchat rádio vysílané z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru
 
-
-
-
-
-
-
-
-
--->
-
-** když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl Řekni něco víc o hře Towns, co jsi vyvíjel**
-
-<!--
-
-
+**Když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl Řekni něco víc o hře Towns, co jsi vyvíjel**
 
 šlo o online strategickou hru přes prohlížeč- taková kombinace mezi Age of Empires a travianem který v té v té době frčel – už je to poměrně dlouhá doba, doslova polovina a mého života kdy jsem tuhle věc začal dělat před 15 lety v mých 15 letech a docela jsem se na tom naučil programovat
 
 v jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa a zároveň člověk mohl libovolně kombinovat budovy– například postavit dva domy na hradbu nebo pět domů na sebe Z čeho vznikl něco jako mrakodrap všechno to bylo procedurálněgerované, takže a šlo o takovou velmi proto verzi nějak určitého vektorového prostoru všech možných budov
 
-
 zároveň to byl ale je svým způsobem velmi neivní projekt, kdy jsem neměl základní znalosti ohledně toho jak takovou věc škálovat nebo o ekonomice celé věci, Přesto to hrálo nižší tisíce lidí avšak Vzhledem k mé neznalosti jakékoliv optimalizace podobné věci To bylo neskutečně zasekané a chybové
 
-
-
-
-
--->
-
-** další Z projektu díky kterému se známe je virtuální tabule kolboard Řekni něco víc o modulech do Collboardu**
-
-<!--
-
+**Další Z projektu díky kterému se známe je virtuální tabule Collboard Řekni něco víc o modulech do Collboardu**
 
 jde o virtuální tabule kterou jsme založili v rámci elektronických učebnic hm které jsem také technicky zakládal kdy se nám stalo že na začátku pandemie covidu byla potřeba mít nějaký jednoduchý super jednoduchý nástroj pro učitele
 
-
 já Obecně mám rád modularitu a tak jsem celý systém navrhl tak, že jakýkoliv prvek je modulem
-
 
 když se bavíme o školství, připravujete do hidu nebo kolboardu něco s umělou inteligencí
 
-
 momentálně připravuji připravujeme modely moduly pro generování obrázků přímo v rámci téhle tabule
-
 
 pro H Edu pracujeme na chytrém asistentovi pro učitele který pomůže s psaním textu
 
 a v samotných učebnicích hledáme způsob jak vytvářet úlohy na míru pro potřeby konkrétních žáků
 
-
-jak se k tomu staví učitelé, nechtějí podobné věci spíš omezovat nebo zakazovat
-
+**Jak se k tomu staví učitelé, nechtějí podobné věci spíš omezovat nebo zakazovat**
 
 záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, Na kolik se učitelé dokázali popasovat s pandemií covidu a ze dne na den se z nich stali it správci virtuálních tříd a zároveň to dělali ke své práci učitele
 
-
 Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol a nebo i ty který překládáš který píše opravdu obrovské množství kvalitního obsahu v češtině
-
 
 jsem tam ale čtu i povzdechy o tom, jak žáci používají vygenerovaný text a otázky Jakým způsobem do lze efektivně detekovat a zakazovat
 
+**A nebylo by teda lepší generativní AI ve školách zakázat?**
 
-
-
--->
-
-**Nebylo by teda lepší generativní AI ve školách zakázat?**
-
-<!--
-
-
-ne, ale rozvedu svou odpověď
+Ne, avšak rozvedu svou odpověď
 
 bez ohledu na to, že jsem vývojář a nadšenec do nových technologií a vyvíjím nástroj nad velkými jazykovými modely, tak i kdybych nic z toho nedělal fakt jeden budoucnost s generativní umělou inteligencí je tady prakticky se jejím dopadům nelze vyhnout
 
@@ -221,27 +159,9 @@ určitě je důležité umět počítat a mít přehled o tom jak funguje matema
 
 je důležité nepřeskakovat laťku ze země ale použít je jako stupínek
 
--->
-
 <!--
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+======================================================================================================================
 
 
 Kalkulačka
