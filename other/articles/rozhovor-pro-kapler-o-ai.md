@@ -105,19 +105,27 @@ Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub
 
 **Když jsme u té divadelní hry, jakým způsobem ovlivní generativní AI jazyk a kulturu?**
 
-obsah byl vždy ovlivněn formou a ekonomikou
+Obsah byl vždy ovlivněn formou a způsobem distribuce.
 
-většina technologií neudělá fundamentální změnu v tom jaký obsah se dá vytvořit, spíš změní pravidla hry Jaký obsah dává smysl vytvořit
 
-knihtisk byl jen obyčejná technologie kdy Gutenberg přišel na způsob jak vytvořit Slatinu pro raznice avšak tahle Technologická změna odemkla ohromný potenciál a řádově zlevnila tištění knih – najednou byli knihy mnohem levnější mnohem dostupnější dávalo mnohem větší smysl umět je číst a zároveň před tím byla kniha naprosto luxusní zboží kdy se za kilo knihy platilo víc než za kilo zlata potom se z nich stala komodita a gramotnost se prudce zvýšila zároveň s tím se v Evropě odehrály neuvěřitelné společenské a sociální změny které pak nastartovali první průmyslovou revoluci které pak nastartovali reformaci a potom první průmyslovou revoluce
+Knihtisk byl "jen" obyčejná technologie, kdy Gutenberg objevil správnou slitinu pro raznice, avšak tahle čistě technologická změna odemkla ohromný potenciál a řádově zlevnila výrobu knih. Najednou byli knihy mnohem levnější, mnohem dostupnější, dávalo mnohem větší smysl umět je číst a přestali být luxusním zbožím. I díky tomu se v Evropě odehrály neuvěřitelné společenské a sociální změny. 
 
-internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo ale přestala hrát roli vzdálenost
+Internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo, ale přestala hrát roli vzdálenost. 
 
-umělá inteligence přinese podobný skok – Stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér kdy Jeden člověk preferuje audio zatímco druhý preferuje psát text tyto bariéry byly doposud nepřekonatelné respektive tyto bariéry šly doposud překonat pouze z vynaložením Velkých ekonomických zdrojů, do pár let tu bude zcela běžné že já pošlu já tobě pošlu zprávu v libovolné formě Audio video a libovolném jazyce A ty jsi jí pustíš v libovolné kombinaci ového zcela bez
+Generativní umělá inteligence přinese podobný skok – stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér, kdy jeden člověk preferuje audio zatímco druhý preferuje text. 
+Takové bariéry byly doposud nepřekonatelné respektive tyto bariéry šly doposud překonat pouze s vynaložením netriviálních ekonomických zdrojů. Pokud člověk napsal knihu namluvit audioknihu vyžadovalo značnou část dalších zdrojů.
 
-zároveň bude možné aby vzniklo spolu mnoho obsahu který bude výrazně více na míru – mám takový J K Rowlingová v minulosti vytvořila naprosto pevný obsah a kolem toho vznikl ohromný Kult světa Harryho Pottera – moderní J K Rowling Rowlingová může vytvořit nějaký koncept takového světa kdy popíše konkrétní příklady konkrétní situace konkrétní části světa avšak každý čtenář se bude moc vytvořit vlastní příběh Nad tímto světem Možná se dokonce rozdělí autorství na autory těch světů a konceptů a na autory konkrétních příběhů v rámci těch světů
+Za pár let bude zcela běžné, že já pošlu zprávu v libovolné formě a libovolném jazyce a ty si ji pustíš v libovolné kombinaci obého.
 
-zároveň bude velmi pravděpodobné že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst jiný si bude chtít povídat s postavami v nich jiný bude chtít poslouchat rádio vysílané z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru
+Zároveň bude možné, aby vzniklo mnoho obsahu, který bude výrazně více na míru –  J.K.Rowlingová v minulosti vytvořila naprosto pevný obsah a až kolem toho vznikl úžasný svět Harryho Pottera. 
+
+Budoucí J K Rowling může vytvořit koncept takového světa, kdy popíše konkrétní příklady, konkrétní situace, konkrétní části světa, avšak každý čtenář si bude moc vytvořit vlastní příběh nad tímto světem.
+
+Možná se dokonce rozdělí autorství na autory těch světů a konceptů a na autory konkrétních příběhů v rámci těch světů.
+
+Podobná věc s autorstvím se teď diskutuje z hlediska obrazů – Možná se zcela rozdělí autorství stylu a konkrétního obrazu. 
+
+Zároveň bude velmi pravděpodobné, že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst, jiný si bude chtít povídat s postavami, jiný bude chtít poslouchat rozhlas z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru. 
 
 **Když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl Řekni něco víc o hře Towns, co jsi vyvíjel**
 
