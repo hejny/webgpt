@@ -99,9 +99,11 @@ A pak mám druhý důvod, proč se nemyslím, že jde o pouhou nafouknutou bubli
 
 Také si je dobré uvědomit, že ChatGPT nebyl ani tolik technologický průlom, ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT-3, které trochu doladili a vylepšili a dokázali vytvořit rozhraní, se kterým dokáže pracovat zcela běžný člověk.
 
-Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub Co-pilot a ještě celý rok předtím to byl Tomáš Studeník, který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry. 
+Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub Co-pilot a ještě celý rok předtím to byl Tomáš Studeník, který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry. To bylo postavené nad GPT-2 a GPT-2 byl ten opravdový technologický průlom, v tu dobu ještě nezaznamenaný širokou veřejností.
 
-**když jsme u té divadelní hry, Jakým způsobem teda ovlivní AI jazyk a kulturu?**
+!!! Ainautes někde 
+
+**Když jsme u té divadelní hry, jakým způsobem ovlivní generativní AI jazyk a kulturu?**
 
 obsah byl vždy ovlivněn formou a ekonomikou
 
