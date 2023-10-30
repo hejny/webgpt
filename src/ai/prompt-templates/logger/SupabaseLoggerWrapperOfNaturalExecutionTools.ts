@@ -43,15 +43,21 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
         performance.mark(`${mark}-start`);
 
         let promptResult: PromptResult;
-        switch (prompt.modelRequirements.variant) {
-            case 'CHAT':
-                promptResult = await this.options.naturalExecutionTools.gptChat(prompt);
-                break;
-            case 'COMPLETION':
-                promptResult = await this.options.naturalExecutionTools.gptComplete(prompt);
-                break;
-            default:
-                throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+
+        try {
+            switch (prompt.modelRequirements.variant) {
+                case 'CHAT':
+                    promptResult = await this.options.naturalExecutionTools.gptChat(prompt);
+                    break;
+                case 'COMPLETION':
+                    promptResult = await this.options.naturalExecutionTools.gptComplete(prompt);
+                    break;
+                default:
+                    throw new Error(`Unknown model variant "${prompt.modelRequirements.variant}"`);
+            }
+        } catch (error) {
+            console.error('SupabaseLoggerWrapperOfNaturalExecutionTools', { error });
+            throw error;
         }
 
         performance.mark(`${mark}-end`);

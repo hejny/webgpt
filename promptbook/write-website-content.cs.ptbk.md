@@ -26,26 +26,28 @@ English assignment:
 
 `-> {rawAssigmentCs}` popis obrázku v češtině
 
-## Účel stránek
+## 💬 Účel stránek
 
 -   Use chat
--   Postprocessing `trim`
--   Postprocessing removeQuotes
+-   Postprocessing `unwrapResult`
 
 ```markdown
 Navrhni možný účel webových stránek z čistého popisu co se nachází na obrázku
 
 ## Pravidla
 
--   Piš jediný návrh
+-   Piš jediný návrh, neříkej "může to být toto nebo toto"
 -   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
+-   Návrh je v češtině
+-   Návrh je stručný, maximálně 3 slova
+-
 
 ## Příklady
 
 -   "Kavárna"
 -   "Autoservis"
 -   "Dětská herna"
-    -" Svatba"
+-   "Svatba"
 -   "Osobní stránka fotografa"
 
 Text na obrázku:
@@ -67,7 +69,7 @@ Je toto účelem vašeho webu?
 
 `-> {purpose}` Účel webu
 
-## Návrh zadání
+## 💬 Návrh zadání
 
 -   Use chat
 -   Postprocessing `trim`
@@ -80,7 +82,7 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 -   Účelem webu je {purpose}
 -   Zadání je strukturované
 -   Zadání obsahuje konkrétní čísla, odrážky a je přesné
--   Stručně, maximálně 5 bodů zadání
+-   Stručně, maximálně 4 body zadání, každý bod je maximálně 2 věty
 
 Text na obrázku:
 
@@ -120,12 +122,13 @@ Zadání od zákazníka:
 ## Pokyny:
 
 -   Účelem webu je {purpose}
--   Napiště pouze jeden návrh názvu
+-   Napište pouze jeden návrh názvu
+-   Napište pouze název, ne zdůvodnění ani jiný text okolo
 -   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
 ```
 
-`-> {enhancedTitle}` Vylepšený název
+`-> {draftedTitle}` Vylepšený název
 
 ## 👤 Schválení názvu uživatelem
 
@@ -134,7 +137,7 @@ Je název Vašeho webu v pořádku?
 -   Prompt dialog
 
 ```text
-{enhancedTitle}
+{draftedTitle}
 ```
 
 `-> {title}` Název webu
@@ -155,12 +158,24 @@ Zadání webu od zákazníka:
 ## Pokyny:
 
 -   Účelem webu je {purpose}
--   Napiště pouze jeden návrh názvu
+-   Napište pouze jeden návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
 ```
 
-`-> {claim}` Podtitulek pro web
+`-> {draftedClaim}` Návrh claimu webu
+
+## 👤 Schválení claimu uživatelem
+
+Je podtitulek Vašeho webu v pořádku?
+
+-   Prompt dialog
+
+```text
+{draftedClaim}
+```
+
+`-> {claim}` Claimu webu
 
 ## 💬 Analýza klíčových slov
 
@@ -179,7 +194,7 @@ Zadání webu od zákazníka:
 
 ## Pokyny:
 
--   Napiště seznam klíčových slov
+-   Napište seznam klíčových slov
 -   Klíčové slova jsou v základním tvaru
 -   Účelem webu je {purpose}
 
