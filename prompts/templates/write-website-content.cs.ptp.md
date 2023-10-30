@@ -36,8 +36,9 @@ English assignment:
 Vytvoř zadání reálného webu z čistého popisu co se nachází na obrázku
 
 ## Pravidla
-- Zadání piš stručné, maximálně jeden odstavec textu
+- Zadání je stručné
 - Zadání je strukturované
+- Zadání obsahuje konkrétní čísla, odrážky a je přesné
 
 Text na obrázku:
 > {rawAssigmentCs}
