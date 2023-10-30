@@ -12,10 +12,20 @@ Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](http
 -   Use completion
 
 ```
-Surový text:
+# Zadání pro zkušeného copywritera
+
+## Pravidla
+- Výsledný text neobsahuje gramatické ani stylistické chyby
+- Výsledný text zní profesionálně
+- Výsledný text obsahuje bohatou slovní zásobu
+- Výsledný text se významově neliší od surového textu
+- Výsledný text má podobnou délku jako surový text
+
+
+## Surový text:
 {inputText}
 
-Vylepšený text:
+## Výsledný text:
 ```
 
 `-> {outputText}`
