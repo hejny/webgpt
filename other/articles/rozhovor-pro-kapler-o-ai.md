@@ -145,27 +145,31 @@ A když se o H-Edu a Collboardu bavíme, jak do H-Edu tak do Collboardu připrav
 
 **Jak se k tomu staví učitelé, nechtějí podobné věci spíš omezovat nebo zakazovat**
 
-Záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, Na kolik se učitelé dokázali popasovat s pandemií covidu a ze dne na den se z nich stali it správci virtuálních tříd a zároveň to dělali ke své práci učitele
+Záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, jak se učitelé dokázali popasovat s celou pandemií covidu a ze dne na den se z nich stali IT správci virtuálních tříd a k tomu zůstali ve své práci učitele.
 
-Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol a nebo i ty který překládáš který píše opravdu obrovské množství kvalitního obsahu v češtině
+Velkou propagaci AI pro školství v Čechách dělá Eva Nečasová nebo PRG.AI nebo i ty, který píšeš opravdu obrovské množství kvalitního obsahu o AI v češtině.
 
 jsem tam ale čtu i povzdechy o tom, jak žáci používají vygenerovaný text a otázky Jakým způsobem do lze efektivně detekovat a zakazovat
 
+Často ale také šlyším povzdechy, že by se AI a obecně technologie měli ve škole omezit.
+
 **A nebylo by teda lepší generativní AI ve školách zakázat?**
 
-Ne, avšak rozvedu svou odpověď
+Ne, avšak rozvedu svou odpověď:
 
-bez ohledu na to, že jsem vývojář a nadšenec do nových technologií a vyvíjím nástroj nad velkými jazykovými modely, tak i kdybych nic z toho nedělal fakt jeden budoucnost s generativní umělou inteligencí je tady prakticky se jejím dopadům nelze vyhnout
+Bez ohledu na to, že sám jsem vývojář a nadšenec do nových technologií a k tomu vyvíjím nástroje nad velkými jazykovými modely, tak i kdybych nic z toho nedělal, fakt jeden: **budoucnost s generativní umělou inteligencí je tady** a prakticky se jejím dopadům nelze vyhnout.
 
-Pravděpodobně nebude existovat žádná intelektuální práce která by touhle revolucí nebyla ovlivněna – neříkám že zanikne, říkám že prakticky všechny profese které se zabývají manipulacemi manipulací s informacemi budou ovlivněny
+Pravděpodobně nebude existovat žádná intelektuální práce, která by touhle revolucí nebyla ovlivněna – neříkám, že zanikne; říkám, že prakticky všechny profese, které se zabývají manipulací s informacemi budou tak či onak ovlivněny.
 
-podle mě velmi dobrý příklad je počítač a kalkulačka, ve 40 letech bylo slovo počítač slovo počítač neznamenalo přístroj ale člověka který počítá tabulky obvykle balistických křivek pomocí logaritmického pravítka Computer byl člověk ne stroj
+Podle mě velmi dobrým příklad je počítač a kalkulačka, ve 40. letech 20. století slovo "počítač" neznamenalo přístroj, ale člověka, který počítá tabulky. Představme si v té době utvrzovat budoucí žáky v tom, že ty počítače jsou stejně jenom nějaký divný hype a že je velmi důležité umět počítat sloupečky čísel ručně.
 
-představme si v té době utvrzovat budoucí žáky v tom že ty počítače jsou stejně jenom nějaký divný Hype a že je velmi důležité umět počítat sloupečky čísel ručně protože bez toho
+Určitě je důležité umět počítat a mít přehled o tom jak funguje matematika a stejně tak je důležité znát jazyk, ale vývýbat se využívání velkých jazykových modelů (např. přes ChatGPT) je nesmírně hloupé, protože nás to nepřipravuje na budoucnost a jenom způsobí, že zůstaneme montovnou Evropy.
 
-určitě je důležité umět počítat a mít přehled o tom jak funguje matematika, avšak a stejně tak je důležité znát jazyk ale vyhnout se použití jazykových použití a hlavně znalosti jazykových modelů je nesmírně hloupé, protože nás to nepřipravuje na budoucnost a jenom způsobí že zůstaneme montovnou Evropy
+Je důležité nepřeskakovat laťku ze země, ale použít ji jako stupínek.
 
-je důležité nepřeskakovat laťku ze země ale použít je jako stupínek
+**Díky moc za rozhovor!**
+
+Díky, 
 
 <!--
 
