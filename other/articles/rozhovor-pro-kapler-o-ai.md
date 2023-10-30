@@ -41,9 +41,9 @@ Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho admini
 
 **Jaké jsou největší výzvy při generování webů?**
 
-Velkou výzvou je _"zkrocení"_ GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
+Velkou výzvou je _„zkrocení“_ GPT k tomu, aby dělalo přesně to, co potřebuju. Dám příklad:
 
--   Pokud mám jednoduché zadání / prompt _"Jaký zvuk dělá kočička"_, tak dostanu odpověď _"Mňau"_ nebo *""*Mňau*""* _(v uvozovkách)_ případně *"Kočička dělá "*Mňau*""* nebo něco podobného.
+-   Pokud mám jednoduché zadání / prompt _„Jaký zvuk dělá kočička“_, tak dostanu odpověď _„Mňau“_ nebo _„"Mňau"“_ _(v uvozovkách)_ případně _„Kočička dělá Mňau“_ nebo něco podobného.
 -   Pokud mám komplexní prompt _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_, tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
 Jakmile je potřeba něco složitějšího, máme čtyři v principu 6 směrů kterými dokážeme zlepšovat výsledek, ty se dají docela dobře kombinovat mezi sebou:
@@ -51,15 +51,15 @@ Jakmile je potřeba něco složitějšího, máme čtyři v principu 6 směrů k
 -   **Model picking** vybrat správný model pro mou potřebu. Obvykle je nejlepší začínat na `GPT-4 32k` a poté optimalizovat směrem dolů.
 -   **Param finding** ladit parametry jako `temperature ` nebo `top_t`
 -   **Fine tunning** dotrénovat správný model na konkrétní úkol. Pokud mám tisíce příkladů vstupů a výstupů, tak to funguje dobře. Na rychlé prototypování je to ale pomalé a náročné.
--   **Prompt writing**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _"kapacitu"_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
--   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _"Napiš mi název kavárny"_, _"Napiš mi popis kavárny"_, _"Napiš mi menu kavárny"_, _"Vygeneruj mi fotky kavárny"_, _"Napiš mi odkaz na sociální sítě kavárny"_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
--   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického `if/else` programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _"Programuješ i v TypeScriptu nebo mám napsat jen JavaScript"_. Také je občas potřeba určité informace dohledat a ne si je "vyhalucinovat". V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **📖 PromptBook**](https://github.com/webgptorg/promptbook) aby šli podobné postupy psát i neprogramátorem v dokumentech.
+-   **Prompt writing**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _„kapacitu“_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
+-   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _„Napiš mi název kavárny“_, _„Napiš mi popis kavárny“_, _„Napiš mi menu kavárny“_, _„Vygeneruj mi fotky kavárny“_, _„Napiš mi odkaz na sociální sítě kavárny“_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
+-   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického `if/else` programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _„Programuješ i v TypeScriptu nebo mám napsat jen JavaScript“_. Také je občas potřeba určité informace dohledat a ne si je _„vyhalucinovat“_. V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **📖 PromptBook**](https://github.com/webgptorg/promptbook) aby šli podobné postupy psát i neprogramátorem v dokumentech.
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
 
 To co dělám je opravdu lehká nadstavba nad OpenAI API a dalšími, která umožňuje psát podobné postupy i neprogramátorem v dokumentech.
 
-Jde o takovou "kuchařku receptů" pro řízení velkých jazykových modelů i naprostým neprogramátorem.
+Jde o takovou _„kuchařku receptů“_ pro řízení velkých jazykových modelů i naprostým neprogramátorem.
 
 V principu je to jen o tom, že si vytvořím šablonu, která má nějaké proměnné a ty se nahradí za výsledky z modelu nebo od uživatele. Celé je to oproti jiným knihovnám velmi soustředěné na vývoj uživatelských aplikací, takže tam řeším i interakci s UI, streamování výsledků, UX, atd...
 
@@ -91,7 +91,7 @@ Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub
 
 Obsah byl vždy ovlivněn formou a způsobem distribuce.
 
-Knihtisk byl "jen" obyčejná technologie, kdy Gutenberg objevil správnou slitinu pro raznice, avšak tahle čistě technologická změna odemkla ohromný potenciál a řádově zlevnila výrobu knih. Najednou byli knihy mnohem levnější, mnohem dostupnější, dávalo mnohem větší smysl umět je číst a přestali být luxusním zbožím. I díky tomu se v Evropě odehrály neuvěřitelné společenské a sociální změny.
+Knihtisk byl _„jen“_ obyčejná technologie, kdy Gutenberg objevil správnou slitinu pro raznice, avšak tahle čistě technologická změna odemkla ohromný potenciál a řádově zlevnila výrobu knih. Najednou byli knihy mnohem levnější, mnohem dostupnější, dávalo mnohem větší smysl umět je číst a přestali být luxusním zbožím. I díky tomu se v Evropě odehrály neuvěřitelné společenské a sociální změny.
 
 Internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo, ale přestala hrát roli vzdálenost.
 
@@ -145,7 +145,7 @@ Bez ohledu na to, že sám jsem vývojář a nadšenec do nových technologií a
 
 Pravděpodobně nebude existovat žádná intelektuální práce, která by touhle revolucí nebyla ovlivněna – neříkám, že zanikne; říkám, že prakticky všechny profese, které se zabývají manipulací s informacemi budou tak či onak ovlivněny.
 
-Podle mě velmi dobrým příklad je počítač a kalkulačka, ve 40. letech 20. století slovo "počítač" neznamenalo přístroj, ale člověka, který počítá tabulky. Představme si v té době utvrzovat budoucí žáky v tom, že ty počítače jsou stejně jenom nějaký divný hype a že je velmi důležité umět počítat sloupečky čísel ručně.
+Podle mě velmi dobrým příklad je počítač a kalkulačka, ve 40. letech 20. století slovo _„počítač“_ neznamenalo přístroj, ale člověka, který počítá tabulky. Představme si v té době utvrzovat budoucí žáky v tom, že ty počítače jsou stejně jenom nějaký divný hype a že je velmi důležité umět počítat sloupečky čísel ručně.
 
 Určitě je důležité umět počítat a mít přehled o tom jak funguje matematika a stejně tak je důležité znát jazyk, ale vývýbat se využívání velkých jazykových modelů (např. přes ChatGPT) je nesmírně hloupé, protože nás to nepřipravuje na budoucnost a jenom způsobí, že zůstaneme montovnou Evropy.
 
