@@ -32,25 +32,25 @@ English assignment:
 -   Postprocessing `trim`
 -   Postprocessing removeQuotes
 
-```text
-
+```markdown
 Navrhni možný účel webových stránek z čistého popisu co se nachází na obrázku
 
 ## Pravidla
-- Piš jediný návrh
-- Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
+
+-   Piš jediný návrh
+-   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
 
 ## Příklady
-- "Kavárna"
-- "Autoservis"
-- "Dětská herna"
--" Svatba"
-- "Osobní stránka fotografa"
+
+-   "Kavárna"
+-   "Autoservis"
+-   "Dětská herna"
+    -" Svatba"
+-   "Osobní stránka fotografa"
 
 Text na obrázku:
+
 > {rawAssigmentCs}
-
-
 ```
 
 `-> {draftedPurpose}`Návrh účelu webu
@@ -72,20 +72,19 @@ Je toto účelem vašeho webu?
 -   Use chat
 -   Postprocessing `trim`
 
-```text
-
+```markdown
 Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nachází na obrázku
 
 ## Pravidla
-- Účelem webu je {purpose}
-- Zadání je strukturované
-- Zadání obsahuje konkrétní čísla, odrážky a je přesné
-- Stručně, maximálně 5 bodů zadání
+
+-   Účelem webu je {purpose}
+-   Zadání je strukturované
+-   Zadání obsahuje konkrétní čísla, odrážky a je přesné
+-   Stručně, maximálně 5 bodů zadání
 
 Text na obrázku:
+
 > {rawAssigmentCs}
-
-
 ```
 
 `-> {draftedAssigment}` Zadání webu v Češtině
