@@ -3,7 +3,7 @@
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/cs/write-website-content.ptbk.md@v0.1.0
--   PTP version 0.0.1
+-   PTBK version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
