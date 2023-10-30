@@ -118,12 +118,6 @@
             "focus": true
         },
         {
-            "name": "🏭🌠 Generate samples .ptbk.md -> .ptbk.json",
-            "commands": ["!!!ts-node ./scripts/ptbk-generate-sample-jsons/generate-sample-jsons.ts"],
-            "onlySingle": true,
-            "focus": true
-        },
-        {
             "name": "🏭🥫 Generate Supabase types",
             "commands": [
                 "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
