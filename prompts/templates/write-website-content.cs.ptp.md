@@ -26,6 +26,49 @@ English assignment:
 
 `-> {rawAssigmentCs}` popis obrázku v češtině
 
+
+## Účel stránek
+
+-   Use chat
+-   Postprocessing `trim`
+-   Postprocessing removeQuotes
+
+```text
+
+Navrhni možný účel webových stránek z čistého popisu co se nachází na obrázku
+
+## Pravidla
+- Piš jediný návrh
+- Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
+
+## Příklady
+- "Kavárna" 
+- "Autoservis"
+- "Dětská herna" 
+-" Svatba"
+- "Osobní stránka fotografa" 
+
+Text na obrázku:
+> {rawAssigmentCs}
+
+
+```
+
+`-> {draftedPurpose}`Návrh účelu webu
+
+
+## 👤 Upřesnění účelu uživatelem
+
+Je toto účelem vašeho webu? 
+
+-   Prompt dialog
+
+```text
+{draftedPurpose}
+```
+
+`-> {purpose}` Účel webu
+
 ## Návrh zadání
 
 -   Use chat
@@ -33,9 +76,10 @@ English assignment:
 
 ```text
 
-Vytvoř zadání reálného webu z čistého popisu co se nachází na obrázku
+Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nachází na obrázku
 
 ## Pravidla
+- Účelem webu je {purpose} 
 - Zadání je strukturované
 - Zadání obsahuje konkrétní čísla, odrážky a je přesné
 - Stručně, maximálně 5 bodů zadání
@@ -78,6 +122,7 @@ Zadání od zákazníka:
 
 ## Pokyny:
 
+-   Účelem webu je {purpose} 
 -   Napiště pouze jeden návrh názvu
 -   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
@@ -112,6 +157,8 @@ Zadání webu od zákazníka:
 
 ## Pokyny:
 
+
+-   Účelem webu je {purpose} 
 -   Napiště pouze jeden návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
@@ -138,6 +185,8 @@ Zadání webu od zákazníka:
 
 -   Napiště seznam klíčových slov
 -   Klíčové slova jsou v základním tvaru
+-   Účelem webu je {purpose} 
+
 
 ## Příklad:
 
@@ -184,6 +233,7 @@ Zadání webu od zákazníka:
 
 -   Formátování textu je v Markdownu
 -   Buďte struční a výstižní
+-   Účelem webu je {purpose} 
 -   Použijte klíčová slova, avšak ta mají být přirozeně v textu
 -   Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
 -   Použijte nadpisy, odrážky, formátování textu
