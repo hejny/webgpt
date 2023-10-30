@@ -31,6 +31,7 @@ export function PromptCook() {
         const inputText = inputTextareaRef.current?.value || '';
         const result = await executor({ inputText }, (newTaskProgress: TaskProgress) => {
             console.info('☑', newTaskProgress);
+            // TODO: !!
             // setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
         });
 
@@ -40,13 +41,23 @@ export function PromptCook() {
         setOutputText(outputText || null);
         setRunning(false);
     }, [inputTextareaRef]);
+    const copyOutputHandler = useCallback( () => {
+        navigator.clipboard.writeText(outputText || '');
+    },[outputText]);
 
     return (
         <>
             <div className={styles.PromptCook}>
-                <textarea ref={inputTextareaRef}>Hello</textarea>
-                <button onClick={enhanceTextHandler}>Enhance</button>
-                <pre>{outputText}</pre>
+                <textarea className={styles.input} ref={inputTextareaRef}>
+                    Hello
+                </textarea>
+                <button className={styles.execute} onClick={enhanceTextHandler}>
+                    Enhance
+                </button>
+                <div className={styles.output}>{outputText}</div>
+                <button className={styles.copy} onClick={copyOutputHandler}>
+                    Copy
+                </button>
             </div>
             {isRunning && <TasksInProgress {...{ tasksProgress }} />}
         </>

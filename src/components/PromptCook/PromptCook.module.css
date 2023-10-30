@@ -1,7 +1,52 @@
 .PromptCook {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
-    /* TODO: Use or remove empty css */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template:
+        '🟦' 50%
+        '🟩' 50%;
+}
+
+.input,
+.output {
+    /*/
+    outline: 1px dotted rgb(24 117 20);
+    /**/
+
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.input {
+    grid-area: 🟦;
+    border-bottom: 1px solid #fff;
+}
+
+.output {
+    grid-area: 🟩;
+}
+
+button.execute {
+    position: fixed;
+    bottom: 50vh;
+    right: 0;
+    margin: 20px;
+}
+
+button.copy {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
 }
