@@ -20,14 +20,14 @@ const config = ConfigChecker.from({
     // Note: To expose env variables to the browser, using this seemingly strange syntax:
     //       @see https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#exposing-environment-variables-to-the-browser
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
-    NEXT_PUBLIC_PTBK_SERVER_URL: process.env.NEXT_PUBLIC_PTBK_SERVER_URL,
+    NEXT_PUBLIC_PROMPTBOOK_SERVER_URL: process.env.NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
     NEXT_PUBLIC_OUR_DOMAINS: process.env.NEXT_PUBLIC_OUR_DOMAINS,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
-export const NEXT_PUBLIC_PTBK_SERVER_URL = config.get('NEXT_PUBLIC_PTBK_SERVER_URL').url().required().value;
+export const NEXT_PUBLIC_PROMPTBOOK_SERVER_URL = config.get('NEXT_PUBLIC_PROMPTBOOK_SERVER_URL').url().required().value;
 
 export const IS_DEVELOPMENT =
     isUrlOnPrivateNetwork(

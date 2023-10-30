@@ -3,7 +3,7 @@ import { JavascriptEvalExecutionTools } from '@promptbook/execute-javascript';
 import { RemoteNaturalExecutionTools } from '@promptbook/remote-client';
 import { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
-import { IS_DEVELOPMENT, NEXT_PUBLIC_PTBK_SERVER_URL } from '../../../config';
+import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../config';
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { uuid } from '../../utils/typeAliases';
@@ -34,7 +34,11 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
         const isVerbose = IS_DEVELOPMENT;
 
         executionTools = {
-            natural: new RemoteNaturalExecutionTools({ isVerbose, remoteUrl: NEXT_PUBLIC_PTBK_SERVER_URL, clientId }),
+            natural: new RemoteNaturalExecutionTools({
+                isVerbose,
+                remoteUrl: NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
+                clientId,
+            }),
             script: [
                 new JavascriptEvalExecutionTools(/* <- TODO: !! Change to JavascriptExecutionTools */ { isVerbose }),
             ],
