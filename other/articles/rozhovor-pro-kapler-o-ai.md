@@ -87,71 +87,65 @@ Jako výsledek dostanu úplně obyčejnou asynchronní funkci, kterou lze použ�
 
 **A nemyslíš, že generativní AI a celý ten trend, že co týden vznikne stovka aplikací a knihoven, je jen další obrovská nafouknutá bublina jako například NFTs?**
 
-Zcela jistě splaskne bublina a mnoho projektů zkrachuje, neuspěje nebo zapadne do zapomnění. Avšak to je naprosto v pořádku – v tuhle chvíli nevíme, co dává smysl a co smysl nedává smysl a bez praktického otestování to ani nezjistíme. 
+Zcela jistě splaskne bublina a mnoho projektů zkrachuje, neuspěje nebo zapadne do zapomnění. Avšak to je naprosto v pořádku – v tuhle chvíli nevíme, co dává smysl a co smysl nedává smysl a bez praktického otestování to ani nezjistíme.
 
 Co jsem si však zcela jistý, že ještě rozhodně nejsme na vrcholu – Například co se týká generování obrázků je situace taková, že naprostým etalonem je MidJourney 5.x,avšak MidJourney se nedá použít přes API jako komponenta aplikací jakou je například WebGPT, takže nad ním ještě nemohou vznikat žádné sekundární služby, které by fungovaly v reálném čase pro koncové uživatele.
 
-Dalle-2, Stable Fusion se tímto způsobem použít dají, avšak ty jsou graficky na mnohem nižší úrovni. A jakmile se otevře Dalle-3, případně MidJourney API, přijde podobná exploze sekundárních služeb, jakou teď zažíváme nad textovými modely. 
+Dalle-2, Stable Fusion se tímto způsobem použít dají, avšak ty jsou graficky na mnohem nižší úrovni. A jakmile se otevře Dalle-3, případně MidJourney API, přijde podobná exploze sekundárních služeb, jakou teď zažíváme nad textovými modely.
 
-Zároveň tam bude určitý synergický efekt, protože pro mnoho věcí dává smysl tyto dva typy modelů kombinovat – například pro WebGPT. 
+Zároveň tam bude určitý synergický efekt, protože pro mnoho věcí dává smysl tyto dva typy modelů kombinovat – například pro WebGPT.
 
-A pak mám druhý důvod, proč se nemyslím, že jde o pouhou nafouknutou bublinu. Ve společnosti je ohromná míra neefektivity a neskutečné množství věcí lze nově automatizovat. 
+A pak mám druhý důvod, proč se nemyslím, že jde o pouhou nafouknutou bublinu. Ve společnosti je ohromná míra neefektivity a neskutečné množství věcí lze nově automatizovat.
 
 Také si je dobré uvědomit, že ChatGPT nebyl ani tolik technologický průlom, ale spíš dokázali vytvořit naprosto kularvoucí UX pro už existující GPT-3, které trochu doladili a vylepšili a dokázali vytvořit rozhraní, se kterým dokáže pracovat zcela běžný člověk.
 
 Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub Co-pilot a ještě celý rok předtím to byl Tomáš Studeník, který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry. To bylo postavené nad GPT-2 a GPT-2 byl ten opravdový technologický průlom, v tu dobu ještě nezaznamenaný širokou veřejností.
 
-!!! Ainautes někde 
+!!! Ainautes někde
 
 **Když jsme u té divadelní hry, jakým způsobem ovlivní generativní AI jazyk a kulturu?**
 
 Obsah byl vždy ovlivněn formou a způsobem distribuce.
 
+Knihtisk byl "jen" obyčejná technologie, kdy Gutenberg objevil správnou slitinu pro raznice, avšak tahle čistě technologická změna odemkla ohromný potenciál a řádově zlevnila výrobu knih. Najednou byli knihy mnohem levnější, mnohem dostupnější, dávalo mnohem větší smysl umět je číst a přestali být luxusním zbožím. I díky tomu se v Evropě odehrály neuvěřitelné společenské a sociální změny.
 
-Knihtisk byl "jen" obyčejná technologie, kdy Gutenberg objevil správnou slitinu pro raznice, avšak tahle čistě technologická změna odemkla ohromný potenciál a řádově zlevnila výrobu knih. Najednou byli knihy mnohem levnější, mnohem dostupnější, dávalo mnohem větší smysl umět je číst a přestali být luxusním zbožím. I díky tomu se v Evropě odehrály neuvěřitelné společenské a sociální změny. 
+Internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo, ale přestala hrát roli vzdálenost.
 
-Internet zapříčinil obdobný efekt- najednou se dal obsah šířit nejen téměř zadarmo, ale přestala hrát roli vzdálenost. 
-
-Generativní umělá inteligence přinese podobný skok – stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér, kdy jeden člověk preferuje audio zatímco druhý preferuje text. 
+Generativní umělá inteligence přinese podobný skok – stále tu máme vzdálenost například v podobě jazykových bariér nebo bariér, kdy jeden člověk preferuje audio zatímco druhý preferuje text.
 Takové bariéry byly doposud nepřekonatelné respektive tyto bariéry šly doposud překonat pouze s vynaložením netriviálních ekonomických zdrojů. Pokud člověk napsal knihu namluvit audioknihu vyžadovalo značnou část dalších zdrojů.
 
 Za pár let bude zcela běžné, že já pošlu zprávu v libovolné formě a libovolném jazyce a ty si ji pustíš v libovolné kombinaci obého.
 
-Zároveň bude možné, aby vzniklo mnoho obsahu, který bude výrazně více na míru –  J.K.Rowlingová v minulosti vytvořila naprosto pevný obsah a až kolem toho vznikl úžasný svět Harryho Pottera. 
+Zároveň bude možné, aby vzniklo mnoho obsahu, který bude výrazně více na míru – J.K.Rowlingová v minulosti vytvořila naprosto pevný obsah a až kolem toho vznikl úžasný svět Harryho Pottera.
 
 Budoucí J K Rowling může vytvořit koncept takového světa, kdy popíše konkrétní příklady, konkrétní situace, konkrétní části světa, avšak každý čtenář si bude moc vytvořit vlastní příběh nad tímto světem.
 
 Možná se dokonce rozdělí autorství na autory těch světů a konceptů a na autory konkrétních příběhů v rámci těch světů.
 
-Podobná věc s autorstvím se teď diskutuje z hlediska obrazů – Možná se zcela rozdělí autorství stylu a konkrétního obrazu. 
+Podobná věc s autorstvím se teď diskutuje z hlediska obrazů – Možná se zcela rozdělí autorství stylu a konkrétního obrazu.
 
-Zároveň bude velmi pravděpodobné, že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst, jiný si bude chtít povídat s postavami, jiný bude chtít poslouchat rozhlas z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru. 
+Zároveň bude velmi pravděpodobné, že v těchto světech bude možné existovat v mnoha různých formách – někdo je bude chtít číst, jiný si bude chtít povídat s postavami, jiný bude chtít poslouchat rozhlas z Ministerstva kouzel a někdo si bude chtít zahrát počítačovou hru.
 
 **Když mluvíš o počítačových hrách, ty sám jsi počítačovou hru vyviděl, řekni něco víc o hře Towns, kterou jsi vyvíjel**
 
-Šlo o online strategickou prohlížečovou hru - taková kombinace mezi Age of Empires a Travianem, který v té v té době frčel. Už je to poměrně dlouhá doba, doslova polovina a mého života kdy jsem tuhle věc začal dělat před 15 lety v mých 15 letech a docela jsem se na tom naučil programovat. 
+Šlo o online strategickou prohlížečovou hru - taková kombinace mezi Age of Empires a Travianem, který v té v té době frčel. Už je to poměrně dlouhá doba, doslova polovina a mého života kdy jsem tuhle věc začal dělat před 15 lety v mých 15 letech a docela jsem se na tom naučil programovat.
 
-V jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa + hráč mohl libovolně kombinovat budovy – například postavit dva domy na hradbu nebo pět domů na sebe z čehož vznikl něco jako mrakodrap. Vše bylo procedurálně generované, takže a šlo o takový proto-koncept vektorového prostoru všech možných budov. 
+V jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa + hráč mohl libovolně kombinovat budovy – například postavit dva domy na hradbu nebo pět domů na sebe z čehož vznikl něco jako mrakodrap. Vše bylo procedurálně generované, takže a šlo o takový proto-koncept vektorového prostoru všech možných budov.
 
-
+<!-- !!! Link to H-Edu -->
+<!-- !!! Link to Collboard -->
 
 **Další z projektů (díky kterému se známe) je virtuální tabule Collboard. Řekni něco víc!**
 
-jde o virtuální tabule kterou jsme založili v rámci elektronických učebnic hm které jsem také technicky zakládal kdy se nám stalo že na začátku pandemie covidu byla potřeba mít nějaký jednoduchý super jednoduchý nástroj pro učitele
+Jde o virtuální tabuli, kterou jsme založili v rámci elektronických učebnic H-Edu na začátku pandemie Covidu.
 
-já Obecně mám rád modularitu a tak jsem celý systém navrhl tak, že jakýkoliv prvek je modulem
+Já mám obecně rád modulární systémy, a tak jsem celý systém navrhl tak, že jakýkoliv prvek je zároveň pluginem.
 
-když se bavíme o školství, připravujete do hidu nebo kolboardu něco s umělou inteligencí
-
-momentálně připravuji připravujeme modely moduly pro generování obrázků přímo v rámci téhle tabule
-
-pro H Edu pracujeme na chytrém asistentovi pro učitele který pomůže s psaním textu
-
-a v samotných učebnicích hledáme způsob jak vytvářet úlohy na míru pro potřeby konkrétních žáků
+A když se o H-Edu a Collboardu bavíme, jak do H-Edu tak do Collboardu připravujeme integraci s AI.
 
 **Jak se k tomu staví učitelé, nechtějí podobné věci spíš omezovat nebo zakazovat**
 
-záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, Na kolik se učitelé dokázali popasovat s pandemií covidu a ze dne na den se z nich stali it správci virtuálních tříd a zároveň to dělali ke své práci učitele
+Záleží na tom konkrétním učiteli, ale co je pro mě naprosto neskutečné, Na kolik se učitelé dokázali popasovat s pandemií covidu a ze dne na den se z nich stali it správci virtuálních tříd a zároveň to dělali ke své práci učitele
 
 Co je podle mě neskutečné, když mluvíme o školství to je podle mě úžasná věc co v Čechách dělá Eva Nečasová nebo asociace PGA protože spoustu škol a nebo i ty který překládáš který píše opravdu obrovské množství kvalitního obsahu v češtině
 
