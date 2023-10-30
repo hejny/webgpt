@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: 'ptp-server',
+            name: 'ptbk-server',
             namespace: '1-2i',
             script: 'ptp-server/server.bash',
             exec_mode: 'fork',

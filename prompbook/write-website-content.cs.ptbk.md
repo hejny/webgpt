@@ -2,7 +2,7 @@
 
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
--   PTP URL https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v0.1.0
+-   PTBK URL https://ptbk.webgpt.com/cs/write-website-content.ptbk.md@v0.1.0
 -   PTP version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
@@ -26,7 +26,6 @@ English assignment:
 
 `-> {rawAssigmentCs}` popis obrázku v češtině
 
-
 ## Účel stránek
 
 -   Use chat
@@ -42,11 +41,11 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 - Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
 
 ## Příklady
-- "Kavárna" 
+- "Kavárna"
 - "Autoservis"
-- "Dětská herna" 
+- "Dětská herna"
 -" Svatba"
-- "Osobní stránka fotografa" 
+- "Osobní stránka fotografa"
 
 Text na obrázku:
 > {rawAssigmentCs}
@@ -56,10 +55,9 @@ Text na obrázku:
 
 `-> {draftedPurpose}`Návrh účelu webu
 
-
 ## 👤 Upřesnění účelu uživatelem
 
-Je toto účelem vašeho webu? 
+Je toto účelem vašeho webu?
 
 -   Prompt dialog
 
@@ -79,7 +77,7 @@ Je toto účelem vašeho webu?
 Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nachází na obrázku
 
 ## Pravidla
-- Účelem webu je {purpose} 
+- Účelem webu je {purpose}
 - Zadání je strukturované
 - Zadání obsahuje konkrétní čísla, odrážky a je přesné
 - Stručně, maximálně 5 bodů zadání
@@ -122,7 +120,7 @@ Zadání od zákazníka:
 
 ## Pokyny:
 
--   Účelem webu je {purpose} 
+-   Účelem webu je {purpose}
 -   Napiště pouze jeden návrh názvu
 -   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
@@ -157,8 +155,7 @@ Zadání webu od zákazníka:
 
 ## Pokyny:
 
-
--   Účelem webu je {purpose} 
+-   Účelem webu je {purpose}
 -   Napiště pouze jeden návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
@@ -185,8 +182,7 @@ Zadání webu od zákazníka:
 
 -   Napiště seznam klíčových slov
 -   Klíčové slova jsou v základním tvaru
--   Účelem webu je {purpose} 
-
+-   Účelem webu je {purpose}
 
 ## Příklad:
 
@@ -233,7 +229,7 @@ Zadání webu od zákazníka:
 
 -   Formátování textu je v Markdownu
 -   Buďte struční a výstižní
--   Účelem webu je {purpose} 
+-   Účelem webu je {purpose}
 -   Použijte klíčová slova, avšak ta mají být přirozeně v textu
 -   Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
 -   Použijte nadpisy, odrážky, formátování textu

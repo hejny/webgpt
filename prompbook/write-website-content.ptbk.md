@@ -2,7 +2,7 @@
 
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
--   PTP URL https://ptp.webgpt.com/en/write-wallpaper-content.ptp.md@v0.1.0
+-   PTBK URL https://ptbk.webgpt.com/en/write-website-content.ptbk.md@v0.1.0
 -   PTP version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> - Use GPT-3.5 -->

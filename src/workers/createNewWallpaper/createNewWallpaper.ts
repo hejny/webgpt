@@ -290,7 +290,7 @@ export async function createNewWallpaper(
     //===========================================================================
     //-------[ Write content: ]---
     await onProgress({
-        name: 'write-wallpaper-content',
+        name: 'write-website-content',
         title: 'Copywriting',
         isDone: false,
         // TODO: Make it more granular
@@ -312,7 +312,7 @@ export async function createNewWallpaper(
             rawAssigment: description,
 
             /*
-            TODO: !! Use in write-website-content.cs.ptp.md and uncomment here
+            TODO: !! Use in write-website-content.cs.ptbk.md and uncomment here
             links,
             addSections,
             */
@@ -321,7 +321,7 @@ export async function createNewWallpaper(
     );
 
     await onProgress({
-        name: 'write-wallpaper-content',
+        name: 'write-website-content',
         isDone: true,
     });
 

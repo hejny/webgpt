@@ -17,7 +17,7 @@ if (process.cwd() !== join(__dirname, '../..')) {
     process.exit(1);
 }
 
-const PTP_SAMPLES_DIR = join(process.cwd(), 'src/ai/text-to-text/prompt-templates/lib/samples');
+const PTBK_SAMPLES_DIR = join(process.cwd(), 'src/ai/text-to-text/prompt-templates/lib/samples');
 
 const program = new commander.Command();
 program.option('--commit', `Autocommit changes`, false);
@@ -41,21 +41,21 @@ async function generateSampleJsons({ isCommited }: { isCommited: boolean }) {
         throw new Error(`Working tree is not clean`);
     }
 
-    for (const ptpMarkdownFilePath of await glob(join(PTP_SAMPLES_DIR, '*.ptp.md').split('\\').join('/'))) {
-        console.info(`🌠  Generating JSON from ${ptpMarkdownFilePath}`);
-        const ptpMarkdown = await readFile(ptpMarkdownFilePath, 'utf-8');
+    for (const ptbkMarkdownFilePath of await glob(join(PTBK_SAMPLES_DIR, '*.ptbk.md').split('\\').join('/'))) {
+        console.info(`🌠  Generating JSON from ${ptbkMarkdownFilePath}`);
+        const ptbkMarkdown = await readFile(ptbkMarkdownFilePath, 'utf-8');
 
         try {
-            const ptpJson = promptTemplatePipelineStringToJson(ptpMarkdown as any /* <- TODO: Remove any */);
-            const ptpJsonFilePath = ptpMarkdownFilePath.replace(/\.ptp\.md$/, '.ptp.json');
-            await writeFile(ptpJsonFilePath, JSON.stringify(ptpJson, null, 4) + '\n');
+            const ptbkJson = promptTemplatePipelineStringToJson(ptbkMarkdown as any /* <- TODO: Remove any */);
+            const ptbkJsonFilePath = ptbkMarkdownFilePath.replace(/\.ptbk\.md$/, '.ptbk.json');
+            await writeFile(ptbkJsonFilePath, JSON.stringify(ptbkJson, null, 4) + '\n');
         } catch (error) {
             if (!(error instanceof Error)) {
                 throw error;
             }
 
             console.info(chalk.bgGray('========================='));
-            console.info(chalk.red(`Error in ${ptpMarkdownFilePath}`));
+            console.info(chalk.red(`Error in ${ptbkMarkdownFilePath}`));
             console.error(chalk.bgRed(error.name));
             console.error(error);
             console.info(chalk.bgGray('========================='));
@@ -63,7 +63,7 @@ async function generateSampleJsons({ isCommited }: { isCommited: boolean }) {
     }
 
     if (isCommited) {
-        await commit(PTP_SAMPLES_DIR, `🌠 Generate JSONs from PTP samples`);
+        await commit(PTBK_SAMPLES_DIR, `🌠 Generate JSONs from PTP samples`);
     }
 
     console.info(`[ Done 🧾🗑  Removing wallpapers content ]`);

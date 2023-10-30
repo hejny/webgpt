@@ -7,8 +7,8 @@
             "focus": false
         },
         {
-            "name": "👨🏽‍💻 Run PTP server",
-            "commands": ["ts-node ./ptp-server/server.ts"],
+            "name": "👨🏽‍💻 Run promptbook server",
+            "commands": ["ts-node ./promptbook-server/server.ts"],
             "focus": false
         },
         {
@@ -118,8 +118,8 @@
             "focus": true
         },
         {
-            "name": "🏭🌠 Generate JSONs from PTP samples",
-            "commands": ["ts-node ./scripts/ptp-generate-sample-jsons/generate-sample-jsons.ts"],
+            "name": "🏭🌠 Generate samples .ptbk.md -> .ptbk.json",
+            "commands": ["!!!ts-node ./scripts/ptbk-generate-sample-jsons/generate-sample-jsons.ts"],
             "onlySingle": true,
             "focus": true
         },
