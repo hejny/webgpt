@@ -167,9 +167,9 @@ Určitě je důležité umět počítat a mít přehled o tom jak funguje matema
 
 Je důležité nepřeskakovat laťku ze země, ale použít ji jako stupínek.
 
-**Díky moc za rozhovor!**
+**Díky moc za rozhovor! Ještě se tě zeptám, můžou se s tebou čtenáři potkat někde na probíhajících Dnech AI?**
 
-Díky, 
+Mluvíme teď na mnoha konferencích, Na Dnech AI máme v úterý s Tomášem přednášku o business příležitostech v AI světě a v pátek mluvím o tom, jak mohou využít generativní AI děti. Zároveň teď v průběhu podzimu probíhá mnoho dalších akcí.
 
 <!--
 
