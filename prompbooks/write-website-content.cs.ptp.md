@@ -1,6 +1,6 @@
 # 🌍 Vytvoření obsahu webové stránky
 
-Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/ptp).
+Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTP URL https://ptp.webgpt.com/cs/write-wallpaper-content.ptp.md@v0.1.0
 -   PTP version 0.0.1

@@ -1,7 +1,7 @@
 import { PromptTemplatePipelineLibrary } from '@promptbook/core';
-import updateWebsiteContent from '../../../promptbooks/update-website-content.ptp.md';
-import writeWebsiteContentCs from '../../../promptbooks/write-website-content.cs.ptp.md';
-import writeWebsiteContent from '../../../promptbooks/write-website-content.ptp.md';
+import updateWebsiteContent from '../../../../promptbooks/update-website-content.ptp.md';
+import writeWebsiteContentCs from '../../../../promptbooks/write-website-content.cs.ptp.md';
+import writeWebsiteContent from '../../../../promptbooks/write-website-content.ptp.md';
 
 /**
  * This is The main library of prompt template pipelines for WebGPT app

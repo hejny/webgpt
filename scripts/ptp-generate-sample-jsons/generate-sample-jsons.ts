@@ -3,12 +3,12 @@
 import * as dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
 
+import { promptTemplatePipelineStringToJson } from '@promptbook/core';
 import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import glob from 'glob-promise';
 import { join } from 'path';
-import { promptTemplatePipelineStringToJson } from '../../src/ai/text-to-text/prompt-templates/lib/src/conversion/promptTemplatePipelineStringToJson';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 
