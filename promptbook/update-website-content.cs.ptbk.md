@@ -10,25 +10,21 @@ Instrukce pro úpravu obsahu webové stránky za pomocí [🌠 Prompt template p
 -   Input param `{rawAssigment}` Požadavek od uživatele na změnu
 -   Output param `{newContent}` Nový obsah webu
 
+<!--
 ## 🖋 Vylepšení zadání
 
 -   Use completion
 -   Postprocessing `spaceTrim`
 
-```
-Jste zkušený webdesignér a manažer, od uživatele máte nezpracované zadání, co na webu změnit.
-Udělejte si z toho profesionální úkol.
+```markdown
+Jste zkušený webdesignér a manažer, od máte od uživatele nezpracované zadání, co změnit na webových stránkách.
+Udělejte si z toho profesionální a strukturované zadání.
 
-## Pravidla
-- Nedělejte to dlouho
-- NEPOzdravujte ani nepodepisujte
-– NEPŘIDÁVEJTE zdvořilá slova jako „prosím“ nebo „děkuji“
-- Zachovat jazyk původního zadání
+## Surové zadání ve znění od zákazníka
 
-## Původní zadání:
 {rawAssigment}
 
-## Profesionální, ale krátký úkol:
+## Zadání
 ```
 
 `-> {proffesionalAssigment}` Profesionálně vypadající požadavek na změnu
@@ -45,21 +41,25 @@ Je to změna, kterou chcete provést?
 
 `-> {finalAssigment}` Finální žádost o změnu
 
+-->
+
 ## 🖋 Úpravy
 
 -   Use completion
 -   Postprocessing `spaceTrim`
 
-```
-Jste zkušený copywriter a upravujte obsah stránky podle pokynů uživatele.
+```markdown
+Jste zkušený copywriter a upravujete obsah stránky podle pokynů uživatele.
 
-## Úkol:
-{finalAssigment}
+## Úkol
 
-## Původní obsah:
+{rawAssigment}
+
+## Původní obsah
+
 {oldContent}
 
-## Obsah změněn podle zadání:
+## Nový obsah dle zadání
 ```
 
 `-> {newContent}`
