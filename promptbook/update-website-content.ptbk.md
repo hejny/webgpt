@@ -1,6 +1,6 @@
 # 🌍 Update website content
 
-Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
+Instructions for updating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/en/update-website-content.ptbk.md@v0.1.0
 -   PTBK version 0.0.1
