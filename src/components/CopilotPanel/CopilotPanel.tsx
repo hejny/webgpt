@@ -98,8 +98,8 @@ export function CopilotPanel() {
             oldContent = removeContentComments(oldContent);
 
             const updateWebsiteContentLocaleMap = {
-                en: 'writeWebsiteContent',
-                cs: 'writeWebsiteContentCs',
+                en: 'updateWebsiteContent',
+                cs: 'updateWebsiteContentCs',
                 /* <- TODO: [👧] Constrain key to only existing PTPs in the library */
             };
 
