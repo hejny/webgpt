@@ -26,9 +26,9 @@ English assignment:
 
 `-> {rawAssigmentCs}` popis obrázku v češtině
 
-## 💬 Účel stránek
+## 🖋 Účel stránek
 
--   Use chat
+-   Use completion
 -   Postprocessing `unwrapResult`
 
 ```markdown
@@ -69,9 +69,9 @@ Je toto účelem vašeho webu?
 
 `-> {purpose}` Účel webu
 
-## 💬 Návrh zadání
+## 🖋 Návrh zadání
 
--   Use chat
+-   Use completion
 -   Postprocessing `trim`
 
 ```markdown
@@ -84,9 +84,11 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 -   Zadání obsahuje konkrétní čísla, odrážky a je přesné
 -   Stručně, maximálně 4 body zadání, každý bod je maximálně 2 věty
 
-Text na obrázku:
+## Text na obrázku
 
-> {rawAssigmentCs}
+{rawAssigmentCs}
+
+## Zadání webu v Češtině
 ```
 
 `-> {draftedAssigment}` Zadání webu v Češtině
@@ -103,29 +105,33 @@ Popište cíl vašeho webu
 
 `-> {assigment}` Zadání webu
 
-## 💬 Vylepšení názvu
+## 🖋 Vylepšení názvu
 
+-   Use completion
 -   Postprocessing `unwrapResult`
 
 ```markdown
 Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení názvu klientova podnikání.
 
-Navrhovaný název od zákazníka:
+## Navrhovaný název od zákazníka
+
 "{rawTitle}"
 
-Zadání od zákazníka:
+## Zadání od zákazníka
 
 \`\`\`
 {assigment}
 \`\`\`
 
-## Pokyny:
+## Pokyny
 
 -   Účelem webu je {purpose}
 -   Napište pouze jeden návrh názvu
 -   Napište pouze název, ne zdůvodnění ani jiný text okolo
 -   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
+
+## Vylepšený název
 ```
 
 `-> {draftedTitle}` Vylepšený název
@@ -142,14 +148,15 @@ Je název Vašeho webu v pořádku?
 
 `-> {title}` Název webu
 
-## 💬 Claim pro web
+## 🖋 Claim pro web
 
+-   Use completion
 -   Postprocessing `unwrapResult`
 
 ```markdown
 Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovou stránku "{title}".
 
-Zadání webu od zákazníka:
+## Zadání webu od zákazníka
 
 \`\`\`
 {assigment}
@@ -158,9 +165,11 @@ Zadání webu od zákazníka:
 ## Pokyny:
 
 -   Účelem webu je {purpose}
--   Napište pouze jeden návrh názvu
+-   Napište pouze JEDEN návrh názvu
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
+
+## Jeden návrh claimu webu
 ```
 
 `-> {draftedClaim}` Návrh claimu webu
@@ -177,11 +186,13 @@ Je podtitulek Vašeho webu v pořádku?
 
 `-> {claim}` Claimu webu
 
-## 💬 Analýza klíčových slov
+## 🖋 Analýza klíčových slov
 
 <!--
 Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
 -->
+
+-   Use completion
 
 ```markdown
 Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových slov pro webovou stránku "{title}".
@@ -192,21 +203,13 @@ Zadání webu od zákazníka:
 {assigment}
 \`\`\`
 
-## Pokyny:
+## Pokyny
 
 -   Napište seznam klíčových slov
 -   Klíčové slova jsou v základním tvaru
 -   Účelem webu je {purpose}
 
-## Příklad:
-
--   Zmrzlina
--   Olomouc
--   Kvalita
--   Rodina
--   Tradice
--   Itálie
--   Řemeslo
+## Klíčová slova
 ```
 
 `-> {keywords}` Klíčová slova
