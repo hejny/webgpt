@@ -169,6 +169,10 @@ Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovo
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
 
+## Příklad
+
+Chcete mít web nebo řešit web?!
+
 ## Jeden návrh claimu webu
 ```
 
