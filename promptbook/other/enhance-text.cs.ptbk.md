@@ -22,10 +22,19 @@ Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](http
 - Výsledný text má podobnou délku jako surový text
 
 
-## Surový text:
+**Surový text:**
+dobrý den uzto funguje jak ckam
+
+**Výsledný text:**
+Dobrý den, 
+již to funguje dle očekávání.
+
+
+**Surový text:**
 {inputText}
 
-## Výsledný text:
+
+**Výsledný text:**
 ```
 
 `-> {outputText}`
