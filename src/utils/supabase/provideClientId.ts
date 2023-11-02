@@ -5,7 +5,7 @@ import { isValidEmail } from '../validators/isValidEmail';
 import { getSupabaseForBrowser } from './getSupabaseForBrowser';
 import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
-interface IProvideClientIdOptions {
+export interface IProvideClientIdOptions {
     /**
      * Is required to have verified email
      * - If `false`, just putting in the email will be enough
