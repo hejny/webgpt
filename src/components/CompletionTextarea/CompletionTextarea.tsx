@@ -21,7 +21,7 @@ interface CompletionTextareaProps {
     naturalExecutionTools: NaturalExecutionTools;
 
     /**
-     * Optional CSS class name which will be added to root element
+     * Optional CSS class name which will be added to <textarea/> element (which is NOT the root element)
      */
     className?: string_css_class;
 }
@@ -60,10 +60,11 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
     }, [textAreaRef, onChange, naturalExecutionTools]);
 
     return (
-        <>
+        <div className={styles.CompletionTextarea}>
+            <style>{`@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');`}</style>
             <textarea
                 ref={textAreaRef}
-                className={classNames(className, styles.CompletionTextarea)}
+                className={classNames(className, styles.textarea)}
                 onChange={() => {
                     if (textAreaRef.current === null) {
                         throw new Error('textAreaRef.current is null but fired onChange event');
@@ -76,8 +77,11 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
             >
                 {children}
             </textarea>
-            <button onClick={gptComplete}>Write</button>
-        </>
+
+            <button className={styles.complete} onClick={gptComplete}>
+                🦉
+            </button>
+        </div>
     );
 }
 

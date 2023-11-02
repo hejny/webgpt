@@ -3,5 +3,39 @@
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
+    font-family: 'Kelly Slab', sans-serif;
+
     /* TODO: Use or remove empty css */
+}
+
+.textarea {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    outline: none;
+    border: none;
+    resize: none;
+
+    background-color: transparent;
+    font-size: 30px;
+
+    padding: 10px;
+}
+
+.complete {
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 30px;
 }
