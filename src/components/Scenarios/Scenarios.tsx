@@ -18,7 +18,7 @@ export function Scenarios() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/new/from-prompt">
+                    <Link href="/new/from-idea">
                         <CreateZone className={styles.scenario}>
                             <h2>Idea</h2>
                             To describe and generate your website
