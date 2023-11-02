@@ -171,7 +171,7 @@ export function CopilotPanel() {
         } finally {
             setRunningPrompt(null);
         }
-    }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
+    }, [locale, router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
         <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
