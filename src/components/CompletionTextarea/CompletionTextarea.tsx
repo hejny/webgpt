@@ -1,5 +1,5 @@
 import { NaturalExecutionTools } from '@promptbook/types';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './CompletionTextarea.module.css';
@@ -73,6 +73,17 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
             throw new Error('textAreaRef.current is null but fired onChange event');
         }
     }, [isWorking, textAreaRef, onChange, naturalExecutionTools]);
+
+    useEffect(() => {
+        window.onbeforeunload = () => {
+            // TODO: !! Allow to save and then leave
+            return 'You have unsaved changes. Are you sure you want to leave?';
+        };
+
+        return () => {
+            window.onbeforeunload = null;
+        };
+    }, []);
 
     return (
         <div className={styles.CompletionTextarea}>
