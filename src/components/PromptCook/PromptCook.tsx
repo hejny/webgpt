@@ -4,6 +4,7 @@ import { useCallback, useRef, useState } from 'react';
 import enhanceTextCs from '../../../promptbook/other/enhance-text.cs.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
+import { classNames } from '../../utils/classNames';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import styles from './PromptCook.module.css';
 
@@ -41,23 +42,33 @@ export function PromptCook() {
         setOutputText(outputText || null);
         setRunning(false);
     }, [inputTextareaRef]);
-    const copyOutputHandler = useCallback( () => {
+    const copyOutputHandler = useCallback(() => {
         navigator.clipboard.writeText(outputText || '');
-    },[outputText]);
+    }, [outputText]);
 
     return (
         <>
             <div className={styles.PromptCook}>
-                <textarea className={styles.input} ref={inputTextareaRef}>
-                    Hello
-                </textarea>
-                <button className={styles.execute} onClick={enhanceTextHandler}>
-                    Enhance
-                </button>
-                <div className={styles.output}>{outputText}</div>
-                <button className={styles.copy} onClick={copyOutputHandler}>
-                    Copy
-                </button>
+                <div className={styles.input}>
+                    <textarea className={classNames(styles.fill, styles.textarea)} ref={inputTextareaRef}>
+                        Hello
+                    </textarea>
+                </div>
+
+                <div className={styles.controls}>
+                    <button className={styles.button} onClick={enhanceTextHandler}>
+                        Enhance
+                    </button>
+                    <button className={styles.button} onClick={copyOutputHandler}>
+                        Copy
+                    </button>
+                </div>
+
+                <div className={styles.output}>
+                    <div className={classNames(styles.fill, styles.textarea)}>{outputText}</div>
+                </div>
+
+                <div className={styles.promptbook}>Hello</div>
             </div>
             {isRunning && <TasksInProgress {...{ tasksProgress }} />}
         </>
