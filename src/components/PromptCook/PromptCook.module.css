@@ -10,10 +10,12 @@
     height: 100%;
 
     display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-template:
         '🟦 📖' 1fr
         '🔽 📖' auto
-        '🟩 📖' 1fr;
+        '🟩 📖' 1fr
+        / 1fr 1fr;
 }
 
 .input {

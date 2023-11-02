@@ -1,3 +1,4 @@
+import MonacoEditor from '@monaco-editor/react';
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
 import { TaskProgress } from '@promptbook/types';
 import { useCallback, useRef, useState } from 'react';
@@ -14,6 +15,7 @@ import styles from './PromptCook.module.css';
 export function PromptCook() {
     const inputTextareaRef = useRef<HTMLTextAreaElement>(null);
     const [isRunning, setRunning] = useState(false);
+    const [ptbkSource, setPtbkSource] = useState(enhanceTextCs);
     const [outputText, setOutputText] = useState<null | string>(null);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
@@ -21,7 +23,7 @@ export function PromptCook() {
     const enhanceTextHandler = useCallback(async () => {
         setRunning(true);
         const executor = createPtpExecutor({
-            ptp: PromptTemplatePipeline.fromSource(enhanceTextCs),
+            ptp: PromptTemplatePipeline.fromSource(ptbkSource),
             tools: getExecutionTools(
                 await provideClientId({
                     isVerifiedEmailRequired: true,
@@ -41,7 +43,7 @@ export function PromptCook() {
 
         setOutputText(outputText || null);
         setRunning(false);
-    }, [inputTextareaRef]);
+    }, [ptbkSource, inputTextareaRef]);
     const copyOutputHandler = useCallback(() => {
         navigator.clipboard.writeText(outputText || '');
     }, [outputText]);
@@ -57,10 +59,10 @@ export function PromptCook() {
 
                 <div className={styles.controls}>
                     <button className={styles.button} onClick={enhanceTextHandler}>
-                        Enhance
+                        Spustit
                     </button>
                     <button className={styles.button} onClick={copyOutputHandler}>
-                        Copy
+                        Sdílet výsledek
                     </button>
                 </div>
 
@@ -68,7 +70,24 @@ export function PromptCook() {
                     <div className={classNames(styles.fill, styles.textarea)}>{outputText}</div>
                 </div>
 
-                <div className={styles.promptbook}>Hello</div>
+                <div className={styles.promptbook}>
+                    <MonacoEditor
+                        className={styles.fill}
+                        theme="vs-dark"
+                        language={'markdown'}
+                        options={{
+                            wordWrap: 'on',
+                        }}
+                        defaultValue={enhanceTextCs}
+                        onChange={(newContent) => {
+                            if (typeof newContent !== 'string') {
+                                return;
+                            }
+
+                            setPtbkSource(newContent);
+                        }}
+                    />
+                </div>
             </div>
             {isRunning && <TasksInProgress {...{ tasksProgress }} />}
         </>
