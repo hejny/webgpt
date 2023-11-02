@@ -15,7 +15,7 @@ export interface TextToImagePrompt {
 }
 
 export interface TextToImagePromptResult {
-    imageSrc: string_url_image;
+    readonly imageSrc: string_url_image;
     /*
     image: Blob | File;
     */

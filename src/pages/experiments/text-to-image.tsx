@@ -1,23 +1,29 @@
+import { nameToUriParts } from 'n12';
 import { useEffect, useState } from 'react';
 import { forTime } from 'waitasecond';
-import { TextToImagePromptResult } from '../../ai/text-to-image/interfaces/_';
+import { TextToImagePrompt, TextToImagePromptResult } from '../../ai/text-to-image/interfaces/_';
 import { PregeneratedPhotobank } from '../../ai/text-to-image/photobank';
+import { TextToImagePromptResultsPicker } from '../../components/TextToImagePromptResultsPicker/TextToImagePromptResultsPicker';
+import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { fetchImage } from '../../utils/scraping/fetchImage';
 import { string_image_prompt } from '../../utils/typeAliases';
 
 export default function TextToImagePage() {
-    const [prompt, setPrompt] = useState<string_image_prompt | null>(null);
+    const [promptContent, setPromptContent] = useState<string_image_prompt | null>('space');
     const [isReady, setReady] = useState<boolean>(true);
     const [results, setResults] = useState<Array<TextToImagePromptResult>>([]);
     useEffect(() => {
         let isDestroyed = false;
 
-        if (prompt === null) {
+        if (promptContent === null) {
             return;
         }
 
         (async () => {
             // Note: Debounding the search
-            await forTime(100);
+            await forTime(1000);
+
+            console.log({ isDestroyed });
 
             if (isDestroyed) {
                 // TODO: Use also the abort controller
@@ -26,35 +32,42 @@ export default function TextToImagePage() {
 
             setReady(false);
 
-            console.log({ prompt });
-            const results = await PregeneratedPhotobank.getInstance().generate({ content: prompt });
+            const prompt = { content: promptContent! } satisfies TextToImagePrompt;
+            const results = await PregeneratedPhotobank.getInstance().generate(prompt);
 
             setReady(true);
             setResults(results);
         })();
 
         return () => void (isDestroyed = true);
-    }, [prompt]);
+    }, [promptContent]);
 
     return (
         <div>
             <p>This is NOT optimized for production use, just for testing purposes.</p>
             <input
                 type="prompt"
+                defaultValue={promptContent || ''}
                 onChange={(event) => {
-                    const value = event.target.value;
-                    setPrompt(value);
+                    const value = event.target.value.trim();
+                    setPromptContent(value || null);
                 }}
             />
 
-            {prompt}
+            {isReady ? null : <p>Searching...</p>}
+            {results.length === 0 && isReady && <p>No results found</p>}
 
-            {results.map((result, index) => (
-                <div key={index}>
-                    {/* eslint-disable-next-line @next/next/no-img-element*/}
-                    <img src={result.imageSrc} alt={prompt!} />
-                </div>
-            ))}
+            <TextToImagePromptResultsPicker
+                {...{ results }}
+                prompt={{ content: promptContent! }}
+                onPick={async (result) => {
+                    const image = new File(
+                        [await fetchImage(result.imageSrc)],
+                        `${nameToUriParts(promptContent || 'untitled').join('-')}.png`,
+                    );
+                    await induceFileDownload(image);
+                }}
+            />
         </div>
     );
 }
