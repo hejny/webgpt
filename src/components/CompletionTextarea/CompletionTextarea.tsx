@@ -1,5 +1,5 @@
 import { NaturalExecutionTools } from '@promptbook/types';
-import { useCallback, useRef } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './CompletionTextarea.module.css';
@@ -33,8 +33,12 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
     const { children, onChange, naturalExecutionTools, className } = props;
 
     const textAreaRef = useRef<HTMLTextAreaElement>(null);
-
+    const [isWorking, setWorking] = useState(false);
     const gptComplete = useCallback(async () => {
+        if (isWorking) {
+            return;
+        }
+
         if (textAreaRef.current === null) {
             throw new Error('textAreaRef.current must be defined before calling gptComplete');
         }
@@ -43,11 +47,13 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
             content: textAreaRef.current.value,
             modelRequirements: {
                 variant: 'COMPLETION',
+                maxTokens: 10,
             },
             ptbkUrl: 'https://ai-sovicka.webgpt.cz/',
             parameters: {},
         } as const;
 
+        setWorking(true);
         const response = await naturalExecutionTools.gptComplete(prompt);
 
         console.log({ response });
@@ -56,8 +62,17 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
             onChange(response.content, 'COPILOT');
         }
 
-        textAreaRef.current.value = prompt.content + response.content;
-    }, [textAreaRef, onChange, naturalExecutionTools]);
+        const responseContentParts = response.content.split(' ');
+        responseContentParts.pop();
+        const responseContent = responseContentParts.join(' ');
+
+        textAreaRef.current.value = prompt.content + responseContent;
+        setWorking(false);
+
+        if (textAreaRef.current === null) {
+            throw new Error('textAreaRef.current is null but fired onChange event');
+        }
+    }, [isWorking, textAreaRef, onChange, naturalExecutionTools]);
 
     return (
         <div className={styles.CompletionTextarea}>
@@ -78,7 +93,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 {children}
             </textarea>
 
-            <button className={styles.complete} onClick={gptComplete}>
+            <button className={classNames(styles.completeButton, isWorking && styles.isWorking)} onClick={gptComplete}>
                 🦉
             </button>
         </div>

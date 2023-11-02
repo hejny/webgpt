@@ -28,7 +28,7 @@
     padding: 10px;
 }
 
-.complete {
+.completeButton {
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -38,4 +38,8 @@
     padding-right: 10px;
     padding-left: 10px;
     font-size: 30px;
+}
+
+.isWorking {
+    opacity: 0.5;
 }
