@@ -1,0 +1,4 @@
+TODO: Implement Dalle
+TODO: Implement MidJourney
+TODO: Implement real photobank:
+    >  fetch(`https://api.unsplash.com/search/photos?query=${keywords.join(',')}`

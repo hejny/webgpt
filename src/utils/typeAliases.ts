@@ -1,5 +1,6 @@
 // TODO: !! Cleanup
 
+import type { string_prompt } from '@promptbook/types';
 import { FONTS } from '../../config';
 
 /*
@@ -31,13 +32,6 @@ export type string_model_name =
     | 'gpt-3.5-turbo-0613'
     | 'gpt-3.5-turbo-16k-0613'
     | string /* <- TODO: Import from 'openai' package */;
-
-/**
- * Semantic helper
- *
- * For example `"A cat wearing a hat"`
- */
-export type string_prompt = string;
 
 /**
  * Semantic helper
@@ -266,8 +260,6 @@ export type string_css_selector = string;
  * For example `"https://collboard.com/9SeSQTupmQHwuSrLi"`
  */
 export type string_url = string;
-
-
 
 /**
  * Semantic helper

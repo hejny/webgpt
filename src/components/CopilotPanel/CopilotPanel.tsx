@@ -1,3 +1,4 @@
+import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -19,7 +20,6 @@ import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';

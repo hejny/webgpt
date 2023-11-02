@@ -1,5 +1,5 @@
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
-import { TaskProgress } from '@promptbook/types';
+import type { TaskProgress } from '@promptbook/types';
 import { useCallback, useRef, useState } from 'react';
 import enhanceTextCs from '../../../promptbook/other/enhance-text.cs.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
