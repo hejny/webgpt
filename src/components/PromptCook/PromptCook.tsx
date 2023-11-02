@@ -53,7 +53,7 @@ export function PromptCook() {
             <div className={styles.PromptCook}>
                 <div className={styles.input}>
                     <textarea className={classNames(styles.fill, styles.textarea)} ref={inputTextareaRef}>
-                        Hello
+                        ahoj jak se máš
                     </textarea>
                 </div>
 
