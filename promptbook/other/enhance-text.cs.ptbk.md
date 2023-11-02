@@ -29,6 +29,17 @@ dobrý den uzto funguje jak ckam
 Dobrý den, 
 již to funguje dle očekávání.
 
+**Surový text:**
+ale hovno
+
+**Výsledný text:**
+Dovolím si nesouhlasit
+
+**Surový text:**
+Mě se to nezdá
+
+**Výsledný text:**
+Mně se to nezdá.
 
 **Surový text:**
 {inputText}
