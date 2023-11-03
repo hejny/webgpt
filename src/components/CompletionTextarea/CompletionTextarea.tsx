@@ -28,6 +28,8 @@ interface CompletionTextareaProps {
 
 /**
  * Renders a @@
+ *
+ * Note: This is aviable ONLY in client-side rendering (CSR)
  */
 export function CompletionTextarea(props: CompletionTextareaProps) {
     const { children, onChange, naturalExecutionTools, className } = props;
@@ -74,6 +76,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
         }
     }, [isWorking, textAreaRef, onChange, naturalExecutionTools]);
 
+    /*
     useEffect(() => {
         window.onbeforeunload = () => {
             // TODO: !! Allow to save and then leave
@@ -84,7 +87,9 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
             window.onbeforeunload = null;
         };
     }, []);
+    */
 
+    
     return (
         <div className={styles.CompletionTextarea}>
             <style>{`@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');`}</style>

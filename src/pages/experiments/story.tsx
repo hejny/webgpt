@@ -1,29 +1,16 @@
-import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
-import { CompletionTextarea } from '../../components/CompletionTextarea/CompletionTextarea';
+import { Story } from '../../components/CompletionTextarea/Story';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
-import { useClientId } from '../../utils/hooks/useClientId';
+import { NoCsr } from '../../components/NoSsr/NoCsr';
+import { NoSsr } from '../../components/NoSsr/NoSsr';
 
 export default function StoryPage() {
-    const clientId = useClientId({
-        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
-    });
-
-    if (clientId === null) {
-        return <Dialogues />;
-    }
-
     return (
         <>
-            <Dialogues />
-            <CompletionTextarea
-                onChange={(story) => {
-                    console.log({ story });
-                }}
-                naturalExecutionTools={getExecutionTools(clientId).natural}
-            >
-                A
-            </CompletionTextarea>
+            <NoSsr>
+                <Dialogues />
+                <Story />
+            </NoSsr>
+            <NoCsr>🦉</NoCsr>
         </>
     );
 }
