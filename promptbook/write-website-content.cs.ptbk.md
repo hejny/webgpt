@@ -40,7 +40,6 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 -   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
 -   Návrh je v češtině
 -   Návrh je stručný, maximálně 3 slova
--
 
 ## Příklady
 
@@ -50,9 +49,14 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 -   "Svatba"
 -   "Osobní stránka fotografa"
 
-Text na obrázku:
+## Text na obrázku
 
 > {rawAssigmentCs}
+
+## Účel webu
+
+>
+
 ```
 
 `-> {draftedPurpose}`Návrh účelu webu
