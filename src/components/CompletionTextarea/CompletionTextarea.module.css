@@ -13,10 +13,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 55px;
     right: 0;
     width: 100%;
-    height: 100%;
 
     outline: none;
     border: none;
@@ -28,18 +27,26 @@
     padding: 10px;
 }
 
-.completeButton {
+.controls {
     z-index: 2;
     position: fixed;
-    left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, 0);
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 30px 30px 30px #000;
+}
 
+controls.isWorking {
+    opacity: 0.5;
+}
+
+.controls button {
+    margin-bottom: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 30px;
-}
-
-.isWorking {
-    opacity: 0.5;
 }
