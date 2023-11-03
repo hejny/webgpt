@@ -1,5 +1,5 @@
 import { NaturalExecutionTools } from '@promptbook/types';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './CompletionTextarea.module.css';
@@ -60,15 +60,16 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
 
         console.log({ response });
 
-        if (onChange) {
-            onChange(response.content, 'COPILOT');
-        }
-
         const responseContentParts = response.content.split(' ');
         responseContentParts.pop();
         const responseContent = responseContentParts.join(' ');
 
         textAreaRef.current.value = prompt.content + responseContent;
+
+        if (onChange) {
+            onChange(textAreaRef.current.value, 'COPILOT');
+        }
+
         setWorking(false);
 
         if (textAreaRef.current === null) {
@@ -89,7 +90,6 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
     }, []);
     */
 
-    
     return (
         <div className={styles.CompletionTextarea}>
             <style>{`@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');`}</style>
