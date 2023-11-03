@@ -1,4 +1,5 @@
 import { NaturalExecutionTools } from '@promptbook/types';
+import Link from 'next/link';
 import { useCallback, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
@@ -113,8 +114,12 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
             </textarea>
 
             <nav className={classNames(styles.controls, isWorking && styles.isWorking)}>
-                <button onClick={() => gptComplete(10)}>🦉</button>
+                <button onClick={() => gptComplete(10)}>🐰</button>
                 <button onClick={() => gptComplete(100)}>🐌</button>
+                <button onClick={() => gptComplete(1000)}>🐢</button>
+                <Link href="https://webgpt.cz/ai-sovicka-2ycrest2x2nf">
+                    <button>🦉</button>
+                </Link>
             </nav>
         </div>
     );

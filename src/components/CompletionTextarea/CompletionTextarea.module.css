@@ -38,7 +38,7 @@
     box-shadow: 0 30px 30px 30px #000;
 }
 
-controls.isWorking {
+.controls.isWorking button {
     opacity: 0.5;
 }
 
