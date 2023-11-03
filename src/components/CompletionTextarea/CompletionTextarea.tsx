@@ -117,7 +117,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 <button onClick={() => gptComplete(10)}>🐰</button>
                 <button onClick={() => gptComplete(100)}>🐌</button>
                 <button onClick={() => gptComplete(1000)}>🐢</button>
-                <Link href="https://webgpt.cz/ai-sovicka-2ycrest2x2nf">
+                <Link href="https://webgpt.cz/2yrvkf22gfh4">
                     <button>🦉</button>
                 </Link>
             </nav>
