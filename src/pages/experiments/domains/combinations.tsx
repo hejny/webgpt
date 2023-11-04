@@ -1,11 +1,11 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { AdvancedDomainsChecker } from '../components/Domains/AdvancedDomainsChecker';
-import { NoSsr } from '../components/NoSsr/NoSsr';
-import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { WallpapersContext } from '../utils/hooks/WallpapersContext';
+import { StaticAppHead } from '../../../components/AppHead/StaticAppHead';
+import { DomainsCombinationsChecker } from '../../../components/DomainsCombinationsChecker/DomainsCombinationsChecker';
+import { NoSsr } from '../../../components/NoSsr/NoSsr';
+import styles from '../../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { WallpapersContext } from '../../../utils/hooks/WallpapersContext';
 
-export default function DomainsPage() {
+export default function DomainsCombinationsPage() {
     return (
         <WallpapersContext.Provider value={{}} /* <- Does it make sence to keep this empty? */>
             <StaticAppHead subtitle={null} />
@@ -16,7 +16,7 @@ export default function DomainsPage() {
                     <p>Pick your domain:</p>
 
                     <NoSsr>
-                        <AdvancedDomainsChecker />
+                        <DomainsCombinationsChecker />
                     </NoSsr>
                 </main>
 
