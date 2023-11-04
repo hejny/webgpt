@@ -1,10 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { WhoisSearchResult } from 'whoiser';
-import whoiser from 'whoiser';
-import { isValidDomain } from '../../utils/domains/isValidDomain';
+//import freewhois from 'freewhois';
+import { parseDomain } from 'whoisserver-world';
+import { DomainLookupResult } from '../../utils/domains/DomainLookupResult';
+import { isDomainValid } from '../../utils/domains/isDomainValid';
 
 export interface CheckWhoisHandlerResponse {
-    readonly whois: WhoisSearchResult;
+    readonly domainLookupResult: DomainLookupResult;
 }
 
 /**
@@ -24,7 +25,7 @@ export default async function checkWhoisHandler(
         );
     }
 
-    if (!isValidDomain(domain)) {
+    if (!isDomainValid(domain)) {
         return response.status(400).json(
             {
                 message: `Domain needs to be valid.`,
@@ -34,14 +35,44 @@ export default async function checkWhoisHandler(
 
     // TODO: !! Allow ONLY 2nd level domains
 
+    const tdlInfo = parseDomain(domain);
+
+    let domainLookupResult: DomainLookupResult | null = null;
+
+    for (const rdapServer of tdlInfo.rdapServers) {
+        try {
+            const response = await fetch(`${rdapServer}/${domain}`);
+            domainLookupResult = await response.json();
+
+            if (domainLookupResult !== null) {
+                break;
+            }
+        } catch (error) {
+            if (!(error instanceof Error)) {
+                throw error;
+            }
+
+            console.error(error);
+        }
+    }
+
+    if (domainLookupResult === null) {
+        return response.status(400).json(
+            {
+                message: `Domain lookup failed.`,
+            } as any /* <- TODO: Type helper ResponseWithError<T> */,
+        );
+    }
+
     // TODO: !! Limits + checkups
-    const whois = await whoiser(domain);
-    return response.status(200).json({ whois } satisfies CheckWhoisHandlerResponse);
+    // const whois = await whoiser(domain);
+    return response.status(200).json({
+        domainLookupResult,
+        tdlInfo,
+        // domainLookupResult: await rdapDomain(domain),
+    } satisfies CheckWhoisHandlerResponse);
 }
 
 /**
  * TODO: Cache here
- * TODO: Use instead of WHOIS in-browser RDAP
- *       - @see https://www.npmjs.com/package/node-rdap
- *       - @see https://www.npmjs.com/package/node-rdap
  */

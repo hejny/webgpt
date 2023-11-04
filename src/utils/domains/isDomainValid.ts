@@ -3,7 +3,7 @@ import { string_domain } from '../typeAliases';
 /**
  * Checks if value is valid domain
  */
-export function isValidDomain(value: unknown): value is string_domain {
+export function isDomainValid(value: unknown): value is string_domain {
     if (typeof value !== 'string') {
         return false;
     }

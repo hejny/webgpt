@@ -15,7 +15,7 @@ export function SimpleDomainChecker() {
                 onChange={(event) => setDomain(event.target.value)}
                 placeholder="example.com"
             />
-            <DomainStatusText {...{ domain }} />
+            <DomainStatusText {...{ domain }} isActionButtonShown isShownExceededLimit />
         </div>
     );
 }

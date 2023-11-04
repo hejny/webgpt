@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { classNames } from '../../../utils/classNames';
 import { checkDomain } from '../../../utils/domains/checkDomain';
 import { usePromise } from '../../../utils/hooks/usePromise';
@@ -39,7 +39,8 @@ interface DomainStatusTextProps {
 export function DomainStatusText(props: DomainStatusTextProps) {
     const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
 
-    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain]);
+    const [nonce, setNonce] = useState(0);
+    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain, nonce]);
     let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
     if (domainStatus === 'LIMIT' && !isShownExceededLimit) {
@@ -82,11 +83,11 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                 }[domainStatus || 'PENDING']
             }
 
-            {/* TODO: [🧠] How to refresh the domain information?
-            <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
-                Refresh
-            </button>
-            */}
+            {['UNKNOWN', 'LIMIT'].includes(domainStatus) && (
+                <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
+                    Refresh
+                </button>
+            )}
 
             {/* TODO: [🧠] How/where to offer domain registration?
             {domainStatus === 'AVAILABLE' && (

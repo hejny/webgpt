@@ -2,7 +2,7 @@ import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED, NEXT_PUBLIC_URL } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { PublishWebsiteResponse } from '../../pages/api/publish';
-import { isValidDomain } from '../../utils/domains/isValidDomain';
+import { isDomainValid } from '../../utils/domains/isDomainValid';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -34,7 +34,7 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
 
     console.info(`📦 Publishing to ${domain}`);
 
-    if (!isValidDomain(domain)) {
+    if (!isDomainValid(domain)) {
         throw new Error(`Please enter valid domain name`);
     }
 

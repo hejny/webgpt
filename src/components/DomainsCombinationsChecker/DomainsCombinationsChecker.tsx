@@ -50,7 +50,7 @@ export function DomainsCombinationsChecker() {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <DomainsStatusList domains={sortedDomains} />
+            <DomainsStatusList domains={sortedDomains}  />
         </div>
     );
 }

@@ -1,0 +1,52 @@
+import { parseDomain } from 'whoisserver-world';
+import { isRunningInBrowser } from '../isRunningInWhatever';
+import { string_domain } from '../typeAliases';
+import type { DomainLookupResult } from './DomainLookupResult';
+import { isDomainValid } from './isDomainValid';
+
+export async function checkWhoisForBrowser(domain: string_domain): Promise<DomainLookupResult> {
+    if (!isRunningInBrowser()) {
+        throw new Error(`This function is available ONLY in browser`);
+    }
+
+    if (!isDomainValid(domain)) {
+        throw new Error(`Domain needs to be valid.`);
+    }
+
+    // TODO: !! Allow ONLY 2nd level domains
+    // TODO: !! Allow ONLY valid TDLs
+
+    const tdlInfo = parseDomain(domain);
+
+    let domainLookupResult: DomainLookupResult | null = null;
+
+    for (const rdapServer of tdlInfo.rdapServers) {
+        try {
+            const response = await fetch(`${rdapServer}/${domain}`);
+            domainLookupResult = await response.json();
+
+            if (domainLookupResult !== null) {
+                break;
+            }
+        } catch (error) {
+            if (!(error instanceof Error)) {
+                throw error;
+            }
+
+            console.error(error);
+        }
+    }
+
+    if (domainLookupResult === null) {
+        throw new Error(`Domain lookup failed`);
+    }
+
+    return domainLookupResult;
+}
+
+/**
+ * TODO: !!! Remove and USE only lookupDomain
+ * TODO: Remove for browser suffix + remove check-whois
+ * TODO: !!! Unit Test
+ * TODO: Maybe cache in localStorage
+ */

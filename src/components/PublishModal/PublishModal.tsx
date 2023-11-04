@@ -56,7 +56,7 @@ export function PublishModal() {
                 }
 
                 alert(
-                     // <- TODO: Use here alertDialogue
+                    // <- TODO: Use here alertDialogue
                     // TODO: [🦻] DRY User error message
                     spaceTrim(`
                         Sorry for the inconvenience 😔
@@ -92,6 +92,7 @@ export function PublishModal() {
                         placeholder={defaultDomain}
                         type="text"
                         title={`Enter a domain name like ${defaultDomain}`}
+                        // <- TODO: [🤞] Allow to enter domain with www. prefix and maybe also with http://, https:// prefixes and / suffix
                     />
                     <DomainStatusText {...{ domain }} className={styles.domainStatus} />
                 </label>
