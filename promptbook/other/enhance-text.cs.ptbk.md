@@ -7,45 +7,31 @@ Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](http
 -   Input param `{inputText}` Vstupní text
 -   Output param `{outputText}` Vylepšený text
 
-## 🖋 Vylepšení textu
+## Úprava postu
 
--   Use completion
+- use chat
+
 
 ```
-# Zadání pro zkušeného copywritera
+Jako zkušenému copywriterovi s vytříbeným jazykem a smyslem pro detail vám bylo svěřeno zpracování následujícího textu.
+Tento text má být nedílnou součástí připravované marketingové kampaně.
 
-## Pravidla
-- Výsledný text neobsahuje gramatické ani stylistické chyby
-- Výsledný text zní profesionálně
-- Výsledný text obsahuje bohatou slovní zásobu
-- Výsledný text se významově neliší od surového textu
-- Výsledný text má podobnou délku jako surový text
+Pokyny pro tento úkol jsou následující:
 
+- Text mohl být automaticky přepsán z mluveného projevu, což může mít za následek nesprávnou nebo chybějící interpunkci a úseky,
+  které mohou být buď nesprávně interpretovány, nebo neúmyslně opakovány.
+- Rozšiřte bohatost jazyka a slovní zásobu použitou v textu.
+- Opravte gramatické chyby.
+- Dodejte textu vyšší úroveň profesionality.
+- Zachovejte původního vyznění textu.
 
-**Surový text:**
-dobrý den uzto funguje jak ckam
+## Surový text
 
-**Výsledný text:**
-Dobrý den, 
-již to funguje dle očekávání.
+\`\`\`
+{POST_CONTENT}
+\`\`\`
 
-**Surový text:**
-ale hovno
-
-**Výsledný text:**
-Dovolím si nesouhlasit
-
-**Surový text:**
-Mě se to nezdá
-
-**Výsledný text:**
-Mně se to nezdá.
-
-**Surový text:**
-{inputText}
-
-
-**Výsledný text:**
 ```
+
 
 `-> {outputText}`
