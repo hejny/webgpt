@@ -59,15 +59,15 @@ export function PromptCook() {
 
                 <div className={styles.controls}>
                     <button className={styles.button} onClick={enhanceTextHandler}>
-                        Spustit
+                        🚀 Run
                     </button>
                     <button className={styles.button} onClick={copyOutputHandler}>
-                        Sdílet výsledek
+                        Copy output
                     </button>
                 </div>
 
                 <div className={styles.output}>
-                    <div className={classNames(styles.fill, styles.textarea)}>{outputText}</div>
+                    <pre className={classNames(styles.fill, styles.textarea)}>{outputText}</pre>
                 </div>
 
                 <div className={styles.promptbook}>
