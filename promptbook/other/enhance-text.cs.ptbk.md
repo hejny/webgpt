@@ -24,7 +24,8 @@ Pokyny pro tento úkol jsou následující:
 - Rozšiřte bohatost jazyka a slovní zásobu použitou v textu.
 - Opravte gramatické chyby.
 - Dodejte textu vyšší úroveň profesionality.
-- Zachovejte původního vyznění textu.
+- Zachovejte vyznění textu.
+- Zachovejte délku textu
 
 ## Surový text příspěvku
 
