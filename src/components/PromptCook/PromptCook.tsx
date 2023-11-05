@@ -1,57 +1,156 @@
 import MonacoEditor from '@monaco-editor/react';
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
-import { TaskProgress } from '@promptbook/types';
+import { PromptTemplatePipelineString, TaskProgress } from '@promptbook/types';
 import { useCallback, useState } from 'react';
+import spaceTrim from 'spacetrim';
 import enhanceTextCs from '../../../promptbook/other/enhance-text.cs.ptbk.md';
+import promptcookSample from '../../../promptbook/other/promptcook-sample.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { classNames } from '../../utils/classNames';
+import { useJsonStateInLocalstorage } from '../../utils/hooks/useJsonStateInLocalstorage';
+import { useStateInLocalstorage } from '../../utils/hooks/useStateInLocalstorage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
+import { string_name } from '../../utils/typeAliases';
+import { Select } from '../Select/Select';
 import styles from './PromptCook.module.css';
 
 /**
  * Renders a prompt cook - testing ground for prompt book
  */
 export function PromptCook() {
-    const [inputText, setInputText] = useState<string>('Ahoj, jak se máš?');
+    const [currentFileName, setCurrentFileName] = useStateInLocalstorage(
+        'promptcook-currentFileName',
+        'enhance-text.cs.ptbk' as string_name,
+    );
+
+    const [files, setFiles] = useJsonStateInLocalstorage<
+        Array<{
+            name: string_name;
+            ptbkSource: PromptTemplatePipelineString;
+            inputParams: /* Parameters & */ { inputText: string };
+            outputParams?: /*Parameters & */ { outputText: string };
+        }>
+    >('promptcook-files', [
+        {
+            name: 'enhance-text.cs.ptbk',
+            ptbkSource: enhanceTextCs,
+            inputParams: {
+                inputText: 'hello',
+            },
+            outputParams: {
+                outputText: 'Hello',
+            },
+        },
+    ]);
+
+    const currentFile = files.find((file) => file.name === currentFileName);
+
+    if (!currentFile) {
+        setCurrentFileName(files[0]?.name!);
+        throw new Error(
+            spaceTrim(`
+                File ${currentFileName} not found
+
+                - Refresh the page
+            
+            `),
+        );
+    }
+
     const [isRunning, setRunning] = useState(false);
-    const [ptbkSource, setPtbkSource] = useState(enhanceTextCs);
-    const [outputText, setOutputText] = useState<null | string>(null);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const executePtbk = useCallback(async () => {
-        setRunning(true);
-        const executor = createPtpExecutor({
-            ptp: PromptTemplatePipeline.fromSource(ptbkSource),
-            tools: getExecutionTools(
-                await provideClientId({
-                    isVerifiedEmailRequired: true,
-                }),
-            ),
-        });
+    const executePtbk = useCallback(
+        async () => {
+            setRunning(true);
+            const executor = createPtpExecutor({
+                ptp: PromptTemplatePipeline.fromSource(currentFile.ptbkSource),
+                tools: getExecutionTools(
+                    await provideClientId({
+                        isVerifiedEmailRequired: true,
+                    }),
+                ),
+            });
 
-        const result = await executor({ inputText }, (newTaskProgress: TaskProgress) => {
-            console.info('☑', newTaskProgress);
-            // TODO: !!
-            // setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
-        });
+            const result = await executor(
+                {
+                    inputText: currentFile.inputParams.inputText,
+                },
+                (newTaskProgress: TaskProgress) => {
+                    console.info('☑', newTaskProgress);
+                    // TODO: !!
+                    // setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
+                },
+            );
 
-        console.info('☑', { result });
-        const { outputText } = result;
+            console.info('☑', { result });
+            const { outputText } = result;
 
-        setOutputText(outputText || null);
-        setRunning(false);
-    }, [ptbkSource, inputText]);
-    const copyOutputHandler = useCallback(() => {
-        navigator.clipboard.writeText(outputText || '');
-    }, [outputText]);
+            // TODO: DRY [0]
+            currentFile.outputParams = { outputText: outputText || '' };
+            setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
+            setRunning(false);
+        },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [currentFile.ptbkSource, currentFile.inputParams.inputText],
+    );
 
     return (
         <>
             <div className={styles.PromptCook}>
+                <div className={styles.menu}>
+                    <input
+                        type="text"
+                        value={currentFile.name}
+                        onChange={(event) => {
+                            const name = event.target.value;
+
+                            // TODO: DRY [0]
+                            currentFile.name = name;
+                            setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
+                            setCurrentFileName(name);
+                        }}
+                    />
+                    <Select
+                        value={currentFileName}
+                        options={Object.fromEntries([...files.map((file) => [file.name, file.name]), ['__NEW__', '+']])}
+                        visibleButtons={Infinity}
+                        onChange={(value) => {
+                            if (value === '__NEW__') {
+                                const newFileName = prompt('New file name', 'new-file.cs.ptbk');
+
+                                if (!newFileName) {
+                                    return;
+                                }
+
+                                if (files.some((file) => file.name === newFileName)) {
+                                    alert(`File ${newFileName} already exists`);
+                                    return;
+                                }
+
+                                setFiles([
+                                    ...files,
+                                    {
+                                        name: newFileName,
+                                        ptbkSource: promptcookSample,
+                                        inputParams: {
+                                            inputText: '',
+                                        },
+                                    },
+                                ]);
+                                setCurrentFileName(newFileName);
+                            } else {
+                                setCurrentFileName(value);
+                            }
+                        }}
+                    />
+                </div>
+
                 <div className={styles.input}>
                     <MonacoEditor
+                        key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
                         theme="vs-dark"
                         language={'markdown'}
@@ -61,13 +160,15 @@ export function PromptCook() {
                             lineNumbers: 'off',
                             minimap: { enabled: false },
                         }}
-                        defaultValue={inputText}
+                        defaultValue={currentFile.inputParams.inputText}
                         onChange={(newContent) => {
                             if (typeof newContent !== 'string') {
                                 return;
                             }
 
-                            setInputText(newContent);
+                            // TODO: DRY [0]
+                            currentFile.inputParams.inputText = newContent;
+                            setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
                         }}
                     />
                 </div>
@@ -76,13 +177,27 @@ export function PromptCook() {
                     <button className={styles.button} onClick={executePtbk}>
                         🚀 Run
                     </button>
-                    <button className={styles.button} onClick={copyOutputHandler}>
+                    <button
+                        className={styles.button}
+                        onClick={() => {
+                            navigator.clipboard.writeText(currentFile.outputParams?.outputText || '');
+                        }}
+                    >
                         Copy output
+                    </button>
+                    <button
+                        className={styles.button}
+                        onClick={() => {
+                            /* !!! */
+                        }}
+                    >
+                        Download .ptbk file
                     </button>
                 </div>
 
                 <div className={styles.output}>
                     <MonacoEditor
+                        key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
                         theme="vs-dark"
                         language={'markdown'}
@@ -97,12 +212,13 @@ export function PromptCook() {
                             lineNumbers: 'off',
                             minimap: { enabled: false },
                         }}
-                        value={outputText || ''}
+                        value={currentFile.outputParams?.outputText || ''}
                     />
                 </div>
 
                 <div className={styles.promptbook}>
                     <MonacoEditor
+                        key={currentFile.name}
                         className={styles.fill}
                         theme="vs-dark"
                         language={'markdown'}
@@ -110,13 +226,15 @@ export function PromptCook() {
                             wordWrap: 'on',
                             contextmenu: false,
                         }}
-                        defaultValue={enhanceTextCs}
+                        defaultValue={currentFile.ptbkSource}
                         onChange={(newContent) => {
                             if (typeof newContent !== 'string') {
                                 return;
                             }
 
-                            setPtbkSource(newContent);
+                            // TODO: DRY [0]
+                            currentFile.ptbkSource = newContent as PromptTemplatePipelineString; // <- TODO: !! Validate the source
+                            setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
                         }}
                     />
                 </div>

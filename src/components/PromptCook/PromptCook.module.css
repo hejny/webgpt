@@ -12,10 +12,15 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template:
+        '⬜ ⬜' 50px
         '🟦 📖' 1fr
         '🔽 📖' auto
         '🟩 📖' 1fr
         / 1fr 1fr;
+}
+
+.menu {
+    grid-area: ⬜;
 }
 
 .input {
@@ -32,6 +37,12 @@
 
 .promptbook {
     grid-area: 📖;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
 .input,
