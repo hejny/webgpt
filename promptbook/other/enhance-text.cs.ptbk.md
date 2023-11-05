@@ -9,7 +9,8 @@ Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](http
 
 ## Úprava postu
 
-- use chat
+- use completion
+- postptocess spaceTrim
 
 
 ```
@@ -25,11 +26,12 @@ Pokyny pro tento úkol jsou následující:
 - Dodejte textu vyšší úroveň profesionality.
 - Zachovejte původního vyznění textu.
 
-## Surový text
+## Surový text příspěvku
 
-\`\`\`
-{POST_CONTENT}
-\`\`\`
+{inputText}
+
+
+## Vylepšený text příspěvku
 
 ```
 
