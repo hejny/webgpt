@@ -52,9 +52,18 @@ export function PromptCook() {
         <>
             <div className={styles.PromptCook}>
                 <div className={styles.input}>
-                    <textarea className={classNames(styles.fill, styles.textarea)} ref={inputTextareaRef}>
-                        ahoj jak se máš
-                    </textarea>
+                    <MonacoEditor
+                        className={classNames(styles.fill, styles.textarea)}
+                        theme="vs-dark"
+                        language={'markdown'}
+                        options={{
+                            wordWrap: 'on',
+                            contextmenu: false,
+                            lineNumbers: 'off',
+                            minimap: { enabled: false },
+                        }}
+                        defaultValue={'ahoj jak se máš'}
+                    />
                 </div>
 
                 <div className={styles.controls}>
@@ -67,7 +76,23 @@ export function PromptCook() {
                 </div>
 
                 <div className={styles.output}>
-                    <pre className={classNames(styles.fill, styles.textarea)}>{outputText}</pre>
+                    <MonacoEditor
+                        className={classNames(styles.fill, styles.textarea)}
+                        theme="vs-dark"
+                        language={'markdown'}
+                        options={{
+                            wordWrap: 'on',
+                            readOnly: true,
+                            readOnlyMessage: {
+                                value: 'Output can not be edited.',
+                                isTrusted: true,
+                            },
+                            contextmenu: false,
+                            lineNumbers: 'off',
+                            minimap: { enabled: false },
+                        }}
+                        value={outputText || ''}
+                    />
                 </div>
 
                 <div className={styles.promptbook}>
@@ -77,6 +102,7 @@ export function PromptCook() {
                         language={'markdown'}
                         options={{
                             wordWrap: 'on',
+                            contextmenu: false,
                         }}
                         defaultValue={enhanceTextCs}
                         onChange={(newContent) => {
