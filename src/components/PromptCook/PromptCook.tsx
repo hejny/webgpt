@@ -158,7 +158,8 @@ export function PromptCook() {
                         language={'markdown'}
                         options={{
                             wordWrap: 'on',
-                            contextmenu: false,
+                            contextmenu: true,
+                            //           <- Note: [📳] Context menu needs to be on to allow copy/paste on touch devices
                             lineNumbers: 'off',
                             minimap: { enabled: false },
                         }}
@@ -219,7 +220,8 @@ export function PromptCook() {
                                 value: 'Output can not be edited.',
                                 isTrusted: true,
                             },
-                            contextmenu: false,
+                            contextmenu: true,
+                            //           <- Note: [📳] Context menu needs to be on to allow copy/paste on touch devices
                             lineNumbers: 'off',
                             minimap: { enabled: false },
                         }}
@@ -235,7 +237,8 @@ export function PromptCook() {
                         language={'markdown'}
                         options={{
                             wordWrap: 'on',
-                            contextmenu: false,
+                            contextmenu: true,
+                            //           <- Note: [📳] Context menu needs to be on to allow copy/paste on touch devices
                         }}
                         defaultValue={currentFile.ptbkSource}
                         onChange={(newContent) => {
