@@ -46,7 +46,11 @@ export function DomainsModal() {
 
     return (
         <Modal title={'Domains'} isCloseable>
-            {wallpaper.keywords}
+            <ul>
+                {wallpaper.keywords?.map((keyword) => (
+                    <li key={keyword}>{keyword}</li>
+                ))}
+            </ul>
             {domains.map(({ domain, domainStatus }) => (
                 <DomainStatusText key={domain} {...{ domain, domainStatus }} isActionButtonShown isShownDetailedFail />
             ))}
