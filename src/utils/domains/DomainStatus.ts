@@ -3,5 +3,6 @@ export const DomainStatus = {
     REGISTERED: 'Registered',
     LIMIT: 'Limit exceeded',
     TIMEOUT: 'Timeout',
+    TDL_NOT_SUPPORTED: 'Tdl not supported',
     UNKNOWN: 'Unknown',
 } as const;

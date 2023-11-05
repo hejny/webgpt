@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { classNames } from '../../../utils/classNames';
 import { checkDomain } from '../../../utils/domains/checkDomain';
+import { getDomainTdl } from '../../../utils/domains/getDomainTdl';
 import { usePromise } from '../../../utils/hooks/usePromise';
 import { justNoActionWith } from '../../../utils/justNoActionWith';
 import { string_css_class, string_domain } from '../../../utils/typeAliases';
@@ -21,7 +22,7 @@ interface DomainStatusTextProps {
     isActionButtonShown?: boolean;
 
     /**
-     * Is shown that the domain exceeded limit or timeout for whois lookups?
+     * Is shown that the domain exceeded limit, timeout or not supported tdl for whois lookups?
      * If no or not set, it will be shown as UNKNOWN
      */
     isShownDetailedFail?: boolean;
@@ -47,7 +48,7 @@ export function DomainStatusText(props: DomainStatusTextProps) {
     }, [domain, nonce]);
     let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
-    if (['LIMIT', 'TIMEOUT'].includes(domainStatus as any) && !isShownDetailedFail) {
+    if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
         domainStatus = 'UNKNOWN';
     }
 
@@ -88,10 +89,13 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                             <b>{domain}</b> status is unknown
                         </span>
                     ),
+                    TDL_NOT_SUPPORTED: (
+                        <span className={styles.unknown}>
+                            <b>{domain}</b> unfortunately we can not check .{getDomainTdl(domain)} domains
+                        </span>
+                    ),
                 }[domainStatus || 'PENDING']
             }
-
-            {nonce}
 
             {['UNKNOWN', 'LIMIT'].includes(domainStatus as any) && (
                 <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>

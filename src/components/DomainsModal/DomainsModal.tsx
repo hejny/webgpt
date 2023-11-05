@@ -21,9 +21,9 @@ export function DomainsModal() {
     // --------------
 
     return (
-        <Modal title={'Somains'} isCloseable>
+        <Modal title={'Domains'} isCloseable>
             {wallpaper.keywords}
-            <DomainsStatusList domains={['towns.cz']} />
+            <DomainsStatusList domains={['towns.cz', 'pavolhejny.com', 'svetlodat.eu']} />
         </Modal>
     );
 }

@@ -45,11 +45,15 @@ export async function checkDomain(domain: string_domain): Promise<keyof typeof D
             throw error;
         }
 
-        if (error.message === 'Domain lookup failed') {
+        if (error.message.includes('Domain lookup failed')) {
             return 'LIMIT';
         }
 
-        if (error.message === 'Timeout') {
+        if (error.message.includes('No RDAP servers found for TDL')) {
+            return 'TDL_NOT_SUPPORTED';
+        }
+
+        if (error.message.includes('Timeout')) {
             return 'TIMEOUT';
         }
 
