@@ -13,17 +13,17 @@ describe(`validateDomain`, () => {
     });
 
     it(`is NOT valid`, () => {
-        expect(validateDomain(`localhost`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`webgpt.cz/path`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`webgpt.cz:80`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`http://webgpt.cz/`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`129.56.3.55`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(``)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`1`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`1.A`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`---`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`@`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`@@@`)).toThrowError(`Invalid domain`);
-        expect(validateDomain(`@hejny`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`localhost`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`webgpt.cz/path`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`webgpt.cz:80`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`http://webgpt.cz/`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`129.56.3.55`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(``)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`1`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`1.A`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`---`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`@`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`@@@`)).toThrowError(`Invalid domain`);
+        expect(()=>validateDomain(`@hejny`)).toThrowError(`Invalid domain`);
     });
 });

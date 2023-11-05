@@ -1,6 +1,7 @@
 import spaceTrim from 'spacetrim';
+import { forTime } from 'waitasecond';
+import { justTrue } from '../justTrue';
 // TODO: !!! Uninstall all unused packages> import { parseDomain } from 'whoisserver-world';
-import { isRunningInBrowser } from '../isRunningInWhatever';
 import { string_domain, string_url } from '../typeAliases';
 import type { DomainLookupResult } from './DomainLookupResult';
 import { getDomainLevel } from './getDomainLevel';
@@ -9,9 +10,9 @@ import { isDomainValid } from './isDomainValid';
 
 let rdapServices: any = null;
 
-export async function lookupDomain(domain: string_domain): Promise<DomainLookupResult> {
-    if (!isRunningInBrowser()) {
-        throw new Error(`This function is available ONLY in browser`);
+export async function lookupDomain(domain: string_domain): Promise<DomainLookupResult | 'NOT_FOUND'> {
+    if (justTrue()) {
+        // return { a: 1 } as any;
     }
 
     if (!isDomainValid(domain)) {
@@ -51,13 +52,25 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
 
     console.log('!!!', { rdapServers });
 
-    let domainLookupResult: DomainLookupResult | null = null;
+    let domainLookupResult: DomainLookupResult | 'NOT_FOUND' | null = null;
 
     for (const rdapServer of rdapServers) {
         try {
             // TODO: !!! Queue and lock
-            const response = await fetch(`${rdapServer}/domain/${domain}`);
-            domainLookupResult = await response.json();
+
+            await forTime(Math.random() * 10000);
+            const rdapDomainCheckUrl = `${rdapServer}domain/${domain}`;
+            console.log('!!!', { rdapDomainCheckUrl });
+            const response = await fetch(rdapDomainCheckUrl);
+
+            console.log('!!!', response.status);
+            if (response.status === 404) {
+                domainLookupResult = 'NOT_FOUND';
+            }
+
+            domainLookupResult = (await response.json()) as DomainLookupResult;
+
+            console.log('!!!', { response, domainLookupResult });
 
             if (domainLookupResult !== null) {
                 break;

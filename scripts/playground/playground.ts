@@ -30,7 +30,7 @@ async function playground() {
     //========================================>
 
     console.log('--------------------');
-    console.log(JSON.stringify(await lookupDomain(`webgpt.com`), null, 4));
+    console.log(JSON.stringify(await lookupDomain(`towns.cz`), null, 4));
     console.log('--------------------');
     //========================================/
 

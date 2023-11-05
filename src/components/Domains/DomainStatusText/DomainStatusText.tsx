@@ -40,7 +40,7 @@ export function DomainStatusText(props: DomainStatusTextProps) {
     const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
 
     const [nonce, setNonce] = useState(0);
-    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain, nonce]);
+    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain, nonce), [domain, nonce]);
     let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
     if (domainStatus === 'LIMIT' && !isShownExceededLimit) {
@@ -83,7 +83,9 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                 }[domainStatus || 'PENDING']
             }
 
-            {['UNKNOWN', 'LIMIT'].includes(domainStatus) && (
+            {nonce}
+
+            {['UNKNOWN', 'LIMIT'].includes(domainStatus as any) && (
                 <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
                     Refresh
                 </button>
