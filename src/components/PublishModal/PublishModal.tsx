@@ -11,6 +11,7 @@ import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';
 
@@ -79,7 +80,7 @@ export function PublishModal() {
 
             <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
-                    <div className={styles.key}>Site url:</div>
+                    <div className={styles.key}>Domain:</div>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
                         disabled={isPublishing}
@@ -94,6 +95,8 @@ export function PublishModal() {
                         title={`Enter a domain name like ${defaultDomain}`}
                         // <- TODO: [🤞] Allow to enter domain with www. prefix and maybe also with http://, https:// prefixes and / suffix
                     />
+                    <WallpaperLink modal={'domains'}>I need help with the domain</WallpaperLink>
+
                     <DomainStatusText {...{ domain }} className={styles.domainStatus} />
                 </label>
 

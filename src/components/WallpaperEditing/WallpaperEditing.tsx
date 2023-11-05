@@ -6,6 +6,7 @@ import { useScenario } from '../../utils/hooks/useScenario';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
 import { Dialogues } from '../Dialogues/Dialogues';
+import { DomainsModal } from '../DomainsModal/DomainsModal';
 import { EditContentModal } from '../EditContentModal/EditContentModal';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
@@ -25,6 +26,7 @@ export function WallpaperEditing() {
             <Dialogues />
 
             {modal === 'publish' && <PublishModal />}
+            {modal === 'domains' && <DomainsModal />}
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}
