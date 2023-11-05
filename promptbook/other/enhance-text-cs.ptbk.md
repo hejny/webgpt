@@ -2,7 +2,7 @@
 
 Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
--   PTBK URL https://ptbk.webgpt.com/cs/other/enhance-text.cs.ptbk.md@v0.1.0
+-   PTBK URL https://ptbk.webgpt.com/cs/other/enhance-text-cs.ptbk.md@v0.1.0
 -   PTBK version 0.0.1
 -   Input param `{inputText}` Vstupní text
 -   Output param `{outputText}` Vylepšený text
