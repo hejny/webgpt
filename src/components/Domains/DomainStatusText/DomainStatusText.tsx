@@ -1,20 +1,22 @@
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
 import { classNames } from '../../../utils/classNames';
-import { checkDomain } from '../../../utils/domains/checkDomain';
+import type { DomainStatus } from '../../../utils/domains/DomainStatus';
 import { getDomainTdl } from '../../../utils/domains/getDomainTdl';
-import { usePromise } from '../../../utils/hooks/usePromise';
-import { justNoActionWith } from '../../../utils/justNoActionWith';
-import { string_css_class, string_domain } from '../../../utils/typeAliases';
+import type { string_css_class, string_domain } from '../../../utils/typeAliases';
 import styles from './DomainStatusText.module.css';
 
-interface DomainStatusTextProps {
+export interface DomainStatusTextProps {
     /**
-     * The domain to check
+     * The domain which is checked
      *
-     * Note: The domain will be normalized - trimmed and lowercased
+     * Note: The domain should be normalized - trimmed and lowercased
      */
     domain: string_domain;
+
+    /**
+     * Status of the domain
+     */
+    domainStatus: keyof typeof DomainStatus | 'PENDING';
 
     /**
      * Is button to open page shown?
@@ -40,13 +42,7 @@ interface DomainStatusTextProps {
  */
 export function DomainStatusText(props: DomainStatusTextProps) {
     const { domain, isActionButtonShown, isShownDetailedFail, className } = props;
-
-    const [nonce, setNonce] = useState(0);
-    const domainStatusPromise = useMemo(() => {
-        justNoActionWith(nonce);
-        return /* not await */ checkDomain(domain);
-    }, [domain, nonce]);
-    let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
+    let { domainStatus } = props;
 
     if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
         domainStatus = 'UNKNOWN';
@@ -94,14 +90,8 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                             <b>{domain}</b> unfortunately we can not check .{getDomainTdl(domain)} domains
                         </span>
                     ),
-                }[domainStatus || 'PENDING']
+                }[domainStatus]
             }
-
-            {['UNKNOWN', 'LIMIT'].includes(domainStatus as any) && (
-                <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
-                    Refresh
-                </button>
-            )}
 
             {/* TODO: [🧠] How/where to offer domain registration?
             {domainStatus === 'AVAILABLE' && (
@@ -128,7 +118,3 @@ export function DomainStatusText(props: DomainStatusTextProps) {
         </div>
     );
 }
-
-/**
- * TODO: !! Probbably debounce the whois lookup
- */

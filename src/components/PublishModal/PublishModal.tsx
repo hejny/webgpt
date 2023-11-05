@@ -6,7 +6,7 @@ import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPa
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
-import { DomainStatusText } from '../Domains/DomainStatusText/DomainStatusText';
+import { DomainStatusChecker } from '../Domains/DomainStatusChecker/DomainStatusChecker';
 import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
@@ -97,7 +97,7 @@ export function PublishModal() {
                     />
                     <WallpaperLink modal={'domains'}>I need help with the domain</WallpaperLink>
 
-                    <DomainStatusText {...{ domain }} className={styles.domainStatus} />
+                    <DomainStatusChecker {...{ domain }} className={styles.domainStatus} />
                 </label>
 
                 <label className={styles.setting}>

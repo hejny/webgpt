@@ -202,7 +202,7 @@ export type string_domain = string;
  *
  * For example `"com"`
  */
-export type string_tdl = string;
+export type string_domain_tdl = string;
 
 /**
  * Semantic helper

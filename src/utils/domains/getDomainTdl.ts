@@ -1,5 +1,4 @@
-import { string_domain } from '@promptbook/types';
-import { string_domain_tdl } from '@promptbook/types/esm/typings/types/typeAliases';
+import type { string_domain, string_domain_tdl } from '../../utils/typeAliases';
 
 export function getDomainTdl(domain: string_domain): string_domain_tdl {
     return domain.split('.').pop() as string_domain_tdl;

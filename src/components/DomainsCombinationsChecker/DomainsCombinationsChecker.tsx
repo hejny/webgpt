@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { string_domain, string_tdl } from '../../utils/typeAliases';
-import styles from './DomainsCombinationsChecker.module.css';
-import { DomainsStatusList } from '../Domains/DomainsStatusList/DomainsStatusList';
+import type { string_domain, string_domain_tdl } from '../../utils/typeAliases';
+import { DomainsStatusCheckerList } from '../Domains/DomainsStatusList/DomainsStatusCheckerList';
 import { createAllPermutationsOf } from '../Domains/utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from '../Domains/utils/createAllSubsetsOf';
+import styles from './DomainsCombinationsChecker.module.css';
 
 /**
  * Renders a domain checker with advanced options and patterns
  */
 export function DomainsCombinationsChecker() {
     const [names, setNames] = useState<Array<string_domain>>(['web', 'gpt']);
-    const [tdls, setTdls] = useState<Array<string_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
+    const [tdls, setTdls] = useState<Array<string_domain_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
 
     const namePartsCombinations = createAllSubsetsOf(...names);
     const namePartsPermutations = namePartsCombinations.flatMap((subset) => createAllPermutationsOf(...subset));
@@ -50,7 +50,7 @@ export function DomainsCombinationsChecker() {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <DomainsStatusList domains={sortedDomains}  />
+            <DomainsStatusCheckerList domains={sortedDomains} />
         </div>
     );
 }

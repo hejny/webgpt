@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { string_hostname } from '../../utils/typeAliases';
+import { DomainStatusChecker } from './DomainStatusChecker/DomainStatusChecker';
 import { DomainStatusText } from './DomainStatusText/DomainStatusText';
 
 /**
@@ -15,7 +16,7 @@ export function SimpleDomainChecker() {
                 onChange={(event) => setDomain(event.target.value)}
                 placeholder="example.com"
             />
-            <DomainStatusText {...{ domain }} isActionButtonShown isShownDetailedFail />
+            <DomainStatusChecker {...{ domain }} isActionButtonShown isShownDetailedFail />
         </div>
     );
 }

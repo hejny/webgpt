@@ -6,3 +6,8 @@ export const DomainStatus = {
     TDL_NOT_SUPPORTED: 'Tdl not supported',
     UNKNOWN: 'Unknown',
 } as const;
+
+/**
+ * TODO: Split between const and type
+ *     - keyof typeof DomainStatus should become just type DomainStatus
+ */
