@@ -10,7 +10,7 @@ Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](http
 ## Úprava postu
 
 - use completion
-- postptocess spaceTrim
+- postprocess spaceTrim
 
 
 ```
