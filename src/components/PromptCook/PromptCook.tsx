@@ -1,12 +1,14 @@
 import MonacoEditor from '@monaco-editor/react';
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
 import { PromptTemplatePipelineString, TaskProgress } from '@promptbook/types';
+import { normalizeToKebabCase } from 'n12';
 import { useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import enhanceTextCs from '../../../promptbook/other/enhance-text.cs.ptbk.md';
 import promptcookSample from '../../../promptbook/other/promptcook-sample.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
+import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
 import { useJsonStateInLocalstorage } from '../../utils/hooks/useJsonStateInLocalstorage';
 import { useStateInLocalstorage } from '../../utils/hooks/useStateInLocalstorage';
@@ -187,8 +189,17 @@ export function PromptCook() {
                     </button>
                     <button
                         className={styles.button}
-                        onClick={() => {
-                            /* !!! */
+                        onClick={async () => {
+                            let filename = currentFile.name;
+                            filename = filename.replace(/\.ptbk(\.md)?$/, '');
+                            filename = normalizeToKebabCase(filename);
+
+                            filename = filename + '.ptbk.md';
+
+                            const ptbkFile = new File([currentFile.ptbkSource], filename, {
+                                type: 'text/markdown',
+                            });
+                            await induceFileDownload(ptbkFile);
                         }}
                     >
                         Download .ptbk file
@@ -245,6 +256,19 @@ export function PromptCook() {
 }
 
 /**
+ * TODO: !! Mobile layout
+ * TODO: Allow to drop file(s)
+ * TODO: Allow to edit real files
+ * TODO: Integrate with cloud storages
+ * TODO: Allow to edit files in the cloud
+ * TODO: Allow to edit files in the cloud in real time
+ * TODO: Allow to edit files in the cloud in real time with other people
+ * TODO: Allow to edit files in the cloud in real time on Collboard
+ * TODO: Make nicer UI
+ * TODO: Make nicer loading
+ * TODO: Show task progress
+ * TODO: Custom / WebGPT apiKey
+ * TODO: API key management
  * TODO: Make a separate repository for promptcook
  * TODO: Make a electron app for promptcook
  * TODO: Resizable panels
