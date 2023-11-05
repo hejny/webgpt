@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { classNames } from '../../../utils/classNames';
 import { checkDomain } from '../../../utils/domains/checkDomain';
 import { usePromise } from '../../../utils/hooks/usePromise';
+import { justNoActionWith } from '../../../utils/justNoActionWith';
 import { string_css_class, string_domain } from '../../../utils/typeAliases';
 import styles from './DomainStatusText.module.css';
 
@@ -20,10 +21,10 @@ interface DomainStatusTextProps {
     isActionButtonShown?: boolean;
 
     /**
-     * Is shown that the domain exceeded limit for whois lookups?
+     * Is shown that the domain exceeded limit or timeout for whois lookups?
      * If no or not set, it will be shown as UNKNOWN
      */
-    isShownExceededLimit?: boolean;
+    isShownDetailedFail?: boolean;
 
     /**
      * Optional CSS class name which will be added to root element
@@ -37,13 +38,16 @@ interface DomainStatusTextProps {
  * Note: It internally fetches and displays the whois
  */
 export function DomainStatusText(props: DomainStatusTextProps) {
-    const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
+    const { domain, isActionButtonShown, isShownDetailedFail, className } = props;
 
     const [nonce, setNonce] = useState(0);
-    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain, nonce), [domain, nonce]);
+    const domainStatusPromise = useMemo(() => {
+        justNoActionWith(nonce);
+        return /* not await */ checkDomain(domain);
+    }, [domain, nonce]);
     let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
-    if (domainStatus === 'LIMIT' && !isShownExceededLimit) {
+    if (['LIMIT', 'TIMEOUT'].includes(domainStatus as any) && !isShownDetailedFail) {
         domainStatus = 'UNKNOWN';
     }
 
@@ -74,7 +78,11 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                             <b>{domain}</b> exceeded limit for whois lookups
                         </span>
                     ),
-                    // TODO: TIMEOUT: <span className={styles.unknown}>Timeout in whois lookup</span>,
+                    TIMEOUT: (
+                        <span className={styles.timeout}>
+                            <b>{domain}</b> timeouted while getting whois info
+                        </span>
+                    ),
                     UNKNOWN: (
                         <span className={styles.unknown}>
                             <b>{domain}</b> status is unknown

@@ -2,7 +2,6 @@ import { NEXT_PUBLIC_OUR_DOMAINS } from '../../../config';
 import type { CheckDeploymentHandlerResponse } from '../../pages/api/check-deployment';
 import type { string_domain } from '../typeAliases';
 import type { DomainStatus } from './DomainStatus';
-import { getDomainStatusFromWhois } from './getDomainStatusFromWhois';
 import { isSubdomainOf } from './isSubdomainOf';
 import { lookupDomain } from './lookupDomain';
 
@@ -35,7 +34,12 @@ export async function checkDomain(domain: string_domain): Promise<keyof typeof D
 
     try {
         const domainLookupResult = await lookupDomain(domain);
-        return getDomainStatusFromWhois(domainLookupResult);
+
+        if (domainLookupResult === 'NOT_FOUND') {
+            return 'AVAILABLE';
+        } else {
+            return 'REGISTERED';
+        }
     } catch (error) {
         if (!(error instanceof Error)) {
             throw error;
@@ -43,6 +47,10 @@ export async function checkDomain(domain: string_domain): Promise<keyof typeof D
 
         if (error.message === 'Domain lookup failed') {
             return 'LIMIT';
+        }
+
+        if (error.message === 'Timeout') {
+            return 'TIMEOUT';
         }
 
         throw error;

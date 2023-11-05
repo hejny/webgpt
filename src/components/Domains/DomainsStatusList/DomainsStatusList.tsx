@@ -21,7 +21,7 @@ export function DomainsStatusList(props: DomainsStatusListProps) {
     return (
         <div className={styles.DomainsStatusList}>
             {domains.map((domain) => (
-                <DomainStatusText key={domain} {...{ domain }} isActionButtonShown isShownExceededLimit />
+                <DomainStatusText key={domain} {...{ domain }} isActionButtonShown isShownDetailedFail />
             ))}
         </div>
     );
