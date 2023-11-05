@@ -1,7 +1,7 @@
 import MonacoEditor from '@monaco-editor/react';
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
 import { TaskProgress } from '@promptbook/types';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useState } from 'react';
 import enhanceTextCs from '../../../promptbook/other/enhance-text.cs.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
@@ -13,14 +13,14 @@ import styles from './PromptCook.module.css';
  * Renders a prompt cook - testing ground for prompt book
  */
 export function PromptCook() {
-    const inputTextareaRef = useRef<HTMLTextAreaElement>(null);
+    const [inputText, setInputText] = useState<string>('Ahoj, jak se máš?');
     const [isRunning, setRunning] = useState(false);
     const [ptbkSource, setPtbkSource] = useState(enhanceTextCs);
     const [outputText, setOutputText] = useState<null | string>(null);
     const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const enhanceTextHandler = useCallback(async () => {
+    const executePtbk = useCallback(async () => {
         setRunning(true);
         const executor = createPtpExecutor({
             ptp: PromptTemplatePipeline.fromSource(ptbkSource),
@@ -31,7 +31,6 @@ export function PromptCook() {
             ),
         });
 
-        const inputText = inputTextareaRef.current?.value || '';
         const result = await executor({ inputText }, (newTaskProgress: TaskProgress) => {
             console.info('☑', newTaskProgress);
             // TODO: !!
@@ -43,7 +42,7 @@ export function PromptCook() {
 
         setOutputText(outputText || null);
         setRunning(false);
-    }, [ptbkSource, inputTextareaRef]);
+    }, [ptbkSource, inputText]);
     const copyOutputHandler = useCallback(() => {
         navigator.clipboard.writeText(outputText || '');
     }, [outputText]);
@@ -62,12 +61,19 @@ export function PromptCook() {
                             lineNumbers: 'off',
                             minimap: { enabled: false },
                         }}
-                        defaultValue={'ahoj jak se máš'}
+                        defaultValue={inputText}
+                        onChange={(newContent) => {
+                            if (typeof newContent !== 'string') {
+                                return;
+                            }
+
+                            setInputText(newContent);
+                        }}
                     />
                 </div>
 
                 <div className={styles.controls}>
-                    <button className={styles.button} onClick={enhanceTextHandler}>
+                    <button className={styles.button} onClick={executePtbk}>
                         🚀 Run
                     </button>
                     <button className={styles.button} onClick={copyOutputHandler}>
@@ -121,5 +127,8 @@ export function PromptCook() {
 }
 
 /**
+ * TODO: Make a separate repository for promptcook
+ * TODO: Make a electron app for promptcook
+ * TODO: Resizable panels
  * TODO: [🧠] Should be the props readonly (for all react components)?
  */
