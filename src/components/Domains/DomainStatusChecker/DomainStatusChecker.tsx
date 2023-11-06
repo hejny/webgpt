@@ -45,7 +45,7 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
             const domainStatus = await checkDomain(domain);
 
             if (['LIMIT', 'TIMEOUT', 'UNKNOWN'].includes(domainStatus)) {
-                await forTime(1000 + Math.random() * 10000 /* <- TODO: !! RETRY_TIME_MS to config */);
+                await forTime(5000 + Math.random() * 10000 /* <- TODO: !! RETRY_TIME_MS to config */);
                 setTryCount(tryCount + 1);
             }
 
