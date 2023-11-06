@@ -61,7 +61,7 @@ export function DomainStatusText(props: DomainStatusTextProps) {
 
     const tryCountMessage = tryCount > 1 ? <i>(Tried {tryCount}x)</i> : <></>;
     const checkedAtMessage = checkedAt ? (
-        <i>{moment(checkedAt).calendar(/* <- TODO: !! Use current locale */)}</i>
+        <i>({moment(checkedAt).calendar(/* <- TODO: !! Use current locale */)})</i>
     ) : (
         <></>
     );
