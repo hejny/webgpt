@@ -8,7 +8,7 @@ import type { DomainStatusTextProps } from '../DomainStatusText/DomainStatusText
 import { DomainStatusText } from '../DomainStatusText/DomainStatusText';
 import styles from '../DomainStatusText/DomainStatusText.module.css';
 
-interface DomainStatusCheckerProps extends Omit<DomainStatusTextProps, 'domainStatus'> {
+interface DomainStatusCheckerProps extends Omit<DomainStatusTextProps, 'domainStatus' | 'tryCount' | 'checkedAt'> {
     /**
      * Is checking immediately after the component is mounted OR after some debounce time
      */
@@ -29,6 +29,7 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
     const { domain, isActionButtonShown, isShownDetailedFail, isDebounced, isRetried, className } = props;
 
     const [domainStatus, setDomainStatus] = useState<keyof typeof DomainStatus | 'PENDING'>('PENDING');
+    const [checkedAt, setCheckedAt] = useState<Date | null>(null);
     const [tryCount, setTryCount] = useState(1);
     const domainStatusPromise = useEffect(() => {
         let isDestroyed = false;
@@ -48,6 +49,7 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
                 setTryCount(tryCount + 1);
             }
 
+            setCheckedAt(new Date());
             setDomainStatus(domainStatus);
         })();
 
@@ -68,7 +70,7 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
     return (
         <>
             <DomainStatusText
-                {...{ domain, isActionButtonShown, isShownDetailedFail, className, tryCount }}
+                {...{ domain, isActionButtonShown, isShownDetailedFail, className, tryCount, checkedAt }}
                 domainStatus={domainStatusShown}
             />
             {isActionButtonShown && ['UNKNOWN', 'LIMIT'].includes(domainStatusShown as any) && (

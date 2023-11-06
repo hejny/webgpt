@@ -1,3 +1,4 @@
+import moment from 'moment';
 import Link from 'next/link';
 import { classNames } from '../../../utils/classNames';
 import type { DomainStatus } from '../../../utils/domains/DomainStatus';
@@ -24,11 +25,9 @@ export interface DomainStatusTextProps {
     tryCount: number;
 
     /**
-     * TODO:
      * When was the domain checked?
-     *
-    checkedAt: Date;
-    */
+     */
+    checkedAt: Date | null;
 
     /**
      * Is button to open page shown?
@@ -53,7 +52,7 @@ export interface DomainStatusTextProps {
  * Note: It internally fetches and displays the whois
  */
 export function DomainStatusText(props: DomainStatusTextProps) {
-    const { domain, isActionButtonShown, isShownDetailedFail, tryCount, className } = props;
+    const { domain, isActionButtonShown, isShownDetailedFail, tryCount, checkedAt, className } = props;
     let { domainStatus } = props;
 
     if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
@@ -61,6 +60,11 @@ export function DomainStatusText(props: DomainStatusTextProps) {
     }
 
     const tryCountMessage = tryCount > 1 ? <i>(Tried {tryCount}x)</i> : <></>;
+    const checkedAtMessage = checkedAt ? (
+        <i>{moment(checkedAt).calendar(/* <- TODO: !! Use current locale */)}</i>
+    ) : (
+        <></>
+    );
 
     return (
         <div
@@ -76,7 +80,7 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                     ),
                     AVAILABLE: (
                         <span className={styles.available}>
-                            <b>{domain}</b> is available for registration
+                            <b>{domain}</b> is available for registration {checkedAtMessage}
                         </span>
                     ),
                     REGISTERED: (
