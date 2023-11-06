@@ -19,6 +19,18 @@ export interface DomainStatusTextProps {
     domainStatus: keyof typeof DomainStatus | 'PENDING';
 
     /**
+     * How much attempts to check were done?
+     */
+    attemptCount: number;
+
+    /**
+     * TODO:
+     * When was the domain checked?
+     *
+    checkedAt: Date;
+    */
+
+    /**
      * Is button to open page shown?
      */
     isActionButtonShown?: boolean;
@@ -41,12 +53,14 @@ export interface DomainStatusTextProps {
  * Note: It internally fetches and displays the whois
  */
 export function DomainStatusText(props: DomainStatusTextProps) {
-    const { domain, isActionButtonShown, isShownDetailedFail, className } = props;
+    const { domain, isActionButtonShown, isShownDetailedFail, attemptCount, className } = props;
     let { domainStatus } = props;
 
     if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
         domainStatus = 'UNKNOWN';
     }
+
+    const attemptCountMessage = attemptCount > 1 ? <i>(Tried {attemptCount}x)</i> : <></>;
 
     return (
         <div
@@ -57,7 +71,7 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                 {
                     PENDING: (
                         <span className={styles.pending}>
-                            <b>{domain}</b>: Getting whois info...
+                            <b>{domain}</b>: Getting info about domain ⏣ {/* <- TODO: Circle between ⌬ and ⏣ */}
                         </span>
                     ),
                     AVAILABLE: (
@@ -72,17 +86,17 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                     ),
                     LIMIT: (
                         <span className={styles.unknown}>
-                            <b>{domain}</b> exceeded limit for whois lookups
+                            <b>{domain}</b> exceeded limit for whois lookups {attemptCountMessage}
                         </span>
                     ),
                     TIMEOUT: (
                         <span className={styles.timeout}>
-                            <b>{domain}</b> timeouted while getting whois info
+                            <b>{domain}</b> timeouted while getting whois info {attemptCountMessage}
                         </span>
                     ),
                     UNKNOWN: (
                         <span className={styles.unknown}>
-                            <b>{domain}</b> status is unknown
+                            <b>{domain}</b> status is unknown {attemptCountMessage}
                         </span>
                     ),
                     TDL_NOT_SUPPORTED: (

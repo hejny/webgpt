@@ -97,7 +97,15 @@ export function PublishModal() {
                     />
                     <WallpaperLink modal={'domains'}>I need help with the domain</WallpaperLink>
 
-                    <DomainStatusChecker {...{ domain }} className={styles.domainStatus} />
+                    <DomainStatusChecker
+                        {...{ domain }}
+                        className={styles.domainStatus}
+                        isActionButtonShown={true}
+                        isShownDetailedFail={false}
+                        isDebounced={false}
+                        isRetried={true}
+                        // TODO: isRefreshed={true}
+                    />
                 </label>
 
                 <label className={styles.setting}>

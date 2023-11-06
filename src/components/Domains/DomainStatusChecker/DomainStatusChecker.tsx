@@ -1,45 +1,82 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { forTime } from 'waitasecond';
 import { checkDomain } from '../../../utils/domains/checkDomain';
 import { DomainStatus } from '../../../utils/domains/DomainStatus';
-import { usePromise } from '../../../utils/hooks/usePromise';
-
-
-import { forTime } from 'waitasecond';
 
 import { justNoActionWith } from '../../../utils/justNoActionWith';
 import type { DomainStatusTextProps } from '../DomainStatusText/DomainStatusText';
 import { DomainStatusText } from '../DomainStatusText/DomainStatusText';
 import styles from '../DomainStatusText/DomainStatusText.module.css';
 
+interface DomainStatusCheckerProps extends Omit<DomainStatusTextProps, 'domainStatus'> {
+    /**
+     * Is checking immediately after the component is mounted OR after some debounce time
+     */
+    isDebounced: boolean;
+
+    /**
+     * Is auto refreshed after some time when the domain is UNKNOWN, LIMIT or TIMEOUT
+     */
+    isRetried: boolean;
+}
+
 /**
  * Renderrs an info about a domain
  *
  * Note: It internally fetches and displays the whois
  */
-export function DomainStatusChecker(props: Omit<DomainStatusTextProps, 'domainStatus'>) {
-    const { domain, isActionButtonShown, isShownDetailedFail, className } = props;
+export function DomainStatusChecker(props: DomainStatusCheckerProps) {
+    const { domain, isActionButtonShown, isShownDetailedFail, isDebounced, isRetried, className } = props;
 
-    const [nonce, setNonce] = useState(0);
-    const domainStatusPromise = useMemo<Promise<keyof typeof DomainStatus>>(async () => {
+    const [domainStatus, setDomainStatus] = useState<keyof typeof DomainStatus | 'PENDING'>('PENDING');
+    const [attemptCount, setAttemptCount] = useState(1);
+    const domainStatusPromise = useEffect(() => {
+        let isDestroyed = false;
 
-await forTime(Math.random()*5000);
-        justNoActionWith(nonce);
-        return /* not await */ checkDomain(domain);
-    }, [domain, nonce]);
-    let { value: domainStatus } = usePromise<keyof typeof DomainStatus>(domainStatusPromise, [domain]);
+        (async () => {
+            if (isDebounced) {
+                await forTime(200 /* <- TODO: !! DEBOUNCE_TIME_MS to config */);
+            }
+            if (isDestroyed) {
+                return;
+            }
+            justNoActionWith(attemptCount);
+            const domainStatus = await checkDomain(domain);
 
-    if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
-        domainStatus = 'UNKNOWN';
+            if (['LIMIT', 'TIMEOUT', 'UNKNOWN'].includes(domainStatus)) {
+                await forTime(3000 /* <- TODO: !! RETRY_TIME_MS to config */);
+                setAttemptCount(attemptCount + 1);
+            }
+
+            setDomainStatus(domainStatus);
+        })();
+
+        return () => {
+            isDestroyed = true;
+        };
+    }, [domain, isDebounced, isRetried, attemptCount]);
+
+    let domainStatusShown = domainStatus;
+
+    if (
+        ['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatusShown as keyof typeof DomainStatus | 'PENDING') &&
+        !isShownDetailedFail
+    ) {
+        domainStatusShown = 'UNKNOWN';
     }
 
     return (
         <>
             <DomainStatusText
-                {...{ domain, isActionButtonShown, isShownDetailedFail, className }}
-                domainStatus={domainStatus || 'PENDING'}
+                {...{ domain, isActionButtonShown, isShownDetailedFail, className, attemptCount }}
+                domainStatus={domainStatusShown}
             />
-            {['UNKNOWN', 'LIMIT'].includes(domainStatus as any) && (
-                <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
+            {isActionButtonShown && ['UNKNOWN', 'LIMIT'].includes(domainStatusShown as any) && (
+                <button
+                    style={{ cursor: 'pointer' }}
+                    className={styles.action}
+                    onClick={() => setAttemptCount(attemptCount + 1)}
+                >
                     Refresh
                 </button>
             )}

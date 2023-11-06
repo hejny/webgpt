@@ -1,5 +1,4 @@
 import spaceTrim from 'spacetrim';
-import { forTime } from 'waitasecond';
 import { justTrue } from '../justTrue';
 // TODO: !!! Uninstall all unused packages> import { parseDomain } from 'whoisserver-world';
 import { string_domain, string_url } from '../typeAliases';
@@ -54,13 +53,10 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
 
     const domainTdl = getDomainTdl(domain);
 
-    // !!! const lock = await forLock
-    await forTime(Math.random() * 10000);
-
-    //!!! if (rdapServices === null) {
-    const rdapServicesResponse = await fetch('https://data.iana.org/rdap/dns.json');
-    rdapServices = (await rdapServicesResponse.json()) as any;
-    // }
+    if (rdapServices === null) {
+        const rdapServicesResponse = await fetch('https://data.iana.org/rdap/dns.json');
+        rdapServices = (await rdapServicesResponse.json()) as any;
+    }
 
     const rdapServers: Array<string_url> = [];
 

@@ -1,7 +1,7 @@
 import { removeDiacritics } from 'n12';
 import { useState } from 'react';
 import type { string_domain } from '../../utils/typeAliases';
-import { DomainsStatusCheckerList } from '../Domains/DomainsStatusList/DomainsStatusCheckerList';
+import { DomainStatusChecker } from '../Domains/DomainStatusChecker/DomainStatusChecker';
 import styles from './DomainsListChecker.module.css';
 
 /**
@@ -31,7 +31,9 @@ export function DomainsListChecker() {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <DomainsStatusCheckerList {...{ domains }} />
+            {domains.map((domain) => (
+                <DomainStatusChecker key={domain} {...{ domain }} isShownDetailedFail={true} isDebounced={true} isRetried={true} />
+            ))}
         </div>
     );
 }
