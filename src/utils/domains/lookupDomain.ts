@@ -44,10 +44,10 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
 // !!! const lock = await forLock
 await forTime(Math.random()*10000);
 
-    if (rdapServices === null) {
+    //!!! if (rdapServices === null) {
         const rdapServicesResponse = await fetch('https://data.iana.org/rdap/dns.json');
         rdapServices = (await rdapServicesResponse.json()) as any;
-    }
+   // }
 
     const rdapServers: Array<string_url> = [];
 
