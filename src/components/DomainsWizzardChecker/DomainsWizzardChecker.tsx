@@ -11,7 +11,9 @@ import styles from './DomainsWizzardChecker.module.css';
 export function DomainsWizzardChecker() {
     const [wallpaper] = useCurrentWallpaper();
 
-    const [domains, setDomains] = useState<Array<Pick<DomainStatusTextProps, 'domain' | 'domainStatus'>>>([]);
+    const [domains, setDomains] = useState<
+        Array<Pick<DomainStatusTextProps, 'domain' | 'domainStatus' | 'checkedAt' | 'tryCount'>>
+    >([]);
 
     useEffect(() => {
         let isDestroyed = false;
@@ -26,10 +28,13 @@ export function DomainsWizzardChecker() {
 
                 const domain = 'towns.cz';
 
-                const domainsCheck: Pick<DomainStatusTextProps, 'domain' | 'domainStatus'> = {
-                    domain,
-                    domainStatus: 'PENDING',
-                };
+                const domainsCheck: Pick<DomainStatusTextProps, 'domain' | 'domainStatus' | 'checkedAt' | 'tryCount'> =
+                    {
+                        domain,
+                        domainStatus: 'PENDING',
+                        checkedAt: new Date(),
+                        tryCount: 1,
+                    };
 
                 setDomains((domains) => [...domains, domainsCheck]);
 
@@ -51,8 +56,13 @@ export function DomainsWizzardChecker() {
                     <li key={keyword}>{keyword}</li>
                 ))}
             </ul>
-            {domains.map(({ domain, domainStatus }) => (
-                <DomainStatusText key={domain} {...{ domain, domainStatus }} isActionButtonShown isShownDetailedFail />
+            {domains.map(({ domain, domainStatus, checkedAt, tryCount }) => (
+                <DomainStatusText
+                    key={domain}
+                    {...{ domain, domainStatus, checkedAt, tryCount }}
+                    isActionButtonShown={true}
+                    isShownDetailedFail={true}
+                />
             ))}
         </div>
     );
