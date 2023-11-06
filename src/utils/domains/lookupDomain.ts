@@ -80,7 +80,9 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
 
     for (const rdapServer of rdapServers) {
         try {
-            // TODO: !! Queue and lock to make only one request at a time to one RDAP server
+            // TODO: !!! Queue and lock to make only 2 requests at a time to one RDAP server
+
+            //!!!> const lock = await rdapRequestQueues[rdapServer].forLock();
 
             // await forTime(Math.random() * 10000);
             const rdapDomainCheckUrl = `${rdapServer}domain/${domain}`;
@@ -92,6 +94,8 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
             );
             const response = await fetch(rdapDomainCheckUrl, { signal: controller.signal });
             clearTimeout(timeoutId);
+
+            //!!!> /* not await */ lock.destroy();
 
             if (response.status === 404) {
                 domainLookupResult = 'NOT_FOUND';
