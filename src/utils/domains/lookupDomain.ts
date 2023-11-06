@@ -84,7 +84,14 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
 
             // await forTime(Math.random() * 10000);
             const rdapDomainCheckUrl = `${rdapServer}domain/${domain}`;
-            const response = await fetch(rdapDomainCheckUrl);
+
+            const controller = new AbortController();
+            const timeoutId = setTimeout(
+                () => controller.abort(new DOMException('signal timed out', 'TimeoutError')),
+                5000 /* <- TODO: !! LOOKUP_TIMEOUT_MS to config */,
+            );
+            const response = await fetch(rdapDomainCheckUrl, { signal: controller.signal });
+            clearTimeout(timeoutId);
 
             if (response.status === 404) {
                 domainLookupResult = 'NOT_FOUND';

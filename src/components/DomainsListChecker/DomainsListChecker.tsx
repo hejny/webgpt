@@ -8,12 +8,12 @@ import styles from './DomainsListChecker.module.css';
  * Renders a domain checker with advanced options and patterns
  */
 export function DomainsListChecker() {
-    const [domains, setDomains] = useState<Array<string_domain>>([]);
+    const [domains, setDomains] = useState<Array<string_domain>>(['pavolhejny.cz', 'pavolhejny.com']);
 
     return (
         <div className={styles.DomainsListChecker}>
             <textarea
-                className={styles.pattern}
+                className={styles.domains}
                 defaultValue={domains.join('\n')}
                 onChange={(event) =>
                     setDomains(
@@ -32,7 +32,13 @@ export function DomainsListChecker() {
             {/**/}
 
             {domains.map((domain) => (
-                <DomainStatusChecker key={domain} {...{ domain }} isShownDetailedFail={true} isDebounced={true} isRetried={true} />
+                <DomainStatusChecker
+                    key={domain}
+                    {...{ domain }}
+                    isShownDetailedFail={true}
+                    isDebounced={true}
+                    isRetried={true}
+                />
             ))}
         </div>
     );
