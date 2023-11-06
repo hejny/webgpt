@@ -11,7 +11,7 @@ import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 export interface RecommendWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
-    recommendedWallpaper: IWallpaperSerialized;
+    readonly recommendedWallpaper: IWallpaperSerialized;
 }
 
 /**

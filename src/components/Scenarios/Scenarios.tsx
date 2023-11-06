@@ -8,7 +8,6 @@ import styles from './Scenarios.module.css';
 export function Scenarios() {
     return (
         <div className={styles.Scenarios}>
-            Pick a scenario to <b>create a your website</b>:
             <ul>
                 <li>
                     <Link href="/random">
@@ -38,9 +37,15 @@ export function Scenarios() {
                     <Link href="/new/from-instagram">
                         <CreateZone className={styles.scenario}>
                             <h2>Instagram</h2>
-                            profile to generate your website
+                            to generate your website
                         </CreateZone>
                     </Link>
+                </li>
+                <li  className={styles.preparing}>
+                    <CreateZone className={styles.scenario}>
+                        <h2>Preparing</h2>
+                        new options are coming soon
+                    </CreateZone>
                 </li>
             </ul>
         </div>

@@ -16,7 +16,7 @@ export type IFilesStorage = Omit<IStorage<IFile>, 'length' | 'clear' | 'key'>;
  * Represents storage that can give public deterministic  URL for each file
  */
 export interface IIFilesStorageWithCdn extends IFilesStorage {
-    cdnPublicUrl: URL;
+    readonly cdnPublicUrl: URL;
     getItemUrl(key: string): URL;
 }
 

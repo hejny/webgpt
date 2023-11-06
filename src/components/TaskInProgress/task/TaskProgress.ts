@@ -3,15 +3,15 @@ import { string_name, title } from '../../../utils/typeAliases';
 export type TaskProgress = PendingTaskProgress | DoneTaskProgress;
 
 export interface PendingTaskProgress {
-    name: string_name;
-    title: title;
-    isDone: false;
+    readonly name: string_name;
+    readonly title: title;
+    readonly isDone: false;
 }
 
 export interface DoneTaskProgress {
-    name: string_name;
-    title?: title;
-    isDone: true;
+    readonly name: string_name;
+    readonly title?: title;
+    readonly isDone: true;
 }
 
 /**

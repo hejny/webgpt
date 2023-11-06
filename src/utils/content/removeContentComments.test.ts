@@ -100,6 +100,51 @@ describe('removeContentComments', () => {
         );
     });
 
+    it('should remove multiple comments from simple text', () => {
+        expect(
+            removeContentComments(
+                spaceTrim(`
+                    <!-- This is an comment -->
+                    Hello <!-- Flat -->World
+                    <!-- This is also an comment -->
+                    <!-- And also this -->
+                `),
+            ),
+        ).toBe(
+            spaceTrim(`
+                    Hello World
+            `),
+        );
+    });
+
+    it('should remove multiline comments from simple text', () => {
+        expect(
+            removeContentComments(
+                spaceTrim(`
+                    <!--
+                    This is an comment
+                    Using multiple
+                    lines
+                    
+
+                    wohoo
+                    -->
+                    Hello <!--
+                    
+                    Flat
+                    or
+                    Round
+                    
+                    -->World
+                `),
+            ),
+        ).toBe(
+            spaceTrim(`
+                    Hello World
+            `),
+        );
+    });
+
     /*
     TODO:
     it('should not remove confusing non-comments', () => {

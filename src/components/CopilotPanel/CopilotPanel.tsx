@@ -1,25 +1,32 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { COPILOT_PLACEHOLDERS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import type {
-    UpdateWallpaperContentRequest,
-    UpdateWallpaperContentResponse,
-} from '../../pages/api/update-wallpaper-content';
+import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
+import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
+import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import { useLocale } from '../../utils/hooks/useLocale';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
+import { addFontToContent } from '../ImportFonts/addFontToContent';
+import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
+import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
+import { ImportFonts } from '../ImportFonts/ImportFonts';
+import { PublishLink } from '../PublishModal/PublishLink';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
@@ -29,12 +36,26 @@ import styles from './CopilotPanel.module.css';
  */
 export function CopilotPanel() {
     const router = useRouter();
+    const locale = useLocale();
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
     const [runningPrompt, setRunningPrompt] = useState<null | string_prompt>(null);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
     const placeholders = useMemo(() => shuffleItems(...COPILOT_PLACEHOLDERS), []);
     const placeholder = useRotatingPlaceholder(...placeholders);
+    const randomFont = useMemo(
+        () => randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
+        // Note: Wallpaper is dependency because we want to offer new font after each change of the font
+        /* eslint-disable-next-line react-hooks/exhaustive-deps */
+        [wallpaper],
+    );
+    const modifyWallpaperFont = useCallback(() => {
+        modifyWallpaper((modifiedWallpaper) => {
+            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont);
+            modifiedWallpaper.saveStage = 'EDITED';
+            return modifiedWallpaper;
+        });
+    }, [modifyWallpaper, randomFont]);
 
     const handlePrompt = useCallback(async () => {
         if (runningPrompt !== null) {
@@ -66,38 +87,71 @@ export function CopilotPanel() {
             `),
             );
 
-            const { content: oldContent } = wallpaper;
+            let { content: oldContent } = wallpaper;
 
-            const response = await fetch(
-                `/api/update-wallpaper-content?clientId=${await provideClientId({
-                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
-                })}`,
+            const fonts = extractFontsFromContent(oldContent);
+            if (fonts.size !== 1) {
+                throw new Error(`Expected exactly one font in the content, got ${fonts.size}`);
+            }
+            const font = Array.from(fonts)[0]!;
+
+            oldContent = removeContentComments(oldContent);
+
+            const updateWebsiteContentLocaleMap = {
+                en: 'updateWebsiteContent',
+                cs: 'updateWebsiteContentCs',
+                /* <- TODO: [👧] Constrain key to only existing PTPs in the library */
+            };
+
+            const { newContent } = await webgptPtpLibrary.createExecutor(
+                updateWebsiteContentLocaleMap[
+                    locale
+                ] /* <- TODO: !!! Deal here with locale better - detect from content NOT app */,
+                getExecutionTools(
+                    await provideClientId({
+                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
+                    }),
+                ),
+            )(
                 {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        prompt,
-                        wallpaper: { content: oldContent },
-                    } satisfies UpdateWallpaperContentRequest),
-                    signal: AbortSignal.timeout(60000 /* <- TODO: Maybe in sync with vercel.json */),
+                    oldContent,
+                    rawAssigment: prompt,
+                },
+                (taskProgress) => {
+                    console.info('CopilotPanel: Update wallpaper content: ', { taskProgress });
                 },
             );
 
-            if (response.ok === false) {
-                // TODO: [🈵] If 4XX error, show also the message from json body
-                throw new Error(`Prompt failed with status ${response.status}`);
-            }
+            const newContentWithFont = addFontToContent(newContent || '', font);
 
-            const {
-                updatedWallpaper: { content: newContent },
-            } = (await response.json()) as UpdateWallpaperContentResponse;
+            /*/
+            const newContentWithMetadata = spaceTrim(
+                (block) => `
+                    ${block(newContentWithFont)}
 
-            console.info({ oldContent, newContent });
+                    --- 
+
+                    <div style="opacity: 0.5">
+
+                    ## Old content:
+
+                    ${block(oldContent)}
+
+                    </div>
+                `, // <- TODO: !! Just newContent, maybe use this in some debug mode
+            );
+            /**/
+            /**/
+            const newContentWithMetadata = newContentWithFont;
+            /**/
+
+            console.info('CopilotPanel: Update wallpaper content: ', { oldContent, newContent });
 
             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                 // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
                 // TODO: Use here addWallpaperComputables
                 modifiedWallpaper.parent = modifiedWallpaper.id;
-                modifiedWallpaper.content = newContent + '\n\n<hr/>' + prompt;
+                modifiedWallpaper.content = newContentWithMetadata;
                 modifiedWallpaper.saveStage = 'SAVING';
                 modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
                 modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
@@ -120,7 +174,7 @@ export function CopilotPanel() {
     }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotPanel)}>
+        <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
             <div
                 // Note: It is intended to have two divs embedded in each other
                 className={styles.CopilotPanelInner}
@@ -195,34 +249,34 @@ export function CopilotPanel() {
                     <ul>
                         {wallpaper.saveStage === 'EDITED' && (
                             // TODO: [🌨] DRY - Maybe <SaveButton> or saveWallpaper() function
-                            <li
-                                className={styles.extraFeatured}
-                                onClick={async () => {
-                                    const clientId = await provideClientId({
-                                        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
-                                    });
-                                    const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
-                                        // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
-                                        // TODO: Use here addWallpaperComputables
-                                        modifiedWallpaper.parent = modifiedWallpaper.id;
-                                        modifiedWallpaper.author = clientId;
-                                        modifiedWallpaper.isPublic = false;
-                                        modifiedWallpaper.saveStage = 'SAVING';
-                                        modifiedWallpaper.keywords = Array.from(
-                                            parseKeywordsFromWallpaper(modifiedWallpaper),
-                                        );
-                                        modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
-                                        return modifiedWallpaper;
-                                    });
+                            <li className={styles.extraFeatured}>
+                                <button
+                                    onClick={async () => {
+                                        const clientId = await provideClientId({
+                                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
+                                        });
+                                        const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
+                                            // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
+                                            // TODO: Use here addWallpaperComputables
+                                            modifiedWallpaper.parent = modifiedWallpaper.id;
+                                            modifiedWallpaper.author = clientId;
+                                            modifiedWallpaper.isPublic = false;
+                                            modifiedWallpaper.saveStage = 'SAVING';
+                                            modifiedWallpaper.keywords = Array.from(
+                                                parseKeywordsFromWallpaper(modifiedWallpaper),
+                                            );
+                                            modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
+                                            return modifiedWallpaper;
+                                        });
 
-                                    const insertResult = await getSupabaseForBrowser()
-                                        .from('Wallpaper')
-                                        .insert(serializeWallpaper(newWallpaper));
+                                        const insertResult = await getSupabaseForBrowser()
+                                            .from('Wallpaper')
+                                            .insert(serializeWallpaper(newWallpaper));
 
-                                    // TODO: !! Util isInsertSuccessfull (status===201)
-                                    console.info({ newWallpaper, insertResult });
+                                        // TODO: !! Util isInsertSuccessfull (status===201)
+                                        console.info({ newWallpaper, insertResult });
 
-                                    /*
+                                        /*
                                     Note: Wallpapers should not be explicitly saved, they automatically appear as saved after router.push is loaded
                                     modifyWallpaper((modifiedWallpaper) => {
                                         modifiedWallpaper.saveStage = 'SAVED';
@@ -230,46 +284,51 @@ export function CopilotPanel() {
                                     });
                                     */
 
-                                    try {
-                                        const parentKey = `likedStatus_${wallpaper.id}`;
-                                        const currentKey = `likedStatus_${newWallpaper.id}`;
+                                        try {
+                                            const parentKey = `likedStatus_${wallpaper.id}`;
+                                            const currentKey = `likedStatus_${newWallpaper.id}`;
 
-                                        if (window.localStorage.getItem(parentKey)) {
-                                            window.localStorage.setItem(
-                                                currentKey,
-                                                window.localStorage.getItem(parentKey)!,
-                                            );
-                                        } else if (!window.localStorage.getItem(currentKey)) {
-                                            window.localStorage.setItem(
-                                                currentKey,
-                                                'LIKE' satisfies keyof typeof LikedStatus,
-                                            );
+                                            if (window.localStorage.getItem(parentKey)) {
+                                                window.localStorage.setItem(
+                                                    currentKey,
+                                                    window.localStorage.getItem(parentKey)!,
+                                                );
+                                            } else if (!window.localStorage.getItem(currentKey)) {
+                                                window.localStorage.setItem(
+                                                    currentKey,
+                                                    'LIKE' satisfies keyof typeof LikedStatus,
+                                                );
+                                            }
+                                        } catch (error) {
+                                            // TODO: [🧠] Handle situation when window.localStorage is exceeded
+                                            console.error(error);
                                         }
-                                    } catch (error) {
-                                        // TODO: [🧠] Handle situation when window.localStorage is exceeded
-                                        console.error(error);
-                                    }
 
-                                    router.push(`/${newWallpaper.id}`);
-                                }}
-                            >
-                                Save
+                                        router.push(`/${newWallpaper.id}`);
+                                    }}
+                                >
+                                    Save
+                                </button>
                             </li>
                         )}
                         <li className={styles.featured}>
-                            <WallpaperLink
-                                modal="export"
-                                role="OWNER"
-                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                            >
-                                Get the web
-                            </WallpaperLink>
+                            <PublishLink />
                         </li>
                         <li>
                             <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
                                 Edit markdown
                                 {/*           <- TODO: Should be here "Edit markdown" or "Edit content" */}
                             </WallpaperLink>
+                        </li>
+                        <li className={styles.auto}>
+                            <ImportFonts
+                                fonts={
+                                    new Set([randomFont])
+                                } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
+                            />
+                            <button onClick={modifyWallpaperFont}>
+                                Change <span style={{ fontFamily: `'${randomFont}'` }}>font</span>
+                            </button>
                         </li>
                         <li>
                             <WallpaperLink
@@ -289,19 +348,25 @@ export function CopilotPanel() {
                             </WallpaperLink>
                         </li>
                         <li>
+                            <Link href="/">Make new web</Link>
+                        </li>
+                        <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>
                         </li>
+
                         {/*
                         TODO: !! The menu should be like this: 
 
                         - [x] Show as visitor
                         - [~] Share
                         - [x] Get the web
-                        - [ ] Edit
+                        - [x] Edit
                         - [ ] - advanced prompting
                         - [ ] - colors
                         - [ ] - content
                         - [~] Support
+
+                        + [🧠] How to do all of this in gallery scenario?
 
 
                         <li>

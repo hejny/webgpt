@@ -34,26 +34,16 @@ export function Menu() {
                             <li>
                                 <WallpaperLink page={'index'}>Home</WallpaperLink>
                             </li>
-                            {!isExported && (
-                                <li className={styles.featured}>
-                                    <WallpaperLink
-                                        modal="export"
-                                        role="OWNER"
-                                        /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
-                                    >
-                                        Get the web
-                                    </WallpaperLink>
-                                </li>
-                            )}
 
                             <li>
                                 <WallpaperLink
                                     page="explanation"
                                     prefetch={false /* <- Note: Because it is rare option */}
                                 >
-                                    How it works?
+                                    FAQ?
                                 </WallpaperLink>
                             </li>
+
                             <li>
                                 <WallpaperLink page="pricing" prefetch={false /* <- Note: Because it is rare option */}>
                                     Pricing
@@ -64,30 +54,6 @@ export function Menu() {
                                     Gallery
                                 </WallpaperLink>
                             </li>
-                            {wallpaper.parent && (
-                                <li>
-                                    <WallpaperLink
-                                        wallpaperId={wallpaper.parent}
-                                        modal={null}
-                                        page={'index'}
-                                        // Note: Preserving mode
-                                        prefetch={false /* <- Note: Because it is rare option */}
-                                    >
-                                        Unedited version
-                                    </WallpaperLink>
-                                </li>
-                            )}
-                            {!isExported && (
-                                <li>
-                                    {role === 'OWNER' ? (
-                                        <WallpaperLink role="OWNER_AS_VISITOR">Show as visitor</WallpaperLink>
-                                    ) : role === 'OWNER_AS_VISITOR' ? (
-                                        <WallpaperLink role="OWNER">Edit the page</WallpaperLink>
-                                    ) : (
-                                        <></>
-                                    )}
-                                </li>
-                            )}
 
                             <li>
                                 <WallpaperLink page="contact">Contact</WallpaperLink>

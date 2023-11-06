@@ -1,0 +1,46 @@
+ul.GetTheWebTabs {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px rgba(156, 210, 255, 0.479) solid;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    list-style: none;
+}
+
+ul.GetTheWebTabs a {
+    text-decoration: none;
+}
+
+ul.GetTheWebTabs li {
+    /*/
+    outline: 1px dotted rgb(58, 58, 255);
+    /**/
+
+    text-align: center;
+
+    padding: 5px;
+
+    color: white;
+    font-size: 1em;
+}
+
+ul.GetTheWebTabs > *:not(:last-child) {
+    border-right: 1px rgba(156, 210, 255, 0.479) solid;
+}
+
+ul.GetTheWebTabs > .active {
+    background-color: rgba(156, 210, 255, 0.479);
+}
+
+ul.GetTheWebTabs li:hover {
+    background-color: rgba(156, 210, 255, 0.479);
+}

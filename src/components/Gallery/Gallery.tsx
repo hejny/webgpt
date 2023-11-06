@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useContext, useState } from 'react';
 import { useInitial } from '../../utils/hooks/useInitial';
@@ -11,6 +12,7 @@ import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
  * Renders the gallery of wallpapers
  */
 export function GallerySection() {
+    const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
     const [filter, setFilter] = useState<IGalleryFilter>({
@@ -66,7 +68,7 @@ export function GallerySection() {
                                     <iframe
                                         // TODO: [🦋] Use here better preview image - with some palette wallpaper + title + smaller size
                                         // TODO: [🦋] Show likedStatus here
-                                        src={`https://1-2i.com` + `/${wallpaper.id}?mode=preview`}
+                                        src={`https://webgpt.cz` + `/${wallpaper.id}?mode=preview`}
                                         allowTransparency={false /* as a optimization */}
                                         scrolling="no" /* <- TODO: Why deprecated? */
                                         frameBorder="0" /* <- TODO: Why deprecated? */

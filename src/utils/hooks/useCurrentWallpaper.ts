@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { extractTitleFromContent } from '../content/extractTitleFromContent';
 import { IWallpaper } from '../IWallpaper';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
@@ -15,8 +16,7 @@ export function useCurrentWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWal
 
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
-    return [
-        wallpaper,
+    const runModifyWallpaper = useCallback(
         (modifyWallpaper: IModifyWallpaper) => {
             const modifiedWallpaper = { ...wallpaper }; /* <- TODO: !! Do here deep copy */
             const { id, parent, author, src, prompt, colorStats, naturalSize, content, keywords, isPublic, saveStage } =
@@ -43,5 +43,8 @@ export function useCurrentWallpaper(): [IWallpaper, (modifyWallpaper: IModifyWal
             wallpaperSubject.next(newWallpeper);
             return newWallpeper;
         },
-    ];
+        [wallpaper, wallpaperSubject],
+    );
+
+    return [wallpaper, runModifyWallpaper];
 }

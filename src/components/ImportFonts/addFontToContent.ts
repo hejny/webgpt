@@ -2,6 +2,13 @@ import spaceTrim from 'spacetrim';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
 
+/**
+ * Adds font to the content
+ *
+ * @param content content to add font to (ideally without any font)
+ * @param font font to add
+ * @returns same content with added font
+ */
 export function addFontToContent<TContent extends string_markdown | string_html>(
     content: TContent,
     font: string_font_family,

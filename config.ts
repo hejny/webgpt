@@ -12,7 +12,7 @@ import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetw
 import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const APP_VERSION = packageJson.version;
-export const APP_NAME = packageJson.name;
+export const APP_NAME = 'WebGPT';
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -20,11 +20,15 @@ const config = ConfigChecker.from({
     // Note: To expose env variables to the browser, using this seemingly strange syntax:
     //       @see https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#exposing-environment-variables-to-the-browser
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+    NEXT_PUBLIC_PROMPTBOOK_SERVER_URL: process.env.NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
+    NEXT_PUBLIC_OUR_DOMAINS: process.env.NEXT_PUBLIC_OUR_DOMAINS,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
+export const NEXT_PUBLIC_PROMPTBOOK_SERVER_URL = config.get('NEXT_PUBLIC_PROMPTBOOK_SERVER_URL').url().required().value;
+
 export const IS_DEVELOPMENT =
     isUrlOnPrivateNetwork(
         NEXT_PUBLIC_URL,
@@ -40,6 +44,8 @@ if (isRunningInBrowser()) {
 }
 
 export const NEXT_PUBLIC_DEBUG = config.get('NEXT_PUBLIC_DEBUG').boolean().value;
+
+export const NEXT_PUBLIC_OUR_DOMAINS = config.get('NEXT_PUBLIC_OUR_DOMAINS').list().required().value;
 
 /**
  * The speed of the animations
@@ -989,7 +995,13 @@ export const CDN = (CDN_BUCKET &&
         accessKeyId: CDN_ACCESS_KEY_ID!,
         secretAccessKey: CDN_SECRET_ACCESS_KEY!,
         cdnPublicUrl: CDN_PUBLIC_URL!,
-        gzip: false /* <- TODO: Maybe just remove this functionality from 1-2i repository */,
+        gzip: false /* <- TODO: Maybe just remove this functionality from WebGPT repository */,
     })) as DigitalOceanSpaces;
 
 export const MIDJOURNEY_WHOLE_GALLERY_PATH = 'X:/Mythings/MidJourney';
+
+export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
+    'PUBLISH_TO_GITHUB_ORGANIZATION',
+    `@see https://github.com/settings/tokens`,
+).value;
+export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;

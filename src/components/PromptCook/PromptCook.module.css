@@ -1,0 +1,77 @@
+.PromptCook {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template:
+        '🟦 📖' 1fr
+        '🔽 📖' auto
+        '🟩 📖' 1fr
+        / 1fr 1fr;
+}
+
+.input {
+    grid-area: 🟦;
+}
+
+.controls {
+    grid-area: 🔽;
+}
+
+.output {
+    grid-area: 🟩;
+}
+
+.promptbook {
+    grid-area: 📖;
+}
+
+.input,
+.output,
+.promptbook {
+    /*/
+    outline: 1px dotted rgb(24 117 20);
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.PromptCook .textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+}
+
+.fill {
+    /*/
+    outline: 1px dotted #920808;
+    background-color: #cccccc11;
+    /**/
+
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.controls .button {
+    margin: 10px;
+}
