@@ -21,7 +21,7 @@ export interface DomainStatusTextProps {
     /**
      * How much attempts to check were done?
      */
-    attemptCount: number;
+    tryCount: number;
 
     /**
      * TODO:
@@ -53,14 +53,14 @@ export interface DomainStatusTextProps {
  * Note: It internally fetches and displays the whois
  */
 export function DomainStatusText(props: DomainStatusTextProps) {
-    const { domain, isActionButtonShown, isShownDetailedFail, attemptCount, className } = props;
+    const { domain, isActionButtonShown, isShownDetailedFail, tryCount, className } = props;
     let { domainStatus } = props;
 
     if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
         domainStatus = 'UNKNOWN';
     }
 
-    const attemptCountMessage = attemptCount > 1 ? <i>(Tried {attemptCount}x)</i> : <></>;
+    const tryCountMessage = tryCount > 1 ? <i>(Tried {tryCount}x)</i> : <></>;
 
     return (
         <div
@@ -86,17 +86,17 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                     ),
                     LIMIT: (
                         <span className={styles.unknown}>
-                            <b>{domain}</b> exceeded limit for whois lookups {attemptCountMessage}
+                            <b>{domain}</b> exceeded limit for whois lookups {tryCountMessage}
                         </span>
                     ),
                     TIMEOUT: (
                         <span className={styles.timeout}>
-                            <b>{domain}</b> timeouted while getting whois info {attemptCountMessage}
+                            <b>{domain}</b> timeouted while getting whois info {tryCountMessage}
                         </span>
                     ),
                     UNKNOWN: (
                         <span className={styles.unknown}>
-                            <b>{domain}</b> status is unknown {attemptCountMessage}
+                            <b>{domain}</b> status is unknown {tryCountMessage}
                         </span>
                     ),
                     TDL_NOT_SUPPORTED: (

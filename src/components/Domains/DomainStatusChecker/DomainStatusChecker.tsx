@@ -29,7 +29,7 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
     const { domain, isActionButtonShown, isShownDetailedFail, isDebounced, isRetried, className } = props;
 
     const [domainStatus, setDomainStatus] = useState<keyof typeof DomainStatus | 'PENDING'>('PENDING');
-    const [attemptCount, setAttemptCount] = useState(1);
+    const [tryCount, setTryCount] = useState(1);
     const domainStatusPromise = useEffect(() => {
         let isDestroyed = false;
 
@@ -40,12 +40,12 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
             if (isDestroyed) {
                 return;
             }
-            justNoActionWith(attemptCount);
+            justNoActionWith(tryCount);
             const domainStatus = await checkDomain(domain);
 
             if (['LIMIT', 'TIMEOUT', 'UNKNOWN'].includes(domainStatus)) {
                 await forTime(3000 /* <- TODO: !! RETRY_TIME_MS to config */);
-                setAttemptCount(attemptCount + 1);
+                setTryCount(tryCount + 1);
             }
 
             setDomainStatus(domainStatus);
@@ -54,7 +54,7 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
         return () => {
             isDestroyed = true;
         };
-    }, [domain, isDebounced, isRetried, attemptCount]);
+    }, [domain, isDebounced, isRetried, tryCount]);
 
     let domainStatusShown = domainStatus;
 
@@ -68,14 +68,14 @@ export function DomainStatusChecker(props: DomainStatusCheckerProps) {
     return (
         <>
             <DomainStatusText
-                {...{ domain, isActionButtonShown, isShownDetailedFail, className, attemptCount }}
+                {...{ domain, isActionButtonShown, isShownDetailedFail, className, tryCount }}
                 domainStatus={domainStatusShown}
             />
             {isActionButtonShown && ['UNKNOWN', 'LIMIT'].includes(domainStatusShown as any) && (
                 <button
                     style={{ cursor: 'pointer' }}
                     className={styles.action}
-                    onClick={() => setAttemptCount(attemptCount + 1)}
+                    onClick={() => setTryCount(tryCount + 1)}
                 >
                     Refresh
                 </button>
