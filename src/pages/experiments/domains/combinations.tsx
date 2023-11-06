@@ -14,11 +14,7 @@ export default function DomainsCombinationsPage() {
 
             <div className={styles.page}>
                 <main>
-                    <h1
-                        style={{
-                            transform: 'translate(0,-20px)',
-                        }}
-                    >
+                    <h1>
                         <Image alt="WebGPT logo" src={webgptLogo} />
                     </h1>
                     <p>Pick your domain:</p>
