@@ -2,6 +2,10 @@ import { useMemo, useState } from 'react';
 import { checkDomain } from '../../../utils/domains/checkDomain';
 import { DomainStatus } from '../../../utils/domains/DomainStatus';
 import { usePromise } from '../../../utils/hooks/usePromise';
+
+
+import { forTime } from 'waitasecond';
+
 import { justNoActionWith } from '../../../utils/justNoActionWith';
 import type { DomainStatusTextProps } from '../DomainStatusText/DomainStatusText';
 import { DomainStatusText } from '../DomainStatusText/DomainStatusText';
@@ -16,7 +20,9 @@ export function DomainStatusChecker(props: Omit<DomainStatusTextProps, 'domainSt
     const { domain, isActionButtonShown, isShownDetailedFail, className } = props;
 
     const [nonce, setNonce] = useState(0);
-    const domainStatusPromise = useMemo<Promise<keyof typeof DomainStatus>>(() => {
+    const domainStatusPromise = useMemo<Promise<keyof typeof DomainStatus>>(async () => {
+
+await forTime(Math.random()*5000);
         justNoActionWith(nonce);
         return /* not await */ checkDomain(domain);
     }, [domain, nonce]);
