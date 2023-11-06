@@ -56,7 +56,6 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 ## Účel webu
 
 >
-
 ```
 
 `-> {draftedPurpose}`Návrh účelu webu
@@ -145,6 +144,7 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 Je název Vašeho webu v pořádku?
 
 -   Prompt dialog
+-   Postprocessing `spaceTrim`
 
 ```text
 {draftedTitle}
@@ -183,7 +183,7 @@ Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovo
 
 ## Jeden návrh claimu webu
 
-> 
+>
 ```
 
 `-> {draftedClaim}` Návrh claimu webu
