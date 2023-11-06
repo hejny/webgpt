@@ -40,6 +40,10 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
 
     const domainTdl = getDomainTdl(domain);
 
+
+// !!! const lock = await forLock
+await forTime(Math.random()*10000);
+
     if (rdapServices === null) {
         const rdapServicesResponse = await fetch('https://data.iana.org/rdap/dns.json');
         rdapServices = (await rdapServicesResponse.json()) as any;
@@ -69,7 +73,7 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
         try {
             // TODO: !! Queue and lock to make only one request at a time to one RDAP server
 
-            await forTime(Math.random() * 10000);
+            // await forTime(Math.random() * 10000);
             const rdapDomainCheckUrl = `${rdapServer}domain/${domain}`;
             const response = await fetch(rdapDomainCheckUrl);
 
