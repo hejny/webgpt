@@ -1,5 +1,5 @@
+import { removeDiacritics } from 'n12';
 import { useState } from 'react';
-import spaceTrim from 'spacetrim';
 import type { string_domain } from '../../utils/typeAliases';
 import { DomainsStatusCheckerList } from '../Domains/DomainsStatusList/DomainsStatusCheckerList';
 import styles from './DomainsListChecker.module.css';
@@ -16,7 +16,13 @@ export function DomainsListChecker() {
                 className={styles.pattern}
                 defaultValue={domains.join('\n')}
                 onChange={(event) =>
-                    setDomains(event.target.value.split('\n').filter((name) => spaceTrim(name) !== ''))
+                    setDomains(
+                        event.target.value
+                            .split('\n')
+                            .map((name) => name.trim())
+                            .map((name) => removeDiacritics(name))
+                            .filter((name) => name !== ''),
+                    )
                 }
                 placeholder={`my-cool-project.com`}
             />

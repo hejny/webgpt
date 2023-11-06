@@ -30,24 +30,37 @@ export async function lookupDomain(domain: string_domain): Promise<DomainLookupR
     }
 
     if (!isDomainValid(domain)) {
-        throw new Error(`Domain needs to be valid.`);
+        throw new Error(
+            spaceTrim(`
+
+                Domain needs to be valid.
+
+                You provided have provided "${domain}".
+            `),
+        );
     }
 
     if (getDomainLevel(domain) !== 2) {
         // TODO: [🤞] Maybe allow 3rd level domains like www.ourdomain.com and normalize them to ourdomain.com
-        throw new Error(`Only 2nd level domains are allowed`);
+        throw new Error(
+            spaceTrim(`
+                Only 2nd level domains are allowed
+
+                You provided ${getDomainLevel(domain)} level domain the "${domain}".
+
+            `),
+        );
     }
 
     const domainTdl = getDomainTdl(domain);
 
-
-// !!! const lock = await forLock
-await forTime(Math.random()*10000);
+    // !!! const lock = await forLock
+    await forTime(Math.random() * 10000);
 
     //!!! if (rdapServices === null) {
-        const rdapServicesResponse = await fetch('https://data.iana.org/rdap/dns.json');
-        rdapServices = (await rdapServicesResponse.json()) as any;
-   // }
+    const rdapServicesResponse = await fetch('https://data.iana.org/rdap/dns.json');
+    rdapServices = (await rdapServicesResponse.json()) as any;
+    // }
 
     const rdapServers: Array<string_url> = [];
 
