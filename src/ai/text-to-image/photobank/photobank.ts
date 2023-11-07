@@ -24,7 +24,7 @@ export class PregeneratedPhotobank implements ImageGenerator {
     public async generate(prompt: TextToImagePrompt): Promise<Array<TextToImagePromptResult>> {
         const keywords = parseKeywordsFromString(prompt.content);
 
-        // TODO:  Filter out void keywords
+        // TODO: !!! Filter out void keywords
 
         const response = await fetch(
             `/api/pregenerated-photobank/search?${Array.from(keywords)
@@ -38,7 +38,7 @@ export class PregeneratedPhotobank implements ImageGenerator {
 }
 
 /**
- * TODO:  Annotate
- * TODO:  Implement
+ * TODO: !!! Annotate
+ * TODO: !!! Implement
  *
  */
