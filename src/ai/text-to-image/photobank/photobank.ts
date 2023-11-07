@@ -1,8 +1,8 @@
 import { parseKeywordsFromString } from 'n12';
-import { SearchPhotobankResult } from '../../pages/api/pregenerated-photobank/search';
-import { TextToImagePrompt } from './interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from './interfaces/TextToImagePromptResult';
-import { ImageGenerator } from './interfaces/ImageGenerator';
+import { SearchPhotobankResult } from '../../../pages/api/pregenerated-photobank/search';
+import { ImageGenerator } from '../0-interfaces/ImageGenerator';
+import { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
+import { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
 
 /**
  *
@@ -24,7 +24,7 @@ export class PregeneratedPhotobank implements ImageGenerator {
     public async generate(prompt: TextToImagePrompt): Promise<Array<TextToImagePromptResult>> {
         const keywords = parseKeywordsFromString(prompt.content);
 
-        // TODO: Filter out void keywords
+        // TODO: !!! Filter out void keywords
 
         const response = await fetch(
             `/api/pregenerated-photobank/search?${Array.from(keywords)
@@ -33,12 +33,12 @@ export class PregeneratedPhotobank implements ImageGenerator {
         );
         const { images } = (await response.json()) as SearchPhotobankResult;
 
-        return images.map(({ src }) => ({ imageSrc: src }));
+        return images.map(({ src }) => ({ imageSrc: src, originalPrompt: prompt }));
     }
 }
 
 /**
- * TODO: Annotate
- * TODO: Implement
+ * TODO: !!! Annotate
+ * TODO: !!! Implement
  *
  */
