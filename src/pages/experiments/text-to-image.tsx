@@ -1,7 +1,6 @@
 import { nameToUriParts } from 'n12';
 import { useCallback, useState } from 'react';
 import type { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
-import type { DallePrompt } from '../../ai/text-to-image/dalle/DallePrompt';
 import { RemoteImageGenerator } from '../../ai/text-to-image/remote/RemoteImageGenerator';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
 import { TextToImagePromptResultsPicker } from '../../components/TextToImagePromptResultsPicker/TextToImagePromptResultsPicker';
@@ -19,9 +18,9 @@ export default function TextToImagePage() {
 
         const prompt = {
             content: promptContent!,
-            dalleVersion: 3,
-            style: 'natural',
-        } satisfies DallePrompt;
+            dalleVersion: 2,
+            //style: 'natural' /* <- !!! Passthrough */,
+        }; /*satisfies DallePrompt*/
 
         const imageGenerator = new RemoteImageGenerator(
             await provideClientId({

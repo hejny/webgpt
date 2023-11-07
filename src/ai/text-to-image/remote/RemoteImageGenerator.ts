@@ -27,6 +27,14 @@ export class RemoteImageGenerator implements ImageGenerator {
 
         const responseJson = (await response.json()) as RemoteImageGeneratorResponse;
 
+        if (response.status !== 201) {
+            if ((responseJson as any) /* <-[🌋] */.message) {
+                throw new Error((responseJson as any) /* <-[🌋] */.message);
+            } else {
+                throw new Error(`Expected 201 status code, got ${response.status}`);
+            }
+        }
+
         console.log('!!!', responseJson);
 
         return responseJson.promptResult;

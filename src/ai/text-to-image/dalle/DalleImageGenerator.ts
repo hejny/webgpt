@@ -25,10 +25,20 @@ export class DalleImageGenerator implements ImageGenerator {
     public async generate(prompt: DallePrompt): Promise<Array<TextToImagePromptResult>> {
         console.log('!!!', { prompt });
 
+        let size: string;
+
+        if (prompt.dalleVersion === 2) {
+            size = '512x512';
+        } else if (prompt.dalleVersion === 3) {
+            size = '1792x1024';
+        } else {
+            throw new Error(`Unknown Dalle version ${prompt.dalleVersion}`);
+        }
+
         const rawRequest = {
             prompt: prompt.content,
             model: `dall-e-${prompt.dalleVersion}`,
-            size: '1792x1024',
+            size: size as any /* <- !!! Remove any */,
             // quality: 'standard',
             style: 'natural',
             user: this.clientId,
