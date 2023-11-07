@@ -1,6 +1,8 @@
 import { parseKeywordsFromString } from 'n12';
 import { SearchPhotobankResult } from '../../pages/api/pregenerated-photobank/search';
-import { ImageGenerator, TextToImagePrompt, TextToImagePromptResult } from './interfaces/_';
+import { TextToImagePrompt } from './interfaces/TextToImagePrompt';
+import { TextToImagePromptResult } from './interfaces/TextToImagePromptResult';
+import { ImageGenerator } from './interfaces/ImageGenerator';
 
 /**
  *
