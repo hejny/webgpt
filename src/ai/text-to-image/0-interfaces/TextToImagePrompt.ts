@@ -1,8 +1,8 @@
-import { string_image_prompt } from '@promptbook/types';
-
 /**
  * Represents a prompt for an image generator
  */
+
+import { string_image_prompt } from '../../../utils/typeAliases';
 
 export interface TextToImagePrompt {
     /**
