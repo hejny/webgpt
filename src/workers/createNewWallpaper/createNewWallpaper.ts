@@ -312,7 +312,7 @@ export async function createNewWallpaper(
             rawAssigment: description,
 
             /*
-            TODO: !! Use in write-website-content.cs.ptbk.md and uncomment here
+            TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here
             links,
             addSections,
             */

@@ -40,7 +40,6 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 -   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
 -   Návrh je v češtině
 -   Návrh je stručný, maximálně 3 slova
--
 
 ## Příklady
 
@@ -50,9 +49,13 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 -   "Svatba"
 -   "Osobní stránka fotografa"
 
-Text na obrázku:
+## Text na obrázku
 
 > {rawAssigmentCs}
+
+## Účel webu
+
+>
 ```
 
 `-> {draftedPurpose}`Návrh účelu webu
@@ -141,6 +144,7 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 Je název Vašeho webu v pořádku?
 
 -   Prompt dialog
+-   Postprocessing `spaceTrim`
 
 ```text
 {draftedTitle}
@@ -169,7 +173,17 @@ Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovo
 -   Claim bude použit na webu, vizitkách, vizuálu, atd.
 -   Claim má být rázný, vtipný, originální
 
+## Příklad 1
+
+> Chcete mít web nebo řešit web?!
+
+## Příklad 2
+
+> Káva jako čistá radost
+
 ## Jeden návrh claimu webu
+
+>
 ```
 
 `-> {draftedClaim}` Návrh claimu webu

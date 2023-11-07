@@ -3,7 +3,7 @@ module.exports = {
         {
             name: 'ptbk-server',
             namespace: '1-2i',
-            script: 'ptp-server/server.bash',
+            script: 'promptbook-server/server.bash',
             exec_mode: 'fork',
             interpreter: 'bash',
         },

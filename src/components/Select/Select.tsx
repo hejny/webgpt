@@ -10,7 +10,7 @@ interface SelectProps<TValue extends string | number | symbol> {
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
 
-        /**
+    /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
@@ -81,5 +81,6 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 }
 
 /**
+ * TODO: !! Chenge options to array {title, value}
  * TODO: Maybe use instead some unstyled components library @see https://headlessui.com/
  */
