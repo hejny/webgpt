@@ -33,7 +33,9 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
 
     const clientId = provideClientIdWithoutVerification();
 
-    const response = await fetch(`/api/client/is-client-verified?clientId=${clientId}`);
+    const response = await fetch(
+        `/api/client/is-client-verified?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
+    );
     const { isClientInserted /* [0],isClientVerified */ } = (await response.json()) as IsClientVerifiedResponse;
 
     if (isClientInserted) {

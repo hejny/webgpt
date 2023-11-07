@@ -84,9 +84,11 @@ export default function NewWallpaperFromInstagramPage() {
 
                                     const reponse = await fetch(
                                         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
-                                        `/api/scrape/scrape-instagram-user?clientId=${await provideClientId({
-                                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
-                                        })}&instagramName=${encodeURIComponent(instagramName)}`,
+                                        `/api/scrape/scrape-instagram-user?clientId=${
+                                            /* <- TODO: [⛹️‍♂️] Send clientId through headers */ await provideClientId({
+                                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
+                                            })
+                                        }&instagramName=${encodeURIComponent(instagramName)}`,
                                     );
                                     const { instagramUser } = (await reponse.json()) as ScrapeInstagramUserResponse;
 

@@ -1,6 +1,7 @@
 import { uuid } from '@promptbook/types';
 import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../../config';
+import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
 import { DallePrompt } from './DallePrompt';
@@ -12,26 +13,38 @@ export class DalleImageGenerator implements ImageGenerator {
     private readonly openai: OpenAI;
 
     public constructor(private readonly clientId: uuid) {
+        if (!isRunningInNode()) {
+            throw new Error('DalleImageGenerator is available only in server/node, use RemoteImageGenerator instead');
+        }
+
         this.openai = new OpenAI({
             apiKey: OPENAI_API_KEY,
         });
     }
 
     public async generate(prompt: DallePrompt): Promise<Array<TextToImagePromptResult>> {
-        const response = await this.openai.images.generate({
+        console.log('!!!', { prompt });
+
+        const rawRequest = {
             prompt: prompt.content,
             model: `dall-e-${prompt.dalleVersion}`,
             size: '1792x1024',
             // quality: 'standard',
             style: 'natural',
             user: this.clientId,
-        });
+        } as const;
 
-        if (response.data.length !== 1) {
-            throw new Error(`Expected 1 image, got ${response.data.length}`);
+        console.log('!!!', { rawRequest });
+
+        const rawResponse = await this.openai.images.generate(rawRequest);
+
+        console.log('!!!', { rawResponse });
+
+        if (rawResponse.data.length !== 1) {
+            throw new Error(`Expected 1 image, got ${rawResponse.data.length}`);
         }
 
-        const responseImage = response.data[0]!;
+        const responseImage = rawResponse.data[0]!;
 
         const imageSrc = responseImage.url;
 
@@ -48,6 +61,9 @@ export class DalleImageGenerator implements ImageGenerator {
                 style: prompt.style,
             };
         }
+
+        // TODO: !!! SupabaseLoggerWrapperOfImageGenerator
+        // TODO: !!!! Save image to supabase
 
         return [
             {

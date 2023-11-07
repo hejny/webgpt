@@ -17,3 +17,8 @@ export interface DallePrompt extends TextToImagePrompt {
      */
     style: 'natural' | 'vivid';
 }
+
+
+/**
+ * TODO: !!! [🧠] Remove DallePrompt and make TextToImagePrompt more universal
+ */

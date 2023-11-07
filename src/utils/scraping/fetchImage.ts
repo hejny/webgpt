@@ -17,7 +17,7 @@ export async function fetchImage(imageUrl: string_url_image): Promise<Blob> {
     const response = await fetch(
         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
 
-        `/api/scrape/scrape-image?clientId=${await provideClientId({
+        `/api/scrape/scrape-image?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */await provideClientId({
             isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE /* <- TODO: Is it OK to assume create stage */,
         })}&url=${encodeURIComponent(imageUrl)}`,
     );
