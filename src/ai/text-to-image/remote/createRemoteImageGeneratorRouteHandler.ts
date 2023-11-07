@@ -44,11 +44,23 @@ export function createRemoteImageGeneratorRouteHandler(options: CreateRemoteImag
 
         const prompt = request.body as TextToImagePrompt;
 
-        const imageGenerator = createImageGenerator(clientId);
-        const promptResult = await imageGenerator.generate(prompt);
+        try {
+            const imageGenerator = createImageGenerator(clientId);
+            const promptResult = await imageGenerator.generate(prompt);
 
-        return response.status(201).json({
-            promptResult,
-        } as RemoteImageGeneratorResponse);
+            return response.status(201).json({
+                promptResult,
+            } as RemoteImageGeneratorResponse);
+        } catch (error) {
+            if (!(error instanceof Error)) {
+                throw error;
+            }
+
+            return response.status(500).json(
+                {
+                    message: error.message,
+                } as any /* <-[🌋] */,
+            );
+        }
     };
 }
