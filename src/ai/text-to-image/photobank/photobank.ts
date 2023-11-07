@@ -1,8 +1,8 @@
 import { parseKeywordsFromString } from 'n12';
-import { SearchPhotobankResult } from '../../pages/api/pregenerated-photobank/search';
-import { TextToImagePrompt } from './interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from './interfaces/TextToImagePromptResult';
-import { ImageGenerator } from './interfaces/ImageGenerator';
+import { SearchPhotobankResult } from '../../../pages/api/pregenerated-photobank/search';
+import { ImageGenerator } from '../0-interfaces/ImageGenerator';
+import { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
+import { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
 
 /**
  *

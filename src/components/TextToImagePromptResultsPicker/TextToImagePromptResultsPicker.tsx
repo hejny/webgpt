@@ -1,5 +1,5 @@
-import { TextToImagePrompt } from '../../ai/text-to-image/interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from '../../ai/text-to-image/interfaces/TextToImagePromptResult';
+import { TextToImagePrompt } from '../../ai/text-to-image/0-interfaces/TextToImagePrompt';
+import { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
 import styles from './TextToImagePromptResultsPicker.module.css';

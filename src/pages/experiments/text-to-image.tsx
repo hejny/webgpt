@@ -1,9 +1,9 @@
 import { nameToUriParts } from 'n12';
 import { useEffect, useState } from 'react';
 import { forTime } from 'waitasecond';
-import { TextToImagePrompt } from '../../ai/text-to-image/interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from '../../ai/text-to-image/interfaces/TextToImagePromptResult';
-import { PregeneratedPhotobank } from '../../ai/text-to-image/photobank';
+import { TextToImagePrompt } from '../../ai/text-to-image/0-interfaces/TextToImagePrompt';
+import { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
+import { PregeneratedPhotobank } from '../../ai/text-to-image/photobank/photobank';
 import { TextToImagePromptResultsPicker } from '../../components/TextToImagePromptResultsPicker/TextToImagePromptResultsPicker';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
