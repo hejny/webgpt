@@ -14,7 +14,7 @@ import { validateUuid } from './src/utils/validators/validateUuid';
 export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
 
-export const USE_DALLE_VERSION: 2 | 3 = 2;
+export const USE_DALLE_VERSION: 2 | 3 = 3;
 
 const config = ConfigChecker.from({
     ...process.env,
