@@ -1,3 +1,4 @@
+import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -19,7 +20,6 @@ import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
@@ -106,7 +106,7 @@ export function CopilotPanel() {
             const { newContent } = await webgptPtpLibrary.createExecutor(
                 updateWebsiteContentLocaleMap[
                     locale
-                ] /* <- TODO: !!! Deal here with locale better - detect from content NOT app */,
+                ] /* <- TODO: !! Deal here with locale better - detect from content NOT app */,
                 getExecutionTools(
                     await provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
@@ -171,7 +171,7 @@ export function CopilotPanel() {
         } finally {
             setRunningPrompt(null);
         }
-    }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
+    }, [locale, router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
         <div className={classNames('webgpt-controls', styles.CopilotPanel)}>

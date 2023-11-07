@@ -1,10 +1,11 @@
+import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
 import { useCallback, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
-import { message, string_prompt } from '../../utils/typeAliases';
+import { message } from '../../utils/typeAliases';
 import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
 import styles from './CopilotInput.module.css';
 
