@@ -5,7 +5,7 @@ import { PromptTemplatePipelineString } from '@promptbook/types';
 import { normalizeToKebabCase } from 'n12';
 import { useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import enhanceTextCs from '../../../promptbook/other/enhance-text.cs.ptbk.md';
+import enhanceTextCs from '../../../promptbook/other/enhance-text-cs.ptbk.md';
 import promptcookSample from '../../../promptbook/other/promptcook-sample.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
