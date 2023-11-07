@@ -35,8 +35,12 @@ async function playground() {
     });
 
     const generatedImage = await openai.images.generate({
-        model: 'dall-e-3',
         prompt: 'A dog',
+        model: 'dall-e-3',
+        size: '1792x1024',
+        // quality: 'standard',
+        style: 'natural',
+        user: 'playground',
     });
 
     console.log(generatedImage);
