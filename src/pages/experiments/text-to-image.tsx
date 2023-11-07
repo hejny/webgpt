@@ -1,5 +1,6 @@
 import { nameToUriParts } from 'n12';
 import { useCallback, useState } from 'react';
+import { USE_DALLE_VERSION } from '../../../config';
 import type { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
 import { RemoteImageGenerator } from '../../ai/text-to-image/remote/RemoteImageGenerator';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
@@ -18,7 +19,9 @@ export default function TextToImagePage() {
 
         const prompt = {
             content: promptContent!,
-            dalleVersion: 2,
+
+            // TODO: !!! Here should be model NOT version
+            dalleVersion: USE_DALLE_VERSION,
             //style: 'natural' /* <- !!! Passthrough */,
         }; /*satisfies DallePrompt*/
 
