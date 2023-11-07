@@ -50,6 +50,6 @@ export default async function searchPhotobankHandler(
 }
 
 /**
- * TODO: !!! Annotate
- * TODO: !!! Implement
+ * TODO: Annotate
+ * TODO: Implement
  */
