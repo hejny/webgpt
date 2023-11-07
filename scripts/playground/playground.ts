@@ -35,6 +35,7 @@ async function playground() {
     });
 
     const generatedImage = await openai.images.generate({
+        model: 'dall-e-3',
         prompt: 'A dog',
     });
 
