@@ -1,12 +1,13 @@
 import { nameToUriParts } from 'n12';
 import { useEffect, useState } from 'react';
 import { forTime } from 'waitasecond';
-import { TextToImagePrompt } from '../../ai/text-to-image/0-interfaces/TextToImagePrompt';
 import { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
-import { PregeneratedPhotobank } from '../../ai/text-to-image/photobank/photobank';
+import { Dalle } from '../../ai/text-to-image/dalle/DalleImageGenerator';
+import { DallePrompt } from '../../ai/text-to-image/dalle/DallePrompt';
 import { TextToImagePromptResultsPicker } from '../../components/TextToImagePromptResultsPicker/TextToImagePromptResultsPicker';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
+import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_image_prompt } from '../../utils/typeAliases';
 
 export default function TextToImagePage() {
@@ -33,8 +34,20 @@ export default function TextToImagePage() {
 
             setReady(false);
 
-            const prompt = { content: promptContent! } satisfies TextToImagePrompt;
-            const results = await PregeneratedPhotobank.getInstance().generate(prompt);
+            const prompt = {
+                content: promptContent!,
+                dalleVersion: 3,
+                style: 'natural',
+            } satisfies DallePrompt;
+
+            // const imageGenerator = PregeneratedPhotobank.getInstance();
+            const imageGenerator = new Dalle(
+                await provideClientId({
+                    isVerifiedEmailRequired: true,
+                }),
+            );
+            //                   <- TODO: !!! Allow to pick + combine multiple
+            const results = await imageGenerator.generate(prompt);
 
             setReady(true);
             setResults(results);
