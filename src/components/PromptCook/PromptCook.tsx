@@ -94,10 +94,13 @@ export function PromptCook() {
             currentFile.outputParams = { outputText: outputText || '' };
             setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
             setRunning(false);
+            setPanel('OUTPUT');
         },
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [currentFile.ptbkSource, currentFile.inputParams.inputText],
     );
+
+    const [panel, setPanel] = useState<'INPUT' | 'OUTPUT' | 'PROMPTBOOK'>('INPUT');
 
     return (
         <>
@@ -150,7 +153,22 @@ export function PromptCook() {
                     />
                 </div>
 
-                <div className={styles.input}>
+                <div className={styles.panelSwitcher}>
+                    <Select
+                        value={panel as any}
+                        options={
+                            {
+                                INPUT: 'Input',
+                                OUTPUT: 'Output',
+                                PROMPTBOOK: 'Promptbook',
+                            } as const
+                        }
+                        visibleButtons={Infinity}
+                        onChange={setPanel}
+                    />
+                </div>
+
+                <div className={classNames(styles.input, panel === 'INPUT' && styles.isFocused)}>
                     <MonacoEditor
                         key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
@@ -207,7 +225,7 @@ export function PromptCook() {
                     </button>
                 </div>
 
-                <div className={styles.output}>
+                <div className={classNames(styles.output, panel === 'OUTPUT' && styles.isFocused)}>
                     <MonacoEditor
                         key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
@@ -229,7 +247,7 @@ export function PromptCook() {
                     />
                 </div>
 
-                <div className={styles.promptbook}>
+                <div className={classNames(styles.promptbook, panel === 'PROMPTBOOK' && styles.isFocused)}>
                     <MonacoEditor
                         key={currentFile.name}
                         className={styles.fill}

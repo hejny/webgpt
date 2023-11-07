@@ -23,6 +23,10 @@
     grid-area: ⬜;
 }
 
+.panelSwitcher {
+    display: none;
+}
+
 .input {
     grid-area: 🟦;
 }
@@ -50,7 +54,7 @@
 .controls,
 .promptbook {
     /*/
-    outline: 1px dotted rgb(24 117 20);
+    outline: 1px dotted rgb(24 117 20) !important;
     /**/
 
     width: 100%;
@@ -86,4 +90,63 @@
 
 .controls .button {
     margin: 10px;
+}
+
+/*----------[ 📱 ]-----------*/
+
+@media only screen and (max-width: 600px) {
+    /* 📱 Big smartphones */
+
+    .PromptCook {
+        /*/
+        outline: 1px dotted rgb(255, 38, 38);
+        /**/
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template:
+            '⬜' 50px
+            '📑' 50px
+            '🟦' 1fr
+            '🔽' 50px;
+    }
+
+    .panelSwitcher {
+        display: block;
+        grid-area: 📑;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .input.isFocused {
+        display: block;
+        grid-area: 🟦;
+    }
+
+    .output {
+        display: none;
+    }
+    .output.isFocused {
+        display: block;
+        grid-area: 🟦;
+    }
+
+    .promptbook {
+        display: none;
+    }
+    .promptbook.isFocused {
+        display: block;
+        grid-area: 🟦;
+    }
 }
