@@ -175,11 +175,13 @@ export function PromptCook() {
                         theme="vs-dark"
                         language={'markdown'}
                         options={{
+                            // TODO: !! Here experimenting with mobile friendly options
                             wordWrap: 'on',
-                            contextmenu: true,
-                            //           <- Note: [📳] Context menu needs to be on to allow copy/paste on touch devices
+                            contextmenu: false,
                             lineNumbers: 'off',
-                            minimap: { enabled: false },
+
+                            // Mobile friendly options:
+                            accessibilitySupport: 'on',
                         }}
                         defaultValue={currentFile.inputParams.inputText}
                         onChange={(newContent) => {
@@ -192,6 +194,14 @@ export function PromptCook() {
                             setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
                         }}
                     />
+
+                    <style>{`
+                        .monaco-editor * div {
+                            /*/ outline: 1px dotted red; /**/
+                            /*/ line-height:unset; /**/
+                            /*/ pointer-events: none; /**/
+                        }
+                    `}</style>
                 </div>
 
                 <div className={styles.controls}>
