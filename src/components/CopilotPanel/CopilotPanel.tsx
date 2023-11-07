@@ -106,7 +106,7 @@ export function CopilotPanel() {
             const { newContent } = await webgptPtpLibrary.createExecutor(
                 updateWebsiteContentLocaleMap[
                     locale
-                ] /* <- TODO: !!! Deal here with locale better - detect from content NOT app */,
+                ] /* <- TODO: !! Deal here with locale better - detect from content NOT app */,
                 getExecutionTools(
                     await provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
