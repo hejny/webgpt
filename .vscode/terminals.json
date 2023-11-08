@@ -7,13 +7,13 @@
             "focus": false
         },
         {
-            "name": "👨🏽‍💻 Run PTP server",
-            "commands": ["ts-node ./ptp-server/server.ts"],
+            "name": "👨🏽‍💻 Run promptbook server",
+            "commands": ["ts-node ./promptbook-server/server.ts"],
             "focus": false
         },
         {
             "name": "🌎 Expose",
-            "command": "npx lt --port 4444 --subdomain wizard",
+            "command": "npx lt --port 4444 --subdomain webgpt",
             "onlySingle": true,
             "focus": true
         },
@@ -25,6 +25,7 @@
         {
             "name": "🩹 Lint fix",
             "command": "npm run lint -- --fix",
+            "onlySingle": true,
             "execute": false
         },
         {
@@ -113,12 +114,6 @@
         {
             "name": "🏭🔼🖼 [8] Upload & Update wallpapers images",
             "commands": ["ts-node ./scripts/upload-wallpapers/10-upload-wallpapers-images.ts"],
-            "onlySingle": true,
-            "focus": true
-        },
-        {
-            "name": "🏭🌠 Generate JSONs from PTP samples",
-            "commands": ["ts-node ./scripts/ptp-generate-sample-jsons/generate-sample-jsons.ts"],
             "onlySingle": true,
             "focus": true
         },

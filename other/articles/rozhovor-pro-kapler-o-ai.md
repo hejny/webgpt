@@ -35,7 +35,7 @@ Pro některé případy určitě je. Ale opět přichází na řadu stejná otá
 
 Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit.
 
-<!-- !!! Make all WebGPT active links with utm source-->
+<!-- !! Make all WebGPT active links with utm source-->
 
 Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho administrace je přirozený text.
 
@@ -84,7 +84,7 @@ Také si je dobré uvědomit, že ChatGPT nebyl ani tolik technologický průlom
 
 Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub Co-pilot a ještě celý rok předtím to byl Tomáš Studeník, který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry. To bylo postavené nad GPT-2 a GPT-2 byl ten opravdový technologický průlom, v tu dobu ještě nezaznamenaný širokou veřejností.
 
-!!! Ainautes někde
+!! Ainautes někde
 
 **Když jsme u té divadelní hry, jakým způsobem ovlivní generativní AI jazyk a kulturu?**
 
@@ -115,8 +115,8 @@ Zároveň bude velmi pravděpodobné, že v těchto světech bude možné existo
 
 V jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa + hráč mohl libovolně kombinovat budovy – například postavit dva domy na hradbu nebo pět domů na sebe z čehož vznikl něco jako mrakodrap. Vše bylo procedurálně generované, takže a šlo o takový proto-koncept vektorového prostoru všech možných budov.
 
-<!-- !!! Link to H-Edu -->
-<!-- !!! Link to Collboard -->
+<!-- !! Link to H-Edu -->
+<!-- !! Link to Collboard -->
 
 **Další z projektů (díky kterému se známe) je virtuální tabule Collboard. Řekni něco víc!**
 

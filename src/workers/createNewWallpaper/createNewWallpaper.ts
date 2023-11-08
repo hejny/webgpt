@@ -5,8 +5,8 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { getExecutionTools } from '../../ai/text-to-text/prompt-templates/getExecutionTools';
-import { webgptPtpLibrary } from '../../ai/text-to-text/prompt-templates/webgptPtpLibrary';
+import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
+import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
@@ -290,7 +290,7 @@ export async function createNewWallpaper(
     //===========================================================================
     //-------[ Write content: ]---
     await onProgress({
-        name: 'write-wallpaper-content',
+        name: 'write-website-content',
         title: 'Copywriting',
         isDone: false,
         // TODO: Make it more granular
@@ -312,7 +312,7 @@ export async function createNewWallpaper(
             rawAssigment: description,
 
             /*
-            TODO: !! Use in write-website-content.cs.ptp.md and uncomment here
+            TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here
             links,
             addSections,
             */
@@ -321,7 +321,7 @@ export async function createNewWallpaper(
     );
 
     await onProgress({
-        name: 'write-wallpaper-content',
+        name: 'write-website-content',
         isDone: true,
     });
 

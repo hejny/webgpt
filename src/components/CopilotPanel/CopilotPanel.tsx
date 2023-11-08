@@ -4,14 +4,15 @@ import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import { getExecutionTools } from '../../ai/text-to-text/prompt-templates/getExecutionTools';
-import { webgptPtpLibrary } from '../../ai/text-to-text/prompt-templates/webgptPtpLibrary';
+import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
+import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import { useLocale } from '../../utils/hooks/useLocale';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { randomItem } from '../../utils/randomItem';
@@ -35,6 +36,7 @@ import styles from './CopilotPanel.module.css';
  */
 export function CopilotPanel() {
     const router = useRouter();
+    const locale = useLocale();
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
     const [runningPrompt, setRunningPrompt] = useState<null | string_prompt>(null);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
@@ -95,8 +97,16 @@ export function CopilotPanel() {
 
             oldContent = removeContentComments(oldContent);
 
+            const updateWebsiteContentLocaleMap = {
+                en: 'updateWebsiteContent',
+                cs: 'updateWebsiteContentCs',
+                /* <- TODO: [👧] Constrain key to only existing PTPs in the library */
+            };
+
             const { newContent } = await webgptPtpLibrary.createExecutor(
-                'updateWebsiteContent' /* <- TODO: Deal here with locale */,
+                updateWebsiteContentLocaleMap[
+                    locale
+                ] /* <- TODO: !! Deal here with locale better - detect from content NOT app */,
                 getExecutionTools(
                     await provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
