@@ -1,10 +1,10 @@
-import { uuid } from '@promptbook/types';
 import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../../config';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
-import { ImageGenerator } from '../0-interfaces/ImageGenerator';
-import { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
-import { DallePrompt } from './DallePrompt';
+import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
+import type { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
+import type { DalleImageGeneratorOptions } from './interfaces/DalleImageGeneratorOptions';
+import type { DallePrompt } from './interfaces/DallePrompt';
 
 /**
  * Dalle image generator by OpenAI
@@ -12,7 +12,7 @@ import { DallePrompt } from './DallePrompt';
 export class DalleImageGenerator implements ImageGenerator {
     private readonly openai: OpenAI;
 
-    public constructor(private readonly clientId: uuid) {
+    public constructor(private readonly options: DalleImageGeneratorOptions) {
         if (!isRunningInNode()) {
             throw new Error('DalleImageGenerator is available only in server/node, use RemoteImageGenerator instead');
         }
@@ -41,7 +41,7 @@ export class DalleImageGenerator implements ImageGenerator {
             size: size as any /* <- !!! Remove any */,
             // quality: 'standard',
             style: 'natural',
-            user: this.clientId,
+            user: this.options.clientId,
         } as const;
 
         console.log('!!!', { rawRequest });

@@ -1,4 +1,4 @@
-import { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
+import { TextToImagePrompt } from '../../0-interfaces/TextToImagePrompt';
 
 /**
  * Prompt to Dalle image generator
@@ -17,7 +17,6 @@ export interface DallePrompt extends TextToImagePrompt {
      */
     style: 'natural' | 'vivid';
 }
-
 
 /**
  * TODO: !!! [🧠] Remove DallePrompt and make TextToImagePrompt more universal

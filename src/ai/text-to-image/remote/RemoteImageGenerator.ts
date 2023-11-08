@@ -1,42 +1,64 @@
-import { uuid } from '@promptbook/types';
-import { ImageGenerator } from '../0-interfaces/ImageGenerator';
-import { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
-import { RemoteImageGeneratorResponse } from './createRemoteImageGeneratorRouteHandler';
+import type { Socket } from 'socket.io-client';
+import { io } from 'socket.io-client';
+import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
+import type { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
+import type { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
+import type { Imgs_Error } from './interfaces/Imgs_Error';
+import type { Imgs_Request } from './interfaces/Imgs_Request';
+import type { Imgs_Response } from './interfaces/Imgs_Response';
+import type { RemoteNaturalExecutionToolsOptions } from './interfaces/RemoteNaturalExecutionToolsOptions';
 
 /**
  * Image generator called remotely
  */
 export class RemoteImageGenerator implements ImageGenerator {
-    public constructor(private readonly clientId: uuid, private readonly subroute: string) {}
+    public constructor(private readonly options: RemoteNaturalExecutionToolsOptions) {}
+
+    /**
+     * Creates a connection to the remote proxy server.
+     */
+    private makeConnection(): Promise<Socket> {
+        return new Promise((resolve, reject) => {
+            const socket = io(this.options.remoteUrl.href, {
+                path: '/ptp/socket.io',
+                // path: `${this.remoteUrl.pathname}/socket.io`,
+                transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
+            });
+
+            console.log('Connecting to', this.options.remoteUrl.href, { socket });
+
+            socket.on('connect', () => {
+                resolve(socket);
+            });
+
+            setTimeout(() => {
+                reject(new Error(`Timeout while connecting to ${this.options.remoteUrl.href}`));
+            }, 60000 /* <- TODO: Timeout to config */);
+        });
+    }
 
     public async generate(prompt: TextToImagePrompt): Promise<Array<TextToImagePromptResult>> {
-        const response = await fetch(
-            `/api/text-to-image/${this.subroute}?clientId=${
-                /* <- TODO: [⛹️‍♂️] Send clientId through headers */
-                this.clientId
-            }`,
-            {
-                method: 'POST',
-                body: JSON.stringify(prompt),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            },
-        );
+        const socket = await this.makeConnection();
+        socket.emit('request', { clientId: this.options.clientId, prompt } satisfies Imgs_Request);
 
-        const responseJson = (await response.json()) as RemoteImageGeneratorResponse;
+        const promptResult = await new Promise<Array<TextToImagePromptResult>>((resolve, reject) => {
+            socket.on('response', (response: Imgs_Response) => {
+                resolve(response.promptResult);
+                socket.disconnect();
+            });
+            socket.on('error', (error: Imgs_Error) => {
+                //            <- TODO: Custom type of error
+                reject(new Error(error.errorMessage));
+                socket.disconnect();
+            });
+        });
 
-        if (response.status !== 201) {
-            if ((responseJson as any) /* <-[🌋] */.message) {
-                throw new Error((responseJson as any) /* <-[🌋] */.message);
-            } else {
-                throw new Error(`Expected 201 status code, got ${response.status}`);
-            }
-        }
+        socket.disconnect();
 
-        console.log('!!!', responseJson);
-
-        return responseJson.promptResult;
+        return promptResult;
     }
 }
+
+/**
+ * TODO: [🤹‍♂️] RemoteImageGenerator should extend Destroyable and implement IDestroyable
+ */

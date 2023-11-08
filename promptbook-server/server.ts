@@ -9,11 +9,6 @@ import { IS_DEVELOPMENT, OPENAI_API_KEY } from '../config';
 import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../src/ai/prompt-templates/logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
 // [🎛] import { webgptPtpLibrary } from '../src/ai/prompt-templates/webgptPtpLibrary';
 
-const naturalExecutionTools = new OpenAiExecutionTools({
-    isVerbose: IS_DEVELOPMENT /* <- Note: [3] */,
-    openAiApiKey: OPENAI_API_KEY!,
-});
-
 createRemoteServer({
     isVerbose: false /* <- Note: [3] We want server to be silent and OpenAiExecutionTools to be verbose */,
     port: 4445 /* <- TODO: Unhardcode (all ports) */,
@@ -25,7 +20,12 @@ createRemoteServer({
     createNaturalExecutionTools(clientId) {
         return new SupabaseLoggerWrapperOfNaturalExecutionTools({
             isVerbose: false /* <- Note: [3] */,
-            naturalExecutionTools,
+            naturalExecutionTools: new OpenAiExecutionTools({
+                isVerbose: IS_DEVELOPMENT /* <- Note: [3] */,
+                openAiApiKey: OPENAI_API_KEY!,
+                user: clientId,
+            }),
+
             clientId,
         });
     },

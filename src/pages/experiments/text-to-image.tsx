@@ -1,6 +1,6 @@
 import { nameToUriParts } from 'n12';
 import { useCallback, useState } from 'react';
-import { USE_DALLE_VERSION } from '../../../config';
+import { NEXT_PUBLIC_IMAGE_SERVER_URL, USE_DALLE_VERSION } from '../../../config';
 import type { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
 import { RemoteImageGenerator } from '../../ai/text-to-image/remote/RemoteImageGenerator';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
@@ -25,22 +25,14 @@ export default function TextToImagePage() {
             //style: 'natural' /* <- !!! Passthrough */,
         }; /*satisfies DallePrompt*/
 
-        const imageGenerator = new RemoteImageGenerator(
-            await provideClientId({
+        // TODO: !!! provideXyxsfafForBrowser()
+        const imageGenerator = new RemoteImageGenerator({
+            remoteUrl: NEXT_PUBLIC_IMAGE_SERVER_URL,
+            clientId: await provideClientId({
                 isVerifiedEmailRequired: true,
             }),
-            'dalle',
-        );
-        // !!! Cleanup commented code
-        // const imageGenerator = PregeneratedPhotobank.getInstance();
-        /*/
-        const imageGenerator = new DalleImageGenerator(
-            await provideClientId({
-                isVerifiedEmailRequired: true,
-            }),
-        );
-        /**/
-        //                   <- TODO: !!! Allow to pick + combine multiple
+        });
+
         const results = await imageGenerator.generate(prompt);
 
         setReady(true);
