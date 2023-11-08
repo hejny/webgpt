@@ -14,6 +14,7 @@ import { useJsonStateInLocalstorage } from '../../utils/hooks/useJsonStateInLoca
 import { useStateInLocalstorage } from '../../utils/hooks/useStateInLocalstorage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_name } from '../../utils/typeAliases';
+import { CodeEditor } from '../CodeEditor/CodeEditor';
 import { Select } from '../Select/Select';
 import styles from './PromptCook.module.css';
 
@@ -169,39 +170,22 @@ export function PromptCook() {
                 </div>
 
                 <div className={classNames(styles.input, panel === 'INPUT' && styles.isFocused)}>
-                    <MonacoEditor
+                    <CodeEditor
+                        // TODO: !! Here experimenting with mobile friendly options
+                        //          Then ACRY use <CodeEditor/> not <MonacoEditor/>
                         key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
-                        theme="vs-dark"
-                        language={'markdown'}
-                        options={{
-                            // TODO: !! Here experimenting with mobile friendly options
-                            wordWrap: 'on',
-                            contextmenu: false,
-                            lineNumbers: 'off',
-
-                            // Mobile friendly options:
-                            accessibilitySupport: 'on',
-                        }}
+                       
                         defaultValue={currentFile.inputParams.inputText}
                         onChange={(newContent) => {
-                            if (typeof newContent !== 'string') {
-                                return;
-                            }
-
+                         
                             // TODO: DRY [0]
                             currentFile.inputParams.inputText = newContent;
                             setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
                         }}
                     />
 
-                    <style>{`
-                        .monaco-editor * div {
-                            /*/ outline: 1px dotted red; /**/
-                            /*/ line-height:unset; /**/
-                            /*/ pointer-events: none; /**/
-                        }
-                    `}</style>
+                   
                 </div>
 
                 <div className={styles.controls}>
