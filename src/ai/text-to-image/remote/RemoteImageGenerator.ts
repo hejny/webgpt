@@ -1,8 +1,8 @@
 import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
-import type { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
-import type { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
+import type { ImagePrompt } from '../0-interfaces/ImagePrompt';
+import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
 import type { Imgs_Error } from './interfaces/Imgs_Error';
 import type { Imgs_Request } from './interfaces/Imgs_Request';
 import type { Imgs_Response } from './interfaces/Imgs_Response';
@@ -37,11 +37,11 @@ export class RemoteImageGenerator implements ImageGenerator {
         });
     }
 
-    public async generate(prompt: TextToImagePrompt): Promise<Array<TextToImagePromptResult>> {
+    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
         const socket = await this.makeConnection();
         socket.emit('request', { clientId: this.options.clientId, prompt } satisfies Imgs_Request);
 
-        const promptResult = await new Promise<Array<TextToImagePromptResult>>((resolve, reject) => {
+        const promptResult = await new Promise<Array<ImagePromptResult>>((resolve, reject) => {
             socket.on('response', (response: Imgs_Response) => {
                 resolve(response.promptResult);
                 socket.disconnect();

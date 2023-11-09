@@ -1,5 +1,5 @@
-import { TextToImagePromptResult } from '../../0-interfaces/TextToImagePromptResult';
+import { ImagePromptResult } from '../../0-interfaces/ImagePromptResult';
 
 export interface Imgs_Response {
-    promptResult: Array<TextToImagePromptResult>;
+    promptResult: Array<ImagePromptResult>;
 }

@@ -1,11 +1,11 @@
 import { string_url_image } from '@promptbook/types';
-import { TextToImagePrompt } from './TextToImagePrompt';
+import { ImagePrompt } from './ImagePrompt';
 
 /**
  * Represents a result of a prompt for an image generator
  */
 
-export interface TextToImagePromptResult {
+export interface ImagePromptResult {
     /**
      * The image generated from the prompt
      */
@@ -14,10 +14,10 @@ export interface TextToImagePromptResult {
     /**
      * The original prompt that generated this result
      */
-    readonly originalPrompt: TextToImagePrompt;
+    readonly originalPrompt: ImagePrompt;
 
     /**
      * The normalized/postprocessed prompt used to generate this result
      */
-    readonly normalizedPrompt?: TextToImagePrompt;
+    readonly normalizedPrompt?: ImagePrompt;
 }

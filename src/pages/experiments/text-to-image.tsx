@@ -1,10 +1,10 @@
 import { nameToUriParts } from 'n12';
 import { useCallback, useState } from 'react';
 import { NEXT_PUBLIC_IMAGE_SERVER_URL, USE_DALLE_VERSION } from '../../../config';
-import type { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
+import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { RemoteImageGenerator } from '../../ai/text-to-image/remote/RemoteImageGenerator';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
-import { TextToImagePromptResultsPicker } from '../../components/TextToImagePromptResultsPicker/TextToImagePromptResultsPicker';
+import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -13,7 +13,7 @@ import type { string_image_prompt } from '../../utils/typeAliases';
 export default function TextToImagePage() {
     const [promptContent, setPromptContent] = useState<string_image_prompt | null>('space');
     const [isReady, setReady] = useState<boolean>(true);
-    const [results, setResults] = useState<Array<TextToImagePromptResult>>([]);
+    const [results, setResults] = useState<Array<ImagePromptResult>>([]);
     const runImageGenerator = useCallback(async () => {
         setReady(false);
 
@@ -57,7 +57,7 @@ export default function TextToImagePage() {
             <br />
             {isReady ? null : <p>Generating...</p>}
             {results.length === 0 && isReady && <p>No images generated</p>}
-            <TextToImagePromptResultsPicker
+            <ImagePromptResultsPicker
                 {...{ results }}
                 prompt={{ content: promptContent! }}
                 onPick={async (result) => {
@@ -74,4 +74,4 @@ export default function TextToImagePage() {
     );
 }
 
-// TODO: <TextToImagePromptResultsPicker /> component
+// TODO: <ImagePromptResultsPicker /> component

@@ -1,5 +1,5 @@
 import type { uuid } from '../../../../utils/typeAliases';
-import type { TextToImagePrompt } from '../../0-interfaces/TextToImagePrompt';
+import type { ImagePrompt } from '../../0-interfaces/ImagePrompt';
 
 export interface Imgs_Request {
     /**
@@ -10,5 +10,5 @@ export interface Imgs_Request {
     /**
      * The Prompt to execute
      */
-    readonly prompt: TextToImagePrompt;
+    readonly prompt: ImagePrompt;
 }

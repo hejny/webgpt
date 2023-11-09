@@ -1,24 +1,24 @@
-import { TextToImagePrompt } from '../../ai/text-to-image/0-interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from '../../ai/text-to-image/0-interfaces/TextToImagePromptResult';
+import { ImagePrompt } from '../../ai/text-to-image/0-interfaces/ImagePrompt';
+import { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { classNames } from '../../utils/classNames';
 import { string_css_class } from '../../utils/typeAliases';
-import styles from './TextToImagePromptResultsPicker.module.css';
+import styles from './ImagePromptResultsPicker.module.css';
 
-interface TextToImagePromptResultsPickerProps {
+interface ImagePromptResultsPickerProps {
     /**
      * Prompt which generated the results
      */
-    readonly prompt: TextToImagePrompt;
+    readonly prompt: ImagePrompt;
 
     /**
      * Results from the text to image prompt
      */
-    readonly results: Array<TextToImagePromptResult>;
+    readonly results: Array<ImagePromptResult>;
 
     /**
      * Callback which is called when the user picks a result
      */
-    onPick(result: TextToImagePromptResult): void;
+    onPick(result: ImagePromptResult): void;
 
     /**
      * Optional CSS class name which will be added to root element
@@ -29,10 +29,10 @@ interface TextToImagePromptResultsPickerProps {
 /**
  * Renders a @@
  */
-export function TextToImagePromptResultsPicker(props: TextToImagePromptResultsPickerProps) {
+export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
     const { prompt, results, onPick, className } = props;
     return (
-        <div className={classNames(className, styles.TextToImagePromptResultsPicker)}>
+        <div className={classNames(className, styles.ImagePromptResultsPicker)}>
             {results.map((result, index) => (
                 <div
                     key={index}

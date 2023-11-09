@@ -1,7 +1,7 @@
 import { uuid } from '@promptbook/types';
 import { ImageGenerator } from '../../0-interfaces/ImageGenerator';
-import { TextToImagePrompt } from '../../0-interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from '../../0-interfaces/TextToImagePromptResult';
+import { ImagePrompt } from '../../0-interfaces/ImagePrompt';
+import { ImagePromptResult } from '../../0-interfaces/ImagePromptResult';
 import { RemoteImageGeneratorResponse } from './createRemoteImageGeneratorRouteHandler.ts.delete';
 
 /**
@@ -10,7 +10,7 @@ import { RemoteImageGeneratorResponse } from './createRemoteImageGeneratorRouteH
 export class RemoteImageGenerator implements ImageGenerator {
     public constructor(private readonly clientId: uuid, private readonly subroute: string) {}
 
-    public async generate(prompt: TextToImagePrompt): Promise<Array<TextToImagePromptResult>> {
+    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
         const response = await fetch(
             `/api/text-to-image/${this.subroute}?clientId=${
                 /* <- TODO: [⛹️‍♂️] Send clientId through headers */

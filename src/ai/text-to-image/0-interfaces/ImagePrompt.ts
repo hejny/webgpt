@@ -4,7 +4,7 @@
 
 import { string_image_prompt } from '../../../utils/typeAliases';
 
-export interface TextToImagePrompt {
+export interface ImagePrompt {
     /**
      * The text of the prompt
      *

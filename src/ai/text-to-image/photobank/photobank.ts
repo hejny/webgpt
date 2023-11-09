@@ -1,8 +1,8 @@
 import { parseKeywordsFromString } from 'n12';
 import { SearchPhotobankResult } from '../../../pages/api/pregenerated-photobank/search';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
-import { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
-import { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
+import { ImagePrompt } from '../0-interfaces/ImagePrompt';
+import { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
 
 /**
  *
@@ -21,7 +21,7 @@ export class PregeneratedPhotobank implements ImageGenerator {
 
     private constructor() {}
 
-    public async generate(prompt: TextToImagePrompt): Promise<Array<TextToImagePromptResult>> {
+    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
         const keywords = parseKeywordsFromString(prompt.content);
 
         // TODO:  Filter out void keywords

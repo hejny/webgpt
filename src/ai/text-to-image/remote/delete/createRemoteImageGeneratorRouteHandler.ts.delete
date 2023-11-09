@@ -2,12 +2,12 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import type { uuid } from '../../../utils/typeAliases';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
-import type { TextToImagePrompt } from '../0-interfaces/TextToImagePrompt';
-import type { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
+import type { ImagePrompt } from '../0-interfaces/ImagePrompt';
+import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
 
 export interface RemoteImageGeneratorResponse {
     // TODO: [🌋] ErrorableResponse
-    readonly promptResult: Array<TextToImagePromptResult>;
+    readonly promptResult: Array<ImagePromptResult>;
 }
 
 interface CreateRemoteImageGeneratorRouteHandlerOptions {
@@ -42,7 +42,7 @@ export function createRemoteImageGeneratorRouteHandler(options: CreateRemoteImag
             );
         }
 
-        const prompt = request.body as TextToImagePrompt;
+        const prompt = request.body as ImagePrompt;
 
         try {
             const imageGenerator = createImageGenerator(clientId);

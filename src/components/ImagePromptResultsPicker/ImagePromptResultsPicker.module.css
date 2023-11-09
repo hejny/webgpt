@@ -1,4 +1,4 @@
-.TextToImagePromptResultsPicker {
+.ImagePromptResultsPicker {
     /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
@@ -12,13 +12,13 @@
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
-.TextToImagePromptResultsPicker .result {
+.ImagePromptResultsPicker .result {
     cursor: pointer;
     z-index: 1;
     transition: all 0.1s ease-in-out;
 }
 
-.TextToImagePromptResultsPicker .result:hover {
+.ImagePromptResultsPicker .result:hover {
     z-index: 2;
     transform: scale(1.05);
     /*box-shadow: 0px 0px 50px rgb(0 0 0);*/

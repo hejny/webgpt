@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 import { OPENAI_API_KEY } from '../../../../config';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
-import type { TextToImagePromptResult } from '../0-interfaces/TextToImagePromptResult';
+import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
 import type { DalleImageGeneratorOptions } from './interfaces/DalleImageGeneratorOptions';
 import type { DallePrompt } from './interfaces/DallePrompt';
 
@@ -22,7 +22,7 @@ export class DalleImageGenerator implements ImageGenerator {
         });
     }
 
-    public async generate(prompt: DallePrompt): Promise<Array<TextToImagePromptResult>> {
+    public async generate(prompt: DallePrompt): Promise<Array<ImagePromptResult>> {
         console.log('!!!', { prompt });
 
         let size: string;
