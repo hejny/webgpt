@@ -16,71 +16,72 @@ export class SupabaseLoggerWrapperOfImageGenerator implements ImageGenerator {
         }
     }
 
-    // !!! Array<ImagePromptResult> -> ImagePromptResult
-
     /**
      * Generates image and log the result
      */
-    public async gptCommon(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
+    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
         const mark = 'gpt-call';
         const promptAt = new Date();
         performance.mark(`${mark}-start`);
 
         try {
-            const promptResult = await this.options.imageGenerator.generate(prompt);
+            const promptResults = await this.options.imageGenerator.generate(prompt);
 
             performance.mark(`${mark}-end`);
             const resultAt = new Date();
 
-            if (this.options.isVerbose) {
-                console.info(
-                    spaceTrim(
-                        (block) => `
-                        ===========================[ Chat: ]===
-                        [🧑] ${block(prompt.content)}
-                        [🤖] Generated ${block(promptResult.length.toString())}
-                        ---
-                        Executed in ${block(
-                            performance.measure(mark, `${mark}-start`, `${mark}-end`).duration.toString(),
-                        )}ms
-                        ${(promptResult.rawResponse as any).usage?.total_tokens} tokens used
-                        ===========================[ /Chat ]===
-                    `,
-                    ),
-                );
+            for (const promptResult of promptResults) {
+                if (this.options.isVerbose) {
+                    console.info(
+                        spaceTrim(
+                            (block) => `
+                                ===========================[ Chat: ]===
+                                [🧑] ${block(prompt.content)}
+                                [🤖] Generated ${block(promptResult.imageSrc)}
+                                ---
+                                Executed in ${block(
+                                    performance.measure(mark, `${mark}-start`, `${mark}-end`).duration.toString(),
+                                )}ms
+                                ===========================[ /Chat ]===
+                            `,
+                            // <- TODO: Maybe put here some token spend metrics
+                        ),
+                    );
+                }
+
+                // Note: We do not want to wait for the insert to the database
+                /* not await */ getSupabaseForServer()
+                    .from('ImagePromptExecution')
+                    .insert(
+                        {
+                            clientId: this.options.clientId,
+                            ptpUrl: null /* <- TODO: [🧠] Add here some identification */,
+                            promptAt,
+                            promptContent: prompt.content,
+                            rawPrompt: prompt,
+                            resultAt,
+                            resultUrl: promptResult.imageSrc /* <- TODO: [🧠] resultUrl vs resultSrc */,
+                            resultCdnUrl:
+                                null /* <- TODO: [🧠] Maybe upload to own CDN (how long Dalle keeps the results) */,
+                            // !!! usedModel: promptResult.model,
+                            rawResponse: promptResult.rawResponse,
+
+                            // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
+                            // <- TODO: Maybe use here more precise performance measure
+                        } as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
+                    )
+                    .then((insertResult) => {
+                        // TODO: !! Util isInsertSuccessfull
+
+                        if (this.options.isVerbose) {
+                            console.info('ChatThread', { insertResult });
+                        }
+                    });
             }
 
-            // Note: We do not want to wait for the insert to the database
-            /* not await */ getSupabaseForServer()
-                .from('ImagePromptExecution')
-                .insert  (
-                    {
-                        clientId: this.options.clientId,
-                        ptpUrl: prompt.ptbkUrl /* <- TODO: [🧠] Change to ptbkUrl OR keep */,
-                        promptAt,
-                        promptContent: prompt.content,
-                        rawPrompt
-                        resultAt,
-                        resultUrl,
-                        resultCdnUrl,
-                        usedModel: promptResult.model,
-                        rawResponse: promptResult.rawResponse,
-
-                        // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
-                        // <- TODO: Maybe use here more precise performance measure
-                    } /* as any /* <- TODO: [🖍] It is working in runtime BUT for some strange reason it invokes typescript error */,
-                )
-                .then((insertResult) => {
-                    // TODO: !! Util isInsertSuccessfull
-
-                    if (this.options.isVerbose) {
-                        console.info('ChatThread', { insertResult });
-                    }
-                });
-
-            return promptResult;
+            return promptResults;
         } catch (error) {
-            console.error('SupabaseLoggerWrapperOfNaturalExecutionTools', { error });
+            console.error('SupabaseLoggerWrapperOfImageGenerator', { error });
             throw error;
         }
     }

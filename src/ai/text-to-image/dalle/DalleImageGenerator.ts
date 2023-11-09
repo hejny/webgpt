@@ -80,6 +80,7 @@ export class DalleImageGenerator implements ImageGenerator {
                 imageSrc,
                 originalPrompt: prompt,
                 normalizedPrompt,
+                rawResponse,
             },
         ];
     }

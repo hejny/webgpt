@@ -20,4 +20,9 @@ export interface ImagePromptResult {
      * The normalized/postprocessed prompt used to generate this result
      */
     readonly normalizedPrompt?: ImagePrompt;
+
+    /**
+     * Raw response from the model
+     */
+    readonly rawResponse: object;
 }
