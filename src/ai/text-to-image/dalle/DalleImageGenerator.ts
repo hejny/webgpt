@@ -1,4 +1,7 @@
 import OpenAI from 'openai';
+import { ImageGenerateParams } from 'openai/resources';
+import { Writable } from 'type-fest';
+import { Vector } from 'xyzt';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
@@ -22,24 +25,36 @@ export class DalleImageGenerator implements ImageGenerator {
     }
 
     public async generate(prompt: DallePrompt): Promise<Array<ImagePromptResult>> {
-        let size: string;
+        const originalPrompt = prompt;
+        const normalizedPrompt: Writable<DallePrompt> = { ...prompt };
 
-        if (prompt.dalleVersion === 2) {
-            size = '512x512';
-        } else if (prompt.dalleVersion === 3) {
-            size = '1792x1024';
-        } else {
-            throw new Error(`Unknown Dalle version ${prompt.dalleVersion}`);
+        if (normalizedPrompt.model === 'dalle-2') {
+            normalizedPrompt.model = 'dall-e-2';
+        } else if (normalizedPrompt.model === 'dalle-3') {
+            normalizedPrompt.model = 'dall-e-3';
         }
 
+        // TODO: Maybe check here Dalle version
+
+        if (!normalizedPrompt.size) {
+            if (normalizedPrompt.model === 'dall-e-2') {
+                normalizedPrompt.size = new Vector(512, 512);
+            } else if (normalizedPrompt.model === 'dall-e-3') {
+                normalizedPrompt.size = new Vector(1792, 1024);
+            } else {
+                throw new Error(`Unknown Dalle version ${normalizedPrompt.model}`);
+            }
+        }
+
+        normalizedPrompt.size = Vector.fromObject(normalizedPrompt.size || {});
+
         const rawRequest = {
-            prompt: prompt.content,
-            model: `dall-e-${prompt.dalleVersion}`,
-            size: size as any /* <- !!! Remove any */,
-            // quality: 'standard',
-            style: 'natural',
+            prompt: normalizedPrompt.content,
+            model: normalizedPrompt.model,
+            size: `${normalizedPrompt.size.x}x${normalizedPrompt.size.y}`,
             user: this.options.user,
-        } as const;
+            ...normalizedPrompt.modelSettings,
+        } as ImageGenerateParams;
 
         const rawResponse = await this.openai.images.generate(rawRequest);
 
@@ -55,20 +70,14 @@ export class DalleImageGenerator implements ImageGenerator {
             throw new Error(`The image src is empty`);
         }
 
-        let normalizedPrompt: DallePrompt | undefined = undefined;
-
         if (responseImage.revised_prompt) {
-            normalizedPrompt = {
-                content: responseImage.revised_prompt,
-                dalleVersion: prompt.dalleVersion,
-                style: prompt.style,
-            };
+            normalizedPrompt.content = responseImage.revised_prompt;
         }
 
         return [
             {
                 imageSrc,
-                originalPrompt: prompt,
+                originalPrompt,
                 normalizedPrompt,
                 rawResponse,
             },

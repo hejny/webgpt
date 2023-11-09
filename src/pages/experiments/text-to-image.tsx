@@ -1,7 +1,8 @@
 import { nameToUriParts } from 'n12';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { NEXT_PUBLIC_IMAGE_SERVER_URL, USE_DALLE_VERSION } from '../../../config';
 import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
+import { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { RemoteImageGenerator } from '../../ai/text-to-image/remote/RemoteImageGenerator';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
 import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
@@ -12,18 +13,20 @@ import type { string_image_prompt } from '../../utils/typeAliases';
 
 export default function TextToImagePage() {
     const [promptContent, setPromptContent] = useState<string_image_prompt | null>('space');
+    const prompt = useMemo<DallePrompt>(
+        () => ({
+            content: promptContent!,
+            model: `dalle-${USE_DALLE_VERSION}`,
+            modelSettings: {
+                style: 'vivid',
+            },
+        }),
+        [promptContent],
+    );
     const [isReady, setReady] = useState<boolean>(true);
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
     const runImageGenerator = useCallback(async () => {
         setReady(false);
-
-        const prompt = {
-            content: promptContent!,
-
-            // TODO: !!! Here should be model NOT version
-            dalleVersion: USE_DALLE_VERSION,
-            //style: 'natural' /* <- !!! Passthrough */,
-        }; /*satisfies DallePrompt*/
 
         // TODO: !!! provideXyxsfafForBrowser()
         const imageGenerator = new RemoteImageGenerator({
@@ -37,7 +40,7 @@ export default function TextToImagePage() {
 
         setReady(true);
         setResults(results);
-    }, [promptContent]);
+    }, [prompt]);
 
     return (
         <div>
@@ -58,8 +61,7 @@ export default function TextToImagePage() {
             {isReady ? null : <p>Generating...</p>}
             {results.length === 0 && isReady && <p>No images generated</p>}
             <ImagePromptResultsPicker
-                {...{ results }}
-                prompt={{ content: promptContent! }}
+                {...{ results, prompt }}
                 onPick={async (result) => {
                     const image = new File(
                         [await fetchImage(result.imageSrc)],
