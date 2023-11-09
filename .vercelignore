@@ -1,0 +1,14 @@
+.github
+.vscode
+assets
+database
+documents
+locales
+other
+promptbook-server
+promptimage-server
+scripts
+.whitesource
+batch-project-editor.js
+LICENSE
+README.md
