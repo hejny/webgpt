@@ -1,5 +1,4 @@
 import OpenAI from 'openai';
-import { OPENAI_API_KEY } from '../../../../config';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
@@ -18,13 +17,11 @@ export class DalleImageGenerator implements ImageGenerator {
         }
 
         this.openai = new OpenAI({
-            apiKey: OPENAI_API_KEY,
+            apiKey: options.openAiApiKey,
         });
     }
 
     public async generate(prompt: DallePrompt): Promise<Array<ImagePromptResult>> {
-        console.log('!!!', { prompt });
-
         let size: string;
 
         if (prompt.dalleVersion === 2) {
@@ -41,14 +38,10 @@ export class DalleImageGenerator implements ImageGenerator {
             size: size as any /* <- !!! Remove any */,
             // quality: 'standard',
             style: 'natural',
-            user: this.options.clientId,
+            user: this.options.user,
         } as const;
 
-        console.log('!!!', { rawRequest });
-
         const rawResponse = await this.openai.images.generate(rawRequest);
-
-        console.log('!!!', { rawResponse });
 
         if (rawResponse.data.length !== 1) {
             throw new Error(`Expected 1 image, got ${rawResponse.data.length}`);
@@ -71,9 +64,6 @@ export class DalleImageGenerator implements ImageGenerator {
                 style: prompt.style,
             };
         }
-
-        // TODO: !!! SupabaseLoggerWrapperOfImageGenerator
-        // TODO: !!!! Save image to supabase
 
         return [
             {

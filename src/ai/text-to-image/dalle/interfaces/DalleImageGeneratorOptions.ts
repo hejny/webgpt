@@ -1,14 +1,19 @@
-import { CommonExecutionToolsOptions } from '@promptbook/types';
-import { uuid } from '../../../../utils/typeAliases';
+import { CommonExecutionToolsOptions, string_token } from '@promptbook/types';
 
 /**
  * Options for Dalle image generator by OpenAI
  */
 export interface DalleImageGeneratorOptions extends CommonExecutionToolsOptions {
     /**
-     * Client responsible for the requests
+     * OpenAI API key
      */
-    clientId: uuid;
+    openAiApiKey: string_token;
+
+    /**
+     * A unique identifier representing your end-user, which can help OpenAI to monitor
+     * and detect abuse. [Learn more](/docs/guides/safety-best-practices/end-user-ids).
+     */
+    user?: string_token;
 }
 
 /**

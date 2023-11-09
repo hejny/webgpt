@@ -20,13 +20,12 @@ createRemoteServer({
     createNaturalExecutionTools(clientId) {
         return new SupabaseLoggerWrapperOfNaturalExecutionTools({
             isVerbose: false /* <- Note: [3] */,
+            clientId,
             naturalExecutionTools: new OpenAiExecutionTools({
                 isVerbose: IS_DEVELOPMENT /* <- Note: [3] */,
                 openAiApiKey: OPENAI_API_KEY!,
                 user: clientId,
             }),
-
-            clientId,
         });
     },
 });
