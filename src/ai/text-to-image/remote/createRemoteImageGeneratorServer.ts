@@ -14,7 +14,7 @@ import type { Imgs_Response } from './interfaces/Imgs_Response';
  * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
  */
 export function createRemoteImageGeneratorServer(options: CreateRemoteImageGeneratorServerOptions) {
-    const { port, createImageGenerator, isVerbose } = options;
+    const { port,path, createImageGenerator, isVerbose } = options;
 
     const httpServer = http.createServer({}, (request, response) => {
         if (request.url?.includes('socket.io')) {
@@ -34,7 +34,7 @@ export function createRemoteImageGeneratorServer(options: CreateRemoteImageGener
     });
 
     const server: Server = new Server(httpServer, {
-        path: '/ptp/socket.io',
+        path,
         transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
         cors: {
             origin: '*',

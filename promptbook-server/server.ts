@@ -12,7 +12,7 @@ import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../src/ai/prompt-t
 createRemoteServer({
     isVerbose: false /* <- Note: [3] We want server to be silent and OpenAiExecutionTools to be verbose */,
     port: 4445 /* <- TODO: Unhardcode (all ports) */,
-
+    path: '/promptbook/socket.io',
     ptbkLibrary: PromptTemplatePipelineLibrary.fromSources({
         /* <- TODO: [🎛] Use here real webgptPtpLibrary */
     }),

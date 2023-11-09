@@ -10,6 +10,7 @@ import { createRemoteImageGeneratorServer } from '../src/ai/text-to-image/remote
 createRemoteImageGeneratorServer({
     isVerbose: false /* <- Note: [3] We want server to be silent and OpenAiExecutionTools to be verbose */,
     port: 4446 /* <- TODO: Unhardcode (all ports) */,
+    path: '/promptimage/socket.io',
     createImageGenerator(clientId) {
         return new SupabaseLoggerWrapperOfImageGenerator({
             isVerbose: false /* <- Note: [3] */,
