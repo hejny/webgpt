@@ -12,7 +12,7 @@ import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { string_image_prompt } from '../../utils/typeAliases';
 
 export default function TextToImagePage() {
-    const [promptContent, setPromptContent] = useState<string_image_prompt | null>('space');
+    const [promptContent, setPromptContent] = useState<string_image_prompt | null>('Coffee in space');
     const prompt = useMemo<DallePrompt>(
         () => ({
             content: promptContent!,

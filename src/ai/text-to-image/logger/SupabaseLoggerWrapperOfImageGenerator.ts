@@ -54,16 +54,19 @@ export class SupabaseLoggerWrapperOfImageGenerator implements ImageGenerator {
                     .from('ImagePromptExecution')
                     .insert(
                         {
+                            // Prompt:
                             clientId: this.options.clientId,
-                            ptpUrl: null /* <- TODO: [🧠] Add here some identification */,
+                            ptbkUrl: null /* <- TODO: [🧠] Add here some identification */,
                             promptAt,
+                            prompt: prompt,
                             promptContent: prompt.content,
-                            rawPrompt: prompt,
+
+                            // Prompt Result:
                             resultAt,
-                            resultUrl: promptResult.imageSrc /* <- TODO: [🧠] resultUrl vs resultSrc */,
-                            resultCdnUrl:
-                                null /* <- TODO: [🧠] Maybe upload to own CDN (how long Dalle keeps the results) */,
-                            // !!! usedModel: promptResult.model,
+                            result: promptResult,
+                            resultSrc: promptResult.imageSrc /* <- TODO: [🧠] resultUrl vs resultSrc */,
+                            // resultCdnSrc:<- TODO: [🧠] Maybe upload to own CDN (how long Dalle keeps the results) */,
+                            usedModel: promptResult.normalizedPrompt.model,
                             rawResponse: promptResult.rawResponse,
 
                             // <- TODO: [💹] There should be link to wallpaper site which is the prompt for (to analyze cost per wallpaper)
