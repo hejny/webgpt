@@ -31,6 +31,7 @@ export default function TextToImagePage() {
         // TODO: !!! provideXyxsfafForBrowser()
         const imageGenerator = new RemoteImageGenerator({
             remoteUrl: NEXT_PUBLIC_IMAGE_SERVER_URL,
+            path: '/promptimage/socket.io',
             clientId: await provideClientId({
                 isVerifiedEmailRequired: true,
             }),
