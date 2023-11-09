@@ -33,7 +33,12 @@ export class PregeneratedPhotobank implements ImageGenerator {
         );
         const { images } = (await response.json()) as SearchPhotobankResult;
 
-        return images.map(({ src }) => ({ imageSrc: src, originalPrompt: prompt, rawResponse: {} }));
+        return images.map(({ src }) => ({
+            imageSrc: src,
+            originalPrompt: prompt,
+            normalizedPrompt: prompt,
+            rawResponse: {},
+        }));
     }
 }
 
