@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npx ts-node server.ts
+npx ts-node ./promptimage-server/server.ts

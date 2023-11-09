@@ -20,7 +20,7 @@ export class RemoteImageGenerator implements ImageGenerator {
     private makeConnection(): Promise<Socket> {
         return new Promise((resolve, reject) => {
             const socket = io(this.options.remoteUrl.href, {
-                path: '/ptp/socket.io',
+                path: '/promptimage/socket.io',
                 // path: `${this.remoteUrl.pathname}/socket.io`,
                 transports: [/*'websocket', <- TODO: [🌬] Make websocket transport work */ 'polling'],
             });

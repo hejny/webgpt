@@ -1,16 +1,16 @@
 module.exports = {
     apps: [
         {
-            name: 'ptbk-server',
+            name: 'promptbook',
             namespace: 'webgpt',
-            script: 'promptbook-server/server.bash',
+            script: './promptbook-server/server.bash',
             exec_mode: 'fork',
             interpreter: 'bash',
         },
         {
-            name: 'img-server',
+            name: 'promptimage',
             namespace: 'webgpt',
-            script: 'promptimage-server/server.bash',
+            script: './promptimage-server/server.bash',
             exec_mode: 'fork',
             interpreter: 'bash',
         },
