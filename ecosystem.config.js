@@ -7,8 +7,6 @@ module.exports = {
             exec_mode: 'fork',
             interpreter: 'bash',
         },
-    ],
-    apps: [
         {
             name: 'img-server',
             namespace: 'webgpt',
