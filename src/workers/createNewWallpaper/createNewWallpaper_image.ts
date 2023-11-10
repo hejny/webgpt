@@ -17,6 +17,7 @@ import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
 import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
+import { fetchImage } from '../../utils/scraping/fetchImage';
 import { string_image_prompt, string_url_image, uuid } from '../../utils/typeAliases';
 
 interface CreateNewWallpaperImageRequest {
@@ -113,7 +114,7 @@ export async function createNewWallpaper_image(
 
         // TODO: [🧠] Is there some way to save normalized prompt to the database along the wallpaper
         //     > wallpaperPrompt = imagePromptResult.normalizedPrompt.content;
-        wallpaperImage = await fetch(imagePromptResult.imageSrc).then((response) => response.blob());
+        wallpaperImage = await fetchImage(imagePromptResult.imageSrc);
 
         await onProgress({
             name: 'image-generate',
