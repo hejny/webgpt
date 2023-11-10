@@ -1,5 +1,6 @@
 import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePrompt } from '../0-interfaces/ImagePrompt';
 import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
@@ -37,7 +38,10 @@ export class RemoteImageGenerator implements ImageGenerator {
         });
     }
 
-    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
+    public async generate(
+        prompt: ImagePrompt,
+        onProgress: (taskProgress: WebgptTaskProgress) => void,
+    ): Promise<Array<ImagePromptResult>> {
         const socket = await this.makeConnection();
         socket.emit('request', { clientId: this.options.clientId, prompt } satisfies Imgs_Request);
 
@@ -51,6 +55,8 @@ export class RemoteImageGenerator implements ImageGenerator {
                 reject(new Error(error.errorMessage));
                 socket.disconnect();
             });
+
+            // TODO: !! Use onProgress
         });
 
         socket.disconnect();

@@ -1,4 +1,5 @@
 import { parseKeywordsFromString } from 'n12';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { SearchPhotobankResult } from '../../../pages/api/pregenerated-photobank/search';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import { ImagePrompt } from '../0-interfaces/ImagePrompt';
@@ -21,7 +22,10 @@ export class PregeneratedPhotobank implements ImageGenerator {
 
     private constructor() {}
 
-    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
+    public async generate(
+        prompt: ImagePrompt,
+        onProgress: (taskProgress: WebgptTaskProgress) => void,
+    ): Promise<Array<ImagePromptResult>> {
         const keywords = parseKeywordsFromString(prompt.content);
 
         // TODO:  Filter out void keywords
@@ -45,5 +49,5 @@ export class PregeneratedPhotobank implements ImageGenerator {
 /**
  * TODO:  Annotate
  * TODO:  Implement
- *
+ * TODO: !! Use taskProgress
  */

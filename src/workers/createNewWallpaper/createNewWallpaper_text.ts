@@ -7,6 +7,7 @@ import type { WriteWallpaperPromptResponse } from '../../pages/api/image-to-text
 import { randomItem } from '../../utils/randomItem';
 import {
     description,
+    string_image_prompt,
     string_markdown,
     string_name,
     string_translate_language,
@@ -107,6 +108,9 @@ export interface CreateNewWallpaperTextResult {
      * URL of the wallpaper
      */
     readonly contentWithFont: string_markdown;
+
+    // !!! Annotate
+    readonly wallpaperPrompt: string_image_prompt;
 }
 
 /**
@@ -179,7 +183,7 @@ export async function createNewWallpaper_text(
         /* <- TODO: [👧] Constrain key to only existing PTPs in the library */
     };
 
-    const { content } = await webgptPtpLibrary.createExecutor(
+    const { content, wallpaperPrompt } = await webgptPtpLibrary.createExecutor(
         writeWebsiteContentLocaleMap[locale],
         getExecutionTools(author),
     )(
@@ -219,5 +223,5 @@ export async function createNewWallpaper_text(
     //-------[ /Picking font ]---
     //===========================================================================
 
-    return { contentWithFont };
+    return { contentWithFont, wallpaperPrompt: '!!!' };
 }

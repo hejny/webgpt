@@ -2,9 +2,12 @@ import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
+    USE_DALLE_VERSION,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
+import { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
+import { getImageGenerator } from '../../ai/text-to-image/getImageGenerator';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/upload-image';
 import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
@@ -14,6 +17,7 @@ import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
 import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
+import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_image_prompt, string_url_image, uuid } from '../../utils/typeAliases';
 
 interface CreateNewWallpaperImageRequest {
@@ -36,17 +40,17 @@ interface CreateNewWallpaperImageResult {
     /**
      * URL of the wallpaper in our CDN
      */
-    wallpaperUrl: string_url_image;
+    readonly wallpaperUrl: string_url_image;
 
     /**
      * Original size of the wallpaper
      */
-    originalSize: Vector;
+    readonly originalSize: Vector;
 
     /**
      * Color statistics of the wallpaper
      */
-    colorStats: IImageColorStats<string>;
+    readonly colorStats: IImageColorStats<string>;
 }
 
 /**
@@ -58,7 +62,7 @@ export async function createNewWallpaper_image(
     request: CreateNewWallpaperImageRequest,
     onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperImageResult> {
-    const { /* TODO: Use here: author,*/ wallpaperImage, wallpaperPrompt } = request;
+    let { /* TODO: Use here: author,*/ wallpaperImage, wallpaperPrompt } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     if ((!wallpaperImage && !wallpaperPrompt) || (wallpaperImage && wallpaperPrompt)) {
@@ -76,22 +80,67 @@ export async function createNewWallpaper_image(
             isDone: false,
         });
 
-        // !!! Implement
+        const imageGenerator = getImageGenerator(
+            await provideClientId({
+                isVerifiedEmailRequired: true,
+            }),
+        );
+
+        if (wallpaperPrompt === undefined) {
+            throw new Error('wallpaperPrompt is undefined');
+            //               <- TODO: ShouldNeverHappenError
+        }
+
+        const imagePromptResults = await imageGenerator.generate(
+            {
+                content: wallpaperPrompt,
+                model: `dalle-${USE_DALLE_VERSION}`,
+                modelSettings: {
+                    style: 'vivid',
+                    // <- TODO: !!! To config
+                    // <- TODO: !!! Play with theeese to achieve best results
+                },
+            },
+            onProgress,
+        );
+
+        let imagePromptResult: ImagePromptResult;
+
+        if (imagePromptResults.length === 0) {
+            throw new Error('No images generated');
+        } else if (imagePromptResults.length > 1) {
+            console.warn('More than one image generated, using the first one');
+            // TODO: !!! Allow to pick the best one + generate more
+            imagePromptResult = imagePromptResults[0]!;
+        } else {
+            imagePromptResult = imagePromptResults[0]!;
+        }
+
+        // TODO: [🧠] Is there some way to save normalized prompt to the database along the wallpaper
+        //     > wallpaperPrompt = imagePromptResult.normalizedPrompt.content;
+        wallpaperImage = await fetch(imagePromptResult.imageSrc).then((response) => response.blob());
 
         await onProgress({
             name: 'image-generate',
             isDone: true,
         });
     }
+
     //-------[ / Image generate ]---
 
     //===========================================================================
     //-------[ Image analysis and check: ]---
+
     await onProgress({
         name: 'image-check',
         title: 'Checking image',
         isDone: false,
     });
+
+    if (!wallpaperImage) {
+        throw new Error('wallpaperImage is undefined');
+        //               <- TODO: ShouldNeverHappenError
+    }
 
     /*
     Note: This is not needed because it is already checked by the measureImageBlob etc... Implement only if we want nicer error message

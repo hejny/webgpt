@@ -1,4 +1,5 @@
 import spaceTrim from 'spacetrim';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServer';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
@@ -19,13 +20,16 @@ export class SupabaseLoggerWrapperOfImageGenerator implements ImageGenerator {
     /**
      * Generates image and log the result
      */
-    public async generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>> {
+    public async generate(
+        prompt: ImagePrompt,
+        onProgress: (taskProgress: WebgptTaskProgress) => void,
+    ): Promise<Array<ImagePromptResult>> {
         const mark = 'gpt-call';
         const promptAt = new Date();
         performance.mark(`${mark}-start`);
 
         try {
-            const promptResults = await this.options.imageGenerator.generate(prompt);
+            const promptResults = await this.options.imageGenerator.generate(prompt, onProgress);
 
             performance.mark(`${mark}-end`);
             const resultAt = new Date();

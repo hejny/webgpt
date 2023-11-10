@@ -1,11 +1,12 @@
 import { nameToUriParts } from 'n12';
 import { useCallback, useMemo, useState } from 'react';
-import { NEXT_PUBLIC_IMAGE_SERVER_URL, USE_DALLE_VERSION } from '../../../config';
+import { USE_DALLE_VERSION } from '../../../config';
 import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
-import { RemoteImageGenerator } from '../../ai/text-to-image/remote/RemoteImageGenerator';
+import { getImageGenerator } from '../../ai/text-to-image/getImageGenerator';
 import { Dialogues } from '../../components/Dialogues/Dialogues';
 import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -28,16 +29,13 @@ export default function TextToImagePage() {
     const runImageGenerator = useCallback(async () => {
         setReady(false);
 
-        // TODO: !!! provideXyxsfafForBrowser()
-        const imageGenerator = new RemoteImageGenerator({
-            remoteUrl: NEXT_PUBLIC_IMAGE_SERVER_URL,
-            path: '/promptimage/socket.io',
-            clientId: await provideClientId({
+        const imageGenerator = getImageGenerator(
+            await provideClientId({
                 isVerifiedEmailRequired: true,
             }),
-        });
+        );
 
-        const results = await imageGenerator.generate(prompt);
+        const results = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {});
 
         setReady(true);
         setResults(results);

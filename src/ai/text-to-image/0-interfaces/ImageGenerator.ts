@@ -1,3 +1,4 @@
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { ImagePrompt } from './ImagePrompt';
 import { ImagePromptResult } from './ImagePromptResult';
 
@@ -11,5 +12,8 @@ export interface ImageGenerator {
      * @param prompt to generate new image from
      * @returns generated image(s)
      */
-    generate(prompt: ImagePrompt): Promise<Array<ImagePromptResult>>;
+    generate(
+        prompt: ImagePrompt,
+        onProgress: (taskProgress: WebgptTaskProgress) => void,
+    ): Promise<Array<ImagePromptResult>>;
 }

@@ -2,6 +2,7 @@ import OpenAI from 'openai';
 import { ImageGenerateParams } from 'openai/resources';
 import { Writable } from 'type-fest';
 import { Vector } from 'xyzt';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
@@ -24,7 +25,10 @@ export class DalleImageGenerator implements ImageGenerator {
         });
     }
 
-    public async generate(prompt: DallePrompt): Promise<Array<ImagePromptResult>> {
+    public async generate(
+        prompt: DallePrompt,
+        onProgress: (taskProgress: WebgptTaskProgress) => void,
+    ): Promise<Array<ImagePromptResult>> {
         const originalPrompt = prompt;
         const normalizedPrompt: Writable<DallePrompt> = { ...prompt };
 
@@ -88,5 +92,5 @@ export class DalleImageGenerator implements ImageGenerator {
 /**
  * TODO: Annotate
  * TODO: Implement
- *
+ * TODO: !! Use taskProgress
  */
