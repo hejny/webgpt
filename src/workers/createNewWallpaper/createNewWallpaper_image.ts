@@ -31,7 +31,7 @@ interface CreateNewWallpaperImageRequest {
 
 interface CreateNewWallpaperImageResult {
     /**
-     * URL of the wallpaper
+     * URL of the wallpaper in our CDN
      */
     wallpaperUrl: string_url_image;
 

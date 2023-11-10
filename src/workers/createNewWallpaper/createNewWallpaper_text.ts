@@ -11,6 +11,7 @@ import {
     string_name,
     string_translate_language,
     string_url,
+    string_url_image,
     title,
     uuid,
 } from '../../utils/typeAliases';
@@ -50,6 +51,11 @@ export interface CreateNewWallpaperTextRequest {
      * - `assigment` which describes requirements for the page
      */
     readonly description: Exclude<description, JSX.Element> | null;
+
+    /**
+     * URL of the wallpaper in our CDN
+     */
+    readonly wallpaperUrl?: string_url_image;
 
     /**
      * Assigment of the wallpaper
@@ -126,12 +132,20 @@ export async function createNewWallpaper_text(
     request: CreateNewWallpaperTextRequest,
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<CreateNewWallpaperTextResult> {
-    const { locale, title, author, links, addSections } = request;
+    const { locale, title, author, wallpaperUrl /* TODO: Use> links, addSections */ } = request;
     let { description } = request;
 
-    //-------[ Write description: ]---
+    //-------[ Content analysis: ]---
 
-    if (!description) {
+    if (description && wallpaperUrl) {
+        throw new Error('Either description or wallpaperUrl must be provided, not both');
+    }
+
+    if (!description && !wallpaperUrl) {
+        throw new Error('Either description or wallpaperUrl must be provided');
+    }
+
+    if (!description && wallpaperUrl) {
         await onProgress({
             name: 'write-wallpaper-prompt',
             title: 'Content analysis',
@@ -163,7 +177,7 @@ export async function createNewWallpaper_text(
         });
     }
 
-    //-------[ /Write description ]---
+    //-------[ /Content analysis ]---
     //===========================================================================
     //-------[ Write content: ]---
     await onProgress({
@@ -186,7 +200,7 @@ export async function createNewWallpaper_text(
         {
             rawTitle:
                 title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
-            rawAssigment: description,
+            rawAssigment: description!,
 
             /*
         TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here
