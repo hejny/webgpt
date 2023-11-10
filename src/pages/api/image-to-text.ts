@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { imageToText } from '../../../ai/image-to-text/imageToText';
+import { imageToText } from '../../ai/image-to-text/imageToText';
 
-import { image_description, string_url } from '../../../utils/typeAliases';
-import { isValidUrl } from '../../../utils/validators/isValidUrl';
+import { image_description, string_url } from '../../utils/typeAliases';
+import { isValidUrl } from '../../utils/validators/isValidUrl';
 
 export interface WriteWallpaperPromptResponse {
     // TODO: [🌋] ErrorableResponse

@@ -3,7 +3,7 @@ import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
-import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
+import type { WriteWallpaperPromptResponse } from '../../pages/api/image-to-text';
 import { randomItem } from '../../utils/randomItem';
 import {
     description,
@@ -149,13 +149,13 @@ export async function createNewWallpaper_text(
 
     if (!description && wallpaperUrl) {
         await onProgress({
-            name: 'write-wallpaper-prompt',
+            name: 'image-to-text',
             title: 'Content analysis',
             isDone: false,
             // TODO: Make it more granular
         });
 
-        const response = await fetch('/api/custom/write-wallpaper-prompt', {
+        const response = await fetch('/api/image-to-text', {
             method: 'POST',
             body: JSON.stringify({ wallpaperUrl }),
             headers: {
@@ -174,7 +174,7 @@ export async function createNewWallpaper_text(
 
         console.info({ description });
         await onProgress({
-            name: 'write-wallpaper-prompt',
+            name: 'image-to-text',
             isDone: true,
         });
     }

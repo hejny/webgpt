@@ -6,7 +6,7 @@ import {
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
-import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
+import { UploadWallpaperResponse } from '../../pages/api/upload-image';
 import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
 import { downscaleWithAspectRatio } from '../../utils/aspect-ratio/downscaleWithAspectRatio';
 import { isInAspectRatioRange } from '../../utils/aspect-ratio/isInAspectRatioRange';
@@ -143,7 +143,7 @@ export async function createNewWallpaper_image(
     const formData = new FormData();
     formData.append('wallpaper', wallpaperForUpload);
 
-    const response = await fetch('/api/custom/upload-wallpaper-image', {
+    const response = await fetch('/api/upload-image', {
         method: 'POST',
         body: formData,
     });
