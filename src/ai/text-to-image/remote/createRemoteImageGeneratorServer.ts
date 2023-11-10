@@ -14,7 +14,7 @@ import type { Imgs_Response } from './interfaces/Imgs_Response';
  * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
  */
 export function createRemoteImageGeneratorServer(options: CreateRemoteImageGeneratorServerOptions) {
-    const { port,path, createImageGenerator, isVerbose } = options;
+    const { port, path, createImageGenerator, isVerbose } = options;
 
     const httpServer = http.createServer({}, (request, response) => {
         if (request.url?.includes('socket.io')) {
@@ -55,7 +55,9 @@ export function createRemoteImageGeneratorServer(options: CreateRemoteImageGener
 
             try {
                 const imageGenerator = createImageGenerator(clientId);
-                const promptResult = await imageGenerator.generate(prompt);
+                const promptResult = await imageGenerator.generate(prompt, () => {
+                    // TODO: !! Pass progress
+                });
 
                 if (isVerbose) {
                     console.info(chalk.bgGreen(`PromptResult:`), chalk.green(JSON.stringify(promptResult, null, 4)));
