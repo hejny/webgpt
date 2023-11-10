@@ -10,20 +10,20 @@ import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
 import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
 import { Center } from '../../components/SimpleLayout/Center';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { useLocale } from '../../utils/hooks/useLocale';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 
 export default function NewWallpaperFromIdeaPage() {
     const router = useRouter();
     const locale = useLocale();
     const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
+    const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
     const placeholders = useMemo(() => shuffleItems('Restaurace', 'Osobní web', 'Kavárna'), []);
@@ -73,7 +73,7 @@ export default function NewWallpaperFromIdeaPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                         },
-                                        (newTaskProgress: TaskProgress) => {
+                                        (newTaskProgress: WebgptTaskProgress) => {
                                             console.info('☑', newTaskProgress);
                                             setTasksProgress((tasksProgress) =>
                                                 joinTasksProgress(...tasksProgress, newTaskProgress),
