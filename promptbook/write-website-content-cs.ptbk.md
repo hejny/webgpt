@@ -9,6 +9,7 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
 -   Input param `{rawAssigment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
+-   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_, pouze pokud není zadán parametr `{rawAssigment}`
 
 ## 🖋 Překlad popisu
 

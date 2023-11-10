@@ -1,5 +1,7 @@
 # 🌍 Create website content
 
+<!-- !!! Update according to cs version -->
+
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/en/write-website-content.ptbk.md@v0.1.0

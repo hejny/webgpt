@@ -123,7 +123,7 @@ export async function createNewWallpaper(
         {
             locale,
             title,
-            description,
+            idea,
             author,
             links,
             addSections,
@@ -144,7 +144,7 @@ export async function createNewWallpaper(
         author,
         isPublic: false,
         src: wallpaperUrl,
-        prompt: description,
+        prompt: wallpaperPrompt,
         colorStats,
         naturalSize:
             originalSize /* <- TODO: [🧠] Make naming more clear, what means `naturalSize` and what `originalSize`? */,
