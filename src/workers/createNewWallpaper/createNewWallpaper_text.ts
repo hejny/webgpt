@@ -139,10 +139,12 @@ export async function createNewWallpaper_text(
 
     if (description && wallpaperUrl) {
         throw new Error('Either description or wallpaperUrl must be provided, not both');
+        //               <- TODO: [0] Maybe constrain this logic into CreateNewWallpaperTextRequest
     }
 
     if (!description && !wallpaperUrl) {
         throw new Error('Either description or wallpaperUrl must be provided');
+        //               <- TODO: [0] Maybe constrain this logic into CreateNewWallpaperTextRequest
     }
 
     if (!description && wallpaperUrl) {
