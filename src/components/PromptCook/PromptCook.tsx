@@ -7,7 +7,7 @@ import spaceTrim from 'spacetrim';
 import enhanceTextCs from '../../../promptbook/other/enhance-text-cs.ptbk.md';
 import promptcookSample from '../../../promptbook/other/promptcook-sample.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
-import type { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
+import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
 import { useJsonStateInLocalstorage } from '../../utils/hooks/useJsonStateInLocalstorage';
