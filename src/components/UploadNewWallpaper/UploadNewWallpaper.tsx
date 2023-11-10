@@ -61,10 +61,6 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                 }),
                                 wallpaperImage: file,
-                                title: null,
-                                description: null,
-                                addSections: [],
-                                links: [],
                             },
                             (newTaskProgress: TaskProgress) => {
                                 console.info('☑', newTaskProgress);

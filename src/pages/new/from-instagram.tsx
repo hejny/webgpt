@@ -135,8 +135,14 @@ export default function NewWallpaperFromInstagramPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-
-                                            description /* <- TODO: ALter with biography_with_entities */,
+                                            idea: {
+                                                en: spaceTrim(
+                                                    (block) => `
+                                                        ${title}
+                                                        ${block(description)}
+                                                    `,
+                                                ),
+                                            }[/*locale*/ 'en'],
                                             addSections: [
                                                 // TODO: Instagram AI component gallery
                                                 // TODO: Add map from business_address_json

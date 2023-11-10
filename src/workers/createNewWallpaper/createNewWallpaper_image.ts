@@ -26,7 +26,7 @@ interface CreateNewWallpaperImageRequest {
     /**
      * Image of the wallpaper
      */
-    readonly wallpaperImage: Blob;
+    readonly wallpaperImage?: Blob;
 }
 
 interface CreateNewWallpaperImageResult {
