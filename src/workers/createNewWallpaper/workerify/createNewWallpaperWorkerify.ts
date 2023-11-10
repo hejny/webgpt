@@ -1,5 +1,5 @@
-import { Workerify } from '../0-Workerify/Workerify';
-import { ICreateNewWallpaperRequest, ICreateNewWallpaperResult } from './createNewWallpaper';
+import { Workerify } from '../../0-Workerify/Workerify';
+import { ICreateNewWallpaperRequest, ICreateNewWallpaperResult } from '../createNewWallpaper';
 
 /**
  * @private Use only withing the folder createNewWallpaper

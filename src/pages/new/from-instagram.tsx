@@ -21,7 +21,7 @@ import { fetchImage } from '../../utils/scraping/fetchImage';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_business_category_name } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
 
 export default function NewWallpaperFromInstagramPage() {

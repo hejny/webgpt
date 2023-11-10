@@ -1,4 +1,4 @@
-import { createNewWallpaper } from './createNewWallpaper';
+import { createNewWallpaper } from '../createNewWallpaper';
 import { createNewWallpaperWorkerify } from './createNewWallpaperWorkerify';
 
 /**
