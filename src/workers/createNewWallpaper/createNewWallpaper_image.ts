@@ -143,16 +143,16 @@ export async function createNewWallpaper_image(
     const formData = new FormData();
     formData.append('wallpaper', wallpaperForUpload);
 
-    const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
+    const response = await fetch('/api/custom/upload-wallpaper-image', {
         method: 'POST',
         body: formData,
     });
 
-    if (response1.ok === false) {
-        throw new Error(`Upload wallpaper failed with status ${response1.status}`);
+    if (response.ok === false) {
+        throw new Error(`Upload wallpaper failed with status ${response.status}`);
     }
 
-    const { wallpaperUrl } = (await response1.json()) as UploadWallpaperResponse;
+    const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
     await onProgress({
         name: 'upload-wallpaper-image',
         isDone: true,

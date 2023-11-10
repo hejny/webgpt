@@ -155,7 +155,7 @@ export async function createNewWallpaper_text(
             // TODO: Make it more granular
         });
 
-        const response2 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-prompt', {
+        const response = await fetch('/api/custom/write-wallpaper-prompt', {
             method: 'POST',
             body: JSON.stringify({ wallpaperUrl }),
             headers: {
@@ -164,12 +164,12 @@ export async function createNewWallpaper_text(
             },
         });
 
-        if (response2.ok === false) {
+        if (response.ok === false) {
             // TODO: [🈵] If 4XX error, show also the message from json body
-            throw new Error(`Content analysis failed with status ${response2.status}`);
+            throw new Error(`Content analysis failed with status ${response.status}`);
         }
 
-        const { wallpaperDescription } = (await response2.json()) as WriteWallpaperPromptResponse;
+        const { wallpaperDescription } = (await response.json()) as WriteWallpaperPromptResponse;
         description = wallpaperDescription;
 
         console.info({ description });
