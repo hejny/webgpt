@@ -176,17 +176,13 @@ export function PromptCook() {
                         //          Then ACRY use <CodeEditor/> not <MonacoEditor/>
                         key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
-                       
                         defaultValue={currentFile.inputParams.inputText}
                         onChange={(newContent) => {
-                         
                             // TODO: DRY [0]
                             currentFile.inputParams.inputText = newContent;
                             setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
                         }}
                     />
-
-                   
                 </div>
 
                 <div className={styles.controls}>
