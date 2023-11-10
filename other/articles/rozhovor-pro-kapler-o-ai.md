@@ -35,7 +35,7 @@ Pro některé případy určitě je. Ale opět přichází na řadu stejná otá
 
 Generativní AI nepřináší žádnou zásadní novou věc z hlediska kvality, revoluční je v tom, že pro průměrné úkoly dokáže jejich provedení řádově zlevnit a zrychlit.
 
-<!-- !!! Make all WebGPT active links with utm source-->
+<!-- !! Make all WebGPT active links with utm source-->
 
 Jinak svým způsobem je WebGPT také redakčním systémem, akorát jeho administrace je přirozený text.
 
@@ -46,13 +46,12 @@ Velkou výzvou je _„zkrocení“_ GPT k tomu, aby dělalo přesně to, co pot�
 -   Pokud mám jednoduché zadání / prompt _„Jaký zvuk dělá kočička“_, tak dostanu odpověď _„Mňau“_ nebo _„"Mňau"“_ _(v uvozovkách)_ případně _„Kočička dělá Mňau“_ nebo něco podobného.
 -   Pokud mám komplexní prompt _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_, tak se mi výrazně zvyšuje komplexita odpovědi a často nedostanu to, co chci.
 
-Jakmile je potřeba něco složitějšího, máme čtyři v principu 6 směrů kterými dokážeme zlepšovat výsledek, ty se dají docela dobře kombinovat mezi sebou:
+Jakmile je potřeba něco složitějšího a zároveň potřebujeme pracovat s **vlastními daty**, máme v principu několik směrů, kterými dokážeme výsledek zlepšovat:
 
--   **Model picking** vybrat správný model pro mou potřebu. Obvykle je nejlepší začínat na `GPT-4 32k` a poté optimalizovat směrem dolů.
--   **Param finding** ladit parametry jako `temperature ` nebo `top_t`
 -   **Fine tunning** dotrénovat správný model na konkrétní úkol. Pokud mám tisíce příkladů vstupů a výstupů, tak to funguje dobře. Na rychlé prototypování je to ale pomalé a náročné.
 -   **Prompt writing**, kdy se snažím vymyslet a vyladit jeden prompt, který bude dělat přesně to, co chci. To funguje dobře pro jednodušší úkoly, ale pro složitější úkoly to často selhává na detailech. Například pokud chci vygenerovat obsah webu, pro superjednoduché webové stránky to funguje. Jakmile se ale dostanu do složitějších věcí, tak to opakuje stejný obsah, nebo se zacyklí na nějakém detailu, nedodrží formátování, nedokáže dodržet předepsanou strukturu, pomíchá jednotlivé sekce, atd... Obecně platí, že jakýkoliv model má jen omezenou _„kapacitu“_ a pokud požaduji komplexnější úkol, dostávám chabé výsledky.
 -   **Multishot**: často je lepší rozdělit úkol na několik zcela oddělených úkolů. Například místo _"Napiš mi komplení obsah webu v markdownu pro kavárnu {name}"_ rozdělit na _„Napiš mi název kavárny“_, _„Napiš mi popis kavárny“_, _„Napiš mi menu kavárny“_, _„Vygeneruj mi fotky kavárny“_, _„Napiš mi odkaz na sociální sítě kavárny“_, atd... Každý z těchto úkolů je mnohem jednodušší a model je schopen je zvládnout. Zároveň můžeme nechat model podmínečně instruovat sama sebe. Například pokud se nám vygenerovaný název zdá dlouhý, můžeme ho požádat o zkrácení. Obecně se takovému přístupu říká **AutoGPT**.
+-   **Function calling**: mnoho z modelů od OpenAI umožnuje definovat sadu vlastních funkcí, které zavolá místo toho, aby si odpověd vyhalucinovala. Např. funkce na zjištění počasí, prohledání interního systému nebo dotaz na uživatele. To je také kouzlo za nové představenými [GPTs](https://openai.com/blog/introducing-gpts)
 -   **Multiapproach**: zároveň některé z úkolů mnohem lépe zvládne klasický kód oproti LLM modelu. Například převod markdown na html. To by se sice dalo provést i pomocí GPT, avšak je to zcela zbytečné a neefektivní. Úkoly se zcela deterministickým výsledkem se mají dělat pomocí klasického `if/else` programování. A pak máme situce, kdy se je uprostřed generovaní potřeba uživatele doptat a nevymýšlet si například _"Je název pro tvou kavárnu 'Kavárny Pod Kaštanem' dobrý?"_ nebo _„Programuješ i v TypeScriptu nebo mám napsat jen JavaScript“_. Také je občas potřeba určité informace dohledat a ne si je _„vyhalucinovat“_. V ChatGPT takovou věc mají na starosti pluginy. V ChatBingu je integrovaný vyhledávač Bing, já ve WebGPT kombinuju možnosti od OpenAI a mám vytvořenou [vlastní lehkou nadstavbu - **📖 PromptBook**](https://github.com/webgptorg/promptbook) aby šli podobné postupy psát i neprogramátorem v dokumentech.
 
 **A jaký je rozdíl mezi tvou knihovnou a desítkami jiných knihoven pro AutoGPT?**
@@ -85,7 +84,7 @@ Také si je dobré uvědomit, že ChatGPT nebyl ani tolik technologický průlom
 
 Dobrého půl roku před ChatGPT jsme měli my programátoři k dispozici GitHub Co-pilot a ještě celý rok předtím to byl Tomáš Studeník, který jako první člověk v Česku ukázal, že umělá inteligence dokáže napsat smysluplný lidský text v podobě divadelní hry. To bylo postavené nad GPT-2 a GPT-2 byl ten opravdový technologický průlom, v tu dobu ještě nezaznamenaný širokou veřejností.
 
-!!! Ainautes někde
+!! Ainautes někde
 
 **Když jsme u té divadelní hry, jakým způsobem ovlivní generativní AI jazyk a kulturu?**
 
@@ -116,8 +115,8 @@ Zároveň bude velmi pravděpodobné, že v těchto světech bude možné existo
 
 V jedné z pozdějších verzí byl koncept nekonečného automatický generovaného světa + hráč mohl libovolně kombinovat budovy – například postavit dva domy na hradbu nebo pět domů na sebe z čehož vznikl něco jako mrakodrap. Vše bylo procedurálně generované, takže a šlo o takový proto-koncept vektorového prostoru všech možných budov.
 
-<!-- !!! Link to H-Edu -->
-<!-- !!! Link to Collboard -->
+<!-- !! Link to H-Edu -->
+<!-- !! Link to Collboard -->
 
 **Další z projektů (díky kterému se známe) je virtuální tabule Collboard. Řekni něco víc!**
 
@@ -153,4 +152,4 @@ Je důležité nepřeskakovat laťku ze země, ale použít ji jako stupínek.
 
 **Díky moc za rozhovor! Ještě se tě zeptám, můžou se s tebou čtenáři potkat někde na probíhajících Dnech AI?**
 
-Mluvíme teď na mnoha konferencích, Na Dnech AI máme v úterý s Tomášem z Ai*nautes přednášku o business příležitostech v AI světě a v pátek mluvím o tom, jak mohou využít generativní AI děti. Zároveň teď v průběhu podzimu probíhá mnoho dalších akcí.
+Mluvíme teď na mnoha konferencích, Na Dnech AI máme v úterý s Tomášem z Ai\*nautes přednášku o business příležitostech v AI světě a v pátek mluvím o tom, jak mohou využít generativní AI děti. Zároveň teď v průběhu podzimu probíhá mnoho dalších akcí.

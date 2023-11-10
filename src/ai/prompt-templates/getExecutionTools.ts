@@ -37,6 +37,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
             natural: new RemoteNaturalExecutionTools({
                 isVerbose,
                 remoteUrl: NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
+                path: '/promptbook/socket.io',
                 clientId,
             }),
             script: [

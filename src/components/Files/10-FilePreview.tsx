@@ -30,6 +30,10 @@ export function FilePreview(props: FilePreviewProps) {
                 options={{
                     wordWrap: 'on',
                     readOnly: true,
+                    readOnlyMessage: {
+                        value: 'Exported file can be edited only after the deployment.',
+                        isTrusted: true,
+                    },
                 }}
                 key={file.pathname}
                 defaultValue={file.content}
