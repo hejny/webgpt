@@ -132,6 +132,7 @@ export async function createNewWallpaper_text(
             title: 'Content analysis',
             isStarted: true,
             isDone: false,
+            executionType: 'SCRIPT' /* <- [🧠][🦕] This should have its own executionType */,
             parameterName: 'wallpaperDescription',
             parameterValue: null,
             // TODO: Make it more granular
@@ -160,6 +161,7 @@ export async function createNewWallpaper_text(
             title: 'Content analysis',
             isStarted: true,
             isDone: true,
+            executionType: 'SCRIPT' /* <- [🧠][🦕] This should have its own executionType */,
             parameterName: 'wallpaperDescription',
             parameterValue: wallpaperDescription,
         });
@@ -173,6 +175,7 @@ export async function createNewWallpaper_text(
         title: 'Copywriting',
         isStarted: true,
         isDone: true,
+        executionType: 'SCRIPT' /* <- [🧠][🦕] This should have its own executionType */,
         parameterName: 'content',
         parameterValue: null,
     });
@@ -207,6 +210,7 @@ export async function createNewWallpaper_text(
         title: 'Copywriting',
         isStarted: true,
         isDone: true,
+        executionType: 'SCRIPT' /* <- [🧠][🦕] This should have its own executionType */,
         parameterName: 'content',
         parameterValue: content!,
     });
