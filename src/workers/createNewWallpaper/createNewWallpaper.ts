@@ -1,25 +1,6 @@
-import spaceTrim from 'spacetrim';
-import {
-    COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
-    FONTS,
-    WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
-    WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
-} from '../../../config';
-import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
-import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
-import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
 import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
-import { UploadWallpaperResponse } from '../../pages/api/custom/upload-wallpaper-image';
-import type { WriteWallpaperPromptResponse } from '../../pages/api/custom/write-wallpaper-prompt';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
-import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
-import { downscaleWithAspectRatio } from '../../utils/aspect-ratio/downscaleWithAspectRatio';
-import { isInAspectRatioRange } from '../../utils/aspect-ratio/isInAspectRatioRange';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { createImageInWorker } from '../../utils/image/createImageInWorker';
-import { measureImageBlob } from '../../utils/image/measureImageBlob';
-import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
-import { randomItem } from '../../utils/randomItem';
 import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
 import {
     description,
@@ -31,8 +12,10 @@ import {
     title,
     uuid,
 } from '../../utils/typeAliases';
+import { createNewWallpaper_image } from './createNewWallpaper_image';
+import { createNewWallpaper_text } from './createNewWallpaper_text';
 
-export interface ICreateNewWallpaperRequest {
+export interface CreateNewWallpaperRequest {
     /**
      * The language
      * - It is used to select the right prompt template pipeline
@@ -132,7 +115,7 @@ export interface ICreateNewWallpaperRequest {
     }>;
 }
 
-export interface ICreateNewWallpaperResult {
+export interface CreateNewWallpaperResult {
     readonly wallpaperId: string_wallpaper_id;
 }
 
@@ -143,199 +126,27 @@ export interface ICreateNewWallpaperResult {
  * @private Use only withing the folder createNewWallpaper
  */
 export async function createNewWallpaper(
-    request: ICreateNewWallpaperRequest,
+    request: CreateNewWallpaperRequest,
     onProgress: (taskProgress: TaskProgress) => void,
-): Promise<ICreateNewWallpaperResult> {
-    const { locale, title, author, wallpaperImage: wallpaper, links, addSections } = request;
-    let { description } = request;
-    const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
+): Promise<CreateNewWallpaperResult> {
+    const { locale, title, description, author, wallpaperImage, links, addSections } = request;
 
-    //===========================================================================
-    //-------[ Image analysis and check: ]---
-    await onProgress({
-        name: 'image-check',
-        title: 'Checking image',
-        isDone: false,
-    });
-
-    /*
-    Note: This is not needed because it is already checked by the measureImageBlob etc... Implement only if we want nicer error message
-    if (!wallpaper.type.startsWith('image/')) {
-        // TODO: [🈵] If 4XX error, show also the message from json body
-        throw new Error(`File is not an image`);
-    }
-    */
-
-    const originalSize = await measureImageBlob(wallpaper);
-    let naturalSize = originalSize.clone();
-
-    // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
-
-    if (!isInAspectRatioRange(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, originalSize)) {
-        throw new Error(
-            spaceTrim(
-                (block) => `
-                    Image has aspect ratio that is not allowed:
-
-                    ${block(aspectRatioRangeExplain(WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE, originalSize))}
-                `,
-            ),
-        );
-    }
-
-    if (originalSize.x > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.x || originalSize.y > WALLPAPER_IMAGE_MAX_ALLOWED_SIZE.y) {
-        naturalSize = downscaleWithAspectRatio(originalSize, WALLPAPER_IMAGE_MAX_ALLOWED_SIZE);
-    }
-
-    await onProgress({
-        name: 'image-check',
-        isDone: true,
-    });
-
-    //-------[ / Image analysis and check ]---
-    //===========================================================================
-    //-------[ Image resize: ]---
-    await onProgress({
-        name: 'image-resize',
-        title: 'Resizing image',
-        isDone: false,
-    });
-
-    const wallpaperForUpload = await resizeImageBlob(wallpaper, naturalSize);
-    const wallpaperForColorAnalysis = await resizeImageBlob(
-        wallpaper,
-        downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
+    const { wallpaperUrl, originalSize, colorStats } = await createNewWallpaper_image(
+        { author, wallpaperImage },
+        onProgress,
     );
-
-    await onProgress({
-        name: 'image-resize',
-        isDone: true,
-    });
-    //-------[ / Image resize ]---
-    //===========================================================================
-    //-------[ Color analysis: ]---
-
-    const colorStatsPromise = /* not await */ createImageInWorker(wallpaperForColorAnalysis).then(
-        (imageForColorAnalysis) =>
-            computeColorstats(
-                imageForColorAnalysis,
-                onProgress /* <- Note: computeColorstats will show its own tasks */,
-            ),
-    );
-    //-------[ / Color analysis ]---
-    //===========================================================================
-    //-------[ Upload image: ]---
-    await onProgress({
-        name: 'upload-wallpaper-image',
-        title: 'Uploading image',
-        isDone: false,
-        // TODO: Make it more granular
-    });
-    const formData = new FormData();
-    formData.append('wallpaper', wallpaperForUpload);
-
-    const response1 /* <-[💩] */ = await fetch('/api/custom/upload-wallpaper-image', {
-        method: 'POST',
-        body: formData,
-    });
-
-    if (response1.ok === false) {
-        throw new Error(`Upload wallpaper failed with status ${response1.status}`);
-    }
-
-    const { wallpaperUrl } = (await response1.json()) as UploadWallpaperResponse;
-    await onProgress({
-        name: 'upload-wallpaper-image',
-        isDone: true,
-    });
-    console.info({ wallpaperUrl });
-    //-------[ /Upload image ]---
-    //===========================================================================
-
-    //-------[ Write description: ]---
-
-    if (!description) {
-        await onProgress({
-            name: 'write-wallpaper-prompt',
-            title: 'Content analysis',
-            isDone: false,
-            // TODO: Make it more granular
-        });
-
-        const response2 /* <-[💩] */ = await fetch('/api/custom/write-wallpaper-prompt', {
-            method: 'POST',
-            body: JSON.stringify({ wallpaperUrl }),
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-        });
-
-        if (response2.ok === false) {
-            // TODO: [🈵] If 4XX error, show also the message from json body
-            throw new Error(`Content analysis failed with status ${response2.status}`);
-        }
-
-        const { wallpaperDescription } = (await response2.json()) as WriteWallpaperPromptResponse;
-        description = wallpaperDescription;
-
-        console.info({ description });
-        await onProgress({
-            name: 'write-wallpaper-prompt',
-            isDone: true,
-        });
-    }
-
-    //-------[ /Write description ]---
-    //===========================================================================
-    //-------[ Write content: ]---
-    await onProgress({
-        name: 'write-website-content',
-        title: 'Copywriting',
-        isDone: false,
-        // TODO: Make it more granular
-    });
-
-    const writeWebsiteContentLocaleMap = {
-        en: 'writeWebsiteContent',
-        cs: 'writeWebsiteContentCs',
-        /* <- TODO: [👧] Constrain key to only existing PTPs in the library */
-    };
-
-    const { content } = await webgptPtpLibrary.createExecutor(
-        writeWebsiteContentLocaleMap[locale],
-        getExecutionTools(author),
-    )(
+    const { contentWithFont } = await createNewWallpaper_text(
         {
-            rawTitle:
-                title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
-            rawAssigment: description,
-
-            /*
-            TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here
+            locale,
+            title,
+            description,
+            author,
             links,
             addSections,
-            */
         },
         onProgress,
     );
 
-    await onProgress({
-        name: 'write-website-content',
-        isDone: true,
-    });
-
-    //-------[ /Write content ]---
-    //===========================================================================
-    //-------[ Picking font: ]---
-    const font = randomItem(...FONTS /* <- TODO: [🧠][🔠] Some better heurictic than pure random */);
-
-    const contentWithFont = addFontToContent(
-        content || '', // <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
-        font,
-    );
-
-    //-------[ /Picking font ]---
     //===========================================================================
     //-------[ Save: ]---
     await onProgress({
@@ -350,8 +161,9 @@ export async function createNewWallpaper(
         isPublic: false,
         src: wallpaperUrl,
         prompt: description,
-        colorStats: await colorStatsPromise,
-        naturalSize: originalSize,
+        colorStats,
+        naturalSize:
+            originalSize /* <- TODO: [🧠] Make naming more clear, what means `naturalSize` and what `originalSize`? */,
         content: contentWithFont,
         saveStage: 'SAVING',
     });
