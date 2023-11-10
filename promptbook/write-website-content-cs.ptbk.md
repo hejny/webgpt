@@ -6,7 +6,8 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   PTBK version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
--   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
+-   Input param `{idea}` Obecná idea webu _v Češtině_
+-   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text <!-- <- !!! This should be EXACLY -->
 -   Input param `{rawAssigment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
 -   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_, pouze pokud není zadán parametr `{rawAssigment}`
@@ -15,6 +16,7 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 
 -   Use completion
 -   Postprocessing `trim`
+<!-- !!! Skip if -->
 
 ```text
 
@@ -33,11 +35,11 @@ English assignment:
 -   Postprocessing `unwrapResult`
 
 ```markdown
-Navrhni možný účel webových stránek z čistého popisu co se nachází na obrázku
+Navrhni účel webových stránek
 
 ## Pravidla
 
--   Piš jediný návrh, neříkej "může to být toto nebo toto"
+-   Piš jediný návrh, neříkej více možností
 -   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
 -   Návrh je v češtině
 -   Návrh je stručný, maximálně 3 slova
@@ -50,9 +52,10 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 -   "Svatba"
 -   "Osobní stránka fotografa"
 
-## Text na obrázku
+## Podklady
 
-> {rawAssigmentCs}
+-   {idea}
+-   {rawAssigmentCs}
 
 ## Účel webu
 
@@ -88,9 +91,10 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 -   Zadání obsahuje konkrétní čísla, odrážky a je přesné
 -   Stručně, maximálně 4 body zadání, každý bod je maximálně 2 věty
 
-## Text na obrázku
+## Podklady
 
-{rawAssigmentCs}
+-   {idea}
+-   {rawAssigmentCs}
 
 ## Zadání webu v Češtině
 ```
@@ -108,6 +112,53 @@ Popište cíl vašeho webu
 ```
 
 `-> {assigment}` Zadání webu
+
+## 🖋 Návrh obrázku
+
+-   Use completion
+-   Postprocessing `trim`
+<!-- !!!Skip if ...not needed... -->
+<!-- !!!Maybe more samples... -->
+
+```markdown
+# Kavárna
+
+## Zadání webu
+
+Vytvoř web kavárny v Praze, která se jmenuje "Vesmírná Kavárna" a celá se točí kolem tématiky vesmíru.
+
+## Úvodní obrázek
+
+Velký hrnek plný kávy s mléčnou pěnou, na které je vyobrazená galaxie. Hrnek je na stole, na kterém je kniha o vesmíru a kávové zrno.
+
+# {purpose}
+
+## Zadání webu
+
+{assigment}
+
+## Úvodní obrázek
+```
+
+`-> {wallpaperPromptCs}`
+
+## 🖋 Prompt k obrázku
+
+-   Use completion
+-   Postprocessing `trim`
+<!-- !!!Skip if ...not needed... -->
+
+```text
+
+Popis obrázku v Češtině:
+> {wallpaperPromptCs}
+
+
+Image description in English:
+>
+```
+
+`-> {wallpaperPrompt}`
 
 ## 🖋 Vylepšení názvu
 
@@ -137,6 +188,8 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 
 ## Vylepšený název
 ```
+
+````
 
 `-> {draftedTitle}` Vylepšený název
 
@@ -288,3 +341,4 @@ Zadání webu od zákazníka:
 ```
 
 `-> {content}`
+````

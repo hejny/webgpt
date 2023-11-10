@@ -191,12 +191,13 @@ export async function createNewWallpaper_text(
             rawTitle:
                 title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
             rawAssigment: description!,
+            idea: idea || '',
 
             /*
-        TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here
-        links,
-        addSections,
-        */
+            TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here
+            links,
+            addSections,
+            */
         },
         onProgress,
     );
