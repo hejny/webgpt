@@ -1,14 +1,14 @@
 import { string_name, title } from '../../../utils/typeAliases';
 
-export type TaskProgress = PendingTaskProgress | DoneTaskProgress;
+export type WebgptTaskProgress = PendingWebgptTaskProgress | DoneWebgptTaskProgress;
 
-export interface PendingTaskProgress {
+export interface PendingWebgptTaskProgress {
     readonly name: string_name;
     readonly title: title;
     readonly isDone: false;
 }
 
-export interface DoneTaskProgress {
+export interface DoneWebgptTaskProgress {
     readonly name: string_name;
     readonly title?: title;
     readonly isDone: true;

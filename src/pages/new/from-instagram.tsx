@@ -10,7 +10,7 @@ import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
 import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
 import { Center } from '../../components/SimpleLayout/Center';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
@@ -28,7 +28,7 @@ export default function NewWallpaperFromInstagramPage() {
     const router = useRouter();
     const locale = useLocale();
     const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
+    const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
     const placeholders = useMemo(() => shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
@@ -163,7 +163,7 @@ export default function NewWallpaperFromInstagramPage() {
 
                                             // TODO: Maybe pass posts texts to give a flavour of the account and its style
                                         },
-                                        (newTaskProgress: TaskProgress) => {
+                                        (newTaskProgress: WebgptTaskProgress) => {
                                             console.info('☑', newTaskProgress);
                                             setTasksProgress((tasksProgress) =>
                                                 joinTasksProgress(...tasksProgress, newTaskProgress),

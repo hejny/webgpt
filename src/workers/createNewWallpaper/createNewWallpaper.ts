@@ -1,19 +1,23 @@
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { Vector } from 'xyzt';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
+import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
 import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
 import {
     description,
+    string_image_prompt,
     string_markdown,
     string_name,
     string_translate_language,
     string_url,
+    string_url_image,
     string_wallpaper_id,
     title,
     uuid,
 } from '../../utils/typeAliases';
-import { createNewWallpaper_image } from './createNewWallpaper_image';
-import { createNewWallpaper_text } from './createNewWallpaper_text';
+import { createNewWallpaper_prepareFromIdea } from './createNewWallpaper_prepareFromIdea';
+import { createNewWallpaper_prepareFromImage } from './createNewWallpaper_prepareFromImage';
 
 export interface CreateNewWallpaperRequest {
     /**
@@ -99,6 +103,16 @@ export interface CreateNewWallpaperRequest {
     }>;
 }
 
+export interface CreateNewWallpaperPrepareResult {
+    // !!! Annotate + readonly
+
+    wallpaperUrl: string_url_image;
+    colorStats: IImageColorStats<string>;
+    originalSize: Vector;
+    contentWithFont: string_markdown;
+    wallpaperPrompt: string_image_prompt;
+}
+
 export interface CreateNewWallpaperResult {
     readonly wallpaperId: string_wallpaper_id;
 }
@@ -111,28 +125,14 @@ export interface CreateNewWallpaperResult {
  */
 export async function createNewWallpaper(
     request: CreateNewWallpaperRequest,
-    onProgress: (taskProgress: TaskProgress) => void,
+    onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperResult> {
-    const { locale, title, idea, author, wallpaperImage, links, addSections } = request;
+    const { author, wallpaperImage } = request;
 
-    const { wallpaperUrl, originalSize, colorStats } = await createNewWallpaper_image(
-        { author, wallpaperImage },
-        onProgress,
-    );
-    const { contentWithFont } = await createNewWallpaper_text(
-        {
-            locale,
-            title,
-            idea,
-            author,
-            links,
-            addSections,
-        },
-        onProgress,
-    );
+    const { wallpaperUrl, colorStats, originalSize, wallpaperPrompt, contentWithFont } = await (wallpaperImage
+        ? createNewWallpaper_prepareFromImage(request, onProgress)
+        : createNewWallpaper_prepareFromIdea(request, onProgress));
 
-    //===========================================================================
-    //-------[ Save: ]---
     await onProgress({
         name: 'finishing',
         title: 'Finishing',
@@ -156,8 +156,6 @@ export async function createNewWallpaper(
 
     // TODO: !! Util isInsertSuccessfull (status===201)
     console.info({ newWallpaper, insertResult });
-    //-------[ /Save ]---
-    //===========================================================================
 
     return { wallpaperId: newWallpaper.id };
 }

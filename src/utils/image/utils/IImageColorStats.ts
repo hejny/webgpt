@@ -1,6 +1,6 @@
 import { Promisable } from 'type-fest';
 import { Vector } from 'xyzt';
-import { TaskProgress } from '../../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
@@ -17,7 +17,9 @@ interface IComputeImageColorStatsProgress {
 export interface IComputeImageColorStats<TVersion extends string> {
     readonly version: TVersion;
     readonly preferredSize: Vector;
-    (image: IImage, onProgress?: (taskProgress: TaskProgress) => Promisable<void>): Promise<IImageColorStats<TVersion>>;
+    (image: IImage, onProgress?: (taskProgress: WebgptTaskProgress) => Promisable<void>): Promise<
+        IImageColorStats<TVersion>
+    >;
 }
 
 export interface IImageColorStats<TVersion extends string> {

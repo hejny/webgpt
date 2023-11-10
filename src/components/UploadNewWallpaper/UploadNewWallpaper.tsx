@@ -8,7 +8,7 @@ import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { Translate } from '../Translate/Translate';
 import { UploadZone } from '../UploadZone/UploadZone';
@@ -32,7 +32,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
     const router = useRouter();
     const locale = useLocale();
     const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
+    const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
 
@@ -62,7 +62,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                                 }),
                                 wallpaperImage: file,
                             },
-                            (newTaskProgress: TaskProgress) => {
+                            (newTaskProgress: WebgptTaskProgress) => {
                                 console.info('☑', newTaskProgress);
                                 setTasksProgress((tasksProgress) =>
                                     joinTasksProgress(...tasksProgress, newTaskProgress),

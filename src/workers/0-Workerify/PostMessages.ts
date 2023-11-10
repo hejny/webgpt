@@ -1,12 +1,12 @@
 import { Promisable } from 'type-fest';
 import { IPromptDialogueOptions } from '../../components/Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 
 export type TransferableObject = any /* <-[0] */;
 
 export type IWorkerifyableFunction<TRequest extends TransferableObject, TResult extends TransferableObject> = (
     request: TRequest,
-    onProgress: (taskProgress: TaskProgress) => Promisable<void>,
+    onProgress: (taskProgress: WebgptTaskProgress) => Promisable<void>,
 ) => Promise<TResult>;
 
 export type IMessageMainToWorker<TRequest extends TransferableObject> =
@@ -31,7 +31,7 @@ export type IMessageWorkerToMain<TResult extends TransferableObject> =
 
 export interface IMessageProgress {
     readonly type: 'PROGRESS';
-    readonly taskProgress: TaskProgress;
+    readonly taskProgress: WebgptTaskProgress;
 }
 
 export interface IMessageResult<TResult extends TransferableObject> {

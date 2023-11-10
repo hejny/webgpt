@@ -3,10 +3,10 @@ import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
 import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../TaskProgress';
+import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
 export async function mockedMultitaskWithPrompts(
-    onProgress: (taskProgress: TaskProgress) => Promisable<void>,
+    onProgress: (taskProgress: WebgptTaskProgress) => Promisable<void>,
 ): Promise<void> {
     console.info(
         spaceTrim(`

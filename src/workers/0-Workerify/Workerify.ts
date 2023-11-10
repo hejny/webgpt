@@ -1,5 +1,5 @@
 import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import {
     IMessageError,
@@ -38,7 +38,7 @@ export class Workerify<
                 const { request } = event.data;
 
                 try {
-                    const result = (await (executor as any)(/* <-[0] */ request, (taskProgress: TaskProgress) => {
+                    const result = (await (executor as any)(/* <-[0] */ request, (taskProgress: WebgptTaskProgress) => {
                         postMessage({
                             type: 'PROGRESS',
                             taskProgress,
@@ -81,7 +81,7 @@ export class Workerify<
     public makeConnectorForBrowser(createWorker: () => Worker): TFunction {
         const connector = (
             request: TRequest,
-            onProgress: (taskProgress: TaskProgress) => void = () => {},
+            onProgress: (taskProgress: WebgptTaskProgress) => void = () => {},
         ): Promise<TResult> => {
             if (!isRunningInBrowser()) {
                 throw new Error('You can access worker connector only in browser');

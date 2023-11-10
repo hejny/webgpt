@@ -1,8 +1,8 @@
+import { TaskProgress } from '@promptbook/types';
 import { FONTS } from '../../../config';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
 import type { WriteWallpaperPromptResponse } from '../../pages/api/image-to-text';
 import { randomItem } from '../../utils/randomItem';
 import {
@@ -118,20 +118,13 @@ export async function createNewWallpaper_text(
     request: CreateNewWallpaperTextRequest,
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<CreateNewWallpaperTextResult> {
-    const { locale, title, author, wallpaperUrl /* TODO: Use> links, addSections */ } = request;
+    const { locale, title, author, wallpaperUrl, idea /* TODO: Use> links, addSections */ } = request;
     let { description } = request;
 
     //-------[ Content analysis: ]---
 
-    if (description && wallpaperUrl) {
-        throw new Error('Either description or wallpaperUrl must be provided, not both');
-        //               <- TODO: [0] Maybe constrain this logic into CreateNewWallpaperTextRequest
-    }
 
-    if (!description && !wallpaperUrl) {
-        throw new Error('Either description or wallpaperUrl must be provided');
-        //               <- TODO: [0] Maybe constrain this logic into CreateNewWallpaperTextRequest
-    }
+
 
     if (!description && wallpaperUrl) {
         await onProgress({

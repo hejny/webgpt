@@ -4,7 +4,7 @@ import { Vector } from 'xyzt';
 import { IS_DEVELOPMENT } from '../../../config';
 import { useGraph } from '../../utils/hooks/useGraph';
 import { Dialogues } from '../Dialogues/Dialogues';
-import { TaskProgress } from './task/TaskProgress';
+import { WebgptTaskProgress } from './task/WebgptTaskProgress';
 import styles from './TasksInProgress.module.css';
 
 /**
@@ -15,7 +15,7 @@ import styles from './TasksInProgress.module.css';
 let isTasksInProgressRendered = false;
 
 interface TaskInProgressProps {
-    tasksProgress?: Array<TaskProgress>;
+    tasksProgress?: Array<WebgptTaskProgress>;
 }
 
 /**

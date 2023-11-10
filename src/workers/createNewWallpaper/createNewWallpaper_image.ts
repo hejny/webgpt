@@ -5,7 +5,7 @@ import {
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
 } from '../../../config';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { UploadWallpaperResponse } from '../../pages/api/upload-image';
 import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
 import { downscaleWithAspectRatio } from '../../utils/aspect-ratio/downscaleWithAspectRatio';
@@ -14,7 +14,7 @@ import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
 import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
-import { string_url_image, uuid } from '../../utils/typeAliases';
+import { string_image_prompt, string_url_image, uuid } from '../../utils/typeAliases';
 
 interface CreateNewWallpaperImageRequest {
     /**
@@ -27,6 +27,9 @@ interface CreateNewWallpaperImageRequest {
      * Image of the wallpaper
      */
     readonly wallpaperImage?: Blob;
+
+    // !!! Annotate
+    readonly wallpaperPrompt?: string_image_prompt;
 }
 
 interface CreateNewWallpaperImageResult {
@@ -53,11 +56,33 @@ interface CreateNewWallpaperImageResult {
  */
 export async function createNewWallpaper_image(
     request: CreateNewWallpaperImageRequest,
-    onProgress: (taskProgress: TaskProgress) => void,
+    onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperImageResult> {
-    const { /* TODO: Use here: author,*/ wallpaperImage: wallpaper } = request;
-
+    const { /* TODO: Use here: author,*/ wallpaperImage, wallpaperPrompt } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
+
+    if (!wallpaperImage && !wallpaperPrompt) {
+        throw new Error('One of wallpaperImage or wallpaperPrompt must be provided');
+        //               <- TODO: [👮‍♂️] Maybe constrain this logic into CreateNewWallpaperImageRequest
+        //               <- TODO: ShouldNeverHappenError
+    }
+
+    //===========================================================================
+    //-------[ Image analysis and check: ]---
+    await onProgress({
+        name: 'image-generate',
+        title: 'Generating image',
+        isDone: false,
+    });
+
+    // !!! Implement
+
+    await onProgress({
+        name: 'image-generate',
+        isDone: true,
+    });
+
+    //-------[ / Image analysis and check ]---
 
     //===========================================================================
     //-------[ Image analysis and check: ]---
@@ -75,7 +100,7 @@ export async function createNewWallpaper_image(
     }
     */
 
-    const originalSize = await measureImageBlob(wallpaper);
+    const originalSize = await measureImageBlob(wallpaperImage);
     let naturalSize = originalSize.clone();
 
     // Note: Checking first fatal problems then warnings and fixable problems (like too large image fixable by automatic resize)
@@ -110,9 +135,9 @@ export async function createNewWallpaper_image(
         isDone: false,
     });
 
-    const wallpaperForUpload = await resizeImageBlob(wallpaper, naturalSize);
+    const wallpaperForUpload = await resizeImageBlob(wallpaperImage, naturalSize);
     const wallpaperForColorAnalysis = await resizeImageBlob(
-        wallpaper,
+        wallpaperImage,
         downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
     );
 
