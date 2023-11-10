@@ -61,28 +61,29 @@ export async function createNewWallpaper_image(
     const { /* TODO: Use here: author,*/ wallpaperImage, wallpaperPrompt } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
-    if (!wallpaperImage && !wallpaperPrompt) {
-        throw new Error('One of wallpaperImage or wallpaperPrompt must be provided');
+    if ((!wallpaperImage && !wallpaperPrompt) || (wallpaperImage && wallpaperPrompt)) {
+        throw new Error('One of wallpaperImage or wallpaperPrompt must be provided BUT not both');
         //               <- TODO: [👮‍♂️] Maybe constrain this logic into CreateNewWallpaperImageRequest
         //               <- TODO: ShouldNeverHappenError
     }
 
     //===========================================================================
-    //-------[ Image analysis and check: ]---
-    await onProgress({
-        name: 'image-generate',
-        title: 'Generating image',
-        isDone: false,
-    });
+    //-------[ Image generate: ]---
+    if (!wallpaperImage) {
+        await onProgress({
+            name: 'image-generate',
+            title: 'Generating image',
+            isDone: false,
+        });
 
-    // !!! Implement
+        // !!! Implement
 
-    await onProgress({
-        name: 'image-generate',
-        isDone: true,
-    });
-
-    //-------[ / Image analysis and check ]---
+        await onProgress({
+            name: 'image-generate',
+            isDone: true,
+        });
+    }
+    //-------[ / Image generate ]---
 
     //===========================================================================
     //-------[ Image analysis and check: ]---

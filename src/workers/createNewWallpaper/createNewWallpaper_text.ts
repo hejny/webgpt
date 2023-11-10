@@ -119,18 +119,17 @@ export async function createNewWallpaper_text(
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<CreateNewWallpaperTextResult> {
     const { locale, title, author, wallpaperUrl, idea /* TODO: Use> links, addSections */ } = request;
-    let { description } = request;
+    let description = idea; /* <- !!! Originally here was ` let { description } = request;` is this good solution? */
 
     //-------[ Content analysis: ]---
-
-
-
-
     if (!description && wallpaperUrl) {
         await onProgress({
             name: 'image-to-text',
             title: 'Content analysis',
+            isStarted: true,
             isDone: false,
+            parameterName: 'wallpaperDescription',
+            parameterValue: null,
             // TODO: Make it more granular
         });
 
@@ -154,7 +153,11 @@ export async function createNewWallpaper_text(
         console.info({ description });
         await onProgress({
             name: 'image-to-text',
+            title: 'Content analysis',
+            isStarted: true,
             isDone: true,
+            parameterName: 'wallpaperDescription',
+            parameterValue: wallpaperDescription,
         });
     }
 
@@ -164,8 +167,10 @@ export async function createNewWallpaper_text(
     await onProgress({
         name: 'write-website-content',
         title: 'Copywriting',
-        isDone: false,
-        // TODO: Make it more granular
+        isStarted: true,
+        isDone: true,
+        parameterName: 'content',
+        parameterValue: null,
     });
 
     const writeWebsiteContentLocaleMap = {
@@ -194,7 +199,11 @@ export async function createNewWallpaper_text(
 
     await onProgress({
         name: 'write-website-content',
+        title: 'Copywriting',
+        isStarted: true,
         isDone: true,
+        parameterName: 'content',
+        parameterValue: content!,
     });
 
     //-------[ /Write content ]---
