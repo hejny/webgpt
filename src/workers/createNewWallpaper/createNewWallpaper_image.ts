@@ -17,7 +17,6 @@ import { createImageInWorker } from '../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
 import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
-import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_image_prompt, string_url_image, uuid } from '../../utils/typeAliases';
 
 interface CreateNewWallpaperImageRequest {
@@ -62,7 +61,7 @@ export async function createNewWallpaper_image(
     request: CreateNewWallpaperImageRequest,
     onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperImageResult> {
-    let { /* TODO: Use here: author,*/ wallpaperImage, wallpaperPrompt } = request;
+    let { author, wallpaperImage, wallpaperPrompt } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     if ((!wallpaperImage && !wallpaperPrompt) || (wallpaperImage && wallpaperPrompt)) {
@@ -80,11 +79,7 @@ export async function createNewWallpaper_image(
             isDone: false,
         });
 
-        const imageGenerator = getImageGenerator(
-            await provideClientId({
-                isVerifiedEmailRequired: true,
-            }),
-        );
+        const imageGenerator = getImageGenerator(author);
 
         if (wallpaperPrompt === undefined) {
             throw new Error('wallpaperPrompt is undefined');
