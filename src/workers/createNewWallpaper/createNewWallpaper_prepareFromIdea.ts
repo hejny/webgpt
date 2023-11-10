@@ -37,7 +37,13 @@ export async function createNewWallpaper_prepareFromIdea(
             addSections,
         },
         (taskProgress: TaskProgress) => {
-            onProgress(taskProgress);
+
+            // TODO: [⛵] DRY
+            const isProgressLoggedForCurrentTemplate = taskProgress.executionType === 'PROMPT_TEMPLATE';
+
+            if (isProgressLoggedForCurrentTemplate) {
+                onProgress(taskProgress);
+            }
 
             if (taskProgress.isDone && taskProgress.parameterName === 'wallpaperPrompt') {
                 if (

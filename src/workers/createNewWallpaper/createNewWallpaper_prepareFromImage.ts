@@ -1,3 +1,4 @@
+import { TaskProgress } from '@promptbook/types';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { CreateNewWallpaperPrepareResult, CreateNewWallpaperRequest } from './createNewWallpaper';
 import { createNewWallpaper_image } from './createNewWallpaper_image';
@@ -33,7 +34,14 @@ export async function createNewWallpaper_prepareFromImage(
             links,
             addSections,
         },
-        onProgress,
+        (taskProgress: TaskProgress) => {
+            // TODO: [⛵] DRY
+            const isProgressLoggedForCurrentTemplate = taskProgress.executionType === 'PROMPT_TEMPLATE';
+
+            if (isProgressLoggedForCurrentTemplate) {
+                onProgress(taskProgress);
+            }
+        },
     );
 
     return {
