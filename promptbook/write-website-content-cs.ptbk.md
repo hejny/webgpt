@@ -10,7 +10,7 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text <!-- <- !!! This should be EXACLY -->
 -   Input param `{rawAssigment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
--   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_, pouze pokud není zadán parametr `{rawAssigment}`
+-   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- !!! , pouze pokud není zadán ... -->
 
 ## 🖋 Překlad popisu
 
@@ -117,27 +117,29 @@ Popište cíl vašeho webu
 
 -   Use completion
 -   Postprocessing `trim`
-<!-- !!!Skip if ...not needed... -->
-<!-- !!!Maybe more samples... -->
+    <!-- !!!Skip if ...not needed... -->
+    <!-- !!!Maybe more samples... -->
 
 ```markdown
-# Kavárna
+## Ilustrační obrázky
 
-## Zadání webu
+## Kavárna
+
+### Zadání webu
 
 Vytvoř web kavárny v Praze, která se jmenuje "Vesmírná Kavárna" a celá se točí kolem tématiky vesmíru.
 
-## Úvodní obrázek
+### Úvodní obrázek
 
 Velký hrnek plný kávy s mléčnou pěnou, na které je vyobrazená galaxie. Hrnek je na stole, na kterém je kniha o vesmíru a kávové zrno.
 
-# {purpose}
+## {purpose}
 
-## Zadání webu
+### Zadání webu
 
 {assigment}
 
-## Úvodní obrázek
+### Úvodní obrázek
 ```
 
 `-> {wallpaperPromptCs}`
@@ -188,8 +190,6 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 
 ## Vylepšený název
 ```
-
-````
 
 `-> {draftedTitle}` Vylepšený název
 
@@ -341,4 +341,3 @@ Zadání webu od zákazníka:
 ```
 
 `-> {content}`
-````
