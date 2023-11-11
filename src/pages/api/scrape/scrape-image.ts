@@ -4,6 +4,12 @@ import { isUrlOnPrivateNetwork } from '../../../utils/validators/isUrlOnPrivateN
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 import { isValidUrl } from '../../../utils/validators/isValidUrl';
 
+export const config = {
+    api: {
+        responseLimit: '15mb' /* <- Note: To Allow Dalle-3 (and in general bigger) images */,
+    },
+};
+
 /**
  * API endpoint handler for scraping Instagram user
  */
