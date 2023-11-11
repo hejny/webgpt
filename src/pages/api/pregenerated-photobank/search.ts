@@ -4,6 +4,9 @@ import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServ
 import { string_url_image } from '../../../utils/typeAliases';
 
 export interface SearchPhotobankResult {
+    /**
+     * List of found images
+     */
     readonly images: Array<{ src: string_url_image }>;
 }
 
@@ -48,8 +51,3 @@ export default async function searchPhotobankHandler(
         images,
     } satisfies SearchPhotobankResult);
 }
-
-/**
- * TODO: !!! Annotate
- * TODO: !!! Implement
- */

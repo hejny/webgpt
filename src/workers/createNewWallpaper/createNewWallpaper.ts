@@ -104,13 +104,13 @@ export interface CreateNewWallpaperRequest {
 }
 
 export interface CreateNewWallpaperPrepareResult {
-    // !!! Annotate + readonly
+    // !!! Annotate all
 
-    wallpaperUrl: string_url_image;
-    colorStats: IImageColorStats<string>;
-    originalSize: Vector;
-    contentWithFont: string_markdown;
-    wallpaperPrompt: string_image_prompt;
+    readonly wallpaperUrl: string_url_image;
+    readonly colorStats: IImageColorStats<string>;
+    readonly originalSize: Vector;
+    readonly contentWithFont: string_markdown;
+    readonly wallpaperPrompt: string_image_prompt;
 }
 
 export interface CreateNewWallpaperResult {

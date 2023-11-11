@@ -5,7 +5,7 @@ import { createNewWallpaper_image } from './createNewWallpaper_image';
 import { createNewWallpaper_text } from './createNewWallpaper_text';
 
 /**
- * !!!
+ * !!! Annotate
  *
  * @private Use ONLY in createNewWallpaper
  */
