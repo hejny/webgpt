@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import OpenAI from 'openai';
 import { ImageGenerateParams } from 'openai/resources';
 import { Writable } from 'type-fest';
