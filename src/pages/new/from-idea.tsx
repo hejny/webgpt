@@ -132,7 +132,7 @@ export default function NewWallpaperFromIdeaPage() {
 }
 
 /**
- * TODO: Enhance the design of the page (and generally every page with <CopilotInput/>)
+ * TODO: Enhance the design of the page (and in general every page with <CopilotInput/>)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress

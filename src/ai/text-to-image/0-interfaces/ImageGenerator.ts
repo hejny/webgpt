@@ -3,7 +3,7 @@ import { ImagePrompt } from './ImagePrompt';
 import { ImagePromptResult } from './ImagePromptResult';
 
 /**
- * Represents any image generator (like MidJourney, Dall-E, StableDiffusion, etc.) or more generally any software that can give images from text.
+ * Represents any image generator (like MidJourney, Dall-E, StableDiffusion, etc.) or more in general any software that can give images from text.
  */
 export interface ImageGenerator {
     /**
