@@ -31,7 +31,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
     const { children, className } = props;
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
+    const [isRunning, setRunning] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
@@ -50,7 +50,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
 
                     console.info('🏳 locale: ', locale);
 
-                    setWorking(true);
+                    setRunning(true);
                     setTasksProgress([]);
 
                     try {
@@ -92,7 +92,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                                 `,
                             ),
                         );
-                        setWorking(false);
+                        setRunning(false);
                         setTasksProgress([]);
                     }
                 }}
@@ -117,7 +117,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     </>
                 )}
             </UploadZone>
-            {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+            {isRunning && <TasksInProgress {...{ tasksProgress }} />}
         </>
     );
 }

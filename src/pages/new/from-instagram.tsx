@@ -27,7 +27,7 @@ import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram
 export default function NewWallpaperFromInstagramPage() {
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
+    const [isRunning, setRunning] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
@@ -58,7 +58,7 @@ export default function NewWallpaperFromInstagramPage() {
                                 </>
                             }
                             onPrompt={async (prompt) => {
-                                setWorking(true);
+                                setRunning(true);
                                 setTasksProgress([
                                     {
                                         // TODO: Use here taskify instead
@@ -193,7 +193,7 @@ export default function NewWallpaperFromInstagramPage() {
                                             `,
                                         ),
                                     );
-                                    setWorking(false);
+                                    setRunning(false);
                                     setTasksProgress([]);
                                 }
                             }}
@@ -215,14 +215,13 @@ export default function NewWallpaperFromInstagramPage() {
                     </Center>
                 </main>
 
-                {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+                {isRunning && <TasksInProgress {...{ tasksProgress }} />}
             </div>
         </>
     );
 }
 
 /**
- * TODO: !!! Change isWorking -> isRunning
  * TODO: Enhance the design of the page (and in general every page with <CopilotInput/>)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper

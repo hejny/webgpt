@@ -22,7 +22,7 @@ import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/w
 export default function NewWallpaperFromIdeaPage() {
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
+    const [isRunning, setRunning] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
@@ -53,7 +53,7 @@ export default function NewWallpaperFromIdeaPage() {
                                 </>
                             }
                             onPrompt={async (idea) => {
-                                setWorking(true);
+                                setRunning(true);
                                 setTasksProgress([
                                     {
                                         // TODO: Use here taskify instead
@@ -103,7 +103,7 @@ export default function NewWallpaperFromIdeaPage() {
                                             `,
                                         ),
                                     );
-                                    setWorking(false);
+                                    setRunning(false);
                                     setTasksProgress([]);
                                 }
                             }}
@@ -125,7 +125,7 @@ export default function NewWallpaperFromIdeaPage() {
                     </Center>
                 </main>
 
-                {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+                {isRunning && <TasksInProgress {...{ tasksProgress }} />}
             </div>
         </>
     );

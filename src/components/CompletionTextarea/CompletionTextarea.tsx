@@ -36,10 +36,10 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
     const { children, onChange, naturalExecutionTools, className } = props;
 
     const textAreaRef = useRef<HTMLTextAreaElement>(null);
-    const [isWorking, setWorking] = useState(false);
+    const [isRunning, setRunning] = useState(false);
     const gptComplete = useCallback(
         async (maxTokens: number) => {
-            if (isWorking) {
+            if (isRunning) {
                 return;
             }
 
@@ -57,7 +57,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 parameters: {},
             } as const;
 
-            setWorking(true);
+            setRunning(true);
             const response = await naturalExecutionTools.gptComplete(prompt);
 
             console.log({ response });
@@ -72,13 +72,13 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 onChange(textAreaRef.current.value, 'COPILOT');
             }
 
-            setWorking(false);
+            setRunning(false);
 
             if (textAreaRef.current === null) {
                 throw new Error('textAreaRef.current is null but fired onChange event');
             }
         },
-        [isWorking, textAreaRef, onChange, naturalExecutionTools],
+        [isRunning, textAreaRef, onChange, naturalExecutionTools],
     );
 
     /*
@@ -113,7 +113,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 {children}
             </textarea>
 
-            <nav className={classNames(styles.controls, isWorking && styles.isWorking)}>
+            <nav className={classNames(styles.controls, isRunning && styles.isWorking)}>
                 <button onClick={() => gptComplete(10)}>🐰</button>
                 <button onClick={() => gptComplete(100)}>🐌</button>
                 <button onClick={() => gptComplete(1000)}>🐢</button>
