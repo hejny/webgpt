@@ -28,7 +28,7 @@ export class PregeneratedPhotobank implements ImageGenerator {
     ): Promise<Array<ImagePromptResult>> {
         const keywords = parseKeywordsFromString(prompt.content);
 
-        // TODO: !!! Filter out void keywords
+        // TODO: !! [🧠] Filter out void keywords like 'and', 'or', etc.
 
         const response = await fetch(
             `/api/pregenerated-photobank/search?${Array.from(keywords)

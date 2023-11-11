@@ -16,7 +16,3 @@ export interface DalleImageGeneratorOptions extends CommonExecutionToolsOptions 
     user?: string_token;
 }
 
-/**
- * TODO: !!! here should be MAYBE dalle version
- *
- */
