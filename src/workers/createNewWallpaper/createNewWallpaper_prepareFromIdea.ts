@@ -1,8 +1,8 @@
 import { TaskProgress } from '@promptbook/types';
+import { createNewWallpaper_image } from '../../../createNewWallpaper_image';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { string_image_prompt } from '../../utils/typeAliases';
 import { CreateNewWallpaperPrepareResult, CreateNewWallpaperRequest } from './createNewWallpaper';
-import { createNewWallpaper_image } from './createNewWallpaper_image';
 import { createNewWallpaper_text } from './createNewWallpaper_text';
 
 /**
@@ -37,7 +37,6 @@ export async function createNewWallpaper_prepareFromIdea(
             addSections,
         },
         (taskProgress: TaskProgress) => {
-
             // TODO: [⛵] DRY
             const isProgressLoggedForCurrentTemplate = taskProgress.executionType === 'PROMPT_TEMPLATE';
 

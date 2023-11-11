@@ -1,16 +1,16 @@
-import { string_name, title } from '../../../utils/typeAliases';
+import { string_markdown_text, string_name } from '../../../utils/typeAliases';
 
 export type WebgptTaskProgress = PendingWebgptTaskProgress | DoneWebgptTaskProgress;
 
 export interface PendingWebgptTaskProgress {
     readonly name: string_name;
-    readonly title: title;
+    readonly title: string_markdown_text;
     readonly isDone: false;
 }
 
 export interface DoneWebgptTaskProgress {
     readonly name: string_name;
-    readonly title?: title;
+    readonly title?: string_markdown_text /* <- TODO> && Exclude<title, JSX.Element> */;
     readonly isDone: true;
 }
 

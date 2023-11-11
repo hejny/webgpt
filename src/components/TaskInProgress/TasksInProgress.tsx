@@ -4,6 +4,7 @@ import { Vector } from 'xyzt';
 import { IS_DEVELOPMENT } from '../../../config';
 import { useGraph } from '../../utils/hooks/useGraph';
 import { Dialogues } from '../Dialogues/Dialogues';
+import { Translate } from '../Translate/Translate';
 import { WebgptTaskProgress } from './task/WebgptTaskProgress';
 import styles from './TasksInProgress.module.css';
 
@@ -109,7 +110,8 @@ export function TasksInProgress(props: TaskInProgressProps) {
                                         console.info({ taskProgress });
                                     }}
                                 >
-                                    {taskProgress.title}
+                                    <Translate locale='en' {/* <- !!! auto */}>{taskProgress.title}</Translate>
+                                    
                                 </li>
                             ))}
                         </ul>

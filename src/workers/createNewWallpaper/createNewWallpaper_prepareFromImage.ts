@@ -1,7 +1,7 @@
 import { TaskProgress } from '@promptbook/types';
+import { createNewWallpaper_image } from '../../../createNewWallpaper_image';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { CreateNewWallpaperPrepareResult, CreateNewWallpaperRequest } from './createNewWallpaper';
-import { createNewWallpaper_image } from './createNewWallpaper_image';
 import { createNewWallpaper_text } from './createNewWallpaper_text';
 
 /**

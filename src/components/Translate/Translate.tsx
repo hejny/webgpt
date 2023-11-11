@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
 import { useLocale } from '../../utils/hooks/useLocale';
+import { string_markdown_text, string_translate_language } from '../../utils/typeAliases';
 
 /**
  * A component that renders its children only if the locale matches the router locale
@@ -9,12 +9,17 @@ import { useLocale } from '../../utils/hooks/useLocale';
  */
 interface TranslateProps {
     /**
-     * @@@
+     * Language !!!
      */
-    locale: string;
+    locale: string_translate_language;
 
-    children: ReactNode;
+    /**
+     * Content to translate
+     */
+    children: string_markdown_text;
 }
+
+// Use only one <Translate> at once
 
 /**
  * @@@
