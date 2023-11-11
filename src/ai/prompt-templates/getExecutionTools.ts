@@ -41,7 +41,11 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                 clientId,
             }),
             script: [
-                new JavascriptEvalExecutionTools(/* <- TODO: !! Change to JavascriptExecutionTools */ { isVerbose }),
+                new JavascriptEvalExecutionTools(
+                    /* <- TODO: !! Change to JavascriptExecutionTools */ {
+                        isVerbose: false /* <- Note: Only natural execution tools should be verbose */,
+                    },
+                ),
             ],
             userInterface: new CallbackInterfaceTools({
                 isVerbose,
