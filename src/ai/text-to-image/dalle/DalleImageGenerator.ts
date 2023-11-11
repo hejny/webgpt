@@ -2,7 +2,9 @@ import OpenAI from 'openai';
 import { ImageGenerateParams } from 'openai/resources';
 import { Writable } from 'type-fest';
 import { Vector } from 'xyzt';
+import { CDN } from '../../../../config';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { generateDalleCdnKey } from '../../../utils/cdn/utils/generateDalleCdnKey';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
@@ -42,7 +44,7 @@ export class DalleImageGenerator implements ImageGenerator {
 
         if (!normalizedPrompt.size) {
             if (normalizedPrompt.model === 'dall-e-2') {
-                normalizedPrompt.size = new Vector(512, 512);
+                normalizedPrompt.size = new Vector(1024, 1024);
             } else if (normalizedPrompt.model === 'dall-e-3') {
                 normalizedPrompt.size = new Vector(1792, 1024);
             } else {
@@ -74,13 +76,25 @@ export class DalleImageGenerator implements ImageGenerator {
             throw new Error(`The image src is empty`);
         }
 
+        const imageArrayBuffer = await fetch(imageSrc).then((response) => response.arrayBuffer());
+        const imageBuffer = Buffer.from(imageArrayBuffer);
+
+        const key = generateDalleCdnKey(prompt, imageBuffer);
+        await CDN.setItem(key, {
+            type: 'image/png', // <- TODO: Is Dalle always creating PNGs?
+            data: imageBuffer,
+        });
+
+        const imageUrl = CDN.getItemUrl(key);
+
         if (responseImage.revised_prompt) {
             normalizedPrompt.content = responseImage.revised_prompt;
         }
 
         return [
             {
-                imageSrc,
+                imageSrc: imageUrl.href /* <- Note: this is intended, we want to pass ahead the URL on our CDN
+                                              NOT the temporary one provided by Dalle */,
                 originalPrompt,
                 normalizedPrompt,
                 rawResponse,
