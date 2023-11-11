@@ -1,8 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { ImagePromptResult } from '../../../ai/text-to-image/0-interfaces/ImagePromptResult';
-import { promptDialogue } from '../../../components/Dialogues/dialogues/promptDialogue';
-import { ImagePromptResultsPicker } from '../../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { string_image_prompt } from '../../../utils/typeAliases';
 
@@ -45,7 +43,7 @@ export async function mockedMultitaskWithImageGenerator(
         `),
     );
 
-    const { imagePromptContent } = request;
+    let { imagePromptContent } = request;
 
     await onProgress({
         name: `picking-image`,
@@ -53,7 +51,25 @@ export async function mockedMultitaskWithImageGenerator(
         isDone: false,
     });
 
-    await promptDialogue({
+    const isContinuing = await confirmDialogue({
+        prompt: `Do you want to pick an image?`,
+    });
+
+    if (!isContinuing) {
+        throw new Error('User cancelled');
+    }
+
+    imagePromptContent = await simpleTextDialogue({
+        prompt: `Confirm image prompt`, // <- TODO: !!! Change prompt to something more meaningful
+        defaultValue: imagePromptContent,
+        isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
+    });
+
+    const ImagePromptResult = await imageGeneratorDialogue({
+        prompt: `Pick the image`, // <- TODO: !!! Change prompt to something more meaningful
+        imagePromptContent,
+        /*
+        TODO: !!! Delete
         prompt: (
             <>
                 <ImagePromptResultsPicker
@@ -63,8 +79,8 @@ export async function mockedMultitaskWithImageGenerator(
                 />
             </>
         ),
-
         defaultValue: '!!!',
+        */
     });
 
     await onProgress({

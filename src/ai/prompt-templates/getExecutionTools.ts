@@ -4,7 +4,7 @@ import { RemoteNaturalExecutionTools } from '@promptbook/remote-client';
 import type { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../config';
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
+import { promptDialogue } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { uuid } from '../../utils/typeAliases';
 

@@ -30,7 +30,7 @@ export default function TestTasksProgressWithChatPage() {
             This is NOT production code. It is used ONLY for testing the {`<ImagePromptResultsPicker/>`} poped up from
             the worker.
             <br />
-            <textarea ref={promptRef} />
+            <textarea ref={promptRef} defaultValue="Space café with a view of the Earth" />
             <br />
             <button onClick={run}>Generate image</button>
             <br /> <br />

@@ -1,5 +1,5 @@
 import { Promisable } from 'type-fest';
-import { IPromptDialogueOptions } from '../../components/Dialogues/dialogues/promptDialogue';
+import { IPromptDialogueOptions } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 
 export type TransferableObject = any /* <-[0] */;

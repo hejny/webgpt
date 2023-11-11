@@ -1,9 +1,9 @@
 import { forTime } from 'waitasecond';
-import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
-import { message } from '../../../utils/typeAliases';
-import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../workers/0-Workerify/PostMessages';
-import { isDialoguesRendered } from '../locks/Dialogues.lock';
-import { promptDialogueQueue } from '../queues/prompts';
+import { isRunningInWebWorker } from '../../../../utils/isRunningInWhatever';
+import { message } from '../../../../utils/typeAliases';
+import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../../workers/0-Workerify/PostMessages';
+import { isDialoguesRendered } from '../../misc/lock';
+import { promptDialogueQueue } from '../../misc/prompts';
 
 export interface IPromptDialogueOptions {
     /**
@@ -25,6 +25,7 @@ export interface IPromptDialogueOptions {
 }
 
 /**
+ * !!! Remove
  * Represents a prompt message that is waiting for an answer or is already answered
  *
  * Note: This is not a prompt to language model but a prompt to the user
@@ -44,7 +45,7 @@ export interface IPromptInQueue extends IPromptDialogueOptions {
 /**
  * Pops up the co-pilot panel with a prompt dialogue.
  */
-export async function promptDialogue(options: IPromptDialogueOptions): Promise<string | null> {
+export async function simpleTextDialogue(options: IPromptDialogueOptions): Promise<string | null> {
     const { prompt, defaultValue, placeholder } = options;
 
     const promptInQueue: IPromptInQueue = {

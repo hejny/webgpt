@@ -1,4 +1,4 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
+import { promptDialogue } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
 import { string_email, uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';

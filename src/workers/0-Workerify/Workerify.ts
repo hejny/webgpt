@@ -1,4 +1,4 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
+import { promptDialogue } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import {
