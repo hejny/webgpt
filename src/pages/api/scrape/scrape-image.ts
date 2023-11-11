@@ -25,16 +25,14 @@ export default async function scrapeInstagramUserHandler(
     // TODO: [🌺] Log cost for this request and attribute it to the client
     //---------------
 
-
-    const url = request.query.url;
-
-    // console.log('request.headers');
-    // const url = request.headers['X-Image-Url'];
+    console.log(request.headers);
+    const url = request.headers['x-image-url'];
+    console.log(url);
 
     if (!isValidUrl(url)) {
         return response.status(400).json(
             {
-                message: 'GET param url is not valid URL' /* <- TODO: [🌻] Unite wrong GET param message */,
+                message: 'Header x-image-url is not valid URL' /* <- TODO: [🌻] Unite wrong GET param message */,
             } as any /* <-[🌋] */,
         );
     }
