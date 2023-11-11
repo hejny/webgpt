@@ -68,6 +68,8 @@ export class SupabaseLoggerWrapperOfImageGenerator implements ImageGenerator {
                             // Prompt Result:
                             resultAt,
                             result: promptResult,
+
+                            // TODO: !!! Save to our own database IDEALLY along the wallpaper LODs
                             resultSrc: promptResult.imageSrc /* <- TODO: [🧠] resultUrl vs resultSrc */,
                             // resultCdnSrc:<- TODO: [🧠] Maybe upload to own CDN (how long Dalle keeps the results) */,
                             usedModel: promptResult.normalizedPrompt.model,
