@@ -7,16 +7,16 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{idea}` Obecná idea webu _v Češtině_
--   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text <!-- <- !!! This should be EXACLY -->
+-   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text <!-- <- TODO: !! This should be EXACLY in content -->
 -   Input param `{rawAssigment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
--   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- !!! , pouze pokud není zadán ... -->
+-   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , pouze pokud není zadán ... -->
 
 ## 🖋 Překlad popisu
 
 -   Use completion
 -   Postprocessing `trim`
-<!-- !!! Skip if -->
+<!-- TODO: !!> Skip if `rawAssigment===''` -->
 
 ```text
 
@@ -117,8 +117,8 @@ Popište cíl vašeho webu
 
 -   Use completion
 -   Postprocessing `trim`
-    <!-- !!!Skip if ...not needed... -->
-    <!-- !!!Maybe more samples... -->
+    <!-- TODO: !!> Skip if `rawAssigment!==''` -->
+    <!-- TODO: Maybe more samples... -->
 
 ```markdown
 ## Ilustrační obrázky
@@ -148,7 +148,7 @@ Velký hrnek plný kávy s mléčnou pěnou, na které je vyobrazená galaxie. H
 
 -   Use completion
 -   Postprocessing `trim`
-<!-- !!!Skip if ...not needed... -->
+    <!-- TODO: !!> Skip if `rawAssigment!==''` -->
 
 ```text
 
