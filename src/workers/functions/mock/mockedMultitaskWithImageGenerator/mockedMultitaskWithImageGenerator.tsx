@@ -2,6 +2,7 @@ import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { ImagePromptResult } from '../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { simpleTextDialogue } from '../../../dialogues/simple-text/simpleTextDialogue';
 import { string_image_prompt } from '../../../utils/typeAliases';
 
 export interface MockedMultitaskWithImageGeneratorRequest {
@@ -59,11 +60,13 @@ export async function mockedMultitaskWithImageGenerator(
         throw new Error('User cancelled');
     }
 
-    imagePromptContent = await simpleTextDialogue({
+    const { answer: imagePromptContentConfirmed } = await simpleTextDialogue({
         prompt: `Confirm image prompt`, // <- TODO: !!! Change prompt to something more meaningful
         defaultValue: imagePromptContent,
-        isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
+        // TODO: !!! Implement> isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
     });
+
+    imagePromptContent = imagePromptContentConfirmed;
 
     const ImagePromptResult = await imageGeneratorDialogue({
         prompt: `Pick the image`, // <- TODO: !!! Change prompt to something more meaningful

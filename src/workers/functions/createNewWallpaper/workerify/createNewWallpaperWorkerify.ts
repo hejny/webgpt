@@ -1,5 +1,5 @@
 import { simpleTextDialogue } from '../../../dialogues/simple-text/simpleTextDialogue';
-import { Workerify } from '../../0-Workerify/Workerify';
+import { Workerify } from '../../../lib/Workerify';
 import { CreateNewWallpaperRequest, CreateNewWallpaperResult } from '../createNewWallpaper';
 
 /**

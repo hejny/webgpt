@@ -5,7 +5,7 @@ export interface SimpleTextDialogueResponse {
      * - `null` means that the prompt is answered with `null`
      * - `string` means the answer to the prompt
      */
-    answer: undefined | string | null;
+    answer: string | null;
 }
 
 /**

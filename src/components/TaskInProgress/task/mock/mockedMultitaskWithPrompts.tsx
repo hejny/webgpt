@@ -3,7 +3,6 @@ import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
 import { simpleTextDialogue } from '../../../../workers/dialogues/simple-text/simpleTextDialogue';
-import { promptDialogue } from '../../../Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
 export async function mockedMultitaskWithPrompts(
@@ -35,7 +34,7 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
-        const response = await simpleTextDialogue({
+        const { answer } = await simpleTextDialogue({
             prompt: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
@@ -49,7 +48,7 @@ export async function mockedMultitaskWithPrompts(
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({response})</i>
+                    {title} <i>({answer})</i>
                 </>
             ),
             isDone: true,

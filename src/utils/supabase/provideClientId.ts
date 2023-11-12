@@ -1,4 +1,3 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
 import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 import { string_email, uuid } from '../typeAliases';
@@ -43,7 +42,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         return clientId;
     }
 
-    const email = await simpleTextDialogue({
+    const { answer: email } = await simpleTextDialogue({
         prompt: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
