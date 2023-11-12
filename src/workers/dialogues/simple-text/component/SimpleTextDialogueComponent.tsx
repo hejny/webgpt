@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { DialogueComponentProps } from '../../../lib/interfaces/DialogueComponentProps';
+import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueRequest';
 import { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
 import styles from './SimpleTextDialogueComponent.module.css';

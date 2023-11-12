@@ -1,1 +1,2 @@
 TODO: [🧠] Maybe rename ACRY/ALLFORMS dialogue -> dialog
+TODO: Maybe implement promptDialogueQueue via Promise, React.Context, RxJS or something better than polling from singleton

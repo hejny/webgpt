@@ -1,12 +1,12 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { randomUuid } from '../../../utils/randomUuid';
-import { DialogueComponent } from '../interfaces/DialogueComponent';
-import { DialogueFunction } from '../interfaces/DialogueFunction';
-import { DialogueRequestInQueue } from '../interfaces/DialogueRequestInQueue';
-import { IMessageDialogueRequest, IMessageDialogueResponse, IMessageMainToWorker } from '../PostMessages';
-import { dialoguesQueue } from './misc/dialoguesQueue';
-import { isDialoguesRendered } from './misc/lock';
+import { IMessageDialogueRequest, IMessageDialogueResponse, IMessageMainToWorker } from '../interfaces/PostMessages';
+import { dialoguesQueue } from './dialoguesQueue';
+import { DialogueComponent } from './interfaces/DialogueComponent';
+import { DialogueFunction } from './interfaces/DialogueFunction';
+import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
+import { isDialoguesRendered } from './isDialoguesRendered';
 
 export function makeDialogueFunction<TRequest, TResponse>(
     DialogueComponent: DialogueComponent<TRequest, TResponse>,

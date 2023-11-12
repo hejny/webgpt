@@ -1,6 +1,6 @@
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
-import { DialogueFunction } from './interfaces/DialogueFunction';
+import { DialogueFunction } from './dialogues/interfaces/DialogueFunction';
 import {
     IMessageDialogueResponse,
     IMessageError,
@@ -11,7 +11,7 @@ import {
     IMessageWorkerToMain,
     IWorkerifyableFunction,
     TransferableObject,
-} from './PostMessages';
+} from './interfaces/PostMessages';
 
 /**
  * !!! Annotate all

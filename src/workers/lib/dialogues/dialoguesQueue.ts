@@ -1,4 +1,4 @@
-import { DialogueRequestInQueue } from '../../interfaces/DialogueRequestInQueue';
+import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 
 /**
  * !!! Update

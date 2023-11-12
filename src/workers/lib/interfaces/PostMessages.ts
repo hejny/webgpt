@@ -1,6 +1,6 @@
 import { Promisable } from 'type-fest';
-import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
-import { uuid } from '../../utils/typeAliases';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { uuid } from '../../../utils/typeAliases';
 
 export type TransferableObject = any /* <-[0] */;
 
