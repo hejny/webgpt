@@ -1,20 +1,40 @@
 import { ReactNode } from 'react';
 import { forTime } from 'waitasecond';
-import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
+import { isRunningInBrowser, isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { randomUuid } from '../../../utils/randomUuid';
 import { string_name } from '../../../utils/typeAliases';
+import { DialogueComponent } from '../interfaces/DialogueComponent';
 import { DialogueComponentProps } from '../interfaces/DialogueComponentProps';
+import { DialogueFunction } from '../interfaces/DialogueFunction';
 import { DialogueRequestInQueue } from '../interfaces/DialogueRequestInQueue';
 import { IMessageDialogueRequest, IMessageDialogueResponse, IMessageMainToWorker } from '../PostMessages';
 import { dialoguesQueue } from './misc/dialoguesQueue';
 import { isDialoguesRendered } from './misc/lock';
 
+
+
 export function makeDialogueFunction<TRequest, TResponse>(
-    DialogueComponent: { dialogueTypeName: string_name } & ((
-        promps: DialogueComponentProps<TRequest, TResponse>,
-    ) => ReactNode),
-): (request: TRequest) => Promise<TResponse> {
+    DialogueComponent: DialogueComponent<TRequest, TResponse>,
+): DialogueFunction<TRequest, TResponse>{
     const { dialogueTypeName } = DialogueComponent;
+
+    /*
+    !!! Remove
+    if (isRunningInBrowser()) {
+        addEventListener('message', async (event: MessageEvent<IMessageMainToWorker<TRequest>>) => {
+            const message = event.data;
+
+            if (message.type !== `${dialogueTypeName}_DIALOGUE_REQUEST`) {
+                return;
+            }
+
+            event.target!.postMessage({
+                type: 'PROMPT_DIALOGUE_ANSWER',
+                promptAnswer,
+            } satisfies IMessageDialogueRequestAnswer);
+        });
+    }
+    */
 
     return async (request: TRequest): Promise<TResponse> => {
         if (isRunningInWebWorker()) {
@@ -22,7 +42,6 @@ export function makeDialogueFunction<TRequest, TResponse>(
 
             const id = randomUuid();
             postMessage({
-                // TODO: !!! Search ACRY PROMPT_DIALOGUE
                 type: `${dialogueTypeName}_DIALOGUE_REQUEST`,
                 id,
                 request,

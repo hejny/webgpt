@@ -1,8 +1,8 @@
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
-import { simpleTextDialogue } from '../dialogues/simple-text/simpleTextDialogue';
+import { DialogueFunction } from './interfaces/DialogueFunction';
 import {
-    IMessageDialogueRequestAnswer,
+    IMessageDialogueResponse,
     IMessageError,
     IMessageMainToWorker,
     IMessageProgress,
@@ -13,11 +13,20 @@ import {
     TransferableObject,
 } from './PostMessages';
 
+/**
+ * !!! Annotate all
+ */
+interface WorkerifyOptions {
+    supportDialogues: Array<DialogueFunction<any, any>>;
+}
+
 export class Workerify<
     TRequest extends TransferableObject,
     TResult extends TransferableObject,
     TFunction = IWorkerifyableFunction<TRequest, TResult>,
 > {
+    constructor(private readonly options: WorkerifyOptions) {}
+
     /**
      * Runs a worker for given function
      *
@@ -62,8 +71,9 @@ export class Workerify<
                 } finally {
                     self.close();
                 }
-            } else if (type === 'PROMPT_DIALOGUE_ANSWER') {
-                // Note: Do nothing here, because [👂][0] promptDialogue is also listening to this message
+            } else if (type.endsWith('_DIALOGUE_ANSWER') /* <- !!! Maybe reverse */) {
+                // !!! Search ACRY [👂] and reannotate
+                // Note: [👂] Do nothing here, because some dialogue function listens alongside with this listener
                 return;
             } else {
                 throw new Error(`Unexpected message type from main thread: ${type}`);
@@ -119,13 +129,26 @@ export class Workerify<
                     } else if (type === 'ERROR') {
                         const { message } = event.data;
                         reject(new Error(message));
-                    } else if (type === 'PROMPT_DIALOGUE') {
-                        const { promptOptions } = event.data;
-                        const promptAnswer = await simpleTextDialogue(promptOptions);
+                    } else if (type.endsWith('_DIALOGUE_REQUEST')) {
+                        const { request, id } = event.data;
+                        const dialogueTypeName = type.replace(/_DIALOGUE_REQUEST$/, '');
+
+                        const dialogueFunction = this.options.supportDialogues.find(
+                            (dialogueFunction) => dialogueFunction.dialogueTypeName === dialogueTypeName,
+                        );
+
+                        if (!dialogueFunction) {
+                            throw new Error(
+                                `Workerify does not support dialogue "${dialogueTypeName}", did you forget to add it to options.supportDialogues?`,
+                            );
+                        }
+
+                        const response = await dialogueFunction(request);
                         worker!.postMessage({
-                            type: 'PROMPT_DIALOGUE_ANSWER',
-                            promptAnswer,
-                        } satisfies IMessageDialogueRequestAnswer);
+                            type: `${dialogueTypeName}_DIALOGUE_RESPONSE`,
+                            id,
+                            response,
+                        } satisfies IMessageDialogueResponse);
                     } else {
                         reject(new Error(`Unexpected message type from worker: ${type}`));
                     }
