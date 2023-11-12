@@ -1,8 +1,13 @@
 import { ReactNode } from 'react';
+import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
+import { randomUuid } from '../../../utils/randomUuid';
 import { string_name } from '../../../utils/typeAliases';
 import { DialogueComponentProps } from '../interfaces/DialogueComponentProps';
-import { IMessageDialogueRequest, IMessageMainToWorker } from '../PostMessages';
+import { DialogueRequestInQueue } from '../interfaces/DialogueRequestInQueue';
+import { IMessageDialogueRequest, IMessageDialogueResponse, IMessageMainToWorker } from '../PostMessages';
+import { dialoguesQueue } from './misc/dialoguesQueue';
+import { isDialoguesRendered } from './misc/lock';
 
 export function makeDialogueFunction<TRequest, TResponse>(
     DialogueComponent: { dialogueTypeName: string_name } & ((
@@ -11,27 +16,28 @@ export function makeDialogueFunction<TRequest, TResponse>(
 ): (request: TRequest) => Promise<TResponse> {
     const { dialogueTypeName } = DialogueComponent;
 
-    return (request: TRequest): Promise<TResponse> => {
-        const requestInQueue = {
-            dialogueTypeName,
-            request,
-        };
-
+    return async (request: TRequest): Promise<TResponse> => {
         if (isRunningInWebWorker()) {
             // [🌴]
+
+            const id = randomUuid();
             postMessage({
                 // TODO: !!! Search ACRY PROMPT_DIALOGUE
                 type: `${dialogueTypeName}_DIALOGUE_REQUEST`,
+                id,
                 request,
             } satisfies IMessageDialogueRequest);
 
             return new Promise((resolve) => {
                 const onMessage = (event: MessageEvent<IMessageMainToWorker<unknown>>) => {
                     const message = event.data;
-                    if (message.type !== 'PROMPT_DIALOGUE_ANSWER') {
+                    if (message.type !== `${dialogueTypeName}_DIALOGUE_RESPONSE`) {
                         return;
                     }
-                    resolve(message.promptAnswer);
+                    if ((message as IMessageDialogueResponse).id !== id) {
+                        return;
+                    }
+                    resolve((message as IMessageDialogueResponse).response);
                     removeEventListener('message', onMessage);
                 };
                 addEventListener('message' /* <-[👂][0] */, onMessage);
@@ -42,17 +48,18 @@ export function makeDialogueFunction<TRequest, TResponse>(
             throw new Error('<Dialogues/> component is not rendered');
         }
 
-        promptDialogueQueue.push(promptInQueue);
+        const requestInQueue: DialogueRequestInQueue = {
+            dialogueTypeName,
+            request,
+        };
 
-        // console.info('❔ promptDialogue: Waiting for answer', { prompt });
+        dialoguesQueue.push(requestInQueue);
 
         while (true) {
             await forTime(50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 
-            if (promptInQueue.answer !== undefined) {
-                const answer = promptInQueue.answer;
-                // console.info('❔ promptDialogue: Have answer', { prompt, answer });
-                return answer;
+            if (requestInQueue.response !== undefined) {
+                return requestInQueue.response;
             }
         }
     };

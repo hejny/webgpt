@@ -1,17 +1,13 @@
-import { string_name } from '@promptbook/types';
+import { DialogueRequestInQueue } from '../../interfaces/DialogueRequestInQueue';
 
 /**
- * !!! Update + Annotate all
+ * !!! Update
  * Queue of prompt dialogues that are waiting for an answer
  *
  * @private Use only withing the folder Dialogues
  */
-export const dialoguesQueue: Array<{
-    dialogueTypeName: string_name;
-    request: any;
-    response?: any;
-}> = [];
+export const dialoguesQueue: Array<DialogueRequestInQueue> = [];
 
 /**
- * TODO: !! Make some better type for dialogue request+response
+ * TODO: !! Make some better (not any or object) type for dialogue request+response
  */
