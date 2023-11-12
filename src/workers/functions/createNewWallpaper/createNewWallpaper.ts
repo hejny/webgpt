@@ -1,9 +1,9 @@
 import { Vector } from 'xyzt';
-import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
-import { addWallpaperComputables } from '../../utils/addWallpaperComputables';
-import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
-import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { addWallpaperComputables } from '../../../utils/addWallpaperComputables';
+import { serializeWallpaper } from '../../../utils/hydrateWallpaper';
+import { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
+import { getSupabaseForWorker } from '../../../utils/supabase/getSupabaseForWorker';
 import {
     description,
     string_image_prompt,
@@ -15,7 +15,7 @@ import {
     string_wallpaper_id,
     title,
     uuid,
-} from '../../utils/typeAliases';
+} from '../../../utils/typeAliases';
 import { createNewWallpaper_prepareFromIdea } from './createNewWallpaper_prepareFromIdea';
 import { createNewWallpaper_prepareFromImage } from './createNewWallpaper_prepareFromImage';
 

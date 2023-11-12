@@ -1,9 +1,9 @@
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
-import { ImagePromptResult } from '../../../ai/text-to-image/0-interfaces/ImagePromptResult';
-import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
+import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { string_image_prompt } from '../../../../utils/typeAliases';
 import { simpleTextDialogue } from '../../../dialogues/simple-text/simpleTextDialogue';
-import { string_image_prompt } from '../../../utils/typeAliases';
 
 export interface MockedMultitaskWithImageGeneratorRequest {
     /**

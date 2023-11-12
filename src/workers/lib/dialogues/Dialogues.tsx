@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Modal } from '../../../components/Modal/00-Modal';
-import { SimpleTextDialogueComponent } from './dialogues/simple-text/component/SimpleTextDialogueComponent';
-import { IPromptInQueue } from './dialogues/simple-text/simpleTextDialogue';
+import { SimpleTextDialogueComponent } from '../../dialogues/simple-text/component/SimpleTextDialogueComponent';
+import { dialoguesQueue } from './misc/dialoguesQueue';
 import { isDialoguesRendered } from './misc/lock';
-import { promptDialogueQueue } from './misc/dialoguesQueue';
 
 /**
  * Renders a place where the dialogues are rendered
@@ -36,7 +35,7 @@ export function Dialogues() {
         }
 
         const interval = setInterval(() => {
-            const promptInQueue = promptDialogueQueue.find((promptInQueue) => promptInQueue.answer === undefined);
+            const promptInQueue = dialoguesQueue.find((promptInQueue) => promptInQueue.answer === undefined);
 
             if (!promptInQueue) {
                 return;

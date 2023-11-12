@@ -17,7 +17,7 @@ import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid o
 import { useLocale } from '../../utils/hooks/useLocale';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 
 export default function NewWallpaperFromIdeaPage() {
     const router = useRouter();

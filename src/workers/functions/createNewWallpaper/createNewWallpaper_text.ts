@@ -1,10 +1,10 @@
 import { TaskProgress } from '@promptbook/types';
-import { FONTS } from '../../../config';
-import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
-import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
-import { addFontToContent } from '../../components/ImportFonts/addFontToContent';
-import type { WriteWallpaperPromptResponse } from '../../pages/api/image-to-text';
-import { randomItem } from '../../utils/randomItem';
+import { FONTS } from '../../../../config';
+import { getExecutionTools } from '../../../ai/prompt-templates/getExecutionTools';
+import { webgptPtpLibrary } from '../../../ai/prompt-templates/webgptPtpLibrary';
+import { addFontToContent } from '../../../components/ImportFonts/addFontToContent';
+import type { WriteWallpaperPromptResponse } from '../../../pages/api/image-to-text';
+import { randomItem } from '../../../utils/randomItem';
 import {
     description,
     string_image_prompt,
@@ -15,7 +15,7 @@ import {
     string_url_image,
     title,
     uuid,
-} from '../../utils/typeAliases';
+} from '../../../utils/typeAliases';
 
 export interface CreateNewWallpaperTextRequest {
     /**

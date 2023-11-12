@@ -5,19 +5,19 @@ import {
     USE_DALLE_VERSION,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
-} from '../../../config';
-import { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
-import { getImageGenerator } from '../../ai/text-to-image/getImageGenerator';
-import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
-import { UploadWallpaperResponse } from '../../pages/api/upload-image';
-import { aspectRatioRangeExplain } from '../../utils/aspect-ratio/aspectRatioRangeExplain';
-import { downscaleWithAspectRatio } from '../../utils/aspect-ratio/downscaleWithAspectRatio';
-import { isInAspectRatioRange } from '../../utils/aspect-ratio/isInAspectRatioRange';
-import { createImageInWorker } from '../../utils/image/createImageInWorker';
-import { measureImageBlob } from '../../utils/image/measureImageBlob';
-import { resizeImageBlob } from '../../utils/image/resizeImageBlob';
-import { IImageColorStats } from '../../utils/image/utils/IImageColorStats';
-import { string_image_prompt, string_url_image, uuid } from '../../utils/typeAliases';
+} from '../../../../config';
+import { ImagePromptResult } from '../../../ai/text-to-image/0-interfaces/ImagePromptResult';
+import { getImageGenerator } from '../../../ai/text-to-image/getImageGenerator';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { UploadWallpaperResponse } from '../../../pages/api/upload-image';
+import { aspectRatioRangeExplain } from '../../../utils/aspect-ratio/aspectRatioRangeExplain';
+import { downscaleWithAspectRatio } from '../../../utils/aspect-ratio/downscaleWithAspectRatio';
+import { isInAspectRatioRange } from '../../../utils/aspect-ratio/isInAspectRatioRange';
+import { createImageInWorker } from '../../../utils/image/createImageInWorker';
+import { measureImageBlob } from '../../../utils/image/measureImageBlob';
+import { resizeImageBlob } from '../../../utils/image/resizeImageBlob';
+import { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
+import { string_image_prompt, string_url_image, uuid } from '../../../utils/typeAliases';
 
 interface CreateNewWallpaperImageRequest {
     /**

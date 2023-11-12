@@ -3,7 +3,7 @@ import { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImageProm
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
-import { mockedMultitaskWithImageGeneratorForBrowser } from '../../workers/mock/mockedMultitaskWithImageGenerator/workerify/mockedMultitaskWithImageGeneratorForBrowser';
+import { mockedMultitaskWithImageGeneratorForBrowser } from '../../workers/functions/mock/mockedMultitaskWithImageGenerator/workerify/mockedMultitaskWithImageGeneratorForBrowser';
 
 export default function TestTasksProgressWithChatPage() {
     const promptRef = useRef<HTMLTextAreaElement>(null);
