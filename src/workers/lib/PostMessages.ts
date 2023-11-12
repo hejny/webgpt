@@ -48,3 +48,7 @@ export interface IMessagePromptDialogue {
     readonly type: 'PROMPT_DIALOGUE';
     readonly promptOptions: IPromptDialogueOptions;
 }
+
+/**
+ * TODO: !!! To Lib folder
+ */

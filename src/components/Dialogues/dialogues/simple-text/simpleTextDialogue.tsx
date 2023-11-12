@@ -1,7 +1,7 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../../utils/isRunningInWhatever';
 import { message } from '../../../../utils/typeAliases';
-import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../../workers/0-Workerify/PostMessages';
+import { IMessageMainToWorker, IMessagePromptDialogue } from '../../../../workers/lib/PostMessages';
 import { isDialoguesRendered } from '../../misc/lock';
 import { promptDialogueQueue } from '../../misc/prompts';
 
