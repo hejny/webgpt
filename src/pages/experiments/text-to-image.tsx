@@ -4,13 +4,13 @@ import { USE_DALLE_VERSION } from '../../../config';
 import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { getImageGenerator } from '../../ai/text-to-image/getImageGenerator';
-import { Dialogues } from '../../components/Dialogues/Dialogues';
 import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { string_image_prompt } from '../../utils/typeAliases';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 
 export default function TextToImagePage() {
     const [promptContent, setPromptContent] = useState<string_image_prompt | null>('Coffee in space');

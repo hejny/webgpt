@@ -1,6 +1,6 @@
 import { Promisable } from 'type-fest';
-import { IPromptDialogueOptions } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
+import { uuid } from '../../utils/typeAliases';
 
 export type TransferableObject = any /* <-[0] */;
 
@@ -11,23 +11,24 @@ export type IWorkerifyableFunction<TRequest extends TransferableObject, TResult 
 
 export type IMessageMainToWorker<TRequest extends TransferableObject> =
     | IMessageRequest<TRequest>
-    | IMessagePromptDialogueAnswer;
+    | IMessageDialogueResponse;
 
 export interface IMessageRequest<TRequest extends TransferableObject> {
     readonly type: 'REQUEST';
     readonly request: TRequest;
 }
 
-export interface IMessagePromptDialogueAnswer {
-    readonly type: 'PROMPT_DIALOGUE_ANSWER';
-    readonly promptAnswer: string | null /* <-[🍁] */;
+export interface IMessageDialogueResponse {
+    readonly type: `${string}_DIALOGUE_RESPONSE`;
+    readonly id: uuid;
+    readonly response: any;
 }
 
 export type IMessageWorkerToMain<TResult extends TransferableObject> =
     | IMessageProgress
     | IMessageResult<TResult>
     | IMessageError
-    | IMessagePromptDialogue;
+    | IMessageDialogueRequest;
 
 export interface IMessageProgress {
     readonly type: 'PROGRESS';
@@ -44,11 +45,13 @@ export interface IMessageError {
     readonly message: string;
 }
 
-export interface IMessagePromptDialogue {
-    readonly type: 'PROMPT_DIALOGUE';
-    readonly promptOptions: IPromptDialogueOptions;
+export interface IMessageDialogueRequest {
+    readonly type: `${string}_DIALOGUE_REQUEST`;
+    readonly id: uuid;
+    readonly request: any;
 }
 
 /**
  * TODO: !!! To Lib folder
+ * TODO: !!! Annotate
  */

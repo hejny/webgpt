@@ -1,11 +1,11 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
+import { simpleTextDialogue } from '../dialogues/simple-text/simpleTextDialogue';
 import {
+    IMessageDialogueRequestAnswer,
     IMessageError,
     IMessageMainToWorker,
     IMessageProgress,
-    IMessagePromptDialogueAnswer,
     IMessageRequest,
     IMessageResult,
     IMessageWorkerToMain,
@@ -121,11 +121,11 @@ export class Workerify<
                         reject(new Error(message));
                     } else if (type === 'PROMPT_DIALOGUE') {
                         const { promptOptions } = event.data;
-                        const promptAnswer = await promptDialogue(promptOptions);
+                        const promptAnswer = await simpleTextDialogue(promptOptions);
                         worker!.postMessage({
                             type: 'PROMPT_DIALOGUE_ANSWER',
                             promptAnswer,
-                        } satisfies IMessagePromptDialogueAnswer);
+                        } satisfies IMessageDialogueRequestAnswer);
                     } else {
                         reject(new Error(`Unexpected message type from worker: ${type}`));
                     }

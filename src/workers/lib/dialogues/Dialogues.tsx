@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Modal } from '../Modal/00-Modal';
+import { Modal } from '../../../components/Modal/00-Modal';
 import { SimpleTextDialogueComponent } from './dialogues/simple-text/component/SimpleTextDialogueComponent';
 import { IPromptInQueue } from './dialogues/simple-text/simpleTextDialogue';
 import { isDialoguesRendered } from './misc/lock';
-import { promptDialogueQueue } from './misc/prompts';
+import { promptDialogueQueue } from './misc/dialoguesQueue';
 
 /**
  * Renders a place where the dialogues are rendered

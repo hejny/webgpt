@@ -7,6 +7,7 @@ import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../conf
 import { promptDialogue } from '../../components/Dialogues/dialogues/simple-text/simpleTextDialogue';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { uuid } from '../../utils/typeAliases';
+import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 
 /**
  * Theese are tools for PTP execution
@@ -55,7 +56,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                     // TODO: Configure how many retries
                     for (let i = 0; i < 3; i++) {
-                        answer = await promptDialogue({
+                        answer = await simpleTextDialogue({
                             ...options,
                             prompt: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
                         });

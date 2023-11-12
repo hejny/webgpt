@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Vector } from 'xyzt';
 import { IS_DEVELOPMENT } from '../../../config';
 import { useGraph } from '../../utils/hooks/useGraph';
-import { Dialogues } from '../Dialogues/Dialogues';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 import { WebgptTaskProgress } from './task/WebgptTaskProgress';
 import styles from './TasksInProgress.module.css';
 

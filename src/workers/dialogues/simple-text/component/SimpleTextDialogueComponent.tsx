@@ -1,19 +1,15 @@
 import { useRef } from 'react';
+import { DialogueComponentProps } from '../../../lib/interfaces/DialogueComponentProps';
 import { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueRequest';
 import { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
 import styles from './SimpleTextDialogueComponent.module.css';
 
-// !!! DialogueComponentProps<TRequest,TResponse> + Annotate
-interface SimpleTextDialogueRequestProps {
-    readonly request: SimpleTextDialogueRequest;
-
-    onResponse(response: SimpleTextDialogueResponse): void;
-}
-
 /**
  * @private use only within simpleTextDialogue function
  */
-export function SimpleTextDialogueComponent(props: SimpleTextDialogueRequestProps) {
+export function SimpleTextDialogueComponent(
+    props: DialogueComponentProps<SimpleTextDialogueRequest, SimpleTextDialogueResponse>,
+) {
     const { request, onResponse } = props;
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -50,6 +46,8 @@ export function SimpleTextDialogueComponent(props: SimpleTextDialogueRequestProp
         </>
     );
 }
+
+SimpleTextDialogueComponent.dialogueTypeName = 'SIMPLE_TEXT';
 
 /**
  * !!! Annotate
