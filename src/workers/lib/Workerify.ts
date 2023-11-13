@@ -71,7 +71,7 @@ export class Workerify<
                 } finally {
                     self.close();
                 }
-            } else if (type.endsWith('_DIALOGUE_ANSWER') /* <- !!! Maybe reverse */) {
+            } else if (type.endsWith('_DIALOGUE_RESPONSE') /* <- !!! Maybe reverse */) {
                 // !!! Search ACRY [👂] and reannotate
                 // Note: [👂] Do nothing here, because some dialogue function listens alongside with this listener
                 return;
