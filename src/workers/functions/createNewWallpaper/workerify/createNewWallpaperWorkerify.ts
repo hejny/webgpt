@@ -1,4 +1,4 @@
-import { simpleTextDialogue } from '../../../dialogues/simple-text/simpleTextDialogue';
+import { supportDialogues } from '../../../dialogues';
 import { Workerify } from '../../../lib/Workerify';
 import { CreateNewWallpaperRequest, CreateNewWallpaperResult } from '../createNewWallpaper';
 
@@ -7,10 +7,7 @@ import { CreateNewWallpaperRequest, CreateNewWallpaperResult } from '../createNe
  */
 
 export const createNewWallpaperWorkerify = new Workerify<CreateNewWallpaperRequest, CreateNewWallpaperResult>({
-    supportDialogues: [
-        simpleTextDialogue,
-        // TODO: !!! Add all dialogues
-    ],
+    supportDialogues,
 });
 
 /**

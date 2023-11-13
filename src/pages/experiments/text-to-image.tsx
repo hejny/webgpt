@@ -10,6 +10,7 @@ import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { string_image_prompt } from '../../utils/typeAliases';
+import { supportDialogues } from '../../workers/dialogues';
 import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 
 export default function TextToImagePage() {
@@ -70,7 +71,7 @@ export default function TextToImagePage() {
                 }}
             />
 
-            <Dialogues />
+            <Dialogues {...{ supportDialogues }}/>
         </div>
     );
 }

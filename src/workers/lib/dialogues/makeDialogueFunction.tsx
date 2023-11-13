@@ -61,6 +61,7 @@ export function makeDialogueFunction<TRequest, TResponse>(
     };
 
     dialogueFunction.dialogueTypeName = dialogueTypeName;
+    dialogueFunction.DialogueComponent = DialogueComponent;
 
     return dialogueFunction;
 }

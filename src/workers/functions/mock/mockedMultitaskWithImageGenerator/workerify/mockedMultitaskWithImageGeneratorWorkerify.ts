@@ -1,4 +1,4 @@
-import { simpleTextDialogue } from '../../../../dialogues/simple-text/simpleTextDialogue';
+import { supportDialogues } from '../../../../dialogues';
 import { Workerify } from '../../../../lib/Workerify';
 import {
     MockedMultitaskWithImageGeneratorRequest,
@@ -13,10 +13,7 @@ export const mockedMultitaskWithImageGeneratorWorkerify = new Workerify<
     MockedMultitaskWithImageGeneratorRequest,
     MockedMultitaskWithImageGeneratorResult
 >({
-    supportDialogues: [
-        simpleTextDialogue,
-        // TODO: !!! Add all dialogues
-    ],
+    supportDialogues,
 });
 
 /**

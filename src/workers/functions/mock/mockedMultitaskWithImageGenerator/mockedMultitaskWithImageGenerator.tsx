@@ -68,11 +68,11 @@ export async function mockedMultitaskWithImageGenerator(
         // TODO: !!! Implement> isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
     });
 
-    imagePromptContent = imagePromptContentConfirmed;
+    imagePromptContent = imagePromptContentConfirmed!;
 
     const ImagePromptResult = await imageGeneratorDialogue({
         message: `Pick the image`, // <- TODO: !!! Change prompt to something more meaningful
-       defaultImagePrompt :imagePromptContent,// <- [🧠] Best name defaultImagePrompt vs imagePromptContent,
+        defaultImagePrompt: imagePromptContent, // <- [🧠] Best name defaultImagePrompt vs imagePromptContent,
         /*
         TODO: !!! Delete
         prompt: (
