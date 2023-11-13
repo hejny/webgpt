@@ -55,10 +55,12 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                     // TODO: Configure how many retries
                     for (let i = 0; i < 3; i++) {
-                        const { answer } = await simpleTextDialogue({
+                        const response = await simpleTextDialogue({
                             ...options,
                             message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
                         });
+
+                        answer = response.answer;
 
                         if (answer !== null && spaceTrim(answer) !== '') {
                             break;
