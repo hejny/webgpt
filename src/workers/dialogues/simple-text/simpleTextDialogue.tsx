@@ -45,7 +45,7 @@ export interface IPromptInQueue extends IPromptDialogueOptions {
 */
 
 /**
- * !!!
+ * !!! Annotate
  */
 export const simpleTextDialogue = makeDialogueFunction<SimpleTextDialogueRequest, SimpleTextDialogueResponse>(
     SimpleTextDialogueComponent,

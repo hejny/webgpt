@@ -4,7 +4,7 @@ import { ImageGeneratorDialogueRequest } from './interfaces/ImageGeneratorDialog
 import { ImageGeneratorDialogueResponse } from './interfaces/ImageGeneratorDialogueResponse';
 
 /**
- * !!!
+ * !!! Annotate
  */
 export const imageGeneratorDialogue = makeDialogueFunction<
     ImageGeneratorDialogueRequest,
