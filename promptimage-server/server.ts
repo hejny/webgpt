@@ -20,9 +20,6 @@ createRemoteImageGeneratorServer({
                 openAiApiKey: OPENAI_API_KEY!,
                 user: clientId,
             }),
-            // TODO: !!! Put here (or somewhere) Photobank
-            // TODO: !! Put here (or somewhere) MidJourney
-            //       PregeneratedPhotobank.getInstance()
         });
     },
 });

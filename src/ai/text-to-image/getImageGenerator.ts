@@ -16,10 +16,10 @@ let imageGenerator: ImageGenerator;
 /**
  * Get the image generator
  *
- * Note: Tools are cached, so it's safe to call this function multiple times
+ * Note: Image generator is cached, so it's safe to call this function multiple times
  * Note: This function is available ONLY in browser or worker
  *
- * @returns ExecutionTools
+ * @returns ImageGenerator based on OpenAI Dalle
  */
 export function getImageGenerator(clientId: uuid): ImageGenerator {
     if (!isRunningInWebWorker() && !isRunningInBrowser()) {
