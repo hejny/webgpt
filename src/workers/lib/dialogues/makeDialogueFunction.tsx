@@ -1,7 +1,7 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { randomUuid } from '../../../utils/randomUuid';
-import { IMessageDialogueRequest, IMessageDialogueResponse, IMessageMainToWorker } from '../interfaces/PostMessages';
+import { IMessageDialogueRequest, IMessageDialogueResponse, IMessageMainToWorker } from '../interfaces/_';
 import { dialoguesQueue } from './dialoguesQueue';
 import { DialogueComponent } from './interfaces/DialogueComponent';
 import { DialogueFunction } from './interfaces/DialogueFunction';

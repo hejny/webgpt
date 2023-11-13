@@ -11,7 +11,7 @@ import {
     IMessageWorkerToMain,
     IWorkerifyableFunction,
     TransferableObject,
-} from './interfaces/PostMessages';
+} from './interfaces/_';
 
 /**
  * !!! Annotate all
