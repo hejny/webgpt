@@ -3,12 +3,11 @@ import { useCallback, useMemo, useState } from 'react';
 import { USE_DALLE_VERSION } from '../../../config';
 import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
-import { getImageGenerator } from '../../ai/text-to-image/getImageGenerator';
+import { getPhotobank } from '../../ai/text-to-image/getPhotobank';
 import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { fetchImage } from '../../utils/scraping/fetchImage';
-import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { string_image_prompt } from '../../utils/typeAliases';
 import { supportDialogues } from '../../workers/dialogues';
 import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
@@ -30,11 +29,17 @@ export default function TextToImagePage() {
     const runImageGenerator = useCallback(async () => {
         setReady(false);
 
+        /**/
+        const imageGenerator = getPhotobank();
+        /**/
+
+        /*/
         const imageGenerator = getImageGenerator(
             await provideClientId({
                 isVerifiedEmailRequired: true,
             }),
         );
+        /**/
 
         const results = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {});
 
@@ -71,7 +76,7 @@ export default function TextToImagePage() {
                 }}
             />
 
-            <Dialogues {...{ supportDialogues }}/>
+            <Dialogues {...{ supportDialogues }} />
         </div>
     );
 }
