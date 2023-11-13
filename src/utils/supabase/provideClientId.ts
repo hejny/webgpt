@@ -43,7 +43,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
     }
 
     const { answer: email } = await simpleTextDialogue({
-        prompt: `Please write your email`,
+        message: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
     });

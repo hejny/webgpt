@@ -4,7 +4,7 @@ export interface SimpleTextDialogueRequest {
     /**
      * Prompt message
      */
-    prompt: message;
+    message: message;
 
     /**
      * Default value for the input/textarea
@@ -18,6 +18,7 @@ export interface SimpleTextDialogueRequest {
 }
 
 /**
- * TODO: !!! Rename prompt -> message
  * TODO: !!! Annotate + readonly
+ * TODO: isMultiline
+ * TODO: isRequired
  */

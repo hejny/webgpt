@@ -12,14 +12,14 @@ export function SimpleTextDialogueComponent(
     props: DialogueComponentProps<SimpleTextDialogueRequest, SimpleTextDialogueResponse>,
 ) {
     const {
-        request: { prompt, defaultValue, placeholder },
+        request: { message, defaultValue, placeholder },
         onResponse,
     } = props;
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     return (
-        <Modal title={prompt}>
+        <Modal title={message}>
             <textarea
                 autoFocus
                 ref={textareaRef}

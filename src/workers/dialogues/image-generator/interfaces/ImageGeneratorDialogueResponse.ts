@@ -2,9 +2,9 @@ import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/Ima
 
 export interface ImageGeneratorDialogueResponse {
     /**
-     * The generated image
+     * The picked image (either pre-generated or generated from the prompt)
      */
-    image: ImagePromptResult;
+    pickedImage: ImagePromptResult;
 }
 
 /**

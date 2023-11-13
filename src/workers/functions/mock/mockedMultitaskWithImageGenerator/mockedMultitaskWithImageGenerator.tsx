@@ -63,29 +63,16 @@ export async function mockedMultitaskWithImageGenerator(
     }
 
     const { answer: imagePromptContentConfirmed } = await simpleTextDialogue({
-        prompt: `Confirm image prompt`, // <- TODO: !!! Change prompt to something more meaningful
+        message: `Confirm image prompt`, // <- TODO: !!! Change prompt to something more meaningful
         defaultValue: imagePromptContent,
         // TODO: !!! Implement> isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
     });
 
     imagePromptContent = imagePromptContentConfirmed!;
 
-    const ImagePromptResult = await imageGeneratorDialogue({
-        message: `Pick the image`, // <- TODO: !!! Change prompt to something more meaningful
+    const { pickedImage } = await imageGeneratorDialogue({
+        message: `Pick the image`,
         defaultImagePrompt: imagePromptContent, // <- [🧠] Best name defaultImagePrompt vs imagePromptContent,
-        /*
-        TODO: !!! Delete
-        prompt: (
-            <>
-                <ImagePromptResultsPicker
-                    prompt={{ content: imagePromptContent, model: 'test' }}
-                    results={[]}
-                    onPick={(result: ImagePromptResult) => {}}
-                />
-            </>
-        ),
-        defaultValue: '!!!',
-        */
     });
 
     await onProgress({
@@ -94,9 +81,7 @@ export async function mockedMultitaskWithImageGenerator(
     });
 
     return {
-        pickedImage: {
-            content: '!!!',
-        } as any,
+        pickedImage,
     };
 }
 

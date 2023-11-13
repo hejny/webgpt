@@ -84,7 +84,7 @@ export function ImageGeneratorDialogueComponent(
             <ImagePromptResultsPicker
                 {...{ results, prompt }}
                 onPick={async (result) => {
-                    onResponse({ image: result });
+                    onResponse({ pickedImage: result });
                 }}
             />
         </Modal>

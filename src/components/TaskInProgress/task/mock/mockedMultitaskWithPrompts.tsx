@@ -35,7 +35,7 @@ export async function mockedMultitaskWithPrompts(
         });
 
         const { answer } = await simpleTextDialogue({
-            prompt: (
+            message: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
                 </>

@@ -57,7 +57,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                     for (let i = 0; i < 3; i++) {
                         const { answer } = await simpleTextDialogue({
                             ...options,
-                            prompt: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
+                            message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
                         });
 
                         if (answer !== null && spaceTrim(answer) !== '') {
