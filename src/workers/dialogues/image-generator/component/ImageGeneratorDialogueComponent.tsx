@@ -12,7 +12,6 @@ import { string_image_prompt } from '../../../../utils/typeAliases';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
 import { ImageGeneratorDialogueResponse } from '../interfaces/ImageGeneratorDialogueResponse';
-import styles from './ImageGeneratorDialogueComponent.module.css';
 
 /**
  * @private use only within imageGeneratorDialogue function
@@ -58,8 +57,7 @@ export function ImageGeneratorDialogueComponent(
     return (
         <Modal title={message}>
             <textarea
-            className={styles.imagePrompt}
-                // [🧠] Maybe not show by default> autoFocus
+                autoFocus
                 defaultValue={promptContent}
                 placeholder={defaultImagePrompt}
                 onChange={(event) => {
