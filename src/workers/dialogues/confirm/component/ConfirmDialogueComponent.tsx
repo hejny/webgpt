@@ -16,7 +16,7 @@ export function ConfirmDialogueComponent(
         onResponse,
     } = props;
 
-    const styles = useStyleModule('./ConfirmDialogueComponent.module.css');
+    const styles = useStyleModule(import('./ConfirmDialogueComponent.module.css'));
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
