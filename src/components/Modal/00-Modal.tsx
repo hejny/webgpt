@@ -1,5 +1,7 @@
 import { ReactNode, useEffect } from 'react';
+import { classNames } from '../../utils/classNames';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
+import { string_css_class } from '../../utils/typeAliases';
 import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { CloseModalLink } from './10-CloseModalLink';
 
@@ -20,13 +22,18 @@ interface ModalProps {
      * If `true` then you need to be in wallpaper page to close the modal
      */
     isCloseable?: boolean;
+
+    /**
+     * Optional CSS class name which will be added to content part of the modal
+     */
+    readonly className?: string_css_class;
 }
 
 /**
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children, isCloseable } = props;
+    const { title, children, isCloseable, className } = props;
 
     const styles = useStyleModule(import('./00-Modal.module.css'));
 
@@ -76,7 +83,7 @@ export function Modal(props: ModalProps) {
                         )}
                     </div>
                 </div>
-                <div className={styles.content}>{children} </div>
+                <div className={classNames(styles.content, className)}>{children} </div>
             </dialog>
         </>
     );
