@@ -3,6 +3,8 @@ import { Promisable } from 'type-fest';
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { string_image_prompt } from '../../../../utils/typeAliases';
+import { confirmDialogue } from '../../../dialogues/confirm/confirmDialogue';
+import { imageGeneratorDialogue } from '../../../dialogues/image-generator/imageGeneratorDialogue';
 import { simpleTextDialogue } from '../../../dialogues/simple-text/simpleTextDialogue';
 
 export interface MockedMultitaskWithImageGeneratorRequest {
@@ -53,7 +55,7 @@ export async function mockedMultitaskWithImageGenerator(
     });
 
     const isContinuing = await confirmDialogue({
-        prompt: `Do you want to pick an image?`,
+        message: `Do you want to pick an image?`,
     });
 
     if (!isContinuing) {
@@ -69,8 +71,8 @@ export async function mockedMultitaskWithImageGenerator(
     imagePromptContent = imagePromptContentConfirmed;
 
     const ImagePromptResult = await imageGeneratorDialogue({
-        prompt: `Pick the image`, // <- TODO: !!! Change prompt to something more meaningful
-        imagePromptContent,
+        message: `Pick the image`, // <- TODO: !!! Change prompt to something more meaningful
+       defaultImagePrompt :imagePromptContent,// <- [🧠] Best name defaultImagePrompt vs imagePromptContent,
         /*
         TODO: !!! Delete
         prompt: (
