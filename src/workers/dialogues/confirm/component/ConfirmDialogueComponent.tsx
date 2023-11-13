@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
+import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
 import { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
-// [🕵️‍♀️] !!!> import styles from './ConfirmDialogueComponent.module.css';
 
 /**
  * @private use only within confirmDialogue function
@@ -16,12 +16,14 @@ export function ConfirmDialogueComponent(
         onResponse,
     } = props;
 
+    const styles = useStyleModule('./ConfirmDialogueComponent.module.css');
+
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     return (
         <Modal title={message}>
             <button
-                // [🕵️‍♀️] !!!> className={styles.option}
+                className={styles.option}
                 onClick={() => {
                     onResponse({ answer: true });
                 }}
@@ -29,7 +31,7 @@ export function ConfirmDialogueComponent(
                 Yes
             </button>
             <button
-                // [🕵️‍♀️] !!!> className={styles.option}
+                className={styles.option}
                 onClick={() => {
                     onResponse({ answer: false });
                 }}

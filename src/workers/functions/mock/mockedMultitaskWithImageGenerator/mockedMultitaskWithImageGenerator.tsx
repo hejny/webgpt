@@ -54,7 +54,7 @@ export async function mockedMultitaskWithImageGenerator(
         isDone: false,
     });
 
-    const isContinuing = await confirmDialogue({
+    const { answer: isContinuing } = await confirmDialogue({
         message: `Do you want to pick an image?`,
     });
 
