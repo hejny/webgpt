@@ -32,7 +32,10 @@ export function ImageGeneratorDialogueComponent(
             modelSettings: {
                 style: 'vivid',
             },
+            // <- TODO: !!! To config
+            // <- TODO: !!! Play with theeese to achieve best results
         }),
+
         [promptContent],
     );
     const [isReady, setReady] = useState<boolean>(true);
