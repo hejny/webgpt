@@ -1,6 +1,6 @@
 import { isValidKeyword } from 'n12';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { randomItems } from '../../../utils/randomItems';
+import { randomMaxItems } from '../../../utils/randomMaxItems';
 import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServer';
 import { string_url_image } from '../../../utils/typeAliases';
 
@@ -50,7 +50,7 @@ export default async function searchPhotobankHandler(
     let images = result.data!.map(({ src }) => ({ src }));
 
     // TODO: This should be responsibility of the database
-    const srcs = new Set<string>();
+    const srcs = new Set<string_url_image>();
     images = images.filter(({ src }) => {
         if (srcs.has(src)) {
             return false;
@@ -60,7 +60,7 @@ export default async function searchPhotobankHandler(
         return true;
     });
 
-    images = randomItems(9, ...images);
+    images = randomMaxItems(9, ...images);
 
     return response.status(200).json({
         images,

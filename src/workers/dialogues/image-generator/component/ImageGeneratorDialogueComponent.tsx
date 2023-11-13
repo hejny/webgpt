@@ -11,7 +11,7 @@ import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/W
 import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
-import { string_image_prompt } from '../../../../utils/typeAliases';
+import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
 import { ImageGeneratorDialogueResponse } from '../interfaces/ImageGeneratorDialogueResponse';
@@ -63,13 +63,23 @@ export function ImageGeneratorDialogueComponent(
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
     const runImageGenerator = useCallback(async () => {
         setReady(false);
-        const results = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
+        const newResults = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
             // !!! Use
         });
 
+        const srcs = new Set<string_url_image>();
+        const joinedResults = [...results, ...newResults].filter(({ imageSrc }) => {
+            if (srcs.has(imageSrc)) {
+                return false;
+            }
+
+            srcs.add(imageSrc);
+            return true;
+        });
+
         setReady(true);
-        setResults(results);
-    }, [imageGenerator, prompt]);
+        setResults(joinedResults);
+    }, [results, imageGenerator, prompt]);
 
     const [selected, setSelected] = useState<null | ImagePromptResult>(null);
 
@@ -113,7 +123,7 @@ export function ImageGeneratorDialogueComponent(
 
             <div className={styles.actions}>
                 {!selected ? (
-                    <button className={classNames('button')} onClick={runImageGenerator}>
+                    <button className={classNames('button', styles.secondaryAction)} onClick={runImageGenerator}>
                         Generate more
                     </button>
                 ) : (

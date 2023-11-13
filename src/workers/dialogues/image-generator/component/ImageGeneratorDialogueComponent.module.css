@@ -67,11 +67,11 @@ textarea.prompt {
     justify-content: center;
 }
 
-.callToAction {
-    /*/
-    outline: 1px dotted rgb(255 81 38);
-    /**/
+.secondaryAction {
+    background-color: #3d3d3d;
+}
 
+.callToAction {
     background-color: #ff0000;
 }
 /*
