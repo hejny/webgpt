@@ -1,8 +1,8 @@
 import { isValidKeyword } from 'n12';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { randomMaxItems } from '../../../utils/randomMaxItems';
-import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServer';
 import { string_url_image } from '../../../utils/typeAliases';
+import { searchPhotobankOnServer } from './utils/searchPhotobankOnServer';
 
 export interface SearchPhotobankResult {
     /**
@@ -40,14 +40,7 @@ export default async function searchPhotobankHandler(
         );
     }
 
-    const result = await getSupabaseForServer()
-        .from('Wallpaper')
-        .select('*')
-        .eq('isPublic', 'true')
-        .limit(100)
-        .contains('keywords', keywords);
-
-    let images = result.data!.map(({ src }) => ({ src }));
+    let images = await searchPhotobankOnServer({ keywords });
 
     // TODO: This should be responsibility of the database
     const srcs = new Set<string_url_image>();

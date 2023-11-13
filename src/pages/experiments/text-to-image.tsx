@@ -67,6 +67,9 @@ export default function TextToImagePage() {
             {results.length === 0 && isReady && <p>No images generated</p>}
             <ImagePromptResultsPicker
                 {...{ results, prompt }}
+                onSelect={(result) => {
+                    // Do nothing
+                }}
                 onPick={async (result) => {
                     const image = new File(
                         [await fetchImage(result.imageSrc)],
