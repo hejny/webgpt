@@ -1,11 +1,10 @@
-import { ImagePromptResult } from "../../../../ai/text-to-image/0-interfaces/ImagePromptResult";
-import { DalleImageGenerator } from "../../../../ai/text-to-image/dalle/DalleImageGenerator";
+import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 
 export interface ImageGeneratorDialogueResponse {
     /**
      * The generated image
      */
-    ImagePromptResult: ImagePromptResult;
+    image: ImagePromptResult;
 }
 
 /**
