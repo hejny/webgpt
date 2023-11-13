@@ -36,7 +36,7 @@ export function ConfirmDialogueComponent(
     );
 }
 
-ConfirmDialogueComponent.dialogueTypeName = 'SIMPLE_TEXT';
+ConfirmDialogueComponent.dialogueTypeName = 'CONFIRM';
 
 /**
  * !!! Allow to pass true/false labels

@@ -47,7 +47,7 @@ export function ImageGeneratorDialogueComponent(
     );
 }
 
-ImageGeneratorDialogueComponent.dialogueTypeName = 'SIMPLE_TEXT';
+ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
  * !!! Annotate
