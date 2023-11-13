@@ -91,7 +91,7 @@ export function ImageGeneratorDialogueComponent(
         setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
 
         if (generatorType !== 'PREGENERATED' && newResults[0]) {
-            // !!! Make this work
+            // !!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
             setSelected(newResults[0]!);
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
