@@ -31,12 +31,12 @@ export function ImageGeneratorDialogueComponent(
 
     const [promptContent, setPromptContent] = useState<string_image_prompt>(defaultImagePrompt);
 
-    const [generatorType, setGeneratorType] = useState<'PREGENERATED' | 'CUSTOM'>('PREGENERATED');
+    const [generatorType, setGeneratorType] = useState<'PREGENERATED' | 'DALLE'>('PREGENERATED');
     const clientId = useClientId({ isVerifiedEmailRequired: true });
     const imageGenerator = useMemo(() => {
         if (generatorType === 'PREGENERATED') {
             return getPhotobank();
-        } else if (generatorType === 'CUSTOM') {
+        } else if (generatorType === 'DALLE') {
             if (!clientId) {
                 throw new Error(`clientId is required for Dalle generator`);
             }
@@ -59,10 +59,17 @@ export function ImageGeneratorDialogueComponent(
 
         [promptContent],
     );
-    const [isReady, setReady] = useState<boolean>(true);
+    const [isRunning, setRunning] = useState<boolean>(false);
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
+    const [runnedImageGenerator, setRunnedImageGenerator] = useState(0);
+    const [selected, setSelected] = useState<null | ImagePromptResult>(null);
     const runImageGenerator = useCallback(async () => {
-        setReady(false);
+        if (isRunning) {
+            console.warn(`Image generator is already running`);
+            return;
+        }
+
+        setRunning(true);
         const newResults = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
             // !!! Use
         });
@@ -77,13 +84,16 @@ export function ImageGeneratorDialogueComponent(
             return true;
         });
 
-        setReady(true);
+        console.log('!!!', { results, newResults, joinedResults });
+
+        setRunning(false);
         setResults(joinedResults);
-    }, [results, imageGenerator, prompt]);
+        setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
 
-    const [selected, setSelected] = useState<null | ImagePromptResult>(null);
-
-    // !!! debugger;
+        if (generatorType !== 'PREGENERATED' && newResults[0]) {
+            setSelected(newResults[0]!);
+        }
+    }, [isRunning, results, generatorType, imageGenerator, prompt]);
 
     return (
         <Modal title={message} className={styles.ImageGeneratorDialogueComponent}>
@@ -106,7 +116,7 @@ export function ImageGeneratorDialogueComponent(
             />
 
             <div className={styles.results}>
-                {!isReady ? (
+                {isRunning ? (
                     <p>Generating...</p>
                 ) : results.length === 0 ? (
                     <p>No images generated</p>
@@ -123,9 +133,41 @@ export function ImageGeneratorDialogueComponent(
 
             <div className={styles.actions}>
                 {!selected ? (
-                    <button className={classNames('button', styles.secondaryAction)} onClick={runImageGenerator}>
-                        Generate more
-                    </button>
+                    <>
+                        <button
+                            className={classNames('button', styles.secondaryAction)}
+                            onClick={runImageGenerator}
+                            disabled={isRunning}
+                        >
+                            Generate more
+                            {generatorType === 'DALLE' && (
+                                <>
+                                    {' '}
+                                    with <b>Dalle-{USE_DALLE_VERSION}</b>
+                                </>
+                            )}
+                        </button>
+                        {runnedImageGenerator > 2 &&
+                            (generatorType !== 'DALLE' ? (
+                                <button
+                                    className={classNames('button', styles.secondaryAction)}
+                                    onClick={() => {
+                                        setGeneratorType('DALLE');
+                                    }}
+                                >
+                                    Switch to Dalle-{USE_DALLE_VERSION}
+                                </button>
+                            ) : (
+                                <button
+                                    className={classNames('button', styles.secondaryAction)}
+                                    onClick={() => {
+                                        setGeneratorType('PREGENERATED');
+                                    }}
+                                >
+                                    Switch to MidJourney
+                                </button>
+                            ))}
+                    </>
                 ) : (
                     <button
                         className={classNames('button', styles.callToAction)}
