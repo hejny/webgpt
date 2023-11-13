@@ -1,27 +1,15 @@
-import { message } from "../../../../utils/typeAliases";
+import { string_image_prompt } from '../../../../utils/typeAliases';
 
-
-export interface ImageGeneratorDialogueRequest{
- /**
-     * Prompt message
+export interface ImageGeneratorDialogueRequest {
+    /**
+     * Prompt message for the image
      *
-     * Note: This is not a prompt to language model but a prompt to the user
+     * @example "Café in the space, realistic"
      */
- prompt: message;
-
- /**
-  * Default value for the input/textarea
-  */
- defaultValue: string | null;
-
- /**
-  * Placeholder for the input/textarea
-  */
- placeholder?: string;
-
+    defaultImagePrompt: string_image_prompt;
 }
-
 
 /**
  * TODO: !!! Annotate + readonly
+ * TODO: [🧠] How/Should to pass image/model requirements? Should be here ImagePromptResult?
  */

@@ -1,26 +1,14 @@
-import { message } from "../../../../utils/typeAliases";
+import { message } from '../../../../utils/typeAliases';
 
-
-export interface ConfirmDialogueRequest{
- /**
-     * Prompt message
+export interface ConfirmDialogueRequest {
+    /**
+     * Confirm message
+     * What is being confirmed?
      *
-     * Note: This is not a prompt to language model but a prompt to the user
+     * @example "Are you sure you want to delete the image?"
      */
- prompt: message;
-
- /**
-  * Default value for the input/textarea
-  */
- defaultValue: string | null;
-
- /**
-  * Placeholder for the input/textarea
-  */
- placeholder?: string;
-
+    message: message;
 }
-
 
 /**
  * TODO: !!! Annotate + readonly

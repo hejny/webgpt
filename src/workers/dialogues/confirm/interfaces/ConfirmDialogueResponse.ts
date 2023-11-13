@@ -1,11 +1,8 @@
 export interface ConfirmDialogueResponse {
     /**
-     * Answer to the prompt
-     *
-     * - `null` means that the prompt is answered with `null`
-     * - `string` means the answer to the prompt
+     * result of the confirmation
      */
-    answer: string | null;
+    answer: boolean;
 }
 
 /**

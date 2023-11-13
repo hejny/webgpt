@@ -1,11 +1,11 @@
+import { ImagePromptResult } from "../../../../ai/text-to-image/0-interfaces/ImagePromptResult";
+import { DalleImageGenerator } from "../../../../ai/text-to-image/dalle/DalleImageGenerator";
+
 export interface ImageGeneratorDialogueResponse {
     /**
-     * Answer to the prompt
-     *
-     * - `null` means that the prompt is answered with `null`
-     * - `string` means the answer to the prompt
+     * The generated image
      */
-    answer: string | null;
+    ImagePromptResult: ImagePromptResult;
 }
 
 /**
