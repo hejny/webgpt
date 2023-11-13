@@ -1,8 +1,17 @@
 import { useEffect, useState } from 'react';
 import { Modal } from '../../../components/Modal/00-Modal';
-import { SimpleTextDialogueComponent } from '../../dialogues/simple-text/component/SimpleTextDialogueComponent';
 import { dialoguesQueue } from './dialoguesQueue';
+import { DialogueFunction } from './interfaces/DialogueFunction';
+import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from './isDialoguesRendered';
+
+// !!! Annotate
+
+interface DialoguesProps {
+    supportDialogues: Array<DialogueFunction<any, any>>;
+}
+
+// TODO: !!! One central place for all dialogues in the app
 
 /**
  * Renders a place where the dialogues are rendered
@@ -10,7 +19,7 @@ import { isDialoguesRendered } from './isDialoguesRendered';
  * The component is initially hidden and is shown when the first dialogue is rendered
  * Note: There can be only one instance of this component in the app
  */
-export function Dialogues() {
+export function Dialogues(props: DialoguesProps) {
     // TODO: Make hook useLock
     useEffect(
         () => {
@@ -27,21 +36,23 @@ export function Dialogues() {
         ],
     );
 
-    const [currentPromptInQueue, setCurrentPromptInQueue] = useState<null | IPromptInQueue>(null);
+    const [currentDialogueRequestInQueue, setCurrentDialogueRequestInQueue] = useState<null | DialogueRequestInQueue>(
+        null,
+    );
 
     useEffect(() => {
-        if (currentPromptInQueue) {
+        if (currentDialogueRequestInQueue) {
             return;
         }
 
         const interval = setInterval(() => {
-            const promptInQueue = dialoguesQueue.find((promptInQueue) => promptInQueue.answer === undefined);
+            const dialogueRequestInQueue = dialoguesQueue.find((promptInQueue) => promptInQueue.response === undefined);
 
-            if (!promptInQueue) {
+            if (!dialogueRequestInQueue) {
                 return;
             }
 
-            setCurrentPromptInQueue(promptInQueue);
+            setCurrentDialogueRequestInQueue(dialogueRequestInQueue);
 
             /*
             !!! Move
@@ -54,16 +65,39 @@ export function Dialogues() {
         return () => {
             clearInterval(interval);
         };
-    }, [currentPromptInQueue]);
+    }, [currentDialogueRequestInQueue]);
 
-    if (!currentPromptInQueue) {
+    if (!currentDialogueRequestInQueue) {
         return null;
     }
 
+    const dialogueTypeName = currentDialogueRequestInQueue.dialogueTypeName;
+
+    const dialogueFunction = props.supportDialogues.find(
+        (dialogueFunction) => dialogueFunction.dialogueTypeName === dialogueTypeName,
+    );
+
+    if (!dialogueFunction) {
+        console.error(
+            new Error(
+                `<Dialogues/> does not support dialogue "${dialogueTypeName}", did you forget to add it to props.supportDialogues?`,
+            ),
+            // <- TODO: Is it better to console.error new Error or just string?
+        );
+        return null;
+    }
+
+    const DialogueComponent = dialogueFunction.DialogueComponent;
+
     return (
-        <Modal title={currentPromptInQueue.prompt}>
-            {/* !!! */}
-            <SimpleTextDialogueComponent />
+        <Modal title={/* [🧠] currentDialogueRequestInQueue.prompt */ '!!!'}>
+            <DialogueComponent
+                request={currentDialogueRequestInQueue.request}
+                onResponse={(response) => {
+                    currentDialogueRequestInQueue.response = response;
+                    setCurrentDialogueRequestInQueue(null);
+                }}
+            />
         </Modal>
     );
 }

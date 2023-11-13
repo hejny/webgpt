@@ -1,10 +1,8 @@
-import { string_name } from '@promptbook/types';
-import { ReactNode } from 'react';
 import { DialogueComponentProps } from './DialogueComponentProps';
 
-export type DialogueComponent<TRequest, TResponse> = { dialogueTypeName: string_name } & ((
+export type DialogueComponent<TRequest, TResponse> = /* !!! Uncomment or remove { dialogueTypeName: string_name } &*/ (
     promps: DialogueComponentProps<TRequest, TResponse>,
-) => ReactNode);
+) => JSX.Element | null;
 
 /**
  * !!! Annotate
