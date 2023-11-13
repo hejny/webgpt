@@ -1,5 +1,6 @@
 import { isValidKeyword } from 'n12';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { randomItems } from '../../../utils/randomItems';
 import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServer';
 import { string_url_image } from '../../../utils/typeAliases';
 
@@ -58,6 +59,8 @@ export default async function searchPhotobankHandler(
         srcs.add(src);
         return true;
     });
+
+    images = randomItems(9, ...images);
 
     return response.status(200).json({
         images,

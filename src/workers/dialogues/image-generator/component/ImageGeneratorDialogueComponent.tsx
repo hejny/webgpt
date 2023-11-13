@@ -8,6 +8,7 @@ import { getPhotobank } from '../../../../ai/text-to-image/getPhotobank';
 import { ImagePromptResultsPicker } from '../../../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { string_image_prompt } from '../../../../utils/typeAliases';
@@ -111,11 +112,13 @@ export function ImageGeneratorDialogueComponent(
             </div>
 
             <div className={styles.actions}>
-                <button onClick={runImageGenerator}>Generate more</button>
-
-                {selected && (
+                {!selected ? (
+                    <button className={classNames('button')} onClick={runImageGenerator}>
+                        Generate more
+                    </button>
+                ) : (
                     <button
-                        className={styles.pick}
+                        className={classNames('button', styles.callToAction)}
                         onClick={() => {
                             onResponse({ pickedImage: selected });
                         }}

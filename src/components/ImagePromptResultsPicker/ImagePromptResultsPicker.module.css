@@ -54,9 +54,12 @@
 .ImagePromptResultsPicker .gallery .result {
     cursor: pointer;
     z-index: 1;
+    box-sizing: border-box;
+    border: 2px solid transparent;
 }
 
 .ImagePromptResultsPicker .gallery .result.isPicked {
-    outline: 2px solid rgb(255 255 255);
+    border: 2px solid rgb(255 255 255);
+
     z-index: 2;
 }

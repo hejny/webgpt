@@ -40,7 +40,9 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
     return (
         <div className={classNames(className, styles.ImagePromptResultsPicker)}>
             <div className={styles.actions}>
-                {selected && (
+                {/*
+                !!! Keep or remove
+                selected && (
                     <button
                         className={styles.pick}
                         onClick={() => {
@@ -49,7 +51,7 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
                     >
                         Pick
                     </button>
-                )}
+                    )*/}
             </div>
             <div className={styles.gallery}>
                 {results.map((result) => (
