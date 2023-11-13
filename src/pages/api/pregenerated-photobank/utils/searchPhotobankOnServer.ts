@@ -37,7 +37,7 @@ export async function searchPhotobankOnServer(
     let images = result.data!.map(({ src }) => ({ src }));
 
     if (images.length === 0) {
-        if (_attemptCount > 10) {
+        if (_attemptCount > ) {
             return [];
         }
 
