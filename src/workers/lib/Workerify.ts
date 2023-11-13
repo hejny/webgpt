@@ -37,6 +37,14 @@ export class Workerify<
             throw new Error('You can access worker executor only in worker');
         }
 
+        //window.document = unundefine({});
+        console.log('!!! Faking window.document');
+        window.document = {
+            hello: 'world',
+        } as any;
+        console.log('!!! window.document', window.document);
+        console.log('!!! document', document);
+
         addEventListener('message', async (event: MessageEvent<IMessageMainToWorker<TRequest>>) => {
             const { type } = event.data;
 
