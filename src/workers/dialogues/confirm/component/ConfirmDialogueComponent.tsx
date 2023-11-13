@@ -16,32 +16,21 @@ export function ConfirmDialogueComponent(
 
     return (
         <>
-            <textarea
-                autoFocus
-                ref={textareaRef}
-                defaultValue={request.defaultValue || ''}
-                placeholder={request.placeholder}
-                className={styles.answer}
-                onKeyDown={(event) => {
-                    // TODO: DRY [1]
-                    if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
-                        return;
-                    }
-
-                    onResponse({ answer: event.currentTarget.value });
-                    // TODO: !!! Move> setCurrentPromptInQueue(null);
-                }}
-            />
             <button
-                className={styles.submit}
+                className={styles.option}
                 onClick={() => {
-                    // TODO: DRY [1]
-
-                    onResponse({ answer: textareaRef.current!.value });
-                    // TODO: !!! Move> setCurrentPromptInQueue(null);
+                    onResponse({ answer: true });
                 }}
             >
-                Submit {/* <- !! Translate */}
+                Yes
+            </button>
+            <button
+                className={styles.option}
+                onClick={() => {
+                    onResponse({ answer: false });
+                }}
+            >
+                No
             </button>
         </>
     );
@@ -50,5 +39,7 @@ export function ConfirmDialogueComponent(
 ConfirmDialogueComponent.dialogueTypeName = 'SIMPLE_TEXT';
 
 /**
+ * !!! Allow to pass true/false labels
+ * !!! Design
  * !!! Annotate
  */

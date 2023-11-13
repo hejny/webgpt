@@ -1,37 +1,5 @@
-.answer {
-    /*/
+.option {
+    /**/
     outline: 1px dotted rgb(81, 255, 38);
     /**/
-
-    z-index: 1 /* <- Note: Local order in dialogue */;
-
-    width: 100%;
-    height: calc(100% - 50px);
-    resize: none;
-
-    border-radius: 0;
-    background-color: #151515;
-    color: white;
-    outline: none;
-    border: none;
-    padding: 10px;
 }
-
-.submit {
-    /*/
-    outline: 1px dotted rgb(81, 255, 38);
-    /**/
-
-    z-index: 2 /* <- Note: Local order in dialogue */;
-
-    float: right;
-
-    height: 40px;
-    width: 100%;
-    cursor: pointer;
-}
-
-
-/*
-!!! Cleanup - use only needed
-*/
