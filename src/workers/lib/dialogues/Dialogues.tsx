@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Modal } from '../../../components/Modal/00-Modal';
 import { dialoguesQueue } from './dialoguesQueue';
 import { DialogueFunction } from './interfaces/DialogueFunction';
 import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
@@ -90,15 +89,13 @@ export function Dialogues(props: DialoguesProps) {
     const DialogueComponent = dialogueFunction.DialogueComponent;
 
     return (
-        <Modal title={/* [🧠] currentDialogueRequestInQueue.prompt */ '!!!'}>
-            <DialogueComponent
-                request={currentDialogueRequestInQueue.request}
-                onResponse={(response) => {
-                    currentDialogueRequestInQueue.response = response;
-                    setCurrentDialogueRequestInQueue(null);
-                }}
-            />
-        </Modal>
+        <DialogueComponent
+            request={currentDialogueRequestInQueue.request}
+            onResponse={(response) => {
+                currentDialogueRequestInQueue.response = response;
+                setCurrentDialogueRequestInQueue(null);
+            }}
+        />
     );
 }
 

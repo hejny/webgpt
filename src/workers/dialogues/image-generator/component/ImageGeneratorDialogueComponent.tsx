@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Modal } from '../../../../components/Modal/00-Modal';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
 import { ImageGeneratorDialogueResponse } from '../interfaces/ImageGeneratorDialogueResponse';
@@ -10,12 +11,13 @@ import styles from './ImageGeneratorDialogueComponent.module.css';
 export function ImageGeneratorDialogueComponent(
     props: DialogueComponentProps<ImageGeneratorDialogueRequest, ImageGeneratorDialogueResponse>,
 ) {
-    const { request, onResponse } = props;
+    const { request:{message,defaultImagePrompt}, onResponse } = props;
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     return (
-        <>
+        <Modal title={}>
+   
             <textarea
                 autoFocus
                 ref={textareaRef}
@@ -43,7 +45,7 @@ export function ImageGeneratorDialogueComponent(
             >
                 Submit {/* <- !! Translate */}
             </button>
-        </>
+        </Modal>
     );
 }
 

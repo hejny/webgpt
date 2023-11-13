@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Modal } from '../../../../components/Modal/00-Modal';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueRequest';
 import { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
@@ -10,17 +11,20 @@ import styles from './SimpleTextDialogueComponent.module.css';
 export function SimpleTextDialogueComponent(
     props: DialogueComponentProps<SimpleTextDialogueRequest, SimpleTextDialogueResponse>,
 ) {
-    const { request, onResponse } = props;
+    const {
+        request: { prompt, defaultValue, placeholder },
+        onResponse,
+    } = props;
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     return (
-        <>
+        <Modal title={prompt}>
             <textarea
                 autoFocus
                 ref={textareaRef}
-                defaultValue={request.defaultValue || ''}
-                placeholder={request.placeholder}
+                defaultValue={defaultValue || ''}
+                placeholder={placeholder}
                 className={styles.answer}
                 onKeyDown={(event) => {
                     // TODO: DRY [1]
@@ -43,7 +47,7 @@ export function SimpleTextDialogueComponent(
             >
                 Submit {/* <- !! Translate */}
             </button>
-        </>
+        </Modal>
     );
 }
 
