@@ -3,7 +3,7 @@ import { Modal } from '../../../../components/Modal/00-Modal';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
 import { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
-import styles from './ConfirmDialogueComponent.module.css';
+// [🕵️‍♀️] !!!> import styles from './ConfirmDialogueComponent.module.css';
 
 /**
  * @private use only within confirmDialogue function
@@ -21,7 +21,7 @@ export function ConfirmDialogueComponent(
     return (
         <Modal title={message}>
             <button
-                className={styles.option}
+                // [🕵️‍♀️] !!!> className={styles.option}
                 onClick={() => {
                     onResponse({ answer: true });
                 }}
@@ -29,7 +29,7 @@ export function ConfirmDialogueComponent(
                 Yes
             </button>
             <button
-                className={styles.option}
+                // [🕵️‍♀️] !!!> className={styles.option}
                 onClick={() => {
                     onResponse({ answer: false });
                 }}
