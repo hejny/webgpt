@@ -43,9 +43,21 @@ export default async function searchPhotobankHandler(
         .from('Wallpaper')
         .select('*')
         .eq('isPublic', 'true')
+        .limit(100)
         .contains('keywords', keywords);
 
-    const images = result.data!.map(({ src }) => ({ src }));
+    let images = result.data!.map(({ src }) => ({ src }));
+
+    // TODO: This should be responsibility of the database
+    const srcs = new Set<string>();
+    images = images.filter(({ src }) => {
+        if (srcs.has(src)) {
+            return false;
+        }
+
+        srcs.add(src);
+        return true;
+    });
 
     return response.status(200).json({
         images,
