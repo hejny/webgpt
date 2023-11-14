@@ -54,8 +54,8 @@ export function ImageGeneratorDialogueComponent(
                 style: 'vivid',
                 quality: `standard`,
             },
-            // <- TODO: !!!! To config
-            // <- TODO: !!!! Play with theeese to achieve best results
+            // <- TODO: Refactor: TODO: !!! To config
+            // <- TODO: !! Play with theeese to achieve best results
         }),
 
         [promptContent],
@@ -90,7 +90,7 @@ export function ImageGeneratorDialogueComponent(
         setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
 
         if (generatorType !== 'PREGENERATED' && newResults[0]) {
-            // !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
+            // TODO: !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
             setSelected(newResults[0]!);
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
@@ -105,14 +105,16 @@ export function ImageGeneratorDialogueComponent(
                     const value = spaceTrim(event.target.value);
                     setPromptContent(value);
                 }}
+                /*
                 onKeyDown={(event) => {
-                    // TODO: DRY [1]
+                   
                     if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
                         return;
                     }
 
-                    // !!!! Implement
+                    // TODO: [🧠] Do we want to start image generation by pressing [Enter]
                 }}
+                */
             />
 
             <div className={styles.results}>

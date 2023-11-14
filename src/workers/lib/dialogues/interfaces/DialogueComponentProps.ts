@@ -4,6 +4,6 @@ export interface DialogueComponentProps<TRequest, TResponse> {
 }
 
 /**
- * TODO: !!!! Change onResponse to respond
- * !!! Annotate
+ * TODO: Refactor: TODO: !!! Change onResponse to respond
+ * TODO: !!! Annotate
  */

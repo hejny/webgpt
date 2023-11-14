@@ -3,7 +3,7 @@ import { IImageColorStats } from '../../../../utils/image/utils/IImageColorStats
 import { string_image_prompt, string_markdown, string_url_image } from '../../../../utils/typeAliases';
 
 /**
- * !!! Annotate
+ * TODO: !!! Annotate
  *
  * @private Only used within the createNewWallpaper function and its subfunctions
  */
@@ -15,5 +15,5 @@ export interface CreateNewWallpaperPrepareResult {
     readonly wallpaperPrompt: string_image_prompt;
 }
 /**
- * !!! Annotate all
+ * TODO: !!! Annotate all
  */

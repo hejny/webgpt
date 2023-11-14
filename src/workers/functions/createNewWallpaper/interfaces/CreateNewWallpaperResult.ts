@@ -5,5 +5,5 @@ export interface CreateNewWallpaperResult {
 }
 
 /**
- * !!! Annotate all
+ * TODO: !!! Annotate all
  */

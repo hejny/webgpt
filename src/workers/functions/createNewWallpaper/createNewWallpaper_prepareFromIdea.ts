@@ -7,7 +7,7 @@ import { CreateNewWallpaperPrepareResult } from './interfaces/CreateNewWallpaper
 import { CreateNewWallpaperRequest } from './interfaces/CreateNewWallpaperRequest';
 
 /**
- * !!! Annotate
+ * TODO: !!! Annotate
  *
  * @private Use ONLY in createNewWallpaper
  */

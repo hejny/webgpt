@@ -6,6 +6,6 @@ export type DialogueComponent<TRequest, TResponse> = { dialogueTypeName: string_
 ) => JSX.Element | null);
 
 /**
- * TODO: !!!! Change to interface with call type
- * !!! Annotate
+ * TODO: Refactor: TODO: !!! Change to interface with call type
+ * TODO: !!! Annotate
  */

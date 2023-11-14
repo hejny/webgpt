@@ -4,7 +4,7 @@ import { SimpleTextDialogueRequest } from './interfaces/SimpleTextDialogueReques
 import { SimpleTextDialogueResponse } from './interfaces/SimpleTextDialogueResponse';
 
 /**
- * !!! Annotate
+ * TODO: !!! Annotate
  */
 export const simpleTextDialogue = makeDialogueFunction<SimpleTextDialogueRequest, SimpleTextDialogueResponse>(
     SimpleTextDialogueComponent,

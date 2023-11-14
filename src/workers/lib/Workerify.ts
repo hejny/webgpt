@@ -14,7 +14,7 @@ import {
 } from './interfaces/_';
 
 /**
- * !!! Annotate all
+ * TODO: !!! Annotate all
  */
 interface WorkerifyOptions {
     supportDialogues: Array<DialogueFunction<any, any>>;
@@ -71,8 +71,8 @@ export class Workerify<
                 } finally {
                     self.close();
                 }
-            } else if (type.endsWith('_DIALOGUE_RESPONSE') /* <- !!!! Maybe reverse */) {
-                // !!!! Search ACRY [👂] and reannotate
+            } else if (type.endsWith('_DIALOGUE_RESPONSE')) {
+                // TODO: !!! Annotate: Search ACRY [👂] and reannotate
                 // Note: [👂] Do nothing here, because some dialogue function listens alongside with this listener
                 return;
             } else {

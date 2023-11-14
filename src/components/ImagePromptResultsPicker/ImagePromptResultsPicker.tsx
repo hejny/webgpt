@@ -41,7 +41,7 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
         <div className={classNames(className, styles.ImagePromptResultsPicker)}>
             <div className={styles.actions}>
                 {/*
-                !!!! Keep or remove
+                TODO: !!! Cleanup: Keep or remove
                 selected && (
                     <button
                         className={styles.pick}

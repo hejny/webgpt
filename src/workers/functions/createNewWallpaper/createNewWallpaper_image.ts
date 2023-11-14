@@ -29,7 +29,7 @@ interface CreateNewWallpaperImageRequest {
      */
     readonly wallpaperImage?: Blob;
 
-    // !!! Annotate
+    // TODO: !!! Annotate
     readonly wallpaperPrompt?: string_image_prompt;
 }
 

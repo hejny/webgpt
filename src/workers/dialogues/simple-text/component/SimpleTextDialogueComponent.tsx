@@ -35,7 +35,6 @@ export function SimpleTextDialogueComponent(
                     }
 
                     onResponse({ answer: event.currentTarget.value });
-                    // TODO: !!!! Move> setCurrentPromptInQueue(null);
                 }}
             />
             <button
@@ -44,7 +43,6 @@ export function SimpleTextDialogueComponent(
                     // TODO: DRY [1]
 
                     onResponse({ answer: textareaRef.current!.value });
-                    // TODO: !!!! Move> setCurrentPromptInQueue(null);
                 }}
             >
                 Submit {/* <- !! Translate */}
@@ -56,5 +54,5 @@ export function SimpleTextDialogueComponent(
 SimpleTextDialogueComponent.dialogueTypeName = 'SIMPLE_TEXT';
 
 /**
- * !!! Annotate
+ * TODO: !!! Annotate
  */
