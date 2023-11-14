@@ -48,6 +48,8 @@ export function ImageGeneratorDialogueComponent(
     }, [generatorType, clientId]);
 
     const prompt = useMemo<DallePrompt>(
+
+        
         () => ({
             content: promptContent!,
             model: `dalle-${USE_DALLE_VERSION}`,
@@ -192,7 +194,6 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!!! Generate with keywoards
  * TODO: !!!! Design
  * TODO: !!! Annotate
  */
