@@ -92,6 +92,7 @@ export function ImageGeneratorDialogueComponent(
 
         if (generatorType !== 'PREGENERATED' && newResults[0]) {
             // TODO: !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
+            setResults(newResults);
             setSelected(newResults[0]!);
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
@@ -121,7 +122,7 @@ export function ImageGeneratorDialogueComponent(
             />
 
             <div className={styles.results}>
-                {isRunning ? (
+                {isRunning && results.length === 0 ? (
                     <p>Generating...</p>
                 ) : results.length === 0 ? (
                     <p>No images generated</p>
