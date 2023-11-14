@@ -1,8 +1,7 @@
 import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 
 /**
- * !!!! Update
- * Queue of prompt dialogues that are waiting for an answer
+ * Queue of dialogues that are waiting for an response
  *
  * @private Use only withing the folder Dialogues
  */

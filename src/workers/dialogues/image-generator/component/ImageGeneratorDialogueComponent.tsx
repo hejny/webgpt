@@ -52,6 +52,7 @@ export function ImageGeneratorDialogueComponent(
             model: `dalle-${USE_DALLE_VERSION}`,
             modelSettings: {
                 style: 'vivid',
+                quality: `standard`,
             },
             // <- TODO: !!!! To config
             // <- TODO: !!!! Play with theeese to achieve best results
@@ -71,7 +72,7 @@ export function ImageGeneratorDialogueComponent(
 
         setRunning(true);
         const newResults = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
-            // !!!! Use
+            // TODO: !! Use the progress
         });
 
         const srcs = new Set<string_url_image>();
@@ -83,8 +84,6 @@ export function ImageGeneratorDialogueComponent(
             srcs.add(imageSrc);
             return true;
         });
-
-        console.log('!!!!', { results, newResults, joinedResults });
 
         setRunning(false);
         setResults(joinedResults);

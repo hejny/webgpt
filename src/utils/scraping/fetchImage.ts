@@ -27,7 +27,7 @@ export async function fetchImage(imageUrl: string_url_image): Promise<Blob> {
         { headers: { 'x-image-url': imageUrl } },
     );
 
-    // TODO: !!!! Throw error if not image
+    // TODO: !! Throw error if response not image
 
     return await response.blob();
 }

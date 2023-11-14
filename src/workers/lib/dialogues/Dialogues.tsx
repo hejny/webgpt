@@ -4,13 +4,12 @@ import { DialogueFunction } from './interfaces/DialogueFunction';
 import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from './isDialoguesRendered';
 
-// !!! Annotate
-
 interface DialoguesProps {
+    /**
+     * Which dialogues are supported/rendered by the <Dialogues/> component
+     */
     supportDialogues: Array<DialogueFunction<any, any>>;
 }
-
-// TODO: !!!! One central place for all dialogues in the app
 
 /**
  * Renders a place where the dialogues are rendered
@@ -53,12 +52,7 @@ export function Dialogues(props: DialoguesProps) {
 
             setCurrentDialogueRequestInQueue(dialogueRequestInQueue);
 
-            /*
-            !!!! Move
-            if (textareaRef.current) {
-                textareaRef.current.value = promptInQueue.defaultValue || '';
-            }
-            */
+           
         }, 50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 
         return () => {
