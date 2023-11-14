@@ -48,8 +48,7 @@ export function ImageGeneratorDialogueComponent(
     }, [generatorType, clientId]);
 
     const prompt = useMemo<DallePrompt>(
-
-        
+        // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
         () => ({
             content: promptContent!,
             model: `dalle-${USE_DALLE_VERSION}`,
