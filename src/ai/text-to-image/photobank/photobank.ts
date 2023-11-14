@@ -48,6 +48,5 @@ export class PregeneratedPhotobank implements ImageGenerator {
 
 /**
  * TODO: !!! Annotate
- * TODO: !!!! Implement
  * TODO: !! Use taskProgress
  */

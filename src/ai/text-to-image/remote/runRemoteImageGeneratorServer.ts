@@ -13,7 +13,7 @@ import type { Imgs_Response } from './interfaces/Imgs_Response';
  * You can simply use `RemoteImageGenerator` on client-side javascript and connect to your remote server.
  * This is useful to make all logic on browser side but not expose your API keys or no need to use customer's GPU.
  */
-export function createRemoteImageGeneratorServer(options: CreateRemoteImageGeneratorServerOptions) {
+export function runRemoteImageGeneratorServer(options: CreateRemoteImageGeneratorServerOptions) {
     const { port, path, createImageGenerator, isVerbose } = options;
 
     const httpServer = http.createServer({}, (request, response) => {
@@ -93,7 +93,6 @@ export function createRemoteImageGeneratorServer(options: CreateRemoteImageGener
 }
 
 /**
- * TODO: !!!! This should be name runRemoteServer OR startRemoteServer and return Destroyable OR Promise<Destroyable>
  * TODO: Handle progress - support streaming
  * TODO: [🤹‍♂️] Do not hang up immediately but wait until client closes OR timeout
  * TODO: [🤹‍♂️] Timeout on chat to free up resources
