@@ -72,5 +72,5 @@ export function makeDialogueFunction<TRequest, TResponse>(
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined
  * TODO: [🍁] Put unique ID to each prompt
- * TODO: !!!last Is still revelavnt? [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
+ * TODO: !!!!last Is still revelavnt? [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
  */

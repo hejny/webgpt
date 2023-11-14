@@ -7,6 +7,6 @@ export type DialogueFunction<TRequest, TResponse> = {
 } & ((request: TRequest) => Promise<TResponse>);
 
 /**
- * TODO: !!! Change to interface with call type
+ * TODO: !!!! Change to interface with call type
  * !!! Annotate
  */

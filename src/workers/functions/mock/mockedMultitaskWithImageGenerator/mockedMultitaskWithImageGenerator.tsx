@@ -63,9 +63,9 @@ export async function mockedMultitaskWithImageGenerator(
     }
 
     const { answer: imagePromptContentConfirmed } = await simpleTextDialogue({
-        message: `Confirm image prompt`, // <- TODO: !!! Change prompt to something more meaningful
+        message: `Confirm image prompt`, // <- TODO: !!!! Change prompt to something more meaningful
         defaultValue: imagePromptContent,
-        // TODO: !!! Implement> isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
+        // TODO: !!!! Implement> isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
     });
 
     imagePromptContent = imagePromptContentConfirmed!;

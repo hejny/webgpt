@@ -1,6 +1,6 @@
-import { string_name } from "@promptbook/types";
+import { string_name } from '@promptbook/types';
 
-export interface DialogueRequestInQueue{
+export interface DialogueRequestInQueue {
     dialogueTypeName: string_name;
     request: any;
     response?: any;

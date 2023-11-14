@@ -94,5 +94,5 @@ export interface CreateNewWallpaperRequest {
 
 /**
  * !!! Annotate all
- * TODO: !!! Allow to pass readonly wallpaperImageSrc?: strign_url_image;
+ * TODO: !!!! Allow to pass readonly wallpaperImageSrc?: strign_url_image;
  */

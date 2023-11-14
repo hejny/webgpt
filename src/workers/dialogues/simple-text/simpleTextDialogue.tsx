@@ -3,12 +3,9 @@ import { SimpleTextDialogueComponent } from './component/SimpleTextDialogueCompo
 import { SimpleTextDialogueRequest } from './interfaces/SimpleTextDialogueRequest';
 import { SimpleTextDialogueResponse } from './interfaces/SimpleTextDialogueResponse';
 
-
-
 /**
  * !!! Annotate
  */
 export const simpleTextDialogue = makeDialogueFunction<SimpleTextDialogueRequest, SimpleTextDialogueResponse>(
     SimpleTextDialogueComponent,
 );
-

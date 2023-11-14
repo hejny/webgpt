@@ -10,7 +10,7 @@ interface DialoguesProps {
     supportDialogues: Array<DialogueFunction<any, any>>;
 }
 
-// TODO: !!! One central place for all dialogues in the app
+// TODO: !!!! One central place for all dialogues in the app
 
 /**
  * Renders a place where the dialogues are rendered
@@ -54,7 +54,7 @@ export function Dialogues(props: DialoguesProps) {
             setCurrentDialogueRequestInQueue(dialogueRequestInQueue);
 
             /*
-            !!! Move
+            !!!! Move
             if (textareaRef.current) {
                 textareaRef.current.value = promptInQueue.defaultValue || '';
             }

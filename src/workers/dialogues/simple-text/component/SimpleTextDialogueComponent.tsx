@@ -35,7 +35,7 @@ export function SimpleTextDialogueComponent(
                     }
 
                     onResponse({ answer: event.currentTarget.value });
-                    // TODO: !!! Move> setCurrentPromptInQueue(null);
+                    // TODO: !!!! Move> setCurrentPromptInQueue(null);
                 }}
             />
             <button
@@ -44,7 +44,7 @@ export function SimpleTextDialogueComponent(
                     // TODO: DRY [1]
 
                     onResponse({ answer: textareaRef.current!.value });
-                    // TODO: !!! Move> setCurrentPromptInQueue(null);
+                    // TODO: !!!! Move> setCurrentPromptInQueue(null);
                 }}
             >
                 Submit {/* <- !! Translate */}

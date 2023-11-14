@@ -123,7 +123,7 @@ export async function createNewWallpaper_text(
     onProgress: (taskProgress: TaskProgress) => void,
 ): Promise<CreateNewWallpaperTextResult> {
     const { locale, title, author, wallpaperUrl, idea /* TODO: Use> links, addSections */ } = request;
-    let description = idea; /* <- !!! Originally here was ` let { description } = request;` is this good solution? */
+    let description = idea; /* <- !!!! Originally here was ` let { description } = request;` is this good solution? */
 
     //-------[ Content analysis: ]---
     if (!description && wallpaperUrl) {
@@ -228,5 +228,5 @@ export async function createNewWallpaper_text(
     //-------[ /Picking font ]---
     //===========================================================================
 
-    return { contentWithFont, wallpaperPrompt: '!!!' };
+    return { contentWithFont, wallpaperPrompt: '!!!!' };
 }

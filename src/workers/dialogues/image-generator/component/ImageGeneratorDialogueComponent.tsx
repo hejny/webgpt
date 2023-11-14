@@ -53,8 +53,8 @@ export function ImageGeneratorDialogueComponent(
             modelSettings: {
                 style: 'vivid',
             },
-            // <- TODO: !!! To config
-            // <- TODO: !!! Play with theeese to achieve best results
+            // <- TODO: !!!! To config
+            // <- TODO: !!!! Play with theeese to achieve best results
         }),
 
         [promptContent],
@@ -71,7 +71,7 @@ export function ImageGeneratorDialogueComponent(
 
         setRunning(true);
         const newResults = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
-            // !!! Use
+            // !!!! Use
         });
 
         const srcs = new Set<string_url_image>();
@@ -84,14 +84,14 @@ export function ImageGeneratorDialogueComponent(
             return true;
         });
 
-        console.log('!!!', { results, newResults, joinedResults });
+        console.log('!!!!', { results, newResults, joinedResults });
 
         setRunning(false);
         setResults(joinedResults);
         setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
 
         if (generatorType !== 'PREGENERATED' && newResults[0]) {
-            // !!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
+            // !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
             setSelected(newResults[0]!);
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
@@ -112,7 +112,7 @@ export function ImageGeneratorDialogueComponent(
                         return;
                     }
 
-                    // !!! Implement
+                    // !!!! Implement
                 }}
             />
 
@@ -187,8 +187,8 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!! first 4 images pregenerated automatically then dynamically generate more
- * TODO: !!! Generate with keywoards
- * TODO: !!! Design
+ * TODO: !!!! first 4 images pregenerated automatically then dynamically generate more
+ * TODO: !!!! Generate with keywoards
+ * TODO: !!!! Design
  * TODO: !!! Annotate
  */

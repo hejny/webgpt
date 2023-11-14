@@ -4,7 +4,6 @@ export interface CreateNewWallpaperResult {
     readonly wallpaperId: string_wallpaper_id;
 }
 
-
 /**
  * !!! Annotate all
  */
