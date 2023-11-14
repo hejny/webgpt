@@ -10,6 +10,7 @@ import { Modal } from '../../../../components/Modal/00-Modal';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
+import { useInitial } from '../../../../utils/hooks/useInitial';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
@@ -94,6 +95,8 @@ export function ImageGeneratorDialogueComponent(
             setSelected(newResults[0]!);
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
+
+    useInitial(runImageGenerator);
 
     return (
         <Modal title={message} className={styles.ImageGeneratorDialogueComponent}>
@@ -188,7 +191,6 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!!! first 4 images pregenerated automatically then dynamically generate more
  * TODO: !!!! Generate with keywoards
  * TODO: !!!! Design
  * TODO: !!! Annotate
