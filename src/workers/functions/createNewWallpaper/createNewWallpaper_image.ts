@@ -1,3 +1,4 @@
+import { string_keyword } from 'n12';
 import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import {
@@ -29,8 +30,20 @@ interface CreateNewWallpaperImageRequest {
      */
     readonly wallpaperImage?: Blob;
 
-    // TODO: !!! Annotate
+    /**
+     * Prompt message for the image
+     *
+     * @example "Café in the space, realistic"
+     */
     readonly wallpaperPrompt?: string_image_prompt;
+
+    /**
+     * Keywords for the image
+     * Note: This is redundant with the wallpaperPrompt, but it's easier to search for keywords in the pregenerated database
+     *
+     * @example ["cafe", "space", "realistic"]
+     */
+    readonly wallpaperPromptKeywords?: Array<string_keyword>;
 }
 
 interface CreateNewWallpaperImageResult {
@@ -59,7 +72,7 @@ export async function createNewWallpaper_image(
     request: CreateNewWallpaperImageRequest,
     onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperImageResult> {
-    let { author, wallpaperImage, wallpaperPrompt } = request;
+    let { author, wallpaperImage, wallpaperPrompt, wallpaperPromptKeywords } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     if ((!wallpaperImage && !wallpaperPrompt) || (wallpaperImage && wallpaperPrompt)) {
@@ -82,9 +95,15 @@ export async function createNewWallpaper_image(
             //               <- TODO: ShouldNeverHappenError
         }
 
+        if (wallpaperPromptKeywords === undefined) {
+            throw new Error('wallpaperPromptKeywords is undefined');
+            //               <- TODO: ShouldNeverHappenError
+        }
+
         const { pickedImage: imagePromptResult } = await imageGeneratorDialogue({
             message: 'Pick the wallpaper image for your website',
-            defaultImagePrompt: wallpaperPrompt!,
+            defaultImagePrompt: wallpaperPrompt,
+            keywords: wallpaperPromptKeywords,
         });
 
         // TODO: [🧠] Is there some way to save normalized prompt to the database along the wallpaper

@@ -24,7 +24,7 @@ export function ImageGeneratorDialogueComponent(
     props: DialogueComponentProps<ImageGeneratorDialogueRequest, ImageGeneratorDialogueResponse>,
 ) {
     const {
-        request: { message, defaultImagePrompt },
+        request: { message, defaultImagePrompt, keywords },
         onResponse,
     } = props;
 
@@ -48,8 +48,9 @@ export function ImageGeneratorDialogueComponent(
     }, [generatorType, clientId]);
 
     const prompt = useMemo<DallePrompt>(
+        // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
         () => ({
-            content: promptContent!,
+            content: generatorType === 'PREGENERATED' ? keywords.join(', ') : promptContent!,
             model: `dalle-${USE_DALLE_VERSION}`,
             modelSettings: {
                 style: 'vivid',
@@ -59,7 +60,7 @@ export function ImageGeneratorDialogueComponent(
             // <- TODO: !! Play with theeese to achieve best results
         }),
 
-        [promptContent],
+        [promptContent, generatorType, keywords],
     );
     const [isRunning, setRunning] = useState<boolean>(false);
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);

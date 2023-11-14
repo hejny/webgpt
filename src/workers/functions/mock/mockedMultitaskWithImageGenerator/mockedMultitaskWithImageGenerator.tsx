@@ -1,3 +1,4 @@
+import { parseKeywordsFromString } from 'n12';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
@@ -73,6 +74,7 @@ export async function mockedMultitaskWithImageGenerator(
     const { pickedImage } = await imageGeneratorDialogue({
         message: `Pick the image`,
         defaultImagePrompt: imagePromptContent, // <- [🧠] Best name defaultImagePrompt vs imagePromptContent,
+        keywords: Array.from(parseKeywordsFromString(imagePromptContent)),
     });
 
     await onProgress({

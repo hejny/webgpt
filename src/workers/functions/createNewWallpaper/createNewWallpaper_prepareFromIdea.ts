@@ -1,4 +1,5 @@
 import { TaskProgress } from '@promptbook/types';
+import { parseKeywordsFromString } from 'n12';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { string_image_prompt } from '../../../utils/typeAliases';
 import { createNewWallpaper_image } from './createNewWallpaper_image';
@@ -23,9 +24,15 @@ export async function createNewWallpaper_prepareFromIdea(
         //               <- TODO: ShouldNeverHappenError
     }
 
+    // TODO: [🧠] Progress params DRY
     let wallpaperPromptPromiseResolve: (value: string_image_prompt) => void;
     const wallpaperPromptPromise = new Promise<string_image_prompt>((resolve, reject) => {
         wallpaperPromptPromiseResolve = resolve;
+    });
+
+    let keywordsPromiseResolve: (value: string) => void;
+    const keywordsPromise = new Promise<string>((resolve, reject) => {
+        keywordsPromiseResolve = resolve;
     });
 
     const textPartPromise = /* not await */ createNewWallpaper_text(
@@ -55,13 +62,27 @@ export async function createNewWallpaper_prepareFromIdea(
 
                 wallpaperPromptPromiseResolve(taskProgress.parameterValue);
             }
+
+            if (taskProgress.isDone && taskProgress.parameterName === 'keywords') {
+                if (taskProgress.parameterValue === null) {
+                    throw new Error(`Wallpaper keywords are undefined`);
+                }
+                keywordsPromiseResolve(taskProgress.parameterValue);
+            }
         },
     );
 
     const wallpaperPrompt = await wallpaperPromptPromise;
+    const keywords = await keywordsPromise;
+
+    console.log('!!!', { keywords });
+
+    const wallpaperPromptKeywords = Array.from(parseKeywordsFromString(keywords));
+
+    console.log('!!!', { wallpaperPromptKeywords });
 
     const { wallpaperUrl, originalSize, colorStats } = await createNewWallpaper_image(
-        { author, wallpaperPrompt },
+        { author, wallpaperPrompt, wallpaperPromptKeywords },
         onProgress,
     );
 
