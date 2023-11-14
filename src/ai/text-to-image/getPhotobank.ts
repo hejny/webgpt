@@ -1,6 +1,17 @@
+import { uuid } from '@promptbook/types';
+import { IS_DEVELOPMENT } from '../../../config';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { ImageGenerator } from './0-interfaces/ImageGenerator';
-import { PregeneratedPhotobank } from './photobank/photobank';
+import { PregeneratedPhotobank } from './photobank/PregeneratedPhotobank';
+
+/**
+ * This is an photobank
+ * Internal cache for getPhotobank
+ *
+ * @private
+ * @singleton
+ */
+let photobank: PregeneratedPhotobank;
 
 /**
  * Get the photobank
@@ -10,15 +21,23 @@ import { PregeneratedPhotobank } from './photobank/photobank';
  *
  * @returns ImageGenerator based on pregenerated MidJourney images
  */
-export function getPhotobank(): ImageGenerator {
+export function getPhotobank(clientId: uuid): ImageGenerator {
     if (!isRunningInWebWorker() && !isRunningInBrowser()) {
         throw new Error('This function is available ONLY in browser or worker');
     }
 
-    return PregeneratedPhotobank.getInstance();
+    if (!photobank) {
+        const isVerbose = IS_DEVELOPMENT;
+
+        photobank = new PregeneratedPhotobank({
+            isVerbose,
+            clientId,
+        });
+    }
+
+    return photobank;
 }
 
 /**
- * TODO: [🧠] This function maybe overabstraction, because it is just wrapper around PregeneratedPhotobank.getInstance
- * TODO: Browser and worker should be checked in the PregeneratedPhotobank.getInstance
+ * TODO: [🧠] Maybe cache every clientId
  */

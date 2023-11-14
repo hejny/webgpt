@@ -5,6 +5,7 @@ import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/Ima
 import { DallePrompt } from '../../../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { getImageGenerator } from '../../../../ai/text-to-image/getImageGenerator';
 import { getPhotobank } from '../../../../ai/text-to-image/getPhotobank';
+import { NothingImageGenerator } from '../../../../ai/text-to-image/nothing/NothingImageGenerator';
 import { ImagePromptResultsPicker } from '../../../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
@@ -35,17 +36,20 @@ export function ImageGeneratorDialogueComponent(
     const [generatorType, setGeneratorType] = useState<'PREGENERATED' | 'DALLE'>('PREGENERATED');
     const clientId = useClientId({ isVerifiedEmailRequired: true });
     const imageGenerator = useMemo(() => {
+        if (!clientId) {
+            return new NothingImageGenerator();
+        }
+
         if (generatorType === 'PREGENERATED') {
-            return getPhotobank();
+            return getPhotobank(clientId);
         } else if (generatorType === 'DALLE') {
-            if (!clientId) {
-                throw new Error(`clientId is required for Dalle generator`);
-            }
             return getImageGenerator(clientId);
         } else {
             throw new Error(`Unknown generator type: ${generatorType}`);
         }
     }, [generatorType, clientId]);
+
+    console.log('!!!', { imageGenerator });
 
     const prompt = useMemo<DallePrompt>(
         // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
@@ -73,31 +77,36 @@ export function ImageGeneratorDialogueComponent(
         }
 
         setRunning(true);
-        const newResults = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
-            // TODO: !! Use the progress
-        });
 
-        const srcs = new Set<string_url_image>();
-        const joinedResults = [...results, ...newResults].filter(({ imageSrc }) => {
-            if (srcs.has(imageSrc)) {
-                return false;
+        try {
+            const newResults = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {
+                // TODO: !! Use the progress
+            });
+
+            const srcs = new Set<string_url_image>();
+            const joinedResults = [...results, ...newResults].filter(({ imageSrc }) => {
+                if (srcs.has(imageSrc)) {
+                    return false;
+                }
+
+                srcs.add(imageSrc);
+                return true;
+            });
+
+            setResults(joinedResults);
+            setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
+
+            if (generatorType !== 'PREGENERATED' && newResults[0]) {
+                // TODO: !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
+                setResults(newResults);
+                setSelected(newResults[0]!);
             }
-
-            srcs.add(imageSrc);
-            return true;
-        });
-
-        setRunning(false);
-        setResults(joinedResults);
-        setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
-
-        if (generatorType !== 'PREGENERATED' && newResults[0]) {
-            // TODO: !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
-            setResults(newResults);
-            setSelected(newResults[0]!);
+        } finally {
+            setRunning(false);
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
 
+    // !!!!! Run ONLY when clientId!==null
     useInitial(runImageGenerator);
 
     return (

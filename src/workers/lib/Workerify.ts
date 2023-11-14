@@ -25,7 +25,7 @@ export class Workerify<
     TResult extends TransferableObject,
     TFunction = IWorkerifyableFunction<TRequest, TResult>,
 > {
-    constructor(private readonly options: WorkerifyOptions) {}
+    public constructor(private readonly options: WorkerifyOptions) {}
 
     /**
      * Runs a worker for given function

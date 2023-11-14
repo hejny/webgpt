@@ -9,6 +9,8 @@ export interface SearchPhotobankResult {
      * List of found images
      */
     readonly images: Array<{ src: string_url_image }>;
+
+    /* <- TODO: [⛹️‍♀️] Pass here original prompt */
 }
 
 /**

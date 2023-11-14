@@ -72,6 +72,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 onChange(textAreaRef.current.value, 'COPILOT');
             }
 
+            // TODO: !!! Wrap ACRY all `setRunning(false)` in finally block
             setRunning(false);
 
             if (textAreaRef.current === null) {
