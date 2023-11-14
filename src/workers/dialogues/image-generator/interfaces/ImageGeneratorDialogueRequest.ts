@@ -18,6 +18,7 @@ export interface ImageGeneratorDialogueRequest {
 }
 
 /**
+ * TODO: !!! Require keywords: Array<string_keyword>
  * TODO: !!! Annotate + readonly
  * TODO: !! isImagePromptAllowedToChange
  * TODO: [🧠] How/Should to pass image/model requirements? Should be here ImagePromptResult?

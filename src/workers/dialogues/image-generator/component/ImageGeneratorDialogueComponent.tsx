@@ -187,7 +187,8 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!! first 4 images pregenerated then dynamically generate more
+ * TODO: !!! first 4 images pregenerated automatically then dynamically generate more
+ * TODO: !!! Generate with keywoards
  * TODO: !!! Design
  * TODO: !!! Annotate
  */
