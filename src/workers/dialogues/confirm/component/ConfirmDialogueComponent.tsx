@@ -45,8 +45,8 @@ export function ConfirmDialogueComponent(
 ConfirmDialogueComponent.dialogueTypeName = 'CONFIRM';
 
 /**
- * TODO: !!!! Allow to pass true/false labels
- * TODO: !!!! Design
+ * TODO: !! Allow to pass true/false labels
+ * TODO: !! Design
  * TODO: !!! Annotate
  * TODO: !! Use some smaller format of <Modal/>
  * TODO: !! Allow multiple <ConfirmDialogueComponent/> to be rendered at once

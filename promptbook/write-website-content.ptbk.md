@@ -1,6 +1,6 @@
 # 🌍 Create website content
 
-<!-- !!!! Update according to cs version -->
+<!-- !!!!last Update according to cs version -->
 
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
