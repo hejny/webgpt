@@ -26,7 +26,15 @@ export default function NewWallpaperFromIdeaPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const placeholders = useMemo(() => shuffleItems('Restaurace', 'Osobní web', 'Kavárna'), []);
+    const placeholders = useMemo(
+        () =>
+            shuffleItems(
+                ...{ en: ['Restaurant', 'Personal website', 'Café'], cs: ['Restaurace', 'Osobní web', 'Kavárna'] }[
+                    locale
+                ],
+            ),
+        [locale],
+    );
 
     return (
         <>
