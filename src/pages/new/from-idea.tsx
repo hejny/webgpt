@@ -118,8 +118,8 @@ export default function NewWallpaperFromIdeaPage() {
                         >
                             <>
                                 {/* [⛳] */}
-                                <Translate locale="en">Rád bych se inspiroval</Translate>
-                                <Translate locale="cs">I need an inspiration</Translate>
+                                <Translate locale="en">I need an inspiration</Translate>
+                                <Translate locale="cs">Rád bych se inspiroval</Translate>
                             </>
                         </Link>
                     </Center>
