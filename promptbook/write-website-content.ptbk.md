@@ -1,7 +1,6 @@
 # 🌍 Create website content
 
-<!-- !!!! Work from idea -->
-<!-- !!!! Work from custom image -->
+<!-- !!!! Take czech version -->
 
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 

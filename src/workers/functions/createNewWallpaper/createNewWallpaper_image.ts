@@ -193,7 +193,6 @@ export async function createNewWallpaper_image(
     //===========================================================================
     //-------[ Upload image: ]---
     if (!wallpaperUrl) {
-        // !!!! Is this working propperly
         await onProgress({
             name: 'upload-wallpaper-image',
             title: 'Uploading image',
