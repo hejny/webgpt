@@ -1,3 +1,4 @@
+TODO: [🧠] Backup the dialogues responsed / maybe connect somewhere with unique path / id / whatever
 TODO: [🧠] Maybe rename ACRY/ALLFORMS dialogue -> dialog
 TODO: Maybe implement promptDialogueQueue via Promise, React.Context, RxJS or something better than polling from singleton
 TODO: [🧠] There should be There should be some uniqueness check of dialogueTypeName

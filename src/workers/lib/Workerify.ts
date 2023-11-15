@@ -174,6 +174,7 @@ export class Workerify<
 }
 
 /**
+ * TODO: !!!! Prevent unsaved changes
  * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
  * TODO: Maybe add unique id for each request
  * TODO: Maybe add specific string for each function into messages IMessageRequest, IMessageProgress, IMessageResult, IMessageError
