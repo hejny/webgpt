@@ -9,6 +9,7 @@ import { CreateNewWallpaperResult } from '../interfaces/CreateNewWallpaperResult
 
 export const createNewWallpaperWorkerify = new Workerify<CreateNewWallpaperRequest, CreateNewWallpaperResult>({
     supportDialogues,
+    isPreventedUnsavedChanges: true,
 });
 
 /**

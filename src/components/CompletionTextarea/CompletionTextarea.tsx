@@ -82,19 +82,6 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
         [isRunning, textAreaRef, onChange, naturalExecutionTools],
     );
 
-    /*
-    useEffect(() => {
-        window.onbeforeunload = () => {
-            // TODO: !! Allow to save and then leave
-            return 'You have unsaved changes. Are you sure you want to leave?';
-        };
-
-        return () => {
-            window.onbeforeunload = null;
-        };
-    }, []);
-    */
-
     return (
         <div className={styles.CompletionTextarea}>
             <style>{`@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');`}</style>

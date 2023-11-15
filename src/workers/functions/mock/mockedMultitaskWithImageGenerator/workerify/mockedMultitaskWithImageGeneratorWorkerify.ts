@@ -14,6 +14,7 @@ export const mockedMultitaskWithImageGeneratorWorkerify = new Workerify<
     MockedMultitaskWithImageGeneratorResult
 >({
     supportDialogues,
+    isPreventedUnsavedChanges: true,
 });
 
 /**

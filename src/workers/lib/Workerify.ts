@@ -1,6 +1,6 @@
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
-import { DialogueFunction } from './dialogues/interfaces/DialogueFunction';
+import { WorkerifyOptions } from './interfaces/WorkerifyOptions';
 import {
     IMessageDialogueResponse,
     IMessageError,
@@ -14,12 +14,8 @@ import {
 } from './interfaces/_';
 
 /**
- * TODO: !!! Annotate all
+ * TODO: !!! Annotate
  */
-interface WorkerifyOptions {
-    supportDialogues: Array<DialogueFunction<any, any>>;
-}
-
 export class Workerify<
     TRequest extends TransferableObject,
     TResult extends TransferableObject,
@@ -107,6 +103,12 @@ export class Workerify<
 
             const worker = createWorker();
 
+            // TODO: [🔮]> const unsavedChanges = PreventUnsavedChangesManager.work('Creating new wallpaper');
+            window.onbeforeunload = () => {
+                return 'You have unsaved changes. Are you sure you want to leave?';
+                //     <- Note: There is no way how to pass reliably own message in todays browsers
+            };
+
             const result = new Promise<TResult>((resolve, reject) => {
                 worker.addEventListener('message', async (event: MessageEvent<IMessageWorkerToMain<TResult>>) => {
                     const { type } = event.data;
@@ -164,6 +166,9 @@ export class Workerify<
 
             result.finally(() => {
                 worker.terminate();
+
+                // TODO: [🔮]> unsavedChanges.destroy();
+                window.onbeforeunload = null;
             });
 
             return result;
@@ -174,7 +179,6 @@ export class Workerify<
 }
 
 /**
- * TODO: !!!! Prevent unsaved changes
  * TODO: [🌴] There is not ideally separated responsibilities between Workerify and dialogues - Either Workerify should not know about dialogues OR dialogues should not know about Workerify
  * TODO: Maybe add unique id for each request
  * TODO: Maybe add specific string for each function into messages IMessageRequest, IMessageProgress, IMessageResult, IMessageError
