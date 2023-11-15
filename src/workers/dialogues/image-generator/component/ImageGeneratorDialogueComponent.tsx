@@ -162,7 +162,7 @@ export function ImageGeneratorDialogueComponent(
                                 </>
                             )}
                         </button>
-                        {runnedImageGenerator > 2 &&
+                        {runnedImageGenerator >= 1 &&
                             (generatorType !== 'DALLE' ? (
                                 <button
                                     className={classNames('button', styles.secondaryAction)}
