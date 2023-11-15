@@ -34,7 +34,7 @@ export default function TextToImagePage() {
         setReady(false);
 
         /**/
-        const imageGenerator = getPhotobank({ clientId });
+        const imageGenerator = getPhotobank(clientId!);
         /**/
 
         /*/
