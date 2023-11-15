@@ -44,7 +44,7 @@ Create a website for a cafe in Prague called "Space Cafe", which is all about sp
 
 A large mug full of coffee with milk foam, on which a galaxy is depicted. The mug is on a table with a book about space and coffee beans on it.
 
-## {purpose}
+## {assignment}
 
 ### Web assignment
 
