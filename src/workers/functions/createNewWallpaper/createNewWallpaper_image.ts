@@ -97,7 +97,8 @@ export async function createNewWallpaper_image(
         // TODO: [🧠] Is there some way to save normalized prompt to the database along the wallpaper
         //     > wallpaperPrompt = imagePromptResult.normalizedPrompt.content;
 
-        wallpaperImage = await fetch(imagePromptResult.imageSrc).then((response) => response.blob());
+        wallpaperUrl = imagePromptResult.imageSrc;
+        wallpaperImage = await fetch(wallpaperUrl).then((response) => response.blob());
 
         await onProgress({
             name: 'image-generate',
