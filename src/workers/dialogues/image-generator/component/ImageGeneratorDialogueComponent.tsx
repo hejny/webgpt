@@ -69,7 +69,7 @@ export function ImageGeneratorDialogueComponent(
     const [isPromptShown, setPromptShown] = useState<boolean>(false);
     const [isRunning, setRunning] = useState<boolean>(false);
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
-    const [runnedImageGenerator, setRunnedImageGenerator] = useState(0);
+    const [runnedCount, setRunnedCount] = useState(0);
     const [selected, setSelected] = useState<null | ImagePromptResult>(null);
     const runImageGenerator = useCallback(async () => {
         if (isRunning) {
@@ -95,7 +95,7 @@ export function ImageGeneratorDialogueComponent(
             });
 
             setResults(joinedResults);
-            setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
+            setRunnedCount((runnedImageGenerator) => runnedImageGenerator + 1);
 
             if (generatorType !== 'PREGENERATED' && newResults[0]) {
                 setResults(newResults);
@@ -132,8 +132,13 @@ export function ImageGeneratorDialogueComponent(
                 {isRunning && results.length === 0 ? (
                     <p>Generating...</p>
                 ) : results.length === 0 ? (
-                    // Note: This should never happen
-                    <p>No images generated</p>
+                    runnedCount === 0 ? (
+                        // Note: This should never happen
+                        <p>Preparing image generator...</p>
+                    ) : (
+                        // Note: This should never happen
+                        <p>No images generated</p>
+                    )
                 ) : (
                     <ImagePromptResultsPicker
                         {...{ results, prompt, selected }}
@@ -164,7 +169,7 @@ export function ImageGeneratorDialogueComponent(
                                 Show prompt
                             </button>
                         )}
-                        {runnedImageGenerator >= 1 &&
+                        {runnedCount >= 1 &&
                             (generatorType === 'DALLE' ? (
                                 <button
                                     className={classNames('button', styles.secondaryAction)}
