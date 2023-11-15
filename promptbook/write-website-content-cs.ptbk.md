@@ -8,7 +8,7 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{idea}` Obecná idea webu _v Češtině_
 -   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text <!-- <- TODO: !! This should be EXACLY in content -->
--   Input param `{rawAssigment}` popis obrázku _v Angličtině_
+-   Input param `{rawAssignment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
 -   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , pouze pokud není zadán ... -->
 
@@ -16,18 +16,18 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 
 -   Use completion
 -   Postprocessing `trim`
-<!-- TODO: !!> Skip if `rawAssigment===''` -->
+<!-- TODO: !!> Skip if `rawAssignment===''` -->
 
 ```text
 
 English assignment:
-> {rawAssigment}
+> {rawAssignment}
 
 České zadání:
 >
 ```
 
-`-> {rawAssigmentCs}` popis obrázku v češtině
+`-> {rawAssignmentCs}` popis obrázku v češtině
 
 ## 🖋 Účel stránek
 
@@ -55,7 +55,7 @@ Navrhni účel webových stránek
 ## Podklady
 
 -   {idea}
--   {rawAssigmentCs}
+-   {rawAssignmentCs}
 
 ## Účel webu
 
@@ -94,12 +94,12 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 ## Podklady
 
 -   {idea}
--   {rawAssigmentCs}
+-   {rawAssignmentCs}
 
 ## Zadání webu v Češtině
 ```
 
-`-> {draftedAssigment}` Zadání webu v Češtině
+`-> {draftedAssignment}` Zadání webu v Češtině
 
 ## 👤 Upřesnění zadání uživatelem
 
@@ -108,16 +108,16 @@ Popište cíl vašeho webu
 -   Prompt dialog
 
 ```text
-{draftedAssigment}
+{draftedAssignment}
 ```
 
-`-> {assigment}` Zadání webu
+`-> {assignment}` Zadání webu
 
 ## 🖋 Návrh obrázku
 
 -   Use completion
 -   Postprocessing `trim`
-    <!-- TODO: !!> Skip if `rawAssigment!==''` -->
+    <!-- TODO: !!> Skip if `rawAssignment!==''` -->
     <!-- TODO: Maybe more samples... -->
 
 ```markdown
@@ -137,7 +137,7 @@ Velký hrnek plný kávy s mléčnou pěnou, na které je vyobrazená galaxie. H
 
 ### Zadání webu
 
-{assigment}
+{assignment}
 
 ### Úvodní obrázek
 ```
@@ -148,7 +148,7 @@ Velký hrnek plný kávy s mléčnou pěnou, na které je vyobrazená galaxie. H
 
 -   Use completion
 -   Postprocessing `trim`
-    <!-- TODO: !!> Skip if `rawAssigment!==''` -->
+    <!-- TODO: !!> Skip if `rawAssignment!==''` -->
 
 ```text
 
@@ -177,7 +177,7 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 ## Zadání od zákazníka
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny
@@ -217,7 +217,7 @@ Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovo
 ## Zadání webu od zákazníka
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny:
@@ -268,7 +268,7 @@ Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových 
 Zadání webu od zákazníka:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny
@@ -307,7 +307,7 @@ Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření
 Zadání webu od zákazníka:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny:

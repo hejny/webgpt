@@ -115,7 +115,7 @@ export function CopilotPanel() {
             )(
                 {
                     oldContent,
-                    rawAssigment: prompt,
+                    rawAssignment: prompt,
                 },
                 (taskProgress) => {
                     console.info('CopilotPanel: Update wallpaper content: ', { taskProgress });

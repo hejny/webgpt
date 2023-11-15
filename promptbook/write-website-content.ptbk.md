@@ -8,27 +8,27 @@ Instructions for creating web page content using [🌠 Prompt template pipelines
 <!-- TODO: [🌚]> - Use GPT-3.5 -->
 -   Input param `{idea}` General ideal of the web
 -   Input param `{rawTitle}` Automatically suggested a site name or empty text
--   Input param `{rawAssigment}` Automatically generated site entry from image recognition
+-   Input param `{rawAssignment}` Automatically generated site entry from image recognition
 -   Output param `{content}` Web content
 -   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , only if there is no ... -->
 
-## 👤 Specifying the assigment
+## 👤 Specifying the assignment
 
 What is your web about?
 
 -   Prompt dialog
 
 ```text
-{rawAssigment}
+{rawAssignment}
 ```
 
-`-> {assigment}` Website assignment and specification
+`-> {assignment}` Website assignment and specification
 
 ## 🖋 Image prompt
 
 -   Use completion
 -   Postprocessing `trim`
-    <!-- TODO: !!> Skip if `rawAssigment!==''` -->
+    <!-- TODO: !!> Skip if `rawAssignment!==''` -->
     <!-- TODO: Maybe more samples... -->
 
 ```markdown
@@ -48,7 +48,7 @@ A large mug full of coffee with milk foam, on which a galaxy is depicted. The mu
 
 ### Web assignment
 
-{assigment}
+{assignment}
 
 ### Introduction image
 ```
@@ -68,7 +68,7 @@ A suggested name from a client:
 Assignment from customer:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Instructions:
@@ -101,7 +101,7 @@ As an experienced copywriter, you have been entrusted with creating a claim for 
 A website assignment from a customer:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Instructions:
@@ -125,7 +125,7 @@ As an experienced SEO specialist, you have been entrusted with creating keywords
 Website assignment from the customer:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Instructions:
@@ -171,7 +171,7 @@ As an experienced copywriter and web designer, you have been entrusted with crea
 A website assignment from a customer:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Instructions:

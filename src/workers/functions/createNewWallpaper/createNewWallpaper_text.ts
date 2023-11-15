@@ -84,7 +84,7 @@ export interface CreateNewWallpaperTextRequest {
          */
         readonly content: string_markdown;
 
-        // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assigment and auto generate
+        // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assignment and auto generate
     }>;
 
     /**
@@ -194,7 +194,7 @@ export async function createNewWallpaper_text(
         {
             rawTitle:
                 title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
-            rawAssigment: description!,
+            rawAssignment: description!,
             idea: idea || '',
 
             /*
