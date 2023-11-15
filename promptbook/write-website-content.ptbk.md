@@ -1,16 +1,16 @@
 # 🌍 Create website content
 
-<!-- !!!!last Update according to cs version -->
-
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/en/write-website-content.ptbk.md@v0.1.0
 -   PTBK version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> - Use GPT-3.5 -->
+-   Input param `{idea}` General ideal of the web
 -   Input param `{rawTitle}` Automatically suggested a site name or empty text
 -   Input param `{rawAssigment}` Automatically generated site entry from image recognition
 -   Output param `{content}` Web content
+-   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , only if there is no ... -->
 
 ## 👤 Specifying the assigment
 
@@ -23,6 +23,37 @@ What is your web about?
 ```
 
 `-> {assigment}` Website assignment and specification
+
+## 🖋 Image prompt
+
+-   Use completion
+-   Postprocessing `trim`
+    <!-- TODO: !!> Skip if `rawAssigment!==''` -->
+    <!-- TODO: Maybe more samples... -->
+
+```markdown
+## Illustrative pictures
+
+## Café
+
+### Site assignment
+
+Create a website for a cafe in Prague called "Space Cafe", which is all about space.
+
+### Introduction image
+
+A large mug full of coffee with milk foam, on which a galaxy is depicted. The mug is on a table with a book about space and coffee beans on it.
+
+## {purpose}
+
+### Web assignment
+
+{assigment}
+
+### Introduction image
+```
+
+`-> {wallpaperPrompt}`
 
 ## 💬 Improvement of the web title
 
