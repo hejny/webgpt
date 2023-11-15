@@ -62,7 +62,7 @@
 }
 
 .ImagePromptResultsPicker .gallery .result.isPicked {
-    border: 2px solid rgb(255 255 255);
+    border: 2px solid #299ca0;
 
     z-index: 2;
 }

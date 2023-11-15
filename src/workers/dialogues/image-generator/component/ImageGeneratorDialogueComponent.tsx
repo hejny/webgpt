@@ -13,6 +13,7 @@ import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
 import { useInitialAction } from '../../../../utils/hooks/useInitialAction';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
+import { randomItem } from '../../../../utils/randomItem';
 import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
@@ -49,7 +50,7 @@ export function ImageGeneratorDialogueComponent(
         }
     }, [generatorType, clientId]);
 
-    console.log('!!!', { imageGenerator });
+    // console.log('!!!', { imageGenerator });
 
     const prompt = useMemo<DallePrompt>(
         // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
@@ -137,9 +138,10 @@ export function ImageGeneratorDialogueComponent(
                     <p>No images generated</p>
                 ) : (
                     <ImagePromptResultsPicker
-                        {...{ results, prompt }}
+                        {...{ results, prompt, selected }}
                         onSelect={setSelected}
                         onPick={async (pickedImage) => {
+                            // TODO: !!! Remove onPick
                             onResponse({ pickedImage });
                         }}
                     />
@@ -193,6 +195,18 @@ export function ImageGeneratorDialogueComponent(
                         Pick
                     </button>
                 )}
+
+                {/*
+                TODO: Probbably remove
+                <button
+                    className={classNames('button', styles.secondaryAction)}
+                    onClick={() => {
+                        setSelected(randomItem(...results));
+                    }}
+                >
+                    Random
+                </button>
+                */}
             </div>
         </Modal>
     );

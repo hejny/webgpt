@@ -49,6 +49,22 @@ export class PregeneratedPhotobank implements ImageGenerator {
             },
         });
 
+        /*
+        TODO: Make ptbk from this
+        TODO: THis is not working much:
+            > Butterfly with green wings
+            > Results in:
+            > keywords [
+            > 'branding',       'transformation',
+            > 'growth',         'nature',
+            > 'beauty',         'ecology',
+            > 'sustainability', 'vibrant',
+            > 'colorful',       'lively',
+            > 'harmony',        'balance'
+            > ]
+        
+        */
+
         console.log('!!!', { keywordsPromptResponse });
 
         const keywords = extractAllListItemsFromMarkdown(keywordsPromptResponse.content).flatMap(
