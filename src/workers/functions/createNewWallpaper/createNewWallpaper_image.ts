@@ -29,6 +29,13 @@ interface CreateNewWallpaperImageRequest {
      */
     readonly wallpaperImage?: Blob;
 
+    /**
+     * Same image as wallpaperImage
+     *
+     * Note: This is used to not reupload the same image if it is already uploaded on our CDN
+     */
+    readonly wallpaperUrl?: string_url_image;
+
     // TODO: !!! Annotate
     readonly wallpaperPrompt?: string_image_prompt;
 }
@@ -59,7 +66,7 @@ export async function createNewWallpaper_image(
     request: CreateNewWallpaperImageRequest,
     onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperImageResult> {
-    let { author, wallpaperImage, wallpaperPrompt } = request;
+    let { author, wallpaperImage, wallpaperUrl, wallpaperPrompt } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     if ((!wallpaperImage && !wallpaperPrompt) || (wallpaperImage && wallpaperPrompt)) {
@@ -157,7 +164,10 @@ export async function createNewWallpaper_image(
         isDone: false,
     });
 
-    const wallpaperForUpload = await resizeImageBlob(wallpaperImage, naturalSize);
+    let wallpaperForUpload: Blob;
+    if (!wallpaperUrl) {
+        wallpaperForUpload = await resizeImageBlob(wallpaperImage, naturalSize);
+    }
     const wallpaperForColorAnalysis = await resizeImageBlob(
         wallpaperImage,
         downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
@@ -181,30 +191,33 @@ export async function createNewWallpaper_image(
     //-------[ / Color analysis ]---
     //===========================================================================
     //-------[ Upload image: ]---
-    await onProgress({
-        name: 'upload-wallpaper-image',
-        title: 'Uploading image',
-        isDone: false,
-        // TODO: Make it more granular
-    });
-    const formData = new FormData();
-    formData.append('wallpaper', wallpaperForUpload);
+    if (!wallpaperUrl) {
+        await onProgress({
+            name: 'upload-wallpaper-image',
+            title: 'Uploading image',
+            isDone: false,
+            // TODO: Make it more granular
+        });
+        const formData = new FormData();
+        formData.append('wallpaper', wallpaperForUpload!);
 
-    const response = await fetch('/api/upload-image', {
-        method: 'POST',
-        body: formData,
-    });
+        const response = await fetch('/api/upload-image', {
+            method: 'POST',
+            body: formData,
+        });
 
-    if (response.ok === false) {
-        throw new Error(`Upload wallpaper failed with status ${response.status}`);
+        if (response.ok === false) {
+            throw new Error(`Upload wallpaper failed with status ${response.status}`);
+        }
+
+        const uploadWallpaperResponse = (await response.json()) as UploadWallpaperResponse;
+        wallpaperUrl = uploadWallpaperResponse.wallpaperUrl;
+        await onProgress({
+            name: 'upload-wallpaper-image',
+            isDone: true,
+        });
+        console.info({ wallpaperUrl });
     }
-
-    const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
-    await onProgress({
-        name: 'upload-wallpaper-image',
-        isDone: true,
-    });
-    console.info({ wallpaperUrl });
     //-------[ /Upload image ]---
     //===========================================================================
 

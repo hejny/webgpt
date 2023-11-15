@@ -91,8 +91,3 @@ export interface CreateNewWallpaperRequest {
         readonly url: string_url;
     }>;
 }
-
-/**
- * TODO: !!! Annotate all
- * TODO: !!!! Allow to pass readonly wallpaperImageSrc?: strign_url_image;
- */
