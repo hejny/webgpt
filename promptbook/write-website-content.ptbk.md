@@ -1,106 +1,183 @@
-# 🌍 Create website content
-
-<!-- !!!! Take czech version -->
+# 🌍 Creating website content
 
 Instructions for creating web page content using [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
--   PTBK URL https://ptbk.webgpt.com/en/write-website-content.ptbk.md@v0.1.0
+-   PTBK URL https://ptbk.webgpt.com/cs/write-website-content.ptbk.md@v0.1.0
 -   PTBK version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> - Use GPT-3.5 -->
--   Input param `{idea}` General ideal of the web
--   Input param `{rawTitle}` Automatically suggested a site name or empty text
--   Input param `{rawAssignment}` Automatically generated site entry from image recognition
--   Output param `{content}` Web content
--   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , only if there is no ... -->
+-   Input param `{idea}` General web idea
+-   Input param `{rawTitle}` `Automatic suggestion of the site title or empty text <!-- <- TODO: !!! This should be EXACLY in content -->
+-   Input param `{rawAssignment}` image description
+-   Output param `{content}` `Content of the site
+-   Output param `{wallpaperPrompt}` Prompt for image model<!-- TODO: !!> , only if not specified ... -->
 
-## 👤 Specifying the assignment
+## 🖋 Page purpose
 
-What is your web about?
+-   Use completion
+-   Postprocessing `unwrapResult`
+
+```markdown
+Design the purpose of the website
+
+## Rules
+
+-   Write a single proposal, don't say multiple options
+-   Suggest a general category, e.g. "Car Service" not "Car Service Under Ohradou"
+-   Keep the proposal short, no more than 3 words
+
+## Examples
+
+-   "Café"
+-   "Autoservis"
+-   "Children's playroom"
+-   "Wedding"
+-   "Photographer's personal page"
+
+## Background
+
+-   {idea}
+-   {rawAssignment}
+
+## Purpose of the site
+
+>
+```
+
+`-> {draftedPurpose} ``Drafting the purpose of the site
+
+## 👤 Specification of the purpose by the user
+
+Is this the purpose of your site?
 
 -   Prompt dialog
 
 ```text
-{rawAssignment}
+{draftedPurpose}
 ```
 
-`-> {assignment}` Website assignment and specification
+`-> {purpose}` Site purpose
 
-## 🖋 Image prompt
+## 🖋 Draft assignment
 
 -   Use completion
 -   Postprocessing `trim`
-    <!-- TODO: !!> Skip if `rawAssignment!==''` -->
-    <!-- TODO: Maybe more samples... -->
 
 ```markdown
-## Illustrative pictures
+Create a real site assignment for {purpose} from a clean description of what is in the image
+
+## Rules
+
+-   The purpose of the site is {purpose}
+-   The assignment is structured
+-   The assignment contains specific numbers, bullets and is precise
+-   Brief, maximum 4 points of the assignment, each point is a maximum of 2 sentences
+
+## Handout
+
+-   {idea}
+-   {rawAssignment}
+
+## Web assignment
+```
+
+`-> {draftedAssignment}` Web assignment
+
+## 👤 Specification of the assignment by the user
+
+Describe the goal of your site
+
+-   Prompt dialog
+
+```text
+{draftedAssignment}
+```
+
+`-> {assignment}`` Site Assignment
+
+## 🖋 Image design
+
+-   Use completion
+-   Postprocessing `trim`
+      <!-- TODO: !!> Skip if `rawAssignment!==''` -->
+      <!-- TODO: Maybe more samples... -->
+
+```markdown
+## Illustrative images
 
 ## Café
 
-### Site assignment
+### Website assignment
 
 Create a website for a cafe in Prague called "Space Cafe", which is all about space.
 
-### Introduction image
+### Image prompt
 
 A large mug full of coffee with milk foam, on which a galaxy is depicted. The mug is on a table with a book about space and coffee beans on it.
 
-## {assignment}
+## {purpose}
 
-### Web assignment
+### Website assignment
 
 {assignment}
 
-### Introduction image
+### Image prompt
 ```
 
 `-> {wallpaperPrompt}`
 
-## 💬 Improvement of the web title
+## 🖋 Name enhancement
 
+-   Use completion
 -   Postprocessing `unwrapResult`
 
 ```markdown
-As an experienced marketing specialist, you have been entrusted with improving the name of your client's business.
+As an experienced marketer, you have been entrusted with improving the name of a client's business.
 
-A suggested name from a client:
+## Suggested name from the client
+
 "{rawTitle}"
 
-Assignment from customer:
+## Client's submission
 
 \`\`\`
 {assignment}
 \`\`\`
 
-## Instructions:
+## Instructions
 
+-   The purpose of the website is {purpose}
 -   Write only one name suggestion
+-   Write only the title, no justification or other text around it
 -   The name will be used on the website, business cards, visuals, etc.
+
+## Improved title
 ```
 
-`-> {enhancedTitle}` Enhanced title
+`-> {draftedTitle}` Improved title
 
-## 👤 Schválení názvu uživatelem
+## 👤 User approval of the title
 
-Is the title for your website okay?
+Is the title of your site okay?
 
 -   Prompt dialog
+-   Postprocessing `spaceTrim`
 
 ```text
-{enhancedTitle}
+{draftedTitle}
 ```
 
-`-> {title}` Title for the website
+`-> {title}` Site name
 
-## 💬 Cunning subtitle
+## 🖋 Claim for site
 
+-   Use completion
 -   Postprocessing `unwrapResult`
 
 ```markdown
 As an experienced copywriter, you have been entrusted with creating a claim for the "{title}" web page.
 
-A website assignment from a customer:
+## Client's web assignment
 
 \`\`\`
 {assignment}
@@ -108,21 +185,48 @@ A website assignment from a customer:
 
 ## Instructions:
 
--   Write only one name suggestion
+-   The purpose of the site is {purpose}
+-   Write only ONE name suggestion
 -   Claim will be used on website, business cards, visuals, etc.
 -   Claim should be punchy, funny, original
+
+## Example 1
+
+> Do you want to have a website or deal with a website!
+
+## Example 2
+
+> Coffee as pure joy
+
+## One proposal for a web claim
+
+>
 ```
 
-`-> {claim}` Claim for the web
+`-> {draftedClaim}` Web design
 
-## 💬 Keyword analysis
+## 👤 User approval of the claim
+
+Is the subtitle of your site okay?
+
+-   Prompt dialog
+
+```text
+{draftedClaim}
+```
+
+`-> {claim}` Claim of the site
+
+## 🖋 Keyword Analysis
 
 <!--
 Note+TODO: This is not a real keyword analysis, but rather a list of keywords that should be used in the content.
 -->
 
+-   Use completion
+
 ```markdown
-As an experienced SEO specialist, you have been entrusted with creating keywords for the website "{title}".
+As an experienced SEO specialist, you have been entrusted with creating keywords for the "{title}" web page.
 
 Website assignment from the customer:
 
@@ -130,45 +234,41 @@ Website assignment from the customer:
 {assignment}
 \`\`\`
 
-## Instructions:
+## Instructions
 
 -   Write a list of keywords
--   Keywords are in basic form
+-   The keywords are in basic form
+-   The purpose of the site is {purpose}
 
-## Example:
-
--   Ice cream
--   Olomouc
--   Quality
--   Family
--   Tradition
--   Italy
--   Craft
+## Keywords
 ```
 
 `-> {keywords}` Keywords
 
-## 🔗 Vytvoření začátku obsahu webu
+## 🔗 Creating the beginning of the web content
 
 -   Simple template
 
 ```text
 
+
 # {title}
+
 
 > {claim}
 
+
 ```
 
-`-> {contentBeginning}` Beginning of web content
+`-> {contentBeginning}` Start of web content
 
-## 🖋 Writing web content
+## 🖋 Creating web content
 
 -   Use completion
-<!-- TODO: [🌚]> -   Use GPT-3 -->
+<!-- TODO: [🌚]> - Use GPT-3 -->
 
 ```markdown
-As an experienced copywriter and web designer, you have been entrusted with creating text for a new website {title}.
+As an experienced copywriter and web designer, you have been entrusted with creating the text for a new web page {title}.
 
 A website assignment from a customer:
 
@@ -180,6 +280,7 @@ A website assignment from a customer:
 
 -   Text formatting is in Markdown
 -   Be concise and to the point
+-   The purpose of the site is {purpose}
 -   Use keywords, but they should be naturally in the text
 -   This is the complete content of the page, so don't forget all the important information and elements the page should contain
 -   Use headings, bullets, text formatting
@@ -193,9 +294,9 @@ A website assignment from a customer:
 {contentBeginning}
 ```
 
-`-> {contentBody}` Middle of the web content
+`-> {contentBody}`` Web Content Stack
 
-## 🔗 Combine content
+## 🔗 Content Linking
 
 -   Simple template
 
