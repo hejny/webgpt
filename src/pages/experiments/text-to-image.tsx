@@ -7,6 +7,7 @@ import { getPhotobank } from '../../ai/text-to-image/getPhotobank';
 import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { useClientId } from '../../utils/hooks/useClientId';
 import { fetchImage } from '../../utils/scraping/fetchImage';
 import type { string_image_prompt } from '../../utils/typeAliases';
 import { supportDialogues } from '../../workers/dialogues';
@@ -25,12 +26,15 @@ export default function TextToImagePage() {
         [promptContent],
     );
     const [isReady, setReady] = useState<boolean>(true);
+    const clientId = useClientId({
+        isVerifiedEmailRequired: true,
+    });
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
     const runImageGenerator = useCallback(async () => {
         setReady(false);
 
         /**/
-        const imageGenerator = getPhotobank();
+        const imageGenerator = getPhotobank({ clientId });
         /**/
 
         /*/
@@ -67,6 +71,7 @@ export default function TextToImagePage() {
             {results.length === 0 && isReady && <p>No images generated</p>}
             <ImagePromptResultsPicker
                 {...{ results, prompt }}
+                selected={null /* <- TODO: !! Implement */}
                 onSelect={(result) => {
                     // Do nothing
                 }}
