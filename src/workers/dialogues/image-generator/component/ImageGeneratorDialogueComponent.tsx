@@ -215,7 +215,7 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!!! UX: On first shot there should be always something shown AND after first try allow dalle
- * TODO: !!!! UXL Of nothing found
+ * TODO: !!! UI: Hide place for the prompt if the prompt is not shown
+ * TODO: !!! UI: Buttons overflow
  * TODO: !!! Annotate
  */
