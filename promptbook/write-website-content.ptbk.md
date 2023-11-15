@@ -44,7 +44,7 @@ Design the purpose of the website
 >
 ```
 
-`-> {draftedPurpose} ``Drafting the purpose of the site
+`-> {draftedPurpose}` Drafting the purpose of the site
 
 ## 👤 Specification of the purpose by the user
 
@@ -93,7 +93,7 @@ Describe the goal of your site
 {draftedAssignment}
 ```
 
-`-> {assignment}`` Site Assignment
+`-> {assignment}` Site Assignment
 
 ## 🖋 Image design
 
@@ -294,7 +294,7 @@ A website assignment from a customer:
 {contentBeginning}
 ```
 
-`-> {contentBody}`` Web Content Stack
+`-> {contentBody}` Web Content Stack
 
 ## 🔗 Content Linking
 
