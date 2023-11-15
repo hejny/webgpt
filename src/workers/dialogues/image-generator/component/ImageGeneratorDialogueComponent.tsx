@@ -13,7 +13,6 @@ import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
 import { useInitialAction } from '../../../../utils/hooks/useInitialAction';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
-import { randomItem } from '../../../../utils/randomItem';
 import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
@@ -215,6 +214,7 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
+ * TODO: !!!! On first shot there should be always something shown AND after first try allow dalle
  * TODO: !!!! Design
  * TODO: !!! Annotate
  */
