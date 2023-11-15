@@ -10,6 +10,8 @@
 
     display: grid;
     grid-template: '🟦';
+
+    align-content: space-between;
 }
 
 .ImagePromptResultsPicker .actions {
