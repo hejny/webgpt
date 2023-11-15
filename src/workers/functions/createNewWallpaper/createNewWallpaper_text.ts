@@ -192,10 +192,10 @@ export async function createNewWallpaper_text(
         getExecutionTools(author),
     )(
         {
-            rawTitle:
-                title || '' /* <- TODO: [🧠] Make some system how to pass and default/condition undefined params */,
-            rawAssignment: description!,
+            rawTitle: title || '',
+            rawAssignment: description || '',
             idea: idea || '',
+            /*            '' <- TODO: [🧠] Make some system how to pass and default/condition undefined params */
 
             /*
             TODO: !! Use in write-website-content-cs.ptbk.md and uncomment here

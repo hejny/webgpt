@@ -1,7 +1,5 @@
 # 🌍 Vytvoření obsahu webové stránky
 
-<!-- !!!! Fix cutom image scenario-->
-
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/cs/write-website-content.ptbk.md@v0.1.0
