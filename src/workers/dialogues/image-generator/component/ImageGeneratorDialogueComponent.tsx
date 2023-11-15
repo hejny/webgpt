@@ -11,7 +11,7 @@ import { Modal } from '../../../../components/Modal/00-Modal';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
-import { useInitial } from '../../../../utils/hooks/useInitial';
+import { useInitialAction } from '../../../../utils/hooks/useInitialAction';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
@@ -106,8 +106,7 @@ export function ImageGeneratorDialogueComponent(
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
 
-    // !!!!! Run ONLY when clientId!==null
-    useInitial(runImageGenerator);
+    useInitialAction(() => clientId !== null, runImageGenerator);
 
     return (
         <Modal title={message} className={styles.ImageGeneratorDialogueComponent}>
