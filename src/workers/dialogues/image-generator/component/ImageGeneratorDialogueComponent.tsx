@@ -97,7 +97,6 @@ export function ImageGeneratorDialogueComponent(
             setRunnedImageGenerator((runnedImageGenerator) => runnedImageGenerator + 1);
 
             if (generatorType !== 'PREGENERATED' && newResults[0]) {
-                // TODO: !!!! Make this work - this does not propagate into <ImagePromptResultsPicker/>
                 setResults(newResults);
                 setSelected(newResults[0]!);
             }
@@ -214,7 +213,7 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!!! On first shot there should be always something shown AND after first try allow dalle
- * TODO: !!!! Design
+ * TODO: !!!! UX: On first shot there should be always something shown AND after first try allow dalle
+ * TODO: !!!! UXL Of nothing found
  * TODO: !!! Annotate
  */
