@@ -3,6 +3,7 @@
     height: 100%;
 
     display: grid;
+    /* TODO: !!! Hide 🖋 image prompt when image prompt not shown */
     grid-template:
         '🖋' 80px
         '🖼' 1fr

@@ -1,6 +1,5 @@
 import { isValidKeyword } from 'n12';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { randomMaxItems } from '../../../utils/randomMaxItems';
 import { string_url_image } from '../../../utils/typeAliases';
 import { searchPhotobankOnServer } from './utils/searchPhotobankOnServer';
 
@@ -42,20 +41,7 @@ export default async function searchPhotobankHandler(
         );
     }
 
-    let images = await searchPhotobankOnServer({ keywords });
-
-    // TODO: This should be responsibility of the database
-    const srcs = new Set<string_url_image>();
-    images = images.filter(({ src }) => {
-        if (srcs.has(src)) {
-            return false;
-        }
-
-        srcs.add(src);
-        return true;
-    });
-
-    images = randomMaxItems(9, ...images);
+    const images = await searchPhotobankOnServer({ keywords, imagesExactCount: 4 /* <- TODO: !!! To config */ });
 
     return response.status(200).json({
         images,

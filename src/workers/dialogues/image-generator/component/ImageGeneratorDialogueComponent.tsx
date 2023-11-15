@@ -66,6 +66,7 @@ export function ImageGeneratorDialogueComponent(
 
         [promptContent],
     );
+    const [isPromptShown, setPromptShown] = useState<boolean>(false);
     const [isRunning, setRunning] = useState<boolean>(false);
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
     const [runnedImageGenerator, setRunnedImageGenerator] = useState(0);
@@ -105,34 +106,33 @@ export function ImageGeneratorDialogueComponent(
         }
     }, [isRunning, results, generatorType, imageGenerator, prompt]);
 
-    useInitialAction(() => clientId !== null, runImageGenerator);
+    useInitialAction(
+        () => clientId !== null,
+        async () => {
+            await runImageGenerator();
+            setGeneratorType('DALLE');
+        },
+    );
 
     return (
         <Modal title={message} className={styles.ImageGeneratorDialogueComponent}>
-            <textarea
-                className={styles.prompt}
-                defaultValue={promptContent}
-                placeholder={defaultImagePrompt}
-                onChange={(event) => {
-                    const value = spaceTrim(event.target.value);
-                    setPromptContent(value);
-                }}
-                /*
-                onKeyDown={(event) => {
-                   
-                    if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
-                        return;
-                    }
-
-                    // TODO: [🧠] Do we want to start image generation by pressing [Enter]
-                }}
-                */
-            />
+            {isPromptShown && (
+                <textarea
+                    className={styles.prompt}
+                    defaultValue={promptContent}
+                    placeholder={defaultImagePrompt}
+                    onChange={(event) => {
+                        const value = spaceTrim(event.target.value);
+                        setPromptContent(value);
+                    }}
+                />
+            )}
 
             <div className={styles.results}>
                 {isRunning && results.length === 0 ? (
                     <p>Generating...</p>
                 ) : results.length === 0 ? (
+                    // Note: This should never happen
                     <p>No images generated</p>
                 ) : (
                     <ImagePromptResultsPicker
@@ -150,36 +150,38 @@ export function ImageGeneratorDialogueComponent(
                 {!selected ? (
                     <>
                         <button
-                            className={classNames('button', styles.secondaryAction)}
+                            className={classNames('button', styles.callToAction)}
                             onClick={runImageGenerator}
                             disabled={isRunning}
                         >
-                            Generate more
-                            {generatorType === 'DALLE' && (
-                                <>
-                                    {' '}
-                                    with <b>Dalle-{USE_DALLE_VERSION}</b>
-                                </>
-                            )}
+                            Generate
                         </button>
+                        {!isPromptShown && (
+                            <button
+                                className={classNames('button', styles.secondaryAction)}
+                                onClick={() => setPromptShown(true)}
+                            >
+                                Show prompt
+                            </button>
+                        )}
                         {runnedImageGenerator >= 1 &&
-                            (generatorType !== 'DALLE' ? (
-                                <button
-                                    className={classNames('button', styles.secondaryAction)}
-                                    onClick={() => {
-                                        setGeneratorType('DALLE');
-                                    }}
-                                >
-                                    Switch to Dalle-{USE_DALLE_VERSION}
-                                </button>
-                            ) : (
+                            (generatorType === 'DALLE' ? (
                                 <button
                                     className={classNames('button', styles.secondaryAction)}
                                     onClick={() => {
                                         setGeneratorType('PREGENERATED');
                                     }}
                                 >
-                                    Switch to MidJourney
+                                    Using Dalle-{USE_DALLE_VERSION}
+                                </button>
+                            ) : (
+                                <button
+                                    className={classNames('button', styles.secondaryAction)}
+                                    onClick={() => {
+                                        setGeneratorType('DALLE');
+                                    }}
+                                >
+                                    Using MidJourney
                                 </button>
                             ))}
                     </>
