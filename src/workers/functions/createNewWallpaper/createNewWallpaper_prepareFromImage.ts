@@ -50,6 +50,6 @@ export async function createNewWallpaper_prepareFromImage(
         colorStats,
         originalSize,
         contentWithFont,
-        wallpaperPrompt: '!!!!',
+        wallpaperPrompt: '!!' /* <- TODO: [🚿] Pass here the original or normalized prompt */,
     };
 }

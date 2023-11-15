@@ -229,5 +229,5 @@ export async function createNewWallpaper_text(
     //-------[ /Picking font ]---
     //===========================================================================
 
-    return { contentWithFont, wallpaperPrompt: '!!!!' };
+    return { contentWithFont, wallpaperPrompt: '!!' /* <- TODO: [🚿] Pass here the original or normalized prompt */ };
 }
