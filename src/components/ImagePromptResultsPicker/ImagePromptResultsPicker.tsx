@@ -71,7 +71,7 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
                         <img src={result.imageSrc} alt={result.normalizedPrompt.content} draggable={false} />
                     </div>
                 ))}
-            </div>{' '}
+            </div>
         </div>
     );
 }
