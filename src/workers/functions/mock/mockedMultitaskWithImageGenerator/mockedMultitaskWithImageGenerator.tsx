@@ -3,9 +3,7 @@ import { Promisable } from 'type-fest';
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { string_image_prompt } from '../../../../utils/typeAliases';
-import { confirmDialogue } from '../../../dialogues/confirm/confirmDialogue';
 import { imageGeneratorDialogue } from '../../../dialogues/image-generator/imageGeneratorDialogue';
-import { simpleTextDialogue } from '../../../dialogues/simple-text/simpleTextDialogue';
 
 export interface MockedMultitaskWithImageGeneratorRequest {
     /**
@@ -53,22 +51,6 @@ export async function mockedMultitaskWithImageGenerator(
         title: 'Picking the image',
         isDone: false,
     });
-
-    const { answer: isContinuing } = await confirmDialogue({
-        message: `Do you want to pick an image?`,
-    });
-
-    if (!isContinuing) {
-        throw new Error('User cancelled');
-    }
-
-    const { answer: imagePromptContentConfirmed } = await simpleTextDialogue({
-        message: `Confirm image prompt`,
-        defaultValue: imagePromptContent,
-        // TODO: !! Implement> isRequired: true, // <- TODO: Go through all usages of promptDialogue and leverage isRequired
-    });
-
-    imagePromptContent = imagePromptContentConfirmed!;
 
     const { pickedImage } = await imageGeneratorDialogue({
         message: `Pick the image`,

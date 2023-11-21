@@ -59,6 +59,7 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
                     <div
                         key={result.imageSrc}
                         onClick={() => {
+                            console.log('!!!', result.imageSrc);
                             if (result.imageSrc !== selected?.imageSrc) {
                                 onSelect(result);
                             } else {
@@ -68,7 +69,25 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
                         className={classNames(styles.result, selected?.imageSrc === result.imageSrc && styles.isPicked)}
                     >
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
-                        <img src={result.imageSrc} alt={result.normalizedPrompt.content} draggable={false} />
+                        <img
+                            className={styles.image}
+                            src={result.imageSrc}
+                            alt={result.normalizedPrompt.content}
+                            draggable={false}
+                        />
+
+                        <div className={styles.actions}>
+                            {selected?.imageSrc === result.imageSrc && (
+                                <button
+                                    className={classNames('button', styles.pick)}
+                                    onClick={() => {
+                                        onPick(result);
+                                    }}
+                                >
+                                    Pick
+                                </button>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>

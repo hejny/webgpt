@@ -66,7 +66,7 @@ export function ImageGeneratorDialogueComponent(
 
         [promptContent],
     );
-    const [isPromptShown, setPromptShown] = useState<boolean>(false);
+    const [isAdvanced, setAdvanced] = useState<boolean>(false);
     const [isRunning, setRunning] = useState<boolean>(false);
     const [results, setResults] = useState<Array<ImagePromptResult>>([]);
     const [runnedCount, setRunnedCount] = useState(0);
@@ -115,8 +115,17 @@ export function ImageGeneratorDialogueComponent(
     );
 
     return (
-        <Modal title={message} className={styles.ImageGeneratorDialogueComponent}>
-            {isPromptShown && (
+        <Modal
+            title={
+                !results[0]
+                    ? message
+                    : results[0]!.originalPrompt.model.startsWith('dalle')
+                    ? 'Do you like images from our gallery'
+                    : 'Images generated just for you'
+            }
+            className={styles.ImageGeneratorDialogueComponent}
+        >
+            {isAdvanced && (
                 <textarea
                     className={styles.prompt}
                     defaultValue={promptContent}
@@ -140,14 +149,16 @@ export function ImageGeneratorDialogueComponent(
                         <p>No images generated</p>
                     )
                 ) : (
-                    <ImagePromptResultsPicker
-                        {...{ results, prompt, selected }}
-                        onSelect={setSelected}
-                        onPick={async (pickedImage) => {
-                            // TODO: !!! Remove onPick
-                            onResponse({ pickedImage });
-                        }}
-                    />
+                    <>
+                        {generatorType === 'PREGENERATED' && <p>Do you like images from our gallery:</p>}
+                        <ImagePromptResultsPicker
+                            {...{ results, prompt, selected }}
+                            onSelect={setSelected}
+                            onPick={async (pickedImage) => {
+                                onResponse({ pickedImage });
+                            }}
+                        />
+                    </>
                 )}
             </div>
 
@@ -159,17 +170,11 @@ export function ImageGeneratorDialogueComponent(
                             onClick={runImageGenerator}
                             disabled={isRunning}
                         >
-                            Generate
+                            Generate new one
                         </button>
-                        {!isPromptShown && (
-                            <button
-                                className={classNames('button', styles.secondaryAction)}
-                                onClick={() => setPromptShown(true)}
-                            >
-                                Show prompt
-                            </button>
-                        )}
-                        {runnedCount >= 1 &&
+
+                        {isAdvanced &&
+                            runnedCount >= 1 &&
                             (generatorType === 'DALLE' ? (
                                 <button
                                     className={classNames('button', styles.secondaryAction)}
@@ -189,10 +194,33 @@ export function ImageGeneratorDialogueComponent(
                                     Using MidJourney
                                 </button>
                             ))}
+                        {!isAdvanced ? (
+                            <button
+                                className={classNames('button', styles.secondaryAction)}
+                                onClick={() => setAdvanced(true)}
+                            >
+                                More options
+                            </button>
+                        ) : (
+                            <button
+                                className={classNames('button', styles.secondaryAction)}
+                                onClick={() => setAdvanced(false)}
+                            >
+                                Simple view
+                            </button>
+                        )}
                     </>
                 ) : (
                     <button
                         className={classNames('button', styles.callToAction)}
+                        style={{
+                            background: `url(${selected.imageSrc})`,
+
+                            // TODO: !!! Is this stretched propperly?
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                        }}
                         onClick={() => {
                             onResponse({ pickedImage: selected });
                         }}

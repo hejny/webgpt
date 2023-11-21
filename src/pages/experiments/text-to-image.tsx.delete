@@ -33,8 +33,12 @@ export default function TextToImagePage() {
     const runImageGenerator = useCallback(async () => {
         setReady(false);
 
+        if (!clientId) {
+            return;
+        }
+
         /**/
-        const imageGenerator = getPhotobank(clientId!);
+        const imageGenerator = getPhotobank(clientId);
         /**/
 
         /*/
@@ -49,7 +53,7 @@ export default function TextToImagePage() {
 
         setReady(true);
         setResults(results);
-    }, [prompt]);
+    }, [clientId, prompt]);
 
     return (
         <div>

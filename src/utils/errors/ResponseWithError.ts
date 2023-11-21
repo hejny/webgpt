@@ -3,7 +3,7 @@ export type ResponseWithError<TResponse> = TResponse | ErrorResponse;
 export type ErrorResponse = { error: { message: string } };
 
 export function isErrorResponse<TResponse>(response: ResponseWithError<TResponse>): response is ErrorResponse {
-    return (response as any).errorMessage !== undefined;
+    return (response as any).error !== undefined;
 }
 
 export function throwIfErrorResponse<TResponse>(response: ResponseWithError<TResponse>): asserts response is TResponse {

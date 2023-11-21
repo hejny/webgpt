@@ -10,30 +10,7 @@
 
     display: grid;
     grid-template: '🟦';
-
     align-content: space-between;
-}
-
-.ImagePromptResultsPicker .actions {
-    /*/
-    outline: 1px dotted rgb(255, 38, 38);
-    /**/
-
-    z-index: 20;
-    grid-area: 🟦;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    pointer-events: none;
-
-    margin: 10px;
-}
-
-.ImagePromptResultsPicker .pick {
-    cursor: pointer;
-    pointer-events: all;
 }
 
 .ImagePromptResultsPicker .gallery {
@@ -43,9 +20,7 @@
 
     /* TODO: Use or remove empty css */
 
-    z-index: 10;
     grid-area: 🟦;
-
     width: 100%;
     height: 100%;
 
@@ -59,10 +34,55 @@
     z-index: 1;
     box-sizing: border-box;
     border: 2px solid transparent;
+
+    display: grid;
+    grid-template: '☑';
 }
 
 .ImagePromptResultsPicker .gallery .result.isPicked {
     border: 2px solid #299ca0;
 
     z-index: 2;
+}
+
+.ImagePromptResultsPicker .gallery .result img.image {
+    /*/
+    outline: 1px dotted rgb(38 255 110);
+    /**/
+
+    z-index: 10;
+    grid-area: ☑;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.ImagePromptResultsPicker .gallery .result .actions {
+    /*/
+    outline: 1px dotted rgb(255 241 38);
+    /**/
+
+    z-index: 20;
+    grid-area: ☑;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    pointer-events: none;
+
+    padding: 10px;
+}
+
+.ImagePromptResultsPicker .gallery .result .actions .pick {
+    cursor: pointer;
+    pointer-events: all;
+
+    background-color: #299ca0;
 }
