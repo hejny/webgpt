@@ -4,6 +4,7 @@ import { parseKeywordsFromString } from 'n12';
 import spaceTrim from 'spacetrim';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { SearchPhotobankResult } from '../../../pages/api/pregenerated-photobank/search';
+import { throwIfErrorResponse } from '../../../utils/errors/ResponseWithError';
 import { getExecutionTools } from '../../prompt-templates/getExecutionTools';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import { ImagePrompt } from '../0-interfaces/ImagePrompt';
@@ -77,6 +78,8 @@ export class PregeneratedPhotobank implements ImageGenerator {
             `/api/pregenerated-photobank/search?${keywords.map((keyword) => `keywords=${keyword}`).join('&')}`,
         );
         const rawResponse = (await response.json()) as SearchPhotobankResult;
+        throwIfErrorResponse(rawResponse);
+
         const { images } = rawResponse;
 
         console.log('!!!', { rawResponse });
@@ -87,6 +90,7 @@ export class PregeneratedPhotobank implements ImageGenerator {
                 keywordsPromptResponse,
                 keywords,
                 images,
+                rawResponse,
             });
         }
 

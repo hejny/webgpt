@@ -1,16 +1,17 @@
 import { isValidKeyword } from 'n12';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { ResponseWithError } from '../../../utils/errors/ResponseWithError';
 import { string_url_image } from '../../../utils/typeAliases';
 import { searchPhotobankOnServer } from './utils/searchPhotobankOnServer';
 
-export interface SearchPhotobankResult {
+export type SearchPhotobankResult = ResponseWithError<{
     /**
      * List of found images
      */
     readonly images: Array<{ src: string_url_image }>;
 
     /* <- TODO: [⛹️‍♀️] Pass here original prompt */
-}
+}>;
 
 /**
  * API endpoint handler which returns information about the application
@@ -26,19 +27,15 @@ export default async function searchPhotobankHandler(
     }
 
     if (!(Array.isArray(keywords) && keywords.every((keyword) => typeof keyword === 'string'))) {
-        return response.status(400).json(
-            {
-                message: `You need to specify a valid list of "keywords" in the query.`,
-            } as any /* <- TODO: Type helper ResponseWithError<T> */,
-        );
+        return response.status(400).json({
+            error: { message: `You need to specify a valid list of "keywords" in the query.` },
+        });
     }
 
     if (!keywords.every(isValidKeyword)) {
-        return response.status(400).json(
-            {
-                message: `Specifyed list of "keywords" are not normalized propperly.`,
-            } as any /* <- TODO: Type helper ResponseWithError<T> */,
-        );
+        return response.status(400).json({
+            error: { message: `Specifyed list of "keywords" are not normalized propperly.` },
+        });
     }
 
     const images = await searchPhotobankOnServer({ keywords, imagesExactCount: 4 /* <- TODO: !!! To config */ });
