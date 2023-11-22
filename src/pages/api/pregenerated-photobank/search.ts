@@ -1,5 +1,6 @@
 import { isValidKeyword } from 'n12';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { PHOTOBANK_SEARCH_IMAGES_COUNT } from '../../../../config';
 import { ResponseWithError } from '../../../utils/errors/ResponseWithError';
 import { string_url_image } from '../../../utils/typeAliases';
 import { searchPhotobankOnServer } from './utils/searchPhotobankOnServer';
@@ -38,7 +39,7 @@ export default async function searchPhotobankHandler(
         });
     }
 
-    const images = await searchPhotobankOnServer({ keywords, imagesExactCount: 4 /* <- TODO: !!! To config */ });
+    const images = await searchPhotobankOnServer({ keywords, imagesExactCount: PHOTOBANK_SEARCH_IMAGES_COUNT });
 
     return response.status(200).json({
         images,

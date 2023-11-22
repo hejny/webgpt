@@ -1,12 +1,13 @@
 import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
+import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DallePrompt';
 import { FULLHD } from './src/constants';
-import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
+import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
-import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
+import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
@@ -15,6 +16,12 @@ export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
 
 export const USE_DALLE_VERSION: 2 | 3 = 3;
+
+export const USE_DALLE_MODEL_SETTINGS: DallePrompt['modelSettings'] = {
+    style: 'vivid',
+    quality: `standard`,
+    // <- TODO: !! Play with theeese to achieve best results
+};
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -61,6 +68,16 @@ export const NEXT_PUBLIC_OUR_DOMAINS = config.get('NEXT_PUBLIC_OUR_DOMAINS').lis
  *       - https://online-video-cutter.com/change-video-speed
  */
 export const SPEED = 1; // 1 / 5;
+
+/**
+ * The number of pregenerated photobank images to offer to the user to choose from
+ */
+export const PHOTOBANK_SEARCH_IMAGES_COUNT = 4;
+
+/**
+ * Number of keywords reduction attempts until photobank give up and just pick random images
+ */
+export const OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH = 5;
 
 export const IS_VERIFIED_EMAIL_REQUIRED = {
     CREATE: false,
