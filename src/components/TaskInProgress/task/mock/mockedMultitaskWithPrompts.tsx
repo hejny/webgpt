@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
+import { simpleTextDialogue } from '../../../../workers/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
 export async function mockedMultitaskWithPrompts(
@@ -34,8 +34,8 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
-        const response = await promptDialogue({
-            prompt: (
+        const { answer } = await simpleTextDialogue({
+            message: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
                 </>
@@ -48,7 +48,7 @@ export async function mockedMultitaskWithPrompts(
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({response})</i>
+                    {title} <i>({answer})</i>
                 </>
             ),
             isDone: true,

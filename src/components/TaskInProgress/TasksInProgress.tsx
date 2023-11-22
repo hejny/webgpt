@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 import { Vector } from 'xyzt';
 import { IS_DEVELOPMENT } from '../../../config';
 import { useGraph } from '../../utils/hooks/useGraph';
-import { Dialogues } from '../Dialogues/Dialogues';
+import { supportDialogues } from '../../workers/dialogues';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 import { WebgptTaskProgress } from './task/WebgptTaskProgress';
 import styles from './TasksInProgress.module.css';
 
@@ -116,10 +117,12 @@ export function TasksInProgress(props: TaskInProgressProps) {
                     </div>
                 )}
             </div>
-            <Dialogues />
+            <Dialogues {...{ supportDialogues }} />
         </>
     );
 }
+
+
 
 /**
  * TODO: Size of babylonjs in bundle - maybe prerecord as video

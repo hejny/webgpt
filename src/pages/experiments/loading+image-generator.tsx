@@ -3,7 +3,7 @@ import { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImageProm
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
-import { mockedMultitaskWithImageGeneratorForBrowser } from '../../workers/mock/mockedMultitaskWithImageGenerator/workerify/mockedMultitaskWithImageGeneratorForBrowser';
+import { mockedMultitaskWithImageGeneratorForBrowser } from '../../workers/functions/mock/mockedMultitaskWithImageGenerator/workerify/mockedMultitaskWithImageGeneratorForBrowser';
 
 export default function TestTasksProgressWithChatPage() {
     const promptRef = useRef<HTMLTextAreaElement>(null);
@@ -30,7 +30,7 @@ export default function TestTasksProgressWithChatPage() {
             This is NOT production code. It is used ONLY for testing the {`<ImagePromptResultsPicker/>`} poped up from
             the worker.
             <br />
-            <textarea ref={promptRef} />
+            <textarea ref={promptRef} defaultValue="Space café with a view of the Earth" />
             <br />
             <button onClick={run}>Generate image</button>
             <br /> <br />

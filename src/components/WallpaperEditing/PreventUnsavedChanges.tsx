@@ -28,3 +28,7 @@ export function PreventUnsavedChanges() {
     }, [isSaved]);
     return <></>;
 }
+
+/**
+ * TODO: [🔮] DRY singleton abstraction - PreventUnsavedChangesManager
+ */

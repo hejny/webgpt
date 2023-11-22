@@ -72,6 +72,7 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 onChange(textAreaRef.current.value, 'COPILOT');
             }
 
+            // TODO: !!! Wrap ACRY all `setRunning(false)` in finally block
             setRunning(false);
 
             if (textAreaRef.current === null) {
@@ -80,19 +81,6 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
         },
         [isRunning, textAreaRef, onChange, naturalExecutionTools],
     );
-
-    /*
-    useEffect(() => {
-        window.onbeforeunload = () => {
-            // TODO: !! Allow to save and then leave
-            return 'You have unsaved changes. Are you sure you want to leave?';
-        };
-
-        return () => {
-            window.onbeforeunload = null;
-        };
-    }, []);
-    */
 
     return (
         <div className={styles.CompletionTextarea}>

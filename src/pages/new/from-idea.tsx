@@ -17,7 +17,7 @@ import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid o
 import { useLocale } from '../../utils/hooks/useLocale';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 
 export default function NewWallpaperFromIdeaPage() {
     const router = useRouter();
@@ -26,7 +26,15 @@ export default function NewWallpaperFromIdeaPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const placeholders = useMemo(() => shuffleItems('Restaurace', 'Osobní web', 'Kavárna'), []);
+    const placeholders = useMemo(
+        () =>
+            shuffleItems(
+                ...{ en: ['Restaurant', 'Personal website', 'Café'], cs: ['Restaurace', 'Osobní web', 'Kavárna'] }[
+                    locale
+                ],
+            ),
+        [locale],
+    );
 
     return (
         <>
@@ -118,8 +126,8 @@ export default function NewWallpaperFromIdeaPage() {
                         >
                             <>
                                 {/* [⛳] */}
-                                <Translate locale="en">Rád bych se inspiroval</Translate>
-                                <Translate locale="cs">I need an inspiration</Translate>
+                                <Translate locale="en">I need an inspiration</Translate>
+                                <Translate locale="cs">Rád bych se inspiroval</Translate>
                             </>
                         </Link>
                     </Center>

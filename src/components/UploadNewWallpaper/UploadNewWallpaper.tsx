@@ -6,7 +6,7 @@ import { classNames } from '../../utils/classNames';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
 import { WebgptTaskProgress } from '../TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';

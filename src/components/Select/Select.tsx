@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
+import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import { string_css_class } from '../../utils/typeAliases';
-import styles from './Select.module.css';
 
 interface SelectProps<TValue extends string | number | symbol> {
     label?: string;
@@ -22,6 +22,8 @@ interface SelectProps<TValue extends string | number | symbol> {
  */
 export function Select<TValue extends string | number | symbol>(props: SelectProps<TValue>) {
     const { label, value, onChange, visibleButtons, className, isDisabled } = props;
+
+    const styles = useStyleModule(import('./Select.module.css'));
 
     const options: Array<{ id: TValue; label: string | ReactNode }> = Object.entries(props.options).map(
         ([id, label]) => ({
