@@ -1,17 +1,15 @@
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
+import { IMessageDialogueResponse } from './interfaces/IMessageDialogueResponse';
+import { IMessageError } from './interfaces/IMessageError';
+import { IMessageMainToWorker } from './interfaces/IMessageMainToWorker';
+import { IMessageProgress } from './interfaces/IMessageProgress';
+import { IMessageRequest } from './interfaces/IMessageRequest';
+import { IMessageResult } from './interfaces/IMessageResult';
+import { IMessageWorkerToMain } from './interfaces/IMessageWorkerToMain';
+import { IWorkerifyableFunction } from './interfaces/IWorkerifyableFunction';
+import { TransferableObject } from './interfaces/TransferableObject';
 import { WorkerifyOptions } from './interfaces/WorkerifyOptions';
-import {
-    IMessageDialogueResponse,
-    IMessageError,
-    IMessageMainToWorker,
-    IMessageProgress,
-    IMessageRequest,
-    IMessageResult,
-    IMessageWorkerToMain,
-    IWorkerifyableFunction,
-    TransferableObject,
-} from './interfaces/_';
 
 /**
  * TODO: !!! Annotate
