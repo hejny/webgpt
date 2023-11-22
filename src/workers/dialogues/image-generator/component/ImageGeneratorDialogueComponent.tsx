@@ -51,8 +51,6 @@ export function ImageGeneratorDialogueComponent(
         }
     }, [generatorType, clientId]);
 
-    // console.log('!!!', { imageGenerator });
-
     const prompt = useMemo<DallePrompt>(
         // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
         () => ({
@@ -215,7 +213,7 @@ export function ImageGeneratorDialogueComponent(
                         style={{
                             background: `url(${selected.imageSrc})`,
 
-                            // TODO: !!! Is this stretched propperly?
+                            // TODO: !!!! Is this stretched propperly?
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
@@ -235,7 +233,5 @@ export function ImageGeneratorDialogueComponent(
 ImageGeneratorDialogueComponent.dialogueTypeName = 'IMAGE_GENERATOR';
 
 /**
- * TODO: !!! UI: Hide place for the prompt if the prompt is not shown
- * TODO: !!! UI: Buttons overflow
  * TODO: !!! Annotate
  */

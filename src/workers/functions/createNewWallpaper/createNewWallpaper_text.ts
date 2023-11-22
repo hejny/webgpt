@@ -124,7 +124,7 @@ export async function createNewWallpaper_text(
 ): Promise<CreateNewWallpaperTextResult> {
     const { locale, title, author, wallpaperUrl, idea /* TODO: Use> links, addSections */ } = request;
     let description =
-        idea; /* <- TODO: !!! Cleanup: Originally here was ` let { description } = request;` is this good solution? */
+        idea; /* <- TODO: !!  Originally here was ` let { description } = request;` is `let description = idea` this good solution? */
 
     //-------[ Content analysis: ]---
     if (!description && wallpaperUrl) {

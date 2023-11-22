@@ -40,26 +40,11 @@ export function ImagePromptResultsPicker(props: ImagePromptResultsPickerProps) {
 
     return (
         <div className={classNames(className, styles.ImagePromptResultsPicker)}>
-            <div className={styles.actions}>
-                {/*
-                TODO: !!! Cleanup: Keep or remove
-                selected && (
-                    <button
-                        className={styles.pick}
-                        onClick={() => {
-                            onPick(results.find((result) => result.imageSrc === selected)!);
-                        }}
-                    >
-                        Pick
-                    </button>
-                    )*/}
-            </div>
             <div className={styles.gallery}>
                 {results.map((result) => (
                     <div
                         key={result.imageSrc}
                         onClick={() => {
-                            console.log('!!!', result.imageSrc);
                             if (result.imageSrc !== selected?.imageSrc) {
                                 onSelect(result);
                             } else {

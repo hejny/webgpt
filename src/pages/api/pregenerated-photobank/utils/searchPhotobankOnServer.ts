@@ -46,8 +46,6 @@ export async function searchPhotobankOnServer(
 
     console.log('keywords', keywords);
 
-    // TODO: DRY
-    console.log(`!!! Database: Searching for ${imagesExactCount} images`);
     const result = await getSupabaseForServer()
         .from('Wallpaper')
         .select('*')
@@ -75,9 +73,7 @@ export async function searchPhotobankOnServer(
         return randomMaxItems(imagesExactCount, ...images);
     } else if (images.length < imagesExactCount) {
         if (keywords.length <= 1 || _attemptCount > 5 /* <- TODO: !!! To config */) {
-            // TODO: DRY
-            // TODO: !!! Ensure uniqueness in Wallpaper_random
-            console.log(`!!! Database: Searching for ${imagesExactCount} random images`);
+            // TODO: !! Ensure uniqueness in Wallpaper_random
             const result = await getSupabaseForServer()
                 .from('Wallpaper_random')
                 .select('*')

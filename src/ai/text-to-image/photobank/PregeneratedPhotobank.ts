@@ -66,13 +66,9 @@ export class PregeneratedPhotobank implements ImageGenerator {
         
         */
 
-        console.log('!!!', { keywordsPromptResponse });
-
         const keywords = extractAllListItemsFromMarkdown(keywordsPromptResponse.content).flatMap(
             (item) => Array.from(parseKeywordsFromString(item)) /* <- Note: [7] */,
         );
-
-        console.log('!!!', { keywords });
 
         const response = await fetch(
             `/api/pregenerated-photobank/search?${keywords.map((keyword) => `keywords=${keyword}`).join('&')}`,
@@ -81,8 +77,6 @@ export class PregeneratedPhotobank implements ImageGenerator {
         throwIfErrorResponse(rawResponse);
 
         const { images } = rawResponse;
-
-        console.log('!!!', { rawResponse });
 
         if (this.options.isVerbose) {
             console.info({
