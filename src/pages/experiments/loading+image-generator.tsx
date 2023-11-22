@@ -16,13 +16,16 @@ export default function TestTasksProgressWithChatPage() {
         }
 
         setRunning(true);
-        const { pickedImage } = await mockedMultitaskWithImageGeneratorForBrowser(
-            { imagePromptContent: promptRef.current!.value },
-            async (newTaskProgress) =>
-                setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
-        );
-        setPickedImage(pickedImage);
-        setRunning(false);
+        try {
+            const { pickedImage } = await mockedMultitaskWithImageGeneratorForBrowser(
+                { imagePromptContent: promptRef.current!.value },
+                async (newTaskProgress) =>
+                    setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
+            );
+            setPickedImage(pickedImage);
+        } finally {
+            setRunning(false);
+        }
     }, [isRunning, promptRef]);
 
     return (

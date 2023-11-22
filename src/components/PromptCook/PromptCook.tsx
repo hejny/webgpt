@@ -68,34 +68,37 @@ export function PromptCook() {
     const executePtbk = useCallback(
         async () => {
             setRunning(true);
-            const executor = createPtpExecutor({
-                ptp: PromptTemplatePipeline.fromSource(currentFile.ptbkSource),
-                tools: getExecutionTools(
-                    await provideClientId({
-                        isVerifiedEmailRequired: true,
-                    }),
-                ),
-            });
+            try {
+                const executor = createPtpExecutor({
+                    ptp: PromptTemplatePipeline.fromSource(currentFile.ptbkSource),
+                    tools: getExecutionTools(
+                        await provideClientId({
+                            isVerifiedEmailRequired: true,
+                        }),
+                    ),
+                });
 
-            const result = await executor(
-                {
-                    inputText: currentFile.inputParams.inputText,
-                },
-                (newTaskProgress: TaskProgress) => {
-                    console.info('☑', newTaskProgress);
-                    // TODO: !!
-                    // setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
-                },
-            );
+                const result = await executor(
+                    {
+                        inputText: currentFile.inputParams.inputText,
+                    },
+                    (newTaskProgress: TaskProgress) => {
+                        console.info('☑', newTaskProgress);
+                        // TODO: !!
+                        // setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
+                    },
+                );
 
-            console.info('☑', { result });
-            const { outputText } = result;
+                console.info('☑', { result });
+                const { outputText } = result;
 
-            // TODO: DRY [0]
-            currentFile.outputParams = { outputText: outputText || '' };
-            setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
-            setRunning(false);
-            setPanel('OUTPUT');
+                // TODO: DRY [0]
+                currentFile.outputParams = { outputText: outputText || '' };
+                setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
+                setPanel('OUTPUT');
+            } finally {
+                setRunning(false);
+            }
         },
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [currentFile.ptbkSource, currentFile.inputParams.inputText],

@@ -43,9 +43,8 @@ export function CopilotInput(props: useRouterProps) {
 
         let prompt = inputRef.current?.value || '';
 
+        setRunning(true);
         try {
-            setRunning(true);
-
             // TODO: [🍛] Make same normalization as in the backend
             prompt = spaceTrim(prompt);
 

@@ -174,6 +174,7 @@ export default function NewWallpaperFromInstagramPage() {
                                         `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
                                     );
                                     // Note: No need to setWorking(false); because we are redirecting to another page
+                                    //       [0] OR to do it in the finally block
                                 } catch (error) {
                                     if (!(error instanceof Error)) {
                                         throw error;
@@ -195,7 +196,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     );
                                     setRunning(false);
                                     setTasksProgress([]);
-                                }
+                                } // <- Note: [0] No finally block because we are redirecting to another page
                             }}
                         />
                         <Link

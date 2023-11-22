@@ -43,37 +43,38 @@ export function CompletionTextarea(props: CompletionTextareaProps) {
                 return;
             }
 
-            if (textAreaRef.current === null) {
-                throw new Error('textAreaRef.current must be defined before calling gptComplete');
+            try {
+                if (textAreaRef.current === null) {
+                    throw new Error('textAreaRef.current must be defined before calling gptComplete');
+                }
+
+                const prompt = {
+                    content: textAreaRef.current.value,
+                    modelRequirements: {
+                        variant: 'COMPLETION',
+                        maxTokens,
+                    },
+                    ptbkUrl: 'https://ai-sovicka.webgpt.cz/',
+                    parameters: {},
+                } as const;
+
+                setRunning(true);
+                const response = await naturalExecutionTools.gptComplete(prompt);
+
+                console.log({ response });
+
+                const responseContentParts = response.content.split(' ');
+                responseContentParts.pop();
+                const responseContent = responseContentParts.join(' ');
+
+                textAreaRef.current.value = prompt.content + responseContent;
+
+                if (onChange) {
+                    onChange(textAreaRef.current.value, 'COPILOT');
+                }
+            } finally {
+                setRunning(false);
             }
-
-            const prompt = {
-                content: textAreaRef.current.value,
-                modelRequirements: {
-                    variant: 'COMPLETION',
-                    maxTokens,
-                },
-                ptbkUrl: 'https://ai-sovicka.webgpt.cz/',
-                parameters: {},
-            } as const;
-
-            setRunning(true);
-            const response = await naturalExecutionTools.gptComplete(prompt);
-
-            console.log({ response });
-
-            const responseContentParts = response.content.split(' ');
-            responseContentParts.pop();
-            const responseContent = responseContentParts.join(' ');
-
-            textAreaRef.current.value = prompt.content + responseContent;
-
-            if (onChange) {
-                onChange(textAreaRef.current.value, 'COPILOT');
-            }
-
-            // TODO: !!! Wrap ACRY all `setRunning(false)` in finally block
-            setRunning(false);
 
             if (textAreaRef.current === null) {
                 throw new Error('textAreaRef.current is null but fired onChange event');
