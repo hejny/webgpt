@@ -3,8 +3,8 @@ import { CSSProperties } from 'react';
 import { SPEED } from '../../../config';
 import { classNames } from '../../utils/classNames';
 import { useGraph } from '../../utils/hooks/useGraph';
+import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import { number_positive, string_css_class } from '../../utils/typeAliases';
-import styles from './LoadingInteractiveImage.module.css';
 
 interface TorusInteractiveProps {
     /**
@@ -34,6 +34,9 @@ interface TorusInteractiveProps {
  */
 export function LoadingInteractiveImage(props: TorusInteractiveProps) {
     const { width, height, className, style } = props;
+
+    const styles = useStyleModule(import('./LoadingInteractiveImage.module.css'));
+
     const { sceneRef } = useGraph(
         ({ scene, camera, wireframeMaterial }) => {
             // TODO: [🍩] DRY
