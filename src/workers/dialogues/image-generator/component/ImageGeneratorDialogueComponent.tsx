@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { USE_GENERATOR_VERSION } from '../../../../../config';
+import { USE_DALLE_VERSION } from '../../../../../config';
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { DallePrompt } from '../../../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { getImageGenerator } from '../../../../ai/text-to-image/getImageGenerator';
@@ -55,7 +55,7 @@ export function ImageGeneratorDialogueComponent(
         // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
         () => ({
             content: promptContent!,
-            model: `dalle-${USE_GENERATOR_VERSION}`,
+            model: `dalle-${USE_DALLE_VERSION}`,
             modelSettings: {
                 style: 'vivid',
                 quality: `standard`,
