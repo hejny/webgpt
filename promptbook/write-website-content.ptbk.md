@@ -7,7 +7,7 @@ Instructions for creating web page content using [🌠 Prompt template pipelines
 -   Use chat
 <!-- TODO: [🌚]> - Use GPT-3.5 -->
 -   Input param `{idea}` General web idea
--   Input param `{rawTitle}` `Automatic suggestion of the site title or empty text <!-- <- TODO: !!! This should be EXACLY in content -->
+-   Input param `{rawTitle}` `Automatic suggestion of the site title or empty text
 -   Input param `{rawAssignment}` image description
 -   Output param `{content}` `Content of the site
 -   Output param `{wallpaperPrompt}` Prompt for image model<!-- TODO: !!> , only if not specified ... -->

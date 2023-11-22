@@ -192,7 +192,7 @@ export async function createNewWallpaper_text(
         getExecutionTools(author),
     )(
         {
-            rawTitle: title || '',
+            rawTitle: title || '' /* <- TODO: !! This should be EXACLY in content */,
             rawAssignment: description || '',
             idea: idea || '',
             /*            '' <- TODO: [🧠] Make some system how to pass and default/condition undefined params */
