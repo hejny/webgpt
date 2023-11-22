@@ -211,12 +211,12 @@ export function ImageGeneratorDialogueComponent(
                     <button
                         className={classNames('button', styles.callToAction)}
                         style={{
-                            background: `url(${selected.imageSrc})`,
-
-                            // TODO: !!!! Is this stretched propperly?
+                            backgroundImage: `url(${selected.imageSrc})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
+                            color: `#ffffff`,
+                            textShadow: `1px 1px 2px #000000, 0 0 1em #3d0606, 0 0 0.2em #03182c`,
                         }}
                         onClick={() => {
                             onResponse({ pickedImage: selected });
