@@ -27,7 +27,7 @@ import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { PublishLink } from '../PublishModal/PublishLink';
-import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
+import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
@@ -222,7 +222,7 @@ export function CopilotPanel() {
                                 height={25} /* <-[🧥] */
                             />
                         ) : (
-                            <TorusInteractiveImage width={55} height={55} />
+                            <LoadingInteractiveImage width={55} height={55} />
                         )}
                     </button>
                 </Hint>

@@ -9,6 +9,7 @@ import { NothingImageGenerator } from '../../../../ai/text-to-image/nothing/Noth
 import { ImagePromptResultsPicker } from '../../../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { Select } from '../../../../components/Select/Select';
+import { LoadingInteractiveImage } from '../../../../components/TaskInProgress/LoadingInteractiveImage';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
@@ -174,7 +175,7 @@ export function ImageGeneratorDialogueComponent(
                                 visibleButtons={0}
                                 options={{
                                     PREGENERATED: 'Photobank',
-                                    DALLE: 'Generating',
+                                    DALLE: 'Generate',
                                 }}
                             />
                         )}
@@ -183,9 +184,13 @@ export function ImageGeneratorDialogueComponent(
                             onClick={runImageGenerator}
                             disabled={isRunning}
                         >
-                            {/* TODO: [🧠] Some way how to preserve width of the button even with changing texts */}
-                            {generatorType === 'PREGENERATED' && <>Search</>}
-                            {generatorType === 'DALLE' && <>Generate</>}
+                            {/* TODO: [🧠][👳‍♂️] Some way how to preserve width of the button even with changing texts */}
+
+                            {isRunning && <LoadingInteractiveImage width={55} height={35} style={{ margin: -10 }} />}
+                            {!isRunning && generatorType === 'PREGENERATED' && <>Search</>}
+                            {isRunning && generatorType === 'PREGENERATED' && <>Searching</>}
+                            {!isRunning && generatorType === 'DALLE' && <>Generate</>}
+                            {isRunning && generatorType === 'DALLE' && <>Generating</>}
                         </button>
 
                         {!isAdvanced ? (
@@ -193,14 +198,14 @@ export function ImageGeneratorDialogueComponent(
                                 className={classNames('button', styles.secondaryAction)}
                                 onClick={() => setAdvanced(true)}
                             >
-                                More options
+                                More
                             </button>
                         ) : (
                             <button
                                 className={classNames('button', styles.secondaryAction)}
                                 onClick={() => setAdvanced(false)}
                             >
-                                Simple view
+                                Simple
                             </button>
                         )}
                     </>
@@ -222,18 +227,6 @@ export function ImageGeneratorDialogueComponent(
                         Pick
                     </button>
                 )}
-
-                {/*
-                TODO: Probbably remove
-                <button
-                    className={classNames('button', styles.secondaryAction)}
-                    onClick={() => {
-                        setSelected(randomItem(...results));
-                    }}
-                >
-                    Random
-                </button>
-                */}
             </div>
         </Modal>
     );

@@ -1,7 +1,10 @@
 import { MeshBuilder } from 'babylonjs';
+import { CSSProperties } from 'react';
 import { SPEED } from '../../../config';
+import { classNames } from '../../utils/classNames';
 import { useGraph } from '../../utils/hooks/useGraph';
 import { number_positive, string_css_class } from '../../utils/typeAliases';
+import styles from './LoadingInteractiveImage.module.css';
 
 interface TorusInteractiveProps {
     /**
@@ -18,14 +21,19 @@ interface TorusInteractiveProps {
      * Optional CSS class name which will be added to root <canvas/> element
      */
     className?: string_css_class;
+
+    /**
+     * Optional CSS  style which will be added to root <canvas/> element
+     */
+    style?: CSSProperties;
 }
 
 /**
  * Renders <canvas/> with a torus mesh and a camera that rotates around it
  * It is use as indicator that the app is working on something and as a "mascot" of the WebGPT app
  */
-export function TorusInteractiveImage(props: TorusInteractiveProps) {
-    const { width, height, className } = props;
+export function LoadingInteractiveImage(props: TorusInteractiveProps) {
+    const { width, height, className, style } = props;
     const { sceneRef } = useGraph(
         ({ scene, camera, wireframeMaterial }) => {
             // TODO: [🍩] DRY
@@ -61,7 +69,13 @@ export function TorusInteractiveImage(props: TorusInteractiveProps) {
         ],
     );
 
-    return <canvas ref={sceneRef} {...{ width, height, className }} style={{ outline: 'none' }} />;
+    return (
+        <canvas
+            ref={sceneRef}
+            className={classNames(className, styles.LoadingInteractiveImage)}
+            {...{ width, height, style }}
+        />
+    );
 }
 
 /**

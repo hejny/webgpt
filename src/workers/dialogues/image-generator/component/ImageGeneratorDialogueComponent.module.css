@@ -75,6 +75,17 @@ textarea.prompt {
     justify-content: center;
 }
 
+.actions > * {
+    /* [👳‍♂️] */
+    width: 33%;
+}
+
+.actions > * select {
+    /* [👳‍♂️] */
+    width: 100%;
+    max-width: unset;
+}
+
 .secondaryAction {
     background-color: #3d3d3d;
 }

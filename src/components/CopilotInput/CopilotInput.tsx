@@ -6,7 +6,7 @@ import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { message } from '../../utils/typeAliases';
-import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
+import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
 import styles from './CopilotInput.module.css';
 
 interface useRouterProps {
@@ -110,7 +110,7 @@ export function CopilotInput(props: useRouterProps) {
                             height={25} /* <-[🧥] */
                         />
                     ) : (
-                        <TorusInteractiveImage width={55} height={55} />
+                        <LoadingInteractiveImage width={55} height={55} />
                     )}
                 </button>
             </div>
