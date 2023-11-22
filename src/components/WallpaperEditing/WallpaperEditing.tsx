@@ -3,9 +3,10 @@ import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useModal } from '../../utils/hooks/useModal';
 import { useScenario } from '../../utils/hooks/useScenario';
+import { supportDialogues } from '../../workers/dialogues';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
-import { Dialogues } from '../Dialogues/Dialogues';
 import { EditContentModal } from '../EditContentModal/EditContentModal';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
@@ -22,7 +23,7 @@ export function WallpaperEditing() {
     return (
         <>
             <PreventUnsavedChanges />
-            <Dialogues />
+            <Dialogues {...{ supportDialogues }} />
 
             {modal === 'publish' && <PublishModal />}
             {modal === 'export' && <ExportModal />}

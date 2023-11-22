@@ -1,5 +1,5 @@
 import { Writable } from 'type-fest';
-import { TaskProgress } from './TaskProgress';
+import { WebgptTaskProgress } from './WebgptTaskProgress';
 
 /**
  * Merges tasks with same name into one in array of tasks
@@ -8,8 +8,8 @@ import { TaskProgress } from './TaskProgress';
  * @param tasksProgress Array of TaskProgress
  * @returns joined Array of TaskProgress
  */
-export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<TaskProgress> {
-    const joinedTasksProgress: Array<Writable<TaskProgress>> = [];
+export function joinTasksProgress(...tasksProgress: Array<WebgptTaskProgress>): Array<WebgptTaskProgress> {
+    const joinedTasksProgress: Array<Writable<WebgptTaskProgress>> = [];
 
     for (const newTaskProgress of tasksProgress) {
         const joinedTaskProgress = joinedTasksProgress.find(
@@ -34,5 +34,5 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
         }
     }
 
-    return joinedTasksProgress as Array<TaskProgress>;
+    return joinedTasksProgress as Array<WebgptTaskProgress>;
 }

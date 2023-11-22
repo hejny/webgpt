@@ -1,3 +1,4 @@
+import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -19,7 +20,6 @@ import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_prompt } from '../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
@@ -27,7 +27,7 @@ import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { PublishLink } from '../PublishModal/PublishLink';
-import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
+import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
@@ -115,7 +115,7 @@ export function CopilotPanel() {
             )(
                 {
                     oldContent,
-                    rawAssigment: prompt,
+                    rawAssignment: prompt,
                 },
                 (taskProgress) => {
                     console.info('CopilotPanel: Update wallpaper content: ', { taskProgress });
@@ -171,7 +171,7 @@ export function CopilotPanel() {
         } finally {
             setRunningPrompt(null);
         }
-    }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
+    }, [locale, router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
     return (
         <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
@@ -222,7 +222,7 @@ export function CopilotPanel() {
                                 height={25} /* <-[🧥] */
                             />
                         ) : (
-                            <TorusInteractiveImage width={55} height={55} />
+                            <LoadingInteractiveImage width={55} height={55} />
                         )}
                     </button>
                 </Hint>

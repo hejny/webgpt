@@ -1,6 +1,6 @@
 import MonacoEditor from '@monaco-editor/react';
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
-import { PromptTemplatePipelineString, TaskProgress } from '@promptbook/types';
+import type { PromptTemplatePipelineString, TaskProgress } from '@promptbook/types';
 import { normalizeToKebabCase } from 'n12';
 import { useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
@@ -13,7 +13,7 @@ import { classNames } from '../../utils/classNames';
 import { useJsonStateInLocalstorage } from '../../utils/hooks/useJsonStateInLocalstorage';
 import { useStateInLocalstorage } from '../../utils/hooks/useStateInLocalstorage';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_name } from '../../utils/typeAliases';
+import type { string_name } from '../../utils/typeAliases';
 import { CodeEditor } from '../CodeEditor/CodeEditor';
 import { Select } from '../Select/Select';
 import styles from './PromptCook.module.css';
@@ -175,17 +175,13 @@ export function PromptCook() {
                         //          Then ACRY use <CodeEditor/> not <MonacoEditor/>
                         key={currentFile.name}
                         className={classNames(styles.fill, styles.textarea)}
-                       
                         defaultValue={currentFile.inputParams.inputText}
                         onChange={(newContent) => {
-                         
                             // TODO: DRY [0]
                             currentFile.inputParams.inputText = newContent;
                             setFiles(files.map((file) => (file.name === currentFileName ? currentFile : file)));
                         }}
                     />
-
-                   
                 </div>
 
                 <div className={styles.controls}>

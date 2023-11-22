@@ -1,5 +1,6 @@
 // TODO: !! Cleanup
 
+import type { string_prompt } from '@promptbook/types';
 import { FONTS } from '../../config';
 
 /*
@@ -31,13 +32,6 @@ export type string_model_name =
     | 'gpt-3.5-turbo-0613'
     | 'gpt-3.5-turbo-16k-0613'
     | string /* <- TODO: Import from 'openai' package */;
-
-/**
- * Semantic helper
- *
- * For example `"A cat wearing a hat"`
- */
-export type string_prompt = string;
 
 /**
  * Semantic helper
@@ -266,8 +260,6 @@ export type string_css_selector = string;
  * For example `"https://collboard.com/9SeSQTupmQHwuSrLi"`
  */
 export type string_url = string;
-
-
 
 /**
  * Semantic helper
@@ -625,7 +617,7 @@ export type number_gigabytes = number_positive;
 export type number_terabytes = number_positive;
 
 /**
- * TODO: Anotate all + collboard-modules-sdk to all
+ * TODO: Annotate all + collboard-modules-sdk to all
  * TODO: Use instead of number_... type-fest
  * TODO: In some cases string_module_name, constraint by literals (or as close to RegExp as possible in TypeScript)
  * TODO: [🧠] Maybe make rich object representing the MidjourneyPrompt with its flags and version etc

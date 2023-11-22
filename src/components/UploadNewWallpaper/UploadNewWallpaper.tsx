@@ -6,9 +6,9 @@ import { classNames } from '../../utils/classNames';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
 import { Translate } from '../Translate/Translate';
 import { UploadZone } from '../UploadZone/UploadZone';
@@ -31,8 +31,8 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
     const { children, className } = props;
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
+    const [isRunning, setRunning] = useState(false);
+    const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
 
@@ -48,9 +48,9 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         return;
                     }
 
-                    console.info('🏳 locale: ',locale);
+                    console.info('🏳 locale: ', locale);
 
-                    setWorking(true);
+                    setRunning(true);
                     setTasksProgress([]);
 
                     try {
@@ -61,12 +61,8 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                 }),
                                 wallpaperImage: file,
-                                title: null,
-                                description: null,
-                                addSections: [],
-                                links: [],
                             },
-                            (newTaskProgress: TaskProgress) => {
+                            (newTaskProgress: WebgptTaskProgress) => {
                                 console.info('☑', newTaskProgress);
                                 setTasksProgress((tasksProgress) =>
                                     joinTasksProgress(...tasksProgress, newTaskProgress),
@@ -96,7 +92,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                                 `,
                             ),
                         );
-                        setWorking(false);
+                        setRunning(false);
                         setTasksProgress([]);
                     }
                 }}
@@ -121,7 +117,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     </>
                 )}
             </UploadZone>
-            {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+            {isRunning && <TasksInProgress {...{ tasksProgress }} />}
         </>
     );
 }

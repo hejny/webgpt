@@ -6,25 +6,28 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   PTBK version 0.0.1
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
--   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text
--   Input param `{rawAssigment}` popis obrázku _v Angličtině_
+-   Input param `{idea}` Obecná idea webu _v Češtině_
+-   Input param `{rawTitle}` Automatický návrh názvu webu _v Angličtině_ nebo prázdný text <!-- <- TODO: !! This should be EXACLY in content -->
+-   Input param `{rawAssignment}` popis obrázku _v Angličtině_
 -   Output param `{content}` Obsah webu _v Češtině_
+-   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , pouze pokud není zadán ... -->
 
 ## 🖋 Překlad popisu
 
 -   Use completion
 -   Postprocessing `trim`
+<!-- TODO: !!> Skip if `rawAssignment===''` -->
 
 ```text
 
 English assignment:
-> {rawAssigment}
+> {rawAssignment}
 
 České zadání:
 >
 ```
 
-`-> {rawAssigmentCs}` popis obrázku v češtině
+`-> {rawAssignmentCs}` popis obrázku v češtině
 
 ## 🖋 Účel stránek
 
@@ -32,11 +35,11 @@ English assignment:
 -   Postprocessing `unwrapResult`
 
 ```markdown
-Navrhni možný účel webových stránek z čistého popisu co se nachází na obrázku
+Navrhni účel webových stránek
 
 ## Pravidla
 
--   Piš jediný návrh, neříkej "může to být toto nebo toto"
+-   Piš jediný návrh, neříkej více možností
 -   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
 -   Návrh je v češtině
 -   Návrh je stručný, maximálně 3 slova
@@ -49,9 +52,10 @@ Navrhni možný účel webových stránek z čistého popisu co se nachází na 
 -   "Svatba"
 -   "Osobní stránka fotografa"
 
-## Text na obrázku
+## Podklady
 
-> {rawAssigmentCs}
+-   Idea: {idea}
+-   Zadání: {rawAssignmentCs}
 
 ## Účel webu
 
@@ -87,14 +91,15 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 -   Zadání obsahuje konkrétní čísla, odrážky a je přesné
 -   Stručně, maximálně 4 body zadání, každý bod je maximálně 2 věty
 
-## Text na obrázku
+## Podklady
 
-{rawAssigmentCs}
+-   {idea}
+-   {rawAssignmentCs}
 
 ## Zadání webu v Češtině
 ```
 
-`-> {draftedAssigment}` Zadání webu v Češtině
+`-> {draftedAssignment}` Zadání webu v Češtině
 
 ## 👤 Upřesnění zadání uživatelem
 
@@ -103,10 +108,59 @@ Popište cíl vašeho webu
 -   Prompt dialog
 
 ```text
-{draftedAssigment}
+{draftedAssignment}
 ```
 
-`-> {assigment}` Zadání webu
+`-> {assignment}` Zadání webu
+
+## 🖋 Návrh obrázku
+
+-   Use completion
+-   Postprocessing `trim`
+    <!-- TODO: !!> Skip if `rawAssignment!==''` -->
+    <!-- TODO: Maybe more samples... -->
+
+```markdown
+## Ilustrační obrázky
+
+## Kavárna
+
+### Zadání webu
+
+Vytvoř web kavárny v Praze, která se jmenuje "Vesmírná Kavárna" a celá se točí kolem tématiky vesmíru.
+
+### Úvodní obrázek
+
+Velký hrnek plný kávy s mléčnou pěnou, na které je vyobrazená galaxie. Hrnek je na stole, na kterém je kniha o vesmíru a kávové zrno.
+
+## {purpose}
+
+### Zadání webu
+
+{assignment}
+
+### Úvodní obrázek
+```
+
+`-> {wallpaperPromptCs}`
+
+## 🖋 Prompt k obrázku
+
+-   Use completion
+-   Postprocessing `trim`
+    <!-- TODO: !!> Skip if `rawAssignment!==''` -->
+
+```text
+
+Popis obrázku v Češtině:
+> {wallpaperPromptCs}
+
+
+Image description in English:
+>
+```
+
+`-> {wallpaperPrompt}`
 
 ## 🖋 Vylepšení názvu
 
@@ -123,7 +177,7 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 ## Zadání od zákazníka
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny
@@ -133,6 +187,7 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 -   Napište pouze název, ne zdůvodnění ani jiný text okolo
 -   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
+-   Název má být krátký, maximálně 3 slova
 
 ## Vylepšený název
 ```
@@ -163,7 +218,7 @@ Jako zkušenému copywriterovi vám bylo svěřeno vytvoření claimu pro webovo
 ## Zadání webu od zákazníka
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny:
@@ -214,7 +269,7 @@ Jako zkušenému SEO specialistovi vám bylo svěřeno vytvoření klíčových 
 Zadání webu od zákazníka:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny
@@ -253,7 +308,7 @@ Jako zkušenému copywriterovi a webdesignérovi vám bylo svěřeno vytvoření
 Zadání webu od zákazníka:
 
 \`\`\`
-{assigment}
+{assignment}
 \`\`\`
 
 ## Pokyny:

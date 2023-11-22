@@ -130,7 +130,7 @@ export function PublishModal() {
                         className={classNames('button', styles.getTheWeb)}
                         disabled={isPublishing}
                         style={{
-                            background: `url(${wallpaper.src})`,
+                            backgroundImage: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',

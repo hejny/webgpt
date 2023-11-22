@@ -14,6 +14,8 @@ import { validateUuid } from './src/utils/validators/validateUuid';
 export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
 
+export const USE_DALLE_VERSION: 2 | 3 = 3;
+
 const config = ConfigChecker.from({
     ...process.env,
 
@@ -21,6 +23,7 @@ const config = ConfigChecker.from({
     //       @see https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#exposing-environment-variables-to-the-browser
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
     NEXT_PUBLIC_PROMPTBOOK_SERVER_URL: process.env.NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
+    NEXT_PUBLIC_IMAGE_SERVER_URL: process.env.NEXT_PUBLIC_IMAGE_SERVER_URL,
     NEXT_PUBLIC_OUR_DOMAINS: process.env.NEXT_PUBLIC_OUR_DOMAINS,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
@@ -28,6 +31,7 @@ const config = ConfigChecker.from({
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
 export const NEXT_PUBLIC_PROMPTBOOK_SERVER_URL = config.get('NEXT_PUBLIC_PROMPTBOOK_SERVER_URL').url().required().value;
+export const NEXT_PUBLIC_IMAGE_SERVER_URL = config.get('NEXT_PUBLIC_IMAGE_SERVER_URL').url().required().value;
 
 export const IS_DEVELOPMENT =
     isUrlOnPrivateNetwork(

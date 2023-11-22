@@ -101,23 +101,23 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
     const formData = new FormData();
     formData.append('bundle', zipBundle);
 
-    const response1 /* <-[💩] */ = await fetch('/api/publish', {
+    const response = await fetch('/api/publish', {
         method: 'POST',
         body: formData,
     });
 
-    if (response1.ok === false) {
-        const { message } = (await response1.json()) as any; /* <-[🌋]  */
+    if (response.ok === false) {
+        const { message } = (await response.json()) as any; /* <-[🌋]  */
         throw new Error(
             spaceTrim(`
-                Upload wallpaper failed with status ${response1.status}
+                Upload wallpaper failed with status ${response.status}
 
                 ${message}
             `),
         );
     }
 
-    const { websiteUrl } = (await response1.json()) as PublishWebsiteResponse;
+    const { websiteUrl } = (await response.json()) as PublishWebsiteResponse;
 
     console.info('🌍', { websiteUrl });
 }

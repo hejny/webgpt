@@ -7,8 +7,13 @@
             "focus": false
         },
         {
-            "name": "👨🏽‍💻 Run promptbook server",
+            "name": "👨🏽‍💻📖 Run promptbook server",
             "commands": ["ts-node ./promptbook-server/server.ts"],
+            "focus": false
+        },
+        {
+            "name": "👨🏽‍💻🖼 Run image server",
+            "commands": ["ts-node ./promptimage-server/server.ts"],
             "focus": false
         },
         {

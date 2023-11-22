@@ -30,6 +30,51 @@ export interface Database {
         }
         Relationships: []
       }
+      ImagePromptExecution: {
+        Row: {
+          clientId: string | null
+          createdAt: string
+          id: number
+          prompt: Json | null
+          promptAt: string | null
+          promptContent: string | null
+          ptbkUrl: string | null
+          rawResponse: Json | null
+          result: Json | null
+          resultAt: string | null
+          resultSrc: string | null
+          usedModel: string | null
+        }
+        Insert: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          prompt?: Json | null
+          promptAt?: string | null
+          promptContent?: string | null
+          ptbkUrl?: string | null
+          rawResponse?: Json | null
+          result?: Json | null
+          resultAt?: string | null
+          resultSrc?: string | null
+          usedModel?: string | null
+        }
+        Update: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          prompt?: Json | null
+          promptAt?: string | null
+          promptContent?: string | null
+          ptbkUrl?: string | null
+          rawResponse?: Json | null
+          result?: Json | null
+          resultAt?: string | null
+          resultSrc?: string | null
+          usedModel?: string | null
+        }
+        Relationships: []
+      }
       Prompt: {
         Row: {
           answer: string | null

@@ -21,7 +21,7 @@ TODO: [👧]
 
 interface ptbkLibrary_writeWebsiteContent_InputParams {
     readonly title: string;
-    readonly assigment: string;
+    readonly assignment: string;
 }
 
 interface ptbkLibrary_writeWebsiteContent_OutputParams {
