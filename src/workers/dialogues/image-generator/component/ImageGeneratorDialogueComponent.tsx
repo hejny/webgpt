@@ -8,6 +8,7 @@ import { getPhotobank } from '../../../../ai/text-to-image/getPhotobank';
 import { NothingImageGenerator } from '../../../../ai/text-to-image/nothing/NothingImageGenerator';
 import { ImagePromptResultsPicker } from '../../../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { Modal } from '../../../../components/Modal/00-Modal';
+import { Select } from '../../../../components/Select/Select';
 import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { classNames } from '../../../../utils/classNames';
 import { useClientId } from '../../../../utils/hooks/useClientId';
@@ -164,35 +165,29 @@ export function ImageGeneratorDialogueComponent(
             <div className={styles.actions}>
                 {!selected ? (
                     <>
+                        {isAdvanced && runnedCount >= 1 && (
+                            <Select
+                                value={generatorType}
+                                onChange={(generatorType) => {
+                                    setGeneratorType(generatorType);
+                                }}
+                                visibleButtons={0}
+                                options={{
+                                    PREGENERATED: 'Photobank',
+                                    DALLE: 'Generating',
+                                }}
+                            />
+                        )}
                         <button
                             className={classNames('button', styles.callToAction)}
                             onClick={runImageGenerator}
                             disabled={isRunning}
                         >
-                            Generate new one
+                            {/* TODO: [🧠] Some way how to preserve width of the button even with changing texts */}
+                            {generatorType === 'PREGENERATED' && <>Search</>}
+                            {generatorType === 'DALLE' && <>Generate</>}
                         </button>
 
-                        {isAdvanced &&
-                            runnedCount >= 1 &&
-                            (generatorType === 'DALLE' ? (
-                                <button
-                                    className={classNames('button', styles.secondaryAction)}
-                                    onClick={() => {
-                                        setGeneratorType('PREGENERATED');
-                                    }}
-                                >
-                                    Generating
-                                </button>
-                            ) : (
-                                <button
-                                    className={classNames('button', styles.secondaryAction)}
-                                    onClick={() => {
-                                        setGeneratorType('DALLE');
-                                    }}
-                                >
-                                    Picking from photobank
-                                </button>
-                            ))}
                         {!isAdvanced ? (
                             <button
                                 className={classNames('button', styles.secondaryAction)}
