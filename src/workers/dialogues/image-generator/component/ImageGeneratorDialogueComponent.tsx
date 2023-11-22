@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { USE_DALLE_VERSION } from '../../../../../config';
+import { USE_GENERATOR_VERSION } from '../../../../../config';
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 import { DallePrompt } from '../../../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { getImageGenerator } from '../../../../ai/text-to-image/getImageGenerator';
@@ -35,16 +35,16 @@ export function ImageGeneratorDialogueComponent(
 
     const [promptContent, setPromptContent] = useState<string_image_prompt>(defaultImagePrompt);
 
-    const [generatorType, setGeneratorType] = useState<'PREGENERATED' | 'DALLE'>('PREGENERATED');
+    const [generatorType, setGeneratorType] = useState<'PHOTOBANK' | 'GENERATOR'>('PHOTOBANK');
     const clientId = useClientId({ isVerifiedEmailRequired: true });
     const imageGenerator = useMemo(() => {
         if (!clientId) {
             return new NothingImageGenerator();
         }
 
-        if (generatorType === 'PREGENERATED') {
+        if (generatorType === 'PHOTOBANK') {
             return getPhotobank(clientId);
-        } else if (generatorType === 'DALLE') {
+        } else if (generatorType === 'GENERATOR') {
             return getImageGenerator(clientId);
         } else {
             throw new Error(`Unknown generator type: ${generatorType}`);
@@ -57,7 +57,7 @@ export function ImageGeneratorDialogueComponent(
         // TODO: [🧠] ImageGenerator should have (static) method to create best prompt - image prompt wizzard
         () => ({
             content: promptContent!,
-            model: `dalle-${USE_DALLE_VERSION}`,
+            model: `dalle-${USE_GENERATOR_VERSION}`,
             modelSettings: {
                 style: 'vivid',
                 quality: `standard`,
@@ -99,7 +99,7 @@ export function ImageGeneratorDialogueComponent(
             setResults(joinedResults);
             setRunnedCount((runnedImageGenerator) => runnedImageGenerator + 1);
 
-            if (generatorType !== 'PREGENERATED' && newResults[0]) {
+            if (generatorType !== 'PHOTOBANK' && newResults[0]) {
                 setResults(newResults);
                 setSelected(newResults[0]!);
             }
@@ -112,7 +112,7 @@ export function ImageGeneratorDialogueComponent(
         () => clientId !== null,
         async () => {
             await runImageGenerator();
-            setGeneratorType('DALLE');
+            setGeneratorType('GENERATOR');
         },
     );
 
@@ -174,8 +174,8 @@ export function ImageGeneratorDialogueComponent(
                                 }}
                                 visibleButtons={0}
                                 options={{
-                                    PREGENERATED: 'Photobank',
-                                    DALLE: 'Generate',
+                                    PHOTOBANK: 'Photobank',
+                                    GENERATOR: 'Generate',
                                 }}
                             />
                         )}
@@ -187,10 +187,10 @@ export function ImageGeneratorDialogueComponent(
                             {/* TODO: [🧠][👳‍♂️] Some way how to preserve width of the button even with changing texts */}
 
                             {isRunning && <LoadingInteractiveImage width={55} height={35} style={{ margin: -10 }} />}
-                            {!isRunning && generatorType === 'PREGENERATED' && <>Search</>}
-                            {isRunning && generatorType === 'PREGENERATED' && <>Searching</>}
-                            {!isRunning && generatorType === 'DALLE' && <>Generate</>}
-                            {isRunning && generatorType === 'DALLE' && <>Generating</>}
+                            {!isRunning && generatorType === 'PHOTOBANK' && <>Search</>}
+                            {isRunning && generatorType === 'PHOTOBANK' && <>Searching</>}
+                            {!isRunning && generatorType === 'GENERATOR' && <>Generate</>}
+                            {isRunning && generatorType === 'GENERATOR' && <>Generating</>}
                         </button>
 
                         {!isAdvanced ? (
