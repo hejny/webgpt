@@ -123,7 +123,7 @@ export function ImageGeneratorDialogueComponent(
                     ? 'Do you like images from our gallery'
                     : 'Images generated just for you'
             }
-            className={styles.ImageGeneratorDialogueComponent}
+            className={classNames(styles.ImageGeneratorDialogueComponent, isAdvanced && styles.isAdvanced)}
         >
             {isAdvanced && (
                 <textarea
@@ -150,7 +150,6 @@ export function ImageGeneratorDialogueComponent(
                     )
                 ) : (
                     <>
-                        {generatorType === 'PREGENERATED' && <p>Do you like images from our gallery:</p>}
                         <ImagePromptResultsPicker
                             {...{ results, prompt, selected }}
                             onSelect={setSelected}
@@ -182,7 +181,7 @@ export function ImageGeneratorDialogueComponent(
                                         setGeneratorType('PREGENERATED');
                                     }}
                                 >
-                                    Using Dalle-{USE_DALLE_VERSION}
+                                    Generating
                                 </button>
                             ) : (
                                 <button
@@ -191,7 +190,7 @@ export function ImageGeneratorDialogueComponent(
                                         setGeneratorType('DALLE');
                                     }}
                                 >
-                                    Using MidJourney
+                                    Picking from photobank
                                 </button>
                             ))}
                         {!isAdvanced ? (

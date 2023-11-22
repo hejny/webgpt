@@ -3,10 +3,17 @@
     height: 100%;
 
     display: grid;
-    /* TODO: !!! Hide 🖋 image prompt when image prompt not shown */
+
     grid-template:
-        '🖋' 80px
+        '🖋' 0 /* <- Note: Hiding image prompt when image prompt not shown */
         '🖼' 1fr
+        '▶' 50px;
+}
+
+.ImageGeneratorDialogueComponent.isAdvanced {
+    grid-template:
+        '🖋' 1fr
+        '🖼' 2fr
         '▶' 50px;
 }
 
