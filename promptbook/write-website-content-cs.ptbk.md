@@ -54,8 +54,8 @@ Navrhni účel webových stránek
 
 ## Podklady
 
--   {idea}
--   {rawAssignmentCs}
+-   Idea: {idea}
+-   Zadání: {rawAssignmentCs}
 
 ## Účel webu
 
@@ -187,6 +187,7 @@ Jako zkušenému marketingovému specialistovi vám bylo svěřeno vylepšení n
 -   Napište pouze název, ne zdůvodnění ani jiný text okolo
 -   Název je v češtině
 -   Název bude použit na webu, vizitkách, vizuálu, atd.
+-   Název má být krátký, maximálně 3 slova
 
 ## Vylepšený název
 ```
