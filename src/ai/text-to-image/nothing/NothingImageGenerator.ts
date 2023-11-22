@@ -4,12 +4,14 @@ import { ImagePrompt } from '../0-interfaces/ImagePrompt';
 import { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
 
 /**
- *
- * @singleton
+ * Void image generator that does nothing but behaves like a real image generator
  */
 export class NothingImageGenerator implements ImageGenerator {
     public constructor() {}
 
+    /**
+     * Whatever you do, it will always return an empty array
+     */
     public async generate(
         prompt: ImagePrompt,
         onProgress: (taskProgress: WebgptTaskProgress) => void,
@@ -17,7 +19,3 @@ export class NothingImageGenerator implements ImageGenerator {
         return [];
     }
 }
-
-/**
- * TODO: !!! Annotate
- */
