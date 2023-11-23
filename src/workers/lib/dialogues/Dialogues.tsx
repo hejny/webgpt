@@ -51,8 +51,6 @@ export function Dialogues(props: DialoguesProps) {
             }
 
             setCurrentDialogueRequestInQueue(dialogueRequestInQueue);
-
-           
         }, 50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 
         return () => {
@@ -85,7 +83,7 @@ export function Dialogues(props: DialoguesProps) {
     return (
         <DialogueComponent
             request={currentDialogueRequestInQueue.request}
-            onResponse={(response) => {
+            respond={(response) => {
                 currentDialogueRequestInQueue.response = response;
                 setCurrentDialogueRequestInQueue(null);
             }}

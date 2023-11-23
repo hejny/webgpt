@@ -28,7 +28,7 @@ export function ImageGeneratorDialogueComponent(
 ) {
     const {
         request: { message, defaultImagePrompt },
-        onResponse,
+        respond: onResponse,
     } = props;
 
     const styles = useStyleModule(import('./ImageGeneratorDialogueComponent.module.css'));

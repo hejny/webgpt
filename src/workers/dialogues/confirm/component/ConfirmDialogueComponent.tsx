@@ -13,7 +13,7 @@ export function ConfirmDialogueComponent(
 ) {
     const {
         request: { message },
-        onResponse,
+        respond: onResponse,
     } = props;
 
     const styles = useStyleModule(import('./ConfirmDialogueComponent.module.css'));

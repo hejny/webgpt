@@ -13,7 +13,7 @@ export function SimpleTextDialogueComponent(
 ) {
     const {
         request: { message, defaultValue, placeholder },
-        onResponse,
+        respond: onResponse,
     } = props;
 
     const styles = useStyleModule(import('./SimpleTextDialogueComponent.module.css'));
