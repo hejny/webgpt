@@ -38,7 +38,7 @@ export function makeDialogueFunction<TRequest, TResponse>(
                     resolve((message as IMessageDialogueResponse).response);
                     removeEventListener('message', onMessage);
                 };
-                addEventListener('message' /* <-[👂][0] */, onMessage);
+                addEventListener('message' /* <- Note: [👂] */, onMessage);
             });
         }
 
