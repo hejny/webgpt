@@ -286,6 +286,7 @@ Zadání webu od zákazníka:
 ## 🔗 Vytvoření začátku obsahu webu
 
 -   Simple template
+-   Postprocessing `spaceTrim`
 
 ```text
 
