@@ -4,9 +4,9 @@ export interface ImageGeneratorDialogueResponse {
     /**
      * The picked image (either pre-generated or generated from the prompt)
      */
-    pickedImage: ImagePromptResult;
+    readonly pickedImage: ImagePromptResult;
 }
 
 /**
- * TODO: !!! Annotate + readonly
+ * TODO: !!! Annotate
  */

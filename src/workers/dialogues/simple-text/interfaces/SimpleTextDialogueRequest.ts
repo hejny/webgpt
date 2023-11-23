@@ -4,21 +4,21 @@ export interface SimpleTextDialogueRequest {
     /**
      * Prompt message
      */
-    message: message;
+    readonly message: message;
 
     /**
      * Default value for the input/textarea
      */
-    defaultValue: string | null;
+    readonly defaultValue: string | null;
 
     /**
      * Placeholder for the input/textarea
      */
-    placeholder?: string;
+    readonly placeholder?: string;
 }
 
 /**
- * TODO: !!! Annotate + readonly
+ * TODO: !!! Annotate
  * TODO: isMultiline
  * TODO: isRequired
  */

@@ -7,9 +7,9 @@ export interface ConfirmDialogueRequest {
      *
      * @example "Are you sure you want to delete the image?"
      */
-    message: message;
+    readonly message: message;
 }
 
 /**
- * TODO: !!! Annotate + readonly
+ * TODO: !!! Annotate
  */

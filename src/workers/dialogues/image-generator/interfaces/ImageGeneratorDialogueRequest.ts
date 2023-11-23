@@ -7,18 +7,18 @@ export interface ImageGeneratorDialogueRequest {
      *
      * @example "Wallpaper image for your café"
      */
-    message: message;
+    readonly message: message;
 
     /**
      * Prompt message for the image
      *
      * @example "Café in the space, realistic"
      */
-    defaultImagePrompt: string_image_prompt;
+    readonly defaultImagePrompt: string_image_prompt;
 }
 
 /**
- * TODO: !!! Annotate + readonly
+ * TODO: !!! Annotate
  * TODO: !! isImagePromptAllowedToChange
  * TODO: [🧠] How/Should to pass image/model requirements? Should be here ImagePromptResult?
  */
