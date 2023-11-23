@@ -86,7 +86,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                 return;
             }
 
-            if (!font || !FONTS.includes(font)) {
+            if (!font || !FONTS.map(({ fontFamily }) => fontFamily).includes(font)) {
                 await rm(contentFilePath);
                 console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
                 return;

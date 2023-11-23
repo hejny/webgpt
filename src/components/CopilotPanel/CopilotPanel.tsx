@@ -51,7 +51,7 @@ export function CopilotPanel() {
     );
     const modifyWallpaperFont = useCallback(() => {
         modifyWallpaper((modifiedWallpaper) => {
-            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont);
+            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont.fontFamily);
             modifiedWallpaper.saveStage = 'EDITED';
             return modifiedWallpaper;
         });
@@ -323,7 +323,7 @@ export function CopilotPanel() {
                         <li className={styles.auto}>
                             <ImportFonts
                                 fonts={
-                                    new Set([randomFont])
+                                    new Set([randomFont.fontFamily])
                                 } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
                             />
                             <button onClick={modifyWallpaperFont}>

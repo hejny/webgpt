@@ -9,6 +9,7 @@ import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
+import { string_font_family } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
@@ -113,23 +114,23 @@ export const EXPORT_OPTIONS = {
     publicUrl: NEXT_PUBLIC_URL,
 };
 
-export const FONTS = [
+// TODO: [🧠] !!! Put fonts into separate file
+// TODO: [🧠] !!! Breakup the config into multiple files
+// TODO: [🧠] !!! Better split between FONTS_LIST_STANDARD and FONTS_LIST_EXTENDED
+
+export const FONTS_LIST_STANDARD = [
     // TODO: !! [🧠] Better system for fonts
     // TODO: Put in separate file
     //----------[ Manually picked ]---
     'Montserrat',
     'Poppins',
     'Open Sans',
-    'Lobster',
     'Playfair Display',
-    'Great Vibes',
     'Lato',
     'Roboto',
     'Inter',
     'IBM Plex Sans',
     'Exo 2',
-    'Orbitron',
-    'Dancing Script',
     'Alegreya',
     'Raleway',
     'Futura',
@@ -138,10 +139,16 @@ export const FONTS = [
     'Cinzel',
     'Cinzel Decorative',
     'Cormorant Garamond',
+];
 
+export const FONTS_LIST_EXTENDED = [
     //----------[ List all ]---
     // @see https://github.com/honeysilvas/google-fonts
     // TODO: This list is not complete (or not up to date) because for example 'Barlow Condensed' is missing
+    'Great Vibes',
+    'Dancing Script',
+    'Lobster',
+    'Orbitron',
     'ABeeZee',
     'Abel',
     'Abril Fatface',
@@ -851,6 +858,27 @@ export const FONTS = [
     'Zeyada',
 ] as const;
 
+// TODO: !!! Put in separate file
+export interface Font {
+    // TODO: !!! Annotate
+    // TODO: !!! [🧠] System - Google, Adobe...
+    fontFamily: string_font_family;
+
+    // TODO: !!! [🧠] More granular split - handwriting, serif, sans-serif, monospace, cursive, fantasy,...
+    isSpecial: boolean;
+}
+
+export const FONTS: Array<Font> = [
+    ...FONTS_LIST_STANDARD.map((fontFamily) => ({
+        fontFamily,
+        isSpecial: false,
+    })),
+    ...FONTS_LIST_EXTENDED.map((fontFamily) => ({
+        fontFamily,
+        isSpecial: true,
+    })),
+];
+
 export const COPILOT_PLACEHOLDERS: Array<string> = [
     // Note: ⏣ Describe the change>
     'Translate to Chinese',
@@ -1026,3 +1054,5 @@ export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
     `@see https://github.com/settings/tokens`,
 ).value;
 export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
+
+// TODO: !!! Annotate all

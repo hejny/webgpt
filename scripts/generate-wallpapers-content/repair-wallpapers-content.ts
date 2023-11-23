@@ -109,12 +109,12 @@ async function repairWallpapersContent({
                 let font =
                     content.match(/<!--font:(?<font>.*)-->/)?.groups
                         ?.font; /* <- TODO: There can be more fonts in document */
-                if (font && !FONTS.includes(font)) {
-                    const existingFont = FONTS.find((existingFont) => font!.includes(existingFont));
+                if (font && !FONTS.map(({ fontFamily }) => fontFamily).includes(font)) {
+                    const existingFont = FONTS.find((existingFont) => font!.includes(existingFont.fontFamily));
 
                     if (existingFont) {
-                        content = content.replace(font, existingFont);
-                        font = existingFont;
+                        content = content.replace(font, existingFont.fontFamily);
+                        font = existingFont.fontFamily;
                     }
                 }
 

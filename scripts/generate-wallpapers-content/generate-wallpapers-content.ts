@@ -142,7 +142,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             /**/
 
             /**/
-            const font = randomItem(...FONTS);
+            const font = randomItem(...FONTS.filter(({ isSpecial }) => !isSpecial)).fontFamily;
             /**/
 
             await writeFile(
@@ -219,32 +219,6 @@ function createContentPromptTemplate() {
             - Links should be only #hash anchors (and you can refer to the document itself)
             - Do not include images
         `,
-    );
-}
-
-/**
- *
- * @deprecated [👸]  use exported version in src/ai/text-to-text/prompt-templates/createFontPromptTemplate.ts
- */
-function createFontPromptTemplate() {
-    return spaceTrim(
-        (block) =>
-            `
-                Write me a Google font which is best fitting for the website.
-
-                Pick from the list:
-                ${block(
-                    [...FONTS]
-                        .sort(() => Math.random() - 0.5)
-                        .map((fontName) => `- ${fontName}`)
-                        .join('\n'),
-                )}
-
-
-                Write just the font name nothing else.
-
-            
-            `,
     );
 }
 

@@ -219,11 +219,13 @@ export async function createNewWallpaper_text(
     //-------[ /Write content ]---
     //===========================================================================
     //-------[ Picking font: ]---
-    const font = randomItem(...FONTS /* <- TODO: [🧠][🔠] Some better heurictic than pure random */);
+    const font = randomItem(
+        ...FONTS.filter(({ isSpecial }) => !isSpecial) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
+    );
 
     const contentWithFont = addFontToContent(
         content || '', // <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
-        font,
+        font.fontFamily,
     );
 
     //-------[ /Picking font ]---

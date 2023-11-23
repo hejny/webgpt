@@ -6,21 +6,21 @@ import { extractFontsFromContent } from './extractFontsFromContent';
  * Replaces all fonts in the content with the new font
  *
  * @param content content to change fonts in
- * @param newFont new font to use
+ * @param newFontFamily new font to use
  * @returns same content with changed fonts
  */
 export function changeFontsInContent<TContent extends string_markdown | string_html>(
     content: TContent,
-    newFont: string_font_family,
+    newFontFamily: string_font_family,
 ): TContent {
     const oldFonts = extractFontsFromContent(content);
 
     if (oldFonts.size === 0) {
-        return addFontToContent(content, newFont);
+        return addFontToContent(content, newFontFamily);
     }
 
     for (const oldFont of Array.from(oldFonts)) {
-        content = content.split(oldFont).join(newFont) as TContent;
+        content = content.split(oldFont).join(newFontFamily) as TContent;
     }
 
     return content;

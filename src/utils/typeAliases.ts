@@ -148,7 +148,7 @@ export type image_description = description;
  *
  * For example `"Poppins"`
  */
-export type string_font_family = typeof FONTS[number];
+export type string_font_family = string_name;
 
 /**
  * Semantic helper
