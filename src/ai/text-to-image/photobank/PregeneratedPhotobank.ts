@@ -12,6 +12,10 @@ import { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
 import { PregeneratedPhotobankOptions } from './interfaces/PregeneratedPhotobankOptions';
 
 /**
+ * Pre-generated photobank behaves like a regular image generator, but it uses pre-generated images instead of generating new ones.
+ * This is useful for quickly and cheap offering a user a choice of images.
+ *
+ * It searches for images in the database by keywords. The keywords are generated from the prompt using GPT.
  *
  * @singleton
  */
@@ -22,6 +26,13 @@ export class PregeneratedPhotobank implements ImageGenerator {
         this.naturalExecutionTools = getExecutionTools(options.clientId).natural;
     }
 
+    /**
+     * Searches for images in the database
+     *
+     * @param prompt From prompt, keywords are extracted via GPT and used to search for images
+     * @param onProgress
+     * @returns Multiple images
+     */
     public async generate(
         prompt: ImagePrompt,
         onProgress: (taskProgress: WebgptTaskProgress) => void,
@@ -101,7 +112,6 @@ export class PregeneratedPhotobank implements ImageGenerator {
 }
 
 /**
- * TODO: !!! Annotate
  * TODO: !! Use taskProgress
  * TODO: Watch cost of LLM usage here
  * TODO: [🧠][7] Multiword keywords
