@@ -10,6 +10,12 @@ import { DialogueFunction } from './interfaces/DialogueFunction';
 import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from './isDialoguesRendered';
 
+/**
+ *  Utility helper function that makes dialogue function which can be used both in main thread and in worker thread (with Workerify).
+ *
+ * @param DialogueComponent The dialogue component to use, e.g. `SimpleTextDialogueComponent` not `<SimpleTextDialogueComponent/>`
+ * @returns The dialogue function
+ */
 export function makeDialogueFunction<TRequest, TResponse>(
     DialogueComponent: DialogueComponent<TRequest, TResponse>,
 ): DialogueFunction<TRequest, TResponse> {
@@ -69,7 +75,6 @@ export function makeDialogueFunction<TRequest, TResponse>(
 }
 
 /**
- * TODO: !!! Annotate
  * TODO: !! JSX must work in worker OR Should not be possible to use JSX from worker OR at all
  * TODO: Break in some timeout
  * TODO: Use some better forValueDefined

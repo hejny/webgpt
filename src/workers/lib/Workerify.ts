@@ -12,7 +12,7 @@ import { TransferableObject } from './interfaces/TransferableObject';
 import { WorkerifyOptions } from './interfaces/WorkerifyOptions';
 
 /**
- * TODO: !!! Annotate
+ * Utility helper for async running functions in workers
  */
 export class Workerify<
     TRequest extends TransferableObject,
