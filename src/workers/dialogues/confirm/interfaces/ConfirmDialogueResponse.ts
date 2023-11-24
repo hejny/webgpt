@@ -4,7 +4,3 @@ export interface ConfirmDialogueResponse {
      */
     readonly answer: boolean;
 }
-
-/**
- * TODO: !!! Annotate
- */

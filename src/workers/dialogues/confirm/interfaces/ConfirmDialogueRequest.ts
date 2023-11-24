@@ -10,6 +10,3 @@ export interface ConfirmDialogueRequest {
     readonly message: message;
 }
 
-/**
- * TODO: !!! Annotate
- */

@@ -18,7 +18,6 @@ export interface SimpleTextDialogueRequest {
 }
 
 /**
- * TODO: !!! Annotate
  * TODO: isMultiline
  * TODO: isRequired
  */

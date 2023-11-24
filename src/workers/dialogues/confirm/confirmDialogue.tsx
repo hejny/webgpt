@@ -4,7 +4,7 @@ import { ConfirmDialogueRequest } from './interfaces/ConfirmDialogueRequest';
 import { ConfirmDialogueResponse } from './interfaces/ConfirmDialogueResponse';
 
 /**
- * Annotate !!!
+ * Confirm dialogue offers a simple yes/no question to the user.
  */
 export const confirmDialogue = makeDialogueFunction<ConfirmDialogueRequest, ConfirmDialogueResponse>(
     ConfirmDialogueComponent,

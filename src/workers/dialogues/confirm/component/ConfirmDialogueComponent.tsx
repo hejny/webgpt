@@ -6,6 +6,8 @@ import { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
 import { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
 
 /**
+ * Confirm dialogue offers a simple yes/no question to the user.
+ *
  * @private use only within confirmDialogue function
  */
 export function ConfirmDialogueComponent(
@@ -47,7 +49,6 @@ ConfirmDialogueComponent.dialogueTypeName = 'CONFIRM';
 /**
  * TODO: !! Allow to pass true/false labels
  * TODO: !! Design
- * TODO: !!! Annotate
  * TODO: !! Use some smaller format of <Modal/>
  * TODO: !! Allow multiple <ConfirmDialogueComponent/> to be rendered at once
  */

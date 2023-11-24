@@ -7,7 +7,3 @@ export interface SimpleTextDialogueResponse {
      */
     readonly answer: string | null;
 }
-
-/**
- * TODO: !!! Annotate 
- */

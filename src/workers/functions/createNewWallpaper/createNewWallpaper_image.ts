@@ -36,7 +36,9 @@ interface CreateNewWallpaperImageRequest {
      */
     readonly wallpaperUrl?: string_url_image;
 
-    // TODO: !!! Annotate
+    /**
+     * Text prompt which was used to generate the wallpaper image
+     */
     readonly wallpaperPrompt?: string_image_prompt;
 }
 
@@ -104,7 +106,6 @@ export async function createNewWallpaper_image(
             title: 'Downloading image',
             isDone: false,
         });
-
 
         // TODO: [🧠] Is there some way to save normalized prompt to the database along the wallpaper
         //     > wallpaperPrompt = imagePromptResult.normalizedPrompt.content;

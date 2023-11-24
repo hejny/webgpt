@@ -18,7 +18,6 @@ export interface ImageGeneratorDialogueRequest {
 }
 
 /**
- * TODO: !!! Annotate
  * TODO: !! isImagePromptAllowedToChange
  * TODO: [🧠] How/Should to pass image/model requirements? Should be here ImagePromptResult?
  */

@@ -6,6 +6,8 @@ import { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueReque
 import { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
 
 /**
+ * Simple text dialogue offers a modal to the user to enter a (multiline) text.
+ *
  * @private use only within simpleTextDialogue function
  */
 export function SimpleTextDialogueComponent(
@@ -52,7 +54,3 @@ export function SimpleTextDialogueComponent(
 }
 
 SimpleTextDialogueComponent.dialogueTypeName = 'SIMPLE_TEXT';
-
-/**
- * TODO: !!! Annotate
- */

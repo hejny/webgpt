@@ -6,7 +6,3 @@ export interface ImageGeneratorDialogueResponse {
      */
     readonly pickedImage: ImagePromptResult;
 }
-
-/**
- * TODO: !!! Annotate
- */

@@ -6,7 +6,9 @@ import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserW
 import { string_url } from '../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
-    // TODO: [🌋] ErrorableResponse
+    /**
+     * URL of the wallpaper in our CDN
+     */
     readonly wallpaperUrl: string_url;
 }
 

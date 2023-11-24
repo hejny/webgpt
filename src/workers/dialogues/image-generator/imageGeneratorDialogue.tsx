@@ -4,7 +4,7 @@ import { ImageGeneratorDialogueRequest } from './interfaces/ImageGeneratorDialog
 import { ImageGeneratorDialogueResponse } from './interfaces/ImageGeneratorDialogueResponse';
 
 /**
- * TODO: !!! Annotate
+ * Image Generator dialogue offers a modal to the user to pick image from a photobank or to generate a new one.
  */
 export const imageGeneratorDialogue = makeDialogueFunction<
     ImageGeneratorDialogueRequest,

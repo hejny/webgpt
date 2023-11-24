@@ -105,11 +105,13 @@ export interface CreateNewWallpaperTextRequest {
 
 export interface CreateNewWallpaperTextResult {
     /**
-     * URL of the wallpaper
+     * Content of the wallpaper with font applied
      */
     readonly contentWithFont: string_markdown;
 
-    // TODO: !!! Annotate
+    /**
+     * Text prompt which was used to generate the wallpaper image
+     */
     readonly wallpaperPrompt: string_image_prompt;
 }
 

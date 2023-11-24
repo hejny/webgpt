@@ -7,7 +7,7 @@ import { CreateNewWallpaperPrepareResult } from './interfaces/CreateNewWallpaper
 import { CreateNewWallpaperRequest } from './interfaces/CreateNewWallpaperRequest';
 
 /**
- * TODO: !!! Annotate
+ * Create new wallpaper in situation when user provided idea but not image
  *
  * @private Use ONLY in createNewWallpaper
  */
