@@ -1,3 +1,6 @@
+/**
+ * Transferable object is an object that can be transferred between threads
+ */
 export type TransferableObject = any;
 
 /**
