@@ -114,9 +114,9 @@ export const EXPORT_OPTIONS = {
     publicUrl: NEXT_PUBLIC_URL,
 };
 
-// TODO: [🧠] !!! Put fonts into separate file
-// TODO: [🧠] !!! Breakup the config into multiple files
-// TODO: [🧠] !!! Better split between FONTS_LIST_STANDARD and FONTS_LIST_EXTENDED
+// TODO: [🧠] !! Put fonts into separate file
+// TODO: [🧠] !! Breakup the config into multiple files
+// TODO: [🧠] !! Better split between FONTS_LIST_STANDARD and FONTS_LIST_EXTENDED
 
 export const FONTS_LIST_STANDARD = [
     // TODO: !! [🧠] Better system for fonts
@@ -858,13 +858,13 @@ export const FONTS_LIST_EXTENDED = [
     'Zeyada',
 ] as const;
 
-// TODO: !!! Put in separate file
+// TODO: !! Put in separate file
 export interface Font {
-    // TODO: !!! Annotate
-    // TODO: !!! [🧠] System - Google, Adobe...
+    // TODO: !! Annotate
+    // TODO: !! [🧠] System - Google, Adobe...
     fontFamily: string_font_family;
 
-    // TODO: !!! [🧠] More granular split - handwriting, serif, sans-serif, monospace, cursive, fantasy,...
+    // TODO: !! [🧠] More granular split - handwriting, serif, sans-serif, monospace, cursive, fantasy,...
     isSpecial: boolean;
 }
 
@@ -1055,4 +1055,4 @@ export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
 ).value;
 export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
 
-// TODO: !!! Annotate all
+// TODO: !! Annotate all
