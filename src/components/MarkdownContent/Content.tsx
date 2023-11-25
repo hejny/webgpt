@@ -82,6 +82,9 @@ export function Content(props: ContentProps) {
                         isEnhanced,
                         onHtmlChange,
                     }}
+                    onMarkdownChange={(newMarkdown) => {
+                        console.log('!!!', newMarkdown);
+                    }}
                 />
             )}
         </>

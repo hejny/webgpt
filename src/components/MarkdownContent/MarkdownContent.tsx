@@ -5,7 +5,6 @@ import { string_css_class, string_href, string_markdown } from '../../utils/type
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 
-
 interface MarkdownContentProps {
     /**
      * Source markdown
@@ -166,6 +165,9 @@ export function MarkdownContent(props: MarkdownContentProps) {
 
                     if (onMarkdownChange) {
                         const markdownContent = markdownConverter.makeMarkdown(htmlContent);
+
+                        console.log('!!!', { htmlContent, markdownContent });
+
                         onMarkdownChange(markdownContent);
                     }
                 }}
