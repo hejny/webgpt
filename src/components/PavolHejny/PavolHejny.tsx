@@ -4,7 +4,7 @@ import jiriJahnArticle from '../../../documents/jiri-jahn.md';
 import pavolHejnyArticle from '../../../documents/pavol-hejny.md';
 import jiriJahnImage from '../../../public/people/jiri-jahn.transparent.png';
 import pavolHejnyImage from '../../../public/people/pavol-hejny.transparent.png';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../Content/MarkdownContent';
 import styles from './PavolHejny.module.css';
 
 export function PavolHejny() {

@@ -1,4 +1,4 @@
-import { markdownConverter } from '../../components/MarkdownContent/markdownConverter';
+import { markdownConverter } from '../../components/Content/markdownConverter';
 import { description, string_html, string_markdown } from '../typeAliases';
 import { detectContentFormat } from './detectContentFormat';
 import { extractDescriptionFromHtml } from './extractDescriptionFromHtml';
