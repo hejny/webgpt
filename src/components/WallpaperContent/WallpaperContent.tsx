@@ -9,7 +9,7 @@ import { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { Content } from '../Content/Content';
-import { MaxdownContent } from '../Content/MaxdownContent';
+import { MaxdownContent } from '../Content/Maxdown/MaxdownContent';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
 import { Section } from '../Section/Section';

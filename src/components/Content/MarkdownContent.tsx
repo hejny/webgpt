@@ -81,7 +81,6 @@ export function MarkdownContent(props: MarkdownContentProps) {
         isEnhanced,
         isEditable,
         mapLinks,
-        onMarkdownChange,
         onHtmlChange,
     } = props;
 
@@ -159,14 +158,6 @@ export function MarkdownContent(props: MarkdownContentProps) {
 
                     if (onHtmlChange) {
                         onHtmlChange(htmlContent);
-                    }
-
-                    if (onMarkdownChange) {
-                        const markdownContent = markdownConverter.makeMarkdown(htmlContent);
-
-                        console.log('!!!', { htmlContent, markdownContent });
-
-                        onMarkdownChange(markdownContent);
                     }
                 }}
 
