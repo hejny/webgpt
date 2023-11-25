@@ -1,22 +1,24 @@
 import spaceTrim from 'spacetrim';
-import { linkMarkdown } from '../../utils/content/linkMarkdown';
+import { linkMaxdown } from '../../utils/content/linkMaxdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
-import { string_css_class, string_href, string_markdown } from '../../utils/typeAliases';
+import { string_css_class, string_href, string_maxdown } from '../../utils/typeAliases';
 import { HtmlContent } from './HtmlContent';
-import { markdownConverter } from './markdownConverter';
+import { maxdownConverter } from './maxdownConverter';
 
-interface MarkdownContentProps {
+interface MaxdownContentProps {
+
+
     /**
-     * Source markdown
+     * Source maxdown
      */
-    content: string_markdown;
+    content: string_maxdown;
 
     /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
 
-    // TODO: !!! Filter unused options
+        // TODO: !!! Less options
 
     /**
      * Are tags <!--font:Poppins--> detected and applied
@@ -28,7 +30,7 @@ interface MarkdownContentProps {
     /*
     TODO: [0] This is automatically done by showdown
     /**
-     * Make for each heading in markdown unique id and scroll to hash
+     * Make for each heading in maxdown unique id and scroll to hash
      * /
     isHashUsed?: boolean;
     */
@@ -55,15 +57,15 @@ interface MarkdownContentProps {
 
     /**
      * Callback when content is changed
-     * returns back pure html
+     * returns back converted maxdown
      *
      * Note: This is used only when isEditable is true
      */
-    onHtmlChange?: (content: string_markdown) => void;
+    onMaxdownChange?: (content: string_maxdown) => void;
 }
 
 /**
- * Renders given markdown content with optional enhancements and optional editability
+ * Renders given maxdown content with optional enhancements and optional editability
  *
  * Note: There are two similar components:
  * - <MarkdownContent/> which renders general markdown content with some enhancements without markdown-markdown editability
@@ -72,7 +74,7 @@ interface MarkdownContentProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function MarkdownContent(props: MarkdownContentProps) {
+export function MaxdownContent(props: MaxdownContentProps) {
     const {
         content,
         className,
@@ -81,16 +83,16 @@ export function MarkdownContent(props: MarkdownContentProps) {
         isEnhanced,
         isEditable,
         mapLinks,
-        onMarkdownChange,
+        onMaxdownChange,
         onHtmlChange,
     } = props;
 
     // [0] const hash = useHash();
 
-    let synchronouslyEnhancedContent: string_markdown = spaceTrim(content || '');
+    let synchronouslyEnhancedContent: string_maxdown = spaceTrim(content || '');
 
     if (isEnhanced) {
-        synchronouslyEnhancedContent = linkMarkdown(synchronouslyEnhancedContent);
+        synchronouslyEnhancedContent = linkMaxdown(synchronouslyEnhancedContent);
         synchronouslyEnhancedContent = normalizeDashes(synchronouslyEnhancedContent);
     }
 
@@ -101,7 +103,7 @@ export function MarkdownContent(props: MarkdownContentProps) {
             if (isUsingOpenmoji) {
                 (async () => {
                     enhancedContentSubject.next(
-                        await emojifyMarkdown(
+                        await emojifyMaxdown(
                             enhancedContentSubject.value,
                             'color' /* TODO: [🎲] 'var(--palette-1)' * /,
                         ),
@@ -122,7 +124,7 @@ export function MarkdownContent(props: MarkdownContentProps) {
     const enhancedContent = synchronouslyEnhancedContent;
     /**/
 
-    let html = markdownConverter.makeHtml(enhancedContent);
+    let html = maxdownConverter.makeHtml(enhancedContent);
 
     if (isusingFonts) {
         html = html.replace(
@@ -161,12 +163,12 @@ export function MarkdownContent(props: MarkdownContentProps) {
                         onHtmlChange(htmlContent);
                     }
 
-                    if (onMarkdownChange) {
-                        const markdownContent = markdownConverter.makeMarkdown(htmlContent);
+                    if (onMaxdownChange) {
+                        const maxdownContent = maxdownConverter.makeMaxdown(htmlContent);
 
-                        console.log('!!!', { htmlContent, markdownContent });
+                        console.log('!!!', { htmlContent, maxdownContent });
 
-                        onMarkdownChange(markdownContent);
+                        onMaxdownChange(maxdownContent);
                     }
                 }}
 
@@ -213,8 +215,8 @@ export function MarkdownContent(props: MarkdownContentProps) {
 }
 
 /**
- * TODO: [👼] Components <HtmlContent/>, <MarkdownContent/> and <Content> are coupled together more then they should be
+ * TODO: [👼] Components <HtmlContent/>, <MaxdownContent/> and <Content> are coupled together more then they should be
  * TODO: [0] Use has if isHashUsed is true
- * TODO: Maybe rename to <Content/> or <MarkdownContent/> or <Markdown/>
+ * TODO: Maybe rename to <Content/> or <MaxdownContent/> or <Maxdown/>
  * TODO: [0] Make has work + rename hash to fragment ACRY
  */

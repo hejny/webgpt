@@ -9,6 +9,7 @@ import {
     description,
     string_image_prompt,
     string_markdown,
+    string_maxdown,
     string_name,
     string_translate_language,
     string_url,
@@ -82,7 +83,7 @@ export interface CreateNewWallpaperTextRequest {
         /**
          * Content of the section
          */
-        readonly content: string_markdown;
+        readonly content: string_maxdown;
 
         // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assignment and auto generate
     }>;

@@ -1,8 +1,8 @@
 import { nameToUriParts } from 'n12';
 import { extractTitleFromContent } from './content/extractTitleFromContent';
-import { string_html, string_markdown, string_uriid } from './typeAliases';
+import { string_maxdown, string_uriid } from './typeAliases';
 
-export function computeWallpaperDomainPart(wallpaperContent: string_markdown | string_html): string_uriid {
+export function computeWallpaperDomainPart(wallpaperContent: string_maxdown): string_uriid {
     let title = extractTitleFromContent(wallpaperContent) || '';
 
     // Note: Ignore apostrophes and quotes in name to make URL

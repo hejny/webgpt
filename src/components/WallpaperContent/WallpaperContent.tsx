@@ -9,6 +9,7 @@ import { string_href, string_html } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
 import { Content } from '../Content/Content';
+import { MaxdownContent } from '../Content/MaxdownContent';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
 import { Section } from '../Section/Section';
@@ -117,7 +118,7 @@ export function WallpaperContentSection() {
                         Following is the content of the main page:
                     `}
                 >
-                    <Content
+                    <MaxdownContent
                         isusingFonts
                         isUsingOpenmoji={
                             false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */

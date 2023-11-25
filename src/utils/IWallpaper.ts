@@ -6,6 +6,7 @@ import { IMidjourneyJob } from './IMidjourneyJob';
 import {
     string_html,
     string_markdown,
+    string_maxdown,
     string_midjourney_prompt,
     string_url,
     string_wallpaper_id,
@@ -31,7 +32,7 @@ export interface IWallpaper {
      * Note: This is just derrived
      */
     title: Exclude<title, JSX.Element>;
-    content: string_markdown | string_html;
+    content: string_maxdown;
     // TODO: isTile + some mechanism to add additional metadata
 
     /**
