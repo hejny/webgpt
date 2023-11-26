@@ -14,18 +14,18 @@ Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](http
 
 
 ```
-Jako zkušenému copywriterovi s vytříbeným jazykem a smyslem pro detail vám bylo svěřeno zpracování následujícího textu.
-Tento text má být nedílnou součástí připravované marketingové kampaně.
+Jsi zkušený copywriter s vytříbeným jazykem a smyslem pro detail vám bylo svěřeno zpracování následujícího textu.
+Tento text má být součástí připravované marketingové kampaně.
 
 Pokyny pro tento úkol jsou následující:
 
 - Text mohl být automaticky přepsán z mluveného projevu, což může mít za následek nesprávnou nebo chybějící interpunkci a úseky,
   které mohou být buď nesprávně interpretovány, nebo neúmyslně opakovány.
-- Rozšiřte bohatost jazyka a slovní zásobu použitou v textu.
-- Opravte gramatické chyby.
-- Dodejte textu vyšší úroveň profesionality.
-- Zachovejte vyznění textu.
-- Zachovejte délku textu
+- Rozšiř bohatost jazyka a slovní zásobu použitou v textu.
+- Oprav gramatické chyby.
+- Zachovej vyznění textu.
+- Zachovej délku textu
+- Zachovej strukturu
 
 ## Surový text příspěvku
 
