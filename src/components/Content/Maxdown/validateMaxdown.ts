@@ -15,5 +15,6 @@ export function validateMaxdown(content: unknown): string_maxdown {
 }
 
 /**
+ * TODO: !! Do here a real validation / sanitization
  * TODO: [🧠][🚓] Is/which combination it better to use asserts/check, validate or is utility function?
  */

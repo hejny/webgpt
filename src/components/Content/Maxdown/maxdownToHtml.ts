@@ -2,10 +2,10 @@ import spaceTrim from 'spacetrim';
 import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 
-export function maxdownToHtml(content: string_maxdown): string_html {
-    let enhancedContent = spaceTrim(content || '');
+export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
+    maxdownContent = spaceTrim(maxdownContent || '') as string_maxdown;
 
-    let html = markdownConverter.makeHtml(enhancedContent);
+    let html = markdownConverter.makeHtml(maxdownContent);
 
     // Note: Removing empty paragraphs
     html = html.split(/<p>\s*<\/p>/g).join('');
@@ -44,14 +44,10 @@ export function maxdownToHtml(content: string_maxdown): string_html {
     return html;
 }
 
-/*
-export function htmlToMaxdown(content: string_html): string_maxdown {
-}
-
 /**
  * !!! Annotate
  * TODO: [🔤] !!!
- * 
+ *
  * TODO: [🧠] Do here somewhere normalizeDashes
  * TODO: [🧠] Do here somewhere linkMarkdown (but with dynamic list of what to link)
  */
