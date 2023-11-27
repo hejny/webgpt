@@ -22,13 +22,18 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
             if (font) {
                 font = font.split(',')[0]!.trim();
 
+                if (markdownContent !== '') {
+                    markdownContent += '\n';
+                }
+
                 markdownContent += `<!--font:${font}-->\n\n`;
             }
 
             let nodeAsMarkdown = markdownConverter.makeMarkdown(childNode.innerHTML);
             if (nodeAsMarkdown.endsWith('\n\n')) {
-                nodeAsMarkdown = nodeAsMarkdown.slice(0, -2);
+                nodeAsMarkdown = nodeAsMarkdown.slice(0, -1);
             }
+
             markdownContent += nodeAsMarkdown;
         } else if (childNode instanceof Text) {
             if (spaceTrim(childNode.textContent || '') !== '') {
