@@ -40,7 +40,7 @@ describe(`conversion from html to maxdown`, () => {
                     # Title
                     
                     Some text
-                `) + '\n\n',
+                `) + '\n',
             ),
         );
     });
@@ -74,7 +74,7 @@ describe(`conversion from html to maxdown`, () => {
                     # Title
                     
                     Some text
-                `) + '\n\n',
+                `) + '\n',
             ),
         );
     });
@@ -92,7 +92,7 @@ describe(`conversion from html to maxdown`, () => {
                     # Title
                     
                     Some text
-                `) + '\n\n',
+                `) + '\n',
             ),
         );
     });

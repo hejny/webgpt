@@ -4,6 +4,12 @@ import { markdownConverter } from '../markdownConverter';
 import { validateMaxdown } from './validateMaxdown';
 
 export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
+    htmlContent = spaceTrim(htmlContent || '');
+
+    if (!htmlContent.startsWith('<div')) {
+        htmlContent = `<div>${htmlContent}</div>`;
+    }
+
     const containerElement = document.createElement('div');
     containerElement.innerHTML = htmlContent;
 
@@ -19,7 +25,11 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
                 markdownContent += `<!--font:${font}-->\n\n`;
             }
 
-            markdownContent += markdownConverter.makeMarkdown(childNode.innerHTML);
+            let nodeAsMarkdown = markdownConverter.makeMarkdown(childNode.innerHTML);
+            if (nodeAsMarkdown.endsWith('\n\n')) {
+                nodeAsMarkdown = nodeAsMarkdown.slice(0, -2);
+            }
+            markdownContent += nodeAsMarkdown;
         } else if (childNode instanceof Text) {
             if (spaceTrim(childNode.textContent || '') !== '') {
                 throw new Error(
