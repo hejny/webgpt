@@ -1,4 +1,5 @@
 import spaceTrim from 'spacetrim';
+import { prettifyHtml } from '../../../export/utils/prettifyHtml';
 import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 
@@ -40,6 +41,8 @@ export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
     }
 
     html = htmlLines.join('\n');
+
+    html = prettifyHtml(html);
 
     return html;
 }

@@ -1,4 +1,5 @@
 import spaceTrim from 'spacetrim';
+import { prettifyHtml } from '../../../export/utils/prettifyHtml';
 import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 import { validateMaxdown } from './validateMaxdown';
@@ -29,12 +30,22 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
                 markdownContent += `<!--font:${font}-->\n\n`;
             }
 
-            let nodeAsMarkdown = markdownConverter.makeMarkdown(childNode.innerHTML);
-            if (nodeAsMarkdown.endsWith('\n\n')) {
-                nodeAsMarkdown = nodeAsMarkdown.slice(0, -1);
+            let nodeHtml = childNode.innerHTML;
+
+            // !!!
+            console.log(nodeHtml);
+
+            nodeHtml = prettifyHtml(nodeHtml);
+
+            // !!!
+            console.log(nodeHtml);
+
+            let nodeMarkdown = markdownConverter.makeMarkdown(childNode.innerHTML);
+            if (nodeMarkdown.endsWith('\n\n')) {
+                nodeMarkdown = nodeMarkdown.slice(0, -1);
             }
 
-            markdownContent += nodeAsMarkdown;
+            markdownContent += nodeMarkdown;
         } else if (childNode instanceof Text) {
             if (spaceTrim(childNode.textContent || '') !== '') {
                 throw new Error(

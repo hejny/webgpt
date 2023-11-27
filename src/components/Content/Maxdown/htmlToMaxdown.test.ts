@@ -97,5 +97,59 @@ describe(`conversion from html to maxdown`, () => {
         );
     });
 
+    it(`should preserve pretty formatting`, () => {
+        expect(
+            htmlToMaxdown(
+                spaceTrim(`
+                    <pricing-table>
+                        <pricing-plan label="Personal" price="$10">
+                            <pricing-feature>Feature 1</pricing-feature>
+                            <pricing-feature>Feature 2</pricing-feature>
+                            <pricing-feature>Feature 3</pricing-feature>
+                            <pricing-feature>Feature 4</pricing-feature>
+                        </pricing-plan>
+                        <pricing-plan label="Small Team" price="$20">
+                            <pricing-feature>Feature 1</pricing-feature>
+                            <pricing-feature>Feature 2</pricing-feature>
+                            <pricing-feature>Feature 3</pricing-feature>
+                            <pricing-feature>Feature 4</pricing-feature>
+                        </pricing-plan>
+                        <pricing-plan label="Enterprise" price="$40">
+                            <pricing-feature>Feature 1</pricing-feature>
+                            <pricing-feature>Feature 2</pricing-feature>
+                            <pricing-feature>Feature 3</pricing-feature>
+                            <pricing-feature>Feature 4</pricing-feature>
+                        </pricing-plan>
+                    </pricing-table>
+                `),
+            ),
+        ).toBe(
+            just(
+                spaceTrim(`
+                    <pricing-table>
+                        <pricing-plan label="Personal" price="$10">
+                            <pricing-feature>Feature 1</pricing-feature>
+                            <pricing-feature>Feature 2</pricing-feature>
+                            <pricing-feature>Feature 3</pricing-feature>
+                            <pricing-feature>Feature 4</pricing-feature>
+                        </pricing-plan>
+                        <pricing-plan label="Small Team" price="$20">
+                            <pricing-feature>Feature 1</pricing-feature>
+                            <pricing-feature>Feature 2</pricing-feature>
+                            <pricing-feature>Feature 3</pricing-feature>
+                            <pricing-feature>Feature 4</pricing-feature>
+                        </pricing-plan>
+                        <pricing-plan label="Enterprise" price="$40">
+                            <pricing-feature>Feature 1</pricing-feature>
+                            <pricing-feature>Feature 2</pricing-feature>
+                            <pricing-feature>Feature 3</pricing-feature>
+                            <pricing-feature>Feature 4</pricing-feature>
+                        </pricing-plan>
+                    </pricing-table>
+                `) + '\n',
+            ),
+        );
+    });
+
     // Note: No need to test more complex cases because they are tested in maxdownNormalization.test.ts
 });
