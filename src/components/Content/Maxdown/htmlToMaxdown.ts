@@ -10,27 +10,43 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
     let markdownContent = '';
 
     for (const childNode of Array.from(containerElement.childNodes)) {
-        if (!(childNode instanceof HTMLElement)) {
+        if (childNode instanceof HTMLElement) {
+            let font = childNode.style.fontFamily;
+
+            if (font) {
+                font = font.split(',')[0]!.trim();
+
+                markdownContent += `<!--font:${font}-->\n\n`;
+            }
+
+            markdownContent += markdownConverter.makeMarkdown(childNode.innerHTML);
+        } else if (childNode instanceof Text) {
+            if (spaceTrim(childNode.textContent || '') !== '') {
+                throw new Error(
+                    spaceTrim(
+                        (block) => `
+                            Only HTML elements are allowed on top level
+
+                            Found non-empty text node
+                            Content: ${block(childNode.textContent!)}
+                        `,
+                    ),
+                );
+            }
+            //markdownContent += childNode.textContent!;
+        } else {
             throw new Error(
                 spaceTrim(
                     (block) => `
-                        Only HTML elements are allowed
+                    Only HTML elements are allowed on top level
 
-                        Found: ${block(childNode.nodeType)}
-                    `,
+                    Found nodeName ${block(childNode.nodeName)}
+                    Found nodeType ${block(childNode.nodeType.toString())}
+                    @see https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+                `,
                 ),
             );
         }
-
-        let font = childNode.style.fontFamily;
-
-        if (font) {
-            font = font.split(',')[0]!.trim();
-
-            markdownContent += `<!--font:${font}-->\n\n`;
-        }
-
-        markdownContent += markdownConverter.makeMarkdown(childNode.innerHTML);
     }
 
     return validateMaxdown(markdownContent);
