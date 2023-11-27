@@ -1,3 +1,7 @@
+<!--
+TODO: This is not working yet. It cannot be converted to HTML and back without messup/loosing information.
+-->
+
 # Components
 
 ## Button
@@ -5,6 +9,10 @@
 <a href="#button" class="button">Buy</a>
 
 ## Code
+
+<!--
+TODO: Implement code with custom html components
+-->
 
 ```javascript
 const a = 1;
