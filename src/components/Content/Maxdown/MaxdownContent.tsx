@@ -49,6 +49,9 @@ export function MaxdownContent(props: MaxdownContentProps) {
 
     const htmlContent = maxdownToHtml(content);
 
+    // const { htmlContent: htmlContentPrevious } = usePrevious({ htmlContent });
+    // console.log('!!', htmlContent === htmlContentPrevious, { htmlContent, htmlContentPrevious });
+
     return (
         <HtmlContent
             {...{ content: htmlContent, isEditable, mapLinks, className }}
@@ -59,8 +62,6 @@ export function MaxdownContent(props: MaxdownContentProps) {
 
                 if (onMaxdownChange) {
                     const maxdownContent = htmlToMaxdown(htmlContent);
-
-                    console.log('!!!', { htmlContent, maxdownContent });
 
                     onMaxdownChange(maxdownContent);
                 }
