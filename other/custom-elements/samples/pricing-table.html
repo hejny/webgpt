@@ -1,0 +1,68 @@
+<pricing-table>
+    <pricing-plan label="Personal" price="$10">
+        <pricing-feature>Feature 1</pricing-feature>
+        <pricing-feature>Feature 2</pricing-feature>
+        <pricing-feature>Feature 3</pricing-feature>
+        <pricing-feature>Feature 4</pricing-feature>
+    </pricing-plan>
+    <pricing-plan label="Small Team" price="$20">
+        <pricing-feature>Feature 1</pricing-feature>
+        <pricing-feature>Feature 2</pricing-feature>
+        <pricing-feature>Feature 3</pricing-feature>
+        <pricing-feature>Feature 4</pricing-feature>
+    </pricing-plan>
+    <pricing-plan label="Enterprise" price="$40">
+        <pricing-feature>Feature 1</pricing-feature>
+        <pricing-feature>Feature 2</pricing-feature>
+        <pricing-feature>Feature 3</pricing-feature>
+        <pricing-feature>Feature 4</pricing-feature>
+    </pricing-plan>
+</pricing-table>
+
+<script>
+    // TODO: !!! DRY
+    class PricingPlan extends HTMLElement {
+        constructor() {
+            super();
+
+            console.info('!!! CallToAction.constructor');
+        }
+
+        connectedCallback() {
+            // TODO: !!! This must work
+            console.info('Connected to <pricing-plan/> component');
+
+            this.addEventListener('click', () => {
+                // TODO: !!! This must work
+                console.info('Clicked on <pricing-plan/> component');
+            });
+        }
+    }
+
+    console.info('🌟 Defining <pricing-plan/> component');
+    customElements.define('pricing-plan', PricingPlan);
+</script>
+<style>
+    /*
+    TODO: !!! DRY
+    */
+    pricing-table {
+        display: flex;
+    }
+
+    pricing-plan {
+        border: solid 1px red;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 15px;
+    }
+
+    pricing-feature {
+        border: solid 1px red;
+
+        padding: 10px;
+    }
+</style>
