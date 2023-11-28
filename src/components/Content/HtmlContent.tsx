@@ -81,7 +81,6 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
             return;
         }
 
-        console.log('!!! is active', element === document.activeElement);
         if (element.dataset.contentState === 'react-render' || element !== document.activeElement) {
             element.innerHTML = content /* <- Here [3] */;
             element.dataset.contentState = 'filled';
