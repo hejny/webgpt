@@ -6,6 +6,7 @@ import { useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import enhanceTextCs from '../../../promptbook/other/enhance-text-cs.ptbk.md';
 import promptcookSample from '../../../promptbook/other/promptcook-sample.ptbk.md';
+import tldrTextCs from '../../../promptbook/other/tldr-text-cs.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
@@ -39,10 +40,21 @@ export function PromptCook() {
             name: 'enhance-text.cs.ptbk',
             ptbkSource: enhanceTextCs,
             inputParams: {
-                inputText: 'hello',
+                inputText: 'ahoj, jak se mas',
             },
             outputParams: {
-                outputText: 'Hello',
+                outputText: 'Ahoj, jak se máš?',
+            },
+        },
+        {
+            name: 'tldr-text.cs.ptbk',
+            ptbkSource: tldrTextCs,
+            inputParams: {
+                inputText:
+                    'Jsi zkušený copywriter s vytříbeným jazykem a smyslem pro detail vám bylo svěřeno zpracování následujícího textu. Tento text má být součástí připravované marketingové kampaně.',
+            },
+            outputParams: {
+                outputText: 'Jsi copywriter a píšeš texty pro marketingové kampaně.',
             },
         },
     ]);
