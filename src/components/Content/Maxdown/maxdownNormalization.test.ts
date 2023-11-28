@@ -27,12 +27,12 @@ describe(`normalization of maxdowns`, () => {
 
             const maxdownContentAgain = htmlToMaxdown(htmlContent);
 
-            /**/
+            /*/
             //Note: It is useful to save normalized markdown for manual inspection
             writeFileSync(join(__dirname, 'samples', name), maxdownContentAgain, 'utf-8');
             /**/
 
-            expect(htmlContent).toBe(maxdownContentAgain);
+            expect(maxdownContent).toBe(maxdownContentAgain);
         });
     }
 });
