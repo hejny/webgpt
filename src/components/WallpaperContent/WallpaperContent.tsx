@@ -132,6 +132,9 @@ export function WallpaperContentSection() {
                     class CallToAction extends HTMLAnchorElement {
                         constructor() {
                             super();
+
+        
+                            console.info('!!! CallToAction.constructor');
                         }
 
                         connectedCallback() {
