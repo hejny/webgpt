@@ -5,7 +5,7 @@ import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpap
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import { ColorInput } from '../../ColorPreview/ColorInput/ColorInput';
-import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../../Content/MarkdownContent';
 import { Select } from '../../Select/Select';
 import styles from './GalleryFilterInput.module.css';
 import { IGalleryFilter, Order } from './IGalleryFilter';

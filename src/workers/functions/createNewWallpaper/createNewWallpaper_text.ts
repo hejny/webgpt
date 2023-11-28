@@ -2,13 +2,14 @@ import { TaskProgress } from '@promptbook/types';
 import { FONTS } from '../../../../config';
 import { getExecutionTools } from '../../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../../ai/prompt-templates/webgptPtpLibrary';
+import { validateMaxdown } from '../../../components/Content/Maxdown/validateMaxdown';
 import { addFontToContent } from '../../../components/ImportFonts/addFontToContent';
 import type { WriteWallpaperPromptResponse } from '../../../pages/api/image-to-text';
 import { randomItem } from '../../../utils/randomItem';
 import {
     description,
     string_image_prompt,
-    string_markdown,
+    string_maxdown,
     string_name,
     string_translate_language,
     string_url,
@@ -82,7 +83,7 @@ export interface CreateNewWallpaperTextRequest {
         /**
          * Content of the section
          */
-        readonly content: string_markdown;
+        readonly content: string_maxdown;
 
         // <- TODO: !! [🧠] Maybe allow to have empty name+title+content just write assignment and auto generate
     }>;
@@ -107,7 +108,7 @@ export interface CreateNewWallpaperTextResult {
     /**
      * Content of the wallpaper with font applied
      */
-    readonly contentWithFont: string_markdown;
+    readonly contentWithFont: string_maxdown;
 
     /**
      * Text prompt which was used to generate the wallpaper image
@@ -226,7 +227,7 @@ export async function createNewWallpaper_text(
     );
 
     const contentWithFont = addFontToContent(
-        content || '', // <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
+        validateMaxdown(content || ''), // <- TODO: [👧] Strongly type the executors to avoid need of remove nullables whtn noUncheckedIndexedAccess in tsconfig.json
         font.fontFamily,
     );
 

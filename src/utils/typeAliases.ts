@@ -1,7 +1,6 @@
 // TODO: !! Cleanup
 
 import type { string_prompt } from '@promptbook/types';
-import { FONTS } from '../../config';
 
 /*
 .--------------------------------------------------.
@@ -182,7 +181,19 @@ export type string_markdown = string;
  *
  * For example `"**Hello** World!"`
  */
-export type string_markdown_text = string;
+export type string_markdown_text = string_markdown;
+
+/**
+ * Semantic helper
+ *
+ * Maxdown is a speficic flavor of Markdown which is used in WebGPT main content of the pages
+ * It is superset of Markdown with some additional features like:
+ * - Fonts
+ * - Components
+ *
+ * For example `"**Hello** World!"`
+ */
+export type string_maxdown = string & { _type: 'maxdown' };
 
 /**
  * Semantic helper

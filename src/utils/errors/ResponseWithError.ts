@@ -30,5 +30,6 @@ export function throwIfErrorResponse<TResponse>(response: ResponseWithError<TRes
 }
 
 /**
+ * TODO: [🧠][🚓] Is/which combination it better to use asserts/check, validate or is utility function?
  * TODO: !! Use this in all places where there is "ResponseWithError<T>"
  */

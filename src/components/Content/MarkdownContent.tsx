@@ -5,17 +5,18 @@ import { string_css_class, string_href, string_markdown } from '../../utils/type
 import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 
-
 interface MarkdownContentProps {
     /**
      * Source markdown
      */
-    content: string;
+    content: string_markdown;
 
     /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
+
+    // TODO: !!! Filter unused options
 
     /**
      * Are tags <!--font:Poppins--> detected and applied
@@ -54,14 +55,6 @@ interface MarkdownContentProps {
 
     /**
      * Callback when content is changed
-     * returns back converted markdown
-     *
-     * Note: This is used only when isEditable is true
-     */
-    onMarkdownChange?: (content: string_markdown) => void;
-
-    /**
-     * Callback when content is changed
      * returns back pure html
      *
      * Note: This is used only when isEditable is true
@@ -71,6 +64,10 @@ interface MarkdownContentProps {
 
 /**
  * Renders given markdown content with optional enhancements and optional editability
+ *
+ * Note: There are two similar components:
+ * - <MarkdownContent/> which renders general markdown content with some enhancements without markdown-markdown editability
+ * - <MaxdownContent/> which renders specific flavor of markdown content for WebGPT with markdown-markdown editability
  *
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
@@ -84,7 +81,6 @@ export function MarkdownContent(props: MarkdownContentProps) {
         isEnhanced,
         isEditable,
         mapLinks,
-        onMarkdownChange,
         onHtmlChange,
     } = props;
 
@@ -162,11 +158,6 @@ export function MarkdownContent(props: MarkdownContentProps) {
 
                     if (onHtmlChange) {
                         onHtmlChange(htmlContent);
-                    }
-
-                    if (onMarkdownChange) {
-                        const markdownContent = markdownConverter.makeMarkdown(htmlContent);
-                        onMarkdownChange(markdownContent);
                     }
                 }}
 

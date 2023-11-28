@@ -57,6 +57,9 @@ interface ContentProps {
 /**
  * Renders given html or markdown content with optional enhancements and optional editability
  *
+ * Note: This component renders either <HtmlContent/> or <MarkdownContent/> based on the content format
+ *       If you want to render <MaxdownContent/> use it directly
+ *
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */

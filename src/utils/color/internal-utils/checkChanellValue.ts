@@ -26,3 +26,9 @@ export function checkChanellValue(
         throw new Error(`${chanellName} chanell is grater than 255, it is ${value}`);
     }
 }
+
+
+
+/**
+ * TODO: [🧠][🚓] Is/which combination it better to use asserts/check, validate or is utility function?
+ */

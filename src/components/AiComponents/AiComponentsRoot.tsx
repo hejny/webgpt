@@ -26,6 +26,8 @@ interface AiComponentsRootProps {
 
 /**
  * Renders a root element for AI components and activates them
+ * 
+ * @deprecated [👨‍🦲] AI Components are deprecated, use custom html components instead
  */
 export function AiComponentsRoot(props: AiComponentsRootProps) {
     const { usedComponents, children, className } = props;

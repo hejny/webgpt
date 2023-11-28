@@ -61,11 +61,7 @@ export function HtmlContent(props: HtmlContentProps) {
         );
     }
 
-    return (
-        <>
-            <HtmlContentEditable {...{ content, className, onHtmlChange }} />
-        </>
-    );
+    return <HtmlContentEditable {...{ content, className, onHtmlChange }} />;
 }
 
 /**
@@ -85,9 +81,18 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
             return;
         }
 
-        if (element.innerHTML !== content) {
+        if (element.dataset.contentState === 'react-render' || element !== document.activeElement) {
             element.innerHTML = content /* <- Here [3] */;
+            element.dataset.contentState = 'filled';
         }
+
+        /*
+        TODO: [🧠] Here shuld be some inteligent react-like virtual dom diffing to avoid re-rendering when content is not changed
+                BUT applying all the external changes to the content
+        if (element.innerHTML !== content) {
+            element.innerHTML = content ;
+        }
+        */
     }, [content]);
     useEffect(() => {
         const element = elementRef.current;
@@ -112,7 +117,7 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
     }, [content, onHtmlChange, elementRef]);
 
     return (
-        <div {...{ className }} ref={elementRef}>
+        <div {...{ className }} ref={elementRef} data-content-state={'react-render'}>
             This will be never shown because it is immediatelly replaced here [3] in useLayoutEffect
         </div>
     );
@@ -123,4 +128,5 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
  * TODO: [🧠][💬] Allow to change fonts and do rich text editing
  * TODO: [👩‍🦰] Allow to change fonts in <WallpaperContentSection/> or <Content/> or <HtmlContent/>
  * TODO: [👨‍🦰] Show editable hint in <WallpaperContentSection/> or <Content/> or <HtmlContent/> (<- <HtmlContentEditable/>)
+ * TODO: [🕶] Is `element !== document.activeElement` good enough? Isnt document.activeElement sometimes child of element?
  */

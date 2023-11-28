@@ -20,6 +20,7 @@ import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
+import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
@@ -122,7 +123,7 @@ export function CopilotPanel() {
                 },
             );
 
-            const newContentWithFont = addFontToContent(newContent || '', font);
+            const newContentWithFont = addFontToContent(validateMaxdown(newContent || ''), font);
 
             /*/
             const newContentWithMetadata = spaceTrim(

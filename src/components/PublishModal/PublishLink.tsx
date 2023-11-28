@@ -1,5 +1,5 @@
 import { string_css_class } from '../../utils/typeAliases';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../Content/MarkdownContent';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 
 interface PublishLinkProps {
