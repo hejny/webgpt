@@ -81,7 +81,11 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
             return;
         }
 
-        if (element.dataset.contentState === 'react-render' || element !== document.activeElement) {
+        if (
+            element.dataset.contentState === 'react-render' ||
+            element !== document.activeElement
+            // __________________________ <- TODO: !!! [🧠] Also fill content when navigating back to page with content
+        ) {
             element.innerHTML = content /* <- Here [3] */;
             element.dataset.contentState = 'filled';
         }
