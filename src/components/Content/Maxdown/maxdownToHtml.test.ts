@@ -59,7 +59,7 @@ describe(`conversion from maxdown to html`, () => {
         ).toBe(
             just(
                 spaceTrim(`
-                    <div style="font-family:Roboto, sans-serif;">
+                    <div style="font-family: Roboto, sans-serif">
                         <h1 id="title">Title</h1>
                         <p>Some text</p>
                     </div>
@@ -87,11 +87,11 @@ describe(`conversion from maxdown to html`, () => {
         ).toBe(
             just(
                 spaceTrim(`
-                    <div style="font-family:Roboto, sans-serif;">
+                    <div style="font-family: Roboto, sans-serif">
                         <h1 id="title">Title</h1>
                         <p>Some text</p>
                     </div>
-                    <div style="font-family:Roboto Condensed, sans-serif;">
+                    <div style="font-family: Roboto Condensed, sans-serif">
                         <p>Different text</p>
                     </div>
                 `),
@@ -128,6 +128,42 @@ describe(`conversion from maxdown to html`, () => {
         ).toBe(
             just(
                 spaceTrim(`
+                    <p>
+                        <pricing-table>
+                            <pricing-plan label="Personal" price="$10">
+                                <pricing-feature>Feature 1</pricing-feature>
+                                <pricing-feature>Feature 2</pricing-feature>
+                                <pricing-feature>Feature 3</pricing-feature>
+                                <pricing-feature>Feature 4</pricing-feature>
+                            </pricing-plan>
+                            <pricing-plan label="Small Team" price="$20">
+                                <pricing-feature>Feature 1</pricing-feature>
+                                <pricing-feature>Feature 2</pricing-feature>
+                                <pricing-feature>Feature 3</pricing-feature>
+                                <pricing-feature>Feature 4</pricing-feature>
+                            </pricing-plan>
+                            <pricing-plan label="Enterprise" price="$40">
+                                <pricing-feature>Feature 1</pricing-feature>
+                                <pricing-feature>Feature 2</pricing-feature>
+                                <pricing-feature>Feature 3</pricing-feature>
+                                <pricing-feature>Feature 4</pricing-feature>
+                            </pricing-plan>
+                        </pricing-table>
+                    </p>
+                `),
+            ),
+        );
+    });
+
+    it(`should preserve rich pretty formatting`, () => {
+        expect(
+            maxdownToHtml(
+                spaceTrim(`
+
+                    # Title
+
+                    Some text
+
                     <pricing-table>
                         <pricing-plan label="Personal" price="$10">
                             <pricing-feature>Feature 1</pricing-feature>
@@ -148,6 +184,35 @@ describe(`conversion from maxdown to html`, () => {
                             <pricing-feature>Feature 4</pricing-feature>
                         </pricing-plan>
                     </pricing-table>
+                `) as string_maxdown,
+            ),
+        ).toBe(
+            just(
+                spaceTrim(`
+                    <h1 id="title">Title</h1>
+                    <p>Some text</p>
+                    <p>
+                        <pricing-table>
+                            <pricing-plan label="Personal" price="$10">
+                                <pricing-feature>Feature 1</pricing-feature>
+                                <pricing-feature>Feature 2</pricing-feature>
+                                <pricing-feature>Feature 3</pricing-feature>
+                                <pricing-feature>Feature 4</pricing-feature>
+                            </pricing-plan>
+                            <pricing-plan label="Small Team" price="$20">
+                                <pricing-feature>Feature 1</pricing-feature>
+                                <pricing-feature>Feature 2</pricing-feature>
+                                <pricing-feature>Feature 3</pricing-feature>
+                                <pricing-feature>Feature 4</pricing-feature>
+                            </pricing-plan>
+                            <pricing-plan label="Enterprise" price="$40">
+                                <pricing-feature>Feature 1</pricing-feature>
+                                <pricing-feature>Feature 2</pricing-feature>
+                                <pricing-feature>Feature 3</pricing-feature>
+                                <pricing-feature>Feature 4</pricing-feature>
+                            </pricing-plan>
+                        </pricing-table>
+                    </p>
                 `),
             ),
         );

@@ -30,7 +30,7 @@ export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
             //       There is some problem with escaping in export:
             //       - <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
             htmlLines.push(
-                `<div style="font-family:${font}, sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
+                `<div style="font-family: ${font}, sans-serif">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
             );
 
             isFontTagOpened = true;
@@ -43,6 +43,7 @@ export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
     html = htmlLines.join('\n');
 
     html = prettifyHtml(html);
+    html = spaceTrim(html);
 
     return html;
 }

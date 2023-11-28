@@ -31,16 +31,20 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
             }
 
             let nodeHtml = childNode.innerHTML;
+            let nodeMarkdown = markdownConverter.makeMarkdown(nodeHtml);
 
-            // !!!
-            console.log(nodeHtml);
+            nodeMarkdown = nodeMarkdown
+                .split('\n')
+                .map((line) => {
+                    if (line.startsWith('<') && line.endsWith('>')) {
+                        //       <- TODO: Better detection of HTML content in maxdown
+                        return prettifyHtml(line);
+                    }
 
-            nodeHtml = prettifyHtml(nodeHtml);
+                    return line;
+                })
+                .join('\n');
 
-            // !!!
-            console.log(nodeHtml);
-
-            let nodeMarkdown = markdownConverter.makeMarkdown(childNode.innerHTML);
             if (nodeMarkdown.endsWith('\n\n')) {
                 nodeMarkdown = nodeMarkdown.slice(0, -1);
             }
@@ -73,6 +77,10 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
                 ),
             );
         }
+    }
+
+    if (markdownContent.endsWith('\n\n')) {
+        markdownContent = markdownContent.slice(0, -1);
     }
 
     return validateMaxdown(markdownContent);
