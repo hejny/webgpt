@@ -5,7 +5,7 @@ import { markdownConverter } from '../markdownConverter';
 import { validateMaxdown } from './validateMaxdown';
 
 export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
-    htmlContent = spaceTrim(htmlContent || '');
+    htmlContent = spaceTrim(htmlContent || '' /* <- TODO: [👧 */);
 
     if (!htmlContent.startsWith('<div')) {
         htmlContent = `<div>${htmlContent}</div>`;

@@ -1,5 +1,6 @@
 import MonacoEditor from '@monaco-editor/react';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
+import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
 import { Modal } from '../Modal/00-Modal';
 import styles from './EditContentModal.module.css';
 
@@ -24,7 +25,7 @@ export function EditContentModal() {
                         return;
                     }
                     modifyWallpaper((modifiedWallpaper) => {
-                        modifiedWallpaper.content = newContent;
+                        modifiedWallpaper.content = validateMaxdown(newContent);
                         modifiedWallpaper.saveStage = 'EDITED';
                         return modifiedWallpaper;
                     });

@@ -4,7 +4,7 @@ import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 
 export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
-    maxdownContent = spaceTrim(maxdownContent || '') as string_maxdown;
+    maxdownContent = spaceTrim(maxdownContent || '' /* <- TODO: [👧 */) as string_maxdown;
 
     let html = markdownConverter.makeHtml(maxdownContent);
 
