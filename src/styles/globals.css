@@ -38,6 +38,23 @@ a.button {
     text-decoration: none !important;
 }
 
+call-to-action {
+    /*
+    TODO: !!! This should be part of component OR better organized
+    TODO: Always align <call-to-action/> to the middle
+    */
+    border: solid 1px rgba(var(--palette-1-triplet), 0.8);
+    background-color: rgba(var(--palette-2-triplet), 0.8);
+    color: rgba(var(--palette-1-triplet), 0.8);
+    border-radius: 6px;
+    padding: 7px 18px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
 .emoji {
     display: inline !important;
     width: 1.8em;

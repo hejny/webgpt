@@ -12,6 +12,7 @@ import { Content } from '../Content/Content';
 import { MaxdownContent } from '../Content/Maxdown/MaxdownContent';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
+import { InlineScript } from '../InlineScript/InlineScript';
 import { Section } from '../Section/Section';
 import { getPageContent } from './getPageContent';
 import styles from './WallpaperContent.module.css';
@@ -121,6 +122,39 @@ export function WallpaperContentSection() {
                     <MaxdownContent {...{ content, isEditable, onMaxdownChange }} />
                 </ExportCommentedBlock>
             </AiComponentsRoot>
+
+            <InlineScript
+                id="call-to-action"
+                // TODO: !!! Make/change some system like <AiComponentsRoot/> for custom html components
+            >
+                {`
+
+                    class CallToAction extends HTMLAnchorElement {
+                        constructor() {
+                            super();
+                        }
+
+                        connectedCallback() {
+
+                            // TODO: !!! This must work
+                            console.info('Connected to <call-to-action/> component');
+
+
+
+                            this.addEventListener('click', () => {
+
+                                // TODO: !!! This must work
+                                console.info('Clicked on <call-to-action/> component');
+                            });
+                        }
+                    }
+
+
+                    console.info('🌟 Defining <call-to-action/> component');
+                    customElements.define('call-to-action', CallToAction, { extends: 'a' });
+            
+                `}
+            </InlineScript>
         </Section>
     );
 }
