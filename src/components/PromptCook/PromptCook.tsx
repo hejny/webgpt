@@ -214,10 +214,16 @@ export function PromptCook() {
                     <button
                         className={styles.button}
                         onClick={() => {
+                            if (!confirm(`Do you want to replace all files with defaults?`)) {
+                                return;
+                            }
+
                             const newFiles = [...defaultFiles];
 
                             for (const oldFile of files) {
                                 const newFile = newFiles.find((file) => file.name === oldFile.name);
+
+                                // TODO: The logic of ifs is not very clear, refactor
 
                                 if (!newFile) {
                                     newFiles.push(oldFile);
@@ -226,22 +232,24 @@ export function PromptCook() {
 
                                 if (
                                     newFile.ptbkSource === oldFile.ptbkSource &&
-                                    newFile.inputParams === oldFile.inputParams &&
-                                    newFile.outputParams === oldFile.outputParams
+                                    JSON.stringify(newFile.inputParams) === JSON.stringify(oldFile.inputParams) &&
+                                    JSON.stringify(newFile.outputParams) === JSON.stringify(oldFile.outputParams)
                                 ) {
                                     continue;
                                 }
 
                                 if (!confirm(`Do you want to replace ${oldFile.name} with default?`)) {
-                                    continue;
+                                    newFile.ptbkSource = oldFile.ptbkSource;
+                                    newFile.inputParams = { ...oldFile.inputParams };
+                                    newFile.outputParams = {
+                                        ...oldFile.outputParams,
+                                    } as IFileInStorage['outputParams'];
                                 }
-
-                                newFile.ptbkSource = oldFile.ptbkSource;
-                                newFile.inputParams = oldFile.inputParams;
-                                newFile.outputParams = oldFile.outputParams;
                             }
 
                             setFiles(newFiles);
+
+                            window.location.reload();
                         }}
                     >
                         Defaults
