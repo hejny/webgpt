@@ -39,13 +39,13 @@ interface MaxdownContentProps {
  * @returns {JSX.Element} - The JSX element for the article
  */
 export function MaxdownContent(props: MaxdownContentProps) {
-    const { content, className, isEditable, mapLinks, onMaxdownChange } = props;
+    const { content, className, isEditable, onMaxdownChange } = props;
 
     const htmlContent = maxdownToHtml(content);
 
     return (
         <HtmlContent
-            {...{ content: htmlContent, isEditable, mapLinks, className }}
+            {...{ content: htmlContent, isEditable, className }}
             onHtmlChange={(htmlContent) => {
                 if (!isEditable) {
                     return;
