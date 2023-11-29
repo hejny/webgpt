@@ -4,21 +4,6 @@ import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
-<<<<<<< HEAD:createNewWallpaper_image.ts
-} from './config';
-import { ImagePromptResult } from './src/ai/text-to-image/0-interfaces/ImagePromptResult';
-import { getImageGenerator } from './src/ai/text-to-image/getImageGenerator';
-import { WebgptTaskProgress } from './src/components/TaskInProgress/task/WebgptTaskProgress';
-import { UploadWallpaperResponse } from './src/pages/api/upload-image';
-import { aspectRatioRangeExplain } from './src/utils/aspect-ratio/aspectRatioRangeExplain';
-import { downscaleWithAspectRatio } from './src/utils/aspect-ratio/downscaleWithAspectRatio';
-import { isInAspectRatioRange } from './src/utils/aspect-ratio/isInAspectRatioRange';
-import { createImageInWorker } from './src/utils/image/createImageInWorker';
-import { measureImageBlob } from './src/utils/image/measureImageBlob';
-import { resizeImageBlob } from './src/utils/image/resizeImageBlob';
-import { IImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { string_image_prompt, string_url_image, uuid } from './src/utils/typeAliases';
-=======
 } from '../../../../config';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { UploadWallpaperResponse } from '../../../pages/api/upload-image';
@@ -31,7 +16,6 @@ import { resizeImageBlob } from '../../../utils/image/resizeImageBlob';
 import { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
 import { string_image_prompt, string_url_image, uuid } from '../../../utils/typeAliases';
 import { imageGeneratorDialogue } from '../../dialogues/image-generator/imageGeneratorDialogue';
->>>>>>> main:src/workers/functions/createNewWallpaper/createNewWallpaper_image.ts
 
 interface CreateNewWallpaperImageRequest {
     /**
