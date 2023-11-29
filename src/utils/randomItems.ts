@@ -2,6 +2,11 @@ import { randomItem } from './randomItem';
 
 /**
  * Pick multiple distinct random items from the recieved items
+ * If there is not enough items, throw an error
+ *
+ * Note: There are two simmilar functions:
+ * - `randomItems` which throws error when there is not enough items
+ * - `randomMaxItems` which just returns as many items as possible
  */
 export function randomItems<TItem>(count: number, ...items: Array<TItem>): Array<TItem> {
     if (count === 1) {

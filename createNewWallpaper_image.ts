@@ -2,22 +2,20 @@ import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import {
     COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND,
-    USE_DALLE_VERSION,
     WALLPAPER_IMAGE_ASPECT_RATIO_ALLOWED_RANGE,
     WALLPAPER_IMAGE_MAX_ALLOWED_SIZE,
-} from './config';
-import { ImagePromptResult } from './src/ai/text-to-image/0-interfaces/ImagePromptResult';
-import { getImageGenerator } from './src/ai/text-to-image/getImageGenerator';
-import { WebgptTaskProgress } from './src/components/TaskInProgress/task/WebgptTaskProgress';
-import { UploadWallpaperResponse } from './src/pages/api/upload-image';
-import { aspectRatioRangeExplain } from './src/utils/aspect-ratio/aspectRatioRangeExplain';
-import { downscaleWithAspectRatio } from './src/utils/aspect-ratio/downscaleWithAspectRatio';
-import { isInAspectRatioRange } from './src/utils/aspect-ratio/isInAspectRatioRange';
-import { createImageInWorker } from './src/utils/image/createImageInWorker';
-import { measureImageBlob } from './src/utils/image/measureImageBlob';
-import { resizeImageBlob } from './src/utils/image/resizeImageBlob';
-import { IImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { string_image_prompt, string_url_image, uuid } from './src/utils/typeAliases';
+} from '../../../../config';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
+import { UploadWallpaperResponse } from '../../../pages/api/upload-image';
+import { aspectRatioRangeExplain } from '../../../utils/aspect-ratio/aspectRatioRangeExplain';
+import { downscaleWithAspectRatio } from '../../../utils/aspect-ratio/downscaleWithAspectRatio';
+import { isInAspectRatioRange } from '../../../utils/aspect-ratio/isInAspectRatioRange';
+import { createImageInWorker } from '../../../utils/image/createImageInWorker';
+import { measureImageBlob } from '../../../utils/image/measureImageBlob';
+import { resizeImageBlob } from '../../../utils/image/resizeImageBlob';
+import { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
+import { string_image_prompt, string_url_image, uuid } from '../../../utils/typeAliases';
+import { imageGeneratorDialogue } from '../../dialogues/image-generator/imageGeneratorDialogue';
 
 interface CreateNewWallpaperImageRequest {
     /**
@@ -31,7 +29,16 @@ interface CreateNewWallpaperImageRequest {
      */
     readonly wallpaperImage?: Blob;
 
-    // !!! Annotate
+    /**
+     * Same image as wallpaperImage
+     *
+     * Note: This is used to not reupload the same image if it is already uploaded on our CDN
+     */
+    readonly wallpaperUrl?: string_url_image;
+
+    /**
+     * Text prompt which was used to generate the wallpaper image
+     */
     readonly wallpaperPrompt?: string_image_prompt;
 }
 
@@ -61,7 +68,7 @@ export async function createNewWallpaper_image(
     request: CreateNewWallpaperImageRequest,
     onProgress: (taskProgress: WebgptTaskProgress) => void,
 ): Promise<CreateNewWallpaperImageResult> {
-    let { author, wallpaperImage, wallpaperPrompt } = request;
+    let { author, wallpaperImage, wallpaperUrl, wallpaperPrompt } = request;
     const computeColorstats = COLORSTATS_DEFAULT_COMPUTE_IN_FRONTEND;
 
     if ((!wallpaperImage && !wallpaperPrompt) || (wallpaperImage && wallpaperPrompt)) {
@@ -79,47 +86,35 @@ export async function createNewWallpaper_image(
             isDone: false,
         });
 
-        const imageGenerator = getImageGenerator(author);
-
         if (wallpaperPrompt === undefined) {
             throw new Error('wallpaperPrompt is undefined');
             //               <- TODO: ShouldNeverHappenError
         }
 
-        const imagePromptResults = await imageGenerator.generate(
-            {
-                content: wallpaperPrompt,
-                model: `dalle-${USE_DALLE_VERSION}`,
-                modelSettings: {
-                    style: 'vivid',
-                    // <- TODO: !!! To config
-                    // <- TODO: !!! Play with theeese to achieve best results
-                },
-            },
-            onProgress,
-        );
+        const { pickedImage: imagePromptResult } = await imageGeneratorDialogue({
+            message: 'Pick the wallpaper image for your website',
+            defaultImagePrompt: wallpaperPrompt!,
+        });
 
-        let imagePromptResult: ImagePromptResult;
+        await onProgress({
+            name: 'image-generate',
+            isDone: true,
+        });
 
-        if (imagePromptResults.length === 0) {
-            throw new Error('No images generated');
-        } else if (imagePromptResults.length > 1) {
-            console.warn('More than one image generated, using the first one');
-            // TODO: !!! Allow to pick the best one + generate more
-            imagePromptResult = imagePromptResults[0]!;
-        } else {
-            imagePromptResult = imagePromptResults[0]!;
-        }
+        await onProgress({
+            name: 'image-generate-download',
+            title: 'Downloading image',
+            isDone: false,
+        });
 
         // TODO: [🧠] Is there some way to save normalized prompt to the database along the wallpaper
         //     > wallpaperPrompt = imagePromptResult.normalizedPrompt.content;
 
-        // !!! No need to use proxy - REMOVE
-        // > wallpaperImage  wallpaperImage = await fetchImage(imagePromptResult.imageSrc);
-        wallpaperImage = await fetch(imagePromptResult.imageSrc).then((response) => response.blob());
+        wallpaperUrl = imagePromptResult.imageSrc;
+        wallpaperImage = await fetch(wallpaperUrl).then((response) => response.blob());
 
         await onProgress({
-            name: 'image-generate',
+            name: 'image-generate-download',
             isDone: true,
         });
     }
@@ -183,7 +178,10 @@ export async function createNewWallpaper_image(
         isDone: false,
     });
 
-    const wallpaperForUpload = await resizeImageBlob(wallpaperImage, naturalSize);
+    let wallpaperForUpload: Blob;
+    if (!wallpaperUrl) {
+        wallpaperForUpload = await resizeImageBlob(wallpaperImage, naturalSize);
+    }
     const wallpaperForColorAnalysis = await resizeImageBlob(
         wallpaperImage,
         downscaleWithAspectRatio(naturalSize, computeColorstats.preferredSize),
@@ -207,32 +205,39 @@ export async function createNewWallpaper_image(
     //-------[ / Color analysis ]---
     //===========================================================================
     //-------[ Upload image: ]---
-    await onProgress({
-        name: 'upload-wallpaper-image',
-        title: 'Uploading image',
-        isDone: false,
-        // TODO: Make it more granular
-    });
-    const formData = new FormData();
-    formData.append('wallpaper', wallpaperForUpload);
+    if (!wallpaperUrl) {
+        await onProgress({
+            name: 'upload-wallpaper-image',
+            title: 'Uploading image',
+            isDone: false,
+            // TODO: Make it more granular
+        });
+        const formData = new FormData();
+        formData.append('wallpaper', wallpaperForUpload!);
 
-    const response = await fetch('/api/upload-image', {
-        method: 'POST',
-        body: formData,
-    });
+        const response = await fetch('/api/upload-image', {
+            method: 'POST',
+            body: formData,
+        });
 
-    if (response.ok === false) {
-        throw new Error(`Upload wallpaper failed with status ${response.status}`);
+        if (response.ok === false) {
+            throw new Error(`Upload wallpaper failed with status ${response.status}`);
+        }
+
+        const uploadWallpaperResponse = (await response.json()) as UploadWallpaperResponse;
+        wallpaperUrl = uploadWallpaperResponse.wallpaperUrl;
+        await onProgress({
+            name: 'upload-wallpaper-image',
+            isDone: true,
+        });
+        console.info({ wallpaperUrl });
     }
-
-    const { wallpaperUrl } = (await response.json()) as UploadWallpaperResponse;
-    await onProgress({
-        name: 'upload-wallpaper-image',
-        isDone: true,
-    });
-    console.info({ wallpaperUrl });
     //-------[ /Upload image ]---
     //===========================================================================
 
     return { wallpaperUrl, originalSize, colorStats: await colorStatsPromise };
 }
+
+/**
+ * TODO: [🧠][♒] Watermark image
+ */

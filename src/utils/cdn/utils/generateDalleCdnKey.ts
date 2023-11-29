@@ -15,7 +15,7 @@ export function generateDalleCdnKey(prompt: DallePrompt, image: Buffer): string_
 }
 
 /**
- * IDEALLY along the wallpaper LODs
+ * TODO: Save IDEALLY along the wallpaper LODs
  * TODO: Way how to garbage unused uploaded files
  * TODO: Probably saparate util countBufferHash
  */

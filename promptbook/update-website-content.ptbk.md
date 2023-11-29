@@ -7,45 +7,45 @@ Instructions for updating web page content using [🌠 Prompt template pipelines
 -   Use chat
 <!-- TODO: [🌚]> - Use GPT-3.5 -->
 -   Input param `{oldContent}` Original content of the web
--   Input param `{rawAssigment}` Request from the user what to change
+-   Input param `{rawAssignment}` Request from the user what to change
 -   Output param `{newContent}` New content of the web
 
-## 🖋 Enhance the assigment
+## 🖋 Enhance the assignment
 
 -   Use completion
 -   Postprocessing `spaceTrim`
 
 ```
-Act as an experienced webdesigner and manager, you have a raw assigment from the user what to change on the web.
-Make a proffesional assigment from it.
+Act as an experienced webdesigner and manager, you have a raw assignment from the user what to change on the web.
+Make a proffesional assignment from it.
 
 ## Rules
 - Do NOT make it long
 - Do NOT greeting or signature
 - Do NOT add polite words like "please" or "thank"
-- Preserve the language of the original assigment
+- Preserve the language of the original assignment
 
-## Original assigment:
-{rawAssigment}
+## Original assignment:
+{rawAssignment}
 
-## Proffesional but short assigment:
+## Proffesional but short assignment:
 ```
 
-`-> {proffesionalAssigment}` Proffesional looking request for change
+`-> {proffesionalAssignment}` Proffesional looking request for change
 
-## 👤 Specifying the assigment
+## 👤 Specifying the assignment
 
 -   Prompt dialog
 
 It this the change you want to make?
 
 ```
-{proffesionalAssigment}
+{proffesionalAssignment}
 ```
 
-`-> {finalAssigment}` Final request for change
+`-> {finalAssignment}` Final request for change
 
-## 🖋 Apply assigment
+## 🖋 Apply assignment
 
 -   Use completion
 -   Postprocessing `spaceTrim`
@@ -53,13 +53,13 @@ It this the change you want to make?
 ```
 Act as an experienced copywriter and modify the markdown content of the page according to the user prompt.
 
-## Assigment:
-{finalAssigment}
+## Assignment:
+{finalAssignment}
 
 ## Original content:
 {oldContent}
 
-## Content changed according to the assigment:
+## Content changed according to the assignment:
 ```
 
 `-> {newContent}`

@@ -1,4 +1,4 @@
-import { string_markdown } from "../typeAliases";
+import { string_markdown } from '../typeAliases';
 
 const LINKS = {
     Collboard: 'https://collboard.com',
@@ -28,3 +28,5 @@ export function linkMarkdown(contentText: string_markdown): string_markdown {
 
     return contentMarkdown;
 }
+
+// TODO: !! [🧠] Use in maxdownToHtml and htmlToMaxdown

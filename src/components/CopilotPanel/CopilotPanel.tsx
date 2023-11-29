@@ -20,6 +20,7 @@ import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
+import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
@@ -27,7 +28,7 @@ import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { PublishLink } from '../PublishModal/PublishLink';
-import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
+import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 
@@ -51,7 +52,7 @@ export function CopilotPanel() {
     );
     const modifyWallpaperFont = useCallback(() => {
         modifyWallpaper((modifiedWallpaper) => {
-            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont);
+            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont.fontFamily);
             modifiedWallpaper.saveStage = 'EDITED';
             return modifiedWallpaper;
         });
@@ -115,14 +116,14 @@ export function CopilotPanel() {
             )(
                 {
                     oldContent,
-                    rawAssigment: prompt,
+                    rawAssignment: prompt,
                 },
                 (taskProgress) => {
                     console.info('CopilotPanel: Update wallpaper content: ', { taskProgress });
                 },
             );
 
-            const newContentWithFont = addFontToContent(newContent || '', font);
+            const newContentWithFont = addFontToContent(validateMaxdown(newContent || ''), font);
 
             /*/
             const newContentWithMetadata = spaceTrim(
@@ -222,7 +223,7 @@ export function CopilotPanel() {
                                 height={25} /* <-[🧥] */
                             />
                         ) : (
-                            <TorusInteractiveImage width={55} height={55} />
+                            <LoadingInteractiveImage width={55} height={55} />
                         )}
                     </button>
                 </Hint>
@@ -323,7 +324,7 @@ export function CopilotPanel() {
                         <li className={styles.auto}>
                             <ImportFonts
                                 fonts={
-                                    new Set([randomFont])
+                                    new Set([randomFont.fontFamily])
                                 } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
                             />
                             <button onClick={modifyWallpaperFont}>

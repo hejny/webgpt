@@ -1,5 +1,4 @@
 import MonacoEditor from '@monaco-editor/react';
-import { SetValueAction } from 'babylonjs';
 import { classNames } from '../../utils/classNames';
 import { useTouchDeviceDetection } from '../../utils/hooks/useTouchDeviceDetection';
 import { string_css_class, string_script } from '../../utils/typeAliases';
@@ -10,6 +9,11 @@ interface CodeEditorProps {
      * The code
      */
     defaultValue: string_script;
+
+    /**
+     * If true, the editor is read-only
+     */
+    isReadOnly?: true;
 
     /**
      * The code
@@ -26,7 +30,7 @@ interface CodeEditorProps {
  * Renders a Monaco editor OR simple <textarea/> for touch devices
  */
 export function CodeEditor(props: CodeEditorProps) {
-    const { defaultValue, onChange, className } = props;
+    const { defaultValue, isReadOnly, onChange, className } = props;
 
     const isTouchDevice = useTouchDeviceDetection();
 
@@ -50,11 +54,13 @@ export function CodeEditor(props: CodeEditorProps) {
             language={'markdown' /* <- TODO: !! Allow to pass */}
             options={{
                 wordWrap: 'on',
-                readOnly: true,
-                readOnlyMessage: {
-                    value: 'Output can not be edited.',
-                    isTrusted: true,
-                },
+                readOnly: isReadOnly,
+                readOnlyMessage: !isReadOnly
+                    ? undefined
+                    : {
+                          value: 'Output can not be edited.',
+                          isTrusted: true,
+                      },
                 lineNumbers: 'off',
                 minimap: { enabled: false },
 

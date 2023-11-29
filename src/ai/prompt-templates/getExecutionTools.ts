@@ -4,9 +4,9 @@ import { RemoteNaturalExecutionTools } from '@promptbook/remote-client';
 import type { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../config';
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { uuid } from '../../utils/typeAliases';
+import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 
 /**
  * Theese are tools for PTP execution
@@ -55,10 +55,12 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                     // TODO: Configure how many retries
                     for (let i = 0; i < 3; i++) {
-                        answer = await promptDialogue({
+                        const response = await simpleTextDialogue({
                             ...options,
-                            prompt: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
+                            message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
                         });
+
+                        answer = response.answer;
 
                         if (answer !== null && spaceTrim(answer) !== '') {
                             break;

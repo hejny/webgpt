@@ -7,7 +7,7 @@ Instrukce pro úpravu obsahu webové stránky za pomocí [🌠 Prompt template p
 -   Use chat
 <!-- TODO: [🌚]> - Use GPT-3.5 -->
 -   Input param `{oldContent}` Původní obsah webu
--   Input param `{rawAssigment}` Požadavek od uživatele na změnu
+-   Input param `{rawAssignment}` Požadavek od uživatele na změnu
 -   Output param `{newContent}` Nový obsah webu
 
 <!--
@@ -22,12 +22,12 @@ Udělejte si z toho profesionální a strukturované zadání.
 
 ## Surové zadání ve znění od zákazníka
 
-{rawAssigment}
+{rawAssignment}
 
 ## Zadání
 ```
 
-`-> {proffesionalAssigment}` Profesionálně vypadající požadavek na změnu
+`-> {proffesionalAssignment}` Profesionálně vypadající požadavek na změnu
 
 ## 👤 Schválení vylepšeného zadání
 
@@ -36,10 +36,10 @@ Udělejte si z toho profesionální a strukturované zadání.
 Je to změna, kterou chcete provést?
 
 ```
-{proffesionalAssigment}
+{proffesionalAssignment}
 ```
 
-`-> {finalAssigment}` Finální žádost o změnu
+`-> {finalAssignment}` Finální žádost o změnu
 
 -->
 
@@ -53,7 +53,7 @@ Jste zkušený copywriter a upravujete obsah stránky podle pokynů uživatele.
 
 ## Úkol
 
-{rawAssigment}
+{rawAssignment}
 
 ## Původní obsah
 

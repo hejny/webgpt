@@ -15,6 +15,7 @@ import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
 import { getHardcodedWallpapersDir } from '../utils/hardcoded-wallpaper/getHardcodedWallpapersDir';
+import { validateMaxdown } from '../../src/components/Content/Maxdown/validateMaxdown';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -103,18 +104,18 @@ async function repairWallpapersContent({
 
             let content = await readFile(contentFilePath, 'utf-8');
             const originalContent = content;
-            let title = extractTitleFromContent(content);
+            let title = extractTitleFromContent(validateMaxdown(content));
 
             if (isRepairingFonts) {
                 let font =
                     content.match(/<!--font:(?<font>.*)-->/)?.groups
                         ?.font; /* <- TODO: There can be more fonts in document */
-                if (font && !FONTS.includes(font)) {
-                    const existingFont = FONTS.find((existingFont) => font!.includes(existingFont));
+                if (font && !FONTS.map(({ fontFamily }) => fontFamily).includes(font)) {
+                    const existingFont = FONTS.find((existingFont) => font!.includes(existingFont.fontFamily));
 
                     if (existingFont) {
-                        content = content.replace(font, existingFont);
-                        font = existingFont;
+                        content = content.replace(font, existingFont.fontFamily);
+                        font = existingFont.fontFamily;
                     }
                 }
 

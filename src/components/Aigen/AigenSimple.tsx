@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './AigenSimple.module.css';
 
@@ -12,3 +11,7 @@ export function AigenSimple() {
         </WallpaperLink>
     );
 }
+
+/**
+ * TODO: [🧠][♒] Watermark image
+ */

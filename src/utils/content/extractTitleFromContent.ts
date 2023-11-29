@@ -1,9 +1,11 @@
-import { markdownConverter } from '../../components/MarkdownContent/markdownConverter';
-import { string_html, string_markdown, title } from '../typeAliases';
+import { markdownConverter } from '../../components/Content/markdownConverter';
+import { string_html, string_markdown, string_maxdown, title } from '../typeAliases';
 import { detectContentFormat } from './detectContentFormat';
 import { extractTitleFromHtml } from './extractTitleFromHtml';
 
-export function extractTitleFromContent(content: string_markdown | string_html): Exclude<title, JSX.Element> | null {
+export function extractTitleFromContent(
+    content: string_maxdown | string_markdown | string_html,
+): Exclude<title, JSX.Element> | null {
     const format = detectContentFormat(content);
 
     if (format === 'text') {

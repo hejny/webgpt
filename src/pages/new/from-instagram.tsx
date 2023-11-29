@@ -21,13 +21,13 @@ import { fetchImage } from '../../utils/scraping/fetchImage';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_business_category_name } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
 
 export default function NewWallpaperFromInstagramPage() {
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
+    const [isRunning, setRunning] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
@@ -58,7 +58,7 @@ export default function NewWallpaperFromInstagramPage() {
                                 </>
                             }
                             onPrompt={async (prompt) => {
-                                setWorking(true);
+                                setRunning(true);
                                 setTasksProgress([
                                     {
                                         // TODO: Use here taskify instead
@@ -174,6 +174,7 @@ export default function NewWallpaperFromInstagramPage() {
                                         `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
                                     );
                                     // Note: No need to setWorking(false); because we are redirecting to another page
+                                    //       [0] OR to do it in the finally block
                                 } catch (error) {
                                     if (!(error instanceof Error)) {
                                         throw error;
@@ -193,9 +194,9 @@ export default function NewWallpaperFromInstagramPage() {
                                             `,
                                         ),
                                     );
-                                    setWorking(false);
+                                    setRunning(false);
                                     setTasksProgress([]);
-                                }
+                                } // <- Note: [0] No finally block because we are redirecting to another page
                             }}
                         />
                         <Link
@@ -215,7 +216,7 @@ export default function NewWallpaperFromInstagramPage() {
                     </Center>
                 </main>
 
-                {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+                {isRunning && <TasksInProgress {...{ tasksProgress }} />}
             </div>
         </>
     );

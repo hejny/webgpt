@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import OpenAI from 'openai';
 import { ImageGenerateParams } from 'openai/resources';
+import spaceTrim from 'spacetrim';
 import { Writable } from 'type-fest';
 import { Vector } from 'xyzt';
 import { CDN } from '../../../../config';
@@ -39,6 +40,18 @@ export class DalleImageGenerator implements ImageGenerator {
             normalizedPrompt.model = 'dall-e-2';
         } else if (normalizedPrompt.model === 'dalle-3') {
             normalizedPrompt.model = 'dall-e-3';
+        }
+
+        if (this.options.isVerbose) {
+            console.info(
+                spaceTrim(
+                    (block) => `
+                        👨‍🎨 Generating image via ${normalizedPrompt.model}
+
+                        ${block(originalPrompt.content)}
+                    `,
+                ),
+            );
         }
 
         // TODO: Maybe check here Dalle version
@@ -90,6 +103,16 @@ export class DalleImageGenerator implements ImageGenerator {
 
         if (responseImage.revised_prompt) {
             normalizedPrompt.content = responseImage.revised_prompt;
+        }
+
+        if (this.options.isVerbose) {
+            console.info(
+                spaceTrim(`
+                    👨‍🎨 Image generated
+                    
+                    ${imageSrc}
+                `),
+            );
         }
 
         return [

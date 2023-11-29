@@ -17,16 +17,24 @@ import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid o
 import { useLocale } from '../../utils/hooks/useLocale';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/workerify/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 
 export default function NewWallpaperFromIdeaPage() {
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
+    const [isRunning, setRunning] = useState(false);
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const placeholders = useMemo(() => shuffleItems('Restaurace', 'Osobní web', 'Kavárna'), []);
+    const placeholders = useMemo(
+        () =>
+            shuffleItems(
+                ...{ en: ['Restaurant', 'Personal website', 'Café'], cs: ['Restaurace', 'Osobní web', 'Kavárna'] }[
+                    locale
+                ],
+            ),
+        [locale],
+    );
 
     return (
         <>
@@ -53,7 +61,7 @@ export default function NewWallpaperFromIdeaPage() {
                                 </>
                             }
                             onPrompt={async (idea) => {
-                                setWorking(true);
+                                setRunning(true);
                                 setTasksProgress([
                                     {
                                         // TODO: Use here taskify instead
@@ -84,6 +92,7 @@ export default function NewWallpaperFromIdeaPage() {
                                         `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
                                     );
                                     // Note: No need to setWorking(false); because we are redirecting to another page
+                                    //       [0] OR to do it in the finally block
                                 } catch (error) {
                                     if (!(error instanceof Error)) {
                                         throw error;
@@ -103,9 +112,9 @@ export default function NewWallpaperFromIdeaPage() {
                                             `,
                                         ),
                                     );
-                                    setWorking(false);
+                                    setRunning(false);
                                     setTasksProgress([]);
-                                }
+                                } // <- Note: [0] No finally block because we are redirecting to another page
                             }}
                         />
                         <Link
@@ -118,14 +127,14 @@ export default function NewWallpaperFromIdeaPage() {
                         >
                             <>
                                 {/* [⛳] */}
-                                <Translate locale="en">Rád bych se inspiroval</Translate>
-                                <Translate locale="cs">I need an inspiration</Translate>
+                                <Translate locale="en">I need an inspiration</Translate>
+                                <Translate locale="cs">Rád bych se inspiroval</Translate>
                             </>
                         </Link>
                     </Center>
                 </main>
 
-                {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+                {isRunning && <TasksInProgress {...{ tasksProgress }} />}
             </div>
         </>
     );
