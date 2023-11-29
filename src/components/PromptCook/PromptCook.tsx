@@ -246,7 +246,25 @@ export function PromptCook() {
                     >
                         Defaults
                     </button>
-                    
+                    <button
+                        className={styles.button}
+                        onClick={() => {
+                            if (!confirm(`Do you want to delete ${currentFile.name}?`)) {
+                                return;
+                            }
+                            const newFiles = files.filter((file) => file.name !== currentFileName);
+
+                            if (newFiles.length === 0) {
+                                alert('You can not delete the last file.');
+                                return;
+                            }
+
+                            setCurrentFileName(newFiles[0]?.name!);
+                            setFiles(newFiles);
+                        }}
+                    >
+                        Delete
+                    </button>
                     <button
                         className={styles.button}
                         onClick={() => {
