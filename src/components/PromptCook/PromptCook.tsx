@@ -2,10 +2,11 @@ import MonacoEditor from '@monaco-editor/react';
 import { createPtpExecutor, PromptTemplatePipeline } from '@promptbook/core';
 import type { PromptTemplatePipelineString, TaskProgress } from '@promptbook/types';
 import { normalizeToKebabCase } from 'n12';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import enhanceTextCs from '../../../promptbook/other/enhance-text-cs.ptbk.md';
 import promptcookSample from '../../../promptbook/other/promptcook-sample.ptbk.md';
+import tldrTextCs from '../../../promptbook/other/tldr-text-cs.ptbk.md';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
@@ -18,6 +19,13 @@ import { CodeEditor } from '../CodeEditor/CodeEditor';
 import { Select } from '../Select/Select';
 import styles from './PromptCook.module.css';
 
+interface IFileInStorage {
+    name: string_name;
+    ptbkSource: PromptTemplatePipelineString;
+    inputParams: /* Parameters & */ { inputText: string };
+    outputParams?: /*Parameters & */ { outputText: string };
+}
+
 /**
  * Renders a prompt cook - testing ground for prompt book
  */
@@ -27,25 +35,33 @@ export function PromptCook() {
         'enhance-text.cs.ptbk' as string_name,
     );
 
-    const [files, setFiles] = useJsonStateInLocalstorage<
-        Array<{
-            name: string_name;
-            ptbkSource: PromptTemplatePipelineString;
-            inputParams: /* Parameters & */ { inputText: string };
-            outputParams?: /*Parameters & */ { outputText: string };
-        }>
-    >('promptcook-files', [
-        {
-            name: 'enhance-text.cs.ptbk',
-            ptbkSource: enhanceTextCs,
-            inputParams: {
-                inputText: 'hello',
+    const defaultFiles = useMemo<Array<IFileInStorage>>(
+        () => [
+            {
+                name: 'enhance-text.cs.ptbk',
+                ptbkSource: enhanceTextCs,
+                inputParams: {
+                    inputText: 'ahoj, jak se mas',
+                },
+                outputParams: {
+                    outputText: 'Ahoj, jak se máš?',
+                },
             },
-            outputParams: {
-                outputText: 'Hello',
+            {
+                name: 'tldr-text.cs.ptbk',
+                ptbkSource: tldrTextCs,
+                inputParams: {
+                    inputText:
+                        'Jsi zkušený copywriter s vytříbeným jazykem a smyslem pro detail vám bylo svěřeno zpracování následujícího textu. Tento text má být součástí připravované marketingové kampaně.',
+                },
+                outputParams: {
+                    outputText: 'Jsi copywriter a píšeš texty pro marketingové kampaně.',
+                },
             },
-        },
-    ]);
+        ],
+        [],
+    );
+    const [files, setFiles] = useJsonStateInLocalstorage<Array<IFileInStorage>>('promptcook-files', defaultFiles);
 
     const currentFile = files.find((file) => file.name === currentFileName);
 
@@ -110,6 +126,8 @@ export function PromptCook() {
         <>
             <div className={styles.PromptCook}>
                 <div className={styles.menu}>
+                    {/*
+                    TODO: [🧠] What is the best way to change name of the "file"?
                     <input
                         type="text"
                         value={currentFile.name}
@@ -122,6 +140,7 @@ export function PromptCook() {
                             setCurrentFileName(name);
                         }}
                     />
+                    */}
                     <Select
                         value={currentFileName}
                         options={Object.fromEntries([...files.map((file) => [file.name, file.name]), ['__NEW__', '+']])}
@@ -190,6 +209,69 @@ export function PromptCook() {
                 <div className={styles.controls}>
                     <button className={styles.button} onClick={executePtbk}>
                         🚀 Run
+                    </button>
+
+                    <button
+                        className={styles.button}
+                        onClick={() => {
+                            if (!confirm(`Do you want to replace all files with defaults?`)) {
+                                return;
+                            }
+
+                            const newFiles = [...defaultFiles];
+
+                            for (const oldFile of files) {
+                                const newFile = newFiles.find((file) => file.name === oldFile.name);
+
+                                // TODO: The logic of ifs is not very clear, refactor
+
+                                if (!newFile) {
+                                    newFiles.push(oldFile);
+                                    continue;
+                                }
+
+                                if (
+                                    newFile.ptbkSource === oldFile.ptbkSource &&
+                                    JSON.stringify(newFile.inputParams) === JSON.stringify(oldFile.inputParams) &&
+                                    JSON.stringify(newFile.outputParams) === JSON.stringify(oldFile.outputParams)
+                                ) {
+                                    continue;
+                                }
+
+                                if (!confirm(`Do you want to replace ${oldFile.name} with default?`)) {
+                                    newFile.ptbkSource = oldFile.ptbkSource;
+                                    newFile.inputParams = { ...oldFile.inputParams };
+                                    newFile.outputParams = {
+                                        ...oldFile.outputParams,
+                                    } as IFileInStorage['outputParams'];
+                                }
+                            }
+
+                            setFiles(newFiles);
+
+                            window.location.reload();
+                        }}
+                    >
+                        Defaults
+                    </button>
+                    <button
+                        className={styles.button}
+                        onClick={() => {
+                            if (!confirm(`Do you want to delete ${currentFile.name}?`)) {
+                                return;
+                            }
+                            const newFiles = files.filter((file) => file.name !== currentFileName);
+
+                            if (newFiles.length === 0) {
+                                alert('You can not delete the last file.');
+                                return;
+                            }
+
+                            setCurrentFileName(newFiles[0]?.name!);
+                            setFiles(newFiles);
+                        }}
+                    >
+                        Delete
                     </button>
                     <button
                         className={styles.button}

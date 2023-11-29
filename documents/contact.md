@@ -2,15 +2,15 @@
 
 ## Contact
 
--   [Email](mailto:pavol@hejny.org)
--   [Messenger](https://m.me/hejny)
--   [Telegram](https://t.me/hejny)
--   https://www.pavolhejny.com/contact
+-   [WebGPT.cz](https://webgpt.cz/)
+-   [pavol@webgpt.cz](mailto:pavol@webgpt.cz)
+-   [jiri@webgpt.cz](mailto:jiri@webgpt.cz)
 
 ## Social Networks
 
--   [Facebook](https://www.facebook.com/profile.php?id=61551015609140) <!-- <- TODO: Change to propper username in future -->
--   [Instagram](https://www.instagram.com/_1_2i_/)
--   [LinkedIn](https://www.linkedin.com/company/1-2i/)
+-   [Facebook](https://www.facebook.com/webgptorg)
+-   [LinkedIn](https://www.linkedin.com/company/98725909/)
+-   [GitHub](https://github.com/hejny/webgpt)
+-   [PromptBook](https://github.com/webgptorg/promptbook)
 
 <!-- TODO: Update -->

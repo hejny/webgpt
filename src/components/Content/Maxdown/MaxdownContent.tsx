@@ -1,4 +1,4 @@
-import { string_css_class, string_href, string_maxdown } from '../../../utils/typeAliases';
+import { string_css_class, string_maxdown } from '../../../utils/typeAliases';
 import { HtmlContent } from '../HtmlContent';
 import { htmlToMaxdown } from './htmlToMaxdown';
 import { maxdownToHtml } from './maxdownToHtml';
@@ -20,12 +20,6 @@ interface MaxdownContentProps {
     isEditable?: boolean;
 
     /**
-     * If set, all <a href="..."> will be mapped by this function
-     * !!! How it is used + !!! Convert
-     */
-    mapLinks?(oldHref: string_href): string_href;
-
-    /**
      * Callback when content is changed
      * returns back converted maxdown
      *
@@ -45,13 +39,13 @@ interface MaxdownContentProps {
  * @returns {JSX.Element} - The JSX element for the article
  */
 export function MaxdownContent(props: MaxdownContentProps) {
-    const { content, className, isEditable, mapLinks, onMaxdownChange } = props;
+    const { content, className, isEditable, onMaxdownChange } = props;
 
     const htmlContent = maxdownToHtml(content);
 
     return (
         <HtmlContent
-            {...{ content: htmlContent, isEditable, mapLinks, className }}
+            {...{ content: htmlContent, isEditable, className }}
             onHtmlChange={(htmlContent) => {
                 if (!isEditable) {
                     return;
