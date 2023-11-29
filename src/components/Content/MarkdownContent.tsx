@@ -16,40 +16,39 @@ interface MarkdownContentProps {
      */
     className?: string_css_class;
 
-    // TODO: !!! Filter unused options
-
     /**
      * Are tags <!--font:Poppins--> detected and applied
      *
      * Note: When you use this you need to include the fonts into the page for example by using <Fonts/> component
+     * @deprecated Use <MaxdownContent/> if you want to use fonts
      */
     isusingFonts?: boolean;
 
-    /*
-    TODO: [0] This is automatically done by showdown
-    /**
-     * Make for each heading in markdown unique id and scroll to hash
-     * /
-    isHashUsed?: boolean;
-    */
-
     /**
      * Is enhanced by using openmoji
+     *
+     * @deprecated Use <MaxdownContent/> if you want to enhance the content
      */
     isUsingOpenmoji?: boolean;
 
     /**
      * Is enhanced by adding links, normalize dashes and emojify
+     *
+     * @deprecated Use <MaxdownContent/> if you want to enhance the content
      */
     isEnhanced?: boolean;
 
     /**
      * Is editable by user
+     *
+     * @deprecated Use <MaxdownContent/> if you want to edit the content
      */
     isEditable?: boolean;
 
     /**
      * If set, all <a href="..."> will be mapped by this function
+     *
+     * @deprecated Use <MaxdownContent/> if you want to enhance the content
      */
     mapLinks?(oldHref: string_href): string_href;
 
@@ -125,7 +124,6 @@ export function MarkdownContent(props: MarkdownContentProps) {
 
     if (isusingFonts) {
         html = html.replace(
-            // TODO: [🔤] DRY
             /<!--font:(.*?)-->/g,
 
             // Note: [💅] Originally here was '$1' but it was changed just to $1 (unquoted)

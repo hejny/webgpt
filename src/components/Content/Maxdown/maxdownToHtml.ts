@@ -3,6 +3,12 @@ import { prettifyHtml } from '../../../export/utils/prettifyHtml';
 import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 
+/**
+ * Converts maxdown to HTML which can be safely used in the page
+ *
+ * @param maxdownContent the maxdown content to convert
+ * @returns the HTML content
+ */
 export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
     maxdownContent = spaceTrim(maxdownContent || '' /* <- TODO: [👧 */) as string_maxdown;
 
@@ -49,9 +55,6 @@ export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
 }
 
 /**
- * !!! Annotate
- * TODO: [🔤] !!!
- *
  * TODO: [🧠] Do here somewhere normalizeDashes
  * TODO: [🧠] Do here somewhere linkMarkdown (but with dynamic list of what to link)
  */

@@ -4,6 +4,13 @@ import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 import { validateMaxdown } from './validateMaxdown';
 
+/**
+ * Parses edited HTML content into maxdown
+ * It is useful for editing in WYSIWYG style
+ *
+ * @param htmlContent the HTML content to parse
+ * @returns the pretty maxdown content
+ */
 export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
     htmlContent = spaceTrim(htmlContent || '' /* <- TODO: [👧 */);
 
@@ -85,7 +92,3 @@ export function htmlToMaxdown(htmlContent: string_html): string_maxdown {
 
     return validateMaxdown(markdownContent);
 }
-
-/**
- * !!! Annotate
- */

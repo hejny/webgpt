@@ -8,7 +8,6 @@ export function extractFontsFromContent(content: string_markdown| string_maxdown
     let fonts = new Set<string_font_family>();
 
     content = content.replace(
-        // TODO: [🔤] DRY
         /<!--font:(.*?)-->/g,
         `</div><div style="font-family: '$1';">`,
     );
