@@ -1,9 +1,9 @@
-import { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
+import { string_font_family, string_html, string_markdown, string_maxdown } from '../../utils/typeAliases';
 
 /**
  * A function that takes a string as input and returns a set of fonts extracted from it
  */
-export function extractFontsFromContent(content: string_markdown | string_html): Set<string_font_family> {
+export function extractFontsFromContent(content: string_markdown| string_maxdown | string_html): Set<string_font_family> {
     // Initialize an empty set to store the fonts
     let fonts = new Set<string_font_family>();
 

@@ -2,7 +2,7 @@ import { ReactNode, useEffect } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import { string_css_class } from '../../utils/typeAliases';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../Content/MarkdownContent';
 import { CloseModalLink } from './10-CloseModalLink';
 
 interface ModalProps {

@@ -21,6 +21,9 @@ export function prettifyHtml(html: string_html): string_html {
             trailingComma: 'all',
             arrowParens: 'always',
             printWidth: 120,
+            htmlWhitespaceSensitivity: 'ignore',
+            jsxBracketSameLine: false,
+            bracketSpacing: true,
         });
     } catch (error) {
         console.error('There was an error with prettifying the html, using the original as the fallback', {

@@ -1,6 +1,6 @@
 import { Vector } from 'xyzt';
 import { IImageColorStats } from '../../../../utils/image/utils/IImageColorStats';
-import { string_image_prompt, string_markdown, string_url_image } from '../../../../utils/typeAliases';
+import { string_image_prompt, string_maxdown, string_url_image } from '../../../../utils/typeAliases';
 
 /**
  * Intermediary result of the createNewWallpaper function
@@ -26,7 +26,7 @@ export interface CreateNewWallpaperPrepareResult {
     /**
      * Content of the wallpaper with font applied
      */
-    readonly contentWithFont: string_markdown;
+    readonly contentWithFont: string_maxdown;
 
     /**
      * Text prompt which was used to generate the wallpaper image

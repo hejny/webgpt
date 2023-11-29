@@ -11,13 +11,11 @@ function checkPtbkSource(source: unknown) {
 }
 
 describe(`promptbook of WebGPT`, () => {
-    // list all .ptbk.md files in promptbooks folder
-
-    const ptbkSources = readdirSync(join(__dirname), { withFileTypes: true })
+    const ptbkSources = readdirSync(__dirname, { withFileTypes: true })
+        //                         <- Note: In production it is not good practice to use synchronous functions
+        //                                  But this is only a test before the build, so it is okay
         .filter(({ name }) => name.endsWith('.ptbk.md'))
         .map(({ name }) => ({ name, content: readFileSync(join(__dirname, name), 'utf-8') }));
-
-    console.log(ptbkSources.length);
 
     for (const { name, content } of ptbkSources) {
         it(`should parse a valid ${name}`, () => {

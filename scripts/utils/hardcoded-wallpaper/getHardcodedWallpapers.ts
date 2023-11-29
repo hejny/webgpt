@@ -8,6 +8,7 @@ import {
     LIMIT_WALLPAPERS_EXCLUDE,
     SYSTEM_AUTHOR_ID,
 } from '../../../config';
+import { validateMaxdown } from '../../../src/components/Content/Maxdown/validateMaxdown';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { FULLHD } from '../../../src/constants';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
@@ -112,9 +113,9 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             continue;
         }
 
-        let content = await readFile(contentFilePath, 'utf8');
+        let rawContent = await readFile(contentFilePath, 'utf8');
 
-        content = spaceTrim(content);
+        const content = validateMaxdown(spaceTrim(rawContent));
 
         const title = extractTitleFromContent(content) || 'Untitled';
 

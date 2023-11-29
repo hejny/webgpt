@@ -1,6 +1,7 @@
 import {
     description,
     string_markdown,
+    string_maxdown,
     string_name,
     string_translate_language,
     string_url,
@@ -73,7 +74,7 @@ export interface CreateNewWallpaperRequest {
         /**
          * Content of the section
          */
-        readonly content: string_markdown;
+        readonly content: string_maxdown;
     }>;
 
     /**

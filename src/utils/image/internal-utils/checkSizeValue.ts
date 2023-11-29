@@ -26,3 +26,8 @@ export function checkSizeValue(
         throw new Error(`${chanellName} chanell is lower than 1, it is ${value}`);
     }
 }
+
+
+/**
+ * TODO: [🧠][🚓] Is/which combination it better to use asserts/check, validate or is utility function?
+ */

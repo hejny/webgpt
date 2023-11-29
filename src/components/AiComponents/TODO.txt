@@ -1,1 +1,1 @@
-TODO: Rename to WebGPT components
+TODO: [👨‍🦲] AI Components are deprecated, use custom html components instead

@@ -1,4 +1,4 @@
-import { string_font_family, string_html, string_markdown } from '../../utils/typeAliases';
+import { string_font_family, string_html, string_markdown, string_maxdown } from '../../utils/typeAliases';
 import { addFontToContent } from './addFontToContent';
 import { extractFontsFromContent } from './extractFontsFromContent';
 
@@ -9,7 +9,7 @@ import { extractFontsFromContent } from './extractFontsFromContent';
  * @param newFontFamily new font to use
  * @returns same content with changed fonts
  */
-export function changeFontsInContent<TContent extends string_markdown | string_html>(
+export function changeFontsInContent<TContent extends string_markdown | string_maxdown | string_html>(
     content: TContent,
     newFontFamily: string_font_family,
 ): TContent {
