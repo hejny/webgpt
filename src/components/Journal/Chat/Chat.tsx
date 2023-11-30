@@ -7,7 +7,7 @@ import teacherAvatar from '../../../../public/people/teacher.jpeg';
 import { classNames } from '../../../utils/classNames';
 import { focusRef } from '../../../utils/focusRef';
 import { string_translate_language } from '../../../utils/typeAliases';
-import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../../Content/MarkdownContent';
 import { ChatMessage } from '../interfaces/ChatMessage';
 import { VoiceRecognitionButton } from '../VoiceRecognitionButton/VoiceRecognitionButton';
 import styles from './Chat.module.css';
