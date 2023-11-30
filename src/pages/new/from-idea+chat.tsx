@@ -123,9 +123,13 @@ export default function NewWallpaperFromIdeaPage() {
                 <main>
                     <WorkerChat
                         style={{
-                            // outline: '1px dotted #ff0000',
-                            width: '100vw',
-                            height: '100vh',
+                            // TODO: !! Better layout - link back + WebGPT logo etc. + use css modules
+                            // outline: '1px dotted #00ff00',
+                            position: 'fixed',
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                            bottom: 0,
                         }}
                         isVoiceEnabled
                         voiceLanguage="cs"
