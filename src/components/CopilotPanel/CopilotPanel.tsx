@@ -31,6 +31,7 @@ import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveIma
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 import { CopilotPanelChangeFont } from './CopilotPanelChangeFont';
+import { CopilotPanelRotateColors } from './CopilotPanelRotateColors';
 
 /**
  * Renders the co-pilot panel for text commands to edit the page.
@@ -325,6 +326,9 @@ export function CopilotPanel() {
                         </li>
                         <li className={styles.auto}>
                             <CopilotPanelChangeFont />
+                        </li>
+                        <li className={styles.auto}>
+                            <CopilotPanelRotateColors />
                         </li>
                         <li>
                             <WallpaperLink
