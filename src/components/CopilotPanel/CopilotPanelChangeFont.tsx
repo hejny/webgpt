@@ -6,7 +6,7 @@ import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 
 /**
- * Renders the co-pilot panel for text commands to edit the page.
+ * Renders the co-pilots panel for changing the font of the page.
  */
 export function CopilotPanelChangeFont() {
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
