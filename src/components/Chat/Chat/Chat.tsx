@@ -52,8 +52,9 @@ interface ChatProps {
  * Note: There are two components:
  * - <Chat/> renders chat as it is without any logic - messages you pass as props are rendered as they are
  * - <SimpleChat/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
+ * - <WorkerChat/> renders a chat which runs a async (worker) function on background and user interacts with it
  *
- * Use <SimpleChat/> in most cases.
+ * Use <SimpleChat/> or <WorkerChat/> in most cases.
  */
 export function Chat(props: ChatProps) {
     const { messages, onMessage, isVoiceRecognitionButtonShown, voiceLanguage = 'en', className, style } = props;

@@ -51,8 +51,9 @@ interface SimpleChatProps {
  * Note: There are two components:
  * - <Chat/> renders chat as it is without any logic - messages you pass as props are rendered as they are
  * - <SimpleChat/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
+ * - <WorkerChat/> renders a chat which runs a async (worker) function on background and user interacts with it
  *
- * Use <SimpleChat/> in most cases.
+ * Use <SimpleChat/> or <WorkerChat/> in most cases.
  */
 export function SimpleChat(props: SimpleChatProps) {
     const { isVoiceEnabled, voiceLanguage = 'en', initialMessage, onMessage, className, style } = props;
@@ -120,18 +121,18 @@ export function SimpleChat(props: SimpleChatProps) {
                 {...{ messages, voiceLanguage, className, style }}
                 isVoiceRecognitionButtonShown={isVoiceEnabled}
                 onMessage={async (
-                    teacherMessageContent /* <- TODO: [🍗] Pass here the message object NOT just text */,
+                    userMessageContent /* <- TODO: [🍗] Pass here the message object NOT just text */,
                 ) => {
                     const myMessage: TeacherChatMessage & CompleteChatMessage = {
                         id: v4(),
                         date: new Date() /* <- TODO: Rename+split into created+modified */,
                         from: 'TEACHER',
-                        content: teacherMessageContent,
+                        content: userMessageContent,
                         isComplete: true,
                     };
 
                     messagesDispatch({ type: 'ADD', message: myMessage });
-                    const simpleChatMessageContent = await onMessage(teacherMessageContent);
+                    const simpleChatMessageContent = await onMessage(userMessageContent);
 
                     messagesDispatch({
                         type: 'ADD',

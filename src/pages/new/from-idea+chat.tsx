@@ -1,25 +1,30 @@
 import { useRouter } from 'next/router';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
+import { forEver } from 'waitasecond';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
-import { SimpleChat } from '../../components/Chat/SimpleChat/SimpleChat';
+import { WorkerChat } from '../../components/Chat/WorkerChat/WorkerChat';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
-import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { useLocale } from '../../utils/hooks/useLocale';
-import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 
 export default function NewWallpaperFromIdeaPage() {
     const router = useRouter();
     const locale = useLocale();
+
+    // TODO: !!! [🧠] Maybe remove isRunning from chat interface
     const [isRunning, setRunning] = useState(false);
+    // TODO: !!! [🧠] Maybe remove tasksProgress from chat interface
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
+
+    // TODO: !!! [🧠] How to put in chat interface placehokders and default values?
+    /*
     const placeholders = useMemo(
         () =>
             shuffleItems(
@@ -29,8 +34,9 @@ export default function NewWallpaperFromIdeaPage() {
             ),
         [locale],
     );
+    */
 
-    const runWallpaperCreation = useCallback(
+    const runWallpaperCreation = useCallback<(idea: string) => Promise<never>>(
         async (idea: string) => {
             if (isRunning) {
                 alert(
@@ -40,7 +46,8 @@ export default function NewWallpaperFromIdeaPage() {
                         Please wait until it finishes or refresh the page.
                     `),
                 );
-                return;
+                // TODO: !!! [🧠] Propper way how to handle "WebGPT website creation is already running." in chat interface
+                return forEver();
             }
 
             setRunning(true);
@@ -71,6 +78,8 @@ export default function NewWallpaperFromIdeaPage() {
                 router.push(
                     `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
                 );
+                return forEver();
+
                 // Note: No need to setWorking(false); because we are redirecting to another page
                 //       [0] OR to do it in the finally block
             } catch (error) {
@@ -92,8 +101,13 @@ export default function NewWallpaperFromIdeaPage() {
                         `,
                     ),
                 );
+
+                // TODO: !!! [🧠] Propper way how to handle errors in chat interface
                 setRunning(false);
                 setTasksProgress([]);
+                window.location.reload();
+
+                return forEver();
             } // <- Note: [0] No finally block because we are redirecting to another page
         },
         [isRunning, locale, router],
@@ -107,7 +121,7 @@ export default function NewWallpaperFromIdeaPage() {
 
             <div className={styles.page}>
                 <main>
-                    <SimpleChat
+                    <WorkerChat
                         style={{
                             // outline: '1px dotted #ff0000',
                             width: '100vw',
@@ -116,19 +130,13 @@ export default function NewWallpaperFromIdeaPage() {
                         isVoiceEnabled
                         voiceLanguage="cs"
                         initialMessage="Jaký web chcete vytvořit?"
-                        onMessage={(message) =>
-                            spaceTrim(
-                                (block) => `
-                                    Řekli jste: 
-
-                                    > ${block(message)}  
-                                `,
-                            )
-                        }
+                        workFunction={runWallpaperCreation}
                     />
                 </main>
 
+                {/* !!! [🧠]  
                 {isRunning && <TasksInProgress {...{ tasksProgress }} />}
+                */}
             </div>
         </>
     );
