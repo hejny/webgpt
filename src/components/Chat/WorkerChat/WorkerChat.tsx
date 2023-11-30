@@ -1,5 +1,11 @@
-import { CSSProperties } from 'react';
-import { string_css_class, string_translate_language } from '../../../utils/typeAliases';
+import { CSSProperties, useEffect, useRef, useState } from 'react';
+import spaceTrim from 'spacetrim';
+import type { string_css_class, string_translate_language } from '../../../utils/typeAliases';
+import type { SimpleTextDialogueRequest } from '../../../workers/dialogues/simple-text/interfaces/SimpleTextDialogueRequest';
+import type { SimpleTextDialogueResponse } from '../../../workers/dialogues/simple-text/interfaces/SimpleTextDialogueResponse';
+import { dialoguesQueue } from '../../../workers/lib/dialogues/dialoguesQueue';
+import { DialogueRequestInQueue } from '../../../workers/lib/dialogues/interfaces/DialogueRequestInQueue';
+import { isDialoguesRendered } from '../../../workers/lib/dialogues/isDialoguesRendered';
 import { SimpleChat } from '../SimpleChat/SimpleChat';
 
 interface WorkerChatProps {
@@ -51,17 +57,93 @@ interface WorkerChatProps {
 export function WorkerChat(props: WorkerChatProps) {
     const { isVoiceEnabled, voiceLanguage, initialMessage, workFunction, className, style } = props;
 
+    // TODO: Make hook useLock
+    useEffect(
+        () => {
+            if (isDialoguesRendered.value === true) {
+                throw new Error('There can be only one instance of Dialogues!!! in the app');
+            }
+            isDialoguesRendered.value = true;
+            return () => {
+                isDialoguesRendered.value = false;
+            };
+        },
+        [
+            // Note: Check only once on mount
+        ],
+    );
+
+    const [runningWork, setRunningWork] = useState<null | Promise<never>>(null);
+    const currentDialogueRequestInQueueRef = useRef<null | DialogueRequestInQueue>(null);
     return (
         <SimpleChat
             {...{ isVoiceEnabled, voiceLanguage, initialMessage, className, style }}
             onMessage={async (userMessageContent) => {
-                // !!!
-                workFunction(
-                    userMessageContent,
-                    // TODO: !!! [🧠] Do we want mix taskProgress with WorkerChat?> (taskProgress: WebgptTaskProgress) => {}
-                );
+                if (!runningWork) {
+                    setRunningWork(
+                        /* not await  */ workFunction(
+                            userMessageContent,
+                            // TODO: !!! [🧠] Do we want mix taskProgress with WorkerChat?> (taskProgress: WebgptTaskProgress) => {}
+                        ),
+                    );
+                } else {
+                    if (!currentDialogueRequestInQueueRef.current) {
+                        throw new Error('currentDialogueRequestInQueueRef.current is null');
+                        //               <- TODO: ShouldNeverHappenError
+                    }
+                    currentDialogueRequestInQueueRef.current.response = {
+                        answer: userMessageContent,
+                    } satisfies SimpleTextDialogueResponse;
+                }
 
-                return 'Function running...';
+                console.log('!!!', 'Before await new Promise<DialogueRequestInQueue>');
+
+                const currentDialogueRequestInQueue = await new Promise<DialogueRequestInQueue>((resolve) => {
+                    // TODO: !!! DRY OR Better polling solution
+                    const interval = setInterval(() => {
+                        const dialogueRequestInQueue = dialoguesQueue.find(
+                            (promptInQueue) => promptInQueue.response === undefined,
+                        );
+
+                        console.log('!!!', dialogueRequestInQueue);
+
+                        if (!dialogueRequestInQueue) {
+                            return;
+                        }
+
+                        resolve(dialogueRequestInQueue);
+                        clearInterval(interval);
+                    }, 50 /* <- TODO: POLLING_INTERVAL_MS into config */);
+                });
+
+                console.log('!!!', currentDialogueRequestInQueue);
+
+                currentDialogueRequestInQueueRef.current = currentDialogueRequestInQueue;
+
+                if (currentDialogueRequestInQueue.dialogueTypeName !== 'SIMPLE_TEXT') {
+                    throw new Error(
+                        spaceTrim(
+                            (block) => `
+                                In <WorkerChat/> you can only use SIMPLE_TEXT dialogue.
+                                You are trying to use ${currentDialogueRequestInQueue.dialogueTypeName}.
+                        `,
+                        ),
+                    );
+                }
+
+                const request: SimpleTextDialogueRequest = currentDialogueRequestInQueue.request;
+
+                // TODO: !!! [🧠] Use in some inteligent way request.defaultValue
+
+                return spaceTrim(
+                    (block) => `
+                   
+                        ${block(request.message as string /* <- !!! Check that really string */)}
+
+                        ${block(request.defaultValue as string /* <- !!! Check that really string */)}
+                    
+                    `,
+                );
             }}
         />
     );

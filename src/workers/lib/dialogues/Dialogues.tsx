@@ -22,7 +22,7 @@ export function Dialogues(props: DialoguesProps) {
     useEffect(
         () => {
             if (isDialoguesRendered.value === true) {
-                throw new Error('There can be only one instance of Dialogues in the app');
+                throw new Error('There can be only one instance of Dialogues!!! in the app');
             }
             isDialoguesRendered.value = true;
             return () => {
@@ -34,10 +34,10 @@ export function Dialogues(props: DialoguesProps) {
         ],
     );
 
+    // TODO: !!! DRY OR Better polling solution
     const [currentDialogueRequestInQueue, setCurrentDialogueRequestInQueue] = useState<null | DialogueRequestInQueue>(
         null,
     );
-
     useEffect(() => {
         if (currentDialogueRequestInQueue) {
             return;
