@@ -3,11 +3,14 @@ import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useModal } from '../../utils/hooks/useModal';
 import { useScenario } from '../../utils/hooks/useScenario';
+import { supportDialogues } from '../../workers/dialogues';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
-import { Dialogues } from '../Dialogues/Dialogues';
+import { EditContentModal } from '../EditContentModal/EditContentModal';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
+import { PublishModal } from '../PublishModal/PublishModal';
 import { PreventUnsavedChanges } from './PreventUnsavedChanges';
 
 /**
@@ -20,12 +23,14 @@ export function WallpaperEditing() {
     return (
         <>
             <PreventUnsavedChanges />
-            <Dialogues />
+            <Dialogues {...{ supportDialogues }} />
 
+            {modal === 'publish' && <PublishModal />}
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}
             {modal === 'colors' && <ColorsModal />}
+            {modal === 'edit-content' && <EditContentModal />}
             {/* Note: <EditModal/> was removed in commit a4a37573299fa262ee335ecb1a5b480c409f8627 */}
 
             {modal === null && scenario === 'FROM_SOMETHING' && <CopilotPanel />}

@@ -1,0 +1,14 @@
+export interface DialogueComponentProps<TRequest, TResponse> {
+    /**
+     * The request for the user
+     */
+    readonly request: TRequest;
+
+    /**
+     * The function to call when the user responds to the request.
+     * 
+     * Note: The function must be called exactly once.
+     * Note: It is the responsibility of the dialogue to call it. If it is not called, the dialogue will hang.
+     */
+    respond(response: TResponse): void;
+}

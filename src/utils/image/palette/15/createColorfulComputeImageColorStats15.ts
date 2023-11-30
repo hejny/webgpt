@@ -1,6 +1,6 @@
 import { Promisable } from 'type-fest';
 import { IVector, Vector } from 'xyzt';
-import { TaskProgress } from '../../../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { forARest } from '../../../forARest';
 import { take } from '../../../take/take';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
@@ -56,7 +56,7 @@ export function createColorfulComputeImageColorStats15 /* TODO: <TColorBits exte
 
     const computeImageColorStats = async (
         image: IImage,
-        onProgress: (taskProgress: TaskProgress) => Promisable<void> = () => {},
+        onProgress: (taskProgress: WebgptTaskProgress) => Promisable<void> = () => {},
     ): Promise<IImageColorStatsAdvanced<string>> => {
         await onProgress({
             name: 'colorstats-v15',

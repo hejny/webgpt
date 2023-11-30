@@ -7,8 +7,11 @@
 }
 
 .Scenarios ul {
+    /*/
+    outline: 1px dotted rgb(38, 255, 146);
+    /**/
+
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -17,14 +20,40 @@
     padding: 0;
 }
 
-.Scenarios ul a {
+.Scenarios ul li {
+    /*/
+    outline: 1px dotted rgb(178, 189, 184);
+    /**/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Scenarios ul li a {
     text-decoration: none;
 }
 
-.Scenarios ul a {
+.Scenarios ul li a {
     text-decoration: none;
 }
 
-.Scenarios .scenario {
+.Scenarios ul li .scenario {
     margin: 10px;
+}
+
+.Scenarios ul li .scenario h2 {
+    margin: 0;
+}
+
+.Scenarios ul li.preparing {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 660px) {
+    /* Wrap between 3 and 2 on row */
+
+    .Scenarios ul li.preparing {
+        display: none;
+    }
 }

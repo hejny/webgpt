@@ -13,7 +13,7 @@ export function WallpaperEditingLink() {
     return (
         <div
             // Note: It is intended to have two divs embedded in each other
-            className={classNames('aiai-controls', styles.ControlPanel)}
+            className={classNames('webgpt-controls', styles.ControlPanel)}
         >
             <div className={styles.group}>
                 <Hint id="control-edit-mode" title="Show controls" reapearCount={1}>

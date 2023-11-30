@@ -27,11 +27,11 @@ export function ImportFonts(props: ImportFontsProps) {
         <style
             dangerouslySetInnerHTML={{
                 /* [🎗] */
-                __html: FONTS.filter((font) => fonts.has(font))
+                __html: FONTS.filter((font) => fonts.has(font.fontFamily))
                     .map(
                         (font) =>
                             // TODO: Merge into one import
-                            `@import url(https://fonts.googleapis.com/css2?family=${font
+                            `@import url(https://fonts.googleapis.com/css2?family=${font.fontFamily
                                 .split(' ')
                                 .join('+')}&display=swap);`,
                     )

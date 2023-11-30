@@ -1,11 +1,11 @@
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
-import { uuid } from '../typeAliases';
+import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
+import { string_email, uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
 import { getSupabaseForBrowser } from './getSupabaseForBrowser';
 import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
-interface IProvideClientIdOptions {
+export interface IProvideClientIdOptions {
     /**
      * Is required to have verified email
      * - If `false`, just putting in the email will be enough
@@ -13,7 +13,7 @@ interface IProvideClientIdOptions {
      *
      * Note: [0] Not implemented yet - it will be ignored
      */
-    isVerifiedEmailRequired?: boolean;
+    readonly isVerifiedEmailRequired?: boolean;
 }
 
 /**
@@ -33,15 +33,17 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
 
     const clientId = provideClientIdWithoutVerification();
 
-    const response = await fetch(`/api/client/is-client-verified?clientId=${clientId}`);
+    const response = await fetch(
+        `/api/client/is-client-verified?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
+    );
     const { isClientInserted /* [0],isClientVerified */ } = (await response.json()) as IsClientVerifiedResponse;
 
     if (isClientInserted) {
         return clientId;
     }
 
-    const email = await promptDialogue({
-        prompt: `Please write your email`,
+    const { answer: email } = await simpleTextDialogue({
+        message: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
     });
@@ -50,6 +52,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         throw new Error(`Invalid email`);
     }
 
+    window.localStorage.setItem(`clientEmail`, email as string_email);
     await getSupabaseForBrowser().from('Client').insert({ clientId, email });
 
     return clientId;

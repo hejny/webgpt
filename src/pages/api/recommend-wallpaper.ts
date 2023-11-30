@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
 import { likedStatusToLikeness } from '../../ai/recommendation/likedStatusToLikeness';
 import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
-import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
@@ -11,9 +11,12 @@ import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 export interface RecommendWallpaperResponse {
     // TODO: [🌋] ErrorableResponse
-    recommendedWallpaper: IWallpaperSerialized;
+    readonly recommendedWallpaper: IWallpaperSerialized;
 }
 
+/**
+ * API endpoint handler to recommend new wallpaper to the user according to his previous reactions
+ */
 export default async function recommendWallpaperHandler(
     request: NextApiRequest,
     response: NextApiResponse<RecommendWallpaperResponse>,
@@ -21,9 +24,12 @@ export default async function recommendWallpaperHandler(
     const author = request.query.author;
 
     if (!isValidUuid(author)) {
-        return response
-            .status(400)
-            .json({ message: 'GET param author is not set or not a valid UUID' } as any /* <- [🌋]  */);
+        return response.status(400).json(
+            {
+                message:
+                    'GET param author is not set or not a valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+            } as any /* <- [🌋]  */,
+        );
     }
 
     try {

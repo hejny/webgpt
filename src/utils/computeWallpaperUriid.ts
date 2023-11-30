@@ -1,6 +1,5 @@
-import { nameToUriParts } from 'n12';
 import seedrandom from 'seedrandom';
-import { extractTitleFromContent } from './content/extractTitleFromContent';
+import { computeWallpaperDomainPart } from './computeWallpaperDomainPart';
 import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
@@ -11,33 +10,7 @@ const URIID_VERSION = '2';
 export function computeWallpaperUriid(
     wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'saveStage' | 'isPublic'>,
 ): string_uriid {
-    // console.log('wallpaper.content', wallpaper.content);
-    // (window as any).copy(wallpaper.content);
-
-    let title = extractTitleFromContent(wallpaper.content) || '';
-
-    // Note: Ignore apostrophes and quotes in name to make URL
-    title = title.split("'").join('');
-    title = title.split('"').join('');
-    title = title.split('`').join('');
-    title = title.split('’').join('');
-
-    const allUriParts = nameToUriParts(title);
-
-    let uriParts: Array<string> = [];
-    for (const uriPart of allUriParts) {
-        if (uriParts.length === 0) {
-            uriParts.push(uriPart);
-        } else {
-            const potentialTotalLength = [...uriParts, uriPart].join('-').length;
-
-            if (potentialTotalLength > 30) {
-                break;
-            }
-
-            uriParts.push(uriPart);
-        }
-    }
+    let domainPart = computeWallpaperDomainPart(wallpaper.content);
 
     const { parent, author, src, prompt, colorStats, content } = wallpaper;
 
@@ -70,14 +43,11 @@ export function computeWallpaperUriid(
         URIID_VERSION,
         wallpaper,
         wallpaperContent: wallpaper.content,
-        title,
-        allUriParts,
-        uriParts,
         seed,
         wallpaperPart,
     });
 
-    return `${uriParts.length === 0 ? '' : uriParts.join('-') + '-'}${wallpaperPart}`;
+    return `${domainPart !== 'untitled' ? `${domainPart}-` : ''}${wallpaperPart}`;
 }
 
 /**

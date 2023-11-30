@@ -22,13 +22,13 @@ export const HandwrittenStyle = {
  * Defines the options for the handwriteText function
  */
 interface IHandwriteTextOptions {
-    text: string;
-    color: Color;
-    speed: number;
-    bias: number;
-    width: number;
-    style: keyof typeof HandwrittenStyle;
-    svgElement: SVGElement;
+    readonly text: string;
+    readonly color: Color;
+    readonly speed: number;
+    readonly bias: number;
+    readonly width: number;
+    readonly style: keyof typeof HandwrittenStyle;
+    readonly svgElement: SVGElement;
 }
 
 /**

@@ -8,6 +8,7 @@ import commander from 'commander';
 import { readFile, rm } from 'fs/promises';
 import { join } from 'path';
 import { FONTS } from '../../config';
+import { validateMaxdown } from '../../src/components/Content/Maxdown/validateMaxdown';
 import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
 import { removeContentComments } from '../../src/utils/content/removeContentComments';
 import { commit } from '../utils/autocommit/commit';
@@ -55,7 +56,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                 content.match(/<!--font:(?<font>.*)-->/)?.groups
                     ?.font; /* <- TODO: There can be more fonts in document */
             content = removeContentComments(content);
-            const title = extractTitleFromContent(content);
+            const title = extractTitleFromContent((content));
 
             // TODO: [💵] DRY this checks
             if (title === null) {
@@ -86,7 +87,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                 return;
             }
 
-            if (!font || !FONTS.includes(font)) {
+            if (!font || !FONTS.map(({ fontFamily }) => fontFamily).includes(font)) {
                 await rm(contentFilePath);
                 console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
                 return;

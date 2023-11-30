@@ -30,6 +30,51 @@ export interface Database {
         }
         Relationships: []
       }
+      ImagePromptExecution: {
+        Row: {
+          clientId: string | null
+          createdAt: string
+          id: number
+          prompt: Json | null
+          promptAt: string | null
+          promptContent: string | null
+          ptbkUrl: string | null
+          rawResponse: Json | null
+          result: Json | null
+          resultAt: string | null
+          resultSrc: string | null
+          usedModel: string | null
+        }
+        Insert: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          prompt?: Json | null
+          promptAt?: string | null
+          promptContent?: string | null
+          ptbkUrl?: string | null
+          rawResponse?: Json | null
+          result?: Json | null
+          resultAt?: string | null
+          resultSrc?: string | null
+          usedModel?: string | null
+        }
+        Update: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          prompt?: Json | null
+          promptAt?: string | null
+          promptContent?: string | null
+          ptbkUrl?: string | null
+          rawResponse?: Json | null
+          result?: Json | null
+          resultAt?: string | null
+          resultSrc?: string | null
+          usedModel?: string | null
+        }
+        Relationships: []
+      }
       Prompt: {
         Row: {
           answer: string | null
@@ -81,6 +126,51 @@ export interface Database {
           promptAt?: string | null
           systemMessage?: string | null
           type?: string | null
+        }
+        Relationships: []
+      }
+      PromptExecution: {
+        Row: {
+          clientId: string | null
+          createdAt: string
+          id: number
+          promptAt: string | null
+          promptContent: string | null
+          promptModelRequirements: Json | null
+          promptParameters: Json | null
+          ptpUrl: string | null
+          rawResponse: Json | null
+          resultAt: string | null
+          resultContent: string | null
+          usedModel: string | null
+        }
+        Insert: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          promptAt?: string | null
+          promptContent?: string | null
+          promptModelRequirements?: Json | null
+          promptParameters?: Json | null
+          ptpUrl?: string | null
+          rawResponse?: Json | null
+          resultAt?: string | null
+          resultContent?: string | null
+          usedModel?: string | null
+        }
+        Update: {
+          clientId?: string | null
+          createdAt?: string
+          id?: number
+          promptAt?: string | null
+          promptContent?: string | null
+          promptModelRequirements?: Json | null
+          promptParameters?: Json | null
+          ptpUrl?: string | null
+          rawResponse?: Json | null
+          resultAt?: string | null
+          resultContent?: string | null
+          usedModel?: string | null
         }
         Relationships: []
       }
@@ -181,6 +271,33 @@ export interface Database {
         }
         Relationships: []
       }
+      Value: {
+        Row: {
+          createdAt: string
+          id: number
+          key: string | null
+          note: string | null
+          validUntil: string | null
+          value: Json | null
+        }
+        Insert: {
+          createdAt?: string
+          id?: number
+          key?: string | null
+          note?: string | null
+          validUntil?: string | null
+          value?: Json | null
+        }
+        Update: {
+          createdAt?: string
+          id?: number
+          key?: string | null
+          note?: string | null
+          validUntil?: string | null
+          value?: Json | null
+        }
+        Relationships: []
+      }
       Wallpaper: {
         Row: {
           author: string
@@ -228,6 +345,66 @@ export interface Database {
       }
     }
     Views: {
+      Prompt_stats: {
+        Row: {
+          answer: string | null
+          answerAt: string | null
+          clientId: string | null
+          createdAt: string | null
+          duration: unknown | null
+          externalId: string | null
+          fullCompletion: Json | null
+          id: number | null
+          metadata: Json | null
+          model: string | null
+          modelSettings: Json | null
+          nonce: number | null
+          previousExternalId: string | null
+          prompt: string | null
+          promptAt: string | null
+          systemMessage: string | null
+          type: string | null
+        }
+        Insert: {
+          answer?: string | null
+          answerAt?: string | null
+          clientId?: string | null
+          createdAt?: string | null
+          duration?: never
+          externalId?: string | null
+          fullCompletion?: Json | null
+          id?: number | null
+          metadata?: Json | null
+          model?: string | null
+          modelSettings?: Json | null
+          nonce?: never
+          previousExternalId?: string | null
+          prompt?: string | null
+          promptAt?: string | null
+          systemMessage?: string | null
+          type?: string | null
+        }
+        Update: {
+          answer?: string | null
+          answerAt?: string | null
+          clientId?: string | null
+          createdAt?: string | null
+          duration?: never
+          externalId?: string | null
+          fullCompletion?: Json | null
+          id?: number | null
+          metadata?: Json | null
+          model?: string | null
+          modelSettings?: Json | null
+          nonce?: never
+          previousExternalId?: string | null
+          prompt?: string | null
+          promptAt?: string | null
+          systemMessage?: string | null
+          type?: string | null
+        }
+        Relationships: []
+      }
       Wallpaper_random: {
         Row: {
           author: string | null
@@ -237,6 +414,7 @@ export interface Database {
           id: string | null
           isPublic: boolean | null
           keywords: string[] | null
+          nonce: number | null
           parent: string | null
           prompt: string | null
           src: string | null
@@ -250,6 +428,7 @@ export interface Database {
           id?: string | null
           isPublic?: boolean | null
           keywords?: string[] | null
+          nonce?: never
           parent?: string | null
           prompt?: string | null
           src?: string | null
@@ -263,6 +442,7 @@ export interface Database {
           id?: string | null
           isPublic?: boolean | null
           keywords?: string[] | null
+          nonce?: never
           parent?: string | null
           prompt?: string | null
           src?: string | null

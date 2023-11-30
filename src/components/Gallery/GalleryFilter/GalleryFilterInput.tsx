@@ -1,10 +1,11 @@
 import { debounce } from 'lodash';
+import { useTranslation } from 'next-i18next';
 import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import { ColorInput } from '../../ColorPreview/ColorInput/ColorInput';
-import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../../Content/MarkdownContent';
 import { Select } from '../../Select/Select';
 import styles from './GalleryFilterInput.module.css';
 import { IGalleryFilter, Order } from './IGalleryFilter';
@@ -27,6 +28,7 @@ interface GalleryFilterProps {
 export function GalleryFilterInput(props: GalleryFilterProps) {
     const { defaultFilter, onFilterChange } = props;
 
+    const { t } = useTranslation();
 
     const [fulltext, setFulltext] = useStateWithReporting<string | undefined>(defaultFilter.fulltext, (fulltext) =>
         onFilterChange({ fulltext }),

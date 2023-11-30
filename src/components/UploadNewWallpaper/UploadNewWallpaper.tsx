@@ -1,13 +1,16 @@
 import { useRouter } from 'next/router';
 import { ReactNode, useState } from 'react';
 import spaceTrim from 'spacetrim';
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
+import { useLocale } from '../../utils/hooks/useLocale';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_css_class } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import { joinTasksProgress } from '../TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../TaskInProgress/TasksInProgress';
+import { Translate } from '../Translate/Translate';
 import { UploadZone } from '../UploadZone/UploadZone';
 import styles from './UploadNewWallpaper.module.css';
 
@@ -27,8 +30,11 @@ interface UploadZoneProps {
 export function UploadNewWallpaper(props: UploadZoneProps) {
     const { children, className } = props;
     const router = useRouter();
-    const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>([]);
+    const locale = useLocale();
+    const [isRunning, setRunning] = useState(false);
+    const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
+        [],
+    ); /* <- TODO: [🌄] useTasksProgress + DRY */
 
     return (
         <>
@@ -42,18 +48,21 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         return;
                     }
 
-                    setWorking(true);
+                    console.info('🏳 locale: ', locale);
+
+                    setRunning(true);
                     setTasksProgress([]);
 
                     try {
                         const { wallpaperId } = await createNewWallpaperForBrowser(
                             {
+                                locale,
                                 author: await provideClientId({
-                                    isVerifiedEmailRequired: false,
+                                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                 }),
                                 wallpaperImage: file,
                             },
-                            (newTaskProgress: TaskProgress) => {
+                            (newTaskProgress: WebgptTaskProgress) => {
                                 console.info('☑', newTaskProgress);
                                 setTasksProgress((tasksProgress) =>
                                     joinTasksProgress(...tasksProgress, newTaskProgress),
@@ -72,6 +81,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         alert(
                             // <- TODO: Use here alertDialogue
                             spaceTrim(
+                                // TODO: [🦻] DRY User error message
                                 (block) => `
                                     Sorry for the inconvenience 😔
                                     Something went wrong while making your website.
@@ -82,7 +92,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                                 `,
                             ),
                         );
-                        setWorking(false);
+                        setRunning(false);
                         setTasksProgress([]);
                     }
                 }}
@@ -91,13 +101,23 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                     children
                 ) : (
                     <>
-                        Drop image to
-                        <br />
-                        <b>make your web</b>
+                        {/* [⛳] */}
+                        <Translate locale="en">
+                            {/* [🦟] */}
+                            Drop image to
+                            <br />
+                            <b>make your web</b>
+                        </Translate>
+                        <Translate locale="cs">
+                            {/* [🦟] */}
+                            Přetažením obrázku
+                            <br />
+                            <b>vytvoříte svůj web</b>
+                        </Translate>
                     </>
                 )}
             </UploadZone>
-            {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+            {isRunning && <TasksInProgress {...{ tasksProgress }} />}
         </>
     );
 }
@@ -106,7 +126,8 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
  * TODO: [🧠] !! Speed up the computation of colorstats
  * TODO: [🧠] !! Compute ONLY colorstats in worker, rest here - split workers into multiple parts
  * TODO: [🧠] !! Upload image and Compute colorstats in parallel + remove the comment blocks
- * TODO: Maybe derive isWorking from taskProgress
+ * TODO: [☃] Maybe derive isWorking from taskProgress
  * TODO: Maybe it is not very efficient to first convert image to dataurl and create image from the dataurl - maybe just createImageFromFile / createImageFromBlob
  * TODO: !! It Should be possible to list private wallpapers via getSupabaseForBrowser().from('Wallpaper').select('*').eq('isPublic', false)
+ * TODO: [🏍] Standardize process of getting input data for new wallpaper
  */

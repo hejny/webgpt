@@ -6,9 +6,12 @@ import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
 interface RegisterResponse {
     // TODO: [🌋] ErrorableResponse
-    message: string;
+    readonly message: string;
 }
 
+/**
+ * API endpoint handler to register new site into the system
+ */
 export default async function registerHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
@@ -26,11 +29,15 @@ export default async function registerHandler(request: NextApiRequest, response:
     const url = request.query.url as string_url;
 
     if (!isValidWallpaperId(wallpaperId)) {
-        return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
+        return response.status(400).json({
+            message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+        });
     }
 
     if (!isValidUrl(url)) {
-        return response.status(400).json({ message: 'GET param url is not valid URL' });
+        return response
+            .status(400)
+            .json({ message: 'GET param url is not valid URL' /* <- TODO: [🌻] Unite wrong GET param message */ });
     }
 
     const selectResult = await getSupabaseForServer().from('Site').select('id').eq('url', url).limit(1);

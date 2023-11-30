@@ -3,11 +3,19 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { string_wallpaper_id } from '../../utils/typeAliases';
 import { isValidWallpaperId } from '../../utils/validators/isValidWallpaperId';
 
-export default async function ogImageHandler(request: NextApiRequest, response: NextApiResponse) {
+/**
+ * API endpoint handler to return preview image
+ */
+export default async function ogImageHandler(
+    request: NextApiRequest,
+    response: NextApiResponse /* <- TODO: [❄] What is the best way how to type non-json reposnses */,
+) {
     const wallpaperId = request.query.wallpaperId as string_wallpaper_id;
 
     if (!isValidWallpaperId(wallpaperId)) {
-        return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
+        return response.status(400).json({
+            message: 'GET param wallpaperId is not valid UUID' /* <- TODO: [🌻] Unite wrong GET param message */,
+        });
     }
 
     /*/
@@ -53,6 +61,7 @@ export default async function ogImageHandler(request: NextApiRequest, response: 
 }
 
 /**
+ * TODO: !! Rename to preview-image
  * TODO: [🦋] Do simmilar thing for icons
  * TODO: [👔] This is not working on edge runtime - fix after @see https://github.com/vercel/satori/issues/475 @see https://github.com/nzws/nzws.me/issues/574
  * TODO: [🦺] Maybe we need robots.txt @see https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation

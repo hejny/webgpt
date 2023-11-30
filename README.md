@@ -1,6 +1,12 @@
-# 👓 AI Gallery 🕶
+# ⏣ WebGPT
 
-We are the ...
+An AI-powered tool for web design
+https://webgpt.cz/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a0890490-11fb-491d-9c5e-d7d541b8e22d/deploy-status)](https://app.netlify.com/sites/starlit-salmiakki-352a13/deploys)
+> Do you want to make a web <br/> Or **have a web**?
+
+![WebGPT](./other/screencasts/screencast-fiabciakcmgepblmdkmemdbbkilneeeh-2023.10.26-21_46_17.gif)
+
+
+
 

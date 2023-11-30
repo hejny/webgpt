@@ -18,8 +18,8 @@ export function StaticAppHead(props: StaticAppHeadProps) {
     const { subtitle } = props;
 
     // TODO: !! Use translation
-    const title = (subtitle ? subtitle + ' 🎨 ' : '') + `AI Web Maker`;
-    const description = `Thousands of AI generated web designs`;
+    const title = (subtitle ? subtitle + ' ⏣ ' : '') + `WebGPT`;
+    const description = `Do you want to make a web or have a web?`;
 
     return (
         <>

@@ -1,6 +1,13 @@
 .StaticLayout {
+    /*/
+    outline: 1px dotted rgb(255, 99, 38);
+    /**/
+
     padding-top: 70px;
     background: url(/patterns/simple/stripes-black.png);
+
+    margin-top: 50px;
+    padding-bottom: 70px;
 }
 
 .StaticLayout a {
@@ -19,11 +26,16 @@
     outline: 1px dotted rgb(38, 212, 255);
     /**/
 
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .StaticLayout header {
+}
+
+.StaticLayout main {
+    padding-right: calc(50vw - 400px);
+    padding-left: calc(50vw - 400px);
 }
 
 .StaticLayout article {
@@ -45,18 +57,28 @@
 TODO: Share CSS Between static and dynamic articles
 */
 
+.StaticLayout main h1,
+.StaticLayout main h2,
+.StaticLayout main h3,
+.StaticLayout main h4,
+.StaticLayout main h5,
+.StaticLayout main h6,
 .StaticLayout article h1,
 .StaticLayout article h2,
 .StaticLayout article h3,
 .StaticLayout article h4,
 .StaticLayout article h5,
-.StaticLayout article h6 {
+.StaticLayout article h6
+/* <- TODO: Optimize this selector via new css functionalities*/ {
     text-align: center;
     margin-top: 50px;
 }
 
+.StaticLayout main ul,
+.StaticLayout main ol,
 .StaticLayout article ul,
-.StaticLayout article ol {
+.StaticLayout article ol
+/* <- TODO: Optimize this selector via new css functionalities*/ {
     margin-top: 20px;
     margin-bottom: 20px;
 }

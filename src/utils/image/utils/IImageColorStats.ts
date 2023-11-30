@@ -1,31 +1,35 @@
 import { Promisable } from 'type-fest';
 import { Vector } from 'xyzt';
-import { TaskProgress } from '../../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
-import { number_integer, number_percent } from '../../typeAliases';
 import { IImage } from '../IImage';
 
+/*
+TODO: Use or remove
 interface IComputeImageColorStatsProgress {
-    total: number_integer;
-    done: number_integer;
-    percent: number_percent;
+    readonly total: number_integer;
+    readonly done: number_integer;
+    readonly percent: number_percent;
 }
+*/
 
 export interface IComputeImageColorStats<TVersion extends string> {
-    version: TVersion;
-    preferredSize: Vector;
-    (image: IImage, onProgress?: (taskProgress: TaskProgress) => Promisable<void>): Promise<IImageColorStats<TVersion>>;
+    readonly version: TVersion;
+    readonly preferredSize: Vector;
+    (image: IImage, onProgress?: (taskProgress: WebgptTaskProgress) => Promisable<void>): Promise<
+        IImageColorStats<TVersion>
+    >;
 }
 
 export interface IImageColorStats<TVersion extends string> {
-    version: TVersion;
-    palette: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
+    readonly version: TVersion;
+    readonly palette: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
 
     /**
      * The average color of the image as a Color object
      */
-    averageColor: WithTake<Color>;
+    readonly averageColor: WithTake<Color>;
 
     // TODO: colorSpace:number
     // TODO: scaleRatio:number
@@ -37,11 +41,11 @@ export interface IImageColorStats<TVersion extends string> {
 export interface IImageColorStatsAdvanced<TVersion extends string>
     extends IImageColorStats<TVersion>,
         IImageColorStatsRegion {
-    paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
+    readonly paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
 
-    bottomHalf: IImageColorStatsRegion;
-    bottomThird: IImageColorStatsRegion;
-    bottomLine: IImageColorStatsRegion;
+    readonly bottomHalf: IImageColorStatsRegion;
+    readonly bottomThird: IImageColorStatsRegion;
+    readonly bottomLine: IImageColorStatsRegion;
 }
 
 /**
@@ -54,30 +58,30 @@ export interface IImageColorStatsRegion {
     /**
      * The average color of the image as a Color object
      */
-    averageColor: WithTake<Color>;
+    readonly averageColor: WithTake<Color>;
 
     /**
      * The lightest color of the image as a Color object
      */
-    lightestColor: WithTake<Color> /* <- TODO: Also expose count and maybe make simmilar list as mostXxxColors + [🎍] some util for counting colors */;
+    readonly lightestColor: WithTake<Color> /* <- TODO: Also expose count and maybe make simmilar list as mostXxxColors + [🎍] some util for counting colors */;
 
     /**
      * The darkest color of the image as a Color object
      */
-    darkestColor: WithTake<Color> /* <- TODO: Also expose count and maybe make simmilar list as mostXxxColors + [🎍] some util for counting colors */;
+    readonly darkestColor: WithTake<Color> /* <- TODO: Also expose count and maybe make simmilar list as mostXxxColors + [🎍] some util for counting colors */;
 
     /**
      * The most saturation*luminance colors of the image with different hue as a Color object
      */
-    mostSatulightedColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
+    readonly mostSatulightedColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
 
     /**
      * The most frequent color of the image as a Color object
      */
-    mostFrequentColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
+    readonly mostFrequentColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
 
     /**
      * The most grouped color of the image as a Color object
      */
-    mostGroupedColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
+    readonly mostGroupedColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
 }

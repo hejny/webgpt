@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
@@ -7,6 +9,8 @@ import styles from './Footer.module.css';
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.FooterSection}>
             <ul>
@@ -23,7 +27,7 @@ export function FooterSection() {
                 </li>
 
                 <li>
-                    <WallpaperLink page="explanation">AI Web</WallpaperLink>
+                    <WallpaperLink page="explanation">WebGPT</WallpaperLink>
                 </li>
 
                 <li>
@@ -32,7 +36,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <a href="https://github.com/hejny/aiai/">v{APP_VERSION}</a>
+                    <a href="https://github.com/hejny/webgpt/">v{APP_VERSION}</a>
                 </li>
                 */}
             </ul>

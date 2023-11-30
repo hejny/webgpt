@@ -27,6 +27,7 @@ export function HeaderWallpaper() {
                         width: '100%',
                         height: '100%',
                         backgroundColor: colorStats.averageColor.toHex(),
+                        printColorAdjust: 'exact',
                     }}
                     {...{ width, quality }}
                 />

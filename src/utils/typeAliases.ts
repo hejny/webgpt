@@ -1,12 +1,17 @@
 // TODO: !! Cleanup
 
-import { FONTS } from '../../config';
+import type { string_prompt } from '@promptbook/types';
 
 /*
 .--------------------------------------------------.
 | Theese string_whatever are just semantic helpers |
 '--------------------------------------------------'
 */
+
+/**
+ * Semantic helper
+ */
+export type string_business_category_name = 'restaurant' | 'grocery' | 'person' | 'conference' | string;
 
 /**
  * Semantic helper
@@ -24,14 +29,15 @@ export type string_model_name =
     | 'gpt-3.5-turbo-16k'
     | 'gpt-3.5-turbo-0301'
     | 'gpt-3.5-turbo-0613'
-    | 'gpt-3.5-turbo-16k-0613' /* <- TODO: Import from 'openai' package */;
+    | 'gpt-3.5-turbo-16k-0613'
+    | string /* <- TODO: Import from 'openai' package */;
 
 /**
  * Semantic helper
  *
- * For example `"A cat wearing a hat"`
+ * For example `"A cat wearing a {ITEM}"`
  */
-export type string_prompt = string;
+export type string_template = string;
 
 /**
  * Semantic helper
@@ -141,7 +147,7 @@ export type image_description = description;
  *
  * For example `"Poppins"`
  */
-export type string_font_family = typeof FONTS[number];
+export type string_font_family = string_name;
 
 /**
  * Semantic helper
@@ -170,6 +176,28 @@ export type string_markdown = string;
 /**
  * Semantic helper
  *
+ * Markdown text without any structure like h1, h2, lists, blockquotes, blocks, etc.
+ * BUT with bold, italic, etc.
+ *
+ * For example `"**Hello** World!"`
+ */
+export type string_markdown_text = string_markdown;
+
+/**
+ * Semantic helper
+ *
+ * Maxdown is a speficic flavor of Markdown which is used in WebGPT main content of the pages
+ * It is superset of Markdown with some additional features like:
+ * - Fonts
+ * - Components
+ *
+ * For example `"**Hello** World!"`
+ */
+export type string_maxdown = string & { _type: 'maxdown' };
+
+/**
+ * Semantic helper
+ *
  * For example `"towns.cz"`
  */
 export type string_domain = string;
@@ -194,6 +222,13 @@ export type string_css = string;
  * For example `"<svg><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /></svg>"`
  */
 export type string_svg = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `console.info("Hello World!")` or `print("Hello World!")`
+ */
+export type string_script = string;
 
 /**
  * Semantic helper
@@ -316,7 +351,7 @@ export type string_email = string;
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  */
 export type uuid = string & {
-    __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
+    readonly __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
 };
 
 /**
@@ -427,13 +462,13 @@ export type string_person_profile = string;
  * Full profile of the person with his email and web (like in package.json)
  */
 export interface IPersonProfile {
-    name?: string_person_fullname;
+    readonly name?: string_person_fullname;
 
     /**
      * Note: Photos are taken from Gravatar by email
      */
-    email?: string_email;
-    url?: string_url;
+    readonly email?: string_email;
+    readonly url?: string_url;
 }
 
 /**
@@ -447,16 +482,16 @@ export type string_license = string;
  * License with its type and url like in package.json
  */
 export interface ILicense {
-    type?: string_license;
-    url?: string;
+    readonly type?: string_license;
+    readonly url?: string;
 }
 
 /**
  * Repository with its type and url like in package.json
  */
 export interface IRepository {
-    type?: string | 'git';
-    url?: string;
+    readonly type?: string | 'git';
+    readonly url?: string;
 }
 
 /**
@@ -542,7 +577,7 @@ export type string_translate_name_not_normalized = string;
  * TODO: Probably use enum
  * TODO: Rename - remove string_ prefix like ITranslateLanguageCode
  */
-export type string_translate_language = 'en' | 'cs' | 'sk' | 'uk';
+export type string_translate_language = 'en' | 'cs';
 
 /**
  * Semantic helper; For example "callbackName" or "renderMe"
@@ -593,7 +628,7 @@ export type number_gigabytes = number_positive;
 export type number_terabytes = number_positive;
 
 /**
- * TODO: Anotate all + collboard-modules-sdk to all
+ * TODO: Annotate all + collboard-modules-sdk to all
  * TODO: Use instead of number_... type-fest
  * TODO: In some cases string_module_name, constraint by literals (or as close to RegExp as possible in TypeScript)
  * TODO: [🧠] Maybe make rich object representing the MidjourneyPrompt with its flags and version etc

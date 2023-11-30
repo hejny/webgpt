@@ -1,4 +1,5 @@
-import { TaskProgress } from './TaskProgress';
+import { Writable } from 'type-fest';
+import { WebgptTaskProgress } from './WebgptTaskProgress';
 
 /**
  * Merges tasks with same name into one in array of tasks
@@ -7,8 +8,8 @@ import { TaskProgress } from './TaskProgress';
  * @param tasksProgress Array of TaskProgress
  * @returns joined Array of TaskProgress
  */
-export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<TaskProgress> {
-    const joinedTasksProgress: Array<TaskProgress> = [];
+export function joinTasksProgress(...tasksProgress: Array<WebgptTaskProgress>): Array<WebgptTaskProgress> {
+    const joinedTasksProgress: Array<Writable<WebgptTaskProgress>> = [];
 
     for (const newTaskProgress of tasksProgress) {
         const joinedTaskProgress = joinedTasksProgress.find(
@@ -17,6 +18,7 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
 
         if (!joinedTaskProgress) {
             if (!newTaskProgress.title) {
+                console.info({ newTaskProgress });
                 throw new Error(`Missing title for task "${newTaskProgress.name}"`);
             }
             joinedTasksProgress.push(newTaskProgress);
@@ -32,5 +34,5 @@ export function joinTasksProgress(...tasksProgress: Array<TaskProgress>): Array<
         }
     }
 
-    return joinedTasksProgress;
+    return joinedTasksProgress as Array<WebgptTaskProgress>;
 }

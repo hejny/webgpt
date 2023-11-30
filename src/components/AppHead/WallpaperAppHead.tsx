@@ -29,7 +29,7 @@ export function WallpaperAppHead(props: WallpaperAppHeadProps) {
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
     const description =
         extractDescriptionFromHtml(wallpaper.content) /* <- !! Shorten a description with GPT */ ||
-        'The page was created by 1-2i.com';
+        'The page was created by webgpt.cz';
 
     const homeUrl = `${publicUrl.href}${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
@@ -112,10 +112,10 @@ export function WallpaperAppHead(props: WallpaperAppHeadProps) {
 
                         [🔌] This is a registration script for the page ${publicUrl}
                              You need to visit at least once the site ${publicUrl} to register it
-                             Or register manually at https://1-2i.com/${wallpaper.id}?modal=export
+                             Or register manually at https://webgpt.cz/${wallpaper.id}?modal=export
 
                              After the registration you can remove this section or leave it here for future updates
-                             For more info see https://1-2i.com/${wallpaper.id}?page=license
+                             For more info see https://webgpt.cz/${wallpaper.id}?page=license
 
                     `}
                 >

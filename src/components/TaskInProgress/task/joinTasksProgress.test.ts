@@ -152,6 +152,6 @@ describe('joinTasksProgress', () => {
                 name: 'image-analysis',
                 isDone: true,
             }),
-        ).toThrowError(`Missing title for task "image-analysis"`);
+        ).toThrowError(/Missing title for task \"image-analysis\"/i);
     });
 });
