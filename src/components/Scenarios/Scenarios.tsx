@@ -53,6 +53,20 @@ export function Scenarios() {
                         new options are coming soon
                     </CreateZone>
                 </li>
+                <li>
+                    {/* Note: [🔮] Using <a/> not <Link/> because we want to fully reload the page to allow propper working of preventing unsaved changes*/}
+                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                    <a href="/new/from-idea+chat">
+                        <CreateZone className={styles.scenario}>
+                            <h2>Chat</h2>
+                            Create the website just
+                            <br />
+                            <span>
+                                with your <b>voice!</b>
+                            </span>
+                        </CreateZone>
+                    </a>
+                </li>
             </ul>
         </div>
     );

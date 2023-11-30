@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { CSSProperties, useEffect, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
-import simpleChatAvatar from '../../../../public/people/simpleChat.jpeg';
-import teacherAvatar from '../../../../public/people/teacher.jpeg';
+import simpleChatAvatar from '../../../../public/avatars/bot.jpeg'; /* <- TODO: Use ACRY Import attributes> with { type: "???json" }; */
+import teacherAvatar from '../../../../public/avatars/teacher.jpeg';
 import { classNames } from '../../../utils/classNames';
 import { focusRef } from '../../../utils/focusRef';
 import { string_css_class, string_translate_language } from '../../../utils/typeAliases';

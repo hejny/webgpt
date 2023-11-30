@@ -1,18 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import webgptLogo from '../../../public/logo/webgpt.white.svg';
 import { StaticAppHead } from '../../components/AppHead/StaticAppHead';
-import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
-import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
-import { Center } from '../../components/SimpleLayout/Center';
+import { SimpleChat } from '../../components/Chat/SimpleChat/SimpleChat';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
-import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { useLocale } from '../../utils/hooks/useLocale';
 import { shuffleItems } from '../../utils/shuffleItems';
@@ -108,44 +102,30 @@ export default function NewWallpaperFromIdeaPage() {
     return (
         <>
             <StaticAppHead subtitle={null} />
-            <LanguagePickerWithHint />
+            {/* !!! 
+            <LanguagePickerWithHint />*/}
 
             <div className={styles.page}>
                 <main>
-                    <Center>
-                        <h1
-                            style={{
-                                transform: 'translate(0,-20px)',
-                            }}
-                        >
-                            <Image alt="WebGPT logo" src={webgptLogo} />
-                        </h1>
-                        <CopilotInput
-                            {...{ placeholders }}
-                            label={
-                                <>
-                                    {/* [⛳] */}
-                                    <Translate locale="en">What web do you want to make:</Translate>
-                                    <Translate locale="cs">Jaký web chcete vytvořit:</Translate>
-                                </>
-                            }
-                            onPrompt={runWallpaperCreation}
-                        />
-                        <Link
-                            href="/"
-                            style={
-                                {
-                                    // outline: '1px solid red'
-                                }
-                            }
-                        >
-                            <>
-                                {/* [⛳] */}
-                                <Translate locale="en">I need an inspiration</Translate>
-                                <Translate locale="cs">Rád bych se inspiroval</Translate>
-                            </>
-                        </Link>
-                    </Center>
+                    <SimpleChat
+                        style={{
+                            // outline: '1px dotted #ff0000',
+                            width: '100vw',
+                            height: '100vh',
+                        }}
+                        isVoiceEnabled
+                        voiceLanguage="cs"
+                        initialMessage="Jaký web chcete vytvořit?"
+                        onMessage={(message) =>
+                            spaceTrim(
+                                (block) => `
+                                    Řekli jste: 
+
+                                    > ${block(message)}  
+                                `,
+                            )
+                        }
+                    />
                 </main>
 
                 {isRunning && <TasksInProgress {...{ tasksProgress }} />}
@@ -155,8 +135,7 @@ export default function NewWallpaperFromIdeaPage() {
 }
 
 /**
- * TODO: Enhance the design of the page (and in general every page with <CopilotInput/>)
+ * TODO: !!! cs/en
+ * TODO: !!! Better layout - link back + WebGPT logo etc.
  * TODO: [👐] Unite design of all /new/* pages
- * TODO: [🏍] Standardize process of getting input data for new wallpaper
- * TODO: [☃] Maybe derive isWorking from taskProgress
  */

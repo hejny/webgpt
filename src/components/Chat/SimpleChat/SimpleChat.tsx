@@ -1,6 +1,7 @@
-import { CSSProperties, useReducer } from 'react';
+import { CSSProperties, useCallback, useReducer, useState } from 'react';
 import { Promisable } from 'type-fest';
 import { v4 } from 'uuid';
+import { forTime } from 'waitasecond';
 import { removeMarkdownFormatting } from '../../../utils/content/removeMarkdownFormatting';
 import { string_css_class, string_translate_language } from '../../../utils/typeAliases';
 import { speak } from '../../../utils/voice/speak';
@@ -21,6 +22,11 @@ interface SimpleChatProps {
     voiceLanguage?: string_translate_language;
 
     /**
+     * Optional initial message from bot to show
+     */
+    initialMessage?: string /* <- TODO: [🍗] Pass here the message object NOT just text */;
+
+    /**
      * Called when user sends a message
      * You can reply via this function asynchronnously
      */
@@ -29,12 +35,12 @@ interface SimpleChatProps {
     ): Promisable<string /* <- TODO: [🍗] Pass here the message object NOT just text */>;
 
     /**
-     * Optional CSS class name which will be added to root <Chat/> component
+     * Optional CSS class name which will be added to main <Chat/> component
      */
     className?: string_css_class;
 
     /**
-     * Optional CSS  style which will be added to root <Chat/> component
+     * Optional CSS  style which will be added to main <Chat/> component
      */
     style?: CSSProperties;
 }
@@ -49,7 +55,7 @@ interface SimpleChatProps {
  * Use <SimpleChat/> in most cases.
  */
 export function SimpleChat(props: SimpleChatProps) {
-    const { isVoiceEnabled, voiceLanguage = 'en', onMessage, className, style } = props;
+    const { isVoiceEnabled, voiceLanguage = 'en', initialMessage, onMessage, className, style } = props;
 
     const [messages, messagesDispatch] = useReducer(
         (messages: Array<ChatMessage>, action: { type: 'ADD'; message: ChatMessage }) => {
@@ -60,6 +66,7 @@ export function SimpleChat(props: SimpleChatProps) {
                         action.message.from === 'JOURNAL' &&
                         action.message.isComplete /* <- TODO: !!! SPEAK fluently NOT just when complete */
                     ) {
+                        // alert(`speaking ${action.message.content}`);
                         spoken.add(action.message.id);
                         if (isVoiceEnabled) {
                             speak(removeMarkdownFormatting(action.message.content), voiceLanguage);
@@ -76,62 +83,74 @@ export function SimpleChat(props: SimpleChatProps) {
         [],
     );
 
-    /*
-    TODO: !!! Use for runDeamon>
-    useEffect(() => {
-        // console.log(`useEffect`, `socket.on chatResponse`);
-        // !!! Call off on to listener on useEffect destroy
+    const [isInitialMessageSent, setInitialMessageSent] = useState<boolean | 'SENDING'>(false);
+    const onUserInteraction = useCallback(async () => {
+        // Note: Passing initial message from bot ex-post to:
+        //       1) Speech is allowed after user interaction
+        //       2) Avoid SSR
+        //       3) DRY speech
+        //       4) Make effect of initial thinking
+        //       5) Make effect of typing
 
-        const listener = (replyMessage: SimpleChatChatMessage) => {
-            // console.log('chatResponse', replyMessage.id, replyMessage.content);
-            messagesDispatch({
-                type: 'ADD',
-                message: {
-                    ...replyMessage,
-                    date: new Date(
-                        replyMessage.date,
-                    ) /* <- TODO: Some smarter hydration of unserializable JSON types * /,
-                },
-            });
+        if (initialMessage === undefined || isInitialMessageSent) {
+            return;
+        }
 
-        };
-        socket.on('chatResponse', listener);
-        return () => void socket.off('chatResponse', listener);
-    });
-    */
+        setInitialMessageSent('SENDING');
+
+        await forTime(300 /* <- TODO: !!! To config */);
+
+        messagesDispatch({
+            type: 'ADD',
+            message: {
+                id: v4(),
+                date: new Date() /* <- TODO: Rename+split into created+modified */,
+                from: 'JOURNAL',
+                content: initialMessage,
+                isComplete: true,
+            },
+        });
+
+        setInitialMessageSent(true);
+    }, [initialMessage, isInitialMessageSent]);
 
     return (
-        <Chat
-            {...{ messages, voiceLanguage, className, style }}
-            isVoiceRecognitionButtonShown={isVoiceEnabled}
-            onMessage={async (teacherMessageContent /* <- TODO: [🍗] Pass here the message object NOT just text */) => {
-                const myMessage: TeacherChatMessage & CompleteChatMessage = {
-                    id: v4(),
-                    date: new Date() /* <- TODO: Rename+split into created+modified */,
-                    from: 'TEACHER',
-                    content: teacherMessageContent,
-                    isComplete: true,
-                };
-
-                messagesDispatch({ type: 'ADD', message: myMessage });
-                const simpleChatMessageContent = await onMessage(teacherMessageContent);
-
-                messagesDispatch({
-                    type: 'ADD',
-                    message: {
+        <div onMouseDown={onUserInteraction}>
+            <Chat
+                {...{ messages, voiceLanguage, className, style }}
+                isVoiceRecognitionButtonShown={isVoiceEnabled}
+                onMessage={async (
+                    teacherMessageContent /* <- TODO: [🍗] Pass here the message object NOT just text */,
+                ) => {
+                    const myMessage: TeacherChatMessage & CompleteChatMessage = {
                         id: v4(),
                         date: new Date() /* <- TODO: Rename+split into created+modified */,
-                        from: 'JOURNAL',
-                        content: simpleChatMessageContent,
+                        from: 'TEACHER',
+                        content: teacherMessageContent,
                         isComplete: true,
-                    },
-                });
-            }}
-        />
+                    };
+
+                    messagesDispatch({ type: 'ADD', message: myMessage });
+                    const simpleChatMessageContent = await onMessage(teacherMessageContent);
+
+                    messagesDispatch({
+                        type: 'ADD',
+                        message: {
+                            id: v4(),
+                            date: new Date() /* <- TODO: Rename+split into created+modified */,
+                            from: 'JOURNAL',
+                            content: simpleChatMessageContent,
+                            isComplete: true,
+                        },
+                    });
+                }}
+            />
+        </div>
     );
 }
 
 /**
+ * TODO: !!! [🧠] Initial user interaction
  * TODO: Driver to handle sockets
  * TODO: !! Pick a voice
  * TODO: !! Voice is working with markdown
@@ -141,7 +160,28 @@ export function SimpleChat(props: SimpleChatProps) {
  * TODO: Use momentjs for dates
  * TODO: !!! Change TEACHER + JOURNAL branding, image,... to WebGPT style
  * TODO: !!! Buttons in WebGPT style
+ * TODO: Extract speech logic into a separate component usable in both <SimpleChat/> or <AdvancedChat/>
  * TODO: [🧠] Thare should be some way how to send messages in different order than a,b,a,b,a,b,...
  *             Either put here some runDeamon prop
- *             Or create ChatThread with observable methods which will be passed into <InteractiveChat> or <AdvancedChat>
+ *             Or create ChatThread with observable methods which will be passed into <InteractiveChat/> or <AdvancedChat/>
+ *             > useEffect(() => {
+ *             >     // console.log(`useEffect`, `socket.on chatResponse`);
+ *             >     // !!! Call off on to listener on useEffect destroy
+ *             >
+ *             >     const listener = (replyMessage: SimpleChatChatMessage) => {
+ *             >         // console.log('chatResponse', replyMessage.id, replyMessage.content);
+ *             >         messagesDispatch({
+ *             >             type: 'ADD',
+ *             >             message: {
+ *             >                 ...replyMessage,
+ *             >                 date: new Date(
+ *             >                     replyMessage.date,
+ *             >                 ) /* <- TODO: Some smarter hydration of unserializable JSON types * /,
+ *             >             },
+ *             >         });
+ *             >
+ *             >     };
+ *             >     socket.on('chatResponse', listener);
+ *             >     return () => void socket.off('chatResponse', listener);
+ *             > });
  */
