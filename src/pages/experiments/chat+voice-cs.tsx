@@ -1,9 +1,9 @@
 import spaceTrim from 'spacetrim';
-import { Journal } from '../../components/Journal/Journal';
+import { SimpleChat } from '../../components/Chat/SimpleChat/SimpleChat';
 
 export default function TestVoiceWithChatPage() {
     return (
-        <Journal
+        <SimpleChat
             style={{
                 height: '100vh',
             }}

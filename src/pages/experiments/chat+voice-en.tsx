@@ -1,11 +1,11 @@
 import spaceTrim from 'spacetrim';
-import { Journal } from '../../components/Journal/Journal';
+import { SimpleChat } from '../../components/Chat/SimpleChat/SimpleChat';
 import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 
 export default function TestVoiceWithChatPage() {
     return (
         <StaticLayout subtitle="Test chat with English voice">
-            <Journal
+            <SimpleChat
                 style={{
                     height: '100vh',
                 }}

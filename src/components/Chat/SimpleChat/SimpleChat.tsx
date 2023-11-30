@@ -1,15 +1,15 @@
 import { CSSProperties, useReducer } from 'react';
 import { Promisable } from 'type-fest';
 import { v4 } from 'uuid';
-import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
-import { string_css_class, string_translate_language } from '../../utils/typeAliases';
-import { speak } from '../../utils/voice/speak';
-import { Chat } from './Chat/Chat';
-import { ChatMessage, CompleteChatMessage, TeacherChatMessage } from './interfaces/ChatMessage';
+import { removeMarkdownFormatting } from '../../../utils/content/removeMarkdownFormatting';
+import { string_css_class, string_translate_language } from '../../../utils/typeAliases';
+import { speak } from '../../../utils/voice/speak';
+import { Chat } from '../Chat/Chat';
+import { ChatMessage, CompleteChatMessage, TeacherChatMessage } from '../interfaces/ChatMessage';
 
 const spoken = new Set<string>(/* <- TODO: Make instead some SpeechManager */);
 
-interface JournalProps {
+interface SimpleChatProps {
     /**
      * Determines whether the voice recognition and speech is enabled
      */
@@ -28,8 +28,6 @@ interface JournalProps {
         messageContent: string /* <- TODO: [🍗] Pass here the message object NOT just text */,
     ): Promisable<string /* <- TODO: [🍗] Pass here the message object NOT just text */>;
 
-    // TODO: !!! runDeamon
-
     /**
      * Optional CSS class name which will be added to root <Chat/> component
      */
@@ -46,11 +44,11 @@ interface JournalProps {
  *
  * Note: There are two components:
  * - <Chat/> renders chat as it is without any logic - messages you pass as props are rendered as they are
- * - <Journal/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
+ * - <SimpleChat/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
  *
- * Use <Journal/> in most cases.
+ * Use <SimpleChat/> in most cases.
  */
-export function Journal(props: JournalProps) {
+export function SimpleChat(props: SimpleChatProps) {
     const { isVoiceEnabled, voiceLanguage = 'en', onMessage, className, style } = props;
 
     const [messages, messagesDispatch] = useReducer(
@@ -84,7 +82,7 @@ export function Journal(props: JournalProps) {
         // console.log(`useEffect`, `socket.on chatResponse`);
         // !!! Call off on to listener on useEffect destroy
 
-        const listener = (replyMessage: JournalChatMessage) => {
+        const listener = (replyMessage: SimpleChatChatMessage) => {
             // console.log('chatResponse', replyMessage.id, replyMessage.content);
             messagesDispatch({
                 type: 'ADD',
@@ -116,7 +114,7 @@ export function Journal(props: JournalProps) {
                 };
 
                 messagesDispatch({ type: 'ADD', message: myMessage });
-                const journalMessageContent = await onMessage(teacherMessageContent);
+                const simpleChatMessageContent = await onMessage(teacherMessageContent);
 
                 messagesDispatch({
                     type: 'ADD',
@@ -124,7 +122,7 @@ export function Journal(props: JournalProps) {
                         id: v4(),
                         date: new Date() /* <- TODO: Rename+split into created+modified */,
                         from: 'JOURNAL',
-                        content: journalMessageContent,
+                        content: simpleChatMessageContent,
                         isComplete: true,
                     },
                 });
@@ -143,4 +141,7 @@ export function Journal(props: JournalProps) {
  * TODO: Use momentjs for dates
  * TODO: !!! Change TEACHER + JOURNAL branding, image,... to WebGPT style
  * TODO: !!! Buttons in WebGPT style
+ * TODO: [🧠] Thare should be some way how to send messages in different order than a,b,a,b,a,b,...
+ *             Either put here some runDeamon prop
+ *             Or create ChatThread with observable methods which will be passed into <InteractiveChat> or <AdvancedChat>
  */

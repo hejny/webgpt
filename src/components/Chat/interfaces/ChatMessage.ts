@@ -1,4 +1,4 @@
-export type ChatMessage = TeacherChatMessage | JournalChatMessage /* <- TODO: Extract commons */;
+export type ChatMessage = TeacherChatMessage | SimpleChatChatMessage /* <- TODO: Extract commons */;
 
 export interface TeacherChatMessage {
     id: string;
@@ -8,7 +8,7 @@ export interface TeacherChatMessage {
     isComplete: boolean;
 }
 
-export interface JournalChatMessage {
+export interface SimpleChatChatMessage {
     id: string;
     // TODO: gptMessageId: string;
     date: Date /* <- TODO: Rename+split into created+modified */;

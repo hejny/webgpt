@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { CSSProperties, useEffect, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
-import journalAvatar from '../../../../public/people/journal.jpeg';
+import simpleChatAvatar from '../../../../public/people/simpleChat.jpeg';
 import teacherAvatar from '../../../../public/people/teacher.jpeg';
 import { classNames } from '../../../utils/classNames';
 import { focusRef } from '../../../utils/focusRef';
@@ -51,9 +51,9 @@ interface ChatProps {
  *
  * Note: There are two components:
  * - <Chat/> renders chat as it is without any logic - messages you pass as props are rendered as they are
- * - <Journal/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
+ * - <SimpleChat/> renders a chat with some logic - it manages messages, optionally speaks them, etc.
  *
- * Use <Journal/> in most cases.
+ * Use <SimpleChat/> in most cases.
  */
 export function Chat(props: ChatProps) {
     const { messages, onMessage, isVoiceRecognitionButtonShown, voiceLanguage = 'en', className, style } = props;
@@ -142,7 +142,7 @@ export function Chat(props: ChatProps) {
                     >
                         <div className={styles.avatar}>
                             <Image
-                                src={{ JOURNAL: journalAvatar, TEACHER: teacherAvatar }[message.from]}
+                                src={{ JOURNAL: simpleChatAvatar, TEACHER: teacherAvatar }[message.from]}
                                 alt={`AI generated image of ${message.from.toLocaleLowerCase()} as small cartoon avatar`}
                             />
                         </div>
