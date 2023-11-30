@@ -1,0 +1,16 @@
+./.github
+./.vscode
+./assets
+./database
+./locales
+
+# TODO: Ignore /other not all other subfolders
+
+# ./other
+
+./promptbook-server
+./promptimage-server
+./.whitesource
+./batch-project-editor.js
+./LICENSE
+./README.md

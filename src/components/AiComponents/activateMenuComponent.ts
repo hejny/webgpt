@@ -1,3 +1,7 @@
+
+/**
+ * @deprecated [👨‍🦲] AI Components are deprecated, use custom html components instead
+ */
 export function activateMenuComponent(menuElement: HTMLElement): void {
     const barElement = menuElement.querySelector('[data-ai-element="bar"]');
 

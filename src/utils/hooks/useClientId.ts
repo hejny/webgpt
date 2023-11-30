@@ -13,15 +13,17 @@ import { useSsrDetection } from './useSsrDetection';
 export function useClientId(options: IProvideClientIdOptions): uuid | null {
     const isServerRender = useSsrDetection();
 
+    const { isVerifiedEmailRequired } = options;
+
     const clientIdPromise = useMemo(async () => {
         if (isServerRender) {
             return null;
         }
 
-        const clientId = await provideClientId(options);
+        const clientId = await provideClientId({ isVerifiedEmailRequired });
 
         return clientId;
-    }, [isServerRender, options /* <- TODO: Is it OK to have here object? */]);
+    }, [isServerRender, isVerifiedEmailRequired]);
 
     const { value } = usePromise(clientIdPromise);
 

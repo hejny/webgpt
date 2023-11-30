@@ -1,9 +1,8 @@
 {
+    "framework": "nextjs",
+    "cleanUrls": true,
     "functions": {
-        "pages/api/custom/upload-wallpaper-image.ts": {
-            "maxDuration": 10
-        },
-        "pages/api/custom/write-wallpaper-prompt.ts": {
+        "pages/api/**/*": {
             "maxDuration": 10
         }
     }

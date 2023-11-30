@@ -1,11 +1,11 @@
-import { TaskProgress } from '../TaskProgress';
+import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
 /**
  * Just an list of miscellaneous (im)possible tasks
  *
  * @private Use only withing the folder mock
  */
-export const MOCKED_TASKS_PROGRESS_QUEUE: Array<TaskProgress> = [
+export const MOCKED_TASKS_PROGRESS_QUEUE: Array<WebgptTaskProgress> = [
     {
         name: 'image-analysis',
         title: 'Analyzing image (1)',

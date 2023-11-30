@@ -6,9 +6,9 @@ import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPa
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_domain, string_email } from '../../utils/typeAliases';
-import { DomainStatusChecker } from '../Domains/DomainStatusChecker/DomainStatusChecker';
+import { MarkdownContent } from '../Content/MarkdownContent';
+import { DomainStatusText } from '../Domains/DomainStatusText/DomainStatusText';
 import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
@@ -142,7 +142,7 @@ export function PublishModal() {
                         className={classNames('button', styles.getTheWeb)}
                         disabled={isPublishing}
                         style={{
-                            background: `url(${wallpaper.src})`,
+                            backgroundImage: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',

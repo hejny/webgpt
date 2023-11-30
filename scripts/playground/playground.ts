@@ -6,7 +6,7 @@ dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
 import { join } from 'path';
-import { lookupDomain } from '../../src/utils/domains/lookupDomain';
+import { OPENAI_API_KEY } from '../../config';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
