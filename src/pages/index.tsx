@@ -1,7 +1,10 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import webgptLogo from '../../public/logo/webgpt.white.svg';
-import { MarkdownContent } from '../components/MarkdownContent/MarkdownContent';
+import { MarkdownContent } from '../components/Content/MarkdownContent';
+import { NoSsr } from '../components/NoSsr/NoSsr';
 import { PavolHejny } from '../components/PavolHejny/PavolHejny';
+import { PreviewGallery } from '../components/PreviewGallery/PreviewGallery';
 import { Scenarios } from '../components/Scenarios/Scenarios';
 import { Center } from '../components/SimpleLayout/Center';
 import { StaticLayout } from '../components/StaticLayout/StaticLayout';
@@ -18,12 +21,13 @@ export default function HomePage() {
                         <Image alt="WebGPT logo" src={webgptLogo} />
                         {/*
                         <HandwrittenText color={Color.from('#fff')} style={'BigPartiallyPartiallyJoined'}>
-                            AI Web Maker
+                            WebGPT
                         </HandwrittenText>
                         */}
                     </h1>
                 </Center>
             </header>
+
             <main>
                 <Scenarios />
             </main>
@@ -46,6 +50,17 @@ export default function HomePage() {
             </article>
             */}
 
+            <NoSsr>
+                <article>
+                    <PreviewGallery numberOfWallpapers={4} />
+                    {/*
+                    <Link href="/portfolio" className="button">
+                        More
+                    </Link>
+                    */}
+                </article>
+            </NoSsr>
+
             <article>
                 <PavolHejny />
             </article>
@@ -53,6 +68,14 @@ export default function HomePage() {
     );
 }
 
+export async function getStaticProps({ locale }: { locale: string }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['common'])),
+        },
+    };
+}
+
 /**
- * TODO: [🌾] 1-2i page should be made as 1-2i static page
+ * TODO: [🌾] WebGPT page should be made as WebGPT static page
  */

@@ -1,7 +1,9 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
+import { validateMaxdown } from '../components/Content/Maxdown/validateMaxdown';
 import { GallerySection } from '../components/Gallery/Gallery';
 import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
 import { classNames } from '../utils/classNames';
@@ -28,7 +30,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 
             <div className={styles.page}>
                 <main>
-                    <h1>AI Web Maker</h1>
+                    <h1>WebGPT</h1>
                     <p>Web pages listed here are pre-generated using AI:</p>
 
                     {homeUrl && (
@@ -57,6 +59,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
+            ...(await serverSideTranslations(locale, ['common'])),
             wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
                 const { id, parent, src, colorStats, naturalSize, title, keywords, isPublic, author } = fullWallpaper;
                 return {
@@ -67,7 +70,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
                     colorStats /* <- TODO: !! Also reduce colorStats */,
                     naturalSize,
                     title,
-                    content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                    content: validateMaxdown('[🟥]' /* <- Note: [🟥] No need to pass everything into index page */),
                     keywords,
                     isPublic,
                     author,

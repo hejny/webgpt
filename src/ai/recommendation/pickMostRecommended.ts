@@ -5,8 +5,8 @@ import { wallpaperToVector } from './wallpaperToVector';
 import { wallpaperVectorsDistanceSquared } from './wallpaperVectorsDistanceSquared';
 
 interface PickMostRecommendedOptions {
-    wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }>;
-    wallpapersToPick: Array<IWallpaper>;
+    readonly wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }>;
+    readonly wallpapersToPick: Array<IWallpaper>;
 }
 
 /**

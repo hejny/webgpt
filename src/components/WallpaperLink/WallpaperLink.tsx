@@ -60,6 +60,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
                 }}
                 {...{ ref }}
                 {...attributes}
+                // Note: Keeping prefetch because we want to be all wallpaper links this as-fast-as-possible
             >
                 {children}
             </Link>
@@ -74,3 +75,7 @@ export function WallpaperLink(props: WallpaperLinkProps) {
         );
     }
 }
+
+/**
+ * TODO: [🕙] Make some util getWallpaperLink
+ */

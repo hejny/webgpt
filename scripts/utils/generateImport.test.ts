@@ -2,7 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import { generateImport } from './generateImport';
 
 describe('generating import statements', () => {
-    it('will import entity from same folder', () => {
+    it('should import entity from same folder', () => {
         expect(
             generateImport({
                 entityName: 'foo',
@@ -13,7 +13,7 @@ describe('generating import statements', () => {
         ).toBe(`import foo from './foo';`);
     });
 
-    it('will import entity from parent folder', () => {
+    it('should import entity from parent folder', () => {
         expect(
             generateImport({
                 entityName: 'foo',
@@ -24,7 +24,7 @@ describe('generating import statements', () => {
         ).toBe(`import foo from '../foo';`);
     });
 
-    it('will import entity from subfolder', () => {
+    it('should import entity from subfolder', () => {
         expect(
             generateImport({
                 entityName: 'foo',
@@ -35,7 +35,7 @@ describe('generating import statements', () => {
         ).toBe(`import foo from './utils/foo';`);
     });
 
-    it('will import entity different location', () => {
+    it('should import entity different location', () => {
         expect(
             generateImport({
                 entityName: 'foo',

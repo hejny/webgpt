@@ -1,0 +1,16 @@
+.PreviewGallery {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    /* TODO: Use or remove empty css */
+}
+
+.PreviewGalleryItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.PreviewGalleryItem {
+    aspect-ratio: 1 / 1;
+}

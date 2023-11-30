@@ -1,18 +1,19 @@
+import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
 import { useCallback, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { focusRef } from '../../utils/focusRef';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
-import { string_prompt } from '../../utils/typeAliases';
-import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
+import { message } from '../../utils/typeAliases';
+import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
 import styles from './CopilotInput.module.css';
 
 interface useRouterProps {
     /**
      * Label for the input
      */
-    label: string;
+    label: message;
 
     /**
      * The html comment to export
@@ -42,9 +43,8 @@ export function CopilotInput(props: useRouterProps) {
 
         let prompt = inputRef.current?.value || '';
 
+        setRunning(true);
         try {
-            setRunning(true);
-
             // TODO: [🍛] Make same normalization as in the backend
             prompt = spaceTrim(prompt);
 
@@ -66,7 +66,7 @@ export function CopilotInput(props: useRouterProps) {
     }, [inputRef, onPrompt, isRunning]);
 
     return (
-        <div className={classNames('aiai-controls', styles.CopilotInput)}>
+        <div className={classNames('webgpt-controls', styles.CopilotInput)}>
             <label htmlFor="copilot-input">{label}</label>
             <div
                 // Note: It is intended to have two divs embedded in each other
@@ -109,7 +109,7 @@ export function CopilotInput(props: useRouterProps) {
                             height={25} /* <-[🧥] */
                         />
                     ) : (
-                        <TorusInteractiveImage width={55} height={55} />
+                        <LoadingInteractiveImage width={55} height={55} />
                     )}
                 </button>
             </div>

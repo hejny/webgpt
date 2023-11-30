@@ -18,28 +18,40 @@ export function Scenarios() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/new/from-prompt">
+                    {/* Note: [🔮] Using <a/> not <Link/> because we want to fully reload the page to allow propper working of preventing unsaved changes*/}
+                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                    <a href="/new/from-idea">
                         <CreateZone className={styles.scenario}>
                             <h2>Idea</h2>
                             To describe and generate your website
                         </CreateZone>
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link href="/new/from-image">
+                    {/* Note: [🔮] Using <a/> not <Link/> because we want to fully reload the page to allow propper working of preventing unsaved changes*/}
+                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                    <a href="/new/from-image">
                         <CreateZone className={styles.scenario}>
                             <h2>Image</h2>
                             To upload and generate your website
                         </CreateZone>
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link href="/new/from-instagram">
+                    {/* Note: [🔮] Using <a/> not <Link/> because we want to fully reload the page to allow propper working of preventing unsaved changes*/}
+                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                    <a href="/new/from-instagram">
                         <CreateZone className={styles.scenario}>
                             <h2>Instagram</h2>
                             to generate your website
                         </CreateZone>
-                    </Link>
+                    </a>
+                </li>
+                <li className={styles.preparing}>
+                    <CreateZone className={styles.scenario}>
+                        <h2>Preparing</h2>
+                        new options are coming soon
+                    </CreateZone>
                 </li>
             </ul>
         </div>

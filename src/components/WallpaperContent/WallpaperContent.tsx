@@ -5,12 +5,13 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useCurrentWallpaperFonts } from '../../utils/hooks/useCurrentWallpaperFonts';
 import { usePageName } from '../../utils/hooks/usePageName';
 import { useRole } from '../../utils/hooks/useRole';
-import { string_href, string_html } from '../../utils/typeAliases';
+import { string_href, string_maxdown } from '../../utils/typeAliases';
 import { activateGalleryComponent } from '../AiComponents/activateGalleryComponent';
 import { AiComponentsRoot } from '../AiComponents/AiComponentsRoot';
+import { Content } from '../Content/Content';
+import { MaxdownContent } from '../Content/Maxdown/MaxdownContent';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
-import { Content } from '../MarkdownContent/Content';
 import { Section } from '../Section/Section';
 import { getPageContent } from './getPageContent';
 import styles from './WallpaperContent.module.css';
@@ -86,14 +87,14 @@ export function WallpaperContentSection() {
     }
 
     /**
-     * Handles the HTML change event and updates the wallpaper content if in edit mode
+     * Handles the change of wallpaper content
      *
      *
      * @param newContent - The new HTML content.
      */
-    const onHtmlChange = !isEditable
+    const onMaxdownChange = !isEditable
         ? undefined
-        : async (newContent: string_html) => {
+        : async (newContent: string_maxdown) => {
               modifyWallpaper((modifiedWallpaper) => {
                   modifiedWallpaper.content = newContent;
                   modifiedWallpaper.saveStage = 'EDITED';
@@ -117,13 +118,7 @@ export function WallpaperContentSection() {
                         Following is the content of the main page:
                     `}
                 >
-                    <Content
-                        isusingFonts
-                        isUsingOpenmoji={
-                            false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
-                        }
-                        {...{ content, isEditable, onHtmlChange }}
-                    />
+                    <MaxdownContent {...{ content, isEditable, onMaxdownChange }} />
                 </ExportCommentedBlock>
             </AiComponentsRoot>
         </Section>

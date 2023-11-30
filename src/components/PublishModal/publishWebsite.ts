@@ -1,12 +1,12 @@
 import spaceTrim from 'spacetrim';
-import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { IS_VERIFIED_EMAIL_REQUIRED, NEXT_PUBLIC_URL } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { PublishWebsiteResponse } from '../../pages/api/publish';
+import { isValidDomain } from '../../utils/domains/isValidDomain';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_domain, string_email } from '../../utils/typeAliases';
-import { isValidDomain } from '../../utils/validators/isValidDomain';
 import { isValidEmail } from '../../utils/validators/isValidEmail';
 
 interface PublishWebsiteOptions {
@@ -35,14 +35,17 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
     console.info(`📦 Publishing to ${domain}`);
 
     if (!isValidDomain(domain)) {
-        alert(`Please enter valid domain name`);
-        return;
+        throw new Error(`Please enter valid domain name`);
     }
 
     if (!isValidEmail(email)) {
-        alert(`Please enter valid email address`);
-        return;
+        throw new Error(`Please enter valid email address`);
     }
+
+    const loadingUrl = new URL(NEXT_PUBLIC_URL);
+    loadingUrl.pathname = '/website-tablo';
+    loadingUrl.searchParams.set('domain', domain);
+    window.open(loadingUrl.href, '_blank');
 
     const publicUrl = new URL(`https://${domain}/`);
 
@@ -98,27 +101,23 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
     const formData = new FormData();
     formData.append('bundle', zipBundle);
 
-    const response1 /* <-[💩] */ = await fetch('/api/publish', {
+    const response = await fetch('/api/publish', {
         method: 'POST',
         body: formData,
     });
 
-    if (response1.ok === false) {
-        const { message } = (await response1.json()) as any; /* <-[🌋]  */
+    if (response.ok === false) {
+        const { message } = (await response.json()) as any; /* <-[🌋]  */
         throw new Error(
             spaceTrim(`
-                Upload wallpaper failed with status ${response1.status}
+                Upload wallpaper failed with status ${response.status}
 
                 ${message}
             `),
         );
     }
 
-    const { websiteUrl } = (await response1.json()) as PublishWebsiteResponse;
+    const { websiteUrl } = (await response.json()) as PublishWebsiteResponse;
 
     console.info('🌍', { websiteUrl });
-
-    // TODO: !!!! Wait until website is ready and fully deployed
-    // TODO: !!!! [🧠] Maybe do after publishing open new tab, show iframe,...
-    // router.push(websiteUrl);
 }

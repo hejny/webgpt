@@ -24,7 +24,7 @@ describe('conversion of JSX to text', () => {
         ).toBe('deep bar');
     });
 
-    it('will convert emptiness', () => {
+    it('should convert emptiness', () => {
         expect(jsxToText(<></>)).toBe('');
         expect(jsxToText(<div />)).toBe('');
         expect(jsxToText(<div></div>)).toBe('');

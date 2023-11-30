@@ -4,7 +4,7 @@
     /**/
 
     width: 100%;
-    height: calc(100% - 100px);
+    height: min-content;
 
     /*background-color: rgba(41, 81, 168, 0.308);*/
 
@@ -82,6 +82,14 @@
     border: rgb(69, 214, 250) solid 2px;
 
     font-size: 30px;
+}
+
+.domainStatus {
+    /*/
+    outline: 1px dotted rgb(13, 53, 138);
+    /**/
+
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 650px) {

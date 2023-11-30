@@ -1,10 +1,12 @@
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { TaskProgress } from '../TaskProgress';
+import { WebgptTaskProgress } from '../WebgptTaskProgress';
 import { MOCKED_TASKS_PROGRESS_QUEUE } from './_tasks';
 
-export async function mockedMultitask(onProgress: (taskProgress: TaskProgress) => Promisable<void>): Promise<void> {
+export async function mockedMultitask(
+    onProgress: (taskProgress: WebgptTaskProgress) => Promisable<void>,
+): Promise<void> {
     console.info(
         spaceTrim(`
             %cStart mockedMultitask
@@ -22,7 +24,7 @@ export async function mockedMultitask(onProgress: (taskProgress: TaskProgress) =
     const queue = [...MOCKED_TASKS_PROGRESS_QUEUE];
 
     while (true) {
-        await forTime(Math.random() * 1000 + 500);
+        await forTime(Math.random() * 500 + 100);
 
         const newTaskProgress = queue.shift();
         if (!newTaskProgress) {

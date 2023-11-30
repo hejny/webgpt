@@ -25,7 +25,7 @@ export function ControlPanel() {
     return (
         <div
             // Note: It is intended to have two divs embedded in each other
-            className={classNames('aiai-controls', styles.ControlPanel)}
+            className={classNames('webgpt-controls', styles.ControlPanel)}
         >
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
             <div className={styles.group}>
@@ -97,7 +97,7 @@ export function ControlPanel() {
                 )}
 
                 {/*
-                Note: In the <Menu/>
+                TODO: [🧠]  What is the best way how to navigate home?
                 <Link
                     href={'/'}
                     className={classNames(styles.button)}
