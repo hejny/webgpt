@@ -26,11 +26,11 @@ import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
 import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
-import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { PublishLink } from '../PublishModal/PublishLink';
 import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
+import { CopilotPanelChangeFont } from './CopilotPanelChangeFont';
 
 /**
  * Renders the co-pilot panel for text commands to edit the page.
@@ -318,18 +318,13 @@ export function CopilotPanel() {
                         <li>
                             <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
                                 Edit markdown
-                                {/*           <- TODO: Should be here "Edit markdown" or "Edit content" */}
+                                {/*           <- TODO: [🧠] Should be here "Edit markdown" or "Edit content" or "Advanced edit"
+                                                       + It should be in the submenu of "Advanced edits"
+                                */}
                             </WallpaperLink>
                         </li>
                         <li className={styles.auto}>
-                            <ImportFonts
-                                fonts={
-                                    new Set([randomFont.fontFamily])
-                                } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
-                            />
-                            <button onClick={modifyWallpaperFont}>
-                                Change <span style={{ fontFamily: `'${randomFont}'` }}>font</span>
-                            </button>
+                            <CopilotPanelChangeFont />
                         </li>
                         <li>
                             <WallpaperLink
