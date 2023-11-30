@@ -1,8 +1,8 @@
-import { useReducer } from 'react';
+import { CSSProperties, useReducer } from 'react';
 import { Promisable } from 'type-fest';
 import { v4 } from 'uuid';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
-import { string_translate_language } from '../../utils/typeAliases';
+import { string_css_class, string_translate_language } from '../../utils/typeAliases';
 import { speak } from '../../utils/voice/speak';
 import { Chat } from './Chat/Chat';
 import { ChatMessage, CompleteChatMessage, TeacherChatMessage } from './interfaces/ChatMessage';
@@ -29,6 +29,16 @@ interface JournalProps {
     ): Promisable<string /* <- TODO: [🍗] Pass here the message object NOT just text */>;
 
     // TODO: !!! runDeamon
+
+    /**
+     * Optional CSS class name which will be added to root <Chat/> component
+     */
+    className?: string_css_class;
+
+    /**
+     * Optional CSS  style which will be added to root <Chat/> component
+     */
+    style?: CSSProperties;
 }
 
 /**
@@ -41,7 +51,7 @@ interface JournalProps {
  * Use <Journal/> in most cases.
  */
 export function Journal(props: JournalProps) {
-    const { isVoiceEnabled, voiceLanguage = 'en', onMessage } = props;
+    const { isVoiceEnabled, voiceLanguage = 'en', onMessage, className, style } = props;
 
     const [messages, messagesDispatch] = useReducer(
         (messages: Array<ChatMessage>, action: { type: 'ADD'; message: ChatMessage }) => {
@@ -94,7 +104,7 @@ export function Journal(props: JournalProps) {
 
     return (
         <Chat
-            {...{ messages, voiceLanguage }}
+            {...{ messages, voiceLanguage, className, style }}
             isVoiceRecognitionButtonShown={isVoiceEnabled}
             onMessage={async (teacherMessageContent /* <- TODO: [🍗] Pass here the message object NOT just text */) => {
                 const myMessage: TeacherChatMessage & CompleteChatMessage = {

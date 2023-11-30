@@ -5,26 +5,20 @@ import { StaticLayout } from '../../components/StaticLayout/StaticLayout';
 export default function TestVoicePage() {
     return (
         <StaticLayout subtitle="Test chat">
-            <main
+            <Journal
                 style={{
-                    // outline: `1px dotted red`,
-                    // backgroundColor: 'rgba(94,13,13,0.15)',
                     height: '100vh',
-                    padding: 0,
                 }}
-            >
-                <Journal
-                    onMessage={(message) =>
-                        spaceTrim(
-                            (block) => `
+                onMessage={(message) =>
+                    spaceTrim(
+                        (block) => `
                                     You said: 
 
                                     > ${block(message)}  
                                 `,
-                        )
-                    }
-                />
-            </main>
+                    )
+                }
+            />
         </StaticLayout>
     );
 }
