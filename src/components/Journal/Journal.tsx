@@ -141,4 +141,6 @@ export function Journal(props: JournalProps) {
  * TODO: !! Allow to listen without need to press a button
  * TODO: !! Imitate conversation
  * TODO: Use momentjs for dates
+ * TODO: !!! Change TEACHER + JOURNAL branding, image,... to WebGPT style
+ * TODO: !!! Buttons in WebGPT style
  */
