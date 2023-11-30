@@ -20,6 +20,10 @@ export function CopilotPanelRotateColors() {
         <>
             <button onClick={modifyWallpaperFont}>
                 Change
+                {
+                    ' '
+                    /**/
+                }
                 {/* TODO: !! Put here colors of the page */}
                 <span style={{ color: '#ff0000' }}>c</span>
                 <span style={{ color: '#ff6622' }}>o</span>
