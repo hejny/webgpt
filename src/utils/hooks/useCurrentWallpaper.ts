@@ -1,11 +1,12 @@
 import { useCallback } from 'react';
+import { WritableDeep } from 'type-fest';
 import { extractTitleFromContent } from '../content/extractTitleFromContent';
 import { IWallpaper } from '../IWallpaper';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useObservable } from './useObservable';
 import { useWallpaperSubject } from './useWallpaperSubject';
 
-type IWallpaperToModify = Omit<IWallpaper, 'title' /* <- Note: [🗄] Ommiting values computed here */>;
+type IWallpaperToModify = WritableDeep<Omit<IWallpaper, 'title' /* <- Note: [🗄] Ommiting values computed here */>>;
 type IModifyWallpaper = (modifiedWallpaper: IWallpaperToModify) => IWallpaperToModify;
 
 /**
