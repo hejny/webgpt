@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { ReactNode, useContext } from 'react';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
-import { extractDescriptionFromHtml } from '../../utils/content/extractDescriptionFromHtml';
+import { extractDescriptionFromContent } from '../../utils/content/extractDescriptionFromContent';
 import { ExportContext } from '../../utils/hooks/ExportContext';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { ExportCommentedBlock } from '../ExportComment/ExportCommentedBlock';
@@ -28,7 +28,7 @@ export function WallpaperAppHead(props: WallpaperAppHeadProps) {
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
     const description =
-        extractDescriptionFromHtml(wallpaper.content) /* <- !! Shorten a description with GPT */ ||
+        extractDescriptionFromContent(wallpaper.content) /* <- !! Shorten a description with GPT */ ||
         'The page was created by webgpt.cz';
 
     const homeUrl = isExported
