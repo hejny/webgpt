@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { dialoguesQueue } from './dialoguesQueue';
-import { DialogueFunction } from './interfaces/DialogueFunction';
-import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
+import type { DialogueFunction } from './interfaces/DialogueFunction';
+import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from './isDialoguesRendered';
 
 interface DialoguesProps {

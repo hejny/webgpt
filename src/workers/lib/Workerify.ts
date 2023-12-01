@@ -1,15 +1,15 @@
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
-import { IMessageDialogueResponse } from './interfaces/IMessageDialogueResponse';
-import { IMessageError } from './interfaces/IMessageError';
-import { IMessageMainToWorker } from './interfaces/IMessageMainToWorker';
-import { IMessageProgress } from './interfaces/IMessageProgress';
-import { IMessageRequest } from './interfaces/IMessageRequest';
-import { IMessageResult } from './interfaces/IMessageResult';
-import { IMessageWorkerToMain } from './interfaces/IMessageWorkerToMain';
-import { IWorkerifyableFunction } from './interfaces/IWorkerifyableFunction';
-import { TransferableObject } from './interfaces/TransferableObject';
-import { WorkerifyOptions } from './interfaces/WorkerifyOptions';
+import type { IMessageDialogueResponse } from './interfaces/IMessageDialogueResponse';
+import type { IMessageError } from './interfaces/IMessageError';
+import type { IMessageMainToWorker } from './interfaces/IMessageMainToWorker';
+import type { IMessageProgress } from './interfaces/IMessageProgress';
+import type { IMessageRequest } from './interfaces/IMessageRequest';
+import type { IMessageResult } from './interfaces/IMessageResult';
+import type { IMessageWorkerToMain } from './interfaces/IMessageWorkerToMain';
+import type { IWorkerifyableFunction } from './interfaces/IWorkerifyableFunction';
+import type { TransferableObject } from './interfaces/TransferableObject';
+import type { WorkerifyOptions } from './interfaces/WorkerifyOptions';
 
 /**
  * Utility helper for async running functions in workers

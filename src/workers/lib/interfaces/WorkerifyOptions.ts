@@ -1,4 +1,4 @@
-import { DialogueFunction } from '../dialogues/interfaces/DialogueFunction';
+import type { DialogueFunction } from '../dialogues/interfaces/DialogueFunction';
 
 /**
  * Options for Workerify.

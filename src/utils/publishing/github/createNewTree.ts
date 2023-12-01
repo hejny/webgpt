@@ -1,5 +1,5 @@
 import { githubOctokit } from './githubOctokit';
-import { IFileForGithub } from './interfaces/IFileForGithub';
+import type { IFileForGithub } from './interfaces/IFileForGithub';
 
 interface CreateNewTreeOptions {
     organizationName: string;

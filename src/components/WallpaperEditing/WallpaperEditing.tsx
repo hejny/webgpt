@@ -1,4 +1,3 @@
-import { ColorsPanel } from '../../components/ColorsPanel/ColorsPanel';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useModal } from '../../utils/hooks/useModal';
@@ -35,13 +34,16 @@ export function WallpaperEditing() {
 
             {modal === null && scenario === 'FROM_SOMETHING' && <CopilotPanel />}
             {modal === null && scenario === 'GALLERY' && <ControlPanel />}
-            {modal === null && scenario === 'GALLERY' && <ColorsPanel />}
+            {/* 
+            Note: [📿] <ColorsPanel /> and its components are not used anymore
+            modal === null && scenario === 'GALLERY' && <ColorsPanel />
+            */}
         </>
     );
 }
 
 /**
  * TODO: !! Lazy load modals
- * TODO: [🧠] How to show <ColorsPanel />
+ * TODO: [📿][🧠] How to show <ColorsPanel />
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */

@@ -2,7 +2,7 @@ import { Promisable } from 'type-fest';
 import { Vector } from 'xyzt';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
 import { Color } from '../../color/Color';
-import { WithTake } from '../../take/interfaces/ITakeChain';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 
 /*

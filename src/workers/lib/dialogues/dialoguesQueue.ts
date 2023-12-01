@@ -1,4 +1,4 @@
-import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
+import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 
 /**
  * Queue of dialogues that are waiting for an response
