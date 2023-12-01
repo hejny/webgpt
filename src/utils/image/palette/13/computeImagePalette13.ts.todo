@@ -9,7 +9,7 @@ import { textColor } from '../../../color/operators/furthest';
 import { areColorsEqual } from '../../../color/utils/areColorsEqual';
 import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
-import { WithTake } from '../../../take/interfaces/ITakeChain';
+import type { WithTake } from '../../../take/interfaces/ITakeChain';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 let totalCount = 0;

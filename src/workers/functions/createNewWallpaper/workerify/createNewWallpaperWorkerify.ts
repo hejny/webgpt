@@ -1,7 +1,7 @@
 import { supportDialogues } from '../../../dialogues';
 import { Workerify } from '../../../lib/Workerify';
-import { CreateNewWallpaperRequest } from '../interfaces/CreateNewWallpaperRequest';
-import { CreateNewWallpaperResult } from '../interfaces/CreateNewWallpaperResult';
+import type { CreateNewWallpaperRequest } from '../interfaces/CreateNewWallpaperRequest';
+import type { CreateNewWallpaperResult } from '../interfaces/CreateNewWallpaperResult';
 
 /**
  * @private Use only withing the folder createNewWallpaper

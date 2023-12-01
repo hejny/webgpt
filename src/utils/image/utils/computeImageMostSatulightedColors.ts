@@ -8,7 +8,7 @@ import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { colorSatulightion } from '../../color/utils/colorSatulightion';
 import { forARest } from '../../forARest';
-import { WithTake } from '../../take/interfaces/ITakeChain';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
 import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
