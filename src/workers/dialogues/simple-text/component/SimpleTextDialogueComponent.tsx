@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useCallback, useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
@@ -22,6 +22,10 @@ export function SimpleTextDialogueComponent(
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+    const respond = useCallback(() => {
+        onResponse({ answer: textareaRef.current!.value });
+    }, [onResponse, , textareaRef]);
+
     return (
         <Modal title={message}>
             <textarea
@@ -31,22 +35,14 @@ export function SimpleTextDialogueComponent(
                 placeholder={placeholder}
                 className={styles.answer}
                 onKeyDown={(event) => {
-                    // TODO: DRY [1]
                     if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
                         return;
                     }
 
-                    onResponse({ answer: event.currentTarget.value });
+                    respond();
                 }}
             />
-            <button
-                className={styles.submit}
-                onClick={() => {
-                    // TODO: DRY [1]
-
-                    onResponse({ answer: textareaRef.current!.value });
-                }}
-            >
+            <button className={styles.submit} onClick={respond}>
                 Submit {/* <- !! Translate */}
             </button>
         </Modal>
