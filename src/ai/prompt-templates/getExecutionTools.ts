@@ -58,6 +58,9 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                         const response = await simpleTextDialogue({
                             ...options,
                             message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
+
+                            // !!! isRequired
+                            // !!! onFeedback
                         });
 
                         answer = response.answer;

@@ -5,8 +5,8 @@ import { classNames } from '../../../../utils/classNames';
 import { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import { FeedbackDialogueRequest } from '../types/FeedbackDialogueRequest';
-import { FeedbackDialogueResponse } from '../types/FeedbackDialogueResponse';
+import type { FeedbackDialogueRequest } from '../types/FeedbackDialogueRequest';
+import type { FeedbackDialogueResponse } from '../types/FeedbackDialogueResponse';
 
 /**
  * Feedback dialogue offers a simple yes/no question to the user.

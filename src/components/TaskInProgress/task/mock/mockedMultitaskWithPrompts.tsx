@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
+import type { FeedbackDialogueResponse } from '../../../../workers/dialogues/feedback/types/FeedbackDialogueResponse';
 import { simpleTextDialogue } from '../../../../workers/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
@@ -42,6 +43,9 @@ export async function mockedMultitaskWithPrompts(
             ),
             defaultValue: faker.hacker.phrase(),
             placeholder: faker.hacker.phrase(),
+            onFeedback({ likedStatus, note }: FeedbackDialogueResponse) {
+                console.log('onFeedback', { likedStatus, note });
+            },
         });
 
         await onProgress({
