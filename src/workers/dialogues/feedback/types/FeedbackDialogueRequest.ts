@@ -19,11 +19,13 @@ export type FeedbackDialogueRequest = {
 
     /**
      * Default value for the note
+     * !!! [🧠] Maybe rename and include "note" in the name
      */
     readonly defaultValue: string | null;
 
     /**
      * Placeholder for the note
+     * !!! [🧠] Maybe rename and include "note" in the name
      */
     readonly placeholder?: string;
 };
