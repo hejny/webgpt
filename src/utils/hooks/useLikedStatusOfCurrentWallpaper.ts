@@ -4,6 +4,10 @@ import { provideClientId } from '../supabase/provideClientId';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useStateInLocalstorage } from './useStateInLocalstorage';
 
+// TODO: !!! Change:
+//  LikedStatus -> LIKED_STATUSES
+//  keyof typeof LikedStatus -> LikedStatus
+
 export const LikedStatus = {
     NONE: 'None',
     LOVE: '❤ Loved',
