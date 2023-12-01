@@ -2,8 +2,8 @@ import { createBlobForGithub } from './createBlobForGithub';
 import { createNewCommit } from './createNewCommit';
 import { createNewTree } from './createNewTree';
 import { getCurrentCommit } from './getCurrentCommit';
-import { IFileForGithub } from './interfaces/IFileForGithub';
-import { IFileToPublish } from './interfaces/IFileToPublish';
+import type { IFileForGithub } from './interfaces/IFileForGithub';
+import type { IFileToPublish } from './interfaces/IFileToPublish';
 import { setBranchToCommit } from './setBranchToCommit';
 
 interface UploadToRepositoryOptions {

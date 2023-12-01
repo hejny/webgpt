@@ -1,7 +1,7 @@
 import { Color } from '../../color/Color';
 import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { forARest } from '../../forARest';
-import { WithTake } from '../../take/interfaces/ITakeChain';
+import type { WithTake } from '../../take/interfaces/ITakeChain';
 import { IComputeColorstatsWork } from '../IComputeColorstatsWork';
 import { IImage } from '../IImage';
 

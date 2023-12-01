@@ -9,7 +9,7 @@ import { getExecutionTools } from '../../prompt-templates/getExecutionTools';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import { ImagePrompt } from '../0-interfaces/ImagePrompt';
 import { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
-import { PregeneratedPhotobankOptions } from './interfaces/PregeneratedPhotobankOptions';
+import type { PregeneratedPhotobankOptions } from './interfaces/PregeneratedPhotobankOptions';
 
 /**
  * Pre-generated photobank behaves like a regular image generator, but it uses pre-generated images instead of generating new ones.

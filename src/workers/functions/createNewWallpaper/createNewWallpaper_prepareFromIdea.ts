@@ -3,8 +3,8 @@ import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/Webg
 import { string_image_prompt } from '../../../utils/typeAliases';
 import { createNewWallpaper_image } from './createNewWallpaper_image';
 import { createNewWallpaper_text } from './createNewWallpaper_text';
-import { CreateNewWallpaperPrepareResult } from './interfaces/CreateNewWallpaperPrepareResult';
-import { CreateNewWallpaperRequest } from './interfaces/CreateNewWallpaperRequest';
+import type { CreateNewWallpaperPrepareResult } from './interfaces/CreateNewWallpaperPrepareResult';
+import type { CreateNewWallpaperRequest } from './interfaces/CreateNewWallpaperRequest';
 
 /**
  * Create new wallpaper in situation when user provided idea but not image

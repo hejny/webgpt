@@ -4,8 +4,8 @@ import { serializeWallpaper } from '../../../utils/hydrateWallpaper';
 import { getSupabaseForWorker } from '../../../utils/supabase/getSupabaseForWorker';
 import { createNewWallpaper_prepareFromIdea } from './createNewWallpaper_prepareFromIdea';
 import { createNewWallpaper_prepareFromImage } from './createNewWallpaper_prepareFromImage';
-import { CreateNewWallpaperRequest } from './interfaces/CreateNewWallpaperRequest';
-import { CreateNewWallpaperResult } from './interfaces/CreateNewWallpaperResult';
+import type { CreateNewWallpaperRequest } from './interfaces/CreateNewWallpaperRequest';
+import type { CreateNewWallpaperResult } from './interfaces/CreateNewWallpaperResult';
 
 /**
  * Create a new wallpaper
