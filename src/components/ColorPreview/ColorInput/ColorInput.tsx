@@ -24,6 +24,8 @@ interface ColorInputProps {
 
 /**
  * Renders a color input with a preview box and a color picker
+ * 
+ * @deprecated [📿] <ColorsPanel /> and its components are not used anymore
  */
 export function ColorInput(props: ColorInputProps) {
     const { className, value, onChange, presetColors } = props;
