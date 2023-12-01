@@ -28,7 +28,7 @@ export function WallpaperAppHead(props: WallpaperAppHeadProps) {
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
     const description =
-        extractDescriptionFromContent(wallpaper.content) /* <- !! Shorten a description with GPT */ ||
+        (extractDescriptionFromContent(wallpaper.content) as string) /* <- !! Shorten a description with GPT */ ||
         'The page was created by webgpt.cz';
 
     const homeUrl = isExported
