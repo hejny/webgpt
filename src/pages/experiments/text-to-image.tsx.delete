@@ -2,7 +2,7 @@ import { nameToUriParts } from 'n12';
 import { useCallback, useMemo, useState } from 'react';
 import { USE_DALLE_VERSION } from '../../../config';
 import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
-import { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
+import type { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { getPhotobank } from '../../ai/text-to-image/getPhotobank';
 import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
 import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';

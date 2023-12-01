@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { githubOctokit } from './githubOctokit';
-import { IFileToPublish } from './interfaces/IFileToPublish';
+import type { IFileToPublish } from './interfaces/IFileToPublish';
 import { uploadToRepository } from './uploadToRepository';
 
 interface CreateNewRepositoryOptions {

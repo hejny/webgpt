@@ -9,6 +9,8 @@ import styles from './ColorsPanel.module.css';
 
 /**
  * Renders the colors panel component
+ * 
+ * @deprecated [📿] <ColorsPanel /> and its components are not used anymore
  */
 export function ColorsPanel() {
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();

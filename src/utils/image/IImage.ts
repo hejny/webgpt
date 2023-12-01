@@ -5,7 +5,7 @@
 import { Promisable } from 'type-fest';
 import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
-import { WithTake } from '../take/interfaces/ITakeChain';
+import type { WithTake } from '../take/interfaces/ITakeChain';
 
 /**
  * Represents an image as a 2D array of pixels

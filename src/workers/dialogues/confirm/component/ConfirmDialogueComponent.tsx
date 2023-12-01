@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
-import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
-import { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
+import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
+import type { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
+import type { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
 
 /**
  * Confirm dialogue offers a simple yes/no question to the user.

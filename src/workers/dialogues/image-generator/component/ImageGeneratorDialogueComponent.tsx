@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { USE_DALLE_MODEL_SETTINGS, USE_DALLE_VERSION } from '../../../../../config';
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
-import { DallePrompt } from '../../../../ai/text-to-image/dalle/interfaces/DallePrompt';
+import type { DallePrompt } from '../../../../ai/text-to-image/dalle/interfaces/DallePrompt';
 import { getImageGenerator } from '../../../../ai/text-to-image/getImageGenerator';
 import { getPhotobank } from '../../../../ai/text-to-image/getPhotobank';
 import { NothingImageGenerator } from '../../../../ai/text-to-image/nothing/NothingImageGenerator';
@@ -16,9 +16,9 @@ import { useClientId } from '../../../../utils/hooks/useClientId';
 import { useInitialAction } from '../../../../utils/hooks/useInitialAction';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
-import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
-import { ImageGeneratorDialogueResponse } from '../interfaces/ImageGeneratorDialogueResponse';
+import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
+import type { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
+import type { ImageGeneratorDialogueResponse } from '../interfaces/ImageGeneratorDialogueResponse';
 
 /**
  * Image Generator dialogue offers a modal to the user to pick image from a photobank or to generate a new one.
