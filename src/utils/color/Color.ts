@@ -1,4 +1,4 @@
-import { WithTake } from '../take/interfaces/ITakeChain';
+import type { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
 import { CSS_COLORS } from './css-colors';
 import { checkChanellValue } from './internal-utils/checkChanellValue';

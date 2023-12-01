@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises';
 import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { PUBLISH_TO_GITHUB_ORGANIZATION } from '../../../config';
-import { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
+import type { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
 import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
 import { string_url } from '../../utils/typeAliases';
 
