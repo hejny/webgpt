@@ -31,7 +31,9 @@ export function WallpaperAppHead(props: WallpaperAppHeadProps) {
         extractDescriptionFromHtml(wallpaper.content) /* <- !! Shorten a description with GPT */ ||
         'The page was created by webgpt.cz';
 
-    const homeUrl = `${publicUrl.href}${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
+    const homeUrl = isExported
+        ? publicUrl.href
+        : `${publicUrl.href}${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
     const socialImageUrl = wallpaper.src;
 
