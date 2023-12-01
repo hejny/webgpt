@@ -40,6 +40,10 @@
     }
 }
 
+.Article h2 {
+    margin-bottom: 10px;
+}
+
 .Article h2,
 .Article > div {
     margin-top: 60px;
