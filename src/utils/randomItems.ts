@@ -26,3 +26,7 @@ export function randomItems<TItem>(count: number, ...items: Array<TItem>): Array
     }
     return result;
 }
+
+/**
+ * TODO: [🧠][👵] Figure out something between rotateItems and shuffleItems which is more generic and recieves a ruleset how to reordeto the array in some general way
+ */

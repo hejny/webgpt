@@ -4,7 +4,7 @@ import { Server, Socket } from 'socket.io';
 import spaceTrim from 'spacetrim';
 import type { CreateRemoteImageGeneratorServerOptions } from './interfaces/CreateRemoteImageGeneratorServerOptions';
 import type { Imgs_Error } from './interfaces/Imgs_Error';
-import { Imgs_Request } from './interfaces/Imgs_Request';
+import type { Imgs_Request } from './interfaces/Imgs_Request';
 import type { Imgs_Response } from './interfaces/Imgs_Response';
 
 /**

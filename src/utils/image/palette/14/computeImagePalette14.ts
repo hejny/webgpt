@@ -12,7 +12,7 @@ import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
 import { forARest } from '../../../forARest';
 import { getOrderString } from '../../../getOrderString';
-import { WithTake } from '../../../take/interfaces/ITakeChain';
+import type { WithTake } from '../../../take/interfaces/ITakeChain';
 import { IComputeColorstatsWork } from '../../IComputeColorstatsWork';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
