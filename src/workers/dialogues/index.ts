@@ -1,4 +1,4 @@
-import { DialogueFunction } from '../lib/dialogues/interfaces/DialogueFunction';
+import type { DialogueFunction } from '../lib/dialogues/interfaces/DialogueFunction';
 import { confirmDialogue } from './confirm/confirmDialogue';
 import { feedbackDialogue } from './feedback/feedbackDialogue';
 import { imageGeneratorDialogue } from './image-generator/imageGeneratorDialogue';

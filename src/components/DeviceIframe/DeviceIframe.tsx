@@ -4,7 +4,7 @@ import { IS_DEVELOPMENT } from '../../../config';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
-import { WithTake } from '../../utils/take/interfaces/ITakeChain';
+import type { WithTake } from '../../utils/take/interfaces/ITakeChain';
 import { string_css_class, string_url } from '../../utils/typeAliases';
 import styles from './DeviceIframe.module.css';
 

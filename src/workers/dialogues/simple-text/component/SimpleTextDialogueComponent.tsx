@@ -1,9 +1,9 @@
 import { useCallback, useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
-import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueRequest';
-import { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
+import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
+import type { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueRequest';
+import type { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
 
 /**
  * Simple text dialogue offers a modal to the user to enter a (multiline) text.

@@ -1,13 +1,13 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
 import { randomUuid } from '../../../utils/randomUuid';
-import { IMessageDialogueRequest } from '../interfaces/IMessageDialogueRequest';
-import { IMessageDialogueResponse } from '../interfaces/IMessageDialogueResponse';
-import { IMessageMainToWorker } from '../interfaces/IMessageMainToWorker';
+import type { IMessageDialogueRequest } from '../interfaces/IMessageDialogueRequest';
+import type { IMessageDialogueResponse } from '../interfaces/IMessageDialogueResponse';
+import type { IMessageMainToWorker } from '../interfaces/IMessageMainToWorker';
 import { dialoguesQueue } from './dialoguesQueue';
-import { DialogueComponent } from './interfaces/DialogueComponent';
-import { DialogueFunction } from './interfaces/DialogueFunction';
-import { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
+import type { DialogueComponent } from './interfaces/DialogueComponent';
+import type { DialogueFunction } from './interfaces/DialogueFunction';
+import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from './isDialoguesRendered';
 
 /**
