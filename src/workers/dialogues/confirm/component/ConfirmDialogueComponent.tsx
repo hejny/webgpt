@@ -20,8 +20,7 @@ export function ConfirmDialogueComponent(
 
     const styles = useStyleModule(import('./ConfirmDialogueComponent.module.css'));
 
-    const textareaRef = useRef<HTMLTextAreaElement>(null);
-
+ 
     return (
         <Modal title={message}>
             <button
