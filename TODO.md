@@ -1,4 +1,12 @@
 
+## ☑ TODOs
+
+## Programming goals:
+
+- [ ][🤽‍♀️] Use types not interfaces
+
+## Misc
+
 TODO: Maybe use unstyled components library like https://headlessui.com/
 TODO: Add aria-* attributes to all elements
 TODO: Add things from Ainautes
@@ -11,3 +19,7 @@ TODO: Make logos via ControlNet @see https://www.facebook.com/reel/2856666005318
 TODO: Dynamic pages from CMSs like Wordpress, Drupal, Ghost, Strapi, Contentful, etc
                          Systems like Notion, Google Docs (@see file:///C:/Users/me/Downloads/e262ded5-27c3-4e4b-92e0-608fcb4ca2c3_Export-47229757-e9f2-4e4a-8fd3-770ded42a53b/The%20AI%20web%20058447887ac94ecb8e645bb108278d61.html)
 TODO: [🦺] Maybe we need robots.txt @see https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation
+
+
+---
+
