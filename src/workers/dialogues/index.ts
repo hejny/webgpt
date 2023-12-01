@@ -1,5 +1,6 @@
 import { DialogueFunction } from '../lib/dialogues/interfaces/DialogueFunction';
 import { confirmDialogue } from './confirm/confirmDialogue';
+import { feedbackDialogue } from './feedback/feedbackDialogue';
 import { imageGeneratorDialogue } from './image-generator/imageGeneratorDialogue';
 import { simpleTextDialogue } from './simple-text/simpleTextDialogue';
 
@@ -12,4 +13,5 @@ export const supportDialogues: Array<DialogueFunction<any, any>> = [
     simpleTextDialogue,
     confirmDialogue,
     imageGeneratorDialogue,
+    feedbackDialogue,
 ];
