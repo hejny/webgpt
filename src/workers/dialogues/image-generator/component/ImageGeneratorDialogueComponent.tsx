@@ -29,7 +29,7 @@ export function ImageGeneratorDialogueComponent(
     props: DialogueComponentProps<ImageGeneratorDialogueRequest, ImageGeneratorDialogueResponse>,
 ) {
     const {
-        request: { message, defaultImagePrompt },
+        request: { message, defaultImagePrompt , priority = 0},
         respond: onResponse,
     } = props;
 

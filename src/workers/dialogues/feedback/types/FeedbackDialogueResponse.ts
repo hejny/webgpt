@@ -1,6 +1,7 @@
 import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { AbstractDialogueResponse } from '../../../lib/dialogues/interfaces/AbstractDialogueResponse';
 
-export type FeedbackDialogueResponse = {
+export type FeedbackDialogueResponse = AbstractDialogueResponse & {
     /**
      * result of the feedbackation
      */

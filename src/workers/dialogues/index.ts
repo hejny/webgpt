@@ -9,9 +9,6 @@ import { simpleTextDialogue } from './simple-text/simpleTextDialogue';
  *
  * @singleton
  */
-export const supportDialogues: Array<DialogueFunction<any, any>> = [
-    simpleTextDialogue,
-    confirmDialogue,
-    imageGeneratorDialogue,
-    feedbackDialogue,
-];
+export const supportDialogues: Array<
+    DialogueFunction<any, any /* <- TODO: AbstractDialogueRequest, AbstractDialogueResponse */>
+> = [simpleTextDialogue, confirmDialogue, imageGeneratorDialogue, feedbackDialogue];

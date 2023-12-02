@@ -13,7 +13,7 @@ export function ConfirmDialogueComponent(
     props: DialogueComponentProps<ConfirmDialogueRequest, ConfirmDialogueResponse>,
 ) {
     const {
-        request: { message },
+        request: { message, priority = 0 },
         respond: onResponse,
     } = props;
 

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { dialoguesQueue } from './dialoguesQueue';
+import type { AbstractDialogueRequest } from './interfaces/AbstractDialogueRequest';
+import type { AbstractDialogueResponse } from './interfaces/AbstractDialogueResponse';
 import type { DialogueFunction } from './interfaces/DialogueFunction';
 import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from './isDialoguesRendered';
@@ -8,7 +10,7 @@ interface DialoguesProps {
     /**
      * Which dialogues are supported/rendered by the <Dialogues/> component
      */
-    supportDialogues: Array<DialogueFunction<any, any>>;
+    supportDialogues: Array<DialogueFunction<AbstractDialogueRequest, AbstractDialogueResponse>>;
 }
 
 /**

@@ -17,7 +17,7 @@ export function SimpleTextDialogueComponent(
     props: DialogueComponentProps<SimpleTextDialogueRequest, SimpleTextDialogueResponse>,
 ) {
     const {
-        request: { message, defaultValue, placeholder, isFeedbackCollected },
+        request: { message, defaultValue, placeholder, isFeedbackCollected, priority = 0 },
         respond: onResponse,
     } = props;
 
@@ -40,6 +40,7 @@ export function SimpleTextDialogueComponent(
         const subject = '!!!';
         setSetFeedback(
             await feedbackDialogue({
+                priority: priority + 1,
                 message: `Feedback on ${subject}`,
                 subject,
                 // !!! Pass here defaultLikedStatus
@@ -49,7 +50,7 @@ export function SimpleTextDialogueComponent(
         );
 
         setInFeedbackCollection(false);
-    }, [isInFeedbackCollection]);
+    }, [priority, isInFeedbackCollection]);
 
     const respond = useCallback(() => {
         onResponse({ answer: textareaRef.current!.value, feedback });

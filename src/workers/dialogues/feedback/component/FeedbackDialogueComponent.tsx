@@ -17,7 +17,7 @@ export function FeedbackDialogueComponent(
     props: DialogueComponentProps<FeedbackDialogueRequest, FeedbackDialogueResponse>,
 ) {
     const {
-        request: { message, subject, defaultValue, placeholder },
+        request: { message, subject, defaultValue, placeholder, priority = 0 },
         respond: onResponse,
     } = props;
 

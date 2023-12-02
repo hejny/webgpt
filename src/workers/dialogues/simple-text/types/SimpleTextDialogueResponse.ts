@@ -1,6 +1,7 @@
-import { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
+import type { AbstractDialogueResponse } from '../../../lib/dialogues/interfaces/AbstractDialogueResponse';
+import type { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
 
-export type SimpleTextDialogueResponse= {
+export type SimpleTextDialogueResponse = AbstractDialogueResponse & {
     /**
      * Answer to the prompt
      *
@@ -13,7 +14,7 @@ export type SimpleTextDialogueResponse= {
      * Feedback from user
      */
     readonly feedback?: FeedbackDialogueResponse;
-}
+};
 
 /**
  * TODO: !!! Change to types, add ResponseWithFeedback,RequestWithFeedback and make image dialogue use it too
