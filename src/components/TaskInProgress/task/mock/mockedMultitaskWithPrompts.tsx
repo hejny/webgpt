@@ -2,7 +2,6 @@ import { faker } from '@faker-js/faker';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { feedbackDialogue } from '../../../../workers/dialogues/feedback/feedbackDialogue';
 import { simpleTextDialogue } from '../../../../workers/dialogues/simple-text/simpleTextDialogue';
 import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
@@ -24,14 +23,14 @@ export async function mockedMultitaskWithPrompts(
         `),
     );
 
-    // TODO: !!! Only onetime
+    /*
     const { likedStatus, note } = await feedbackDialogue({
         message: 'How do you like the apple?',
         subject: 'the apple',
         defaultValue: 'I like it very much!',
         placeholder: 'I like it very much!',
     });
-    console.log('!!! feedbackDialogue', { likedStatus, note });
+    */
 
     for (let i = 0; i < 5; i++) {
         await forTime(Math.random() * 1000 + 500);
@@ -44,7 +43,7 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
-        const { answer } = await simpleTextDialogue({
+        const response = await simpleTextDialogue({
             message: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
@@ -52,21 +51,16 @@ export async function mockedMultitaskWithPrompts(
             ),
             defaultValue: faker.hacker.phrase(),
             placeholder: faker.hacker.phrase(),
-            isFeedbackCollected: false,
-
-            /*
-            TODO: !!! [🧠]
-            onFeedback({ likedStatus, note }: FeedbackDialogueResponse) {
-                console.log('onFeedback', { likedStatus, note });
-            },
-            */
+            isFeedbackCollected: true,
         });
+
+        console.info('👉', response);
 
         await onProgress({
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({answer})</i>
+                    {title} <i>({response.answer})</i>
                 </>
             ),
             isDone: true,
