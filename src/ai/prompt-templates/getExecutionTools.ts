@@ -67,7 +67,6 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                         // TODO: !!! Record even if feedback is not provided
                         if (response.feedback) {
                             // TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
-                            // !!! Use here feedback
 
                             options.defaultValue;
 
@@ -76,14 +75,13 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                                 .from('Feedback')
                                 .insert({
                                     clientId,
-                                    // !!! wallpaperXxx
                                     likedStatus: response.feedback.likedStatus,
                                     defaultValue: options.defaultValue,
                                     value: response.answer,
                                     note: response.feedback.note,
 
                                     // <- TODO: [📉] There should be link to ptbkUrl which created  the defaultValue
-                                    // <- TODO: [💹] There should be link to wallpaper site which is the dialogue for
+                                    // <- TODO: [💹] There should be link/id/reference to wallpaper which is the dialogue for
                                     // <- TODO: [💹] There should be link/id/reference to PromptExecution which created the defaultValue
                                 })
                                 .then((insertResult) => {
