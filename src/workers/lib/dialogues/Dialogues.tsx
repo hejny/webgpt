@@ -36,7 +36,6 @@ export function Dialogues(props: DialoguesProps) {
         ],
     );
 
-    console.log('!!! <Dialogues/> render', dialoguesQueue.value);
 
     return (
         <div className={classNames('---Dialogues---', 'webgpt-controls')}>
@@ -60,8 +59,7 @@ export function Dialogues(props: DialoguesProps) {
 
                     const DialogueComponent = dialogueFunction.DialogueComponent;
 
-                    console.log('!!! <Dialogues/> render | Rendering', { dialogueTypeName, id });
-
+                
                     return (
                         <div
                             key={id}
@@ -77,8 +75,7 @@ export function Dialogues(props: DialoguesProps) {
                                 key={id}
                                 request={request}
                                 respond={(response) => {
-                                    console.log('!!!', 'Submitting response in Dialogues', id);
-
+                                
                                     const requestInQueue = dialoguesQueue.value.find(
                                         (requestInQueue) => requestInQueue.id === id,
                                     );
@@ -93,8 +90,7 @@ export function Dialogues(props: DialoguesProps) {
 
                                     requestInQueue.response = response;
 
-                                    console.log('!!!', { restRequestsInQueue, requestInQueue });
-
+                                 
                                     dialoguesQueue.value = [...restRequestsInQueue, requestInQueue];
                                 }}
                             />

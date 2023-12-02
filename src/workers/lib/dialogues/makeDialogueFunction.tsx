@@ -69,8 +69,7 @@ export function makeDialogueFunction<
             // Note: !!!
             // TODO: !!! Go through all .push(...) and decide to change to [...x,y]
         ];
-        console.log('!!! Adding new dialogue dialoguesQueue.value', dialoguesQueue.value);
-
+    
         while (true) {
             await forTime(50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 

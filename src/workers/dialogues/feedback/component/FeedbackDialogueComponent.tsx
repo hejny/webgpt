@@ -28,7 +28,7 @@ export function FeedbackDialogueComponent(
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const submit = useCallback(() => {
-        console.log('!!! submit', { likedStatus, note: textareaRef.current!.value });
+
         respond({ likedStatus, note: textareaRef.current!.value });
     }, [respond, likedStatus, textareaRef]);
 

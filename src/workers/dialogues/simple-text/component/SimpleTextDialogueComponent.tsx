@@ -54,8 +54,7 @@ export function SimpleTextDialogueComponent(
     }, [priority, isInFeedbackCollection]);
 
     const submit = useCallback(() => {
-        console.log('!!!', 'Submitting response in SimpleTextDialogueComponent');
-
+   
         respond({ answer: textareaRef.current!.value, feedback });
     }, [respond, textareaRef, feedback]);
 
@@ -75,18 +74,13 @@ export function SimpleTextDialogueComponent(
                                 return;
                             }
 
-                            console.log('!!!', 'Submitting response in SimpleTextDialogueComponent with enter');
-
+                      
                             submit();
                         }}
                     />
                     <button
                         className={styles.submit}
-                        onClick={() => {
-                            // !!! Shorten code
-                            console.log('!!!', 'Submitting response in SimpleTextDialogueComponent with button');
-                            submit();
-                        }}
+                        onClick={submit}
                     >
                         Submit {/* <- !! Translate */}
                     </button>
