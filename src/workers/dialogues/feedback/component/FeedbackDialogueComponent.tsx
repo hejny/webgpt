@@ -2,11 +2,10 @@ import Image from 'next/image';
 import { useCallback, useRef, useState } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { classNames } from '../../../../utils/classNames';
-import { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
-import { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
+import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import type { FeedbackDialogueRequest } from '../types/FeedbackDialogueRequest';
-import type { FeedbackDialogueResponse } from '../types/FeedbackDialogueResponse';
 
 /**
  * Feedback dialogue offers a simple yes/no question to the user.
@@ -28,7 +27,6 @@ export function FeedbackDialogueComponent(
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const submit = useCallback(() => {
-
         respond({ likedStatus, note: textareaRef.current!.value });
     }, [respond, likedStatus, textareaRef]);
 

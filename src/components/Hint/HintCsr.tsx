@@ -14,7 +14,6 @@ export function HintCsr(props: HintProps) {
 
     const styles = useStyleModule(import('./Hint.module.css'));
 
-
     const [isClicked, setClicked] = useState(false);
     const [clickedCount, setClickedCount, isLoadedClickedCount] = useNumericStateInLocalstorage(
         `hint-clicks-on-${id}`,
@@ -125,6 +124,8 @@ export function HintCsr(props: HintProps) {
         setClickedCount,
         isLoadedClickedCount,
         reapearCount,
+        styles.hint,
+        styles.highlight,
     ]);
 
     return (
