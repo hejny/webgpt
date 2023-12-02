@@ -3,11 +3,12 @@
 ## Programming goals
 
 -   [ ][🤽‍♀️] Use types not interfaces
+-   [ ] Use Import Attributes https://github.com/microsoft/TypeScript/issues/53656
 -   [ ] Try Signals https://youtu.be/SO8lBVWF2Y8?si=kfAjPq3vnxwVKAeH
 -   [ ] Use template literals functions https://youtu.be/sX4svSMYdt0?si=5ksC3JefXmADzqqB
 -   [ ] Use 100svh or/and 100dvh or/and 100lvh https://youtu.be/ru3U8MHbFFI?si=LCQBha4cyawUndBW
 -   [ ] When importing type USE always `import type { ... } from '...'` automatically
-        Search & replace  `import\s+(\{.*\/interfaces\/)` -> `import type $1` works
+        Search & replace `import\s+(\{.*\/interfaces\/)` -> `import type $1` works
 -   [ ] Script for auto-generating fresh unused tags with emojis [👩‍🦱][👩‍🦲][👳‍♂️]
 
 ## Misc
