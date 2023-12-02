@@ -11,5 +11,5 @@ export type AbstractDialogueRequest = TransferableObject & {
      *
      * @default 0
      */
-    priority?: number;
+    readonly priority?: number;
 };

@@ -1,6 +1,7 @@
-import { message } from '../../../../utils/typeAliases';
+import type { message } from '../../../../utils/typeAliases';
+import type { AbstractDialogueRequest } from '../../../lib/dialogues/interfaces/AbstractDialogueRequest';
 
-export type FeedbackDialogueRequest = {
+export type FeedbackDialogueRequest = AbstractDialogueRequest & {
     /**
      * Feedback message
      * Sentence about is being feedbacked?

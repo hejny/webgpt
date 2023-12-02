@@ -1,6 +1,7 @@
-import { message } from '../../../../utils/typeAliases';
+import type { message } from '../../../../utils/typeAliases';
+import type { AbstractDialogueRequest } from '../../../lib/dialogues/interfaces/AbstractDialogueRequest';
 
-export type ConfirmDialogueRequest = {
+export type ConfirmDialogueRequest = AbstractDialogueRequest & {
     /**
      * Confirm message
      * What is being confirmed?

@@ -1,6 +1,7 @@
-import { message } from '../../../../utils/typeAliases';
+import type { message } from '../../../../utils/typeAliases';
+import { AbstractDialogueRequest } from '../../../lib/dialogues/interfaces/AbstractDialogueRequest';
 
-export type SimpleTextDialogueRequest = {
+export type SimpleTextDialogueRequest = AbstractDialogueRequest & {
     /**
      * Prompt message
      */
@@ -22,7 +23,7 @@ export type SimpleTextDialogueRequest = {
      * Note: This does not mean that user must give feedback it just means that user can give feedback
      */
     readonly isFeedbackCollected: boolean;
-}
+};
 
 /**
  * TODO: isMultiline
