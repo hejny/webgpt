@@ -64,6 +64,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                             isFeedbackCollected: true,
                         });
 
+                        // TODO: !!! Record even if feedback is not provided
                         if (response.feedback) {
                             // TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
                             // !!! Use here feedback

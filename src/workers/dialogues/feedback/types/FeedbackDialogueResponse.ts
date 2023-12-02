@@ -16,6 +16,9 @@ export type FeedbackDialogueResponse = AbstractDialogueResponse & {
 };
 
 /**
+ * TODO: !!! Allow empty likedStatus - in database it SHOULD be as null NOT NONE
+ * TODO: !!! NONE means user clicked on STH and then cancelled it
+ * TODO: !!! Allow empty note
  * TODO: !!! [🧠] Maybe rename JUST to Feedback
  * Note: [🤽‍♀️]
  */
