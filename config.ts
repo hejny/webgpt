@@ -52,6 +52,7 @@ if (isRunningInBrowser()) {
     console.info(
         `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
         `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
+        // !!! Brand as vireframe WebGPT
     );
 }
 

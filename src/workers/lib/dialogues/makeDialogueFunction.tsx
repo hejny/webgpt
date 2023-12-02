@@ -24,9 +24,9 @@ export function makeDialogueFunction<
 >(DialogueComponent: DialogueComponent<TRequest, TResponse>): DialogueFunction<TRequest, TResponse> {
     const { dialogueTypeName } = DialogueComponent;
 
-    const id = randomUuid();
-
     const dialogueFunction = async (request: TRequest): Promise<TResponse> => {
+        const id = randomUuid();
+
         if (isRunningInWebWorker()) {
             // [🌴]
 

@@ -43,6 +43,7 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
+        console.log('!!!', 'await simpleTextDialogue({');
         const response = await simpleTextDialogue({
             message: (
                 <>

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { classNames } from '../../../utils/classNames';
 import { dialoguesQueue } from './dialoguesQueue';
 import type { AbstractDialogueRequest } from './interfaces/AbstractDialogueRequest';
 import type { AbstractDialogueResponse } from './interfaces/AbstractDialogueResponse';
@@ -38,11 +39,10 @@ export function Dialogues(props: DialoguesProps) {
     console.log('!!! <Dialogues/> render', dialoguesQueue.value);
 
     return (
-        <>
+        <div className={classNames('---Dialogues---', 'webgpt-controls')}>
             {dialoguesQueue.value
                 .filter(({ response }) => response === undefined)
-                .map(( { dialogueTypeName, id, request }) => {
-                  
+                .map(({ dialogueTypeName, id, request }) => {
                     const dialogueFunction = props.supportDialogues.find(
                         (dialogueFunction) => dialogueFunction.dialogueTypeName === dialogueTypeName,
                     );
@@ -60,6 +60,8 @@ export function Dialogues(props: DialoguesProps) {
 
                     const DialogueComponent = dialogueFunction.DialogueComponent;
 
+                    console.log('!!! <Dialogues/> render | Rendering', { dialogueTypeName, id });
+
                     return (
                         <div
                             key={id}
@@ -72,18 +74,26 @@ export function Dialogues(props: DialoguesProps) {
                             // TODO: [🧠] Maybe allow to pass additional style+zIndex, className and key directly into every <DialogueComponent/> props
                         >
                             <DialogueComponent
+                                key={id}
                                 request={request}
                                 respond={(response) => {
-                           
-                                    const requestInQueue = dialoguesQueue.value.find((requestInQueue) => requestInQueue.id === id);
+                                    console.log('!!!', 'Submitting response in Dialogues', id);
+
+                                    const requestInQueue = dialoguesQueue.value.find(
+                                        (requestInQueue) => requestInQueue.id === id,
+                                    );
 
                                     if (!requestInQueue) {
                                         throw new Error('Request not found in queue');
                                     }
 
-                                    const restRequestsInQueue = dialoguesQueue.value.filter(({id}) => requestInQueue.id !== id);
+                                    const restRequestsInQueue = dialoguesQueue.value.filter(
+                                        ({ id }) => requestInQueue.id !== id,
+                                    );
 
                                     requestInQueue.response = response;
+
+                                    console.log('!!!', { restRequestsInQueue, requestInQueue });
 
                                     dialoguesQueue.value = [...restRequestsInQueue, requestInQueue];
                                 }}
@@ -91,7 +101,7 @@ export function Dialogues(props: DialoguesProps) {
                         </div>
                     );
                 })}
-        </>
+        </div>
     );
 
     /*
