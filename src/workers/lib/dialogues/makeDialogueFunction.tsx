@@ -62,11 +62,12 @@ export function makeDialogueFunction<
             request,
         };
 
+        // TODO: !!! Is this needed instead of .push(...)
         dialoguesQueue.value = [
             ...dialoguesQueue.value,
             requestInQueue,
             // Note: !!!
-            // TODO: !!! Go through all .push and decide to change to [...x,y]
+            // TODO: !!! Go through all .push(...) and decide to change to [...x,y]
         ];
         console.log('!!! dialoguesQueue.value', dialoguesQueue.value);
 

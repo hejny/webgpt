@@ -41,8 +41,8 @@ export function Dialogues(props: DialoguesProps) {
         <>
             {dialoguesQueue.value
                 .filter(({ response }) => response === undefined)
-                .map((dialogueRequestInQueue) => {
-                    const { dialogueTypeName, id, request } = dialogueRequestInQueue;
+                .map(( { dialogueTypeName, id, request }) => {
+                  
                     const dialogueFunction = props.supportDialogues.find(
                         (dialogueFunction) => dialogueFunction.dialogueTypeName === dialogueTypeName,
                     );
@@ -74,8 +74,18 @@ export function Dialogues(props: DialoguesProps) {
                             <DialogueComponent
                                 request={request}
                                 respond={(response) => {
-                                    dialogueRequestInQueue.response = response;
-                                    dialoguesQueue.value = dialoguesQueue.value;
+                           
+                                    const requestInQueue = dialoguesQueue.value.find((requestInQueue) => requestInQueue.id === id);
+
+                                    if (!requestInQueue) {
+                                        throw new Error('Request not found in queue');
+                                    }
+
+                                    const restRequestsInQueue = dialoguesQueue.value.filter(({id}) => requestInQueue.id !== id);
+
+                                    requestInQueue.response = response;
+
+                                    dialoguesQueue.value = [...restRequestsInQueue, requestInQueue];
                                 }}
                             />
                         </div>
