@@ -30,6 +30,36 @@ export interface Database {
         }
         Relationships: []
       }
+      Feedback: {
+        Row: {
+          clientId: string | null
+          createdAt: string
+          defaultValue: string | null
+          id: number
+          likedStatus: string | null
+          note: string | null
+          value: string | null
+        }
+        Insert: {
+          clientId?: string | null
+          createdAt?: string
+          defaultValue?: string | null
+          id?: number
+          likedStatus?: string | null
+          note?: string | null
+          value?: string | null
+        }
+        Update: {
+          clientId?: string | null
+          createdAt?: string
+          defaultValue?: string | null
+          id?: number
+          likedStatus?: string | null
+          note?: string | null
+          value?: string | null
+        }
+        Relationships: []
+      }
       ImagePromptExecution: {
         Row: {
           clientId: string | null
