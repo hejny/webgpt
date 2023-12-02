@@ -52,7 +52,7 @@ export function SimpleTextDialogueComponent(
         setInFeedbackCollection(false);
     }, [priority, isInFeedbackCollection]);
 
-    const respond = useCallback(() => {
+    const submit = useCallback(() => {
         onResponse({ answer: textareaRef.current!.value, feedback });
     }, [onResponse, textareaRef, feedback]);
 
@@ -72,10 +72,10 @@ export function SimpleTextDialogueComponent(
                                 return;
                             }
 
-                            respond();
+                            submit();
                         }}
                     />
-                    <button className={styles.submit} onClick={respond}>
+                    <button className={styles.submit} onClick={submit}>
                         Submit {/* <- !! Translate */}
                     </button>
                 </div>

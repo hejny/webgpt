@@ -30,8 +30,8 @@
 .inner .inputLayer {
     display: grid;
     grid-template:
-        '🅰' 1fr
-        '🅱' 50px;
+        '1️⃣' 1fr
+        '2️⃣' 50px;
 }
 
 .inner .inputLayer .answer {
@@ -39,10 +39,11 @@
     outline: 1px dotted rgb(81, 255, 38);
     /**/
 
-    grid-area: 🅰;
-
     height: 100%;
     width: 100%;
+    grid-area: 1️⃣;
+
+  
     resize: none;
 
     border-radius: 0;
@@ -58,7 +59,7 @@
     outline: 1px dotted rgb(81, 255, 38);
     /**/
 
-    grid-area: 🅱;
+    grid-area: 2️⃣;
 
     width: 100%;
     height: 100%;
