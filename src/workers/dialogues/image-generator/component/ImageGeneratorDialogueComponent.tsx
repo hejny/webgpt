@@ -17,8 +17,8 @@ import { useInitialAction } from '../../../../utils/hooks/useInitialAction';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { string_image_prompt, string_url_image } from '../../../../utils/typeAliases';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import type { ImageGeneratorDialogueRequest } from '../interfaces/ImageGeneratorDialogueRequest';
-import type { ImageGeneratorDialogueResponse } from '../interfaces/ImageGeneratorDialogueResponse';
+import type { ImageGeneratorDialogueRequest } from '../types/ImageGeneratorDialogueRequest';
+import type { ImageGeneratorDialogueResponse } from '../types/ImageGeneratorDialogueResponse';
 
 /**
  * Image Generator dialogue offers a modal to the user to pick image from a photobank or to generate a new one.

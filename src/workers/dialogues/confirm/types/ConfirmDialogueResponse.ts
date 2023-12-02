@@ -1,4 +1,4 @@
-export interface ConfirmDialogueResponse {
+export type ConfirmDialogueResponse= {
     /**
      * result of the confirmation
      */

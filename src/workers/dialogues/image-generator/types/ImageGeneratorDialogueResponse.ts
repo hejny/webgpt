@@ -1,6 +1,6 @@
 import { ImagePromptResult } from '../../../../ai/text-to-image/0-interfaces/ImagePromptResult';
 
-export interface ImageGeneratorDialogueResponse {
+export type ImageGeneratorDialogueResponse= {
     /**
      * The picked image (either pre-generated or generated from the prompt)
      */

@@ -1,9 +1,8 @@
-import { useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import type { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
-import type { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
+import type { ConfirmDialogueRequest } from '../types/ConfirmDialogueRequest';
+import type { ConfirmDialogueResponse } from '../types/ConfirmDialogueResponse';
 
 /**
  * Confirm dialogue offers a simple yes/no question to the user.
@@ -20,7 +19,6 @@ export function ConfirmDialogueComponent(
 
     const styles = useStyleModule(import('./ConfirmDialogueComponent.module.css'));
 
- 
     return (
         <Modal title={message}>
             <button

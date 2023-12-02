@@ -5,8 +5,8 @@ import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { feedbackDialogue } from '../../feedback/feedbackDialogue';
 import { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
-import type { SimpleTextDialogueRequest } from '../interfaces/SimpleTextDialogueRequest';
-import type { SimpleTextDialogueResponse } from '../interfaces/SimpleTextDialogueResponse';
+import type { SimpleTextDialogueRequest } from '../types/SimpleTextDialogueRequest';
+import type { SimpleTextDialogueResponse } from '../types/SimpleTextDialogueResponse';
 
 /**
  * Simple text dialogue offers a modal to the user to enter a (multiline) text.

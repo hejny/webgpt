@@ -1,6 +1,6 @@
 import { message } from '../../../../utils/typeAliases';
 
-export interface SimpleTextDialogueRequest {
+export type SimpleTextDialogueRequest = {
     /**
      * Prompt message
      */

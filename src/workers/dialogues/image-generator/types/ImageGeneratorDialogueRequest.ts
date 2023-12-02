@@ -1,6 +1,6 @@
 import { message, string_image_prompt } from '../../../../utils/typeAliases';
 
-export interface ImageGeneratorDialogueRequest {
+export type ImageGeneratorDialogueRequest ={
     /**
      * The message
      * What is goal of the image?

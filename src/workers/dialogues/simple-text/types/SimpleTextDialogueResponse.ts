@@ -1,6 +1,6 @@
 import { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
 
-export interface SimpleTextDialogueResponse {
+export type SimpleTextDialogueResponse= {
     /**
      * Answer to the prompt
      *
