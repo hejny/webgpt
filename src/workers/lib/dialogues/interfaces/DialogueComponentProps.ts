@@ -1,4 +1,7 @@
-export interface DialogueComponentProps<TRequest, TResponse> {
+export interface DialogueComponentProps<
+    TRequest extends AbstractDialogueRequest,
+    TResponse extends AbstractDialogueResponse,
+> {
     /**
      * The request for the user
      */
@@ -6,7 +9,7 @@ export interface DialogueComponentProps<TRequest, TResponse> {
 
     /**
      * The function to call when the user responds to the request.
-     * 
+     *
      * Note: The function must be called exactly once.
      * Note: It is the responsibility of the dialogue to call it. If it is not called, the dialogue will hang.
      */
