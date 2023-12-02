@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useCallback, useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
@@ -28,23 +29,39 @@ export function SimpleTextDialogueComponent(
 
     return (
         <Modal title={message}>
-            <textarea
-                autoFocus
-                ref={textareaRef}
-                defaultValue={defaultValue || ''}
-                placeholder={placeholder}
-                className={styles.answer}
-                onKeyDown={(event) => {
-                    if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
-                        return;
-                    }
+            {/* TODO: Maybe create some <OnTop><div/><div/></OnTop> component to make this type of layouts */}
+            <div className={styles.inner}>
+                <div className={styles.inputLayer}>
+                    <textarea
+                        autoFocus
+                        ref={textareaRef}
+                        defaultValue={defaultValue || ''}
+                        placeholder={placeholder}
+                        className={styles.answer}
+                        onKeyDown={(event) => {
+                            if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
+                                return;
+                            }
 
-                    respond();
-                }}
-            />
-            <button className={styles.submit} onClick={respond}>
-                Submit {/* <- !! Translate */}
-            </button>
+                            respond();
+                        }}
+                    />
+                    <button className={styles.submit} onClick={respond}>
+                        Submit {/* <- !! Translate */}
+                    </button>
+                </div>
+                <div className={styles.feedbackLayer}>
+                    <button
+                        // TODO: Maybe also listen on double-click on mobile
+                        className={styles.triggerFeedback}
+                        title={`Give feedback on !!!`}
+                        onClick={() => alert('TODO: Give feedback on !!!')}
+                    >
+                        <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
+                        {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
+                    </button>
+                </div>
+            </div>
         </Modal>
     );
 }
