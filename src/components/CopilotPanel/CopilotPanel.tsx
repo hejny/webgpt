@@ -1,6 +1,5 @@
 import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
@@ -346,9 +345,6 @@ export function CopilotPanel() {
                             >
                                 Share
                             </WallpaperLink>
-                        </li>
-                        <li>
-                            <Link href="/">Make new web</Link>
                         </li>
                         <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>
