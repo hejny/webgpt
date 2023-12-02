@@ -24,11 +24,12 @@ export function makeDialogueFunction<
 >(DialogueComponent: DialogueComponent<TRequest, TResponse>): DialogueFunction<TRequest, TResponse> {
     const { dialogueTypeName } = DialogueComponent;
 
+    const id = randomUuid();
+
     const dialogueFunction = async (request: TRequest): Promise<TResponse> => {
         if (isRunningInWebWorker()) {
             // [🌴]
 
-            const id = randomUuid();
             postMessage({
                 type: `${dialogueTypeName}_DIALOGUE_REQUEST`,
                 id,
@@ -57,10 +58,11 @@ export function makeDialogueFunction<
 
         const requestInQueue: DialogueRequestInQueue = {
             dialogueTypeName,
+            id,
             request,
         };
 
-        dialoguesQueue.push(requestInQueue);
+        dialoguesQueue.value.push(requestInQueue);
 
         while (true) {
             await forTime(50 /* <- TODO: POLLING_INTERVAL_MS into config */);

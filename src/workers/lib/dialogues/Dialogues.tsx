@@ -35,45 +35,50 @@ export function Dialogues(props: DialoguesProps) {
         ],
     );
 
-    return dialoguesQueue.value
-        .filter(({ response }) => response === undefined)
-        .map((dialogueRequestInQueue) => {
-            const { dialogueTypeName, id, request } = dialogueRequestInQueue;
-            const dialogueFunction = props.supportDialogues.find(
-                (dialogueFunction) => dialogueFunction.dialogueTypeName === dialogueTypeName,
-            );
+    return (
+        <>
+            {dialoguesQueue.value
+                .filter(({ response }) => response === undefined)
+                .map((dialogueRequestInQueue) => {
+                    const { dialogueTypeName, id, request } = dialogueRequestInQueue;
+                    const dialogueFunction = props.supportDialogues.find(
+                        (dialogueFunction) => dialogueFunction.dialogueTypeName === dialogueTypeName,
+                    );
 
-            if (!dialogueFunction) {
-                // TODO: !!! DO not throw ONLY render error - some DRY solution to render errors/warning in UI
-                console.error(
-                    new Error(
-                        `<Dialogues/> does not support dialogue "${dialogueTypeName}", did you forget to add it to props.supportDialogues?`,
-                    ),
-                    // <- TODO: Is it better to console.error new Error or just string?
-                );
-                return null;
-            }
+                    if (!dialogueFunction) {
+                        // TODO: !!! DO not throw ONLY render error - some DRY solution to render errors/warning in UI
+                        console.error(
+                            new Error(
+                                `<Dialogues/> does not support dialogue "${dialogueTypeName}", did you forget to add it to props.supportDialogues?`,
+                            ),
+                            // <- TODO: Is it better to console.error new Error or just string?
+                        );
+                        return null;
+                    }
 
-            const DialogueComponent = dialogueFunction.DialogueComponent;
+                    const DialogueComponent = dialogueFunction.DialogueComponent;
 
-            return (
-                <div
-                    key={id}
-                    style={{
-                        zIndex:
-                            (request.priority || 0) * 10 + 10000 /* <- Note: To allow negative and float priority */,
-                    }}
-                    // TODO: [🧠] Maybe allow to pass additional style+zIndex, className and key directly into every <DialogueComponent/> props
-                >
-                    <DialogueComponent
-                        request={request}
-                        respond={(response) => {
-                            dialogueRequestInQueue.response = response;
-                        }}
-                    />
-                </div>
-            );
-        });
+                    return (
+                        <div
+                            key={id}
+                            style={{
+                                zIndex:
+                                    (request.priority || 0) * 10 +
+                                    10000 /* <- Note: To allow negative and float priority */,
+                            }}
+                            // TODO: [🧠] Maybe allow to pass additional style+zIndex, className and key directly into every <DialogueComponent/> props
+                        >
+                            <DialogueComponent
+                                request={request}
+                                respond={(response) => {
+                                    dialogueRequestInQueue.response = response;
+                                }}
+                            />
+                        </div>
+                    );
+                })}
+        </>
+    );
 
     /*
     !!! Remove + look in chat branch

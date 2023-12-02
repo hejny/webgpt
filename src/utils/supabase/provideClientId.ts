@@ -46,6 +46,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         message: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
+        isFeedbackCollected: false,
     });
 
     if (!isValidEmail(email)) {

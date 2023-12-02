@@ -1,3 +1,6 @@
+import type { AbstractDialogueRequest } from "./AbstractDialogueRequest";
+import type { AbstractDialogueResponse } from "./AbstractDialogueResponse";
+
 export interface DialogueComponentProps<
     TRequest extends AbstractDialogueRequest,
     TResponse extends AbstractDialogueResponse,

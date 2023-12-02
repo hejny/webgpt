@@ -52,6 +52,7 @@ export async function mockedMultitaskWithPrompts(
             ),
             defaultValue: faker.hacker.phrase(),
             placeholder: faker.hacker.phrase(),
+            isFeedbackCollected: false,
 
             /*
             TODO: !!! [🧠]
