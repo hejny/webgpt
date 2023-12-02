@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useNumericStateInLocalstorage } from '../../utils/hooks/useNumericStateInLocalstorage';
 import styles from './Hint.module.css';
-import { HintProps } from './HintProps';
+import type { HintProps } from './HintProps';
 
 /**
  * Renders any content wrapped in a hint

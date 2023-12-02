@@ -1,7 +1,7 @@
 import { NoCsr } from '../NoSsr/NoCsr';
 import { NoSsr } from '../NoSsr/NoSsr';
 import { HintCsr } from './HintCsr';
-import { HintProps } from './HintProps';
+import type { HintProps } from './HintProps';
 
 /**
  * Renders any content wrapped in a hint

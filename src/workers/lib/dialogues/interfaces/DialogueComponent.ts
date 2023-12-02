@@ -1,5 +1,5 @@
 import { string_name } from '@promptbook/types';
-import { DialogueComponentProps } from './DialogueComponentProps';
+import type { DialogueComponentProps } from './DialogueComponentProps';
 
 /**
  * DialogueComponent is a React component that renders a dialogue (in most cases the <Modal/>) and exposes additional information about the dialogue.
