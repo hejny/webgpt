@@ -35,6 +35,8 @@ export function Dialogues(props: DialoguesProps) {
         ],
     );
 
+    console.log('!!! <Dialogues/> render', dialoguesQueue.value);
+
     return (
         <>
             {dialoguesQueue.value
@@ -64,7 +66,8 @@ export function Dialogues(props: DialoguesProps) {
                             style={{
                                 zIndex:
                                     (request.priority || 0) * 10 +
-                                    10000 /* <- Note: To allow negative and float priority */,
+                                    10000 /* <- Note: To allow negative and float priority */ +
+                                    200000 /* <- Note: To be at modal level z-index [🔝] Global z-index for wallpaper page */,
                             }}
                             // TODO: [🧠] Maybe allow to pass additional style+zIndex, className and key directly into every <DialogueComponent/> props
                         >
