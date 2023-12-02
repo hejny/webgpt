@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useCallback, useRef, useState } from 'react';
+import { Hint } from '../../../../components/Hint/Hint';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
@@ -81,19 +82,27 @@ export function SimpleTextDialogueComponent(
                 </div>
                 {isFeedbackCollected && (
                     <div className={styles.feedbackLayer}>
-                        <button
-                            // TODO: Maybe also listen on double-click on mobile
-                            className={styles.triggerFeedback}
-                            title={`Give feedback on !!!`}
-                            onClick={triggerFeedbackCollection}
-                        >
-                            <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
+                        <Hint id="feedback" title="Give feedback on !!!" reapearCount={1}>
+                            <button
+                                // !!! <FeedbackCollectionButton/>
+                                // TODO: Maybe also listen on double-click on mobile
+                                className={styles.triggerFeedback}
+                                title={`Give feedback on !!!`}
+                                onClick={triggerFeedbackCollection}
+                            >
+                                <Image
+                                    alt="👍"
+                                    src="/icons/openmoji/1F44D.black.svg"
+                                    width={40}
+                                    height={40} /* <-[🧥] */
+                                />
 
-                            {/* !!! Show here the reaction if given */}
-                            {/* !!! Show here something better if reaction NOT given */}
-                            {/* !!! Show here the hint */}
-                            {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
-                        </button>
+                                {/* !!! Show here the reaction if given */}
+                                {/* !!! Show here something better if reaction NOT given */}
+                                {/* !!! Show here the hint */}
+                                {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
+                            </button>
+                        </Hint>
                     </div>
                 )}
             </div>
