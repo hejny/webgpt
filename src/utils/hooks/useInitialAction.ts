@@ -7,6 +7,8 @@ export function useInitialAction(getIsReady: () => boolean, action: () => void):
     console.info('!!! useInitialAction');
 
     const [isReady, setReady] = useState(false);
+
+    // Note: !!!
     const [isPerformed, setPerformed] = useState(false);
     console.info('!!! useState', { isReady, isPerformed });
 
