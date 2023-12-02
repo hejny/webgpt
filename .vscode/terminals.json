@@ -152,7 +152,7 @@
             "commands": [
                 "git add src/utils/supabase/types.ts",
                 "git add database/dumps/structure.dump.pgsql",
-                "git commit -m \"🥫 Update database\""
+                "git commit -m \"Update database\""
             ],
             "execute": true,
             "onlySingle": true,

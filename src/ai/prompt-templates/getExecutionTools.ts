@@ -5,6 +5,7 @@ import type { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../config';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
+import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { uuid } from '../../utils/typeAliases';
 import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 
@@ -69,20 +70,25 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                             options.defaultValue;
 
-                            const data = {
-                                clientId,
-                                // !!! wallpaperXxx
-                                likeStatus: response.feedback,
-                                defaultValue: options.defaultValue,
-                                value: response.answer,
-                                note: response.feedback,
+                            // Note: We do not want to wait for the insert to the database
+                            /* not await */ getSupabaseForBrowser()
+                                .from('Feedback')
+                                .insert({
+                                    clientId,
+                                    // !!! wallpaperXxx
+                                    likedStatus: response.feedback.likedStatus,
+                                    defaultValue: options.defaultValue,
+                                    value: response.answer,
+                                    note: response.feedback.note,
 
-                                // <- TODO: [📉] There should be link to ptbkUrl which created  the defaultValue
-                                // <- TODO: [💹] There should be link to wallpaper site which is the dialogue for
-                                // <- TODO: [💹] There should be link/id/reference to PromptExecution which created the defaultValue
-                            };
-
-                            // TODO: !!! Save to supabase
+                                    // <- TODO: [📉] There should be link to ptbkUrl which created  the defaultValue
+                                    // <- TODO: [💹] There should be link to wallpaper site which is the dialogue for
+                                    // <- TODO: [💹] There should be link/id/reference to PromptExecution which created the defaultValue
+                                })
+                                .then((insertResult) => {
+                                    // TODO: !! Util isInsertSuccessfull (status===201)
+                                    console.info('Feedback insert', { insertResult });
+                                });
                         }
 
                         answer = response.answer;
