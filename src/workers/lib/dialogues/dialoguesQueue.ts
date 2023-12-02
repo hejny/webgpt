@@ -1,4 +1,3 @@
-import type { Signal } from '@preact/signals-react';
 import { signal } from '@preact/signals-react';
 import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 
@@ -7,4 +6,4 @@ import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue
  *
  * @private Use only withing the folder Dialogues
  */
-export const dialoguesQueue: Signal<Array<DialogueRequestInQueue>> = signal([]);
+export const dialoguesQueue = signal<Array<DialogueRequestInQueue>>([]);
