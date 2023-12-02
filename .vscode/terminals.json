@@ -123,33 +123,38 @@
             "focus": true
         },
         {
-            "name": "🏭🥫 Generate Supabase types",
+            "name": "🏭🥫 Generate database types",
+            "commands": ["npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts"],
+            "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🥫 Dump database structure",
             "commands": [
-                "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
-                "git add src/utils/supabase/types.ts",
-                "git commit -m \"Update Supabase types\""
+                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > database/dumps/structure.dump.pgsql"
             ],
             "execute": false,
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🥫 Dump Supabase structure",
-            "commands": [
-                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > database/dumps/structure.dump.pgsql",
-                "git add database/dumps/structure.dump.pgsql",
-                "git commit -m \"Dump Supabase structure\""
-            ],
-            "execute": false,
-            "onlySingle": true,
-            "focus": true
-        },
-        {
-            "name": "🏭🥫 Dump Supabase structure + data",
+            "name": "🏭🥫 Dump database structure + data",
             "commands": [
                 "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --dbname DATABASE_URL > database/dumps/structure+data.dump.pgsql"
             ],
             "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🔼🥫 Commit database structure",
+            "commands": [
+                "git add src/utils/supabase/types.ts",
+                "git add database/dumps/structure.dump.pgsql",
+                "git commit -m \"🥫 Update database\""
+            ],
+            "execute": true,
             "onlySingle": true,
             "focus": true
         },
