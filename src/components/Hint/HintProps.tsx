@@ -20,6 +20,8 @@ export interface HintProps {
 
     /**
      * Number of times the hint will reapear before it is removed permanently
+     *
+     * !!! Split clicked repeat and appeared cound
      */
     reapearCount: number;
 

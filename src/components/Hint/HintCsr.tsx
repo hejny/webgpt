@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
 import { useNumericStateInLocalstorage } from '../../utils/hooks/useNumericStateInLocalstorage';
-import styles from './Hint.module.css';
-import { HintProps } from './HintProps';
+import { useStyleModule } from '../../utils/hooks/useStyleModule';
+import type { HintProps } from './HintProps';
 
 /**
  * Renders any content wrapped in a hint
@@ -11,6 +11,9 @@ import { HintProps } from './HintProps';
  */
 export function HintCsr(props: HintProps) {
     const { id, title, children, reapearCount, className, isDisabled } = props;
+
+    const styles = useStyleModule(import('./Hint.module.css'));
+
 
     const [isClicked, setClicked] = useState(false);
     const [clickedCount, setClickedCount, isLoadedClickedCount] = useNumericStateInLocalstorage(
