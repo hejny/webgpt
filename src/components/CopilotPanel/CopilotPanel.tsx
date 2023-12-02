@@ -346,6 +346,9 @@ export function CopilotPanel() {
                                 Share
                             </WallpaperLink>
                         </li>
+                        <li className={styles.feedback}>
+                            <a href="#feedback">Feedback</a>
+                        </li>
                         <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>
                         </li>
