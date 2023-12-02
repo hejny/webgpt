@@ -9,3 +9,9 @@ import type { SimpleTextDialogueResponse } from './interfaces/SimpleTextDialogue
 export const simpleTextDialogue = makeDialogueFunction<SimpleTextDialogueRequest, SimpleTextDialogueResponse>(
     SimpleTextDialogueComponent,
 );
+
+
+
+/**
+ * TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded 
+ */

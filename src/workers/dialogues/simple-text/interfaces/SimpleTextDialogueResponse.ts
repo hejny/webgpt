@@ -1,3 +1,5 @@
+import { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
+
 export interface SimpleTextDialogueResponse {
     /**
      * Answer to the prompt
@@ -6,4 +8,14 @@ export interface SimpleTextDialogueResponse {
      * - `string` means the answer to the prompt
      */
     readonly answer: string | null;
+
+    /**
+     * Feedback from user
+     */
+    readonly feedback?: FeedbackDialogueResponse;
 }
+
+/**
+ * TODO: !!! Change to types, add ResponseWithFeedback,RequestWithFeedback and make image dialogue use it too
+ * TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
+ */

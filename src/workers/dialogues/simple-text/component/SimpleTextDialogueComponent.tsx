@@ -15,7 +15,7 @@ export function SimpleTextDialogueComponent(
     props: DialogueComponentProps<SimpleTextDialogueRequest, SimpleTextDialogueResponse>,
 ) {
     const {
-        request: { message, defaultValue, placeholder },
+        request: { message, defaultValue, placeholder, isFeedbackCollected },
         respond: onResponse,
     } = props;
 
@@ -50,17 +50,19 @@ export function SimpleTextDialogueComponent(
                         Submit {/* <- !! Translate */}
                     </button>
                 </div>
-                <div className={styles.feedbackLayer}>
-                    <button
-                        // TODO: Maybe also listen on double-click on mobile
-                        className={styles.triggerFeedback}
-                        title={`Give feedback on !!!`}
-                        onClick={() => alert('TODO: Give feedback on !!!')}
-                    >
-                        <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
-                        {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
-                    </button>
-                </div>
+                {isFeedbackCollected && (
+                    <div className={styles.feedbackLayer}>
+                        <button
+                            // TODO: Maybe also listen on double-click on mobile
+                            className={styles.triggerFeedback}
+                            title={`Give feedback on !!!`}
+                            onClick={() => alert('TODO: Give feedback on !!!')}
+                        >
+                            <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
+                            {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
+                        </button>
+                    </div>
+                )}
             </div>
         </Modal>
     );

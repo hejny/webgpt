@@ -9,3 +9,8 @@ import type { FeedbackDialogueResponse } from './types/FeedbackDialogueResponse'
 export const feedbackDialogue = makeDialogueFunction<FeedbackDialogueRequest, FeedbackDialogueResponse>(
     FeedbackDialogueComponent,
 );
+
+
+/**
+ * TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
+ */

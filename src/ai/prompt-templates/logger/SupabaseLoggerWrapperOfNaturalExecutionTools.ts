@@ -87,7 +87,7 @@ export class SupabaseLoggerWrapperOfNaturalExecutionTools implements NaturalExec
             .insert(
                 {
                     clientId: this.options.clientId,
-                    ptpUrl: prompt.ptbkUrl /* <- TODO: [🧠] Change to ptbkUrl OR keep */,
+                    ptpUrl: prompt.ptbkUrl /* <- TODO: [🧠][📉] Change to ptbkUrl OR keep */,
                     promptAt,
                     promptContent: prompt.content,
                     promptModelRequirements: prompt.modelRequirements,

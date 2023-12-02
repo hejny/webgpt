@@ -60,8 +60,30 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                             message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
 
                             // !!! isRequired
-                            // !!! onFeedback
+                            isFeedbackCollected: true,
                         });
+
+                        if (response.feedback) {
+                            // TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
+                            // !!! Use here feedback
+
+                            options.defaultValue;
+
+                            const data = {
+                                clientId,
+                                // !!! wallpaperXxx
+                                likeStatus: response.feedback,
+                                defaultValue: options.defaultValue,
+                                value: response.answer,
+                                note: response.feedback,
+
+                                // <- TODO: [📉] There should be link to ptbkUrl which created  the defaultValue
+                                // <- TODO: [💹] There should be link to wallpaper site which is the dialogue for
+                                // <- TODO: [💹] There should be link/id/reference to PromptExecution which created the defaultValue
+                            };
+
+                            // TODO: !!! Save to supabase
+                        }
 
                         answer = response.answer;
 
