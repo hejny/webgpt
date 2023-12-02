@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 /**
  * This hook runs a callback exactly once when the component is mounted.
@@ -6,27 +6,29 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 export function useInitialAction(getIsReady: () => boolean, action: () => void): boolean {
     console.info('!!! useInitialAction');
 
+    const [isReady, setReady] = useState(false);
     const [isPerformed, setPerformed] = useState(false);
+    console.info('!!! useState', { isReady, isPerformed });
 
-    useEffect(
-        () => {
-            console.info('!!! useInitialAction useEffect', { isPerformed });
+    useEffect(() => {
+        console.info('!!! useInitialAction useEffect', { isReady, isPerformed });
 
-            if (isPerformed) {
-                return;
-            }
+        if (!isReady) {
+            setReady(true);
+            return;
+        }
 
-            if (!getIsReady()) {
-                return;
-            }
+        if (isPerformed) {
+            return;
+        }
 
-            setPerformed(true);
-            action();
-        },
-        // Note: !!!
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        [isPerformed],
-    );
+        if (!getIsReady()) {
+            return;
+        }
+
+        setPerformed(true);
+        action();
+    }, [getIsReady, action, isReady, isPerformed]);
 
     return isPerformed;
 }

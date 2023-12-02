@@ -9,17 +9,11 @@ import { isRunningInBrowser } from '../../utils/isRunningInWhatever';
 export default function TestTasksProgressWithChatPage() {
     console.info('!!! TestTasksProgressWithChatPage render');
 
-    return <TestTasksProgressWithChatPageInner />;
-}
-
-export function TestTasksProgressWithChatPageInner() {
-    console.info('!!! TestTasksProgressWithChatPageInner render');
-
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>([]);
     useInitialAction(
         () => isRunningInBrowser(),
         () => {
-            console.info('!!! TestTasksProgressWithChatPageInner useInitialAction');
+            console.info('!!! TestTasksProgressWithChatPage useInitialAction');
 
             /* not await */ mockedMultitaskWithPrompts(async (newTaskProgress) =>
                 setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
@@ -31,5 +25,6 @@ export function TestTasksProgressWithChatPageInner() {
 }
 
 /**
- * TODO: !!! Back to single component
+ * TODO: !!! useInitialAction vs useInitialActionWhenReady
+ * TODO: !!! To all experiment functions
  */
