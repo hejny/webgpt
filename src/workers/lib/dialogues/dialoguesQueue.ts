@@ -1,3 +1,5 @@
+import type { Signal } from '@preact/signals-react';
+import { signal } from '@preact/signals-react';
 import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
 
 /**
@@ -5,8 +7,4 @@ import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue
  *
  * @private Use only withing the folder Dialogues
  */
-export const dialoguesQueue: Array<DialogueRequestInQueue> = [];
-
-/**
- * TODO: !! Make some better (not any or object) type for dialogue request+response
- */
+export const dialoguesQueue: Signal<Array<DialogueRequestInQueue>> = signal([]);
