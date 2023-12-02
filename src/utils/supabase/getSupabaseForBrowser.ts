@@ -21,7 +21,9 @@ let supabase: SupabaseClient<Database>;
  */
 export function getSupabaseForBrowser(): typeof supabase {
     if (!isRunningInBrowser()) {
-        throw new Error('Use getSupabaseForServer');
+        throw new Error(
+            'Function `getSupabaseForBrowser` can not be used in server or worker, use `getSupabaseForServer` or `getSupabaseForWorker` instead.',
+        );
     }
 
     if (!supabase) {

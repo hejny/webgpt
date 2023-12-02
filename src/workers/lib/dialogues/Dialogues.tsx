@@ -75,6 +75,7 @@ export function Dialogues(props: DialoguesProps) {
                                 request={request}
                                 respond={(response) => {
                                     dialogueRequestInQueue.response = response;
+                                    dialoguesQueue.value = dialoguesQueue.value;
                                 }}
                             />
                         </div>

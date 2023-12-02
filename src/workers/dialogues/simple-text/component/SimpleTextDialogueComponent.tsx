@@ -18,7 +18,7 @@ export function SimpleTextDialogueComponent(
 ) {
     const {
         request: { message, defaultValue, placeholder, isFeedbackCollected, priority = 0 },
-        respond: onResponse,
+        respond,
     } = props;
 
     const styles = useStyleModule(import('./SimpleTextDialogueComponent.module.css'));
@@ -53,8 +53,8 @@ export function SimpleTextDialogueComponent(
     }, [priority, isInFeedbackCollection]);
 
     const submit = useCallback(() => {
-        onResponse({ answer: textareaRef.current!.value, feedback });
-    }, [onResponse, textareaRef, feedback]);
+        respond({ answer: textareaRef.current!.value, feedback });
+    }, [respond, textareaRef, feedback]);
 
     return (
         <Modal title={message}>

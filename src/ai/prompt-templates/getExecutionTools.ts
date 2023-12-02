@@ -5,7 +5,7 @@ import type { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../config';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
-import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
 import { uuid } from '../../utils/typeAliases';
 import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 
@@ -71,7 +71,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                             options.defaultValue;
 
                             // Note: We do not want to wait for the insert to the database
-                            /* not await */ getSupabaseForBrowser()
+                            /* not await */ getSupabaseForWorker()
                                 .from('Feedback')
                                 .insert({
                                     clientId,

@@ -14,7 +14,7 @@ export function ConfirmDialogueComponent(
 ) {
     const {
         request: { message, priority = 0 },
-        respond: onResponse,
+        respond,
     } = props;
 
     const styles = useStyleModule(import('./ConfirmDialogueComponent.module.css'));
@@ -24,7 +24,7 @@ export function ConfirmDialogueComponent(
             <button
                 className={styles.option}
                 onClick={() => {
-                    onResponse({ answer: true });
+                    respond({ answer: true });
                 }}
             >
                 Yes
@@ -32,7 +32,7 @@ export function ConfirmDialogueComponent(
             <button
                 className={styles.option}
                 onClick={() => {
-                    onResponse({ answer: false });
+                    respond({ answer: false });
                 }}
             >
                 No

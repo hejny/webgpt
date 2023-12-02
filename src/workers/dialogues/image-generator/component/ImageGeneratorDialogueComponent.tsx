@@ -29,8 +29,8 @@ export function ImageGeneratorDialogueComponent(
     props: DialogueComponentProps<ImageGeneratorDialogueRequest, ImageGeneratorDialogueResponse>,
 ) {
     const {
-        request: { message, defaultImagePrompt , priority = 0},
-        respond: onResponse,
+        request: { message, defaultImagePrompt, priority = 0 },
+        respond,
     } = props;
 
     const styles = useStyleModule(import('./ImageGeneratorDialogueComponent.module.css'));
@@ -151,7 +151,7 @@ export function ImageGeneratorDialogueComponent(
                             {...{ results, prompt, selected }}
                             onSelect={setSelected}
                             onPick={async (pickedImage) => {
-                                onResponse({ pickedImage });
+                                respond({ pickedImage });
                             }}
                         />
                     </>
@@ -216,7 +216,7 @@ export function ImageGeneratorDialogueComponent(
                             textShadow: `1px 1px 2px #000000, 0 0 1em #3d0606, 0 0 0.2em #03182c`,
                         }}
                         onClick={() => {
-                            onResponse({ pickedImage: selected });
+                            respond({ pickedImage: selected });
                         }}
                     >
                         Pick

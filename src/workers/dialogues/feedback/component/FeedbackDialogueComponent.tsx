@@ -18,7 +18,7 @@ export function FeedbackDialogueComponent(
 ) {
     const {
         request: { message, subject, defaultValue, placeholder, priority = 0 },
-        respond: onResponse,
+        respond,
     } = props;
 
     const styles = useStyleModule(import('./FeedbackDialogueComponent.module.css'));
@@ -28,8 +28,9 @@ export function FeedbackDialogueComponent(
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const submit = useCallback(() => {
-        onResponse({ likedStatus, note: textareaRef.current!.value });
-    }, [onResponse, likedStatus, textareaRef]);
+        console.log('!!! submit', { likedStatus, note: textareaRef.current!.value });
+        respond({ likedStatus, note: textareaRef.current!.value });
+    }, [respond, likedStatus, textareaRef]);
 
     return (
         <Modal title={message}>
