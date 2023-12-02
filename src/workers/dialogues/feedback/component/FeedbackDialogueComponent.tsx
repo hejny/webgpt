@@ -127,6 +127,5 @@ export function FeedbackDialogueComponent(
 FeedbackDialogueComponent.dialogueTypeName = 'FEEDBACK';
 
 /**
- * TODO: !!! Use some smaller format of <Modal/>
- * TODO: !!! Allow multiple <FeedbackDialogueComponent/> to be rendered at once
+ * TODO: !! Use some smaller format of <Modal/>
  */

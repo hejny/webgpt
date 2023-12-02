@@ -47,7 +47,7 @@ export function Dialogues(props: DialoguesProps) {
                     );
 
                     if (!dialogueFunction) {
-                        // TODO: !!! DO not throw ONLY render error - some DRY solution to render errors/warning in UI
+                        // TODO: [🧠] Some DRY solution to render errors/warning in UI
                         console.error(
                             new Error(
                                 `<Dialogues/> does not support dialogue "${dialogueTypeName}", did you forget to add it to props.supportDialogues?`,
