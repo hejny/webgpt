@@ -182,7 +182,6 @@ export function CopilotPanel() {
                     <div className={styles.author}>
                         <LoadingInteractiveImage width={55} height={55} />
                     </div>
-                    <div className={styles.messageArrow} />
                     <div className={styles.message}>Do you like your new web?</div>
                 </div>
             </div>
