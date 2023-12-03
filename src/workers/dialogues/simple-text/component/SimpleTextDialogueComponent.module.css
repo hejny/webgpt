@@ -1,6 +1,6 @@
 .inner {
     width: 100%;
-    height: calc(100% - 3px) /* <- TODO: !!! WTF modal */;
+    height: 100%;
 
     display: grid;
     grid-template: '🟦';
@@ -43,7 +43,6 @@
     width: 100%;
     grid-area: 1️⃣;
 
-  
     resize: none;
 
     border-radius: 0;

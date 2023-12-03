@@ -1,6 +1,10 @@
 .inputLayer {
+    /*/
+    background-color: rgba(81, 255, 38, 0.5);
+    /**/
+
     width: 100%;
-    height: calc(100% - 3px) /* <- TODO: !!! WTF modal */;
+    height: 100%;
 
     display: grid;
     grid-template:
@@ -90,7 +94,5 @@
 
     float: right;
 
-    height: 40px;
-    width: 100%;
     cursor: pointer;
 }

@@ -31,6 +31,8 @@ export function SimpleTextDialogueComponent(
     const [isInFeedbackCollection, setInFeedbackCollection] = useState(false);
     const [feedback, setSetFeedback] = useState<FeedbackDialogueResponse | undefined>();
     const triggerFeedbackCollection = useCallback(async () => {
+        console.log('!!!', { isInFeedbackCollection });
+
         if (isInFeedbackCollection) {
             alert('Already in feedback collection');
             return;
@@ -58,7 +60,10 @@ export function SimpleTextDialogueComponent(
     }, [respond, textareaRef, feedback]);
 
     return (
-        <Modal title={message}>
+        <Modal
+            title={message + (isInFeedbackCollection ? '!!! isInFeedbackCollection' : '!!!')}
+            isDisabled={isInFeedbackCollection}
+        >
             {/* TODO: Maybe create some <OnTop><div/><div/></OnTop> component to make this type of layouts */}
             <div className={styles.inner}>
                 <div className={styles.inputLayer}>

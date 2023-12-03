@@ -36,9 +36,8 @@ export function Dialogues(props: DialoguesProps) {
         ],
     );
 
-
     return (
-        <div className={classNames('---Dialogues---', 'webgpt-controls')}>
+        <div className={classNames('webgpt-controls')} data-debug="Dialogues">
             {dialoguesQueue.value
                 .filter(({ response }) => response === undefined)
                 .map(({ dialogueTypeName, id, request }) => {
@@ -59,10 +58,11 @@ export function Dialogues(props: DialoguesProps) {
 
                     const DialogueComponent = dialogueFunction.DialogueComponent;
 
-                
                     return (
                         <div
                             key={id}
+                            data-debug-type={dialogueTypeName}
+                            data-debug-idx={id.split('-')[0]}
                             style={{
                                 zIndex:
                                     (request.priority || 0) * 10 +
@@ -75,7 +75,6 @@ export function Dialogues(props: DialoguesProps) {
                                 key={id}
                                 request={request}
                                 respond={(response) => {
-                                
                                     const requestInQueue = dialoguesQueue.value.find(
                                         (requestInQueue) => requestInQueue.id === id,
                                     );
@@ -90,7 +89,6 @@ export function Dialogues(props: DialoguesProps) {
 
                                     requestInQueue.response = response;
 
-                                 
                                     dialoguesQueue.value = [...restRequestsInQueue, requestInQueue];
                                 }}
                             />
