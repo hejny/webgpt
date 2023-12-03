@@ -62,6 +62,16 @@ dialog.Modal.fullSize {
     */
 }
 
+@media (max-width: 600px) {
+    dialog.Modal.fullSize {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+}
+
 dialog.Modal.mediumSize {
     /*/
     outline: 1px solid red;
@@ -167,19 +177,4 @@ dialog.Modal.mediumSize {
 
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-@media (max-width: 600px) {
-    /* Note: On mobile ColorsModal fills the whole screen */
-    dialog.Modal {
-        /*/
-        outline: 1px solid red;
-        /**/
-
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        border-radius: 0;
-    }
 }
