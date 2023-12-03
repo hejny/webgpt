@@ -60,7 +60,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
                             ...options,
                             message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
 
-                            // !!! isRequired instead of `for (let i = 0; i < 3; i++) {`
+                            // TODO: !! isRequired instead of `for (let i = 0; i < 3; i++) {`
                             isFeedbackCollected: true,
                         });
 
