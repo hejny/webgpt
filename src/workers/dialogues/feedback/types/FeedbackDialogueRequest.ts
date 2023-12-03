@@ -1,3 +1,4 @@
+import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import type { message } from '../../../../utils/typeAliases';
 import type { AbstractDialogueRequest } from '../../../lib/dialogues/interfaces/AbstractDialogueRequest';
 
@@ -19,16 +20,21 @@ export type FeedbackDialogueRequest = AbstractDialogueRequest & {
     readonly subject: string;
 
     /**
-     * Default value for the note
-     * !!! [🧠] Maybe rename and include "note" in the name
+     * Default value for the likedStatus
+     *
+     * If you don’t want to set the default value use "NONE"
      */
-    readonly defaultValue: string | null;
+    readonly defaultLikedStatus: keyof typeof LikedStatus;
+
+    /**
+     * Default value for the note
+     */
+    readonly defaultNote: string | null;
 
     /**
      * Placeholder for the note
-     * !!! [🧠] Maybe rename and include "note" in the name
      */
-    readonly placeholder?: string;
+    readonly notePlaceholder?: string;
 };
 
 /**

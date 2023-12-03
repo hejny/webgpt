@@ -6,6 +6,7 @@ import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurren
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import type { FeedbackDialogueRequest } from '../types/FeedbackDialogueRequest';
+import type { FeedbackDialogueResponse } from '../types/FeedbackDialogueResponse';
 
 /**
  * Feedback dialogue offers a simple yes/no question to the user.
@@ -16,13 +17,13 @@ export function FeedbackDialogueComponent(
     props: DialogueComponentProps<FeedbackDialogueRequest, FeedbackDialogueResponse>,
 ) {
     const {
-        request: { message, subject, defaultValue, placeholder, priority = 0 },
+        request: { message, subject, defaultLikedStatus, defaultNote, notePlaceholder, priority = 0 },
         respond,
     } = props;
 
     const styles = useStyleModule(import('./FeedbackDialogueComponent.module.css'));
 
-    const [likedStatus, setLikedStatus] = useState<keyof typeof LikedStatus>('NONE');
+    const [likedStatus, setLikedStatus] = useState<keyof typeof LikedStatus>(defaultLikedStatus);
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -104,8 +105,8 @@ export function FeedbackDialogueComponent(
                 <textarea
                     autoFocus
                     ref={textareaRef}
-                    defaultValue={defaultValue || ''}
-                    placeholder={placeholder}
+                    defaultValue={defaultNote || ''}
+                    placeholder={notePlaceholder || ''}
                     className={styles.answer}
                     onKeyDown={(event) => {
                         // TODO: DRY [1]

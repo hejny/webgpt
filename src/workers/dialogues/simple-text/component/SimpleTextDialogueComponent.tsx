@@ -46,14 +46,14 @@ export function SimpleTextDialogueComponent(
                 priority: priority + 1,
                 message: `Feedback on ${subject}`,
                 subject,
-                // !!! Pass here defaultLikedStatus
-                defaultValue: '',
-                placeholder: 'Write your feedback here...',
+                defaultLikedStatus: feedback ? feedback.likedStatus : 'NONE',
+                defaultNote: feedback ? feedback.note : null,
+                notePlaceholder: 'Write your feedback here...',
             }),
         );
 
         setInFeedbackCollection(false);
-    }, [priority, isInFeedbackCollection]);
+    }, [priority, feedback, isInFeedbackCollection]);
 
     const submit = useCallback(() => {
         respond({ answer: textareaRef.current!.value, feedback });
