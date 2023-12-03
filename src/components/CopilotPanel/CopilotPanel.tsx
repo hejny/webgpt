@@ -176,8 +176,18 @@ export function CopilotPanel() {
 
     return (
         <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
+            <div className={styles.CopilotPanelChat}>
+                {/* TODO: Use here <ChatThreadComponent isTransparent><ChatMessageComponent isFeedbackCollected></ChatMessageComponent></ChatThreadComponent> */}
+                <div className={styles.ChatMessageComponent}>
+                    <div className={styles.author}>
+                        <LoadingInteractiveImage width={55} height={55} />
+                    </div>
+                    <div className={styles.messageArrow} />
+                    <div className={styles.message}>Do you like your new web?</div>
+                </div>
+            </div>
+
             <div
-                // Note: It is intended to have two divs embedded in each other
                 className={styles.CopilotPanelInner}
                 onKeyDown={(event) => {
                     if (event.key === 'Enter') {

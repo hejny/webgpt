@@ -1,5 +1,5 @@
 .CopilotPanel {
-    /*/
+    /**/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
@@ -19,8 +19,75 @@
     }
 }
 
+.CopilotPanelChat {
+    /**/
+    outline: 1px dotted rgb(167 113 255);
+    /**/
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ChatMessageComponent {
+    display: grid;
+    grid-template-areas: '⏣ ◀ 💬';
+    grid-template-columns: 60px min-content 1fr;
+
+    align-content: space-around;
+}
+
+.ChatMessageComponent .author {
+    grid-area: ⏣;
+
+    background-color: rgba(0 0 0 / 0.13);
+    border: 1px solid rgba(255 255 255 / 0.53);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    overflow: clip;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatMessageComponent .messageArrow {
+    grid-area: ◀;
+
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgb(255 0 0);
+    border-left: 10px solid transparent;
+}
+
+.ChatMessageComponent .message {
+    grid-area: 💬;
+
+    background-color: rgba(0 0 0 / 0.13);
+    border: 1px solid rgba(255 255 255 / 0.53);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    overflow: clip;
+
+    height: 60px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .CopilotPanelInner {
-    /*/
+    /**/
     outline: 1px dotted rgb(255, 125, 38);
     /**/
 
