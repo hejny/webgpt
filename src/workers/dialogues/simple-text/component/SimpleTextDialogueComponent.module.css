@@ -85,4 +85,5 @@
 .inner .feedbackLayer button.triggerFeedback {
     z-index: 3 /* <- Note: Local order in dialogue */;
 
+    pointer-events: all;
 }

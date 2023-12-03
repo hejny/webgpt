@@ -20,6 +20,7 @@ import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
+import { FeedbackButton } from '../FeedbackButton/FeedbackButton';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
@@ -183,6 +184,18 @@ export function CopilotPanel() {
                         <LoadingInteractiveImage width={55} height={55} />
                     </div>
                     <div className={styles.message}>Do you like your new web?</div>
+                    <div className={styles.feedback}>
+                        <FeedbackButton
+                            className={styles.feedbackButton}
+                            onFeedback={(feedback) => {
+                                // TODO: !!! Process here the feedback
+                                // TODO: !!! [🧠] One table for proces and result feedback OR two tables for each
+                            }}
+                            onFeedbackCollection={() => {
+                                // Note: Do nothing
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 .CopilotPanel {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
@@ -20,7 +20,7 @@
 }
 
 .CopilotPanelChat {
-    /**/
+    /*/
     outline: 1px dotted rgb(167 113 255);
     /**/
 
@@ -31,14 +31,15 @@
 
 .ChatMessageComponent {
     display: grid;
-    grid-template-areas: '⏣ void 💬';
-    grid-template-columns: 60px 10px 1fr;
+    grid-template-areas: '⏣ void 💬 ⭐';
+    grid-template-columns: 60px 10px 1fr 0;
 
     align-content: space-around;
 }
 
 .ChatMessageComponent .author {
     grid-area: ⏣;
+    z-index: 1 /* <- Local order of <CopilotPanel/> */;
 
     background-color: rgba(0 0 0 / 0.13);
     border: 1px solid rgba(255 255 255 / 0.53);
@@ -57,6 +58,7 @@
 
 .ChatMessageComponent .message {
     grid-area: 💬;
+    z-index: 1 /* <- Local order of <CopilotPanel/> */;
 
     background-color: rgba(0 0 0 / 0.13);
     border: 1px solid rgba(255 255 255 / 0.53);
@@ -73,6 +75,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ChatMessageComponent .feedback {
+    /*/
+    outline: 1px dotted rgb(255, 125, 38);
+    /**/
+
+    grid-area: ⭐;
+    z-index: 2 /* <- Local order of <CopilotPanel/> */;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatMessageComponent .feedback .feedbackButton {
+    transform: translate(0, 50%) scale(0.8);
 }
 
 .CopilotPanelInner {
