@@ -9,6 +9,10 @@
 -   [ ] When importing type USE always `import type { ... } from '...'` automatically
         Search & replace  `import\s+(\{.*\/interfaces\/)` -> `import type $1` works
 -   [ ] Script for auto-generating fresh unused tags with emojis [👩‍🦱][👩‍🦲][👳‍♂️]
+-   [ ] Do not use useEffect sooo often https://youtu.be/bGzanfKVFeU?si=CSebLURTV3RKqOsn
+
+
+
 
 ## Misc
 
