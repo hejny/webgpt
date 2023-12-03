@@ -85,19 +85,4 @@
 .inner .feedbackLayer button.triggerFeedback {
     z-index: 3 /* <- Note: Local order in dialogue */;
 
-    pointer-events: all;
-
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-
-    border-radius: 50%;
-    border: none;
-    outline: none;
-
-    background-color: #fdd10e;
-}
-
-.inner .feedbackLayer button.triggerFeedback img {
-    transform: translate(0, -1px);
 }

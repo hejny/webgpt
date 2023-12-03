@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
-import { string_css_class } from '../../utils/typeAliases';
+import type { string_css_class } from '../../utils/typeAliases';
 import styles from './Sample.module.css';
 
 interface SampleProps {
@@ -20,6 +20,10 @@ interface SampleProps {
  */
 export function Sample(props: SampleProps) {
     const { children, className } = props;
+
+    // Use or remove:
+    //> const styles = useStyleModule(import('./Sample.module.css'));
+
     return <div className={classNames(className, styles.Sample)}>{children}</div>;
 }
 
