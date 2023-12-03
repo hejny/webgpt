@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
 import { classNames } from '../../utils/classNames';
+import { textColor } from '../../utils/color/operators/furthest';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class } from '../../utils/typeAliases';
 import { feedbackDialogue } from '../../workers/dialogues/feedback/feedbackDialogue';
 import type { FeedbackDialogueResponse } from '../../workers/dialogues/feedback/types/FeedbackDialogueResponse';
 import type { AbstractDialogueRequest } from '../../workers/lib/dialogues/interfaces/AbstractDialogueRequest';
 import { Hint } from '../Hint/Hint';
+import { LIKED_STATUS_COLORS } from './_';
 
 type FeedbackButtonProps = Pick<AbstractDialogueRequest, 'priority'> & {
     /**
@@ -64,22 +66,29 @@ export function FeedbackButton(props: FeedbackButtonProps) {
         onFeedbackCollection(false);
     }, [priority, feedback, isInFeedbackCollection, onFeedbackCollection, onFeedback]);
 
+    const color = LIKED_STATUS_COLORS[feedback?.likedStatus || 'NONE'];
     return (
         <Hint id="feedback" title="Give feedback on !!!" reapearCount={1}>
-            <button
-                // !!! <FeedbackCollectionButton/>
-                // TODO: Maybe also listen on double-click on mobile
-                className={classNames(className, styles.FeedbackButton)}
-                title={`Give feedback on !!!`}
-                onClick={triggerFeedbackCollection}
-            >
-                <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
+            {!isInFeedbackCollection && (
+                <button
+                    // !!! <FeedbackCollectionButton/>
+                    // TODO: Maybe also listen on double-click on mobile
+                    className={classNames(className, styles.FeedbackButton)}
+                    title={`Give feedback on !!!`}
+                    onClick={triggerFeedbackCollection}
+                    style={{
+                        backgroundColor: color.toHex(),
+                        color: color.then(textColor).toHex(),
+                    }}
+                >
+                    <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
 
-                {/* !!! Show here the reaction if given */}
-                {/* !!! Show here something better if reaction NOT given */}
-                {/* !!! Show here the hint */}
-                {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
-            </button>
+                    {/* !!! Show here the reaction if given */}
+                    {/* !!! Show here something better if reaction NOT given */}
+                    {/* !!! Show here the hint */}
+                    {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
+                </button>
+            )}
         </Hint>
     );
 }
