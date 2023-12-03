@@ -8,7 +8,7 @@ import { feedbackDialogue } from '../../workers/dialogues/feedback/feedbackDialo
 import type { FeedbackDialogueResponse } from '../../workers/dialogues/feedback/types/FeedbackDialogueResponse';
 import type { AbstractDialogueRequest } from '../../workers/lib/dialogues/interfaces/AbstractDialogueRequest';
 import { Hint } from '../Hint/Hint';
-import { LIKED_STATUS_COLORS } from './_';
+import { LIKED_STATUS_COLORS, LIKED_STATUS_EMOJIS_IMAGES } from './_';
 
 type FeedbackButtonProps = Pick<AbstractDialogueRequest, 'priority'> & {
     /**
@@ -66,7 +66,9 @@ export function FeedbackButton(props: FeedbackButtonProps) {
         onFeedbackCollection(false);
     }, [priority, feedback, isInFeedbackCollection, onFeedbackCollection, onFeedback]);
 
+    const emojiImage = LIKED_STATUS_EMOJIS_IMAGES[feedback?.likedStatus || 'NONE'];
     const color = LIKED_STATUS_COLORS[feedback?.likedStatus || 'NONE'];
+
     return (
         <Hint id="feedback" title="Give feedback on !!!" reapearCount={1}>
             {!isInFeedbackCollection && (
@@ -81,8 +83,8 @@ export function FeedbackButton(props: FeedbackButtonProps) {
                         color: color.then(textColor).toHex(),
                     }}
                 >
-                    <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />
-
+                    {emojiImage}
+                
                     {/* !!! Show here the reaction if given */}
                     {/* !!! Show here something better if reaction NOT given */}
                     {/* !!! Show here the hint */}
