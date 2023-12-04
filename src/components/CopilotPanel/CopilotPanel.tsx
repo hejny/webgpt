@@ -187,9 +187,35 @@ export function CopilotPanel() {
                     <div className={styles.feedback}>
                         <FeedbackButton
                             className={styles.feedbackButton}
-                            onFeedback={(feedback) => {
+                            // TODO: !!! Pass here the previous feedback on the wallpaper [🧠] or is it a good idea?!
+                            onFeedback={async (feedback) => {
                                 // TODO: !!! Process here the feedback
-                                // TODO: !!! [🧠] One table for proces and result feedback OR two tables for each
+                                // TODO: !!! [🧠] Should we record the Reaction in the localStorage anymore?
+
+                                const insertResult = await getSupabaseForBrowser()
+                                    .from('Reaction')
+                                    .insert({
+                                        wallpaperId: wallpaper.id,
+                                        likedStatus: feedback.likedStatus,
+                                        author: await provideClientId({
+                                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
+                                        }),
+                                        note: feedback.note,
+                                    });
+
+                                // TODO: !! Util isInsertSuccessfull (status===201)
+                                console.info({ insertResult });
+
+                                /*
+                                TODO: !!!lastlast
+                                Rename tables (and download them here):
+
+                                Reaction -> WallpaperFeedback
+                                Feedback -> ?PromptbookFeedback
+
+
+        
+                                */
                             }}
                             onFeedbackCollection={() => {
                                 // Note: Do nothing

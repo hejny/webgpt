@@ -39,7 +39,7 @@ export function useLikedStatusOfCurrentWallpaper(): [
 
         */
 
-        const reactionInsertResult = await getSupabaseForBrowser()
+        const insertResult = await getSupabaseForBrowser()
             .from('Reaction')
             .insert({
                 wallpaperId,
@@ -49,7 +49,7 @@ export function useLikedStatusOfCurrentWallpaper(): [
                 }),
             });
 
-        console.info({ reactionInsertResult });
+        console.info({ insertResult });
     };
 
     return [likedStatus, setLikedStatus];
