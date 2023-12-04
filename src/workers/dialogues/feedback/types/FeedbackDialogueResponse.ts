@@ -17,5 +17,4 @@ export type FeedbackDialogueResponse = AbstractDialogueResponse & {
 
 /**
  * TODO: !!!last [🧠] Maybe rename JUST to Feedback
- * Note: !!!last [🤽‍♀️]
  */
