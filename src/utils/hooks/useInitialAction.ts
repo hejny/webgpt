@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export function useInitialAction(getIsReady: () => boolean, action: () => void): boolean {
     const [isReady, setReady] = useState(false);
 
-    // Note: !!!
+    // Note: !!!last
     const [isPerformed, setPerformed] = useState(false);
 
     useEffect(() => {
@@ -31,5 +31,5 @@ export function useInitialAction(getIsReady: () => boolean, action: () => void):
 }
 
 /**
- * TODO: !!! Are changes here wokring
+ * TODO: !!!last Are changes here wokring
  */

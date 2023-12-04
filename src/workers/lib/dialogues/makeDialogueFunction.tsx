@@ -62,12 +62,11 @@ export function makeDialogueFunction<
             request,
         };
 
-        // TODO: !!! Is this needed instead of .push(...)
+        // TODO: !!!last Is this needed instead of .push(...)
         dialoguesQueue.value = [
             ...dialoguesQueue.value,
             requestInQueue,
-            // Note: !!!
-            // TODO: !!! Go through all .push(...) and decide to change to [...x,y]
+            // Note: !!!last
         ];
     
         while (true) {

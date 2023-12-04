@@ -23,6 +23,6 @@ export default function TestTasksProgressWithChatPage() {
 }
 
 /**
- * TODO: !!! useInitialAction vs useInitialActionWhenReady
- * TODO: !!! To all experiment functions
+ * TODO: !!!last useInitialAction vs useInitialActionWhenReady
+ * TODO: !!!last To all experiment functions
  */

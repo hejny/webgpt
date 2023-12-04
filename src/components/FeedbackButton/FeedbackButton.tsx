@@ -71,8 +71,6 @@ export function FeedbackButton(props: FeedbackButtonProps) {
         <Hint id="feedback" title="Give feedback on !!!" reapearCount={1}>
             {!isInFeedbackCollection && (
                 <button
-                    // !!! <FeedbackCollectionButton/>
-                    // TODO: Maybe also listen on double-click on mobile
                     className={classNames(className, styles.FeedbackButton)}
                     title={`Give feedback on !!!`}
                     onClick={triggerFeedbackCollection}
@@ -80,12 +78,13 @@ export function FeedbackButton(props: FeedbackButtonProps) {
                 >
                     {emojiImage}
 
-                    {/* !!! Show here the reaction if given */}
-                    {/* !!! Show here something better if reaction NOT given */}
-                    {/* !!! Show here the hint */}
                     {/* <MarkdownContent content="👍" isUsingOpenmoji /> */}
                 </button>
             )}
         </Hint>
     );
 }
+
+/**
+ * TODO: [🧠] Maybe also listen on loooong press & double-click on mobile
+ */

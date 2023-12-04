@@ -2,7 +2,7 @@ import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallp
 import { number_likeness } from '../../utils/typeAliases';
 
 /**
- * !!! Unite
+ * !!!last Unite
  */
 
 const LIKED_STATUS_LIKENESS: Record<keyof typeof LikedStatus, number_likeness> = {

@@ -99,7 +99,7 @@ export function Dialogues(props: DialoguesProps) {
     );
 
     /*
-    !!! Remove + look in chat branch
+    !!!last Remove + look in chat branch
     const [currentDialogueRequestInQueue, setCurrentDialogueRequestInQueue] = useState<null | DialogueRequestInQueue>(
         null,
     );
