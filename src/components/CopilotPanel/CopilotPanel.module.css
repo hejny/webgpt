@@ -271,24 +271,6 @@
     padding-left: 5px;
 }
 
-.CopilotPanel nav.MenuContent li.feedback::before {
-    /*/
-    outline: 1px solid #0000ff !important;
-    /**/
-
-    /* !!! DRY */
-
-    grid-area: ⏣;
-    opacity: 0.5;
-    content: '👍';
-    width: max-content;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px;
-}
-
 .CopilotPanel nav.MenuContent li:last-child {
     border-bottom: none;
 }
