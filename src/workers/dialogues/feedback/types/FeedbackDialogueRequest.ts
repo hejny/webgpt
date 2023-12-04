@@ -22,7 +22,7 @@ export type FeedbackDialogueRequest = AbstractDialogueRequest & {
     /**
      * Default value for the likedStatus
      *
-     * If you don’t want to set the default value use "NONE"
+     * Note: If you don’t want to set the default value use "NONE"
      */
     readonly defaultLikedStatus: keyof typeof LikedStatus;
 

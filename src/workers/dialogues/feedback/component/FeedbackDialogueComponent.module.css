@@ -22,35 +22,9 @@
     width: 100%;
     grid-area: 0️⃣;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
 }
 
-.inputLayer .likedStatus .option {
-    margin: 10px;
-
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inputLayer .likedStatus .option[data-active='true'] {
-    background-color: rgb(255 255 255);
-
-    animation-name: emphasize;
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-timing-function: ease-in-out;
-}
 
 @keyframes emphasize {
     0% {
