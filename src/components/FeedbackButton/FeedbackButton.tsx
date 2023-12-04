@@ -1,14 +1,12 @@
-import Image from 'next/image';
 import { useCallback, useState } from 'react';
 import { classNames } from '../../utils/classNames';
-import { textColor } from '../../utils/color/operators/furthest';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class } from '../../utils/typeAliases';
 import { feedbackDialogue } from '../../workers/dialogues/feedback/feedbackDialogue';
 import type { FeedbackDialogueResponse } from '../../workers/dialogues/feedback/types/FeedbackDialogueResponse';
 import type { AbstractDialogueRequest } from '../../workers/lib/dialogues/interfaces/AbstractDialogueRequest';
 import { Hint } from '../Hint/Hint';
-import { LIKED_STATUS_COLORS, LIKED_STATUS_EMOJIS_IMAGES } from './_';
+import { LIKED_STATUS_BUTTON_STYLES, LIKED_STATUS_EMOJIS_IMAGES } from './_';
 
 type FeedbackButtonProps = Pick<AbstractDialogueRequest, 'priority'> & {
     /**
@@ -67,7 +65,7 @@ export function FeedbackButton(props: FeedbackButtonProps) {
     }, [priority, feedback, isInFeedbackCollection, onFeedbackCollection, onFeedback]);
 
     const emojiImage = LIKED_STATUS_EMOJIS_IMAGES[feedback?.likedStatus || 'NONE'];
-    const color = LIKED_STATUS_COLORS[feedback?.likedStatus || 'NONE'];
+    const style = LIKED_STATUS_BUTTON_STYLES[feedback?.likedStatus || 'NONE'];
 
     return (
         <Hint id="feedback" title="Give feedback on !!!" reapearCount={1}>
@@ -78,13 +76,10 @@ export function FeedbackButton(props: FeedbackButtonProps) {
                     className={classNames(className, styles.FeedbackButton)}
                     title={`Give feedback on !!!`}
                     onClick={triggerFeedbackCollection}
-                    style={{
-                        backgroundColor: color.toHex(),
-                        color: color.then(textColor).toHex(),
-                    }}
+                    {...{ style }}
                 >
                     {emojiImage}
-                
+
                     {/* !!! Show here the reaction if given */}
                     {/* !!! Show here something better if reaction NOT given */}
                     {/* !!! Show here the hint */}

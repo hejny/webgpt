@@ -1,6 +1,10 @@
 import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { number_likeness } from '../../utils/typeAliases';
 
+/**
+ * !!! Unite
+ */
+
 const LIKED_STATUS_LIKENESS: Record<keyof typeof LikedStatus, number_likeness> = {
     NONE: 0 /* <- TODO: [🧠] Maybe -0.1 or some small negative number, wallpaper user go through and did not react person maybe dislike */,
     LOVE: 3 /* <- TODO: [🧠] What is the best number here */,
