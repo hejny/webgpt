@@ -1,5 +1,5 @@
 .CopilotPanel {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
@@ -20,7 +20,7 @@
 }
 
 .CopilotPanelChat {
-    /**/
+    /*/
     outline: 1px dotted rgb(167 113 255);
     /**/
 
@@ -78,7 +78,7 @@
 }
 
 .ChatMessageComponent .feedback {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 125, 38);
     /**/
 
@@ -95,7 +95,7 @@
 }
 
 .CopilotPanelInner {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 125, 38);
     /**/
 
@@ -116,7 +116,7 @@
 }
 
 .CopilotPanel input {
-    /**/
+    /*/
     outline: 1px dotted rgb(56, 255, 38);
     /**/
 
