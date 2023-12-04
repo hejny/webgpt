@@ -49,12 +49,12 @@ export const LIKED_STATUS_EMOJIS: Record<keyof typeof LikedStatus, string_char_e
     DISLIKE: '👎' as string_char_emoji,
 };
 
-// TODO: !!! Use ACRY LIKED_STATUS_EMOJIS
+// TODO: !!!last Use ACRY LIKED_STATUS_EMOJIS
 
 /**
  * Mapping table from Liked statuses to emoji as <Image/>
  */
-export const LIKED_STATUS_EMOJIS_IMAGES: Record<keyof typeof LikedStatus, any /* <- !!!  */> = {
+export const LIKED_STATUS_EMOJIS_IMAGES: Record<keyof typeof LikedStatus, any /* <- !!!last  */> = {
     NONE: <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ /* <- !!! ⭐ */ />,
     LOVE: <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ />,
     LIKE: <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />,
@@ -69,8 +69,8 @@ export const LIKED_STATUS_EMOJIS_IMAGES: Record<keyof typeof LikedStatus, any /*
     */
 };
 
-// TODO: !!! Use ACRY LIKED_STATUS_EMOJIS_IMAGES
+// TODO: !!!last Use ACRY LIKED_STATUS_EMOJIS_IMAGES
 
 /**
- * TODO: !!! Where is the right place for this + split into files + unite with LikedStatus?
+ * TODO: !!!last Where is the right place for this + split into files + unite with LikedStatus?
  */

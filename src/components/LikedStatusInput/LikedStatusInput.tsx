@@ -6,7 +6,10 @@ import { LIKED_STATUS_BUTTON_STYLES, LIKED_STATUS_EMOJIS_IMAGES } from '../Feedb
 
 interface LikedStatusInputProps {
     /**
-     * !!!
+     * The subject of the feedback
+     * What is being feedbacked?
+     *
+     * @example "proposed title"
      */
     subject: string;
 

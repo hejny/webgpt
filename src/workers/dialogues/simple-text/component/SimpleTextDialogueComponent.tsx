@@ -32,10 +32,7 @@ export function SimpleTextDialogueComponent(
     }, [respond, textareaRef, feedback]);
 
     return (
-        <Modal
-            title={message + (isInFeedbackCollection ? '!!! isInFeedbackCollection' : '!!!')}
-            isDisabled={isInFeedbackCollection}
-        >
+        <Modal title={message} isDisabled={isInFeedbackCollection}>
             {/* TODO: Maybe create some <OnTop><div/><div/></OnTop> component to make this type of layouts */}
             <div className={styles.inner}>
                 <div className={styles.inputLayer}>

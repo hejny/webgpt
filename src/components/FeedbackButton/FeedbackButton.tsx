@@ -33,13 +33,10 @@ export function FeedbackButton(props: FeedbackButtonProps) {
 
     const styles = useStyleModule(import('./FeedbackButton.module.css'));
 
-    // TODO: !!! useFeedbackCollection hook OR <FeedbackCollectionButton/>
-    // TODO: !!! Allow feedback trigger multiple times
     const [isInFeedbackCollection, setInFeedbackCollection] = useState(false);
     const [feedback, setFeedback] = useState<FeedbackDialogueResponse | undefined>();
     const triggerFeedbackCollection = useCallback(async () => {
-        console.log('!!!', { isInFeedbackCollection });
-
+      
         if (isInFeedbackCollection) {
             alert('Already in feedback collection');
             return;

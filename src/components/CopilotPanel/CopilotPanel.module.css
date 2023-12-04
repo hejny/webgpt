@@ -258,8 +258,6 @@
     outline: 1px solid #0000ff !important;
     /**/
 
-    /* !!! DRY */
-
     grid-area: ⏣;
     opacity: 0.5;
     content: '⏣';
