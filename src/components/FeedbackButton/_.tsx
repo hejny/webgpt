@@ -37,6 +37,10 @@ export const LIKED_STATUS_BUTTON_STYLES = Object.fromEntries(
         },
     ]),
 ) as Record<keyof typeof LikedStatus, CSSProperties>;
+LIKED_STATUS_BUTTON_STYLES.NONE = {
+    ...LIKED_STATUS_BUTTON_STYLES.NONE,
+    border: `1px solid ${LIKED_STATUS_COLORS.NONE.then(textColor).toHex()}`,
+};
 
 /**
  * Mapping table from Liked statuses to emoji
@@ -55,7 +59,7 @@ export const LIKED_STATUS_EMOJIS: Record<keyof typeof LikedStatus, string_char_e
  * Mapping table from Liked statuses to emoji as <Image/>
  */
 export const LIKED_STATUS_EMOJIS_IMAGES: Record<keyof typeof LikedStatus, any /* <- !!!last  */> = {
-    NONE: <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ /* <- !!! ⭐ */ />,
+    NONE: <Image alt="⭐" src="/icons/openmoji/2B50.white.svg" width={40} height={40} />,
     LOVE: <Image alt="❤" src="/icons/openmoji/2764.black.svg" width={40} height={40} /* <-[🧥] */ />,
     LIKE: <Image alt="👍" src="/icons/openmoji/1F44D.black.svg" width={40} height={40} /* <-[🧥] */ />,
     NEUTRAL: <Image alt="😐" src="/icons/openmoji/1F610.black.svg" width={40} height={40} /* <-[🧥] */ />,

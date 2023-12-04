@@ -1,5 +1,4 @@
 .FeedbackButton {
-
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -12,5 +11,6 @@
 }
 
 .FeedbackButton img {
-    transform: translate(0, -1px);
+    width: 100%;
+    height: 100%;
 }
