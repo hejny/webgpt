@@ -73,11 +73,11 @@
     /**/
 
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-end;
 
+    padding: 10px;
     padding-bottom: 60px;
-    padding-right: 10px;
 
     pointer-events: none;
 }
