@@ -41,7 +41,7 @@
     grid-area: ⏣;
     z-index: 1 /* <- Local order of <CopilotPanel/> */;
 
-    background-color: rgba(0 0 0 / 0.13);
+    background-color: rgba(0 0 0 / 0.8);
     border: 1px solid rgba(255 255 255 / 0.53);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
@@ -60,7 +60,7 @@
     grid-area: 💬;
     z-index: 1 /* <- Local order of <CopilotPanel/> */;
 
-    background-color: rgba(0 0 0 / 0.13);
+    background-color: rgba(0 0 0 / 0.8);
     border: 1px solid rgba(255 255 255 / 0.53);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
@@ -95,7 +95,7 @@
 }
 
 .CopilotPanelInner {
-    /**/
+    /*/
     outline: 1px dotted rgb(255, 125, 38);
     /**/
 
