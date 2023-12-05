@@ -21,16 +21,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #222;
+    border: 1px solid white;
 }
 
 .option[data-active='true'] {
-    background-color: rgb(255 255 255);
-
     animation-name: emphasize;
     animation-duration: 0.2s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-timing-function: ease-in-out;
+
+    border: none;
+}
+
+.option[data-active='true'] img {
+    filter: invert(1);
 }
 
 @keyframes emphasize {

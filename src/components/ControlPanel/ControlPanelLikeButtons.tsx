@@ -84,5 +84,5 @@ export function ControlPanelLikeButtons() {
 }
 
 /**
- * TODO: Use here LIKED_STATUSES_EMOJIS_IMAGES
+ * TODO: Use here <LikedStatusInput/>
  */

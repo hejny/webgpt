@@ -1,5 +1,10 @@
-import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
-import { LIKED_STATUSES_BUTTON_STYLES, LIKED_STATUSES_EMOJIS_IMAGES } from '../../ai/recommendation/LikedStatus';
+import {
+    LikedStatus,
+    LIKED_STATUSES,
+    LIKED_STATUSES_BUTTON_STYLES,
+    LIKED_STATUSES_EMOJIS_IMAGES,
+    LIKED_STATUSES_MESSAGES,
+} from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class } from '../../utils/typeAliases';
@@ -41,60 +46,18 @@ export function LikedStatusInput(props: LikedStatusInputProps) {
 
     return (
         <div className={classNames(className, styles.LikedStatusInput)}>
-            <button
-                className={classNames(/*'button',*/ styles.option)}
-                title={`I love ${subject}!`}
-                data-active={likedStatus === 'LOVE'}
-                style={likedStatus === 'LOVE' ? LIKED_STATUSES_BUTTON_STYLES.LOVE : {}}
-                onClick={() =>
-                    void onLikedStatusChange(
-                        likedStatus !== 'LOVE' ? 'LOVE' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
-                    )
-                }
-            >
-                {LIKED_STATUSES_EMOJIS_IMAGES.LOVE}
-            </button>
-
-            <button
-                // TODO: Maybe also listen on double-click on mobile
-                className={classNames(/*'button',*/ styles.option)}
-                title={`I like ${subject}!`}
-                data-active={likedStatus === 'LIKE'}
-                style={likedStatus === 'LIKE' ? LIKED_STATUSES_BUTTON_STYLES.LIKE : {}}
-                onClick={() =>
-                    void onLikedStatusChange(
-                        likedStatus !== 'LIKE' ? 'LIKE' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
-                    )
-                }
-            >
-                {LIKED_STATUSES_EMOJIS_IMAGES.LIKE}
-            </button>
-            <button
-                className={classNames(/*'button',*/ styles.option)}
-                title={`I do not know what to think about ${subject}!`}
-                data-active={likedStatus === 'NEUTRAL'}
-                style={likedStatus === 'NEUTRAL' ? LIKED_STATUSES_BUTTON_STYLES.NEUTRAL : {}}
-                onClick={() =>
-                    void onLikedStatusChange(
-                        likedStatus !== 'NEUTRAL' ? 'NEUTRAL' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
-                    )
-                }
-            >
-                {LIKED_STATUSES_EMOJIS_IMAGES.NEUTRAL}
-            </button>
-            <button
-                className={classNames(/*'button',*/ styles.option)}
-                title={`I dislike ${subject}!`}
-                data-active={likedStatus === 'DISLIKE'}
-                style={likedStatus === 'DISLIKE' ? LIKED_STATUSES_BUTTON_STYLES.DISLIKE : {}}
-                onClick={() =>
-                    void onLikedStatusChange(
-                        likedStatus !== 'DISLIKE' ? 'DISLIKE' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
-                    )
-                }
-            >
-                {LIKED_STATUSES_EMOJIS_IMAGES.DISLIKE}
-            </button>
+            {LIKED_STATUSES.filter((LIKED_STATUSES) => LIKED_STATUSES !== 'NONE').map((LIKED_STATUS) => (
+                <button
+                    key={LIKED_STATUS}
+                    className={classNames(/*'button',*/ styles.option)}
+                    title={`${LIKED_STATUSES_MESSAGES[LIKED_STATUS]} ${subject}!`}
+                    data-active={likedStatus === LIKED_STATUS}
+                    style={likedStatus === LIKED_STATUS ? LIKED_STATUSES_BUTTON_STYLES[LIKED_STATUS] : {}}
+                    onClick={() => void onLikedStatusChange(likedStatus !== LIKED_STATUS ? LIKED_STATUS : 'NONE')}
+                >
+                    {LIKED_STATUSES_EMOJIS_IMAGES[LIKED_STATUS]}
+                </button>
+            ))}
         </div>
     );
 }

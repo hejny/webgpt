@@ -6,11 +6,11 @@
     border-radius: 50%;
     border: none;
     outline: none;
-
-    background-color: #fdd10e;
 }
 
 .FeedbackButton img {
     width: 100%;
     height: 100%;
+
+    filter: invert(1);
 }
