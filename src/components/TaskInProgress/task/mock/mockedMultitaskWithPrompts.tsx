@@ -43,14 +43,13 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
-   
         const response = await simpleTextDialogue({
             message: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
                 </>
             ),
-            defaultValue: faker.hacker.phrase(),
+            defaultValue: faker.lorem.paragraphs(5),
             placeholder: faker.hacker.phrase(),
             isFeedbackCollected: true,
         });

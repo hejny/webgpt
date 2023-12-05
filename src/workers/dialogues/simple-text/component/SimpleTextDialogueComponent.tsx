@@ -57,7 +57,6 @@ export function SimpleTextDialogueComponent(
                     </button>
                 </div>
                 {isFeedbackCollected && (
-                    // TODO: !!! Text of answer should not be covered by feedback button
                     <div className={styles.feedbackLayer}>
                         <FeedbackButton
                             subject={jsxToHtmlSimple(message)}

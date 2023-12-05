@@ -51,6 +51,11 @@
     outline: none;
     border: none;
     padding: 10px;
+
+    /* Note: This is not really a good solution, but it works for now
+             Text of answer should not be covered by feedback button
+    */
+    padding-right: 55px;
 }
 
 .inner .inputLayer .submit {
