@@ -81,7 +81,7 @@ export class SupabaseLoggerWrapperOfImageGenerator implements ImageGenerator {
                         // TODO: !! Util isInsertSuccessfull
 
                         if (this.options.isVerbose) {
-                            console.info('ChatThread', { insertResult });
+                            console.info('ImagePromptExecution insert', { insertResult });
                         }
                     });
             }

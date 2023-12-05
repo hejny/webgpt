@@ -42,6 +42,60 @@ dialog.Modal {
         '⬛' 1fr;
 }
 
+dialog.Modal.isDisabled {
+    filter: blur(5px);
+}
+
+dialog.Modal.isDisabled,
+dialog.Modal.isDisabled * {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+dialog.Modal.fullSize {
+    /*/
+    outline: 1px solid red;
+    /**/
+
+    /*
+    Note: The full size modal is the default one
+    */
+}
+
+@media (max-width: 600px) {
+    dialog.Modal.fullSize {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+}
+
+dialog.Modal.mediumSize {
+    /*/
+    outline: 1px solid red;
+    /**/
+
+    border: 1px solid rgb(255, 255, 255, 0.5);
+
+    top: 100px;
+    left: 100px;
+    bottom: 100px;
+    right: 100px;
+
+    box-shadow: 0 0 70px rgb(0, 0, 0);
+}
+
+@media (max-width: 600px) {
+    dialog.Modal.mediumSize {
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 .bar {
     /*/
     outline: 1px solid rgb(102, 255, 0);
@@ -105,6 +159,16 @@ dialog.Modal {
     font-size: 28px;
 }
 
+.bar .icons button {
+    width: unset;
+    height: unset;
+    margin: unset;
+    padding: unset;
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+}
+
 .content {
     grid-area: ⬛;
 
@@ -113,19 +177,4 @@ dialog.Modal {
 
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-@media (max-width: 600px) {
-    /* Note: On mobile ColorsModal fills the whole screen */
-    dialog.Modal {
-        /*/
-        outline: 1px solid red;
-        /**/
-
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        border-radius: 0;
-    }
 }

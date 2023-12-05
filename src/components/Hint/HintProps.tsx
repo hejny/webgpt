@@ -20,6 +20,7 @@ export interface HintProps {
 
     /**
      * Number of times the hint will reapear before it is removed permanently
+     *
      */
     reapearCount: number;
 
@@ -33,3 +34,8 @@ export interface HintProps {
      */
     isDisabled?: boolean;
 }
+
+
+/**
+ * TODO: !! Split reapearCount and clickedCount
+ */

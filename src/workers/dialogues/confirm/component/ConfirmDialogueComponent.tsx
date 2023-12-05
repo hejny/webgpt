@@ -1,9 +1,8 @@
-import { useRef } from 'react';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import type { ConfirmDialogueRequest } from '../interfaces/ConfirmDialogueRequest';
-import type { ConfirmDialogueResponse } from '../interfaces/ConfirmDialogueResponse';
+import type { ConfirmDialogueRequest } from '../types/ConfirmDialogueRequest';
+import type { ConfirmDialogueResponse } from '../types/ConfirmDialogueResponse';
 
 /**
  * Confirm dialogue offers a simple yes/no question to the user.
@@ -14,20 +13,18 @@ export function ConfirmDialogueComponent(
     props: DialogueComponentProps<ConfirmDialogueRequest, ConfirmDialogueResponse>,
 ) {
     const {
-        request: { message },
-        respond: onResponse,
+        request: { message, priority = 0 },
+        respond,
     } = props;
 
     const styles = useStyleModule(import('./ConfirmDialogueComponent.module.css'));
-
-    const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     return (
         <Modal title={message}>
             <button
                 className={styles.option}
                 onClick={() => {
-                    onResponse({ answer: true });
+                    respond({ answer: true });
                 }}
             >
                 Yes
@@ -35,7 +32,7 @@ export function ConfirmDialogueComponent(
             <button
                 className={styles.option}
                 onClick={() => {
-                    onResponse({ answer: false });
+                    respond({ answer: false });
                 }}
             >
                 No

@@ -1,7 +1,8 @@
 import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
+import type { LikedStatus } from '../../../ai/recommendation/LikedStatus';
+import {  LIKED_STATUSES_MESSAGES } from '../../../ai/recommendation/LikedStatus';
 import { Color } from '../../../utils/color/Color';
-import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import type { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import { ColorInput } from '../../ColorPreview/ColorInput/ColorInput';
@@ -37,7 +38,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
         defaultFilter.color || undefined,
         (color) => onFilterChange({ color }),
     );
-    const [likedStatus, setLikedStatus] = useStateWithReporting<keyof typeof LikedStatus | 'ALL'>(
+    const [likedStatus, setLikedStatus] = useStateWithReporting<LikedStatus | 'ALL'>(
         defaultFilter.likedStatus,
         (likedStatus) => onFilterChange({ likedStatus }),
     );
@@ -75,7 +76,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 value={likedStatus}
                 onChange={(newLikedStatus) => void setLikedStatus(newLikedStatus)}
                 visibleButtons={Infinity}
-                options={{ ...LikedStatus, ALL: 'All' }}
+                options={{ ...LIKED_STATUSES_MESSAGES, ALL: 'All' }}
             />
 
             <Select

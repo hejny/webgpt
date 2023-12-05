@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -71,7 +71,7 @@ export function ControlPanel() {
                                 if (window.localStorage.getItem(parentKey)) {
                                     window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
                                 } else if (!window.localStorage.getItem(currentKey)) {
-                                    window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
+                                    window.localStorage.setItem(currentKey, 'LIKE' satisfies LikedStatus);
                                 }
                             } catch (error) {
                                 // TODO: [🧠] Handle situation when window.localStorage is exceeded
