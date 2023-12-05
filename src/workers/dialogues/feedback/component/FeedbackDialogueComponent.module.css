@@ -8,9 +8,9 @@
 
     display: grid;
     grid-template:
-        '0️⃣' 100px
-        '1️⃣' 1fr
-        '2️⃣' 50px;
+        '🔴' 100px
+        '🟢' 1fr
+        '🔵' 50px;
 }
 
 .inputLayer .likedStatus {
@@ -20,7 +20,7 @@
 
     height: 100%;
     width: 100%;
-    grid-area: 0️⃣;
+    grid-area: 🔴;
 }
 
 .inputLayer .answer {
@@ -30,7 +30,7 @@
 
     height: 100%;
     width: 100%;
-    grid-area: 1️⃣;
+    grid-area: 🟢;
 
     resize: none;
 
@@ -49,7 +49,7 @@
 
     height: 100%;
     width: 100%;
-    grid-area: 2️⃣;
+    grid-area: 🔵;
 
     float: right;
 
