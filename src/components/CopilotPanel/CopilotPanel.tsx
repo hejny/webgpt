@@ -1,8 +1,9 @@
 import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
+import { forTime } from 'waitasecond';
 import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
@@ -176,64 +177,104 @@ export function CopilotPanel() {
         }
     }, [locale, router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
 
+    //--------------------------
+    // TODO: [🧠] useTimeout(1000), useInitialInteraction?
+    const [isFirstChatMessageShown, setFirstChatMessageShown] = useState<boolean>(false);
+    // TODO: Internally use useInitial
+    useEffect(() => {
+        if (isFirstChatMessageShown) {
+            return;
+        }
+
+        let isDestroyed = false;
+
+        const initialInteractionHandler = async () => {
+            await forTime(1000 /* <- TODO: To config COPILOT_START_INTERACT_AFTER_MS */);
+
+            if (isDestroyed) {
+                console.warn('Initial interaction in destroyed component');
+                return;
+            }
+
+            setFirstChatMessageShown(true);
+
+            // TODO: [🕶][🧠] Some good system to handle the audio
+            // TODO: [🕶] Free the memory?
+            const audio = new Audio('/sounds/351539__richerlandtv__alert4.mp3');
+            audio.play();
+        };
+
+        const listenerOptions: AddEventListenerOptions = { capture: true };
+
+        document.body.addEventListener('pointerdown', initialInteractionHandler, listenerOptions);
+
+        return () => {
+            isDestroyed = true;
+            // TODO: [🕶] Maybe use  { ..., once: true } in addEventListener options
+            document.body.removeEventListener('pointerdown', initialInteractionHandler, listenerOptions);
+        };
+    }, [isFirstChatMessageShown]);
+    //--------------------------
+
     return (
         <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
             <div className={styles.CopilotPanelChat}>
                 {/* TODO: Use here <ChatThreadComponent isTransparent><ChatMessageComponent isFeedbackCollected></ChatMessageComponent></ChatThreadComponent> */}
-                <div className={styles.ChatMessageComponent}>
-                    <div className={styles.author}>
-                        <LoadingInteractiveImage width={55} height={55} />
+                {isFirstChatMessageShown && (
+                    <div className={styles.ChatMessageComponent}>
+                        <div className={styles.author}>
+                            <LoadingInteractiveImage width={55} height={55} />
+                        </div>
+                        {/* TODO: Pick from multiple messages which can randomly vary */}
+                        <div className={styles.message}>
+                            <>
+                                {/* [⛳] */}
+                                <Translate locale="en">Do you like your new web?</Translate>
+                                <Translate locale="cs">Jak se Vám líbí Váš nový web?</Translate>
+                            </>
+                        </div>
+                        <div className={styles.feedback}>
+                            <FeedbackButton
+                                className={styles.feedbackButton}
+                                // TODO: !!! Pass here the previous feedback on the wallpaper [🧠] or is it a good idea?!
+                                onFeedback={async (feedback) => {
+                                    // TODO: !!! Process here the feedback
+                                    // TODO: !!! [🧠] Should we record the Reaction in the localStorage anymore?
+
+                                    // TODO: !!! Hodnotit pouze uložený web– případně mít nějaké ID které bude platit ještě před uložením nebo rovnou rozdělit uuid A Uri ID
+
+                                    const insertResult = await getSupabaseForBrowser()
+                                        .from('Reaction')
+                                        .insert({
+                                            wallpaperId: wallpaper.id,
+                                            likedStatus: feedback.likedStatus,
+                                            author: await provideClientId({
+                                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
+                                            }),
+                                            note: feedback.note,
+                                        });
+
+                                    // TODO: !! Util isInsertSuccessfull (status===201)
+                                    console.info({ insertResult });
+
+                                    /*
+                                    TODO: !!!lastlast
+                                    Rename tables (and download them here):
+
+                                    Reaction -> WallpaperFeedback
+                                    Feedback -> ?PromptbookFeedback
+
+
+            
+                                    */
+                                }}
+                                onFeedbackCollection={() => {
+                                    // Note: Do nothing
+                                }}
+                            />
+                        </div>
                     </div>
-                    {/* TODO: !!! Add delay to simulate chat */}
-                    {/* TODO: Pick from multiple messages which can randomly vary */}
-                    <div className={styles.message}>
-                        <>
-                            {/* [⛳] */}
-                            <Translate locale="en">Do you like your new web?</Translate>
-                            <Translate locale="cs">Jak se Vám líbí Váš nový web?</Translate>
-                        </>
-                    </div>
-                    <div className={styles.feedback}>
-                        <FeedbackButton
-                            className={styles.feedbackButton}
-                            // TODO: !!! Pass here the previous feedback on the wallpaper [🧠] or is it a good idea?!
-                            onFeedback={async (feedback) => {
-                                // TODO: !!! Process here the feedback
-                                // TODO: !!! [🧠] Should we record the Reaction in the localStorage anymore?
-
-                                // TODO: !!! Hodnotit pouze uložený web– případně mít nějaké ID které bude platit ještě před uložením nebo rovnou rozdělit uuid A Uri ID
-
-                                const insertResult = await getSupabaseForBrowser()
-                                    .from('Reaction')
-                                    .insert({
-                                        wallpaperId: wallpaper.id,
-                                        likedStatus: feedback.likedStatus,
-                                        author: await provideClientId({
-                                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
-                                        }),
-                                        note: feedback.note,
-                                    });
-
-                                // TODO: !! Util isInsertSuccessfull (status===201)
-                                console.info({ insertResult });
-
-                                /*
-                                TODO: !!!lastlast
-                                Rename tables (and download them here):
-
-                                Reaction -> WallpaperFeedback
-                                Feedback -> ?PromptbookFeedback
-
-
-        
-                                */
-                            }}
-                            onFeedbackCollection={() => {
-                                // Note: Do nothing
-                            }}
-                        />
-                    </div>
-                </div>
+                )}
             </div>
 
             <div
