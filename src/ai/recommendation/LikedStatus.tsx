@@ -6,10 +6,26 @@ import type { WithTake } from '../../utils/take/interfaces/ITakeChain';
 import type { string_char_emoji } from '../../utils/typeAliasEmoji';
 import type { message, number_likeness } from '../../utils/typeAliases';
 
+/**
+ * Liked status is an abstract concept which can be used to express how much you like something.
+ *
+ * It can be used to express how much you like:
+ * - A wallpaper
+ * - A change to a wallpaper
+ * - A section of a wallpaper
+ * - A step in the promptbook
+ * - An generated image
+ */
 export type LikedStatus = typeof LIKED_STATUSES[number];
 
+/**
+ * List of all possible liked statuses
+ */
 export const LIKED_STATUSES = ['NONE', 'LOVE', 'LIKE', 'NEUTRAL', 'DISLIKE', 'HATE'] as const;
 
+/**
+ * Mapping table from Liked statuses to likeness (quantified value)
+ */
 export const LIKED_STATUS_LIKENESS: Record<LikedStatus, number_likeness> = {
     NONE: 0,
     LOVE: 3,
@@ -59,7 +75,7 @@ export const LIKED_STATUSES_EMOJIS: Record<LikedStatus, string_char_emoji> = {
 /**
  * Mapping table from Liked statuses to emoji as <Image/>
  */
-export const LIKED_STATUSES_EMOJIS_IMAGES: Record<LikedStatus, any /* <- !!!last  */> = {
+export const LIKED_STATUSES_EMOJIS_IMAGES: Record<LikedStatus, JSX.Element> = {
     NONE: <Image alt="⭐" src="/icons/openmoji/2B50.white.svg" width={40} height={40} />,
     LOVE: <Image alt="❤" src="/icons/openmoji/2764.white.svg" width={40} height={40} /* <-[🧥] */ />,
     LIKE: <Image alt="👍" src="/icons/openmoji/1F44D.white.svg" width={40} height={40} /* <-[🧥] */ />,
@@ -94,6 +110,5 @@ LIKED_STATUSES_BUTTON_STYLES.NONE = {
 */
 
 /**
- * TODO: !!!last Annotate all
  * TODO: Maybe put LIKED_STATUS_LIKENESS into config
  */
