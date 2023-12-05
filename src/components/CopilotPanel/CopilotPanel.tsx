@@ -256,7 +256,7 @@ export function CopilotPanel() {
                                     console.info({ insertResult });
 
                                     /*
-                                    TODO: !!!lastlast (after merge to main)
+                                    TODO: !!!main
                                     Rename tables (and download them here):
 
                                     Reaction -> WallpaperFeedback

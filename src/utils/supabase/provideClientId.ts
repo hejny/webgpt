@@ -47,6 +47,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         placeholder: `john.smith@gmail.com`,
         defaultValue: `@`,
         isFeedbackCollected: false,
+        // TODO: !!! Add GDPR consent
     });
 
     if (!isValidEmail(email)) {
