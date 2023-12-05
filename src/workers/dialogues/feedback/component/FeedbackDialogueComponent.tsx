@@ -31,7 +31,7 @@ export function FeedbackDialogueComponent(
     }, [respond, likedStatus, textareaRef]);
 
     return (
-        <Modal title={message} size="MEDIUM" isCloseable closeModal={submit}>
+        <Modal title={message} size="MEDIUM" isCloseable closeIcon="✔" onClose={submit}>
             <div className={styles.inputLayer}>
                 <LikedStatusInput
                     className={styles.likedStatus}

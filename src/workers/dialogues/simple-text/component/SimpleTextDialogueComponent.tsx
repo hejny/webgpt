@@ -33,11 +33,7 @@ export function SimpleTextDialogueComponent(
     }, [respond, textareaRef, feedback]);
 
     return (
-        <Modal
-            title={message}
-            isDisabled={isInFeedbackCollection}
-            // TODO: !!! Allow to close by ✔
-        >
+        <Modal title={message} isDisabled={isInFeedbackCollection} isCloseable closeIcon="✔" onClose={submit}>
             {/* TODO: Maybe create some <OnTop><div/><div/></OnTop> component to make this type of layouts */}
             <div className={styles.inner}>
                 <div className={styles.inputLayer}>

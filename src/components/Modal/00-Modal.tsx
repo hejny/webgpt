@@ -29,12 +29,19 @@ interface ModalProps {
     readonly isCloseable?: boolean;
 
     /**
+     * The close icon
+     *
+     * @default "✖"
+     */
+    readonly closeIcon?: '✖' | '✔';
+
+    /**
      * Callback which will be called when the modal is requested to be closed
      *
      * If NOT set it will use as default <CloseModalLink/>
      * Warning: YOU SHOULD set it when you are using modal with isCloseable outside of wallpaper page
      */
-    readonly closeModal?: () => void;
+    readonly onClose?: () => void;
 
     /**
      * Size of the modal
@@ -53,7 +60,7 @@ interface ModalProps {
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children, isDisabled, isCloseable, closeModal, size = 'FULL', className } = props;
+    const { title, children, isDisabled, isCloseable, closeIcon = '✖', onClose, size = 'FULL', className } = props;
 
     const styles = useStyleModule(import('./00-Modal.module.css'));
 
@@ -91,8 +98,8 @@ export function Modal(props: ModalProps) {
         <>
             {!isCloseable || isDisabled ? (
                 <div className={classNames(styles.overlay)} />
-            ) : closeModal ? (
-                <div onClick={closeModal} className={classNames(styles.overlay)} />
+            ) : onClose ? (
+                <div onClick={onClose} className={classNames(styles.overlay)} />
             ) : (
                 <CloseModalLink className={classNames(styles.overlay)} />
             )}
@@ -111,16 +118,15 @@ export function Modal(props: ModalProps) {
                     </div>
                     <div className={styles.icons}>
                         {isCloseable &&
-                            (closeModal ? (
-                                <button onClick={closeModal}>
-                                    {/* TODO: !!! DRY */}
-                                    {/* TODO: !!! Allow to change the symbol to ✔ */}
-                                    <MarkdownContent content="✖" isUsingOpenmoji />
+                            (onClose ? (
+                                <button onClick={onClose}>
+                                    {/* TODO: [0] DRY */}
+                                    <MarkdownContent content={closeIcon} isUsingOpenmoji />
                                 </button>
                             ) : (
                                 <CloseModalLink>
-                                    {/* TODO: !!! DRY */}
-                                    <MarkdownContent content="✖" isUsingOpenmoji />
+                                    {/* TODO: [0] DRY */}
+                                    <MarkdownContent content={closeIcon} isUsingOpenmoji />
                                 </CloseModalLink>
                             ))}
                     </div>
