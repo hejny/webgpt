@@ -65,7 +65,7 @@ export function FeedbackButton(props: FeedbackButtonProps) {
     const style = LIKED_STATUSES_BUTTON_STYLES[feedback?.likedStatus || 'NONE'];
 
     return (
-        <Hint id="feedback" title={`Give feedback on ${subject}`} reapearCount={1}>
+        <Hint id="feedback" title={`Give feedback`} reapearCount={1}>
             {!isInFeedbackCollection && (
                 <button
                     className={classNames(className, styles.FeedbackButton)}
