@@ -1,11 +1,11 @@
-import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../../../ai/recommendation/LikedStatus';
 import type { AbstractDialogueResponse } from '../../../lib/dialogues/interfaces/AbstractDialogueResponse';
 
 export type FeedbackDialogueResponse = AbstractDialogueResponse & {
     /**
      * result of the feedbackation
      */
-    readonly likedStatus: keyof typeof LikedStatus;
+    readonly likedStatus: LikedStatus;
 
     /**
      * Feedback from user

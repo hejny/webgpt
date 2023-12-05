@@ -53,5 +53,6 @@ export function useScenario(): Scenario {
 }
 
 /**
+ * TODO: [📙] Every dictionary should look like LikedStatus
  * TODO: Validate here the ownership
  */

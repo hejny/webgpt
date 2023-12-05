@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
+import type { LikedStatus } from '../../../../ai/recommendation/LikedStatus';
 import { LikedStatusInput } from '../../../../components/LikedStatusInput/LikedStatusInput';
 import { Modal } from '../../../../components/Modal/00-Modal';
-import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import type { FeedbackDialogueRequest } from '../types/FeedbackDialogueRequest';
@@ -22,7 +22,7 @@ export function FeedbackDialogueComponent(
 
     const styles = useStyleModule(import('./FeedbackDialogueComponent.module.css'));
 
-    const [likedStatus, setLikedStatus] = useState<keyof typeof LikedStatus>(defaultLikedStatus);
+    const [likedStatus, setLikedStatus] = useState<LikedStatus>(defaultLikedStatus);
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 

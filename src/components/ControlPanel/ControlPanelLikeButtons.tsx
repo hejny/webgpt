@@ -82,3 +82,7 @@ export function ControlPanelLikeButtons() {
         </Hint>
     );
 }
+
+/**
+ * TODO: Use here LIKED_STATUSES_EMOJIS_IMAGES
+ */

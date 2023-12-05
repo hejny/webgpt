@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
-import { likedStatusToLikeness } from '../../ai/recommendation/likedStatusToLikeness';
+import  type { LikedStatus } from '../../ai/recommendation/LikedStatus';
+import {  LIKED_STATUS_LIKENESS } from '../../ai/recommendation/LikedStatus';
 import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
-import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
@@ -33,7 +33,7 @@ export default async function recommendWallpaperHandler(
     }
 
     try {
-        const previousReactions: Array<{ url: string_url; likedStatus: keyof typeof LikedStatus }> = [];
+        const previousReactions: Array<{ url: string_url; likedStatus: LikedStatus }> = [];
         const wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }> = [];
         for (const likedStatus of ['LOVE', 'LIKE', 'DISLIKE'] as const) {
             const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
@@ -49,7 +49,7 @@ export default async function recommendWallpaperHandler(
                 .order('createdAt', { ascending: false })
                 .limit(10 /* <- TODO:  [🤺] Tweak this number */);
 
-            const likeness = likedStatusToLikeness(likedStatus);
+            const likeness = LIKED_STATUS_LIKENESS[likedStatus];
 
             for (const { Wallpaper } of wallpapersWithLikenessData || []) {
                 previousReactions.push({

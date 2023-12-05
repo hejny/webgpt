@@ -100,12 +100,15 @@ export const PHOTOBANK_SEARCH_IMAGES_COUNT = 4;
  */
 export const OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH = 5;
 
+
+
 export const IS_VERIFIED_EMAIL_REQUIRED = {
     CREATE: false,
     EDIT: false,
     LIKE: false,
     PUBLISH: true,
 } as const;
+
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
@@ -1075,4 +1078,8 @@ export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
 ).value;
 export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
 
-// TODO: !! Annotate all
+
+/**
+ * TODO: !! Annotate all
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */

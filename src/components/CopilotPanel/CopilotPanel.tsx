@@ -6,12 +6,12 @@ import spaceTrim from 'spacetrim';
 import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
+import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
@@ -345,10 +345,7 @@ export function CopilotPanel() {
                                                     window.localStorage.getItem(parentKey)!,
                                                 );
                                             } else if (!window.localStorage.getItem(currentKey)) {
-                                                window.localStorage.setItem(
-                                                    currentKey,
-                                                    'LIKE' satisfies keyof typeof LikedStatus,
-                                                );
+                                                window.localStorage.setItem(currentKey, 'LIKE' satisfies LikedStatus);
                                             }
                                         } catch (error) {
                                             // TODO: [🧠] Handle situation when window.localStorage is exceeded

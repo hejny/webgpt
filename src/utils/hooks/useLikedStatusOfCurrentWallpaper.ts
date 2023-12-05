@@ -1,33 +1,18 @@
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
 import { provideClientId } from '../supabase/provideClientId';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useStateInLocalstorage } from './useStateInLocalstorage';
 
-// TODO: !!!last Change:
-//  LikedStatus -> LIKED_STATUSES
-//  keyof typeof LikedStatus -> LikedStatus
-
-export const LikedStatus = {
-    NONE: 'None',
-    LOVE: '❤ Loved',
-    LIKE: '👍 Liked',
-    NEUTRAL: '😐 Neutral',
-    DISLIKE: '👎 Disliked',
-    // TODO: !!! Add one more
-} as const;
-
-export function useLikedStatusOfCurrentWallpaper(): [
-    keyof typeof LikedStatus,
-    (likedStatus: keyof typeof LikedStatus) => void,
-] {
+export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: LikedStatus) => void] {
     const wallpaperId = useCurrentWallpaperId();
-    const [likedStatus, setLikedStatusInner] = useStateInLocalstorage<keyof typeof LikedStatus>(
+    const [likedStatus, setLikedStatusInner] = useStateInLocalstorage<LikedStatus>(
         `likedStatus_${wallpaperId}`,
         'NONE',
     );
 
-    const setLikedStatus = async (likedStatus: keyof typeof LikedStatus) => {
+    const setLikedStatus = async (likedStatus: LikedStatus) => {
         setLikedStatusInner(likedStatus);
 
         /*

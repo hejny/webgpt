@@ -1,4 +1,4 @@
-import type { LikedStatus } from '../../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../../../ai/recommendation/LikedStatus';
 import type { message } from '../../../../utils/typeAliases';
 import type { AbstractDialogueRequest } from '../../../lib/dialogues/interfaces/AbstractDialogueRequest';
 
@@ -24,7 +24,7 @@ export type FeedbackDialogueRequest = AbstractDialogueRequest & {
      *
      * Note: If you don’t want to set the default value use "NONE"
      */
-    readonly defaultLikedStatus: keyof typeof LikedStatus;
+    readonly defaultLikedStatus: LikedStatus;
 
     /**
      * Default value for the note
