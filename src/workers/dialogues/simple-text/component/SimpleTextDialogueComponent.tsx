@@ -2,6 +2,7 @@ import { useCallback, useRef, useState } from 'react';
 import { FeedbackButton } from '../../../../components/FeedbackButton/FeedbackButton';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
+import { jsxToHtmlSimple } from '../../../../utils/jsx-html/jsxToHtmlSimple';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
 import { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
 import type { SimpleTextDialogueRequest } from '../types/SimpleTextDialogueRequest';
@@ -59,6 +60,7 @@ export function SimpleTextDialogueComponent(
                     // TODO: !!! Text of answer should not be covered by feedback button
                     <div className={styles.feedbackLayer}>
                         <FeedbackButton
+                            subject={jsxToHtmlSimple(message)}
                             onFeedback={setFeedback}
                             onFeedbackCollection={setInFeedbackCollection}
                             className={styles.triggerFeedback}

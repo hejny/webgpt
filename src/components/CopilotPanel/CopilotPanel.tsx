@@ -235,6 +235,7 @@ export function CopilotPanel() {
                         </div>
                         <div className={styles.feedback}>
                             <FeedbackButton
+                                subject="new web"
                                 className={styles.feedbackButton}
                                 // feedback={existingFeedback}
                                 //         <- TODO: [🧠] Pass here the previous feedback on the wallpaper OR is it a good idea?!
