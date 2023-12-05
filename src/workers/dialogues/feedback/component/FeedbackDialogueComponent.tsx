@@ -55,7 +55,7 @@ export function FeedbackDialogueComponent(
                     }}
                 />
                 <button className={styles.submit} onClick={submit}>
-                    {/* <- !!! Button visible with mobile keyboard */}
+                    {/* <- !!!? Button visible with mobile keyboard */}
                     Submit feedback on {subject} {/* <- !! Translate */}
                 </button>
             </div>
