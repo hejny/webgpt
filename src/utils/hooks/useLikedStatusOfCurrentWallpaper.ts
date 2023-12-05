@@ -14,6 +14,7 @@ export const LikedStatus = {
     LIKE: '👍 Liked',
     NEUTRAL: '😐 Neutral',
     DISLIKE: '👎 Disliked',
+    // TODO: !!! Add one more
 } as const;
 
 export function useLikedStatusOfCurrentWallpaper(): [

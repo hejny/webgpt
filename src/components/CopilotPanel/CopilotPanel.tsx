@@ -192,6 +192,8 @@ export function CopilotPanel() {
                                 // TODO: !!! Process here the feedback
                                 // TODO: !!! [🧠] Should we record the Reaction in the localStorage anymore?
 
+                                // TODO: !!! Hodnotit pouze uložený web– případně mít nějaké ID které bude platit ještě před uložením nebo rovnou rozdělit uuid A Uri ID
+
                                 const insertResult = await getSupabaseForBrowser()
                                     .from('Reaction')
                                     .insert({

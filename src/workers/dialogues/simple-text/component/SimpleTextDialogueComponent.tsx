@@ -51,10 +51,12 @@ export function SimpleTextDialogueComponent(
                         }}
                     />
                     <button className={styles.submit} onClick={submit}>
+                        {/* <- !!! Button visible with mobile keyboard */}
                         Submit {/* <- !! Translate */}
                     </button>
                 </div>
                 {isFeedbackCollected && (
+                    // TODO: !!! Text of answer should not be covered by feedback button
                     <div className={styles.feedbackLayer}>
                         <FeedbackButton
                             onFeedback={setFeedback}

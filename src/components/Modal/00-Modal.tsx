@@ -113,10 +113,13 @@ export function Modal(props: ModalProps) {
                         {isCloseable &&
                             (closeModal ? (
                                 <button onClick={closeModal}>
+                                    {/* TODO: !!! DRY */}
+                                    {/* TODO: !!! Allow to change the symbol to ✔ */}
                                     <MarkdownContent content="✖" isUsingOpenmoji />
                                 </button>
                             ) : (
                                 <CloseModalLink>
+                                    {/* TODO: !!! DRY */}
                                     <MarkdownContent content="✖" isUsingOpenmoji />
                                 </CloseModalLink>
                             ))}
