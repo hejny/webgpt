@@ -28,6 +28,7 @@ import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
 import { PublishLink } from '../PublishModal/PublishLink';
 import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
+import { Translate } from '../Translate/Translate';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
 import { CopilotPanelChangeFont } from './CopilotPanelChangeFont';
@@ -184,8 +185,14 @@ export function CopilotPanel() {
                         <LoadingInteractiveImage width={55} height={55} />
                     </div>
                     {/* TODO: !!! Add delay to simulate chat */}
-                    {/* TODO: !!! Translate */}
-                    <div className={styles.message}>Do you like your new web?</div>
+                    {/* TODO: Pick from multiple messages which can randomly vary */}
+                    <div className={styles.message}>
+                        <>
+                            {/* [⛳] */}
+                            <Translate locale="en">Do you like your new web?</Translate>
+                            <Translate locale="cs">Jak se Vám líbí Váš nový web?</Translate>
+                        </>
+                    </div>
                     <div className={styles.feedback}>
                         <FeedbackButton
                             className={styles.feedbackButton}
