@@ -236,17 +236,14 @@ export function CopilotPanel() {
                         <div className={styles.feedback}>
                             <FeedbackButton
                                 className={styles.feedbackButton}
-                                // TODO: !!! Pass here the previous feedback on the wallpaper [🧠] or is it a good idea?!
+                                // feedback={existingFeedback}
+                                //         <- TODO: [🧠] Pass here the previous feedback on the wallpaper OR is it a good idea?!
                                 onFeedback={async (feedback) => {
-                                    // TODO: !!! Process here the feedback
-                                    // TODO: !!! [🧠] Should we record the Reaction in the localStorage anymore?
-
-                                    // TODO: !!! Hodnotit pouze uložený web– případně mít nějaké ID které bude platit ještě před uložením nebo rovnou rozdělit uuid A Uri ID
-
                                     const insertResult = await getSupabaseForBrowser()
                                         .from('Reaction')
                                         .insert({
                                             wallpaperId: wallpaper.id,
+                                            //         <-TODO: [💹] Use here some wallpaper UUID that will be valid before saving (=split UUID AND UriID)
                                             likedStatus: feedback.likedStatus,
                                             author: await provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
@@ -258,7 +255,7 @@ export function CopilotPanel() {
                                     console.info({ insertResult });
 
                                     /*
-                                    TODO: !!!lastlast
+                                    TODO: !!!lastlast (after merge to main)
                                     Rename tables (and download them here):
 
                                     Reaction -> WallpaperFeedback
