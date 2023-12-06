@@ -20,7 +20,7 @@ let supabase: SupabaseClient<Database>;
  */
 export function getSupabaseForServer(): typeof supabase {
     if (!isRunningInNode()) {
-        throw new Error('Use getSupabaseForServer');
+        throw new Error('Function `getSupabaseForServer` can not be used in browser, use `getSupabaseForBrowser` instead.');
     }
 
     if (!supabase) {

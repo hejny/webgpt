@@ -1,0 +1,57 @@
+.inputLayer {
+    /*/
+    background-color: rgba(81, 255, 38, 0.5);
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template:
+        '🔴' 100px
+        '🟢' 1fr
+        '🔵' 50px;
+}
+
+.inputLayer .likedStatus {
+    /*/
+    outline: 1px dotted rgb(81, 255, 38);
+    /**/
+
+    height: 100%;
+    width: 100%;
+    grid-area: 🔴;
+}
+
+.inputLayer .answer {
+    /*/
+    outline: 1px dotted rgb(81, 255, 38);
+    /**/
+
+    height: 100%;
+    width: 100%;
+    grid-area: 🟢;
+
+    resize: none;
+
+    border-radius: 0;
+    background-color: #151515;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.inputLayer .submit {
+    /*/
+    outline: 1px dotted rgb(81, 255, 38);
+    /**/
+
+    height: 100%;
+    width: 100%;
+    grid-area: 🔵;
+
+    float: right;
+
+    cursor: pointer;
+}

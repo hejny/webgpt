@@ -1,4 +1,5 @@
 import { ConfigChecker } from 'configchecker';
+import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DallePrompt';
@@ -50,8 +51,27 @@ export const IS_PRODUCTION = !IS_DEVELOPMENT;
 if (isRunningInBrowser()) {
     // TODO: Also log " client ${provideClientIdWithoutValidation()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
     console.info(
-        `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
-        `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
+        `%c⏣ ${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
+        spaceTrim(`
+            display: block;
+
+            background-color: rgba(0 0 0 / 0.13);
+            border: 1px solid rgba(255 255 255 / 0.53);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 60px;
+            overflow: clip;
+        
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        `)
+            .split('\n')
+            .join(''),
     );
 }
 
@@ -80,12 +100,15 @@ export const PHOTOBANK_SEARCH_IMAGES_COUNT = 4;
  */
 export const OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH = 5;
 
+
+
 export const IS_VERIFIED_EMAIL_REQUIRED = {
     CREATE: false,
     EDIT: false,
     LIKE: false,
     PUBLISH: true,
 } as const;
+
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
@@ -1055,4 +1078,8 @@ export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
 ).value;
 export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
 
-// TODO: !! Annotate all
+
+/**
+ * TODO: !! Annotate all
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */

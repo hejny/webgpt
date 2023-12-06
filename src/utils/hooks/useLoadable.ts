@@ -70,6 +70,7 @@ export function useLoadable<Value>(loadable: Loadable<Value>): IUseLoadableResul
 }
 
 /**
+ * TODO: [📙] Every dictionary should look like LikedStatus
  * TODO: Proppably also with using this hook, create <Loadable> component as a combination and replacement of AsyncContentComponent and ObservableContentComponent:
  *     > <Loadable>
  *     >    {async ()=>{
