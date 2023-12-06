@@ -200,7 +200,18 @@ export function CopilotPanel() {
 
             // TODO: [🕶][🧠] Some good system to handle the audio
             // TODO: [🕶] Free the memory?
-            const audio = new Audio('/sounds/351539__richerlandtv__alert4.mp3');
+
+            // const name = '351539__richerlandtv__alert4.mp3' // <- 💙
+            const name = '545341__stwime__brlip.mp3'; // <- 💙
+            // const name = '545345__stwime__down.mp3'
+            // const name = '545352__stwime__simple.mp3'
+            // const name = '545354__stwime__pan3.mp3'
+            // const name = '545359__stwime__dutdut.mp3'
+            // const name = '545365__stwime__idk2.mp3'
+            // const name = '545371__stwime__up2.mp3' // <- 💙
+            // const name = '545373__stwime__up3.mp3'
+
+            const audio = new Audio(`/sounds/${name}`);
             audio.play();
         };
 
