@@ -1,10 +1,11 @@
-import { CSSProperties, useEffect, useRef, useState } from 'react';
+import type { CSSProperties } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import type { string_css_class, string_translate_language } from '../../../utils/typeAliases';
-import type { SimpleTextDialogueRequest } from '../../../workers/dialogues/simple-text/interfaces/SimpleTextDialogueRequest';
-import type { SimpleTextDialogueResponse } from '../../../workers/dialogues/simple-text/interfaces/SimpleTextDialogueResponse';
+import type { SimpleTextDialogueRequest } from '../../../workers/dialogues/simple-text/types/SimpleTextDialogueRequest';
+import type { SimpleTextDialogueResponse } from '../../../workers/dialogues/simple-text/types/SimpleTextDialogueResponse';
 import { dialoguesQueue } from '../../../workers/lib/dialogues/dialoguesQueue';
-import { DialogueRequestInQueue } from '../../../workers/lib/dialogues/interfaces/DialogueRequestInQueue';
+import type { DialogueRequestInQueue } from '../../../workers/lib/dialogues/interfaces/DialogueRequestInQueue';
 import { isDialoguesRendered } from '../../../workers/lib/dialogues/isDialoguesRendered';
 import { SimpleChat } from '../SimpleChat/SimpleChat';
 
@@ -99,9 +100,9 @@ export function WorkerChat(props: WorkerChatProps) {
                 console.log('!!!', 'Before await new Promise<DialogueRequestInQueue>');
 
                 const currentDialogueRequestInQueue = await new Promise<DialogueRequestInQueue>((resolve) => {
-                    // TODO: !!! DRY OR Better polling solution
+                    // TODO: !!! React on signal DO not poll
                     const interval = setInterval(() => {
-                        const dialogueRequestInQueue = dialoguesQueue.find(
+                        const dialogueRequestInQueue = dialoguesQueue.value.find(
                             (promptInQueue) => promptInQueue.response === undefined,
                         );
 
