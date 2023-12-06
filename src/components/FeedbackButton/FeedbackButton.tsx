@@ -1,11 +1,11 @@
 import { useCallback, useState } from 'react';
+import type { Feedback } from '../../ai/recommendation/Feedback';
 import { LIKED_STATUSES_BUTTON_STYLES, LIKED_STATUSES_EMOJIS_IMAGES } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class } from '../../utils/typeAliases';
 import { feedbackDialogue } from '../../workers/dialogues/feedback/feedbackDialogue';
 import { FeedbackDialogueRequest } from '../../workers/dialogues/feedback/types/FeedbackDialogueRequest';
-import type { FeedbackDialogueResponse } from '../../workers/dialogues/feedback/types/FeedbackDialogueResponse';
 import type { AbstractDialogueRequest } from '../../workers/lib/dialogues/interfaces/AbstractDialogueRequest';
 import { Hint } from '../Hint/Hint';
 
@@ -14,7 +14,7 @@ type FeedbackButtonProps = Pick<AbstractDialogueRequest, 'priority'> &
         /**
          * Calls each time when the feedback is given/updated
          */
-        onFeedback(feedback: FeedbackDialogueResponse): void;
+        onFeedback(feedback: Feedback): void;
 
         /**
          * Calls each time the feedback collection is started or finished
@@ -36,7 +36,7 @@ export function FeedbackButton(props: FeedbackButtonProps) {
     const styles = useStyleModule(import('./FeedbackButton.module.css'));
 
     const [isInFeedbackCollection, setInFeedbackCollection] = useState(false);
-    const [feedback, setFeedback] = useState<FeedbackDialogueResponse | undefined>();
+    const [feedback, setFeedback] = useState<Feedback | undefined>();
     const triggerFeedbackCollection = useCallback(async () => {
         if (isInFeedbackCollection) {
             alert('Already in feedback collection');

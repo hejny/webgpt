@@ -1,5 +1,5 @@
+import type { Feedback } from '../../../../ai/recommendation/Feedback';
 import type { AbstractDialogueResponse } from '../../../lib/dialogues/interfaces/AbstractDialogueResponse';
-import type { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
 
 export type SimpleTextDialogueResponse = AbstractDialogueResponse & {
     /**
@@ -13,7 +13,7 @@ export type SimpleTextDialogueResponse = AbstractDialogueResponse & {
     /**
      * Feedback from user
      */
-    readonly feedback?: FeedbackDialogueResponse;
+    readonly feedback?: Feedback;
 };
 
 /**

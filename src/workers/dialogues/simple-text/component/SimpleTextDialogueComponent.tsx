@@ -1,10 +1,10 @@
 import { useCallback, useRef, useState } from 'react';
+import type { Feedback } from '../../../../ai/recommendation/Feedback';
 import { FeedbackButton } from '../../../../components/FeedbackButton/FeedbackButton';
 import { Modal } from '../../../../components/Modal/00-Modal';
 import { useStyleModule } from '../../../../utils/hooks/useStyleModule';
 import { jsxToHtmlSimple } from '../../../../utils/jsx-html/jsxToHtmlSimple';
 import type { DialogueComponentProps } from '../../../lib/dialogues/interfaces/DialogueComponentProps';
-import { FeedbackDialogueResponse } from '../../feedback/types/FeedbackDialogueResponse';
 import type { SimpleTextDialogueRequest } from '../types/SimpleTextDialogueRequest';
 import type { SimpleTextDialogueResponse } from '../types/SimpleTextDialogueResponse';
 
@@ -25,7 +25,7 @@ export function SimpleTextDialogueComponent(
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-    const [feedback, setFeedback] = useState<FeedbackDialogueResponse | undefined>();
+    const [feedback, setFeedback] = useState<Feedback | undefined>();
     const [isInFeedbackCollection, setInFeedbackCollection] = useState(false);
 
     const submit = useCallback(() => {
