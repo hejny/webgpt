@@ -17,6 +17,6 @@ export type SimpleTextDialogueResponse = AbstractDialogueResponse & {
 };
 
 /**
- * TODO: !!! Change to types, add ResponseWithFeedback,RequestWithFeedback and make image dialogue use it too
+ * TODO: [🏂] Change to types, add ResponseWithFeedback,RequestWithFeedback and make image dialogue use it too
  * TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
  */
