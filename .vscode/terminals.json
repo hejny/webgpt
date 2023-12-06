@@ -126,7 +126,6 @@
             "name": "🏭🥫 Generate database types",
             "commands": ["npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts"],
             "execute": false,
-            "onlySingle": true,
             "focus": true
         },
         {
@@ -135,7 +134,6 @@
                 "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > database/dumps/structure.dump.pgsql"
             ],
             "execute": false,
-            "onlySingle": true,
             "focus": true
         },
         {
@@ -149,13 +147,8 @@
         },
         {
             "name": "🔼🥫 Commit database structure",
-            "commands": [
-                "git add src/utils/supabase/types.ts",
-                "git add database/dumps/structure.dump.pgsql",
-                "git commit -m \"Update database\""
-            ],
-            "execute": true,
-            "onlySingle": true,
+            "command": "git add src/utils/supabase/types.ts && git add database/dumps/structure.dump.pgsql && git commit -m \"Update database\"",
+            "execute": false,
             "focus": true
         },
         {
