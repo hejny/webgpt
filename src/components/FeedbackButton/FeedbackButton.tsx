@@ -48,7 +48,7 @@ export function FeedbackButton(props: FeedbackButtonProps) {
 
         const newFeedback = await feedbackDialogue({
             priority: priority + 1,
-            message: `Feedback on ${subject}`,
+            message: `Feedback`, // <- TODO: [🧠] Something better like `Feedback on ${subject}` (this breaks mobile layout)
             subject,
             defaultLikedStatus: feedback ? feedback.likedStatus : 'NONE',
             defaultNote: feedback ? feedback.note : null,

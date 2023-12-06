@@ -138,6 +138,8 @@ dialog.Modal.mediumSize {
     outline: 1px dotted rgb(98, 0, 255);
     /**/
 
+    /* TODO: !!! Do not break here mobile layout */
+
     width: max-content;
     display: block;
     margin: auto;
