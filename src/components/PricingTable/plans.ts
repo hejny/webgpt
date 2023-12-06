@@ -12,3 +12,8 @@ export const PricingPlans = {
     ADVANCED: 'Advanced',
     ENTERPRISE: 'Enterprise',
 } as const;
+
+
+/**
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */

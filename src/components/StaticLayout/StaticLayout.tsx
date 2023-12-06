@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { StaticAppHead, StaticAppHeadProps } from '../AppHead/StaticAppHead';
+import type { StaticAppHeadProps } from '../AppHead/StaticAppHead';
+import { StaticAppHead } from '../AppHead/StaticAppHead';
 import styles from './StaticLayout.module.css';
 
 interface StaticLayoutProps extends StaticAppHeadProps {

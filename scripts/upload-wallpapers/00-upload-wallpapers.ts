@@ -46,10 +46,10 @@ async function uploadWallpapers() {
 
             if (!(selectResult && selectResult.data && selectResult.data.length > 0)) {
                 const insertResult = await getSupabaseForServer().from('Wallpaper').insert(wallpaper);
+                console.info('Wallpaper insert', { insertResult });
 
                 // TODO: !! Util isInsertSuccessfull (status===201)
                 if (insertResult.status !== 201) {
-                    console.info({ insertResult });
                     throw new Error('Insert failed');
                 }
 

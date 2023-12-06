@@ -23,6 +23,15 @@ export async function mockedMultitaskWithPrompts(
         `),
     );
 
+    /*
+    const { likedStatus, note } = await feedbackDialogue({
+        message: 'How do you like the apple?',
+        subject: 'the apple',
+        defaultValue: 'I like it very much!',
+        placeholder: 'I like it very much!',
+    });
+    */
+
     for (let i = 0; i < 5; i++) {
         await forTime(Math.random() * 1000 + 500);
 
@@ -34,21 +43,24 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
-        const { answer } = await simpleTextDialogue({
+        const response = await simpleTextDialogue({
             message: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
                 </>
             ),
-            defaultValue: faker.hacker.phrase(),
+            defaultValue: faker.lorem.paragraphs(5),
             placeholder: faker.hacker.phrase(),
+            isFeedbackCollected: true,
         });
+
+        console.info('👉', response);
 
         await onProgress({
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({answer})</i>
+                    {title} <i>({response.answer})</i>
                 </>
             ),
             isDone: true,

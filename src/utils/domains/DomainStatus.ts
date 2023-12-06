@@ -8,6 +8,7 @@ export const DomainStatus = {
 } as const;
 
 /**
- * TODO: Split between const and type
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ *     - Split between const and type
  *     - keyof typeof DomainStatus should become just type DomainStatus
  */

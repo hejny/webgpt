@@ -1,3 +1,5 @@
+import type { AbstractDialogueRequest } from '../dialogues/interfaces/AbstractDialogueRequest';
+import type { AbstractDialogueResponse } from '../dialogues/interfaces/AbstractDialogueResponse';
 import type { DialogueFunction } from '../dialogues/interfaces/DialogueFunction';
 
 /**
@@ -7,7 +9,7 @@ export interface WorkerifyOptions {
     /**
      * The list of dialogues that can be triggered by the worker.
      */
-    supportDialogues: Array<DialogueFunction<any, any>>;
+    supportDialogues: Array<DialogueFunction<AbstractDialogueRequest, AbstractDialogueResponse>>;
 
     /**
      * Whether the worker should prevent unsaved changes.

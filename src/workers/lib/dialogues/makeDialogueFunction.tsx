@@ -5,6 +5,8 @@ import type { IMessageDialogueRequest } from '../interfaces/IMessageDialogueRequ
 import type { IMessageDialogueResponse } from '../interfaces/IMessageDialogueResponse';
 import type { IMessageMainToWorker } from '../interfaces/IMessageMainToWorker';
 import { dialoguesQueue } from './dialoguesQueue';
+import { AbstractDialogueRequest } from './interfaces/AbstractDialogueRequest';
+import { AbstractDialogueResponse } from './interfaces/AbstractDialogueResponse';
 import type { DialogueComponent } from './interfaces/DialogueComponent';
 import type { DialogueFunction } from './interfaces/DialogueFunction';
 import type { DialogueRequestInQueue } from './interfaces/DialogueRequestInQueue';
@@ -16,16 +18,18 @@ import { isDialoguesRendered } from './isDialoguesRendered';
  * @param DialogueComponent The dialogue component to use, e.g. `SimpleTextDialogueComponent` not `<SimpleTextDialogueComponent/>`
  * @returns The dialogue function
  */
-export function makeDialogueFunction<TRequest, TResponse>(
-    DialogueComponent: DialogueComponent<TRequest, TResponse>,
-): DialogueFunction<TRequest, TResponse> {
+export function makeDialogueFunction<
+    TRequest extends AbstractDialogueRequest,
+    TResponse extends AbstractDialogueResponse,
+>(DialogueComponent: DialogueComponent<TRequest, TResponse>): DialogueFunction<TRequest, TResponse> {
     const { dialogueTypeName } = DialogueComponent;
 
     const dialogueFunction = async (request: TRequest): Promise<TResponse> => {
+        const id = randomUuid();
+
         if (isRunningInWebWorker()) {
             // [🌴]
 
-            const id = randomUuid();
             postMessage({
                 type: `${dialogueTypeName}_DIALOGUE_REQUEST`,
                 id,
@@ -54,10 +58,17 @@ export function makeDialogueFunction<TRequest, TResponse>(
 
         const requestInQueue: DialogueRequestInQueue = {
             dialogueTypeName,
+            id,
             request,
         };
 
-        dialoguesQueue.push(requestInQueue);
+        dialoguesQueue.value.push(requestInQueue);
+
+        dialoguesQueue.value = [
+            // Note: We need to create new array to trigger signal reactivity (not just push to existing array)
+            ...dialoguesQueue.value,
+            requestInQueue,
+        ];
 
         while (true) {
             await forTime(50 /* <- TODO: POLLING_INTERVAL_MS into config */);
