@@ -24,36 +24,6 @@ export interface Database {
                 };
                 Relationships: [];
             };
-            Feedback: {
-                Row: {
-                    clientId: string | null;
-                    createdAt: string;
-                    defaultValue: string | null;
-                    id: number;
-                    likedStatus: string | null;
-                    note: string | null;
-                    value: string | null;
-                };
-                Insert: {
-                    clientId?: string | null;
-                    createdAt?: string;
-                    defaultValue?: string | null;
-                    id?: number;
-                    likedStatus?: string | null;
-                    note?: string | null;
-                    value?: string | null;
-                };
-                Update: {
-                    clientId?: string | null;
-                    createdAt?: string;
-                    defaultValue?: string | null;
-                    id?: number;
-                    likedStatus?: string | null;
-                    note?: string | null;
-                    value?: string | null;
-                };
-                Relationships: [];
-            };
             ImagePromptExecution: {
                 Row: {
                     clientId: string | null;
@@ -153,6 +123,36 @@ export interface Database {
                 };
                 Relationships: [];
             };
+            PromptbookFeedback: {
+                Row: {
+                    clientId: string | null;
+                    createdAt: string;
+                    defaultValue: string | null;
+                    id: number;
+                    likedStatus: string | null;
+                    note: string | null;
+                    value: string | null;
+                };
+                Insert: {
+                    clientId?: string | null;
+                    createdAt?: string;
+                    defaultValue?: string | null;
+                    id?: number;
+                    likedStatus?: string | null;
+                    note?: string | null;
+                    value?: string | null;
+                };
+                Update: {
+                    clientId?: string | null;
+                    createdAt?: string;
+                    defaultValue?: string | null;
+                    id?: number;
+                    likedStatus?: string | null;
+                    note?: string | null;
+                    value?: string | null;
+                };
+                Relationships: [];
+            };
             PromptExecution: {
                 Row: {
                     clientId: string | null;
@@ -197,40 +197,6 @@ export interface Database {
                     usedModel?: string | null;
                 };
                 Relationships: [];
-            };
-            WallpaperFeedback: {
-                Row: {
-                    author: string;
-                    createdAt: string;
-                    likedStatus: string;
-                    wallpaperId: string;
-                };
-                Insert: {
-                    author: string;
-                    createdAt?: string;
-                    likedStatus: string;
-                    wallpaperId: string;
-                };
-                Update: {
-                    author?: string;
-                    createdAt?: string;
-                    likedStatus?: string;
-                    wallpaperId?: string;
-                };
-                Relationships: [
-                    {
-                        foreignKeyName: 'WallpaperFeedback_wallpaperId_fkey';
-                        columns: ['wallpaperId'];
-                        referencedRelation: 'Wallpaper';
-                        referencedColumns: ['id'];
-                    },
-                    {
-                        foreignKeyName: 'WallpaperFeedback_wallpaperId_fkey';
-                        columns: ['wallpaperId'];
-                        referencedRelation: 'Wallpaper_random';
-                        referencedColumns: ['id'];
-                    },
-                ];
             };
             Site: {
                 Row: {
@@ -366,6 +332,43 @@ export interface Database {
                     title?: string;
                 };
                 Relationships: [];
+            };
+            WallpaperFeedback: {
+                Row: {
+                    author: string;
+                    createdAt: string;
+                    likedStatus: string;
+                    note: string | null;
+                    wallpaperId: string;
+                };
+                Insert: {
+                    author: string;
+                    createdAt?: string;
+                    likedStatus: string;
+                    note?: string | null;
+                    wallpaperId: string;
+                };
+                Update: {
+                    author?: string;
+                    createdAt?: string;
+                    likedStatus?: string;
+                    note?: string | null;
+                    wallpaperId?: string;
+                };
+                Relationships: [
+                    {
+                        foreignKeyName: 'WallpaperFeedback_wallpaperId_fkey';
+                        columns: ['wallpaperId'];
+                        referencedRelation: 'Wallpaper';
+                        referencedColumns: ['id'];
+                    },
+                    {
+                        foreignKeyName: 'WallpaperFeedback_wallpaperId_fkey';
+                        columns: ['wallpaperId'];
+                        referencedRelation: 'Wallpaper_random';
+                        referencedColumns: ['id'];
+                    },
+                ];
             };
         };
         Views: {
