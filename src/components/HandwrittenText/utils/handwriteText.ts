@@ -46,3 +46,8 @@ export async function handwriteText(options: IHandwriteTextOptions) {
         modelSrc: '/handwritten/d.bin',
     }) /* <- !! Return promise */;
 }
+
+
+/**
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */

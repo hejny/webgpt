@@ -19,3 +19,8 @@ export default function TestTasksProgressPage() {
 
     return <TasksInProgress {...{ tasksProgress }} />;
 }
+
+
+/**
+ * TODO: [🍭] Use here same pattern as in TestTasksProgressWithChatPage
+ */

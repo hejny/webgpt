@@ -3,7 +3,7 @@
     outline: 1px dotted rgb(255, 38, 38);
     /**/
 
-    z-index: 3010
+    z-index: 300000
         /*       <- [🔝] Global z-index for wallpaper page
                  <- TODO: In future z-index should be set by hinted component dynamically
         */;
@@ -34,7 +34,7 @@
     outline: 1px dotted rgb(79, 194, 223);
     /**/
 
-    z-index: 3010
+    z-index: 300000
         /*       <- [🔝] Global z-index for wallpaper page
                  <- TODO: In future z-index should be set by hinted component dynamically
         */;

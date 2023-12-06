@@ -56,6 +56,7 @@ export function useRole(): Role {
 }
 
 /**
+ * TODO: [📙] Every dictionary should look like LikedStatus
  * TODO: Validate here the ownership + default role should be "VISITOR" OR "OWNER" according to ownership
  * TODO: !! Some way how to toggle VISITOR role from UI
  * TODO: [🧠][🍛] There is a collision between role and <a role="..." /> html attribute

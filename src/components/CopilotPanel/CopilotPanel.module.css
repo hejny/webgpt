@@ -19,6 +19,81 @@
     }
 }
 
+.CopilotPanelChat {
+    /*/
+    outline: 1px dotted rgb(167 113 255);
+    /**/
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ChatMessageComponent {
+    display: grid;
+    grid-template-areas: '⏣ void 💬 ⭐';
+    grid-template-columns: 60px 10px 1fr 0;
+
+    align-content: space-around;
+}
+
+.ChatMessageComponent .author {
+    grid-area: ⏣;
+    z-index: 1 /* <- Local order of <CopilotPanel/> */;
+
+    background-color: rgba(0 0 0 / 0.8);
+    border: 1px solid rgba(255 255 255 / 0.53);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    overflow: clip;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatMessageComponent .message {
+    grid-area: 💬;
+    z-index: 1 /* <- Local order of <CopilotPanel/> */;
+
+    background-color: rgba(0 0 0 / 0.8);
+    border: 1px solid rgba(255 255 255 / 0.53);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    overflow: clip;
+
+    height: 60px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatMessageComponent .feedback {
+    /*/
+    outline: 1px dotted rgb(255, 125, 38);
+    /**/
+
+    grid-area: ⭐;
+    z-index: 2 /* <- Local order of <CopilotPanel/> */;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatMessageComponent .feedback .feedbackButton {
+    transform: translate(0, 50%) scale(0.8);
+}
+
 .CopilotPanelInner {
     /*/
     outline: 1px dotted rgb(255, 125, 38);
@@ -39,8 +114,6 @@
     display: grid;
     grid-template-columns: 1fr 60px 60px;
 }
-
-
 
 .CopilotPanel input {
     /*/
