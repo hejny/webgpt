@@ -62,13 +62,14 @@ export function makeDialogueFunction<
             request,
         };
 
-        // TODO: !!!last Is this needed instead of .push(...)
+        dialoguesQueue.value.push(requestInQueue);
+
         dialoguesQueue.value = [
+            // Note: We need to create new array to trigger signal reactivity (not just push to existing array)
             ...dialoguesQueue.value,
             requestInQueue,
-            // Note: !!!last
         ];
-    
+
         while (true) {
             await forTime(50 /* <- TODO: POLLING_INTERVAL_MS into config */);
 
