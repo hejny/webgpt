@@ -265,17 +265,6 @@ export function CopilotPanel() {
 
                                     // TODO: !! Util isInsertSuccessfull (status===201)
                                     console.info({ insertResult });
-
-                                    /*
-                                    TODO: !!!main
-                                    Rename tables (and download them here):
-
-                                    WallpaperFeedback -> WallpaperFeedback
-                                    Feedback -> PromptbookFeedback
-
-
-            
-                                    */
                                 }}
                                 onFeedbackCollection={() => {
                                     // Note: Do nothing

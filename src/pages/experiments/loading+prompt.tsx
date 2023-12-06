@@ -7,12 +7,10 @@ import { useInitialAction } from '../../utils/hooks/useInitialAction';
 import { isRunningInBrowser } from '../../utils/isRunningInWhatever';
 
 export default function TestTasksProgressWithChatPage() {
- 
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>([]);
     useInitialAction(
         () => isRunningInBrowser(),
         () => {
-         
             /* not await */ mockedMultitaskWithPrompts(async (newTaskProgress) =>
                 setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress)),
             );
@@ -23,6 +21,5 @@ export default function TestTasksProgressWithChatPage() {
 }
 
 /**
- * TODO: !!!last useInitialAction vs useInitialActionWhenReady
- * TODO: !!!last To all experiment functions
+ * TODO: [🍭] Use here useInitialAction (vs useInitialActionWhenReady)
  */

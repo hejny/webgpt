@@ -51,5 +51,5 @@ export default function TestTasksProgressWithChatPage() {
 }
 
 /**
- * TODO: !! Move to subfolder
+ * TODO: [🍭] Use here same pattern as in TestTasksProgressWithChatPage
  */
