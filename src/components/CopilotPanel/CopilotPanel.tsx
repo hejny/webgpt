@@ -189,7 +189,7 @@ export function CopilotPanel() {
         let isDestroyed = false;
 
         const initialInteractionHandler = async () => {
-            await forTime(1000 /* <- TODO: To config COPILOT_START_INTERACT_AFTER_MS */);
+            await forTime(3000 /* <- TODO: To config COPILOT_START_INTERACT_AFTER_MS */);
 
             if (isDestroyed) {
                 console.warn('Initial interaction in destroyed component');
@@ -217,12 +217,12 @@ export function CopilotPanel() {
 
         const listenerOptions: AddEventListenerOptions = { capture: true };
 
-        document.body.addEventListener('pointerdown', initialInteractionHandler, listenerOptions);
+        document.body.addEventListener('pointerup', initialInteractionHandler, listenerOptions);
 
         return () => {
             isDestroyed = true;
             // TODO: [🕶] Maybe use  { ..., once: true } in addEventListener options
-            document.body.removeEventListener('pointerdown', initialInteractionHandler, listenerOptions);
+            document.body.removeEventListener('pointerup', initialInteractionHandler, listenerOptions);
         };
     }, [isFirstChatMessageShown]);
     //--------------------------
