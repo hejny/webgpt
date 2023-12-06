@@ -52,7 +52,7 @@ export function SimpleTextDialogueComponent(
                         }}
                     />
                     <button className={styles.submit} onClick={submit}>
-                        {/* <- !!!? Button visible with mobile keyboard */}
+                        {/* <- TODO: [🕶][☘] Button visible with mobile keyboard */}
                         Submit {/* <- !! Translate */}
                     </button>
                 </div>
