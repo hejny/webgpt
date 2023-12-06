@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export function useInitialAction(getIsReady: () => boolean, action: () => void): boolean {
     const [isReady, setReady] = useState(false);
 
-    // Note: !!!last
+    // Note: This strange code is needed to prevent the action from being performed twice
     const [isPerformed, setPerformed] = useState(false);
 
     useEffect(() => {
