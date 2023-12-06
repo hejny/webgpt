@@ -1,6 +1,7 @@
-import { message, string_image_prompt } from '../../../../utils/typeAliases';
+import type { message, string_image_prompt } from '../../../../utils/typeAliases';
+import type { AbstractDialogueRequest } from '../../../lib/dialogues/interfaces/AbstractDialogueRequest';
 
-export interface ImageGeneratorDialogueRequest {
+export type ImageGeneratorDialogueRequest = AbstractDialogueRequest & {
     /**
      * The message
      * What is goal of the image?
@@ -15,7 +16,7 @@ export interface ImageGeneratorDialogueRequest {
      * @example "Café in the space, realistic"
      */
     readonly defaultImagePrompt: string_image_prompt;
-}
+};
 
 /**
  * TODO: !! isImagePromptAllowedToChange

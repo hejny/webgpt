@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import { useRouter } from 'next/router';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './Footer.module.css';
 
@@ -50,7 +49,7 @@ export function FooterSection() {
  * TODO: !! No cookie's sentence 
  * TODO: !! Email & follow subscription
  * TODO: !! Email & follow subscription + Popup as nice alert after 10s
- * TODO: !! Add all legal stuff
+ * TODO: !!!main Add all legal stuff
  *       @see https://www.inizio.cz/blog/povinne-udaje-webu/
  *       @see https://techheaven.org/org
  *       Also in Collboard AND other projects

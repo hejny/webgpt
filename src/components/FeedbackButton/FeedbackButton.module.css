@@ -1,0 +1,16 @@
+.FeedbackButton {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.FeedbackButton img {
+    width: 100%;
+    height: 100%;
+
+    filter: invert(1);
+}

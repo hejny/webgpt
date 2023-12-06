@@ -5,3 +5,8 @@ export const DomainStatus = {
     // TODO: TIMEOUT: 'Timeout',
     UNKNOWN: 'Unknown',
 } as const;
+
+
+/**
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */
