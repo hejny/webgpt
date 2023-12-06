@@ -67,7 +67,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                         // TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
 
-                        const feedbackInsertData: Database['public']['Tables']['Feedback']['Insert'] = {
+                        const feedbackInsertData: Database['public']['Tables']['PromptbookFeedback']['Insert'] = {
                             clientId,
                             likedStatus: null,
                             defaultValue: options.defaultValue,
@@ -86,7 +86,7 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                         // Note: We do not want to wait for the insert to the database
                         /* not await */ getSupabaseForWorker()
-                            .from('Feedback')
+                            .from('PromptbookFeedback')
                             .insert(feedbackInsertData)
                             .then((insertResult) => {
                                 // TODO: !! Util isInsertSuccessfull (status===201)

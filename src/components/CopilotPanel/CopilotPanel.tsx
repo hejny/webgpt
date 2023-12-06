@@ -252,7 +252,7 @@ export function CopilotPanel() {
                                 //         <- TODO: [🧠] Pass here the previous feedback on the wallpaper OR is it a good idea?!
                                 onFeedback={async (feedback) => {
                                     const insertResult = await getSupabaseForBrowser()
-                                        .from('Reaction')
+                                        .from('WallpaperFeedback')
                                         .insert({
                                             wallpaperId: wallpaper.id,
                                             //         <-TODO: [💹] Use here some wallpaper UUID that will be valid before saving (=split UUID AND UriID)
@@ -270,8 +270,8 @@ export function CopilotPanel() {
                                     TODO: !!!main
                                     Rename tables (and download them here):
 
-                                    Reaction -> WallpaperFeedback
-                                    Feedback -> ?PromptbookFeedback
+                                    WallpaperFeedback -> WallpaperFeedback
+                                    Feedback -> PromptbookFeedback
 
 
             

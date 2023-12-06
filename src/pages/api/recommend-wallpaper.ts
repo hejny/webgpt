@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_DEBUG, NEXT_PUBLIC_URL } from '../../../config';
-import  type { LikedStatus } from '../../ai/recommendation/LikedStatus';
-import {  LIKED_STATUS_LIKENESS } from '../../ai/recommendation/LikedStatus';
+import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
+import { LIKED_STATUS_LIKENESS } from '../../ai/recommendation/LikedStatus';
 import { pickMostRecommended } from '../../ai/recommendation/pickMostRecommended';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper, IWallpaperSerialized } from '../../utils/IWallpaper';
@@ -33,11 +33,11 @@ export default async function recommendWallpaperHandler(
     }
 
     try {
-        const previousReactions: Array<{ url: string_url; likedStatus: LikedStatus }> = [];
+        const previousWallpaperFeedbacks: Array<{ url: string_url; likedStatus: LikedStatus }> = [];
         const wallpapersWithLikeness: Array<IWallpaper & { likeness: number_likeness }> = [];
         for (const likedStatus of ['LOVE', 'LIKE', 'DISLIKE'] as const) {
             const { data: wallpapersWithLikenessData } = await getSupabaseForServer()
-                .from('Reaction')
+                .from('WallpaperFeedback')
                 .select(
                     `
                         createdAt,
@@ -52,7 +52,7 @@ export default async function recommendWallpaperHandler(
             const likeness = LIKED_STATUS_LIKENESS[likedStatus];
 
             for (const { Wallpaper } of wallpapersWithLikenessData || []) {
-                previousReactions.push({
+                previousWallpaperFeedbacks.push({
                     url: NEXT_PUBLIC_URL.href + Wallpaper!.id,
                     likedStatus,
                 });
@@ -92,7 +92,7 @@ export default async function recommendWallpaperHandler(
                 debug: !NEXT_PUBLIC_DEBUG
                     ? undefined
                     : {
-                          previousReactions,
+                          previousWallpaperFeedbacks,
                       },
             } as any /* TODO: satisfies RecommendWallpaperResponse */,
         );

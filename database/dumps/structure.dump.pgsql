@@ -1515,10 +1515,10 @@ CREATE VIEW public."Prompt_stats" AS
 ALTER TABLE public."Prompt_stats" OWNER TO postgres;
 
 --
--- Name: Reaction; Type: TABLE; Schema: public; Owner: postgres
+-- Name: WallpaperFeedback; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public."Reaction" (
+CREATE TABLE public."WallpaperFeedback" (
     "wallpaperId" text NOT NULL,
     author uuid NOT NULL,
     "createdAt" timestamp with time zone DEFAULT now() NOT NULL,
@@ -1526,13 +1526,13 @@ CREATE TABLE public."Reaction" (
 );
 
 
-ALTER TABLE public."Reaction" OWNER TO postgres;
+ALTER TABLE public."WallpaperFeedback" OWNER TO postgres;
 
 --
--- Name: TABLE "Reaction"; Type: COMMENT; Schema: public; Owner: postgres
+-- Name: TABLE "WallpaperFeedback"; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON TABLE public."Reaction" IS 'Reactions to wallpaper';
+COMMENT ON TABLE public."WallpaperFeedback" IS 'WallpaperFeedbacks to wallpaper';
 
 
 --
@@ -1996,11 +1996,11 @@ ALTER TABLE ONLY public."Prompt"
 
 
 --
--- Name: Reaction Reaction_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: WallpaperFeedback WallpaperFeedback_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."Reaction"
-    ADD CONSTRAINT "Reaction_pkey" PRIMARY KEY ("wallpaperId", author, "createdAt");
+ALTER TABLE ONLY public."WallpaperFeedback"
+    ADD CONSTRAINT "WallpaperFeedback_pkey" PRIMARY KEY ("wallpaperId", author, "createdAt");
 
 
 --
@@ -2429,11 +2429,11 @@ ALTER TABLE ONLY auth.sso_domains
 
 
 --
--- Name: Reaction Reaction_wallpaperId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: WallpaperFeedback WallpaperFeedback_wallpaperId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."Reaction"
-    ADD CONSTRAINT "Reaction_wallpaperId_fkey" FOREIGN KEY ("wallpaperId") REFERENCES public."Wallpaper"(id) ON DELETE CASCADE;
+ALTER TABLE ONLY public."WallpaperFeedback"
+    ADD CONSTRAINT "WallpaperFeedback_wallpaperId_fkey" FOREIGN KEY ("wallpaperId") REFERENCES public."Wallpaper"(id) ON DELETE CASCADE;
 
 
 --
@@ -2466,10 +2466,10 @@ CREATE POLICY "Anyone can insert a row" ON public."Client" FOR INSERT TO anon WI
 
 
 --
--- Name: Reaction Anyone can insert a row; Type: POLICY; Schema: public; Owner: postgres
+-- Name: WallpaperFeedback Anyone can insert a row; Type: POLICY; Schema: public; Owner: postgres
 --
 
-CREATE POLICY "Anyone can insert a row" ON public."Reaction" FOR INSERT TO anon WITH CHECK (true);
+CREATE POLICY "Anyone can insert a row" ON public."WallpaperFeedback" FOR INSERT TO anon WITH CHECK (true);
 
 
 --
@@ -2510,10 +2510,10 @@ ALTER TABLE public."Prompt" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public."PromptExecution" ENABLE ROW LEVEL SECURITY;
 
 --
--- Name: Reaction; Type: ROW SECURITY; Schema: public; Owner: postgres
+-- Name: WallpaperFeedback; Type: ROW SECURITY; Schema: public; Owner: postgres
 --
 
-ALTER TABLE public."Reaction" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."WallpaperFeedback" ENABLE ROW LEVEL SECURITY;
 
 --
 -- Name: Site; Type: ROW SECURITY; Schema: public; Owner: postgres
@@ -3577,12 +3577,12 @@ GRANT ALL ON TABLE public."Prompt_stats" TO service_role;
 
 
 --
--- Name: TABLE "Reaction"; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE "WallpaperFeedback"; Type: ACL; Schema: public; Owner: postgres
 --
 
-GRANT ALL ON TABLE public."Reaction" TO anon;
-GRANT ALL ON TABLE public."Reaction" TO authenticated;
-GRANT ALL ON TABLE public."Reaction" TO service_role;
+GRANT ALL ON TABLE public."WallpaperFeedback" TO anon;
+GRANT ALL ON TABLE public."WallpaperFeedback" TO authenticated;
+GRANT ALL ON TABLE public."WallpaperFeedback" TO service_role;
 
 
 --

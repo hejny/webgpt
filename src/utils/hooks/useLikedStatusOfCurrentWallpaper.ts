@@ -17,8 +17,8 @@ export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: 
 
         /*
         TODO: 
-        const currentReaction = getSupabaseForBrowser()
-            .from('Reaction')
+        const currentWallpaperFeedback = getSupabaseForBrowser()
+            .from('WallpaperFeedback')
             .select('*')
             .eq('wallpaperId', wallpaperId)
             .eq('author', provideClientId());
@@ -26,7 +26,7 @@ export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: 
         */
 
         const insertResult = await getSupabaseForBrowser()
-            .from('Reaction')
+            .from('WallpaperFeedback')
             .insert({
                 wallpaperId,
                 likedStatus,
