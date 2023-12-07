@@ -10,12 +10,13 @@ import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
-import type { string_font_family, string_name, string_token } from './src/utils/typeAliases';
+import type { string_email, string_font_family, string_name, string_token } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
+export const ADMIN_EMAIL: string_email = 'pavol@webgpt.cz';
 
 export const USE_DALLE_VERSION: 2 | 3 = 3;
 

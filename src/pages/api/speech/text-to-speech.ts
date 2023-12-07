@@ -1,6 +1,7 @@
 // import ElevenLabs from 'elevenlabs-node'; <- TODO: !!! Use OR uninstall
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { ELEVENLABS_API_KEY, ELEVENLABS_VOICE_IDS } from '../../../../config';
+import spaceTrim from 'spacetrim';
+import { ADMIN_EMAIL, ELEVENLABS_API_KEY, ELEVENLABS_VOICE_IDS } from '../../../../config';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 export const config = {
@@ -30,14 +31,30 @@ export default async function textToSpeechHandler(
     // TODO: [🌺] Log cost for this request and attribute it to the client
     //---------------
 
-    // TODO: !!! Validate text/plain body
+    // TODO: !!! Validate MIME-TYPE to text/plain body
 
-    const text = 'He'; //request.body;
+    const text = spaceTrim(`
+        Hele Pavle, to zní naprosto skvěle!
+        Takový Fuckup jsem si přesně představoval na poslední Fuckup Night!
+    `); // <- TODO: !!! Use here request.body NOT the hardcoded text
+
     console.log(text);
 
-    // TODO: !!! Validate text content
+    // TODO: !!! Validate text content against offensive words, sensitive content etc.
 
-    const voiceId = ELEVENLABS_VOICE_IDS['pavol'];
+    const voiceId = ELEVENLABS_VOICE_IDS['pavol' /* <- TODO: !!! Put here pavol-enhanced */];
+
+    if (ELEVENLABS_API_KEY === undefined || voiceId === undefined) {
+        return response.status(500).json(
+            {
+                message: spaceTrim(`
+                    There is a problem with the server configuration of text-to-speech
+
+                    If the problem persists, please contact the server administrator on ${ADMIN_EMAIL}
+                `),
+            } as any /* <-[🌋] */,
+        );
+    }
 
     const options = {
         method: 'POST',
