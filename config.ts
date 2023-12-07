@@ -10,7 +10,7 @@ import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
-import { string_font_family } from './src/utils/typeAliases';
+import type { string_font_family, string_name, string_token } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
@@ -100,15 +100,12 @@ export const PHOTOBANK_SEARCH_IMAGES_COUNT = 4;
  */
 export const OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH = 5;
 
-
-
 export const IS_VERIFIED_EMAIL_REQUIRED = {
     CREATE: false,
     EDIT: false,
     LIKE: false,
     PUBLISH: true,
 } as const;
-
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = config.get('NEXT_PUBLIC_SUPABASE_ANON_KEY').required().value;
@@ -124,6 +121,9 @@ export const LIMIT_WALLPAPERS_EXCLUDE = config.get('LIMIT_WALLPAPERS_EXCLUDE').l
 // export const WELCOME_WALLPAPERS = config.get('WELCOME_WALLPAPERS').list().default([]).value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
+
+export const ELEVENLABS_API_KEY = config.get('ELEVENLABS_API_KEY').value;
+export const ELEVENLABS_VOICE_IDS: Record<string_name, string_token> = config.get('ELEVENLABS_VOICE_IDS').json().value;
 
 export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
 export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
@@ -1077,7 +1077,6 @@ export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
     `@see https://github.com/settings/tokens`,
 ).value;
 export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
-
 
 /**
  * TODO: !! Annotate all

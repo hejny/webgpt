@@ -1,5 +1,6 @@
-import ElevenLabs from 'elevenlabs-node';
+// import ElevenLabs from 'elevenlabs-node'; <- TODO: !!! Use OR uninstall
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { ELEVENLABS_API_KEY, ELEVENLABS_VOICE_IDS } from '../../../../config';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 export const config = {
@@ -31,36 +32,37 @@ export default async function textToSpeechHandler(
 
     // TODO: !!! Validate text/plain body
 
-    const text = 'Ahoj'; //request.body;
+    const text = 'He'; //request.body;
     console.log(text);
 
     // TODO: !!! Validate text content
 
-    const elevenLabs = new ElevenLabs({
-        apiKey: '0e2c037kl8561005671b1de345s8765c', // Your API key from Elevenlabs
-        voiceId: 'pNInz6obpgDQGcFmaJgB', // A Voice ID from Elevenlabs
-    });
+    const voiceId = ELEVENLABS_VOICE_IDS['pavol'];
 
-    const speech = elevenLabs.textToSpeech({
-        // Required Parameters
-        fileName: 'audio.mp3', // The name of your audio file
-        textInput: text, // The text you wish to convert to speech
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            Accept: 'audio/mpeg',
+            'xi-api-key': ELEVENLABS_API_KEY,
+        },
+        body: JSON.stringify({
+            model_id: 'eleven_multilingual_v2', // <- !!! Pick the best
+            text,
+            voice_settings: {
+                similarity_boost: 0.5, // <- !!! Pick the best
+                stability: 0.5, // <- !!! Pick the best
+                style: 1, // <- !!! Pick the best
+                use_speaker_boost: true, // <- !!! Pick the best
+            },
+        }),
+    };
 
-        // Optional Parameters
-        // voiceId: '21m00Tcm4TlvDq8ikWAM', // A different Voice ID from the default
-        stability: 0.5, // The stability for the converted speech
-        similarityBoost: 0.5, // The similarity boost for the converted speech
-        modelId: 'elevenlabs_multilingual_v2', // The ElevenLabs Model ID
-        style: 1, // The style exaggeration for the converted speech
-        speakerBoost: true, // The speaker boost for the converted speech
-    });
+    const speechResponse = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, options);
 
-    console.log(speech);
+    const speechResponseBlob = await speechResponse.blob();
 
-    return response
-        .setHeader('Content-Type', 'audio/mpeg' /* <- !!! Which is the correct mime*/)
-        .status(200)
-        .end(speech);
+    return response.setHeader('Content-Type', 'audio/mpeg').send(speechResponseBlob);
 }
 
 /**
