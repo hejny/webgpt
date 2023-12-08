@@ -89,6 +89,8 @@ export default async function textToSpeechHandler(
         );
     }
 
+    // TODO: !!! [🧠] Better way how to deepen the directory structure
+
     const speechPath = join(SPEECH_MATERIALIZE_DIR, voiceName, normalizeToKebabCase(text) + '.mp3');
 
     if (!(await isFileExisting(speechPath))) {
