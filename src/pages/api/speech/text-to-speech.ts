@@ -90,6 +90,7 @@ export default async function textToSpeechHandler(
     }
 
     // TODO: !!! [🧠] Better way how to deepen the directory structure
+    // TODO: !!! Make cache in CDN
 
     const speechPath = join(SPEECH_MATERIALIZE_DIR, voiceName, normalizeToKebabCase(text) + '.mp3');
 
