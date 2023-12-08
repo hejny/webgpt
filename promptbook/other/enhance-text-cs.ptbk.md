@@ -3,37 +3,59 @@
 Instrukce pro vylepšení textu za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/cs/other/enhance-text-cs.ptbk.md@v0.1.0
--   PTBK version 0.0.1
+-   PTBK version 0.0.2
 -   Input param `{inputText}` Vstupní text
 -   Output param `{outputText}` Vylepšený text
 
+## Preprocessing
+
+-   execute script
+
+```javascript
+let preprocessedText = inputText;
+preprocessedText = preprocessedText.split('\n\n\n').join('\n\n');
+preprocessedText = preprocessedText.split('\n\n\n').join('\n\n');
+preprocessedText = preprocessedText.split('\n\n\n').join('\n\n');
+
+preprocessedText = preprocessedText.split('pomlčka').join('–⁠');
+
+return preprocessedText;
+```
+
+`-> {preprocessedText}`
+
 ## Úprava postu
 
--   use completion
+-   use chat
 -   postprocess spaceTrim
 
 ```
-Jsi zkušený copywriter s vytříbeným jazykem a smyslem pro detail vám bylo svěřeno zpracování následujícího textu.
-Tento text má být součástí připravované marketingové kampaně.
+Oprav zadaný text
 
-Pokyny pro tento úkol jsou následující:
+## Pravidla
 
-- Text mohl být automaticky přepsán z mluveného projevu, což může mít za následek nesprávnou nebo chybějící interpunkci a úseky,
-  které mohou být buď nesprávně interpretovány, nebo neúmyslně opakovány.
-- Rozšiř bohatost jazyka a slovní zásobu použitou v textu.
-- Oprav gramatické chyby.
-- Zachovej vyznění textu.
-- Zachovej délku textu
-- Zachovej strukturu
-- Zachovej vykání / tykání
-
-## Surový text příspěvku
-
-{inputText}
+- Opravte gramatické chyby
+- Oprav velká a malá písmena
+- Přidej háčky a čárky
+- Oprav interpunkci
 
 
-## Vylepšený text příspěvku
+## Text
 
+{preprocessedText}
+
+
+
+```
+
+`-> {correctedText}`
+
+## Map outputText
+
+-   execute simple template
+
+```
+{correctedText}
 ```
 
 `-> {outputText}`
