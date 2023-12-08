@@ -4,6 +4,8 @@ import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import simpleChatAvatar from '../../../../public/avatars/bot.jpeg'; /* <- TODO: Use ACRY Import attributes> with { type: "???json" }; */
 import teacherAvatar from '../../../../public/avatars/teacher.jpeg';
+import pavolHejnyImage from '../../../../public/people/pavol-hejny.transparent.png';
+import tomasStudenikImage from '../../../../public/people/tomas-studenik.transparent.png';
 import { classNames } from '../../../utils/classNames';
 import { focusRef } from '../../../utils/focusRef';
 import { string_css_class, string_translate_language } from '../../../utils/typeAliases';
@@ -143,7 +145,15 @@ export function Chat(props: ChatProps) {
                     >
                         <div className={styles.avatar}>
                             <Image
-                                src={{ JOURNAL: simpleChatAvatar, TEACHER: teacherAvatar }[message.from]}
+                                src={
+                                    {
+                                        // !!! Cleanup
+                                        JOURNAL: pavolHejnyImage,
+                                        TEACHER: tomasStudenikImage,
+                                        _JOURNAL: simpleChatAvatar,
+                                        _TEACHER: teacherAvatar,
+                                    }[message.from]
+                                }
                                 alt={`AI generated image of ${message.from.toLocaleLowerCase()} as small cartoon avatar`}
                             />
                         </div>

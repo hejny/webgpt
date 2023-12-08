@@ -99,6 +99,10 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+
+    object-fit: cover;
+    background-color: #B8B8B8;
+
 }
 
 /* Message text */
