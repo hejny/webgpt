@@ -39,7 +39,9 @@ export default async function publishWebsiteHandler(
     const bundlesArray = files.bundle;
 
     if (!bundlesArray || bundlesArray.length !== 1) {
-        return response.status(400).json({ message: 'In form data there is not EXACTLY one "bundle" field' } as any);
+        return response
+            .status(400)
+            .json({ message: 'In form data there is not EXACTLY one "bundle" field' } as any /* <-[🌋] */);
     }
 
     const bundle = bundlesArray[0]!;

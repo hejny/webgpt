@@ -106,6 +106,7 @@ export const IS_VERIFIED_EMAIL_REQUIRED = {
     EDIT: false,
     LIKE: false,
     PUBLISH: true,
+    SPEECH: false,
 } as const;
 
 export const NEXT_PUBLIC_SUPABASE_URL = config.get('NEXT_PUBLIC_SUPABASE_URL').url().required().value;

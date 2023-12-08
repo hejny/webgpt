@@ -1,3 +1,8 @@
+import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { ObjectUrl } from '../../export/utils/ObjectUrl';
+import { provideClientId } from '../supabase/provideClientId';
+
 /**
  * Synthesizes speech for the given text in the specified language using the browser's built-in SpeechSynthesis API.
  *
@@ -6,6 +11,47 @@
  * @returns A promise that resolves when speech synthesis is complete.
  */
 export async function speak(text: string, language: string): Promise<void> {
+    const clientId = await provideClientId({
+        isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.SPEECH,
+    });
+
+    const response = await fetch(
+        `/api/speech/text-to-speech?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
+        {
+            method: 'POST',
+            body: text,
+            headers: {
+                'Content-Type': 'text/plain',
+                Accept: 'audio/mpeg',
+            },
+        },
+    );
+
+    const blob = await response.blob();
+
+    induceFileDownload(blob);
+
+    console.log(`blob`, blob);
+
+    const objectUrl = ObjectUrl.fromBlob(blob);
+
+    console.log(`objectUrl.href`, objectUrl.href);
+    const audio = new Audio(objectUrl.href);
+
+    audio.play();
+
+    await new Promise<void>((resolve) => {
+        audio.addEventListener('ended', () => {
+            //objectUrl.destroy();
+            resolve();
+        });
+    });
+
+    /*
+    Note: [🧠] Make interface of speech synthesis which will be implemented by ElevenlabsVoice and BrowserVoice
+        > class BrowserVoice implements SpeechRecognition,SpeechSynthesis {...}
+
+
     return new Promise((resolve, reject) => {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = language;
@@ -26,6 +72,7 @@ export async function speak(text: string, language: string): Promise<void> {
         };
         window.speechSynthesis.speak(utterance);
     });
+    */
 }
 
 /*
@@ -56,9 +103,11 @@ export async function speak(text: string, language: string): Promise<void> {
   */
 
 /**
+ * TODO: [🧠] Better abstraction
  * TODO: !! Allow to stop+play/pause
  * TODO: !! Allow to destroy
  * TODO: !! Speech animation around the image avatar
  * TODO: Return some meaningful object
  * TODO: !! Test speech/regognition on iPhone
+ * TODO: !!! [🧠][🍜] Standartize the place where the first interaction to allow audio happen
  */
