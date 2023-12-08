@@ -18,6 +18,8 @@ export function CopilotPanelChangeFont() {
     );
     const modifyWallpaperFont = useCallback(() => {
         modifyWallpaper((modifiedWallpaper) => {
+            // TODO: !!! Somewhere is font wrapped by double quotes
+
             console.log('!!! Content before change', modifiedWallpaper.content);
             console.log('!!!', { randomFont, modifiedWallpaper });
             modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont.fontFamily);
