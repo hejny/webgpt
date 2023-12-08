@@ -26,16 +26,25 @@ export async function speak(text: string, language: string): Promise<void> {
         },
     );
 
+    console.log(`!!!`, { response });
+
     const blob = await response.blob();
+
+    console.log(`!!!`, { blob });
 
     const objectUrl = ObjectUrl.fromBlob(blob);
 
+    console.log(`!!!`, { objectUrl });
+
     const audio = new Audio(objectUrl.href);
+
+    console.log(`!!!`, { audio });
 
     audio.play();
 
     await new Promise<void>((resolve) => {
         audio.addEventListener('ended', () => {
+            console.log(`!!! ended`);
             objectUrl.destroy();
             resolve();
         });
