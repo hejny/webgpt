@@ -48,7 +48,8 @@ export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
 
     html = htmlLines.join('\n');
 
-    html = prettifyHtml(html);
+    // !!! Remove comment OR comment why not need to prettifyHtml
+    //html = prettifyHtml(html);
     html = spaceTrim(html);
 
     return html;
