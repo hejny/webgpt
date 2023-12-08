@@ -1,5 +1,4 @@
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
-import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { ObjectUrl } from '../../export/utils/ObjectUrl';
 import { provideClientId } from '../supabase/provideClientId';
 
@@ -29,20 +28,15 @@ export async function speak(text: string, language: string): Promise<void> {
 
     const blob = await response.blob();
 
-    induceFileDownload(blob);
-
-    console.log(`blob`, blob);
-
     const objectUrl = ObjectUrl.fromBlob(blob);
 
-    console.log(`objectUrl.href`, objectUrl.href);
     const audio = new Audio(objectUrl.href);
 
     audio.play();
 
     await new Promise<void>((resolve) => {
         audio.addEventListener('ended', () => {
-            //objectUrl.destroy();
+            objectUrl.destroy();
             resolve();
         });
     });
