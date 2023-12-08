@@ -13,7 +13,7 @@ import { isFileExisting } from '../../../../scripts/utils/isFileExisting';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 // TODO: !!! To config + !!! Note NOT cache dir
-const AUDIO_MATERIALIZE_DIR = join(process.cwd(), 'audio');
+const SPEECH_MATERIALIZE_DIR = join(process.cwd(), 'speech');
 
 export const config = {
     api: {
@@ -89,7 +89,7 @@ export default async function textToSpeechHandler(
         );
     }
 
-    const speechPath = join(AUDIO_MATERIALIZE_DIR, voiceName, normalizeToKebabCase(text) + '.mp3');
+    const speechPath = join(SPEECH_MATERIALIZE_DIR, voiceName, normalizeToKebabCase(text) + '.mp3');
 
     if (!(await isFileExisting(speechPath))) {
         // !!! Comment
