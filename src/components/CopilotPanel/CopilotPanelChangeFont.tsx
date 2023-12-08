@@ -18,7 +18,11 @@ export function CopilotPanelChangeFont() {
     );
     const modifyWallpaperFont = useCallback(() => {
         modifyWallpaper((modifiedWallpaper) => {
+            console.log('!!! Content before change', modifiedWallpaper.content);
+            console.log('!!!', { randomFont, modifiedWallpaper });
             modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont.fontFamily);
+            console.log('!!! Content after change', modifiedWallpaper.content);
+
             modifiedWallpaper.saveStage = 'EDITED';
             return modifiedWallpaper;
         });
