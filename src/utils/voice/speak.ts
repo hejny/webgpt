@@ -10,6 +10,8 @@ import { provideClientId } from '../supabase/provideClientId';
  * @returns A promise that resolves when speech synthesis is complete.
  */
 export async function speak(text: string, language: string): Promise<void> {
+    console.log(`!!! speak`, { text, language });
+
     const clientId = await provideClientId({
         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.SPEECH,
     });
