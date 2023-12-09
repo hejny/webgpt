@@ -7,12 +7,13 @@ import { nameToSubfolderPath } from './nameToSubfolderPath';
  * Generates a path for the user content
  */
 
-export function generateUserWallpaperCdnKey(wallpaperImage: Buffer): string_uri {
+export function getUserWallpaperCdnKey(wallpaperImage: Buffer): string_uri {
     const hash = sha256(hexEncoder.parse(wallpaperImage.toString('hex'))).toString(/* hex */);
     return `user/${nameToSubfolderPath(hash).join('/')}/${hash}`;
 }
 
 /**
+ * TODO: [⛳️] There should be probbably .png suffix
  * TODO: Way how to garbage unused uploaded files
  * TODO: Probably saparate util countBufferHash
  */

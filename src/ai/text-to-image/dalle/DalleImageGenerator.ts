@@ -6,7 +6,7 @@ import { Writable } from 'type-fest';
 import { Vector } from 'xyzt';
 import { CDN } from '../../../../config';
 import { WebgptTaskProgress } from '../../../components/TaskInProgress/task/WebgptTaskProgress';
-import { generateDalleCdnKey } from '../../../utils/cdn/utils/generateDalleCdnKey';
+import { getDalleCdnKey } from '../../../utils/cdn/utils/getDalleCdnKey';
 import { isRunningInNode } from '../../../utils/isRunningInWhatever';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePromptResult } from '../0-interfaces/ImagePromptResult';
@@ -93,7 +93,7 @@ export class DalleImageGenerator implements ImageGenerator {
         const imageArrayBuffer = await fetch(imageSrc).then((response) => response.arrayBuffer());
         const imageBuffer = Buffer.from(imageArrayBuffer);
 
-        const key = generateDalleCdnKey(prompt, imageBuffer);
+        const key = getDalleCdnKey(prompt, imageBuffer);
         await CDN.setItem(key, {
             type: 'image/png', // <- TODO: Is Dalle always creating PNGs?
             data: imageBuffer,

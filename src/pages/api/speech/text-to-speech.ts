@@ -1,16 +1,16 @@
 // import ElevenLabs from 'elevenlabs-node'; <- TODO: !!! Use OR uninstall
-import { createReadStream, createWriteStream } from 'fs';
-import { mkdir } from 'fs/promises';
-import { normalizeToKebabCase } from 'n12';
+//[🧆]> import { createReadStream } from 'fs';
+import chalk from 'chalk';
 import type { NextApiRequest, NextApiResponse } from 'next';
 // !!! import fetch from 'node-fetch';
-import { dirname, join } from 'path';
+import { join } from 'path';
 import spaceTrim from 'spacetrim';
-import { Readable } from 'stream';
-import { finished } from 'stream/promises';
-import { ADMIN_EMAIL, ELEVENLABS_API_KEY, ELEVENLABS_VOICE_IDS } from '../../../../config';
-import { isFileExisting } from '../../../../scripts/utils/isFileExisting';
+//[🧆]> import { finished } from 'stream/promises';
+import { ADMIN_EMAIL, CDN, ELEVENLABS_API_KEY, ELEVENLABS_VOICE_IDS } from '../../../../config';
+import { getSpeechCdnKey } from '../../../utils/cdn/utils/getSpeechCdnKey';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
+//[🧆]> import { mkdir } from 'fs/promises';
+//[🧆]> import { isFileExisting } from '../../../../scripts/utils/isFileExisting';
 
 // TODO: !!! To config + !!! Note NOT cache dir
 const SPEECH_MATERIALIZE_DIR = join(process.cwd(), 'speech');
@@ -90,13 +90,12 @@ export default async function textToSpeechHandler(
     }
 
     // TODO: !!! [🧠] Better way how to deepen the directory structure
-    // TODO: !!! Make cache in CDN
+    const speechCdnKey = getSpeechCdnKey(voiceName, text);
+    //[🧆]> const speechPath = join(SPEECH_MATERIALIZE_DIR, speechCdnKey);
 
-    const speechPath = join(SPEECH_MATERIALIZE_DIR, voiceName, normalizeToKebabCase(text) + '.mp3');
-
-    if (!(await isFileExisting(speechPath))) {
+    if (/* //[🧆]> !(await isFileExisting(speechPath)) && */ !(await CDN.getItem(speechCdnKey))) {
         // !!! Comment
-        console.info(`Generating speech for text:\n\n${text}`);
+        console.info(chalk.bgCyan(`Generating speech for text:`) + `\n\n` + chalk.cyan(text));
 
         const options = {
             method: 'POST',
@@ -119,38 +118,38 @@ export default async function textToSpeechHandler(
 
         const speechResponse = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, options);
 
-        // const speechResponseBlob = await speechResponse.blob();
-
         // TODO: !!! Put metadata to the audio file
 
-        await mkdir(dirname(speechPath), { recursive: true });
-
-        const fileStream = createWriteStream(speechPath, { flags: 'wx' });
-
-        await finished(Readable.fromWeb(speechResponse.body as any /* <- TODO: Remove any */).pipe(fileStream));
         /*
-        await new Promise((resolve, reject) => {
-            speechResponse.body.pipe(fileStream);
-            speechResponse.body.on('error', reject);
-            fileStream.on('finish', resolve);
-        });
-
-
-        fileStream.close();
+        //[🧆]> await mkdir(dirname(speechPath), { recursive: true });
+        //[🧆]> const fileStream = createWriteStream(speechPath, { flags: 'wx' });
+        //[🧆]> await finished(Readable.fromWeb(speechResponse.body as any /* <- TODO: Remove any * /).pipe(fileStream));
         */
 
-        //await finished(Readable.fromWeb(speechResponse.body).pipe(fileStream));
-        //await writeFile(voicePath, await blobToDataurl(speechResponseBlob), 'base64url');
+        // TODO: [🥪] Make util responseToBuffer
+        const speechResponseArrayBuffer = await speechResponse.arrayBuffer();
+        const speechResponseBuffer = Buffer.from(speechResponseArrayBuffer);
+
+        await CDN.setItem(speechCdnKey, {
+            type: 'audio/mpeg',
+            data: speechResponseBuffer,
+        });
     }
 
-    response.setHeader('Content-Type', 'audio/mpeg').status(201);
+    /*
+    //[🧆]> response.setHeader('Content-Type', 'audio/mpeg').status(201);
+    //[🧆]> const speechContentStream = createReadStream(speechPath);
+    //[🧆]> speechContentStream.pipe(response);
+    //[🧆]> await finished(speechContentStream);
+    //[🧆]> response.end();
+    */
 
-    const speechContentStream = createReadStream(speechPath);
-    speechContentStream.pipe(response);
+    const speechContentItem = (await CDN.getItem(speechCdnKey))!;
+    response.setHeader('Content-Type', speechContentItem.type);
+    response.status(201);
+    response.end(speechContentItem.data);
 
-    await finished(speechContentStream);
-
-    return response.end();
+    // TODO: !!! ACRY> API handler should not return a value, received object.
 }
 
 /**
@@ -159,4 +158,5 @@ export default async function textToSpeechHandler(
 
 /**
  * TODO: !!! Cleanup
+ * TODO: [🧆] Save both in CDN and commited cache (and figure out the system how to make some system for it reusable elsewhere)
  */

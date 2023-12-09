@@ -10,7 +10,7 @@ import { readFile } from 'fs/promises';
 import { basename, join } from 'path';
 import { forTime } from 'waitasecond';
 import { CDN, MIDJOURNEY_WHOLE_GALLERY_PATH } from '../../config';
-import { generatePreparedWallpaperCdnKey } from '../../src/utils/cdn/utils/generateWallpaperCdnKey';
+import { getPreparedWallpaperCdnKey } from '../../src/utils/cdn/utils/getPreparedWallpaperCdnKey';
 import { getSupabaseForServer } from '../../src/utils/supabase/getSupabaseForServer';
 import { getHardcodedWallpapers } from '../utils/hardcoded-wallpaper/getHardcodedWallpapers';
 
@@ -48,7 +48,7 @@ async function uploadWallpapersImages() {
 
             const wallpaper = selectResult.data[0]!;
 
-            const key = generatePreparedWallpaperCdnKey(wallpaper);
+            const key = getPreparedWallpaperCdnKey(wallpaper);
             const file = await CDN.getItem(key);
 
             if (file) {
