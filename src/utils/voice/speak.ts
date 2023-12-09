@@ -16,6 +16,8 @@ export async function speak(text: string, language: string): Promise<void> {
         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.SPEECH,
     });
 
+    console.log(`!!!`, { text, clientId });
+
     const response = await fetch(
         `/api/speech/text-to-speech?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
         {
