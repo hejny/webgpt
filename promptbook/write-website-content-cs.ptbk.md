@@ -40,11 +40,6 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 -   Zadání obsahuje konkrétní čísla, odrážky a je přesné
 -   Stručně, maximálně 4 body zadání, každý bod je maximálně 2 věty
 
-## Podklady
-
--   {idea}
--   {rawAssignmentCs}
-
 ## Zadání webu v Češtině
 ```
 
