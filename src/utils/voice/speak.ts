@@ -12,6 +12,7 @@ import { provideClientId } from '../supabase/provideClientId';
 export async function speak(text: string, language: string): Promise<void> {
     console.log(`!!! speak`, { text, language });
 
+    // TODO: !!! [🧠] How to do simpleTextDialogue to ask email WHEN <Dialogues/> component is mounted as chat
     const clientId = await provideClientId({
         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.SPEECH,
     });
