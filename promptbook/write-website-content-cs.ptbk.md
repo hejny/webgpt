@@ -1,6 +1,7 @@
 # 🌍 Vytvoření obsahu webové stránky
 
 <!--!!! special promptbook for voice -->
+<!--!!! There is problem with infinite loop of sending requests to OpenAI - Inspect deeper and if connected with promptbook, it should be handled at the level of the promptbook -->
 
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
@@ -23,7 +24,6 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 ```
 
 -> {purpose}
-
 
 ## 🖋 Návrh zadání
 

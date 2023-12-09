@@ -69,6 +69,7 @@ export default function NewWallpaperFromIdeaPage() {
                         author: await provideClientId({
                             isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                         }),
+                        // TODO: !!! isImageGeneratedWithoutAsking: true
                     },
                     (newTaskProgress: WebgptTaskProgress) => {
                         console.info('☑', newTaskProgress);
