@@ -9,7 +9,7 @@ import { provideClientId } from '../supabase/provideClientId';
  * @param language The language code to use for the synthesized speech (e.g. 'en-US').
  * @returns A promise that resolves when speech synthesis is complete.
  */
-export async function speak(text: string, language: string): Promise<void> {
+export async function speak(text: string, language?: string): Promise<void> {
     console.log(`!!! speak`, { text, language });
 
     // TODO: !!! [🧠] How to do simpleTextDialogue to ask email WHEN <Dialogues/> component is mounted as chat
