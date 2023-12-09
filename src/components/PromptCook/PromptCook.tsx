@@ -352,6 +352,7 @@ export function PromptCook() {
 }
 
 /**
+ * TODO: [🧠] Better name - Promptbook playground, Promptbook editor, Promptbook IDE,...
  * TODO: !! Mobile layout
  * TODO: Allow to drop file(s)
  * TODO: Allow to edit real files
