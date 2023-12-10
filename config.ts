@@ -3,6 +3,7 @@ import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DallePrompt';
+import { validateMaxdown } from './src/components/Content/Maxdown/validateMaxdown';
 import { FULLHD } from './src/constants';
 import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
@@ -10,20 +11,9 @@ import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
-import { string_font_family } from './src/utils/typeAliases';
+import { string_font_family, string_maxdown } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
-
-export const APP_VERSION = packageJson.version;
-export const APP_NAME = 'WebGPT';
-
-export const USE_DALLE_VERSION: 2 | 3 = 3;
-
-export const USE_DALLE_MODEL_SETTINGS: DallePrompt['modelSettings'] = {
-    style: 'vivid',
-    quality: `standard`,
-    // <- TODO: !! Play with theeese to achieve best results
-};
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -39,6 +29,19 @@ const config = ConfigChecker.from({
 });
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
+
+export const APP_VERSION = packageJson.version;
+export const APP_NAME = 'WebGPT';
+export const APP_SIGNATURE: string_maxdown = validateMaxdown(`[⏣ ${APP_NAME}](${NEXT_PUBLIC_URL.href})`);
+
+export const USE_DALLE_VERSION: 2 | 3 = 3;
+
+export const USE_DALLE_MODEL_SETTINGS: DallePrompt['modelSettings'] = {
+    style: 'vivid',
+    quality: `standard`,
+    // <- TODO: !! Play with theeese to achieve best results
+};
+
 export const NEXT_PUBLIC_PROMPTBOOK_SERVER_URL = config.get('NEXT_PUBLIC_PROMPTBOOK_SERVER_URL').url().required().value;
 export const NEXT_PUBLIC_IMAGE_SERVER_URL = config.get('NEXT_PUBLIC_IMAGE_SERVER_URL').url().required().value;
 
