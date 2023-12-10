@@ -1,2 +1,3 @@
 TODO: !!! [🧠] `Custom elements` vs `Custom components` vs `Custom html elements` vs `Custom html components` vs `WebGPT components`
 TODO: !!! Move this folder to src/?/
+TODO: !!! People webgpt component
