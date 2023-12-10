@@ -7,6 +7,9 @@ import pavolHejnyImage from '../../../public/people/pavol-hejny.transparent.png'
 import { MarkdownContent } from '../Content/MarkdownContent';
 import styles from './PavolHejny.module.css';
 
+/**
+ * Renders a profile of Pavol Hejný
+ */
 export function PavolHejny() {
     return (
         <div className={styles.PavolHejnySection}>

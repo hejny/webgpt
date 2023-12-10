@@ -1,0 +1,152 @@
+.Chat {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    /*background-color: #f2f2f2;*/
+}
+
+/* Chat messages area */
+.chatMessages {
+    /*/
+    outline: 1px dotted rgb(38, 194, 255);
+    /**/
+
+    height: 100%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.chatMessages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatMessages::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 5px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+    background: #77777731;
+    border-radius: 5px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb:hover {
+    background: auto;
+}
+
+.scrollToBottom {
+    position: absolute;
+    top: calc(100% - 170px);
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px #00000077;
+    background-color: #008cba;
+    border-radius: 100%;
+
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* Individual chat message */
+.chatMessage {
+    /*/
+    outline: 1px dotted rgb(38, 96, 255);
+    /**/
+
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.chatMessage.sender {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+/* Sender Avatar */
+.chatMessage .avatar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chatMessage .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    object-fit: cover;
+    background-color: #B8B8B8;
+
+}
+
+/* Message text */
+.chatMessage .messageText {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: left;
+}
+
+/* Sender message text */
+.chatMessage.sender .messageText {
+    background-color: #008cba;
+}
+
+/* Chat input area */
+.chatInput {
+    /*/
+    outline: 1px dotted rgb(38, 255, 172);
+    /**/
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Chat input field */
+.chatInput textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+    resize: none;
+}
+
+/* Chat send button */
+.chatInput button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}

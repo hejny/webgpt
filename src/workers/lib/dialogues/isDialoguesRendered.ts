@@ -6,3 +6,8 @@
  * @singleton 
  */
 export let isDialoguesRendered = { value: false };
+
+
+/**
+ * TODO: !!! More universal name
+ */

@@ -479,4 +479,5 @@ export function CopilotPanel() {
  * TODO: [🧠] In future queue the prompts and have deamon for it
  * TODO: !! Add more options like Close (OWNER_AS_VISITOR), Share (VISITOR), Edit colors, Get the web, How it works?, Pricing, Gallery, Back
  *       ( ⏣ | Write prompt | Apply | More | Close )
+ * TODO: !!! [🧠][🍜] Standartize the place where the first interaction to allow audio happen
  */

@@ -2,7 +2,7 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { CDN } from '../../../config';
-import { generateUserWallpaperCdnKey } from '../../utils/cdn/utils/generateUserWallpaperCdnKey';
+import { getUserWallpaperCdnKey } from '../../utils/cdn/utils/getUserWallpaperCdnKey';
 import { string_url } from '../../utils/typeAliases';
 
 export interface UploadWallpaperResponse {
@@ -53,7 +53,7 @@ export default async function uploadWallpaperHandler(
     try {
         const wallpaperBuffer = await readFile(wallpaper.filepath);
 
-        const key = generateUserWallpaperCdnKey(wallpaperBuffer);
+        const key = getUserWallpaperCdnKey(wallpaperBuffer);
         await CDN.setItem(key, {
             type: wallpaper.mimetype,
             data: wallpaperBuffer,

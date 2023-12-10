@@ -24,7 +24,7 @@ export function Dialogues(props: DialoguesProps) {
     useEffect(
         () => {
             if (isDialoguesRendered.value === true) {
-                throw new Error('There can be only one instance of Dialogues in the app');
+                throw new Error('There can be only one instance of Dialogues!!! in the app');
             }
             isDialoguesRendered.value = true;
             return () => {

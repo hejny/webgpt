@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import webgptLogo from '../../../public/logo/webgpt.white.svg';
@@ -36,6 +36,75 @@ export default function NewWallpaperFromIdeaPage() {
         [locale],
     );
 
+    const runWallpaperCreation = useCallback(
+        async (idea: string) => {
+            if (isRunning) {
+                alert(
+                    spaceTrim(`
+                        WebGPT website creation is already running.
+                        
+                        Please wait until it finishes or refresh the page.
+                    `),
+                );
+                return;
+            }
+
+            setRunning(true);
+            setTasksProgress([
+                {
+                    // TODO: Use here taskify instead
+                    // TODO: [🧠][🚔] DEFAULT_STARTING_TASK
+                    name: 'start-worker',
+                    title: 'Spinning up',
+                    isDone: false,
+                },
+            ]);
+
+            try {
+                const { wallpaperId } = await createNewWallpaperForBrowser(
+                    {
+                        locale,
+                        idea,
+                        author: await provideClientId({
+                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
+                        }),
+                    },
+                    (newTaskProgress: WebgptTaskProgress) => {
+                        console.info('☑', newTaskProgress);
+                        setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
+                    },
+                );
+                router.push(
+                    `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
+                );
+                // Note: No need to setWorking(false); because we are redirecting to another page
+                //       [0] OR to do it in the finally block
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                alert(
+                    // <- TODO: Use here alertDialogue
+                    spaceTrim(
+                        // TODO: [🦻] DRY User error message
+                        (block) => `
+                            Sorry for the inconvenience 😔
+                            Something went wrong while making your website.
+                            Please try it again or write me an email to me@pavolhejny.com
+                
+                            ${block((error as Error).message)}
+                        
+                        `,
+                    ),
+                );
+                setRunning(false);
+                setTasksProgress([]);
+            } // <- Note: [0] No finally block because we are redirecting to another page
+        },
+        [isRunning, locale, router],
+    );
+
     return (
         <>
             <StaticAppHead subtitle={null} />
@@ -60,62 +129,7 @@ export default function NewWallpaperFromIdeaPage() {
                                     <Translate locale="cs">Jaký web chcete vytvořit:</Translate>
                                 </>
                             }
-                            onPrompt={async (idea) => {
-                                setRunning(true);
-                                setTasksProgress([
-                                    {
-                                        // TODO: Use here taskify instead
-                                        // TODO: [🧠][🚔] DEFAULT_STARTING_TASK
-                                        name: 'start-worker',
-                                        title: 'Spinning up',
-                                        isDone: false,
-                                    },
-                                ]);
-
-                                try {
-                                    const { wallpaperId } = await createNewWallpaperForBrowser(
-                                        {
-                                            locale,
-                                            idea,
-                                            author: await provideClientId({
-                                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
-                                            }),
-                                        },
-                                        (newTaskProgress: WebgptTaskProgress) => {
-                                            console.info('☑', newTaskProgress);
-                                            setTasksProgress((tasksProgress) =>
-                                                joinTasksProgress(...tasksProgress, newTaskProgress),
-                                            );
-                                        },
-                                    );
-                                    router.push(
-                                        `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
-                                    );
-                                    // Note: No need to setWorking(false); because we are redirecting to another page
-                                    //       [0] OR to do it in the finally block
-                                } catch (error) {
-                                    if (!(error instanceof Error)) {
-                                        throw error;
-                                    }
-
-                                    alert(
-                                        // <- TODO: Use here alertDialogue
-                                        spaceTrim(
-                                            // TODO: [🦻] DRY User error message
-                                            (block) => `
-                                                Sorry for the inconvenience 😔
-                                                Something went wrong while making your website.
-                                                Please try it again or write me an email to me@pavolhejny.com
-                                    
-                                                ${block((error as Error).message)}
-                                            
-                                            `,
-                                        ),
-                                    );
-                                    setRunning(false);
-                                    setTasksProgress([]);
-                                } // <- Note: [0] No finally block because we are redirecting to another page
-                            }}
+                            onPrompt={runWallpaperCreation}
                         />
                         <Link
                             href="/"

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { ReactNode, useState } from 'react';
+import { ReactNode, useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
@@ -36,6 +36,74 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
 
+    const runWallpaperCreation = useCallback(
+        async (droppedFiles: File[]) => {
+            const file = droppedFiles[0];
+
+            if (!file) {
+                return;
+            }
+
+            if (isRunning) {
+                alert(
+                    spaceTrim(`
+                    WebGPT website creation is already running.
+                    
+                    Please wait until it finishes or refresh the page.
+                `),
+                );
+                return;
+            }
+
+            console.info('🏳 locale: ', locale);
+
+            setRunning(true);
+            setTasksProgress([]);
+
+            try {
+                const { wallpaperId } = await createNewWallpaperForBrowser(
+                    {
+                        locale,
+                        author: await provideClientId({
+                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
+                        }),
+                        wallpaperImage: file,
+                    },
+                    (newTaskProgress: WebgptTaskProgress) => {
+                        console.info('☑', newTaskProgress);
+                        setTasksProgress((tasksProgress) => joinTasksProgress(...tasksProgress, newTaskProgress));
+                    },
+                );
+                router.push(
+                    `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
+                );
+                // Note: No need to setWorking(false); because we are redirecting to another page
+            } catch (error) {
+                if (!(error instanceof Error)) {
+                    throw error;
+                }
+
+                alert(
+                    // <- TODO: Use here alertDialogue
+                    spaceTrim(
+                        // TODO: [🦻] DRY User error message
+                        (block) => `
+                        Sorry for the inconvenience 😔
+                        Something went wrong while making your website.
+                        Please try it again or write me an email to me@pavolhejny.com
+            
+                        ${block((error as Error).message)}
+                    
+                    `,
+                    ),
+                );
+                setRunning(false);
+                setTasksProgress([]);
+            } // <- Note: [0] No finally block because we are redirecting to another page
+        },
+        [isRunning, locale, router],
+    );
+
     return (
         <>
             <UploadZone
@@ -43,59 +111,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                 isClickable
                 isMultipleAllowed={false}
                 accept="image/*"
-                onFiles={async ([file]) => {
-                    if (!file) {
-                        return;
-                    }
-
-                    console.info('🏳 locale: ', locale);
-
-                    setRunning(true);
-                    setTasksProgress([]);
-
-                    try {
-                        const { wallpaperId } = await createNewWallpaperForBrowser(
-                            {
-                                locale,
-                                author: await provideClientId({
-                                    isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
-                                }),
-                                wallpaperImage: file,
-                            },
-                            (newTaskProgress: WebgptTaskProgress) => {
-                                console.info('☑', newTaskProgress);
-                                setTasksProgress((tasksProgress) =>
-                                    joinTasksProgress(...tasksProgress, newTaskProgress),
-                                );
-                            },
-                        );
-                        router.push(
-                            `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
-                        );
-                        // Note: No need to setWorking(false); because we are redirecting to another page
-                    } catch (error) {
-                        if (!(error instanceof Error)) {
-                            throw error;
-                        }
-
-                        alert(
-                            // <- TODO: Use here alertDialogue
-                            spaceTrim(
-                                // TODO: [🦻] DRY User error message
-                                (block) => `
-                                    Sorry for the inconvenience 😔
-                                    Something went wrong while making your website.
-                                    Please try it again or write me an email to me@pavolhejny.com
-                        
-                                    ${block((error as Error).message)}
-                                
-                                `,
-                            ),
-                        );
-                        setRunning(false);
-                        setTasksProgress([]);
-                    }
-                }}
+                onFiles={async ([file]) => {}}
             >
                 {children ? (
                     children

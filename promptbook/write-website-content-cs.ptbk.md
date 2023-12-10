@@ -1,5 +1,8 @@
 # 🌍 Vytvoření obsahu webové stránky
 
+<!--!!! special promptbook for voice -->
+<!--!!! There is problem with infinite loop of sending requests to OpenAI - Inspect deeper and if connected with promptbook, it should be handled at the level of the promptbook -->
+
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/cs/write-website-content.ptbk.md@v0.1.0
@@ -12,69 +15,15 @@ Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt templa
 -   Output param `{content}` Obsah webu _v Češtině_
 -   Output param `{wallpaperPrompt}` Prompt pro obrázkový model _v Angličtině_<!-- TODO: !!> , pouze pokud není zadán ... -->
 
-## 🖋 Překlad popisu
+## Mapping
 
--   Use completion
--   Postprocessing `trim`
-<!-- TODO: !!> Skip if `rawAssignment===''` -->
+-   Execute simple template
 
 ```text
-
-English assignment:
-> {rawAssignment}
-
-České zadání:
->
+{idea}
 ```
 
-`-> {rawAssignmentCs}` popis obrázku v češtině
-
-## 🖋 Účel stránek
-
--   Use completion
--   Postprocessing `unwrapResult`
-
-```markdown
-Navrhni účel webových stránek
-
-## Pravidla
-
--   Piš jediný návrh, neříkej více možností
--   Navrhni obecnou kategorii, např. "Autoservis" ne "Autoservis Pod Ohradou"
--   Návrh je v češtině
--   Návrh je stručný, maximálně 3 slova
-
-## Příklady
-
--   "Kavárna"
--   "Autoservis"
--   "Dětská herna"
--   "Svatba"
--   "Osobní stránka fotografa"
-
-## Podklady
-
--   Idea: {idea}
--   Zadání: {rawAssignmentCs}
-
-## Účel webu
-
->
-```
-
-`-> {draftedPurpose}`Návrh účelu webu
-
-## 👤 Upřesnění účelu uživatelem
-
-Je toto účelem vašeho webu?
-
--   Prompt dialog
-
-```text
-{draftedPurpose}
-```
-
-`-> {purpose}` Účel webu
+-> {purpose}
 
 ## 🖋 Návrh zadání
 
@@ -91,21 +40,16 @@ Vytvoř zadání reálného webu pro {purpose} z čistého popisu co se nacház�
 -   Zadání obsahuje konkrétní čísla, odrážky a je přesné
 -   Stručně, maximálně 4 body zadání, každý bod je maximálně 2 věty
 
-## Podklady
-
--   {idea}
--   {rawAssignmentCs}
-
 ## Zadání webu v Češtině
 ```
 
 `-> {draftedAssignment}` Zadání webu v Češtině
 
-## 👤 Upřesnění zadání uživatelem
+## Mapping
 
 Popište cíl vašeho webu
 
--   Prompt dialog
+-   Simple template
 
 ```text
 {draftedAssignment}

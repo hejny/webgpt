@@ -52,6 +52,8 @@ export function makeDialogueFunction<
             });
         }
 
+        console.log(`!!!`, { isDialoguesRendered });
+
         if (isDialoguesRendered.value === false) {
             throw new Error('<Dialogues/> component is not rendered');
         }
