@@ -7,7 +7,7 @@ export default async function sendEmailExperimentHandler(request: NextApiRequest
     const email = {
         to: 'me@pavolhejny.com',
         from: 'pavol@webgpt.cz',
-        subject:❄️',
+        subject: '❄️ WebGPT notification',
         text: 'Click here https://webgpt.cz/',
         html: 'click <a href="https://webgpt.cz/">here</a>',
     };
