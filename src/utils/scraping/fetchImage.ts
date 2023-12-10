@@ -1,6 +1,6 @@
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { provideClientId } from '../client/provideClientId';
 import { isRunningInBrowser } from '../isRunningInWhatever';
-import { provideClientId } from '../supabase/provideClientId';
 import { string_url_image } from '../typeAliases';
 
 /**

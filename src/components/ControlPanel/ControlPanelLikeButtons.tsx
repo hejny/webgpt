@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
+import { provideClientIdWithoutVerification } from '../../utils/client/provideClientIdWithoutVerification';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import { provideClientIdWithoutVerification } from '../../utils/supabase/provideClientIdWithoutVerification';
 import { Hint } from '../Hint/Hint';
 import { PublishLink } from '../PublishModal/PublishLink';
 import styles from './ControlPanel.module.css';

@@ -87,6 +87,10 @@ export default async function publishWebsiteHandler(
                 // TODO: !!! Translations
                 spaceTrim(`
                     Your website [${CNAME}](https://${CNAME}/) was  successfully published by ${APP_SIGNATURE}!
+                    
+                    ---
+                    
+                    !!! add wait dislaimer to publish email !!!
                 `),
             ),
         });

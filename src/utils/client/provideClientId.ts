@@ -1,9 +1,13 @@
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
 import { validateEmailDialogue } from '../../workers/dialogues/validate-email/validateEmailDialogue';
+import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
 import { string_email, uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
-import { getSupabaseForBrowser } from './getSupabaseForBrowser';
 import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
+
+/**
+ * TODO: !!! Remove ACRY isVerifiedEmailRequired, IS_VERIFIED_EMAIL_REQUIRED, [Vv]erif[iy]
+ */
 
 export interface IProvideClientIdOptions {
     /**

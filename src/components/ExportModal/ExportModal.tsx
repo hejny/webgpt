@@ -1,8 +1,8 @@
 import { FormEvent, useCallback, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
+import { provideClientEmail } from '../../utils/client/provideClientEmail';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { MarkdownContent } from '../Content/MarkdownContent';

@@ -2,9 +2,9 @@ import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../../config';
 import type { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
+import { provideClientIdWithoutVerification } from '../../../utils/client/provideClientIdWithoutVerification';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
-import { provideClientIdWithoutVerification } from '../../../utils/supabase/provideClientIdWithoutVerification';
 import { string_color } from '../../../utils/typeAliases';
 
 export type IWallpaperInStorage = Pick<IWallpaperSerialized, 'id' | 'src'>;

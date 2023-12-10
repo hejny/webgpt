@@ -1,7 +1,7 @@
 import { uuid } from '@promptbook/types';
 import { useMemo } from 'react';
 
-import { IProvideClientIdOptions, provideClientId } from '../supabase/provideClientId';
+import { IProvideClientIdOptions, provideClientId } from '../client/provideClientId';
 import { usePromise } from './usePromise';
 import { useSsrDetection } from './useSsrDetection';
 
