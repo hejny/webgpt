@@ -1,5 +1,5 @@
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
-import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
+import { validateEmailDialogue } from '../../workers/dialogues/validate-email/validateEmailDialogue';
 import { string_email, uuid } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
 import { getSupabaseForBrowser } from './getSupabaseForBrowser';
@@ -10,8 +10,6 @@ export interface IProvideClientIdOptions {
      * Is required to have verified email
      * - If `false`, just putting in the email will be enough
      * - If `true`, user will must verify the email
-     *
-     * Note: [0] Not implemented yet - it will be ignored
      */
     readonly isVerifiedEmailRequired?: boolean;
 }
@@ -24,12 +22,7 @@ export interface IProvideClientIdOptions {
  * @returns clientId
  */
 export async function provideClientId(options: IProvideClientIdOptions): Promise<uuid> {
-    const { isVerifiedEmailRequired } = options;
-
-    if (isVerifiedEmailRequired) {
-        // [0]
-        console.warn(`isVerifiedEmailRequired is not implemented yet`);
-    }
+    const { isVerifiedEmailRequired = false } = options;
 
     const clientId = provideClientIdWithoutVerification();
 
@@ -43,12 +36,9 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
     }
 
     // TODO: !!! validateEmailDialogue
-    const { answer: email } = await simpleTextDialogue({
-        message: `Please write your email`,
-        placeholder: `john.smith@gmail.com`,
-        defaultValue: `@`,
-        isFeedbackCollected: false,
-        // TODO: !!!main Add GDPR consent
+    const { email, isEmailVerified } = await validateEmailDialogue({
+        // [🍀] Maybe allow to pass default value for email
+        isVerifiedEmailRequired,
     });
 
     if (!isValidEmail(email)) {
@@ -62,6 +52,6 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
 }
 
 /**
- * TODO: [0] Implement isVerifiedEmailRequired
+ * TODO: [0] !!! Implement isVerifiedEmailRequired
  * TODO: [🧠] This should be probbably in some other folder than supabase
  */
