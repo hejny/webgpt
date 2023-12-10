@@ -195,7 +195,7 @@ export function PromptCook() {
                     <CodeEditor
                         // TODO: !! Here experimenting with mobile friendly options
                         //          Then ACRY use <CodeEditor/> not <MonacoEditor/>
-                        key={currentFile.name}
+                        key={currentFile.name /* <- Note: To trigger component remount when file changes */}
                         className={classNames(styles.fill, styles.textarea)}
                         defaultValue={currentFile.inputParams.inputText}
                         onChange={(newContent) => {
@@ -302,7 +302,7 @@ export function PromptCook() {
 
                 <div className={classNames(styles.output, panel === 'OUTPUT' && styles.isFocused)}>
                     <MonacoEditor
-                        key={currentFile.name}
+                        key={currentFile.name /* <- Note: To trigger component remount when file changes */}
                         className={classNames(styles.fill, styles.textarea)}
                         theme="vs-dark"
                         language={'markdown'}
@@ -324,7 +324,7 @@ export function PromptCook() {
 
                 <div className={classNames(styles.promptbook, panel === 'PROMPTBOOK' && styles.isFocused)}>
                     <MonacoEditor
-                        key={currentFile.name}
+                        key={currentFile.name /* <- Note: To trigger component remount when file changes */}
                         className={styles.fill}
                         theme="vs-dark"
                         language={'markdown'}
@@ -353,7 +353,6 @@ export function PromptCook() {
 
 /**
  * TODO: [🧠] Better name - Promptbook playground, Promptbook editor, Promptbook IDE,...
- * TODO: !! Mobile layout
  * TODO: Allow to drop file(s)
  * TODO: Allow to edit real files
  * TODO: Integrate with cloud storages
@@ -369,5 +368,4 @@ export function PromptCook() {
  * TODO: Make a separate repository for promptcook
  * TODO: Make a electron app for promptcook
  * TODO: Resizable panels
- * TODO: [🧠] Should be the props readonly (for all react components)?
  */

@@ -4,33 +4,56 @@ import { useTouchDeviceDetection } from '../../utils/hooks/useTouchDeviceDetecti
 import { string_css_class, string_script } from '../../utils/typeAliases';
 import styles from './CodeEditor.module.css';
 
-interface CodeEditorProps {
-    /**
-     * The code
-     */
-    defaultValue: string_script;
+type CodeEditorProps = (
+    | {
+          /**
+           * The code
+           */
+          readonly defaultValue: string_script;
+      }
+    | {
+          /**
+           * The code
+           */
+          readonly value: string_script;
+      }
+) &
+    (
+        | {
+              /**
+               * If false or undefined, the code in deitor can be edited
+               */
+              readonly isReadonly?: false;
 
-    /**
-     * If true, the editor is read-only
-     */
-    isReadOnly?: true;
-
-    /**
-     * The code
-     */
-    onChange(newCode: string_script): void;
-
-    /**
-     * Optional CSS class name which will be added to root element
-     */
-    className?: string_css_class;
-}
+              /**
+               * Called when the code in editor changes
+               */
+              onChange(newCode: string_script): void;
+          }
+        | {
+              /**
+               * If true, the editor is read-only
+               */
+              readonly isReadonly: true;
+          }
+    ) & {
+        /**
+         * Optional CSS class name which will be added to root element
+         */
+        readonly className?: string_css_class;
+    };
 
 /**
  * Renders a Monaco editor OR simple <textarea/> for touch devices
  */
 export function CodeEditor(props: CodeEditorProps) {
-    const { defaultValue, isReadOnly, onChange, className } = props;
+    const {
+        defaultValue,
+        value,
+        isReadonly: isReadOnly,
+        onChange,
+        className,
+    } = props as any; /* <- TODO: !!! Remove any */
 
     const isTouchDevice = useTouchDeviceDetection();
 
@@ -42,7 +65,7 @@ export function CodeEditor(props: CodeEditorProps) {
                     const value = event.target.value;
                     onChange(value);
                 }}
-                {...{ defaultValue }}
+                {...{ defaultValue, value }}
             />
         );
     }
@@ -72,7 +95,7 @@ export function CodeEditor(props: CodeEditorProps) {
                 }
                 onChange(value);
             }}
-            {...{ defaultValue }}
+            {...{ defaultValue, value }}
         />
     );
 }
@@ -80,4 +103,5 @@ export function CodeEditor(props: CodeEditorProps) {
 /**
  * TODO: !! Use ACRY <CodeEditor/> not <MonacoEditor/>
  * TODO: [🧠] Should be the props readonly (for all react components)?
+ * TODO: Allow to drop file(s)
  */

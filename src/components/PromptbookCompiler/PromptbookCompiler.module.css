@@ -1,0 +1,39 @@
+.PromptbookCompiler {
+    /*/
+    outline: 1px dotted rgb(255, 38, 38);
+    /**/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template: '🟦 🟩' 1fr;
+}
+
+.ptbkString {
+    grid-area: 🟦;
+}
+
+.ptbkJson {
+    grid-area: 🟩;
+}
+
+/*----------[ 📱 ]-----------*/
+
+@media only screen and (max-width: 600px) {
+    /* 📱 Big smartphones */
+
+    .PromptbookCompiler {
+        /*/
+        outline: 1px dotted rgb(255, 38, 38);
+        /**/
+
+        display: grid;
+        grid-template:
+            '🟦' 1fr
+            '🟩' 1fr;
+    }
+}
