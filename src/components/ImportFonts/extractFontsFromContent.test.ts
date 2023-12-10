@@ -14,6 +14,10 @@ describe('extractTitleFromContent', () => {
 
     it('should extract fonts from multiple notations in style', () => {
         expect(extractFontsFromContent(`<div style="font-family:Poppins">`)).toEqual(new Set(['Poppins']));
+        expect(extractFontsFromContent(`<div style='font-family:"Poppins"'>`)).toEqual(new Set(['Poppins']));
+        expect(extractFontsFromContent(`<div style='font-family:"Poppins", sans-serif'>`)).toEqual(
+            new Set(['Poppins']),
+        );
         expect(extractFontsFromContent(`<div style="font-family:'Poppins'">`)).toEqual(new Set(['Poppins']));
         expect(extractFontsFromContent(`<div style="font-family:Poppins, sans-serif">`)).toEqual(new Set(['Poppins']));
         expect(extractFontsFromContent(`<div style="font-family:'Poppins', sans-serif">`)).toEqual(
@@ -31,7 +35,66 @@ describe('extractTitleFromContent', () => {
         ).toEqual(new Set(['Poppins']));
     });
 
-    it('should extract font from real markdown content', () => {
+    it('should extract fonts from multiple notations in maxdown', () => {
+        expect(
+            extractFontsFromContent(
+                spaceTrim(`
+                    <!--font:Cabin-->
+
+                    Foo bar baz
+                `),
+            ),
+        ).toEqual(new Set(['Cabin']));
+        expect(
+            extractFontsFromContent(
+                spaceTrim(`
+                    <!--font:'Cabin'-->
+
+                    Foo bar baz
+                `),
+            ),
+        ).toEqual(new Set(['Cabin']));
+        expect(
+            extractFontsFromContent(
+                spaceTrim(`
+                    <!--font:"Cabin"-->
+
+                    Foo bar baz
+                `),
+            ),
+        ).toEqual(new Set(['Cabin']));
+        expect(
+            extractFontsFromContent(
+                spaceTrim(`
+                    <!--font:   Cabin  -->
+
+                    Foo bar baz
+                `),
+            ),
+        ).toEqual(new Set(['Cabin']));
+        expect(
+            extractFontsFromContent(
+                spaceTrim(`
+                    <!--font: 'Cabin'  -->
+
+                    Foo bar baz
+                `),
+            ),
+        ).toEqual(new Set(['Cabin']));
+
+        expect(
+            extractFontsFromContent(
+                spaceTrim(`
+                    <!--font:  "Cabin"    
+                    -->
+
+                    Foo bar baz
+                `),
+            ),
+        ).toEqual(new Set(['Cabin']));
+    });
+
+    it('should extract font from real maxdown content', () => {
         expect(
             extractFontsFromContent(
                 spaceTrim(`

@@ -18,7 +18,13 @@ export function CopilotPanelChangeFont() {
     );
     const modifyWallpaperFont = useCallback(() => {
         modifyWallpaper((modifiedWallpaper) => {
+            // TODO: !!! Somewhere is font wrapped by double quotes
+
+            console.log('!!! Content before change', modifiedWallpaper.content);
+            console.log('!!!', { randomFont, modifiedWallpaper });
             modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont.fontFamily);
+            console.log('!!! Content after change', modifiedWallpaper.content);
+
             modifiedWallpaper.saveStage = 'EDITED';
             return modifiedWallpaper;
         });
@@ -32,6 +38,7 @@ export function CopilotPanelChangeFont() {
                 } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
             />
             <button onClick={modifyWallpaperFont}>
+                {/* Note: To allow fulltext search putting here "Change font" */}
                 Change <span style={{ fontFamily: `'${randomFont}'` }}>font</span>
             </button>
         </>
