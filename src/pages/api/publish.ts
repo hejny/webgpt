@@ -73,6 +73,8 @@ export default async function publishWebsiteHandler(
             files,
         });
 
+        // TODO: !!! Send email to user with link to website
+
         return response.status(201).json({
             websiteUrl: `https://${CNAME}/`,
         } satisfies PublishWebsiteResponse);

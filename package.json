@@ -71,6 +71,7 @@
         "@promptbook/remote-server": "0.18.0",
         "@promptbook/types": "0.18.0",
         "@promptbook/utils": "0.18.0",
+        "@sendgrid/mail": "^8.1.0",
         "@supabase/supabase-js": "2.26.0",
         "@types/file-saver": "2.0.5",
         "@vercel/og": "0.5.8",

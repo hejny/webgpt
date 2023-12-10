@@ -42,3 +42,7 @@ export default async function isClientVerifiedHandler(
         .status(200)
         .json({ isClientInserted: false, isClientVerified: false } satisfies IsClientVerifiedResponse);
 }
+
+/**
+ * TODO: !!! Email client verification
+ */
