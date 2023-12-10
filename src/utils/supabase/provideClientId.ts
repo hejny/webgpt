@@ -42,6 +42,7 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
         return clientId;
     }
 
+    // TODO: !!! validateEmailDialogue
     const { answer: email } = await simpleTextDialogue({
         message: `Please write your email`,
         placeholder: `john.smith@gmail.com`,
