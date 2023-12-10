@@ -1,0 +1,19 @@
+pricing-table {
+  display: flex;
+}
+
+pricing-plan {
+  border: solid 1px red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 15px;
+}
+
+pricing-feature {
+  border: solid 1px red;
+
+  padding: 10px;
+}
