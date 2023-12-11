@@ -16,7 +16,7 @@ import { isValidDomain } from './isValidDomain';
  *
  * @returns instance of supabase client
  */
-export async function checkWhoisForBrowser(domain: string_domain): Promise<{
+export async function $checkWhoisForBrowser(domain: string_domain): Promise<{
     domainStatus: keyof typeof DomainStatus;
     whois: WhoisSearchResult;
 }> {
@@ -44,4 +44,5 @@ export async function checkWhoisForBrowser(domain: string_domain): Promise<{
 
 /**
  * TODO: Maybe cache in localStorage
+ * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
  */

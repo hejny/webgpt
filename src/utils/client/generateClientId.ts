@@ -1,4 +1,4 @@
-import { randomUuid } from '../randomUuid';
+import { $randomUuid } from '../randomUuid';
 import { client_id } from '../typeAliases';
 
 /**
@@ -9,5 +9,5 @@ import { client_id } from '../typeAliases';
  * @returns clientId
  */
 export function $generateClientId(): client_id {
-    return randomUuid() as client_id;
+    return $randomUuid() as client_id;
 }

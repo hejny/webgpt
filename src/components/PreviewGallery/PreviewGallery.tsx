@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { Color } from '../../utils/color/Color';
 import { usePromise } from '../../utils/hooks/usePromise';
-import { randomItems } from '../../utils/randomItems';
-import { shuffleItems } from '../../utils/shuffleItems';
+import { $randomItems } from '../../utils/randomItems';
+import { $shuffleItems } from '../../utils/shuffleItems';
 import { RandomWallpaperManager } from '../ControlPanel/RandomWallpaper/RandomWallpaperManager';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import styles from './PreviewGallery.module.css';
@@ -31,7 +31,7 @@ export function PreviewGallery(props: PreviewGalleryProps) {
                 'caadd184-364b-4ec7-a0cc-436d0e3b5330' /* <- Note: Filtering out Ainautes which are added as deployed version */,
         );
 
-        welcomeWallpapers = randomItems(numberOfWallpapers - 2, ...welcomeWallpapers);
+        welcomeWallpapers = $randomItems(numberOfWallpapers - 2, ...welcomeWallpapers);
 
         let wallpapers = welcomeWallpapers.map(({ id, primaryColor }) => ({
             id,
@@ -45,7 +45,7 @@ export function PreviewGallery(props: PreviewGalleryProps) {
             ...wallpapers,
         ];
 
-        wallpapers = shuffleItems(...wallpapers);
+        wallpapers = $shuffleItems(...wallpapers);
 
         return wallpapers;
     }, [numberOfWallpapers]);

@@ -17,8 +17,8 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { randomItem } from '../../utils/randomItem';
-import { shuffleItems } from '../../utils/shuffleItems';
+import { $randomItem } from '../../utils/randomItem';
+import { $shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
 import { FeedbackButton } from '../FeedbackButton/FeedbackButton';
@@ -45,10 +45,10 @@ export function CopilotPanel() {
     const [runningPrompt, setRunningPrompt] = useState<null | string_prompt>(null);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
-    const placeholders = useMemo(() => shuffleItems(...COPILOT_PLACEHOLDERS), []);
+    const placeholders = useMemo(() => $shuffleItems(...COPILOT_PLACEHOLDERS), []);
     const placeholder = useRotatingPlaceholder(...placeholders);
     const randomFont = useMemo(
-        () => randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
+        () => $randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
         // Note: Wallpaper is dependency because we want to offer new font after each change of the font
         /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaper],

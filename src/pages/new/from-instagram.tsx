@@ -17,9 +17,9 @@ import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid o
 import { $provideClientId } from '../../utils/client/provideClientId';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
-import { randomItem } from '../../utils/randomItem';
+import { $randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
-import { shuffleItems } from '../../utils/shuffleItems';
+import { $shuffleItems } from '../../utils/shuffleItems';
 import { string_business_category_name } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
@@ -31,7 +31,7 @@ export default function NewWallpaperFromInstagramPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const placeholders = useMemo(() => shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
+    const placeholders = useMemo(() => $shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
 
     return (
         <>
@@ -112,7 +112,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     });
 
                                     // TODO:> const logoImageRaw = await fetchImage(instagramUser.profile_pic_url_hd);
-                                    const randomTimelinePost = randomItem(
+                                    const randomTimelinePost = $randomItem(
                                         ...instagramUser.edge_owner_to_timeline_media.edges,
                                     ).node;
                                     const randomTimelineImage = await fetchImage(randomTimelinePost.display_url);

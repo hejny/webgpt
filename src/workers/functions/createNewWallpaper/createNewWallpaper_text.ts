@@ -5,7 +5,7 @@ import { webgptPtpLibrary } from '../../../ai/prompt-templates/webgptPtpLibrary'
 import { validateMaxdown } from '../../../components/Content/Maxdown/validateMaxdown';
 import { addFontToContent } from '../../../components/ImportFonts/addFontToContent';
 import type { WriteWallpaperPromptResponse } from '../../../pages/api/image-to-text';
-import { randomItem } from '../../../utils/randomItem';
+import { $randomItem } from '../../../utils/randomItem';
 import {
     client_id,
     description,
@@ -222,7 +222,7 @@ export async function createNewWallpaper_text(
     //-------[ /Write content ]---
     //===========================================================================
     //-------[ Picking font: ]---
-    const font = randomItem(
+    const font = $randomItem(
         ...FONTS.filter(({ isSpecial }) => !isSpecial) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
     );
 

@@ -6,7 +6,7 @@ import materializedHandwritten2 from '../../../public/handwritten/materialized/A
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { removeContentComments } from '../../utils/content/removeContentComments';
-import { randomItem } from '../../utils/randomItem';
+import { $randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
 import type { HandwrittenStyle } from './utils/handwriteText';
 
@@ -93,7 +93,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                 dangerouslySetInnerHTML={{
                     __html:
                         //materializedHandwritten1 + materializedHandwritten2 +
-                        randomItem(
+                        $randomItem(
                             removeContentComments(materializedHandwritten1),
                             removeContentComments(materializedHandwritten2),
                         ),
