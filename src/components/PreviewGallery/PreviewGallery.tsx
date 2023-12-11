@@ -35,7 +35,7 @@ export function PreviewGallery(props: PreviewGalleryProps) {
 
         let wallpapers = welcomeWallpapers.map(({ id, primaryColor }) => ({
             id,
-            src: `${NEXT_PUBLIC_URL.href}/${id}?role=visitor`,
+            src: `${NEXT_PUBLIC_URL.href}${id}?role=visitor`,
             primaryColor: Color.fromString(primaryColor),
         }));
 

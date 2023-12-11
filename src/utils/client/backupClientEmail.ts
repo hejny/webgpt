@@ -1,4 +1,5 @@
 import { string_email } from '../typeAliases';
+import { isValidEmail } from '../validators/isValidEmail';
 
 /**
  * Backup client email if it's in localStorage
@@ -9,8 +10,11 @@ import { string_email } from '../typeAliases';
  *
  * @returns clientId
  */
-export function $backupClientEmail(email: string_email) {
-    window.localStorage.setItem(`clientEmail`, email);
+export function $backupClientEmail(clientEmail: string_email) {
+    if (!isValidEmail(clientEmail)) {
+        throw new Error(`Can not backup invalid email "${clientEmail}"`);
+    }
+    window.localStorage.setItem(`clientEmail`, clientEmail);
 }
 
 /**

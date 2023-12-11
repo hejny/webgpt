@@ -24,15 +24,15 @@ export function $provideClientIdWithoutVerification(): client_id {
         throw new Error(`provideClientId is available only in browser`);
     }
 
-    if (clientId) {
-        return clientId;
-    }
+    let clientIdInLocalStorage = window.localStorage.getItem(`clientId`);
 
-    clientId = validateClientId(window.localStorage.getItem(`clientId`));
+    clientId = clientIdInLocalStorage === null ? null : validateClientId(clientIdInLocalStorage);
 
-    if (!isValidClientId(clientId)) {
+    if (clientId && !isValidClientId(clientId)) {
+        window.localStorage.removeItem(`clientId`);
         // Note: It make sense to log this error because it is captured by Sentry
-        console.error(`Invalid clientId in localStorage "${clientId}"`);
+        throw new Error(`Invalid clientId in localStorage "${clientId}"`);
+        //             <- TODO: ShouldNeverHappenError
     }
 
     if (clientId) {

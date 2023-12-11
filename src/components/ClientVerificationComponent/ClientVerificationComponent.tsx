@@ -33,7 +33,12 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 
     const emailInputRef = useRef<HTMLInputElement>(null);
     const [status, setStatus] = useState<
-        'BEFORE' | 'PENDING_EMAIL_SENDING' | 'EMAIL_SENT' | 'PENDING_CODE_SUBMITTING' | 'VERIFIED'
+        | 'BEFORE'
+        | 'PENDING_EMAIL_SENDING'
+        | 'EMAIL_SENT'
+        | 'ALREADY_EMAIL_SENT'
+        | 'PENDING_CODE_SUBMITTING'
+        | 'VERIFIED'
     >('BEFORE');
 
     const handleSuccess = useCallback(
@@ -50,7 +55,8 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
             alert(
                 {
                     PENDING_EMAIL_SENDING: `The email is now sending`,
-                    EMAIL_SENT: `Email already sent`,
+                    EMAIL_SENT: `Email was sent`,
+                    ALREADY_EMAIL_SENT: `Email was sent`,
                     PENDING_CODE_SUBMITTING: `The code is now submitting`,
                     VERIFIED: `You are already verified`,
                 }[status],
@@ -68,6 +74,8 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 
         if (sendEmailResult.status === 'EMAIL_SENT') {
             setStatus('EMAIL_SENT');
+        } else if (sendEmailResult.status === 'ALREADY_EMAIL_SENT') {
+            setStatus('ALREADY_EMAIL_SENT');
         } else if (sendEmailResult.status === 'ERROR') {
             // TODO: Better then alert
             alert(sendEmailResult.message);
@@ -89,8 +97,8 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 
     const submitCode = useCallback(
         async (code: string_token) => {
-            if (status !== 'EMAIL_SENT') {
-                throw new Error(`Code can be submitted only when status is "${status}"`);
+            if (!['EMAIL_SENT', 'ALREADY_EMAIL_SENT'].includes(status)) {
+                throw new Error(`Code can be submitted only when status is "EMAIL_SENT" but it is "${status}"`);
                 //             <- TODO: ShouldNeverHappenError
             }
 
@@ -147,6 +155,13 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
                                 <i>(Look in spam folder if not in inbox)</i>
                             </>
                         ),
+                        ALREADY_EMAIL_SENT: (
+                            <>
+                                Verify code was sent into your email
+                                <br />
+                                <i>(Look in spam folder if not in inbox)</i>
+                            </>
+                        ),
                         PENDING_CODE_SUBMITTING: <>Verifying the code</>,
                         VERIFIED: <>You are verified!</>,
                     }[status]
@@ -178,8 +193,11 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
                 </button>
             </div>
 
-            {['EMAIL_SENT', 'PENDING_CODE_SUBMITTING', 'VERIFIED'].includes(status) && (
-                <VerificationCodeInput onSubmit={submitCode} isDisabled={status !== 'EMAIL_SENT'} />
+            {['EMAIL_SENT', 'ALREADY_EMAIL_SENT', 'PENDING_CODE_SUBMITTING', 'VERIFIED'].includes(status) && (
+                <VerificationCodeInput
+                    onSubmit={submitCode}
+                    isDisabled={!['EMAIL_SENT', 'ALREADY_EMAIL_SENT'].includes(status)}
+                />
             )}
         </div>
     );

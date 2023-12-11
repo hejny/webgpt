@@ -33,7 +33,7 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
         // TODO: [🍠] Put here some time limit
         .from('ClientEmailVerificationRequest')
         .select(
-            'verificationRequestId' /* <- Note: This is not used BUT it needs to be set on some existing column to return some result not null */,
+            'id' /* <- Note: This is not used BUT it needs to be set on some existing column to return some result not null */,
         )
         .eq('clientId', clientId);
 

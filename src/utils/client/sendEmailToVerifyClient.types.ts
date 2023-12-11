@@ -7,7 +7,7 @@ export type SendEmailToVerifyClientRequest = {
 
 export type SendEmailToVerifyClientResult =
     | {
-          status: 'EMAIL_SENT' | 'ALREADY_VERIFIED' | 'LIMIT_REACHED';
+          status: 'EMAIL_SENT' | 'ALREADY_VERIFIED' | 'ALREADY_EMAIL_SENT' | 'LIMIT_REACHED';
       }
     | {
           status: 'ERROR';

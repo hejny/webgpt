@@ -36,8 +36,12 @@ export async function $sendEmailToVerifyClientForServer(
         clientId /* TODO: Check combination with email */,
     });
 
-    // TODO: [📮] If EMAIL_SENT, send email again BUT only after one minute, else return LIMIT_REACHED
-    if (currentStatus === 'VERIFIED') {
+    if (currentStatus === 'EMAIL_SENT') {
+        // TODO: [📮] When tryng after longer time, send another email
+        return {
+            status: 'ALREADY_EMAIL_SENT',
+        };
+    } else if (currentStatus === 'VERIFIED') {
         return {
             status: 'ALREADY_VERIFIED',
         };
@@ -62,7 +66,9 @@ export async function $sendEmailToVerifyClientForServer(
                 **${code}**
 
                 Or click on this link to verify your email:
-                ${NEXT_PUBLIC_URL.href}/verify-email?code=${code}&email=${encodeURIComponent(email)}
+                ${NEXT_PUBLIC_URL.href}verify-email?code=${code}&email=${encodeURIComponent(
+                email,
+            )}&clientId=${encodeURIComponent(clientId)}
                 
                 ---
                 
