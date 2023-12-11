@@ -15,7 +15,7 @@ export async function $sendEmailToVerifyClientForServer(
         );
     }
 
-    return value === 'Foo';
+
 }
 
 /**

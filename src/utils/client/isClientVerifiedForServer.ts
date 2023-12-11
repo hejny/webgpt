@@ -12,6 +12,16 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
             'Function `$isClientVerified` can not be used in browser or worker, use browser version instead.',
         );
     }
+
+    /*
+    const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);
+
+    if ((selectResult.data?.length || 0) > 0) {
+        return response
+            .status(200)
+            .json({ isClientInserted: true, isClientVerified: false } satisfies IsClientVerifiedResponse);
+    }
+    */
 }
 
 /**

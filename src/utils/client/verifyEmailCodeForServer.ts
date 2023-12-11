@@ -15,8 +15,6 @@ export async function $verifyEmailCodeForServer(options: VerifyEmailCodeRequest)
             'Function `$verifyEmailCodeForBrowser` can not be used in browser or worker, use browser version instead.',
         );
     }
-
-    return value === 'Foo';
 }
 
 /**
