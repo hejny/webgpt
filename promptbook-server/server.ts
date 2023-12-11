@@ -7,6 +7,7 @@ import { OpenAiExecutionTools } from '@promptbook/openai';
 import { runRemoteServer } from '@promptbook/remote-server';
 import { IS_DEVELOPMENT, OPENAI_API_KEY } from '../config';
 import { SupabaseLoggerWrapperOfNaturalExecutionTools } from '../src/ai/prompt-templates/logger/SupabaseLoggerWrapperOfNaturalExecutionTools';
+import { client_id } from '../src/utils/typeAliases';
 // [🎛] import { webgptPtpLibrary } from '../src/ai/prompt-templates/webgptPtpLibrary';
 
 runRemoteServer({
@@ -17,7 +18,7 @@ runRemoteServer({
         /* <- TODO: [🎛] Use here real webgptPtpLibrary */
     }),
 
-    createNaturalExecutionTools(clientId) {
+    createNaturalExecutionTools(clientId: client_id) {
         return new SupabaseLoggerWrapperOfNaturalExecutionTools({
             isVerbose: false /* <- Note: [3] */,
             clientId,

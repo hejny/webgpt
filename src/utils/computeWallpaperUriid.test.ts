@@ -2,6 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
 import { validateMaxdown } from '../components/Content/Maxdown/validateMaxdown';
 import { FULLHD } from '../constants';
+import { validateClientId } from './client/validateClientId';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
 import { validateUuid } from './validators/validateUuid';
@@ -13,7 +14,7 @@ describe(`computeWallpaperUriid`, () => {
                 parent: 'ocean-vibes-1kmp5dwt35su',
                 src: 'https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_3.png',
                 prompt: 'A beautiful sunset over the ocean',
-                author: validateUuid('8450ee88-d216-41c4-a30e-5bba49289573'),
+                author: validateClientId('8450ee88-d216-41c4-a30e-5bba49289573'),
                 colorStats: hydrateColorStats({
                     palette: [
                         {
@@ -308,7 +309,7 @@ describe(`computeWallpaperUriid`, () => {
                 parent: 'ocean-vibes-1kmp5dwt35su',
                 src: 'https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_3.png',
                 prompt: 'A beautiful sunset over the ocean',
-                author: validateUuid('8450ee88-d216-41c4-a30e-5bba49289573'),
+                author: validateClientId('8450ee88-d216-41c4-a30e-5bba49289573'),
                 colorStats: hydrateColorStats({
                     palette: [
                         {
