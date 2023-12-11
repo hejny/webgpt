@@ -12,12 +12,7 @@ import type { ValidateEmailDialogueResponse } from '../types/ValidateEmailDialog
 export function ValidateEmailDialogueComponent(
     props: DialogueComponentProps<ValidateEmailDialogueRequest, ValidateEmailDialogueResponse>,
 ) {
-    const {
-        request: {
-            /* Note: !!!+++ */
-        },
-        respond,
-    } = props;
+    const { respond } = props;
 
     return (
         <Modal title={`Please write your email` /* <- !! Translate */}>

@@ -7,8 +7,6 @@ export type ValidateEmailDialogueRequest = AbstractDialogueRequest & {
      * - If `true`, user will must verify the email
      */
     readonly isVerifiedEmailRequired: boolean;
-};
 
-/**
- * TODO: [🍀] Maybe allow to pass default value for email
- */
+    // Note: ValidateEmailDialogue is a special dialogue, it has no input
+};

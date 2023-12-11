@@ -39,7 +39,6 @@ export async function $provideClientId(options: IProvideClientIdOptions): Promis
     }
 
     await validateEmailDialogue({
-        // [🍀] Maybe allow to pass default value for email
         isVerifiedEmailRequired,
     });
 
