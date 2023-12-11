@@ -139,5 +139,6 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 }
 
 /**
+ * TODO: !!! Show loading indicator
  * TODO: !!! Design
  */
