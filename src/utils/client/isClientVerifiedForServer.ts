@@ -17,8 +17,8 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
     const { clientId } = options;
 
     const { data: verificationRequests } = await getSupabaseForServer()
-        .from('ClientEmailVerificationRequest')
-        .select('email')
+        .from('ClientEmailVerification_withRequests')
+        .select('id')
         .eq('clientId', clientId);
 
     /*
