@@ -1,7 +1,8 @@
 import { isRunningInBrowser } from '../isRunningInWhatever';
-import { client_id, uuid } from '../typeAliases';
+import { client_id } from '../typeAliases';
 import { isValidClientId } from '../validators/isValidClientId';
 import { $generateClientId } from './generateClientId';
+import { validateClientId } from './validateClientId';
 
 /**
  * Internal cache for provideClientIdWithoutVerification
@@ -27,7 +28,7 @@ export function $provideClientIdWithoutVerification(): client_id {
         return clientId;
     }
 
-    clientId = window.localStorage.getItem(`clientId`) as uuid;
+    clientId = validateClientId(window.localStorage.getItem(`clientId`));
 
     if (!isValidClientId(clientId)) {
         // Note: It make sense to log this error because it is captured by Sentry
@@ -43,5 +44,3 @@ export function $provideClientIdWithoutVerification(): client_id {
 
     return clientId;
 }
-
-

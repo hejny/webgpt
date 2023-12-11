@@ -359,7 +359,7 @@ export type uuid = string & {
 /**
  * Branded type client id
  */
-export type client_id = uuid & {
+export type client_id = string & {
     readonly _type: 'client_id' /* <- TODO: [🏟] What is the best shape of the additional object in branded types */;
 };
 
