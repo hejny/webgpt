@@ -51,6 +51,4 @@ export async function $verifyEmailCodeForServer(options: VerifyEmailCodeRequest)
  * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
  * TODO: !! Use or remove status ALREADY_VERIFIED
  * TODO: !! Use or remove status EXPIRED
- * TODO: !!! Implement
- * TODO: !!!last Annotate
  */

@@ -14,7 +14,7 @@ export function ValidateEmailDialogueComponent(
 ) {
     const {
         request: {
-            /* TODO: !!! Maybe take default email and pass into <ClientVerificationComponent/> as prop */
+            /* Note: !!!+++ */
         },
         respond,
     } = props;

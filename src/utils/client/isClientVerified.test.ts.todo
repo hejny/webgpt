@@ -6,7 +6,7 @@ describe('how isClientVerified works', () => {
     it('should work with foo', () => {
         expect(
             $isClientVerifiedForServer({
-                clientId: validateClientId('!!!'),
+                clientId: validateClientId('!!'),
             }),
         ).resolves.toBe(true);
     });
@@ -14,7 +14,7 @@ describe('how isClientVerified works', () => {
     it('should NOT work with bar', () => {
         expect(
             $isClientVerifiedForServer({
-                clientId: validateClientId('!!!'),
+                clientId: validateClientId('!!'),
             }),
         ).resolves.toBe(false);
     });

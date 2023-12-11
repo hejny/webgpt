@@ -57,7 +57,6 @@ export async function $sendEmailToVerifyClientForServer(
         content:
             // TODO: !!! Better text
             // TODO: !!! Translations
-            // TODO: !!! Add verification link alongsite the code
             // TODO: !!! Unify greeting and signature in all emails ACRY
             maxdown`
                 Hello,
@@ -77,8 +76,9 @@ export async function $sendEmailToVerifyClientForServer(
             `,
     });
 
+    // TODO: !! Handle errors and report failures
+
     return {
-        // TODO: !!! Handle errors and report false
         status: 'EMAIL_SENT',
     };
 }
@@ -86,10 +86,8 @@ export async function $sendEmailToVerifyClientForServer(
 /**
  * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
  *
- * TODO: !!! Implement
- * TODO: !!!last Annotate
- * TODO: !!! Create DB view for jirka to be DB costs, feedbac etc visible for him
- * TODO: !!! Referral system
+ * TODO: !!!main Create DB view for jirka to be DB costs, feedbac etc visible for him
+ * TODO: !!!main Referral system
  * TODO: [🧠] Some unification method how to attribute costs to unique people
  *       - franta.novak@gmail.com -> franta.novak@gmail.com
  *       - franta.novak+alias@gmail.com -> franta.novak@gmail.com

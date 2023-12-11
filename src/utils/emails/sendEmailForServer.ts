@@ -68,5 +68,5 @@ export async function sendEmailForServer(email: Email): Promise<void> {
 }
 
 /**
- * TODO: !!! Translations
+ * TODO: !!! [🧠] Translations
  */

@@ -7,7 +7,7 @@ import { string_maxdown } from '../typeAliases';
 export interface Email {
     /**
      * Email address of sender
-     * 
+     *
      * Note: If not set, default value !!! from config is used
      */
     readonly from?: string_email;
@@ -30,7 +30,6 @@ export interface Email {
     readonly content: string_maxdown;
 }
 
-
 /**
- * TODO: !!! Translations
+ * TODO: !!! [🧠] Translations
  */

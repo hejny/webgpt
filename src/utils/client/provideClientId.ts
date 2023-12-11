@@ -4,7 +4,7 @@ import { $isClientVerifiedForBrowser } from './isClientVerifiedForBrowser';
 import { $provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
 /**
- * TODO: !!! Remove ACRY isVerifiedEmailRequired, IS_VERIFIED_EMAIL_REQUIRED, [Vv]erif[iy]
+ * TODO: !!!main Remove ACRY isVerifiedEmailRequired, IS_VERIFIED_EMAIL_REQUIRED, [Vv]erif[iy]
  */
 
 export interface IProvideClientIdOptions {
@@ -47,7 +47,3 @@ export async function $provideClientId(options: IProvideClientIdOptions): Promis
 
     return clientId;
 }
-
-/**
- * TODO: [0] !!! Implement isVerifiedEmailRequired
- */
