@@ -1,4 +1,9 @@
-sendEmailToVerifyClient;
+/**
+ * sendEmailToVerifyClient @@@
+ */
+export function sendEmailToVerifyClient(value: string): boolean {
+    return value === 'Foo';
+}
 
 /**
  * TODO: !!! Implement
