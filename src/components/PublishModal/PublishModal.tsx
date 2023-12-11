@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { FormEvent, useCallback, useMemo, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
-import { provideClientEmail } from '../../utils/client/provideClientEmail';
+import { $provideClientEmail } from '../../utils/client/provideClientEmail';
 import { computeWallpaperDomainPart } from '../../utils/computeWallpaperDomainPart';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { string_domain, string_email } from '../../utils/typeAliases';
@@ -24,7 +24,7 @@ export function PublishModal() {
         useMemo(() => computeWallpaperDomainPart(wallpaper.content), [wallpaper.content]) + '.webgpt.cz';
     const [domain, setDomain] = useState<string_domain>(defaultDomain);
     const [isPublishing, setPublishing] = useState(false);
-    const [email, setEmail] = useState<string_email>(provideClientEmail() || '');
+    const [email, setEmail] = useState<string_email>($provideClientEmail() || '');
 
     const submitHandler = useCallback(
         async (event: FormEvent<HTMLFormElement>) => {

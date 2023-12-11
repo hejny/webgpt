@@ -7,7 +7,12 @@ import { string_email } from '../typeAliases';
  *
  * @returns clientId
  */
-export function provideClientEmail(): string_email | null {
+export function $provideClientEmail(): string_email | null {
     const clientEmail = window.localStorage.getItem(`clientEmail`);
     return clientEmail;
 }
+
+/**
+ * TODO: !!! Rename to ForBrowser
+ * TODO: [🌯] Maybe read email from the the server
+ */

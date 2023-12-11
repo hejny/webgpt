@@ -1,19 +1,13 @@
-import { describe, expect, it } from '@jest/globals';
-import spaceTrim from 'spacetrim';
 import { client_id } from '../typeAliases';
 
+/**
+ * isClientVerified @@@
+ */
+export function $isClientVerified(clientId: client_id): boolean {}
 
 /**
-* isClientVerified @@@
-*/
-export function isClientVerified(clientId: client_id): boolean {
-    return value === 'Foo';
-}
-
-
-
-
-/**
+ * TODO: !!! Split ForBrowser, ForServer
+ * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
  * TODO: !!! Implement
  * TODO: !!!last Annotate
  */

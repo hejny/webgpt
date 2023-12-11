@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
-import { provideClientIdWithoutVerification } from '../../utils/client/provideClientIdWithoutVerification';
+import { $provideClientIdWithoutVerification } from '../../utils/client/provideClientIdWithoutVerification';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { Hint } from '../Hint/Hint';
@@ -19,7 +19,7 @@ export function ControlPanelLikeButtons() {
     return (
         <Hint id="control-reactions" title="React on web" className={styles.group} reapearCount={10}>
             {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
-            {(['LOVE', 'LIKE'].includes(likedStatus) || wallpaper.author === provideClientIdWithoutVerification()) && (
+            {(['LOVE', 'LIKE'].includes(likedStatus) || wallpaper.author === $provideClientIdWithoutVerification()) && (
                 <div className={styles.group}>
                     <PublishLink className={classNames(styles.button, styles.callToAction)} />
                 </div>

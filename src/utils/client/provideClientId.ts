@@ -1,9 +1,9 @@
 import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
 import { validateEmailDialogue } from '../../workers/dialogues/validate-email/validateEmailDialogue';
 import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
-import { string_email, uuid } from '../typeAliases';
+import { client_id, string_email } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
-import { provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
+import { $provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
 /**
  * TODO: !!! Remove ACRY isVerifiedEmailRequired, IS_VERIFIED_EMAIL_REQUIRED, [Vv]erif[iy]
@@ -25,10 +25,10 @@ export interface IProvideClientIdOptions {
  *
  * @returns clientId
  */
-export async function provideClientId(options: IProvideClientIdOptions): Promise<uuid> {
+export async function $provideClientId(options: IProvideClientIdOptions): Promise<client_id> {
     const { isVerifiedEmailRequired = false } = options;
 
-    const clientId = provideClientIdWithoutVerification();
+    const clientId = $provideClientIdWithoutVerification();
 
     const response = await fetch(
         `/api/client/is-client-verified?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
@@ -57,5 +57,4 @@ export async function provideClientId(options: IProvideClientIdOptions): Promise
 
 /**
  * TODO: [0] !!! Implement isVerifiedEmailRequired
- * TODO: [🧠] This should be probbably in some other folder than supabase
  */

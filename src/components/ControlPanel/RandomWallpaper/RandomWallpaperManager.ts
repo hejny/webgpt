@@ -2,7 +2,7 @@ import { Promisable } from 'type-fest';
 import { forAnimationFrame, forImmediate } from 'waitasecond';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_URL } from '../../../../config';
 import type { RecommendWallpaperResponse } from '../../../pages/api/recommend-wallpaper';
-import { provideClientIdWithoutVerification } from '../../../utils/client/provideClientIdWithoutVerification';
+import { $provideClientIdWithoutVerification } from '../../../utils/client/provideClientIdWithoutVerification';
 import { IWallpaperSerialized } from '../../../utils/IWallpaper';
 import { randomItem } from '../../../utils/randomItem';
 import { string_color } from '../../../utils/typeAliases';
@@ -59,7 +59,7 @@ export class RandomWallpaperManager {
         );
 
         const response = await fetch(
-            `${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${provideClientIdWithoutVerification()}`,
+            `${NEXT_PUBLIC_URL.href}api/recommend-wallpaper?author=${$provideClientIdWithoutVerification()}`,
         );
         const { recommendedWallpaper } = (await response.json()) as RecommendWallpaperResponse;
 

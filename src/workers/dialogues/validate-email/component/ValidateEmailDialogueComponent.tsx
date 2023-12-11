@@ -21,7 +21,7 @@ export function ValidateEmailDialogueComponent(
 
     const styles = useStyleModule(import('./ValidateEmailDialogueComponent.module.css'));
 
-    const emailInputRef = useRef<HTMLInputElement>(null);
+   
 
     const [feedback, setFeedback] = useState<Feedback | undefined>();
     const [isInFeedbackCollection, setInFeedbackCollection] = useState(false);

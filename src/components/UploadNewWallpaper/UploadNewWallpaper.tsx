@@ -3,7 +3,7 @@ import { ReactNode, useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { classNames } from '../../utils/classNames';
-import { provideClientId } from '../../utils/client/provideClientId';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { string_css_class } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
@@ -57,7 +57,7 @@ export function UploadNewWallpaper(props: UploadZoneProps) {
                         const { wallpaperId } = await createNewWallpaperForBrowser(
                             {
                                 locale,
-                                author: await provideClientId({
+                                author: await $provideClientId({
                                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                 }),
                                 wallpaperImage: file,

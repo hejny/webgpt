@@ -2,7 +2,7 @@ import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
-import { provideClientId } from '../../utils/client/provideClientId';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_email } from '../../utils/typeAliases';
@@ -61,7 +61,7 @@ export async function exportWebsite(options: ExportWebsiteOptions) {
                     .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
                 ownerEmail: email,
                 plan,
-                author: await provideClientId({
+                author: await $provideClientId({
                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                 }),
             },
@@ -74,7 +74,7 @@ export async function exportWebsite(options: ExportWebsiteOptions) {
             .insert([
                 {
                     from: email,
-                    author: await provideClientId({
+                    author: await $provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                     }),
                     message: spaceTrim(`

@@ -1,11 +1,11 @@
 import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
-import { isClientVerified } from './isClientVerified';
+import { $isClientVerified } from './isClientVerified';
 
 describe('how isClientVerified works', () => {
     it('should work with foo', () => {
         expect(
-            isClientVerified(
+            $isClientVerified(
                 spaceTrim(`
                     Foo
                 `),
@@ -15,7 +15,7 @@ describe('how isClientVerified works', () => {
 
     it('should NOT work with bar', () => {
         expect(
-            isClientVerified(
+            $isClientVerified(
                 spaceTrim(`
                     bar
                 `),
@@ -23,10 +23,6 @@ describe('how isClientVerified works', () => {
         ).resolves.toBe(false);
     });
 });
-
-
-
-
 
 /**
  * TODO: !!! Implement

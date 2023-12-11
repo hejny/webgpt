@@ -14,7 +14,7 @@ import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptT
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { provideClientId } from '../../utils/client/provideClientId';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
 import { randomItem } from '../../utils/randomItem';
@@ -85,7 +85,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     const reponse = await fetch(
                                         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
                                         `/api/scrape/scrape-instagram-user?clientId=${
-                                            /* <- TODO: [⛹️‍♂️] Send clientId through headers */ await provideClientId({
+                                            /* <- TODO: [⛹️‍♂️] Send clientId through headers */ await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             })
                                         }&instagramName=${encodeURIComponent(instagramName)}`,
@@ -131,7 +131,7 @@ export default function NewWallpaperFromInstagramPage() {
                                         {
                                             locale,
                                             title,
-                                            author: await provideClientId({
+                                            author: await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,

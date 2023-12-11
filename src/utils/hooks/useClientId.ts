@@ -1,7 +1,7 @@
 import { uuid } from '@promptbook/types';
 import { useMemo } from 'react';
 
-import { IProvideClientIdOptions, provideClientId } from '../client/provideClientId';
+import { $provideClientId, IProvideClientIdOptions } from '../client/provideClientId';
 import { usePromise } from './usePromise';
 import { useSsrDetection } from './useSsrDetection';
 
@@ -20,7 +20,7 @@ export function useClientId(options: IProvideClientIdOptions): uuid | null {
             return null;
         }
 
-        const clientId = await provideClientId({ isVerifiedEmailRequired });
+        const clientId = await $provideClientId({ isVerifiedEmailRequired });
 
         return clientId;
     }, [isServerRender, isVerifiedEmailRequired]);

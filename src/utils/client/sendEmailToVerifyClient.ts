@@ -3,11 +3,14 @@ import { client_id, string_email } from "../typeAliases";
 /**
  * sendEmailToVerifyClient @@@
  */
-export function sendEmailToVerifyClient(clientId: client_id, email: string_email): boolean {
+export function $sendEmailToVerifyClient(clientId: client_id, email: string_email): boolean {
     return value === 'Foo';
 }
 
 /**
+ * TODO: !!! Split ForBrowser, ForServer
+ * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
+ * 
  * TODO: !!! Implement
  * TODO: !!!last Annotate
  * TODO: !!! Create DB view for jirka to be DB costs, feedbac etc visible for him

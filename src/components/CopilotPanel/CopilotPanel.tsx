@@ -9,7 +9,7 @@ import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
-import { provideClientId } from '../../utils/client/provideClientId';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
@@ -112,7 +112,7 @@ export function CopilotPanel() {
                     locale
                 ] /* <- TODO: !! Deal here with locale better - detect from content NOT app */,
                 getExecutionTools(
-                    await provideClientId({
+                    await $provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                     }),
                 ),
@@ -257,7 +257,7 @@ export function CopilotPanel() {
                                             wallpaperId: wallpaper.id,
                                             //         <-TODO: [💹] Use here some wallpaper UUID that will be valid before saving (=split UUID AND UriID)
                                             likedStatus: feedback.likedStatus,
-                                            author: await provideClientId({
+                                            author: await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
                                             }),
                                             note: feedback.note,
@@ -351,7 +351,7 @@ export function CopilotPanel() {
                             <li className={styles.extraFeatured}>
                                 <button
                                     onClick={async () => {
-                                        const clientId = await provideClientId({
+                                        const clientId = await $provideClientId({
                                             isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                                         });
                                         const newWallpaper = modifyWallpaper((modifiedWallpaper) => {

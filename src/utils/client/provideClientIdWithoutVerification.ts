@@ -1,7 +1,7 @@
 import { isRunningInBrowser } from '../isRunningInWhatever';
-import { randomUuid } from '../randomUuid';
 import { client_id, uuid } from '../typeAliases';
 import { isValidClientId } from '../validators/isValidClientId';
+import { $generateClientId } from './generateClientId';
 
 /**
  * Internal cache for provideClientIdWithoutVerification
@@ -18,7 +18,7 @@ let clientId: client_id | null = null;
  *
  * @returns clientId
  */
-export function provideClientIdWithoutVerification(): uuid {
+export function $provideClientIdWithoutVerification(): client_id {
     if (!isRunningInBrowser()) {
         throw new Error(`provideClientId is available only in browser`);
     }
@@ -38,12 +38,10 @@ export function provideClientIdWithoutVerification(): uuid {
         return clientId;
     }
 
-    clientId = randomUuid();
-    window.localStorage.setItem(`clientId`, clientId as uuid);
+    clientId = $generateClientId();
+    window.localStorage.setItem(`clientId`, clientId);
 
-    return clientId as uuid;
+    return clientId;
 }
 
-/**
- * TODO: [🧠] This should be probbably in some other folder than supabase
- */
+

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
-import { provideClientId } from '../../utils/client/provideClientId';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
@@ -34,7 +34,7 @@ export function ControlPanel() {
                     <button
                         className={classNames(styles.button, styles.callToAction)}
                         onClick={async () => {
-                            const clientId = await provideClientId({
+                            const clientId = await $provideClientId({
                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                             });
                             const newWallpaper = modifyWallpaper((modifiedWallpaper) => {

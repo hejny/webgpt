@@ -1,14 +1,9 @@
-import type { ReactNode } from 'react';
+import { useCallback, useRef } from 'react';
 import { classNames } from '../../utils/classNames';
+import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class } from '../../utils/typeAliases';
-import styles from './ClientVerificationComponent.module.css';
 
 interface ClientVerificationComponentProps {
-    /**
-     * Content of @@
-     */
-    readonly children?: ReactNode;
-
     /**
      * Optional CSS class name which will be added to root element
      */
@@ -19,12 +14,35 @@ interface ClientVerificationComponentProps {
  * Renders a @@
  */
 export function ClientVerificationComponent(props: ClientVerificationComponentProps) {
-    const { children, className } = props;
+    const { className } = props;
 
-    // Use or remove:
-    //> const styles = useStyleModule(import('./ClientVerificationComponent.module.css'));
+    const styles = useStyleModule(import('./ClientVerificationComponent.module.css'));
 
-    return <div className={classNames(className, styles.ClientVerificationComponent)}>{children}</div>;
+    const emailInputRef = useRef<HTMLInputElement>(null);
+    const submit = useCallback(() => {
+        respond({ answer: emailInputRef.current!.value, feedback });
+    }, [respond, emailInputRef, feedback]);
+
+
+    return (
+        <div className={classNames(className, styles.ClientVerificationComponent)}>
+            <input
+                autoFocus
+                ref={emailInputRef}
+                type="email"
+                defaultValue={`@`}
+                placeholder={`john.smith@gmail.com` /* <- !! Translate */}
+                className={styles.answer}
+                onKeyDown={(event) => {
+                    if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
+                        return;
+                    }
+
+                    submit();
+                }}
+            />
+        </div>
+    );
 }
 
 /**
