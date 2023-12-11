@@ -7,12 +7,12 @@ interface SampleProps {
     /**
      * Content of @@
      */
-    children?: ReactNode;
+    readonly children?: ReactNode;
 
     /**
      * Optional CSS class name which will be added to root element
      */
-    className?: string_css_class;
+    readonly className?: string_css_class;
 }
 
 /**
@@ -26,7 +26,3 @@ export function Sample(props: SampleProps) {
 
     return <div className={classNames(className, styles.Sample)}>{children}</div>;
 }
-
-/**
- * TODO: [🧠] Should be the props readonly (for all react components)?
- */

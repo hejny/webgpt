@@ -5,9 +5,14 @@ export type SendEmailToVerifyClientRequest = {
     email: string_email;
 };
 
-export type SendEmailToVerifyClientResult = {
-    isSendingEmailSuccessful: boolean;
-};
+export type SendEmailToVerifyClientResult =
+    | {
+          status: 'EMAIL_SENT' | 'ALREADY_VERIFIED' | 'LIMIT_REACHED';
+      }
+    | {
+          status: 'ERROR';
+          message: string;
+      };
 
 /**
  * TODO: !!!last Annotate all

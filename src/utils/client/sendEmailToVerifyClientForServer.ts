@@ -6,11 +6,13 @@ import { isRunningInNode } from '../isRunningInWhatever';
 import { getSupabaseForServer } from '../supabase/getSupabaseForServer';
 import { isValidEmail } from '../validators/isValidEmail';
 import { $generateVerificationCode } from './generateVerificationCode';
+import { $isClientVerifiedForServer } from './isClientVerifiedForServer';
 import type { SendEmailToVerifyClientRequest, SendEmailToVerifyClientResult } from './sendEmailToVerifyClient.types';
 
 /**
  * Function sendEmailToVerifyClientForServer will generate a verification code, saves it into a DB and send it to the email
  *
+ * Note: This function internally checks if client is already verified, if yes, it will return ALREADY_VERIFIED
  * Note: This function has version both for browser and server
  */
 export async function $sendEmailToVerifyClientForServer(
@@ -23,6 +25,17 @@ export async function $sendEmailToVerifyClientForServer(
     }
 
     const { clientId, email } = options;
+
+    const { status: currentStatus } = await $isClientVerifiedForServer({
+        clientId /* TODO: Check combination with email */,
+    });
+
+    // TODO: If EMAIL_SENT, send email again BUT only after one minute, else return LIMIT_REACHED
+    if (currentStatus === 'VERIFIED') {
+        return {
+            status: 'ALREADY_VERIFIED',
+        };
+    }
 
     if (!isValidEmail(email)) {
         // TODO: !!! [🧠] Use here CodeValidationError OR return false
@@ -61,7 +74,7 @@ export async function $sendEmailToVerifyClientForServer(
 
     return {
         // TODO: !!! Handle errors and report false
-        isSendingEmailSuccessful: true,
+        status: 'EMAIL_SENT',
     };
 }
 

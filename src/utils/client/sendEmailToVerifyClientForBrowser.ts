@@ -4,6 +4,7 @@ import type { SendEmailToVerifyClientRequest, SendEmailToVerifyClientResult } fr
 /**
  * Function sendEmailToVerifyClientForBrowser sends verification request to the server
  *
+ * Note: This function internally checks if client is already verified, if yes, it will return ALREADY_VERIFIED
  * Note: This function has version both for browser and server
  */
 export async function $sendEmailToVerifyClientForBrowser(

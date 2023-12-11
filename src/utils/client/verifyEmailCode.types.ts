@@ -6,9 +6,14 @@ export type VerifyEmailCodeRequest = {
     code: string_token;
 };
 
-export type VerifyEmailCodeResult = {
-    status: 'ERROR' | 'VERIFIED' /*| 'ALREADY_VERIFIED' | 'EXPIRED'*/;
-};
+export type VerifyEmailCodeResult =
+    | {
+          status: 'VERIFIED' /*| 'ALREADY_VERIFIED' | 'EXPIRED'*/;
+      }
+    | {
+          status: 'ERROR';
+          message: string;
+      };
 
 /**
  * TODO: !!!last Annotate all

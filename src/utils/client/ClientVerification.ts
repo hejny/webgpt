@@ -16,3 +16,7 @@ export type ClientEmailVerification = {
      */
     readonly isEmailVerified: boolean;
 };
+
+/**
+ * TODO: [🧠] Maybe isEmailVerified is redundant - ClientEmailVerification by definition is verified
+ */
