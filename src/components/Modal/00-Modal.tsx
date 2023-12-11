@@ -66,11 +66,29 @@ type ModalProps = {
       }
 );
 
+type MagicType<U> = UnionToIntersection<U> extends infer O ? { [K in keyof O]: O[K] } : never;
+
+type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (k: infer I) => void ? I : never;
+
 /**
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children, isDisabled, isCloseable, closeIcon = '✖', onClose, size = 'FULL', className } = props;
+    const {
+        title,
+        children,
+        isDisabled,
+        isCloseable,
+        closeIcon = '✖',
+        onClose,
+        size = 'FULL',
+        className,
+    } = {
+        closeIcon: undefined,
+        onClose: undefined,
+        // <- TODO: [🦪] Some helper type to be able to use discriminant union types with destructuring
+        ...props,
+    };
 
     const styles = useStyleModule(import('./00-Modal.module.css'));
 

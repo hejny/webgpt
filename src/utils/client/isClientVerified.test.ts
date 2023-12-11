@@ -1,25 +1,21 @@
 import { describe, expect, it } from '@jest/globals';
-import spaceTrim from 'spacetrim';
-import { $isClientVerified } from './isClientVerifiedForServer';
+import { $isClientVerifiedForServer } from './isClientVerifiedForServer';
+import { validateClientId } from './validateClientId';
 
 describe('how isClientVerified works', () => {
     it('should work with foo', () => {
         expect(
-            $isClientVerified(
-                spaceTrim(`
-                    Foo
-                `),
-            ),
+            $isClientVerifiedForServer({
+                clientId: validateClientId('!!!'),
+            }),
         ).resolves.toBe(true);
     });
 
     it('should NOT work with bar', () => {
         expect(
-            $isClientVerified(
-                spaceTrim(`
-                    bar
-                `),
-            ),
+            $isClientVerifiedForServer({
+                clientId: validateClientId('!!!'),
+            }),
         ).resolves.toBe(false);
     });
 });
