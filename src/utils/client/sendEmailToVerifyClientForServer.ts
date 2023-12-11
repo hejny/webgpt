@@ -57,7 +57,7 @@ export async function $sendEmailToVerifyClientForServer(
         content:
             // TODO: !!! Better text
             // TODO: !!! Translations
-            // TODO: !!! Unify greeting and signature in all emails ACRY
+            // TODO: !!! [🧠] Unify greeting and signature in all emails ACRY
             maxdown`
                 Hello,
                 Your code to sign-in into ${APP_NAME} is:
