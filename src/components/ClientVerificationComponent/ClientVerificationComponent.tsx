@@ -232,7 +232,7 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 }
 
 /**
- * TODO: !!! Show indicators for'PENDING_EMAIL_SENDING', 'EMAIL_SENT' and 'PENDING_CODE_SUBMITTING'
  * TODO: !!! Design
+ * TODO: [🧠] Show animations for'PENDING_EMAIL_SENDING', 'EMAIL_SENT' and 'PENDING_CODE_SUBMITTING'
  * TODO: [🧠] What if user clicks on email link and veryfy on background with opened <ValidateEmailDialogueComponent/>?
  */

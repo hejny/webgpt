@@ -18,6 +18,6 @@ export function $backupClientEmail(clientEmail: string_email) {
 }
 
 /**
- * TODO: !!! Rename to ForBrowser
+ * TODO: [🧠] Maybe suffix "ForBrowser"
  * TODO: [🌯] Maybe read email from the the server
  */
