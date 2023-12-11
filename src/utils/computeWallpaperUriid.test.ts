@@ -1,11 +1,11 @@
 import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
+import { maxdown } from '../components/Content/Maxdown/maxdown';
 import { validateMaxdown } from '../components/Content/Maxdown/validateMaxdown';
 import { FULLHD } from '../constants';
 import { validateClientId } from './client/validateClientId';
 import { computeWallpaperUriid } from './computeWallpaperUriid';
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
-import { validateUuid } from './validators/validateUuid';
 
 describe(`computeWallpaperUriid`, () => {
     it(`is compute deterministic uriid`, () => {
@@ -336,11 +336,9 @@ describe(`computeWallpaperUriid`, () => {
                     version: 'colorful-192x108-16bit-v14palette',
                 }),
                 naturalSize: FULLHD,
-                content: validateMaxdown(
-                    spaceTrim(`
-                        This content has no title.
-                    `),
-                ),
+                content: maxdown`
+                    This content has no title.
+                `,
             }),
         ).toBe(`2rrgwx5bdwod`);
     });

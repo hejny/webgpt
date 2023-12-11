@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import spaceTrim from 'spacetrim';
-import { validateMaxdown } from '../../../components/Content/Maxdown/validateMaxdown';
+import { maxdown } from '../../../components/Content/Maxdown/maxdown';
 import { sendEmailForServer } from '../../../utils/emails/sendEmailForServer';
 
 export default async function sendEmailExperimentHandler(request: NextApiRequest, response: NextApiResponse) {
@@ -8,11 +7,9 @@ export default async function sendEmailExperimentHandler(request: NextApiRequest
         await sendEmailForServer({
             to: 'me@pavolhejny.com',
             subject: '⏣ WebGPT notification',
-            content: validateMaxdown(
-                spaceTrim(`
-                    Look on [WebGPT](https://webgpt.cz/) page!
-                `),
-            ),
+            content: maxdown`
+                Look on [WebGPT](https://webgpt.cz/) page!
+            `,
         });
 
         return response.status(202).send({

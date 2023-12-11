@@ -3,7 +3,7 @@ import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DallePrompt';
-import { validateMaxdown } from './src/components/Content/Maxdown/validateMaxdown';
+import { maxdown } from './src/components/Content/Maxdown/maxdown';
 import { FULLHD } from './src/constants';
 import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
@@ -33,7 +33,7 @@ export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().va
 export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
 export const ADMIN_EMAIL: string_email = 'pavol@webgpt.cz';
-export const APP_SIGNATURE: string_maxdown = validateMaxdown(`[⏣ ${APP_NAME}](${NEXT_PUBLIC_URL.href})`);
+export const APP_SIGNATURE: string_maxdown = maxdown`[⏣ ${APP_NAME}](${NEXT_PUBLIC_URL.href})`;
 
 export const USE_DALLE_VERSION: 2 | 3 = 3;
 

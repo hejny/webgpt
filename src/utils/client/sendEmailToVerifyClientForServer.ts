@@ -1,6 +1,5 @@
-import spaceTrim from 'spacetrim';
 import { APP_NAME, NEXT_PUBLIC_URL } from '../../../config';
-import { validateMaxdown } from '../../components/Content/Maxdown/validateMaxdown';
+import { maxdown } from '../../components/Content/Maxdown/maxdown';
 import { sendEmailForServer } from '../emails/sendEmailForServer';
 import { isRunningInNode } from '../isRunningInWhatever';
 import { getSupabaseForServer } from '../supabase/getSupabaseForServer';
@@ -51,14 +50,12 @@ export async function $sendEmailToVerifyClientForServer(
     await sendEmailForServer({
         to: email,
         subject: `⏣ ${APP_NAME} verification code`,
-
-        // TODO: !!! use maxdown`` pattern
-        content: validateMaxdown(
+        content:
             // TODO: !!! Better text
             // TODO: !!! Translations
             // TODO: !!! Add verification link alongsite the code
             // TODO: !!! Unify greeting and signature in all emails ACRY
-            spaceTrim(`
+            maxdown`
                 Hello,
                 Your code to sign-in into ${APP_NAME} is:
 
@@ -70,8 +67,7 @@ export async function $sendEmailToVerifyClientForServer(
                 ---
                 
                 !!! Add wait dislaimer for people whos email this isnt !!!
-            `),
-        ),
+            `,
     });
 
     return {

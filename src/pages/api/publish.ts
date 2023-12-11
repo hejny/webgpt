@@ -2,9 +2,8 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import spaceTrim from 'spacetrim';
 import { APP_SIGNATURE, PUBLISH_TO_GITHUB_ORGANIZATION } from '../../../config';
-import { validateMaxdown } from '../../components/Content/Maxdown/validateMaxdown';
+import { maxdown } from '../../components/Content/Maxdown/maxdown';
 import { sendEmailForServer } from '../../utils/emails/sendEmailForServer';
 import type { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
 import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
@@ -82,17 +81,15 @@ export default async function publishWebsiteHandler(
             to: 'me@pavolhejny.com',
             subject: `⏣ Website ${CNAME} is published!`,
 
-            // TODO: !!! use maxdown`` pattern
-            content: validateMaxdown(
+            content:
                 // TODO: !!! Translations
-                spaceTrim(`
+                maxdown`
                     Your website [${CNAME}](https://${CNAME}/) was  successfully published by ${APP_SIGNATURE}!
                     
                     ---
                     
                     !!! add wait dislaimer to publish email !!!
-                `),
-            ),
+                `,
         });
 
         return response.status(201).json({
