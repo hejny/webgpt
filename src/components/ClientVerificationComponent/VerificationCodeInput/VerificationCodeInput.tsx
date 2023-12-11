@@ -59,3 +59,7 @@ export function VerificationCodeInput(props: VerificationCodeInputProps) {
         </div>
     );
 }
+
+/**
+ * TODO: !!! Design
+ */
