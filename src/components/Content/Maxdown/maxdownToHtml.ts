@@ -1,5 +1,4 @@
 import spaceTrim from 'spacetrim';
-import { prettifyHtml } from '../../../export/utils/prettifyHtml';
 import type { string_html, string_maxdown } from '../../../utils/typeAliases';
 import { markdownConverter } from '../markdownConverter';
 
@@ -48,9 +47,7 @@ export function maxdownToHtml(maxdownContent: string_maxdown): string_html {
 
     html = htmlLines.join('\n');
 
-    // !!! Remove comment OR comment why not need to prettifyHtml
-    //html = prettifyHtml(html);
-    html = spaceTrim(html);
+    // Note: No need to `prettifyHtml` or `spaceTrim` the html because it is done during the export
 
     return html;
 }
