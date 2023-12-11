@@ -67,9 +67,11 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
         } else if (sendEmailResult.status === 'ERROR') {
             // TODO: Better then alert
             alert(sendEmailResult.message);
+            setStatus('BEFORE');
         } else if (sendEmailResult.status === 'ALREADY_VERIFIED') {
             // TODO: Better then alert
             alert('You are already verified');
+            setStatus('VERIFIED');
             handleSuccess({
                 clientId,
                 email: emailInputRef.current!.value!,
@@ -79,6 +81,7 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
             // TODO: [📮] Lock for some time
             // TODO: Better then alert
             alert('Limit reached');
+            setStatus('BEFORE');
         }
     }, [status, emailInputRef, handleSuccess]);
 
@@ -99,6 +102,7 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
             });
 
             if (codeVerifyResult.status === 'VERIFIED') {
+                setStatus('VERIFIED');
                 handleSuccess({
                     email: emailInputRef.current!.value!,
                     clientId,
@@ -106,6 +110,7 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
                 });
             } else if (codeVerifyResult.status === 'ERROR') {
                 // TODO: Better then alert
+                setStatus('EMAIL_SENT');
                 alert(codeVerifyResult.message);
             }
         },
@@ -114,31 +119,57 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 
     return (
         <div className={classNames(className, styles.ClientVerificationComponent)}>
-            <input
-                autoFocus
-                ref={emailInputRef}
-                type="email"
-                defaultValue={`@`}
-                placeholder={`john.smith@gmail.com` /* <- !! Translate */}
-                className={styles.answer}
-                onKeyDown={(event) => {
-                    if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
-                        return;
-                    }
+            <p>
+                {
+                    {
+                        BEFORE: <>Verify your email</>,
+                        PENDING_EMAIL_SENDING: <>Sending the email</>,
+                        EMAIL_SENT: (
+                            <>
+                                Verify code received in your email
+                                <br />
+                                <i>(Look in spam folder if not in inbox)</i>
+                            </>
+                        ),
+                        PENDING_CODE_SUBMITTING: <>Verifying the code</>,
+                        VERIFIED: <>You are verified!</>,
+                    }[status]
+                }
+            </p>
 
-                    submitEmail();
-                }}
-            />
-            <button className={styles.submit} onClick={submitEmail}>
-                Send verification code
-            </button>
+            <div>
+                <label>
+                    Enter your email:
+                    <input
+                        autoFocus
+                        ref={emailInputRef}
+                        type="email"
+                        defaultValue={`@`}
+                        placeholder={`john.smith@gmail.com` /* <- !! Translate */}
+                        disabled={status !== 'BEFORE'}
+                        className={styles.answer}
+                        onKeyDown={(event) => {
+                            if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
+                                return;
+                            }
 
-            {status === 'EMAIL_SENT' && <VerificationCodeInput onSubmit={submitCode} />}
+                            submitEmail();
+                        }}
+                    />
+                </label>
+                <button className={styles.submit} onClick={submitEmail} disabled={status !== 'BEFORE'}>
+                    Send verification code
+                </button>
+            </div>
+
+            {['EMAIL_SENT', 'PENDING_CODE_SUBMITTING', 'VERIFIED'].includes(status) && (
+                <VerificationCodeInput onSubmit={submitCode} isDisabled={status !== 'EMAIL_SENT'} />
+            )}
         </div>
     );
 }
 
 /**
- * TODO: !!! Show loading indicator
+ * TODO: !!! Show indicators for'PENDING_EMAIL_SENDING', 'EMAIL_SENT' and 'PENDING_CODE_SUBMITTING'
  * TODO: !!! Design
  */

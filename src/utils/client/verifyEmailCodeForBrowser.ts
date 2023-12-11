@@ -11,7 +11,7 @@ export async function $verifyEmailCodeForBrowser(options: VerifyEmailCodeRequest
         throw new Error('Function `$verifyEmailCodeForBrowser` can not be used on server, use server version instead.');
     }
 
-    const response = await fetch(`/api/client/send-email-to-verify-client`, {
+    const response = await fetch(`/api/client/verify-email-code`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

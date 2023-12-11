@@ -33,6 +33,8 @@ export async function $verifyEmailCodeForServer(options: VerifyEmailCodeRequest)
             // TODO: !! Util isInsertSuccessfull (status===201)
             console.info({ insertVerificationResult });
 
+            // TODO: [🧠] Should we send another email to the user that he is verified?
+
             return {
                 status: 'VERIFIED',
             };

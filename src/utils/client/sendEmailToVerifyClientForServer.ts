@@ -38,8 +38,10 @@ export async function $sendEmailToVerifyClientForServer(
     }
 
     if (!isValidEmail(email)) {
-        // TODO: !!! [🧠] Use here CodeValidationError OR return false
-        throw new Error('!!!');
+        return {
+            status: 'ERROR',
+            message: 'You have entered invalid email', // <- TODO: [🧠] Translations in server messages
+        };
     }
 
     const code = $generateVerificationCode();

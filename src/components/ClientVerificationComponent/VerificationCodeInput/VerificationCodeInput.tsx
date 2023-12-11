@@ -11,16 +11,21 @@ interface VerificationCodeInputProps {
     onSubmit(code: string_token): void;
 
     /**
+     * If true, the input is disabled
+     */
+    readonly isDisabled?: boolean;
+
+    /**
      * Optional CSS class name which will be added to root element
      */
     readonly className?: string_css_class;
 }
 
 /**
- * Renders a @@
+ * Renders a verification code input
  */
 export function VerificationCodeInput(props: VerificationCodeInputProps) {
-    const { onSubmit, className } = props;
+    const { onSubmit, isDisabled, className } = props;
 
     const styles = useStyleModule(import('./VerificationCodeInput.module.css'));
     const codeInputRef = useRef<HTMLInputElement>(null);
@@ -44,6 +49,7 @@ export function VerificationCodeInput(props: VerificationCodeInputProps) {
                 autoFocus
                 ref={codeInputRef}
                 type="string"
+                disabled={isDisabled}
                 className={styles.answer}
                 onKeyDown={(event) => {
                     if (!(event.key === 'Enter' && event.shiftKey === false && event.ctrlKey === false)) {
@@ -53,7 +59,7 @@ export function VerificationCodeInput(props: VerificationCodeInputProps) {
                     submitCode();
                 }}
             />
-            <button className={styles.submit} onClick={submitCode}>
+            <button className={styles.submit} onClick={submitCode} disabled={isDisabled}>
                 Confirm
             </button>
         </div>
