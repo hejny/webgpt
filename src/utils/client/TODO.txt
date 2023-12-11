@@ -1,5 +1,6 @@
-TODO: !!! Backup old tables 
-TODO: !!! Remove old tables 
+
 TODO: !!! Create table ClientEmailVerificationRequest
 TODO: !!! Create table ClientEmailVerification
 TODO: !!! Sync new tables ClientEmailVerificationRequest and ClientEmailVerification
+TODO: !!!main Backup old tables 
+TODO: !!!main Remove old tables 
