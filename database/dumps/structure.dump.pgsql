@@ -1773,6 +1773,22 @@ CREATE VIEW public."Wallpaper_random" AS
 ALTER TABLE public."Wallpaper_random" OWNER TO postgres;
 
 --
+-- Name: clientemailverification_withrequests; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.clientemailverification_withrequests AS
+ SELECT "ClientEmailVerification"."createdAt",
+    "ClientEmailVerificationRequest"."clientId",
+    "ClientEmailVerificationRequest".email,
+    "ClientEmailVerification"."verificationRequestId",
+    "ClientEmailVerificationRequest".code
+   FROM (public."ClientEmailVerification"
+     LEFT JOIN public."ClientEmailVerificationRequest" ON (("ClientEmailVerification"."verificationRequestId" = "ClientEmailVerificationRequest".id)));
+
+
+ALTER TABLE public.clientemailverification_withrequests OWNER TO postgres;
+
+--
 -- Name: buckets; Type: TABLE; Schema: storage; Owner: supabase_storage_admin
 --
 
@@ -3805,6 +3821,15 @@ GRANT ALL ON TABLE public."WallpaperFeedback" TO service_role;
 GRANT ALL ON TABLE public."Wallpaper_random" TO anon;
 GRANT ALL ON TABLE public."Wallpaper_random" TO authenticated;
 GRANT ALL ON TABLE public."Wallpaper_random" TO service_role;
+
+
+--
+-- Name: TABLE clientemailverification_withrequests; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT ALL ON TABLE public.clientemailverification_withrequests TO anon;
+GRANT ALL ON TABLE public.clientemailverification_withrequests TO authenticated;
+GRANT ALL ON TABLE public.clientemailverification_withrequests TO service_role;
 
 
 --
