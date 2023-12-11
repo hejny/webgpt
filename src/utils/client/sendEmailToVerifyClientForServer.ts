@@ -30,7 +30,7 @@ export async function $sendEmailToVerifyClientForServer(
         clientId /* TODO: Check combination with email */,
     });
 
-    // TODO: If EMAIL_SENT, send email again BUT only after one minute, else return LIMIT_REACHED
+    // TODO: [📮] If EMAIL_SENT, send email again BUT only after one minute, else return LIMIT_REACHED
     if (currentStatus === 'VERIFIED') {
         return {
             status: 'ALREADY_VERIFIED',

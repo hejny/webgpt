@@ -9,5 +9,5 @@ export function $generateVerificationCode(): string_token {
 }
 
 /**
- * TODO: !!! Use common util for generateVerificationCode, generating wallpaper URI
+ * TODO: [🧠] Use common util for generateVerificationCode, generating wallpaper URI
  */

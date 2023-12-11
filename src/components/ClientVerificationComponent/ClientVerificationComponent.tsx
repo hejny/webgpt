@@ -76,9 +76,9 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
                 isEmailVerified: true,
             });
         } else if (sendEmailResult.status === 'LIMIT_REACHED') {
+            // TODO: [📮] Lock for some time
             // TODO: Better then alert
-            // TODO: !!! Lock for some time
-            alert('!!!');
+            alert('Limit reached');
         }
     }, [status, emailInputRef, handleSuccess]);
 
@@ -139,7 +139,5 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 }
 
 /**
- * TODO: !!! Implement ClientVerificationComponent with using onVerificationSuccess
- * TODO: !!! Implement
  * TODO: <VerificationCodeInput>
  */
