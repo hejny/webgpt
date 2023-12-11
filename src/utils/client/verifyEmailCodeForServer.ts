@@ -1,11 +1,10 @@
 import { isRunningInNode } from '../isRunningInWhatever';
+import { getSupabaseForServer } from '../supabase/getSupabaseForServer';
 import type { VerifyEmailCodeRequest, VerifyEmailCodeResult } from './verifyEmailCode.types';
 
 /**
- * Function verifyEmailCode @@@
- *
- * @returns true if code is valid
- * @throws CodeValidationError if code is invalid
+ * Function verifyEmailCodeForServer checks if verification code is correct
+ * If it is correct, it marks client as verified in the database
  *
  * Note: This function has version both for browser and server
  */
@@ -16,12 +15,38 @@ export async function $verifyEmailCodeForServer(options: VerifyEmailCodeRequest)
         );
     }
 
-    const {clientId,email} = options;
+    const { clientId, email, code } = options;
+
+    const { data: verificationRequests } = await getSupabaseForServer()
+        .from('ClientEmailVerificationRequest')
+        .select('id,createdAt,code,email')
+        .eq('clientId', clientId)
+        .eq('email', email);
+
+    for (const verificationRequest of verificationRequests || []) {
+        if (verificationRequest.code === code && verificationRequest.email === email) {
+            const insertVerificationResult = await getSupabaseForServer().from('ClientEmailVerification').insert({
+                verificationRequestId: verificationRequest.id,
+            });
+
+            // TODO: !! Util isInsertSuccessfull (status===201)
+            console.info({ insertVerificationResult });
+
+            return {
+                status: 'VERIFIED',
+            };
+        }
+    }
+
+    return {
+        status: 'ERROR',
+    };
 }
 
 /**
  * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
- *
+ * TODO: !! Use or remove status ALREADY_VERIFIED
+ * TODO: !! Use or remove status EXPIRED
  * TODO: !!! Implement
  * TODO: !!!last Annotate
  */

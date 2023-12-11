@@ -1,8 +1,9 @@
 import { isRunningInNode } from '../isRunningInWhatever';
+import { getSupabaseForServer } from '../supabase/getSupabaseForServer';
 import type { IsClientVerifiedRequest, IsClientVerifiedResult } from './isClientVerified.types';
 
 /**
- * Function isClientVerified checks if client has verified email
+ * Function isClientVerifiedForServer checks if client has verified email
  *
  * Note: This function has version both for browser and server
  */
@@ -13,7 +14,12 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
         );
     }
 
-    const {clientId} = options;
+    const { clientId } = options;
+
+    const { data: verificationRequests } = await getSupabaseForServer()
+        .from('ClientEmailVerificationRequest')
+        .select('email')
+        .eq('clientId', clientId);
 
     /*
     const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);

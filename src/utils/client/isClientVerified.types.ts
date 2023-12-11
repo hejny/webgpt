@@ -5,7 +5,7 @@ export type IsClientVerifiedRequest = {
 };
 
 export type IsClientVerifiedResult = {
-    isClientVerified: boolean;
+    status: 'NOT_VERIFIED' |'EMAIL_SENT' | 'VERIFIED';
 };
 
 /**

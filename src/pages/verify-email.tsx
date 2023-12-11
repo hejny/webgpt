@@ -3,7 +3,7 @@ import { ClientVerificationComponent } from '../components/ClientVerificationCom
 import { ClientEmailVerification } from '../utils/client/ClientVerification';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 
-export default function VerifyPage() {
+export default function VerifyEmailPage() {
     return (
         <WallpapersContext.Provider value={{}} /* <- Does it make sence to keep this empty? */>
             <StaticAppHead subtitle={null} />
@@ -19,5 +19,6 @@ export default function VerifyPage() {
 }
 
 /**
+ * TODO: !!! Integrate here ?code=...
  * TODO: !!! Design of the page
  */

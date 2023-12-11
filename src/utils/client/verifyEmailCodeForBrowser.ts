@@ -2,10 +2,7 @@ import { isRunningInBrowser, isRunningInWebWorker } from '../isRunningInWhatever
 import type { VerifyEmailCodeRequest, VerifyEmailCodeResult } from './verifyEmailCode.types';
 
 /**
- * Function verifyEmailCode @@@
- *
- * @returns true if code is valid
- * @throws CodeValidationError if code is invalid
+ * Function verifyEmailCodeForBrowser sends verification code to the server and checks if it is correct
  *
  * Note: This function has version both for browser and server
  */

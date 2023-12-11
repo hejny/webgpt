@@ -2,7 +2,7 @@ import { isRunningInBrowser, isRunningInWebWorker } from '../isRunningInWhatever
 import type { SendEmailToVerifyClientRequest, SendEmailToVerifyClientResult } from './sendEmailToVerifyClient.types';
 
 /**
- * Function sendEmailToVerifyClient will generate a verification code, saves it into a DB and send it to the email
+ * Function sendEmailToVerifyClientForBrowser sends verification request to the server
  *
  * Note: This function has version both for browser and server
  */

@@ -2,7 +2,7 @@ import { isRunningInBrowser, isRunningInWebWorker } from '../isRunningInWhatever
 import type { IsClientVerifiedRequest, IsClientVerifiedResult } from './isClientVerified.types';
 
 /**
- * Function isClientVerified checks if client has verified email
+ * Function isClientVerifiedForBrowser checks if client has verified email
  *
  * Note: This function has version both for browser and server
  */

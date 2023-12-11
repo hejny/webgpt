@@ -1,5 +1,5 @@
 import spaceTrim from 'spacetrim';
-import { APP_NAME, APP_SIGNATURE } from '../../../config';
+import { APP_NAME, NEXT_PUBLIC_URL } from '../../../config';
 import { validateMaxdown } from '../../components/Content/Maxdown/validateMaxdown';
 import { sendEmailForServer } from '../emails/sendEmailForServer';
 import { isRunningInNode } from '../isRunningInWhatever';
@@ -9,7 +9,7 @@ import { $generateVerificationCode } from './generateVerificationCode';
 import type { SendEmailToVerifyClientRequest, SendEmailToVerifyClientResult } from './sendEmailToVerifyClient.types';
 
 /**
- * Function sendEmailToVerifyClient will generate a verification code, saves it into a DB and send it to the email
+ * Function sendEmailToVerifyClientForServer will generate a verification code, saves it into a DB and send it to the email
  *
  * Note: This function has version both for browser and server
  */
@@ -42,10 +42,15 @@ export async function $sendEmailToVerifyClientForServer(
             // TODO: !!! Better text
             // TODO: !!! Translations
             // TODO: !!! Add verification link alongsite the code
+            // TODO: !!! Unify greeting and signature in all emails ACRY
             spaceTrim(`
-                Your code to sign-in into ${APP_SIGNATURE} is:
+                Hello,
+                Your code to sign-in into ${APP_NAME} is:
 
                 **${code}**
+
+                Or click on this link to verify your email:
+                ${NEXT_PUBLIC_URL.href}/verify-email?code=${code}&email=${encodeURIComponent(email)}
                 
                 ---
                 
