@@ -6,7 +6,7 @@ import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DalleP
 import { validateMaxdown } from './src/components/Content/Maxdown/validateMaxdown';
 import { FULLHD } from './src/constants';
 import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
-import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expe ctAspectRatioInRange';
+import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { validateClientId } from './src/utils/client/validateClientId';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';

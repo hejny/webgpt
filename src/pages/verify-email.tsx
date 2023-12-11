@@ -10,7 +10,7 @@ export default function VerifyEmailPage() {
 
             <ClientVerificationComponent
                 onVerificationSuccess={(verification: ClientEmailVerification) => {
-                    // TODO: !!! Do domething
+                    // TODO: !!! Do something
                     // TODO: !!! Redirect to ?ref=... (if exists)
                 }}
             />

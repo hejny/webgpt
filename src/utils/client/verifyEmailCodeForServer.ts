@@ -41,6 +41,7 @@ export async function $verifyEmailCodeForServer(options: VerifyEmailCodeRequest)
 
     return {
         status: 'ERROR',
+        message: 'Verification code is not correct', // <- TODO: [🧠] Translations in server messages
     };
 }
 
