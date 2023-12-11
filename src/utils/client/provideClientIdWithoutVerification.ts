@@ -1,7 +1,7 @@
 import { isRunningInBrowser } from '../isRunningInWhatever';
 import { client_id } from '../typeAliases';
-import { isValidClientId } from '../validators/isValidClientId';
 import { $generateClientId } from './generateClientId';
+import { isValidClientId } from './isValidClientId';
 import { validateClientId } from './validateClientId';
 
 /**

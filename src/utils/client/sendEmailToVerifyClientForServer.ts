@@ -66,6 +66,7 @@ export async function $sendEmailToVerifyClientForServer(
                 **${code}**
 
                 Or click on this link to verify your email:
+                
                 ${NEXT_PUBLIC_URL.href}verify-email?code=${code}&email=${encodeURIComponent(
                 email,
             )}&clientId=${encodeURIComponent(clientId)}

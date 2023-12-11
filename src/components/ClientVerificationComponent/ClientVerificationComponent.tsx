@@ -1,4 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
+import spaceTrim from 'spacetrim';
 import { classNames } from '../../utils/classNames';
 import { $backupClientEmail } from '../../utils/client/backupClientEmail';
 import { ClientEmailVerification } from '../../utils/client/ClientVerification';
@@ -6,9 +7,10 @@ import { $provideClientEmail } from '../../utils/client/provideClientEmail';
 import { $provideClientIdWithoutVerification } from '../../utils/client/provideClientIdWithoutVerification';
 import { $sendEmailToVerifyClientForBrowser } from '../../utils/client/sendEmailToVerifyClientForBrowser';
 import { $verifyEmailCodeForBrowser } from '../../utils/client/verifyEmailCodeForBrowser';
-import { useInitialAction } from '../../utils/hooks/useInitialAction';
+import { useInitialDelayedAction } from '../../utils/hooks/useInitialDelayedAction';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class, string_token } from '../../utils/typeAliases';
+import type { AutomaticVerification } from './AutomaticVerification';
 import { VerificationCodeInput } from './VerificationCodeInput/VerificationCodeInput';
 
 interface ClientVerificationComponentProps {
@@ -16,6 +18,11 @@ interface ClientVerificationComponentProps {
      * Optional CSS class name which will be added to root element
      */
     readonly className?: string_css_class;
+
+    /**
+     * If provided, the verification will be automatic
+     */
+    readonly automaticVerification?: AutomaticVerification;
 
     /**
      * Called when user successfully verifies his email
@@ -27,7 +34,9 @@ interface ClientVerificationComponentProps {
  * Renders a @@
  */
 export function ClientVerificationComponent(props: ClientVerificationComponentProps) {
-    const { onVerificationSuccess, className } = props;
+    const { onVerificationSuccess, automaticVerification, className } = props;
+
+    console.log('!!!', { automaticVerification });
 
     const styles = useStyleModule(import('./ClientVerificationComponent.module.css'));
 
@@ -50,6 +59,8 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
     );
 
     const submitEmail = useCallback(async () => {
+        console.info(`Submitting email`);
+
         if (status !== 'BEFORE') {
             // TODO: Better then alert
             alert(
@@ -96,8 +107,10 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
     }, [status, emailInputRef, handleSuccess]);
 
     const submitCode = useCallback(
-        async (code: string_token) => {
-            if (!['EMAIL_SENT', 'ALREADY_EMAIL_SENT'].includes(status)) {
+        async (code: string_token, isStatusBypassed = false) => {
+            console.info(`Submitting code`);
+
+            if (!['EMAIL_SENT', 'ALREADY_EMAIL_SENT'].includes(status) && !isStatusBypassed) {
                 throw new Error(`Code can be submitted only when status is "EMAIL_SENT" but it is "${status}"`);
                 //             <- TODO: ShouldNeverHappenError
             }
@@ -127,19 +140,36 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
         [status, handleSuccess],
     );
 
-    useInitialAction(
-        () => true,
-        () => {
-            const email = $provideClientEmail();
+    useInitialDelayedAction(async () => {
+        const email = $provideClientEmail() || automaticVerification?.email || null;
 
-            if (email === null) {
-                return;
-            }
+        if (email === null) {
+            return;
+        }
 
-            emailInputRef.current!.value = email;
-            submitEmail();
-        },
-    );
+        emailInputRef.current!.value = email;
+
+        await submitEmail();
+
+        if (!automaticVerification) {
+            return;
+        }
+
+        const clientId = $provideClientIdWithoutVerification();
+        if (automaticVerification.clientId !== clientId) {
+            console.error(
+                spaceTrim(`
+                        Can not automatically verify email because clientId is not the same
+
+                        Local storage: ${clientId}
+                        Automatic verification: ${automaticVerification.clientId}
+                    `),
+            );
+            return;
+        }
+
+        await submitCode(automaticVerification.code, true);
+    });
 
     return (
         <div className={classNames(className, styles.ClientVerificationComponent)}>
