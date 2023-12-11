@@ -24,6 +24,55 @@ export interface Database {
                 };
                 Relationships: [];
             };
+            ClientEmailVerification: {
+                Row: {
+                    createdAt: string;
+                    id: number;
+                    verificationRequestId: number;
+                };
+                Insert: {
+                    createdAt?: string;
+                    id?: number;
+                    verificationRequestId: number;
+                };
+                Update: {
+                    createdAt?: string;
+                    id?: number;
+                    verificationRequestId?: number;
+                };
+                Relationships: [
+                    {
+                        foreignKeyName: 'ClientEmailVerification_verificationRequestId_fkey';
+                        columns: ['verificationRequestId'];
+                        referencedRelation: 'ClientEmailVerificationRequest';
+                        referencedColumns: ['id'];
+                    },
+                ];
+            };
+            ClientEmailVerificationRequest: {
+                Row: {
+                    clientId: string;
+                    code: string;
+                    createdAt: string;
+                    email: string;
+                    id: number;
+                };
+                Insert: {
+                    clientId?: string;
+                    code: string;
+                    createdAt?: string;
+                    email: string;
+                    id?: number;
+                };
+                Update: {
+                    clientId?: string;
+                    code?: string;
+                    createdAt?: string;
+                    email?: string;
+                    id?: number;
+                };
+                Relationships: [];
+            };
             ImagePromptExecution: {
                 Row: {
                     clientId: string | null;
