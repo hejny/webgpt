@@ -13,6 +13,8 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
         );
     }
 
+    const {clientId} = options;
+
     /*
     const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);
 

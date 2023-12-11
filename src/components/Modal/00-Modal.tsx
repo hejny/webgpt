@@ -5,7 +5,7 @@ import { string_css_class } from '../../utils/typeAliases';
 import { MarkdownContent } from '../Content/MarkdownContent';
 import { CloseModalLink } from './10-CloseModalLink';
 
-interface ModalProps {
+type ModalProps = {
     /**
      * Title of the modal
      */
@@ -22,28 +22,6 @@ interface ModalProps {
     readonly isDisabled?: boolean;
 
     /**
-     * Whether the modal can be closed by clicking on the overlay
-     *
-     * If `true` then you need to be in wallpaper page to close the modal
-     */
-    readonly isCloseable?: boolean;
-
-    /**
-     * The close icon
-     *
-     * @default "✖"
-     */
-    readonly closeIcon?: '✖' | '✔';
-
-    /**
-     * Callback which will be called when the modal is requested to be closed
-     *
-     * If NOT set it will use as default <CloseModalLink/>
-     * Warning: YOU SHOULD set it when you are using modal with isCloseable outside of wallpaper page
-     */
-    readonly onClose?: () => void;
-
-    /**
      * Size of the modal
      *
      * @default 'FULL'
@@ -54,7 +32,39 @@ interface ModalProps {
      * Optional CSS class name which will be added to content part of the modal
      */
     readonly className?: string_css_class;
-}
+} & (
+    | {
+          /**
+           * Whether the modal can be closed by clicking on the overlay
+           *
+           * If `false` then you need to be in wallpaper page to close the modal
+           */
+          readonly isCloseable?: false;
+      }
+    | {
+          /**
+           * Whether the modal can be closed by clicking on the overlay
+           *
+           * If `true` then you need to be in wallpaper page to close the modal
+           */
+          readonly isCloseable: true;
+
+          /**
+           * The close icon
+           *
+           * @default "✖"
+           */
+          readonly closeIcon?: '✖' | '✔';
+
+          /**
+           * Callback which will be called when the modal is requested to be closed
+           *
+           * If NOT set it will use as default <CloseModalLink/>
+           * Warning: YOU SHOULD set it when you are using modal with isCloseable outside of wallpaper page
+           */
+          readonly onClose?: () => void;
+      }
+);
 
 /**
  * Renders a modal above the wallpaper page

@@ -1,4 +1,6 @@
 import sendgridEmailClient from '@sendgrid/mail';
+import chalk from 'chalk';
+import spaceTrim from 'spacetrim';
 import { SENDGRID_API_KEY } from '../../../config';
 import { maxdownToHtml } from '../../components/Content/Maxdown/maxdownToHtml';
 import { removeMarkdownFormatting } from '../content/removeMarkdownFormatting';
@@ -37,6 +39,21 @@ export async function sendEmailForServer(email: Email): Promise<void> {
         text,
         html,
     };
+
+    console.info(
+        chalk.bgBlueBright(`Sending email\n\n`) +
+            chalk.blueBright(
+                spaceTrim(
+                    (block) => `
+                        From: ${block(from)}
+                        To: ${block(to)} 
+                        Subject: ${block(subject)} 
+                        Text:
+                        ${block(text)} 
+                    `,
+                ),
+            ),
+    );
 
     await sendgridEmailClient.send(sendgridEmail);
 

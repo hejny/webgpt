@@ -1,4 +1,11 @@
+import spaceTrim from 'spacetrim';
+import { APP_NAME, APP_SIGNATURE } from '../../../config';
+import { validateMaxdown } from '../../components/Content/Maxdown/validateMaxdown';
+import { sendEmailForServer } from '../emails/sendEmailForServer';
 import { isRunningInNode } from '../isRunningInWhatever';
+import { getSupabaseForServer } from '../supabase/getSupabaseForServer';
+import { isValidEmail } from '../validators/isValidEmail';
+import { $generateVerificationCode } from './generateVerificationCode';
 import type { SendEmailToVerifyClientRequest, SendEmailToVerifyClientResult } from './sendEmailToVerifyClient.types';
 
 /**
@@ -15,7 +22,42 @@ export async function $sendEmailToVerifyClientForServer(
         );
     }
 
+    const { clientId, email } = options;
 
+    if (!isValidEmail(email)) {
+        // TODO: !!! [🧠] Use here CodeValidationError OR return false
+        throw new Error('!!!');
+    }
+
+    const code = $generateVerificationCode();
+
+    // TODO: Maybe do theese things (insert+email sending) in parallel OR transaction but not indipedently at series
+    await getSupabaseForServer().from('ClientEmailVerificationRequest').insert({ clientId, email, code });
+    await sendEmailForServer({
+        to: email,
+        subject: `⏣ ${APP_NAME} verification code`,
+
+        // TODO: !!! use maxdown`` pattern
+        content: validateMaxdown(
+            // TODO: !!! Better text
+            // TODO: !!! Translations
+            // TODO: !!! Add verification link alongsite the code
+            spaceTrim(`
+                Your code to sign-in into ${APP_SIGNATURE} is:
+
+                **${code}**
+                
+                ---
+                
+                !!! Add wait dislaimer for people whos email this isnt !!!
+            `),
+        ),
+    });
+
+    return {
+        // TODO: !!! Handle errors and report false
+        isSendingEmailSuccessful: true,
+    };
 }
 
 /**
