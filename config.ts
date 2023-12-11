@@ -6,15 +6,14 @@ import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DalleP
 import { validateMaxdown } from './src/components/Content/Maxdown/validateMaxdown';
 import { FULLHD } from './src/constants';
 import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
-import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
+import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expe ctAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { validateClientId } from './src/utils/client/validateClientId';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
-import { string_font_family, string_maxdown } from './src/utils/typeAliases';
+import type { string_email, string_font_family, string_maxdown } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
-import { validateUuid } from './src/utils/validators/validateUuid';
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -33,6 +32,7 @@ export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().va
 
 export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
+export const ADMIN_EMAIL: string_email = 'pavol@webgpt.cz';
 export const APP_SIGNATURE: string_maxdown = validateMaxdown(`[⏣ ${APP_NAME}](${NEXT_PUBLIC_URL.href})`);
 
 export const USE_DALLE_VERSION: 2 | 3 = 3;
