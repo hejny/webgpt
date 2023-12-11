@@ -1,5 +1,5 @@
 import { CommonExecutionToolsOptions } from '@promptbook/types';
-import { uuid } from '../../../../utils/typeAliases';
+import { client_id } from '../../../../utils/typeAliases';
 
 /**
  * Search options for the pregenerated photobank
@@ -8,5 +8,5 @@ export interface PregeneratedPhotobankOptions extends CommonExecutionToolsOption
     /**
      * Client ID for the GPT usage
      */
-    clientId: uuid;
+    clientId: client_id;
 }

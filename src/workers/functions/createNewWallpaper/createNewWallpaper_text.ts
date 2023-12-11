@@ -7,6 +7,7 @@ import { addFontToContent } from '../../../components/ImportFonts/addFontToConte
 import type { WriteWallpaperPromptResponse } from '../../../pages/api/image-to-text';
 import { randomItem } from '../../../utils/randomItem';
 import {
+    client_id,
     description,
     string_image_prompt,
     string_maxdown,
@@ -15,7 +16,6 @@ import {
     string_url,
     string_url_image,
     title,
-    uuid,
 } from '../../../utils/typeAliases';
 
 export interface CreateNewWallpaperTextRequest {
@@ -39,7 +39,7 @@ export interface CreateNewWallpaperTextRequest {
      * Author of the wallpaper
      * Note: It must be valid client ID and same as identity of the user
      */
-    readonly author: uuid;
+    readonly author: client_id;
 
     /**
      * URL of the wallpaper in our CDN

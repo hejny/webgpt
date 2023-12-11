@@ -1,7 +1,9 @@
+import { client_id, string_email } from "../typeAliases";
+
 /**
  * sendEmailToVerifyClient @@@
  */
-export function sendEmailToVerifyClient(value: string): boolean {
+export function sendEmailToVerifyClient(clientId: client_id, email: string_email): boolean {
     return value === 'Foo';
 }
 

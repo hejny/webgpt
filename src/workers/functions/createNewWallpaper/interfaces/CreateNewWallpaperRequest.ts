@@ -1,12 +1,11 @@
 import {
+    client_id,
     description,
-    string_markdown,
     string_maxdown,
     string_name,
     string_translate_language,
     string_url,
     title,
-    uuid,
 } from '../../../../utils/typeAliases';
 
 export interface CreateNewWallpaperRequest {
@@ -30,7 +29,7 @@ export interface CreateNewWallpaperRequest {
      * Author of the wallpaper
      * Note: It must be valid client ID and same as identity of the user
      */
-    readonly author: uuid;
+    readonly author: client_id;
 
     /**
      * Image of the wallpaper

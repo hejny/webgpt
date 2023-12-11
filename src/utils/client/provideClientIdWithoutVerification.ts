@@ -1,6 +1,6 @@
 import { isRunningInBrowser } from '../isRunningInWhatever';
 import { randomUuid } from '../randomUuid';
-import { uuid } from '../typeAliases';
+import { client_id, uuid } from '../typeAliases';
 import { isValidClientId } from '../validators/isValidClientId';
 
 /**
@@ -8,7 +8,7 @@ import { isValidClientId } from '../validators/isValidClientId';
  * @private
  * @singleton
  */
-let clientId: uuid | null = null;
+let clientId: client_id | null = null;
 
 /**
  * Gets clientId from localStorage or generates new one

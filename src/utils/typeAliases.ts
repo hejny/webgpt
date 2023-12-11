@@ -193,7 +193,9 @@ export type string_markdown_text = string_markdown;
  *
  * For example `"**Hello** World!"`
  */
-export type string_maxdown = string & { _type: 'maxdown' };
+export type string_maxdown = string & {
+    _type: 'maxdown' /* <- TODO: [🏟] What is the best shape of the additional object in branded types */;
+};
 
 /**
  * Semantic helper
@@ -351,7 +353,14 @@ export type string_email = string;
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  */
 export type uuid = string & {
-    readonly __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
+    readonly _type: 'uuid' /* <- TODO: [🏟] What is the best shape of the additional object in branded types */;
+};
+
+/**
+ * Branded type client id
+ */
+export type client_id = uuid & {
+    readonly _type: 'client_id' /* <- TODO: [🏟] What is the best shape of the additional object in branded types */;
 };
 
 /**

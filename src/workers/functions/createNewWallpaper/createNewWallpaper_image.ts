@@ -14,7 +14,7 @@ import { createImageInWorker } from '../../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../../utils/image/resizeImageBlob';
 import { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
-import { string_image_prompt, string_url_image, uuid } from '../../../utils/typeAliases';
+import { string_image_prompt, string_url_image } from '../../../utils/typeAliases';
 import { imageGeneratorDialogue } from '../../dialogues/image-generator/imageGeneratorDialogue';
 
 interface CreateNewWallpaperImageRequest {
@@ -22,7 +22,7 @@ interface CreateNewWallpaperImageRequest {
      * Author of the wallpaper
      * Note: It must be valid client ID and same as identity of the user
      */
-    readonly author: uuid;
+    readonly author: client_id;
 
     /**
      * Image of the wallpaper

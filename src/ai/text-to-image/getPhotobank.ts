@@ -1,6 +1,6 @@
-import { uuid } from '@promptbook/types';
 import { IS_DEVELOPMENT } from '../../../config';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
+import { client_id } from '../../utils/typeAliases';
 import { ImageGenerator } from './0-interfaces/ImageGenerator';
 import { PregeneratedPhotobank } from './photobank/PregeneratedPhotobank';
 
@@ -21,7 +21,7 @@ let photobank: PregeneratedPhotobank;
  *
  * @returns ImageGenerator based on pregenerated MidJourney images
  */
-export function getPhotobank(clientId: uuid): ImageGenerator {
+export function getPhotobank(clientId: client_id): ImageGenerator {
     if (!isRunningInWebWorker() && !isRunningInBrowser()) {
         throw new Error('This function is available ONLY in browser or worker');
     }

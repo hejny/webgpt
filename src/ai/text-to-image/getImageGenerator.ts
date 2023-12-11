@@ -1,6 +1,6 @@
 import { IS_DEVELOPMENT, NEXT_PUBLIC_IMAGE_SERVER_URL } from '../../../config';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
-import { uuid } from '../../utils/typeAliases';
+import { client_id } from '../../utils/typeAliases';
 import { ImageGenerator } from './0-interfaces/ImageGenerator';
 import { RemoteImageGenerator } from './remote/RemoteImageGenerator';
 
@@ -21,7 +21,7 @@ let imageGenerator: ImageGenerator;
  *
  * @returns ImageGenerator based on OpenAI Dalle
  */
-export function getImageGenerator(clientId: uuid): ImageGenerator {
+export function getImageGenerator(clientId: client_id): ImageGenerator {
     if (!isRunningInWebWorker() && !isRunningInBrowser()) {
         throw new Error('This function is available ONLY in browser or worker');
     }

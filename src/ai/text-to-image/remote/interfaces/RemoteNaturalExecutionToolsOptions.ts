@@ -1,5 +1,5 @@
 import type { CommonExecutionToolsOptions } from '@promptbook/types';
-import type { uuid,string_uri } from '../../../../utils/typeAliases';
+import type { client_id, string_uri } from '../../../../utils/typeAliases';
 
 /**
  * Options for RemoteNaturalExecutionTools
@@ -22,5 +22,5 @@ export interface RemoteNaturalExecutionToolsOptions extends CommonExecutionTools
     /**
      * Your client ID
      */
-    readonly clientId: uuid;
+    readonly clientId: client_id;
 }
