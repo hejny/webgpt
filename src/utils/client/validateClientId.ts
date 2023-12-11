@@ -6,7 +6,7 @@ export function validateClientId(value: unknown): client_id {
         throw new Error(`Invalid clientId ${value}`);
     }
 
-    return value as client_id;
+    return value as any as client_id;
 }
 
 /**

@@ -13,8 +13,8 @@ import { isInAspectRatioRange } from '../../../utils/aspect-ratio/isInAspectRati
 import { createImageInWorker } from '../../../utils/image/createImageInWorker';
 import { measureImageBlob } from '../../../utils/image/measureImageBlob';
 import { resizeImageBlob } from '../../../utils/image/resizeImageBlob';
-import { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
-import { string_image_prompt, string_url_image } from '../../../utils/typeAliases';
+import type { IImageColorStats } from '../../../utils/image/utils/IImageColorStats';
+import type { client_id, string_image_prompt, string_url_image } from '../../../utils/typeAliases';
 import { imageGeneratorDialogue } from '../../dialogues/image-generator/imageGeneratorDialogue';
 
 interface CreateNewWallpaperImageRequest {
