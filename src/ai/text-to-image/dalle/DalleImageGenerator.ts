@@ -21,7 +21,7 @@ export class DalleImageGenerator implements ImageGenerator {
 
     public constructor(private readonly options: DalleImageGeneratorOptions) {
         if (!isRunningInNode()) {
-            throw new Error('DalleImageGenerator is available only in server/node, use RemoteImageGenerator instead');
+            throw new Error('DalleImageGenerator is available only on server/node, use RemoteImageGenerator instead');
         }
 
         this.openai = new OpenAI({

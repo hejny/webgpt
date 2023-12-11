@@ -30,6 +30,8 @@ export async function $provideClientId(options: IProvideClientIdOptions): Promis
 
     const clientId = $provideClientIdWithoutVerification();
 
+    // TODO: !!! Use isClientVerifiedForBrowser instead
+    // TODO: !!! Use propperly - send ONLY when user requests it
     const response = await fetch(
         `/api/client/is-client-verified?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
     );

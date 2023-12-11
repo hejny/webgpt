@@ -1,16 +1,26 @@
-import { client_id, string_email } from "../typeAliases";
+import { isRunningInNode } from '../isRunningInWhatever';
+import type { SendEmailToVerifyClientRequest, SendEmailToVerifyClientResult } from './sendEmailToVerifyClient.types';
 
 /**
- * sendEmailToVerifyClient @@@
+ * Function sendEmailToVerifyClient will generate a verification code, saves it into a DB and send it to the email
+ *
+ * Note: This function has version both for browser and server
  */
-export function $sendEmailToVerifyClient(clientId: client_id, email: string_email): boolean {
+export async function $sendEmailToVerifyClientForServer(
+    options: SendEmailToVerifyClientRequest,
+): Promise<SendEmailToVerifyClientResult> {
+    if (!isRunningInNode()) {
+        throw new Error(
+            'Function `$sendEmailToVerifyClient` can not be used in browser or worker, use browser version instead.',
+        );
+    }
+
     return value === 'Foo';
 }
 
 /**
- * TODO: !!! Split ForBrowser, ForServer
  * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
- * 
+ *
  * TODO: !!! Implement
  * TODO: !!!last Annotate
  * TODO: !!! Create DB view for jirka to be DB costs, feedbac etc visible for him

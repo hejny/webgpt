@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 import spaceTrim from 'spacetrim';
-import { $isClientVerified } from './isClientVerified';
+import { $isClientVerified } from './isClientVerifiedForServer';
 
 describe('how isClientVerified works', () => {
     it('should work with foo', () => {

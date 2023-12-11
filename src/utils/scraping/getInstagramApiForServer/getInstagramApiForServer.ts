@@ -15,13 +15,13 @@ let instagramApi: null | InstanceType<typeof InstagramApi> = null;
  * Get instagramApi which is used for scraping information from Instagram
  *
  * Note: The client is cached, so it's safe to call this function multiple times
- * Note: This function is available ONLY in server/node, use getSupabaseForClient in browser
+ * Note: This function is available ONLY on server/node, use getSupabaseForClient in browser
  *
  * @returns instance of supabase client
  */
 export async function getInstagramApiForServer(): Promise<InstanceType<typeof InstagramApi>> {
     if (!isRunningInNode()) {
-        throw new Error('InstagramApi is available only in server/node');
+        throw new Error('InstagramApi is available only on server/node');
     }
 
     if (instagramApi === null) {

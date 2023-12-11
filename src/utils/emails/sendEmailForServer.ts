@@ -8,7 +8,7 @@ import { Email } from './Email';
 /**
  * Send an email
  *
- * Note: This function is available ONLY in server/node
+ * Note: This function is available ONLY on server/node
  *
  * @returns instance of supabase client
  */

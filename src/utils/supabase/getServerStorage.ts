@@ -15,7 +15,7 @@ let serverStorage: IStorage<Json>;
  *
  * Note: The storage is internaly based on supabase
  * Note: The client is cached, so it's safe to call this function multiple times
- * Note: This function is available ONLY in server, use localStorage/sessionStorage in browser
+ * Note: This function is available ONLY on server, use localStorage/sessionStorage in browser
  *
  * @returns instance of supabase client
  */

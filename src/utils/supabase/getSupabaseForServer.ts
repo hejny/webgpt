@@ -14,13 +14,15 @@ let supabase: SupabaseClient<Database>;
  * Get supabase client
  *
  * Note: The client is cached, so it's safe to call this function multiple times
- * Note: This function is available ONLY in server/node, use getSupabaseForClient in browser
+ * Note: This function is available ONLY on server/node, use getSupabaseForClient in browser
  *
  * @returns instance of supabase client
  */
 export function getSupabaseForServer(): typeof supabase {
     if (!isRunningInNode()) {
-        throw new Error('Function `getSupabaseForServer` can not be used in browser, use `getSupabaseForBrowser` instead.');
+        throw new Error(
+            'Function `getSupabaseForServer` can not be used in browser, use `getSupabaseForBrowser` instead.',
+        );
     }
 
     if (!supabase) {
