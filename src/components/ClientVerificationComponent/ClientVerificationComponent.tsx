@@ -36,8 +36,6 @@ interface ClientVerificationComponentProps {
 export function ClientVerificationComponent(props: ClientVerificationComponentProps) {
     const { onVerificationSuccess, automaticVerification, className } = props;
 
-    console.log('!!!', { automaticVerification });
-
     const styles = useStyleModule(import('./ClientVerificationComponent.module.css'));
 
     const emailInputRef = useRef<HTMLInputElement>(null);
