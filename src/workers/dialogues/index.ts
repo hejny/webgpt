@@ -13,3 +13,7 @@ import { validateEmailDialogue } from './validate-email/validateEmailDialogue';
 export const supportDialogues: Array<
     DialogueFunction<any, any /* <- TODO: AbstractDialogueRequest, AbstractDialogueResponse */>
 > = [simpleTextDialogue, confirmDialogue, imageGeneratorDialogue, feedbackDialogue, validateEmailDialogue];
+
+/**
+ * TODO: !!!last Rename to validate -> verify
+ */
