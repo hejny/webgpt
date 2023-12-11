@@ -41,7 +41,7 @@ export async function sendEmailForServer(email: Email): Promise<void> {
     };
 
     console.info(
-        chalk.bgBlueBright(`Sending email\n\n`) +
+        chalk.bgBlueBright(`Sending email\n`) +
             chalk.blueBright(
                 spaceTrim(
                     (block) => `
