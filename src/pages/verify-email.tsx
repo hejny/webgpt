@@ -14,6 +14,7 @@ export default function VerifyEmailPage() {
     const code = router.query.code;
     const email = router.query.email;
     const clientId = router.query.clientId;
+    const ref = router.query.ref;
 
     const automaticVerification = useMemo<undefined | AutomaticVerification>(() => {
         if (!code && !email && !clientId) {
@@ -46,8 +47,9 @@ export default function VerifyEmailPage() {
 
             <ClientVerificationComponent
                 onVerificationSuccess={(verification: ClientEmailVerification) => {
-                    // TODO: !!! Do something
-                    // TODO: !!! Redirect to ?ref=... (if exists)
+                    if (ref) {
+                        router.push(ref as string);
+                    }
                 }}
                 {...{ automaticVerification }}
             />
@@ -56,6 +58,5 @@ export default function VerifyEmailPage() {
 }
 
 /**
- * TODO: !!! Integrate here ?code=...
  * TODO: !!! Design of the page
  */

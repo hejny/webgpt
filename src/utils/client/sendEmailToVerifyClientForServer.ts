@@ -69,7 +69,7 @@ export async function $sendEmailToVerifyClientForServer(
                 
                 ${NEXT_PUBLIC_URL.href}verify-email?code=${code}&email=${encodeURIComponent(
                 email,
-            )}&clientId=${encodeURIComponent(clientId)}
+            )}&clientId=${encodeURIComponent(clientId)}&ref=${encodeURIComponent('/')}
                 
                 ---
                 
