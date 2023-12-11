@@ -18,6 +18,7 @@ export async function $verifyEmailCodeForServer(options: VerifyEmailCodeRequest)
     const { clientId, email, code } = options;
 
     const { data: verificationRequests } = await getSupabaseForServer()
+        // TODO: [🍠] Put here some time limit
         .from('ClientEmailVerificationRequest')
         .select('id,createdAt,code,email')
         .eq('clientId', clientId)

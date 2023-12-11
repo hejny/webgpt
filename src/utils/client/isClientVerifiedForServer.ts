@@ -16,10 +16,32 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
 
     const { clientId } = options;
 
-    const { data: verificationRequests } = await getSupabaseForServer()
+    const { data: clientEmailVerifications } = await getSupabaseForServer()
         .from('ClientEmailVerification_withRequests')
-        .select('id')
+        .select('"1"')
         .eq('clientId', clientId);
+
+    if (clientEmailVerifications && clientEmailVerifications.length > 0) {
+        return {
+            status: 'VERIFIED',
+        };
+    }
+
+    const { data: clientEmailVerificationsRequests } = await getSupabaseForServer()
+        // TODO: [🍠] Put here some time limit
+        .from('ClientEmailVerificationRequest')
+        .select('"1"')
+        .eq('clientId', clientId);
+
+    if (clientEmailVerificationsRequests && clientEmailVerificationsRequests.length > 0) {
+        return {
+            status: 'EMAIL_SENT',
+        };
+    }
+
+    return {
+        status: 'NOT_VERIFIED',
+    };
 
     /*
     const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);

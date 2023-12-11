@@ -25,6 +25,9 @@ describe('how isClientVerified works', () => {
 });
 
 /**
+ * TODO: !!! pavol+not-verified@webgpt.cz
+ * TODO: !!! pavol+email-sent@webgpt.cz
+ * TODO: !!! pavol+verified@webgpt.cz
  * TODO: !!! Implement
  * TODO: !!!last Annotate
  */

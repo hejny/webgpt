@@ -1,8 +1,8 @@
-import { IsClientVerifiedResponse } from '../../pages/api/client/is-client-verified';
 import { validateEmailDialogue } from '../../workers/dialogues/validate-email/validateEmailDialogue';
 import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
 import { client_id, string_email } from '../typeAliases';
 import { isValidEmail } from '../validators/isValidEmail';
+import { $isClientVerifiedForBrowser } from './isClientVerifiedForBrowser';
 import { $provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
 /**
@@ -19,7 +19,11 @@ export interface IProvideClientIdOptions {
 }
 
 /**
- * Checks if clientId is in localStorage and verified OR generates new one and pops up the dialogue to verify email
+ * Provides verified clientId
+ *
+ * 1) If the `clientId` is not in localStorage, generates new one
+ * 2) If the `clientId` is in localStorage, checks if it is verified
+ * 3) If the is not verified, pops up the dialogue to verify email
  *
  * Note: This function is available only in browser
  *
@@ -30,14 +34,9 @@ export async function $provideClientId(options: IProvideClientIdOptions): Promis
 
     const clientId = $provideClientIdWithoutVerification();
 
-    // TODO: !!! Use isClientVerifiedForBrowser instead
-    // TODO: !!! Use propperly - send ONLY when user requests it
-    const response = await fetch(
-        `/api/client/is-client-verified?clientId=${/* <- TODO: [⛹️‍♂️] Send clientId through headers */ clientId}`,
-    );
-    const { isClientInserted /* [0],isClientVerified */ } = (await response.json()) as IsClientVerifiedResponse;
+    const { status } = await $isClientVerifiedForBrowser({ clientId });
 
-    if (isClientInserted) {
+    if (status === 'VERIFIED') {
         return clientId;
     }
 
