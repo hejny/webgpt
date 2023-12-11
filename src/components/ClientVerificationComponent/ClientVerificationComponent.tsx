@@ -1,9 +1,12 @@
 import { useCallback, useRef, useState } from 'react';
 import { classNames } from '../../utils/classNames';
+import { $backupClientEmail } from '../../utils/client/backupClientEmail';
 import { ClientEmailVerification } from '../../utils/client/ClientVerification';
+import { $provideClientEmail } from '../../utils/client/provideClientEmail';
 import { $provideClientIdWithoutVerification } from '../../utils/client/provideClientIdWithoutVerification';
 import { $sendEmailToVerifyClientForBrowser } from '../../utils/client/sendEmailToVerifyClientForBrowser';
 import { $verifyEmailCodeForBrowser } from '../../utils/client/verifyEmailCodeForBrowser';
+import { useInitialAction } from '../../utils/hooks/useInitialAction';
 import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import type { string_css_class, string_token } from '../../utils/typeAliases';
 import { VerificationCodeInput } from './VerificationCodeInput/VerificationCodeInput';
@@ -35,6 +38,7 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
 
     const handleSuccess = useCallback(
         (verification: ClientEmailVerification) => {
+            $backupClientEmail(verification.email);
             onVerificationSuccess(verification);
         },
         [onVerificationSuccess],
@@ -69,8 +73,6 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
             alert(sendEmailResult.message);
             setStatus('BEFORE');
         } else if (sendEmailResult.status === 'ALREADY_VERIFIED') {
-            // TODO: Better then alert
-            alert('You are already verified');
             setStatus('VERIFIED');
             handleSuccess({
                 clientId,
@@ -115,6 +117,20 @@ export function ClientVerificationComponent(props: ClientVerificationComponentPr
             }
         },
         [status, handleSuccess],
+    );
+
+    useInitialAction(
+        () => true,
+        () => {
+            const email = $provideClientEmail();
+
+            if (email === null) {
+                return;
+            }
+
+            emailInputRef.current!.value = email;
+            submitEmail();
+        },
     );
 
     return (

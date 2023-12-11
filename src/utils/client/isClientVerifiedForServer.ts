@@ -18,7 +18,9 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
 
     const { data: clientEmailVerifications } = await getSupabaseForServer()
         .from('ClientEmailVerification_withRequests')
-        .select('"1"')
+        .select(
+            'verificationRequestId' /* <- Note: This is not used BUT it needs to be set on some existing column to return some result not null */,
+        )
         .eq('clientId', clientId);
 
     if (clientEmailVerifications && clientEmailVerifications.length > 0) {
@@ -30,7 +32,9 @@ export async function $isClientVerifiedForServer(options: IsClientVerifiedReques
     const { data: clientEmailVerificationsRequests } = await getSupabaseForServer()
         // TODO: [🍠] Put here some time limit
         .from('ClientEmailVerificationRequest')
-        .select('"1"')
+        .select(
+            'verificationRequestId' /* <- Note: This is not used BUT it needs to be set on some existing column to return some result not null */,
+        )
         .eq('clientId', clientId);
 
     if (clientEmailVerificationsRequests && clientEmailVerificationsRequests.length > 0) {

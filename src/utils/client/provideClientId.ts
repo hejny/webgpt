@@ -1,7 +1,5 @@
 import { validateEmailDialogue } from '../../workers/dialogues/validate-email/validateEmailDialogue';
-import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
-import { client_id, string_email } from '../typeAliases';
-import { isValidEmail } from '../validators/isValidEmail';
+import { client_id } from '../typeAliases';
 import { $isClientVerifiedForBrowser } from './isClientVerifiedForBrowser';
 import { $provideClientIdWithoutVerification } from './provideClientIdWithoutVerification';
 
@@ -40,18 +38,12 @@ export async function $provideClientId(options: IProvideClientIdOptions): Promis
         return clientId;
     }
 
-    // TODO: !!! validateEmailDialogue
-    const { email, isEmailVerified } = await validateEmailDialogue({
+    await validateEmailDialogue({
         // [🍀] Maybe allow to pass default value for email
         isVerifiedEmailRequired,
     });
 
-    if (!isValidEmail(email)) {
-        throw new Error(`Invalid email`);
-    }
-
-    window.localStorage.setItem(`clientEmail`, email as string_email);
-    await getSupabaseForBrowser().from('Client').insert({ clientId, email });
+    // Note: Dialogue validateEmailDialogue will never resolve if email is not verified
 
     return clientId;
 }

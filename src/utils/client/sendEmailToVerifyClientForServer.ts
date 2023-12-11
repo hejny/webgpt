@@ -26,6 +26,13 @@ export async function $sendEmailToVerifyClientForServer(
 
     const { clientId, email } = options;
 
+    if (!isValidEmail(email)) {
+        return {
+            status: 'ERROR',
+            message: 'You have entered invalid email', // <- TODO: [🧠] Translations in server messages
+        };
+    }
+
     const { status: currentStatus } = await $isClientVerifiedForServer({
         clientId /* TODO: Check combination with email */,
     });
@@ -34,13 +41,6 @@ export async function $sendEmailToVerifyClientForServer(
     if (currentStatus === 'VERIFIED') {
         return {
             status: 'ALREADY_VERIFIED',
-        };
-    }
-
-    if (!isValidEmail(email)) {
-        return {
-            status: 'ERROR',
-            message: 'You have entered invalid email', // <- TODO: [🧠] Translations in server messages
         };
     }
 
