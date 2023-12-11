@@ -25,8 +25,8 @@
     },
     "test": {
         "scope": "typescript",
-        "prefix": "AI+TDD",
-        "description": "Test+Implementation ready to AI development",
+        "prefix": "Function with unit test",
+        "description": "Test+Implementation of one function ready to AI development",
         "body": [
             "import { describe, expect, it } from '@jest/globals';",
             "import spaceTrim from 'spacetrim';",
@@ -53,7 +53,10 @@
             "    });",
             "});",
             "",
-            "function $1(value: string): boolean {",
+            "/**",
+            "* $1 @@@",
+            "*/"
+            "export function $1(value: string): boolean {",
             "    return value === 'Foo';",
             "}",
             ""
