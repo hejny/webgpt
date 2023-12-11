@@ -1,7 +1,7 @@
-import { uuid } from '@promptbook/types';
 import { useMemo } from 'react';
 
 import { $provideClientId, IProvideClientIdOptions } from '../client/provideClientId';
+import { client_id } from '../typeAliases';
 import { usePromise } from './usePromise';
 import { useSsrDetection } from './useSsrDetection';
 
@@ -10,7 +10,7 @@ import { useSsrDetection } from './useSsrDetection';
  *
  * @returns clientId
  */
-export function useClientId(options: IProvideClientIdOptions): uuid | null {
+export function useClientId(options: IProvideClientIdOptions): client_id | null {
     const isServerRender = useSsrDetection();
 
     const { isVerifiedEmailRequired } = options;
