@@ -1,44 +1,21 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { getSupabaseForServer } from '../../../utils/supabase/getSupabaseForServer';
-import { isValidClientId } from '../../../utils/validators/isValidClientId';
-
-export interface IsClientVerifiedResponse {
-    // TODO: [🌋] ErrorableResponse
-
-    /**
-     * Is client inserted into the database
-     */
-    readonly isClientInserted: boolean;
-
-    /**
-     * Is client verified by email
-     */
-    readonly isClientVerified: boolean;
-}
+import type { IsClientVerifiedResult } from '../../../utils/client/isClientVerified.types';
+import { $isClientVerifiedForServer } from '../../../utils/client/isClientVerifiedForServer';
 
 export default async function isClientVerifiedHandler(
     request: NextApiRequest,
-    response: NextApiResponse<IsClientVerifiedResponse>,
+    response: NextApiResponse<IsClientVerifiedResult>,
 ) {
-    const clientId = request.query.clientId;
-
-    if (!isValidClientId(clientId)) {
-        return response.status(400).json(
-            {
-                message: 'GET param clientId is not valid client ID' /* <- TODO: [🌻] Unite wrong GET param message */,
-            } as any /* <-[🌋] */,
-        );
+    if (request.method !== 'POST') {
+        return response.status(400).json({ message: 'Only POST method is allowed' } as any);
     }
 
-    const selectResult = await getSupabaseForServer().from('Client').select('email').eq('clientId', clientId).limit(1);
+    const result = await $isClientVerifiedForServer(request.body);
 
-    if ((selectResult.data?.length || 0) > 0) {
-        return response
-            .status(200)
-            .json({ isClientInserted: true, isClientVerified: false } satisfies IsClientVerifiedResponse);
-    }
-
-    return response
-        .status(200)
-        .json({ isClientInserted: false, isClientVerified: false } satisfies IsClientVerifiedResponse);
+    return response.status(202).json(result);
 }
+
+/**
+ * TODO: [🌯] Create some system (simmilar to Workerify) which can create server functions exposed in client through API in some DRY way
+ * TODO: [🌯][🌋] Error handling
+ */

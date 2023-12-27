@@ -1,5 +1,5 @@
 import type { CommonExecutionToolsOptions, NaturalExecutionTools } from '@promptbook/types';
-import type { uuid } from '../../../utils/typeAliases';
+import { client_id } from '../../../utils/typeAliases';
 
 /**
  * Options for SupabaseLoggerWrapperOfNaturalExecutionTools
@@ -14,5 +14,5 @@ export interface SupabaseLoggerWrapperOfNaturalExecutionToolsOptions extends Com
     /**
      * Client responsible for the requests
      */
-    readonly clientId: uuid;
+    readonly clientId: client_id;
 }

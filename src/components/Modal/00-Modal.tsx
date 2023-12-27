@@ -5,7 +5,7 @@ import { string_css_class } from '../../utils/typeAliases';
 import { MarkdownContent } from '../Content/MarkdownContent';
 import { CloseModalLink } from './10-CloseModalLink';
 
-interface ModalProps {
+type ModalProps = {
     /**
      * Title of the modal
      */
@@ -22,28 +22,6 @@ interface ModalProps {
     readonly isDisabled?: boolean;
 
     /**
-     * Whether the modal can be closed by clicking on the overlay
-     *
-     * If `true` then you need to be in wallpaper page to close the modal
-     */
-    readonly isCloseable?: boolean;
-
-    /**
-     * The close icon
-     *
-     * @default "✖"
-     */
-    readonly closeIcon?: '✖' | '✔';
-
-    /**
-     * Callback which will be called when the modal is requested to be closed
-     *
-     * If NOT set it will use as default <CloseModalLink/>
-     * Warning: YOU SHOULD set it when you are using modal with isCloseable outside of wallpaper page
-     */
-    readonly onClose?: () => void;
-
-    /**
      * Size of the modal
      *
      * @default 'FULL'
@@ -54,13 +32,63 @@ interface ModalProps {
      * Optional CSS class name which will be added to content part of the modal
      */
     readonly className?: string_css_class;
-}
+} & (
+    | {
+          /**
+           * Whether the modal can be closed by clicking on the overlay
+           *
+           * If `false` then you need to be in wallpaper page to close the modal
+           */
+          readonly isCloseable?: false;
+      }
+    | {
+          /**
+           * Whether the modal can be closed by clicking on the overlay
+           *
+           * If `true` then you need to be in wallpaper page to close the modal
+           */
+          readonly isCloseable: true;
+
+          /**
+           * The close icon
+           *
+           * @default "✖"
+           */
+          readonly closeIcon?: '✖' | '✔';
+
+          /**
+           * Callback which will be called when the modal is requested to be closed
+           *
+           * If NOT set it will use as default <CloseModalLink/>
+           * Warning: YOU SHOULD set it when you are using modal with isCloseable outside of wallpaper page
+           */
+          readonly onClose?: () => void;
+      }
+);
+
+type MagicType<U> = UnionToIntersection<U> extends infer O ? { [K in keyof O]: O[K] } : never;
+
+type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (k: infer I) => void ? I : never;
 
 /**
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children, isDisabled, isCloseable, closeIcon = '✖', onClose, size = 'FULL', className } = props;
+    const {
+        title,
+        children,
+        isDisabled,
+        isCloseable,
+        closeIcon = '✖',
+        onClose,
+        size = 'FULL',
+        className,
+    } = {
+        closeIcon: undefined,
+        onClose: undefined,
+        // <- TODO: [🦪] Some helper type to be able to use discriminant union types with destructuring
+        ...props,
+    };
 
     const styles = useStyleModule(import('./00-Modal.module.css'));
 

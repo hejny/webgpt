@@ -2,7 +2,7 @@ import seedrandom from 'seedrandom';
 import { computeWallpaperDomainPart } from './computeWallpaperDomainPart';
 import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper } from './IWallpaper';
-import { randomString } from './randomString';
+import { $randomString } from './randomString';
 import { string_uriid } from './typeAliases';
 
 const URIID_VERSION = '2';
@@ -36,8 +36,8 @@ export function computeWallpaperUriid(
      */
     const wallpaperPart =
         URIID_VERSION +
-        randomString(1, 'abcdefghijklmnopqrstuvwxyz') +
-        randomString(10, 'abcdefghijklmnopqrstuvwxyz234567');
+        $randomString(1, 'abcdefghijklmnopqrstuvwxyz') +
+        $randomString(10, 'abcdefghijklmnopqrstuvwxyz234567');
 
     console.info('computeWallpaperUriid', {
         URIID_VERSION,

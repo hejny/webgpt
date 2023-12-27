@@ -2,7 +2,9 @@ import formidable from 'formidable';
 import { readFile } from 'fs/promises';
 import JSZip from 'jszip';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { PUBLISH_TO_GITHUB_ORGANIZATION } from '../../../config';
+import { APP_SIGNATURE, PUBLISH_TO_GITHUB_ORGANIZATION } from '../../../config';
+import { maxdown } from '../../components/Content/Maxdown/maxdown';
+import { sendEmailForServer } from '../../utils/emails/sendEmailForServer';
 import type { IFileToPublish } from '../../utils/publishing/github/interfaces/IFileToPublish';
 import { publishToRepository } from '../../utils/publishing/github/publishToRepository';
 import { string_url } from '../../utils/typeAliases';
@@ -71,6 +73,23 @@ export default async function publishWebsiteHandler(
                                                Maybe KEEP 1:1 with CNAME domain
             */
             files,
+        });
+
+        // TODO: !!! Check email to user with link to website
+
+        await sendEmailForServer({
+            to: 'me@pavolhejny.com',
+            subject: `⏣ Website ${CNAME} is published!`,
+
+            content:
+                // TODO: !!! Translations
+                maxdown`
+                    Your website [${CNAME}](https://${CNAME}/) was  successfully published by ${APP_SIGNATURE}!
+                    
+                    ---
+                    
+                    !!! add wait dislaimer to publish email !!!
+                `,
         });
 
         return response.status(201).json({

@@ -11,9 +11,9 @@ import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { useJsonStateInLocalstorage } from '../../utils/hooks/useJsonStateInLocalstorage';
 import { useStateInLocalstorage } from '../../utils/hooks/useStateInLocalstorage';
-import { provideClientId } from '../../utils/supabase/provideClientId';
 import type { string_name } from '../../utils/typeAliases';
 import { CodeEditor } from '../CodeEditor/CodeEditor';
 import { Select } from '../Select/Select';
@@ -88,7 +88,7 @@ export function PromptCook() {
                 const executor = createPtpExecutor({
                     ptp: PromptTemplatePipeline.fromSource(currentFile.ptbkSource),
                     tools: getExecutionTools(
-                        await provideClientId({
+                        await $provideClientId({
                             isVerifiedEmailRequired: true,
                         }),
                     ),

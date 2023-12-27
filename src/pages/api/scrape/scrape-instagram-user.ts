@@ -1,12 +1,12 @@
 import type { GraphqlUser } from 'insta-fetcher/dist/types';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import spaceTrim from 'spacetrim';
+import { isValidClientId } from '../../../utils/client/isValidClientId';
 import { explainError } from '../../../utils/extraMessage';
 import {
     getInstagramApiForServer,
     resetInstagramApiForServer,
 } from '../../../utils/scraping/getInstagramApiForServer/getInstagramApiForServer';
-import { isValidClientId } from '../../../utils/validators/isValidClientId';
 
 export interface ScrapeInstagramUserResponse {
     // TODO: [🌋] ErrorableResponse

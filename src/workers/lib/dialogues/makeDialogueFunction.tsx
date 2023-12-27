@@ -1,6 +1,6 @@
 import { forTime } from 'waitasecond';
 import { isRunningInWebWorker } from '../../../utils/isRunningInWhatever';
-import { randomUuid } from '../../../utils/randomUuid';
+import { $randomUuid } from '../../../utils/randomUuid';
 import type { IMessageDialogueRequest } from '../interfaces/IMessageDialogueRequest';
 import type { IMessageDialogueResponse } from '../interfaces/IMessageDialogueResponse';
 import type { IMessageMainToWorker } from '../interfaces/IMessageMainToWorker';
@@ -25,7 +25,7 @@ export function makeDialogueFunction<
     const { dialogueTypeName } = DialogueComponent;
 
     const dialogueFunction = async (request: TRequest): Promise<TResponse> => {
-        const id = randomUuid();
+        const id = $randomUuid();
 
         if (isRunningInWebWorker()) {
             // [🌴]

@@ -12,7 +12,7 @@ import { forTime } from 'waitasecond';
 import { FONTS, OPENAI_API_KEY } from '../../config';
 import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
-import { randomItem } from '../../src/utils/randomItem';
+import { $randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
@@ -142,7 +142,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             /**/
 
             /**/
-            const font = randomItem(...FONTS.filter(({ isSpecial }) => !isSpecial)).fontFamily;
+            const font = $randomItem(...FONTS.filter(({ isSpecial }) => !isSpecial)).fontFamily;
             /**/
 
             await writeFile(
@@ -198,7 +198,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
  * @deprecated [👸]  use exported version in src/ai/text-to-text/prompt-templates/createContentPromptTemplate.ts
  */
 function createContentPromptTemplate() {
-    return randomItem(
+    return $randomItem(
         `
             Write me content for website with wallpaper which alt text is:
 

@@ -1,7 +1,7 @@
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
+import { $provideClientId } from '../client/provideClientId';
 import { getSupabaseForBrowser } from '../supabase/getSupabaseForBrowser';
-import { provideClientId } from '../supabase/provideClientId';
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useStateInLocalstorage } from './useStateInLocalstorage';
 
@@ -30,7 +30,7 @@ export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: 
             .insert({
                 wallpaperId,
                 likedStatus,
-                author: await provideClientId({
+                author: await $provideClientId({
                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
                 }),
             });

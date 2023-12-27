@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { FONTS } from '../../../config';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import { randomItem } from '../../utils/randomItem';
+import { $randomItem } from '../../utils/randomItem';
 import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { ImportFonts } from '../ImportFonts/ImportFonts';
 
@@ -11,7 +11,7 @@ import { ImportFonts } from '../ImportFonts/ImportFonts';
 export function CopilotPanelChangeFont() {
     const [wallpaper, modifyWallpaper] = useCurrentWallpaper();
     const randomFont = useMemo(
-        () => randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
+        () => $randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
         // Note: Wallpaper is dependency because we want to offer new font after each change of the font
         /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaper],

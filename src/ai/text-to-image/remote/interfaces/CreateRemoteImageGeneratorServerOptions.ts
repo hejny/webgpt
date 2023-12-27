@@ -1,4 +1,5 @@
-import type { CommonExecutionToolsOptions, string_uri, uuid } from '@promptbook/types';
+import type { CommonExecutionToolsOptions, string_uri } from '@promptbook/types';
+import { client_id } from '../../../../utils/typeAliases';
 import type { ImageGenerator } from '../../0-interfaces/ImageGenerator';
 
 export interface CreateRemoteImageGeneratorServerOptions extends CommonExecutionToolsOptions {
@@ -18,5 +19,5 @@ export interface CreateRemoteImageGeneratorServerOptions extends CommonExecution
     /**
      * Provides an image generator for a given client
      */
-    createImageGenerator(clientId: uuid): ImageGenerator;
+    createImageGenerator(clientId: client_id): ImageGenerator;
 }

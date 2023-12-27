@@ -5,7 +5,7 @@ import { exportAsHtml } from '../../export/exportAsHtml';
 import { HtmlExportFile } from '../../export/HtmlExportFile';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { usePromise } from '../../utils/hooks/usePromise';
-import { randomUuid } from '../../utils/randomUuid';
+import { $randomUuid } from '../../utils/randomUuid';
 import { string_javascript, string_uri } from '../../utils/typeAliases';
 import { DeviceIframe } from '../DeviceIframe/DeviceIframe';
 import { Modal } from '../Modal/00-Modal';
@@ -72,7 +72,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
         }
 
         // 2️⃣ Linking pages to each other and making ObjectUrls
-        const broadcastChannelId = randomUuid();
+        const broadcastChannelId = $randomUuid();
         for (const file of pageFiles) {
             if (typeof file.content !== 'string') {
                 throw new Error(`Unexpected file.content !== 'string' for file ${file.pathname}`);

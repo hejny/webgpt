@@ -3,6 +3,7 @@ import { confirmDialogue } from './confirm/confirmDialogue';
 import { feedbackDialogue } from './feedback/feedbackDialogue';
 import { imageGeneratorDialogue } from './image-generator/imageGeneratorDialogue';
 import { simpleTextDialogue } from './simple-text/simpleTextDialogue';
+import { validateEmailDialogue } from './validate-email/validateEmailDialogue';
 
 /**
  * All dialogues that are used in WebGPT app
@@ -11,4 +12,8 @@ import { simpleTextDialogue } from './simple-text/simpleTextDialogue';
  */
 export const supportDialogues: Array<
     DialogueFunction<any, any /* <- TODO: AbstractDialogueRequest, AbstractDialogueResponse */>
-> = [simpleTextDialogue, confirmDialogue, imageGeneratorDialogue, feedbackDialogue];
+> = [simpleTextDialogue, confirmDialogue, imageGeneratorDialogue, feedbackDialogue, validateEmailDialogue];
+
+/**
+ * TODO: !!!last Rename to validate -> verify
+ */

@@ -3,7 +3,7 @@ import { Vector } from 'xyzt';
 import { Json } from '../utils/supabase/types';
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
-import { string_maxdown, string_midjourney_prompt, string_url, string_wallpaper_id, title, uuid } from './typeAliases';
+import { client_id, string_maxdown, string_midjourney_prompt, string_url, string_wallpaper_id, title } from './typeAliases';
 
 export interface IWallpaper {
     /**
@@ -27,7 +27,7 @@ export interface IWallpaper {
      * - If user edit and save public wallpaper, he becomes the author of the derived version
      *   Information about the original author is stored in parent
      */
-    readonly author: uuid;
+    readonly author: client_id;
 
     /**
      * Is the wallpaper public or private

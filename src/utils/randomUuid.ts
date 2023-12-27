@@ -6,6 +6,6 @@ import { uuid } from './typeAliases';
  *
  * @returns uuid branded type
  */
-export function randomUuid(): uuid {
+export function $randomUuid(): uuid {
     return v4() as uuid;
 }

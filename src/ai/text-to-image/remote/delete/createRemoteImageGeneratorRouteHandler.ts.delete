@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { uuid } from '../../../utils/typeAliases';
+import type { client_id } from '../../../utils/typeAliases';
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 import type { ImageGenerator } from '../0-interfaces/ImageGenerator';
 import type { ImagePrompt } from '../0-interfaces/ImagePrompt';
@@ -14,7 +14,7 @@ interface CreateRemoteImageGeneratorRouteHandlerOptions {
     /**
      * Provides an image generator for a given client
      */
-    createImageGenerator(clientId: uuid): ImageGenerator;
+    createImageGenerator(clientId: client_id): ImageGenerator;
 }
 
 /**

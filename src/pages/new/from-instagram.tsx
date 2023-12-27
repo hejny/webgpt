@@ -14,12 +14,12 @@ import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptT
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { normalizeInstagramName } from '../../utils/normalizeInstagramName';
-import { randomItem } from '../../utils/randomItem';
+import { $randomItem } from '../../utils/randomItem';
 import { fetchImage } from '../../utils/scraping/fetchImage';
-import { shuffleItems } from '../../utils/shuffleItems';
-import { provideClientId } from '../../utils/supabase/provideClientId';
+import { $shuffleItems } from '../../utils/shuffleItems';
 import { string_business_category_name } from '../../utils/typeAliases';
 import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
@@ -31,7 +31,7 @@ export default function NewWallpaperFromInstagramPage() {
     const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
-    const placeholders = useMemo(() => shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
+    const placeholders = useMemo(() => $shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
 
     return (
         <>
@@ -85,7 +85,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     const reponse = await fetch(
                                         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
                                         `/api/scrape/scrape-instagram-user?clientId=${
-                                            /* <- TODO: [⛹️‍♂️] Send clientId through headers */ await provideClientId({
+                                            /* <- TODO: [⛹️‍♂️] Send clientId through headers */ await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             })
                                         }&instagramName=${encodeURIComponent(instagramName)}`,
@@ -112,7 +112,7 @@ export default function NewWallpaperFromInstagramPage() {
                                     });
 
                                     // TODO:> const logoImageRaw = await fetchImage(instagramUser.profile_pic_url_hd);
-                                    const randomTimelinePost = randomItem(
+                                    const randomTimelinePost = $randomItem(
                                         ...instagramUser.edge_owner_to_timeline_media.edges,
                                     ).node;
                                     const randomTimelineImage = await fetchImage(randomTimelinePost.display_url);
@@ -131,7 +131,7 @@ export default function NewWallpaperFromInstagramPage() {
                                         {
                                             locale,
                                             title,
-                                            author: await provideClientId({
+                                            author: await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,

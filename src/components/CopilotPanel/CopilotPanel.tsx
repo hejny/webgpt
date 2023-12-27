@@ -9,6 +9,7 @@ import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
 import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
@@ -16,10 +17,9 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
-import { randomItem } from '../../utils/randomItem';
-import { shuffleItems } from '../../utils/shuffleItems';
+import { $randomItem } from '../../utils/randomItem';
+import { $shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { provideClientId } from '../../utils/supabase/provideClientId';
 import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
 import { FeedbackButton } from '../FeedbackButton/FeedbackButton';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
@@ -45,10 +45,10 @@ export function CopilotPanel() {
     const [runningPrompt, setRunningPrompt] = useState<null | string_prompt>(null);
     const [isMenuOpen, setMenuOpen] = useState(false); /* <- TODO: useToggle */
     const inputRef = useRef<HTMLInputElement | null>(null);
-    const placeholders = useMemo(() => shuffleItems(...COPILOT_PLACEHOLDERS), []);
+    const placeholders = useMemo(() => $shuffleItems(...COPILOT_PLACEHOLDERS), []);
     const placeholder = useRotatingPlaceholder(...placeholders);
     const randomFont = useMemo(
-        () => randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
+        () => $randomItem(...FONTS) /* <- TODO: [🧠][🔠] Some better heurictic than pure random */,
         // Note: Wallpaper is dependency because we want to offer new font after each change of the font
         /* eslint-disable-next-line react-hooks/exhaustive-deps */
         [wallpaper],
@@ -112,7 +112,7 @@ export function CopilotPanel() {
                     locale
                 ] /* <- TODO: !! Deal here with locale better - detect from content NOT app */,
                 getExecutionTools(
-                    await provideClientId({
+                    await $provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                     }),
                 ),
@@ -257,7 +257,7 @@ export function CopilotPanel() {
                                             wallpaperId: wallpaper.id,
                                             //         <-TODO: [💹] Use here some wallpaper UUID that will be valid before saving (=split UUID AND UriID)
                                             likedStatus: feedback.likedStatus,
-                                            author: await provideClientId({
+                                            author: await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
                                             }),
                                             note: feedback.note,
@@ -351,7 +351,7 @@ export function CopilotPanel() {
                             <li className={styles.extraFeatured}>
                                 <button
                                     onClick={async () => {
-                                        const clientId = await provideClientId({
+                                        const clientId = await $provideClientId({
                                             isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
                                         });
                                         const newWallpaper = modifyWallpaper((modifiedWallpaper) => {

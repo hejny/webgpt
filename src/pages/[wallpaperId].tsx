@@ -8,6 +8,7 @@ import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { WallpaperEditing } from '../components/WallpaperEditing/WallpaperEditing';
 import { WallpaperEditingLink } from '../components/WallpaperEditing/WallpaperEditingLink';
 import { WallpaperLayout } from '../components/WallpaperLayout/WallpaperLayout';
+import { validateClientId } from '../utils/client/validateClientId';
 import { useRole } from '../utils/hooks/useRole';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapersCached } from '../utils/hydrateWallpapersCached';
@@ -97,7 +98,7 @@ export async function getStaticProps({
         currentWallpaper = {
             ...selectResult.data[0]!,
             content: validateMaxdown(selectResult.data[0]!.content),
-            author: validateUuid(selectResult.data[0]!.author),
+            author: validateClientId(selectResult.data[0]!.author),
             naturalSize: selectResult.data[0]!.naturalSize as {
                 x: number;
                 y: number;

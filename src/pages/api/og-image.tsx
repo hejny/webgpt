@@ -26,7 +26,7 @@ export default async function ogImageHandler(
 
     const wallpaper = {
         ...selectResult.data[0],
-        author: validateUuid(selectResult.data[0].author),
+        author: validateClientId(selectResult.data[0].author),
     };
     /**/
 

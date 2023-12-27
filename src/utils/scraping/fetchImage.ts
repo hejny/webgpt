@@ -1,6 +1,6 @@
 import { IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
+import { $provideClientId } from '../client/provideClientId';
 import { isRunningInBrowser } from '../isRunningInWhatever';
-import { provideClientId } from '../supabase/provideClientId';
 import { string_url_image } from '../typeAliases';
 
 /**
@@ -20,7 +20,7 @@ export async function fetchImage(imageUrl: string_url_image): Promise<Blob> {
         `/api/scrape/scrape-image?clientId=${
             /* <- TODO: [⛹️‍♂️] Send clientId through headers */
 
-            await provideClientId({
+            await $provideClientId({
                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE, // <- TODO: Is it OK to assume create stage
             })
         }`,

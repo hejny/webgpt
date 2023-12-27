@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useMemo } from 'react';
 import { classNames } from '../../../utils/classNames';
-import { checkDomain } from '../../../utils/domains/checkDomain';
+import { $checkDomain } from '../../../utils/domains/checkDomain';
 import { usePromise } from '../../../utils/hooks/usePromise';
 import { string_css_class, string_domain } from '../../../utils/typeAliases';
 import styles from './DomainStatusText.module.css';
@@ -39,7 +39,7 @@ interface DomainStatusTextProps {
 export function DomainStatusText(props: DomainStatusTextProps) {
     const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
 
-    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain]);
+    const domainStatusPromise = useMemo(() => /* not await */ $checkDomain(domain), [domain]);
     let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
 
     if (domainStatus === 'LIMIT' && !isShownExceededLimit) {

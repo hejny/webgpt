@@ -2,10 +2,10 @@ import spaceTrim from 'spacetrim';
 import { IS_VERIFIED_EMAIL_REQUIRED, NEXT_PUBLIC_URL } from '../../../config';
 import { exportAsZip } from '../../export/exportAsZip';
 import { PublishWebsiteResponse } from '../../pages/api/publish';
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { isValidDomain } from '../../utils/domains/isValidDomain';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
-import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_domain, string_email } from '../../utils/typeAliases';
 import { isValidEmail } from '../../utils/validators/isValidEmail';
 
@@ -56,7 +56,7 @@ export async function publishWebsite(options: PublishWebsiteOptions) {
                 wallpaperId: wallpaper.id,
                 url: publicUrl.href,
                 ownerEmail: email,
-                author: await provideClientId({
+                author: await $provideClientId({
                     isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.PUBLISH,
                 }),
             },

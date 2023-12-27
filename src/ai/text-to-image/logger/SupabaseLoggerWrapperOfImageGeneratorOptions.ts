@@ -1,5 +1,5 @@
 import type { CommonExecutionToolsOptions } from '@promptbook/types';
-import type { uuid } from '../../../utils/typeAliases';
+import type { client_id } from '../../../utils/typeAliases';
 import { ImageGenerator } from '../0-interfaces/ImageGenerator';
 
 /**
@@ -15,5 +15,5 @@ export interface SupabaseLoggerWrapperOfImageGeneratorOptions extends CommonExec
     /**
      * Client responsible for the requests
      */
-    readonly clientId: uuid;
+    readonly clientId: client_id;
 }

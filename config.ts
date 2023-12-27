@@ -3,28 +3,17 @@ import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DallePrompt';
+import { maxdown } from './src/components/Content/Maxdown/maxdown';
 import { FULLHD } from './src/constants';
 import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
+import { validateClientId } from './src/utils/client/validateClientId';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
 import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
-import { string_email, string_font_family } from './src/utils/typeAliases';
+import type { string_email, string_font_family, string_maxdown } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
-import { validateUuid } from './src/utils/validators/validateUuid';
-
-export const APP_VERSION = packageJson.version;
-export const APP_NAME = 'WebGPT';
-export const ADMIN_EMAIL: string_email = 'pavol@webgpt.cz';
-
-export const USE_DALLE_VERSION: 2 | 3 = 3;
-
-export const USE_DALLE_MODEL_SETTINGS: DallePrompt['modelSettings'] = {
-    style: 'vivid',
-    quality: `standard`,
-    // <- TODO: !! Play with theeese to achieve best results
-};
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -40,6 +29,20 @@ const config = ConfigChecker.from({
 });
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
+
+export const APP_VERSION = packageJson.version;
+export const APP_NAME = 'WebGPT';
+export const ADMIN_EMAIL: string_email = 'pavol@webgpt.cz';
+export const APP_SIGNATURE: string_maxdown = maxdown`[⏣ ${APP_NAME}](${NEXT_PUBLIC_URL.href})`;
+
+export const USE_DALLE_VERSION: 2 | 3 = 3;
+
+export const USE_DALLE_MODEL_SETTINGS: DallePrompt['modelSettings'] = {
+    style: 'vivid',
+    quality: `standard`,
+    // <- TODO: !! Play with theeese to achieve best results
+};
+
 export const NEXT_PUBLIC_PROMPTBOOK_SERVER_URL = config.get('NEXT_PUBLIC_PROMPTBOOK_SERVER_URL').url().required().value;
 export const NEXT_PUBLIC_IMAGE_SERVER_URL = config.get('NEXT_PUBLIC_IMAGE_SERVER_URL').url().required().value;
 
@@ -122,6 +125,8 @@ export const LIMIT_WALLPAPERS_EXCLUDE = config.get('LIMIT_WALLPAPERS_EXCLUDE').l
 // export const WELCOME_WALLPAPERS = config.get('WELCOME_WALLPAPERS').list().default([]).value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
+
+export const SENDGRID_API_KEY = config.get('SENDGRID_API_KEY').value;
 
 export const AZURE_COMPUTER_VISION_ENDPOINT = config.get('AZURE_COMPUTER_VISION_ENDPOINT').url().value;
 export const AZURE_COMPUTER_VISION_KEY = config.get('AZURE_COMPUTER_VISION_KEY').value;
@@ -1046,7 +1051,7 @@ export const TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO = 0.5; /* <- As a ra
  */
 export const PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of distance between white and black */
 
-export const SYSTEM_AUTHOR_ID = validateUuid('000d2940-4a35-4859-83a8-3c754ea5df51');
+export const SYSTEM_AUTHOR_ID = validateClientId('000d2940-4a35-4859-83a8-3c754ea5df51');
 
 // TODO: [🧠] How to do required only on server
 export const CDN_BUCKET = config.get('CDN_BUCKET') /*.required([📐])*/.value;

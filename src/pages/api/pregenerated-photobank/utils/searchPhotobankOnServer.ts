@@ -1,6 +1,6 @@
 import { string_keyword } from 'n12';
 import { OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH } from '../../../../../config';
-import { randomMaxItems } from '../../../../utils/randomMaxItems';
+import { $randomMaxItems } from '../../../../utils/randomMaxItems';
 import { getSupabaseForServer } from '../../../../utils/supabase/getSupabaseForServer';
 import { string_url_image } from '../../../../utils/typeAliases';
 
@@ -71,7 +71,7 @@ export async function searchPhotobankOnServer(
     if (images.length === imagesExactCount) {
         return images;
     } else if (images.length > imagesExactCount) {
-        return randomMaxItems(imagesExactCount, ...images);
+        return $randomMaxItems(imagesExactCount, ...images);
     } else if (images.length < imagesExactCount) {
         if (keywords.length <= 1 || _attemptCount > OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH) {
             // TODO: !! Ensure uniqueness in Wallpaper_random
@@ -85,7 +85,7 @@ export async function searchPhotobankOnServer(
         }
 
         // TODO: [🧠] Figure out some better way to reduce keywords
-        const reducedKeywords = randomMaxItems(
+        const reducedKeywords = $randomMaxItems(
             Math.ceil(keywords.length - keywords.length / OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH),
             ...keywords,
         );

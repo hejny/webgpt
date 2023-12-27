@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { isValidClientId } from '../../../utils/client/isValidClientId';
 import { string_url } from '../../../utils/typeAliases';
 import { isUrlOnPrivateNetwork } from '../../../utils/validators/isUrlOnPrivateNetwork';
-import { isValidClientId } from '../../../utils/validators/isValidClientId';
 import { isValidUrl } from '../../../utils/validators/isValidUrl';
 
 export const config = {

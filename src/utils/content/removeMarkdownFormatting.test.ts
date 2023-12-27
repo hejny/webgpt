@@ -52,7 +52,7 @@ describe('removeMarkdownFormatting', () => {
     });
 
     /*
-    TODO:
+    TODO: !!!
     it('should convert headings to texts', () => {
         const str = spaceTrim(`
             # Heading 1

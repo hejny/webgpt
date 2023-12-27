@@ -7,7 +7,7 @@ import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../conf
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
 import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
 import { Database } from '../../utils/supabase/types';
-import { uuid } from '../../utils/typeAliases';
+import { client_id } from '../../utils/typeAliases';
 import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 
 /**
@@ -27,7 +27,7 @@ let executionTools: ExecutionTools;
  *
  * @returns ExecutionTools
  */
-export function getExecutionTools(clientId: uuid): ExecutionTools {
+export function getExecutionTools(clientId: client_id): ExecutionTools {
     if (!isRunningInWebWorker() && !isRunningInBrowser()) {
         throw new Error('This function is available ONLY in browser or worker');
     }

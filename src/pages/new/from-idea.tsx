@@ -14,9 +14,9 @@ import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptT
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { $provideClientId } from '../../utils/client/provideClientId';
 import { useLocale } from '../../utils/hooks/useLocale';
-import { shuffleItems } from '../../utils/shuffleItems';
-import { provideClientId } from '../../utils/supabase/provideClientId';
+import { $shuffleItems } from '../../utils/shuffleItems';
 import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 
 export default function NewWallpaperFromIdeaPage() {
@@ -28,7 +28,7 @@ export default function NewWallpaperFromIdeaPage() {
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
     const placeholders = useMemo(
         () =>
-            shuffleItems(
+            $shuffleItems(
                 ...{ en: ['Restaurant', 'Personal website', 'Café'], cs: ['Restaurace', 'Osobní web', 'Kavárna'] }[
                     locale
                 ],
@@ -77,7 +77,7 @@ export default function NewWallpaperFromIdeaPage() {
                                         {
                                             locale,
                                             idea,
-                                            author: await provideClientId({
+                                            author: await $provideClientId({
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                         },

@@ -4,7 +4,7 @@ import { string_maxdown } from '../../../utils/typeAliases';
  * Validate maxdown content
  *
  * If content is not a valid maxdown, throws an error
- * If content is a valid maxdown,
+ * If content is a valid maxdown, returnes it
  */
 export function validateMaxdown(content: unknown): string_maxdown {
     if (typeof content !== 'string') {
@@ -13,6 +13,9 @@ export function validateMaxdown(content: unknown): string_maxdown {
 
     return content as string_maxdown;
 }
+
+
+
 
 /**
  * TODO: !! Do here a real validation / sanitization

@@ -10,14 +10,10 @@
 -   [ ] When importing type USE always `import type { ... } from '...'` automatically
         Search & replace `import\s+(\{.*\/interfaces\/)` -> `import type $1` works
 -   [ ] Script for auto-generating fresh unused tags with emojis [👩‍🦱][👩‍🦲][👳‍♂️]
-
 -   [ ] Go through all .push(...) and decide to change to [...x,y] where better
-
 -   [ ] Do not use useEffect sooo often https://youtu.be/bGzanfKVFeU?si=CSebLURTV3RKqOsn
-
-
-
-p
+-   [ ] Mark all non-pure functions/classes with $ prefix _(half done but need to go through code and do it for all)_
+        [ ] Explain all the point why the function is not pure
 
 ## Misc
 

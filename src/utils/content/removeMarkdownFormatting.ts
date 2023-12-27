@@ -18,3 +18,5 @@ export function removeMarkdownFormatting(str: string_markdown_text): string {
 
     return str;
 }
+
+
