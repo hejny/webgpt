@@ -5,8 +5,8 @@ import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
 import { provideClientEmail } from '../../utils/supabase/provideClientEmail';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
+import { MarkdownContent } from '../Content/MarkdownContent';
 import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/00-Modal';
 import { PricingPlan, PricingPlans } from '../PricingTable/plans';
 import { Select } from '../Select/Select';
@@ -200,7 +200,7 @@ export function ExportModal() {
                         className={classNames('button', styles.getTheWeb)}
                         disabled={isExporting}
                         style={{
-                            background: `url(${wallpaper.src})`,
+                            backgroundImage: `url(${wallpaper.src})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
@@ -227,4 +227,5 @@ export function ExportModal() {
 /**
  * TODO: Registration should return some token which will be put into export
  * TODO: Each build should have unique id + build metadata (like date, WebGPT version, etc.)
+ * TODO: [📙] Every dictionary should look like LikedStatus
  */

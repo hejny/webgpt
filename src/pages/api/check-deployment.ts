@@ -29,7 +29,7 @@ export default async function checkDeploymentHandler(
     if (typeof domain !== 'string') {
         return response.status(400).json(
             {
-                message: `You need to specify a domain in the query.`,
+                message: `You need to specify a "domain" in the query.`,
             } as any /* <- TODO: Type helper ResponseWithError<T> */,
         );
     }

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
+import { useStyleModule } from '../../utils/hooks/useStyleModule';
 import { string_css_class } from '../../utils/typeAliases';
-import styles from './Select.module.css';
 
 interface SelectProps<TValue extends string | number | symbol> {
     label?: string;
@@ -10,7 +10,7 @@ interface SelectProps<TValue extends string | number | symbol> {
     visibleButtons: number;
     options: Record<TValue, string | ReactNode>;
 
-        /**
+    /**
      * Optional CSS class name which will be added to root element
      */
     className?: string_css_class;
@@ -22,6 +22,8 @@ interface SelectProps<TValue extends string | number | symbol> {
  */
 export function Select<TValue extends string | number | symbol>(props: SelectProps<TValue>) {
     const { label, value, onChange, visibleButtons, className, isDisabled } = props;
+
+    const styles = useStyleModule(import('./Select.module.css'));
 
     const options: Array<{ id: TValue; label: string | ReactNode }> = Object.entries(props.options).map(
         ([id, label]) => ({
@@ -81,5 +83,6 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 }
 
 /**
+ * TODO: !! Chenge options to array {title, value}
  * TODO: Maybe use instead some unstyled components library @see https://headlessui.com/
  */

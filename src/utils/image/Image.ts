@@ -1,7 +1,7 @@
 import spaceTrim from 'spacetrim';
 import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
-import { WithTake } from '../take/interfaces/ITakeChain';
+import type { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
 import { IImage } from './IImage';
 import { checkSizeValue } from './internal-utils/checkSizeValue';
@@ -25,7 +25,7 @@ export class Image implements IImage {
      * @param size The size of the image as an IVector object
      * @param color The initial color of the image (default: transparent black)
      */
-    constructor(size: IVector, defaultColor: WithTake<Color> = Color.fromHex('#00000000')) {
+    public constructor(size: IVector, defaultColor: WithTake<Color> = Color.fromHex('#00000000')) {
         this.size = Vector.fromObject(size);
 
         checkSizeValue('width', this.size.x);

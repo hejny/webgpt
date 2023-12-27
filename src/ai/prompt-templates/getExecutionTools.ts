@@ -1,12 +1,14 @@
 import { CallbackInterfaceTools } from '@promptbook/core';
 import { JavascriptEvalExecutionTools } from '@promptbook/execute-javascript';
 import { RemoteNaturalExecutionTools } from '@promptbook/remote-client';
-import { ExecutionTools } from '@promptbook/types';
+import type { ExecutionTools } from '@promptbook/types';
 import spaceTrim from 'spacetrim';
 import { IS_DEVELOPMENT, NEXT_PUBLIC_PROMPTBOOK_SERVER_URL } from '../../../config';
-import { promptDialogue } from '../../components/Dialogues/dialogues/promptDialogue';
 import { isRunningInBrowser, isRunningInWebWorker } from '../../utils/isRunningInWhatever';
+import { getSupabaseForWorker } from '../../utils/supabase/getSupabaseForWorker';
+import { Database } from '../../utils/supabase/types';
 import { uuid } from '../../utils/typeAliases';
+import { simpleTextDialogue } from '../../workers/dialogues/simple-text/simpleTextDialogue';
 
 /**
  * Theese are tools for PTP execution
@@ -37,10 +39,15 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
             natural: new RemoteNaturalExecutionTools({
                 isVerbose,
                 remoteUrl: NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
+                path: '/promptbook/socket.io',
                 clientId,
             }),
             script: [
-                new JavascriptEvalExecutionTools(/* <- TODO: !! Change to JavascriptExecutionTools */ { isVerbose }),
+                new JavascriptEvalExecutionTools(
+                    /* <- TODO: !! Change to JavascriptExecutionTools */ {
+                        isVerbose: false /* <- Note: Only natural execution tools should be verbose */,
+                    },
+                ),
             ],
             userInterface: new CallbackInterfaceTools({
                 isVerbose,
@@ -50,10 +57,43 @@ export function getExecutionTools(clientId: uuid): ExecutionTools {
 
                     // TODO: Configure how many retries
                     for (let i = 0; i < 3; i++) {
-                        answer = await promptDialogue({
+                        const response = await simpleTextDialogue({
                             ...options,
-                            prompt: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
+                            message: i === 0 ? options.prompt : options.prompt + ` (You need to put answer)`,
+
+                            // TODO: !! isRequired instead of `for (let i = 0; i < 3; i++) {`
+                            isFeedbackCollected: true,
                         });
+
+                        // TODO: [🧠][👨‍⚕️] The problem with feedback returned together with answer is that when user cancels the dialogue, the feedback is not recorded
+
+                        const feedbackInsertData: Database['public']['Tables']['PromptbookFeedback']['Insert'] = {
+                            clientId,
+                            likedStatus: null,
+                            defaultValue: options.defaultValue,
+                            value: response.answer,
+                            note: null,
+
+                            // <- TODO: [📉] There should be link to ptbkUrl which created  the defaultValue
+                            // <- TODO: [💹] There should be link/id/reference to wallpaper which is the dialogue for
+                            // <- TODO: [💹] There should be link/id/reference to PromptExecution which created the defaultValue
+                        };
+
+                        if (response.feedback) {
+                            feedbackInsertData.likedStatus = response.feedback.likedStatus;
+                            feedbackInsertData.note = response.feedback.note;
+                        }
+
+                        // Note: We do not want to wait for the insert to the database
+                        /* not await */ getSupabaseForWorker()
+                            .from('PromptbookFeedback')
+                            .insert(feedbackInsertData)
+                            .then((insertResult) => {
+                                // TODO: !! Util isInsertSuccessfull (status===201)
+                                console.info('Feedback insert', { insertResult });
+                            });
+
+                        answer = response.answer;
 
                         if (answer !== null && spaceTrim(answer) !== '') {
                             break;

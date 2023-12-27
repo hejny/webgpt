@@ -139,6 +139,45 @@ describe('changeFontsInContent', () => {
         );
     });
 
+    it('should change font without being confused by quotes', () => {
+        expect(
+            changeFontsInContent(
+                spaceTrim(`
+                    <!--font:"Roboto"-->
+                
+                    Hello **fonts**!
+                `),
+                'Inter',
+            ),
+        ).toEqual(
+            just(
+                spaceTrim(`
+                    <!--font:"Inter"-->
+
+                    Hello **fonts**!
+                `),
+            ),
+        );
+        expect(
+            changeFontsInContent(
+                spaceTrim(`
+                    <!--font:'Roboto'-->
+                
+                    Hello **fonts**!
+                `),
+                'Inter',
+            ),
+        ).toEqual(
+            just(
+                spaceTrim(`
+                    <!--font:'Inter'-->
+
+                    Hello **fonts**!
+                `),
+            ),
+        );
+    });
+
     /*
     TODO:
     it('should extract font from real html content', () => {

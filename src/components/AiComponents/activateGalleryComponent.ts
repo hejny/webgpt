@@ -1,6 +1,9 @@
-import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
+import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { string_color, string_wallpaper_id } from '../../utils/typeAliases';
 
+/**
+ * @deprecated [👨‍🦲] AI Components are deprecated, use custom html components instead
+ */
 export async function activateGalleryComponent(galleryElement: HTMLElement): Promise<void> {
     const moreButtonHtml = `
         <a href="/" class="button">More</a>
@@ -26,7 +29,7 @@ export async function activateGalleryComponent(galleryElement: HTMLElement): Pro
         wallpapers: Array<{
             id: string_wallpaper_id;
             primaryColor: string_color;
-            likedStatus: keyof typeof LikedStatus;
+            likedStatus: LikedStatus;
         }>;
     };
 

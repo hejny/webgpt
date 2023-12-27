@@ -1,17 +1,18 @@
+import type { string_prompt } from '@promptbook/types';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import spaceTrim from 'spacetrim';
+import { forTime } from 'waitasecond';
 import { COPILOT_PLACEHOLDERS, FONTS, IS_VERIFIED_EMAIL_REQUIRED } from '../../../config';
 import { getExecutionTools } from '../../ai/prompt-templates/getExecutionTools';
 import { webgptPtpLibrary } from '../../ai/prompt-templates/webgptPtpLibrary';
+import type { LikedStatus } from '../../ai/recommendation/LikedStatus';
 import { classNames } from '../../utils/classNames';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { removeContentComments } from '../../utils/content/removeContentComments';
 import { focusRef } from '../../utils/focusRef';
 import { useCurrentWallpaper } from '../../utils/hooks/useCurrentWallpaper';
-import type { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useLocale } from '../../utils/hooks/useLocale';
 import { useRotatingPlaceholder } from '../../utils/hooks/useRotatingPlaceholder';
 import { serializeWallpaper } from '../../utils/hydrateWallpaper';
@@ -19,17 +20,20 @@ import { randomItem } from '../../utils/randomItem';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
-import { string_prompt } from '../../utils/typeAliases';
+import { validateMaxdown } from '../Content/Maxdown/validateMaxdown';
+import { FeedbackButton } from '../FeedbackButton/FeedbackButton';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Hint } from '../Hint/Hint';
 import { addFontToContent } from '../ImportFonts/addFontToContent';
 import { changeFontsInContent } from '../ImportFonts/changeFontInContent';
 import { extractFontsFromContent } from '../ImportFonts/extractFontsFromContent';
-import { ImportFonts } from '../ImportFonts/ImportFonts';
 import { PublishLink } from '../PublishModal/PublishLink';
-import { TorusInteractiveImage } from '../TaskInProgress/TorusInteractiveImage';
+import { LoadingInteractiveImage } from '../TaskInProgress/LoadingInteractiveImage';
+import { Translate } from '../Translate/Translate';
 import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './CopilotPanel.module.css';
+import { CopilotPanelChangeFont } from './CopilotPanelChangeFont';
+import { CopilotPanelRotateColors } from './CopilotPanelRotateColors';
 
 /**
  * Renders the co-pilot panel for text commands to edit the page.
@@ -51,7 +55,7 @@ export function CopilotPanel() {
     );
     const modifyWallpaperFont = useCallback(() => {
         modifyWallpaper((modifiedWallpaper) => {
-            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont);
+            modifiedWallpaper.content = changeFontsInContent(modifiedWallpaper.content, randomFont.fontFamily);
             modifiedWallpaper.saveStage = 'EDITED';
             return modifiedWallpaper;
         });
@@ -106,7 +110,7 @@ export function CopilotPanel() {
             const { newContent } = await webgptPtpLibrary.createExecutor(
                 updateWebsiteContentLocaleMap[
                     locale
-                ] /* <- TODO: !!! Deal here with locale better - detect from content NOT app */,
+                ] /* <- TODO: !! Deal here with locale better - detect from content NOT app */,
                 getExecutionTools(
                     await provideClientId({
                         isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.EDIT,
@@ -115,14 +119,14 @@ export function CopilotPanel() {
             )(
                 {
                     oldContent,
-                    rawAssigment: prompt,
+                    rawAssignment: prompt,
                 },
                 (taskProgress) => {
                     console.info('CopilotPanel: Update wallpaper content: ', { taskProgress });
                 },
             );
 
-            const newContentWithFont = addFontToContent(newContent || '', font);
+            const newContentWithFont = addFontToContent(validateMaxdown(newContent || ''), font);
 
             /*/
             const newContentWithMetadata = spaceTrim(
@@ -171,12 +175,107 @@ export function CopilotPanel() {
         } finally {
             setRunningPrompt(null);
         }
-    }, [router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
+    }, [locale, router, wallpaper, modifyWallpaper, runningPrompt, inputRef]);
+
+    //--------------------------
+    // TODO: [🧠] useTimeout(1000), useInitialInteraction?
+    const [isFirstChatMessageShown, setFirstChatMessageShown] = useState<boolean>(false);
+    // TODO: Internally use useInitial
+    useEffect(() => {
+        if (isFirstChatMessageShown) {
+            return;
+        }
+
+        let isDestroyed = false;
+
+        const initialInteractionHandler = async () => {
+            await forTime(3000 /* <- TODO: To config COPILOT_START_INTERACT_AFTER_MS */);
+
+            if (isDestroyed) {
+                console.warn('Initial interaction in destroyed component');
+                return;
+            }
+
+            setFirstChatMessageShown(true);
+
+            // TODO: [🕶][🧠] Some good system to handle the audio
+            // TODO: [🕶] Free the memory?
+
+            // const name = '351539__richerlandtv__alert4.mp3' // <- 💙
+            const name = '545341__stwime__brlip.mp3'; // <- 💙
+            // const name = '545345__stwime__down.mp3'
+            // const name = '545352__stwime__simple.mp3'
+            // const name = '545354__stwime__pan3.mp3'
+            // const name = '545359__stwime__dutdut.mp3'
+            // const name = '545365__stwime__idk2.mp3'
+            // const name = '545371__stwime__up2.mp3' // <- 💙
+            // const name = '545373__stwime__up3.mp3'
+
+            const audio = new Audio(`/sounds/${name}`);
+            audio.play();
+        };
+
+        const listenerOptions: AddEventListenerOptions = { capture: true };
+
+        document.body.addEventListener('pointerup', initialInteractionHandler, listenerOptions);
+
+        return () => {
+            isDestroyed = true;
+            // TODO: [🕶] Maybe use  { ..., once: true } in addEventListener options
+            document.body.removeEventListener('pointerup', initialInteractionHandler, listenerOptions);
+        };
+    }, [isFirstChatMessageShown]);
+    //--------------------------
 
     return (
         <div className={classNames('webgpt-controls', styles.CopilotPanel)}>
+            <div className={styles.CopilotPanelChat}>
+                {/* TODO: Use here <ChatThreadComponent isTransparent><ChatMessageComponent isFeedbackCollected></ChatMessageComponent></ChatThreadComponent> */}
+                {isFirstChatMessageShown && (
+                    <div className={styles.ChatMessageComponent}>
+                        <div className={styles.author}>
+                            <LoadingInteractiveImage width={55} height={55} />
+                        </div>
+                        {/* TODO: Pick from multiple messages which can randomly vary */}
+                        <div className={styles.message}>
+                            <>
+                                {/* [⛳] */}
+                                <Translate locale="en">Do you like your new web?</Translate>
+                                <Translate locale="cs">Jak se Vám líbí Váš nový web?</Translate>
+                            </>
+                        </div>
+                        <div className={styles.feedback}>
+                            <FeedbackButton
+                                subject="new web"
+                                className={styles.feedbackButton}
+                                // feedback={existingFeedback}
+                                //         <- TODO: [🧠] Pass here the previous feedback on the wallpaper OR is it a good idea?!
+                                onFeedback={async (feedback) => {
+                                    const insertResult = await getSupabaseForBrowser()
+                                        .from('WallpaperFeedback')
+                                        .insert({
+                                            wallpaperId: wallpaper.id,
+                                            //         <-TODO: [💹] Use here some wallpaper UUID that will be valid before saving (=split UUID AND UriID)
+                                            likedStatus: feedback.likedStatus,
+                                            author: await provideClientId({
+                                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.LIKE,
+                                            }),
+                                            note: feedback.note,
+                                        });
+
+                                    // TODO: !! Util isInsertSuccessfull (status===201)
+                                    console.info({ insertResult });
+                                }}
+                                onFeedbackCollection={() => {
+                                    // Note: Do nothing
+                                }}
+                            />
+                        </div>
+                    </div>
+                )}
+            </div>
+
             <div
-                // Note: It is intended to have two divs embedded in each other
                 className={styles.CopilotPanelInner}
                 onKeyDown={(event) => {
                     if (event.key === 'Enter') {
@@ -222,7 +321,7 @@ export function CopilotPanel() {
                                 height={25} /* <-[🧥] */
                             />
                         ) : (
-                            <TorusInteractiveImage width={55} height={55} />
+                            <LoadingInteractiveImage width={55} height={55} />
                         )}
                     </button>
                 </Hint>
@@ -294,10 +393,7 @@ export function CopilotPanel() {
                                                     window.localStorage.getItem(parentKey)!,
                                                 );
                                             } else if (!window.localStorage.getItem(currentKey)) {
-                                                window.localStorage.setItem(
-                                                    currentKey,
-                                                    'LIKE' satisfies keyof typeof LikedStatus,
-                                                );
+                                                window.localStorage.setItem(currentKey, 'LIKE' satisfies LikedStatus);
                                             }
                                         } catch (error) {
                                             // TODO: [🧠] Handle situation when window.localStorage is exceeded
@@ -317,18 +413,16 @@ export function CopilotPanel() {
                         <li>
                             <WallpaperLink modal="edit-content" role="OWNER" prefetch={false}>
                                 Edit markdown
-                                {/*           <- TODO: Should be here "Edit markdown" or "Edit content" */}
+                                {/*           <- TODO: [🧠] Should be here "Edit markdown" or "Edit content" or "Advanced edit"
+                                                       + It should be in the submenu of "Advanced edits"
+                                */}
                             </WallpaperLink>
                         </li>
                         <li className={styles.auto}>
-                            <ImportFonts
-                                fonts={
-                                    new Set([randomFont])
-                                } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
-                            />
-                            <button onClick={modifyWallpaperFont}>
-                                Change <span style={{ fontFamily: `'${randomFont}'` }}>font</span>
-                            </button>
+                            <CopilotPanelChangeFont />
+                        </li>
+                        <li className={styles.auto}>
+                            <CopilotPanelRotateColors />
                         </li>
                         <li>
                             <WallpaperLink
@@ -346,9 +440,6 @@ export function CopilotPanel() {
                             >
                                 Share
                             </WallpaperLink>
-                        </li>
-                        <li>
-                            <Link href="/">Make new web</Link>
                         </li>
                         <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>

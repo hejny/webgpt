@@ -4,6 +4,12 @@ import { isUrlOnPrivateNetwork } from '../../../utils/validators/isUrlOnPrivateN
 import { isValidClientId } from '../../../utils/validators/isValidClientId';
 import { isValidUrl } from '../../../utils/validators/isValidUrl';
 
+export const config = {
+    api: {
+        responseLimit: '15mb' /* <- Note: To Allow Dalle-3 (and in general bigger) images */,
+    },
+};
+
 /**
  * API endpoint handler for scraping Instagram user
  */
@@ -25,12 +31,14 @@ export default async function scrapeInstagramUserHandler(
     // TODO: [🌺] Log cost for this request and attribute it to the client
     //---------------
 
-    const url = request.query.url;
+    console.log(request.headers);
+    const url = request.headers['x-image-url'];
+    console.log(url);
 
     if (!isValidUrl(url)) {
         return response.status(400).json(
             {
-                message: 'GET param url is not valid URL' /* <- TODO: [🌻] Unite wrong GET param message */,
+                message: 'Header x-image-url is not valid URL' /* <- TODO: [🌻] Unite wrong GET param message */,
             } as any /* <-[🌋] */,
         );
     }

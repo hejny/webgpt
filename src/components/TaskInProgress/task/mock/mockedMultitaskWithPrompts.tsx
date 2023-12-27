@@ -2,11 +2,11 @@ import { faker } from '@faker-js/faker';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
 import { forTime } from 'waitasecond';
-import { promptDialogue } from '../../../Dialogues/dialogues/promptDialogue';
-import { TaskProgress } from '../TaskProgress';
+import { simpleTextDialogue } from '../../../../workers/dialogues/simple-text/simpleTextDialogue';
+import { WebgptTaskProgress } from '../WebgptTaskProgress';
 
 export async function mockedMultitaskWithPrompts(
-    onProgress: (taskProgress: TaskProgress) => Promisable<void>,
+    onProgress: (taskProgress: WebgptTaskProgress) => Promisable<void>,
 ): Promise<void> {
     console.info(
         spaceTrim(`
@@ -23,6 +23,15 @@ export async function mockedMultitaskWithPrompts(
         `),
     );
 
+    /*
+    const { likedStatus, note } = await feedbackDialogue({
+        message: 'How do you like the apple?',
+        subject: 'the apple',
+        defaultValue: 'I like it very much!',
+        placeholder: 'I like it very much!',
+    });
+    */
+
     for (let i = 0; i < 5; i++) {
         await forTime(Math.random() * 1000 + 500);
 
@@ -34,21 +43,24 @@ export async function mockedMultitaskWithPrompts(
             isDone: false,
         });
 
-        const response = await promptDialogue({
-            prompt: (
+        const response = await simpleTextDialogue({
+            message: (
                 <>
                     Question about <span style={{ fontStyle: 'italic' }}>{title}</span>
                 </>
             ),
-            defaultValue: faker.hacker.phrase(),
+            defaultValue: faker.lorem.paragraphs(5),
             placeholder: faker.hacker.phrase(),
+            isFeedbackCollected: true,
         });
+
+        console.info('👉', response);
 
         await onProgress({
             name: `mocked-task-${i}`,
             title: (
                 <>
-                    {title} <i>({response})</i>
+                    {title} <i>({response.answer})</i>
                 </>
             ),
             isDone: true,

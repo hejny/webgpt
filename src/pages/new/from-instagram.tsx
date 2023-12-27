@@ -10,7 +10,7 @@ import { CopilotInput } from '../../components/CopilotInput/CopilotInput';
 import { LanguagePickerWithHint } from '../../components/LanguagePicker/LanguagePickerWithHint';
 import { Center } from '../../components/SimpleLayout/Center';
 import { joinTasksProgress } from '../../components/TaskInProgress/task/joinTasksProgress';
-import { TaskProgress } from '../../components/TaskInProgress/task/TaskProgress';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
 import { TasksInProgress } from '../../components/TaskInProgress/TasksInProgress';
 import { Translate } from '../../components/Translate/Translate';
 import styles from '../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
@@ -21,14 +21,14 @@ import { fetchImage } from '../../utils/scraping/fetchImage';
 import { shuffleItems } from '../../utils/shuffleItems';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_business_category_name } from '../../utils/typeAliases';
-import { createNewWallpaperForBrowser } from '../../workers/createNewWallpaper/createNewWallpaperForBrowser';
+import { createNewWallpaperForBrowser } from '../../workers/functions/createNewWallpaper/workerify/createNewWallpaperForBrowser';
 import type { ScrapeInstagramUserResponse } from '../api/scrape/scrape-instagram-user';
 
 export default function NewWallpaperFromInstagramPage() {
     const router = useRouter();
     const locale = useLocale();
-    const [isWorking, setWorking] = useState(false);
-    const [tasksProgress, setTasksProgress] = useState<Array<TaskProgress>>(
+    const [isRunning, setRunning] = useState(false);
+    const [tasksProgress, setTasksProgress] = useState<Array<WebgptTaskProgress>>(
         [],
     ); /* <- TODO: [🌄] useTasksProgress + DRY */
     const placeholders = useMemo(() => shuffleItems(...INSTAGRAM_PLACEHOLDERS), []);
@@ -58,7 +58,7 @@ export default function NewWallpaperFromInstagramPage() {
                                 </>
                             }
                             onPrompt={async (prompt) => {
-                                setWorking(true);
+                                setRunning(true);
                                 setTasksProgress([
                                     {
                                         // TODO: Use here taskify instead
@@ -84,9 +84,11 @@ export default function NewWallpaperFromInstagramPage() {
 
                                     const reponse = await fetch(
                                         // TODO: [🌺][3] Make some wrapper for this apiClient to construct requests + parse them and handle errors
-                                        `/api/scrape/scrape-instagram-user?clientId=${await provideClientId({
-                                            isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
-                                        })}&instagramName=${encodeURIComponent(instagramName)}`,
+                                        `/api/scrape/scrape-instagram-user?clientId=${
+                                            /* <- TODO: [⛹️‍♂️] Send clientId through headers */ await provideClientId({
+                                                isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
+                                            })
+                                        }&instagramName=${encodeURIComponent(instagramName)}`,
                                     );
                                     const { instagramUser } = (await reponse.json()) as ScrapeInstagramUserResponse;
 
@@ -133,8 +135,14 @@ export default function NewWallpaperFromInstagramPage() {
                                                 isVerifiedEmailRequired: IS_VERIFIED_EMAIL_REQUIRED.CREATE,
                                             }),
                                             wallpaperImage: randomTimelineImage,
-
-                                            description /* <- TODO: ALter with biography_with_entities */,
+                                            idea: {
+                                                en: spaceTrim(
+                                                    (block) => `
+                                                        ${title}
+                                                        ${block(description)}
+                                                    `,
+                                                ),
+                                            }[/*locale*/ 'en'],
                                             addSections: [
                                                 // TODO: !!! Instagram AI component gallery
                                                 // TODO: !!! Add map from business_address_json
@@ -155,7 +163,7 @@ export default function NewWallpaperFromInstagramPage() {
 
                                             // TODO: Maybe pass posts texts to give a flavour of the account and its style
                                         },
-                                        (newTaskProgress: TaskProgress) => {
+                                        (newTaskProgress: WebgptTaskProgress) => {
                                             console.info('☑', newTaskProgress);
                                             setTasksProgress((tasksProgress) =>
                                                 joinTasksProgress(...tasksProgress, newTaskProgress),
@@ -166,6 +174,7 @@ export default function NewWallpaperFromInstagramPage() {
                                         `/${wallpaperId}` /* <- Note: Not passing ?scenario=from-something here because FROM_SOMETHING is default scenario */,
                                     );
                                     // Note: No need to setWorking(false); because we are redirecting to another page
+                                    //       [0] OR to do it in the finally block
                                 } catch (error) {
                                     if (!(error instanceof Error)) {
                                         throw error;
@@ -185,9 +194,9 @@ export default function NewWallpaperFromInstagramPage() {
                                             `,
                                         ),
                                     );
-                                    setWorking(false);
+                                    setRunning(false);
                                     setTasksProgress([]);
-                                }
+                                } // <- Note: [0] No finally block because we are redirecting to another page
                             }}
                         />
                         <Link
@@ -207,14 +216,14 @@ export default function NewWallpaperFromInstagramPage() {
                     </Center>
                 </main>
 
-                {isWorking && <TasksInProgress {...{ tasksProgress }} />}
+                {isRunning && <TasksInProgress {...{ tasksProgress }} />}
             </div>
         </>
     );
 }
 
 /**
- * TODO: Enhance the design of the page (and generally every page with <CopilotInput/>)
+ * TODO: Enhance the design of the page (and in general every page with <CopilotInput/>)
  * TODO: [👐] Unite design of all /new/* pages
  * TODO: [🏍] Standardize process of getting input data for new wallpaper
  * TODO: [☃] Maybe derive isWorking from taskProgress

@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useContext, useState } from 'react';
-import { useInitial } from '../../utils/hooks/useInitial';
+import { useInitialAction } from '../../utils/hooks/useInitialAction';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import styles from './Gallery.module.css';
 import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
@@ -21,7 +21,7 @@ export function GallerySection() {
         order: 'ASCENDING' /* <- TODO: In future default order should be by populariry */,
     });
 
-    const isInitial = useInitial(() => {
+    const isInitial = useInitialAction(()=>true,() => {
         // Note: We want to show random wallpapers BUT we don't want have undeterministic SSR state because of hydration errors and also because we want better control on order for example for search engines
         setFilter({ ...filter, order: 'RANDOM' });
     });

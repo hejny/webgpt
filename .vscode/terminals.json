@@ -7,8 +7,13 @@
             "focus": false
         },
         {
-            "name": "👨🏽‍💻 Run promptbook server",
-            "commands": ["ts-node ./promptbook-server/server.ts"],
+            "name": "👨🏽‍💻📖 Run promptbook server",
+            "command": "ts-node ./promptbook-server/server.ts",
+            "focus": false
+        },
+        {
+            "name": "👨🏽‍💻🖼 Run image server",
+            "command": "ts-node ./promptimage-server/server.ts",
             "focus": false
         },
         {
@@ -63,89 +68,75 @@
         },
         {
             "name": "🏭⏬ [1] Harvest wallpapers library",
-            "commands": ["ts-node ./scripts/generate-wallpapers-harvest/TODO.txt"],
+            "command": "ts-node ./scripts/generate-wallpapers-harvest/TODO.txt",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🧾 [2] Generate wallpapers content",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit"
-            ],
+            "command": "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🧾 [3] Repair wallpapers content fonts",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --commit"
-            ],
+            "command": "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --commit",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🧾 [4] Remove wallpapers content (If not empty goto [2])",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts --commit"],
+            "command": "ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts --commit",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🧾 [5] Repair wallpapers content title (Run multiple times until commit empty)",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts  --repair-title --commit"
-            ],
+            "command": "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts  --repair-title --commit",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🎨 [6] Generate wallpapers color stats",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit"
-            ],
+            "command": "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🔼 [7] Upload & Update wallpapers",
-            "commands": ["ts-node ./scripts/upload-wallpapers/00-upload-wallpapers.ts"],
+            "command": "ts-node ./scripts/upload-wallpapers/00-upload-wallpapers.ts",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🔼🖼 [8] Upload & Update wallpapers images",
-            "commands": ["ts-node ./scripts/upload-wallpapers/10-upload-wallpapers-images.ts"],
+            "command": "ts-node ./scripts/upload-wallpapers/10-upload-wallpapers-images.ts",
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🥫 Generate Supabase types",
-            "commands": [
-                "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
-                "git add src/utils/supabase/types.ts",
-                "git commit -m \"Update Supabase types\""
-            ],
+            "name": "🏭🥫 Generate database types",
+            "command": "npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts",
+            "execute": false,
+            "focus": true
+        },
+        {
+            "name": "🏭🥫 Dump database structure",
+            "command": "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > database/dumps/structure.dump.pgsql",
+            "execute": false,
+            "focus": true
+        },
+        {
+            "name": "🏭🥫 Dump database structure + data",
+            "command": "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --dbname DATABASE_URL > database/dumps/structure+data.dump.pgsql",
             "execute": false,
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🥫 Dump Supabase structure",
-            "commands": [
-                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --schema-only --dbname DATABASE_URL > database/dumps/structure.dump.pgsql",
-                "git add database/dumps/structure.dump.pgsql",
-                "git commit -m \"Dump Supabase structure\""
-            ],
+            "name": "🔼🥫 Commit database structure",
+            "command": "git add src/utils/supabase/types.ts && git add database/dumps/structure.dump.pgsql && git commit -m \"Update database\"",
             "execute": false,
-            "onlySingle": true,
-            "focus": true
-        },
-        {
-            "name": "🏭🥫 Dump Supabase structure + data",
-            "commands": [
-                "\"C:/Program Files/PostgreSQL/15/bin/pg_dump.exe\" --dbname DATABASE_URL > database/dumps/structure+data.dump.pgsql"
-            ],
-            "execute": false,
-            "onlySingle": true,
             "focus": true
         },
         {
@@ -156,13 +147,13 @@
         },
         {
             "name": "🧸 Playground",
-            "commands": ["ts-node ./scripts/playground/playground.ts"],
+            "command": "ts-node ./scripts/playground/playground.ts",
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "👊 Kill all 4444",
-            "commands": ["npx kill-port 4444 "],
+            "command": "npx kill-port 4444",
             "onlySingle": true,
             "focus": true
         },
@@ -181,7 +172,7 @@
         },
         {
             "name": "🔓👨🏽‍💻 Delete git lock",
-            "commands": ["rm -f .git/index.lock"],
+            "command": "rm -f .git/index.lock",
             "onlySingle": true,
             "focus": true
         },

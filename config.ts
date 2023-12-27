@@ -1,18 +1,30 @@
 import { ConfigChecker } from 'configchecker';
+import spaceTrim from 'spacetrim';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
+import type { DallePrompt } from './src/ai/text-to-image/dalle/interfaces/DallePrompt';
 import { FULLHD } from './src/constants';
-import { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
+import type { AspectRatioRange } from './src/utils/aspect-ratio/AspectRatioRange';
 import { expectAspectRatioInRange } from './src/utils/aspect-ratio/expectAspectRatioInRange';
 import { DigitalOceanSpaces } from './src/utils/cdn/classes/DigitalOceanSpaces';
 import { createColorfulComputeImageColorStats15 } from './src/utils/image/palette/15/createColorfulComputeImageColorStats15';
-import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
+import type { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 import { isRunningInBrowser } from './src/utils/isRunningInWhatever';
+import { string_email, string_font_family } from './src/utils/typeAliases';
 import { isUrlOnPrivateNetwork } from './src/utils/validators/isUrlOnPrivateNetwork';
 import { validateUuid } from './src/utils/validators/validateUuid';
 
 export const APP_VERSION = packageJson.version;
 export const APP_NAME = 'WebGPT';
+export const ADMIN_EMAIL: string_email = 'pavol@webgpt.cz';
+
+export const USE_DALLE_VERSION: 2 | 3 = 3;
+
+export const USE_DALLE_MODEL_SETTINGS: DallePrompt['modelSettings'] = {
+    style: 'vivid',
+    quality: `standard`,
+    // <- TODO: !! Play with theeese to achieve best results
+};
 
 const config = ConfigChecker.from({
     ...process.env,
@@ -21,6 +33,7 @@ const config = ConfigChecker.from({
     //       @see https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#exposing-environment-variables-to-the-browser
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
     NEXT_PUBLIC_PROMPTBOOK_SERVER_URL: process.env.NEXT_PUBLIC_PROMPTBOOK_SERVER_URL,
+    NEXT_PUBLIC_IMAGE_SERVER_URL: process.env.NEXT_PUBLIC_IMAGE_SERVER_URL,
     NEXT_PUBLIC_OUR_DOMAINS: process.env.NEXT_PUBLIC_OUR_DOMAINS,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
@@ -28,6 +41,7 @@ const config = ConfigChecker.from({
 
 export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
 export const NEXT_PUBLIC_PROMPTBOOK_SERVER_URL = config.get('NEXT_PUBLIC_PROMPTBOOK_SERVER_URL').url().required().value;
+export const NEXT_PUBLIC_IMAGE_SERVER_URL = config.get('NEXT_PUBLIC_IMAGE_SERVER_URL').url().required().value;
 
 export const IS_DEVELOPMENT =
     isUrlOnPrivateNetwork(
@@ -38,8 +52,27 @@ export const IS_PRODUCTION = !IS_DEVELOPMENT;
 if (isRunningInBrowser()) {
     // TODO: Also log " client ${provideClientIdWithoutValidation()}" and avoid error unhandledRejection ReferenceError: window is not defined @see https://vercel.com/hejny/1-2i/E2LhCdVbk9hjEa8dE9ww42vnkcTg
     console.info(
-        `%c${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
-        `background: #990055; color: white; font-size: 1.1em; font-weight: bold; padding: 5px; border-radius: 3px;`,
+        `%c⏣ ${APP_NAME}${IS_DEVELOPMENT ? ' (in development mode)' : ''} version ${APP_VERSION}`,
+        spaceTrim(`
+            display: block;
+
+            background-color: rgba(0 0 0 / 0.13);
+            border: 1px solid rgba(255 255 255 / 0.53);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 60px;
+            overflow: clip;
+        
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        `)
+            .split('\n')
+            .join(''),
     );
 }
 
@@ -57,6 +90,16 @@ export const NEXT_PUBLIC_OUR_DOMAINS = config.get('NEXT_PUBLIC_OUR_DOMAINS').lis
  *       - https://online-video-cutter.com/change-video-speed
  */
 export const SPEED = 1; // 1 / 5;
+
+/**
+ * The number of pregenerated photobank images to offer to the user to choose from
+ */
+export const PHOTOBANK_SEARCH_IMAGES_COUNT = 4;
+
+/**
+ * Number of keywords reduction attempts until photobank give up and just pick random images
+ */
+export const OPTIMIZE_PHOTOBANK_MAX_SEARCH_DEPTH = 5;
 
 export const IS_VERIFIED_EMAIL_REQUIRED = {
     CREATE: false,
@@ -92,23 +135,23 @@ export const EXPORT_OPTIONS = {
     publicUrl: NEXT_PUBLIC_URL,
 };
 
-export const FONTS = [
+// TODO: [🧠] !! Put fonts into separate file
+// TODO: [🧠] !! Breakup the config into multiple files
+// TODO: [🧠] !! Better split between FONTS_LIST_STANDARD and FONTS_LIST_EXTENDED
+
+export const FONTS_LIST_STANDARD = [
     // TODO: !! [🧠] Better system for fonts
     // TODO: Put in separate file
     //----------[ Manually picked ]---
     'Montserrat',
     'Poppins',
     'Open Sans',
-    'Lobster',
     'Playfair Display',
-    'Great Vibes',
     'Lato',
     'Roboto',
     'Inter',
     'IBM Plex Sans',
     'Exo 2',
-    'Orbitron',
-    'Dancing Script',
     'Alegreya',
     'Raleway',
     'Futura',
@@ -117,10 +160,16 @@ export const FONTS = [
     'Cinzel',
     'Cinzel Decorative',
     'Cormorant Garamond',
+];
 
+export const FONTS_LIST_EXTENDED = [
     //----------[ List all ]---
     // @see https://github.com/honeysilvas/google-fonts
     // TODO: This list is not complete (or not up to date) because for example 'Barlow Condensed' is missing
+    'Great Vibes',
+    'Dancing Script',
+    'Lobster',
+    'Orbitron',
     'ABeeZee',
     'Abel',
     'Abril Fatface',
@@ -830,6 +879,27 @@ export const FONTS = [
     'Zeyada',
 ] as const;
 
+// TODO: !! Put in separate file
+export interface Font {
+    // TODO: !! Annotate
+    // TODO: !! [🧠] System - Google, Adobe...
+    fontFamily: string_font_family;
+
+    // TODO: !! [🧠] More granular split - handwriting, serif, sans-serif, monospace, cursive, fantasy,...
+    isSpecial: boolean;
+}
+
+export const FONTS: Array<Font> = [
+    ...FONTS_LIST_STANDARD.map((fontFamily) => ({
+        fontFamily,
+        isSpecial: false,
+    })),
+    ...FONTS_LIST_EXTENDED.map((fontFamily) => ({
+        fontFamily,
+        isSpecial: true,
+    })),
+];
+
 export const COPILOT_PLACEHOLDERS: Array<string> = [
     // Note: ⏣ Describe the change>
     'Translate to Chinese',
@@ -1005,3 +1075,8 @@ export const PUBLISH_TO_GITHUB_ORGANIZATION = config.get(
     `@see https://github.com/settings/tokens`,
 ).value;
 export const GITHUB_TOKEN = config.get('GITHUB_TOKEN', `@see https://github.com/settings/tokens`).value;
+
+/**
+ * TODO: !! Annotate all
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */

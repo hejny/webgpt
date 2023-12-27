@@ -10,5 +10,6 @@ export function validateUuid(value: unknown): uuid {
 }
 
 /**
+ * TODO: [🧠][🚓] Is/which combination it better to use asserts/check, validate or is utility function?
  * TODO: Can there be used (asserts value is uuid) with uuid return type?
  */

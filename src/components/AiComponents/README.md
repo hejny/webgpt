@@ -4,4 +4,4 @@ Theese are components that are used in dynamic next page and also rendered into 
 
 ## TODOs
 
--   [ ] TODO: Maybe use shadow dom not just CSS / data-aiai prefixing
+-   [👨‍🦲] TODO: Use shadow dom not just CSS / data-aiai prefixing

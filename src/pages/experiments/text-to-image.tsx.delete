@@ -1,0 +1,96 @@
+import { nameToUriParts } from 'n12';
+import { useCallback, useMemo, useState } from 'react';
+import { USE_DALLE_VERSION } from '../../../config';
+import type { ImagePromptResult } from '../../ai/text-to-image/0-interfaces/ImagePromptResult';
+import type { DallePrompt } from '../../ai/text-to-image/dalle/interfaces/DallePrompt';
+import { getPhotobank } from '../../ai/text-to-image/getPhotobank';
+import { ImagePromptResultsPicker } from '../../components/ImagePromptResultsPicker/ImagePromptResultsPicker';
+import { WebgptTaskProgress } from '../../components/TaskInProgress/task/WebgptTaskProgress';
+import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { useClientId } from '../../utils/hooks/useClientId';
+import { fetchImage } from '../../utils/scraping/fetchImage';
+import type { string_image_prompt } from '../../utils/typeAliases';
+import { supportDialogues } from '../../workers/dialogues';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
+
+export default function TextToImagePage() {
+    const [promptContent, setPromptContent] = useState<string_image_prompt | null>('Coffee in space');
+    const prompt = useMemo<DallePrompt>(
+        () => ({
+            content: promptContent!,
+            model: `dalle-${USE_DALLE_VERSION}`,
+            modelSettings: {
+                style: 'vivid',
+            },
+        }),
+        [promptContent],
+    );
+    const [isReady, setReady] = useState<boolean>(true);
+    const clientId = useClientId({
+        isVerifiedEmailRequired: true,
+    });
+    const [results, setResults] = useState<Array<ImagePromptResult>>([]);
+    const runImageGenerator = useCallback(async () => {
+        setReady(false);
+
+        if (!clientId) {
+            return;
+        }
+
+        /**/
+        const imageGenerator = getPhotobank(clientId);
+        /**/
+
+        /*/
+        const imageGenerator = getImageGenerator(
+            await provideClientId({
+                isVerifiedEmailRequired: true,
+            }),
+        );
+        /**/
+
+        const results = await imageGenerator.generate(prompt, (taskProgress: WebgptTaskProgress) => {});
+
+        setReady(true);
+        setResults(results);
+    }, [clientId, prompt]);
+
+    return (
+        <div>
+            <p>This is NOT optimized for production use, just for testing purposes.</p>
+            <textarea
+                defaultValue={promptContent || ''}
+                onChange={(event) => {
+                    const value = event.target.value.trim();
+                    setPromptContent(value || null);
+                }}
+            />
+            <br />
+            <button onClick={runImageGenerator}>Generate</button>
+            <br />
+            <br />
+            <hr />
+            <br />
+            {isReady ? null : <p>Generating...</p>}
+            {results.length === 0 && isReady && <p>No images generated</p>}
+            <ImagePromptResultsPicker
+                {...{ results, prompt }}
+                selected={null /* <- TODO: !! Implement */}
+                onSelect={(result) => {
+                    // Do nothing
+                }}
+                onPick={async (result) => {
+                    const image = new File(
+                        [await fetchImage(result.imageSrc)],
+                        `${nameToUriParts(promptContent || 'untitled').join('-')}.png`,
+                    );
+                    await induceFileDownload(image);
+                }}
+            />
+
+            <Dialogues {...{ supportDialogues }} />
+        </div>
+    );
+}
+
+// TODO: <ImagePromptResultsPicker /> component

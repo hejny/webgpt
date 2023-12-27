@@ -20,6 +20,8 @@ interface ColorPreviewProps {
 
 /**
  * Renders a preview of a color
+ *
+ * @deprecated [📿] <ColorsPanel /> and its components are not used anymore
  */
 export function ColorPreview(props: ColorPreviewProps) {
     const { className, color } = props;

@@ -1,32 +1,68 @@
 import { ReactNode, useEffect } from 'react';
-import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
-import styles from './00-Modal.module.css';
+import { classNames } from '../../utils/classNames';
+import { useStyleModule } from '../../utils/hooks/useStyleModule';
+import { string_css_class } from '../../utils/typeAliases';
+import { MarkdownContent } from '../Content/MarkdownContent';
 import { CloseModalLink } from './10-CloseModalLink';
 
 interface ModalProps {
     /**
      * Title of the modal
      */
-    title: ReactNode;
+    readonly title: ReactNode;
 
     /**
      * The content of the modal
      */
-    children: ReactNode;
+    readonly children: ReactNode;
+
+    /**
+     * When the modal is disabled it can not be closed, pointer events are disabled
+     */
+    readonly isDisabled?: boolean;
 
     /**
      * Whether the modal can be closed by clicking on the overlay
      *
      * If `true` then you need to be in wallpaper page to close the modal
      */
-    isCloseable?: boolean;
+    readonly isCloseable?: boolean;
+
+    /**
+     * The close icon
+     *
+     * @default "✖"
+     */
+    readonly closeIcon?: '✖' | '✔';
+
+    /**
+     * Callback which will be called when the modal is requested to be closed
+     *
+     * If NOT set it will use as default <CloseModalLink/>
+     * Warning: YOU SHOULD set it when you are using modal with isCloseable outside of wallpaper page
+     */
+    readonly onClose?: () => void;
+
+    /**
+     * Size of the modal
+     *
+     * @default 'FULL'
+     */
+    readonly size?: 'FULL' | 'MEDIUM';
+
+    /**
+     * Optional CSS class name which will be added to content part of the modal
+     */
+    readonly className?: string_css_class;
 }
 
 /**
  * Renders a modal above the wallpaper page
  */
 export function Modal(props: ModalProps) {
-    const { title, children, isCloseable } = props;
+    const { title, children, isDisabled, isCloseable, closeIcon = '✖', onClose, size = 'FULL', className } = props;
+
+    const styles = useStyleModule(import('./00-Modal.module.css'));
 
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useEffect(() => {
@@ -60,22 +96,47 @@ export function Modal(props: ModalProps) {
 
     return (
         <>
-            {isCloseable ? <CloseModalLink className={styles.overlay} /> : <div className={styles.overlay} />}
-            <dialog open className={styles.Modal}>
+            {!isCloseable || isDisabled ? (
+                <div className={classNames(styles.overlay)} />
+            ) : onClose ? (
+                <div onClick={onClose} className={classNames(styles.overlay)} />
+            ) : (
+                <CloseModalLink className={classNames(styles.overlay)} />
+            )}
+
+            <dialog
+                open
+                className={classNames(
+                    styles.Modal,
+                    styles[size.toLocaleLowerCase() + 'Size'],
+                    isDisabled && styles.isDisabled,
+                )}
+            >
                 <div className={styles.bar}>
                     <div className={styles.title}>
                         <h2>{title}</h2>
                     </div>
                     <div className={styles.icons}>
-                        {isCloseable && (
-                            <CloseModalLink>
-                                <MarkdownContent content="✖" isUsingOpenmoji />
-                            </CloseModalLink>
-                        )}
+                        {isCloseable &&
+                            (onClose ? (
+                                <button onClick={onClose}>
+                                    {/* TODO: [0] DRY */}
+                                    <MarkdownContent content={closeIcon} isUsingOpenmoji />
+                                </button>
+                            ) : (
+                                <CloseModalLink>
+                                    {/* TODO: [0] DRY */}
+                                    <MarkdownContent content={closeIcon} isUsingOpenmoji />
+                                </CloseModalLink>
+                            ))}
                     </div>
                 </div>
-                <div className={styles.content}>{children} </div>
+                <div className={classNames(styles.content, className)}>{children}</div>
             </dialog>
         </>
     );
 }
+
+/**
+ * TODO: Allow to drag and minimize mediumSize modals
+ */

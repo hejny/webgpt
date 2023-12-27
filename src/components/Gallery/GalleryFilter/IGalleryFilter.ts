@@ -1,11 +1,11 @@
+import type { LikedStatus } from '../../../ai/recommendation/LikedStatus';
 import { Color } from '../../../utils/color/Color';
-import type { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
-import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
+import type { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 
 export interface IGalleryFilter {
     fulltext?: string;
     color?: WithTake<Color>;
-    likedStatus: keyof typeof LikedStatus | 'ALL';
+    likedStatus: LikedStatus | 'ALL';
     limit: number;
     order: keyof typeof Order;
 }
@@ -15,3 +15,8 @@ export const Order = {
     DESCENDING: 'Descending (Z-A)',
     RANDOM: 'Random',
 } as const;
+
+
+/**
+ * TODO: [📙] Every dictionary should look like LikedStatus
+ */

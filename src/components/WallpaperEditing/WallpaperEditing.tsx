@@ -1,11 +1,11 @@
-import { ColorsPanel } from '../../components/ColorsPanel/ColorsPanel';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { useModal } from '../../utils/hooks/useModal';
 import { useScenario } from '../../utils/hooks/useScenario';
+import { supportDialogues } from '../../workers/dialogues';
+import { Dialogues } from '../../workers/lib/dialogues/Dialogues';
 import { ColorsModal } from '../ColorsModal/ColorsModal';
 import { CopilotPanel } from '../CopilotPanel/CopilotPanel';
-import { Dialogues } from '../Dialogues/Dialogues';
 import { EditContentModal } from '../EditContentModal/EditContentModal';
 import { ExportCodeModal } from '../ExportCodeModal/ExportCodeModal';
 import { ExportPreviewModal } from '../ExportPreviewModal/ExportPreviewModal';
@@ -22,7 +22,7 @@ export function WallpaperEditing() {
     return (
         <>
             <PreventUnsavedChanges />
-            <Dialogues />
+            <Dialogues {...{ supportDialogues }} />
 
             {modal === 'publish' && <PublishModal />}
             {modal === 'export' && <ExportModal />}
@@ -34,13 +34,16 @@ export function WallpaperEditing() {
 
             {modal === null && scenario === 'FROM_SOMETHING' && <CopilotPanel />}
             {modal === null && scenario === 'GALLERY' && <ControlPanel />}
-            {modal === null && scenario === 'GALLERY' && <ColorsPanel />}
+            {/* 
+            Note: [📿] <ColorsPanel /> and its components are not used anymore
+            modal === null && scenario === 'GALLERY' && <ColorsPanel />
+            */}
         </>
     );
 }
 
 /**
  * TODO: !! Lazy load modals
- * TODO: [🧠] How to show <ColorsPanel />
+ * TODO: [📿][🧠] How to show <ColorsPanel />
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */
