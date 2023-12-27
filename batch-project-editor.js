@@ -3,7 +3,7 @@ module.exports = {
         'organizeImports',
         'contributing',
         'partners',
-        'badges',
+        'badges','publishPatchVersion'
         //'aiGeneratedWallpaperPrepare',
         //'aiGeneratedWallpaperLand',
         //'aiGeneratedWallpaperTrigger',
