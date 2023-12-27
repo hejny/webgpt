@@ -19,6 +19,7 @@ export function CopilotPanelRotateColors() {
     return (
         <>
             <button onClick={modifyWallpaperFont}>
+                {/* Note: To allow fulltext search putting here "Change colors" */}
                 Change
                 {
                     ' '

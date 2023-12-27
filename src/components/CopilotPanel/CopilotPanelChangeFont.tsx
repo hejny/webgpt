@@ -32,6 +32,7 @@ export function CopilotPanelChangeFont() {
                 } /* <- TODO: This should (or maybe already is) be excluded from export by ignoring all <CopilotPanel/> */
             />
             <button onClick={modifyWallpaperFont}>
+                {/* Note: To allow fulltext search putting here "Change font" */}
                 Change <span style={{ fontFamily: `'${randomFont}'` }}>font</span>
             </button>
         </>

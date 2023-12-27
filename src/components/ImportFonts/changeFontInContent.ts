@@ -15,6 +15,8 @@ export function changeFontsInContent<TContent extends string_markdown | string_m
 ): TContent {
     const oldFonts = extractFontsFromContent(content);
 
+    console.log('oldFonts', oldFonts);
+
     if (oldFonts.size === 0) {
         return addFontToContent(content, newFontFamily);
     }
