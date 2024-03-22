@@ -434,7 +434,10 @@ export function CopilotPanel() {
                         </li>
                         <li>
                             <WallpaperLink
-                                // TODO: With QR and explanation
+                                // TODO: !!! Copilot sharing: Submenu on Copilot menu
+                                // TODO: !!! Copilot sharing: QR Code
+                                // TODO: !!! Copilot sharing: Explanation
+                                // TODO: !!! Copilot sharing: Devices preview
                                 role="VISITOR"
                                 /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >
