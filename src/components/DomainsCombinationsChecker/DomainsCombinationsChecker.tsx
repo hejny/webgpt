@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';
-import { string_domain, string_tdl } from '../../utils/typeAliases';
-import styles from './AdvancedDomainsChecker.module.css';
-import { DomainsStatusList } from './DomainsStatusList/DomainsStatusList';
-import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
-import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
+import type { string_domain, string_domain_tdl } from '../../utils/typeAliases';
+import { DomainStatusChecker } from '../Domains/DomainStatusChecker/DomainStatusChecker';
+import { createAllPermutationsOf } from '../Domains/utils/createAllPermutationsOf';
+import { createAllSubsetsOf } from '../Domains/utils/createAllSubsetsOf';
+import styles from './DomainsCombinationsChecker.module.css';
 
 /**
  * Renders a domain checker with advanced options and patterns
  */
-export function AdvancedDomainsChecker() {
+export function DomainsCombinationsChecker() {
     const [names, setNames] = useState<Array<string_domain>>(['web', 'gpt']);
-    const [tdls, setTdls] = useState<Array<string_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
+    const [tdls, setTdls] = useState<Array<string_domain_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
 
     const namePartsCombinations = createAllSubsetsOf(...names);
     const namePartsPermutations = namePartsCombinations.flatMap((subset) => createAllPermutationsOf(...subset));
@@ -26,7 +26,7 @@ export function AdvancedDomainsChecker() {
     const sortedDomains = uniqueDomains.sort((a, b) => a.length - b.length);
 
     return (
-        <div className={styles.AdvancedDomainsChecker}>
+        <div className={styles.DomainsCombinationsChecker}>
             <div className={styles.patterns}>
                 <textarea
                     className={styles.pattern}
@@ -50,7 +50,16 @@ export function AdvancedDomainsChecker() {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <DomainsStatusList domains={sortedDomains} />
+            {sortedDomains.map((domain) => (
+                <DomainStatusChecker
+                    key={domain}
+                    {...{ domain }}
+                    isActionButtonShown={true}
+                    isShownDetailedFail={true}
+                    isDebounced={true}
+                    isRetried={false}
+                />
+            ))}
         </div>
     );
 }

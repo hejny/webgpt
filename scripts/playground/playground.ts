@@ -5,7 +5,6 @@ import * as dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
 
 import chalk from 'chalk';
-import OpenAI from 'openai';
 import { join } from 'path';
 import { OPENAI_API_KEY } from '../../config';
 
@@ -30,22 +29,9 @@ async function playground() {
     // Do here stuff you want to test
     //========================================>
 
-    const openai = new OpenAI({
-        apiKey: OPENAI_API_KEY,
-    });
-
-    const generatedImage = await openai.images.generate({
-        prompt: 'A dog',
-        model: 'dall-e-2',
-        n: 0,
-        size: '256x256',
-        // size: '1792x1024',
-        // quality: 'standard',
-        // style: 'natural',
-        user: 'playground',
-    });
-
-    console.log(generatedImage);
+    console.log('--------------------');
+    console.log(JSON.stringify(await lookupDomain(`towns.cz`), null, 4));
+    console.log('--------------------');
     //========================================/
 
     console.info(`[ Done 🧸  Playground ]`);

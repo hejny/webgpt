@@ -1,0 +1,26 @@
+.DomainsListChecker {
+    /*/
+    outline: 1px dotted rgb(123, 255, 0);
+    /**/
+
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.domains {
+    /*/
+    outline: 1px dotted rgb(14, 230, 238);
+    /**/
+
+    width: 100%;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}

@@ -7,6 +7,7 @@ const jestConfig = {
     coverageDirectory: './coverage/',
     collectCoverage: true,
     testEnvironment: 'jsdom',
+    setupFiles: ['./jest.setup.ts'],
 };
 
 export default jestConfig;

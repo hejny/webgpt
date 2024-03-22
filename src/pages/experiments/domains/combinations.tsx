@@ -1,22 +1,26 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { AdvancedDomainsChecker } from '../components/Domains/AdvancedDomainsChecker';
-import { NoSsr } from '../components/NoSsr/NoSsr';
-import styles from '../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
-import { WallpapersContext } from '../utils/hooks/WallpapersContext';
+import Image from 'next/image';
+import webgptLogo from '../../../../public/logo/webgpt.white.svg';
+import { StaticAppHead } from '../../../components/AppHead/StaticAppHead';
+import { DomainsCombinationsChecker } from '../../../components/DomainsCombinationsChecker/DomainsCombinationsChecker';
+import { NoSsr } from '../../../components/NoSsr/NoSsr';
+import styles from '../../../styles/static.module.css' /* <- TODO: [🤶] Get rid of page css and only use components (as <StaticLayout/>) */;
+import { WallpapersContext } from '../../../utils/hooks/WallpapersContext';
 
-export default function DomainsPage() {
+export default function DomainsCombinationsPage() {
     return (
         <WallpapersContext.Provider value={{}} /* <- Does it make sence to keep this empty? */>
             <StaticAppHead subtitle={null} />
 
             <div className={styles.page}>
                 <main>
-                    <h1>WebGPT</h1>
+                    <h1>
+                        <Image alt="WebGPT logo" src={webgptLogo} />
+                    </h1>
                     <p>Pick your domain:</p>
 
                     <NoSsr>
-                        <AdvancedDomainsChecker />
+                        <DomainsCombinationsChecker />
                     </NoSsr>
                 </main>
 
