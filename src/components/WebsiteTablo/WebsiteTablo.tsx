@@ -51,11 +51,7 @@ export function WebsiteTablo() {
             tasksProgress={[
                 {
                     name: 'publishing',
-                    title: (
-                        <>
-                            Publishing <b>{domain}</b>
-                        </>
-                    ),
+                    title: `Publishing **${domain}**`,
                     isDone: false,
                 },
                 /*

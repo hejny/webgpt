@@ -110,7 +110,8 @@ export function TasksInProgress(props: TaskInProgressProps) {
                                         console.info({ taskProgress });
                                     }}
                                 >
-                                    {taskProgress.title}
+                                    <Translate locale='en' {/* <- !!! auto */}>{taskProgress.title}</Translate>
+                                    
                                 </li>
                             ))}
                         </ul>
