@@ -1,18 +1,33 @@
+import moment from 'moment';
 import Link from 'next/link';
-import { useMemo } from 'react';
 import { classNames } from '../../../utils/classNames';
-import { checkDomain } from '../../../utils/domains/checkDomain';
-import { usePromise } from '../../../utils/hooks/usePromise';
-import { string_css_class, string_domain } from '../../../utils/typeAliases';
+import type { DomainStatus } from '../../../utils/domains/DomainStatus';
+import { getDomainTdl } from '../../../utils/domains/getDomainTdl';
+import type { string_css_class, string_domain } from '../../../utils/typeAliases';
 import styles from './DomainStatusText.module.css';
 
-interface DomainStatusTextProps {
+export interface DomainStatusTextProps {
     /**
-     * The domain to check
+     * The domain which is checked
      *
-     * Note: The domain will be normalized - trimmed and lowercased
+     * Note: The domain should be normalized - trimmed and lowercased
      */
     domain: string_domain;
+
+    /**
+     * Status of the domain
+     */
+    domainStatus: keyof typeof DomainStatus | 'PENDING';
+
+    /**
+     * How much attempts to check were done?
+     */
+    tryCount: number;
+
+    /**
+     * When was the domain checked?
+     */
+    checkedAt: Date | null;
 
     /**
      * Is button to open page shown?
@@ -20,10 +35,10 @@ interface DomainStatusTextProps {
     isActionButtonShown?: boolean;
 
     /**
-     * Is shown that the domain exceeded limit for whois lookups?
+     * Is shown that the domain exceeded limit, timeout or not supported tdl for whois lookups?
      * If no or not set, it will be shown as UNKNOWN
      */
-    isShownExceededLimit?: boolean;
+    isShownDetailedFail?: boolean;
 
     /**
      * Optional CSS class name which will be added to root element
@@ -37,14 +52,19 @@ interface DomainStatusTextProps {
  * Note: It internally fetches and displays the whois
  */
 export function DomainStatusText(props: DomainStatusTextProps) {
-    const { domain, isActionButtonShown, isShownExceededLimit, className } = props;
+    const { domain, isActionButtonShown, isShownDetailedFail, tryCount, checkedAt, className } = props;
+    let { domainStatus } = props;
 
-    const domainStatusPromise = useMemo(() => /* not await */ checkDomain(domain), [domain]);
-    let { value: domainStatus } = usePromise(domainStatusPromise, [domain]);
-
-    if (domainStatus === 'LIMIT' && !isShownExceededLimit) {
+    if (['LIMIT', 'TIMEOUT', 'NOT_SUPPORTED'].includes(domainStatus as any) && !isShownDetailedFail) {
         domainStatus = 'UNKNOWN';
     }
+
+    const tryCountMessage = tryCount > 1 ? <i>(Tried {tryCount}x)</i> : <></>;
+    const checkedAtMessage = checkedAt ? (
+        <i>({moment(checkedAt).calendar(/* <- TODO: !! Use current locale */)})</i>
+    ) : (
+        <></>
+    );
 
     return (
         <div
@@ -55,12 +75,12 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                 {
                     PENDING: (
                         <span className={styles.pending}>
-                            <b>{domain}</b>: Getting whois info...
+                            <b>{domain}</b>: Getting info about domain ⏣ {/* <- TODO: Circle between ⌬ and ⏣ */}
                         </span>
                     ),
                     AVAILABLE: (
                         <span className={styles.available}>
-                            <b>{domain}</b> is available for registration
+                            <b>{domain}</b> is available for registration {checkedAtMessage}
                         </span>
                     ),
                     REGISTERED: (
@@ -70,23 +90,26 @@ export function DomainStatusText(props: DomainStatusTextProps) {
                     ),
                     LIMIT: (
                         <span className={styles.unknown}>
-                            <b>{domain}</b> exceeded limit for whois lookups
+                            <b>{domain}</b> exceeded limit for whois lookups {tryCountMessage}
                         </span>
                     ),
-                    // TODO: TIMEOUT: <span className={styles.unknown}>Timeout in whois lookup</span>,
+                    TIMEOUT: (
+                        <span className={styles.timeout}>
+                            <b>{domain}</b> timeouted while getting whois info {tryCountMessage}
+                        </span>
+                    ),
                     UNKNOWN: (
                         <span className={styles.unknown}>
-                            <b>{domain}</b> status is unknown
+                            <b>{domain}</b> status is unknown {tryCountMessage}
                         </span>
                     ),
-                }[domainStatus || 'PENDING']
+                    TDL_NOT_SUPPORTED: (
+                        <span className={styles.unknown}>
+                            <b>{domain}</b> unfortunately we can not check .{getDomainTdl(domain)} domains
+                        </span>
+                    ),
+                }[domainStatus]
             }
-
-            {/* TODO: [🧠] How to refresh the domain information?
-            <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
-                Refresh
-            </button>
-            */}
 
             {/* TODO: [🧠] How/where to offer domain registration?
             {domainStatus === 'AVAILABLE' && (
@@ -113,7 +136,3 @@ export function DomainStatusText(props: DomainStatusTextProps) {
         </div>
     );
 }
-
-/**
- * TODO: !! Probbably debounce the whois lookup
- */

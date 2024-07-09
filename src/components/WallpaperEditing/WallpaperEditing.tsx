@@ -25,6 +25,7 @@ export function WallpaperEditing() {
             <Dialogues {...{ supportDialogues }} />
 
             {modal === 'publish' && <PublishModal />}
+            {modal === 'domains' && <DomainsModal />}
             {modal === 'export' && <ExportModal />}
             {modal === 'export-code' && <ExportCodeModal />}
             {modal === 'export-preview' && <ExportPreviewModal />}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { string_hostname } from '../../utils/typeAliases';
-import { DomainStatusText } from './DomainStatusText/DomainStatusText';
+import { DomainStatusChecker } from './DomainStatusChecker/DomainStatusChecker';
 
 /**
  * Renders a simple domain checker with a single input and single output
@@ -15,7 +15,14 @@ export function SimpleDomainChecker() {
                 onChange={(event) => setDomain(event.target.value)}
                 placeholder="example.com"
             />
-            <DomainStatusText {...{ domain }} />
+            <DomainStatusChecker
+                {...{ domain }}
+                isActionButtonShown={true}
+                isShownDetailedFail={true}
+                isDebounced={true}
+                isRetried={true}
+                // TODO: isRefreshed={true}
+            />
         </div>
     );
 }

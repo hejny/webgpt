@@ -11,6 +11,7 @@ import { DomainStatusText } from '../Domains/DomainStatusText/DomainStatusText';
 import { GetTheWebTabs } from '../GetTheWebTabs/GetTheWebTabs';
 import { Modal } from '../Modal/00-Modal';
 import stylesForSelect from '../Select/Select.module.css';
+import { WallpaperLink } from '../WallpaperLink/WallpaperLink';
 import styles from './PublishModal.module.css';
 import { publishWebsite } from './publishWebsite';
 
@@ -79,7 +80,7 @@ export function PublishModal() {
 
             <form className={styles.settings} onSubmit={submitHandler}>
                 <label className={styles.setting}>
-                    <div className={styles.key}>Site url:</div>
+                    <div className={styles.key}>Domain:</div>
                     <input
                         className={classNames(styles.value, stylesForSelect.option)}
                         disabled={isPublishing}
@@ -92,8 +93,19 @@ export function PublishModal() {
                         placeholder={defaultDomain}
                         type="text"
                         title={`Enter a domain name like ${defaultDomain}`}
+                        // <- TODO: [🤞] Allow to enter domain with www. prefix and maybe also with http://, https:// prefixes and / suffix
                     />
-                    <DomainStatusText {...{ domain }} className={styles.domainStatus} />
+                    <WallpaperLink modal={'domains'}>I need help with the domain</WallpaperLink>
+
+                    <DomainStatusChecker
+                        {...{ domain }}
+                        className={styles.domainStatus}
+                        isActionButtonShown={true}
+                        isShownDetailedFail={false}
+                        isDebounced={false}
+                        isRetried={true}
+                        // TODO: isRefreshed={true}
+                    />
                 </label>
 
                 <label className={styles.setting}>

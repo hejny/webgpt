@@ -14,6 +14,12 @@
     color: #888888;
 }
 
+.DomainStatusText .timeoput {
+    color: #888888;
+}
+.DomainStatusText .limit {
+    color: #888888;
+}
 .DomainStatusText span b {
     color: inherit;
 }

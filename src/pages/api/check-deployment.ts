@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { isValidDomain } from '../../utils/domains/isValidDomain';
+import { isDomainValid } from '../../utils/domains/isDomainValid';
 
 export interface CheckDeploymentHandlerResponse {
     /**
@@ -34,7 +34,7 @@ export default async function checkDeploymentHandler(
         );
     }
 
-    if (!isValidDomain(domain)) {
+    if (!isDomainValid(domain)) {
         return response.status(400).json(
             {
                 message: `Domain needs to be valid.`,
