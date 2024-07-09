@@ -225,6 +225,8 @@ export function ExportModal() {
 }
 
 /**
+ * TODO: !!! 2 Options OR/AND Export and Manual
+ * TODO: !!! Add pricing info directly to the modal
  * TODO: Registration should return some token which will be put into export
  * TODO: Each build should have unique id + build metadata (like date, WebGPT version, etc.)
  * TODO: [📙] Every dictionary should look like LikedStatus
