@@ -39,7 +39,7 @@ export async function mockedMultitaskWithPrompts(
 
         await onProgress({
             name: `mocked-task-${i}`,
-            title: <>{title}</>,
+            title,
             isDone: false,
         });
 
@@ -58,11 +58,7 @@ export async function mockedMultitaskWithPrompts(
 
         await onProgress({
             name: `mocked-task-${i}`,
-            title: (
-                <>
-                    {title} <i>({response.answer})</i>
-                </>
-            ),
+            title: `${title} *(${response.answer})*`,
             isDone: true,
         });
     }

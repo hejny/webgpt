@@ -27,11 +27,7 @@ export const MOCKED_TASKS_PROGRESS_QUEUE: Array<WebgptTaskProgress> = [
     },
     {
         name: 'text-analysis',
-        title: (
-            <>
-                Analyzing <i>newsletter</i> text (2)
-            </>
-        ),
+        title: `Analyzing *newsletter* text (2)`,
         isDone: true,
     },
     {
