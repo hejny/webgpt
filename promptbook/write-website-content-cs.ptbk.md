@@ -1,9 +1,13 @@
 # 🌍 Vytvoření obsahu webové stránky
 
+<!-- TODO: !!! Use custom html components -->
+<!-- TODO: !!! [🧠] How to propperly update ptbk version -->
+<!-- TODO: !!! Expect that <call-to-action/> will be used -->
+
 Instrukce pro vytvoření obsahu webové stránky za pomocí [🌠 Prompt template pipelines](https://github.com/webgptorg/promptbook).
 
 -   PTBK URL https://ptbk.webgpt.com/cs/write-website-content.ptbk.md@v0.1.0
--   PTBK version 0.0.1
+-   PTBK version 0.0.2
 -   Use chat
 <!-- TODO: [🌚]> -   Use GPT-3.5 -->
 -   Input param `{idea}` Obecná idea webu _v Češtině_
@@ -320,6 +324,15 @@ Zadání webu od zákazníka:
 -   Použijte klíčová slova, avšak ta mají být přirozeně v textu
 -   Jedná se o kompletní obsah stránky, tedy nezapomeňte na všechny důležité informace a prvky, co by měla stránka obsahovat
 -   Použijte nadpisy, odrážky, formátování textu
+-   Použijte speciální komponenty, viz níže
+
+## Komponenty
+
+### Call to action
+
+\`\`\`markdown
+<call-to-action href="/buy">🛒 Koupit</call-to-action>
+\`\`\`
 
 ## Klíčová slova:
 

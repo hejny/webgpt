@@ -1,4 +1,4 @@
-🖼 AI Components
+# 🖼 AI Components
 
 Theese are components that are used in dynamic next page and also rendered into static export
 

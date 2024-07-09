@@ -1,0 +1,129 @@
+<script src="./pricing-table.js"></script>
+<link rel="stylesheet" href="./pricing-table.module.css" />
+
+<pricing-table>
+    <pricing-plan label="Free" suppressed>
+        <pricing-price>Zadarmo / navždy</pricing-price>
+        <pricing-feature>WebGPT značka </pricing-feature>
+        <pricing-feature>Naše reklama [1]</pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+    </pricing-plan>
+    <pricing-plan label="Základní">
+        <pricing-price>49,- Kč / web / měsíc</pricing-price>
+        <pricing-feature>1 stránka </pricing-feature>
+        <pricing-feature>1 jazyk </pricing-feature>
+        <pricing-feature>30 změn za měsíc</pricing-feature>
+        <pricing-feature>Hosting na naší doméně / Možnost zakoupení domény </pricing-feature>
+        <pricing-feature>Základní komponenty</pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+    </pricing-plan>
+    <pricing-plan label="Standard" featured>
+        <pricing-price>159,- Kč / web / měsíc</pricing-price>
+        <pricing-feature>.cz doména v ceně </pricing-feature>
+        <pricing-feature>10 stránek </pricing-feature>
+        <pricing-feature>1000 změn za měsíc </pricing-feature>
+        <pricing-feature>2 jazykové verze </pricing-feature>
+        <pricing-feature> kontrola SEO </pricing-feature>
+        <pricing-feature> kontrola přístupnosti </pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+    </pricing-plan>
+    <pricing-plan label="Profesionální">
+        <pricing-price>599,- Kč / web / měsíc</pricing-price>
+        <pricing-feature> podpora po telefonu </pricing-feature>
+        <pricing-feature> možnost navrhovat vlastní komponenty </pricing-feature>
+        <pricing-feature> automatická aktualizace na základě sociálních sítí </pricing-feature>
+        <pricing-feature> plný přístup k podkladovým materiálům </pricing-feature>
+        <pricing-feature> prémiové komponenty </pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+    </pricing-plan>
+    <pricing-plan label="Tvůrce" price="$40" suppressed>
+        <pricing-price>699,- Kč / měsíc</pricing-price>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+        <pricing-feature></pricing-feature>
+    </pricing-plan>
+</pricing-table>
+
+<!-- TODO: !!! This should error in console + remove after-->
+<pricing-plan label="Free" suppressed>
+    <pricing-price>Zadarmo / navždy</pricing-price>
+    <pricing-feature></pricing-feature>
+    <pricing-feature></pricing-feature>
+    <pricing-feature></pricing-feature>
+    <pricing-feature></pricing-feature>
+    <pricing-feature></pricing-feature>
+    <pricing-feature></pricing-feature>
+    <pricing-feature></pricing-feature>
+    <div>
+        <pricing-feature></pricing-feature>
+    </div>
+</pricing-plan>
+
+<pricing-price>Zadarmo / navždy</pricing-price>
+
+<pricing-feature></pricing-feature>
+
+<!--
+<script>
+    // TODO: !!! DRY
+    class PricingPlan extends HTMLElement {
+        constructor() {
+            super();
+
+            console.info('!!! CallToAction.constructor');
+        }
+
+        connectedCallback() {
+            // TODO: !!! This must work
+            console.info('Connected to <pricing-plan/> component');
+
+            this.addEventListener('click', () => {
+                // TODO: !!! This must work
+                console.info('Clicked on <pricing-plan/> component');
+            });
+        }
+    }
+
+    console.info('🌟 Defining <pricing-plan/> component');
+    customElements.define('pricing-plan', PricingPlan);
+</script>
+<style>
+    /*
+    TODO: !!! DRY
+    */
+    pricing-table {
+        display: flex;
+    }
+
+    pricing-plan {
+        border: solid 1px red;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 15px;
+    }
+
+    pricing-feature {
+        border: solid 1px red;
+
+        padding: 10px;
+    }
+</style>
+-->

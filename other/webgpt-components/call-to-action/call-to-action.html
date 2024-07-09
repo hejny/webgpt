@@ -1,0 +1,61 @@
+ddd <call-to-action href="?buy=0">Buy 0</call-to-action> sss
+
+<script>
+    // TODO: !!! DRY
+    class CallToAction extends HTMLElement {
+        constructor() {
+            super();
+
+            console.info('!!! CallToAction.constructor');
+        }
+
+        connectedCallback() {
+            // TODO: !!! This must work
+            console.info('Connected to <call-to-action/> component');
+
+            const shadow = this.attachShadow({ mode: 'open' });
+
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', this.getAttribute('href'));
+            linkElement.innerHTML = this.innerHTML;
+            linkElement.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                // TODO: !!! This must work
+                console.info('Clicked on <call-to-action/> linkElement component');
+            });
+
+            const styleElement = document.createElement('style');
+            styleElement.textContent = `
+
+                a {
+                    border: solid 1px red;
+                    background-color: rgb(69 209 34);
+                    color: #2d2200;
+                    border-radius: 6px;
+                    padding: 7px 18px;
+                    margin: 10px;
+                    cursor: pointer;
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in-out;
+                }
+              
+            `;
+
+            shadow.appendChild(linkElement);
+            shadow.appendChild(styleElement);
+        }
+    }
+
+    console.info('🌟 Defining <call-to-action/> component');
+    customElements.define('call-to-action', CallToAction);
+</script>
+<style>
+    /*
+    TODO: !!! DRY
+    */
+    call-to-action {
+        border: solid 1px red;
+    }
+</style>
